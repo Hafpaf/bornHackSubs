@@ -1,0 +1,2361 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:14,040
+ The next speaker we have is me, who will talk about Funion, a talk client in Alexia.
+
+2
+0:00:14,040 --> 0:00:19,240
+ Let's give him a hand.
+
+3
+0:00:19,240 --> 0:00:22,280
+ Okay.
+
+4
+0:00:22,280 --> 0:00:28,880
+ So, hello and welcome to my talk about Funion.
+
+5
+0:00:28,880 --> 0:00:33,000
+ Since I'm a talk client, I've written in Alexia in order to do, yeah, to learn tour and to
+
+6
+0:00:33,000 --> 0:00:36,480
+ learn Alexia, but I will talk about this very soon.
+
+7
+0:00:36,480 --> 0:00:39,320
+ And I want to ask a few questions to the audience.
+
+8
+0:00:39,320 --> 0:00:42,800
+ Who of you is quite familiar with the tour protocol?
+
+9
+0:00:42,800 --> 0:00:47,280
+ I mean, just the basics in the sense of, you know, what a circuit is, what a connection
+
+10
+0:00:47,280 --> 0:00:55,440
+ is, what a stream is, and like, you know, the EFF graphics, okay, nice.
+
+11
+0:00:55,440 --> 0:00:58,880
+ And who of you has used Erlang or Alexia?
+
+12
+0:00:58,880 --> 0:01:01,760
+ Oh, that's quite a high amount.
+
+13
+0:01:01,760 --> 0:01:08,200
+ I think it gets higher the more north you go in Europe, but yeah, nice.
+
+14
+0:01:08,200 --> 0:01:10,080
+ So yeah, a few things about me.
+
+15
+0:01:10,080 --> 0:01:13,600
+ I'm Emil, I go by any pronouns.
+
+16
+0:01:13,600 --> 0:01:18,800
+ I've graduated high school this summer, and I'm going to study pure mathematics and computer
+
+17
+0:01:18,800 --> 0:01:21,040
+ science beginning in October.
+
+18
+0:01:21,040 --> 0:01:24,440
+ I contribute to open source projects since 2018.
+
+19
+0:01:24,440 --> 0:01:28,200
+ Some of them include curl, Rosenpass, there are some others as well.
+
+20
+0:01:28,200 --> 0:01:32,320
+ And I've been doing tours since October of last year.
+
+21
+0:01:32,320 --> 0:01:37,040
+ And yeah, I'm also available on the Fediverse and GitHub.
+
+22
+0:01:37,040 --> 0:01:40,240
+ So first of all, I have to do some acknowledgments at first.
+
+23
+0:01:40,240 --> 0:01:43,440
+ I would really like to thank Alex.
+
+24
+0:01:43,440 --> 0:01:45,600
+ He was always helping me since day one.
+
+25
+0:01:45,600 --> 0:01:51,200
+ I mean, I've posted this on my Mastodon account, and he immediately supported me there and
+
+26
+0:01:51,200 --> 0:01:52,840
+ was always there to answer questions.
+
+27
+0:01:52,840 --> 0:01:55,200
+ So many thanks to you.
+
+28
+0:01:55,200 --> 0:01:58,160
+ And then also many thanks to the Teller authors.
+
+29
+0:01:58,160 --> 0:02:02,400
+ For those of you who don't know what Teller is, Teller is an implementation of tour done
+
+30
+0:02:02,400 --> 0:02:03,880
+ in Erlang.
+
+31
+0:02:03,880 --> 0:02:10,680
+ And this also helped me a lot because I was required to use the Erlang crypto library.
+
+32
+0:02:10,680 --> 0:02:14,240
+ And it definitely had some weird things in it.
+
+33
+0:02:14,240 --> 0:02:17,040
+ And looking at the Teller source could definitely help me there.
+
+34
+0:02:17,040 --> 0:02:23,640
+ And I also have to thank the people who are in the TourDev IRC channel on OFTC, most notably
+
+35
+0:02:23,640 --> 0:02:29,080
+ Nick Mathiessen, Roger Dingledine, Ian Jackson, Trinity Pointard, and others.
+
+36
+0:02:29,080 --> 0:02:31,480
+ It's in no particular order.
+
+37
+0:02:31,480 --> 0:02:35,600
+ Yeah, so what have I actually done?
+
+38
+0:02:35,600 --> 0:02:38,880
+ I've written a tour client in Elixir.
+
+39
+0:02:38,880 --> 0:02:39,880
+ It's an onion proxy.
+
+40
+0:02:39,880 --> 0:02:40,880
+ It's not a relay.
+
+41
+0:02:40,880 --> 0:02:44,840
+ It's like a thing you actually use to connect to the tour network on your computer.
+
+42
+0:02:44,880 --> 0:02:49,280
+ It implements only the core, only like the bare bones of the tour protocol.
+
+43
+0:02:49,280 --> 0:02:55,280
+ That is the tour spec.txt document and the search spec.txt document found in the tour
+
+44
+0:02:55,280 --> 0:02:58,280
+ specification repository.
+
+45
+0:02:58,280 --> 0:03:05,880
+ And it is more of an educational thing rather than something that people, if you really
+
+46
+0:03:05,880 --> 0:03:09,360
+ depend on privacy, you probably should not use that.
+
+47
+0:03:09,400 --> 0:03:16,680
+ And it still lacks many features such as directory support, hidden services, a SOX proxy, support
+
+48
+0:03:16,680 --> 0:03:19,160
+ to be a relay, and so on.
+
+49
+0:03:19,160 --> 0:03:24,200
+ And it probably also suffers from side channel attacks because I didn't pay that much attention
+
+50
+0:03:24,200 --> 0:03:29,080
+ to it as I was just trying to get a tour client working.
+
+51
+0:03:29,080 --> 0:03:31,320
+ And yeah, but hackers are very welcome.
+
+52
+0:03:31,320 --> 0:03:36,080
+ If you would like to do to implement some of these things or something completely else,
+
+53
+0:03:36,080 --> 0:03:39,280
+ just come to me and I will invite you to a martyr for sure.
+
+54
+0:03:39,280 --> 0:03:44,080
+ Yeah, so what was my motivation behind that?
+
+55
+0:03:44,080 --> 0:03:49,080
+ So as I've said, I've graduated from high school and in Germany it generally works like
+
+56
+0:03:49,080 --> 0:03:50,080
+ that.
+
+57
+0:03:50,080 --> 0:03:52,840
+ School ends in March and the finals are in April.
+
+58
+0:03:52,840 --> 0:03:56,520
+ So you have like a month free in order to prepare yourself for the exams.
+
+59
+0:03:56,520 --> 0:04:00,960
+ But let's be honest, you don't use a month for that, you use like the night before the
+
+60
+0:04:00,960 --> 0:04:02,240
+ exam for that.
+
+61
+0:04:02,240 --> 0:04:06,680
+ So yeah, you could do something productive, party all the time, or learn for the finals.
+
+62
+0:04:06,680 --> 0:04:10,280
+ I have done both of it and this like on the day before.
+
+63
+0:04:10,280 --> 0:04:15,800
+ So yeah, it was a good time, a time killer as well.
+
+64
+0:04:15,800 --> 0:04:22,600
+ Yeah, my background, it's like I've been doing low-level C development and Rust development
+
+65
+0:04:22,600 --> 0:04:24,800
+ for like three years.
+
+66
+0:04:24,800 --> 0:04:30,160
+ So I was more like a low-level guy and had no prior experience with Elixir and functional
+
+67
+0:04:30,480 --> 0:04:31,720
+ programming in general.
+
+68
+0:04:31,720 --> 0:04:36,800
+ And I began contributing to ARTI, which is TOR's re-implementation in Rust in the autumn
+
+69
+0:04:36,800 --> 0:04:38,840
+ of last year.
+
+70
+0:04:38,840 --> 0:04:42,560
+ And it got me hooked.
+
+71
+0:04:42,560 --> 0:04:45,160
+ I was really fascinated by the protocol itself.
+
+72
+0:04:45,160 --> 0:04:51,720
+ But then earlier this year, I saw the computer file video in Erlang and I got really amazed
+
+73
+0:04:51,720 --> 0:04:52,720
+ by that.
+
+74
+0:04:52,720 --> 0:04:57,800
+ It was an eye-opening experience, but I will come to this very, very soon.
+
+75
+0:04:57,800 --> 0:05:04,480
+ And because I had so much free time, I simply decided, okay, I'm going to learn Elixir,
+
+76
+0:05:04,480 --> 0:05:08,240
+ functional programming, and TOR with this project.
+
+77
+0:05:08,240 --> 0:05:12,080
+ And this is what came out in the end.
+
+78
+0:05:12,080 --> 0:05:18,520
+ So yeah, I will talk a little bit about Elixir and Erlang, what those technologies are, and
+
+79
+0:05:18,520 --> 0:05:23,120
+ because they have quite some differences from like the average programming language.
+
+80
+0:05:23,120 --> 0:05:28,380
+ So Elixir and Erlang are functional programming languages that both compile to the same virtual
+
+81
+0:05:28,380 --> 0:05:30,420
+ machine in bytecode.
+
+82
+0:05:30,420 --> 0:05:34,680
+ It's quite similar to Java and Kotlin and to JVM respectively.
+
+83
+0:05:34,680 --> 0:05:40,520
+ Because of that, Erlang libraries can also be used from inside Elixir and vice versa.
+
+84
+0:05:40,520 --> 0:05:43,040
+ And it's an extremely fault-tolerant language.
+
+85
+0:05:43,040 --> 0:05:46,460
+ It has like the slogan, write once, run forever.
+
+86
+0:05:46,460 --> 0:05:49,880
+ And it emphasizes process separation and isolation.
+
+87
+0:05:49,880 --> 0:05:58,520
+ And like as a real open BSD diehard in my youth, this gave me really, really wet dreams.
+
+88
+0:05:58,520 --> 0:06:03,140
+ And I just got amazed by that concept in general.
+
+89
+0:06:03,140 --> 0:06:09,840
+ And Erlang and Elixir, the entire ecosystem around it, it's like the first time IPC is
+
+90
+0:06:09,840 --> 0:06:12,560
+ actually easy and doable.
+
+91
+0:06:12,560 --> 0:06:20,040
+ And I really do not want to use Unix IPC again after I've did Elixir for the first time.
+
+92
+0:06:20,040 --> 0:06:25,540
+ And in my opinion, it's also one of the most underrated technologies that are out there.
+
+93
+0:06:25,540 --> 0:06:32,040
+ So especially in network-facing applications, there's like this traditional approach.
+
+94
+0:06:32,040 --> 0:06:37,860
+ The traditional approach usually works like there's one monolithic process, and it handles
+
+95
+0:06:37,860 --> 0:06:43,700
+ multiple connections through either an event loop or as a chrony.
+
+96
+0:06:43,700 --> 0:06:46,860
+ Both of the solutions have the downsides and pitfalls.
+
+97
+0:06:46,860 --> 0:06:52,700
+ An event loop destroys the linear execution flow of a program, whereas as a chrony, in
+
+98
+0:06:52,700 --> 0:06:54,860
+ my opinion, is like the helpers of programming.
+
+99
+0:06:54,860 --> 0:06:58,300
+ Because once it's inside your project, you can almost never get it out.
+
+100
+0:06:58,300 --> 0:07:02,460
+ I mean, everyone who has done ASIC and Rust probably knows what I'm talking about.
+
+101
+0:07:02,460 --> 0:07:07,820
+ And it adds like lots of craft.
+
+102
+0:07:07,820 --> 0:07:11,980
+ So you might ask, why don't you just use threads for handling multiple connections?
+
+103
+0:07:11,980 --> 0:07:17,640
+ I mean, that's actually what many beginners do, because it sounds like the most intuitive.
+
+104
+0:07:17,640 --> 0:07:19,340
+ But there are definitely some downsides to it.
+
+105
+0:07:19,340 --> 0:07:26,980
+ Most notably, on modern Linux systems, a thread takes up to eight, takes eight megabytes stack
+
+106
+0:07:26,980 --> 0:07:28,600
+ at least.
+
+107
+0:07:28,600 --> 0:07:30,060
+ And this becomes a problem.
+
+108
+0:07:30,060 --> 0:07:33,340
+ It's OK if you handle like 10 connections, but it becomes a real problem if you have
+
+109
+0:07:33,340 --> 0:07:38,540
+ like 10,000 connections, because you quickly run out of memory then.
+
+110
+0:07:38,540 --> 0:07:44,300
+ However, there are some notable exceptions, most notably OpenSSH and Postgres who spawn
+
+111
+0:07:44,300 --> 0:07:47,400
+ a new process for every authenticated connection.
+
+112
+0:07:47,400 --> 0:07:52,020
+ So they are not vulnerable to denial of service attacks that much, because you have to be
+
+113
+0:07:52,020 --> 0:07:54,700
+ authenticated before it forks.
+
+114
+0:07:54,700 --> 0:07:57,900
+ But the Elixir process is quite different.
+
+115
+0:07:57,900 --> 0:08:01,020
+ Actually, Elixir does it one process per connection.
+
+116
+0:08:01,020 --> 0:08:07,260
+ I will tell what the difference about a thread and a process is in a second.
+
+117
+0:08:07,260 --> 0:08:12,140
+ But they are not real OS processors, so they do not take like an eight megabyte stack for
+
+118
+0:08:12,140 --> 0:08:13,640
+ each thing.
+
+119
+0:08:13,640 --> 0:08:18,820
+ They offer isolation, and they make the code, in my opinion, much easier to understand.
+
+120
+0:08:18,820 --> 0:08:26,740
+ And this isolation leads to, in my opinion, a much bigger security benefit.
+
+121
+0:08:26,740 --> 0:08:29,620
+ So you might be wondering, isn't that like Go routines?
+
+122
+0:08:29,620 --> 0:08:32,220
+ I mean, they are also like very cheap and solar.
+
+123
+0:08:32,220 --> 0:08:33,220
+ That's kind of true.
+
+124
+0:08:33,220 --> 0:08:34,780
+ They are very similar.
+
+125
+0:08:34,780 --> 0:08:39,140
+ From an OS perspective, they are very similar implemented.
+
+126
+0:08:39,140 --> 0:08:43,300
+ But the major difference is that Go routines are more conceptualized as threads, whereas
+
+127
+0:08:43,300 --> 0:08:48,380
+ Elixir processes are, like the name suggests, more like processors.
+
+128
+0:08:48,380 --> 0:08:54,260
+ The difference is that a thread can access all resources inside a process, whereas a
+
+129
+0:08:54,260 --> 0:09:00,180
+ process itself is its own isolated unit that exists and run on its own.
+
+130
+0:09:00,180 --> 0:09:04,020
+ This is also the reason why in multi-thread applications, you often have to deal with
+
+131
+0:09:04,020 --> 0:09:07,500
+ things like mutexes and those kind of lock mechanisms.
+
+132
+0:09:07,500 --> 0:09:11,060
+ You do not have that when you use processes, at least.
+
+133
+0:09:11,060 --> 0:09:14,780
+ You sometimes do have that as well, but it's something different then.
+
+134
+0:09:14,780 --> 0:09:22,820
+ And yeah, it has an extreme security benefit because, like, if one process gets taken over
+
+135
+0:09:22,980 --> 0:09:29,460
+ by an attacker, the impact they can do is much less significant.
+
+136
+0:09:29,460 --> 0:09:34,020
+ So yeah, let's look at my project from, like, 10,000 feet.
+
+137
+0:09:34,020 --> 0:09:37,020
+ I've developed it using Elixir 1.15.
+
+138
+0:09:37,020 --> 0:09:44,140
+ It supports the link protocol version 4 of the top protocol only because it's like not...
+
+139
+0:09:44,140 --> 0:09:48,020
+ I was a bit too lazy to implement version 5 because it had, like, a feature.
+
+140
+0:09:48,020 --> 0:09:51,500
+ Yeah, I wasn't yet motivated to do that.
+
+141
+0:09:51,500 --> 0:09:56,860
+ And version 3, well, the difference between version 3 and version 4 is, like, very minimal.
+
+142
+0:09:56,860 --> 0:09:59,940
+ And version 1 and 2 are, like, really, really old, really legacy.
+
+143
+0:09:59,940 --> 0:10:03,180
+ I'm not even sure if Ctor still supports them.
+
+144
+0:10:03,180 --> 0:10:07,340
+ And yeah, the code is pretty good documented, in my opinion.
+
+145
+0:10:07,340 --> 0:10:10,980
+ It has a consistent type spec almost all over the place.
+
+146
+0:10:10,980 --> 0:10:12,780
+ And its design is also very modular.
+
+147
+0:10:12,780 --> 0:10:15,220
+ I got inspired by Arty.
+
+148
+0:10:15,220 --> 0:10:19,180
+ So there are, like, four modules right now, Tor cell, which handles, like, the cells as
+
+149
+0:10:19,220 --> 0:10:21,580
+ Elixir data structures.
+
+150
+0:10:21,580 --> 0:10:25,900
+ Tor cert, which handles the elliptic curve certificates, which is a custom Tor certificate
+
+151
+0:10:25,900 --> 0:10:27,100
+ format.
+
+152
+0:10:27,100 --> 0:10:33,020
+ Then there's Tor crypto, which does, like, the handshakes and other things related to
+
+153
+0:10:33,020 --> 0:10:34,660
+ cryptography.
+
+154
+0:10:34,660 --> 0:10:40,300
+ And then there's also the Tor proto module, which is, like, the heart of the entire thing.
+
+155
+0:10:40,300 --> 0:10:48,260
+ But the most complexity really lies within the Tor cell and the Tor proto module.
+
+156
+0:10:48,260 --> 0:10:51,900
+ So let's take a look at the Tor cell thing.
+
+157
+0:10:51,900 --> 0:10:55,740
+ It implements the cells, which are Tor's basic unit of communication.
+
+158
+0:10:55,740 --> 0:11:01,180
+ All traffic that is sent throughout the Tor socket is done in cells.
+
+159
+0:11:01,180 --> 0:11:05,500
+ And the parsing takes place with pattern matching, which is, like, a really cool thing that's
+
+160
+0:11:05,500 --> 0:11:07,460
+ supported by Erling and Elixir.
+
+161
+0:11:07,460 --> 0:11:11,620
+ It basically allows you to parse a protocol within the language.
+
+162
+0:11:11,620 --> 0:11:14,580
+ And not many languages offer that as well.
+
+163
+0:11:15,260 --> 0:11:21,060
+ A cell has three fields, a Cirque ID, which is like a 32-bit integer, which indicates
+
+164
+0:11:21,060 --> 0:11:24,060
+ to which circuit this thing belongs.
+
+165
+0:11:24,060 --> 0:11:29,620
+ Then there's the command field, which is an atom containing what the cell means, like
+
+166
+0:11:29,620 --> 0:11:31,180
+ the semantic value of it.
+
+167
+0:11:31,180 --> 0:11:33,220
+ And the payload is dependent on the command.
+
+168
+0:11:33,220 --> 0:11:40,940
+ And it contains a decoded payload that is actually, yeah, viable data then.
+
+169
+0:11:40,940 --> 0:11:44,620
+ This module, however, performs no cryptography.
+
+170
+0:11:44,620 --> 0:11:46,040
+ This is done outside of it.
+
+171
+0:11:46,040 --> 0:11:48,060
+ It doesn't even validate the certs and those kind of things.
+
+172
+0:11:48,060 --> 0:11:54,560
+ It just parsed them into plain, boring Elixir data structures to be operated on later on.
+
+173
+0:11:54,560 --> 0:11:58,020
+ So these are the connection cells, but Tor also has relay cells.
+
+174
+0:11:58,020 --> 0:12:01,940
+ They are the actual cells that use the onion routing principle.
+
+175
+0:12:01,940 --> 0:12:07,380
+ That is, they are encrypted, and a layer gets removed at every hop, or a layer gets added
+
+176
+0:12:07,380 --> 0:12:12,380
+ at every hop if it's going backward.
+
+177
+0:12:12,380 --> 0:12:18,380
+ The decrypted relay cells are implemented in the TorCell.RelayCell data structure.
+
+178
+0:12:18,380 --> 0:12:24,780
+ And once they are encrypted, their ciphertext goes into a TorCell.Relay data structure.
+
+179
+0:12:24,780 --> 0:12:31,020
+ And the decrypted one has three fields, command, which is also an atom, the stream ID, which
+
+180
+0:12:31,020 --> 0:12:37,060
+ is a 16-bit integer indicating to which stream this belongs, and then there's the data containing
+
+181
+0:12:37,060 --> 0:12:39,660
+ the decoded data eventually.
+
+182
+0:12:39,660 --> 0:12:43,260
+ It has two public functions, decrypt and encrypt.
+
+183
+0:12:43,260 --> 0:12:51,740
+ Decrypt takes an onion skin, an array of stream cipher keys for the backward direction, and
+
+184
+0:12:51,740 --> 0:12:57,660
+ a digist, and speaking more concrete, the backward digist, which is used to know if
+
+185
+0:12:57,660 --> 0:13:04,000
+ a cell has been fully decrypted, and it returns a tuple containing a Boolean.
+
+186
+0:13:04,000 --> 0:13:06,520
+ If the Boolean is true, the cell has been fully decrypted.
+
+187
+0:13:06,520 --> 0:13:10,440
+ If it's false, there are still onion skins left.
+
+188
+0:13:10,440 --> 0:13:16,800
+ The second item is either the decoded TorCell.RelayCell, or it's an onion skin which is still ciphertext
+
+189
+0:13:16,800 --> 0:13:20,520
+ but with a certain amount of onion skins removed from it.
+
+190
+0:13:20,520 --> 0:13:23,280
+ And the last one is the updated backward digist.
+
+191
+0:13:23,280 --> 0:13:24,680
+ With encrypt, it's quite similar.
+
+192
+0:13:24,720 --> 0:13:33,200
+ You pass in the plaintext RelayCell, then an array of forward symmetric cipher keys,
+
+193
+0:13:33,200 --> 0:13:38,680
+ symmetric stream cipher keys, and the forward digist.
+
+194
+0:13:38,680 --> 0:13:43,080
+ What you get in return is the onion skin of it and the forward digist, and then you can
+
+195
+0:13:43,080 --> 0:13:49,800
+ place the onion skin into the encrypted cell and send it over the wire.
+
+196
+0:13:49,800 --> 0:13:54,040
+ Then there's also the TorCryptoModule, which performs various cryptographic operations
+
+197
+0:13:54,040 --> 0:13:59,200
+ that are simply required by Tor, most notably the Antor handshake, which is used for circuit,
+
+198
+0:13:59,200 --> 0:14:02,280
+ for establishing circuits.
+
+199
+0:14:02,280 --> 0:14:09,040
+ It also offers a small abstraction about the digist implementation, and it also implements
+
+200
+0:14:09,040 --> 0:14:13,120
+ the encryption and decryption of onion skins.
+
+201
+0:14:13,120 --> 0:14:18,920
+ I've called them onion streams because they are stream cipher, and so they have a state.
+
+202
+0:14:18,920 --> 0:14:20,440
+ And it's a pretty small module.
+
+203
+0:14:20,440 --> 0:14:25,040
+ It's like only 150 lines of code or something.
+
+204
+0:14:25,040 --> 0:14:32,440
+ But the real stuff is going on in the TorProtomodule, which implements the actual Tor protocol.
+
+205
+0:14:32,440 --> 0:14:37,320
+ It's implemented using GenServer and a client API.
+
+206
+0:14:37,320 --> 0:14:40,720
+ And it is highly process-oriented.
+
+207
+0:14:40,720 --> 0:14:48,520
+ That is, there is a separation of resource as much as possible, which you can see in
+
+208
+0:14:48,520 --> 0:14:51,080
+ the next slide.
+
+209
+0:14:51,080 --> 0:14:54,720
+ This is an average session using that.
+
+210
+0:14:54,720 --> 0:14:57,800
+ So there are multiple connection processes.
+
+211
+0:14:57,800 --> 0:15:02,320
+ Each connection has a satellite process and also multiple circuits.
+
+212
+0:15:02,320 --> 0:15:09,080
+ And each circuit then also has several streams, and they communicate in a linear fashion.
+
+213
+0:15:09,080 --> 0:15:12,940
+ So it's not that the connection communicates with a stream, but when the connection communicates
+
+214
+0:15:12,940 --> 0:15:16,600
+ with a stream, it passes through the circuit.
+
+215
+0:15:16,600 --> 0:15:20,320
+ So it just talks to the parent in such a kind of fashion.
+
+216
+0:15:20,320 --> 0:15:34,400
+ Yeah, here you can see it in a more smaller version if the previous slide was a bit overwhelming.
+
+217
+0:15:34,400 --> 0:15:41,440
+ And what's a bit notable is that all of these processes, except the stream process, have
+
+218
+0:15:41,440 --> 0:15:44,820
+ a thing called epiphyphos.
+
+219
+0:15:44,820 --> 0:15:52,740
+ The thing is that cells have to be enqueued for processes so they can request them and
+
+220
+0:15:52,740 --> 0:15:54,840
+ obtain them from their parent respectively.
+
+221
+0:15:54,840 --> 0:16:01,100
+ And epiphyphos is effectively just a map where the keys are the process identifiers and the
+
+222
+0:16:01,100 --> 0:16:06,360
+ values are phyphos.
+
+223
+0:16:06,360 --> 0:16:10,580
+ And so we are going to have a look at the first process now, which is the connection
+
+224
+0:16:10,580 --> 0:16:11,580
+ process.
+
+225
+0:16:12,340 --> 0:16:16,080
+ So this is the connection of the top protocol, and it's responsible for spawning the circuit
+
+226
+0:16:16,080 --> 0:16:21,340
+ processes through a call I've called create.
+
+227
+0:16:21,340 --> 0:16:28,740
+ It also spawns a single satellite process that handles the raw TLS circuit.
+
+228
+0:16:28,740 --> 0:16:32,480
+ Why this has to be done, I will explain that in a second.
+
+229
+0:16:32,480 --> 0:16:38,980
+ And it gets pulled by the satellite process every time a new cell arrives.
+
+230
+0:16:38,980 --> 0:16:42,660
+ And those cells are then either processed by the connection if the circuit ID is zero
+
+231
+0:16:42,660 --> 0:16:48,140
+ or are redirected to the appropriate circuits if their circuit ID is not zero respectively.
+
+232
+0:16:48,140 --> 0:16:54,380
+ And if that's the case, it pulls the appropriate circuits and it has like, and that's the state
+
+233
+0:16:54,380 --> 0:16:55,620
+ of it.
+
+234
+0:16:55,620 --> 0:17:02,420
+ So there's the circuits map that is like simply a mapping of the circuit IDs with their accompanying
+
+235
+0:17:02,420 --> 0:17:04,420
+ pits.
+
+236
+0:17:04,500 --> 0:17:08,940
+ Then there's the phyphos, which contain the enqueued not yet fetched cells for all of
+
+237
+0:17:08,940 --> 0:17:10,380
+ the circuits.
+
+238
+0:17:10,380 --> 0:17:16,460
+ Then there's the router field, which just stores the only router we are connected to.
+
+239
+0:17:16,460 --> 0:17:18,660
+ And then there's also the satellite process.
+
+240
+0:17:18,660 --> 0:17:24,340
+ And then there's also the satellite field that contains the pit of the satellite process.
+
+241
+0:17:24,340 --> 0:17:29,740
+ So yeah, and generally the workflow of it works like that.
+
+242
+0:17:29,740 --> 0:17:34,380
+ The satellite process pulls the connection process and the connection process talks to
+
+243
+0:17:34,380 --> 0:17:40,580
+ the satellite process by sending either the queue messages or when it sends a dequeue,
+
+244
+0:17:40,580 --> 0:17:43,140
+ it gets a cell that's in the phyfo.
+
+245
+0:17:43,140 --> 0:17:48,460
+ And if you send cell, it simply sends a cell outside of it.
+
+246
+0:17:48,460 --> 0:17:51,020
+ And with the circuit, it's quite similar.
+
+247
+0:17:51,020 --> 0:17:56,860
+ The connection pulls the circuit and the circuit either dequeues, sends a cell or informs the
+
+248
+0:17:56,860 --> 0:18:02,500
+ parent that it's going to die now.
+
+249
+0:18:02,500 --> 0:18:05,420
+ So yeah, let's talk about the satellite process a bit now.
+
+250
+0:18:05,420 --> 0:18:12,340
+ It creates and manages the raw TLS socket and it works on cell level.
+
+251
+0:18:12,340 --> 0:18:17,380
+ So the serialization and deserialization of cells happens there, process just sends cells
+
+252
+0:18:17,380 --> 0:18:22,580
+ there and they do everything that is left to do then.
+
+253
+0:18:22,580 --> 0:18:28,260
+ It pulls the parent connection process whenever a cell has been decoded and enqueued successfully
+
+254
+0:18:28,260 --> 0:18:31,780
+ and the state consists of the following field.
+
+255
+0:18:31,780 --> 0:18:37,700
+ First and foremost, a buffer because it receives the raw TCP TLS data.
+
+256
+0:18:37,700 --> 0:18:43,940
+ There might be data that cannot be fully passed yet because there's not yet enough data to
+
+257
+0:18:43,940 --> 0:18:46,300
+ construct a full cell from it.
+
+258
+0:18:46,300 --> 0:18:49,940
+ Then there's also the connection, which is the pit of the connection process.
+
+259
+0:18:49,980 --> 0:18:51,980
+ Then there's the FIFOs.
+
+260
+0:18:51,980 --> 0:18:55,580
+ In fact, it could be called just FIFO.
+
+261
+0:18:55,580 --> 0:19:00,740
+ The plural is a bit misleading here and it contains the enqueued cells for the connection.
+
+262
+0:19:00,740 --> 0:19:05,180
+ Then there's the socket field, which just contains the actual TLS socket.
+
+263
+0:19:05,180 --> 0:19:07,520
+ And then there's the virginity boolean.
+
+264
+0:19:07,520 --> 0:19:12,460
+ This has just one purpose.
+
+265
+0:19:12,460 --> 0:19:17,940
+ Usually until a connection until the first version cell has been received, all circuit
+
+266
+0:19:17,940 --> 0:19:24,340
+ ID fields are two byte integers instead of four byte integers because of backward compatibility.
+
+267
+0:19:24,340 --> 0:19:30,820
+ And once the first version cell has arrived from the responder, it will set this thing
+
+268
+0:19:30,820 --> 0:19:32,300
+ to false.
+
+269
+0:19:32,300 --> 0:19:37,380
+ So the circuit ID will then be passed with four byte integers from there on.
+
+270
+0:19:37,380 --> 0:19:40,260
+ And yeah, you might be asking why is there a satellite?
+
+271
+0:19:40,260 --> 0:19:44,740
+ I mean, the idea of a separate process just for handling the TLS connection may sound
+
+272
+0:19:44,820 --> 0:19:47,260
+ a bit unintuitive.
+
+273
+0:19:47,260 --> 0:19:51,140
+ And you may be wondering why not do that in the connection process directly.
+
+274
+0:19:51,140 --> 0:19:54,620
+ But there are several reasons for that.
+
+275
+0:19:54,620 --> 0:20:01,600
+ Most notably, the connection process has to receive data while it's currently already
+
+276
+0:20:01,600 --> 0:20:06,580
+ processing a request.
+
+277
+0:20:06,580 --> 0:20:09,900
+ In other languages, you would simply call a receive thing, which will block until the
+
+278
+0:20:09,900 --> 0:20:11,060
+ data arrives.
+
+279
+0:20:11,060 --> 0:20:15,540
+ Unfortunately, that's not the Elixir way to do it because in Elixir, you do not obtain
+
+280
+0:20:15,540 --> 0:20:19,140
+ the data from the socket by using a receive or something like that.
+
+281
+0:20:19,140 --> 0:20:24,060
+ Instead, the raw data gets delivered to the process mailbox.
+
+282
+0:20:24,060 --> 0:20:32,780
+ And I would have to do a manual receive then, like the Erlang Elixir receive keyword.
+
+283
+0:20:32,780 --> 0:20:37,060
+ And this is, I wouldn't say it's discouraged, but it's discouraged in the way I'm doing
+
+284
+0:20:37,100 --> 0:20:39,340
+ it because I'm using GenServer.
+
+285
+0:20:39,340 --> 0:20:43,740
+ And the entire purpose of GenServer is to get rid of these receive statements.
+
+286
+0:20:43,740 --> 0:20:47,620
+ So that would be a bit counterintuitive.
+
+287
+0:20:47,620 --> 0:20:53,140
+ And beside this, it also offers the great advantage that the TLS socket is in a separate
+
+288
+0:20:53,140 --> 0:20:59,160
+ process, which is very good because the TLS socket also contains cryptographic data, which
+
+289
+0:20:59,160 --> 0:21:04,900
+ is nice if it's separated in its own thing.
+
+290
+0:21:04,900 --> 0:21:07,780
+ So yeah, then there are also the circuit processes.
+
+291
+0:21:07,780 --> 0:21:11,140
+ They obviously manage a circuit of the top protocol.
+
+292
+0:21:11,140 --> 0:21:19,260
+ And what's really cool about it is that they are the only process that have the real cryptographic
+
+293
+0:21:19,260 --> 0:21:23,300
+ keys like the shared secret and the other keys derived from that.
+
+294
+0:21:23,300 --> 0:21:28,420
+ So if the other processes get pawned, it's not as critical as if that one would get pawned
+
+295
+0:21:28,420 --> 0:21:33,260
+ because that's the one holding the keys.
+
+296
+0:21:33,260 --> 0:21:38,540
+ And it spawns the stream processes, which are then the actual TCP streams.
+
+297
+0:21:38,540 --> 0:21:41,180
+ We will talk about that very soon either.
+
+298
+0:21:41,180 --> 0:21:48,100
+ And it gets pulled by the connection process every time a cell for that circuit has arrived.
+
+299
+0:21:48,100 --> 0:21:53,700
+ And if it receives that cell, it does some things with it.
+
+300
+0:21:53,700 --> 0:21:58,980
+ Most notably, if it's a relay cell, it performs a decryption, encryption there.
+
+301
+0:21:58,980 --> 0:22:05,180
+ And if the decrypted relay cell happens to be associated with a stream that's open, it
+
+302
+0:22:05,180 --> 0:22:08,260
+ will do the same that the connection does with the circuit.
+
+303
+0:22:08,260 --> 0:22:12,660
+ It will pull the stream and enqueue that cell for it.
+
+304
+0:22:12,660 --> 0:22:16,900
+ And yeah, the state consists of obviously the circuit ID that was assigned to it by
+
+305
+0:22:16,900 --> 0:22:18,500
+ the connection.
+
+306
+0:22:18,500 --> 0:22:21,020
+ Then it contains the pit of the appropriate connection.
+
+307
+0:22:21,020 --> 0:22:26,580
+ And it also contains the FIFOs field to store the enqueued cells.
+
+308
+0:22:26,580 --> 0:22:33,660
+ Then there's also the hops array, which is an array of all hops the circuit is extended
+
+309
+0:22:33,660 --> 0:22:35,900
+ to, including the cryptographic keys.
+
+310
+0:22:35,900 --> 0:22:37,900
+ They are also stored inside that.
+
+311
+0:22:37,900 --> 0:22:45,180
+ And last but not least, there's also a map of all stream IDs with their appropriate stream
+
+312
+0:22:45,180 --> 0:22:47,460
+ processes.
+
+313
+0:22:47,460 --> 0:22:52,820
+ And here you can see how it works in combination with the connection stream processes.
+
+314
+0:22:52,860 --> 0:22:58,220
+ So the connection process pulls whenever a new cell arrives, the circuit decues it.
+
+315
+0:22:58,220 --> 0:23:00,540
+ And similar, it goes with the stream.
+
+316
+0:23:00,540 --> 0:23:03,780
+ The circuit pulls the stream if new data has arrived.
+
+317
+0:23:03,780 --> 0:23:09,380
+ And the stream then sends these messages, like it either decues a cell from it, it sends
+
+318
+0:23:09,380 --> 0:23:15,500
+ a cell, or it notifies the circuits that the stream is now going to die.
+
+319
+0:23:15,500 --> 0:23:19,580
+ What's quite interesting is that the send cell contains like the plaintext cell, and
+
+320
+0:23:19,580 --> 0:23:22,180
+ the encryption, like I said, takes place here.
+
+321
+0:23:22,180 --> 0:23:25,100
+ So the stream doesn't know anything about the cryptographic keys, which is really nice
+
+322
+0:23:25,100 --> 0:23:27,860
+ in my opinion.
+
+323
+0:23:27,860 --> 0:23:30,940
+ And yeah, it manages a stream.
+
+324
+0:23:30,940 --> 0:23:36,100
+ So yeah, I've talked about the stream processes quite a bit.
+
+325
+0:23:36,100 --> 0:23:37,540
+ So what are they actually?
+
+326
+0:23:37,540 --> 0:23:42,460
+ They manage a stream of the top protocol that is an actual TCP connection.
+
+327
+0:23:42,460 --> 0:23:47,500
+ During the creation, it accepts a closure that handles the received data, which is like
+
+328
+0:23:47,500 --> 0:23:49,100
+ an amazing thing.
+
+329
+0:23:49,100 --> 0:23:53,460
+ My first idea for that design was to simply include a pit rather than a closure.
+
+330
+0:23:53,460 --> 0:23:58,980
+ And the pit would then like handle incoming traffic there.
+
+331
+0:23:58,980 --> 0:24:02,860
+ But that's actually not that good idea, because I would have to define a message format for
+
+332
+0:24:02,860 --> 0:24:04,220
+ it and those kind of things.
+
+333
+0:24:04,220 --> 0:24:06,220
+ But a closure gives you like unlimited power.
+
+334
+0:24:06,220 --> 0:24:11,540
+ It's much cooler because a closure can also lose the local scope and those kind of things.
+
+335
+0:24:11,540 --> 0:24:16,820
+ And it gets pulled by the circuit if an appropriate stream relay cell has arrived.
+
+336
+0:24:16,820 --> 0:24:21,420
+ And like I've said, no encryption and decryption is performed there.
+
+337
+0:24:21,420 --> 0:24:28,300
+ And it accepts data from external processes using the client API.
+
+338
+0:24:28,300 --> 0:24:31,060
+ So yeah, how does the client API actually work in that sense?
+
+339
+0:24:31,060 --> 0:24:33,240
+ I've talked about it quite a bit.
+
+340
+0:24:33,240 --> 0:24:35,780
+ So first and foremost, a connection is created.
+
+341
+0:24:35,780 --> 0:24:43,760
+ Afterwards, a circuit is created on that connection, presumably more circuits as well.
+
+342
+0:24:43,760 --> 0:24:47,120
+ The circuit is extended two times to have like a three hopped circuit because that's
+
+343
+0:24:47,120 --> 0:24:50,160
+ what Tor likes to do.
+
+344
+0:24:50,160 --> 0:24:52,600
+ Then it creates a stream with providing a closure.
+
+345
+0:24:52,600 --> 0:24:56,520
+ I already said that this offers like unlimited power.
+
+346
+0:24:56,520 --> 0:25:00,280
+ Then optionally data can be sent to the TCP stream.
+
+347
+0:25:00,280 --> 0:25:04,120
+ And once it's done, you terminate the stream, you terminate the circuit and you terminate
+
+348
+0:25:04,120 --> 0:25:05,120
+ the connection.
+
+349
+0:25:05,120 --> 0:25:06,480
+ However, this is done recursively.
+
+350
+0:25:06,480 --> 0:25:11,880
+ Like if you forget these things and just terminate the connection, the connection will recursively
+
+351
+0:25:12,160 --> 0:25:16,840
+ terminate the circuits, which will terminate all associated streams.
+
+352
+0:25:16,840 --> 0:25:19,000
+ So what are the upcoming features?
+
+353
+0:25:19,000 --> 0:25:20,480
+ What are my plans for this project?
+
+354
+0:25:20,480 --> 0:25:24,520
+ Like I've said, it was more a thing to learn Elixir and to learn Tor a bit.
+
+355
+0:25:24,520 --> 0:25:26,560
+ I definitely accomplished the first thing.
+
+356
+0:25:26,560 --> 0:25:29,480
+ I feel pretty confident with Elixir now.
+
+357
+0:25:29,480 --> 0:25:33,280
+ But with Tor, it's like, it's a Sisyphus task.
+
+358
+0:25:33,280 --> 0:25:38,840
+ You know, Tor is like, there's so much things you can learn about it and it's still a very
+
+359
+0:25:38,840 --> 0:25:40,640
+ open field of research.
+
+360
+0:25:40,640 --> 0:25:45,480
+ But I hope I can still contribute to Tor and do some stuff there because it's a really
+
+361
+0:25:45,480 --> 0:25:48,760
+ amazing project and it's really interesting as well.
+
+362
+0:25:48,760 --> 0:25:54,760
+ Yeah, currently we have a priority to implement the directory protocol as well as the path
+
+363
+0:25:54,760 --> 0:26:00,640
+ protocol because right now all routers are hard coded when you want to connect to them,
+
+364
+0:26:00,640 --> 0:26:05,220
+ which is not very nice, especially because you like have to redo this like every three
+
+365
+0:26:05,220 --> 0:26:08,720
+ weeks when the keys expire.
+
+366
+0:26:08,720 --> 0:26:13,040
+ Even services would also be nice, but I think that this would be really hard.
+
+367
+0:26:13,040 --> 0:26:15,800
+ But maybe I have the time.
+
+368
+0:26:15,800 --> 0:26:17,080
+ We will see.
+
+369
+0:26:17,080 --> 0:26:22,200
+ And relay support is not planned right now, but I'm not against this, but it's simply
+
+370
+0:26:22,200 --> 0:26:24,320
+ not on my priority list either.
+
+371
+0:26:24,320 --> 0:26:28,800
+ But as I've said, I'm starting to go to university very soon and I do not know how much free
+
+372
+0:26:28,800 --> 0:26:30,400
+ time I will have then.
+
+373
+0:26:30,400 --> 0:26:34,480
+ So I'm not sure how the project will continue.
+
+374
+0:26:34,480 --> 0:26:37,720
+ And the development takes place in our fossil repository.
+
+375
+0:26:37,720 --> 0:26:40,620
+ We also have a GitHub mirror available here.
+
+376
+0:26:40,620 --> 0:26:45,520
+ And pull requests and issues are more than welcome.
+
+377
+0:26:45,520 --> 0:26:51,240
+ So while I've developed this, there were also many pitfalls I've encountered.
+
+378
+0:26:51,240 --> 0:26:59,760
+ And I'm especially talking to you, future implementer of another Tor specification.
+
+379
+0:26:59,760 --> 0:27:06,080
+ I think you owe me a beer, but fortunately those pitfalls I've encountered you should
+
+380
+0:27:06,080 --> 0:27:11,360
+ not encounter them because I've submitted quite a few patches to the specification in
+
+381
+0:27:11,360 --> 0:27:13,960
+ order to fix them, hopefully.
+
+382
+0:27:13,960 --> 0:27:18,320
+ So what were the greatest pitfalls in an ascending order?
+
+383
+0:27:18,320 --> 0:27:23,220
+ First and foremost, circuit IDs need to have a most significant byte of one.
+
+384
+0:27:23,220 --> 0:27:28,520
+ I forgot that because I didn't read the spec specification that carefully, but there was
+
+385
+0:27:28,520 --> 0:27:33,240
+ also I wouldn't call it a mistake in the specification, but the specification wasn't that clear that
+
+386
+0:27:33,240 --> 0:27:36,520
+ this is like a really hard must requirement.
+
+387
+0:27:36,520 --> 0:27:41,280
+ It just said that it's done, but it doesn't say it must be done.
+
+388
+0:27:41,280 --> 0:27:45,100
+ I fixed that because otherwise nothing will work.
+
+389
+0:27:45,100 --> 0:27:49,440
+ And it took me like an afternoon to figure that out.
+
+390
+0:27:49,440 --> 0:27:55,640
+ I could have done that much easier if I had read it properly or if it would have been
+
+391
+0:27:55,640 --> 0:27:57,160
+ a must statement.
+
+392
+0:27:57,160 --> 0:28:04,360
+ Another pitfall was that circuit extensions have to be done in a relay early cell and
+
+393
+0:28:04,360 --> 0:28:07,280
+ not in a relay cell.
+
+394
+0:28:07,280 --> 0:28:11,540
+ This is the design for that or the purpose behind that design decision is that you simply
+
+395
+0:28:11,540 --> 0:28:15,960
+ do not extend the circuits indefinitely with relay early cells.
+
+396
+0:28:15,960 --> 0:28:16,960
+ That's like a hard limit.
+
+397
+0:28:16,960 --> 0:28:20,880
+ I think it's something like eight, so once there are more like eight relay early cells
+
+398
+0:28:20,880 --> 0:28:23,800
+ received from that connection, everything will fail.
+
+399
+0:28:23,800 --> 0:28:26,180
+ And this was also only slightly mentioned in the spec.
+
+400
+0:28:26,180 --> 0:28:30,200
+ If I had read it a bit more carefully, I think I wouldn't have had that problem.
+
+401
+0:28:30,200 --> 0:28:36,480
+ It was a bit frustrating, but it eventually worked out because the creation of a circuit
+
+402
+0:28:36,480 --> 0:28:38,020
+ worked, but the extension didn't work.
+
+403
+0:28:38,020 --> 0:28:40,280
+ And I was like, well, am I doing the hand check wrong?
+
+404
+0:28:40,280 --> 0:28:44,280
+ I was just looking into the hand check because it worked like the first time, but not the
+
+405
+0:28:44,280 --> 0:28:45,280
+ other times.
+
+406
+0:28:45,280 --> 0:28:51,200
+ But in fact, it turned out to be a much different problem than I initially assumed.
+
+407
+0:28:51,200 --> 0:28:59,240
+ So then there's like the number two, which is I definitely thought way too complicated
+
+408
+0:28:59,240 --> 0:29:02,760
+ in the digits verification.
+
+409
+0:29:02,760 --> 0:29:05,720
+ Everyone who has implemented Tor on their own knows what I'm talking about.
+
+410
+0:29:05,720 --> 0:29:12,800
+ The digits verification is something like, if the digits is verified, if it's valid,
+
+411
+0:29:12,800 --> 0:29:18,760
+ a relay cell has reached the end and it's fully decoded now.
+
+412
+0:29:18,760 --> 0:29:22,920
+ And I was thinking way too complicated about it because relay cells contain a field that's
+
+413
+0:29:22,920 --> 0:29:25,340
+ called digits, which is four byte long.
+
+414
+0:29:25,340 --> 0:29:31,000
+ And the digits is like all relay cells that have been sent so far.
+
+415
+0:29:31,000 --> 0:29:37,480
+ However, the digits field has to be set to zero because you cannot include the digits
+
+416
+0:29:37,480 --> 0:29:39,880
+ if it hasn't been computed yet.
+
+417
+0:29:39,880 --> 0:29:45,000
+ And I thought like, okay, the zero digits is like only a temporary thing.
+
+418
+0:29:45,000 --> 0:29:49,640
+ And then like the real digits that was the temporary thing gets sent into the real digits.
+
+419
+0:29:49,640 --> 0:29:51,520
+ I was thinking way too complicated.
+
+420
+0:29:51,520 --> 0:29:56,960
+ You can still see my mistakes in the Git logs.
+
+421
+0:29:56,960 --> 0:30:01,840
+ But I'm very proud that I hopefully fixed that for you because I've written an entire
+
+422
+0:30:01,840 --> 0:30:05,000
+ section on Tor specification providing a pseudo code.
+
+423
+0:30:05,000 --> 0:30:08,440
+ So hopefully this doesn't happen again.
+
+424
+0:30:08,440 --> 0:30:12,360
+ And the last thing, which was like definitely one of the most frustrating experiences in
+
+425
+0:30:12,400 --> 0:30:20,000
+ my life, was realizing that Tor, or not realizing that Tor uses a symmetric stream cipher for
+
+426
+0:30:20,000 --> 0:30:21,400
+ the onion skins.
+
+427
+0:30:21,400 --> 0:30:24,000
+ I assumed that it would use a block cipher for whatever reason.
+
+428
+0:30:24,000 --> 0:30:25,760
+ I'm not quite sure why.
+
+429
+0:30:25,760 --> 0:30:29,880
+ And I mean, thinking about this a bit further, it makes like no sense because the onion skins
+
+430
+0:30:29,880 --> 0:30:36,160
+ are 509 byte long and no sane block cipher would return such an odd value.
+
+431
+0:30:36,160 --> 0:30:39,820
+ But it took me a long time to figure it out.
+
+432
+0:30:39,860 --> 0:30:45,900
+ And when I eventually figured out, I was just like, okay, it's AES 128 CTR, okay, not sure
+
+433
+0:30:45,900 --> 0:30:51,700
+ what the CTR means, just ignore it, just still continue using the block cipher functions,
+
+434
+0:30:51,700 --> 0:30:56,700
+ which eventually resulted in that I didn't kept a state at all.
+
+435
+0:30:56,700 --> 0:31:02,420
+ And this result in the really nasty bug that the first encryption always worked, but all
+
+436
+0:31:02,420 --> 0:31:07,420
+ letter ones failed because I always reinitialized the state for every encryption.
+
+437
+0:31:07,420 --> 0:31:10,300
+ And this was so hard to figure out.
+
+438
+0:31:10,300 --> 0:31:16,260
+ And when I eventually figured it out, I was really, really mad because everyone who has
+
+439
+0:31:16,260 --> 0:31:21,580
+ done functional programming knows that when you have a state, it taints throughout the
+
+440
+0:31:21,580 --> 0:31:23,660
+ code base.
+
+441
+0:31:23,660 --> 0:31:27,060
+ And I didn't design it with that state design in mind at first place.
+
+442
+0:31:27,060 --> 0:31:33,300
+ So I had to redesign quite a bit, although it wasn't that bad because the Erlang crypto
+
+443
+0:31:33,300 --> 0:31:36,700
+ stream cipher module is not functional.
+
+444
+0:31:36,740 --> 0:31:43,180
+ It has side effects, which is a bit ugly, but in that case, I had luck and misfortune
+
+445
+0:31:43,180 --> 0:31:45,260
+ or fortune and misfortune.
+
+446
+0:31:45,260 --> 0:31:50,620
+ Yeah, so thank you, Erlang guys, I'm not sure.
+
+447
+0:31:50,620 --> 0:31:52,620
+ Yeah.
+
+448
+0:31:52,620 --> 0:31:55,580
+ And you are welcome for these things, future tour implementer.
+
+449
+0:31:55,580 --> 0:31:58,620
+ I won't be the last one.
+
+450
+0:31:58,620 --> 0:32:04,780
+ So now I'm going to do a quick presentation of a quick demonstration of what I have done.
+
+451
+0:32:04,780 --> 0:32:12,620
+ Yeah, let me move that terminal window right over there.
+
+452
+0:32:12,620 --> 0:32:14,140
+ I hope this works now.
+
+453
+0:32:14,140 --> 0:32:17,100
+ Oh, no, that's the wrong directory.
+
+454
+0:32:17,100 --> 0:32:22,940
+ So, sorry, I can't mirror the screens right now.
+
+455
+0:32:22,940 --> 0:32:27,340
+ Use TMSL screen and then open the session twice.
+
+456
+0:32:27,340 --> 0:32:29,340
+ That's a good idea.
+
+457
+0:32:34,940 --> 0:32:39,580
+ How do I attach to that session from elsewhere?
+
+458
+0:32:39,580 --> 0:32:41,580
+ Thank you.
+
+459
+0:32:41,580 --> 0:32:46,220
+ My neck is thanking me for that.
+
+460
+0:32:46,220 --> 0:32:48,220
+ What was it?
+
+461
+0:32:48,220 --> 0:32:51,580
+ Tmax space A enter.
+
+462
+0:32:51,580 --> 0:32:53,580
+ Thank you.
+
+463
+0:32:56,700 --> 0:32:58,700
+ What do you mean?
+
+464
+0:32:58,700 --> 0:33:00,700
+ Oh, okay.
+
+465
+0:33:00,700 --> 0:33:02,700
+ Yeah, sure, makes sense.
+
+466
+0:33:04,780 --> 0:33:12,780
+ Okay, so I'm focused.
+
+467
+0:33:16,780 --> 0:33:18,780
+ Oh, I'm just making it a bit.
+
+468
+0:33:18,780 --> 0:33:22,780
+ Okay, now, that should it be.
+
+469
+0:33:22,780 --> 0:33:24,780
+ And now let me get back to the main screen.
+
+470
+0:33:24,780 --> 0:33:28,780
+ So, yeah.
+
+471
+0:33:28,780 --> 0:33:34,780
+ So, dang it, it has no...
+
+472
+0:33:34,780 --> 0:33:38,780
+ Can I open Emacs here?
+
+473
+0:33:38,780 --> 0:33:42,780
+ There was a way to open Emacs without X11.
+
+474
+0:33:42,780 --> 0:33:50,780
+ Thank you.
+
+475
+0:33:50,780 --> 0:33:56,780
+ Okay, so, yeah, this is much better.
+
+476
+0:33:56,780 --> 0:34:02,780
+ So, this is basically a list of three onion routers we are going to connect to now.
+
+477
+0:34:02,780 --> 0:34:08,780
+ They all contain the nickname, the identity, which is like the fingerprint of the RSA identity key,
+
+478
+0:34:08,780 --> 0:34:12,780
+ then it obviously contains the IP, the port on which it's running,
+
+479
+0:34:12,780 --> 0:34:18,780
+ and then it contains some cryptographic keys, most notably the RSA identity key,
+
+480
+0:34:18,780 --> 0:34:28,780
+ the ED25519 identity key, the elliptical signing key, and also the X25519 enter key,
+
+481
+0:34:28,780 --> 0:34:30,780
+ which is used for the handshake.
+
+482
+0:34:30,780 --> 0:34:36,780
+ And I've extracted them manually from the Tor directory just now, like two hours ago.
+
+483
+0:34:36,780 --> 0:34:38,780
+ So, how do we use this thing?
+
+484
+0:34:38,780 --> 0:34:44,780
+ First, we start a connection by doing...
+
+485
+0:34:44,780 --> 0:34:48,780
+ By calling this function, connection-initiator-start-link,
+
+486
+0:34:48,780 --> 0:34:53,780
+ and then provide the guard node, the formation of the guard node.
+
+487
+0:34:53,780 --> 0:34:58,780
+ I will do a short sleep here so you can see that it's working.
+
+488
+0:34:58,780 --> 0:35:00,780
+ If I'm splitting the Emacs...
+
+489
+0:35:00,780 --> 0:35:04,780
+ Okay, you see this as well now? Yeah, nice.
+
+490
+0:35:04,780 --> 0:35:12,780
+ If I run it, you now should see that quite a few debug statements.
+
+491
+0:35:12,780 --> 0:35:16,780
+ So, you see it created a TLS connection, it created a satellite process,
+
+492
+0:35:16,780 --> 0:35:22,780
+ sent a version cell, received a version cell, decided to use that link protocol version,
+
+493
+0:35:22,780 --> 0:35:28,780
+ validated the certificates, sent a net info cell, and in general finished the handshake.
+
+494
+0:35:28,780 --> 0:35:34,780
+ So, we just created the connection, and now we want to create a circuit on it.
+
+495
+0:35:34,780 --> 0:35:36,780
+ How do we do that? Very easy.
+
+496
+0:35:36,780 --> 0:35:45,780
+ We also use a function, tor-proto.connection.initiator.create,
+
+497
+0:35:45,780 --> 0:35:51,780
+ and just provide the connection process.
+
+498
+0:35:51,780 --> 0:35:58,780
+ And now we can see, when we run it again...
+
+499
+0:35:58,780 --> 0:36:02,780
+ Oh, you can't really see that. Oh, you can? You can now.
+
+500
+0:36:02,780 --> 0:36:08,780
+ Yeah, you can see that now, after establishing the connection, it sends a circuit handshake,
+
+501
+0:36:08,780 --> 0:36:16,780
+ it receives a reply, the circuit handshake is valid, there's a cryptographic function inside it to validate it,
+
+502
+0:36:16,780 --> 0:36:20,780
+ and then it's finished, and then it was finally created.
+
+503
+0:36:20,780 --> 0:36:27,780
+ But that's not still that nice because, you know, we just have it with one hop, and we need to extend it quite a bit.
+
+504
+0:36:27,780 --> 0:36:29,780
+ So, let's do that.
+
+505
+0:36:29,780 --> 0:36:37,780
+ We use tor-proto.circuit.initiator.extend, and then we provide the circuit and the hop we are extending to.
+
+506
+0:36:37,780 --> 0:36:48,780
+ I'm doing this with both of them, so it gets directly extended to the exit node, which in that case is vinculum-gate.
+
+507
+0:36:48,780 --> 0:36:54,780
+ And then, when that's done, we should see...
+
+508
+0:36:54,780 --> 0:36:58,780
+ Okay, so it should focus, yeah.
+
+509
+0:36:58,780 --> 0:37:07,780
+ We can see that it now gets extended to Adrian, and last but not least, it gets extended to vinculum-gate,
+
+510
+0:37:07,780 --> 0:37:14,780
+ doing the handshake all over again, but with different cryptographic keys for sure then.
+
+511
+0:37:14,780 --> 0:37:18,780
+ And now we want to create a stream because we actually want to send some data.
+
+512
+0:37:18,780 --> 0:37:24,780
+ And what would be cooler than, like, fetch our IPs through Tor, so I can show you that it actually works.
+
+513
+0:37:24,780 --> 0:37:31,780
+ We do that by also using a function in the circuit module that is connect.
+
+514
+0:37:31,780 --> 0:37:33,780
+ What a surprise.
+
+515
+0:37:33,780 --> 0:37:36,780
+ And in it, we provide...
+
+516
+0:37:36,780 --> 0:37:38,780
+ What was it? It was the circuit.
+
+517
+0:37:38,780 --> 0:37:40,780
+ It was the host name.
+
+518
+0:37:40,780 --> 0:37:45,780
+ Let's do ifconfig.me.
+
+519
+0:37:45,780 --> 0:37:49,780
+ Let's use port 80, and then we need to provide a closure.
+
+520
+0:37:49,780 --> 0:37:53,780
+ We will write that closure now.
+
+521
+0:37:53,780 --> 0:38:00,780
+ It's basically just a function with one parameter.
+
+522
+0:38:00,780 --> 0:38:06,780
+ And here we just do, well, I like to just log it.
+
+523
+0:38:07,780 --> 0:38:15,780
+ Just do an info statement with the data, and yeah.
+
+524
+0:38:15,780 --> 0:38:24,780
+ And when we run that, we should see that we have forgot something.
+
+525
+0:38:24,780 --> 0:38:31,780
+ Yes, this 2 doesn't belong there.
+
+526
+0:38:31,780 --> 0:38:36,780
+ And we see that nothing happens afterwards, except that it connects now to something.
+
+527
+0:38:36,780 --> 0:38:41,780
+ Because, well, we are not sending data right now, so it doesn't receive an HTTP request.
+
+528
+0:38:41,780 --> 0:38:44,780
+ The endpoint, which we will do now.
+
+529
+0:38:44,780 --> 0:38:52,780
+ Then we simply use topproto.dream.initiator.senddata alongside the stream.
+
+530
+0:38:52,780 --> 0:39:00,780
+ And then the data, we simply do an HTTP 1.1 request.
+
+531
+0:39:00,780 --> 0:39:07,780
+ ifconfig.me backslash r backslash n backslash r backslash n.
+
+532
+0:39:07,780 --> 0:39:09,780
+ Long live these MS-DOS line endings.
+
+533
+0:39:09,780 --> 0:39:11,780
+ Everyone loves them.
+
+534
+0:39:11,780 --> 0:39:19,780
+ And now we should see that we get a reply.
+
+535
+0:39:19,780 --> 0:39:29,780
+ And we see that our IP is 776820.2017, which happens to be exactly this IP here.
+
+536
+0:39:29,780 --> 0:39:37,780
+ And I forgot a very important thing to clean it up.
+
+537
+0:39:37,780 --> 0:39:46,780
+ We do that by simply doing, by simply terminating the connection, because the connection, like I said, will then terminate everything else recursively.
+
+538
+0:39:46,780 --> 0:39:51,780
+ This is done by just stopping it, providing the connection.
+
+539
+0:39:51,780 --> 0:40:06,780
+ And when we do it, we should see like some destroy things.
+
+540
+0:40:06,780 --> 0:40:08,780
+ Okay, that shouldn't have happened.
+
+541
+0:40:08,780 --> 0:40:21,780
+ I think maybe it's a bit busy right now, the exit node.
+
+542
+0:40:21,780 --> 0:40:30,780
+ Or it could be an async issue.
+
+543
+0:40:30,780 --> 0:40:34,780
+ Maybe try that.
+
+544
+0:40:34,780 --> 0:40:36,780
+ Yeah, okay, it was an async thing.
+
+545
+0:40:36,780 --> 0:40:43,780
+ And now we can see that it successfully terminates all streams, then destroys the circuit.
+
+546
+0:40:43,780 --> 0:40:46,780
+ Then it says, well, I've terminated all circuits.
+
+547
+0:40:46,780 --> 0:40:51,780
+ The TLS connection gets closed, and finally everything was properly closed.
+
+548
+0:40:51,780 --> 0:40:59,780
+ So yeah, I now have a thank you slide, but I'm too busy, or I do not want to start the presentation all over again.
+
+549
+0:40:59,780 --> 0:41:00,780
+ I'm too lazy for that.
+
+550
+0:41:00,780 --> 0:41:01,780
+ So thank you.
+
+551
+0:41:01,780 --> 0:41:08,780
+ Thank you.
+
+552
+0:41:08,780 --> 0:41:17,780
+ Are there any questions?
+
+553
+0:41:17,780 --> 0:41:20,780
+ So you said you shouldn't use this at this stage.
+
+554
+0:41:20,780 --> 0:41:31,780
+ And I know that ARTI is also designed to be used as a library by other programs.
+
+555
+0:41:31,780 --> 0:41:36,780
+ But of course, your implementation is on the Beam virtual machine.
+
+556
+0:41:36,780 --> 0:41:46,780
+ So do you think eventually the library will be production ready so that programs on the Beam VM can also use the Tor protocol?
+
+557
+0:41:46,780 --> 0:41:47,780
+ Yes and no.
+
+558
+0:41:47,780 --> 0:41:50,780
+ I would really hope that this could work eventually.
+
+559
+0:41:50,780 --> 0:41:52,780
+ I mean, I'm designing it as a library after all.
+
+560
+0:41:52,780 --> 0:41:53,780
+ I'm documenting it.
+
+561
+0:41:53,780 --> 0:41:58,780
+ And if it's all a matter of time, like if I have the time and motivation, it will eventually be that case.
+
+562
+0:41:58,780 --> 0:42:01,780
+ But I can't know that because I do not know the future.
+
+563
+0:42:01,780 --> 0:42:05,780
+ And the no part is because of the following.
+
+564
+0:42:05,780 --> 0:42:12,780
+ Many people often claim that you should only write cryptographic applications in like C or Rust,
+
+565
+0:42:12,780 --> 0:42:20,780
+ because they are like the only commonly used programming languages that allow you to control everything.
+
+566
+0:42:20,780 --> 0:42:24,780
+ Like in C and Rust, if you really want to, you can control each and every CPU instruction.
+
+567
+0:42:24,780 --> 0:42:30,780
+ You have full control over the memory, which is a critical part in avoiding side channel attacks.
+
+568
+0:42:30,780 --> 0:42:38,780
+ Most notably, the probably most famous example is overwriting memory with zeros like private keys once you are done with using them.
+
+569
+0:42:38,780 --> 0:42:44,780
+ And this is, for example, a thing that's impossible or really, really hard to do in Go right now.
+
+570
+0:42:44,780 --> 0:42:53,780
+ And yeah, so I would hope it would be productive ready one day.
+
+571
+0:42:53,780 --> 0:42:58,780
+ But of course, you always have the side channel issue that you simply have because it's a high level language.
+
+572
+0:43:08,780 --> 0:43:13,780
+ Hello.
+
+573
+0:43:13,780 --> 0:43:14,780
+ Hi.
+
+574
+0:43:14,780 --> 0:43:20,780
+ Are there any privacy implications of using a nonstandard client like the version cells?
+
+575
+0:43:20,780 --> 0:43:21,780
+ Do they leak anything?
+
+576
+0:43:21,780 --> 0:43:23,780
+ OK.
+
+577
+0:43:23,780 --> 0:43:30,780
+ I mean, if you use that client, like if that client becomes really widespread in this current stage,
+
+578
+0:43:30,780 --> 0:43:37,780
+ it will become known that you are not using the official tool implementation.
+
+579
+0:43:37,780 --> 0:43:44,780
+ So people will know that you use a different tool implementation, which already reduces the privacy quite a bit because in an anonymity network,
+
+580
+0:43:44,780 --> 0:43:50,780
+ it's important that all peers look similar or even the same.
+
+581
+0:43:50,780 --> 0:44:00,780
+ So this is definitely a privacy implication, but it's not a thing that's it's possible to fix that.
+
+582
+0:44:00,780 --> 0:44:05,780
+ I mean, like I've said, I also I also haven't implemented all things of the tool specs.
+
+583
+0:44:05,780 --> 0:44:11,780
+ So there are quite some differences in features that can be spotted compared to the official tool implementation.
+
+584
+0:44:11,780 --> 0:44:14,780
+ And yeah, and on the other side, you also have like downside.
+
+585
+0:44:14,780 --> 0:44:16,780
+ This is a project done by me.
+
+586
+0:44:16,780 --> 0:44:18,780
+ I'm the only one who has probably reviewed the code yet.
+
+587
+0:44:18,780 --> 0:44:22,780
+ And with tour, you have like thousands of eyes have already seen that.
+
+588
+0:44:22,780 --> 0:44:28,780
+ And it's a thing that I can simply not offer because it hasn't ordered that much yet.
+
+589
+0:44:33,780 --> 0:44:35,780
+ Thank you for being here, Emil.
+
+590
+0:44:35,780 --> 0:44:37,780
+ Let's give him a round of applause.

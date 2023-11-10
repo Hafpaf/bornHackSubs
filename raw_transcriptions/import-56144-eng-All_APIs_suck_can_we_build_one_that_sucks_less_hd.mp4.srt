@@ -1,0 +1,1913 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:18,000
+ So, my name is Auk van Slooten, I'm a web developer, I've been doing this stuff since about 1996,
+
+2
+0:00:18,000 --> 0:00:23,880
+ and the last few years I've been building a software system that is a middleware between
+
+3
+0:00:23,880 --> 0:00:36,360
+ all kinds of different APIs, and it's a mess. So the idea is that I'm trying to get to a
+
+4
+0:00:36,360 --> 0:00:41,760
+ point where connecting to an API and getting some information from it is not as much a
+
+5
+0:00:41,760 --> 0:00:53,240
+ chore as it is right now. So, as a colleague of mine mentioned that if I wanted to make
+
+6
+0:00:53,240 --> 0:00:58,360
+ people enthusiastic about something, I should not focus on the features, I should tell you
+
+7
+0:00:58,360 --> 0:01:05,240
+ how the system will change your life for the better. If you buy my product, your life will
+
+8
+0:01:05,240 --> 0:01:13,240
+ be better. And also important, this presentation is meant to be interactive, so if you have a
+
+9
+0:01:13,240 --> 0:01:27,840
+ question, put up your hand and ask away. So, imagine a world where you don't have to hand code
+
+10
+0:01:27,840 --> 0:01:35,080
+ a client for a specific API, you don't even have to parse an open API spec and run some magic code
+
+11
+0:01:35,080 --> 0:01:41,520
+ to generate some kind of client library for you, there's just a single client code that is working
+
+12
+0:01:41,520 --> 0:01:50,560
+ for every API out there. It's of course JavaScript, the one true language out there. No boos, okay.
+
+13
+0:01:50,560 --> 0:01:58,400
+ There is no separate query language to learn, there's no SQL, there's no GraphQL, there's no
+
+14
+0:01:58,400 --> 0:02:08,760
+ object-relational mapping, no injection attacks, of course. Everything is just JavaScript. The
+
+15
+0:02:09,400 --> 0:02:14,920
+ API's endpoints are not something that you will have to search for in some kind of documentation,
+
+16
+0:02:14,920 --> 0:02:25,280
+ the endpoints follow normally from the data that is in there. There are no filter or paging arguments
+
+17
+0:02:25,280 --> 0:02:34,080
+ to send in a weird syntax, and all the data runs on the server in memory, but your query will also
+
+18
+0:02:34,240 --> 0:02:42,200
+ run so everything is fast by default. And most importantly, the API is future-proof, so your
+
+19
+0:02:42,200 --> 0:02:48,800
+ client code doesn't need to be updated whenever the API changes, you can just use the old version,
+
+20
+0:02:48,800 --> 0:02:59,680
+ or you can automate updating it to whatever new thing is invented later. There are no flying cars,
+
+21
+0:02:59,680 --> 0:03:10,120
+ but we do have time travel. Does this sound any way better than a current crop of API's? Good.
+
+22
+0:03:10,120 --> 0:03:20,080
+ Then the rhetorical question is, I said all API's suck. I'm really interested in what you think.
+
+23
+0:03:20,080 --> 0:03:30,120
+ Do API's currently suck? I mean online API's. No, nobody thinks they suck?
+
+24
+0:03:30,120 --> 0:03:43,600
+ Some of them do, but they do a lot of great work. So you like programming to say a REST API?
+
+25
+0:03:43,600 --> 0:03:45,640
+ No, I don't program that.
+
+26
+0:03:45,640 --> 0:03:55,600
+ Ah, right. Okay. Then the thing is, if I want to make a good API, we have to somehow define what a good API is.
+
+27
+0:03:55,640 --> 0:04:05,920
+ So I gave you a glimpse earlier on, but most people these days say, well, a REST API, that's how stuff is supposed to work.
+
+28
+0:04:05,920 --> 0:04:16,480
+ So who knows what a REST API is? Can you tell me? Is there a way for a microphone to, or do I have to repeat the question?
+
+29
+0:04:16,480 --> 0:04:20,760
+ That's also possible.
+
+30
+0:04:20,760 --> 0:04:31,040
+ It is a network-based API that uses HTTP to request a resource, typically through a URL,
+
+31
+0:04:31,040 --> 0:04:39,680
+ and then a response will be delivered from the server, typically in the form of text, JSON, or some other data format.
+
+32
+0:04:39,680 --> 0:04:41,600
+ Sometimes even empty content.
+
+33
+0:04:41,680 --> 0:04:48,640
+ All right. So that's the common answer. And that is what today we mean with a REST API.
+
+34
+0:04:48,640 --> 0:04:55,240
+ But the original meaning of REST is a bit wider than that.
+
+35
+0:04:55,240 --> 0:05:01,120
+ The most important thing, REST, stands for Representational State Transfer.
+
+36
+0:05:01,120 --> 0:05:11,360
+ And it was not invented. It was reverse engineered from the biggest software system that we as humanity have ever made, the World Wide Web.
+
+37
+0:05:11,360 --> 0:05:20,320
+ And a researcher was thinking, well, why is this thing, the World Wide Web, so successful, so large,
+
+38
+0:05:20,320 --> 0:05:27,280
+ where any other system that we've designed fails to scale even to a small fraction of the web?
+
+39
+0:05:27,280 --> 0:05:33,600
+ And he wrote some rules and named that rule set REST.
+
+40
+0:05:33,600 --> 0:05:39,120
+ So the World Wide Web is the one true REST API out there.
+
+41
+0:05:39,120 --> 0:05:51,840
+ All other REST APIs that I have found are missing a few fairly minor features like types in your data.
+
+42
+0:05:51,840 --> 0:05:56,480
+ It's kind of important for a document-centric thing like the web.
+
+43
+0:05:56,480 --> 0:06:04,920
+ Each document has a type. It's called a MIME type. And it allows the browser to infer what to do with that data.
+
+44
+0:06:04,960 --> 0:06:08,840
+ If we have an API, we have fine-grained data.
+
+45
+0:06:08,840 --> 0:06:16,600
+ And you would like to have some type information in that data to automatically be able to infer what to do with that.
+
+46
+0:06:16,600 --> 0:06:20,640
+ That's not actually there, usually.
+
+47
+0:06:20,640 --> 0:06:28,440
+ Another thing that you would like to have is information on what can I do with this data in the form of links, for example,
+
+48
+0:06:28,440 --> 0:06:30,840
+ or form actions or stuff like that.
+
+49
+0:06:30,840 --> 0:06:33,040
+ That's also usually not there.
+
+50
+0:06:33,040 --> 0:06:39,320
+ So instead of REST, what we really have is JSON over HTTP.
+
+51
+0:06:39,320 --> 0:06:42,400
+ And that's the state of the art.
+
+52
+0:06:42,400 --> 0:06:47,680
+ JSON has a slight problem here because JSON is never just JSON.
+
+53
+0:06:47,680 --> 0:06:54,320
+ To understand a JSON data format, you need to know what service you're talking to.
+
+54
+0:06:54,320 --> 0:07:01,880
+ You need to read the documentation, see how they encoded certain things that are difficult to encode in JSON.
+
+55
+0:07:01,880 --> 0:07:10,040
+ So there's a lot of thinking, reading, custom programming to really make use of that stuff.
+
+56
+0:07:10,040 --> 0:07:23,480
+ GraphQL is a recent improvement on REST in that they said it is important that you keep the round trips between your client and the server
+
+57
+0:07:23,480 --> 0:07:34,280
+ to as limited amount as possible because each round trip adds lag, adds more time between responses.
+
+58
+0:07:34,280 --> 0:07:41,440
+ So GraphQL allows you to, in your query, state upfront, I'd like to have this and this and this and this information.
+
+59
+0:07:41,440 --> 0:07:45,280
+ Please give it to me in one go so I don't have to go and fetch more.
+
+60
+0:07:45,280 --> 0:07:46,840
+ So that's an improvement.
+
+61
+0:07:46,840 --> 0:07:52,280
+ But GraphQL is again limited.
+
+62
+0:07:52,280 --> 0:07:55,760
+ The implementation of GraphQL differ widely.
+
+63
+0:07:55,760 --> 0:08:06,600
+ And you'll need to read up again on how is this GraphQL server implementing GraphQL, exactly which enhancements does it have and how can I use that?
+
+64
+0:08:06,600 --> 0:08:10,040
+ Then there is OpenAPI.
+
+65
+0:08:10,040 --> 0:08:12,480
+ How many people here have heard about OpenAPI?
+
+66
+0:08:12,480 --> 0:08:15,400
+ It used to be called Swagger.
+
+67
+0:08:15,400 --> 0:08:20,520
+ One, two, all right, three, a few.
+
+68
+0:08:20,520 --> 0:08:32,480
+ OpenAPI is an attempt to write down how your API is actually designed in such a way that I can automatically generate a client for it
+
+69
+0:08:32,480 --> 0:08:36,880
+ so that I don't have to do the hand coding of a client.
+
+70
+0:08:36,880 --> 0:08:39,920
+ And that's a nice idea.
+
+71
+0:08:39,920 --> 0:08:42,920
+ Years ago, there used to be something called Soap.
+
+72
+0:08:42,920 --> 0:08:58,480
+ And Soap had a similar idea, and they used XML language called WSDL for web service description language to try and do almost exactly the same thing.
+
+73
+0:08:58,480 --> 0:09:04,480
+ And of course, everybody uses Soap these days because it was a runaway success.
+
+74
+0:09:04,480 --> 0:09:07,080
+ Slight sarcasm there.
+
+75
+0:09:07,080 --> 0:09:16,960
+ So I think OpenAPI is just traveling right in the same direction and is going for the same, heading for the same problems.
+
+76
+0:09:16,960 --> 0:09:24,440
+ You have a generated client, and then the specification changed, so you need to regenerate your client.
+
+77
+0:09:24,440 --> 0:09:28,320
+ But the client has changed because the specification has changed.
+
+78
+0:09:28,320 --> 0:09:32,680
+ So now you need to refactor your code to use the new client.
+
+79
+0:09:32,680 --> 0:09:35,680
+ And we are back to square one.
+
+80
+0:09:35,680 --> 0:09:38,960
+ And we haven't actually even talked about the meaning of the data.
+
+81
+0:09:38,960 --> 0:09:44,520
+ This is just how do I call your API to get some data?
+
+82
+0:09:44,520 --> 0:09:51,240
+ There is no description of meaning in there at any point.
+
+83
+0:09:51,240 --> 0:09:56,400
+ So a typical REST stack these days is this is just a simple one.
+
+84
+0:09:56,400 --> 0:10:03,400
+ There are many much more complex ones out there, but you have typically a few things.
+
+85
+0:10:03,400 --> 0:10:06,000
+ There's the client side.
+
+86
+0:10:06,000 --> 0:10:12,520
+ I'm using a browser-based app for an example here.
+
+87
+0:10:12,520 --> 0:10:13,720
+ Then there's the server.
+
+88
+0:10:13,720 --> 0:10:15,600
+ And then there's your database.
+
+89
+0:10:15,600 --> 0:10:20,480
+ Usually that's a relational database, so that is SQL.
+
+90
+0:10:20,480 --> 0:10:25,800
+ Your server is some kind of framework that connects to your database.
+
+91
+0:10:25,800 --> 0:10:33,360
+ That needs to translate the relational data into more object-oriented data.
+
+92
+0:10:33,400 --> 0:10:39,200
+ Many people use object-relational mapping for that, and that is one of the most complex
+
+93
+0:10:39,200 --> 0:10:42,360
+ pieces of software you can introduce in your own system.
+
+94
+0:10:42,360 --> 0:10:46,480
+ Please don't, but people still do.
+
+95
+0:10:46,480 --> 0:10:51,720
+ Then you need to define the endpoints, which URLs are you going to listen to, and what
+
+96
+0:10:51,720 --> 0:10:57,240
+ kind of information am I going to push on those endpoints.
+
+97
+0:10:57,240 --> 0:11:04,840
+ Then you need to translate your data from your internal object structure to JSON, which
+
+98
+0:11:04,840 --> 0:11:07,040
+ is not trivial.
+
+99
+0:11:07,040 --> 0:11:13,580
+ You need to be aware of all kinds of problems in there.
+
+100
+0:11:13,580 --> 0:11:19,960
+ And then you need to have an API on the client side that calls your service, maybe generated
+
+101
+0:11:19,960 --> 0:11:23,920
+ through an open API specification.
+
+102
+0:11:23,960 --> 0:11:29,240
+ That translates JSON, again, to your internal data structures, and then you can use it in
+
+103
+0:11:29,240 --> 0:11:31,560
+ your application in the browser.
+
+104
+0:11:31,560 --> 0:11:38,360
+ There's a lot of moving parts in this system, and more importantly, there's a lot of translation
+
+105
+0:11:38,360 --> 0:11:44,400
+ from one data format to another data format to another data format, so a lot of stuff
+
+106
+0:11:44,400 --> 0:11:48,920
+ can go wrong here, and it usually does.
+
+107
+0:11:48,920 --> 0:11:57,640
+ Right, I already mentioned some of those issues.
+
+108
+0:11:57,640 --> 0:12:02,160
+ There are many more, but first one, all the different formats.
+
+109
+0:12:02,160 --> 0:12:08,120
+ There is what's called an impedance mismatch that you cannot accurately translate everything
+
+110
+0:12:08,120 --> 0:12:14,440
+ from one language into another, so you'll have to define your own custom formatting
+
+111
+0:12:14,440 --> 0:12:18,720
+ for that.
+
+112
+0:12:18,720 --> 0:12:24,760
+ There is no idea what kind of data you're actually accessing when you're requesting
+
+113
+0:12:24,760 --> 0:12:25,760
+ a URL.
+
+114
+0:12:25,760 --> 0:12:31,440
+ You don't know which URLs are there unless you read the open API spec, and if I ask for
+
+115
+0:12:31,440 --> 0:12:36,000
+ information from a URL, what kind of information am I going to get back?
+
+116
+0:12:36,000 --> 0:12:47,120
+ This is all undefined behavior, and everybody implements their own system for that.
+
+117
+0:12:47,160 --> 0:12:55,720
+ People have tried to make this easier by writing standardized frameworks, and then you just
+
+118
+0:12:55,720 --> 0:13:00,400
+ use this framework, connect to a relational database, and it will automatically create
+
+119
+0:13:00,400 --> 0:13:10,320
+ endpoints for you with what's called CRUD, create, read, update, delete semantics.
+
+120
+0:13:10,360 --> 0:13:17,520
+ But what you're actually doing is almost exporting your relational database to the web, and you
+
+121
+0:13:17,520 --> 0:13:25,680
+ have almost direct access to tables and columns and rows and stuff like that, which is not
+
+122
+0:13:25,680 --> 0:13:33,640
+ the way we usually think about application data, and it's also inherently not transactional.
+
+123
+0:13:33,640 --> 0:13:41,640
+ So if I have to update each element of a table, each row separately from a remote system,
+
+124
+0:13:41,640 --> 0:13:49,200
+ and the network breaks halfway through, the data is suddenly in an inconsistent state.
+
+125
+0:13:49,200 --> 0:13:57,000
+ So these CRUD semantics are really the kind of reverse kind of way to actually use an
+
+126
+0:13:57,000 --> 0:14:00,480
+ API.
+
+127
+0:14:01,160 --> 0:14:05,320
+ We are on the web, but we haven't had any real links.
+
+128
+0:14:05,320 --> 0:14:08,360
+ JSON has no link type.
+
+129
+0:14:08,360 --> 0:14:14,080
+ I can use a string with a URL in it, but I have to know that it is a URL, and I have
+
+130
+0:14:14,080 --> 0:14:20,800
+ to really make sure that when I pass something that I know the semantics of what that URL
+
+131
+0:14:20,800 --> 0:14:25,280
+ is trying to tell me.
+
+132
+0:14:25,320 --> 0:14:32,760
+ And one I found out fairly late is that there's a lot of confusion about the identity of data.
+
+133
+0:14:32,760 --> 0:14:40,560
+ In a database, you have rows, each row has an ID, and that ID you can use to link stuff to.
+
+134
+0:14:40,560 --> 0:14:46,960
+ In a REST API, usually each object also has an ID.
+
+135
+0:14:46,960 --> 0:14:49,440
+ Whatever that ID may be, we don't know.
+
+136
+0:14:49,440 --> 0:14:53,680
+ It's up to the person implementing the API.
+
+137
+0:14:54,480 --> 0:15:02,600
+ Lately, UUIDs, the universally unique IDs, have become popular, and they solve quite
+
+138
+0:15:02,600 --> 0:15:10,800
+ a few of these issues, but they don't really tell you much besides it is an ID.
+
+139
+0:15:10,800 --> 0:15:19,480
+ So what happens is that services use URLs as an ID, and then add the UUID inside there
+
+140
+0:15:19,680 --> 0:15:27,080
+ somewhere, and you have, for example, a database with cars, and then the REST API is example.com
+
+141
+0:15:27,080 --> 0:15:35,800
+ slash cars slash some ID, and then you know, all right, so this ID is probably a car.
+
+142
+0:15:35,800 --> 0:15:43,160
+ But it doesn't have to be because things change in the world.
+
+143
+0:15:43,160 --> 0:15:52,640
+ It, in fact, it mixes type information with provenance, where does this come from, with
+
+144
+0:15:52,640 --> 0:16:04,520
+ identity, and once you mix stuff, things become problematic later on when the world changes.
+
+145
+0:16:04,520 --> 0:16:13,440
+ As an example of things that can go wrong, I thought I'd show a few minor things and
+
+146
+0:16:13,440 --> 0:16:15,640
+ bigger systems.
+
+147
+0:16:15,640 --> 0:16:20,480
+ Azure, from Microsoft, is a famous system.
+
+148
+0:16:20,480 --> 0:16:27,200
+ Everybody here is aware that it exists, but one of the things that is less clear if you
+
+149
+0:16:27,200 --> 0:16:30,700
+ start out first is it's not one API.
+
+150
+0:16:30,700 --> 0:16:37,760
+ It is a mix of many different systems, and there's probably a single group of people
+
+151
+0:16:37,760 --> 0:16:45,500
+ in Microsoft that try to hide all that stuff behind a single API endpoint, but differences
+
+152
+0:16:45,500 --> 0:16:54,140
+ in implementations do leak through, and one of those differences is how do I write a identity
+
+153
+0:16:54,140 --> 0:16:57,620
+ URL for anything inside Azure?
+
+154
+0:16:57,620 --> 0:17:01,180
+ And there is about six different ways to do this.
+
+155
+0:17:01,180 --> 0:17:06,020
+ All of them sort of almost like each other, but not quite.
+
+156
+0:17:06,020 --> 0:17:12,180
+ Some services return identities in one form, other services in another.
+
+157
+0:17:12,180 --> 0:17:19,980
+ Some require a specific form if you enter any data, so now you have to read data, transform
+
+158
+0:17:19,980 --> 0:17:26,540
+ the identity to a different format, and send that to the same API, otherwise things won't
+
+159
+0:17:26,540 --> 0:17:27,600
+ work.
+
+160
+0:17:27,600 --> 0:17:34,160
+ And these are just a few of the things that I have found inside Azure.
+
+161
+0:17:34,160 --> 0:17:36,700
+ Notice the extra quotes here.
+
+162
+0:17:36,700 --> 0:17:45,520
+ Those are not optional, but they are optional in the groups syntax, so, you know, simple
+
+163
+0:17:45,520 --> 0:17:47,640
+ things.
+
+164
+0:17:47,640 --> 0:17:49,360
+ Then there's Google.
+
+165
+0:17:49,360 --> 0:17:55,200
+ Google has a very large API service, and it's very well documented as long as you look at
+
+166
+0:17:55,200 --> 0:18:03,280
+ the basic URL syntax, so which endpoints, which require which parameters, and what
+
+167
+0:18:03,280 --> 0:18:05,520
+ kind of data will it return.
+
+168
+0:18:05,520 --> 0:18:09,400
+ It's very well documented.
+
+169
+0:18:09,400 --> 0:18:15,080
+ But then I like to use my native client, and they make a library for that, and say I use
+
+170
+0:18:15,080 --> 0:18:16,080
+ PHP.
+
+171
+0:18:16,080 --> 0:18:25,120
+ I can install the default Google RPC client in PHP, and I get about 27,000 lines of PHP.
+
+172
+0:18:25,920 --> 0:18:33,480
+ And there's a single README describing that API, a single document of a few hundred lines.
+
+173
+0:18:33,480 --> 0:18:39,300
+ And if you need to know more, they happily point you to a generated class documentation
+
+174
+0:18:39,300 --> 0:18:48,200
+ of the thing, so that's not very helpful, especially since they changed the semantics
+
+175
+0:18:48,200 --> 0:18:51,840
+ of the REST API to be more PHP-like.
+
+176
+0:18:51,840 --> 0:18:57,480
+ So now I don't actually know what I need to send, because what's documented in the
+
+177
+0:18:57,480 --> 0:19:03,400
+ REST API is not the format that the client library is using, and the client library,
+
+178
+0:19:03,400 --> 0:19:06,760
+ of course, is not documented.
+
+179
+0:19:06,760 --> 0:19:08,480
+ And this is Google.
+
+180
+0:19:08,480 --> 0:19:19,040
+ So if Microsoft and Google can't create a perfect API based on REST, maybe it's best
+
+181
+0:19:19,080 --> 0:19:28,440
+ if we just throw REST out and try to redesign something that is more well-defined and less
+
+182
+0:19:28,440 --> 0:19:37,440
+ open for interpretation and for different interpretations as well.
+
+183
+0:19:37,440 --> 0:19:42,920
+ So it's maybe not very readable.
+
+184
+0:19:42,920 --> 0:19:46,080
+ What it says here is let's innovate.
+
+185
+0:19:46,080 --> 0:19:49,640
+ What do we really need in 2023?
+
+186
+0:19:49,640 --> 0:19:56,000
+ Because the world has changed a bit since we designed most of the stuff that we're using
+
+187
+0:19:56,000 --> 0:19:57,480
+ these days.
+
+188
+0:19:57,480 --> 0:20:04,400
+ Databases are designed in the 60s, I think, relational databases, maybe the 70s.
+
+189
+0:20:04,400 --> 0:20:08,800
+ And in that time, the CPUs were not as powerful as today.
+
+190
+0:20:08,800 --> 0:20:11,500
+ Memory was very expensive.
+
+191
+0:20:11,500 --> 0:20:19,500
+ So you had to use a lot of indexes and read as few things as possible from the hard disk.
+
+192
+0:20:19,500 --> 0:20:27,580
+ These days, memory is still slower than their CPU, and SSDs are still slower than memory.
+
+193
+0:20:27,580 --> 0:20:31,380
+ So relatively, that still holds up.
+
+194
+0:20:31,380 --> 0:20:37,860
+ But the data set that I can now store in main memory is so much bigger than we could even
+
+195
+0:20:38,220 --> 0:20:43,580
+ dream of like 30 years ago.
+
+196
+0:20:43,580 --> 0:20:51,300
+ Do the same things still hold for designing a system today compared to 30 years ago?
+
+197
+0:20:51,300 --> 0:20:57,020
+ And I've posited that it really doesn't for most use cases.
+
+198
+0:20:57,020 --> 0:21:04,620
+ Case in point, I researched how much does it cost to have a server online with, say,
+
+199
+0:21:04,620 --> 0:21:06,440
+ two terabytes of main memory.
+
+200
+0:21:06,440 --> 0:21:10,620
+ So not two terabytes of disk, but two terabytes of main memory.
+
+201
+0:21:10,620 --> 0:21:18,540
+ And I found some systems available for about 1,400 euros per month.
+
+202
+0:21:18,540 --> 0:21:25,760
+ And that is a lot of money for you and I personally, but for a company that's like nothing.
+
+203
+0:21:25,760 --> 0:21:32,520
+ And most data sets fit very comfortably within that amount of memory.
+
+204
+0:21:32,520 --> 0:21:40,840
+ So I don't really have to think about storing stuff on disk most of the time.
+
+205
+0:21:40,840 --> 0:21:46,520
+ If you have data sets that are larger than that, then yeah, you're going to need to use
+
+206
+0:21:46,520 --> 0:21:49,920
+ the existing difficult to use stuff.
+
+207
+0:21:49,920 --> 0:21:55,580
+ Because I've been thinking about writing something, I want to keep it as simple as possible.
+
+208
+0:21:55,580 --> 0:22:00,280
+ And I've said, well, I'm only going to focus on stuff that will fit in memory.
+
+209
+0:22:00,280 --> 0:22:05,080
+ That's one of the things that I do.
+
+210
+0:22:05,080 --> 0:22:11,640
+ This is the context that I'm trying to keep to make a research thing.
+
+211
+0:22:11,640 --> 0:22:15,640
+ Something that we can tinker with and see, well, does this actually work?
+
+212
+0:22:15,640 --> 0:22:21,360
+ Is this an improvement over the old thing without having to write like thousands and
+
+213
+0:22:21,360 --> 0:22:25,280
+ thousands and thousands of lines of code?
+
+214
+0:22:25,280 --> 0:22:30,080
+ So I have limited scope to keep things simple.
+
+215
+0:22:30,080 --> 0:22:34,680
+ Because I used to call this the 80% use case.
+
+216
+0:22:34,680 --> 0:22:42,000
+ I want to create a solution for about 80% of the problem space and focus on that.
+
+217
+0:22:42,000 --> 0:22:49,400
+ And the other 20% of the problem space usually takes up another 80% of your code.
+
+218
+0:22:49,400 --> 0:22:53,600
+ So this keeps things small.
+
+219
+0:22:53,600 --> 0:22:58,800
+ The other thing is I've focused on APIs that are read optimized.
+
+220
+0:22:58,800 --> 0:23:03,920
+ So the reads highly outweigh the writes.
+
+221
+0:23:03,920 --> 0:23:12,040
+ And again, all data should be available in memory.
+
+222
+0:23:12,040 --> 0:23:14,280
+ I have no problem whatsoever with HTTP.
+
+223
+0:23:14,280 --> 0:23:15,280
+ I really like it.
+
+224
+0:23:15,280 --> 0:23:17,760
+ So I'm not going to innovate on that.
+
+225
+0:23:17,760 --> 0:23:25,940
+ JSON, though, is not as great as I would like.
+
+226
+0:23:25,940 --> 0:23:33,020
+ Is anybody here aware of things like linked data or the semantic web?
+
+227
+0:23:33,020 --> 0:23:42,020
+ For those who don't know this, Sir Tim Berners-Lee has been trying to get us into the next generation
+
+228
+0:23:42,020 --> 0:23:46,540
+ of the web by adding meaning to the data.
+
+229
+0:23:46,540 --> 0:23:53,540
+ And the way they did this, I think it started around 2010, I'm not quite sure.
+
+230
+0:23:53,540 --> 0:23:56,540
+ In that time, you use XML, of course.
+
+231
+0:23:56,540 --> 0:24:03,420
+ And the idea was that each thing you want to say about something is encoded in such
+
+232
+0:24:03,420 --> 0:24:09,260
+ a way that you know the exact meaning of what you're encoding, not just the data.
+
+233
+0:24:09,260 --> 0:24:15,140
+ And being Sir Tim Berners-Lee, he did it by using URLs for everything.
+
+234
+0:24:15,140 --> 0:24:21,580
+ But another thing which is more surprising is he used something called predicate logic,
+
+235
+0:24:21,620 --> 0:24:25,380
+ most famously known from, I think, Prologue.
+
+236
+0:24:25,380 --> 0:24:28,700
+ And this is a knowledge-based thing designed in the 70s.
+
+237
+0:24:28,700 --> 0:24:35,260
+ So this was used for artificial intelligence before we used neural networks for that stuff.
+
+238
+0:24:35,260 --> 0:24:44,260
+ And it means that you store data as a set of triples where you have some subject, some
+
+239
+0:24:44,260 --> 0:24:47,960
+ kind of relation, and an object.
+
+240
+0:24:47,960 --> 0:24:54,480
+ So everything you can say about anything, you divide in these triples where the middle
+
+241
+0:24:54,480 --> 0:25:00,480
+ part is the predicate, the relation, and the left and the right are entities that you relate
+
+242
+0:25:00,480 --> 0:25:03,920
+ to each other in a certain way.
+
+243
+0:25:03,920 --> 0:25:10,840
+ I've been using linked data for a few years now on the Solette project, which is also
+
+244
+0:25:10,840 --> 0:25:20,440
+ a new thing from Tim Berners-Lee, where they add an API to the whole linked data format,
+
+245
+0:25:20,440 --> 0:25:23,040
+ linked data platform, it's called.
+
+246
+0:25:23,040 --> 0:25:33,880
+ And it is actually almost what I described earlier in, can we build something like this?
+
+247
+0:25:33,880 --> 0:25:39,720
+ Imagine a world where everybody was using Solette and linked data, and most of those
+
+248
+0:25:39,720 --> 0:25:44,440
+ lines that I wrote on that highlight there would be finished.
+
+249
+0:25:44,440 --> 0:25:46,440
+ It would be done.
+
+250
+0:25:46,440 --> 0:25:54,280
+ One problem, though, it's really difficult to use linked data in an application.
+
+251
+0:25:54,280 --> 0:25:57,560
+ You need to really rethink how you use data.
+
+252
+0:25:57,560 --> 0:26:06,320
+ You basically need to use Prologue to reason about the data, which obviously doesn't work.
+
+253
+0:26:06,320 --> 0:26:14,080
+ So I want to go to linked data because it solves a lot of these problems, but it makes
+
+254
+0:26:14,080 --> 0:26:18,500
+ application programming massively much more complicated.
+
+255
+0:26:18,500 --> 0:26:23,800
+ So I think we need to have something between JSON and linked data, something that is easy
+
+256
+0:26:23,800 --> 0:26:33,000
+ to program with, but it does have meaning, and I can change it to something larger.
+
+257
+0:26:33,000 --> 0:26:40,080
+ I don't like the document-centric REST APIs because they hide whatever is inside them.
+
+258
+0:26:40,080 --> 0:26:46,520
+ And one other thing that REST is not very good at is asynchronous updates.
+
+259
+0:26:46,520 --> 0:26:56,640
+ And asynchronicity is very important for large-scale APIs, so I want to embrace that.
+
+260
+0:26:56,680 --> 0:27:04,040
+ How do we go about writing something that potentially is a completely new system?
+
+261
+0:27:04,040 --> 0:27:11,160
+ We have to be aware of the different requirements for different elements of any system.
+
+262
+0:27:11,160 --> 0:27:17,400
+ And the bottom element is infrastructure, and there is supposed to be an extra line
+
+263
+0:27:17,400 --> 0:27:21,440
+ under there, but infrastructure needs to be very simple.
+
+264
+0:27:21,440 --> 0:27:25,400
+ It needs to be fixed, and it needs to be durable.
+
+265
+0:27:25,400 --> 0:27:29,240
+ That's the missing line we know there.
+
+266
+0:27:29,240 --> 0:27:32,200
+ You don't want infrastructure changing too often.
+
+267
+0:27:32,200 --> 0:27:40,600
+ You don't want to have custom code to read specific parts of the infrastructure.
+
+268
+0:27:40,600 --> 0:27:44,160
+ And JSON is doing very well for all those things.
+
+269
+0:27:44,160 --> 0:27:46,240
+ It's simple, it's fixed, it's durable.
+
+270
+0:27:46,240 --> 0:27:54,320
+ And I think that's one of the reasons that JSON is so well-known and well-used.
+
+271
+0:27:54,320 --> 0:28:00,920
+ The problem is that on the platform side, we need a bit more than that.
+
+272
+0:28:00,920 --> 0:28:08,480
+ And JSON is not powerful enough to support something that is slightly more flexible.
+
+273
+0:28:08,480 --> 0:28:15,880
+ And that's the reason why we have a lot of stuff out there, like open API, because JSON
+
+274
+0:28:15,880 --> 0:28:21,280
+ itself cannot really represent all the information that you have.
+
+275
+0:28:21,280 --> 0:28:26,100
+ But if you go above the platform to the application level, that's where we really want something
+
+276
+0:28:26,100 --> 0:28:33,600
+ that is flexible, that is powerful, that can handle complex situations.
+
+277
+0:28:33,600 --> 0:28:42,880
+ But it means that it is less durable, and it is less all-encompassing.
+
+278
+0:28:42,880 --> 0:28:49,480
+ So can we build something that works on the infrastructure and on the platform level,
+
+279
+0:28:49,480 --> 0:28:55,040
+ and then the application level I leave for another time?
+
+280
+0:28:55,040 --> 0:28:58,760
+ I've been trying to do stuff like that.
+
+281
+0:28:58,760 --> 0:29:03,380
+ On the infrastructure level, HTML is the example to strive for.
+
+282
+0:29:03,380 --> 0:29:07,800
+ This is something that has blown away everything else that was out there.
+
+283
+0:29:07,800 --> 0:29:13,920
+ If you do anything document-centric, or even application building, you're using HTML.
+
+284
+0:29:14,120 --> 0:29:24,880
+ JSON, it has the same level of being everywhere, but it is much less powerful.
+
+285
+0:29:24,880 --> 0:29:30,880
+ The first HTML had about 25 elements, but it also had attributes where you could add
+
+286
+0:29:30,880 --> 0:29:36,320
+ custom information to this fixed set of HTML elements.
+
+287
+0:29:36,320 --> 0:29:44,080
+ JSON has five types, null, not included, and there is no way to extend it.
+
+288
+0:29:44,080 --> 0:29:48,840
+ There is no way to add extra attributes or stuff like that.
+
+289
+0:29:48,840 --> 0:29:54,920
+ So metadata needs to be encoded in the JSON itself, and then you have collisions between
+
+290
+0:29:54,920 --> 0:30:01,040
+ the normal data and the metadata, and then people are going to do fancy things like adding
+
+291
+0:30:01,120 --> 0:30:10,320
+ an ampersand or an ad sign in front of a property, and now it's a special property, and stuff
+
+292
+0:30:10,320 --> 0:30:13,400
+ like that is making our life miserable.
+
+293
+0:30:13,400 --> 0:30:21,500
+ So I've gone and updated JSON and added a bit of HTML into it.
+
+294
+0:30:21,500 --> 0:30:24,560
+ So I've added tags.
+
+295
+0:30:24,560 --> 0:30:26,160
+ It is still backwards compatible.
+
+296
+0:30:26,160 --> 0:30:32,560
+ You can still read, parse normal JSON, and it will work fine.
+
+297
+0:30:32,560 --> 0:30:41,320
+ But I've added about 25 data types to the JSON system, and important, a link type so
+
+298
+0:30:41,320 --> 0:30:49,760
+ I can actually represent link data inside JSON tag, and each tag can have any kind of
+
+299
+0:30:49,760 --> 0:30:53,320
+ attribute that you want.
+
+300
+0:30:53,400 --> 0:30:58,400
+ I'll actually be best showing you what I mean.
+
+301
+0:30:58,400 --> 0:31:01,400
+ Let's see.
+
+302
+0:31:11,400 --> 0:31:13,400
+ Is this readable?
+
+303
+0:31:13,400 --> 0:31:14,400
+ Yeah.
+
+304
+0:31:14,400 --> 0:31:15,400
+ All right.
+
+305
+0:31:15,400 --> 0:31:20,400
+ So this is a JSON tag format.
+
+306
+0:31:20,480 --> 0:31:29,240
+ And you can see it's just JSON with some weird ass tags in between them.
+
+307
+0:31:29,240 --> 0:31:35,400
+ What this allows is I can now actually represent not just that it is an object, but I can say,
+
+308
+0:31:35,400 --> 0:31:38,200
+ well, this is actually a person.
+
+309
+0:31:38,200 --> 0:31:44,080
+ And I can store the data and read it in back, and I don't have to have a separate knowledge
+
+310
+0:31:44,080 --> 0:31:50,400
+ about which classes are associated with which arrays or properties.
+
+311
+0:31:50,400 --> 0:31:53,520
+ It's basically right in there.
+
+312
+0:31:53,520 --> 0:32:00,080
+ I've also added a date type, so now that I know that this is a date, I can automatically
+
+313
+0:32:00,080 --> 0:32:08,080
+ create the correct user interface for changing this stuff.
+
+314
+0:32:08,080 --> 0:32:12,000
+ There is a lot more besides that.
+
+315
+0:32:12,000 --> 0:32:15,000
+ Let me see.
+
+316
+0:32:18,000 --> 0:32:19,000
+ Yeah.
+
+317
+0:32:19,000 --> 0:32:22,600
+ So here's a list of types that I've defined right now.
+
+318
+0:32:22,600 --> 0:32:28,320
+ So what I've done is I've taken a look at what types JavaScript natively supports, which
+
+319
+0:32:28,320 --> 0:32:35,320
+ are useful to have, what types databases usually support, and I've taken a look at Postgres
+
+320
+0:32:35,320 --> 0:32:38,200
+ for that.
+
+321
+0:32:38,200 --> 0:32:42,400
+ Of course, the basic JSON types need to be in there because it needs to be fully backwards
+
+322
+0:32:42,400 --> 0:32:45,480
+ compatible.
+
+323
+0:32:45,480 --> 0:32:51,640
+ And I've taken a look at something called Rebol or Red Language, which famously has
+
+324
+0:32:51,640 --> 0:32:58,160
+ a lot of semantic types in the programming language itself.
+
+325
+0:32:58,160 --> 0:33:01,160
+ I'm not sure this is the final set of data types.
+
+326
+0:33:01,160 --> 0:33:06,840
+ I really like feedback from people if this is something that they want to use or if they
+
+327
+0:33:07,000 --> 0:33:10,640
+ miss things.
+
+328
+0:33:10,640 --> 0:33:16,060
+ But I also like to keep it as small as possible.
+
+329
+0:33:16,060 --> 0:33:19,160
+ So that's the infrastructure part.
+
+330
+0:33:19,160 --> 0:33:20,160
+ Let's...
+
+331
+0:33:20,160 --> 0:33:24,160
+ Can I get this back?
+
+332
+0:33:24,160 --> 0:33:25,160
+ Yeah.
+
+333
+0:33:25,160 --> 0:33:28,160
+ All right.
+
+334
+0:33:28,480 --> 0:33:33,480
+ Then a platform.
+
+335
+0:33:33,480 --> 0:33:46,480
+ The platform I've called SimplyStore because we've been doing a lot of components that
+
+336
+0:33:46,480 --> 0:33:51,160
+ are meant to be very simple and they're all prefixed with simply.
+
+337
+0:33:51,160 --> 0:33:59,880
+ The whole presentation is called Simply Present and is actually running on a solid data pod.
+
+338
+0:33:59,880 --> 0:34:04,880
+ So it's already a bit in the future there.
+
+339
+0:34:04,880 --> 0:34:12,600
+ And the things that I've decided to do differently than the normal REST systems is embracing
+
+340
+0:34:12,600 --> 0:34:14,720
+ asynchronicity.
+
+341
+0:34:14,720 --> 0:34:22,720
+ So I've gone for the CQRS design pattern and that's called Command Query Responsibility
+
+342
+0:34:22,720 --> 0:34:26,480
+ Segregation and there are a few reasons for that.
+
+343
+0:34:26,480 --> 0:34:33,220
+ The query part is a separate endpoint and it will only do queries.
+
+344
+0:34:33,220 --> 0:34:39,160
+ So you cannot change data on the query endpoint, which means automatically there is no way
+
+345
+0:34:39,160 --> 0:34:45,320
+ to do any kind of injection attack in queries.
+
+346
+0:34:45,320 --> 0:34:48,240
+ The query actually runs on an immutable data set.
+
+347
+0:34:48,240 --> 0:34:55,560
+ So even if you could break the query engine to do updates, the data set itself just won't
+
+348
+0:34:55,560 --> 0:34:56,560
+ allow it.
+
+349
+0:34:56,560 --> 0:35:04,800
+ This solves a lot of security concerns that many REST APIs have.
+
+350
+0:35:04,840 --> 0:35:09,920
+ Another thing is that the commands are always asynchronous.
+
+351
+0:35:09,920 --> 0:35:12,640
+ So there's a separate endpoint where I can send a command.
+
+352
+0:35:12,640 --> 0:35:14,080
+ A command can do anything.
+
+353
+0:35:14,080 --> 0:35:21,840
+ It can change the data, but it will not reply right away if I've changed this.
+
+354
+0:35:21,840 --> 0:35:24,160
+ The command is actually your transaction.
+
+355
+0:35:24,160 --> 0:35:30,560
+ It can do any kind of thing and most specifically it doesn't do CRUD.
+
+356
+0:35:30,560 --> 0:35:38,520
+ I have not implemented a create, read, update, delete semantics for changing the data because
+
+357
+0:35:38,520 --> 0:35:45,800
+ if you do that, you no longer have any idea what the meaning of the change is.
+
+358
+0:35:45,800 --> 0:35:52,280
+ If I say I want to add a car, then I know, okay, so I have a car and a car must have
+
+359
+0:35:52,280 --> 0:35:58,720
+ a manufacturer and it may have a year for entry and it can be data that is stored in
+
+360
+0:35:58,720 --> 0:36:04,440
+ a lot of different places, but the command says I have a new car.
+
+361
+0:36:04,440 --> 0:36:10,360
+ So now I know that all these little pieces of data are related to introducing a new car
+
+362
+0:36:10,360 --> 0:36:14,280
+ in the system.
+
+363
+0:36:14,280 --> 0:36:18,280
+ That's the benefit of CQRS.
+
+364
+0:36:18,280 --> 0:36:23,760
+ Then the endpoints are not actually random.
+
+365
+0:36:23,760 --> 0:36:25,420
+ You have a data space.
+
+366
+0:36:25,420 --> 0:36:31,580
+ That's all the data that that server has to offer you and each root entry of the data
+
+367
+0:36:31,580 --> 0:36:38,340
+ space is also a root entry, an endpoint for your system automatically.
+
+368
+0:36:38,340 --> 0:36:47,700
+ And I do that by using a JSON pointer to point inside the data space and you get custom results.
+
+369
+0:36:47,700 --> 0:36:49,140
+ Then queries.
+
+370
+0:36:49,140 --> 0:36:50,140
+ There's no GraphQL.
+
+371
+0:36:50,140 --> 0:36:53,340
+ There's no custom language.
+
+372
+0:36:53,340 --> 0:36:56,020
+ It's just JavaScript.
+
+373
+0:36:56,020 --> 0:36:59,860
+ This is one of the more out there solutions.
+
+374
+0:36:59,860 --> 0:37:02,980
+ You're sending JavaScript to the server.
+
+375
+0:37:02,980 --> 0:37:06,940
+ The server will run that JavaScript for you and send you the result back.
+
+376
+0:37:06,940 --> 0:37:13,420
+ The advantage is if I have a terabyte of data and my query is 20 lines of JavaScript, it's
+
+377
+0:37:13,420 --> 0:37:17,980
+ a lot faster to send the 20 lines of JavaScript to the server than to send a terabyte of data
+
+378
+0:37:17,980 --> 0:37:21,280
+ to the client.
+
+379
+0:37:21,280 --> 0:37:25,600
+ It also solves one of the main problems.
+
+380
+0:37:25,600 --> 0:37:27,240
+ I want to have paging.
+
+381
+0:37:27,240 --> 0:37:28,240
+ It is JavaScript.
+
+382
+0:37:28,240 --> 0:37:34,560
+ You just add a slice to your query and you have paging.
+
+383
+0:37:34,560 --> 0:37:41,980
+ The next thing is the simply store is designed as a baseline and you need to customize it
+
+384
+0:37:41,980 --> 0:37:45,720
+ because each data set has its own requirements.
+
+385
+0:37:45,720 --> 0:37:48,160
+ For example, the commands, it doesn't come with any commands.
+
+386
+0:37:48,160 --> 0:37:51,000
+ You will have to write your own.
+
+387
+0:37:51,000 --> 0:37:52,800
+ So it's not a separate server.
+
+388
+0:37:52,800 --> 0:37:58,800
+ It's a library that you can use to build your own stuff on top of it.
+
+389
+0:37:58,800 --> 0:38:09,300
+ Then the command endpoint is using a command log where each new command creates a new data
+
+390
+0:38:09,300 --> 0:38:12,960
+ set that is tied to that entity.
+
+391
+0:38:12,960 --> 0:38:19,120
+ It automatically creates a log which you can use as an audit log or you can use it to go
+
+392
+0:38:19,120 --> 0:38:25,240
+ back into time and replay all the commands to generate a new set if somehow you made
+
+393
+0:38:25,240 --> 0:38:27,720
+ a bug in your command earlier.
+
+394
+0:38:27,720 --> 0:38:34,480
+ Now you can go back, fix the bug, rerun all the commands and you have an up-to-date correct
+
+395
+0:38:34,480 --> 0:38:36,920
+ data set.
+
+396
+0:38:36,920 --> 0:38:45,720
+ And finally, there's a bit more below this but the screen doesn't show it.
+
+397
+0:38:45,760 --> 0:38:51,360
+ I use UUIDs for everything and the IDs are not stored in the data.
+
+398
+0:38:51,360 --> 0:38:53,040
+ They are stored in the metadata.
+
+399
+0:38:53,040 --> 0:38:56,960
+ So it's an attribute in the JSON tag.
+
+400
+0:38:56,960 --> 0:39:02,120
+ And the client is in charge of generating IDs and this is needed because if I send a
+
+401
+0:39:02,120 --> 0:39:07,100
+ command to the server to add something and there's a communication problem so I don't
+
+402
+0:39:07,100 --> 0:39:13,120
+ get an acknowledge back, I can send it again and be sure that even though I send the same
+
+403
+0:39:13,440 --> 0:39:19,560
+ command twice, I won't end up with two entities in the data set because the ID is the same
+
+404
+0:39:19,560 --> 0:39:24,360
+ so the server will know, all right, I've seen this thing already.
+
+405
+0:39:24,360 --> 0:39:29,320
+ That's for the at least once semantics of the communication system.
+
+406
+0:39:29,320 --> 0:39:35,160
+ Finally, everything is in memory but we're missing one key feature that databases have
+
+407
+0:39:35,160 --> 0:39:37,880
+ brought us and that's ACID compliance.
+
+408
+0:39:37,920 --> 0:39:44,880
+ So that means atomicity, consistency, isolation and durability.
+
+409
+0:39:44,880 --> 0:39:53,600
+ We need to make sure that our system also fulfills all those promises as well.
+
+410
+0:39:53,600 --> 0:40:00,520
+ So the thing is already available to Tinker with.
+
+411
+0:40:00,520 --> 0:40:04,080
+ The state is that it's currently just a read-only data set.
+
+412
+0:40:04,080 --> 0:40:07,600
+ I haven't implemented any commands yet.
+
+413
+0:40:07,600 --> 0:40:12,560
+ But you can already use it and I'll try to show a demo here.
+
+414
+0:40:22,560 --> 0:40:25,120
+ Is this readable enough?
+
+415
+0:40:25,120 --> 0:40:26,480
+ All right.
+
+416
+0:40:26,480 --> 0:40:30,480
+ So this is a query interface I made for a data set.
+
+417
+0:40:30,480 --> 0:40:35,400
+ To the right is the list of data that is in this system.
+
+418
+0:40:35,400 --> 0:40:48,280
+ It automatically lists that and I can change the URL and say, I think it was called people
+
+419
+0:40:48,280 --> 0:40:53,680
+ and then it will show a list of the people that are in here.
+
+420
+0:40:53,680 --> 0:40:59,840
+ So I can use the URL just to browse through the data set and get a kind of summary of
+
+421
+0:40:59,840 --> 0:41:02,720
+ all the data back.
+
+422
+0:41:02,760 --> 0:41:06,240
+ Let's go back to the root.
+
+423
+0:41:06,240 --> 0:41:16,560
+ On the left I can create a query in JavaScript syntax and it will run on the server and send
+
+424
+0:41:16,560 --> 0:41:19,160
+ the result back.
+
+425
+0:41:19,160 --> 0:41:34,680
+ What I can also do is use a slightly more GraphQL-like syntax and say, I want the name
+
+426
+0:41:34,680 --> 0:41:39,520
+ of everybody in there.
+
+427
+0:41:39,520 --> 0:41:40,520
+ There you go.
+
+428
+0:41:40,520 --> 0:41:48,440
+ These are all the people in the database and even though this doesn't really look like
+
+429
+0:41:48,520 --> 0:41:49,520
+ JavaScript, it is.
+
+430
+0:41:49,520 --> 0:41:57,000
+ This is an extra library I made to create a more user-friendly query language in JavaScript
+
+431
+0:41:57,000 --> 0:41:59,560
+ and it's just array manipulation.
+
+432
+0:41:59,560 --> 0:42:04,760
+ It does an array filter and an array map.
+
+433
+0:42:04,760 --> 0:42:07,520
+ I can do a filter as well.
+
+434
+0:42:07,520 --> 0:42:26,960
+ Let's see.
+
+435
+0:42:26,960 --> 0:42:29,320
+ So that is a regular expression.
+
+436
+0:42:29,320 --> 0:42:35,480
+ It says any name that starts with a capital L.
+
+437
+0:42:35,520 --> 0:42:42,360
+ And then I've got a sub-selection of my data.
+
+438
+0:42:42,360 --> 0:42:48,880
+ I can also add a slice here to show me just a limited number of results.
+
+439
+0:42:48,880 --> 0:42:54,040
+ So basically you can do any kind of normal JavaScript programming.
+
+440
+0:42:54,040 --> 0:43:02,440
+ What you can't do here is network access nor disk access or any special API.
+
+441
+0:43:02,440 --> 0:43:08,280
+ It is running in Node but it is sandboxed so it's in a special virtual machine.
+
+442
+0:43:08,280 --> 0:43:20,400
+ It has no access to anything except your data and a few other bits and pieces that are useful.
+
+443
+0:43:20,400 --> 0:43:29,800
+ The next things that I want to implement is the commands and the multi-threading and see
+
+444
+0:43:29,960 --> 0:43:33,840
+ how far I can get this system to grow.
+
+445
+0:43:33,840 --> 0:43:44,160
+ I'm really curious what you people think of this approach and if there is any flaw in
+
+446
+0:43:44,160 --> 0:43:50,120
+ the design of this thing that you can see coming.
+
+447
+0:43:50,160 --> 0:43:56,160
+ If you would be interested in taking it for a spin and see what you like or don't like.
+
+448
+0:43:56,160 --> 0:44:02,600
+ I'll be coming with the microphone.
+
+449
+0:44:02,600 --> 0:44:11,920
+ What about data limits, like rate limits for the clients?
+
+450
+0:44:11,920 --> 0:44:15,920
+ Well, that's a good question.
+
+451
+0:44:15,920 --> 0:44:24,440
+ The whole idea is right now that I just put it open so anybody can just blast away at it.
+
+452
+0:44:24,440 --> 0:44:31,000
+ But you can fairly easily do a denial of service attack and that's not nice.
+
+453
+0:44:31,000 --> 0:44:36,880
+ So what I want to do is add a proxy in front of it, an API gateway,
+
+454
+0:44:36,880 --> 0:44:43,920
+ and let it handle things like rate limiting and do something like an API key.
+
+455
+0:44:44,320 --> 0:44:48,560
+ So you need to have an API key to actually talk to the system and then you can do a rate
+
+456
+0:44:48,560 --> 0:44:52,160
+ limiting by API key.
+
+457
+0:44:52,160 --> 0:44:57,080
+ There are many systems that already implement this kind of stuff so I thought I'll ignore
+
+458
+0:44:57,080 --> 0:45:03,200
+ it and just do something like, what's it called, traffic.
+
+459
+0:45:03,200 --> 0:45:07,120
+ Traffic is an API gateway, that's nice.
+
+460
+0:45:07,120 --> 0:45:11,160
+ Or any other system in front of it.
+
+461
+0:45:11,160 --> 0:45:12,600
+ Very interesting concept.
+
+462
+0:45:12,640 --> 0:45:19,600
+ I do wonder, how would you actually do joins, like in classical SQL join with the system?
+
+463
+0:45:19,600 --> 0:45:25,800
+ Yeah, well that's an interesting thing because joins are needed when you have normalized
+
+464
+0:45:25,800 --> 0:45:28,160
+ your data into separate columns.
+
+465
+0:45:28,160 --> 0:45:36,640
+ So what I actually end up doing is, this data set for example, was in separate files, separate
+
+466
+0:45:37,280 --> 0:45:44,560
+ for each type of people and starships and movies and stuff like that.
+
+467
+0:45:44,560 --> 0:45:50,680
+ And then they link to each other by using a number and maybe even a type.
+
+468
+0:45:50,680 --> 0:45:53,120
+ And what I've done is I've joined that in memory.
+
+469
+0:45:53,120 --> 0:45:58,600
+ So if you ask Luke Skywalker and you go to which starship does it have, it's just right
+
+470
+0:45:58,600 --> 0:45:59,600
+ there.
+
+471
+0:45:59,600 --> 0:46:02,520
+ You don't need a join because it is already joined.
+
+472
+0:46:02,520 --> 0:46:08,320
+ This does presuppose that you know how you're going to relate data to each other.
+
+473
+0:46:08,320 --> 0:46:12,960
+ So that is an important thing, similar to many of the NoSQL databases that do the exact
+
+474
+0:46:12,960 --> 0:46:18,280
+ same thing.
+
+475
+0:46:18,280 --> 0:46:20,560
+ Any more questions?
+
+476
+0:46:20,560 --> 0:46:22,960
+ No?
+
+477
+0:46:22,960 --> 0:46:23,960
+ Let's give a big hand to Oli.
+
+478
+0:46:23,960 --> 0:46:24,460
+ Thank you.

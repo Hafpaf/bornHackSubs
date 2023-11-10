@@ -1,0 +1,1321 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:10,680
+ We have the last presentation today in the speaker's tent is Peter Stucke, who is going
+
+2
+0:00:10,680 --> 0:00:15,160
+ to talk about Simplex Chat, simple messaging with unusually good privacy.
+
+3
+0:00:15,160 --> 0:00:20,560
+ Let's give a round of applause for Peter.
+
+4
+0:00:20,560 --> 0:00:21,560
+ Thank you very much.
+
+5
+0:00:21,560 --> 0:00:28,020
+ So, yes, Simplex Chat, it's a messenger.
+
+6
+0:00:28,020 --> 0:00:36,540
+ I want to talk a little about why it is better than many other, maybe most, maybe all.
+
+7
+0:00:36,540 --> 0:00:40,420
+ I'm going to go into a bit of propaganda about good technology and bad technology.
+
+8
+0:00:40,420 --> 0:00:42,220
+ I feel very strongly about that.
+
+9
+0:00:42,220 --> 0:00:46,620
+ Talk about some good messengers and then compare with this, which I find is an unusually good
+
+10
+0:00:46,620 --> 0:00:47,620
+ messenger.
+
+11
+0:00:47,620 --> 0:00:51,500
+ I'll talk about what client software there is.
+
+12
+0:00:51,500 --> 0:00:56,340
+ I'll talk about the feature set that works already, and then I'll talk about what's on
+
+13
+0:00:56,340 --> 0:00:59,260
+ the roadmap for this project.
+
+14
+0:00:59,260 --> 0:01:00,860
+ Maybe we'll look into the protocol.
+
+15
+0:01:00,860 --> 0:01:07,140
+ It's a little bit complicated with this other computer because of the graphics, and then
+
+16
+0:01:07,140 --> 0:01:09,460
+ thank you and questions.
+
+17
+0:01:09,460 --> 0:01:14,660
+ So, good technology and bad technology, right?
+
+18
+0:01:14,660 --> 0:01:22,080
+ I don't know if you've thought about this before, but why another messenger?
+
+19
+0:01:22,080 --> 0:01:26,180
+ You may be thinking, and I say, well, most of the messengers out there are really bad
+
+20
+0:01:26,180 --> 0:01:33,880
+ technology, and please make an effort to get friends and loved ones away from this bad
+
+21
+0:01:33,880 --> 0:01:37,000
+ technology that a lot of people are using.
+
+22
+0:01:37,000 --> 0:01:40,920
+ Most of new technology is actually really, really bad.
+
+23
+0:01:40,920 --> 0:01:41,920
+ It's not made for us.
+
+24
+0:01:41,920 --> 0:01:46,200
+ It's made to make money off of us in some way or other, right?
+
+25
+0:01:47,200 --> 0:01:53,680
+ I argue that this is why the internet has come to feel so bad lately, right?
+
+26
+0:01:53,680 --> 0:02:00,360
+ Many perhaps were around in the beginnings of the internet, and then it was all fun and
+
+27
+0:02:00,360 --> 0:02:04,920
+ exciting, but now it's really, really not so much fun anymore.
+
+28
+0:02:04,920 --> 0:02:11,060
+ So the thing is, you are valuable, right?
+
+29
+0:02:11,060 --> 0:02:18,500
+ Anybody who's dealing with technology, who's using technology, is really valuable, and
+
+30
+0:02:18,500 --> 0:02:23,940
+ by choosing what you use and what you do not use, which is very important.
+
+31
+0:02:23,940 --> 0:02:33,100
+ I find that we talk way too rarely about not using technology, choosing to reject stuff
+
+32
+0:02:33,100 --> 0:02:36,020
+ that is actually bad, right?
+
+33
+0:02:36,020 --> 0:02:41,680
+ By choosing what you use and what you don't use, you're determining the value of technology,
+
+34
+0:02:41,680 --> 0:02:45,060
+ because technology is worth nothing if nobody uses it.
+
+35
+0:02:45,060 --> 0:02:49,920
+ So there's this reverse network effect.
+
+36
+0:02:49,920 --> 0:02:51,160
+ Maybe you heard of the network effect.
+
+37
+0:02:51,160 --> 0:02:56,960
+ The more people use something, the more powerful it becomes and the more difficult it is to
+
+38
+0:02:56,960 --> 0:02:58,360
+ switch to something else.
+
+39
+0:02:58,360 --> 0:03:04,220
+ Well, if we start to move away from technology and choose not to use technology, then we're
+
+40
+0:03:04,380 --> 0:03:09,840
+ also helping get rid of that technology, which is really what we should do, because it's
+
+41
+0:03:09,840 --> 0:03:11,940
+ not in our interest.
+
+42
+0:03:11,940 --> 0:03:17,080
+ So whenever we use bad technology, we also help increase its value.
+
+43
+0:03:17,080 --> 0:03:21,960
+ We are sort of actively supporting this bad technology.
+
+44
+0:03:21,960 --> 0:03:26,860
+ So don't do that if you can't at all avoid it, right?
+
+45
+0:03:26,860 --> 0:03:30,360
+ It's important to reject bad technology.
+
+46
+0:03:30,360 --> 0:03:31,360
+ Enough propaganda.
+
+47
+0:03:31,360 --> 0:03:35,040
+ Some bad messengers, like WhatsApp is a bad messenger.
+
+48
+0:03:35,040 --> 0:03:40,960
+ It's a centralized system, U.S. jurisdiction.
+
+49
+0:03:40,960 --> 0:03:42,960
+ It's even forced centralized, right?
+
+50
+0:03:42,960 --> 0:03:46,980
+ There's no way to integrate with this system, really.
+
+51
+0:03:46,980 --> 0:03:48,260
+ It's closed.
+
+52
+0:03:48,260 --> 0:03:55,820
+ It also uses strong identifiers, so it's not so privacy-optimized, privacy-friendly.
+
+53
+0:03:55,820 --> 0:04:01,120
+ It's the full name, and it's closed source, so it's also really hard work to find out
+
+54
+0:04:01,280 --> 0:04:04,280
+ what is it actually doing.
+
+55
+0:04:04,280 --> 0:04:07,680
+ Signal is surprisingly similar to WhatsApp.
+
+56
+0:04:07,680 --> 0:04:10,800
+ The main difference is that it's open source.
+
+57
+0:04:10,800 --> 0:04:11,800
+ Meh.
+
+58
+0:04:11,800 --> 0:04:20,240
+ It's especially the way that Signal uses phone numbers as identifiers, I find, is an absolute
+
+59
+0:04:20,240 --> 0:04:25,680
+ disaster and completely rules out using Signal for anything.
+
+60
+0:04:26,320 --> 0:04:32,560
+ Signal is also a centralized closed system because they refuse to federate with anybody
+
+61
+0:04:32,560 --> 0:04:34,360
+ else, right?
+
+62
+0:04:34,360 --> 0:04:37,680
+ Then we have, for example, Telegram is another bad technology.
+
+63
+0:04:37,680 --> 0:04:44,000
+ Nobody knows what that is, where that's based, but it's still centralized and it's closed,
+
+64
+0:04:44,000 --> 0:04:48,560
+ like you can build bots and stuff, but you can't really run your own server, as far as
+
+65
+0:04:48,560 --> 0:04:50,040
+ I know.
+
+66
+0:04:50,040 --> 0:04:57,680
+ The security properties are nonexistent to unclear, is what I wrote.
+
+67
+0:04:57,680 --> 0:05:04,940
+ If you have a group in Telegram, anybody can just connect and download all of everything
+
+68
+0:05:04,940 --> 0:05:13,200
+ that has been said there, and for the direct chats, I'm not so sure what is really going
+
+69
+0:05:13,200 --> 0:05:14,200
+ on there.
+
+70
+0:05:14,640 --> 0:05:20,800
+ It's also closed source, right, and it's the identities and a bad situation, all of these,
+
+71
+0:05:20,800 --> 0:05:25,920
+ and there are more bad examples, right, but the slide is full.
+
+72
+0:05:25,920 --> 0:05:31,520
+ So let's talk about Simplex, and I find that I call it an unusually good messenger because
+
+73
+0:05:31,520 --> 0:05:35,160
+ it does a lot of things really, really right.
+
+74
+0:05:35,160 --> 0:05:38,840
+ I'm not involved in the project in any way.
+
+75
+0:05:38,920 --> 0:05:44,400
+ I found it a couple of months ago, and I looked through it, not the code, but the protocol
+
+76
+0:05:44,400 --> 0:05:45,600
+ and the design.
+
+77
+0:05:45,600 --> 0:05:47,240
+ I was really happily surprised.
+
+78
+0:05:47,240 --> 0:05:56,360
+ It was refreshing, so there are no global user identities, there's no way to recognize
+
+79
+0:05:56,360 --> 0:06:03,840
+ the same user, means there's also no discovery or search, so there's no way to find people
+
+80
+0:06:03,960 --> 0:06:09,080
+ inside the system, which I argue is a really good thing.
+
+81
+0:06:09,080 --> 0:06:17,000
+ That means we have to create connections explicitly when we meet or over some other channel, and
+
+82
+0:06:17,000 --> 0:06:20,880
+ why I think this is a good thing is that we have no spam.
+
+83
+0:06:20,880 --> 0:06:24,800
+ It's impossible to get spam in, or I mean, if you do get spam, it's from somebody you
+
+84
+0:06:24,800 --> 0:06:29,880
+ know because you connected with them, right.
+
+85
+0:06:29,920 --> 0:06:38,000
+ So invitations is what is used to create a connection, and it can be a QR code, or it
+
+86
+0:06:38,000 --> 0:06:44,200
+ can be just a link that you share over some other medium, and once you've connected, you
+
+87
+0:06:44,200 --> 0:06:51,000
+ can also verify if you'll meet later, if you're not connecting in person, when you'll meet
+
+88
+0:06:51,000 --> 0:06:57,120
+ at some later time, you can verify that your connection is really not man in the middle
+
+89
+0:06:57,120 --> 0:06:59,840
+ by anybody.
+
+90
+0:06:59,920 --> 0:07:04,160
+ So invitations, there are two kinds, that's kind of fun, I haven't seen that anywhere
+
+91
+0:07:04,160 --> 0:07:10,280
+ before, they can either be single use, that's sort of the normal case for adding one contact,
+
+92
+0:07:10,280 --> 0:07:15,800
+ adding a new contact, there's only one chance to use it and then it gets locked in, or it
+
+93
+0:07:15,800 --> 0:07:23,280
+ can be multi-use, that's like a public invitation to join a group, or maybe to contact me, if
+
+94
+0:07:23,280 --> 0:07:26,120
+ I want to, I could do that.
+
+95
+0:07:26,120 --> 0:07:33,440
+ And these are both revocable, so at any time I can also stop the invitation and anybody
+
+96
+0:07:33,440 --> 0:07:43,120
+ who tries to use it after that will not be able to connect, and that's really nice properties.
+
+97
+0:07:43,120 --> 0:07:47,680
+ Then there's this incognito option, which is a lot of fun, so because there are no user
+
+98
+0:07:47,680 --> 0:07:53,880
+ identities, right, how do we, what can we do with that?
+
+99
+0:07:53,880 --> 0:08:02,360
+ So we can have the situation where my client uses a different identity in every context,
+
+100
+0:08:02,360 --> 0:08:07,360
+ so it has a different identity for every person I'm communicating with and it has a different
+
+101
+0:08:07,360 --> 0:08:11,120
+ identity in every single group that I'm a member of.
+
+102
+0:08:11,120 --> 0:08:16,640
+ This means that somebody that I'm communicating directly with, they cannot know whether I
+
+103
+0:08:16,640 --> 0:08:22,920
+ am a member of some chat groups, and that may be really useful for me.
+
+104
+0:08:22,960 --> 0:08:27,640
+ Many clients, or I don't know about normally, but clients do have the possibility to probe
+
+105
+0:08:27,640 --> 0:08:33,040
+ group members, so if you join a group you can send a probe to everybody to sort of check
+
+106
+0:08:33,040 --> 0:08:37,080
+ if they are known to you already.
+
+107
+0:08:37,080 --> 0:08:43,880
+ Switching on this incognito option makes that not work, right, then it just, you will have
+
+108
+0:08:43,880 --> 0:08:51,720
+ duplicate contacts perhaps with the same name, and yeah, and be none the wiser.
+
+109
+0:08:52,520 --> 0:08:56,000
+ The server architecture is delightfully simple.
+
+110
+0:08:56,000 --> 0:09:02,640
+ It's a very simple server, it doesn't do much of anything, it's a message queue, just receiving
+
+111
+0:09:02,640 --> 0:09:10,160
+ messages and sending them out, there's crypto and so on, of course, but the server doesn't
+
+112
+0:09:10,160 --> 0:09:16,560
+ know very much or really anything about the contents, and the servers are decentralized.
+
+113
+0:09:16,560 --> 0:09:23,600
+ There's not one single server, you can have your own servers, and there are many servers
+
+114
+0:09:23,600 --> 0:09:28,240
+ already in operation, and it doesn't really matter which server you use, you can also
+
+115
+0:09:28,240 --> 0:09:34,120
+ move servers, like change servers at will.
+
+116
+0:09:34,120 --> 0:09:44,080
+ That's also fun, a nice new concept that I haven't seen in really anywhere before.
+
+117
+0:09:44,080 --> 0:09:49,840
+ The protocol is layered that helps with this, so I wrote like TCPIP, that helps with the
+
+118
+0:09:49,840 --> 0:09:54,440
+ separation that the server doesn't really know, it only takes care of transport, messages
+
+119
+0:09:54,440 --> 0:09:59,280
+ going through, it doesn't know the contents.
+
+120
+0:09:59,280 --> 0:10:03,320
+ Only the clients know what's inside the messages.
+
+121
+0:10:03,320 --> 0:10:09,520
+ Of course the server can see IP addresses, but we can use Tor and maybe other methods
+
+122
+0:10:09,640 --> 0:10:16,640
+ as well in order to not show our real IP address if we want to.
+
+123
+0:10:16,640 --> 0:10:25,640
+ And the way the protocol works, and the way this sort of loose server architecture, or
+
+124
+0:10:25,640 --> 0:10:30,800
+ well, flexible server architecture, works, allows the servers to not really have a lot
+
+125
+0:10:30,800 --> 0:10:37,280
+ of persistence, they don't need to store much information, which I also find is great.
+
+126
+0:10:37,280 --> 0:10:44,680
+ Of course a malicious server could still store everything, but the common case, the happy
+
+127
+0:10:44,680 --> 0:10:51,280
+ path, is that the server doesn't need to store really anything at all, almost, but very very
+
+128
+0:10:51,280 --> 0:10:57,120
+ little, which is also a really good thing, and this is very different from Matrix, for
+
+129
+0:10:57,120 --> 0:11:03,880
+ example, where the server has to store everything about everybody since forever.
+
+130
+0:11:03,880 --> 0:11:05,760
+ Don't use Matrix.
+
+131
+0:11:05,760 --> 0:11:08,540
+ So what about the client software?
+
+132
+0:11:08,540 --> 0:11:09,540
+ What is available right now?
+
+133
+0:11:09,540 --> 0:11:16,240
+ There's the command line software, it's the original implementation of the simplex chat
+
+134
+0:11:16,240 --> 0:11:22,960
+ protocol, it's written in Haskell, runs on at least Linux, Mac OS and Windows, I don't
+
+135
+0:11:22,960 --> 0:11:27,720
+ know that anybody has tried it on BSD, so please do that.
+
+136
+0:11:27,720 --> 0:11:34,640
+ Then there are mobile apps for Android and iOS, it's youngish, the first version was
+
+137
+0:11:34,640 --> 0:11:41,440
+ released in March last year, 2022, and by now the Android version is up to version 5.2,
+
+138
+0:11:41,440 --> 0:11:48,080
+ so there's quite a lot of development going on, and I've been using it for two months,
+
+139
+0:11:48,080 --> 0:11:54,400
+ just about, and I've had two updates so far, so about one update a month with a few new
+
+140
+0:11:54,400 --> 0:12:02,040
+ features in the first one, and one new feature, red acknowledgement, like the second check
+
+141
+0:12:02,040 --> 0:12:05,080
+ mark in the last update.
+
+142
+0:12:05,080 --> 0:12:11,200
+ So download you can from FDroid, it's already available there, you can get the APK file
+
+143
+0:12:11,200 --> 0:12:16,360
+ directly from upstream, but use FDroid, it's better, you get the updates, and it's also
+
+144
+0:12:16,360 --> 0:12:23,240
+ signed and so on, it's even available in the Play Store, get FDroid instead, and the Android
+
+145
+0:12:23,240 --> 0:12:30,440
+ app I feel works really well, I'm happy with it, using it for a couple of months, it's
+
+146
+0:12:30,840 --> 0:12:36,480
+ in Scotland, iOS, I haven't played with that, but I have a couple of friends who are hostage
+
+147
+0:12:36,480 --> 0:12:44,280
+ in iOS, and they are able to communicate with me, and I'm with them, and it's fine, everything's
+
+148
+0:12:44,280 --> 0:12:47,040
+ fine.
+
+149
+0:12:47,040 --> 0:12:52,440
+ Feature set, so it does text messaging, of course, that's the really basic stuff, right,
+
+150
+0:12:52,440 --> 0:12:59,640
+ you can also send links, they are a separate message type, links can contain a preview,
+
+151
+0:12:59,680 --> 0:13:04,920
+ the preview is created on the sender side, but there's an option to disable this, so
+
+152
+0:13:04,920 --> 0:13:09,240
+ you just send the link text and nothing else, like the link address, but if you have the
+
+153
+0:13:09,240 --> 0:13:15,720
+ option on, there's pretty graphics of the web page that the link points to, you can
+
+154
+0:13:15,720 --> 0:13:21,440
+ send also attachments, images, and any other kind of file, but images are then displayed
+
+155
+0:13:21,440 --> 0:13:24,000
+ in the conversation.
+
+156
+0:13:24,760 --> 0:13:31,240
+ So you can quote a previous message, supports forwarding, and if enabled, it allows to delete
+
+157
+0:13:31,240 --> 0:13:34,400
+ messages also in conversations.
+
+158
+0:13:34,400 --> 0:13:40,960
+ Secret chat groups, the chat groups are quite fun because they are not stored anywhere except
+
+159
+0:13:40,960 --> 0:13:47,080
+ on the clients, so the server doesn't know that there is a group, it only sees lots of
+
+160
+0:13:47,160 --> 0:13:54,840
+ connections between people, or like between clients, right, and they are no different
+
+161
+0:13:54,840 --> 0:14:01,520
+ from one to one connections, so a group looks for the server exactly the same as many person
+
+162
+0:14:01,520 --> 0:14:08,120
+ to person connections, that's nice, it works fine to create groups and manage groups, it
+
+163
+0:14:08,120 --> 0:14:14,400
+ also supports audio and video calls, that works as well, uses WebRTC, so the privacy
+
+164
+0:14:14,720 --> 0:14:24,400
+ benefits of the simplex message queue protocol are lost, but well, it works for calling,
+
+165
+0:14:24,400 --> 0:14:32,120
+ and if you enable Tor inside the app, I don't know what happens with the WebRTC, we should
+
+166
+0:14:32,120 --> 0:14:38,960
+ investigate that, that's on my to-do list, but anyway, the calling works fine also.
+
+167
+0:14:38,960 --> 0:14:47,840
+ So these are some to-dos on the roadmap at the project, they want to do this, as I mentioned,
+
+168
+0:14:47,840 --> 0:14:53,880
+ we can change servers, change which server is being used for an established contact,
+
+169
+0:14:53,880 --> 0:14:59,480
+ that can be done manually at the moment, but they want to make that automatic I guess every
+
+170
+0:14:59,480 --> 0:15:07,320
+ now and then, change server and or just replace the queue that is being used.
+
+171
+0:15:07,320 --> 0:15:14,040
+ Then contacting somebody using an invitation, they want to add sort of an introduction message
+
+172
+0:15:14,040 --> 0:15:23,600
+ of some kind, some encryption for local files stored, navigation and search inside the conversation,
+
+173
+0:15:23,600 --> 0:15:29,040
+ larger groups, so I don't know where the cutoff is, but it seems that there is some kind of
+
+174
+0:15:29,040 --> 0:15:35,120
+ scalability limit, right, because there is this everybody to everybody connection or
+
+175
+0:15:35,120 --> 0:15:43,880
+ situation in the groups, I can imagine that if doing really thousands or hundreds of
+
+176
+0:15:43,880 --> 0:15:49,360
+ people in a group that doesn't scale so well, so I'm interested to see what they come up with there.
+
+177
+0:15:49,360 --> 0:15:58,440
+ Ephemeral, like disappearing conversations, sure, sharing location, sure, I don't know,
+
+178
+0:15:58,440 --> 0:16:06,360
+ but this web widget stuff, not so much for me, but okay I guess, programmable automations,
+
+179
+0:16:06,360 --> 0:16:15,400
+ like maybe vacation replies, the classic one, and then there's I think a big one that really,
+
+180
+0:16:15,400 --> 0:16:20,600
+ it doesn't matter so much to me personally, but multi-device support I think is really
+
+181
+0:16:20,600 --> 0:16:29,120
+ valuable for a lot of people, and I look forward to that working as well, and then for those who
+
+182
+0:16:29,120 --> 0:16:37,280
+ want to, they want to help create easier discovery, something based on DNS, and then this message
+
+183
+0:16:37,280 --> 0:16:43,640
+ delivery relay for senders is something I think like what Tor does as well, with you add extra
+
+184
+0:16:43,640 --> 0:16:49,120
+ systems in front to just not show the exact IP address you're using and still get messages
+
+185
+0:16:49,120 --> 0:16:55,840
+ delivered, that's also fine, but yeah I like the general sort of ideas that they have in the
+
+186
+0:16:55,840 --> 0:17:01,800
+ roadmap, I think this is fun, and especially the multi-device support I think will make a big
+
+187
+0:17:01,800 --> 0:17:09,840
+ difference for people being excited about this. So now I was considering just walking through the
+
+188
+0:17:09,840 --> 0:17:16,880
+ protocol descriptions, because they are actually really simple, and I encourage you to read them,
+
+189
+0:17:16,880 --> 0:17:21,200
+ but on this computer I'm not so sure if that will work out.
+
+190
+0:17:46,880 --> 0:18:08,480
+ Yeah, they want help translating, why not? So they talk about privacy here and why it matters,
+
+191
+0:18:08,480 --> 0:18:16,200
+ there was some discussion, some debate about that right, why do we need privacy or how much
+
+192
+0:18:16,200 --> 0:18:23,280
+ this story is amazing, somebody who made a phone call to a relative in Afghanistan and then was
+
+193
+0:18:23,280 --> 0:18:33,400
+ put in Guantanamo for 15 years, it's not a good situation. So Simplex, they talk about what they
+
+194
+0:18:33,400 --> 0:18:41,240
+ do, I mentioned some of this ownership of the data, everything is client-side, I think that's
+
+195
+0:18:41,280 --> 0:18:54,160
+ a really good feature, and we can run our own servers, I talked about signal being centralized
+
+196
+0:18:54,160 --> 0:19:05,240
+ with all the metadata, how's it different from matrix etc., well there is no identity at all,
+
+197
+0:19:05,360 --> 0:19:15,480
+ it's really every connection is a new connection, quick install, platform design,
+
+198
+0:19:15,480 --> 0:19:25,360
+ so not the chat protocol, also not the server implementation here, this is what I want.
+
+199
+0:19:25,360 --> 0:19:40,880
+ So it's 900 lines, that's not really long for a protocol, description markdown,
+
+200
+0:19:40,880 --> 0:19:50,280
+ independent of any transmission system, so it works over TCP on the internet right,
+
+201
+0:19:50,320 --> 0:19:57,200
+ but it can also use anything else but it doesn't really care as long as the message format is the
+
+202
+0:19:57,200 --> 0:20:09,680
+ same, we could also use bridges, build bridges between lots of different transports. The data
+
+203
+0:20:09,680 --> 0:20:15,400
+ model or the communication model has three participants, the recipient, the server and
+
+204
+0:20:15,520 --> 0:20:24,880
+ the sender, this order will make sense in a second, the server has these cues, message cues,
+
+205
+0:20:24,880 --> 0:20:36,800
+ and a cue is created by the recipient, so if I want to invite a contact to reach me,
+
+206
+0:20:36,800 --> 0:20:44,200
+ I prepare a cue for this, and I then provide some information in the QR code or in a link
+
+207
+0:20:44,200 --> 0:20:52,840
+ to the person I want to be reachable for, and they then connect to the other side of the server,
+
+208
+0:20:52,840 --> 0:21:01,720
+ and then we have a one-way channel, they do the same and then over this one-way channel they send
+
+209
+0:21:01,720 --> 0:21:06,680
+ me how I will be able to reach them, and then we have a two-way channel, and this is all transparent,
+
+210
+0:21:06,680 --> 0:21:13,840
+ it happens just that, the app does it, but these two paths they don't need to go over the same
+
+211
+0:21:13,840 --> 0:21:23,840
+ server, they usually don't, and they don't identify us also in any way, that's also nice,
+
+212
+0:21:23,840 --> 0:21:35,440
+ so out of band messages, we need to do this initial contact out of band, simplex cue,
+
+213
+0:21:35,960 --> 0:21:45,520
+ as I said, it sends messages in one direction, can be communicated in a link, it has this syntax,
+
+214
+0:21:45,520 --> 0:21:56,400
+ so when as I said Alice and Bob they want to communicate, Alice wants to receive messages
+
+215
+0:21:56,400 --> 0:22:06,920
+ from Bob, she creates the new cue, creates a random key, creates another random key,
+
+216
+0:22:06,920 --> 0:22:13,120
+ so the first one is for Bob to encrypt the contents of messages, and the second one is
+
+217
+0:22:13,120 --> 0:22:25,600
+ for Alice to communicate with the server, and then another key pair for one extra encryption layer
+
+218
+0:22:25,600 --> 0:22:35,120
+ that the server uses between itself and Alice, so that anything that goes into a server never
+
+219
+0:22:35,120 --> 0:22:42,960
+ comes out the same, the same data never comes out, this is also a nice feature that I don't know
+
+220
+0:22:42,960 --> 0:22:51,400
+ that I've seen anywhere else, this makes correlation really difficult for anybody watching the server,
+
+221
+0:22:51,400 --> 0:23:00,520
+ right, then Alice creates the cue with this new command, the server responds and says here are
+
+222
+0:23:00,520 --> 0:23:09,320
+ the IDs that you and Bob need to use, Alice gives Bob this information, gives him first the public
+
+223
+0:23:09,320 --> 0:23:20,840
+ key for the messages and then where the server is and then his sender ID for this cue, Bob creates
+
+224
+0:23:21,000 --> 0:23:30,040
+ then his key for communicating with the server and prepares confirmation message to Alice,
+
+225
+0:23:30,040 --> 0:23:40,520
+ so he then sends through the server to Alice, okay I'm here, Alice then receives this message
+
+226
+0:23:40,520 --> 0:23:50,120
+ from Bob and locks the cue to only work with Bob, up until that point anybody else who also
+
+227
+0:23:50,120 --> 0:23:56,440
+ guessed the information that Alice sent to Bob out of band could also have tried to connect,
+
+228
+0:23:56,440 --> 0:24:02,760
+ but only one, so the winner, the first one wins and Bob would get an error message and if Alice
+
+229
+0:24:02,760 --> 0:24:09,880
+ and Bob are communicating as they need to be out of band, then they will recognize that somebody
+
+230
+0:24:09,880 --> 0:24:17,160
+ is trying to mess with them, and that's it, now this one-way communication from Bob to Alice
+
+231
+0:24:17,160 --> 0:24:22,600
+ has been established and after that Bob does exactly the same thing to create a channel
+
+232
+0:24:23,640 --> 0:24:32,760
+ for Alice to reach Bob, here's a nice diagram showing exactly this,
+
+233
+0:24:32,760 --> 0:24:48,920
+ and here's how the cue works once it has been established, so the recipient subscribes
+
+234
+0:24:50,600 --> 0:24:57,880
+ and is verified, then the sender subscribes and is verified, sends a message, the recipient fetches
+
+235
+0:24:57,880 --> 0:25:04,200
+ messages from the cue, that's it, it's really simple, and there's end-to-end encryption going
+
+236
+0:25:04,200 --> 0:25:10,840
+ on inside or of the message contents as well, but the server doesn't know and doesn't care,
+
+237
+0:25:15,160 --> 0:25:22,200
+ that's pretty much it, right, multiple servers do not communicate with each other, they don't need
+
+238
+0:25:22,200 --> 0:25:27,000
+ to share any state, they don't need to know anything about each other, the clients decide
+
+239
+0:25:27,000 --> 0:25:37,320
+ everything, servers need to store messages only until they are downloaded by the recipient,
+
+240
+0:25:39,400 --> 0:25:49,000
+ no history or logs need to be stored, again very unlike matrix, and so what was this last point,
+
+241
+0:25:49,000 --> 0:26:02,040
+ yeah simplex cues one-way, crypto it's using a lot of salt, the salt crypto box, it's using
+
+242
+0:26:02,040 --> 0:26:07,080
+ EDD 24519, EDD 448,
+
+243
+0:26:17,480 --> 0:26:23,560
+ yeah servers must not store and send stuff to other servers, sure, there are message delivery
+
+244
+0:26:23,560 --> 0:26:31,160
+ notifications, so for, and that's also a really nice, I think they've solved that nicely,
+
+245
+0:26:31,240 --> 0:26:37,720
+ so for mobile operating systems there are proprietary services for push notifications,
+
+246
+0:26:37,720 --> 0:26:42,200
+ right, and we don't want to send the message contents, and we also don't want to send
+
+247
+0:26:42,760 --> 0:26:51,800
+ the metadata there, here there is a sort of extra subscription possible for a notification helper
+
+248
+0:26:51,800 --> 0:26:58,600
+ that will receive information that there is something to fetch in the cue, but not what it
+
+249
+0:26:58,600 --> 0:27:06,280
+ is and not from who and nothing else, and can send this through the proprietary push notification
+
+250
+0:27:07,080 --> 0:27:14,200
+ infrastructure, that's fun also, and it works really well, even on the, so I heard the command
+
+251
+0:27:14,200 --> 0:27:21,640
+ line client actually also does this kind of notification on macOS, which is fun for macOS
+
+252
+0:27:21,720 --> 0:27:29,320
+ users, here are the details of the block structure, it's quite simple, refreshing, so when I read
+
+253
+0:27:29,320 --> 0:27:36,200
+ through this detailed and slow I had the feeling I'm actually able to implement this, it's going
+
+254
+0:27:36,200 --> 0:27:42,600
+ to take maybe a week, but it's really straightforward, right, that's very nice, I haven't seen
+
+255
+0:27:42,600 --> 0:27:51,000
+ such a simple protocol in a while, some interesting commands that we can take a look at,
+
+256
+0:27:52,200 --> 0:27:57,560
+ acknowledge message delivery, suspend queue, I haven't tried that, yeah, send message,
+
+257
+0:28:03,240 --> 0:28:11,160
+ receive message, okay, so some has some depth, right, to the message structure,
+
+258
+0:28:11,160 --> 0:28:13,240
+ but it's all right, it's not so bad,
+
+259
+0:28:13,240 --> 0:28:18,040
+ and error responses,
+
+260
+0:28:20,280 --> 0:28:26,520
+ we have transport protocol, TCP, whatever port, TLS 1.3, with this particular algorithm,
+
+261
+0:28:26,520 --> 0:28:36,600
+ cha-cha 20, poly 1305, SHA-256, 24519, ED and X, key exchange and signatures,
+
+262
+0:28:37,400 --> 0:28:43,560
+ strict, so a couple of really strict requirements on how the server behaves, the client has a
+
+263
+0:28:43,560 --> 0:28:49,000
+ possibility to reject the server if the server starts behaving strangely,
+
+264
+0:28:51,000 --> 0:28:57,880
+ fixed size communication blocks, so 16 kilobyte communication blocks, that's good to not reveal
+
+265
+0:28:57,880 --> 0:29:03,880
+ how large messages are that are being sent, and 16 kilobyte is not so much overhead, I think that's
+
+266
+0:29:03,880 --> 0:29:11,800
+ okay, yeah, and that's it, that's the end of the protocol specification,
+
+267
+0:29:16,680 --> 0:29:26,280
+ so let's see, page nine, that's all the the protocol fun I want to go into, but I encourage
+
+268
+0:29:26,280 --> 0:29:33,480
+ you to look at the documentation, the documentation is really good, there's a user guide,
+
+269
+0:29:34,200 --> 0:29:39,240
+ and there's also a description of what the message protocol is
+
+270
+0:29:40,840 --> 0:29:46,280
+ for the contents of the messages, I didn't talk all about that, it's a very simple JSON format,
+
+271
+0:29:48,280 --> 0:29:54,680
+ yeah, quite straightforward, so if you want to, you can connect to the bornhack23 simplex group,
+
+272
+0:29:54,680 --> 0:30:01,480
+ there's already like 15 people maybe in it, once you've installed, and thank you to organizers and
+
+273
+0:30:01,480 --> 0:30:08,840
+ volunteers for making this event, and I'll take questions if you have any, we have a question here,
+
+274
+0:30:11,640 --> 0:30:16,200
+ yeah, thanks for the talk, actually very interesting, as a matrix user, I know that
+
+275
+0:30:16,200 --> 0:30:23,560
+ matrix is really optimized for large rooms with large groups, and you said for the servers in
+
+276
+0:30:23,560 --> 0:30:29,720
+ with simplex, they don't know if it's like a one-to-one connection or a connection to a group chat,
+
+277
+0:30:30,440 --> 0:30:36,440
+ and I wonder how well does simplex scale for larger groups, and is that even a design goal
+
+278
+0:30:36,440 --> 0:30:44,840
+ to scale that much? Right, excellent question, so at the moment groups are the same as one-to-one,
+
+279
+0:30:44,840 --> 0:30:49,240
+ so if I'm in a group, I have a connection to everybody else in the group, and everybody
+
+280
+0:30:49,240 --> 0:30:54,520
+ else also has a connection to everybody else in the group, that doesn't scale so great,
+
+281
+0:30:55,480 --> 0:31:01,480
+ I don't know where the limit is, but it will be somewhere, and on the roadmap they have this
+
+282
+0:31:01,480 --> 0:31:07,480
+ large group point, I don't know what the status is, but clearly somebody's thinking about it,
+
+283
+0:31:07,480 --> 0:31:11,000
+ and they want to also have a good solution for that.
+
+284
+0:31:11,000 --> 0:31:24,440
+ Thank you, and someone in the middle of your talk, you mentioned that the server re-incrits
+
+285
+0:31:24,440 --> 0:31:29,800
+ incoming messages into another key, sending it out, and that was good for stopping correlation
+
+286
+0:31:29,800 --> 0:31:35,800
+ attacks, and then at the end you mentioned the 16 kilobyte padding, are those connected? Because
+
+287
+0:31:35,800 --> 0:31:41,240
+ without the padding, I can see that the correlation could be done anyway, is these 16
+
+288
+0:31:41,240 --> 0:31:48,360
+ kilobytes, is that the message size that will help, or what is that? So the 16 kilobyte is a block
+
+289
+0:31:48,360 --> 0:31:55,640
+ size, so it's the smallest amount of data that will go out, anything coming in or out of the
+
+290
+0:31:55,640 --> 0:32:03,640
+ server will be a multiple of 16 kilobytes. Does that answer the question? Yeah. Okay, and
+
+291
+0:32:04,120 --> 0:32:10,200
+ yes, correlation, there is the extra encryption on sending to the recipient, on the server
+
+292
+0:32:11,000 --> 0:32:16,520
+ sending to the recipient of a message, to make sure that what comes in is never what goes out.
+
+293
+0:32:20,920 --> 0:32:27,480
+ Yeah, so thanks for the talk. I think it's also read the protocol, and I thought it was a kind
+
+294
+0:32:28,440 --> 0:32:35,000
+ of nice take to do something really new. However, I also thought that this is very much a privacy
+
+295
+0:32:35,960 --> 0:32:43,160
+ focused, mostly privacy focused application, and for using broad scale communications with
+
+296
+0:32:43,160 --> 0:32:49,720
+ other people, it has some big flaws, I would say, kind of hard to have this as the one
+
+297
+0:32:50,200 --> 0:32:57,800
+ app to use. So, and especially for instance, if I were to have people contact me somehow,
+
+298
+0:32:57,800 --> 0:33:04,680
+ well, should you have email as a fallback as the first point of contact? Or how would you go about
+
+299
+0:33:04,680 --> 0:33:09,320
+ doing it? And what happened if you lose your device? Because if I understood correctly,
+
+300
+0:33:09,320 --> 0:33:17,720
+ you can't really save your link to the persons you have, because then if you would use that
+
+301
+0:33:18,440 --> 0:33:22,920
+ shared link again, then it will be an error. So think like, if you lose your device,
+
+302
+0:33:23,560 --> 0:33:30,680
+ and you have, like, how would you go about doing it? And basically, can you see any problems,
+
+303
+0:33:30,680 --> 0:33:36,120
+ as I will see, having this as the only app in big quotation marks? Thanks.
+
+304
+0:33:37,400 --> 0:33:44,680
+ So let me confirm, I understood two questions. One question was how to use this for
+
+305
+0:33:44,760 --> 0:33:52,680
+ inviting anybody to contact me, anybody I don't know to contact me. And the second one was about
+
+306
+0:33:53,320 --> 0:34:01,320
+ how to handle the situation where I lose my device. Did I understand correctly? Okay,
+
+307
+0:34:01,320 --> 0:34:07,320
+ so let's start with the first one. I mentioned, it was quick, sorry about that. There are two
+
+308
+0:34:07,320 --> 0:34:13,320
+ kinds of invitations. There's a single use invitation, but there's also a multi use invitation.
+
+309
+0:34:13,400 --> 0:34:21,640
+ And this is a multi use invitation. So it's possible to publish a multi use invitation
+
+310
+0:34:21,640 --> 0:34:29,880
+ on a webpage, on a slide, and any number of people can use this to connect to, in this case,
+
+311
+0:34:29,880 --> 0:34:39,240
+ the group. I could also put my own, like, one for me personally there, and I can revoke these
+
+312
+0:34:39,240 --> 0:34:44,200
+ at some later time. I will, after the event, I will revoke this, so make sure to join now.
+
+313
+0:34:45,560 --> 0:34:51,880
+ But I think the multi use invitation is the solution for the first. And the second part,
+
+314
+0:34:51,880 --> 0:34:55,560
+ what do I do if I lose my device? Well, you restore the backup that you had made
+
+315
+0:34:57,960 --> 0:35:07,320
+ on a new device. And personally, so once the multi device feature is available,
+
+316
+0:35:08,040 --> 0:35:16,280
+ I'm really excited about this. I think this can work really for everyone and all use cases,
+
+317
+0:35:16,280 --> 0:35:23,400
+ right? Okay, so there's this broadcast and super large group. That's also an important feature,
+
+318
+0:35:23,400 --> 0:35:32,680
+ but I'm really enthusiastic about how this is going, and it's been around for not very long.
+
+319
+0:35:37,320 --> 0:35:46,840
+ Thank you for the talk. Do you know if there's any progress on making a desktop client that's
+
+320
+0:35:46,840 --> 0:35:52,840
+ not the CLI one they have, or if anybody's working independently on implementations in other languages
+
+321
+0:35:52,840 --> 0:36:00,360
+ besides the Haskell? So I've seen that they have a to do for a desktop client. I don't know what the
+
+322
+0:36:00,360 --> 0:36:05,960
+ status is, because I personally don't care, but a lot of people want that as well. That's true.
+
+323
+0:36:06,680 --> 0:36:13,320
+ And other implementations, well, my fingers are itching to implement this myself. So maybe there
+
+324
+0:36:13,320 --> 0:36:18,680
+ will be one at some point, but I'm not going to promise when. And other than that, I don't know.
+
+325
+0:36:18,680 --> 0:36:24,680
+ You people should also create an implementation. Why not? It's pretty straightforward. And I think
+
+326
+0:36:24,680 --> 0:36:34,920
+ that's a good also call for action to, well, either at a minimum integrate with what is there,
+
+327
+0:36:34,920 --> 0:36:43,080
+ but also look at creating more implementations. Was there one more? Okay. Any other questions?
+
+328
+0:36:53,720 --> 0:37:00,120
+ Is this related to the very similar looking protocols on the surface level from NOSTA and
+
+329
+0:37:00,120 --> 0:37:03,720
+ precision? I don't know. I haven't looked at them.
+
+330
+0:37:09,080 --> 0:37:13,080
+ Any other questions? Let's give a round of applause for Peter then.

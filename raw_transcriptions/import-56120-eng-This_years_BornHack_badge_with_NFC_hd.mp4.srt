@@ -1,0 +1,2721 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:16,400
+ So, welcome to the first real talk at Born Hack 2023.
+
+2
+0:00:16,400 --> 0:00:19,800
+ First of all, I would like to, and then you can clap afterwards.
+
+3
+0:00:19,800 --> 0:00:26,480
+ I would like to announce that there's still slots available for massage today.
+
+4
+0:00:26,480 --> 0:00:31,000
+ If you go to the webshop, if you have some sore muscles that need massaging,
+
+5
+0:00:31,000 --> 0:00:33,880
+ the guy who's doing the massages is really, really good.
+
+6
+0:00:33,880 --> 0:00:38,200
+ So, please go to the webshop on the Born Hack website and book a massage.
+
+7
+0:00:38,200 --> 0:00:43,120
+ There's also slots on Saturday, I think.
+
+8
+0:00:43,120 --> 0:00:45,480
+ So, yeah, I promise to announce that.
+
+9
+0:00:45,480 --> 0:00:52,080
+ Then, let's give a big welcome to Flummer, who's going to talk about this year's batch.
+
+10
+0:00:56,480 --> 0:01:19,280
+ So, welcome.
+
+11
+0:01:19,280 --> 0:01:25,080
+ I know that the batches are not available at the Info Desk yet, but they will be.
+
+12
+0:01:25,080 --> 0:01:26,080
+ They are here.
+
+13
+0:01:26,400 --> 0:01:30,840
+ We need to put some firmware and stuff on them, program them,
+
+14
+0:01:30,840 --> 0:01:34,800
+ and they will be available as soon as we can get them there.
+
+15
+0:01:34,800 --> 0:01:41,960
+ So, this year, we are playing with NFC.
+
+16
+0:01:41,960 --> 0:01:51,120
+ It's a technology that has sort of moved into a lot of everyday things in recent years.
+
+17
+0:01:51,160 --> 0:01:58,240
+ And I'll start by going through a little bit what NFC is and how it works,
+
+18
+0:01:58,240 --> 0:02:04,040
+ and then we'll go into the more details of how the batch is set up.
+
+19
+0:02:04,040 --> 0:02:08,080
+ So, NFC is short for Near Field Communication,
+
+20
+0:02:08,080 --> 0:02:15,120
+ and it's a sort of radio frequency identification and building on top of that.
+
+21
+0:02:15,120 --> 0:02:20,160
+ It uses the 13.56 megahertz band,
+
+22
+0:02:20,160 --> 0:02:25,360
+ which is also known as the high frequency RFID.
+
+23
+0:02:25,360 --> 0:02:32,560
+ It's mostly used for short distances, so places where we can get fairly close.
+
+24
+0:02:32,560 --> 0:02:34,600
+ It doesn't work from like meters away.
+
+25
+0:02:34,600 --> 0:02:37,920
+ In theory, you can get up to meters, but in practice,
+
+26
+0:02:37,920 --> 0:02:43,440
+ that will not happen with anything that resembles a regular antenna.
+
+27
+0:02:43,440 --> 0:02:49,600
+ And it's also designed for very sort of low data rates, low information.
+
+28
+0:02:49,600 --> 0:02:54,120
+ And most often, you see it in little plastic cards like these.
+
+29
+0:02:54,120 --> 0:02:57,880
+ Usually, they have print on them with marketing or whatever,
+
+30
+0:02:57,880 --> 0:03:03,320
+ but it's hidden away in these plastic cards.
+
+31
+0:03:03,320 --> 0:03:07,840
+ There are also other types of RFID just to sort of give a scope.
+
+32
+0:03:07,840 --> 0:03:14,440
+ So, the sub-130 kilohertz stuff.
+
+33
+0:03:14,440 --> 0:03:18,760
+ The older access systems, like for doors getting into buildings,
+
+34
+0:03:18,800 --> 0:03:25,320
+ server rooms, and so on, often use the 125 kilohertz band here in Europe, at least.
+
+35
+0:03:25,320 --> 0:03:28,560
+ And those only had an ID. There was nothing else.
+
+36
+0:03:28,560 --> 0:03:33,280
+ It was just this ID number, and nowadays, they are very easy to crack.
+
+37
+0:03:33,280 --> 0:03:36,840
+ It's copy them is not a problem.
+
+38
+0:03:36,840 --> 0:03:40,000
+ They're still used for like simpler stuff in this frequency range.
+
+39
+0:03:40,000 --> 0:03:41,760
+ It's also used for animal tracking.
+
+40
+0:03:41,760 --> 0:03:45,320
+ So, if you put a little chip in your pet, when your cat runs away,
+
+41
+0:03:45,320 --> 0:03:52,000
+ somebody finds it, they can scan that chip and get the ID out,
+
+42
+0:03:52,000 --> 0:03:56,280
+ and then they can look up who's owner of this pet.
+
+43
+0:03:56,280 --> 0:04:01,960
+ Another use of RFID is the 430 megahertz band in Europe
+
+44
+0:04:01,960 --> 0:04:06,840
+ and the 900 megahertz band in the US for shipping containers
+
+45
+0:04:06,840 --> 0:04:12,880
+ and inside a factory floor, controlling little boxes moving around and so on.
+
+46
+0:04:12,920 --> 0:04:16,920
+ That's also known as UFHF, ultra-high frequency.
+
+47
+0:04:16,920 --> 0:04:22,800
+ And then there's the toll booth systems, the little storebills or whatever,
+
+48
+0:04:22,800 --> 0:04:25,520
+ when you go through these bridges and so on.
+
+49
+0:04:25,520 --> 0:04:28,000
+ They use 2.4 gigahertz.
+
+50
+0:04:28,000 --> 0:04:32,280
+ So, those are the other kinds of RFID stuff.
+
+51
+0:04:32,280 --> 0:04:36,320
+ But for this, we will focus on the NFC that is sort of in the middle here.
+
+52
+0:04:37,320 --> 0:04:42,760
+ They are most commonly, like pretty much anybody,
+
+53
+0:04:42,760 --> 0:04:46,760
+ if you probably have a payment card that has NFC in it,
+
+54
+0:04:46,760 --> 0:04:54,040
+ it's the tab to pay the contactless payment that usually speeds up the processing in the store.
+
+55
+0:04:54,040 --> 0:04:58,480
+ You don't have to enter your PIN if it's low amounts and so on.
+
+56
+0:04:58,480 --> 0:05:00,600
+ They have become very popular.
+
+57
+0:05:00,600 --> 0:05:06,240
+ The stores love them because they can handle more customers in the same time and so on.
+
+58
+0:05:06,400 --> 0:05:12,480
+ And also, they don't break as easily, like the chip might get dirty and the contact doesn't work.
+
+59
+0:05:12,480 --> 0:05:17,080
+ The chip, you can pretty much run it through the washing machine and it will still work.
+
+60
+0:05:17,080 --> 0:05:21,240
+ Also, travel cards. Here in Denmark, we have these Leizakorps things.
+
+61
+0:05:21,240 --> 0:05:24,360
+ They are also NFC-based.
+
+62
+0:05:24,360 --> 0:05:27,240
+ And access control.
+
+63
+0:05:27,240 --> 0:05:31,760
+ Some places you might switch from the older RFID stuff,
+
+64
+0:05:31,760 --> 0:05:37,920
+ the Prox or the EM4100, to NFC to get more security.
+
+65
+0:05:37,920 --> 0:05:42,240
+ But in many cases, it's also because you want functionality.
+
+66
+0:05:42,240 --> 0:05:47,520
+ So, like a hotel updating their system.
+
+67
+0:05:47,520 --> 0:05:56,720
+ They can actually use the data on these cards to prevent having to wire every single lock
+
+68
+0:05:56,720 --> 0:06:01,240
+ in every single room of their building so that you can have some intelligence there
+
+69
+0:06:01,240 --> 0:06:04,920
+ and a little bit of crypto to protect stuff.
+
+70
+0:06:04,920 --> 0:06:09,040
+ And if it's not super high security, that will work okay.
+
+71
+0:06:09,040 --> 0:06:13,480
+ The building where I have an office recently changed to NFC bricks
+
+72
+0:06:13,480 --> 0:06:18,360
+ because they could simply change the lock part of the lock without taking any wires.
+
+73
+0:06:18,360 --> 0:06:20,360
+ There's a little battery in there.
+
+74
+0:06:20,360 --> 0:06:23,960
+ But then they can do functionality where some users can access some doors,
+
+75
+0:06:23,960 --> 0:06:26,040
+ others can't access the others and so on.
+
+76
+0:06:26,040 --> 0:06:30,280
+ But every user only have one little brick or card or something.
+
+77
+0:06:30,280 --> 0:06:35,080
+ Another place where NFC is used, not as common as the other ones,
+
+78
+0:06:35,080 --> 0:06:42,840
+ but it's like at museums where you want to augment the exhibits in different ways.
+
+79
+0:06:42,840 --> 0:06:47,360
+ Where you have a phone, you can get a URL or something similar to QR code being used
+
+80
+0:06:47,360 --> 0:06:49,040
+ where you can scan the QR code.
+
+81
+0:06:49,040 --> 0:06:52,800
+ But here with NFC instead, there can maybe be a little more data in there.
+
+82
+0:06:52,800 --> 0:06:56,360
+ Smart posters and that sort of things.
+
+83
+0:06:56,360 --> 0:06:58,960
+ And then there's also provisioning.
+
+84
+0:06:58,960 --> 0:07:03,600
+ So when you get a little home device of some sort that needs to connect to a Wi-Fi,
+
+85
+0:07:03,600 --> 0:07:06,680
+ you need to have some credentials and so on.
+
+86
+0:07:06,680 --> 0:07:08,160
+ NFC can also be used for that.
+
+87
+0:07:08,160 --> 0:07:11,440
+ So if you have an app for that device,
+
+88
+0:07:11,440 --> 0:07:15,960
+ then you can just touch your phone up to the little NFC antenna on the device,
+
+89
+0:07:15,960 --> 0:07:19,440
+ and then you can communicate and put in the credentials.
+
+90
+0:07:19,440 --> 0:07:25,440
+ So sort of getting a device on your network, little IoT stuff and so on.
+
+91
+0:07:25,440 --> 0:07:32,560
+ That sort of mechanism is actually what the little part on the tag of the badge
+
+92
+0:07:32,560 --> 0:07:37,240
+ is actually meant for that because it has a dual interface.
+
+93
+0:07:37,240 --> 0:07:39,680
+ And the last one I mentioned here is a trigger for tasks.
+
+94
+0:07:39,680 --> 0:07:47,200
+ So many smartphones have these NFC stuff built in nowadays.
+
+95
+0:07:47,200 --> 0:07:52,800
+ And since there's a unique ID in all the tags, well, unique,
+
+96
+0:07:52,800 --> 0:07:55,920
+ then they can be used to trigger things.
+
+97
+0:07:55,920 --> 0:07:58,520
+ So you can have like a little tag next to your bed.
+
+98
+0:07:58,520 --> 0:08:01,600
+ So when you put your phone there, it can sort of read that tag
+
+99
+0:08:01,600 --> 0:08:06,120
+ and then run some commands in your home automation or whatever.
+
+100
+0:08:06,120 --> 0:08:07,160
+ It could possibly be other things.
+
+101
+0:08:07,160 --> 0:08:10,640
+ We can sort of pre-program things where you simply just tap your phone,
+
+102
+0:08:10,640 --> 0:08:14,840
+ maybe as part of another operation where you put it to charge or whatever.
+
+103
+0:08:14,840 --> 0:08:18,080
+ Then you can just trigger things to happen.
+
+104
+0:08:18,080 --> 0:08:23,080
+ So that's another thing that you can use these NFCs for.
+
+105
+0:08:23,080 --> 0:08:28,760
+ So NFCs are sort of radio stuff.
+
+106
+0:08:28,760 --> 0:08:33,640
+ But it's radio is slightly different than, for instance, an antenna like this.
+
+107
+0:08:33,640 --> 0:08:38,120
+ And where Walkie Talkie had the same radio in there,
+
+108
+0:08:38,120 --> 0:08:43,840
+ the NFC stuff is sort of asymmetric where you have an active device,
+
+109
+0:08:43,840 --> 0:08:47,280
+ which is the reader or like a phone.
+
+110
+0:08:47,320 --> 0:08:49,080
+ It could also be the payment terminals.
+
+111
+0:08:49,080 --> 0:08:52,160
+ All these have some sort of power in there.
+
+112
+0:08:52,160 --> 0:08:54,280
+ They have either a battery or they are plugged in,
+
+113
+0:08:54,280 --> 0:08:58,480
+ they're connected to a computer or something where they have permanent power.
+
+114
+0:08:58,480 --> 0:09:01,400
+ They can supply power.
+
+115
+0:09:01,400 --> 0:09:05,360
+ And the little coil, I'll probably use the word antenna or coil,
+
+116
+0:09:05,360 --> 0:09:12,400
+ but I mean the little traces that are on the PCBs or put into these plastic cards.
+
+117
+0:09:12,400 --> 0:09:13,560
+ It's not a traditional antenna.
+
+118
+0:09:13,560 --> 0:09:14,520
+ It's slightly different.
+
+119
+0:09:14,520 --> 0:09:21,240
+ But this coil will generate a powered field
+
+120
+0:09:21,240 --> 0:09:26,240
+ that when you approach one of these passive tags,
+
+121
+0:09:26,240 --> 0:09:31,960
+ they can sort of get energized without having a battery,
+
+122
+0:09:31,960 --> 0:09:33,640
+ without anything in there.
+
+123
+0:09:33,640 --> 0:09:39,640
+ So they use the magnetic field and rectifies the frequency,
+
+124
+0:09:39,640 --> 0:09:44,480
+ the 13.56 megahertz, rectifies it and makes power
+
+125
+0:09:44,480 --> 0:09:46,800
+ that they can use to power up.
+
+126
+0:09:46,800 --> 0:09:50,680
+ In some cases, they can even get so much power out of this field
+
+127
+0:09:50,680 --> 0:09:55,880
+ that they can power other things like a little extra controller and so on.
+
+128
+0:09:55,880 --> 0:10:02,360
+ So that very sort of asymmetric thing is what makes these very doable.
+
+129
+0:10:02,360 --> 0:10:07,280
+ You can't really just break them, but they can take a lot of beating
+
+130
+0:10:07,280 --> 0:10:09,000
+ because they're totally encased in plastic.
+
+131
+0:10:09,000 --> 0:10:12,080
+ There's no battery, there's no contacts, they're nothing.
+
+132
+0:10:12,080 --> 0:10:19,120
+ So that's a design thing about NFC and also all the other RFID stuff usually.
+
+133
+0:10:22,760 --> 0:10:28,920
+ So the communication between the active part and the passive part
+
+134
+0:10:28,920 --> 0:10:34,200
+ is very similar to an old-time transformer where you have a coil
+
+135
+0:10:34,200 --> 0:10:38,040
+ and then usually there'll be a metal thing between and then another coil.
+
+136
+0:10:38,040 --> 0:10:42,160
+ And then via this metal thing that sort of helps the magnetic field
+
+137
+0:10:42,160 --> 0:10:44,600
+ sort of be a shared field.
+
+138
+0:10:44,600 --> 0:10:49,160
+ And again, you can transfer energy between these two coils.
+
+139
+0:10:49,160 --> 0:10:51,840
+ Almost all sort of where you plug something into the wall
+
+140
+0:10:51,840 --> 0:10:57,760
+ will have some sort of that inside it to bring the voltage down.
+
+141
+0:10:57,760 --> 0:11:01,240
+ In modern things, there's a very little one and then a lot of trunks around it.
+
+142
+0:11:01,240 --> 0:11:05,680
+ In the old time, it was just one large brick, a heavy one.
+
+143
+0:11:05,680 --> 0:11:11,680
+ The theory when you have this close to a reader is very close to that kind of transformer.
+
+144
+0:11:11,680 --> 0:11:15,280
+ That's just not this metal thing.
+
+145
+0:11:15,280 --> 0:11:23,640
+ And then the reader, the active part, can modulate the frequency a little
+
+146
+0:11:23,640 --> 0:11:29,360
+ with amplitude shift keying to send data to the reader part.
+
+147
+0:11:29,360 --> 0:11:34,680
+ So it gets little bits, it's fairly slow, it's low data as a one.
+
+148
+0:11:34,680 --> 0:11:39,960
+ But the way that the tag gets commands back to the reader is a little more interesting
+
+149
+0:11:39,960 --> 0:11:44,480
+ where it pretty much just shorts the connection so that it pulls way more power
+
+150
+0:11:44,480 --> 0:11:47,360
+ and then the reader can actually detect that.
+
+151
+0:11:47,360 --> 0:11:52,280
+ So that's sort of a way of sending back without actually sort of being the active transmitter.
+
+152
+0:11:52,280 --> 0:11:55,280
+ It just sort of shorts the coil and then the reader can see,
+
+153
+0:11:55,280 --> 0:11:58,880
+ oh, you're pulling a lot of power and then introducing it very quickly.
+
+154
+0:11:58,880 --> 0:12:03,040
+ It can actually read these things.
+
+155
+0:12:03,040 --> 0:12:07,640
+ So if you look inside these tags, this is a transparent one.
+
+156
+0:12:07,640 --> 0:12:09,680
+ It's actually pretty much the same as this.
+
+157
+0:12:09,680 --> 0:12:12,640
+ It's just transparent plastic instead.
+
+158
+0:12:12,640 --> 0:12:17,000
+ So the little red one going around, that is the coil.
+
+159
+0:12:17,000 --> 0:12:24,640
+ And it goes into a little chip and that chip has all the getting the rectifying the frequency
+
+160
+0:12:24,640 --> 0:12:29,000
+ and getting power and then also having the ID and the flash and the memory.
+
+161
+0:12:29,000 --> 0:12:30,080
+ So there's a unique ID.
+
+162
+0:12:30,120 --> 0:12:34,480
+ I put it in quotes because they're supposed to be unique.
+
+163
+0:12:34,480 --> 0:12:39,480
+ When they come from the factory, like NXP produces them and others also,
+
+164
+0:12:39,480 --> 0:12:40,600
+ they are unique.
+
+165
+0:12:40,600 --> 0:12:44,600
+ They have sort of a first part as the manufacturer and then some unique IDs.
+
+166
+0:12:44,600 --> 0:12:47,000
+ They promise they don't use the same IDs again.
+
+167
+0:12:47,000 --> 0:12:52,400
+ But I think this card specifically is made so that you can actually clone it.
+
+168
+0:12:52,400 --> 0:12:55,320
+ You can change the ID on it.
+
+169
+0:12:55,320 --> 0:13:02,280
+ So there are Chinese manufacturers that produce cards that can be rewritten.
+
+170
+0:13:02,280 --> 0:13:10,600
+ And that's, of course, a security issue if you use it as just the ID as your security stuff.
+
+171
+0:13:10,600 --> 0:13:16,920
+ But some way that the readers, the more advanced ones, try to get around this,
+
+172
+0:13:16,920 --> 0:13:18,840
+ that they just try to change the UID.
+
+173
+0:13:18,840 --> 0:13:22,080
+ And then if the UID can be changed, then OK, that's a fake card.
+
+174
+0:13:22,080 --> 0:13:23,280
+ And then they drop it.
+
+175
+0:13:23,320 --> 0:13:29,480
+ But of course, the people making the fake cards, they try to circumvent that
+
+176
+0:13:29,480 --> 0:13:33,640
+ by you have to do some little hoops to change the ID first.
+
+177
+0:13:33,640 --> 0:13:35,760
+ And it's a little talker.
+
+178
+0:13:35,760 --> 0:13:43,280
+ But the uniqueness, it is possible to fake or clone cards to some degree.
+
+179
+0:13:43,280 --> 0:13:47,320
+ But some of them also have some crypto stuff, something like a little engine
+
+180
+0:13:47,320 --> 0:13:52,240
+ where they sort of have a private key inside and never let go of that.
+
+181
+0:13:52,240 --> 0:13:58,760
+ That can sort of up the security when you're using it for door access and so on.
+
+182
+0:13:58,760 --> 0:14:04,880
+ The one on the batch does not have that sort of fancy stuff.
+
+183
+0:14:04,880 --> 0:14:09,160
+ The memory on these cards, the one on the batch would have 2K of memory.
+
+184
+0:14:09,160 --> 0:14:11,240
+ That can be formatted in different ways.
+
+185
+0:14:11,240 --> 0:14:15,600
+ NDEV is an NFC data exchange format.
+
+186
+0:14:15,600 --> 0:14:20,280
+ And if you want to read an NFC tag with an iPhone, iOS,
+
+187
+0:14:20,280 --> 0:14:25,120
+ then you need to have it in NDEV format because they only support that.
+
+188
+0:14:25,120 --> 0:14:28,280
+ On Android, you can also do a little bit of other things.
+
+189
+0:14:28,280 --> 0:14:34,920
+ And when we get these chips from NXP, they are sort of factory reset
+
+190
+0:14:34,920 --> 0:14:36,080
+ without any format on them.
+
+191
+0:14:36,080 --> 0:14:37,720
+ So they have to be formatted first.
+
+192
+0:14:37,720 --> 0:14:40,040
+ And then we can put little records on them.
+
+193
+0:14:40,040 --> 0:14:41,880
+ It could be records like a URL.
+
+194
+0:14:41,880 --> 0:14:43,080
+ It could be a business card.
+
+195
+0:14:43,080 --> 0:14:45,440
+ It can be just a text string.
+
+196
+0:14:45,440 --> 0:14:49,080
+ There are different sort of standard types.
+
+197
+0:14:49,080 --> 0:14:53,120
+ The trigger thing about the business card thing is that if you scan it with an iPhone,
+
+198
+0:14:53,120 --> 0:14:53,720
+ nothing happens.
+
+199
+0:14:53,720 --> 0:14:56,160
+ It doesn't recognize the business card.
+
+200
+0:14:56,160 --> 0:15:00,360
+ But a URL is easily recognized by both Android and iPhone.
+
+201
+0:15:00,360 --> 0:15:02,760
+ So if you want to share your business card, for instance,
+
+202
+0:15:02,760 --> 0:15:05,040
+ you can put a URL to a business card.
+
+203
+0:15:05,040 --> 0:15:08,720
+ And then it sort of, on the iPhone, is tricked to open the URL.
+
+204
+0:15:08,720 --> 0:15:10,240
+ Then see, oh, that's the business card.
+
+205
+0:15:10,240 --> 0:15:14,120
+ And then it actually sort of triggers and finds a business card.
+
+206
+0:15:14,120 --> 0:15:16,040
+ On Android, it just shows up as a business card.
+
+207
+0:15:16,040 --> 0:15:19,520
+ And you can add it to your contacts.
+
+208
+0:15:19,520 --> 0:15:25,440
+ So the reader part, the active part, is put in quotes here,
+
+209
+0:15:25,440 --> 0:15:26,600
+ because it can also write.
+
+210
+0:15:26,600 --> 0:15:30,040
+ So it's both a reader and a writer.
+
+211
+0:15:30,040 --> 0:15:34,400
+ And it's similar to access points and the gateways and so on.
+
+212
+0:15:34,400 --> 0:15:38,320
+ It's sort of the gateway between this communication and then
+
+213
+0:15:38,320 --> 0:15:39,720
+ some sort of application behind.
+
+214
+0:15:39,720 --> 0:15:42,440
+ Usually it could be a computer.
+
+215
+0:15:42,440 --> 0:15:47,680
+ In the batch case here, it's a little RP2040 microprocessor.
+
+216
+0:15:47,680 --> 0:15:52,120
+ And via this communication channel up to the card,
+
+217
+0:15:52,120 --> 0:15:55,440
+ you can send commands and you can get replies from the tech.
+
+218
+0:15:55,440 --> 0:15:58,240
+ So it's always the reader that initiates all these things.
+
+219
+0:16:01,800 --> 0:16:06,560
+ The tricky thing is that sometimes an active device
+
+220
+0:16:06,560 --> 0:16:08,760
+ can also be a tech.
+
+221
+0:16:08,760 --> 0:16:10,840
+ So for instance, if you use your phone
+
+222
+0:16:10,840 --> 0:16:14,160
+ to pay for stuff in the store, it actually
+
+223
+0:16:14,160 --> 0:16:18,760
+ emulates a credit card and then sort of presents itself
+
+224
+0:16:18,760 --> 0:16:20,440
+ as a credit card and a tech.
+
+225
+0:16:20,440 --> 0:16:24,200
+ And the reader will see it as a tech.
+
+226
+0:16:24,200 --> 0:16:25,880
+ In the credit card case, it's not
+
+227
+0:16:25,880 --> 0:16:27,760
+ a copy of your credit card.
+
+228
+0:16:27,760 --> 0:16:31,760
+ It's a separate credit card with a separate number and set up
+
+229
+0:16:31,760 --> 0:16:33,560
+ so that it is designed a system.
+
+230
+0:16:33,560 --> 0:16:35,800
+ So it's not a cloning system.
+
+231
+0:16:35,800 --> 0:16:37,080
+ It is individual cards.
+
+232
+0:16:41,120 --> 0:16:45,720
+ So the batch that we have here, the active parts
+
+233
+0:16:45,720 --> 0:16:49,640
+ should be able to do this also.
+
+234
+0:16:49,640 --> 0:16:56,480
+ So the batches, we say batches because it's two.
+
+235
+0:16:56,480 --> 0:17:00,600
+ And some of the goals we have is to have something super light,
+
+236
+0:17:00,600 --> 0:17:05,480
+ very similar to what a batch is at all the boring conferences
+
+237
+0:17:05,480 --> 0:17:07,120
+ with cardboard batches.
+
+238
+0:17:07,120 --> 0:17:08,440
+ So have a little light thing.
+
+239
+0:17:08,440 --> 0:17:09,480
+ You can actually wear it.
+
+240
+0:17:09,480 --> 0:17:14,680
+ It's just hanging, no need for a battery or anything.
+
+241
+0:17:14,680 --> 0:17:18,320
+ It could even take a little bit of washing.
+
+242
+0:17:18,320 --> 0:17:22,800
+ And also, we would like to have some sort of functionality
+
+243
+0:17:22,800 --> 0:17:26,320
+ maybe after the event so that you can use it as a tool.
+
+244
+0:17:26,320 --> 0:17:33,560
+ And we hope we can have this fit in that area a little bit.
+
+245
+0:17:33,560 --> 0:17:39,160
+ The design, it's shaped exactly as a credit card size.
+
+246
+0:17:41,680 --> 0:17:46,200
+ And it's one of the tricky things, these antenna coils,
+
+247
+0:17:46,200 --> 0:17:49,880
+ because they have to be very precise for the chips
+
+248
+0:17:49,880 --> 0:17:52,160
+ to actually sort of work with it.
+
+249
+0:17:52,160 --> 0:17:54,240
+ You can do a lot of matching circuit.
+
+250
+0:17:54,240 --> 0:17:56,960
+ And on the reader, it's also required.
+
+251
+0:17:56,960 --> 0:18:00,720
+ On the text, you can actually, if you design the circuit
+
+252
+0:18:00,720 --> 0:18:03,400
+ in the exact right way, you can go directly
+
+253
+0:18:03,400 --> 0:18:05,040
+ into the chip and don't need extra parts.
+
+254
+0:18:05,040 --> 0:18:08,880
+ So there's only two actual parts on the attack batch.
+
+255
+0:18:12,640 --> 0:18:16,880
+ The past few years, it's been a little tricky with parts,
+
+256
+0:18:16,880 --> 0:18:22,200
+ because the world has been a little broken on that front.
+
+257
+0:18:22,200 --> 0:18:26,400
+ This year, I've been looking to the shops in China
+
+258
+0:18:26,400 --> 0:18:29,720
+ and found parts that are available there due to the fact
+
+259
+0:18:29,720 --> 0:18:31,800
+ that we are producing the batches in China
+
+260
+0:18:31,800 --> 0:18:35,520
+ and getting parts into China is sometimes a little difficult.
+
+261
+0:18:35,520 --> 0:18:40,800
+ And having a shortage of stuff is not making it easier.
+
+262
+0:18:40,800 --> 0:18:44,880
+ But I think I managed to find parts that are all sort of
+
+263
+0:18:44,880 --> 0:18:47,600
+ easily available to them.
+
+264
+0:18:47,600 --> 0:18:50,240
+ The main processor that we're using on the reader batch
+
+265
+0:18:50,240 --> 0:18:52,480
+ is, I think, some surplus that has ended up
+
+266
+0:18:52,480 --> 0:18:54,200
+ in the store in China.
+
+267
+0:18:54,200 --> 0:18:55,520
+ So I got them very cheap.
+
+268
+0:18:55,520 --> 0:18:58,440
+ Otherwise, it wouldn't have happened.
+
+269
+0:18:58,440 --> 0:19:01,000
+ And I got some parts first.
+
+270
+0:19:01,000 --> 0:19:02,400
+ I assembled some prototypes.
+
+271
+0:19:02,400 --> 0:19:05,920
+ This is a prototype that I kind of messed a little bit up.
+
+272
+0:19:05,920 --> 0:19:07,360
+ So I had to fix it.
+
+273
+0:19:07,360 --> 0:19:11,320
+ But that's sort of part of the process.
+
+274
+0:19:11,320 --> 0:19:15,280
+ And also the antennas, so making these antennas,
+
+275
+0:19:15,280 --> 0:19:17,720
+ the easier way is finding a calculator online.
+
+276
+0:19:17,720 --> 0:19:20,720
+ And that's what I've done, where you specify
+
+277
+0:19:20,720 --> 0:19:24,040
+ different dimensions, the thickness of the wires,
+
+278
+0:19:24,040 --> 0:19:26,280
+ the distance between the wires, how long they are.
+
+279
+0:19:26,280 --> 0:19:28,520
+ And then you can sort of punch in all these numbers.
+
+280
+0:19:28,520 --> 0:19:31,720
+ And it gives you some indication of what
+
+281
+0:19:31,720 --> 0:19:35,080
+ is the inductance and so on, what frequency resonates it
+
+282
+0:19:35,080 --> 0:19:35,880
+ with.
+
+283
+0:19:35,880 --> 0:19:37,320
+ And then you can say, OK, is this
+
+284
+0:19:37,320 --> 0:19:40,120
+ within the bounds of what the chip can handle?
+
+285
+0:19:40,120 --> 0:19:42,640
+ And what other parts do you need to do that?
+
+286
+0:19:42,640 --> 0:19:45,440
+ And I've just been fiddling back and forth a lot
+
+287
+0:19:45,440 --> 0:19:47,480
+ until I found something that this is actually
+
+288
+0:19:47,480 --> 0:19:50,240
+ doable, fits in this area, and so on.
+
+289
+0:19:50,240 --> 0:19:52,760
+ I tried making little one with rounded corners and so on.
+
+290
+0:19:52,760 --> 0:19:55,880
+ But the performance of all the ones I made
+
+291
+0:19:55,880 --> 0:19:58,640
+ was based on the design that I ended up here with,
+
+292
+0:19:58,640 --> 0:20:02,160
+ very square and following the designs very closely
+
+293
+0:20:02,160 --> 0:20:04,280
+ on these calculators.
+
+294
+0:20:04,280 --> 0:20:06,720
+ So if you want to make your own user calculator,
+
+295
+0:20:06,720 --> 0:20:09,280
+ you get fairly close.
+
+296
+0:20:09,280 --> 0:20:10,960
+ And it works fairly OK.
+
+297
+0:20:10,960 --> 0:20:13,160
+ You might be able to tweak a little bit more
+
+298
+0:20:13,160 --> 0:20:15,120
+ and get a little bit better reading distance.
+
+299
+0:20:15,120 --> 0:20:16,680
+ But these are OK, I think.
+
+300
+0:20:19,720 --> 0:20:23,920
+ So there you have the prototypes for hand assembles.
+
+301
+0:20:23,920 --> 0:20:26,680
+ I'm using a technique with solder paste stencils,
+
+302
+0:20:26,680 --> 0:20:28,960
+ tweezers, and hot plates.
+
+303
+0:20:28,960 --> 0:20:30,240
+ I really like this method.
+
+304
+0:20:30,240 --> 0:20:32,160
+ And if you guys want to try that out,
+
+305
+0:20:32,160 --> 0:20:34,840
+ there's actually a workshop on Friday at 12,
+
+306
+0:20:34,840 --> 0:20:39,720
+ where Theo Baum will be doing a workshop here
+
+307
+0:20:39,720 --> 0:20:40,920
+ with exactly that technique.
+
+308
+0:20:40,920 --> 0:20:45,040
+ And it's a technique where you're not as stressed
+
+309
+0:20:45,040 --> 0:20:46,520
+ because you put paste on it first.
+
+310
+0:20:46,520 --> 0:20:47,800
+ And then you just place the components.
+
+311
+0:20:47,800 --> 0:20:49,200
+ You can take a break anytime.
+
+312
+0:20:49,200 --> 0:20:50,160
+ You can just put them on there.
+
+313
+0:20:50,160 --> 0:20:52,480
+ And when you're sure and you can check that all of them
+
+314
+0:20:52,480 --> 0:20:54,920
+ are perfectly aligned, you can put it on the hot plate
+
+315
+0:20:54,920 --> 0:20:55,640
+ and it'll solder.
+
+316
+0:20:55,640 --> 0:20:59,120
+ And everything will just snap in, actually,
+
+317
+0:20:59,120 --> 0:21:01,840
+ because of the surface tension of the solder.
+
+318
+0:21:01,840 --> 0:21:03,560
+ And you have a board that you don't even
+
+319
+0:21:03,560 --> 0:21:05,320
+ need to clean afterwards, where if you
+
+320
+0:21:05,320 --> 0:21:08,320
+ go in with a soldering iron, you will likely
+
+321
+0:21:08,320 --> 0:21:11,160
+ have to clean something, otherwise it'll look ugly.
+
+322
+0:21:11,160 --> 0:21:13,520
+ So I like that technique if you want to learn it.
+
+323
+0:21:13,520 --> 0:21:17,480
+ I learned it at a Hacker Congress in Germany.
+
+324
+0:21:17,480 --> 0:21:18,440
+ I've been using it since.
+
+325
+0:21:18,440 --> 0:21:21,880
+ So have a look at that.
+
+326
+0:21:21,920 --> 0:21:27,480
+ Also on the design of the PCBs, I'm using KiCad 7.
+
+327
+0:21:27,480 --> 0:21:31,040
+ The files are available on GitHub.
+
+328
+0:21:31,040 --> 0:21:33,200
+ And if you want to learn that, there's
+
+329
+0:21:33,200 --> 0:21:35,560
+ also a workshop on Sunday about how
+
+330
+0:21:35,560 --> 0:21:39,800
+ to use KiCad to design PCBs.
+
+331
+0:21:39,800 --> 0:21:43,160
+ Highly recommend it.
+
+332
+0:21:43,160 --> 0:21:49,480
+ So getting to the two badges, this is the tag badge.
+
+333
+0:21:49,480 --> 0:21:51,160
+ It pretty much has only two components.
+
+334
+0:21:51,160 --> 0:21:52,960
+ It has a little chip with eight legs.
+
+335
+0:21:52,960 --> 0:21:54,640
+ And it has a little capacitor.
+
+336
+0:21:54,640 --> 0:21:56,680
+ That are the only two parts that are needed.
+
+337
+0:21:56,680 --> 0:21:58,840
+ Then it has a coil behind all the text.
+
+338
+0:21:58,840 --> 0:22:03,120
+ That's like a coil with, I think, seven windings or something.
+
+339
+0:22:03,120 --> 0:22:05,520
+ It's just little traces on the PCB going around.
+
+340
+0:22:05,520 --> 0:22:07,440
+ And then it jumps on the backside
+
+341
+0:22:07,440 --> 0:22:10,600
+ to get back to the chip.
+
+342
+0:22:10,600 --> 0:22:12,080
+ There's no battery on it.
+
+343
+0:22:12,080 --> 0:22:15,240
+ It can run just as you can put it up to a reader.
+
+344
+0:22:15,240 --> 0:22:17,200
+ You can put it up to your phone.
+
+345
+0:22:17,240 --> 0:22:21,280
+ They will come with pre-programmed and in-depth
+
+346
+0:22:21,280 --> 0:22:24,320
+ records that has a URL that you can scan with your phone
+
+347
+0:22:24,320 --> 0:22:27,360
+ and goes to the GitHub.
+
+348
+0:22:27,360 --> 0:22:32,160
+ The chip used is called the N-TAC I2C+.
+
+349
+0:22:32,160 --> 0:22:37,760
+ It's a little chip that has this 2K memory in there.
+
+350
+0:22:37,760 --> 0:22:39,520
+ It also has a unique ID.
+
+351
+0:22:39,520 --> 0:22:42,920
+ Unique, can copy it.
+
+352
+0:22:42,920 --> 0:22:46,200
+ And the difference between a card like this
+
+353
+0:22:46,200 --> 0:22:50,280
+ and this TAC is that it has a connector.
+
+354
+0:22:50,280 --> 0:22:52,000
+ So you can connect it to the other batch
+
+355
+0:22:52,000 --> 0:22:53,840
+ or to the last year's batch and also, I think,
+
+356
+0:22:53,840 --> 0:22:56,920
+ the previous year where you can actually
+
+357
+0:22:56,920 --> 0:23:02,080
+ program the same memory via I2C instead,
+
+358
+0:23:02,080 --> 0:23:06,840
+ writing to registers and addresses and reading from it.
+
+359
+0:23:06,840 --> 0:23:09,480
+ Though you should be aware that there are also
+
+360
+0:23:09,480 --> 0:23:14,000
+ some registers that can lock certain parts of the memory,
+
+361
+0:23:14,000 --> 0:23:16,840
+ either from the RF side, the coil,
+
+362
+0:23:16,840 --> 0:23:18,160
+ or from the I2C side.
+
+363
+0:23:18,160 --> 0:23:22,160
+ And you can, in theory, if you lock both sides,
+
+364
+0:23:22,160 --> 0:23:25,120
+ you can't go in and replace it or fix it.
+
+365
+0:23:25,120 --> 0:23:28,120
+ So you can't rig the card in some way.
+
+366
+0:23:28,120 --> 0:23:33,040
+ So please try to be a little careful when
+
+367
+0:23:33,040 --> 0:23:35,240
+ messing with these registers.
+
+368
+0:23:35,240 --> 0:23:39,920
+ And also, if you put the card up to an unknown reader
+
+369
+0:23:39,920 --> 0:23:44,240
+ somewhere, let's hope that those that put up readers
+
+370
+0:23:44,240 --> 0:23:49,400
+ and interactivity don't do nasty things to your batch.
+
+371
+0:23:49,400 --> 0:23:52,200
+ You can lock it off, so you can, but some of the interactivity
+
+372
+0:23:52,200 --> 0:23:53,880
+ might need to be able to write to it.
+
+373
+0:23:56,640 --> 0:24:00,880
+ When it comes to the active device, the reader,
+
+374
+0:24:00,880 --> 0:24:03,400
+ it is powered via USB, so you can either use a computer
+
+375
+0:24:03,400 --> 0:24:06,680
+ or you can have a power bank and something like that.
+
+376
+0:24:06,680 --> 0:24:14,000
+ The main sort of NFC stuff is the PN7150.
+
+377
+0:24:14,000 --> 0:24:15,560
+ It's a chip that is slightly older.
+
+378
+0:24:15,560 --> 0:24:18,760
+ They made a new version that is called 16 in the end,
+
+379
+0:24:18,760 --> 0:24:21,680
+ but it's still a fairly powerful chip.
+
+380
+0:24:21,680 --> 0:24:26,040
+ And it's one that was available at a decent price.
+
+381
+0:24:26,040 --> 0:24:29,080
+ It communicates with something called NCI.
+
+382
+0:24:29,080 --> 0:24:33,120
+ It's a NFC command interface.
+
+383
+0:24:33,120 --> 0:24:35,840
+ It does that via I2C.
+
+384
+0:24:35,840 --> 0:24:39,000
+ So the main controller on the board, which is the RP2040,
+
+385
+0:24:39,000 --> 0:24:43,600
+ it's a Raspberry Pi, same as on the Pico.
+
+386
+0:24:43,600 --> 0:24:46,680
+ It's powerful, has two cores, has USB connection,
+
+387
+0:24:46,680 --> 0:24:50,520
+ and it will have a circuit Python preloaded on it
+
+388
+0:24:50,520 --> 0:24:52,720
+ and a little driver that can sort of communicate
+
+389
+0:24:52,720 --> 0:24:55,040
+ with the chip.
+
+390
+0:24:55,040 --> 0:24:57,440
+ There's also two user buttons and two LEDs.
+
+391
+0:24:57,440 --> 0:25:01,200
+ It's mainly designed if you want to use this batch out
+
+392
+0:25:01,200 --> 0:25:03,120
+ in the field, have a power bank on it.
+
+393
+0:25:03,120 --> 0:25:05,560
+ You can sort of have different operations.
+
+394
+0:25:05,560 --> 0:25:08,200
+ You can have the LEDs blink if you get a read
+
+395
+0:25:08,200 --> 0:25:10,680
+ or something like that.
+
+396
+0:25:10,680 --> 0:25:13,680
+ There are also some pads up in the top for debugging
+
+397
+0:25:13,680 --> 0:25:16,280
+ if you really want to go deep, but you don't need it.
+
+398
+0:25:16,280 --> 0:25:20,240
+ So the RP2040 has a USB bootloader.
+
+399
+0:25:20,240 --> 0:25:22,400
+ You can just hold down boot when you reset it,
+
+400
+0:25:22,400 --> 0:25:24,120
+ and it will go into this USB bootloader,
+
+401
+0:25:24,120 --> 0:25:26,880
+ and you can program it with whatever you want.
+
+402
+0:25:26,880 --> 0:25:30,800
+ It is just a UF2 bootloader.
+
+403
+0:25:30,800 --> 0:25:34,040
+ So the prototypes were assembled by me,
+
+404
+0:25:34,040 --> 0:25:38,720
+ but the final ones were done out in China at PCBWay,
+
+405
+0:25:38,720 --> 0:25:41,760
+ and they sent me this little video of their production line.
+
+406
+0:25:41,760 --> 0:25:46,920
+ So this is the stenciling machine
+
+407
+0:25:46,920 --> 0:25:48,440
+ that puts solder paste on it first
+
+408
+0:25:48,440 --> 0:25:51,880
+ and then runs through a series of pick and place machines.
+
+409
+0:25:51,880 --> 0:25:53,400
+ Some of them, they just run through.
+
+410
+0:25:53,400 --> 0:25:55,520
+ I don't think they use all of them for this one here,
+
+411
+0:25:55,520 --> 0:25:58,240
+ but they have different feeders on each machine that
+
+412
+0:25:58,240 --> 0:26:00,680
+ has some parts, and then it grabs a part here and there
+
+413
+0:26:00,680 --> 0:26:02,640
+ and then puts it on the PCB.
+
+414
+0:26:02,640 --> 0:26:05,840
+ It comes out here and moves into the next one.
+
+415
+0:26:05,840 --> 0:26:09,760
+ There's a little panel that has both the reader and the tag
+
+416
+0:26:09,760 --> 0:26:13,800
+ next to it and little holding tabs.
+
+417
+0:26:13,800 --> 0:26:15,800
+ And then these little robots, they pick off parts
+
+418
+0:26:15,800 --> 0:26:19,440
+ at the feeders and then move them in and place them exactly
+
+419
+0:26:19,440 --> 0:26:22,720
+ on top of the solder paste.
+
+420
+0:26:22,720 --> 0:26:25,880
+ And then when it's done placing the parts,
+
+421
+0:26:25,880 --> 0:26:28,000
+ it runs out again on the conveyor belt,
+
+422
+0:26:28,000 --> 0:26:32,040
+ and usually they have a little manual inspection afterwards
+
+423
+0:26:32,040 --> 0:26:35,360
+ so that they know that no parts has had misaligned.
+
+424
+0:26:35,360 --> 0:26:37,360
+ And then when everything looks good,
+
+425
+0:26:37,360 --> 0:26:39,120
+ they send it through an oven.
+
+426
+0:26:39,120 --> 0:26:41,400
+ It's like this long oven.
+
+427
+0:26:41,400 --> 0:26:44,600
+ We have different zones, so they ramp up the temperature
+
+428
+0:26:44,600 --> 0:26:48,000
+ and so that the chips doesn't break.
+
+429
+0:26:48,000 --> 0:26:51,040
+ And then they end up soaring and cool down,
+
+430
+0:26:51,040 --> 0:26:53,040
+ and then the balls are depanelized
+
+431
+0:26:53,040 --> 0:26:55,640
+ where they remove the extra tabs and so on.
+
+432
+0:26:55,640 --> 0:26:57,320
+ And I think they've done a very nice job
+
+433
+0:26:57,320 --> 0:26:59,160
+ in cleaning up the edges.
+
+434
+0:26:59,160 --> 0:27:00,800
+ So that's very nice.
+
+435
+0:27:02,840 --> 0:27:07,720
+ So programming the batches, primarily the reader,
+
+436
+0:27:07,720 --> 0:27:12,000
+ will have CircuitPython preloaded on it.
+
+437
+0:27:12,000 --> 0:27:14,560
+ It connects via USB, shows up as a match storage device.
+
+438
+0:27:14,560 --> 0:27:16,640
+ There's a code.py file.
+
+439
+0:27:16,640 --> 0:27:19,960
+ When you change that code.py file and save it,
+
+440
+0:27:19,960 --> 0:27:23,440
+ it will reload and run the code you have in there.
+
+441
+0:27:23,440 --> 0:27:27,240
+ If you're having typos or missing libraries or whatnot,
+
+442
+0:27:27,240 --> 0:27:30,240
+ you can connect to a serial terminal
+
+443
+0:27:30,280 --> 0:27:32,920
+ where you can get outputs of errors and so on.
+
+444
+0:27:32,920 --> 0:27:35,840
+ You can also go into this rebel interactive
+
+445
+0:27:35,840 --> 0:27:37,840
+ where you can run Python commands
+
+446
+0:27:37,840 --> 0:27:42,360
+ and interactively scan the I2C bars and so on.
+
+447
+0:27:44,600 --> 0:27:47,000
+ SMEAL is working on a CircuitPython library
+
+448
+0:27:47,000 --> 0:27:50,680
+ for this PN7150.
+
+449
+0:27:50,680 --> 0:27:54,200
+ We have some sort of whole connection to the batch
+
+450
+0:27:54,200 --> 0:27:56,160
+ so we can read something.
+
+451
+0:27:56,160 --> 0:27:58,800
+ We need to finalize the final things,
+
+452
+0:27:58,800 --> 0:28:01,360
+ and then we'll reprogram on the batches.
+
+453
+0:28:01,360 --> 0:28:05,600
+ You can also use the reader with a little wire.
+
+454
+0:28:05,600 --> 0:28:07,040
+ It'll be included also.
+
+455
+0:28:07,040 --> 0:28:08,600
+ So you can connect the two batches together,
+
+456
+0:28:08,600 --> 0:28:12,160
+ and then you can change the content of the intact chip
+
+457
+0:28:13,920 --> 0:28:15,000
+ or read it out again.
+
+458
+0:28:15,000 --> 0:28:18,000
+ So if, for instance, you're using it for a game or something
+
+459
+0:28:18,000 --> 0:28:20,680
+ where somebody writes something to your little tag,
+
+460
+0:28:20,680 --> 0:28:23,480
+ then you can read it out via the reader batch,
+
+461
+0:28:23,480 --> 0:28:25,760
+ or you can just read it with your phone or something.
+
+462
+0:28:25,760 --> 0:28:28,600
+ The little cable and the connections on the batch,
+
+463
+0:28:29,400 --> 0:28:32,160
+ they are SparkFunQuick or AdafruitStemQt compatible,
+
+464
+0:28:32,160 --> 0:28:33,960
+ same as was on the batch last year.
+
+465
+0:28:35,520 --> 0:28:37,560
+ And if you have little extra things for that,
+
+466
+0:28:37,560 --> 0:28:39,360
+ you can of course connect them also.
+
+467
+0:28:41,760 --> 0:28:46,560
+ There's also a library for the PN7150
+
+468
+0:28:46,560 --> 0:28:49,240
+ for the Arduino IDE framework.
+
+469
+0:28:49,240 --> 0:28:51,720
+ It's made by Electronic Cats.
+
+470
+0:28:51,720 --> 0:28:55,680
+ And you can load this library into the Arduino IDE,
+
+471
+0:28:55,680 --> 0:28:57,440
+ and you also need to load a package,
+
+472
+0:28:57,480 --> 0:28:59,720
+ a board package for the RP2040.
+
+473
+0:28:59,720 --> 0:29:01,320
+ But then you can actually program it very easily.
+
+474
+0:29:01,320 --> 0:29:04,440
+ Just press the boot, and then hold boot,
+
+475
+0:29:04,440 --> 0:29:05,600
+ and then press the reset button.
+
+476
+0:29:05,600 --> 0:29:06,760
+ It comes up in the bootloader,
+
+477
+0:29:06,760 --> 0:29:09,680
+ and you can just say program in the Arduino IDE,
+
+478
+0:29:09,680 --> 0:29:11,000
+ and it'll program it.
+
+479
+0:29:11,000 --> 0:29:12,480
+ You can also have a serial terminal there
+
+480
+0:29:12,480 --> 0:29:15,200
+ to monitor activity and so on.
+
+481
+0:29:17,320 --> 0:29:19,960
+ Some of the ideas for projects,
+
+482
+0:29:19,960 --> 0:29:22,440
+ either by you or maybe also the batch team
+
+483
+0:29:22,440 --> 0:29:23,920
+ will look into some of these,
+
+484
+0:29:24,080 --> 0:29:29,080
+ is to make sort of a piece of bridge code
+
+485
+0:29:29,520 --> 0:29:31,320
+ that sits in the Raspberry Pi,
+
+486
+0:29:31,320 --> 0:29:35,080
+ that takes the NCI interface, the NFC controller interface,
+
+487
+0:29:35,080 --> 0:29:38,120
+ that the NXP chip has,
+
+488
+0:29:38,120 --> 0:29:41,840
+ and then converts these commands to URs
+
+489
+0:29:41,840 --> 0:29:43,760
+ that can be done via USB.
+
+490
+0:29:45,240 --> 0:29:49,400
+ The idea here is to actually make it into an NFC reader
+
+491
+0:29:49,400 --> 0:29:53,160
+ that acts as any commercial USB reader,
+
+492
+0:29:53,280 --> 0:29:54,280
+ where you can just plug in,
+
+493
+0:29:54,280 --> 0:29:57,200
+ and there's a libNFC, I think, on Linux,
+
+494
+0:29:57,200 --> 0:30:00,400
+ that you can actually, there's a standout for these things.
+
+495
+0:30:00,400 --> 0:30:03,800
+ So that could be a little project of making this bridge code.
+
+496
+0:30:04,840 --> 0:30:06,600
+ The other thing could be a very simple one
+
+497
+0:30:06,600 --> 0:30:08,160
+ where you have a keyboard emulation.
+
+498
+0:30:08,160 --> 0:30:10,560
+ So over USB, it emulates keyboard.
+
+499
+0:30:10,560 --> 0:30:12,760
+ So every time a tag is scanned,
+
+500
+0:30:12,760 --> 0:30:16,320
+ it will just type out all the ID numbers of the tag.
+
+501
+0:30:16,320 --> 0:30:17,720
+ Could be a very easy one also.
+
+502
+0:30:17,720 --> 0:30:21,040
+ Many commercial readers function very much like that.
+
+503
+0:30:23,480 --> 0:30:25,960
+ Another way to change content on the tag
+
+504
+0:30:25,960 --> 0:30:29,600
+ is to use mobile phones or desktop apps.
+
+505
+0:30:30,480 --> 0:30:34,240
+ So both on Android and iOS, there's a tool called NFC Tools.
+
+506
+0:30:34,240 --> 0:30:35,920
+ It's sort of a little Swiss,
+
+507
+0:30:35,920 --> 0:30:39,400
+ I mean, I have to kind of things for playing with NFC.
+
+508
+0:30:39,400 --> 0:30:42,400
+ You can read tags, you can write tags.
+
+509
+0:30:42,400 --> 0:30:44,360
+ Then they do have a paid version
+
+510
+0:30:44,360 --> 0:30:46,120
+ that can do a little bit more,
+
+511
+0:30:46,120 --> 0:30:48,840
+ but the free version is capable of doing a lot of things,
+
+512
+0:30:48,840 --> 0:30:51,520
+ and it exists both platforms.
+
+513
+0:30:51,520 --> 0:30:54,400
+ There's also NXP Tag Writer.
+
+514
+0:30:54,400 --> 0:30:57,000
+ That's the one we'll be using to format the cards.
+
+515
+0:30:57,960 --> 0:31:00,520
+ It's made by NXP, who also makes the chips.
+
+516
+0:31:01,920 --> 0:31:04,840
+ On iOS, you can't sort of format the card
+
+517
+0:31:04,840 --> 0:31:07,000
+ because you can't read it afterwards.
+
+518
+0:31:07,000 --> 0:31:08,680
+ It has to be in-depth formatted.
+
+519
+0:31:08,680 --> 0:31:10,680
+ On Android, you can.
+
+520
+0:31:10,680 --> 0:31:13,600
+ You can even both format them and make them factory reset.
+
+521
+0:31:14,840 --> 0:31:18,360
+ On desktop, if you have like a USB reader,
+
+522
+0:31:18,360 --> 0:31:20,880
+ there's also NFC Tools for that.
+
+523
+0:31:22,520 --> 0:31:26,600
+ And then I'll just sort of mention a few other tools
+
+524
+0:31:26,600 --> 0:31:29,320
+ that are sort of related in this.
+
+525
+0:31:30,440 --> 0:31:33,840
+ The Proxmark 3, I saw one of you earlier
+
+526
+0:31:33,840 --> 0:31:35,360
+ that also had a similar thing.
+
+527
+0:31:36,520 --> 0:31:37,760
+ That is a tool similar,
+
+528
+0:31:37,760 --> 0:31:41,600
+ so that I can read and write a lot of NFC stuff,
+
+529
+0:31:41,600 --> 0:31:43,800
+ also RFID.
+
+530
+0:31:45,080 --> 0:31:46,760
+ This one needs to be connected to a computer.
+
+531
+0:31:46,760 --> 0:31:50,320
+ It's sort of a device that has a part of the software
+
+532
+0:31:50,320 --> 0:31:51,920
+ running on the computer.
+
+533
+0:31:51,920 --> 0:31:54,040
+ Another one is the Flipper Serial,
+
+534
+0:31:54,040 --> 0:31:55,520
+ someone who might know it.
+
+535
+0:31:55,520 --> 0:31:57,880
+ It's also a little toy tool.
+
+536
+0:31:59,080 --> 0:32:03,000
+ Very fun, self-contained, has NFC reading, emulating.
+
+537
+0:32:03,000 --> 0:32:06,160
+ It's a little bit more, at least the standard firmware,
+
+538
+0:32:06,160 --> 0:32:08,720
+ it's a little bit more sort of commercial
+
+539
+0:32:08,720 --> 0:32:12,160
+ where they don't allow you to change UIDs and so on,
+
+540
+0:32:12,160 --> 0:32:16,120
+ but maybe you can convince it to do that anyway.
+
+541
+0:32:16,120 --> 0:32:19,800
+ There's also a little thing, something called the Chameleon.
+
+542
+0:32:19,800 --> 0:32:22,280
+ This can actually emulate NFC tags,
+
+543
+0:32:23,760 --> 0:32:24,960
+ and you can have multiple on there
+
+544
+0:32:24,960 --> 0:32:27,160
+ so you can switch which tag you want to emulate.
+
+545
+0:32:27,160 --> 0:32:30,040
+ It has a little battery so it can run without a computer.
+
+546
+0:32:32,320 --> 0:32:35,320
+ And then if you're doing sort of pen testing
+
+547
+0:32:35,320 --> 0:32:37,080
+ or red team stuff,
+
+548
+0:32:38,000 --> 0:32:40,000
+ this card is a little sort of tricky thing
+
+549
+0:32:40,000 --> 0:32:41,840
+ that I didn't design it.
+
+550
+0:32:41,840 --> 0:32:45,200
+ It's a guy, Corey Harding, that designed this one.
+
+551
+0:32:45,200 --> 0:32:46,760
+ It has two coils on there,
+
+552
+0:32:46,760 --> 0:32:49,600
+ and when you hold it up to a reader on a door
+
+553
+0:32:50,440 --> 0:32:52,880
+ or something, it will light up either a LED in one side
+
+554
+0:32:52,880 --> 0:32:55,720
+ or the other side, depending on which type of reader it is.
+
+555
+0:32:55,720 --> 0:32:58,280
+ So if it's low frequency, one of them will light up.
+
+556
+0:32:58,280 --> 0:33:00,440
+ If it's high frequency, it will be the other one.
+
+557
+0:33:00,440 --> 0:33:05,240
+ And it's using the whole sort of power system
+
+558
+0:33:05,240 --> 0:33:07,400
+ in these RFID setups.
+
+559
+0:33:07,400 --> 0:33:11,280
+ So you can use that to sort of check
+
+560
+0:33:11,280 --> 0:33:13,680
+ which kind of attack you need to do on a reader.
+
+561
+0:33:15,360 --> 0:33:16,800
+ There's also cards like this.
+
+562
+0:33:16,800 --> 0:33:18,480
+ This is a commercial for Molex,
+
+563
+0:33:18,480 --> 0:33:21,600
+ but it's actually an RFID blocker card.
+
+564
+0:33:21,600 --> 0:33:26,200
+ So if I have this in the stack of my credit cards and so on,
+
+565
+0:33:26,200 --> 0:33:27,280
+ the cards can't be read
+
+566
+0:33:27,280 --> 0:33:30,000
+ because this here will suck all the energy.
+
+567
+0:33:30,000 --> 0:33:31,480
+ So that's also, they exist.
+
+568
+0:33:31,480 --> 0:33:34,000
+ I haven't been able to find them at the trade show,
+
+569
+0:33:34,000 --> 0:33:36,440
+ but they do exist.
+
+570
+0:33:36,440 --> 0:33:37,920
+ You can also, of course,
+
+571
+0:33:37,920 --> 0:33:41,320
+ put it into like a metal container, your cards.
+
+572
+0:33:41,320 --> 0:33:44,720
+ I use a little thing like this normally.
+
+573
+0:33:44,720 --> 0:33:47,080
+ You can read the card through this,
+
+574
+0:33:47,080 --> 0:33:49,280
+ but simply having metal on one side
+
+575
+0:33:49,280 --> 0:33:52,720
+ is usually not enough if you have a good reader.
+
+576
+0:33:52,720 --> 0:33:55,840
+ So you have to protect them either with an active
+
+577
+0:33:55,840 --> 0:33:58,640
+ or with some electronics in it,
+
+578
+0:33:58,640 --> 0:34:00,600
+ or with like fully containing them.
+
+579
+0:34:04,240 --> 0:34:06,720
+ We are also trying to integrate the badge
+
+580
+0:34:06,720 --> 0:34:08,240
+ a little bit more into the game team.
+
+581
+0:34:08,240 --> 0:34:11,240
+ We have had like tokens on the badge before,
+
+582
+0:34:11,240 --> 0:34:14,480
+ but this time we have been making a little box.
+
+583
+0:34:14,480 --> 0:34:15,360
+ It looks like this.
+
+584
+0:34:15,360 --> 0:34:16,200
+ It's powered.
+
+585
+0:34:17,200 --> 0:34:20,600
+ Inside it has a Raspberry Pi and the power supply,
+
+586
+0:34:20,600 --> 0:34:23,200
+ and it has a little NFC reader.
+
+587
+0:34:23,200 --> 0:34:24,680
+ And during the camp here,
+
+588
+0:34:24,680 --> 0:34:28,040
+ the game team will try to sort of make a little sort of
+
+589
+0:34:28,040 --> 0:34:30,320
+ extra hunts, little challenges
+
+590
+0:34:31,240 --> 0:34:35,720
+ where you can use the primarily the tech part of the badge
+
+591
+0:34:36,680 --> 0:34:37,640
+ and hold it up to these.
+
+592
+0:34:37,640 --> 0:34:39,280
+ In the bottom section of this,
+
+593
+0:34:39,280 --> 0:34:40,920
+ there's a reader on the backside.
+
+594
+0:34:42,040 --> 0:34:43,600
+ So watch out for these.
+
+595
+0:34:43,600 --> 0:34:48,600
+ They'll be spread out in the field for some game stuff.
+
+596
+0:34:49,960 --> 0:34:52,160
+ If you wanna make your own station,
+
+597
+0:34:52,160 --> 0:34:53,080
+ I have a bunch of these.
+
+598
+0:34:53,080 --> 0:34:54,760
+ I think I have 10 or something.
+
+599
+0:34:54,760 --> 0:34:56,560
+ They're in the hardware hacking area.
+
+600
+0:34:58,040 --> 0:35:01,560
+ It's fairly easy just connecting I think eight wires
+
+601
+0:35:01,560 --> 0:35:02,400
+ to a Raspberry Pi,
+
+602
+0:35:02,400 --> 0:35:05,000
+ and then you can communicate with Python,
+
+603
+0:35:05,000 --> 0:35:07,720
+ and you can read and write IDs,
+
+604
+0:35:07,720 --> 0:35:10,200
+ but you can also read and write some data on them.
+
+605
+0:35:10,200 --> 0:35:13,080
+ So you can use to make some sort of, I don't know,
+
+606
+0:35:14,280 --> 0:35:16,240
+ blinky blinky thing in your village,
+
+607
+0:35:16,240 --> 0:35:18,840
+ or I think I heard some ideas about maybe
+
+608
+0:35:18,840 --> 0:35:21,040
+ provisioning servers by holding up your tech
+
+609
+0:35:21,040 --> 0:35:23,480
+ with the private key or put the public key on or something.
+
+610
+0:35:23,480 --> 0:35:24,960
+ I don't know.
+
+611
+0:35:24,960 --> 0:35:27,200
+ Go at it, have fun.
+
+612
+0:35:27,200 --> 0:35:28,280
+ They're free, you can just grab them
+
+613
+0:35:28,280 --> 0:35:30,440
+ in the hardware hacking area.
+
+614
+0:35:30,440 --> 0:35:32,000
+ There'll be along with a bunch of other parts.
+
+615
+0:35:32,000 --> 0:35:34,120
+ There are also some cards if you want to play with that.
+
+616
+0:35:34,120 --> 0:35:37,560
+ I think game team also has a bunch of NFC stuff
+
+617
+0:35:37,560 --> 0:35:38,400
+ to play on.
+
+618
+0:35:39,080 --> 0:35:44,080
+ So yeah, hardware and codes is on GitHub.
+
+619
+0:35:45,240 --> 0:35:47,520
+ More code will go on GitHub,
+
+620
+0:35:47,520 --> 0:35:49,120
+ and if you make some awesome hacks,
+
+621
+0:35:49,120 --> 0:35:51,880
+ I would love to see pull requests.
+
+622
+0:35:51,880 --> 0:35:55,040
+ We use a slightly different model for our branches,
+
+623
+0:35:55,040 --> 0:35:58,600
+ so if you have something and don't want to put them
+
+624
+0:35:58,600 --> 0:35:59,440
+ on your own GitHub,
+
+625
+0:35:59,440 --> 0:36:03,560
+ you can just do a pull request to a separate branch
+
+626
+0:36:03,560 --> 0:36:06,280
+ on this repo and we can put it in there.
+
+627
+0:36:06,280 --> 0:36:08,720
+ We already have one branch that is the hardware,
+
+628
+0:36:08,720 --> 0:36:10,000
+ one branch that is CircuitPython,
+
+629
+0:36:10,000 --> 0:36:12,400
+ one branch that is the initial code and so on.
+
+630
+0:36:13,680 --> 0:36:16,000
+ You can also just do a pull request to the readme file
+
+631
+0:36:16,000 --> 0:36:18,560
+ with a link to whatever you have made.
+
+632
+0:36:18,560 --> 0:36:21,240
+ Yeah, the hardware design is in KiCad 7.
+
+633
+0:36:21,240 --> 0:36:24,040
+ You won't be able to open it in KiCad 6 or older.
+
+634
+0:36:24,040 --> 0:36:25,160
+ It will complain a bit.
+
+635
+0:36:25,160 --> 0:36:26,760
+ Maybe if you force it, you can do it,
+
+636
+0:36:26,760 --> 0:36:29,400
+ but much easier in KiCad 7.
+
+637
+0:36:30,720 --> 0:36:33,400
+ So that was pretty much it.
+
+638
+0:36:34,400 --> 0:36:35,520
+ If there are questions,
+
+639
+0:36:36,680 --> 0:36:38,680
+ I'll be happy to answer as good as I can.
+
+640
+0:36:40,040 --> 0:36:40,880
+ Thank you.
+
+641
+0:36:40,880 --> 0:36:41,720
+ Any questions?
+
+642
+0:36:41,720 --> 0:36:42,560
+ Thank you.
+
+643
+0:36:42,560 --> 0:36:43,400
+ Thank you.
+
+644
+0:36:43,400 --> 0:36:44,240
+ Thank you.
+
+645
+0:36:44,240 --> 0:36:46,040
+ And questions?
+
+646
+0:36:46,040 --> 0:37:01,400
+ Any questions?
+
+647
+0:37:01,400 --> 0:37:04,580
+ Can the reader talk to other readers?
+
+648
+0:37:04,580 --> 0:37:12,320
+ If it's in card emulation mode, it's supposed to do that, yes.
+
+649
+0:37:12,320 --> 0:37:16,200
+ So one of them needs to be in reader mode or active device mode, and the other one needs
+
+650
+0:37:16,200 --> 0:37:18,200
+ to be in card emulation.
+
+651
+0:37:18,200 --> 0:37:25,240
+ But code for the card emulation, you need to fiddle a little with that.
+
+652
+0:37:25,240 --> 0:37:29,640
+ And what is the maximum load you can pull from the tag, basically?
+
+653
+0:37:29,640 --> 0:37:30,640
+ Sorry, once again.
+
+654
+0:37:30,640 --> 0:37:34,880
+ What is the maximum current you can pull from the tag?
+
+655
+0:37:34,880 --> 0:37:36,480
+ It's very little.
+
+656
+0:37:36,480 --> 0:37:46,200
+ So there are two little pins, like pads, next to the chip.
+
+657
+0:37:46,200 --> 0:37:51,120
+ One of them is V out, and the other one is FD, FD stands for field detection.
+
+658
+0:37:51,120 --> 0:37:55,000
+ So that will go higher, I think, when an active field is there.
+
+659
+0:37:55,000 --> 0:38:00,400
+ The V out has to be activated by a register reading in there to actually make anything,
+
+660
+0:38:00,760 --> 0:38:07,120
+ It's not, you have to maybe normalize it a little bit, and it's very little.
+
+661
+0:38:07,120 --> 0:38:11,080
+ It's tiny little things, but it's enough to run a tiny microcontroller.
+
+662
+0:38:11,080 --> 0:38:16,920
+ I can't remember the exact, and also it all depends on the distance to the reader and
+
+663
+0:38:16,920 --> 0:38:21,560
+ how the reader reads and so on.
+
+664
+0:38:21,560 --> 0:38:24,560
+ Any more questions?
+
+665
+0:38:24,560 --> 0:38:28,440
+ Hello.
+
+666
+0:38:28,440 --> 0:38:32,800
+ The card emulation mode of it, can that be used to spoof other unique IDs?
+
+667
+0:38:32,800 --> 0:38:37,440
+ So could you clone a card and say, yes, I'm this unique ID instead?
+
+668
+0:38:37,440 --> 0:38:42,600
+ I believe so, and I really hope so.
+
+669
+0:38:42,600 --> 0:38:44,520
+ That should be possible, yes.
+
+670
+0:38:44,520 --> 0:38:48,920
+ Maybe Esme has some extra info on that.
+
+671
+0:38:48,920 --> 0:38:57,560
+ No, I just want to say that all this, of course, depends on how well the software is working.
+
+672
+0:38:57,560 --> 0:39:04,120
+ So if anyone likes reading data sheets and writing a bit of Python to continue the driver
+
+673
+0:39:04,120 --> 0:39:09,720
+ I started for the NFC chip, then please contact me and I'll get you set up so you can work
+
+674
+0:39:09,720 --> 0:39:11,720
+ on it.
+
+675
+0:39:11,720 --> 0:39:14,400
+ Awesome.
+
+676
+0:39:14,400 --> 0:39:21,800
+ So the Arduino library has an example of using the reader to detect an other reader.
+
+677
+0:39:21,800 --> 0:39:28,000
+ I think that is a good example to start out with if you want to do the Arduino side of it.
+
+678
+0:39:28,000 --> 0:39:32,480
+ Yeah, anything else?
+
+679
+0:39:32,480 --> 0:39:35,480
+ No, let's give Flummer an extra hand.
+
+680
+0:39:44,400 --> 0:39:45,480
+ Thank you.

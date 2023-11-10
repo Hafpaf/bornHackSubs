@@ -1,0 +1,1677 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:12,560
+ The next speaker we have is the one with the braid that will talk about performing cross-platform
+
+2
+0:00:12,560 --> 0:00:14,880
+ development using Flutter.
+
+3
+0:00:14,880 --> 0:00:21,560
+ Let's give her a hand.
+
+4
+0:00:21,560 --> 0:00:22,560
+ Thanks a lot.
+
+5
+0:00:22,560 --> 0:00:23,560
+ Welcome.
+
+6
+0:00:24,440 --> 0:00:33,160
+ Next 45 minutes I'll entertain you with some code in Dart and with some history about Flutter.
+
+7
+0:00:33,160 --> 0:00:38,560
+ About me, I'm the one with the braid or in order to sum up my Danish skills down with
+
+8
+0:00:38,560 --> 0:00:41,520
+ flattening, that's everything I know to say in Danish and that's everything I need to
+
+9
+0:00:41,520 --> 0:00:42,960
+ know in Danish.
+
+10
+0:00:42,960 --> 0:00:50,640
+ I'm Dart developer, so I mostly do front-end stuff using Dart and I work in healthcare
+
+11
+0:00:50,640 --> 0:00:54,000
+ in Germany even though I'm from France.
+
+12
+0:00:54,000 --> 0:01:01,480
+ What exactly I do there is Matrix, Matrix not as in mathematics but in the communication
+
+13
+0:01:01,480 --> 0:01:07,520
+ protocol for decentralised communication and here apart from what I professionally do
+
+14
+0:01:07,520 --> 0:01:16,640
+ with Flutter and Matrix is some trickling with the BSD, Linuxes and reduced instruction
+
+15
+0:01:16,640 --> 0:01:18,760
+ set architectures.
+
+16
+0:01:18,760 --> 0:01:20,400
+ And how did I come to Flutter?
+
+17
+0:01:20,400 --> 0:01:25,720
+ I started using Flutter back in 2018 when it was first released and since then I'm
+
+18
+0:01:25,720 --> 0:01:30,160
+ pretty convinced of Flutter.
+
+19
+0:01:30,160 --> 0:01:31,160
+ What is Flutter?
+
+20
+0:01:31,160 --> 0:01:38,560
+ Flutter is an entire set of things you can use or which it provides.
+
+21
+0:01:38,560 --> 0:01:41,960
+ First of all, if you use Flutter, it ships the Dart platform.
+
+22
+0:01:41,960 --> 0:01:47,640
+ Dart is a programming language more or less only used in Flutter with Flutter.
+
+23
+0:01:47,640 --> 0:01:52,280
+ Apart from the programming language, Dart which is shipped along with Flutter, you
+
+24
+0:01:52,280 --> 0:01:53,280
+ have the Flutter engine.
+
+25
+0:01:53,280 --> 0:01:58,600
+ The Flutter engine is what's executing on your device, you run an application on in
+
+26
+0:01:58,600 --> 0:02:02,520
+ order to have your Flutter application showing up.
+
+27
+0:02:02,520 --> 0:02:10,920
+ Then you have lots of libraries, for example the foundation library providing some pre-defined
+
+28
+0:02:10,920 --> 0:02:16,040
+ stuff in order to have easy development with Flutter, then you have design specific libraries
+
+29
+0:02:16,240 --> 0:02:23,160
+ and widgets, for example in order to create a particular look and feel like material apps,
+
+30
+0:02:23,160 --> 0:02:32,080
+ Cupertino apps matching IOS users, workflows, so that's what you get in order for development.
+
+31
+0:02:32,080 --> 0:02:37,320
+ And most important, debugging, you get pretty fancy dev tools and pretty fancy analysis
+
+32
+0:02:37,320 --> 0:02:42,400
+ in order to make the developer's lives easier.
+
+33
+0:02:42,440 --> 0:02:47,040
+ So now that we know what Flutter consists of, why do we like it?
+
+34
+0:02:47,040 --> 0:02:51,440
+ Flutter compiles to native binaries which makes it pretty performant.
+
+35
+0:02:51,440 --> 0:02:58,280
+ If you look at the current state of cross-platform development, we often have constructions like
+
+36
+0:02:58,280 --> 0:03:07,360
+ JavaScript being used in web views, in React, buzzword, Electron on desktop, and it's often
+
+37
+0:03:07,520 --> 0:03:14,120
+ pretty inefficient because we simply run a web browser or JavaScript interpreter in order
+
+38
+0:03:14,120 --> 0:03:21,320
+ to run time in development, whereas Flutter compiles to native code, your device is executing.
+
+39
+0:03:21,320 --> 0:03:25,720
+ That makes it super performant because compiling does not mean being performant but the Flutter
+
+40
+0:03:25,720 --> 0:03:28,760
+ compiler is pretty performant.
+
+41
+0:03:28,760 --> 0:03:34,120
+ And of course if we look at our fancy startup building a new application, we have a single
+
+42
+0:03:34,120 --> 0:03:40,440
+ code base, that means you need only one third of developers instead of developing a dedicated
+
+43
+0:03:40,440 --> 0:03:46,800
+ native IOS, Android web application, maybe even still a Linux port, a Windows port, everything
+
+44
+0:03:46,800 --> 0:03:50,080
+ in nature, that means good luck developing this.
+
+45
+0:03:50,080 --> 0:03:53,600
+ With Flutter you have a single code base, well that's nothing new in cross-platform
+
+46
+0:03:53,600 --> 0:03:57,080
+ development but that makes things way easier.
+
+47
+0:03:57,080 --> 0:04:03,200
+ And what I love, and that's the killer feature of Flutter, you write your code once, you
+
+48
+0:04:03,240 --> 0:04:07,440
+ design it, but it somehow adapts.
+
+49
+0:04:07,440 --> 0:04:12,480
+ If I run the same application with the same design, with the same stuff, exactly the same
+
+50
+0:04:12,480 --> 0:04:20,600
+ code on IOS, you will have tiny difference compared to Android because the framework
+
+51
+0:04:20,600 --> 0:04:29,600
+ itself adapts to the platform, it takes care of placing the app bar or the app title and
+
+52
+0:04:29,680 --> 0:04:35,560
+ position the user expects on the platform, so even though the design is completely the
+
+53
+0:04:35,560 --> 0:04:42,560
+ same, there are these tiny differences between the platforms, some positioning, some rendering
+
+54
+0:04:43,160 --> 0:04:47,760
+ in order to create the native look and feel you expect from your platform.
+
+55
+0:04:47,760 --> 0:04:54,760
+ And that's super fancy in both developer and user experience because as developer I only
+
+56
+0:04:55,360 --> 0:05:00,920
+ write it once and as user I get it as I know it from my platform and don't get a completely
+
+57
+0:05:00,920 --> 0:05:07,920
+ IOS branded application on Android, I want something which I'm familiar with.
+
+58
+0:05:08,280 --> 0:05:13,920
+ And there we are already at the last point, it's a fancy developing experience.
+
+59
+0:05:13,920 --> 0:05:19,920
+ Flutter has, all the Flutter developers, which is Google, they have an entire UX team but
+
+60
+0:05:19,920 --> 0:05:26,880
+ not a UX team in the end users, no, a UX team in order about the developer experience,
+
+61
+0:05:26,880 --> 0:05:30,840
+ so they have an entire team taking care of creating a good developer experience and that's
+
+62
+0:05:30,840 --> 0:05:36,920
+ something you feel when developing, it just feels, yeah, developing with Flutter, Flutter
+
+63
+0:05:36,920 --> 0:05:42,580
+ tries to make it as comfortable for you as possible, not comfortable in order to like
+
+64
+0:05:42,580 --> 0:05:48,200
+ simplifying stuff but in order to, yeah, this is how I want to access my stuff, this is
+
+65
+0:05:48,480 --> 0:05:50,040
+ how I want to develop.
+
+66
+0:05:50,040 --> 0:05:56,240
+ That's super developer friendly and yeah, you feel like that they are trying to get
+
+67
+0:05:56,240 --> 0:06:02,640
+ rid of some legacy patterns in development, we will get on to that later, again, that
+
+68
+0:06:02,640 --> 0:06:09,640
+ makes using Flutter and developing in Flutter in front end super comfortable for me at least.
+
+69
+0:06:09,920 --> 0:06:16,920
+ Now short history of Flutter and Dart, so Dart is the programming language we use and
+
+70
+0:06:17,000 --> 0:06:24,000
+ it was initially released in 2011. It aimed to replace JavaScript with a type safe language
+
+71
+0:06:25,400 --> 0:06:31,200
+ which is a bit ridiculous because Dart was not type safe at that point back in time,
+
+72
+0:06:31,200 --> 0:06:35,880
+ so I don't know why they wanted to but they wanted to.
+
+73
+0:06:35,880 --> 0:06:42,880
+ The idea was, I mean, you know the UX nightmare of JavaScript, at least back in these times,
+
+74
+0:06:43,880 --> 0:06:48,680
+ you had to handle five different browsers because four different browsers implemented
+
+75
+0:06:48,680 --> 0:06:55,680
+ in five different ways, your API, just remember how to open an index DB or how to place an
+
+76
+0:06:56,240 --> 0:07:02,320
+ HTTP request in JavaScript back in these times, it was awful, that's why they aimed to replace
+
+77
+0:07:02,320 --> 0:07:09,320
+ JavaScript with Dart which obviously completely failed because no one implemented Dart as
+
+78
+0:07:10,280 --> 0:07:17,280
+ browser site language. Also it's because they only were implementing half of the APIs from
+
+79
+0:07:18,600 --> 0:07:23,880
+ modern browsers, so it simply did not work. It absolutely failed and then they were looking
+
+80
+0:07:23,880 --> 0:07:28,360
+ for a new purpose. What can we do with this language?
+
+81
+0:07:28,360 --> 0:07:33,360
+ What they did with that language is first of all developing a new version of Dart, Dart
+
+82
+0:07:33,440 --> 0:07:39,760
+ 2, or parallel developing Dart 2 which fixed many bugs like, yeah, I don't want to have
+
+83
+0:07:39,760 --> 0:07:45,160
+ the JavaScript kind of everything is dynamic, that was fixed, and they made Flutter, and
+
+84
+0:07:45,160 --> 0:07:50,880
+ Flutter turned out as pretty successful, at least if we look at the stats of developers
+
+85
+0:07:50,880 --> 0:07:57,440
+ using it, it's pretty successful nowadays. It started as a tiny framework initially aiming
+
+86
+0:07:57,440 --> 0:08:02,720
+ to support cross platform development on iOS and Android, whereas the first release
+
+87
+0:08:02,720 --> 0:08:09,720
+ was Android only, but already within the first year, the first two years, web support and
+
+88
+0:08:12,080 --> 0:08:19,080
+ iOS support were added. One year later, which was 2020 I think, already first preview of
+
+89
+0:08:20,080 --> 0:08:27,080
+ desktop support on Linux and Mac OS was added, Windows 2, now we even have a runtime for
+
+90
+0:08:28,200 --> 0:08:33,720
+ the universal Windows platform, so kind of the new Windows 11 apps that you have. So
+
+91
+0:08:33,720 --> 0:08:39,600
+ Flutter runs on everything apart from previously, that's a story of pain, if someone is interested
+
+92
+0:08:39,600 --> 0:08:46,600
+ I can explain that further later on. So yeah, from this tiny cross platform framework between
+
+93
+0:08:47,560 --> 0:08:53,920
+ iOS and Android, it developed to a platform running everywhere, and running everywhere
+
+94
+0:08:53,920 --> 0:09:00,600
+ as in we compile it to native binaries and not as in we have a browser rendering it everywhere,
+
+95
+0:09:00,600 --> 0:09:07,600
+ which is a huge difference. I don't know, has anyone of you ever used Flutter? One?
+
+96
+0:09:08,640 --> 0:09:15,640
+ Yay, that's many people. Okay, so I will give you a quick heads up of how Flutter works
+
+97
+0:09:16,640 --> 0:09:20,680
+ and the basics of Flutter and Dart before showing code and going into deeper stuff I
+
+98
+0:09:20,680 --> 0:09:27,680
+ think. Flutter, first of all, is mostly a UI framework meant for UI design of front-end
+
+99
+0:09:30,120 --> 0:09:35,920
+ stuff. That's the first thing. It's not your backend framework for your Rust server, it's
+
+100
+0:09:35,920 --> 0:09:42,920
+ front-end stuff. When we design our user interface, every UI element is to simplify it everywhere.
+
+101
+0:09:46,600 --> 0:09:53,600
+ Every UI element is a widget. So as we have XML tags when doing Android development or
+
+102
+0:09:54,280 --> 0:10:01,280
+ as we have HTML tags when doing web development, we have widgets nested as a tree in Flutter.
+
+103
+0:10:01,760 --> 0:10:07,360
+ So it's the same as everywhere. We have our huge, I know the entire container containing
+
+104
+0:10:07,360 --> 0:10:12,780
+ our entire app and then our sub widgets which might be an app bar, some text we display,
+
+105
+0:10:12,820 --> 0:10:19,820
+ all these are widgets and they are nested in a tree as far as I know pretty everywhere.
+
+106
+0:10:19,900 --> 0:10:26,900
+ Flutter already provides us with many high-level widgets we can use in order to create complex
+
+107
+0:10:27,740 --> 0:10:34,740
+ designs in a fast manner but also provides completely basic widgets. A complex UI widget
+
+108
+0:10:36,140 --> 0:10:41,620
+ might be an account chooser for a sidebar. That's a pretty high-level widget where you
+
+109
+0:10:41,620 --> 0:10:45,540
+ only provide some profile pictures, some action and it does everything for you. That's
+
+110
+0:10:45,540 --> 0:10:52,300
+ the most high-level you can imagine from a simple UI framework to ship whereas a more
+
+111
+0:10:52,300 --> 0:10:57,820
+ basic widget might be a container doing nothing but being a container containing anything
+
+112
+0:10:57,820 --> 0:11:04,820
+ else and getting some properties like a size, a color and such things. Then we have some
+
+113
+0:11:05,420 --> 0:11:11,180
+ of course things in between which might be text which already interacts a bit. It detects
+
+114
+0:11:11,300 --> 0:11:14,460
+ whether we are right or left and stuff. This is a bit more high-level but still pretty
+
+115
+0:11:14,460 --> 0:11:21,340
+ low-level. So Flutter ships everything from I want the very most basic in order to create
+
+116
+0:11:21,340 --> 0:11:28,060
+ the very most custom stuff I can create up to I want the fastest way to get an app working,
+
+117
+0:11:28,060 --> 0:11:32,100
+ please give me high-level widgets. All these we can do.
+
+118
+0:11:32,100 --> 0:11:38,740
+ Now the first code sample. This is a Flutter app. I think it's the shortest Flutter app
+
+119
+0:11:38,740 --> 0:11:45,740
+ we can have. We call our file main.dart, import the Flutter library. I think we lost the connection.
+
+120
+0:11:51,300 --> 0:11:57,100
+ Now we are back again. I don't know why but my web browser here is communicating with
+
+121
+0:11:57,100 --> 0:12:02,700
+ the web browser on the other screen which is also on the device. I don't know who invented
+
+122
+0:12:02,780 --> 0:12:09,780
+ this shit. It usually works. This is an example of a super tiny Flutter app. As you see it
+
+123
+0:12:10,220 --> 0:12:17,220
+ displays nothing but which is more or less a Klingon phrase for hello world. I was not
+
+124
+0:12:19,700 --> 0:12:24,740
+ able to write something in Danish so I chose Klingon here. We can have a look at it. It
+
+125
+0:12:24,740 --> 0:12:31,740
+ looks awful but that should not prevent us from at least having a look at it. Let me
+
+126
+0:12:32,100 --> 0:12:39,100
+ compile. This might take a minute. Here. There we were compiling it. Here we have it. That's
+
+127
+0:12:44,500 --> 0:12:51,220
+ a bit ugly but we see we have a window, a native Linux GTK window appearing with content
+
+128
+0:12:51,220 --> 0:12:58,220
+ and that's it. Since we do not provide any information about what color whatsoever this
+
+129
+0:12:58,500 --> 0:13:04,060
+ should display. It's simply a red text because someone found red as a fancy default color
+
+130
+0:13:04,060 --> 0:13:09,060
+ for text if we do not provide any information. There we are with our first Flutter app. You
+
+131
+0:13:09,060 --> 0:13:16,060
+ can have a Flutter app with one line of code. Since that's not that pretty, let's go a bit
+
+132
+0:13:19,980 --> 0:13:26,060
+ deeper into this thing and I need to figure out how to get back into full screen mode.
+
+133
+0:13:26,060 --> 0:13:33,060
+ I think that's the right button. Are we still connected? No, we are not connected. Now we
+
+134
+0:13:37,860 --> 0:13:44,860
+ are connected again. I was talking about the different widgets we nest and of course there
+
+135
+0:13:44,860 --> 0:13:50,420
+ are different types of widgets. We can reduce the different types of widgets onto two basic
+
+136
+0:13:50,420 --> 0:13:55,940
+ types of widgets which are stateless and still full widget. If you're familiar with
+
+137
+0:13:55,940 --> 0:14:02,540
+ software development you likely can relate what it means. A stateless widget is immutable.
+
+138
+0:14:02,540 --> 0:14:08,380
+ You once create it, it's being rendered and that's it. If you want to change something,
+
+139
+0:14:08,380 --> 0:14:13,220
+ whatsoever method, whatsoever place creating this widget needs to create a new widget with
+
+140
+0:14:13,220 --> 0:14:18,780
+ other properties and it's being rendered again. It's once created, it has no state. If you
+
+141
+0:14:18,780 --> 0:14:24,940
+ want to change it, we need to dispose it and create a new one. The state is managed around
+
+142
+0:14:24,940 --> 0:14:31,220
+ this widget. It does not have anything managing any state. Whereas a state full widget takes
+
+143
+0:14:31,220 --> 0:14:38,220
+ care of logic, you can create interaction with the state full widget. It's mutable hands.
+
+144
+0:14:38,580 --> 0:14:45,580
+ It has a state containing your fancy variables you want to store. It can trigger its own
+
+145
+0:14:46,580 --> 0:14:53,580
+ rebuilds. It can react on listeners on triggers in order to change itself and hence render
+
+146
+0:14:54,900 --> 0:15:01,900
+ again. It's mutable. In short, it can self modify itself. Easy samples. If we display
+
+147
+0:15:06,940 --> 0:15:13,860
+ a text, just a constant text with hello world, that's obviously a stateless widget because
+
+148
+0:15:13,940 --> 0:15:18,620
+ it does not change anything. It will never change. It's just if the screen size changes
+
+149
+0:15:18,620 --> 0:15:24,660
+ and it needs to render again, it's just being rendered again. Whereas if we have a button
+
+150
+0:15:24,660 --> 0:15:30,960
+ listening on being clicked and then changing its color would be a state full widget because
+
+151
+0:15:30,960 --> 0:15:35,900
+ we somehow need to store the state. Have we been clicked? What's our current color? That's
+
+152
+0:15:35,900 --> 0:15:42,900
+ definitely a state full widget in opposite. And usually a state full widget is only everything
+
+153
+0:15:44,180 --> 0:15:49,660
+ around that's finally building stateless widgets. So we have the state, okay, are we currently
+
+154
+0:15:49,660 --> 0:15:56,660
+ red or blue? And in case we are red, we render a stateless button which is, yeah, we have
+
+155
+0:15:56,660 --> 0:16:02,060
+ this button and you're red. And yeah, so a state full widget returns a bunch of stateless
+
+156
+0:16:02,060 --> 0:16:09,060
+ widgets usually if we look at the widget tree. How to keep it performant and beautiful? Keep
+
+157
+0:16:09,380 --> 0:16:16,380
+ a stateless as possible. Try to reduce the amount of places where you manage your state
+
+158
+0:16:18,940 --> 0:16:23,980
+ to the lowest possible because the more state you manage, the more places, the more diffuse
+
+159
+0:16:23,980 --> 0:16:30,980
+ it gets, the more broken it gets. And if we always, for example, have one state full widget
+
+160
+0:16:31,980 --> 0:16:38,980
+ containing an entire tree of other widgets also being state full and always initializing
+
+161
+0:16:41,340 --> 0:16:47,100
+ again when being rebuilt, recreated, that's of course less performant than if we handle
+
+162
+0:16:47,100 --> 0:16:54,100
+ our entire state as top as possible in our widget tree because then we do not reinitialize
+
+163
+0:16:55,020 --> 0:16:59,460
+ states, we do not compute states again. We have this state here, we read it out and render
+
+164
+0:16:59,460 --> 0:17:05,380
+ it correspondingly. So the less state you handle, so the less places you handle it at
+
+165
+0:17:05,380 --> 0:17:12,380
+ is the more performant. Also if you use state full widgets, prevent from recreating them.
+
+166
+0:17:13,060 --> 0:17:17,780
+ Flutter has APIs in order to check whether we actually, if we have, I don't know, we
+
+167
+0:17:17,780 --> 0:17:24,500
+ have our fancy red button thingy and whether we actually need to reinitialize our state
+
+168
+0:17:24,500 --> 0:17:31,500
+ if our surroundings or our parenting widget changed, there's the didUpdateWidget method
+
+169
+0:17:33,740 --> 0:17:37,340
+ with which we can check whether we actually need to react on that state change or just
+
+170
+0:17:37,340 --> 0:17:42,700
+ say hey, I don't care, I keep my state. So this is also how you keep your application
+
+171
+0:17:42,700 --> 0:17:47,980
+ more performant, try to preserve your state as long as possible unless you need to modify
+
+172
+0:17:47,980 --> 0:17:54,980
+ or you need to react on the modified environment. A common pattern is you write your controller
+
+173
+0:17:56,540 --> 0:18:02,940
+ or use some fancy libraries in order to have control logic, like for example block might
+
+174
+0:18:02,940 --> 0:18:08,500
+ be a word you might stumble around where you have a controlling instance and you only build
+
+175
+0:18:08,500 --> 0:18:12,620
+ your widgets against one single controller, you read the state out of it. So kind of you
+
+176
+0:18:12,620 --> 0:18:17,020
+ handle the state as external as possible in order to have one place you keep your current
+
+177
+0:18:17,060 --> 0:18:24,060
+ app's pages state in. And another thing is Flutter has something called keys and if you
+
+178
+0:18:24,820 --> 0:18:31,740
+ provide a key to a widget and the key is equal to the previous key provided at this place,
+
+179
+0:18:31,740 --> 0:18:37,420
+ it won't recompute the state, it's simply in order, for example, if we render a list
+
+180
+0:18:37,420 --> 0:18:44,420
+ view with a thousand elements, we might consider adding keys giving them the index we are building
+
+181
+0:18:45,420 --> 0:18:51,580
+ to so that if we change, for example, the length of the list or scroll by, we do not
+
+182
+0:18:51,580 --> 0:18:57,260
+ have to recompute the state but tell the Flutter engine, you already computed the state of
+
+183
+0:18:57,260 --> 0:19:04,260
+ this one, take that state, connect it to that key. So now we're talking about lots of stuff.
+
+184
+0:19:07,020 --> 0:19:14,020
+ It's really slow and it's misaligned. It's misaligned, it's misaligned, it's misaligned
+
+185
+0:19:14,420 --> 0:19:21,420
+ and it's misaligned. The screen is somehow split, let me try to fix that.
+
+186
+0:19:44,420 --> 0:19:51,420
+ Okay, here we are again without a split screen. Yes, now we were talking about how to handle
+
+187
+0:19:59,860 --> 0:20:04,060
+ state, how to have performant code. Now the question is if you want to have performant
+
+188
+0:20:04,060 --> 0:20:08,740
+ code, how does it actually render because rendering in Rigid of your I-Frameworks is
+
+189
+0:20:08,740 --> 0:20:15,740
+ still the most exhaustive part of our development. Yes, so let's have a look at it. First of
+
+190
+0:20:16,420 --> 0:20:23,420
+ all, what's the architecture of Flutter? Are we going to get to the next slide or not?
+
+191
+0:20:24,020 --> 0:20:31,020
+ That's the question. Who is the Flutter developer?
+
+192
+0:20:38,740 --> 0:20:45,740
+ Who broke the Internet? So next slide. Yes, now it works again. Sorry, it's a bit broken,
+
+193
+0:20:57,540 --> 0:21:04,540
+ all this stuff. I think that's part of chaos. This is the architecture of the Flutter framework
+
+194
+0:21:05,220 --> 0:21:09,960
+ whereas we have the framework we already talked about with all its widgets and everything
+
+195
+0:21:09,960 --> 0:21:16,180
+ related to what we actually ship to the end users and we have the engine. I already mentioned
+
+196
+0:21:16,180 --> 0:21:22,940
+ that component too and the engine is basically the part written in C++, at least if you look
+
+197
+0:21:22,940 --> 0:21:29,940
+ at the IO based platforms, which takes care of all the rendering and which basically executes
+
+198
+0:21:30,820 --> 0:21:37,500
+ the Dart VM, takes care of communicating which text is displayed to your operating system,
+
+199
+0:21:37,500 --> 0:21:42,020
+ something accessibility and screen readers. We should not only render text but also communicate
+
+200
+0:21:42,020 --> 0:21:48,040
+ what text we have there. And building up on this engine, we have this entire framework.
+
+201
+0:21:48,040 --> 0:21:53,700
+ We have the foundation library containing all the basics of Flutter, which is for example
+
+202
+0:21:53,700 --> 0:21:58,600
+ the run app method. That's the most basic stuff we have. It must be contained everywhere.
+
+203
+0:21:58,800 --> 0:22:04,080
+ That's part of the foundation. Up on the foundation, before we come to high level widgets, we have
+
+204
+0:22:04,080 --> 0:22:08,840
+ everything regarding animation. So everything we need in order to rebuild the screen, in
+
+205
+0:22:08,840 --> 0:22:15,840
+ order to trigger new rendering, new frames. We have the painting of widgets. So now we
+
+206
+0:22:16,360 --> 0:22:21,160
+ have the final widget, but how do we layout it? How do we render it? All this is part
+
+207
+0:22:21,160 --> 0:22:25,200
+ of the painting stuff. We have gestures, of course. If we have an application, we need
+
+208
+0:22:25,200 --> 0:22:31,680
+ to handle input, may it be a mouse, may it be a stiller, may it be a keyboard, may it
+
+209
+0:22:31,680 --> 0:22:38,680
+ be anything, may it be touch, or if we look at smartphones nowadays. On that, the rendering
+
+210
+0:22:38,680 --> 0:22:44,960
+ with its widgets, which might be a basic widget like a container, having nothing but the size
+
+211
+0:22:44,960 --> 0:22:50,920
+ and the color, and the high level pre-provided libraries like material, providing you fancy
+
+212
+0:22:50,920 --> 0:22:57,920
+ buttons, your beloved account chooser widget, or a Cupertino library matching iOS patterns
+
+213
+0:22:59,920 --> 0:23:06,920
+ with a fancy context menu as a high level predefined widget. That's the architecture
+
+214
+0:23:08,240 --> 0:23:12,260
+ mentioned here. This is the architecture. If we look at mobile and desktop devices on
+
+215
+0:23:12,260 --> 0:23:17,800
+ web, it's a bit different because some things work different, but we will talk about web
+
+216
+0:23:17,880 --> 0:23:24,880
+ later, at least if you still have the motivation. Now let's look at the rendering. So we have
+
+217
+0:23:26,280 --> 0:23:33,280
+ a GPU. It can build a desired amount of frames per second because our CPU has a particular
+
+218
+0:23:34,960 --> 0:23:41,800
+ performance. Flutter supports rendering up to, I think, 120 frames per second as of now,
+
+219
+0:23:41,800 --> 0:23:48,800
+ which is enough for most cases. If we build a widget, if we render a frame, if we render
+
+220
+0:23:52,320 --> 0:23:59,320
+ our application, the first thing we get is a tick from the GPU, time for a new frame.
+
+221
+0:24:00,720 --> 0:24:07,720
+ Tell me what to render. That's what we call in Flutter vSync. We get that one on stateful
+
+222
+0:24:08,200 --> 0:24:15,200
+ widgets, where as we can hook into the Flutter engine communicating your Dart code, your
+
+223
+0:24:15,320 --> 0:24:22,320
+ write every single time the GPU finished building a frame, please give me the next one. And
+
+224
+0:24:24,200 --> 0:24:29,640
+ yeah, if we render anything, we first check, do we need to animate anything? Do we need
+
+225
+0:24:29,640 --> 0:24:34,880
+ to adjust anything on the layout? For example, do we have, for example, a progress indicator
+
+226
+0:24:35,080 --> 0:24:40,960
+ which should move for two pixels because we have a time offset of these and that many
+
+227
+0:24:40,960 --> 0:24:45,360
+ milliseconds? In case of that, first thing is we animate, we check the new values of
+
+228
+0:24:45,360 --> 0:24:51,000
+ everything that we build, we create a widget tree, we define, okay, this widget should
+
+229
+0:24:51,000 --> 0:24:55,400
+ be placed there and so on. And then the next thing is, yeah, now we have our device. It
+
+230
+0:24:55,400 --> 0:25:02,400
+ has this size, it has this DPI. We need to layout it according to what we get from our
+
+231
+0:25:02,960 --> 0:25:09,200
+ hardware. That's the next part. And once it's being layouted, Flutter computed all the positions
+
+232
+0:25:09,200 --> 0:25:13,880
+ of the widgets, all the hierarchy, what's in front, what's in background, then we come
+
+233
+0:25:13,880 --> 0:25:20,880
+ to the point where the Skia engine is having fun communicating with the GPU and painting
+
+234
+0:25:21,040 --> 0:25:25,720
+ new stuff on your screens, painting your new frame. Then you have your layer and widget
+
+235
+0:25:25,720 --> 0:25:31,600
+ tree painted on your device and we get our new vSync tick and can start over. So this
+
+236
+0:25:31,760 --> 0:25:37,840
+ is pretty much what happens if your GPU is free. She's never free because your GPU always
+
+237
+0:25:37,840 --> 0:25:44,840
+ gets new input. So this is how rendering works and if we know how this rendering is supposed
+
+238
+0:25:44,880 --> 0:25:51,640
+ to work, we can optimize performance for it. Now we are back at stateless and stateful
+
+239
+0:25:51,640 --> 0:25:58,440
+ widgets. A stateless widget is once constructed, we have its constructor, it's constructing
+
+240
+0:25:58,440 --> 0:26:03,520
+ the widget, it's defining everything we need to know with this widget and as soon as the
+
+241
+0:26:03,520 --> 0:26:09,160
+ Flutter engine decides it should be built, it's being built. Often it's just built a
+
+242
+0:26:09,160 --> 0:26:14,640
+ single time because we have our static page, our device size does not change, it's just
+
+243
+0:26:14,640 --> 0:26:20,320
+ being built once. We have cases where it's going to change. For example, if I run it
+
+244
+0:26:20,320 --> 0:26:26,840
+ on my application on the desktop and I just shrink the window size. Of course then we
+
+245
+0:26:26,880 --> 0:26:32,200
+ have a new layouting process. We do not have a new build process where we create the widget
+
+246
+0:26:32,200 --> 0:26:35,920
+ tree again. We only have a new layouting process because we already know the present widget
+
+247
+0:26:35,920 --> 0:26:40,920
+ tree and we need to layout again. So this is the only case where this loop is being
+
+248
+0:26:40,920 --> 0:26:47,440
+ entered and being rebuilt in case our layout is changing and we must adjust anything. A
+
+249
+0:26:47,440 --> 0:26:54,440
+ stateful widget in opposite is creating its state and once this state is created, also
+
+250
+0:26:55,440 --> 0:27:01,200
+ we enter the build loop. If the Flutter engine decides we build it, we build it. But also
+
+251
+0:27:01,200 --> 0:27:07,960
+ this stateful widget can trigger a change of its state on its own and communicate the
+
+252
+0:27:07,960 --> 0:27:14,960
+ other way around back to the Flutter engine, please rebuild me because for example I was
+
+253
+0:27:14,960 --> 0:27:21,480
+ processing an onclick event and I should now change my color. Now I was storing this state,
+
+254
+0:27:21,480 --> 0:27:28,320
+ I have current button color set to green. Now we communicate to the Flutter engine,
+
+255
+0:27:28,320 --> 0:27:35,320
+ set state, the most prominent method in Flutter and the Flutter engine knows next GPU tick
+
+256
+0:27:36,680 --> 0:27:42,500
+ we get, we will rebuild this part of the screen, this widget according to its new properties.
+
+257
+0:27:42,500 --> 0:27:47,680
+ And how that looks is in particular this. That's a pretty long loop. We once create
+
+258
+0:27:47,680 --> 0:27:54,080
+ our widgets, we initialize the state, we have the init state method where for example we
+
+259
+0:27:54,080 --> 0:27:59,400
+ can read out some properties from environment, create our initial state, for example creating
+
+260
+0:27:59,400 --> 0:28:05,360
+ a text field controller in order to process text input or anything. Creating an animation
+
+261
+0:28:05,360 --> 0:28:10,800
+ controller, you often initialize controller classes in the init state. Then we have a
+
+262
+0:28:10,800 --> 0:28:17,080
+ dirty state because we have a present state but it's not rolled out so rendered for the
+
+263
+0:28:17,120 --> 0:28:23,640
+ user yet. If we have a dirty state and the Flutter engine knows about it because we call
+
+264
+0:28:23,640 --> 0:28:30,360
+ this set state or because we were finishing the init state method, it's being built. Then
+
+265
+0:28:30,360 --> 0:28:36,480
+ we have a clean state because what the user sees and what the state of our widget communicates
+
+266
+0:28:36,480 --> 0:28:43,480
+ us to be like, it's same so it's clean. Now we have several options what may happen. The
+
+267
+0:28:43,480 --> 0:28:48,560
+ config change, for example the layout change because the size of the screen was changing
+
+268
+0:28:48,560 --> 0:28:55,200
+ again because I don't know what. In that case we also need to rebuild because things will
+
+269
+0:28:55,200 --> 0:29:01,800
+ rebuild. The other case is we process something whether it may be we were waiting for a random
+
+270
+0:29:01,800 --> 0:29:07,920
+ delay of five seconds in order to change the color or we were listening to an animation
+
+271
+0:29:07,920 --> 0:29:14,720
+ controller animating the color in a fancy gradient or whatsoever or we received a button
+
+272
+0:29:14,720 --> 0:29:21,720
+ click and we adjust the color, we are at the dirty state again. That's why Flutter engine
+
+273
+0:29:21,800 --> 0:29:28,800
+ knows, okay, dirty state, I either got my set state call or I got from the engine itself,
+
+274
+0:29:29,880 --> 0:29:34,640
+ I got the information, layout change or anything I need to rebuild again and at the end of
+
+275
+0:29:34,640 --> 0:29:41,120
+ the life cycle of a stateful widget we dispose of the widget, it's no longer needed for
+
+276
+0:29:41,120 --> 0:29:47,120
+ example because we were navigating to a new page. Also this navigating to a new page isn't
+
+277
+0:29:47,120 --> 0:29:51,560
+ often a problem for example if you want to get back to the previous page but want to
+
+278
+0:29:51,560 --> 0:29:57,760
+ preserve the state. In that case you also can communicate to delay the disposal of the
+
+279
+0:29:57,760 --> 0:30:04,760
+ widget. Also very common bug in order to break your applications. Yeah, now we are
+
+280
+0:30:05,280 --> 0:30:12,280
+ looking, actually we are optimizing performance all the time but let's optimize it a bit further.
+
+281
+0:30:13,080 --> 0:30:19,760
+ Simple hints, simple tips and tricks about performance, I already mentioned keys, keys
+
+282
+0:30:19,760 --> 0:30:26,760
+ you provide them to a widget and it knows we already have computed the state, we already
+
+283
+0:30:27,600 --> 0:30:33,240
+ store the state somewhere, please reuse it as soon as you encounter exactly this key
+
+284
+0:30:33,240 --> 0:30:40,280
+ again. That's pretty useful for animation purpose where you rebuild stuff but parts
+
+285
+0:30:40,280 --> 0:30:46,000
+ of the screen are same even though everything around was messed up because we were moving
+
+286
+0:30:46,000 --> 0:30:51,080
+ stuff around but in order to communicate to the Flutter engine, yeah, this is the same
+
+287
+0:30:51,080 --> 0:30:57,760
+ part again, you can preserve it, keys are useful. Also very useful, similar use case
+
+288
+0:30:57,760 --> 0:31:02,720
+ where you render a lot if you listen to a stream builder building again, again and again,
+
+289
+0:31:02,720 --> 0:31:06,840
+ use keys because it does not force you to rebuild everything again, everything once
+
+290
+0:31:06,840 --> 0:31:19,840
+ a new element is entered into a stream, just use keys everywhere. Yeah, yeah, in Flutter
+
+291
+0:31:19,960 --> 0:31:26,320
+ you often, it's a high level framework, you often listen to streams, to listenables, to
+
+292
+0:31:26,320 --> 0:31:33,320
+ future builders in order to not implement all the logic again and a very common easy
+
+293
+0:31:33,800 --> 0:31:39,520
+ pattern is hey, isn't there this constructor list view dot builder, let's just run it against
+
+294
+0:31:39,520 --> 0:31:46,520
+ our stream because we have a stream for example, a list of your inbox from your mail application,
+
+295
+0:31:46,520 --> 0:31:53,280
+ your inbox from your mail application, you have the list, the stream of the last messages
+
+296
+0:31:53,280 --> 0:31:58,720
+ you were receiving, yeah, let's just build again against it. Better do not do that because
+
+297
+0:31:58,720 --> 0:32:06,480
+ there we have the state, you communicate to Flutter, these 50 items are my current inbox
+
+298
+0:32:06,480 --> 0:32:14,480
+ items, build a list out of it. If we do not communicate the engine, this item was previously
+
+299
+0:32:14,520 --> 0:32:19,760
+ there, this item was previously there and actually only this single new item changed,
+
+300
+0:32:19,760 --> 0:32:26,040
+ we are building everything again. That's what we have an animators list view for in order
+
+301
+0:32:26,040 --> 0:32:32,800
+ to handle this where you simply can say insert an item at position five or delete item at
+
+302
+0:32:32,800 --> 0:32:38,920
+ position three, move item from position one to position five. That's way more efficient
+
+303
+0:32:39,080 --> 0:32:45,000
+ because everything is only rebuilt these tiny parts that changed, also it's way more beautiful
+
+304
+0:32:45,000 --> 0:32:50,640
+ because everything is animated. Flutter is high level, it's animated. Yeah, if you use
+
+305
+0:32:50,640 --> 0:32:57,320
+ raw slivers, slivers is what's doing everything which is sliding in Flutter, the equivalent
+
+306
+0:32:57,320 --> 0:33:01,760
+ is an animated sliver list delegate. But of course you can also use keys if you want to
+
+307
+0:33:01,760 --> 0:33:09,880
+ use a basic list view, then you also prevent from rebuilding everything again. You should
+
+308
+0:33:09,880 --> 0:33:16,880
+ benchmark your applications trying to do that, you will find a huge difference. We were recently
+
+309
+0:33:16,880 --> 0:33:21,960
+ having this trouble in something we were developing at work and it was, yeah it was a different
+
+310
+0:33:21,960 --> 0:33:30,560
+ from 100 to zero. Kind of full GPU blocked because 10,000 items were re-rendering compared
+
+311
+0:33:30,560 --> 0:33:39,040
+ to, yeah it's this tiny item re-rendering, you feel the difference. Animation in my opinion
+
+312
+0:33:39,040 --> 0:33:47,040
+ is very important, in my opinion it's very important. Now it's split again, cursed screen.
+
+313
+0:33:48,000 --> 0:34:01,080
+ Over 10 minutes left, oh wow. Yeah, animations are nice but you should avoid using pixel-based
+
+314
+0:34:01,080 --> 0:34:09,400
+ animations. For example, a video, rendering a video, a GIF, an APNG, an AVIF is always
+
+315
+0:34:09,400 --> 0:34:18,800
+ less efficient than if you use native Flutter shaders. And generally all the performance
+
+316
+0:34:18,800 --> 0:34:24,800
+ is awful on web because Flutter renders in a GL context and rendering your video in a
+
+317
+0:34:24,800 --> 0:34:32,280
+ GL context decreases the performance kind of by 100% if you use it on web. Use, for
+
+318
+0:34:32,280 --> 0:34:40,560
+ example, if you animate stuff, use the animations package which simplifies lots of, yeah, which
+
+319
+0:34:40,560 --> 0:34:46,280
+ provides you many high-level IPIs in order to create efficient animations where you only
+
+320
+0:34:46,280 --> 0:34:54,400
+ give in, hand in the initial thingy, layout thingy, state, whatever it should be, the
+
+321
+0:34:54,400 --> 0:34:59,160
+ initial widget, yeah that's what I want to say, and the outcome, what we should animate
+
+322
+0:34:59,160 --> 0:35:06,600
+ to and it fades or transitions in any way you define there in an efficient way. Yeah,
+
+323
+0:35:06,600 --> 0:35:16,640
+ now I was talking a lot about all this stuff. I would now better go to a practical part.
+
+324
+0:35:16,640 --> 0:35:43,720
+ Let me scroll around here. I think I already moved there. Yeah, I just wrote you a tiny
+
+325
+0:35:43,800 --> 0:35:55,800
+ sample. The screen is still that cursed. Let me disconnect again. I wrote a tiny sample
+
+326
+0:35:55,800 --> 0:36:02,960
+ in the morning today showing pretty everything you need to know about Flutter, which is how
+
+327
+0:36:02,960 --> 0:36:10,520
+ to store stuff on your device, which is how do I do proper routing in my application.
+
+328
+0:36:10,520 --> 0:36:16,760
+ We have some animations we can look at here and that's the sample. You already saw the
+
+329
+0:36:16,760 --> 0:36:22,640
+ run app method in the first sample I was showing, though in the first sample it was only a text
+
+330
+0:36:22,640 --> 0:36:30,320
+ and now we provide some widget. Everything is a widget. You see it here. Everything we
+
+331
+0:36:30,320 --> 0:36:35,120
+ render extends some kind of widget. In that case it's a stateless widget because we only
+
+332
+0:36:35,120 --> 0:36:43,080
+ return some random stuff, some data in order to show a material app. What we do there, we define
+
+333
+0:36:43,080 --> 0:36:50,760
+ titles, some color scheme. Because I like pink, I was setting it to pink and then we define a
+
+334
+0:36:50,760 --> 0:36:59,400
+ router. A router is a pretty relevant part, though the line is not that visible. I stored
+
+335
+0:36:59,400 --> 0:37:05,680
+ a variable called Bonhack router containing all the information about routing, where to find which
+
+336
+0:37:05,680 --> 0:37:16,520
+ page and so on. What is happening? It's always splitting up. That's a cursed connector. Let's
+
+337
+0:37:16,520 --> 0:37:21,600
+ look at that one. It's unfortunately cut again because the beamer is doing cursed stuff. Our
+
+338
+0:37:21,600 --> 0:37:29,000
+ router is a Go router. Go router is currently the way to go to do routing in Flutter. It's a
+
+339
+0:37:29,000 --> 0:37:36,440
+ package developed by the Flutter team itself, providing some fancy APIs for routing, whereas I
+
+340
+0:37:36,440 --> 0:37:43,280
+ just provide some routes containing information about what's the path it should react on. I can
+
+341
+0:37:43,280 --> 0:37:51,320
+ also store variables, for example, colon ID in that case. The router state would contain information
+
+342
+0:37:51,320 --> 0:37:56,920
+ about there was a path parameter provided with the identifier ID and one can access it, but in our
+
+343
+0:37:56,920 --> 0:38:04,560
+ case, we don't need it. It's a simple example. It only has two routes, which is the splash screen
+
+344
+0:38:04,560 --> 0:38:12,240
+ we get to when opening the application at slash and we have the home route where we get to a page
+
+345
+0:38:12,240 --> 0:38:23,800
+ I define, which is called Bonhack page. Let's look at the splash screen. It's already a bit a longer
+
+346
+0:38:23,960 --> 0:38:31,800
+ file, but not that long. What we have, we define a stateful widget. A stateful widget does not have
+
+347
+0:38:31,800 --> 0:38:37,920
+ many contents. It's pretty much nothing. The only relevant part about the stateful widget is the
+
+348
+0:38:37,920 --> 0:38:43,160
+ line create state where we once create the state and everything about this widget is later on
+
+349
+0:38:43,160 --> 0:38:50,000
+ handled in the state. In the state, we have two very important parts in the widget lifecycle,
+
+350
+0:38:50,000 --> 0:38:56,320
+ which is the init state. That's where we start initializing our widget. Often, you start asynchronous
+
+351
+0:38:56,320 --> 0:39:04,080
+ tasks in there where you later on react on further stuff. In our case, we have these two. I will show
+
+352
+0:39:04,080 --> 0:39:10,160
+ later. The second relevant part, which is the build method. In the build method, in our case,
+
+353
+0:39:10,160 --> 0:39:15,240
+ we do nothing but showing a scaffold. Scaffold is the flatter name of I have a material page,
+
+354
+0:39:15,280 --> 0:39:22,520
+ please show it. It's showing a centered progress indicator, which is spinning like, whew, whew,
+
+355
+0:39:22,520 --> 0:39:33,240
+ whew. Why do we show this? This is an asynchronous method. We do not wait for it. We just start it.
+
+356
+0:39:33,240 --> 0:39:41,000
+ Hence, the initial state method is passing before that method completes, so we're building just
+
+357
+0:39:41,080 --> 0:39:49,120
+ instantly. What we build is this progress indicator and while showing this progress indicator in order
+
+358
+0:39:49,120 --> 0:39:55,400
+ to emphasize the stupidity of the code, I was just adding a constant delay of two seconds at this
+
+359
+0:39:55,400 --> 0:40:02,880
+ place, so we wait for two seconds. Maybe you are checking some HTTP stuff, checking whether your
+
+360
+0:40:02,880 --> 0:40:10,600
+ user is logged in or whatsoever, and we initialize a database, Hive. Maybe you've heard of this word
+
+361
+0:40:11,240 --> 0:40:20,400
+ Hive is one of the three pretty popular databases in Flutter. We initialize it and I wrote a tiny
+
+362
+0:40:20,400 --> 0:40:28,160
+ helper class where I store my Hive stuff. We can look at that one. It's also pretty much most
+
+363
+0:40:28,160 --> 0:40:34,520
+ stuff you need to know about Dart code. It's a single term implemented as we have a factory
+
+364
+0:40:34,520 --> 0:40:43,160
+ providing an instance which I just deleted. We have an asynchronous constructor, hence a static
+
+365
+0:40:43,160 --> 0:40:49,440
+ method opening it because we need to wait for the disk. We need to open the data store, wait for it
+
+366
+0:40:49,440 --> 0:40:58,600
+ to be opened, then we store it in our class in order to later on easily access it via this instance
+
+367
+0:40:58,600 --> 0:41:05,080
+ getter. So now we open that one. It takes a few milliseconds and let me go back to my previous page.
+
+368
+0:41:05,080 --> 0:41:23,880
+ I think it was that one. And once we are done also opening our database, everything we need to
+
+369
+0:41:23,880 --> 0:41:31,760
+ initialize is done and we get to our new page, the home page, which is a pretty simple call in
+
+370
+0:41:31,760 --> 0:41:41,440
+ Flutter with a tiny condition in the front. It's if mounted. If mounted is what you always check
+
+371
+0:41:41,440 --> 0:41:48,640
+ before accessing anything which relates to your current context in Flutter. If mounted simply checks
+
+372
+0:41:48,640 --> 0:41:54,920
+ whether your widget is currently active, whether it was deposed before because if you dispose your
+
+373
+0:41:54,920 --> 0:41:59,800
+ widget you can no longer navigate from this widget away. It's not possible. So we check whether our
+
+374
+0:41:59,800 --> 0:42:07,040
+ current widget is still mounted and in case it's still mounted we go to the route home. And home is
+
+375
+0:42:07,040 --> 0:42:15,920
+ the other page I will still quickly show you before I release you into freedom. It's this tiny page.
+
+376
+0:42:15,920 --> 0:42:28,120
+ It already has some more things. I was storing some static strings I used a bit below. I will
+
+377
+0:42:28,120 --> 0:42:36,160
+ also show you how it's being compiled later. We have a page where we have an app bar that the app
+
+378
+0:42:36,160 --> 0:42:45,120
+ bar has some color set. We have some title being set. We have an action we will look at later and
+
+379
+0:42:45,600 --> 0:42:52,080
+ we have a center in which we have some stuff. And now we have a very relevant widget of Flutter which
+
+380
+0:42:52,080 --> 0:42:57,840
+ is a value-listenable builder. Well value-listenable builder itself is not the relevant part but
+
+381
+0:42:57,840 --> 0:43:03,320
+ everything ending on builder in Flutter is super important because in order to have performant
+
+382
+0:43:03,320 --> 0:43:09,480
+ and user-friendly UX you want to react on asynchronous tasks which might be I need to load
+
+383
+0:43:09,480 --> 0:43:14,800
+ something from my web server. I need to wait for this to be stored on the disk and what we have in
+
+384
+0:43:14,800 --> 0:43:22,160
+ this case is a value-listenable builder. The database I chose is high level as most things
+
+385
+0:43:22,160 --> 0:43:28,800
+ in Flutter. I simply can listen onto a database and once it's changed this builder is being
+
+386
+0:43:28,800 --> 0:43:37,320
+ executed and with whatever changes in this database on this store of the database we can rebuild our
+
+387
+0:43:37,320 --> 0:43:43,120
+ widget. In this case it's a counter containing an integer I can change. So if I change this integer
+
+388
+0:43:43,440 --> 0:43:50,080
+ this part of the screen is being rebuilt it's being set to the new amount we get there. We have this
+
+389
+0:43:50,080 --> 0:43:59,840
+ here we listen to the counter and every time the counter box is changing this one is being rebuilt
+
+390
+0:43:59,840 --> 0:44:07,520
+ we get the current value of the counter store. Here we fetch the value of the main counter here
+
+391
+0:44:07,600 --> 0:44:15,360
+ and we display it. That's everything. Down here we still have a button incrementing this counter
+
+392
+0:44:15,360 --> 0:44:19,920
+ but that's no magic. Let's quickly look at it before the talk is going to end.
+
+393
+0:44:22,320 --> 0:44:25,920
+ Navigating across screens.
+
+394
+0:44:37,520 --> 0:44:52,080
+ There you see my fun with display configurations while it's building my Flutter. Here we see our
+
+395
+0:44:52,080 --> 0:45:00,640
+ splash screen for two seconds and everything the application does currently is being ugly because
+
+396
+0:45:00,640 --> 0:45:06,880
+ I did not expect it to run in full screen mode and hence my development tools tell me hey you
+
+397
+0:45:06,880 --> 0:45:12,560
+ were not handling this size of the screen that's why we have this pattern here and my development
+
+398
+0:45:12,560 --> 0:45:20,400
+ tools want me to fix that. So let's go into a better screen size so that we can see it. Here we
+
+399
+0:45:20,400 --> 0:45:26,000
+ have we have nothing in the store we were talking about yet so the database store does not contain
+
+400
+0:45:26,000 --> 0:45:32,480
+ anything so we cannot really read anything out and the fallback is null. Here I have a button with
+
+401
+0:45:32,480 --> 0:45:39,520
+ which I can increment it. The button does nothing but writing something new to the storage and the
+
+402
+0:45:39,520 --> 0:45:46,880
+ value listener builder is doing all the magic so that we finally get the counter here being displayed
+
+403
+0:45:46,880 --> 0:45:55,040
+ again. I can press it as many times as I want and I was mentioning my GPU struggles. I was mentioning
+
+404
+0:45:55,040 --> 0:46:00,560
+ some high level widgets. I added you one. Here you see an image but I wrapped it with a high level
+
+405
+0:46:00,560 --> 0:46:06,960
+ widget with a fancy high level widget with a cupotino context menu. I can just long press it
+
+406
+0:46:06,960 --> 0:46:13,120
+ or right click it and we're getting a fancy context menu as you know it from macOS or iOS.
+
+407
+0:46:13,120 --> 0:46:19,120
+ So this is as more or less the final words an example of a super high level widget which is
+
+408
+0:46:19,120 --> 0:46:25,200
+ one line of code to implement and you get such an animated context menu and this combination of
+
+409
+0:46:26,080 --> 0:46:32,000
+ doing everything low level, listening on streams, but having these fancy high level widgets. That's
+
+410
+0:46:32,000 --> 0:46:35,360
+ why I love Flutter and that's my final word. Questions?
+
+411
+0:46:48,160 --> 0:46:55,120
+ Thanks for the nice talk. So I looked at the code and I think you only showed state full widget
+
+412
+0:46:55,200 --> 0:47:00,640
+ so what are some examples or especially typical examples for stateless widgets in Flutter?
+
+413
+0:47:00,640 --> 0:47:05,440
+ I can show you. I was showing one stateless widget as well.
+
+414
+0:47:08,320 --> 0:47:14,240
+ Here this is a stateless widget. A stateless widget usually has nothing but a build method.
+
+415
+0:47:15,200 --> 0:47:22,480
+ A stateless widget is simply a sum up of widgets we already know how to compose. So in our case
+
+416
+0:47:22,480 --> 0:47:30,080
+ the stateless widget does nothing but returning the material app. So another widget already
+
+417
+0:47:30,080 --> 0:47:34,880
+ provided by the Flutter framework itself with the properties we know we want to have.
+
+418
+0:47:35,520 --> 0:47:38,080
+ So that's what the stateless widget does in this case.
+
+419
+0:47:38,080 --> 0:47:54,960
+ Thank you for being here. Let's give Shia a round of applause.

@@ -1,0 +1,1377 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:11,920
+ The next speakers we have is the game team that will give us the state of the game.
+
+2
+0:00:11,920 --> 0:00:18,280
+ Let's give them a hand.
+
+3
+0:00:18,280 --> 0:00:19,280
+ Thank you.
+
+4
+0:00:19,280 --> 0:00:22,520
+ We were supposed to be three people presenting today.
+
+5
+0:00:22,520 --> 0:00:27,440
+ One is currently treating a wound, so I will be the first one.
+
+6
+0:00:27,440 --> 0:00:34,720
+ And then we will have Asperon announcing the winner of the game game in the last half.
+
+7
+0:00:34,720 --> 0:00:40,640
+ So yes, the token game has now ended.
+
+8
+0:00:40,640 --> 0:00:47,360
+ You can still attempt to find some tokens if you want, but you can't win anymore.
+
+9
+0:00:47,360 --> 0:00:54,240
+ So we had a lot of different activities.
+
+10
+0:00:54,240 --> 0:01:06,160
+ So the two official ones we have are the Hacker Jeopardy and the token hunter.
+
+11
+0:01:06,160 --> 0:01:13,960
+ But we also have a lot of game-related things created by participants.
+
+12
+0:01:13,960 --> 0:01:20,320
+ So we have some board games, we have a game jam, which is announced in a bit, a Pendleton,
+
+13
+0:01:20,320 --> 0:01:24,360
+ garden games, a Mario Kart tournament.
+
+14
+0:01:24,360 --> 0:01:26,720
+ It sounded like they really had fun in that Mario Kart tournament.
+
+15
+0:01:26,720 --> 0:01:29,960
+ I could hear it all the time.
+
+16
+0:01:29,960 --> 0:01:33,480
+ We have a music quiz, treasure hunt, and a COAD tournament.
+
+17
+0:01:33,480 --> 0:01:37,960
+ So it's very nice to see people enjoying themselves.
+
+18
+0:01:37,960 --> 0:01:41,440
+ And we also have the pixel plot, of course.
+
+19
+0:01:41,440 --> 0:01:47,200
+ So the Hacker Jeopardy.
+
+20
+0:01:47,200 --> 0:01:52,660
+ We had a lot of positive feedback.
+
+21
+0:01:52,660 --> 0:01:57,520
+ So we had this year done a bit of prep work.
+
+22
+0:01:57,520 --> 0:02:02,720
+ I'm not personally the one who does the Hacker Jeopardy, but the team who did it did some
+
+23
+0:02:02,720 --> 0:02:05,320
+ really nice work.
+
+24
+0:02:06,040 --> 0:02:14,040
+ It seemed to have paid off, the preparation, and they were really going a few months in
+
+25
+0:02:14,040 --> 0:02:15,040
+ a while.
+
+26
+0:02:15,040 --> 0:02:18,200
+ So it was really nice to see all the emails we got.
+
+27
+0:02:18,200 --> 0:02:29,120
+ Yes, and we got nine categories during the camp, which were not ourselves.
+
+28
+0:02:29,120 --> 0:02:38,240
+ So one round-up for it is that we need more Hacker Network and cybersecurity-related topics.
+
+29
+0:02:38,240 --> 0:02:45,680
+ We could see that, well, some participants could need a bit of more network knowledge,
+
+30
+0:02:45,680 --> 0:02:49,940
+ but it would also be nice to have some cybersecurity things.
+
+31
+0:02:49,940 --> 0:02:58,960
+ We have previously been focused a lot on software-related stuff, but this is a growing field and we
+
+32
+0:02:58,960 --> 0:03:02,760
+ have a lot of participants working in these fields and an interest in them.
+
+33
+0:03:02,760 --> 0:03:08,440
+ So if you have some ideas, you can write it to the email listed here.
+
+34
+0:03:08,440 --> 0:03:12,380
+ We were very much like so.
+
+35
+0:03:12,380 --> 0:03:15,520
+ You can just write it in this moment or wait a few months.
+
+36
+0:03:15,520 --> 0:03:23,600
+ But we were very much like the categories because they are really hard to make up.
+
+37
+0:03:23,600 --> 0:03:29,280
+ Well, then we have the token game.
+
+38
+0:03:29,280 --> 0:03:33,520
+ So in 2023, we had 60 participants.
+
+39
+0:03:33,520 --> 0:03:34,520
+ This is really nice.
+
+40
+0:03:34,520 --> 0:03:43,000
+ It's actually a few more than in 2021 and 2022.
+
+41
+0:03:43,000 --> 0:03:46,320
+ We had 27 unique tokens.
+
+42
+0:03:46,320 --> 0:03:51,520
+ Well, it's 10 more than the last time.
+
+43
+0:03:51,520 --> 0:03:59,760
+ We did a little more preparation, so I think it's a nice amount.
+
+44
+0:03:59,760 --> 0:04:07,520
+ I would personally like to prepare some more tokens ahead of Bornhack, but it is really
+
+45
+0:04:07,520 --> 0:04:09,920
+ hard to come up with tokens also.
+
+46
+0:04:09,920 --> 0:04:14,840
+ So if participants want to make some, you're most definitely welcome and write us an email
+
+47
+0:04:14,840 --> 0:04:18,280
+ if you want.
+
+48
+0:04:18,280 --> 0:04:24,360
+ So the average tokens found per participant were four.
+
+49
+0:04:24,360 --> 0:04:26,400
+ It's less than 2021.
+
+50
+0:04:26,400 --> 0:04:29,640
+ You were really playing that year.
+
+51
+0:04:29,640 --> 0:04:36,560
+ But it is really nice that people who started playing kept playing a bit more than last
+
+52
+0:04:36,560 --> 0:04:37,560
+ year.
+
+53
+0:04:37,560 --> 0:04:39,200
+ That's really nice to see.
+
+54
+0:04:39,200 --> 0:04:45,360
+ We have eight participants who found more than 10 tokens.
+
+55
+0:04:45,360 --> 0:04:51,200
+ We don't really categorize them, but I would say that's like the players who keep playing
+
+56
+0:04:51,200 --> 0:04:55,440
+ and attempting to find as many as they can.
+
+57
+0:04:55,440 --> 0:05:02,080
+ And then we have two participants who found all 27 tokens.
+
+58
+0:05:02,080 --> 0:05:11,360
+ So you can battle it out with whoever gets the prize, but you have to figure that out.
+
+59
+0:05:11,360 --> 0:05:17,520
+ So what lessons did we learn this time?
+
+60
+0:05:17,520 --> 0:05:22,880
+ We didn't have enough tokens that did not need a computer.
+
+61
+0:05:22,880 --> 0:05:31,200
+ So a lot of the tokens require you to have some computing knowledge and also a computer
+
+62
+0:05:31,200 --> 0:05:33,320
+ in your hand.
+
+63
+0:05:33,320 --> 0:05:41,480
+ It would be nice to have some more tokens that are based on puzzles and color recognition
+
+64
+0:05:41,480 --> 0:05:44,720
+ and similar things.
+
+65
+0:05:44,720 --> 0:05:52,480
+ It has been heavily dependent on the token as a string, as a text string.
+
+66
+0:05:52,480 --> 0:05:58,660
+ So naturally that's the way we went, that somehow you could get a token out of a piece
+
+67
+0:05:58,660 --> 0:06:02,040
+ of string somewhere.
+
+68
+0:06:02,040 --> 0:06:07,840
+ But it would be very nice to have some things where you could use pattern recognition also.
+
+69
+0:06:07,840 --> 0:06:20,960
+ Yes, I have already said it, but we would benefit if we prepare more.
+
+70
+0:06:20,960 --> 0:06:25,520
+ We are very low maintenance when we're in off events.
+
+71
+0:06:25,520 --> 0:06:30,680
+ Most of the content happens actually at the event.
+
+72
+0:06:30,680 --> 0:06:37,040
+ Not even during buildup, it's just when the event starts, this is when token hunt creation
+
+73
+0:06:37,040 --> 0:06:38,040
+ starts.
+
+74
+0:06:38,040 --> 0:06:42,600
+ We did some small things and it really helped out.
+
+75
+0:06:42,600 --> 0:06:47,360
+ We had the space invader, for example, which already included the token before it was set
+
+76
+0:06:47,360 --> 0:06:50,260
+ up.
+
+77
+0:06:50,260 --> 0:06:54,920
+ So yeah, we have received a lot of nice input.
+
+78
+0:06:54,920 --> 0:07:03,560
+ And yeah, we would like to also make tokens more accessible for players.
+
+79
+0:07:03,560 --> 0:07:08,300
+ So this is a thing that we need to work on, is again the thing with the computers.
+
+80
+0:07:08,300 --> 0:07:21,160
+ Not everybody is that good with computers necessarily, or may not be studying a computer
+
+81
+0:07:22,160 --> 0:07:29,640
+ on a university and doing math all the time.
+
+82
+0:07:29,640 --> 0:07:36,760
+ Again it's like we keep enjoying this, but magic just happens when other teams and other
+
+83
+0:07:36,760 --> 0:07:41,560
+ participants just say, hey, I would like to make this token, can I make this token?
+
+84
+0:07:41,560 --> 0:07:46,580
+ And then we say, yes, most definitely.
+
+85
+0:07:46,580 --> 0:07:54,460
+ So it's really nice when the batch team or this year the phone operation center really
+
+86
+0:07:54,460 --> 0:07:59,460
+ just said, yeah, I would like to make this thing, can I make this thing?
+
+87
+0:07:59,460 --> 0:08:01,180
+ That came some really nice things out of it.
+
+88
+0:08:01,180 --> 0:08:05,380
+ So I can show some more details on it.
+
+89
+0:08:05,380 --> 0:08:11,440
+ We have the batch token.
+
+90
+0:08:11,440 --> 0:08:12,900
+ So I'm not the one who created this.
+
+91
+0:08:12,900 --> 0:08:17,060
+ I'm a bit unsure about the details on them, but let's get to it.
+
+92
+0:08:17,060 --> 0:08:20,900
+ So on the batch, there is some letters you can read.
+
+93
+0:08:20,900 --> 0:08:25,020
+ Well, this whole grid refers to a token.
+
+94
+0:08:25,020 --> 0:08:40,780
+ So it is basically encoded, and you can, if you decode it, you can get Frank Miller, 18,
+
+95
+0:08:40,780 --> 0:08:41,860
+ and the year.
+
+96
+0:08:41,860 --> 0:08:51,060
+ So you can, let's see how many we have here, yes, a lot of things.
+
+97
+0:08:51,060 --> 0:09:03,700
+ So that's a lot of references to this one-time pad of the paper from Frank Miller, and I
+
+98
+0:09:03,700 --> 0:09:08,020
+ guess you had to go in and read it.
+
+99
+0:09:08,020 --> 0:09:13,420
+ Or similar, to start finding the tokens, but yes, that was most definitely tokens on the
+
+100
+0:09:13,420 --> 0:09:15,180
+ batch again this year.
+
+101
+0:09:15,180 --> 0:09:17,460
+ Maybe we will have it again.
+
+102
+0:09:17,460 --> 0:09:23,100
+ So the batch had NFC, right?
+
+103
+0:09:23,100 --> 0:09:29,860
+ Yeah, I didn't make these slides, unfortunately, so I'm not sure what all these numbers mean,
+
+104
+0:09:29,860 --> 0:09:39,740
+ but someone says hack the planet, and you could convert it to the token in the end.
+
+105
+0:09:39,740 --> 0:09:43,900
+ I'm sorry, I don't know what the end result gives.
+
+106
+0:09:43,900 --> 0:09:52,260
+ Maybe a participant could explain.
+
+107
+0:09:52,260 --> 0:10:01,860
+ And then we have this one, it's also a bit of evil, that this batch gives you access
+
+108
+0:10:01,860 --> 0:10:07,820
+ to the data needed to gain SSX access to a VM that contains some data that contains more
+
+109
+0:10:07,820 --> 0:10:10,820
+ tokens.
+
+110
+0:10:10,820 --> 0:10:20,580
+ Yeah, again, I have no idea what this means.
+
+111
+0:10:20,580 --> 0:10:33,580
+ Yes, unfortunately, who knows what all these numbers mean, and yeah, you can find him after
+
+112
+0:10:33,580 --> 0:10:41,100
+ this talk if you want, and get some explanations, but I'm sorry, I cannot.
+
+113
+0:10:41,100 --> 0:10:45,140
+ So we also had some Dex phone numbers we could call.
+
+114
+0:10:45,140 --> 0:10:53,420
+ You can call the number that corresponds to token game, and it will read out some nice
+
+115
+0:10:53,420 --> 0:10:58,620
+ letters to you in phonetic alphabet.
+
+116
+0:10:58,620 --> 0:11:02,380
+ You probably have to record it or call it at least three times or four times to get
+
+117
+0:11:02,380 --> 0:11:04,980
+ it on the whole thing, but that's a token there.
+
+118
+0:11:04,980 --> 0:11:14,300
+ You can also call the number token, and well, you will get a conversation from the movie
+
+119
+0:11:15,060 --> 0:11:23,540
+ Hackers, where I crash overwrite the main character, request a number from a person,
+
+120
+0:11:23,540 --> 0:11:36,020
+ and if you call that number, then you activate an omelette where you can then read the numbers.
+
+121
+0:11:36,020 --> 0:11:42,420
+ So yeah, that's also GetLisa's numbers, and that's also one of the numbers mentioned in
+
+122
+0:11:42,420 --> 0:11:47,620
+ the movie, one of the phone numbers, so you can get a little hint.
+
+123
+0:11:47,620 --> 0:11:53,020
+ Thank you to Phone Operations Center, because that little piece of evil was actually very
+
+124
+0:11:53,020 --> 0:11:54,020
+ nice.
+
+125
+0:11:54,020 --> 0:11:58,540
+ I really loved calling in and testing different things.
+
+126
+0:11:58,540 --> 0:12:07,940
+ Oh, yes, of course, that's conversion.
+
+127
+0:12:08,020 --> 0:12:17,540
+ I guess that says token, and that says Lisa, and that says token hunt, or similar.
+
+128
+0:12:17,540 --> 0:12:23,700
+ Apparently, that was an audio, sorry about that.
+
+129
+0:12:23,700 --> 0:12:33,820
+ So we also, well, I also made some artwork together with the bat, and this, but it didn't
+
+130
+0:12:33,820 --> 0:12:40,380
+ start as a token, but we made some artwork, and I thought, yeah, why not include a token?
+
+131
+0:12:40,380 --> 0:12:41,620
+ This would be fun.
+
+132
+0:12:41,620 --> 0:12:51,300
+ So that's a small thing that says Space Invader 1978, and if you mix those letters around,
+
+133
+0:12:51,300 --> 0:12:52,300
+ you will get a token.
+
+134
+0:12:52,300 --> 0:12:57,140
+ Very easy, but you should have to spot it.
+
+135
+0:12:57,140 --> 0:13:02,180
+ Also credits to the nice person who took this picture, because I'm not that good at taking
+
+136
+0:13:02,180 --> 0:13:06,340
+ images.
+
+137
+0:13:06,340 --> 0:13:11,460
+ We also have a token in the sticker exchange.
+
+138
+0:13:11,460 --> 0:13:13,740
+ Maybe you can see the QR code.
+
+139
+0:13:13,740 --> 0:13:21,900
+ So there were two boxes of stickers in sticker exchange at the info desk, and you can scan
+
+140
+0:13:21,900 --> 0:13:24,300
+ both of them.
+
+141
+0:13:24,340 --> 0:13:36,580
+ The hint is ROT in the sticker chain, so that was the hint, and the QR code, one of the
+
+142
+0:13:36,580 --> 0:13:43,100
+ QR codes had some letters, and then it said plus four or minus four, and the other one
+
+143
+0:13:43,100 --> 0:13:44,580
+ did the same.
+
+144
+0:13:44,580 --> 0:13:52,180
+ So you could do a rotation plus four, rotation minus four, and put them together.
+
+145
+0:13:52,220 --> 0:14:00,660
+ I accidentally made one of them a little too long, so it had 33 characters, but yeah, small
+
+146
+0:14:00,660 --> 0:14:08,980
+ correction much that you just removed the last letter of the token, but yeah.
+
+147
+0:14:08,980 --> 0:14:13,300
+ So this was the token hunt.
+
+148
+0:14:13,300 --> 0:14:16,180
+ Do we have any questions about some tokens?
+
+149
+0:14:16,180 --> 0:14:17,460
+ Maybe I can answer some.
+
+150
+0:14:17,460 --> 0:14:18,460
+ Yes.
+
+151
+0:14:22,660 --> 0:14:27,700
+ This was definitely not all tokens, it was just a few selects.
+
+152
+0:14:27,700 --> 0:14:34,100
+ So I saw that one of the tokens is the sequence of lights down the main path, is that right?
+
+153
+0:14:34,100 --> 0:14:37,100
+ Yeah, I think so, yes.
+
+154
+0:14:37,100 --> 0:14:43,380
+ I couldn't figure out any combination of lights that would make up 30 and make sense.
+
+155
+0:14:43,380 --> 0:14:47,340
+ Also one of them is white.
+
+156
+0:14:47,340 --> 0:14:51,900
+ Maybe the participant over here can answer the question.
+
+157
+0:14:51,900 --> 0:14:55,100
+ So I guess the question is how are you supposed to do that one?
+
+158
+0:15:07,500 --> 0:15:17,660
+ So the white one is actually blue, and you can see the film if you look, and there's
+
+159
+0:15:17,660 --> 0:15:21,100
+ two towards the cabin, those count.
+
+160
+0:15:21,100 --> 0:15:26,380
+ The first one here towards the bar doesn't count, and the two towards the food area doesn't
+
+161
+0:15:26,380 --> 0:15:27,660
+ count either.
+
+162
+0:15:41,660 --> 0:15:44,580
+ How can people sign up or help out with the game team?
+
+163
+0:15:44,580 --> 0:15:46,460
+ You didn't really specify?
+
+164
+0:15:47,420 --> 0:15:52,620
+ Well, you can sign up on the Bornhack website for the game team, and then drop us an email
+
+165
+0:15:52,620 --> 0:15:58,060
+ and say, hey, I would very much like to be part of the token hunt.
+
+166
+0:15:58,060 --> 0:16:04,580
+ Right now it's me and Dennis who are making the token hunt, but having an extra person
+
+167
+0:16:04,580 --> 0:16:14,100
+ or two extra people being the, what is the English word for this, but being the caretakers
+
+168
+0:16:14,100 --> 0:16:18,260
+ of the tokens would be very nice.
+
+169
+0:16:18,260 --> 0:16:24,940
+ It would allow us to have more minds on it.
+
+170
+0:16:24,940 --> 0:16:28,900
+ So yes, go to the Bornhack website, really, and sign up.
+
+171
+0:16:28,900 --> 0:16:50,140
+ If I can ask, there was a hex in the slides between the presentations, it looked like
+
+172
+0:16:50,140 --> 0:16:53,780
+ it was a valid token, but was it?
+
+173
+0:16:53,780 --> 0:16:54,780
+ Which one, sorry?
+
+174
+0:16:54,860 --> 0:17:02,020
+ There was a hex value in the slides between the presentations, so it was valid.
+
+175
+0:17:02,020 --> 0:17:06,940
+ That was a hex encoded token in the info beamer, yes.
+
+176
+0:17:06,940 --> 0:17:13,180
+ I couldn't figure out how to, I mean, I decoded it, but I couldn't get to a valid token.
+
+177
+0:17:13,180 --> 0:17:17,220
+ So there's a very nice website called CyberChef, if you search on that.
+
+178
+0:17:17,220 --> 0:17:18,220
+ I used it.
+
+179
+0:17:18,220 --> 0:17:25,260
+ Okay, if you type it in correctly, hopefully you should get the token.
+
+180
+0:17:25,260 --> 0:17:32,100
+ There was not that much else in that token than finding it and typing it and then converting
+
+181
+0:17:32,100 --> 0:17:33,100
+ it over.
+
+182
+0:17:33,100 --> 0:17:39,700
+ Yeah, I've done that, but maybe you can show me later.
+
+183
+0:17:39,700 --> 0:17:48,220
+ And I also make mistakes sometimes, so it could be I also made some mistakes, but try
+
+184
+0:17:48,220 --> 0:17:53,940
+ again and then ask me if it didn't work.
+
+185
+0:17:53,940 --> 0:17:56,940
+ And then I will hop further to the next thing.
+
+186
+0:17:56,940 --> 0:17:59,940
+ Well, we have the winner.
+
+187
+0:17:59,940 --> 0:18:07,660
+ Oh, sorry, beyond the end of the talk.
+
+188
+0:18:07,660 --> 0:18:08,660
+ Sorry about that.
+
+189
+0:18:08,660 --> 0:18:14,340
+ I made mistakes there in the last second since I didn't look at the, yeah, sorry.
+
+190
+0:18:14,340 --> 0:18:16,260
+ We have the pixel flute.
+
+191
+0:18:16,260 --> 0:18:26,720
+ Well, this is a graph that's also showed up in the state of the network talk.
+
+192
+0:18:26,720 --> 0:18:31,940
+ This is a monstrosity made by Asperger.
+
+193
+0:18:31,940 --> 0:18:37,660
+ So it has an 80 gigabits, which I can explain a bit more about it.
+
+194
+0:18:37,660 --> 0:18:42,580
+ But we had some participants pulling their own fibers.
+
+195
+0:18:42,580 --> 0:18:51,780
+ We had Asperger himself making a pixel accelerator, takes a 10 megabit nick, like an old Bornhack
+
+196
+0:18:51,780 --> 0:19:02,860
+ badge, and then do loop magic and apparently turns it up to 10 gigabits.
+
+197
+0:19:02,860 --> 0:19:14,140
+ I don't know, like something with 15 kilometers of fiber.
+
+198
+0:19:14,140 --> 0:19:19,100
+ It took a few days to get this up and running, but it seems like people were enjoying themselves.
+
+199
+0:19:19,100 --> 0:19:27,500
+ So I hope this can keep showing up and more people would like to participate.
+
+200
+0:19:27,500 --> 0:19:29,940
+ We have a little graph here.
+
+201
+0:19:30,740 --> 0:19:37,660
+ Well, you can see it started, okay, the graph at least started Sunday.
+
+202
+0:19:37,660 --> 0:19:48,820
+ I can hop over to this and say, well, the peak at the 95 percentile was at 31 gigabits
+
+203
+0:19:48,820 --> 0:19:50,340
+ per second.
+
+204
+0:19:50,340 --> 0:19:56,380
+ The switch is limited to 80 gigabits, so we'll get to near that, well, I guess we will get
+
+205
+0:19:56,380 --> 0:19:58,420
+ a larger switch or something.
+
+206
+0:19:59,380 --> 0:20:06,780
+ We averaged it, I cannot say that word, our average was 21 gigabits per second, and the
+
+207
+0:20:06,780 --> 0:20:13,620
+ peak is like a weird thing to count, but at 43.
+
+208
+0:20:13,620 --> 0:20:20,500
+ We have some new protocols, I misspelled that apparently, new protocols implemented.
+
+209
+0:20:20,500 --> 0:20:28,060
+ You can find it on the link, it's the same link that hopefully all players saw.
+
+210
+0:20:28,100 --> 0:20:37,500
+ And this year we had multiple 10 gigabit clients, yes, the pixel accelerator thing was great.
+
+211
+0:20:37,500 --> 0:20:45,140
+ We streamed some movies on it, well, not me, but Max streamed some movies on it.
+
+212
+0:20:45,140 --> 0:20:54,460
+ Labyrinth of a village pulls their own fiber and put in some QSFP plus optics.
+
+213
+0:20:54,460 --> 0:21:03,220
+ They were, however, limited to 10 gigabits per machine, so it's not like bringing the
+
+214
+0:21:03,220 --> 0:21:10,460
+ largest machine you can and the largest Nick, because I could just find a 100 gigabit Nick
+
+215
+0:21:10,460 --> 0:21:13,100
+ and put it in if the switch couldn't take it.
+
+216
+0:21:13,100 --> 0:21:21,700
+ So all clients are limited to 10 gigabits, and we were as well, but we just could sit
+
+217
+0:21:21,700 --> 0:21:29,460
+ in our comfy tents instead of going all the way out next door to a machine.
+
+218
+0:21:29,460 --> 0:21:36,100
+ Legacy IP addresses were again punished this year, you had to use IPv6 or else you would
+
+219
+0:21:36,100 --> 0:21:40,940
+ get some transparency on your pixels.
+
+220
+0:21:40,940 --> 0:21:47,620
+ You can see the little pony, perhaps, that was because I didn't update my client and
+
+221
+0:21:47,620 --> 0:21:51,020
+ could not find the V6 version I made somewhere.
+
+222
+0:21:51,020 --> 0:21:53,820
+ So yeah, it was transparent.
+
+223
+0:21:53,820 --> 0:22:03,500
+ I just send enough pixels that it's not immediately, it is still visible.
+
+224
+0:22:03,500 --> 0:22:14,260
+ So there was also a participant who attempted to create a distributed pixel flow client.
+
+225
+0:22:14,260 --> 0:22:22,980
+ The goal was to play Doom on it, like with one controller and then multiple small machines
+
+226
+0:22:22,980 --> 0:22:31,340
+ and stuff, the distributed distribution thing worked, but not playing Doom.
+
+227
+0:22:31,340 --> 0:22:35,480
+ Maybe that will work next time.
+
+228
+0:22:35,480 --> 0:22:42,860
+ So yes, I guess we can go to the game jam, and I will attempt to remember to announce
+
+229
+0:22:42,860 --> 0:22:45,860
+ the winners of the token hunt.
+
+230
+0:22:45,860 --> 0:23:03,140
+ Oh wait, I have to do this talk in English, then you understand.
+
+231
+0:23:03,140 --> 0:23:06,380
+ We did the first ever bornhack game jam and it was a great success.
+
+232
+0:23:06,380 --> 0:23:11,620
+ Thank you for everybody who played.
+
+233
+0:23:11,620 --> 0:23:15,380
+ If you have your laptop out right now, you can go to pyjam.as slash game jam and see
+
+234
+0:23:15,380 --> 0:23:16,620
+ all the submissions.
+
+235
+0:23:16,620 --> 0:23:23,220
+ We had eight very beautiful games made by, I think, something like 15 nice hackers.
+
+236
+0:23:23,220 --> 0:23:28,620
+ All of the games had to fit the theme switch, which was announced last Friday at 1800, and
+
+237
+0:23:28,620 --> 0:23:31,500
+ then we had three days to complete the game.
+
+238
+0:23:31,500 --> 0:23:34,980
+ The deadline was yesterday at 1800.
+
+239
+0:23:34,980 --> 0:23:38,660
+ So since there's eight games, I just want to show you all of them because I couldn't
+
+240
+0:23:38,660 --> 0:23:40,140
+ help myself.
+
+241
+0:23:40,140 --> 0:23:45,020
+ This one, Killswitch by Vair, is really cool, it was made by a child, I think the first
+
+242
+0:23:45,020 --> 0:23:47,180
+ time they ever made a game.
+
+243
+0:23:47,180 --> 0:23:50,820
+ It's a switch, there's also some Nintendo switches and there's some networking switches
+
+244
+0:23:50,820 --> 0:23:54,260
+ and there's a light switch, and you have to press one of three buttons and try and kill
+
+245
+0:23:54,260 --> 0:23:59,540
+ the prisoner instead of the cops.
+
+246
+0:23:59,540 --> 0:24:00,540
+ But it's very cool.
+
+247
+0:24:00,540 --> 0:24:06,020
+ It plays in the web browser and it has a leaderboard.
+
+248
+0:24:06,020 --> 0:24:09,100
+ Moral switch is gamifying the trolley problem.
+
+249
+0:24:09,100 --> 0:24:14,660
+ Norske made a game which you're given a moral dilemma and you have to choose who you want
+
+250
+0:24:14,660 --> 0:24:15,780
+ to kill.
+
+251
+0:24:15,780 --> 0:24:19,780
+ The text was generated, I think, using a large language model and also images that were being
+
+252
+0:24:19,780 --> 0:24:24,020
+ made on the fly so it would make at runtime new scenarios.
+
+253
+0:24:24,020 --> 0:24:26,820
+ That's quite cool.
+
+254
+0:24:26,820 --> 0:24:29,540
+ Somebody made a game called Past Parentheses 2.
+
+255
+0:24:29,540 --> 0:24:31,980
+ I think they uploaded under the same name twice.
+
+256
+0:24:31,980 --> 0:24:36,700
+ But this was Astron 1, Mast, Nielsen, Philip.
+
+257
+0:24:36,700 --> 0:24:40,780
+ This is a game which had several different backend implementations.
+
+258
+0:24:40,780 --> 0:24:46,060
+ So every time you die, you switch to a different backend which had its own complete different
+
+259
+0:24:46,060 --> 0:24:49,700
+ state and different rules for the game.
+
+260
+0:24:49,700 --> 0:24:54,180
+ Think there was backend written in Haskell and Go and Rust, right?
+
+261
+0:24:54,180 --> 0:24:56,420
+ So that's kind of crazy.
+
+262
+0:24:56,420 --> 0:24:57,660
+ So there's several different games.
+
+263
+0:24:57,660 --> 0:25:01,640
+ There's one which is like a pixel art drawing game and this is a snake game.
+
+264
+0:25:01,640 --> 0:25:06,180
+ This one turns out to be a lot of fun because there's an HTML injection in the username
+
+265
+0:25:06,660 --> 0:25:07,660
+ field.
+
+266
+0:25:07,660 --> 0:25:09,860
+ So you can just change the game on the fly.
+
+267
+0:25:09,860 --> 0:25:14,300
+ Yeah, this website was looking really crazy last night because of the HTML injection.
+
+268
+0:25:14,300 --> 0:25:15,780
+ That was cool.
+
+269
+0:25:15,780 --> 0:25:20,740
+ Dowser made a game called Save the Network which is about defending a network switch.
+
+270
+0:25:20,740 --> 0:25:23,100
+ You have all of these different ports.
+
+271
+0:25:23,100 --> 0:25:26,100
+ Some of them, they turn red while they're being hacked.
+
+272
+0:25:26,100 --> 0:25:28,140
+ So you have to be quick and click it.
+
+273
+0:25:28,140 --> 0:25:29,820
+ So it's kind of like a whack-a-mole game.
+
+274
+0:25:29,820 --> 0:25:31,740
+ This is super difficult.
+
+275
+0:25:31,740 --> 0:25:35,080
+ But it has nice audio and stuff also.
+
+276
+0:25:35,080 --> 0:25:41,200
+ Another cool game, Design Nuda, Nicolas made a game called Shield Switch in which it's
+
+277
+0:25:41,200 --> 0:25:46,840
+ sort of like an asteroids type game where there's different types of asteroids.
+
+278
+0:25:46,840 --> 0:25:49,320
+ It's difficult to see right now but these are like the red ones.
+
+279
+0:25:49,320 --> 0:25:54,400
+ And then you switch between being in the red state or the blue state so you can phase through
+
+280
+0:25:54,400 --> 0:25:57,520
+ different kinds of asteroids depending on what color it is.
+
+281
+0:25:57,520 --> 0:25:58,520
+ That's quite cool.
+
+282
+0:25:58,520 --> 0:26:02,800
+ Nicolas, who made this game, also composed an original soundtrack for this game and just
+
+283
+0:26:02,840 --> 0:26:06,200
+ because he had more time and wanted to, he also made an original soundtrack for this
+
+284
+0:26:06,200 --> 0:26:07,280
+ game.
+
+285
+0:26:07,280 --> 0:26:09,920
+ So that's super cool.
+
+286
+0:26:09,920 --> 0:26:15,960
+ This Sliding Snake is a terminal-based game in which you control a snake and you try and
+
+287
+0:26:15,960 --> 0:26:18,640
+ avoid these lines of trees.
+
+288
+0:26:18,640 --> 0:26:24,440
+ I think this was originally made to run on a receipt printer.
+
+289
+0:26:24,440 --> 0:26:26,760
+ That's great.
+
+290
+0:26:26,760 --> 0:26:27,960
+ This was my game.
+
+291
+0:26:27,960 --> 0:26:32,440
+ It's like a physics-based game where you're the snake inside of your network switch because
+
+292
+0:26:32,440 --> 0:26:35,160
+ you know the snake inside the network switch, right?
+
+293
+0:26:35,160 --> 0:26:40,320
+ You pick up packets and you try and drop them in the right place and you try not to switch
+
+294
+0:26:40,320 --> 0:26:43,480
+ the packets wrong.
+
+295
+0:26:43,480 --> 0:26:45,040
+ Samuel made a game called Switch Off the Music.
+
+296
+0:26:45,040 --> 0:26:49,040
+ This is a mobile phone game which is GPS-based, right?
+
+297
+0:26:49,040 --> 0:26:53,640
+ So the plot is that it's late and all the hackers are making a lot of noise and you
+
+298
+0:26:53,640 --> 0:26:58,440
+ have to go and find the parties and then tell them to turn off the music.
+
+299
+0:26:58,440 --> 0:27:02,400
+ This game will get your heart rate up like you're sprinting around the field and trying
+
+300
+0:27:02,400 --> 0:27:06,120
+ to turn off the music before you lose your patience.
+
+301
+0:27:06,120 --> 0:27:07,120
+ That's a lot of fun.
+
+302
+0:27:07,120 --> 0:27:08,120
+ All right.
+
+303
+0:27:08,120 --> 0:27:10,040
+ So those were the games.
+
+304
+0:27:10,040 --> 0:27:12,280
+ We had a rating system so it works like this.
+
+305
+0:27:12,280 --> 0:27:17,480
+ Anybody who submitted a game could rate the other games.
+
+306
+0:27:17,480 --> 0:27:20,800
+ We had a little bit less than 24 hours to play and rate all of them.
+
+307
+0:27:20,800 --> 0:27:21,800
+ These are the categories.
+
+308
+0:27:21,800 --> 0:27:25,600
+ There's an overall score that determines the winner of the game jam totally.
+
+309
+0:27:25,600 --> 0:27:30,260
+ And then these are the aspects of creativity and aesthetics, how well it fit the theme
+
+310
+0:27:30,260 --> 0:27:33,960
+ of Switch and how fun the gameplay was.
+
+311
+0:27:33,960 --> 0:27:38,300
+ So let's do the winner's announcement for each of these categories.
+
+312
+0:27:38,300 --> 0:27:41,240
+ The aesthetic winner is...
+
+313
+0:27:41,240 --> 0:27:49,540
+ Mortal Switch!
+
+314
+0:27:49,540 --> 0:27:57,780
+ The creativity winner is, I'm sure you're not surprised about this, Switch Off the Music!
+
+315
+0:27:57,780 --> 0:28:11,540
+ The gameplay winner is Shield Switch!
+
+316
+0:28:11,540 --> 0:28:14,380
+ And the theme winner is...
+
+317
+0:28:14,380 --> 0:28:17,380
+ Mortal Switch!
+
+318
+0:28:17,380 --> 0:28:19,580
+ Again!
+
+319
+0:28:19,580 --> 0:28:22,700
+ All right can I have a drum roll for the total winner?
+
+320
+0:28:22,700 --> 0:28:33,120
+ The winner of the Born Hack Game Jam 2023 is Shield Switch!
+
+321
+0:28:33,120 --> 0:28:35,660
+ But really so much thanks to everybody who played.
+
+322
+0:28:35,660 --> 0:28:39,580
+ It's been a lot of fun making games with you and we're definitely going to do this again
+
+323
+0:28:39,580 --> 0:28:41,580
+ next year.
+
+324
+0:28:41,580 --> 0:28:45,780
+ So there's a theme for the game jam which was Switch this year.
+
+325
+0:28:45,780 --> 0:28:49,420
+ I'd really like to hear suggestions for a theme for next year.
+
+326
+0:28:49,500 --> 0:28:53,380
+ The game jam Lulu Dare does this thing of submitting a bunch of different themes and then we vote
+
+327
+0:28:53,380 --> 0:28:54,380
+ about it.
+
+328
+0:28:54,380 --> 0:28:55,380
+ I think we should do that next year.
+
+329
+0:28:55,380 --> 0:28:59,180
+ So send an email to the game team or send a message to me or just come find me if you
+
+330
+0:28:59,180 --> 0:29:01,120
+ have a good idea for a theme.
+
+331
+0:29:01,120 --> 0:29:03,940
+ Also I want to make it so that I don't know the theme in advance because that would be
+
+332
+0:29:03,940 --> 0:29:04,940
+ more fun for me.
+
+333
+0:29:04,940 --> 0:29:07,940
+ Yeah, but that's it for game jam.
+
+334
+0:29:07,940 --> 0:29:12,540
+ Thanks for playing!
+
+335
+0:29:12,540 --> 0:29:20,860
+ As you can see he's a bit more energetic than I am.
+
+336
+0:29:20,860 --> 0:29:24,100
+ So yes, now the token hunt winner is...
+
+337
+0:29:24,100 --> 0:29:36,740
+ Well, yeah, you have to play Rock, Paper, Scissors but it's Emilia and Sebastian.
+
+338
+0:29:36,740 --> 0:29:40,540
+ You can decide amongst yourselves what you want to play Rock, Paper, Scissors.
+
+339
+0:29:40,540 --> 0:29:47,980
+ Okay, I guess we can fight for a year about that one.
+
+340
+0:29:47,980 --> 0:29:54,460
+ So yes, thank you so much for visiting this talk.
+
+341
+0:29:54,460 --> 0:29:57,460
+ See you next year!
+
+342
+0:30:04,460 --> 0:30:07,460
+ Are there any questions?
+
+343
+0:30:11,460 --> 0:30:17,340
+ Thank you for the great state of the game.
+
+344
+0:30:17,340 --> 0:30:19,980
+ Let's give him a round of applause.

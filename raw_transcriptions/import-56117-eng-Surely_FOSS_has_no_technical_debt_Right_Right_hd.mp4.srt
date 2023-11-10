@@ -1,0 +1,2041 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:15,880
+ Good morning, I hope you had a successful sleep and I welcome you to day four of Bornhack
+
+2
+0:00:15,880 --> 0:00:24,760
+ to the speaker stand to the first talk of Paul Henning Kemp and surely FOSS has no technical
+
+3
+0:00:24,760 --> 0:00:25,760
+ debt, right?
+
+4
+0:00:25,760 --> 0:00:26,760
+ Right?
+
+5
+0:00:26,760 --> 0:00:29,760
+ Give him a warm welcome.
+
+6
+0:00:29,760 --> 0:00:41,160
+ So, what language, Danish, English, or South-Western-Landish?
+
+7
+0:00:41,160 --> 0:00:45,400
+ English, okay.
+
+8
+0:00:45,400 --> 0:00:51,320
+ So this talk is brought to you by a comment from GitHub that says, I do not plan to remove
+
+9
+0:00:51,320 --> 0:00:54,600
+ pre-ISOC compatibility at this time.
+
+10
+0:00:54,600 --> 0:00:57,760
+ I'll get back to that.
+
+11
+0:00:57,760 --> 0:01:05,560
+ So first, a Jeopardy quiz, Jeopardy, you have to come up with the answer, or sorry,
+
+12
+0:01:05,560 --> 0:01:07,480
+ you have to come up with the question, I give the answer.
+
+13
+0:01:07,480 --> 0:01:08,840
+ This is the first clue.
+
+14
+0:01:08,840 --> 0:01:12,000
+ What is the question?
+
+15
+0:01:12,000 --> 0:01:14,240
+ No?
+
+16
+0:01:14,240 --> 0:01:21,280
+ Still nobody?
+
+17
+0:01:21,280 --> 0:01:24,760
+ This is from Wikipedia's page on the subject.
+
+18
+0:01:24,760 --> 0:01:29,200
+ The question is, of course, what is technical debt?
+
+19
+0:01:29,200 --> 0:01:35,200
+ Technical debt is, it sounds easy to do something and by the time you're done, it's no longer
+
+20
+0:01:35,200 --> 0:01:43,080
+ easy because there's 275 different special cases and by the way, somebody introduced
+
+21
+0:01:43,080 --> 0:01:46,320
+ a new version of the protocol in the meantime and so on.
+
+22
+0:01:46,320 --> 0:01:54,040
+ Everything gets more complicated with time and the tendency is to just keep adding stuff
+
+23
+0:01:54,040 --> 0:01:58,000
+ and never removing stuff and that's basically what technical debt is.
+
+24
+0:01:58,000 --> 0:02:02,400
+ You never catch up and get back to a clean, nice solution because you have all this old
+
+25
+0:02:02,400 --> 0:02:06,400
+ compatibility stuff.
+
+26
+0:02:06,400 --> 0:02:17,440
+ I had an idea involving making a change to the R-Sync program related to encrypting stuff
+
+27
+0:02:17,440 --> 0:02:22,600
+ for off-site backups and I thought, how hard can that be?
+
+28
+0:02:23,280 --> 0:02:28,040
+ R-Sync is from 1992.
+
+29
+0:02:28,040 --> 0:02:33,320
+ It's based on a very smart idea from Andrew Trigil.
+
+30
+0:02:33,320 --> 0:02:36,880
+ They've used version control from version 0.9 in 96.
+
+31
+0:02:36,880 --> 0:02:43,560
+ That's where a lot of people started using version control and 7,500 commits later, we're
+
+32
+0:02:43,560 --> 0:02:47,560
+ at version 3.3 now.
+
+33
+0:02:47,560 --> 0:02:54,000
+ There's 61,000 lines of code, 10,000 of which is they have their own copy of the compression
+
+34
+0:02:54,000 --> 0:03:00,560
+ library and there's like 5,000 lines in the manual page explaining all the weird things
+
+35
+0:03:00,560 --> 0:03:03,720
+ you can do with R-Sync.
+
+36
+0:03:03,720 --> 0:03:08,520
+ For instance, do you want character set conversion on your extended attributes when you move
+
+37
+0:03:08,520 --> 0:03:13,520
+ them from an IDM to a Linux machine?
+
+38
+0:03:13,520 --> 0:03:15,520
+ Hands up if you ever used that.
+
+39
+0:03:17,560 --> 0:03:25,160
+ I sat down in my beach house during summer vacation and cleaned up R-Sync.
+
+40
+0:03:25,160 --> 0:03:29,040
+ By cleaned up, I mean the kind of thing we talk about when we say I cleaned up the attic,
+
+41
+0:03:29,040 --> 0:03:32,240
+ I cleaned up the garage.
+
+42
+0:03:32,240 --> 0:03:38,240
+ I threw a lot of shit out.
+
+43
+0:03:38,240 --> 0:03:45,920
+ I started to remove stuff on the basic principle that I have never even thought about using
+
+44
+0:03:45,920 --> 0:03:52,640
+ this and if anybody told me they used it, I would tell them they were crazy.
+
+45
+0:03:52,640 --> 0:03:59,040
+ There are four different compression algorithms available in R-Sync.
+
+46
+0:03:59,040 --> 0:04:05,080
+ The difference at best is in low percentages.
+
+47
+0:04:05,080 --> 0:04:09,440
+ It shouldn't even happen in R-Sync, it should be done on the SSH layer.
+
+48
+0:04:09,440 --> 0:04:15,040
+ There's a batch mode, which is like, have you heard about shell scripts?
+
+49
+0:04:15,040 --> 0:04:21,200
+ There's a daemon mode, it can act as its own web server, a network server, anonymous R-Sync,
+
+50
+0:04:21,200 --> 0:04:25,640
+ anybody remember that?
+
+51
+0:04:25,640 --> 0:04:31,480
+ Conversion of character sets, extended attributes, access control list, it just goes on.
+
+52
+0:04:31,480 --> 0:04:39,400
+ It has support for all versions of the R-Sync internal protocol that has ever been.
+
+53
+0:04:39,400 --> 0:04:44,400
+ There's a command line option where you can say use version seven of the R-Sync protocol.
+
+54
+0:04:44,400 --> 0:04:50,240
+ If for some reason you want to travel back to 1990, whatever.
+
+55
+0:04:50,240 --> 0:04:54,400
+ This is simply accumulating stuff over and over again.
+
+56
+0:04:54,400 --> 0:05:00,720
+ By the time I was done, I had removed the core part of R-Sync from 46,000 lines of code
+
+57
+0:05:00,720 --> 0:05:04,120
+ to 27,000 lines of code.
+
+58
+0:05:04,120 --> 0:05:07,640
+ That means there's 40% gone.
+
+59
+0:05:07,640 --> 0:05:12,680
+ I found a bug and I tried reporting it, but they couldn't see it because of all the layers
+
+60
+0:05:12,680 --> 0:05:14,320
+ of junk on top of it.
+
+61
+0:05:14,320 --> 0:05:22,080
+ It's not important, but it's a bug, but it's hidden by all these accumulated layer of crap.
+
+62
+0:05:22,080 --> 0:05:28,000
+ This is what a bank or an insurance company would call legacy software and pay some consultancy
+
+63
+0:05:28,000 --> 0:05:34,200
+ and exorbitant amount of money to replace.
+
+64
+0:05:34,200 --> 0:05:37,560
+ Before you ask, no, I'm not going to release this version of R-Sync because I don't want
+
+65
+0:05:37,560 --> 0:05:43,960
+ to become maintainer of R-Sync.
+
+66
+0:05:43,960 --> 0:05:51,880
+ Why the fuck does R-Sync have a copy of the compression library in the first place?
+
+67
+0:05:51,880 --> 0:06:00,440
+ I wrote an article about that many years ago that we have been incredibly bad at managing
+
+68
+0:06:00,440 --> 0:06:06,760
+ standard libraries in the open source environment.
+
+69
+0:06:06,760 --> 0:06:10,240
+ I did an audit over the FreeBSD port collection.
+
+70
+0:06:10,240 --> 0:06:14,040
+ You can go into user ports and you can say, make extract, and you get all the source code
+
+71
+0:06:14,040 --> 0:06:16,280
+ for all the ports and you can start revving it.
+
+72
+0:06:16,280 --> 0:06:22,680
+ It takes some time, but basically there were 1,300 copies of standard encryption and hashing
+
+73
+0:06:22,680 --> 0:06:28,680
+ algorithms included in the source code of all the various ports because there's not
+
+74
+0:06:28,680 --> 0:06:33,000
+ a standard library you can link to, so I'll bring my own.
+
+75
+0:06:33,000 --> 0:06:40,040
+ By the way, I don't like the way they formatted it, so I'll reformat it and stuff like that.
+
+76
+0:06:40,040 --> 0:06:43,880
+ It's an endemic problem in the open source environment.
+
+77
+0:06:43,880 --> 0:06:51,560
+ The not invented here is very strong with us, so architecture and stuff like that is
+
+78
+0:06:51,560 --> 0:06:53,880
+ not strong with us.
+
+79
+0:06:53,880 --> 0:06:55,160
+ We'll take another quiz.
+
+80
+0:06:55,160 --> 0:06:57,600
+ This is the year that DNS was introduced.
+
+81
+0:06:57,600 --> 0:06:59,960
+ 1985 or 1984.
+
+82
+0:06:59,960 --> 0:07:02,200
+ 1985, you got it.
+
+83
+0:07:02,200 --> 0:07:07,240
+ Here's the rest of the hints.
+
+84
+0:07:07,240 --> 0:07:10,480
+ What happened otherwise in 1985?
+
+85
+0:07:10,480 --> 0:07:18,160
+ Well, patent 4558302, anybody know what that is?
+
+86
+0:07:18,160 --> 0:07:25,200
+ That is the Lembel-Siv compression patent that made it dubious whether you could use
+
+87
+0:07:25,200 --> 0:07:30,820
+ the Unix compressed program without paying royalties to Unisys.
+
+88
+0:07:30,820 --> 0:07:35,920
+ It made commercial Unix vendors remove the compressed program from the distributions
+
+89
+0:07:35,920 --> 0:07:40,520
+ unless they were Unisys, which were very proud that they had a file compression utility
+
+90
+0:07:40,520 --> 0:07:45,080
+ in that Unix.
+
+91
+0:07:45,080 --> 0:07:49,120
+ This made a lot of trouble for compression, and it makes somebody sit down and write a
+
+92
+0:07:49,120 --> 0:07:53,540
+ new compression algorithm, so we'll try again.
+
+93
+0:07:53,540 --> 0:08:03,480
+ What year is this?
+
+94
+0:08:03,480 --> 0:08:06,480
+ Are we in the wrong culture here?
+
+95
+0:08:06,480 --> 0:08:09,720
+ Is that better?
+
+96
+0:08:09,720 --> 0:08:10,720
+ No?
+
+97
+0:08:10,720 --> 0:08:11,720
+ Really?
+
+98
+0:08:11,720 --> 0:08:26,880
+ The CLIP library was released in 1995.
+
+99
+0:08:26,880 --> 0:08:33,440
+ It was taken out of the GCIP program and turned into a library, or more precisely, the GCIP
+
+100
+0:08:33,560 --> 0:08:38,600
+ program was turned into a library, because then one part of it has the GCIP, except then
+
+101
+0:08:38,600 --> 0:08:45,680
+ GCIP grew some other things, so now we have GCIP and mini-GCIP and stuff like that.
+
+102
+0:08:45,680 --> 0:08:51,040
+ 1985 is quite a long time ago.
+
+103
+0:08:51,040 --> 0:08:56,080
+ My daughter is doing a PhD, she's from 96.
+
+104
+0:08:56,080 --> 0:09:02,680
+ That's probably why the maintenance of the CLIP library is not very high intensity, let's
+
+105
+0:09:02,680 --> 0:09:03,920
+ call it that.
+
+106
+0:09:03,920 --> 0:09:11,040
+ The most recent commit is from October last year, and there's like 143 bug reports and
+
+107
+0:09:11,040 --> 0:09:17,480
+ 200 pull requests waiting for Mark Adler to do something about it.
+
+108
+0:09:17,480 --> 0:09:23,160
+ Some of them are very obscure, such as using the IBM mainframes special data compression
+
+109
+0:09:23,160 --> 0:09:24,680
+ instructions.
+
+110
+0:09:24,680 --> 0:09:33,200
+ I would myself be hesitant to include that, but some of them are right there just to take
+
+111
+0:09:33,200 --> 0:09:34,640
+ them.
+
+112
+0:09:34,640 --> 0:09:42,760
+ One of them is that the new version of LLVM has started complaining about pre-ISOC lack
+
+113
+0:09:42,760 --> 0:09:43,880
+ of prototypes.
+
+114
+0:09:43,880 --> 0:09:48,280
+ The good old Kernigan and Ritchie where you write function name, name of parameter, then
+
+115
+0:09:48,280 --> 0:09:53,280
+ on a separate line you write the type of the parameters.
+
+116
+0:09:53,280 --> 0:10:04,280
+ Mark Adler responded to that, that no, he doesn't plan to remove that at this time.
+
+117
+0:10:04,280 --> 0:10:13,280
+ By the way, they're wrong with that warning in LLVM because I know better.
+
+118
+0:10:13,280 --> 0:10:21,100
+ This out here on the left side is the entire thread under that issue.
+
+119
+0:10:21,100 --> 0:10:27,260
+ This part of it is Mark Adler arguing that he knows better than the ISOC what the ISOC
+
+120
+0:10:27,260 --> 0:10:34,900
+ says, until the guy who's trying to educate him says, forget it.
+
+121
+0:10:34,900 --> 0:10:41,180
+ The next part of it is all the other software project starting to work around the stubborn
+
+122
+0:10:41,180 --> 0:10:43,740
+ old ass.
+
+123
+0:10:43,740 --> 0:10:51,840
+ They have to go into auto crap and say this directory shouldn't use this C warning option.
+
+124
+0:10:51,840 --> 0:10:55,140
+ That's not going well for a lot of them.
+
+125
+0:10:55,140 --> 0:11:00,540
+ It's easier for somebody like 3BSD that has local make files and stuff, but this is basically,
+
+126
+0:11:00,540 --> 0:11:04,220
+ his stubbornness makes work for everybody else.
+
+127
+0:11:04,220 --> 0:11:12,100
+ This is what technical debt is at its worst.
+
+128
+0:11:12,100 --> 0:11:21,540
+ If you look at the source code for the C-Lib, you'll maybe spot a pattern in the if-defs.
+
+129
+0:11:21,540 --> 0:11:31,780
+ Hand in the air if more than five of these have ever been relevant for you.
+
+130
+0:11:31,780 --> 0:11:38,860
+ I can tell the color of your beard.
+
+131
+0:11:38,860 --> 0:11:44,900
+ How many people have worked on a Unix that didn't have standard argument.h?
+
+132
+0:11:44,900 --> 0:11:48,060
+ Do you remember how you did vararags before that?
+
+133
+0:11:48,060 --> 0:11:53,940
+ Manipulating the stack by your hand?
+
+134
+0:11:53,940 --> 0:11:54,940
+ Basically yeah.
+
+135
+0:11:54,940 --> 0:11:59,580
+ If you're lucky, there were macros to help you.
+
+136
+0:11:59,580 --> 0:12:05,740
+ Mark has solved all these portability problems over the time.
+
+137
+0:12:05,740 --> 0:12:10,300
+ Honestly, that sort of messes up the source code a bit.
+
+138
+0:12:10,300 --> 0:12:14,500
+ C-Lib is not the most readable source code there is, but he's been very competent doing
+
+139
+0:12:14,500 --> 0:12:15,500
+ it.
+
+140
+0:12:15,500 --> 0:12:22,020
+ It's well thought out, but I can understand why he doesn't want to touch that again.
+
+141
+0:12:22,020 --> 0:12:27,740
+ I also understand that he's proud of some of those solutions to problems that shouldn't
+
+142
+0:12:27,740 --> 0:12:29,220
+ exist, we might say.
+
+143
+0:12:29,220 --> 0:12:30,820
+ He doesn't want to remove that.
+
+144
+0:12:30,820 --> 0:12:35,060
+ He spent an entire summer doing that, just throwing it out.
+
+145
+0:12:35,060 --> 0:12:42,020
+ That's a very hard thing to get over as a person.
+
+146
+0:12:42,020 --> 0:12:48,700
+ In Danish, we have a concept from Holberg called a geronimus, which is a stubborn old
+
+147
+0:12:48,700 --> 0:12:50,580
+ cuss.
+
+148
+0:12:50,580 --> 0:13:02,260
+ This is somebody, well, he's probably 35 in the original Holberg comedies, maybe 40.
+
+149
+0:13:02,260 --> 0:13:05,820
+ But it's a person who's old, who knows how these things work, and all this new stuff
+
+150
+0:13:05,820 --> 0:13:09,940
+ is humbug.
+
+151
+0:13:09,940 --> 0:13:11,340
+ There's an even worse one.
+
+152
+0:13:11,340 --> 0:13:13,300
+ I love this work.
+
+153
+0:13:13,300 --> 0:13:17,580
+ This is a medical diagnosis in Denmark.
+
+154
+0:13:17,580 --> 0:13:22,860
+ Many of the sufferers have done, made some inventions, got a patent on it, and nobody
+
+155
+0:13:22,860 --> 0:13:25,220
+ wants it.
+
+156
+0:13:25,220 --> 0:13:27,020
+ And they feel slighted.
+
+157
+0:13:27,020 --> 0:13:30,820
+ And at every single instance, every chance they have, they'll bring up their invention
+
+158
+0:13:30,900 --> 0:13:33,820
+ and explain how they would solve all the problems.
+
+159
+0:13:33,820 --> 0:13:39,420
+ And you end up with a history like the one over here from the Danish Engineering Society,
+
+160
+0:13:39,420 --> 0:13:45,860
+ where almost all your entries get removed because they're not relevant to the topic
+
+161
+0:13:45,860 --> 0:13:48,700
+ at hand.
+
+162
+0:13:48,700 --> 0:13:50,820
+ Here's another example.
+
+163
+0:13:50,820 --> 0:13:56,460
+ David Allen invented the Allen variance, which is the two-sample variance used a lot in time
+
+164
+0:13:56,460 --> 0:13:58,440
+ and frequency and stuff like that.
+
+165
+0:13:58,440 --> 0:14:02,680
+ Had a brilliant career, then he goes into retirement.
+
+166
+0:14:02,680 --> 0:14:04,680
+ And what do you do in retirement?
+
+167
+0:14:04,680 --> 0:14:06,480
+ You have to show you're brilliant, right?
+
+168
+0:14:06,480 --> 0:14:12,440
+ So you go after the largest scalpel there is, Einstein's unified field theory.
+
+169
+0:14:12,440 --> 0:14:14,740
+ Prove it wrong or something.
+
+170
+0:14:14,740 --> 0:14:21,520
+ So he starts trying to show something, something about his version of the grand unified theory
+
+171
+0:14:21,520 --> 0:14:27,660
+ by taking two pendulum clocks and putting capacitors under one of them and a battery
+
+172
+0:14:27,660 --> 0:14:28,660
+ under the other one.
+
+173
+0:14:28,660 --> 0:14:32,200
+ So one is electrostatic energy, the other is chemical energy.
+
+174
+0:14:32,200 --> 0:14:37,040
+ And that, in his theory, should make them not go at the same rate or something.
+
+175
+0:14:37,040 --> 0:14:42,260
+ This is utterly insane.
+
+176
+0:14:42,260 --> 0:14:45,900
+ And there is an IT security angle on this.
+
+177
+0:14:45,900 --> 0:14:50,460
+ People approaching this segment has a very large influence.
+
+178
+0:14:50,460 --> 0:14:52,340
+ Too much, I will argue.
+
+179
+0:14:52,340 --> 0:14:56,220
+ You shouldn't listen to old assholes like me.
+
+180
+0:14:56,220 --> 0:14:58,000
+ They make very fundamental decisions.
+
+181
+0:14:58,000 --> 0:15:03,620
+ Going into standardization is a standard retirement kind of thing to get people out of the organization.
+
+182
+0:15:03,620 --> 0:15:07,220
+ Hey, Vint, why don't you go to the standardization meetings for us?
+
+183
+0:15:07,220 --> 0:15:10,380
+ You know everything about this, right?
+
+184
+0:15:10,380 --> 0:15:13,460
+ And they're not quite up to date on today's situation.
+
+185
+0:15:13,460 --> 0:15:17,220
+ It's like, ah, this new thing, right?
+
+186
+0:15:17,220 --> 0:15:19,160
+ And they're very hard to get rid of.
+
+187
+0:15:19,160 --> 0:15:21,040
+ I'm coming here year after year.
+
+188
+0:15:21,040 --> 0:15:24,540
+ See what I mean?
+
+189
+0:15:24,540 --> 0:15:27,860
+ Dave Mills more or less caused the internet.
+
+190
+0:15:27,860 --> 0:15:34,420
+ He's the guy who wrote the proposal for the research program that led to the internet
+
+191
+0:15:34,420 --> 0:15:35,820
+ while working at DARPA.
+
+192
+0:15:35,820 --> 0:15:41,340
+ He'd been working at something called the DCNet, which is really an internet before
+
+193
+0:15:41,340 --> 0:15:42,620
+ the internet.
+
+194
+0:15:42,620 --> 0:15:46,660
+ He loved to play with computers and timekeeping and made that his thing.
+
+195
+0:15:46,660 --> 0:15:50,560
+ And then he starts to lose his eyesight.
+
+196
+0:15:50,560 --> 0:15:55,080
+ The last email he read from me, he read in 30-point Helvetica and complained about the
+
+197
+0:15:55,080 --> 0:15:56,520
+ long lines.
+
+198
+0:15:56,520 --> 0:15:58,280
+ And that's fair, right?
+
+199
+0:15:58,280 --> 0:16:02,660
+ But sort of security issues, that sort of stuff, that was not his problem.
+
+200
+0:16:02,660 --> 0:16:07,920
+ And if we tried to get patches in, it's like, I cannot review this.
+
+201
+0:16:07,920 --> 0:16:12,200
+ So it's like the entire thing grinds to a halt and he doesn't realize he's the stopping
+
+202
+0:16:12,200 --> 0:16:14,920
+ block for it.
+
+203
+0:16:14,920 --> 0:16:19,000
+ Daniel is a really nice dude from Sweden who collects CVEs.
+
+204
+0:16:19,960 --> 0:16:22,880
+ He also writes this program called Curl.
+
+205
+0:16:22,880 --> 0:16:28,360
+ This is number of CVEs against curl plotted against year.
+
+206
+0:16:28,360 --> 0:16:31,480
+ The list is out there.
+
+207
+0:16:31,480 --> 0:16:35,080
+ This is a program most of us use to run shell scripts, right?
+
+208
+0:16:35,080 --> 0:16:36,080
+ Curl pipe bash.
+
+209
+0:16:36,080 --> 0:16:42,580
+ Oh yeah, pseudo bash, sorry.
+
+210
+0:16:42,580 --> 0:16:46,680
+ But Daniel thinks if there is a protocol, it should speak it.
+
+211
+0:16:46,680 --> 0:16:51,160
+ And I keep teasing him, it doesn't do OZIT before.
+
+212
+0:16:51,160 --> 0:16:54,640
+ And I fear the day that he will implement that.
+
+213
+0:16:54,640 --> 0:17:06,480
+ But is that a way to maintain such a crucial piece of the global cybersecurity thing?
+
+214
+0:17:06,480 --> 0:17:15,120
+ I mean, removing the pseudo program would help a lot more, but why does Gopher protocol
+
+215
+0:17:15,160 --> 0:17:18,760
+ exist in Curl by default on pretty much all installations?
+
+216
+0:17:18,760 --> 0:17:19,760
+ Yeah, I can see the fun.
+
+217
+0:17:19,760 --> 0:17:27,560
+ I had a Gopher server 35 years ago.
+
+218
+0:17:27,560 --> 0:17:29,680
+ Toby is a nice dude.
+
+219
+0:17:29,680 --> 0:17:33,960
+ He built the most comprehensive test suit there is for the CPAN archive.
+
+220
+0:17:33,960 --> 0:17:44,440
+ You just try to install smoke ping and it pulls in all the packages from CPAN, right?
+
+221
+0:17:44,440 --> 0:17:48,080
+ Total debt comes from people.
+
+222
+0:17:48,080 --> 0:17:55,440
+ Roy, he knows more about HTTP than anybody else.
+
+223
+0:17:55,440 --> 0:18:01,360
+ And then somebody says we should have an HTTP header that says what you did here cost this
+
+224
+0:18:01,360 --> 0:18:03,920
+ much CO2 to be emitted.
+
+225
+0:18:03,920 --> 0:18:08,680
+ So that the browsers can put up a little window and you can see that one hour of porn will
+
+226
+0:18:08,680 --> 0:18:12,120
+ ruin the climate.
+
+227
+0:18:12,200 --> 0:18:17,200
+ And then we get this Geronimo's answer back, ah, humbug.
+
+228
+0:18:17,200 --> 0:18:21,360
+ He's not even thought about it, about the implications, about the educational part of
+
+229
+0:18:21,360 --> 0:18:24,360
+ it, about, ah, humbug.
+
+230
+0:18:24,360 --> 0:18:26,000
+ And it's dead.
+
+231
+0:18:26,000 --> 0:18:31,000
+ Roy said no.
+
+232
+0:18:31,000 --> 0:18:35,680
+ The good news is it doesn't apply to me or to interview.
+
+233
+0:18:35,680 --> 0:18:37,600
+ We're exempt from this.
+
+234
+0:18:37,600 --> 0:18:41,440
+ What my advice to you is put a mark in the calendar.
+
+235
+0:18:41,440 --> 0:18:46,600
+ Every time you feel like learning something new and actually learn it, it's like, oh,
+
+236
+0:18:46,600 --> 0:18:48,840
+ this thing sounds interesting.
+
+237
+0:18:48,840 --> 0:18:54,600
+ And you actually go down, read up, do the experiment, do your education so you know
+
+238
+0:18:54,600 --> 0:18:56,600
+ what this is.
+
+239
+0:18:56,600 --> 0:19:02,840
+ Or if you change your opinion about a person of your own age, by the time you get to my
+
+240
+0:19:02,840 --> 0:19:09,320
+ age, people are classified into nice, nice, okay, asshole.
+
+241
+0:19:09,320 --> 0:19:13,080
+ If you move people around those, you can put a cross on the calendar.
+
+242
+0:19:13,080 --> 0:19:16,640
+ Or if you, something, you know absolutely everything about this.
+
+243
+0:19:16,640 --> 0:19:19,400
+ And you go and research it anyway.
+
+244
+0:19:19,400 --> 0:19:21,080
+ You can put a cross on the calendar.
+
+245
+0:19:21,080 --> 0:19:27,080
+ And if you have an entire month without any crosses in the calendar, you're retired.
+
+246
+0:19:27,080 --> 0:19:30,560
+ You have stopped being intellectually curious.
+
+247
+0:19:30,560 --> 0:19:31,560
+ You have become Geronimo's.
+
+248
+0:19:31,560 --> 0:19:32,560
+ You know how this works.
+
+249
+0:19:33,080 --> 0:19:34,520
+ You don't need input.
+
+250
+0:19:34,520 --> 0:19:36,480
+ You're fine.
+
+251
+0:19:36,480 --> 0:19:40,680
+ That's retirement.
+
+252
+0:19:40,680 --> 0:19:44,440
+ Mirrors should have this one in the corner.
+
+253
+0:19:44,440 --> 0:19:50,640
+ So every morning when you stand there looking at it, you get reminded that something happened.
+
+254
+0:19:50,640 --> 0:19:58,120
+ And while I was making these slides, we have a discussion in FreeBSD getting rid of 32-bit
+
+255
+0:19:58,120 --> 0:20:00,780
+ architectures.
+
+256
+0:20:00,780 --> 0:20:06,500
+ When was the last time you bought a 32-bit computer to install a Unix operating system on it?
+
+257
+0:20:18,500 --> 0:20:24,540
+ We're talking about what's going to happen in FreeBSD in version 14, 15, and 16.
+
+258
+0:20:24,540 --> 0:20:29,260
+ That's like next year, year after that, no, next year, two years after that, and five
+
+259
+0:20:29,280 --> 0:20:32,280
+ years from now.
+
+260
+0:20:32,280 --> 0:20:35,520
+ It's like, why is this even a question?
+
+261
+0:20:35,520 --> 0:20:36,520
+ Get rid of the shit.
+
+262
+0:20:36,520 --> 0:20:39,440
+ Let's move on.
+
+263
+0:20:39,440 --> 0:20:49,640
+ So we've had open source as a thing now for 40 years-ish kind of thing, depending when
+
+264
+0:20:49,640 --> 0:20:50,640
+ you start it.
+
+265
+0:20:50,640 --> 0:20:53,080
+ Now we've collected a lot of technical debt.
+
+266
+0:20:53,080 --> 0:20:57,840
+ Now we need to start to deal with it so we don't leave that legacy to the next generation.
+
+267
+0:20:59,840 --> 0:21:06,840
+ And the solution is not to add a minor sudo bash option to curl.
+
+268
+0:21:06,840 --> 0:21:13,920
+ And I'm doing stuff in Computer History Museum, so next Sunday we have open.
+
+269
+0:21:13,920 --> 0:21:17,320
+ You can come and see us if you want, stuff like that.
+
+270
+0:21:17,320 --> 0:21:20,320
+ Questions?
+
+271
+0:21:20,320 --> 0:21:21,320
+ There must be some.
+
+272
+0:21:29,320 --> 0:21:36,240
+ Thank you for the talk.
+
+273
+0:21:36,240 --> 0:21:46,160
+ My question is, how long do you think a computing device should be usable?
+
+274
+0:21:46,160 --> 0:21:51,880
+ How many years old should something be before we drop support for it?
+
+275
+0:21:51,880 --> 0:21:52,880
+ And you're asking about-
+
+276
+0:21:52,880 --> 0:21:55,320
+ I mean, yeah, you have the museum slide here, so I appreciate that.
+
+277
+0:21:55,380 --> 0:22:00,900
+ But I mean, in a museum, you might be running the operating system it came with, you know?
+
+278
+0:22:00,900 --> 0:22:08,700
+ I would say from a sustainability point of view, a handheld device like a mobile phone
+
+279
+0:22:08,700 --> 0:22:16,900
+ should last at least five years and be relevant for at least five years.
+
+280
+0:22:16,900 --> 0:22:22,020
+ A larger piece of equipment should last at least 10 years.
+
+281
+0:22:22,720 --> 0:22:27,720
+ There's absolutely no problem building electronics that will last 10 years without any kind of trouble.
+
+282
+0:22:27,720 --> 0:22:33,040
+ It's slightly more expensive, but it's not very much more expensive.
+
+283
+0:22:33,040 --> 0:22:38,960
+ I would say, I mean, that's the kind of thing that the EU could go in and say, you know,
+
+284
+0:22:38,960 --> 0:22:43,920
+ white goods, kitchen appliance and stuff like that, there will be a 10-year warranty from now on.
+
+285
+0:22:43,920 --> 0:22:47,960
+ And it wouldn't hurt anybody any.
+
+286
+0:22:48,900 --> 0:22:52,380
+ The more interesting question is, what about security updates?
+
+287
+0:22:52,380 --> 0:22:56,300
+ What happens when the vendor that made this goes bankrupt?
+
+288
+0:22:56,300 --> 0:23:00,860
+ Who does the security updates?
+
+289
+0:23:00,860 --> 0:23:04,460
+ And what do we do if nobody can do the security updates?
+
+290
+0:23:04,460 --> 0:23:09,980
+ Should there be a mandatory recall saying, this device is no longer safe to use?
+
+291
+0:23:09,980 --> 0:23:11,700
+ They have to be stopped.
+
+292
+0:23:11,700 --> 0:23:15,540
+ Or should devices even come with a built-in timer that says, if I have not received a
+
+293
+0:23:15,560 --> 0:23:23,840
+ security update, even if it's a null update in the last 365 days, I'll kill myself.
+
+294
+0:23:23,840 --> 0:23:28,600
+ No, think seriously about it.
+
+295
+0:23:28,600 --> 0:23:33,720
+ Baby monitors have cameras these days.
+
+296
+0:23:33,720 --> 0:23:39,800
+ And one of the companies that made one that was sold widely in the US had an employee who had a side hustle
+
+297
+0:23:39,860 --> 0:23:45,900
+ because it transpires these cameras catch a lot of women in night dresses.
+
+298
+0:23:45,900 --> 0:23:54,060
+ So there were websites for men who fancied women in night dresses in black and white.
+
+299
+0:23:54,060 --> 0:23:56,580
+ And when this becomes known, the company goes bankrupt.
+
+300
+0:23:56,580 --> 0:24:01,500
+ And now you can't even disable these cameras despite them running on a cloud service.
+
+301
+0:24:01,500 --> 0:24:07,780
+ Shouldn't there have been a dead man's hand in that that says, OK, we'll keel over after
+
+302
+0:24:07,780 --> 0:24:11,160
+ because this is just not safe any longer?
+
+303
+0:24:11,160 --> 0:24:15,400
+ We wouldn't allow that to not exist in a lot of other places.
+
+304
+0:24:15,400 --> 0:24:20,160
+ You're not allowed to walk away from a nuclear plant, even if you go bankrupt.
+
+305
+0:24:20,160 --> 0:24:22,280
+ That's not how it works.
+
+306
+0:24:22,280 --> 0:24:25,880
+ You're not allowed to walk away from a chemical plant if you go bankrupt.
+
+307
+0:24:25,880 --> 0:24:28,000
+ That's not how it works.
+
+308
+0:24:28,000 --> 0:24:36,560
+ And cybersecurity issues in consumer devices, that's environmental pollution if we don't
+
+309
+0:24:36,560 --> 0:24:38,340
+ do something about it.
+
+310
+0:24:38,340 --> 0:24:43,220
+ So I can see a situation where devices will come with one yearly software update.
+
+311
+0:24:43,220 --> 0:24:47,980
+ And when you haven't had a software update in a year, it will stop working.
+
+312
+0:24:47,980 --> 0:24:57,920
+ Break its own firmware and I would welcome it.
+
+313
+0:24:57,920 --> 0:24:59,420
+ Thank you for the thoughts on that.
+
+314
+0:24:59,420 --> 0:25:05,620
+ I've got to say I respectfully disagree with you on the I mean, it's a good point.
+
+315
+0:25:06,040 --> 0:25:10,000
+ The solution to this, in my opinion, is things like postmarket OS, which says they're aiming
+
+316
+0:25:10,000 --> 0:25:12,240
+ for a 10 year lifespan for mobile phones.
+
+317
+0:25:12,240 --> 0:25:18,040
+ And using that, you can actually have today's software on a 10 year old device.
+
+318
+0:25:18,040 --> 0:25:19,640
+ That's a fine solution.
+
+319
+0:25:19,640 --> 0:25:28,520
+ But who's going to do that for all the other devices?
+
+320
+0:25:28,520 --> 0:25:33,760
+ I think mandating software updates for a certain period of time is a good idea.
+
+321
+0:25:33,760 --> 0:25:37,820
+ But having them automatically turn off when they don't get it seems like really shitty
+
+322
+0:25:37,820 --> 0:25:38,820
+ for people.
+
+323
+0:25:38,820 --> 0:25:40,260
+ But how else to stop the problem?
+
+324
+0:25:40,260 --> 0:25:44,700
+ I mean, one of the major sources of spam last year was fridges.
+
+325
+0:25:48,700 --> 0:25:50,700
+ I'd like to continue the conversation later.
+
+326
+0:25:50,700 --> 0:25:54,700
+ I'll let people ask questions.
+
+327
+0:25:54,700 --> 0:25:56,700
+ Other questions?
+
+328
+0:25:57,640 --> 0:26:05,640
+ You mentioned the ARM 7 to make it obsolete.
+
+329
+0:26:05,640 --> 0:26:10,640
+ One of the CPUs is the Allwinner A20, which is an ARM 7.
+
+330
+0:26:10,640 --> 0:26:15,640
+ And OnlyMax says they will support it indefinitely.
+
+331
+0:26:15,640 --> 0:26:18,640
+ So you would not be able to run BSD on it then.
+
+332
+0:26:18,640 --> 0:26:20,640
+ And I can live with that.
+
+333
+0:26:20,640 --> 0:26:22,640
+ OK.
+
+334
+0:26:23,580 --> 0:26:27,580
+ They have 64-bit chips that can do the same thing at the same price point.
+
+335
+0:26:27,580 --> 0:26:32,580
+ And we had a chemical plant where the owner went bankrupt and there's a lot of white phosphorus
+
+336
+0:26:32,580 --> 0:26:36,580
+ in it that the province had to pay for, hundreds of millions of euros.
+
+337
+0:26:43,580 --> 0:26:47,580
+ You mentioned technical debts being caused by people.
+
+338
+0:26:47,580 --> 0:26:51,580
+ What actually happens when those people actually leave the project?
+
+339
+0:26:52,520 --> 0:26:54,520
+ We saw that with the NTP project.
+
+340
+0:26:54,520 --> 0:26:58,520
+ If it's important enough, it sort of limbers on and nothing happens.
+
+341
+0:27:00,520 --> 0:27:06,520
+ Which was a very bad situation because, transpired, there were some significant security holes.
+
+342
+0:27:08,520 --> 0:27:14,520
+ In theory, in the OS-Bazaar theory, somebody will fork the project and everybody will migrate
+
+343
+0:27:14,520 --> 0:27:18,520
+ to the new or better fork and everybody lives happily ever after.
+
+344
+0:27:18,520 --> 0:27:20,520
+ That doesn't seem to be happening that way.
+
+345
+0:27:21,460 --> 0:27:26,460
+ What seems to be happening is that somebody makes a fork and, like me, removes all the
+
+346
+0:27:26,460 --> 0:27:30,460
+ crop he doesn't want without doing market research.
+
+347
+0:27:30,460 --> 0:27:32,460
+ See if that's actually something a lot of people use.
+
+348
+0:27:32,460 --> 0:27:37,460
+ And somebody else makes a fork and says, I'm going to convert this to rust, which is the
+
+349
+0:27:37,460 --> 0:27:42,460
+ new thing, or Haskell, or something like that.
+
+350
+0:27:42,460 --> 0:27:44,460
+ So you get a fragmentation.
+
+351
+0:27:45,400 --> 0:27:54,400
+ Maybe that's not a bad idea, to sort of get rid of these very important pieces of software,
+
+352
+0:27:54,400 --> 0:27:56,400
+ get them split into smaller pieces.
+
+353
+0:27:56,400 --> 0:27:58,400
+ Too big to fail, so to speak.
+
+354
+0:27:59,400 --> 0:28:01,400
+ But it's not a control process.
+
+355
+0:28:01,400 --> 0:28:03,400
+ Whatever happens is whatever happens.
+
+356
+0:28:03,400 --> 0:28:07,400
+ And it depends on the people in the software and who uses it and what they realize and
+
+357
+0:28:07,400 --> 0:28:09,400
+ what they don't realize.
+
+358
+0:28:11,400 --> 0:28:12,400
+ Thank you.
+
+359
+0:28:15,400 --> 0:28:16,400
+ Hi.
+
+360
+0:28:16,400 --> 0:28:20,400
+ You didn't mention OpenSSL, but the fragmentation you're talking about right now happened.
+
+361
+0:28:20,400 --> 0:28:24,400
+ Do you know more about what is that good or do you consider it good?
+
+362
+0:28:24,400 --> 0:28:26,400
+ It fragmented into at least three or five.
+
+363
+0:28:26,400 --> 0:28:28,400
+ I've never considered OpenSSL good.
+
+364
+0:28:30,400 --> 0:28:36,400
+ It's one of the worst code bases it has ever been my displeasure to have to work on.
+
+365
+0:28:36,400 --> 0:28:38,400
+ The source code is awful.
+
+366
+0:28:39,340 --> 0:28:45,340
+ So in that sense, I would like to see them banished from this planet.
+
+367
+0:28:48,340 --> 0:28:53,340
+ Made obsolete by better offerings.
+
+368
+0:28:53,340 --> 0:28:59,340
+ The problem about encryption is that it's very political, as we will be discussing later
+
+369
+0:28:59,340 --> 0:29:01,340
+ this afternoon.
+
+370
+0:29:01,340 --> 0:29:06,340
+ And pretty much all of the replacements I've seen come with significant political baggage.
+
+371
+0:29:09,340 --> 0:29:15,340
+ And I've always had the I deliver tools, not policies attitude to open source.
+
+372
+0:29:15,340 --> 0:29:19,340
+ I'm not the one who tells you how to run whatever you're trying to run.
+
+373
+0:29:20,340 --> 0:29:24,340
+ But I feel a lot of those libraries come with that kind of policies.
+
+374
+0:29:25,340 --> 0:29:31,340
+ And that's probably making OpenSSL live longer than it otherwise would.
+
+375
+0:29:32,340 --> 0:29:35,340
+ Because, well, we can always use OpenSSL, right?
+
+376
+0:29:36,280 --> 0:29:40,280
+ Isn't a big part of this issue that we continue to write all our software
+
+377
+0:29:40,280 --> 0:29:44,280
+ in these ancient languages using the same methods that we did in the 80s?
+
+378
+0:29:44,280 --> 0:29:48,280
+ Like for C and C++, they haven't received sort of competent standard library work
+
+379
+0:29:48,280 --> 0:29:50,280
+ in a very, very long time.
+
+380
+0:29:50,280 --> 0:29:52,280
+ It doesn't even have network support right now.
+
+381
+0:29:52,280 --> 0:29:54,280
+ It takes ten lines to create a socket.
+
+382
+0:29:54,280 --> 0:29:56,280
+ And we continue to write software in it.
+
+383
+0:29:56,280 --> 0:30:02,280
+ So the C language is victim of a particular incompetent standardization?
+
+384
+0:30:02,280 --> 0:30:04,280
+ Absolutely.
+
+385
+0:30:05,220 --> 0:30:10,220
+ I mean, the ISOC people must hate the language since they're trying to kill it.
+
+386
+0:30:12,220 --> 0:30:15,220
+ And that can be a valid position depending on who they are.
+
+387
+0:30:15,220 --> 0:30:19,220
+ C++ standardization by comparison seems to be incredibly competent.
+
+388
+0:30:22,220 --> 0:30:24,220
+ I don't know how much of that is because of Bjarne
+
+389
+0:30:24,220 --> 0:30:27,220
+ and how much is because they're just competent people.
+
+390
+0:30:29,220 --> 0:30:33,220
+ I'm considering at the time moving Varnish to C++
+
+391
+0:30:34,160 --> 0:30:38,160
+ because of some of the recent brain farts from the ISOC standards.
+
+392
+0:30:38,160 --> 0:30:41,160
+ But no, I don't think it's anything to do with language.
+
+393
+0:30:41,160 --> 0:30:46,160
+ I mean, the problem existed in all languages that I have ever seen code in.
+
+394
+0:30:46,160 --> 0:30:51,160
+ Legacy software is something that exists because you never delete, you always add.
+
+395
+0:30:51,160 --> 0:30:53,160
+ It's very seldom you see people say,
+
+396
+0:30:53,160 --> 0:30:57,160
+ I fixed this problem by removing 500 lines of code.
+
+397
+0:30:58,160 --> 0:31:00,160
+ Despite it often being possible.
+
+398
+0:31:01,100 --> 0:31:03,100
+ I don't think the problem will be solved
+
+399
+0:31:03,100 --> 0:31:08,100
+ until we start thinking about lines of code as depth in itself.
+
+400
+0:31:10,100 --> 0:31:15,100
+ When you have 1000 lines of code, you do not have value of 1000 lines of code.
+
+401
+0:31:15,100 --> 0:31:18,100
+ You have obligations of 1000 lines of code.
+
+402
+0:31:18,100 --> 0:31:20,100
+ And until we take that attitude,
+
+403
+0:31:20,100 --> 0:31:23,100
+ I don't think the problem will be solved in a fundamental way.
+
+404
+0:31:23,100 --> 0:31:27,100
+ It's sort of like the quality is when you can remove no more attitude.
+
+405
+0:31:28,040 --> 0:31:34,040
+ Do you think like software systems with good dependency management
+
+406
+0:31:34,040 --> 0:31:36,040
+ are making this better?
+
+407
+0:31:36,040 --> 0:31:41,040
+ Like Rust or JavaScript, they have wide and deep dependency trees?
+
+408
+0:31:43,040 --> 0:31:46,040
+ I don't think that's an either or.
+
+409
+0:31:46,040 --> 0:31:51,040
+ I mean, for instance, the big thing in science these days is Python.
+
+410
+0:31:51,040 --> 0:31:56,040
+ And you start out by saying import SciPy
+
+411
+0:31:56,980 --> 0:32:00,980
+ and import NumPy, and then you have your tool chest.
+
+412
+0:32:00,980 --> 0:32:05,980
+ And to be honest, I think that's safer than having your average
+
+413
+0:32:05,980 --> 0:32:10,980
+ student go hunting for a matrix library
+
+414
+0:32:10,980 --> 0:32:13,980
+ and finding something on stack overflow.
+
+415
+0:32:15,980 --> 0:32:21,980
+ So there is a value in having these industry standard
+
+416
+0:32:21,980 --> 0:32:24,980
+ this is how we do it kind of things.
+
+417
+0:32:25,920 --> 0:32:28,920
+ But it takes curation.
+
+418
+0:32:28,920 --> 0:32:32,920
+ Somebody has to decide what's inside SciPy
+
+419
+0:32:32,920 --> 0:32:35,920
+ and what's outside SciPy.
+
+420
+0:32:39,920 --> 0:32:43,920
+ I think the first one where we saw this was actually the CPAN thing.
+
+421
+0:32:43,920 --> 0:32:46,920
+ Anybody who wrote 10 lines of Perl,
+
+422
+0:32:46,920 --> 0:32:49,920
+ that became a CPAN module, right?
+
+423
+0:32:49,920 --> 0:32:53,920
+ And there was no curation whatsoever on that.
+
+424
+0:32:54,860 --> 0:32:59,860
+ And I think that in the syntax is a large reason
+
+425
+0:32:59,860 --> 0:33:02,860
+ why Perl is not relevant in this.
+
+426
+0:33:02,860 --> 0:33:05,860
+ Because you end up depending on so many maintainers
+
+427
+0:33:05,860 --> 0:33:10,860
+ that if anything works today, it's pure luck.
+
+428
+0:33:14,860 --> 0:33:19,860
+ As I said, I don't think it's a one size fits all.
+
+429
+0:33:19,860 --> 0:33:23,860
+ You have different places you come from
+
+430
+0:33:24,800 --> 0:33:27,800
+ if you're doing embedded systems that run on no power
+
+431
+0:33:27,800 --> 0:33:31,800
+ like gas meters, you don't want to pull in CPAN
+
+432
+0:33:31,800 --> 0:33:33,800
+ or SciPy or something like that.
+
+433
+0:33:33,800 --> 0:33:37,800
+ You want to have tight control of every bit of code.
+
+434
+0:33:37,800 --> 0:33:40,800
+ And if you're trying to write a PhD, you just want it to work.
+
+435
+0:33:40,800 --> 0:33:42,800
+ So it's different places.
+
+436
+0:33:42,800 --> 0:33:45,800
+ So I don't think that one has an answer.
+
+437
+0:33:49,800 --> 0:33:52,800
+ Any ideas on how to quantify technical depth
+
+438
+0:33:53,740 --> 0:33:54,740
+ more standardized?
+
+439
+0:33:54,740 --> 0:33:57,740
+ And any ideas of where the retired men
+
+440
+0:33:57,740 --> 0:34:00,740
+ should go and standardize it?
+
+441
+0:34:00,740 --> 0:34:02,740
+ Into his garden.
+
+442
+0:34:05,740 --> 0:34:08,740
+ I think the fundamental thing is to realize
+
+443
+0:34:08,740 --> 0:34:10,740
+ that writing a line of code means
+
+444
+0:34:10,740 --> 0:34:12,740
+ now you have a maintainer responsibility
+
+445
+0:34:12,740 --> 0:34:15,740
+ for that line of code as long as anybody ever uses it.
+
+446
+0:34:15,740 --> 0:34:17,740
+ And this comes from the guy who released
+
+447
+0:34:17,740 --> 0:34:20,740
+ a program called Scassiping in 1992,
+
+448
+0:34:21,680 --> 0:34:24,680
+ which people still use to put hard disks on their old sons.
+
+449
+0:34:24,680 --> 0:34:27,680
+ Still getting emails about it.
+
+450
+0:34:28,680 --> 0:34:30,680
+ And which is why I'm not going to release
+
+451
+0:34:30,680 --> 0:34:32,680
+ my R-Sync version.
+
+452
+0:34:34,680 --> 0:34:37,680
+ But, I mean, to be brutally honest,
+
+453
+0:34:37,680 --> 0:34:40,680
+ let's have a tax on a line of code.
+
+454
+0:34:40,680 --> 0:34:43,680
+ The world would be a better place.
+
+455
+0:34:43,680 --> 0:34:47,680
+ Something like one micro cent per line of code per year.
+
+456
+0:34:48,620 --> 0:34:50,620
+ A lot of code would vanish, disappear,
+
+457
+0:34:50,620 --> 0:34:52,620
+ and nobody would miss it.
+
+458
+0:34:54,620 --> 0:34:57,620
+ And we'd still have plenty enough left.
+
+459
+0:34:57,620 --> 0:35:00,620
+ But that is the change of mentality that this takes
+
+460
+0:35:00,620 --> 0:35:04,620
+ is thinking about it as depth from the start.
+
+461
+0:35:05,620 --> 0:35:08,620
+ So talking to a person who has built
+
+462
+0:35:08,620 --> 0:35:10,620
+ a lot of useful software himself,
+
+463
+0:35:10,620 --> 0:35:13,620
+ how do you incentivize people to build useful software?
+
+464
+0:35:13,620 --> 0:35:16,620
+ Because there is a lot of code in GitHub
+
+465
+0:35:17,560 --> 0:35:20,560
+ that is unmaintained and unused by anybody.
+
+466
+0:35:20,560 --> 0:35:23,560
+ So that doesn't come with any requirement to maintain it
+
+467
+0:35:23,560 --> 0:35:25,560
+ because nobody's using it.
+
+468
+0:35:25,560 --> 0:35:27,560
+ But once you build something that is actually useful
+
+469
+0:35:27,560 --> 0:35:29,560
+ to a lot of people, they start depending on it
+
+470
+0:35:29,560 --> 0:35:32,560
+ and they start throwing in bug reports,
+
+471
+0:35:32,560 --> 0:35:34,560
+ they start throwing in requests for features,
+
+472
+0:35:34,560 --> 0:35:36,560
+ for pull requests.
+
+473
+0:35:36,560 --> 0:35:38,560
+ And all of a sudden, you're a maintainer
+
+474
+0:35:38,560 --> 0:35:40,560
+ and you have to say yes and no and you review code.
+
+475
+0:35:40,560 --> 0:35:42,560
+ And maybe that's not why you built the tool
+
+476
+0:35:42,560 --> 0:35:44,560
+ in the first place.
+
+477
+0:35:45,500 --> 0:35:47,500
+ Then you shouldn't have distributed it.
+
+478
+0:35:47,500 --> 0:35:50,500
+ Okay, yeah, but that's the pessimistic option.
+
+479
+0:35:50,500 --> 0:35:52,500
+ No, I don't think it's a pessimistic option.
+
+480
+0:35:52,500 --> 0:35:54,500
+ The moment you give other people access to your code,
+
+481
+0:35:54,500 --> 0:35:56,500
+ you are the maintainer.
+
+482
+0:35:56,500 --> 0:35:58,500
+ And if you only use it yourself,
+
+483
+0:35:58,500 --> 0:36:00,500
+ you can decide to stop using it.
+
+484
+0:36:00,500 --> 0:36:02,500
+ You don't have to maintain it anymore.
+
+485
+0:36:02,500 --> 0:36:04,500
+ But once other people start relying on your code,
+
+486
+0:36:04,500 --> 0:36:06,500
+ you are stuck on it.
+
+487
+0:36:06,500 --> 0:36:08,500
+ Take it from me.
+
+488
+0:36:08,500 --> 0:36:10,500
+ You'll never be free again.
+
+489
+0:36:10,500 --> 0:36:12,500
+ I know that you maintain your code.
+
+490
+0:36:13,440 --> 0:36:15,440
+ I don't know where you find the courage.
+
+491
+0:36:15,440 --> 0:36:17,440
+ I have a lot of time,
+
+492
+0:36:17,440 --> 0:36:19,440
+ a lot of code that I don't have the time to maintain.
+
+493
+0:36:19,440 --> 0:36:21,440
+ I wrote some code to pull numbers out
+
+494
+0:36:21,440 --> 0:36:23,440
+ of gas meters at one point.
+
+495
+0:36:23,440 --> 0:36:25,440
+ And I haven't had natural gas for 10 years.
+
+496
+0:36:25,440 --> 0:36:27,440
+ And people still ask me about it.
+
+497
+0:36:27,440 --> 0:36:29,440
+ Despite a big slap on the top of the GitHub,
+
+498
+0:36:29,440 --> 0:36:31,440
+ I say, I don't maintain this.
+
+499
+0:36:31,440 --> 0:36:33,440
+ I don't have this anymore.
+
+500
+0:36:37,440 --> 0:36:39,440
+ There's no way around it.
+
+501
+0:36:39,440 --> 0:36:41,440
+ The other side of that is I'm never going
+
+502
+0:36:42,380 --> 0:36:44,380
+ to be one to say you're not allowed to code for fun.
+
+503
+0:36:44,380 --> 0:36:46,380
+ You're perfectly allowed to code for fun.
+
+504
+0:36:46,380 --> 0:36:48,380
+ Just don't release it to people
+
+505
+0:36:48,380 --> 0:36:50,380
+ unless you want to stake up for it.
+
+506
+0:36:50,380 --> 0:36:52,380
+ Right.
+
+507
+0:36:59,380 --> 0:37:01,380
+ Okay.
+
+508
+0:37:01,380 --> 0:37:03,380
+ That seems to be the end of the urgent questions.
+
+509
+0:37:03,380 --> 0:37:05,380
+ Then let's thank the speaker again.
+
+510
+0:37:05,380 --> 0:37:08,320
+ Thank you very much.

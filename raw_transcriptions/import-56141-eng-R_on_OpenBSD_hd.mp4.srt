@@ -1,0 +1,933 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:14,720
+ So, the next speaker we have is Musica, that will talk about R on OpenBSD.
+
+2
+0:00:14,720 --> 0:00:20,000
+ Let's give him a hand.
+
+3
+0:00:20,000 --> 0:00:21,960
+ Thank you.
+
+4
+0:00:21,960 --> 0:00:27,880
+ R is a programming language that I use for writing electronic music, and OpenBSD is the
+
+5
+0:00:27,880 --> 0:00:36,120
+ operating system that I run on most of my computers, including this here laptop.
+
+6
+0:00:36,120 --> 0:00:41,720
+ If you were here last year, maybe you were at my music set, you got to see some of my
+
+7
+0:00:41,720 --> 0:00:48,600
+ music that I wrote in R. You can use R for many other things, but yeah, that's what I
+
+8
+0:00:48,600 --> 0:00:50,120
+ use R for.
+
+9
+0:00:50,120 --> 0:00:54,480
+ OpenBSD is an operating system.
+
+10
+0:00:54,480 --> 0:01:00,120
+ So first, if we're going to use R on OpenBSD, maybe we should talk about why you would want
+
+11
+0:01:00,120 --> 0:01:10,040
+ to use R on OpenBSD, but for me, it's just like I like to use R to write electronic music,
+
+12
+0:01:10,040 --> 0:01:16,100
+ maybe there are people here who use R for statistics, anyway.
+
+13
+0:01:16,100 --> 0:01:22,520
+ But the problem with R is that in many ways it can be harder to administer, to keep it
+
+14
+0:01:22,520 --> 0:01:28,440
+ up to date, to keep packages working, and OpenBSD can help with that.
+
+15
+0:01:28,440 --> 0:01:33,040
+ But the problem is there's only weirdos like me who use R on OpenBSD.
+
+16
+0:01:33,040 --> 0:01:38,500
+ There may be ten people who use R on OpenBSD, so it's very common that a package has not
+
+17
+0:01:38,500 --> 0:01:43,000
+ been tested on OpenBSD.
+
+18
+0:01:43,000 --> 0:01:48,840
+ Agenda for today is discuss some differences between R or OpenBSD and some alternatives.
+
+19
+0:01:48,840 --> 0:01:53,200
+ This will help explain why there can be a problem when you try to install something.
+
+20
+0:01:53,200 --> 0:01:58,360
+ Then we'll discuss how to install R and related software on OpenBSD.
+
+21
+0:01:58,360 --> 0:02:04,280
+ And then how you can, once you've succeeded at installing these softwares, then you can
+
+22
+0:02:04,280 --> 0:02:10,240
+ take advantage of special features that exist in OpenBSD.
+
+23
+0:02:10,240 --> 0:02:16,400
+ So some reasons you might use R, you might like these strange language features that
+
+24
+0:02:16,400 --> 0:02:17,920
+ it has.
+
+25
+0:02:17,960 --> 0:02:27,880
+ One thing I like about R is it has a large stable base, like how, kind of like a standard
+
+26
+0:02:27,880 --> 0:02:29,000
+ library.
+
+27
+0:02:29,000 --> 0:02:34,400
+ And then there are other packages and those often don't work, but the base works.
+
+28
+0:02:34,400 --> 0:02:40,360
+ And CRAN, which is the repository of contributed packages, has an interesting approach to testing.
+
+29
+0:02:40,360 --> 0:02:43,880
+ This is something I kind of like.
+
+30
+0:02:43,880 --> 0:02:49,040
+ You don't say that this package works with these versions of dependencies, but you say
+
+31
+0:02:49,040 --> 0:02:51,160
+ these are the dependencies.
+
+32
+0:02:51,160 --> 0:02:57,040
+ And if you ever break one of your reverse dependencies, or your package fails its tests,
+
+33
+0:02:57,040 --> 0:03:00,960
+ you are required to fix it within a week.
+
+34
+0:03:00,960 --> 0:03:05,240
+ Or your package gets removed from R, so from the public repository.
+
+35
+0:03:05,240 --> 0:03:14,240
+ So you can't trust that any particular version combination will work except that the current
+
+36
+0:03:14,240 --> 0:03:18,280
+ version generally works.
+
+37
+0:03:18,280 --> 0:03:24,240
+ So those are some interesting features of R, some interesting features of OpenBSD, or
+
+38
+0:03:24,240 --> 0:03:26,000
+ sorry, differences.
+
+39
+0:03:26,000 --> 0:03:32,800
+ Some things that make it difficult to install R and OpenBSD is most people who use R probably
+
+40
+0:03:32,800 --> 0:03:38,800
+ use maybe GNU Linux or Mac OS, I'm not really sure, maybe Windows.
+
+41
+0:03:38,800 --> 0:03:43,520
+ So with different GNU Linux distributions, if you're on the same architecture, you can
+
+42
+0:03:43,520 --> 0:03:50,320
+ simply copy a static binary from one to the other, and it usually should work.
+
+43
+0:03:50,320 --> 0:03:54,680
+ But OpenBSD uses a different binary format, so that doesn't work.
+
+44
+0:03:54,680 --> 0:03:57,280
+ You have to compile a special for OpenBSD.
+
+45
+0:03:57,280 --> 0:04:02,080
+ And so you have to deal with different versions of compilers and different supported C functions
+
+46
+0:04:02,080 --> 0:04:04,000
+ and stuff.
+
+47
+0:04:04,000 --> 0:04:09,440
+ Some other differences are the cultural differences.
+
+48
+0:04:09,440 --> 0:04:16,400
+ OpenBSD we often say is a more cathedral development pattern where there is a large base system.
+
+49
+0:04:16,400 --> 0:04:23,040
+ For example, in many GNU Linux distributions, even the package ed, or the function ed could
+
+50
+0:04:23,040 --> 0:04:28,440
+ be part of a package, and it would be possible to uninstall the true editor ed.
+
+51
+0:04:28,480 --> 0:04:33,840
+ But in OpenBSD it's part of the base system, you can't uninstall it.
+
+52
+0:04:33,840 --> 0:04:40,680
+ Also OpenBSD puts a lot of attention on documentation, on keeping things simple, and doesn't really
+
+53
+0:04:40,680 --> 0:04:42,720
+ care to follow fashions.
+
+54
+0:04:42,720 --> 0:04:49,840
+ So we don't have, I don't know, I live under a rock, I don't know what are the new fashions
+
+55
+0:04:49,840 --> 0:04:52,840
+ in GNU Linux.
+
+56
+0:04:52,840 --> 0:04:57,520
+ So anyway, what would happen is because of these differences I just talked about, you
+
+57
+0:04:57,520 --> 0:05:02,480
+ would have, usually you have a problem with compilation, there could be other problems
+
+58
+0:05:02,480 --> 0:05:03,480
+ too.
+
+59
+0:05:03,480 --> 0:05:08,960
+ And so you would have to patch your R packages, so I'll explain how to do that.
+
+60
+0:05:08,960 --> 0:05:14,320
+ And as a last resort, if you can't patch the packages, you can run R in a virtual machine
+
+61
+0:05:14,320 --> 0:05:18,760
+ running Alpine Linux, and then you can use R serve for communication between your OpenBSD
+
+62
+0:05:18,840 --> 0:05:23,440
+ system, which you really want to use, and the R system for these strange functions that
+
+63
+0:05:23,440 --> 0:05:26,200
+ don't work on OpenBSD.
+
+64
+0:05:26,200 --> 0:05:30,080
+ And then once you've done this, I will show you some of the benefits that come with using
+
+65
+0:05:30,080 --> 0:05:33,580
+ OpenBSD system.
+
+66
+0:05:33,580 --> 0:05:38,000
+ So the installation of the base system is pretty easy, you use the package add from
+
+67
+0:05:38,000 --> 0:05:46,980
+ OpenBSD, and that's just to install the base R. For R studio, which is a very common but
+
+68
+0:05:47,100 --> 0:05:51,540
+ badly named software, you can use package add R studio, it's badly named because if
+
+69
+0:05:51,540 --> 0:05:56,100
+ it's R studio, you're going to think it's for making music, because of course R is a
+
+70
+0:05:56,100 --> 0:05:58,740
+ language for making music.
+
+71
+0:05:58,740 --> 0:06:00,340
+ That's how I think about it.
+
+72
+0:06:00,340 --> 0:06:05,860
+ But R studio doesn't make music, it's just an integrated development environment, and
+
+73
+0:06:05,860 --> 0:06:09,540
+ if you want to make music, you have to follow my directions for making music.
+
+74
+0:06:09,540 --> 0:06:13,700
+ So many people use R studio, I don't use R studio, but I make music.
+
+75
+0:06:13,700 --> 0:06:18,740
+ Those R studio users, they're opposers, I think.
+
+76
+0:06:18,740 --> 0:06:24,020
+ And anyway, so you've installed R, you've installed maybe R studio, but for the other
+
+77
+0:06:24,020 --> 0:06:28,260
+ packages, you use the internal R function, installed packages.
+
+78
+0:06:28,260 --> 0:06:31,940
+ Maybe most of you here already know R, because it's kind of a specific thing.
+
+79
+0:06:31,940 --> 0:06:35,860
+ Did anyone already know about installed packages, for example?
+
+80
+0:06:35,860 --> 0:06:37,300
+ Yeah, okay.
+
+81
+0:06:37,300 --> 0:06:41,060
+ So maybe I didn't have to talk about all this.
+
+82
+0:06:41,060 --> 0:06:46,340
+ The problems you'll have usually is compilation, like I said, so yeah, we'll get to that later.
+
+83
+0:06:46,340 --> 0:06:53,460
+ And then when you find the, so maybe, for example, maybe you're using something that's
+
+84
+0:06:53,460 --> 0:07:01,180
+ built on, for Linux, so it's using some C function that is considered insecure and deprecated
+
+85
+0:07:01,180 --> 0:07:07,860
+ by OpenVSD, and it won't be allowed, or you're using a compiler with a different name.
+
+86
+0:07:07,860 --> 0:07:13,540
+ So yes, so these are some of the problems that happen when you try to compile something
+
+87
+0:07:13,540 --> 0:07:16,420
+ that was never tested on OpenVSD.
+
+88
+0:07:16,420 --> 0:07:19,300
+ To fix it, you read the error message, this is very important.
+
+89
+0:07:19,300 --> 0:07:23,220
+ Often the error message says exactly what is going on, but people just think, oh, I'm
+
+90
+0:07:23,220 --> 0:07:27,940
+ scared it's just an error message, bad, yes.
+
+91
+0:07:27,940 --> 0:07:31,700
+ So then you can find what is the bug and you can try to fix it.
+
+92
+0:07:31,700 --> 0:07:39,900
+ The person responsible for most of the porting of R to OpenVSD is Ingo Feinere, so you probably
+
+93
+0:07:39,900 --> 0:07:43,580
+ wind up talking to him if you try to report the bug.
+
+94
+0:07:43,580 --> 0:07:47,340
+ Or you can, of course, fix it yourself.
+
+95
+0:07:47,340 --> 0:07:54,460
+ But here we have a problem sometimes, because I talked about a bit of a cultural difference.
+
+96
+0:07:54,460 --> 0:08:04,140
+ In R we have a bit more nuance also, we have the base system, which is kind of managed
+
+97
+0:08:04,140 --> 0:08:06,540
+ by one set of people.
+
+98
+0:08:06,540 --> 0:08:12,140
+ And then we have this thing called the tidyverse, which is kind of managed by a company.
+
+99
+0:08:12,140 --> 0:08:19,580
+ And the first part really follows the GNU ethical criteria, but the second group, the
+
+100
+0:08:19,580 --> 0:08:28,500
+ tidyverse people, often are willing to celebrate their freedoms.
+
+101
+0:08:28,500 --> 0:08:36,900
+ In this group, we often use proprietary, not I, but they often use proprietary disservices
+
+102
+0:08:36,900 --> 0:08:40,840
+ as software substitutes, for example, GitHub and Slack.
+
+103
+0:08:40,840 --> 0:08:49,780
+ So for example, one time, sorry, whereas the base, in fact, R is part of the GNU project,
+
+104
+0:08:49,780 --> 0:08:53,720
+ so R follows the GNU ethical repository criteria.
+
+105
+0:08:53,720 --> 0:08:58,640
+ To contribute a patch to base R, you can send an email or use Bugzilla, these are both free
+
+106
+0:08:58,640 --> 0:08:59,640
+ possibilities.
+
+107
+0:08:59,640 --> 0:09:06,980
+ But to contribute to some of those other packages, I once had an issue where I had a package
+
+108
+0:09:06,980 --> 0:09:13,900
+ that worked in R studio, in the text editor, but it would not work outside the text editor,
+
+109
+0:09:13,900 --> 0:09:15,420
+ so I fixed it.
+
+110
+0:09:15,420 --> 0:09:20,540
+ But then I tried to contribute my patch, and they required that I create a pull request
+
+111
+0:09:20,540 --> 0:09:25,940
+ on GitHub, and this is absolutely not okay, because by doing this, I would be giving up
+
+112
+0:09:25,940 --> 0:09:32,220
+ my rights to use free software, I would be succumbing to the proprietary GitHub, and
+
+113
+0:09:33,220 --> 0:09:39,180
+ I chose the path of freedom rather than slavery, and as a consequence, my patch has not made
+
+114
+0:09:39,180 --> 0:09:41,740
+ it into this library.
+
+115
+0:09:41,740 --> 0:09:47,740
+ So in order to continue using that library, well, in fact, there are a few options.
+
+116
+0:09:47,740 --> 0:09:51,780
+ First option, which is the one I usually choose, which is what I chose in this case, is just
+
+117
+0:09:51,780 --> 0:09:59,460
+ I don't use the package, because I really don't like most of this tidyverse stuff.
+
+118
+0:09:59,460 --> 0:10:04,180
+ But if you really need to, and you can't get it patched because they will not respect
+
+119
+0:10:04,180 --> 0:10:09,860
+ your ethical views, you can install GNU Linux and R inside of the GNU Linux, and you can
+
+120
+0:10:09,860 --> 0:10:13,180
+ use R server for communication between the two.
+
+121
+0:10:13,180 --> 0:10:20,120
+ So here is how you would install the Linux in the virtual machine.
+
+122
+0:10:20,120 --> 0:10:25,780
+ You can use the virtual machine device that's available in OpenBSD, and then you install
+
+123
+0:10:25,780 --> 0:10:31,580
+ Alpine Linux on the virtual machine, and then you can install R on Alpine Linux, and
+
+124
+0:10:31,580 --> 0:10:41,180
+ then we'll get to the installation part of R server, and then you can set it to run as
+
+125
+0:10:41,180 --> 0:10:42,580
+ a daemon.
+
+126
+0:10:42,580 --> 0:10:52,220
+ So this is how you create the virtual machine, and then this is the OpenBSD configuration
+
+127
+0:10:52,220 --> 0:10:56,020
+ file for running it at boot.
+
+128
+0:10:56,020 --> 0:11:04,380
+ Here is the R code, and the top is what you run on the GNU Linux system, and that would
+
+129
+0:11:04,380 --> 0:11:11,540
+ expose a service that you can connect to with the bottom part from the OpenBSD system.
+
+130
+0:11:11,540 --> 0:11:17,220
+ And then you can write a function as if it is running on the OpenBSD system, but it's
+
+131
+0:11:17,620 --> 0:11:23,500
+ running on the GNU Linux system, and it's serialized with the communication.
+
+132
+0:11:23,500 --> 0:11:31,340
+ Yes, so now we've succeeded at installing somehow whatever packages we shall use.
+
+133
+0:11:31,340 --> 0:11:34,980
+ Now we can take advantage of the special OpenBSD features.
+
+134
+0:11:34,980 --> 0:11:37,940
+ I already mentioned the virtual machines.
+
+135
+0:11:37,940 --> 0:11:45,700
+ I have some notes about the middle group, the documentation, the daemons, and the firewall.
+
+136
+0:11:45,700 --> 0:11:51,500
+ I listed some other cool features that maybe we could talk about, but since it's an awfully
+
+137
+0:11:51,500 --> 0:11:58,340
+ specific group, a specific topic, R and OpenBSD, I suspect maybe you have specific topics that
+
+138
+0:11:58,340 --> 0:12:00,900
+ would be interesting to you.
+
+139
+0:12:00,900 --> 0:12:04,700
+ You could say them now or later, and we could try to discuss them.
+
+140
+0:12:04,700 --> 0:12:11,580
+ Anyone at the moment have a particular topic about R and OpenBSD that you're curious about?
+
+141
+0:12:11,580 --> 0:12:12,580
+ No?
+
+142
+0:12:12,580 --> 0:12:13,580
+ Okay.
+
+143
+0:12:13,580 --> 0:12:14,580
+ Oh, yes?
+
+144
+0:12:15,260 --> 0:12:19,020
+ So are virtual machines related to BSD jails?
+
+145
+0:12:19,020 --> 0:12:23,020
+ The question is, are virtual machines related to BSD jails?
+
+146
+0:12:23,020 --> 0:12:25,540
+ And the answer is pretty much no.
+
+147
+0:12:25,540 --> 0:12:27,300
+ I'll just take this right now.
+
+148
+0:12:27,300 --> 0:12:37,300
+ So there is such a thing as a Charute jail, and that is common in all POSIX systems.
+
+149
+0:12:37,300 --> 0:12:44,380
+ Solaris and FreeBSD have things that are sort of more powerful versions of jails.
+
+150
+0:12:44,380 --> 0:12:45,820
+ In FreeBSD, they're called jails.
+
+151
+0:12:45,820 --> 0:12:51,980
+ In Solaris, they're called, sorry, Solaris, it was, no, it's not Solaris, it's the new
+
+152
+0:12:51,980 --> 0:12:53,980
+ one.
+
+153
+0:12:53,980 --> 0:13:00,980
+ The new one that was based on, what was it, the Brian Cantrell, and, no, it was Solaris,
+
+154
+0:13:00,980 --> 0:13:05,180
+ and then it's probably still available in some other, anyway, there's zones in Solaris
+
+155
+0:13:05,180 --> 0:13:08,020
+ and jails in FreeBSD.
+
+156
+0:13:08,020 --> 0:13:12,500
+ But these, virtual machines here are in fact virtual machines, not jails.
+
+157
+0:13:12,500 --> 0:13:20,860
+ So jails are, you're still running as a user on the host system, but the virtual machine,
+
+158
+0:13:20,860 --> 0:13:27,380
+ you're running a, really you're running a new, a separate kernel in the virtual machine.
+
+159
+0:13:27,380 --> 0:13:36,580
+ So yes, and that's why it's possible, for example, that's, no, yeah, so that's, we'll
+
+160
+0:13:36,580 --> 0:13:38,340
+ stop at that for the virtual machines.
+
+161
+0:13:38,340 --> 0:13:42,100
+ So I will discuss some differences in document, some of the advantages of the documentation
+
+162
+0:13:42,100 --> 0:13:45,220
+ and the demons and the firewall.
+
+163
+0:13:45,220 --> 0:13:50,820
+ First is just, this is, there are a few entry points to the documentation, but I suppose
+
+164
+0:13:50,820 --> 0:13:57,340
+ the FAQ, this is really the first entry point, it explains how to install the base system,
+
+165
+0:13:57,340 --> 0:14:01,780
+ and then that would refer you to all the other documentation that's available.
+
+166
+0:14:01,780 --> 0:14:07,540
+ And perhaps the main source of documentation is the manual pages, which you access with
+
+167
+0:14:07,660 --> 0:14:14,460
+ the man command, similar to on other Unix-like systems, but the OpenBSD and the BSDs in general
+
+168
+0:14:14,460 --> 0:14:20,780
+ have very good manual pages.
+
+169
+0:14:20,780 --> 0:14:27,180
+ Now another thing is it's very easy to create background demons in OpenBSD.
+
+170
+0:14:27,180 --> 0:14:31,460
+ Kids these days like to use systemd on GNU Linux.
+
+171
+0:14:31,460 --> 0:14:36,940
+ There are some others available, for example, actually I don't remember any of their names
+
+172
+0:14:36,940 --> 0:14:42,140
+ because I don't use GNU Linux, but yes, in case you don't like systemd, there are options
+
+173
+0:14:42,140 --> 0:14:46,320
+ on GNU Linux, but also the BSDs don't use systemd.
+
+174
+0:14:46,320 --> 0:14:53,220
+ This is how you could create a demon for the RStudio server.
+
+175
+0:14:53,220 --> 0:14:58,260
+ You would write a file like this one, oh, I see what I did.
+
+176
+0:14:58,260 --> 0:15:03,340
+ It's missing, at the top it has to have a shebang bin corn shell.
+
+177
+0:15:03,340 --> 0:15:05,300
+ All the demons work like that.
+
+178
+0:15:05,300 --> 0:15:12,420
+ So this file has six lines, we're going to break it down into a few parts.
+
+179
+0:15:12,420 --> 0:15:16,820
+ The bottom three lines are really, you should think of them as boilerplates.
+
+180
+0:15:16,820 --> 0:15:23,780
+ This is an ordinary corn shell function, a corn shell script, but this is the standard
+
+181
+0:15:23,780 --> 0:15:35,740
+ way of writing a service, is to copy these lines and configure the rest.
+
+182
+0:15:35,740 --> 0:15:40,940
+ In fact, the RC reload is not part of the boilerplate.
+
+183
+0:15:40,940 --> 0:15:44,740
+ This disables the reload command.
+
+184
+0:15:44,740 --> 0:15:47,540
+ So this, though, is the main configuration.
+
+185
+0:15:47,540 --> 0:15:53,460
+ We say the demon is this program, the R server program, we run it with these flags, run it
+
+186
+0:15:53,460 --> 0:16:04,540
+ as this user, and when we stop the program, the RC system will look for the process with
+
+187
+0:16:04,540 --> 0:16:11,860
+ the name user local bin RStudio bin R server and with the flags, WW ports, and it would
+
+188
+0:16:11,860 --> 0:16:13,420
+ kill that process.
+
+189
+0:16:13,420 --> 0:16:19,500
+ That's how we can automatically create the stop subcommand.
+
+190
+0:16:19,540 --> 0:16:25,740
+ In fact, I think this should be really part of the RStudio port, so I've been meaning
+
+191
+0:16:25,740 --> 0:16:32,420
+ to submit this to OpenBSD ports, but also it's so easy to make it, so maybe we don't
+
+192
+0:16:32,420 --> 0:16:35,100
+ need to do that.
+
+193
+0:16:35,100 --> 0:16:42,900
+ So that was the RC.D, now we'll talk about some firewall stuff.
+
+194
+0:16:42,900 --> 0:16:53,460
+ I trust the R base code, I trust the OpenBSD base code, I don't trust the code on CRAN,
+
+195
+0:16:53,460 --> 0:17:00,700
+ I certainly don't trust the code that I write, so for me it's very important to have a firewall.
+
+196
+0:17:00,700 --> 0:17:05,140
+ I'll show an example of how I might configure my R firewall.
+
+197
+0:17:05,140 --> 0:17:11,080
+ For the user that's running R, I want to forbid most network access, but I want to allow access
+
+198
+0:17:11,080 --> 0:17:18,200
+ to CRAN, I want to allow access to a Postgres database, and if it's running RStudio server,
+
+199
+0:17:18,200 --> 0:17:26,200
+ I will allow outgoing connection, listening, I will allow the RStudio server to listen.
+
+200
+0:17:26,200 --> 0:17:30,880
+ So here are the rules.
+
+201
+0:17:30,880 --> 0:17:37,280
+ The PF, the firewall is called PF, PF has two sorts of things that are like variables,
+
+202
+0:17:37,280 --> 0:17:42,560
+ the first type is tables, the second is macros, I won't explain the difference, but we say
+
+203
+0:17:42,560 --> 0:17:48,280
+ we want a table for the CRAN mirror that we're going to use, we have a table for the database
+
+204
+0:17:48,280 --> 0:17:55,480
+ that we're going to use, the user that will be using R, so we're going to create a firewall
+
+205
+0:17:55,480 --> 0:17:58,560
+ rule just for this user, and here are the ports.
+
+206
+0:17:58,560 --> 0:18:06,280
+ And we start with block, return and pass, this says that by default we will allow everything.
+
+207
+0:18:06,280 --> 0:18:11,080
+ So first we allow everything for all users, the network is allowed for all users.
+
+208
+0:18:11,080 --> 0:18:16,500
+ But now we will say we will block everything for just the R user.
+
+209
+0:18:16,500 --> 0:18:24,680
+ So we're blocking TCP and UDP in, and we're also blocking TCP and UDP out for just the
+
+210
+0:18:24,680 --> 0:18:29,760
+ user with the macro use R.
+
+211
+0:18:29,760 --> 0:18:36,240
+ So first we start with allow everything, now we block everything for our user, now we will
+
+212
+0:18:36,520 --> 0:18:40,000
+ allow limited access for our user.
+
+213
+0:18:40,000 --> 0:18:48,480
+ So we will allow that the user, the first one, we will allow DNS lookups, next we will
+
+214
+0:18:48,480 --> 0:18:55,880
+ allow downloading of packages from CRAN, next we will allow access to our database, and
+
+215
+0:18:55,880 --> 0:19:05,580
+ last we will allow incoming connections on the R studio server port.
+
+216
+0:19:05,580 --> 0:19:10,300
+ So this gives you a flavor of some of the advantages of using R and OpenBSD for the
+
+217
+0:19:10,300 --> 0:19:14,900
+ good documentation, these various cool features I showed you.
+
+218
+0:19:14,900 --> 0:19:19,020
+ The disadvantage of course is some things don't work, but I've shown you how to deal
+
+219
+0:19:19,020 --> 0:19:23,120
+ with those problems.
+
+220
+0:19:23,120 --> 0:19:32,980
+ One last warning, OpenBSD works very well, very rarely does it crash.
+
+221
+0:19:32,980 --> 0:19:36,920
+ And the software is very simple, so it's very easy to understand, and the upgrades
+
+222
+0:19:36,920 --> 0:19:41,200
+ work very well, if there is a problem with the upgrade, it's probably documented in the
+
+223
+0:19:41,200 --> 0:19:44,800
+ change log, so it's very easy to upgrade.
+
+224
+0:19:44,800 --> 0:19:50,640
+ So I recommend against using this at a job, because it works too well.
+
+225
+0:19:50,640 --> 0:19:54,360
+ If you use it at work, your colleagues would think you're not doing anything, and that's
+
+226
+0:19:54,360 --> 0:19:59,240
+ because you aren't, because there's nothing to do, it just works.
+
+227
+0:19:59,240 --> 0:20:05,180
+ It's important at a job that you use very unreliable, unstable software, unsecure software,
+
+228
+0:20:05,180 --> 0:20:10,100
+ maybe even proprietary software, because that's even more insecure and unstable.
+
+229
+0:20:10,100 --> 0:20:15,300
+ That way you always have things to do, and you will always be stressed and challenged,
+
+230
+0:20:15,300 --> 0:20:21,660
+ and people will think you are a good worker.
+
+231
+0:20:21,660 --> 0:20:23,740
+ And that's all, thank you.
+
+232
+0:20:29,240 --> 0:20:35,620
+ Any questions?
+
+233
+0:20:35,620 --> 0:20:38,100
+ So thank you for being here, let's give them a hand.

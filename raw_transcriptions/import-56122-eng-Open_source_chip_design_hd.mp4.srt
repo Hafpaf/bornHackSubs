@@ -1,0 +1,2773 @@
+# Transcribed 2023-11-10 with medium model size
+
+1
+0:00:00,000 --> 0:00:11,520
+ Welcome back in our speaker stand after a lot of lightning talks.
+
+2
+0:00:11,520 --> 0:00:18,840
+ We have now Juergen Jakobsen, and he will talk about open source chip design.
+
+3
+0:00:18,840 --> 0:00:21,840
+ Give him a warm welcome.
+
+4
+0:00:21,840 --> 0:00:24,600
+ Thanks.
+
+5
+0:00:24,600 --> 0:00:26,440
+ So I just took some hardware with it.
+
+6
+0:00:26,440 --> 0:00:28,820
+ It's down on the board there.
+
+7
+0:00:28,820 --> 0:00:30,380
+ If you please pass it around.
+
+8
+0:00:30,380 --> 0:00:36,700
+ So it's a good example of how many chips we use on various stuff.
+
+9
+0:00:36,700 --> 0:00:39,620
+ And this is about 20 years old design.
+
+10
+0:00:39,620 --> 0:00:44,620
+ And you can see how big and clumsy these microchips on this board is.
+
+11
+0:00:44,620 --> 0:00:47,220
+ All of these have been done with commercial software.
+
+12
+0:00:47,220 --> 0:00:52,500
+ And it's been a hell of a job to do something like this.
+
+13
+0:00:52,500 --> 0:00:58,740
+ So fortunately, we have moved into open source domain for doing chip design.
+
+14
+0:00:58,740 --> 0:01:02,900
+ And that's a reality possible right now.
+
+15
+0:01:02,900 --> 0:01:08,780
+ So I'll give you a brief introduction to what's possible today, what kind of ecosystem is
+
+16
+0:01:08,780 --> 0:01:11,980
+ out there, what's the option to try to do that.
+
+17
+0:01:11,980 --> 0:01:17,540
+ So I was here two years ago doing the same speech here.
+
+18
+0:01:17,540 --> 0:01:22,760
+ At that point, I had just left my job, and I wondered that there might be a future for
+
+19
+0:01:22,760 --> 0:01:26,440
+ me to work with open source tools all the way.
+
+20
+0:01:26,440 --> 0:01:29,900
+ And it actually succeeded.
+
+21
+0:01:29,900 --> 0:01:37,980
+ So during the last two years, I've been trying to push political levels, interest organization,
+
+22
+0:01:37,980 --> 0:01:45,300
+ to move into this space, because there's actually a possibility to enable more chip designers
+
+23
+0:01:45,300 --> 0:01:48,260
+ to get back to that, because we actually need that.
+
+24
+0:01:48,260 --> 0:01:52,740
+ I've done a lot of talks around on various places.
+
+25
+0:01:52,740 --> 0:01:55,460
+ I've been around to the universities.
+
+26
+0:01:55,460 --> 0:01:58,580
+ I've been on podcasts, webcasts.
+
+27
+0:01:58,580 --> 0:02:04,860
+ I've been attending the Free Silicon Conference in Paris twice as well.
+
+28
+0:02:04,860 --> 0:02:09,700
+ So it's a three-day conference where all people from the area, the environment meets with
+
+29
+0:02:09,700 --> 0:02:13,740
+ each other and show the latest progress, what have been done.
+
+30
+0:02:13,740 --> 0:02:19,180
+ And over the three years that I've been working in this area, there's been a lot of improvement
+
+31
+0:02:19,180 --> 0:02:22,140
+ on the tools that's available.
+
+32
+0:02:22,140 --> 0:02:31,300
+ So to support myself, I've done some normal IoT, FPGA architecture consultancies, and
+
+33
+0:02:31,300 --> 0:02:38,180
+ I got the funding from Enelnet to do an open source tool as well for design management,
+
+34
+0:02:38,180 --> 0:02:43,700
+ where I tend to merge analog and digital design, because these two species, they don't really
+
+35
+0:02:43,780 --> 0:02:46,060
+ work very good together.
+
+36
+0:02:46,060 --> 0:02:50,660
+ There's a reason why you go and do digital design, and there's a reason why you go and
+
+37
+0:02:50,660 --> 0:02:51,940
+ do analog design.
+
+38
+0:02:51,940 --> 0:02:55,660
+ But you can't do a chip without combining these two things, and that's what I try to
+
+39
+0:02:55,660 --> 0:02:59,300
+ solve with that piece of software.
+
+40
+0:02:59,300 --> 0:03:02,300
+ And now I have clients that I cannot tell you about.
+
+41
+0:03:02,300 --> 0:03:07,740
+ I only work in open source tools and PDKs for that.
+
+42
+0:03:07,740 --> 0:03:12,300
+ So consider that succeeded.
+
+43
+0:03:12,300 --> 0:03:17,460
+ And the reason why I'm doing this is that we are lacking chip designers, because it's
+
+44
+0:03:17,460 --> 0:03:18,460
+ so hard.
+
+45
+0:03:18,460 --> 0:03:20,820
+ It's black magic for a lot of people.
+
+46
+0:03:20,820 --> 0:03:25,940
+ The universities are falling off of educating people in this area.
+
+47
+0:03:25,940 --> 0:03:32,260
+ It used to be something that you take electrical engineer and turn them into a good analog
+
+48
+0:03:32,260 --> 0:03:33,860
+ chip designer.
+
+49
+0:03:33,860 --> 0:03:39,060
+ And what happens at the university is that we see less and less electrical engineers.
+
+50
+0:03:39,060 --> 0:03:43,340
+ We see more computer science people, but the computer science people don't tend to
+
+51
+0:03:43,340 --> 0:03:50,300
+ do chips design, at least not in the areas of Denmark where we are.
+
+52
+0:03:50,300 --> 0:03:55,500
+ So I went to the Technical Museum of Denmark, and they really would like to see what we're
+
+53
+0:03:55,500 --> 0:03:56,500
+ doing here.
+
+54
+0:03:56,500 --> 0:04:00,380
+ And I hope that we are not ending the Danish chip design up there.
+
+55
+0:04:00,380 --> 0:04:03,500
+ That would be a big shame.
+
+56
+0:04:03,500 --> 0:04:13,300
+ So what you see here is actually a good example of a custom mixed mode analog digital chip.
+
+57
+0:04:13,300 --> 0:04:16,740
+ It's only 3 x 4 millimeter.
+
+58
+0:04:16,740 --> 0:04:20,280
+ It has a big digital core in the middle.
+
+59
+0:04:20,280 --> 0:04:22,260
+ It has a lot of analog stuff.
+
+60
+0:04:22,260 --> 0:04:23,600
+ It's very powerful.
+
+61
+0:04:23,600 --> 0:04:27,580
+ It's actually a 2 x 80 watt power amplifier.
+
+62
+0:04:27,580 --> 0:04:33,340
+ It's done in 20 years old technology, so that was bleeding edge 20 years ago.
+
+63
+0:04:33,340 --> 0:04:38,780
+ But today, that's a very, very good platform for doing both analog, digital, high power
+
+64
+0:04:38,780 --> 0:04:41,580
+ on the same platform, very cheap.
+
+65
+0:04:41,580 --> 0:04:48,540
+ So things like this cost, as you see, $5 if you buy it from Infineon through your broker
+
+66
+0:04:48,540 --> 0:04:51,060
+ in one piece size.
+
+67
+0:04:51,060 --> 0:04:55,060
+ But if you have large quantity, you get them as low as $2.
+
+68
+0:04:55,060 --> 0:05:05,460
+ And customers from us buy these chips, put them into soundbox, Marshall speakers, et
+
+69
+0:05:05,460 --> 0:05:13,820
+ cetera, and things like this goes in millions a year with these devices here.
+
+70
+0:05:13,820 --> 0:05:21,940
+ So when we do this, we have like 30 volts coupled into this very small little piece
+
+71
+0:05:21,940 --> 0:05:23,200
+ of electronics.
+
+72
+0:05:23,200 --> 0:05:27,520
+ We have very advanced I.O. structures here.
+
+73
+0:05:27,520 --> 0:05:33,480
+ They can handle up to 200 volts when you take it with your fingers because you need to make
+
+74
+0:05:33,480 --> 0:05:36,140
+ sure that it discharges there.
+
+75
+0:05:36,140 --> 0:05:40,280
+ We have tens of amps running in and out of the transistor stacks that you see on the
+
+76
+0:05:40,280 --> 0:05:41,640
+ sides here.
+
+77
+0:05:41,640 --> 0:05:48,480
+ And we still have very, very low noise amps in the signal pass.
+
+78
+0:05:48,480 --> 0:05:55,320
+ And here we need to have something around 100 dB suppression from what goes out outside
+
+79
+0:05:55,320 --> 0:05:58,160
+ to what comes in as the audio signal here.
+
+80
+0:05:58,160 --> 0:06:06,420
+ So it's a lot of technologies, processes that you need to do when you want to do a product
+
+81
+0:06:06,420 --> 0:06:08,280
+ like this.
+
+82
+0:06:08,280 --> 0:06:12,440
+ This one has been done by a group of seven people.
+
+83
+0:06:12,440 --> 0:06:15,840
+ It took us five years to take it to the market.
+
+84
+0:06:15,840 --> 0:06:22,120
+ We got acquired by Finion and we also made a second generation of this platform here
+
+85
+0:06:22,120 --> 0:06:27,080
+ that hosts DSP as well.
+
+86
+0:06:27,080 --> 0:06:31,560
+ Because when we do chip design, it is something that takes an awful lot of time.
+
+87
+0:06:31,560 --> 0:06:36,520
+ You use a lot of time for your initial specification, what you want to do.
+
+88
+0:06:37,520 --> 0:06:46,520
+ to ship it off to a photomask place where they can do masks so that you can do a full
+
+89
+0:06:46,520 --> 0:06:48,160
+ wafer of that.
+
+90
+0:06:48,160 --> 0:06:54,960
+ And then in the fab, you typically spend two months for the processing time and then you
+
+91
+0:06:54,960 --> 0:06:56,040
+ get chipped back.
+
+92
+0:06:56,040 --> 0:06:59,400
+ You need to put them into plastic houses and you need to test that.
+
+93
+0:06:59,400 --> 0:07:04,980
+ And in a process, in a development process like this, you see a lot of smoke coming out
+
+94
+0:07:04,980 --> 0:07:09,100
+ of this because there's something you didn't manage to do correctly.
+
+95
+0:07:09,100 --> 0:07:17,660
+ You have all these faultless domains interchanging with each other and that's what happens.
+
+96
+0:07:17,660 --> 0:07:22,660
+ And again, on the front side over here, we have the analog and the digital disciplines
+
+97
+0:07:22,660 --> 0:07:23,660
+ of design.
+
+98
+0:07:23,660 --> 0:07:28,460
+ So one thing is circuit design, the other is hardware description language to get to
+
+99
+0:07:28,460 --> 0:07:29,540
+ that point.
+
+100
+0:07:29,540 --> 0:07:34,960
+ And as the chip gets bigger, you need to put more and more efforts into that area here.
+
+101
+0:07:34,960 --> 0:07:39,580
+ And again, all of this is black magic because you don't have access to the tools that we
+
+102
+0:07:39,580 --> 0:07:45,740
+ use for this because there are some industry standards for that.
+
+103
+0:07:45,740 --> 0:07:51,740
+ Cadence is used for the analog domain, Synopsys is used for the digital domain, and then we
+
+104
+0:07:51,740 --> 0:07:54,620
+ have Mentor Graphics, now Siemens.
+
+105
+0:07:54,620 --> 0:08:01,700
+ They are used for the backend LVS DRC, so design rule check and schematic versus layout.
+
+106
+0:08:01,700 --> 0:08:08,100
+ And all of these tools are extremely expensive because they're priced from the leading edge
+
+107
+0:08:08,100 --> 0:08:09,100
+ technologies.
+
+108
+0:08:09,100 --> 0:08:19,660
+ And the leading edge technologies is what you know with this sub 5 nanometer race that
+
+109
+0:08:19,660 --> 0:08:20,840
+ we're doing here.
+
+110
+0:08:20,840 --> 0:08:23,060
+ So that's what's very expensive out there.
+
+111
+0:08:23,300 --> 0:08:28,580
+ That's what goes into the CPU, the GPUs and the GPUs that you typically have in your phones
+
+112
+0:08:28,580 --> 0:08:31,220
+ or your mobile computers today.
+
+113
+0:08:31,220 --> 0:08:35,340
+ There's a lot of money going on out there, and there's only maybe two or three fabs around
+
+114
+0:08:35,340 --> 0:08:36,580
+ the world that can do that.
+
+115
+0:08:36,580 --> 0:08:40,980
+ So they can set the price point for that outrageous high.
+
+116
+0:08:40,980 --> 0:08:47,640
+ On the more general thing, you have 19 nanometers, 45 nanometer, these are considered cheap because
+
+117
+0:08:47,640 --> 0:08:51,340
+ you can do the design there and you can scale them up in millions.
+
+118
+0:08:51,340 --> 0:08:56,180
+ And that way you can keep the cost of one single device very low.
+
+119
+0:08:56,180 --> 0:09:00,420
+ Still taping out in this area is expensive.
+
+120
+0:09:00,420 --> 0:09:07,620
+ And that's why we stay in the dirt cheap old legacy technologies that we have here.
+
+121
+0:09:07,620 --> 0:09:11,460
+ Because we've seen for the last 50 years, we have Moore's Law here.
+
+122
+0:09:11,460 --> 0:09:17,260
+ And Moore's Law have been driving down costs for a single transistor that you put on to
+
+123
+0:09:17,260 --> 0:09:19,540
+ a piece of silicon.
+
+124
+0:09:19,540 --> 0:09:25,860
+ The process speed has been increasing and the power has been scaled down.
+
+125
+0:09:25,860 --> 0:09:30,380
+ So in this way we were able to do exponential development.
+
+126
+0:09:30,380 --> 0:09:37,740
+ But the problem is that Moore's Law died out 10 years ago because at that point we were
+
+127
+0:09:37,740 --> 0:09:42,580
+ not able to increase the speed of the processing anymore.
+
+128
+0:09:42,580 --> 0:09:48,680
+ So we flat it out around four gigahertz on normal processor technology.
+
+129
+0:09:48,680 --> 0:09:53,000
+ And that was even what was scaled down in size.
+
+130
+0:09:53,000 --> 0:10:01,280
+ And you see that around 48 nanometer, it became more and more expensive to put a new transistor
+
+131
+0:10:01,280 --> 0:10:02,920
+ onto the die.
+
+132
+0:10:02,920 --> 0:10:09,440
+ And as you want processing power in the leading edge, you also need to add a lot of transistors
+
+133
+0:10:09,440 --> 0:10:10,440
+ there.
+
+134
+0:10:10,440 --> 0:10:13,720
+ And the cost goes exponential high.
+
+135
+0:10:13,720 --> 0:10:20,000
+ And the cost of putting that extra transistor there stay flat or actually increase for the
+
+136
+0:10:20,000 --> 0:10:21,000
+ products.
+
+137
+0:10:21,000 --> 0:10:22,760
+ So there's no more innovation we can do there.
+
+138
+0:10:22,760 --> 0:10:25,640
+ We are pretty stuck there.
+
+139
+0:10:25,640 --> 0:10:31,880
+ What you can do in this area would be to add more cores into a single chip so that you
+
+140
+0:10:31,880 --> 0:10:34,360
+ can get more processing power done.
+
+141
+0:10:34,360 --> 0:10:37,520
+ And that's what you would like to do there.
+
+142
+0:10:37,520 --> 0:10:41,500
+ So in our world, we actually have a crisis here.
+
+143
+0:10:41,500 --> 0:10:47,820
+ So there's lack of innovation because everything is just like running for making things smaller
+
+144
+0:10:47,820 --> 0:10:48,820
+ and smaller.
+
+145
+0:10:48,820 --> 0:10:50,340
+ There's no reinvention there.
+
+146
+0:10:50,340 --> 0:10:53,300
+ The tools has a monopole there.
+
+147
+0:10:53,300 --> 0:10:56,200
+ So they have no interest to put new features in there.
+
+148
+0:10:56,200 --> 0:11:02,420
+ They just concentrate on the leading edge and let the lagging edge pay too much for
+
+149
+0:11:02,420 --> 0:11:03,780
+ the thing.
+
+150
+0:11:03,780 --> 0:11:06,380
+ We don't have the EE engineers anymore.
+
+151
+0:11:06,380 --> 0:11:11,260
+ We have monopole on the tools.
+
+152
+0:11:11,260 --> 0:11:18,460
+ And again, the access to the PDKs and the PDKs here are the manufacturing manuals for
+
+153
+0:11:18,460 --> 0:11:22,940
+ the processing has been locked down with the NDAs.
+
+154
+0:11:22,940 --> 0:11:28,060
+ So I can have access to a PDK, but I can't share it with anybody.
+
+155
+0:11:28,060 --> 0:11:33,660
+ So every time I start on a new project, I need to reset all I've done, all I learned
+
+156
+0:11:33,660 --> 0:11:39,780
+ and restart with a new technology, cannot reuse anything.
+
+157
+0:11:39,780 --> 0:11:46,420
+ So Google, they experienced that three years ago.
+
+158
+0:11:46,420 --> 0:11:51,820
+ And they said, OK, we're pretty screwed because we know that the amount of servers processing
+
+159
+0:11:51,820 --> 0:11:57,200
+ power we need in that segment are going to increase exponentially as well.
+
+160
+0:11:57,200 --> 0:12:01,660
+ But the guys who do the chips for our servers, they are not catching up.
+
+161
+0:12:01,660 --> 0:12:04,340
+ So there's a big void between these two graphs.
+
+162
+0:12:04,340 --> 0:12:06,280
+ And we need to find out what to do there.
+
+163
+0:12:06,280 --> 0:12:10,840
+ So they said, let's try to understand how these chip designers work.
+
+164
+0:12:10,840 --> 0:12:13,520
+ And can we actually do anything here?
+
+165
+0:12:13,520 --> 0:12:23,800
+ And they did a very formal evaluation of this and came back and said, OK, these are morons.
+
+166
+0:12:23,800 --> 0:12:26,120
+ They don't even share what they're doing.
+
+167
+0:12:26,120 --> 0:12:32,880
+ They distribute these PDKs that they don't allow anybody to share anyway in PDF documents.
+
+168
+0:12:32,880 --> 0:12:38,600
+ So everybody had to open that PDF document and try to read out the design rules, how
+
+169
+0:12:38,600 --> 0:12:42,000
+ the parameters for the transistors work.
+
+170
+0:12:42,000 --> 0:12:48,040
+ And they fully understood that that was not the future for anything.
+
+171
+0:12:48,040 --> 0:12:51,000
+ So they found a FAP in US.
+
+172
+0:12:51,000 --> 0:12:57,520
+ And that FAP is an old memory FAP from Cypress.
+
+173
+0:12:57,560 --> 0:13:04,800
+ And they convinced them that if they wanted to open source their PDK, then Google would
+
+174
+0:13:04,800 --> 0:13:05,800
+ help.
+
+175
+0:13:05,800 --> 0:13:08,680
+ They would sponsor tapeouts on that platform.
+
+176
+0:13:08,680 --> 0:13:12,960
+ And then we will see a lot of new innovation in this area.
+
+177
+0:13:12,960 --> 0:13:14,140
+ That was what happened.
+
+178
+0:13:14,140 --> 0:13:21,360
+ So the green thing down here is what you see was the Google Skywater PDK that when that
+
+179
+0:13:21,360 --> 0:13:24,960
+ was released, everybody has been waiting for that for a very long time.
+
+180
+0:13:24,960 --> 0:13:29,040
+ So it has been installed on a lot of computers now.
+
+181
+0:13:29,040 --> 0:13:32,140
+ And again, you can install that on your own computer.
+
+182
+0:13:32,140 --> 0:13:33,140
+ You can install the tools.
+
+183
+0:13:33,140 --> 0:13:37,980
+ And you can start to do chip design that way.
+
+184
+0:13:37,980 --> 0:13:42,580
+ So they did this realization program.
+
+185
+0:13:42,580 --> 0:13:47,440
+ So you can submit your chip design to eFAPless.
+
+186
+0:13:47,440 --> 0:13:50,380
+ And then Google will pay for the shuttle service.
+
+187
+0:13:50,380 --> 0:13:56,920
+ And then you'll get that chip designed, manufactured, put on a PCB, shipped back to you.
+
+188
+0:13:56,920 --> 0:13:59,060
+ And then you have done your chip.
+
+189
+0:13:59,060 --> 0:14:01,700
+ And you can start to get experience with that.
+
+190
+0:14:01,700 --> 0:14:09,860
+ So over the last three years, we have had more than 500 individual chip designed this
+
+191
+0:14:09,860 --> 0:14:10,860
+ way.
+
+192
+0:14:10,860 --> 0:14:17,300
+ So on each of these MPWs, you have around 40 designs that are combined into one single
+
+193
+0:14:17,300 --> 0:14:18,300
+ rectangle.
+
+194
+0:14:18,300 --> 0:14:20,060
+ It looks like this.
+
+195
+0:14:20,060 --> 0:14:25,860
+ So each of these little squares are being diced out and being put on a PCB.
+
+196
+0:14:25,860 --> 0:14:28,700
+ And then you get that back.
+
+197
+0:14:28,700 --> 0:14:34,180
+ So this setup is what we today call the Google lottery because they get more submission than
+
+198
+0:14:34,180 --> 0:14:35,820
+ they actually have slots.
+
+199
+0:14:35,820 --> 0:14:40,200
+ And we are around tape out number eight right now.
+
+200
+0:14:40,200 --> 0:14:47,020
+ So you submit something, but you're not sure that it will get manufactured for you.
+
+201
+0:14:47,020 --> 0:14:52,140
+ There are some other ways you can try to get your chip on one of these vehicles.
+
+202
+0:14:52,140 --> 0:15:00,140
+ We have other PDKs that will offer that service, but I'll get back to that.
+
+203
+0:15:00,140 --> 0:15:03,100
+ So what's on one of these chips?
+
+204
+0:15:03,100 --> 0:15:07,740
+ You get a harness where a lot of things are done for you.
+
+205
+0:15:07,740 --> 0:15:11,540
+ So the pad ring, that is a complicated thing to do.
+
+206
+0:15:11,540 --> 0:15:17,620
+ There's a tile over here that assemble a RISC-V processor and the infrastructure that
+
+207
+0:15:17,620 --> 0:15:18,880
+ you see up here.
+
+208
+0:15:18,880 --> 0:15:25,180
+ And then in the user area, you just fill your digital stuff in here.
+
+209
+0:15:25,180 --> 0:15:30,020
+ Or over here, you see some small analog structures.
+
+210
+0:15:30,020 --> 0:15:31,420
+ This is again some digital.
+
+211
+0:15:31,420 --> 0:15:35,260
+ This is more blocks put into the same ICS here.
+
+212
+0:15:35,260 --> 0:15:42,100
+ In the structure you see over here, you have some memory, more memory, and various digital
+
+213
+0:15:42,100 --> 0:15:46,260
+ design again that is the RISC-V processor that you see there.
+
+214
+0:15:46,260 --> 0:15:52,980
+ And again, somebody looked at that chip and said, okay, that's an awful lot of wasted
+
+215
+0:15:52,980 --> 0:15:54,380
+ silicon here.
+
+216
+0:15:54,380 --> 0:15:55,980
+ Couldn't we do something about that?
+
+217
+0:15:55,980 --> 0:16:00,900
+ And that's what I'll get back to in a minute.
+
+218
+0:16:00,900 --> 0:16:07,060
+ And again, the whole community did a lot on how to make it more easy, more approachable
+
+219
+0:16:07,060 --> 0:16:11,740
+ to work with these open source tools so that you could learn more people to start to do
+
+220
+0:16:11,740 --> 0:16:14,140
+ their chip design this way.
+
+221
+0:16:14,140 --> 0:16:21,580
+ And we have done a lot on packaging so that you can install the tools in the cloud somewhere
+
+222
+0:16:21,580 --> 0:16:24,260
+ and you can start to chip design this way.
+
+223
+0:16:24,260 --> 0:16:29,540
+ We have some educational program going on so you can use your Jupyter notebook.
+
+224
+0:16:29,540 --> 0:16:35,260
+ And from there we have Python interfaces into all the tools that we use.
+
+225
+0:16:35,260 --> 0:16:42,940
+ And from there we don't need to use obscure old scripting languages as we do in the commercial
+
+226
+0:16:42,940 --> 0:16:46,140
+ tools to automate what we're doing.
+
+227
+0:16:46,140 --> 0:16:50,180
+ And again, now we have free license for these tools.
+
+228
+0:16:50,180 --> 0:16:56,740
+ Why don't we deploy them in massive amount out in the cloud so that we can do a lot of
+
+229
+0:16:56,740 --> 0:17:03,140
+ number crunching to make sure that we pick the best solution out there.
+
+230
+0:17:03,140 --> 0:17:05,700
+ So that's what has been done a lot.
+
+231
+0:17:05,700 --> 0:17:12,140
+ There's one guy who actually looked into how to do adders and tried to elaborate on
+
+232
+0:17:12,140 --> 0:17:15,300
+ how that could be done.
+
+233
+0:17:15,300 --> 0:17:19,020
+ And he actually found out, let me see, it's not here.
+
+234
+0:17:19,020 --> 0:17:21,140
+ Yeah, I'll get back to that later.
+
+235
+0:17:21,140 --> 0:17:26,740
+ But again, people start to do innovation in the area to make sure that what we are doing
+
+236
+0:17:26,740 --> 0:17:30,580
+ is actually being developed, pushed back to the community.
+
+237
+0:17:30,580 --> 0:17:34,940
+ And you know that from open source that can go really fast when you have a lot of people
+
+238
+0:17:34,940 --> 0:17:37,300
+ crunching on the same problem.
+
+239
+0:17:37,300 --> 0:17:44,580
+ Again, here in the digital domain we have some process of doing placement, the initial
+
+240
+0:17:44,580 --> 0:17:47,860
+ placement of all standard cells on a digital thing.
+
+241
+0:17:47,900 --> 0:17:52,180
+ You can do thousands of runs on that in the cloud.
+
+242
+0:17:52,180 --> 0:17:54,820
+ You're not limited by the licenses.
+
+243
+0:17:54,820 --> 0:18:00,680
+ And then you just take the best outcome from that because you will get a graph down here
+
+244
+0:18:00,680 --> 0:18:09,260
+ that you can actually find where you want to be performance or power wise.
+
+245
+0:18:09,260 --> 0:18:19,420
+ And again, we had the enlightenment that other companies didn't want to let Skywater run
+
+246
+0:18:19,420 --> 0:18:21,540
+ alone with this setup.
+
+247
+0:18:21,540 --> 0:18:27,740
+ So Global Foundry released 180 nanometer technology as well.
+
+248
+0:18:27,740 --> 0:18:35,740
+ Skywater, they are releasing a 90 nanometer fully depleted SOI process as well.
+
+249
+0:18:35,740 --> 0:18:40,940
+ And all of that has been funded by EU CHIP Act money or US CHIP Act money.
+
+250
+0:18:40,940 --> 0:18:46,380
+ So a lot of things are being put in there and is getting back to the community.
+
+251
+0:18:46,380 --> 0:18:50,660
+ There's another offering that you don't see here, but we have a FAP in Germany.
+
+252
+0:18:50,660 --> 0:18:51,660
+ It's a research FAP.
+
+253
+0:18:51,660 --> 0:18:56,100
+ It's a BiSIMOS high speed for radar thing.
+
+254
+0:18:56,100 --> 0:18:58,860
+ It's a 130 nanometer technology.
+
+255
+0:18:58,860 --> 0:19:04,360
+ And they will start to do offerings just as we see with this setup here as well.
+
+256
+0:19:04,360 --> 0:19:12,760
+ So I guess that we will look into a situation where we will have like 40 CHIP designed on
+
+257
+0:19:12,760 --> 0:19:16,960
+ that platform every third month for the next coming two years.
+
+258
+0:19:16,960 --> 0:19:25,680
+ And that's a lot of space for design exploration as well.
+
+259
+0:19:25,680 --> 0:19:33,400
+ The solid state community, IEEE, has done a lot of things as well.
+
+260
+0:19:33,440 --> 0:19:42,320
+ We have a CHIP hackathon where university professors are teaming up with people from
+
+261
+0:19:42,320 --> 0:19:44,000
+ all around the world.
+
+262
+0:19:44,000 --> 0:19:50,000
+ And they do their educational first CHIP taped out on these platforms as well so that they
+
+263
+0:19:50,000 --> 0:19:54,080
+ can get experience and understand what's possible with this.
+
+264
+0:19:54,080 --> 0:20:00,820
+ Because it is really a lot of handcraft that goes into doing this on top of all your electronic
+
+265
+0:20:00,940 --> 0:20:07,180
+ or computer science theory that you need to do as well.
+
+266
+0:20:07,180 --> 0:20:16,300
+ They have travel grants to the major conferences around if you can do a Jupyter notebook educational
+
+267
+0:20:16,300 --> 0:20:20,980
+ part that actually is useful for the community.
+
+268
+0:20:20,980 --> 0:20:26,900
+ And again, we see that the big players in the open source community as the Linus Foundation
+
+269
+0:20:26,980 --> 0:20:32,020
+ goes in and start to take ownership of some of the projects going on here.
+
+270
+0:20:32,020 --> 0:20:38,340
+ So what we have here is CHIP Alliance that's part of the Linus Foundation.
+
+271
+0:20:38,340 --> 0:20:43,440
+ They have adopted the flows for FPGAs.
+
+272
+0:20:43,440 --> 0:20:48,680
+ So now we are supporting fully open source flows for FPGAs.
+
+273
+0:20:48,680 --> 0:20:50,640
+ So that's the mid-range FPGAs.
+
+274
+0:20:50,640 --> 0:20:52,780
+ We have Lattice that is fully supported.
+
+275
+0:20:52,820 --> 0:20:58,460
+ We have parts of the Sightings thing and we have new people on the block.
+
+276
+0:20:58,460 --> 0:21:04,380
+ We have a Chinese company called Goodwin that also produces FPGA that is fully supported
+
+277
+0:21:04,380 --> 0:21:07,580
+ here.
+
+278
+0:21:07,580 --> 0:21:11,860
+ And again, I said open source chip design in Denmark is not a big thing.
+
+279
+0:21:11,860 --> 0:21:18,060
+ I really had to go to my old professors at the university and get them started again
+
+280
+0:21:18,540 --> 0:21:22,820
+ showing that there was these offerings that we could do something in this field.
+
+281
+0:21:22,820 --> 0:21:26,340
+ And whenever we do this, we get a lot of students because they love to do this.
+
+282
+0:21:26,340 --> 0:21:34,100
+ They can see that the potential in this area, the crowd around machine learning, AI is so
+
+283
+0:21:34,100 --> 0:21:36,780
+ big that it's hard to do something different there.
+
+284
+0:21:36,780 --> 0:21:42,420
+ And people recognize that if you can do something with microchips or maybe do application from
+
+285
+0:21:42,460 --> 0:21:48,660
+ these domains into here, there's an opportunity to do something that is interesting.
+
+286
+0:21:48,660 --> 0:21:55,020
+ And again, these young people, they also understand the model on open source and that's what we
+
+287
+0:21:55,020 --> 0:21:59,940
+ need to actually bootstrap what we're doing here.
+
+288
+0:21:59,940 --> 0:22:04,740
+ This is a guy from southern Denmark.
+
+289
+0:22:04,740 --> 0:22:11,040
+ He works in one of the big power companies down there.
+
+290
+0:22:11,040 --> 0:22:13,300
+ But in his spare time, he did chip design.
+
+291
+0:22:13,300 --> 0:22:20,360
+ So he taped out like a SAR IDC for like three versions of it, experiment with how to do
+
+292
+0:22:20,360 --> 0:22:21,360
+ that.
+
+293
+0:22:21,360 --> 0:22:30,040
+ You're running simulation and running all of these tools to do that on his own PCs.
+
+294
+0:22:30,040 --> 0:22:33,840
+ I don't need to tell you a lot about open source software because you all know that
+
+295
+0:22:33,840 --> 0:22:39,220
+ that's an actually very, very big technology engine.
+
+296
+0:22:39,220 --> 0:22:45,240
+ But it hadn't really happened in hardware and that's what we all try to do right now.
+
+297
+0:22:45,240 --> 0:22:50,860
+ But open source software is only like around 20 years old, at least from when it was rebranded
+
+298
+0:22:50,860 --> 0:22:55,300
+ from free to open source instead.
+
+299
+0:22:55,300 --> 0:23:03,060
+ And it has been adopted from the top management around the world and nobody doubts that that's
+
+300
+0:23:03,060 --> 0:23:05,060
+ a model that actually works.
+
+301
+0:23:05,060 --> 0:23:11,140
+ Even Windows use it and want to be a part of the party as well.
+
+302
+0:23:11,140 --> 0:23:17,980
+ This was what we saw with the adders that has been put into the digital tool flow.
+
+303
+0:23:17,980 --> 0:23:26,580
+ So when you translate your high level description of your digital code, you can add an adder.
+
+304
+0:23:26,580 --> 0:23:31,300
+ But if you can say something about the adder, how fast you want to have it, if it needs
+
+305
+0:23:31,300 --> 0:23:37,700
+ to be parallelized, then you can have various performance points out of that.
+
+306
+0:23:37,700 --> 0:23:43,500
+ And what you see in the red thing here is what has happened with the progress in development
+
+307
+0:23:43,500 --> 0:23:45,260
+ for the commercial tools.
+
+308
+0:23:45,260 --> 0:23:48,900
+ And what you see in the green is what happened in the open source domain.
+
+309
+0:23:48,900 --> 0:23:55,180
+ Because here you just add that as a module, release it to Yoast and Yoast, they are the
+
+310
+0:23:55,340 --> 0:24:02,020
+ guys who do the synthesis tool and then everybody has it out here.
+
+311
+0:24:02,020 --> 0:24:05,580
+ And that's the kind of speed that we see that things are involved with.
+
+312
+0:24:05,580 --> 0:24:08,580
+ You've seen that one.
+
+313
+0:24:08,580 --> 0:24:15,260
+ But again, here we have an example of a German company, they were used to do FIS for ISDN
+
+314
+0:24:15,260 --> 0:24:20,380
+ wires and I guess that you understand that that's not a big market anymore.
+
+315
+0:24:20,380 --> 0:24:25,700
+ So they decided to use their brain power to do FPGAs instead.
+
+316
+0:24:25,700 --> 0:24:31,380
+ And when you do FPGAs, you also need to do a lot of software because people need to be
+
+317
+0:24:31,380 --> 0:24:35,020
+ able to work with your technology.
+
+318
+0:24:35,020 --> 0:24:40,420
+ But they said, okay, let's just adopt the full open source tool suite.
+
+319
+0:24:40,420 --> 0:24:44,660
+ Then we just need to do something that can place a route because we know the internals
+
+320
+0:24:44,660 --> 0:24:45,660
+ of the thing.
+
+321
+0:24:45,740 --> 0:24:51,460
+ We release that and then we have a full flow that's actually reusable for everybody out
+
+322
+0:24:51,460 --> 0:24:52,460
+ there.
+
+323
+0:24:52,460 --> 0:24:58,700
+ So that's a model that we see now that didn't exist a couple of years ago and that's really
+
+324
+0:24:58,700 --> 0:25:02,940
+ nice to see.
+
+325
+0:25:02,940 --> 0:25:07,860
+ When we do digital design, we have the digital front-end thing where we work in high-level
+
+326
+0:25:07,860 --> 0:25:11,780
+ description language, so that's VSTL or Verilog.
+
+327
+0:25:11,820 --> 0:25:18,100
+ These are very low-level, so you define a register and you assign values to that and
+
+328
+0:25:18,100 --> 0:25:23,060
+ you clock it and you describe the next state.
+
+329
+0:25:23,060 --> 0:25:29,260
+ But we are trying to abstract that with more capable languages.
+
+330
+0:25:29,260 --> 0:25:31,440
+ We have XLS from Google.
+
+331
+0:25:31,440 --> 0:25:36,220
+ We have Schissel as an open source project.
+
+332
+0:25:36,220 --> 0:25:39,220
+ It runs on Scala, so it's a functional language.
+
+333
+0:25:39,220 --> 0:25:46,660
+ So we have a subset of that that can convert your functional code down to Verilog that
+
+334
+0:25:46,660 --> 0:25:52,860
+ can be taken into the full flow and from there you can do your normal chip design this way.
+
+335
+0:25:52,860 --> 0:25:58,100
+ But again, on the front-end here, you do the functional implementation.
+
+336
+0:25:58,100 --> 0:26:02,620
+ Then you need to take it to the digital back-end where you have flows that can convert that
+
+337
+0:26:02,700 --> 0:26:06,940
+ gate net list of standard cells into placed thing.
+
+338
+0:26:06,940 --> 0:26:13,580
+ You put the power IOs and then you make sure that your clock gets distributed around to
+
+339
+0:26:13,580 --> 0:26:14,580
+ that.
+
+340
+0:26:14,580 --> 0:26:19,420
+ But it's a very easy process to do and it can be automated.
+
+341
+0:26:19,420 --> 0:26:23,900
+ Now we actually have some very, very good tools in the open source domain to handle
+
+342
+0:26:23,900 --> 0:26:25,260
+ that path.
+
+343
+0:26:25,260 --> 0:26:27,340
+ So it's called the open lane flow.
+
+344
+0:26:27,340 --> 0:26:31,520
+ That's where we see, that's where we use all of us in this area.
+
+345
+0:26:31,520 --> 0:26:34,120
+ So you have your design entry files there.
+
+346
+0:26:34,120 --> 0:26:38,840
+ You take it through Eurosis ABC that maps it into standard cells.
+
+347
+0:26:38,840 --> 0:26:44,840
+ You run static timing analysis to make sure that it will do the required amount of job
+
+348
+0:26:44,840 --> 0:26:50,400
+ within the limited time you have before your clock flips into the next flip flop.
+
+349
+0:26:50,400 --> 0:26:54,960
+ And then you have the open road application that actually is a database where you can
+
+350
+0:26:54,960 --> 0:26:58,000
+ interact and place your standard cells.
+
+351
+0:26:58,000 --> 0:26:59,600
+ You can do your routing.
+
+352
+0:26:59,640 --> 0:27:04,600
+ You can synthesize the clock tree in there and you can size cells up and down to make
+
+353
+0:27:04,600 --> 0:27:08,600
+ sure that you read the timing that you would like to have.
+
+354
+0:27:08,600 --> 0:27:13,800
+ And then there's a lot of things that you need to put in for manufacturing things.
+
+355
+0:27:13,800 --> 0:27:19,240
+ So that's antenna diodes so that your small gates doesn't blow up when you try to produce
+
+356
+0:27:19,240 --> 0:27:20,240
+ them.
+
+357
+0:27:20,240 --> 0:27:25,800
+ You could do verification with logic, equivalent logic.
+
+358
+0:27:25,800 --> 0:27:31,520
+ And you need to extract your RNC from the circuit that you do there to make sure that
+
+359
+0:27:31,520 --> 0:27:37,520
+ now you suddenly have a delay in your signal from one place of the chip to the other one
+
+360
+0:27:37,520 --> 0:27:42,500
+ that these doesn't ruin the way that you expect the thing to do.
+
+361
+0:27:42,500 --> 0:27:48,360
+ And then on the other side over there, you stream out your GDS file and you can send
+
+362
+0:27:48,360 --> 0:27:54,040
+ it for manufacturing at the FAPT.
+
+363
+0:27:54,120 --> 0:27:56,180
+ This is how a standard cells look like.
+
+364
+0:27:56,180 --> 0:28:02,600
+ So it's actually just like a pizza stack of very low level structures.
+
+365
+0:28:02,600 --> 0:28:06,360
+ In the low level structures, you have your n-mold, your diffusion.
+
+366
+0:28:06,360 --> 0:28:11,200
+ And if you put a poly layer above that, you get a transistor.
+
+367
+0:28:11,200 --> 0:28:16,160
+ And by controlling the doping and the layers of these, you can have PMOS, you can have
+
+368
+0:28:16,160 --> 0:28:22,960
+ NMOS, and you can have field poly and you use that for resistors.
+
+369
+0:28:22,960 --> 0:28:31,440
+ And then you can interconnect them with your terrible bad conducting material called interlayer
+
+370
+0:28:31,440 --> 0:28:33,920
+ wiring.
+
+371
+0:28:33,920 --> 0:28:37,620
+ And then you have metal 1, 2, 3, 4, and 5.
+
+372
+0:28:37,620 --> 0:28:41,480
+ And you can see as you grow up in the stack, these get higher and higher.
+
+373
+0:28:41,480 --> 0:28:47,820
+ And that's to be able to conduct more current in the upper layers here.
+
+374
+0:28:47,820 --> 0:28:50,640
+ That's not necessary at the base level down here.
+
+375
+0:28:50,640 --> 0:28:57,440
+ You also see that between metal 3 and 4, you have something with a via down to a cap.
+
+376
+0:28:57,440 --> 0:29:04,880
+ So that is metal caps and that's very precise caps that can actually be used for storage,
+
+377
+0:29:04,880 --> 0:29:10,680
+ decoupling or precision circuit where you have ratio between caps.
+
+378
+0:29:10,680 --> 0:29:13,460
+ Look into that later.
+
+379
+0:29:13,460 --> 0:29:19,420
+ And getting back to the void you saw on one of the early tape outs there.
+
+380
+0:29:19,420 --> 0:29:24,900
+ So Matt Wayne here that I met in Paris and a couple of other conferences has created
+
+381
+0:29:24,900 --> 0:29:26,180
+ a set up.
+
+382
+0:29:26,180 --> 0:29:31,240
+ He announced it one year ago and already now there have been four tape outs on that platform.
+
+383
+0:29:31,240 --> 0:29:33,340
+ And that platform is called Tiny Tape Out.
+
+384
+0:29:33,340 --> 0:29:41,140
+ So here Tiny Tape Out allows you to gather hundreds of designs into one single slot in
+
+385
+0:29:41,140 --> 0:29:42,140
+ an MPW.
+
+386
+0:29:42,140 --> 0:29:44,880
+ And this way you can get the cost down.
+
+387
+0:29:44,880 --> 0:29:50,420
+ But I think we should get the words from the man himself and try to listen to that.
+
+388
+0:30:15,040 --> 0:30:19,180
+ Tiny Tape Out makes it easier, quicker and cheaper than ever before to get your designs
+
+389
+0:30:19,180 --> 0:30:20,540
+ onto a real chip.
+
+390
+0:30:20,540 --> 0:30:25,260
+ Open source tools, excellent documentation and a vibrant community helps to make it much
+
+391
+0:30:25,260 --> 0:30:28,540
+ easier to get started and avoid common mistakes.
+
+392
+0:30:28,540 --> 0:30:34,180
+ Tiny Tape Out is for students, for makers, hackers, universities and anyone who is interested
+
+393
+0:30:34,180 --> 0:30:38,020
+ in learning more or getting their designs made into a chip.
+
+394
+0:30:38,020 --> 0:30:42,460
+ All our learning resources and tools are free to use and they are online to avoid download
+
+395
+0:30:42,460 --> 0:30:44,660
+ and installation problems.
+
+396
+0:30:44,680 --> 0:30:49,640
+ If you're a total beginner, you can try Wokwi, our digital design and simulator tool.
+
+397
+0:30:49,640 --> 0:30:53,760
+ Or if you know what you're doing, you can use a hardware description language like Verilog,
+
+398
+0:30:53,760 --> 0:30:56,640
+ VHDL or Amaranth.
+
+399
+0:30:56,640 --> 0:31:01,300
+ Then use our github action based system to build the files you need for the ASIC.
+
+400
+0:31:01,300 --> 0:31:06,160
+ This also lets you explore your design with this really cool 3D viewer.
+
+401
+0:31:06,160 --> 0:31:09,000
+ Once your design is finished, you can make an order.
+
+402
+0:31:09,000 --> 0:31:15,580
+ The minimum size is 160x100 microns and that's just $100 including a PCB.
+
+403
+0:31:15,580 --> 0:31:19,500
+ If you need more space, you can buy extra tiles for $50 each.
+
+404
+0:31:19,500 --> 0:31:23,140
+ We also have special deals for group workshops and universities.
+
+405
+0:31:23,140 --> 0:31:26,660
+ You might be asking, how is it possible to get the price so low?
+
+406
+0:31:26,660 --> 0:31:30,660
+ The trick is that we combine all the little projects into one big design using our fast
+
+407
+0:31:30,660 --> 0:31:31,660
+ multiplexer.
+
+408
+0:31:31,660 --> 0:31:37,260
+ 160x100 microns doesn't sound like a lot, but in our three previous runs we've seen
+
+409
+0:31:37,260 --> 0:31:43,440
+ a load of interesting designs made, including RISC-V CPUs, FPGAs and lots more.
+
+410
+0:31:43,440 --> 0:31:47,000
+ One of my favourite things about this project is that not only are you going to get your
+
+411
+0:31:47,000 --> 0:31:49,920
+ design, but you're going to get everybody else's design as well.
+
+412
+0:31:49,920 --> 0:31:53,980
+ You'll be able to look through the chip's datasheet and try out someone else's design.
+
+413
+0:31:53,980 --> 0:31:58,840
+ Our previous three runs all used a slower scan chain, so this is a really big upgrade.
+
+414
+0:31:58,840 --> 0:32:02,640
+ We're now expecting around 50 MHz bandwidth on the I.O.
+
+415
+0:32:02,640 --> 0:32:04,800
+ Another upgrade is that we've now got more I.O.
+
+416
+0:32:04,800 --> 0:32:09,980
+ We have clock, reset, 8 inputs, 8 outputs and 8 bi-directional pins.
+
+417
+0:32:09,980 --> 0:32:14,520
+ Once the design is ready, we send it to eFABLUS, and they'll manufacture it on the open source
+
+418
+0:32:14,520 --> 0:32:17,560
+ Skywater 130nm process.
+
+419
+0:32:17,560 --> 0:32:21,120
+ I want to say a really big thanks to eFABLUS for sponsoring this project and making it
+
+420
+0:32:21,120 --> 0:32:22,660
+ possible.
+
+421
+0:32:22,660 --> 0:32:26,080
+ Once we get the silicon back, we save you the trouble of soldering by mounting it onto
+
+422
+0:32:26,080 --> 0:32:27,480
+ a PCB.
+
+423
+0:32:27,480 --> 0:32:31,320
+ You select which design you want to be active with these switches, and then the multiplexer
+
+424
+0:32:31,320 --> 0:32:34,400
+ connects the design to the inputs and the outputs.
+
+425
+0:32:34,400 --> 0:32:37,320
+ To get started, follow the video tutorials.
+
+426
+0:32:37,320 --> 0:32:40,600
+ Expect it to take between a few hours and a few weeks, depending on how complex your
+
+427
+0:32:40,600 --> 0:32:41,800
+ design is.
+
+428
+0:32:41,800 --> 0:32:44,840
+ If you get stuck, join our Discord chat server.
+
+429
+0:32:44,840 --> 0:32:48,700
+ Make sure you sign up to the mailing list so that you know when submissions open.
+
+430
+0:32:48,700 --> 0:32:52,200
+ So have fun, get involved, and I'm really looking forward to seeing what you make on
+
+431
+0:32:52,200 --> 0:32:57,360
+ your first ASIC.
+
+432
+0:32:57,360 --> 0:33:07,600
+ So there's a tape-out deadline for this one here on the 7th of September, and yesterday
+
+433
+0:33:07,600 --> 0:33:10,440
+ or the day before we had a workshop.
+
+434
+0:33:10,440 --> 0:33:14,140
+ I never tried it before, but I managed to do what you see here.
+
+435
+0:33:14,140 --> 0:33:17,760
+ So it's a SPDIF to I2S converter.
+
+436
+0:33:17,760 --> 0:33:24,840
+ So it takes a blinking flashing light from my DVD or sound card, and I convert that into
+
+437
+0:33:24,920 --> 0:33:32,200
+ the four-wire, three-wire bus that interface to the chip you saw previously.
+
+438
+0:33:32,200 --> 0:33:36,620
+ So that's the power amplifier that I made in my previous company.
+
+439
+0:33:36,620 --> 0:33:43,360
+ So putting this together, I will submit this, and we will get it back, and we can try it
+
+440
+0:33:43,360 --> 0:33:45,120
+ out next year on BodyHack.
+
+441
+0:33:45,120 --> 0:33:47,240
+ So look forward for that.
+
+442
+0:33:47,240 --> 0:33:52,840
+ The thing is, I had this code lying around.
+
+443
+0:33:52,840 --> 0:33:59,680
+ I need to adapt it to the user interface of this harness that you see that he described
+
+444
+0:33:59,680 --> 0:34:01,520
+ with all the tiles.
+
+445
+0:34:01,520 --> 0:34:05,280
+ I need to adjust the size of the tile.
+
+446
+0:34:05,280 --> 0:34:14,200
+ I use one single tile there, so that's the cheap $100 tape-out option, and I guess that
+
+447
+0:34:14,200 --> 0:34:19,920
+ around there, there's space for around 100, 150 flip-flops in that scenario.
+
+448
+0:34:19,920 --> 0:34:27,040
+ So what you can do in 100, 150 flip-flops will fit into a system like this.
+
+449
+0:34:27,040 --> 0:34:32,080
+ Then when you submit it, you run some GitHub actions in the background, and these GitHub
+
+450
+0:34:32,080 --> 0:34:35,400
+ actions are the one you see down here.
+
+451
+0:34:35,400 --> 0:34:42,760
+ So when they're green, it means that the sign has been compiled, it takes a five-minute
+
+452
+0:34:42,760 --> 0:34:48,640
+ job on these servers here, and you end up with the layout that you see up there.
+
+453
+0:34:48,640 --> 0:34:54,560
+ I jumped the very important thing, and the thing that takes most of the time, and that's
+
+454
+0:34:54,560 --> 0:34:55,560
+ the testing.
+
+455
+0:34:55,560 --> 0:35:02,200
+ So I need to do a test bench where I actually try to put in a reasonable signal from audio
+
+456
+0:35:02,200 --> 0:35:09,680
+ source and check that what comes out is actually a real playable thing on an amplifier as well.
+
+457
+0:35:09,680 --> 0:35:15,160
+ But I'll probably do that a bit later, where I will use the same code, but I'll throw it
+
+458
+0:35:15,240 --> 0:35:21,920
+ down to an FPGA, use the open source toolchain to make sure that the sign is actually also
+
+459
+0:35:21,920 --> 0:35:29,200
+ producing audio, and that's pretty easy to do on FPGA technologies.
+
+460
+0:35:29,200 --> 0:35:34,360
+ Using this platform has enabled a lot of new designers into the area.
+
+461
+0:35:34,360 --> 0:35:41,000
+ People who have backgrounds with computer science or embedded electronics, they suddenly
+
+462
+0:35:41,000 --> 0:35:43,260
+ are able to do chip design instead.
+
+463
+0:35:43,260 --> 0:35:47,820
+ So now we take the black magic out of what we're doing here, and they understand what's
+
+464
+0:35:47,820 --> 0:35:54,780
+ going on here, and that's a really exciting moment for a lot of people.
+
+465
+0:35:54,780 --> 0:36:02,700
+ We also have this SillyVis, and SillyVis is like a childish simulator where you can start
+
+466
+0:36:02,700 --> 0:36:13,020
+ to draw your substrate, your diffusion, your tapping into this diffusion, build up a transistor,
+
+467
+0:36:13,020 --> 0:36:17,660
+ try to play with the length of the width with these, and there's a simulation mode
+
+468
+0:36:17,660 --> 0:36:21,340
+ so that you can actually see what happens if you try to do that.
+
+469
+0:36:21,340 --> 0:36:28,620
+ And in the TinyTap outside, there's a good description all the way around that describe
+
+470
+0:36:28,620 --> 0:36:36,320
+ what is parasitic capacitance on things like this, how did we do transistors when we only
+
+471
+0:36:36,320 --> 0:36:43,200
+ had in-must transistors with resistors low instead.
+
+472
+0:36:43,200 --> 0:36:50,960
+ All of that is very good learning material in that side as well.
+
+473
+0:36:50,960 --> 0:36:57,520
+ And you can also, if you want to go full on, install the OpenROAD tools and the OpenROAD
+
+474
+0:36:57,520 --> 0:37:06,960
+ flow scripts, and from there be able to produce your own digital parts there.
+
+475
+0:37:06,960 --> 0:37:11,120
+ It's not that hard, and there's a lot of good description on how to do it out there, and
+
+476
+0:37:11,120 --> 0:37:15,880
+ that's what was not possible to find previously, because once you're knitting, you will never
+
+477
+0:37:15,880 --> 0:37:21,560
+ find tutorials for the cadence environment or the synopsis thing.
+
+478
+0:37:21,560 --> 0:37:26,560
+ These are well hidden behind paywalls, but out here, there's a lot of people who actually
+
+479
+0:37:26,600 --> 0:37:33,880
+ have done it and write good tutorials on how to do that and how to use it yourself.
+
+480
+0:37:33,880 --> 0:37:42,960
+ So in the analog world, we are working terrible slow, because we do transistor by transistor
+
+481
+0:37:42,960 --> 0:37:49,660
+ circuit simulation, and from there, when we have a system that works, we take it to layout,
+
+482
+0:37:49,660 --> 0:37:54,800
+ we lay out the structures that we did in the schematic, and we do a check that the schematic
+
+483
+0:37:55,040 --> 0:38:01,160
+ versus the layout is correct, and from there, you have a block that you could combine together
+
+484
+0:38:01,160 --> 0:38:06,360
+ with some digital stuff, or you can take it out alone as an analog function block there.
+
+485
+0:38:06,360 --> 0:38:12,200
+ But that is even more black magic for a lot of people, and these are the analog guys.
+
+486
+0:38:12,200 --> 0:38:17,440
+ Problem is that we need the analog guys to step up from this doing one transistor at
+
+487
+0:38:17,440 --> 0:38:24,680
+ a time, so we need to learn them how to program, abstract what they're doing, make generators
+
+488
+0:38:24,760 --> 0:38:32,640
+ so that the structures that they do is actually current mirrors, op amps, you can put it together
+
+489
+0:38:32,640 --> 0:38:40,080
+ as a bigger system, and because you have Python to glue together, you can also do layout of
+
+490
+0:38:40,080 --> 0:38:44,120
+ what you're doing, and then automate the process of doing analog design.
+
+491
+0:38:44,120 --> 0:38:50,420
+ There's a lot of effort going into that, but it's really hard when the resources at the
+
+492
+0:38:50,500 --> 0:38:54,300
+ university is as low as it is.
+
+493
+0:38:54,300 --> 0:38:59,620
+ Because this is the old-fashioned way to do, we put in transistors, and we put a lot of
+
+494
+0:38:59,620 --> 0:39:05,780
+ them in there because they're cheap and they're easy to put in there, and because these transistors
+
+495
+0:39:05,780 --> 0:39:12,780
+ and resistors that we put there are terribly shitty components, they spread around 20 to
+
+496
+0:39:13,020 --> 0:39:20,020
+ 40%, so we need to have ways to trim, compensate, use structures where we don't rely on the
+
+497
+0:39:27,420 --> 0:39:31,540
+ absolute value of components, but the relative values, and then we can make circuits this
+
+498
+0:39:31,540 --> 0:39:34,100
+ way.
+
+499
+0:39:34,100 --> 0:39:41,100
+ When we do that part of it, we need a simulator, and a simulator is like a circuit simulator.
+
+500
+0:39:41,340 --> 0:39:46,100
+ You probably know PSpice, so you can put various components in there.
+
+501
+0:39:46,100 --> 0:39:50,540
+ You can apply some input signal, and you can see what comes out on the other side.
+
+502
+0:39:50,540 --> 0:39:56,860
+ That's what we do in these two versions of the tools that we have.
+
+503
+0:39:56,860 --> 0:40:00,820
+ Size is something from the Sanity Labs in the US.
+
+504
+0:40:00,820 --> 0:40:07,220
+ It's very powerful, and it's highly parallel, so it can solve very big matrixes.
+
+505
+0:40:07,340 --> 0:40:12,260
+ RNGspice is the very simple, easy-to-use tool here.
+
+506
+0:40:12,260 --> 0:40:17,660
+ When we do that, we also validate the circuit design that we do, that it actually works
+
+507
+0:40:17,660 --> 0:40:24,660
+ over corner, so that's in the fab where the operator had a good day or a bad day, so we
+
+508
+0:40:25,380 --> 0:40:29,980
+ need to make sure that the design that we did can do within that.
+
+509
+0:40:29,980 --> 0:40:36,580
+ Also the voltage, and also the temperature is put into these matrix, and then we decide
+
+510
+0:40:36,780 --> 0:40:42,060
+ that as corners, and then we make sure that the design works for all these corners.
+
+511
+0:40:42,060 --> 0:40:46,260
+ That's just a hell of a lot of simulation that we put through there.
+
+512
+0:40:46,260 --> 0:40:53,100
+ But luckily, as things are parallel here, and we are not limited by the amount of licenses
+
+513
+0:40:53,100 --> 0:40:58,540
+ we have, then it's just to throw these China jobs into your big-ass server in the basement,
+
+514
+0:40:58,540 --> 0:41:03,420
+ and then they solve it in very little time.
+
+515
+0:41:03,420 --> 0:41:10,100
+ For the analog layout, we have K-Layout, and K-Layout is a more modern version of that,
+
+516
+0:41:10,100 --> 0:41:16,740
+ and there's a good cell generator in there, so that you can automate that process.
+
+517
+0:41:16,740 --> 0:41:20,940
+ And also here, we have Python interfaces for that, so I can actually open up a Jupyter
+
+518
+0:41:20,940 --> 0:41:27,940
+ notebook, and I can start to use the engine from K-Layout to run some of the tasks for
+
+519
+0:41:28,700 --> 0:41:29,740
+ me there.
+
+520
+0:41:29,740 --> 0:41:36,620
+ We also have Magic, and Magic is like a 40-year-old tool, but it's still used for a lot of things
+
+521
+0:41:36,620 --> 0:41:38,500
+ in the flow today.
+
+522
+0:41:38,500 --> 0:41:43,220
+ But a lot of improvements, or room for improvement here.
+
+523
+0:41:43,220 --> 0:41:52,340
+ So I've done, with universities, a lot of special courses, trying to get people to use
+
+524
+0:41:52,340 --> 0:41:56,580
+ the open source tool, evaluate if it's possible.
+
+525
+0:41:56,620 --> 0:42:03,020
+ It's very hard for me to convince the professors, because they don't really understand how something
+
+526
+0:42:03,020 --> 0:42:07,420
+ that is cheap can be better than something that you pay a lot of money for.
+
+527
+0:42:07,420 --> 0:42:12,420
+ And at the university, they get great discounts for the tools, so for them, it's not a big
+
+528
+0:42:12,420 --> 0:42:14,260
+ thing to have them.
+
+529
+0:42:14,260 --> 0:42:19,960
+ The only problem is, they have forgotten how to operate them or install them, so it's actually
+
+530
+0:42:19,960 --> 0:42:23,980
+ easier to go the open source way anyway.
+
+531
+0:42:24,980 --> 0:42:31,820
+ Where we're going is that we would like to see a lot of chip design being done in these
+
+532
+0:42:31,820 --> 0:42:38,820
+ open source tools and processors, so that when I meet a customer who says, I need a
+
+533
+0:42:38,820 --> 0:42:45,700
+ chip, I need a microprocessor, and a CIDC or something like that, then I can just grab
+
+534
+0:42:45,700 --> 0:42:50,100
+ what was done by the community, put it on my chip, because these are open source, these
+
+535
+0:42:50,220 --> 0:42:55,460
+ have been validated by other people on the process, and I can put together something
+
+536
+0:42:55,460 --> 0:43:00,420
+ that is actually compatible in the market for a full custom chip.
+
+537
+0:43:00,420 --> 0:43:02,020
+ And that's what I see happens now.
+
+538
+0:43:02,020 --> 0:43:08,820
+ I have people coming to me saying, ah, putting that chip on the circuit board that we're
+
+539
+0:43:08,820 --> 0:43:11,700
+ doing here is terribly expensive.
+
+540
+0:43:11,700 --> 0:43:14,940
+ In some cases, I can't get this chip anymore.
+
+541
+0:43:14,940 --> 0:43:18,460
+ Is there a way that we can start to do our own versions of these chips?
+
+542
+0:43:18,460 --> 0:43:23,100
+ And that's what's happening right now, so I'm happy.
+
+543
+0:43:23,100 --> 0:43:28,940
+ Here's a good example, not even is it a good example of a SAR ADC here, but he also made
+
+544
+0:43:28,940 --> 0:43:37,700
+ a description in a master thesis there, very well described, and the objective of what
+
+545
+0:43:37,700 --> 0:43:44,340
+ they were doing here was to do something this advanced, but only using open source tools
+
+546
+0:43:44,340 --> 0:43:47,180
+ and PDKs, and they managed to do that.
+
+547
+0:43:48,820 --> 0:43:54,540
+ So Harold Pretz, he's a professor at the University of Linz.
+
+548
+0:43:54,540 --> 0:44:02,900
+ He also has a distribution where all the tools have been assembled into one single repo.
+
+549
+0:44:02,900 --> 0:44:09,540
+ So it's just to clone that, and then you have what is needed to do chip design here.
+
+550
+0:44:09,540 --> 0:44:15,100
+ And from Berkeley, we see that they have started to go back into the mode that I was taught
+
+551
+0:44:15,740 --> 0:44:21,860
+ 25 years ago at the university, where they group people into doing various parts of a
+
+552
+0:44:21,860 --> 0:44:26,820
+ chip, shipping it off of one of these platforms.
+
+553
+0:44:26,820 --> 0:44:33,140
+ Not really, because they're Berkeley and they work with Apple and Intel, so they have other
+
+554
+0:44:33,140 --> 0:44:39,060
+ processes to do that, but they still use all the open source tools to do that as an educational
+
+555
+0:44:39,060 --> 0:44:41,540
+ part of it.
+
+556
+0:44:41,540 --> 0:44:43,180
+ And they are highly advanced.
+
+557
+0:44:43,180 --> 0:44:53,420
+ They use protocol buffers to interface between various tools to actually have an open source
+
+558
+0:44:53,420 --> 0:44:56,700
+ way of describing schematic.
+
+559
+0:44:56,700 --> 0:45:02,700
+ They use Python Rust to do that, and they have generators to do the analog stuff.
+
+560
+0:45:02,700 --> 0:45:05,200
+ Very advanced things.
+
+561
+0:45:05,200 --> 0:45:11,740
+ So my last shout here is a bit outdated, but when I started here three years ago, I took
+
+562
+0:45:11,860 --> 0:45:13,520
+ some online courses in India.
+
+563
+0:45:13,520 --> 0:45:17,380
+ They are very well priced, and the quality is good.
+
+564
+0:45:17,380 --> 0:45:20,420
+ It's the same open source tools that we use.
+
+565
+0:45:20,420 --> 0:45:26,660
+ You can find the Sky 130 PDK out there.
+
+566
+0:45:26,660 --> 0:45:33,740
+ Tim Edwards maintains open PDKs, so here you can have five different PDKs installed in
+
+567
+0:45:33,740 --> 0:45:39,940
+ one single structure and work with them within the various tools.
+
+568
+0:45:39,940 --> 0:45:44,740
+ And you can again take a look at the MPW that has been taped out here to actually get inspired
+
+569
+0:45:44,740 --> 0:45:46,980
+ and see what can be done.
+
+570
+0:45:46,980 --> 0:45:53,260
+ There's an open source Slack channel where everybody meets in the community, and they're
+
+571
+0:45:53,260 --> 0:45:59,460
+ very friendly, open, and you can ask the stupid questions there and also the advanced.
+
+572
+0:45:59,460 --> 0:46:02,740
+ And then again, if you're interested in this area, hook up with me.
+
+573
+0:46:02,740 --> 0:46:08,900
+ I'm very happy to try to see if there's a spot for you in the place or something that
+
+574
+0:46:08,940 --> 0:46:10,940
+ needs to be done.
+
+575
+0:46:10,940 --> 0:46:11,940
+ Thanks.
+
+576
+0:46:11,940 --> 0:46:13,540
+ That was what I had.
+
+577
+0:46:13,540 --> 0:46:14,540
+ Any questions?
+
+578
+0:46:14,540 --> 0:46:26,260
+ There is one.
+
+579
+0:46:26,260 --> 0:46:28,260
+ Thanks for the talk.
+
+580
+0:46:28,260 --> 0:46:30,080
+ I have many questions.
+
+581
+0:46:30,080 --> 0:46:36,740
+ So you mentioned the funding by the CHIPS Act, and I understand you've been around in the
+
+582
+0:46:36,740 --> 0:46:38,460
+ community for a good while.
+
+583
+0:46:38,460 --> 0:46:48,580
+ Is there any talk in the community about how both Google's community building slash marketing
+
+584
+0:46:48,580 --> 0:46:55,380
+ effort and all of this tooling development is part of the DARPA ERI, so electronics
+
+585
+0:46:55,380 --> 0:47:06,620
+ resurgence initiative, in order to ensure that defense technology is, well, to ensure
+
+586
+0:47:06,860 --> 0:47:12,740
+ the U.S. doesn't forget how to manufacture defense technology?
+
+587
+0:47:12,740 --> 0:47:18,580
+ Is there awareness that that is the origin of this project?
+
+588
+0:47:18,580 --> 0:47:21,060
+ So the DARPA thing is going on.
+
+589
+0:47:21,060 --> 0:47:26,100
+ They support development on the 19 nanometer technology node.
+
+590
+0:47:26,100 --> 0:47:30,580
+ They fund the size simulator.
+
+591
+0:47:30,580 --> 0:47:36,440
+ The size simulator is more or less covered by some restriction.
+
+592
+0:47:36,440 --> 0:47:41,560
+ So you can't take it to China, for instance, because it's highly classified in this way.
+
+593
+0:47:41,560 --> 0:47:47,120
+ I don't know how they make sure that it doesn't happen, but at least that is the thing.
+
+594
+0:47:47,120 --> 0:47:51,480
+ In Europe, we're a bit slow, so not a lot is going on.
+
+595
+0:47:51,480 --> 0:47:55,840
+ We had the EU CHIPS Act, and that has been ratified.
+
+596
+0:47:55,840 --> 0:48:02,280
+ But from there, you need to put that into action between the various member countries.
+
+597
+0:48:03,080 --> 0:48:05,120
+ Some countries have been active.
+
+598
+0:48:05,120 --> 0:48:06,800
+ That happens a lot in Germany.
+
+599
+0:48:06,800 --> 0:48:09,080
+ That happens nothing in Denmark.
+
+600
+0:48:09,080 --> 0:48:13,280
+ But it's different from place to place.
+
+601
+0:48:13,280 --> 0:48:22,180
+ So again, it's the larger companies who actually now can get funding from the government to
+
+602
+0:48:22,180 --> 0:48:27,700
+ put a FAP in EU soil or in U.S. soil.
+
+603
+0:48:27,700 --> 0:48:34,180
+ So you see a bit of competition there, where they would like to have the next generation
+
+604
+0:48:34,180 --> 0:48:37,300
+ big FAPs placed locally in this way.
+
+605
+0:48:37,300 --> 0:48:41,380
+ Yeah, fortunately, everybody has understood how this is important.
+
+606
+0:48:41,380 --> 0:48:46,820
+ You didn't answer my question, though, whether there is awareness in the community that the
+
+607
+0:48:46,820 --> 0:48:54,820
+ origin of this project, and also E-FABLUS, the American company, that they come from
+
+608
+0:48:54,820 --> 0:49:04,700
+ this DARPA initiative to protect military technology in the U.S.?
+
+609
+0:49:04,700 --> 0:49:14,140
+ I think we know that, but we see it as the greater good for us to be able to do chip
+
+610
+0:49:14,140 --> 0:49:16,580
+ design open source.
+
+611
+0:49:16,580 --> 0:49:21,740
+ I agree that it's good that there's more open tooling, right?
+
+612
+0:49:21,740 --> 0:49:25,860
+ So another question.
+
+613
+0:49:25,860 --> 0:49:32,580
+ How do you feel about the terms of service of E-FABLUS, where they require that you promise
+
+614
+0:49:32,580 --> 0:49:40,980
+ that your design isn't covered by any export regulations?
+
+615
+0:49:40,980 --> 0:49:48,060
+ I don't know, but E-FABLUS is an entity in Egypt.
+
+616
+0:49:48,060 --> 0:49:49,460
+ I believe it's an American company.
+
+617
+0:49:49,460 --> 0:49:51,460
+ No, it's in Egypt.
+
+618
+0:49:52,460 --> 0:49:59,140
+ But they are still using Skywater as a foundry service this way.
+
+619
+0:49:59,140 --> 0:50:01,700
+ But they have offerings for everybody.
+
+620
+0:50:01,700 --> 0:50:08,180
+ If you come and you put US dollars, then they can produce an MPW for you, and they don't
+
+621
+0:50:08,180 --> 0:50:10,820
+ ask questions in this way.
+
+622
+0:50:10,820 --> 0:50:13,740
+ Regarding export regulation, I'm not an expert.
+
+623
+0:50:13,740 --> 0:50:15,300
+ I don't know anything about that.
+
+624
+0:50:15,300 --> 0:50:19,380
+ All right, I recommend reading their terms of service really carefully.
+
+625
+0:50:19,380 --> 0:50:24,860
+ And another question, I'll make that the last one.
+
+626
+0:50:24,860 --> 0:50:29,900
+ Were you aware that the Skywater fab is one of the few that is certified to manufacture
+
+627
+0:50:29,900 --> 0:50:31,980
+ military equipment in the US?
+
+628
+0:50:31,980 --> 0:50:41,420
+ No, but I guess that a lot of fabs would have that authority as well, because that's what
+
+629
+0:50:41,420 --> 0:50:45,180
+ been driving that industry for the last 20 years.
+
+630
+0:50:45,380 --> 0:50:50,500
+ So as far as I've been able to find, when I've done a bit of scratching behind all of
+
+631
+0:50:50,500 --> 0:50:52,300
+ this, that's the only one.
+
+632
+0:50:52,300 --> 0:50:54,780
+ OK, but now I'm not aware of that.
+
+633
+0:50:54,780 --> 0:51:00,620
+ All right, so please be considerate where you upload your chip designs, right?
+
+634
+0:51:00,620 --> 0:51:07,020
+ And if there is finally a European fab, I think that's fantastic.
+
+635
+0:51:07,020 --> 0:51:11,580
+ I just hope there is a route that does not involve E-FABLUS.
+
+636
+0:51:11,580 --> 0:51:20,380
+ I think that the work we have with ISP in Berlin is actually being very fruitful, and
+
+637
+0:51:20,380 --> 0:51:25,460
+ I hope that we see a lot of things being tabled out this way from Europe at least.
+
+638
+0:51:25,460 --> 0:51:26,460
+ That sounds good.
+
+639
+0:51:26,460 --> 0:51:27,460
+ I want to hear more about that.
+
+640
+0:51:27,460 --> 0:51:28,460
+ Thanks.
+
+641
+0:51:29,460 --> 0:51:30,860
+ Any other questions for Jan?
+
+642
+0:51:30,860 --> 0:51:31,860
+ Yeah.
+
+643
+0:51:31,860 --> 0:51:32,860
+ Oh, sorry.
+
+644
+0:51:33,860 --> 0:51:41,820
+ Hey, so this is, of course, quite specialized skills, and I'm just wondering, could you
+
+645
+0:51:41,820 --> 0:51:47,940
+ talk a little bit about maybe how do you, you say you work with professors sometimes
+
+646
+0:51:47,940 --> 0:51:49,300
+ and universities here?
+
+647
+0:51:49,300 --> 0:51:53,100
+ Just talk a little bit more about that, because, for example, I did a computer science degree.
+
+648
+0:51:53,100 --> 0:51:54,860
+ We didn't scratch anywhere near this.
+
+649
+0:51:54,860 --> 0:51:59,580
+ Now, of course, other universities will, but yeah, how do you even get, you know, young
+
+650
+0:51:59,580 --> 0:52:03,900
+ people, or not necessarily young, but, you know, just new entrants into computer science
+
+651
+0:52:03,900 --> 0:52:08,020
+ in general to be able to understand all of this?
+
+652
+0:52:08,020 --> 0:52:10,420
+ But that's a hard part.
+
+653
+0:52:10,420 --> 0:52:17,740
+ At DGU, where we did a lot of chip designers over the last 30 years, all of them went out
+
+654
+0:52:17,740 --> 0:52:23,060
+ to the hearing aid industry, to the mobile phone communication thing, network technology,
+
+655
+0:52:23,060 --> 0:52:24,060
+ et cetera.
+
+656
+0:52:24,060 --> 0:52:27,380
+ So we had a good outcome from there to that area.
+
+657
+0:52:27,380 --> 0:52:33,980
+ But even though there was no direct study line that was called chip design in there,
+
+658
+0:52:33,980 --> 0:52:42,700
+ so you entered the university, you took computer science or EE, and then from there you tried
+
+659
+0:52:42,700 --> 0:52:47,540
+ to specialize taking the courses that actually enabled you as a chip designer.
+
+660
+0:52:47,540 --> 0:52:55,640
+ So chip design is centered on a few universities around the world, but now also in the open
+
+661
+0:52:55,640 --> 0:52:58,400
+ source community.
+
+662
+0:52:58,400 --> 0:53:03,440
+ So if you have normal skill set within EE electronics, then you can also upgrade that
+
+663
+0:53:03,440 --> 0:53:06,080
+ to chip design.
+
+664
+0:53:06,080 --> 0:53:09,240
+ You can even find a lot of these courses online as well.
+
+665
+0:53:09,240 --> 0:53:16,200
+ I know in Sweden there's a good set of courses for that.
+
+666
+0:53:16,200 --> 0:53:25,000
+ Today at DGU University we have started a bachelor education as chip designer, computer
+
+667
+0:53:25,000 --> 0:53:26,680
+ science, engineering.
+
+668
+0:53:26,680 --> 0:53:28,200
+ So that's the way it should go.
+
+669
+0:53:28,200 --> 0:53:34,560
+ I also have communication with SGU, so that's the Southern University of Denmark, and they
+
+670
+0:53:34,560 --> 0:53:37,520
+ will start to produce chip designers as well.
+
+671
+0:53:37,520 --> 0:53:43,400
+ And right now the biggest group in Denmark is located in Aarhus, and it's Farshad, one
+
+672
+0:53:43,400 --> 0:53:44,520
+ professor.
+
+673
+0:53:44,520 --> 0:53:48,320
+ He attracts a lot of research money.
+
+674
+0:53:48,320 --> 0:53:54,880
+ He tapes out twice a month, every second month, with the various projects.
+
+675
+0:53:54,880 --> 0:53:59,720
+ And compared to Copenhagen, there's not been a tape out for the last two years.
+
+676
+0:53:59,720 --> 0:54:04,400
+ So you need to find these center of gravities, and they're probably not in Denmark, they're
+
+677
+0:54:04,400 --> 0:54:08,920
+ probably all over Europe this way.
+
+678
+0:54:08,920 --> 0:54:11,440
+ We have one more question.
+
+679
+0:54:11,440 --> 0:54:18,320
+ How can you ensure that malicious code is not inserted in your chip?
+
+680
+0:54:18,320 --> 0:54:25,400
+ I can ensure that because when I do the validation of the chip, I see all the things that I put
+
+681
+0:54:25,400 --> 0:54:30,360
+ there validates to the schematic or the HTML that I put there.
+
+682
+0:54:30,360 --> 0:54:36,560
+ The other thing you say, then you send some blueprints to a FAP, they might be able to
+
+683
+0:54:36,560 --> 0:54:38,160
+ put something in there.
+
+684
+0:54:38,160 --> 0:54:43,800
+ But I'm not a big fan of doing chips where I don't have 100 control of what I put on
+
+685
+0:54:43,800 --> 0:54:44,800
+ it.
+
+686
+0:54:44,800 --> 0:54:50,440
+ And the way you do chips today might be that you have black boxes from other companies
+
+687
+0:54:50,440 --> 0:54:57,080
+ in there because you use their IP, and then there's no guarantee that they haven't had
+
+688
+0:54:57,080 --> 0:54:58,920
+ the malicious code in there.
+
+689
+0:54:58,920 --> 0:55:00,880
+ So yeah, that's a good question.
+
+690
+0:55:00,880 --> 0:55:05,520
+ But what we can do in the open source community at least is that we know what we put in there.
+
+691
+0:55:05,520 --> 0:55:07,680
+ That was the last question.
+
+692
+0:55:07,680 --> 0:55:09,280
+ Let's give a round of applause for Jørgen.
+
+693
+0:55:09,280 --> 0:55:11,280
+ Thanks a lot.
