@@ -1,0 +1,3603 @@
+# Transcribed 2023-11-12T13 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:13,360
+ It has become possible, at least for all my webcam and screen share videos, so I'm going
+
+2
+0:00:13,360 --> 0:00:17,760
+ to share that with you today, how that is helping me, and hopefully you can get some
+
+3
+0:00:17,760 --> 0:00:25,720
+ inspiration from that, either to improve your own setup or to see, hey, okay, that's maybe
+
+4
+0:00:25,720 --> 0:00:33,400
+ not so difficult. Maybe I can start putting some videos out there as well. So that's it.
+
+5
+0:00:33,400 --> 0:00:38,540
+ Why am I doing this? Well, that's because 11 years ago, I quit my daytime job to become
+
+6
+0:00:38,540 --> 0:00:47,080
+ a writing instructor. A year later, I figured out that being a self-employed writing instructor
+
+7
+0:00:47,080 --> 0:00:53,520
+ with a small kid and a family you want to see sometimes, that's not super easy, so I
+
+8
+0:00:53,520 --> 0:00:55,720
+ decided I would try to take some of that.
+
+9
+0:00:55,720 --> 0:01:02,080
+ My teaching online, back then, 10 years ago, we were like two people in Denmark who did
+
+10
+0:01:02,080 --> 0:01:06,820
+ online courses on horse training, so people were a bit like, oh, that's weird, but also
+
+11
+0:01:06,820 --> 0:01:13,060
+ pretty interested because it brought some knowledge to them that they had a hard time
+
+12
+0:01:13,060 --> 0:01:19,140
+ obtaining in other ways without driving a long while to get there or something like
+
+13
+0:01:19,140 --> 0:01:19,340
+ that.
+
+14
+0:01:19,340 --> 0:01:25,680
+ So this is me 10 years ago, almost to the date.
+
+15
+0:01:25,720 --> 0:01:28,040
+ It was all bit women's 01s, but the thing was, I think that the technical心 tribal
+
+16
+0:01:28,040 --> 0:01:35,480
+ issues imagining did a great job because I used to go out in Denmark as well with a couple
+
+17
+0:01:35,480 --> 0:01:40,620
+ of women exchange lines and somethings and things, but not much you can do together.
+
+18
+0:01:40,620 --> 0:01:46,040
+ It was, I don't want to complain, but you know, just being a kind-quality person, I
+
+19
+0:01:46,040 --> 0:01:54,840
+ passed the four year, but I didn't seem to be able to get anywhere other than to train
+
+20
+0:01:54,840 --> 0:01:55,040
+ my children.
+
+21
+0:01:55,040 --> 0:01:55,180
+ Thank you.
+
+22
+0:01:55,180 --> 0:01:55,560
+ Thank you.
+
+23
+0:01:55,560 --> 0:01:55,620
+ Thank you.
+
+24
+0:01:55,620 --> 0:01:55,680
+ Thank you, Kai.
+
+25
+0:01:55,680 --> 0:01:55,720
+ Thank you.
+
+26
+0:01:55,720 --> 0:02:01,060
+ not so super, also the internet connection back then was like
+
+27
+0:02:01,060 --> 0:02:04,900
+ terrible, but I managed.
+
+28
+0:02:04,900 --> 0:02:08,200
+ It
+
+29
+0:02:08,200 --> 0:02:11,220
+ improved a wee bit pretty fast by
+
+30
+0:02:11,220 --> 0:02:15,280
+ switching webinar provider.
+
+31
+0:02:15,280 --> 0:02:19,380
+ I've always been
+
+32
+0:02:19,380 --> 0:02:23,760
+ sort of both compassionate but also a bit
+
+33
+0:02:23,760 --> 0:02:29,260
+ picky about how my teaching content shall be because I know
+
+34
+0:02:29,260 --> 0:02:33,440
+ it makes a difference for people. I've used to be a teacher and
+
+35
+0:02:33,440 --> 0:02:36,700
+ I know it makes a difference to people if you're just
+
+36
+0:02:36,700 --> 0:02:40,080
+ providing them talking slides
+
+37
+0:02:40,080 --> 0:02:43,520
+ or if you actually are there on webcam. Even if it's
+
+38
+0:02:43,520 --> 0:02:46,600
+ a grainy old webcam with a fussy
+
+39
+0:02:46,600 --> 0:02:51,840
+ image, it makes a difference that people can actually see you and can feel a
+
+40
+0:02:51,840 --> 0:02:53,040
+ connection to you
+
+41
+0:02:53,040 --> 0:02:56,400
+ when you're teaching online. So
+
+42
+0:02:56,400 --> 0:03:00,360
+ I upgraded my system to something where I actually felt that
+
+43
+0:03:00,360 --> 0:03:03,980
+ they could see me better
+
+44
+0:03:03,980 --> 0:03:08,420
+ and that worked.
+
+45
+0:03:08,420 --> 0:03:13,860
+ Then I started doing
+
+46
+0:03:13,860 --> 0:03:19,180
+ also not just live webinars but also recording videos and this here, this is
+
+47
+0:03:19,180 --> 0:03:22,720
+ some of the videos that took a long time to produce compared to
+
+48
+0:03:22,720 --> 0:03:27,780
+ the video time because I had to record the slides
+
+49
+0:03:27,780 --> 0:03:32,180
+ presentation first or have the images for that and put into my video editor.
+
+50
+0:03:32,180 --> 0:03:34,900
+ Then I had to sit there and talk about the slides,
+
+51
+0:03:34,900 --> 0:03:38,740
+ record that, put them together, put the logo on,
+
+52
+0:03:38,740 --> 0:03:42,220
+ put the text on and
+
+53
+0:03:42,220 --> 0:03:46,720
+ that took usually longer than actually doing the video.
+
+54
+0:03:46,720 --> 0:03:51,040
+ Then the video had to process afterwards before I could upload it.
+
+55
+0:03:51,040 --> 0:03:52,080
+ It was boring.
+
+56
+0:03:52,720 --> 0:03:57,360
+ That is like 2015.
+
+57
+0:03:57,360 --> 0:04:04,380
+ Then in 18, as I said, I met OBS at my first born hack.
+
+58
+0:04:04,380 --> 0:04:11,160
+ I had been looking at it previously because I heard someone talk about it at some
+
+59
+0:04:11,160 --> 0:04:17,480
+ marketing webinar I had attended but it was like, ah, it's a bit, it's difficult and I
+
+60
+0:04:17,480 --> 0:04:20,860
+ don't really know what to do about it.
+
+61
+0:04:20,860 --> 0:04:22,720
+ But then when I had my hands in it at
+
+62
+0:04:22,720 --> 0:04:27,200
+ born hack, I was like, yeah, okay, oh, so there's something about scenes and there's
+
+63
+0:04:27,200 --> 0:04:29,880
+ something about sources, ah, I get that now.
+
+64
+0:04:29,880 --> 0:04:32,380
+ I can go back and use this.
+
+65
+0:04:32,380 --> 0:04:37,440
+ Still took me six months because as far as I could tell when I was digging through my
+
+66
+0:04:37,440 --> 0:04:44,040
+ archives yesterday, I only started using OBS in January 2019.
+
+67
+0:04:44,040 --> 0:04:47,600
+ So that's like almost four and a half years ago now.
+
+68
+0:04:47,600 --> 0:04:51,360
+ This is one of the first attempts.
+
+69
+0:04:51,360 --> 0:04:59,120
+ The video series where I put myself in in the corner and I had some background images
+
+70
+0:04:59,120 --> 0:05:06,100
+ that I could switch like slides and that worked really well and it was still like a one-take
+
+71
+0:05:06,100 --> 0:05:07,340
+ video.
+
+72
+0:05:07,340 --> 0:05:13,020
+ Of course, doing one-take videos means that you need to actually know what you're going
+
+73
+0:05:13,020 --> 0:05:20,240
+ to talk about and not make that many mistakes and stuff, but today I much rather do, if
+
+74
+0:05:20,240 --> 0:05:21,240
+ I'm doing like a 10-minute video.
+
+75
+0:05:21,240 --> 0:05:21,340
+ 10 minutes.
+
+76
+0:05:21,360 --> 0:05:27,360
+ I try not to make them longer, but if I'm doing like a 10-minute video or 5-minute video,
+
+77
+0:05:27,360 --> 0:05:30,360
+ if something goes wrong, I just restart.
+
+78
+0:05:30,360 --> 0:05:38,300
+ It's a lot faster than actually having to go back and edit out a cough attack or whatever.
+
+79
+0:05:38,300 --> 0:05:47,340
+ So it really, really helps my flow in content creation.
+
+80
+0:05:47,340 --> 0:05:51,240
+ This is then in May 2019 where I started doing.
+
+81
+0:05:51,240 --> 0:05:53,240
+ I started doing screen share videos.
+
+82
+0:05:53,240 --> 0:05:59,340
+ My business had then moved on from doing, as you can see, this has not much to do with
+
+83
+0:05:59,340 --> 0:06:01,980
+ horses.
+
+84
+0:06:01,980 --> 0:06:09,000
+ I'm now primarily teaching other people how to use the online course and email marketing
+
+85
+0:06:09,000 --> 0:06:10,860
+ system called Simplero.
+
+86
+0:06:10,860 --> 0:06:17,240
+ I've been doing that since 2015, 16, where it slowly took over.
+
+87
+0:06:17,240 --> 0:06:19,240
+ So, today, my main video production is Simplero.
+
+88
+0:06:19,240 --> 0:06:20,240
+ I've been doing that since 2015, 16, where it slowly took over.
+
+89
+0:06:20,240 --> 0:06:21,240
+ So today, my main video production is Simplero.
+
+90
+0:06:21,240 --> 0:06:22,240
+ So, today, my main video production is Simplero.
+
+91
+0:06:22,240 --> 0:06:23,240
+ So, today, my main video production is Simplero.
+
+92
+0:06:23,240 --> 0:06:24,240
+ So, today, my main video production is Simplero.
+
+93
+0:06:24,240 --> 0:06:25,240
+ So, today, my main video production is Simplero.
+
+94
+0:06:25,240 --> 0:06:26,240
+ I started doing all this videos where I'm on screen share and I show something from
+
+95
+0:06:26,240 --> 0:06:34,520
+ inside Simplero and tell people how to set up a course or create an email series or do
+
+96
+0:06:34,520 --> 0:06:39,860
+ fancy automation stuff.
+
+97
+0:06:39,860 --> 0:06:49,200
+ So, I started doing these courses also back sometime in 2019 and this is what it looked
+
+98
+0:06:49,200 --> 0:06:50,280
+ like back then.
+
+99
+0:06:50,280 --> 0:06:51,120
+ So, today, I'm going to be inspiring my customers to use my inland work.
+
+100
+0:06:51,120 --> 0:06:54,700
+ And this is then what it looks like today.
+
+101
+0:06:54,700 --> 0:06:56,800
+ I've gone to green screen.
+
+102
+0:06:56,800 --> 0:07:01,000
+ So now I can just put myself in without sitting in a square
+
+103
+0:07:01,000 --> 0:07:04,140
+ with some sort of background.
+
+104
+0:07:04,140 --> 0:07:09,740
+ That's really nice, and that's also built in in OBS.
+
+105
+0:07:09,740 --> 0:07:12,660
+ Also, I use this to stream.
+
+106
+0:07:12,660 --> 0:07:15,480
+ This is actually from, I have like a membership club
+
+107
+0:07:15,480 --> 0:07:17,180
+ for people who are using Simplero.
+
+108
+0:07:17,180 --> 0:07:22,700
+ And we do monthly themes, and they are like live streamed.
+
+109
+0:07:22,700 --> 0:07:25,700
+ We have a Facebook group.
+
+110
+0:07:25,700 --> 0:07:29,240
+ So I live stream it to the Facebook group using OBS.
+
+111
+0:07:29,240 --> 0:07:33,260
+ So I get a high quality local recording of the stream,
+
+112
+0:07:33,260 --> 0:07:35,060
+ because then it's not the stream.
+
+113
+0:07:35,060 --> 0:07:39,260
+ Then it's just what's happening on my desktop.
+
+114
+0:07:39,260 --> 0:07:40,880
+ Then I also stream it to Facebook.
+
+115
+0:07:40,880 --> 0:07:44,440
+ And then afterwards, I take the recorded video
+
+116
+0:07:44,440 --> 0:07:47,060
+ from my desktop computer and upload it
+
+117
+0:07:47,060 --> 0:07:47,180
+ to Simplero.
+
+118
+0:07:47,180 --> 0:07:49,300
+ So the course material in Simplero.
+
+119
+0:07:49,300 --> 0:07:52,120
+ So I have both this option.
+
+120
+0:07:52,120 --> 0:07:53,220
+ I don't know.
+
+121
+0:07:53,220 --> 0:07:55,440
+ You're probably not that much of a Facebook crowd.
+
+122
+0:07:55,440 --> 0:07:57,140
+ But in Facebook, if you do live, you
+
+123
+0:07:57,140 --> 0:07:59,780
+ can either do screen share or do webcam.
+
+124
+0:07:59,780 --> 0:08:01,300
+ You can't combine them.
+
+125
+0:08:01,300 --> 0:08:05,600
+ When I use OBS to stream, I can combine totally like I want.
+
+126
+0:08:05,600 --> 0:08:08,540
+ So I have full control.
+
+127
+0:08:08,540 --> 0:08:13,900
+ And I get the local recording in high quality.
+
+128
+0:08:13,900 --> 0:08:17,060
+ And I could also use this to stream to YouTube or any other
+
+129
+0:08:17,060 --> 0:08:23,360
+ service where you can stream with a stream key.
+
+130
+0:08:23,360 --> 0:08:27,660
+ So that's really, really nice.
+
+131
+0:08:27,660 --> 0:08:29,760
+ And that makes my work so much easier also.
+
+132
+0:08:32,880 --> 0:08:38,280
+ I've also been doing like if you want
+
+133
+0:08:38,280 --> 0:08:42,400
+ to teach something about like a creative process or thought
+
+134
+0:08:42,400 --> 0:08:45,140
+ process, then it's not always the best.
+
+135
+0:08:45,140 --> 0:08:46,940
+ Like people get so much, especially
+
+136
+0:08:46,940 --> 0:08:51,580
+ during corona, people had so much of everything being online
+
+137
+0:08:51,580 --> 0:08:56,980
+ and people just doing talking slide presentations.
+
+138
+0:08:56,980 --> 0:09:01,460
+ And it kind of gets boring.
+
+139
+0:09:01,460 --> 0:09:03,440
+ If you need to keep people's attention,
+
+140
+0:09:03,440 --> 0:09:05,140
+ then you should mix things up.
+
+141
+0:09:05,140 --> 0:09:08,840
+ So what I have on my desk is I have a second webcam mounted
+
+142
+0:09:08,840 --> 0:09:09,620
+ on an arm.
+
+143
+0:09:09,620 --> 0:09:13,720
+ So I can take that and point it down on my desk.
+
+144
+0:09:13,720 --> 0:09:16,560
+ And then I can have a writing pad.
+
+145
+0:09:16,560 --> 0:09:16,820
+ And I can.
+
+146
+0:09:16,820 --> 0:09:22,340
+ I can sketch up things, either if I want to design flows
+
+147
+0:09:22,340 --> 0:09:25,940
+ or I want to sketch out a thought process
+
+148
+0:09:25,940 --> 0:09:29,420
+ or whatever it is I want to do.
+
+149
+0:09:29,420 --> 0:09:32,900
+ I can actually do that and put that on webcam as well.
+
+150
+0:09:32,900 --> 0:09:36,320
+ And then I still have myself down in the corner.
+
+151
+0:09:36,320 --> 0:09:41,180
+ So I can also look up, put down the pen, and sit there
+
+152
+0:09:41,180 --> 0:09:43,380
+ and talk to people.
+
+153
+0:09:43,380 --> 0:09:45,440
+ And this is, I know from my students,
+
+154
+0:09:45,440 --> 0:09:46,580
+ that they are like.
+
+155
+0:09:46,580 --> 0:09:48,860
+ I'm really happy about this way of doing things.
+
+156
+0:09:48,860 --> 0:09:52,100
+ I could also be standing by a whiteboard or whatever
+
+157
+0:09:52,100 --> 0:09:54,820
+ I wanted to do that was like something else.
+
+158
+0:09:54,820 --> 0:09:57,960
+ I had been looking into, oh, maybe I
+
+159
+0:09:57,960 --> 0:10:02,020
+ should get one of those fancy drawing pads for my computer.
+
+160
+0:10:02,020 --> 0:10:05,800
+ And because I wanted to do some live drawing stuff,
+
+161
+0:10:05,800 --> 0:10:09,020
+ and then I was like, hmm, I have an extra webcam.
+
+162
+0:10:09,020 --> 0:10:09,720
+ I have pen.
+
+163
+0:10:09,720 --> 0:10:10,760
+ I have paper.
+
+164
+0:10:10,760 --> 0:10:11,660
+ How does that work?
+
+165
+0:10:11,660 --> 0:10:13,220
+ And that actually works excellent.
+
+166
+0:10:13,220 --> 0:10:15,220
+ So that's it.
+
+167
+0:10:15,220 --> 0:10:15,700
+ Thank you.
+
+168
+0:10:15,700 --> 0:10:16,200
+ Thank you.
+
+169
+0:10:16,200 --> 0:10:19,660
+ So that's a way of mixing things up.
+
+170
+0:10:19,660 --> 0:10:23,440
+ And that's totally easy to set up several camera sources
+
+171
+0:10:23,440 --> 0:10:26,240
+ in OBS.
+
+172
+0:10:26,240 --> 0:10:29,900
+ And I can switch between the scenes so that I can do this.
+
+173
+0:10:29,900 --> 0:10:32,780
+ And then I can switch to another scene where I have screen share.
+
+174
+0:10:32,780 --> 0:10:36,680
+ Or I can switch to another scene where it's just me on webcam.
+
+175
+0:10:36,680 --> 0:10:40,540
+ And I can sort of spice my teaching up a bit
+
+176
+0:10:40,540 --> 0:10:45,680
+ without having to do all that editing that, for me, I know
+
+177
+0:10:45,680 --> 0:10:48,240
+ some people are probably editing faster than me.
+
+178
+0:10:48,240 --> 0:10:52,260
+ But for me, at least, it takes a lot of time.
+
+179
+0:10:52,260 --> 0:10:54,600
+ And it isn't really worth it.
+
+180
+0:10:54,600 --> 0:10:59,140
+ I could maybe get like 2%, 3%, 4%, 5% fancier videos
+
+181
+0:10:59,140 --> 0:11:01,480
+ if I decided to do after editing.
+
+182
+0:11:01,480 --> 0:11:05,240
+ But that's really, really not worth it.
+
+183
+0:11:05,240 --> 0:11:11,720
+ So this is how things look today.
+
+184
+0:11:11,720 --> 0:11:13,720
+ This is how it looks from inside OBS.
+
+185
+0:11:13,720 --> 0:11:14,720
+ And in a second, I'm going to show you how it looks from inside OBS.
+
+186
+0:11:14,720 --> 0:11:15,680
+ And in a second, I'm going to show you how it looks from inside OBS.
+
+187
+0:11:15,680 --> 0:11:18,060
+ I'm going to switch over so you can see.
+
+188
+0:11:18,060 --> 0:11:21,560
+ I'm going to open OBS here on my machine.
+
+189
+0:11:21,560 --> 0:11:25,120
+ And then we can take a look at how does this actually work.
+
+190
+0:11:25,120 --> 0:11:28,120
+ How do we set it up?
+
+191
+0:11:28,120 --> 0:11:30,620
+ What do you need to be aware of?
+
+192
+0:11:30,620 --> 0:11:33,580
+ And then there will be some room for questions.
+
+193
+0:11:33,580 --> 0:11:36,160
+ Yeah?
+
+194
+0:11:36,160 --> 0:11:36,660
+ So.
+
+195
+0:11:44,780 --> 0:11:45,280
+ Oh, yeah.
+
+196
+0:11:45,680 --> 0:11:46,560
+ Just a second.
+
+197
+0:11:46,560 --> 0:11:48,620
+ I wanted to show you my setup as well.
+
+198
+0:11:48,620 --> 0:11:52,940
+ So this is my desktop at home being unusually tidy.
+
+199
+0:11:52,940 --> 0:11:54,320
+ So I have like two screens.
+
+200
+0:11:54,320 --> 0:11:56,480
+ Because if you're working with OBS,
+
+201
+0:11:56,480 --> 0:12:00,580
+ you can do that in a one-screen setup.
+
+202
+0:12:00,580 --> 0:12:05,260
+ But it's really, really, really nice to have like two screens.
+
+203
+0:12:05,260 --> 0:12:08,320
+ So you can have whatever you are, if you're doing a screen share,
+
+204
+0:12:08,320 --> 0:12:11,600
+ then you have whatever you're working with on the front screen.
+
+205
+0:12:11,600 --> 0:12:13,680
+ And then you have OBS.
+
+206
+0:12:13,680 --> 0:12:15,560
+ Or if you have some chat you need, you can do that.
+
+207
+0:12:15,560 --> 0:12:18,500
+ But if you have something you need to pay attention to,
+
+208
+0:12:18,500 --> 0:12:21,320
+ you have that on the other screen.
+
+209
+0:12:21,320 --> 0:12:22,940
+ That's a really, really big help.
+
+210
+0:12:22,940 --> 0:12:26,660
+ And I also highly recommend that, even if you don't use OBS,
+
+211
+0:12:26,660 --> 0:12:29,900
+ if you're doing any other sort of webinars or anything
+
+212
+0:12:29,900 --> 0:12:36,020
+ where you need to be able to both screen share something
+
+213
+0:12:36,020 --> 0:12:40,460
+ or have your slides and also keep an eye on a chat
+
+214
+0:12:40,460 --> 0:12:45,440
+ or some other tech that is running, it's really, really, really, a lot easier.
+
+215
+0:12:45,560 --> 0:12:49,020
+ If you have at least two screens.
+
+216
+0:12:49,020 --> 0:12:53,620
+ I teach a lot of my clients are like not very techie.
+
+217
+0:12:53,620 --> 0:12:56,180
+ And when I come and say, yeah, you should probably
+
+218
+0:12:56,180 --> 0:12:57,200
+ get an extra screen.
+
+219
+0:12:57,200 --> 0:13:00,820
+ And they're like, but I only have my MacBook.
+
+220
+0:13:00,820 --> 0:13:03,920
+ And then we'll have to figure out how to attach an extra screen
+
+221
+0:13:03,920 --> 0:13:07,860
+ because it's just so much easier.
+
+222
+0:13:07,860 --> 0:13:12,180
+ I have a microphone and I have an external webcam.
+
+223
+0:13:12,180 --> 0:13:14,660
+ And that's basically it.
+
+224
+0:13:14,660 --> 0:13:19,420
+ What you maybe can see in the corners of the desk
+
+225
+0:13:19,420 --> 0:13:26,080
+ is I have a couple of, that's like 20 vat halogen, not halogen,
+
+226
+0:13:26,080 --> 0:13:31,340
+ LED working lights that are pointing away from me
+
+227
+0:13:31,340 --> 0:13:34,520
+ because they create a pretty good ambient light.
+
+228
+0:13:34,520 --> 0:13:43,260
+ So that's a lot easier than buying some very fancy studio lights.
+
+229
+0:13:43,260 --> 0:13:43,960
+ If you have some.
+
+230
+0:13:43,960 --> 0:13:44,460
+ Why?
+
+231
+0:13:44,460 --> 0:13:44,660
+ Why?
+
+232
+0:13:44,660 --> 0:13:47,940
+ Oh, wait, is walls that you control the light up on
+
+233
+0:13:47,940 --> 0:13:52,620
+ and then it comes back that that really makes a big difference.
+
+234
+0:13:52,620 --> 0:13:55,040
+ I tried buying one of them.
+
+235
+0:13:55,040 --> 0:13:56,180
+ Famous ring lights.
+
+236
+0:13:56,180 --> 0:13:58,060
+ Because like there, so fancy, right?
+
+237
+0:13:58,060 --> 0:13:59,980
+ But I have glasses.
+
+238
+0:13:59,980 --> 0:14:03,560
+ And if you have glasses and you're sitting in front of a ring light,
+
+239
+0:14:03,560 --> 0:14:05,200
+ you have ring light in your glasses.
+
+240
+0:14:05,200 --> 0:14:07,760
+ And that doesn't really look that good on videos.
+
+241
+0:14:07,760 --> 0:14:10,760
+ Actually you can see it in the, it's also
+
+242
+0:14:10,760 --> 0:14:13,500
+ reflected in the eyes of people that have ring light.
+
+243
+0:14:13,500 --> 0:14:14,460
+ So you can you can see it.
+
+244
+0:14:14,460 --> 0:14:17,460
+ inside there, the irises.
+
+245
+0:14:17,460 --> 0:14:23,380
+ So I still have the ring light, but now it's mounted under the ceiling and it's also pointing
+
+246
+0:14:23,380 --> 0:14:31,100
+ away from me, so it's creating ambient light instead of shining directly in my eyes.
+
+247
+0:14:31,100 --> 0:14:35,480
+ So that's the setup.
+
+248
+0:14:35,480 --> 0:14:45,640
+ I also bought a low-noise mouse and keyboard, because I found out at some point that when
+
+249
+0:14:45,640 --> 0:14:50,720
+ I was sitting doing things and setting things up and I needed to type, all that typing,
+
+250
+0:14:50,720 --> 0:14:57,660
+ especially with the microphone so close to the keyboard, that was sort of annoying.
+
+251
+0:14:57,660 --> 0:15:03,720
+ But basically, I would say get a decent webcam, get a second monitor so you have at least
+
+252
+0:15:03,720 --> 0:15:04,720
+ two.
+
+253
+0:15:04,720 --> 0:15:05,480
+ Okay.
+
+254
+0:15:05,480 --> 0:15:11,480
+ And you can see here, this is my green screen setup, so this is, this image is looking the
+
+255
+0:15:11,480 --> 0:15:12,840
+ other way.
+
+256
+0:15:12,840 --> 0:15:21,480
+ My office is not very big, and I have my back up to a, what do you call that, a cabinet
+
+257
+0:15:21,480 --> 0:15:24,720
+ with a lot of glassware.
+
+258
+0:15:24,720 --> 0:15:25,720
+ It's brown.
+
+259
+0:15:25,720 --> 0:15:26,720
+ It's not very pretty.
+
+260
+0:15:26,720 --> 0:15:30,300
+ It showed on some of my first webinar videos.
+
+261
+0:15:30,300 --> 0:15:35,320
+ Then I got a white roller blind that I couldn't put up, that I mounted in the ceiling, so
+
+262
+0:15:35,320 --> 0:15:40,140
+ I could roll that down when I was doing videos, and I could pull it up again when I needed
+
+263
+0:15:40,140 --> 0:15:42,880
+ to go to the cupboard behind me.
+
+264
+0:15:42,880 --> 0:15:51,420
+ And now I've upgraded that, so now I have mounted just basically a piece of vibrant
+
+265
+0:15:51,420 --> 0:15:58,820
+ green sheet on the roller blind, fastened it with magnets so it's easy to remove.
+
+266
+0:15:58,820 --> 0:16:01,000
+ And that's my green screen.
+
+267
+0:16:01,000 --> 0:16:04,320
+ And that's working really, really well.
+
+268
+0:16:04,320 --> 0:16:13,640
+ So that's like a super cheap setup to get a green screen, so you can remove your background,
+
+269
+0:16:13,640 --> 0:16:16,320
+ put yourself in any background you want.
+
+270
+0:16:16,320 --> 0:16:22,940
+ Even when I'm doing, I do a lot of Zoom meetings, and Zoom also has all these virtual backgrounds
+
+271
+0:16:22,940 --> 0:16:29,480
+ thing, but you can really, really see if people, I'm sure you have had meetings with people
+
+272
+0:16:29,480 --> 0:16:33,560
+ that are using virtual background and are not sitting on like a uniform.
+
+273
+0:16:33,560 --> 0:16:40,240
+ Then if they have a headset on, sometimes the headset disappears, sometimes their ears
+
+274
+0:16:40,240 --> 0:16:43,340
+ disappear, sometimes their arms disappear.
+
+275
+0:16:43,340 --> 0:16:48,280
+ If you're using a green screen and you tell Zoom that you actually have a green screen,
+
+276
+0:16:48,280 --> 0:16:50,940
+ it is working much, much better.
+
+277
+0:16:50,940 --> 0:16:57,140
+ So you won't be as fussy as the usual virtual background function.
+
+278
+0:16:57,140 --> 0:16:58,680
+ So I really like that.
+
+279
+0:16:58,680 --> 0:17:01,880
+ It has upped my game a lot.
+
+280
+0:17:01,880 --> 0:17:03,120
+ Cheers.
+
+281
+0:17:03,560 --> 0:17:04,100
+ Cheers.
+
+282
+0:17:10,340 --> 0:17:11,620
+ Yeah.
+
+283
+0:17:11,620 --> 0:17:13,320
+ I think that was the last slide.
+
+284
+0:17:13,320 --> 0:17:14,960
+ Yes, it was.
+
+285
+0:17:14,960 --> 0:17:15,880
+ Good.
+
+286
+0:17:15,880 --> 0:17:18,220
+ So OBS.
+
+287
+0:17:18,220 --> 0:17:20,380
+ Open Broadcaster Software.
+
+288
+0:17:20,380 --> 0:17:24,380
+ It's open source, so it's free.
+
+289
+0:17:24,380 --> 0:17:26,860
+ It's running on Windows, Mac, Linux.
+
+290
+0:17:26,860 --> 0:17:28,360
+ I'm on a Linux machine.
+
+291
+0:17:31,260 --> 0:17:33,560
+ And it runs real.
+
+292
+0:17:33,560 --> 0:17:45,720
+ really well. It also had a built-in virtual webcam function, so like if you're using some
+
+293
+0:17:45,720 --> 0:17:51,160
+ program where you need to put in your webcam that, for instance, the software I use for,
+
+294
+0:17:51,160 --> 0:17:58,040
+ I use this really, it's a nice software to do webinars in called Webinar Jam, but the
+
+295
+0:17:58,040 --> 0:18:03,160
+ customer support is like really, really crappy, so I can't really recommend them, but I signed
+
+296
+0:18:03,160 --> 0:18:10,580
+ up so long ago that I'm like grandfathered into the big plan forever, so hey, it works,
+
+297
+0:18:10,580 --> 0:18:18,740
+ and I like to use it, but I don't really recommend it, but they don't have a streaming function.
+
+298
+0:18:18,740 --> 0:18:24,140
+ I can't put in, I can't get a stream key for them and then say I just want to stream my
+
+299
+0:18:24,140 --> 0:18:31,100
+ OBS feed into Webinar Jam. I have to use my webcam, and can of course do slides and webcam
+
+300
+0:18:31,100 --> 0:18:32,980
+ and stuff, but they don't have.
+
+301
+0:18:32,980 --> 0:18:36,680
+ Now they have sort of a virtual background function for the webcam, but it's not very
+
+302
+0:18:36,680 --> 0:18:44,040
+ good, so I'm like I would much rather just take my OBS feed, put that into Webinar Jam
+
+303
+0:18:44,040 --> 0:18:52,300
+ or whatever else service I'm using, and now there's a virtual webcam function in OBS,
+
+304
+0:18:52,300 --> 0:19:00,160
+ so I can just tell Webinar Jam to use my virtual webcam. That's not super, there's sometimes
+
+305
+0:19:00,160 --> 0:19:02,920
+ a bit of a delay, so it's not necessarily super good for Zoom.
+
+306
+0:19:02,980 --> 0:19:03,980
+ But I think that I can do it.
+
+307
+0:19:03,980 --> 0:19:10,840
+ If you're using a virtual meeting, you can do it, but those real time meetings is maybe
+
+308
+0:19:10,840 --> 0:19:17,220
+ not always the good solution, but it can be done. But it works super well for webinars,
+
+309
+0:19:17,220 --> 0:19:23,360
+ and that makes it a lot easier. Then I don't have to use all the controls in the webinar
+
+310
+0:19:23,360 --> 0:19:30,040
+ program to switch between slides and webcam, and I just do everything in OBS as I used
+
+311
+0:19:30,040 --> 0:19:31,040
+ to do.
+
+312
+0:19:31,040 --> 0:19:35,800
+ And I can even make the local recording in OBS as well to get the high-quality recording
+
+313
+0:19:35,800 --> 0:19:37,600
+ that I want.
+
+314
+0:19:37,600 --> 0:19:40,060
+ So I love OBS.
+
+315
+0:19:40,060 --> 0:19:46,080
+ It's like one of my absolutely favorite tools.
+
+316
+0:19:46,080 --> 0:19:49,500
+ So what does it look like?
+
+317
+0:19:49,500 --> 0:19:58,640
+ I do run a slightly old version on my laptop for some reason, so it might look slightly
+
+318
+0:19:58,640 --> 0:20:03,540
+ different if you go and install a new version now.
+
+319
+0:20:03,540 --> 0:20:09,080
+ I just only realized a few days ago, and then I didn't want to rock the boat by running
+
+320
+0:20:09,080 --> 0:20:11,900
+ a big upgrade.
+
+321
+0:20:11,900 --> 0:20:13,960
+ But the principles are the same.
+
+322
+0:20:13,960 --> 0:20:19,600
+ What we have here is you can put it in down here I have studio mode.
+
+323
+0:20:19,600 --> 0:20:24,300
+ This is what we have here where we have like a preview screen and a program screen.
+
+324
+0:20:24,300 --> 0:20:28,640
+ Actually, those of you that can see the setup up here, where we're using the
+
+325
+0:20:28,640 --> 0:20:32,080
+ black magic box, it has the same principle.
+
+326
+0:20:32,080 --> 0:20:39,520
+ You have program, that is what we are streaming live or showing or recording, and preview
+
+327
+0:20:39,520 --> 0:20:47,340
+ is what we will, if we click the transit button, get instead of what we are recording or streaming
+
+328
+0:20:47,340 --> 0:20:48,340
+ now.
+
+329
+0:20:48,340 --> 0:20:55,400
+ So that's like the main setup that we have these two scenes that we're looking at.
+
+330
+0:20:55,400 --> 0:20:58,620
+ And a scene in OBS is like a combination of
+
+331
+0:20:58,620 --> 0:20:59,920
+ sources.
+
+332
+0:20:59,920 --> 0:21:03,920
+ So you can have a number of scenes that you're switching between.
+
+333
+0:21:03,920 --> 0:21:06,640
+ This scene I have right here.
+
+334
+0:21:06,640 --> 0:21:08,100
+ And this is if it's in studio mode.
+
+335
+0:21:08,100 --> 0:21:11,760
+ I can also just say I'm only doing like one scene.
+
+336
+0:21:11,760 --> 0:21:13,380
+ I don't want the studio mode thing.
+
+337
+0:21:13,380 --> 0:21:21,340
+ But I really like that I can have usually what I'm doing is I have one scene that is
+
+338
+0:21:21,340 --> 0:21:28,380
+ just me and webcam, maybe with a background image of like I have
+
+339
+0:21:28,380 --> 0:21:28,580
+ the
+
+340
+0:21:28,620 --> 0:21:33,420
+ a starting slide or something like that, or title slide.
+
+341
+0:21:33,420 --> 0:21:35,720
+ So I have that as the background.
+
+342
+0:21:35,720 --> 0:21:43,080
+ And then I switch to me with screen share and the webcam.
+
+343
+0:21:43,080 --> 0:21:46,140
+ And of course, at home, I have the green screen.
+
+344
+0:21:46,140 --> 0:21:51,120
+ So what we have here is we put in the scene.
+
+345
+0:21:51,120 --> 0:21:52,260
+ So we have a scene.
+
+346
+0:21:52,260 --> 0:21:54,920
+ And we can rename that to something.
+
+347
+0:21:54,920 --> 0:21:58,380
+ That makes sense.
+
+348
+0:21:58,380 --> 0:21:59,380
+ That makes sense.
+
+349
+0:21:59,380 --> 0:22:02,620
+ So we could call this one.
+
+350
+0:22:02,620 --> 0:22:04,620
+ That didn't really work.
+
+351
+0:22:04,620 --> 0:22:06,480
+ Yes, it did work.
+
+352
+0:22:06,480 --> 0:22:17,080
+ So we call this webcam and screen.
+
+353
+0:22:17,080 --> 0:22:21,900
+ So that's one scene.
+
+354
+0:22:21,900 --> 0:22:25,400
+ And I can have here I have now I have adjusted some resolution.
+
+355
+0:22:25,400 --> 0:22:28,220
+ So I have to like if I can
+
+356
+0:22:28,220 --> 0:22:29,220
+ do this.
+
+357
+0:22:29,220 --> 0:22:41,240
+ I'm moving that one.
+
+358
+0:22:41,240 --> 0:22:50,220
+ This is a lot easier with a real mouse, you know.
+
+359
+0:22:50,220 --> 0:22:57,220
+ There we go.
+
+360
+0:22:57,220 --> 0:22:59,560
+ There we go.
+
+361
+0:22:59,560 --> 0:23:04,720
+ And now I move the video capture device somewhere else.
+
+362
+0:23:04,720 --> 0:23:07,220
+ I need to see if I can grab that and drag it back in.
+
+363
+0:23:07,220 --> 0:23:11,220
+ There it goes.
+
+364
+0:23:11,220 --> 0:23:12,220
+ There.
+
+365
+0:23:12,220 --> 0:23:15,220
+ So I can put myself in the corner here.
+
+366
+0:23:15,220 --> 0:23:16,220
+ Here it goes.
+
+367
+0:23:16,220 --> 0:23:17,220
+ Yes.
+
+368
+0:23:17,220 --> 0:23:23,220
+ So that is like we have a screen with screen share and the webcam.
+
+369
+0:23:23,220 --> 0:23:26,980
+ That would be a quite usual setup for me.
+
+370
+0:23:26,980 --> 0:23:34,980
+ I could also put in my logo and some text at the bottom if I wanted to do that.
+
+371
+0:23:34,980 --> 0:23:41,980
+ Then if I say, hey, I want to have another screen that is just me on the webcam maybe,
+
+372
+0:23:41,980 --> 0:23:44,980
+ then I go and say here I can add a scene.
+
+373
+0:23:44,980 --> 0:23:48,980
+ There's a little plus down here.
+
+374
+0:23:48,980 --> 0:23:52,980
+ So add a scene and then we call that just webcam.
+
+375
+0:23:52,980 --> 0:23:54,980
+ And it's a really good idea.
+
+376
+0:23:54,980 --> 0:23:56,980
+ Tiny piece of advice.
+
+377
+0:23:56,980 --> 0:24:01,980
+ Label your scenes in a sane way.
+
+378
+0:24:01,980 --> 0:24:07,980
+ Because like three years later, when you're running still on the same setup,
+
+379
+0:24:07,980 --> 0:24:13,980
+ and you have like 20 different scenes and they are all labeled something weird,
+
+380
+0:24:13,980 --> 0:24:19,980
+ it makes it a bit hard to go in and see what is actually the two scenes I need to use today.
+
+381
+0:24:19,980 --> 0:24:21,980
+ That will, of course, never happen.
+
+382
+0:24:21,980 --> 0:24:22,980
+ But I'm going to do that.
+
+383
+0:24:22,980 --> 0:24:23,980
+ I'm going to do that.
+
+384
+0:24:23,980 --> 0:24:24,980
+ Okay.
+
+385
+0:24:24,980 --> 0:24:27,980
+ I don't know what happened to you, but that happened to me.
+
+386
+0:24:27,980 --> 0:24:29,980
+ So label it.
+
+387
+0:24:29,980 --> 0:24:33,980
+ Then we have to go here and see now it says here we don't have any sources.
+
+388
+0:24:33,980 --> 0:24:34,980
+ Yeah, I know.
+
+389
+0:24:34,980 --> 0:24:38,980
+ So I go and add a source.
+
+390
+0:24:38,980 --> 0:24:42,980
+ And I say I want, since this one was supposed to be webcam only,
+
+391
+0:24:42,980 --> 0:24:50,980
+ I go and add a video capture device.
+
+392
+0:24:50,980 --> 0:24:53,980
+ And since I already have...
+
+393
+0:24:53,980 --> 0:25:00,980
+ An input device for my built-in webcam, I just go and say I want to add this one.
+
+394
+0:25:00,980 --> 0:25:03,980
+ So I click add existing, and then I can take this one.
+
+395
+0:25:03,980 --> 0:25:05,980
+ And I can say okay.
+
+396
+0:25:05,980 --> 0:25:07,980
+ So now I have the webcam.
+
+397
+0:25:07,980 --> 0:25:10,980
+ Then we can say...
+
+398
+0:25:10,980 --> 0:25:12,980
+ And it's...
+
+399
+0:25:12,980 --> 0:25:16,980
+ Then we can see, oh, but it's four by three.
+
+400
+0:25:16,980 --> 0:25:18,980
+ It's not 69.
+
+401
+0:25:18,980 --> 0:25:21,980
+ So I can go and right-click this one.
+
+402
+0:25:21,980 --> 0:25:26,980
+ And we can say settings, properties.
+
+403
+0:25:26,980 --> 0:25:30,980
+ I'm going to show you how to do the green screen as well in a moment.
+
+404
+0:25:30,980 --> 0:25:33,980
+ So I have here...
+
+405
+0:25:33,980 --> 0:25:35,980
+ I can see what is this...
+
+406
+0:25:35,980 --> 0:25:37,980
+ What's the device?
+
+407
+0:25:37,980 --> 0:25:39,980
+ It's input one.
+
+408
+0:25:39,980 --> 0:25:41,980
+ What's the video format?
+
+409
+0:25:41,980 --> 0:25:42,980
+ Resolution.
+
+410
+0:25:42,980 --> 0:25:45,980
+ Then I can say, hey, can this actually do...
+
+411
+0:25:45,980 --> 0:25:49,980
+ It can do 1280 by 720.
+
+412
+0:25:49,980 --> 0:25:50,980
+ So that's at least 69.
+
+413
+0:25:50,980 --> 0:25:54,980
+ That was what I wanted.
+
+414
+0:25:54,980 --> 0:25:59,980
+ I can change the frame rate.
+
+415
+0:25:59,980 --> 0:26:01,980
+ So it can only...
+
+416
+0:26:01,980 --> 0:26:07,980
+ It can only do a frame rate of 10 if I set the resolution to 720.
+
+417
+0:26:07,980 --> 0:26:12,980
+ So that's maybe not so impressive.
+
+418
+0:26:12,980 --> 0:26:18,980
+ And there's also something about color range.
+
+419
+0:26:18,980 --> 0:26:27,980
+ This is also where you can experiment with if your color settings are not correct, if you need it to zoom in or something like that.
+
+420
+0:26:27,980 --> 0:26:35,980
+ You set that here under setting for the camera.
+
+421
+0:26:35,980 --> 0:26:43,980
+ You have all these settings here, like set the power line frequency to 50 and stuff like that.
+
+422
+0:26:43,980 --> 0:26:47,980
+ So you have all the controls for your webcam inside.
+
+423
+0:26:47,980 --> 0:26:52,980
+ OPS are small.
+
+424
+0:26:52,980 --> 0:26:53,980
+ Then...
+
+425
+0:26:53,980 --> 0:26:55,980
+ And see now we changed the resolution.
+
+426
+0:26:55,980 --> 0:26:59,980
+ So now it got like way too big.
+
+427
+0:26:59,980 --> 0:27:00,980
+ Oops.
+
+428
+0:27:00,980 --> 0:27:10,980
+ That was not what I tried to do.
+
+429
+0:27:10,980 --> 0:27:15,980
+ So we just need it to exactly fit here.
+
+430
+0:27:15,980 --> 0:27:16,980
+ Bridge.
+
+431
+0:27:17,980 --> 0:27:25,980
+ So that goes, fits.
+
+432
+0:27:25,980 --> 0:27:36,980
+ So if this was at home and I was using my green screen, then I would also add the filter.
+
+433
+0:27:36,980 --> 0:27:39,980
+ Because green screen, that lives in filters.
+
+434
+0:27:39,980 --> 0:27:43,980
+ So I go down here to the bottom and I pick filters.
+
+435
+0:27:43,980 --> 0:27:45,980
+ And then I can say I want to...
+
+436
+0:27:47,980 --> 0:27:51,980
+ Add an effect filter.
+
+437
+0:27:51,980 --> 0:27:57,980
+ If I could get to the bottom of this.
+
+438
+0:27:57,980 --> 0:28:03,980
+ Oh, my screen is too small.
+
+439
+0:28:03,980 --> 0:28:12,980
+ How do I do that?
+
+440
+0:28:12,980 --> 0:28:15,980
+ Now that's a good question.
+
+441
+0:28:15,980 --> 0:28:25,980
+ There goes.
+
+442
+0:28:25,980 --> 0:28:30,980
+ So here I have the effect filters and I want to add that.
+
+443
+0:28:30,980 --> 0:28:33,980
+ And I have what's called a chroma key.
+
+444
+0:28:33,980 --> 0:28:35,980
+ And that is the...
+
+445
+0:28:35,980 --> 0:28:37,980
+ So chroma, that's something with color.
+
+446
+0:28:37,980 --> 0:28:43,980
+ So we need to fill out and call this one green screen.
+
+447
+0:28:43,980 --> 0:28:49,980
+ So I can remember what it is.
+
+448
+0:28:49,980 --> 0:28:54,980
+ And then I can choose what type of screen am I sitting with.
+
+449
+0:28:54,980 --> 0:28:58,980
+ Do I have a green, blue, magenta, or custom color?
+
+450
+0:28:58,980 --> 0:29:03,980
+ Sometimes you need to say custom.
+
+451
+0:29:03,980 --> 0:29:06,980
+ And then give it a slightly...
+
+452
+0:29:06,980 --> 0:29:11,980
+ If your green screen is a different shade of gray, or not gray, green.
+
+453
+0:29:11,980 --> 0:29:19,980
+ You might have to tell it exactly what color green your green screen is.
+
+454
+0:29:19,980 --> 0:29:21,980
+ But otherwise, just go with green.
+
+455
+0:29:21,980 --> 0:29:24,980
+ And then you can experiment with these.
+
+456
+0:29:24,980 --> 0:29:27,980
+ So now there's like nothing green behind me.
+
+457
+0:29:27,980 --> 0:29:30,980
+ So it isn't working.
+
+458
+0:29:30,980 --> 0:29:40,980
+ But what you need to do is you need to experiment a bit with similarity, smoothness, and spill reduction.
+
+459
+0:29:40,980 --> 0:29:48,980
+ To make it fit your setup with your webcam, your lightning, the exact color of your green screen.
+
+460
+0:29:48,980 --> 0:29:53,980
+ So that it actually removes the background.
+
+461
+0:29:53,980 --> 0:29:59,980
+ But it doesn't remove all of you.
+
+462
+0:29:59,980 --> 0:30:02,980
+ Or you don't get green hair unless you have that already.
+
+463
+0:30:02,980 --> 0:30:06,980
+ If you have green hair already, green screen is a really bad idea.
+
+464
+0:30:06,980 --> 0:30:09,980
+ Also, don't wear...
+
+465
+0:30:09,980 --> 0:30:13,980
+ Green clothes.
+
+466
+0:30:13,980 --> 0:30:18,980
+ Don't wear a multicolored scarf with green stuff.
+
+467
+0:30:18,980 --> 0:30:28,980
+ Actually, I've had issues when I've been wearing this old Bornhack or Bornhack t-shirts with the green logo on them.
+
+468
+0:30:28,980 --> 0:30:32,980
+ Then you can see it's a minor detail.
+
+469
+0:30:32,980 --> 0:30:34,980
+ But then you'll suddenly see...
+
+470
+0:30:34,980 --> 0:30:37,980
+ Then you become transparent where the logo is.
+
+471
+0:30:37,980 --> 0:30:39,980
+ You can see the back...
+
+472
+0:30:39,980 --> 0:30:44,980
+ Whatever is behind you in the layers here on the screen.
+
+473
+0:30:44,980 --> 0:30:49,980
+ That they will appear through whatever green clothing you have on.
+
+474
+0:30:49,980 --> 0:30:50,980
+ I still haven't...
+
+475
+0:30:50,980 --> 0:30:57,980
+ I need to get like a long-sleeved green roller neck sweater to play around with.
+
+476
+0:30:57,980 --> 0:30:59,980
+ I haven't gotten to that.
+
+477
+0:30:59,980 --> 0:31:01,980
+ But I think that would be fun.
+
+478
+0:31:01,980 --> 0:31:03,980
+ So you could be a talking head?
+
+479
+0:31:03,980 --> 0:31:04,980
+ Exactly.
+
+480
+0:31:04,980 --> 0:31:06,980
+ Then I can become totally a talking head.
+
+481
+0:31:07,980 --> 0:31:10,980
+ In the middle of the screen.
+
+482
+0:31:10,980 --> 0:31:13,980
+ And also need some green gloves.
+
+483
+0:31:13,980 --> 0:31:21,980
+ I had an issue once where I did a webinar where I needed to talk about...
+
+484
+0:31:21,980 --> 0:31:27,980
+ That was on horse training where I needed to talk about like comfort zone or zone of development or zone of danger.
+
+485
+0:31:27,980 --> 0:31:31,980
+ So like where you are, are you comfortable or are you...
+
+486
+0:31:31,980 --> 0:31:36,980
+ It's a bit exciting or a bit too interesting but it's still okay.
+
+487
+0:31:36,980 --> 0:31:38,980
+ Or is it feeling like really dangerous?
+
+488
+0:31:38,980 --> 0:31:40,980
+ And I had three pieces of paper.
+
+489
+0:31:40,980 --> 0:31:42,980
+ A green, a yellow and a red.
+
+490
+0:31:42,980 --> 0:31:47,980
+ And whenever I hold up the green piece of paper, it just disappeared and showed the background.
+
+491
+0:31:47,980 --> 0:31:50,980
+ I was like, oh, I need to do something else about this.
+
+492
+0:31:50,980 --> 0:31:54,980
+ I had to figure out a way to actually...
+
+493
+0:31:54,980 --> 0:31:57,980
+ I think I found a very different shade of green paper.
+
+494
+0:31:57,980 --> 0:31:59,980
+ And then it kind of worked.
+
+495
+0:31:59,980 --> 0:32:05,980
+ But you have to think about what you're doing when you're using green screen like this.
+
+496
+0:32:05,980 --> 0:32:09,980
+ Because it actually filters out anything green.
+
+497
+0:32:09,980 --> 0:32:12,980
+ So...
+
+498
+0:32:12,980 --> 0:32:16,980
+ But that will give some interesting effects sometimes.
+
+499
+0:32:16,980 --> 0:32:20,980
+ But it is pretty easy to just put this in.
+
+500
+0:32:20,980 --> 0:32:25,980
+ Also, if I wanted to have maybe that...
+
+501
+0:32:25,980 --> 0:32:29,980
+ Okay, now I wanted to use the 16.9.
+
+502
+0:32:29,980 --> 0:32:33,980
+ And not the 4.3 output of my webcam.
+
+503
+0:32:33,980 --> 0:32:35,980
+ But I want to just cut a wee bit off.
+
+504
+0:32:35,980 --> 0:32:36,980
+ And the sides.
+
+505
+0:32:36,980 --> 0:32:42,980
+ I could put in another filter as well.
+
+506
+0:32:42,980 --> 0:32:45,980
+ I think...
+
+507
+0:32:45,980 --> 0:32:48,980
+ Yeah, that's like a crop.
+
+508
+0:32:48,980 --> 0:32:51,980
+ So I could say...
+
+509
+0:32:51,980 --> 0:32:53,980
+ Like...
+
+510
+0:32:53,980 --> 0:32:55,980
+ We just call that crop.
+
+511
+0:32:55,980 --> 0:33:02,980
+ And then I can say, okay, so on the left, I want to crop 100 pixels.
+
+512
+0:33:02,980 --> 0:33:05,980
+ And on the right, I want to crop 100 pixels.
+
+513
+0:33:05,980 --> 0:33:09,980
+ There it goes.
+
+514
+0:33:09,980 --> 0:33:12,980
+ If I for some reason wanted to do that.
+
+515
+0:33:12,980 --> 0:33:14,980
+ So now my input is smaller.
+
+516
+0:33:14,980 --> 0:33:16,980
+ And then maybe I want to turn it to the side.
+
+517
+0:33:16,980 --> 0:33:17,980
+ Maybe I want to put it in the middle.
+
+518
+0:33:17,980 --> 0:33:18,980
+ Whatever.
+
+519
+0:33:18,980 --> 0:33:27,980
+ But I have put like a bit of cropping on the sides without altering the input format.
+
+520
+0:33:27,980 --> 0:33:28,980
+ So that can also be helpful.
+
+521
+0:33:28,980 --> 0:33:34,980
+ That can also be helpful if like you have your webcam put in a position where it...
+
+522
+0:33:35,980 --> 0:33:40,980
+ Of course, if you need the entire width of the webcam, that's not a good solution.
+
+523
+0:33:40,980 --> 0:33:48,980
+ But like if you have a corner that will always be shown on your webcam where your green screen isn't covering or something like that,
+
+524
+0:33:48,980 --> 0:33:53,980
+ you can just crop that out without actually having to alter the resolution.
+
+525
+0:33:57,980 --> 0:34:04,980
+ So now if I say I have this, I want to now do my live presentation or something like that.
+
+526
+0:34:05,980 --> 0:34:08,980
+ Then I'll have to set up some streaming.
+
+527
+0:34:08,980 --> 0:34:14,980
+ And I do that by going here to Tools, I think.
+
+528
+0:34:14,980 --> 0:34:15,980
+ No.
+
+529
+0:34:18,980 --> 0:34:19,980
+ Settings.
+
+530
+0:34:19,980 --> 0:34:20,980
+ Here.
+
+531
+0:34:20,980 --> 0:34:21,980
+ Under File, we have Settings.
+
+532
+0:34:24,980 --> 0:34:25,980
+ And then I have like...
+
+533
+0:34:25,980 --> 0:34:27,980
+ There's like a ton of settings.
+
+534
+0:34:27,980 --> 0:34:28,980
+ And it's...
+
+535
+0:34:31,980 --> 0:34:35,980
+ You basically start with the default settings.
+
+536
+0:34:35,980 --> 0:34:37,980
+ And then see where that takes you.
+
+537
+0:34:37,980 --> 0:34:43,980
+ One of the things I really, really also like about using OBS, that is because it's open source,
+
+538
+0:34:43,980 --> 0:34:50,980
+ it has so many users and there's like a ton of videos on YouTube about using OBS.
+
+539
+0:34:50,980 --> 0:34:55,980
+ So if you find a function and you're a bit like, hmm, how should I do that?
+
+540
+0:34:55,980 --> 0:34:56,980
+ Go Google.
+
+541
+0:34:56,980 --> 0:34:58,980
+ Find a video on YouTube.
+
+542
+0:34:58,980 --> 0:35:01,980
+ See what people say.
+
+543
+0:35:01,980 --> 0:35:04,980
+ Check out a different couple of videos to see who...
+
+544
+0:35:04,980 --> 0:35:08,980
+ Is saying something sensible.
+
+545
+0:35:08,980 --> 0:35:15,980
+ Because it's usually very easy to find information on whatever it is you need.
+
+546
+0:35:15,980 --> 0:35:20,980
+ That also means if you have some sort of issue, there's someone, probably someone who already had that.
+
+547
+0:35:20,980 --> 0:35:25,980
+ If you have an issue with a specific webcam that isn't working or something like that,
+
+548
+0:35:25,980 --> 0:35:31,980
+ there's a good chance that someone else has already had that problem and have solved it.
+
+549
+0:35:31,980 --> 0:35:33,980
+ So I really like that.
+
+550
+0:35:34,980 --> 0:35:42,980
+ And also because it is a program that is widely used, there's a lot of development going on.
+
+551
+0:35:42,980 --> 0:35:45,980
+ So there's continuously coming new versions.
+
+552
+0:35:45,980 --> 0:35:49,980
+ But what we wanted to look at is, we might look at the output first.
+
+553
+0:35:49,980 --> 0:35:56,980
+ Because if I want to do a recording, I want to make sure that I'm actually recording in the format that I would like.
+
+554
+0:35:58,980 --> 0:36:03,980
+ So I say, yes, we want the encoder to be 264.
+
+555
+0:36:03,980 --> 0:36:06,980
+ That makes sense.
+
+556
+0:36:06,980 --> 0:36:10,980
+ Something about the audio bitrate, that's probably okay.
+
+557
+0:36:10,980 --> 0:36:20,980
+ We can turn on some advanced encoder settings, but usually that's not necessary.
+
+558
+0:36:20,980 --> 0:36:24,980
+ And we can say, what is the recording quality?
+
+559
+0:36:24,980 --> 0:36:27,980
+ Same as stream, that's usually recommended.
+
+560
+0:36:27,980 --> 0:36:32,980
+ Because if the computer needs to...
+
+561
+0:36:32,980 --> 0:36:39,980
+ both create a stream in one resolution and a video output in another resolution, it has to work harder.
+
+562
+0:36:39,980 --> 0:36:43,980
+ If you have a big computer with a lot of resources, that's not a problem.
+
+563
+0:36:43,980 --> 0:36:53,980
+ If you're working on a laptop, then maybe you need to do that.
+
+564
+0:36:53,980 --> 0:37:01,980
+ Actually it says here, recordings cannot be paused if the recording quality is set to same as stream.
+
+565
+0:37:01,980 --> 0:37:03,980
+ Yeah, that kind of makes sense.
+
+566
+0:37:03,980 --> 0:37:07,980
+ There's now, that wasn't when I started, but now there is a pause function.
+
+567
+0:37:07,980 --> 0:37:15,980
+ So if you're doing something and then you hit a snag and you need to investigate something,
+
+568
+0:37:15,980 --> 0:37:19,980
+ that happens a lot when I do videos.
+
+569
+0:37:19,980 --> 0:37:24,980
+ It's like when you sit with a live piece of software and you demo that,
+
+570
+0:37:24,980 --> 0:37:27,980
+ there might be something weird going on sometimes.
+
+571
+0:37:27,980 --> 0:37:30,980
+ So sometimes, if I'm like five minutes into a video,
+
+572
+0:37:31,980 --> 0:37:34,980
+ and I've been demoing some new feature or something like that,
+
+573
+0:37:34,980 --> 0:37:37,980
+ and then something unexpected happens,
+
+574
+0:37:37,980 --> 0:37:40,980
+ what I do instead of having to start over is I say,
+
+575
+0:37:40,980 --> 0:37:42,980
+ I'll just, just a second, I'll investigate this,
+
+576
+0:37:42,980 --> 0:37:45,980
+ and then I hit the pause button, that's if I'm not live,
+
+577
+0:37:45,980 --> 0:37:47,980
+ then I hit the pause button,
+
+578
+0:37:47,980 --> 0:37:51,980
+ and then I can go investigate and figure out,
+
+579
+0:37:51,980 --> 0:37:53,980
+ have I misunderstood this feature?
+
+580
+0:37:53,980 --> 0:37:55,980
+ Do we have a bug?
+
+581
+0:37:55,980 --> 0:37:59,980
+ Is this doing what it's actually supposed to do?
+
+582
+0:37:59,980 --> 0:38:01,980
+ Did I just click something wrong?
+
+583
+0:38:01,980 --> 0:38:02,980
+ What happened?
+
+584
+0:38:02,980 --> 0:38:05,980
+ And then I can go back to OBS and my screen share,
+
+585
+0:38:05,980 --> 0:38:07,980
+ and I can pick up where I left, and I can say,
+
+586
+0:38:07,980 --> 0:38:11,980
+ okay, so what we need to do is this, this, this,
+
+587
+0:38:11,980 --> 0:38:15,980
+ again, instead of having to restart the recording
+
+588
+0:38:15,980 --> 0:38:17,980
+ and start from the beginning.
+
+589
+0:38:25,980 --> 0:38:29,980
+ Recording format, it defaults to Matroska,
+
+590
+0:38:29,980 --> 0:38:31,980
+ which usually works really, really well.
+
+591
+0:38:31,980 --> 0:38:36,980
+ There's also audio settings, video settings.
+
+592
+0:38:36,980 --> 0:38:43,980
+ So we have, like, the canvas resolution,
+
+593
+0:38:43,980 --> 0:38:45,980
+ and then we have the output resolution.
+
+594
+0:38:45,980 --> 0:38:48,980
+ So the canvas resolution, that's what we are working on
+
+595
+0:38:48,980 --> 0:38:51,980
+ in the program or preview,
+
+596
+0:38:51,980 --> 0:38:55,980
+ and then we have the output scale resolution,
+
+597
+0:38:55,980 --> 0:38:58,980
+ and we need to have the, you can see here,
+
+598
+0:38:58,980 --> 0:39:00,980
+ like, the aspect ratio on the canvas,
+
+599
+0:39:00,980 --> 0:39:04,980
+ is 1600 to 899.
+
+600
+0:39:04,980 --> 0:39:10,980
+ That's, like, as close to 16.9 as you'll get, right?
+
+601
+0:39:10,980 --> 0:39:14,980
+ I'm not really sure what happened to the last pixel here
+
+602
+0:39:14,980 --> 0:39:21,980
+ since it's not 1600 by 900, but hey.
+
+603
+0:39:21,980 --> 0:39:24,980
+ Yeah, we have a question there.
+
+604
+0:39:24,980 --> 0:39:28,980
+ Can you hand him to me?
+
+605
+0:39:28,980 --> 0:39:31,980
+ Then I'll just grab a bit of water.
+
+606
+0:39:33,980 --> 0:39:35,980
+ And I need to hurry up.
+
+607
+0:39:35,980 --> 0:39:38,980
+ What's the point of having a canvas bigger
+
+608
+0:39:38,980 --> 0:39:41,980
+ than what we are going to actually output to,
+
+609
+0:39:41,980 --> 0:39:44,980
+ because scaling might get lost?
+
+610
+0:39:44,980 --> 0:39:45,980
+ Yeah, yeah.
+
+611
+0:39:45,980 --> 0:39:47,980
+ You are absolutely right.
+
+612
+0:39:47,980 --> 0:39:49,980
+ Usually I would also, I'm not quite sure
+
+613
+0:39:49,980 --> 0:39:51,980
+ why it has default to the 1600.
+
+614
+0:39:51,980 --> 0:39:56,980
+ I would usually make those the same because it's annoying.
+
+615
+0:39:56,980 --> 0:40:03,980
+ And I would usually set this to 1080 for output
+
+616
+0:40:03,980 --> 0:40:08,980
+ because then I get, like, the maximum quality on my videos.
+
+617
+0:40:08,980 --> 0:40:13,980
+ One of the things you need to be aware of
+
+618
+0:40:13,980 --> 0:40:18,980
+ if you're screen sharing is that if you're using, like, 1080
+
+619
+0:40:18,980 --> 0:40:21,980
+ and people are maybe watching it on their phones
+
+620
+0:40:21,980 --> 0:40:25,980
+ or on a smaller screen size, then things will become, like,
+
+621
+0:40:25,980 --> 0:40:28,980
+ rather tiny where they are looking, like, nice and sharp
+
+622
+0:40:28,980 --> 0:40:32,980
+ on your big screen than you can in your browser
+
+623
+0:40:32,980 --> 0:40:34,980
+ when you're visiting any page.
+
+624
+0:40:34,980 --> 0:40:37,980
+ Now I have, like, a really crappy resolution here.
+
+625
+0:40:37,980 --> 0:40:41,980
+ But if you just, if you're on a page that you want to screen share
+
+626
+0:40:41,980 --> 0:40:43,980
+ and you are working in a high resolution
+
+627
+0:40:43,980 --> 0:40:46,980
+ and you want your audience to have a chance
+
+628
+0:40:46,980 --> 0:40:48,980
+ to actually pick up on what you're doing,
+
+629
+0:40:48,980 --> 0:40:50,980
+ you can use control and plus.
+
+630
+0:40:50,980 --> 0:40:54,980
+ And I usually run on 125% zoom.
+
+631
+0:40:54,980 --> 0:40:57,980
+ Because that actually makes it a lot easier
+
+632
+0:40:57,980 --> 0:40:59,980
+ for my audience to see what's going on
+
+633
+0:40:59,980 --> 0:41:02,980
+ if they're sitting on a smaller screen than me.
+
+634
+0:41:02,980 --> 0:41:05,980
+ And I can keep the high resolution quality
+
+635
+0:41:05,980 --> 0:41:08,980
+ on the videos, on the webcam, on everything.
+
+636
+0:41:08,980 --> 0:41:11,980
+ I kind of like that.
+
+637
+0:41:11,980 --> 0:41:13,980
+ Yeah, we have another question there.
+
+638
+0:41:13,980 --> 0:41:17,980
+ So this is also regarding the base canvas resolution
+
+639
+0:41:17,980 --> 0:41:19,980
+ and the output scaled resolution.
+
+640
+0:41:19,980 --> 0:41:21,980
+ So, for example, I'm doing a broadcast
+
+641
+0:41:21,980 --> 0:41:23,980
+ or recording on my computer,
+
+642
+0:41:23,980 --> 0:41:25,980
+ but my computer has a 4K screen.
+
+643
+0:41:25,980 --> 0:41:28,980
+ Here is where I can choose, hey, what people see is just 1080p?
+
+644
+0:41:28,980 --> 0:41:29,980
+ Yeah.
+
+645
+0:41:29,980 --> 0:41:30,980
+ And it does the downscaling?
+
+646
+0:41:30,980 --> 0:41:31,980
+ Yeah.
+
+647
+0:41:31,980 --> 0:41:32,980
+ Okay.
+
+648
+0:41:32,980 --> 0:41:34,980
+ And I saw there's also a recording option.
+
+649
+0:41:34,980 --> 0:41:36,980
+ Then the recording is also the downscaled version.
+
+650
+0:41:36,980 --> 0:41:37,980
+ Yeah.
+
+651
+0:41:37,980 --> 0:41:38,980
+ Okay.
+
+652
+0:41:38,980 --> 0:41:39,980
+ Yeah.
+
+653
+0:41:39,980 --> 0:41:41,980
+ Thank you.
+
+654
+0:41:41,980 --> 0:41:43,980
+ And that's a good point.
+
+655
+0:41:43,980 --> 0:41:45,980
+ So, and also, if you're using, like,
+
+656
+0:41:45,980 --> 0:41:47,980
+ if you're using background images,
+
+657
+0:41:47,980 --> 0:41:50,980
+ it's a really good idea that whatever background image
+
+658
+0:41:50,980 --> 0:41:52,980
+ you're using is actually
+
+659
+0:41:52,980 --> 0:41:54,980
+ your canvas size.
+
+660
+0:41:54,980 --> 0:41:58,980
+ So if I have a 1600 by 900 canvas size,
+
+661
+0:41:58,980 --> 0:42:01,980
+ I should make my background images that size
+
+662
+0:42:01,980 --> 0:42:03,980
+ because then I don't have to scale them.
+
+663
+0:42:03,980 --> 0:42:06,980
+ Then I'll get a better quality.
+
+664
+0:42:06,980 --> 0:42:10,980
+ So that's good to keep in mind.
+
+665
+0:42:10,980 --> 0:42:12,980
+ The last thing I wanted to show you
+
+666
+0:42:12,980 --> 0:42:15,980
+ before we have time for a few questions more,
+
+667
+0:42:15,980 --> 0:42:17,980
+ that's, like, the stream.
+
+668
+0:42:17,980 --> 0:42:20,980
+ You just go to the stream here,
+
+669
+0:42:20,980 --> 0:42:22,980
+ and then you choose whatever services
+
+670
+0:42:22,980 --> 0:42:26,980
+ they have some predefined sources you can use.
+
+671
+0:42:26,980 --> 0:42:30,980
+ I found out that choosing Facebook Live
+
+672
+0:42:30,980 --> 0:42:33,980
+ actually doesn't work.
+
+673
+0:42:33,980 --> 0:42:37,980
+ I usually need to say custom,
+
+674
+0:42:37,980 --> 0:42:39,980
+ not Twitch, custom.
+
+675
+0:42:39,980 --> 0:42:40,980
+ There it goes.
+
+676
+0:42:40,980 --> 0:42:43,980
+ And then I, from my Facebook,
+
+677
+0:42:43,980 --> 0:42:45,980
+ it tells me the server,
+
+678
+0:42:45,980 --> 0:42:47,980
+ and it tells me the stream key.
+
+679
+0:42:47,980 --> 0:42:50,980
+ And in Facebook, I can set up so that I have
+
+680
+0:42:50,980 --> 0:42:52,980
+ for the same Facebook,
+
+681
+0:42:52,980 --> 0:42:55,980
+ I have a recurring stream key,
+
+682
+0:42:55,980 --> 0:42:57,980
+ so I don't have to go into OBS every time
+
+683
+0:42:57,980 --> 0:42:59,980
+ and change the stream key.
+
+684
+0:42:59,980 --> 0:43:01,980
+ That is, of course, less secure.
+
+685
+0:43:01,980 --> 0:43:04,980
+ If someone should obtain my stream key,
+
+686
+0:43:04,980 --> 0:43:07,980
+ they can now stream to my Facebook groups.
+
+687
+0:43:07,980 --> 0:43:11,980
+ But the risk of that happening is not, like, enormous.
+
+688
+0:43:11,980 --> 0:43:14,980
+ And if it happens, I can go and reset my stream key.
+
+689
+0:43:14,980 --> 0:43:17,980
+ But you, of course, need to be aware
+
+690
+0:43:17,980 --> 0:43:20,980
+ that that's the risk of reusing stream keys.
+
+691
+0:43:20,980 --> 0:43:21,980
+ But it's a lot easier.
+
+692
+0:43:21,980 --> 0:43:23,980
+ You don't have to go into OBS every time
+
+693
+0:43:23,980 --> 0:43:29,980
+ and paste in the new stream key when you're going live.
+
+694
+0:43:29,980 --> 0:43:32,980
+ There's also, you can program hotkeys,
+
+695
+0:43:32,980 --> 0:43:38,980
+ and there's other settings.
+
+696
+0:43:38,980 --> 0:43:43,980
+ But basically, this is OBS.
+
+697
+0:43:43,980 --> 0:43:49,980
+ This is my Swiss Army knife for video production.
+
+698
+0:43:49,980 --> 0:43:50,980
+ I love working in it.
+
+699
+0:43:50,980 --> 0:43:52,980
+ It saves me, I have no idea,
+
+700
+0:43:52,980 --> 0:43:56,980
+ over the last, now, four and a half years,
+
+701
+0:43:56,980 --> 0:44:01,980
+ how many hours of editing work this has saved me.
+
+702
+0:44:01,980 --> 0:44:04,980
+ I just love that I can get an idea to a video,
+
+703
+0:44:04,980 --> 0:44:07,980
+ I can create the setup.
+
+704
+0:44:07,980 --> 0:44:10,980
+ Usually, it's only like editing a small piece of text
+
+705
+0:44:10,980 --> 0:44:14,980
+ or something like that in the scenes I already have.
+
+706
+0:44:14,980 --> 0:44:16,980
+ I sit down, I click record,
+
+707
+0:44:16,980 --> 0:44:19,980
+ I show whatever it is I want to show.
+
+708
+0:44:19,980 --> 0:44:21,980
+ This could also be something to a client
+
+709
+0:44:21,980 --> 0:44:24,980
+ if I need to tell them how to set up something specific
+
+710
+0:44:24,980 --> 0:44:26,980
+ in their Simplero account.
+
+711
+0:44:26,980 --> 0:44:28,980
+ I go into their Simplero account.
+
+712
+0:44:28,980 --> 0:44:30,980
+ I do a short recording with OBS.
+
+713
+0:44:30,980 --> 0:44:32,980
+ I upload it to their account.
+
+714
+0:44:32,980 --> 0:44:33,980
+ I send them an email and say,
+
+715
+0:44:33,980 --> 0:44:35,980
+ hey, here's the video.
+
+716
+0:44:35,980 --> 0:44:36,980
+ And I don't need to do any,
+
+717
+0:44:36,980 --> 0:44:40,980
+ after processing, the Matruska video is just ready to use
+
+718
+0:44:40,980 --> 0:44:43,980
+ as soon as I hit stop recording on OBS.
+
+719
+0:44:43,980 --> 0:44:45,980
+ I love it.
+
+720
+0:44:45,980 --> 0:44:46,980
+ It's fantastic.
+
+721
+0:44:46,980 --> 0:44:47,980
+ Yeah?
+
+722
+0:44:47,980 --> 0:44:48,980
+ Any questions?
+
+723
+0:44:49,980 --> 0:44:59,980
+ Hello again.
+
+724
+0:44:59,980 --> 0:45:03,980
+ So the question I have is I use,
+
+725
+0:45:03,980 --> 0:45:05,980
+ I personally use a fork of OBS,
+
+726
+0:45:05,980 --> 0:45:08,980
+ but I'm considering using OBS itself
+
+727
+0:45:08,980 --> 0:45:11,980
+ because it's well maintained.
+
+728
+0:45:11,980 --> 0:45:14,980
+ The software I use is also an older version
+
+729
+0:45:14,980 --> 0:45:16,980
+ and I only have a single screen.
+
+730
+0:45:16,980 --> 0:45:18,980
+ And you early showed you have a studio mode
+
+731
+0:45:18,980 --> 0:45:21,980
+ and a single mode screen thingy.
+
+732
+0:45:21,980 --> 0:45:22,980
+ Yeah.
+
+733
+0:45:22,980 --> 0:45:24,980
+ So studio mode is just switching between
+
+734
+0:45:24,980 --> 0:45:26,980
+ showing like two,
+
+735
+0:45:26,980 --> 0:45:28,980
+ both the preview and the program
+
+736
+0:45:28,980 --> 0:45:30,980
+ or only having...
+
+737
+0:45:30,980 --> 0:45:31,980
+ Yeah.
+
+738
+0:45:31,980 --> 0:45:33,980
+ So mine looks like this.
+
+739
+0:45:33,980 --> 0:45:36,980
+ And when you were doing your talk in studio mode,
+
+740
+0:45:36,980 --> 0:45:38,980
+ I saw when you were building scenes,
+
+741
+0:45:38,980 --> 0:45:41,980
+ you can just play around in the scene,
+
+742
+0:45:41,980 --> 0:45:43,980
+ adding sources.
+
+743
+0:45:43,980 --> 0:45:46,980
+ And on the right side for us,
+
+744
+0:45:46,980 --> 0:45:48,980
+ that is what is live.
+
+745
+0:45:48,980 --> 0:45:50,980
+ And then the left side is...
+
+746
+0:45:50,980 --> 0:45:53,980
+ The left side is always preview.
+
+747
+0:45:53,980 --> 0:45:55,980
+ And the right side is always live.
+
+748
+0:45:55,980 --> 0:45:57,980
+ How do you push the preview to the live?
+
+749
+0:45:57,980 --> 0:45:58,980
+ Yeah.
+
+750
+0:45:58,980 --> 0:45:59,980
+ Then I just hit transition
+
+751
+0:45:59,980 --> 0:46:01,980
+ and then I switch to the new scene.
+
+752
+0:46:01,980 --> 0:46:02,980
+ Yeah.
+
+753
+0:46:02,980 --> 0:46:03,980
+ Because for example,
+
+754
+0:46:03,980 --> 0:46:05,980
+ when I do a broadcast or at work,
+
+755
+0:46:05,980 --> 0:46:06,980
+ I need to present something.
+
+756
+0:46:06,980 --> 0:46:07,980
+ Sometimes they ask something,
+
+757
+0:46:07,980 --> 0:46:09,980
+ I need to pull in a terminal.
+
+758
+0:46:09,980 --> 0:46:10,980
+ Yeah.
+
+759
+0:46:10,980 --> 0:46:13,980
+ Or maybe I need a scene with a terminal in it.
+
+760
+0:46:13,980 --> 0:46:14,980
+ But I was just wondering with this mode,
+
+761
+0:46:14,980 --> 0:46:17,980
+ I can check for myself something first
+
+762
+0:46:17,980 --> 0:46:18,980
+ and then push it to live?
+
+763
+0:46:18,980 --> 0:46:20,980
+ And then press it to program.
+
+764
+0:46:20,980 --> 0:46:21,980
+ Push it to program.
+
+765
+0:46:21,980 --> 0:46:22,980
+ Yeah.
+
+766
+0:46:22,980 --> 0:46:23,980
+ Thank you.
+
+767
+0:46:23,980 --> 0:46:24,980
+ Yeah.
+
+768
+0:46:27,980 --> 0:46:30,980
+ And you said there were virtual webcams.
+
+769
+0:46:30,980 --> 0:46:31,980
+ Yeah.
+
+770
+0:46:31,980 --> 0:46:33,980
+ Is that you can designate pretty much any...
+
+771
+0:46:33,980 --> 0:46:36,980
+ The video output of any app,
+
+772
+0:46:36,980 --> 0:46:40,980
+ of any window that is running on your machine,
+
+773
+0:46:40,980 --> 0:46:43,980
+ you can designate that to be a virtual webcam?
+
+774
+0:46:43,980 --> 0:46:44,980
+ Yeah.
+
+775
+0:46:44,980 --> 0:46:47,980
+ Because then whatever is running in program
+
+776
+0:46:47,980 --> 0:46:50,980
+ will then be shown on the virtual webcam.
+
+777
+0:46:50,980 --> 0:46:52,980
+ Ah, I see.
+
+778
+0:46:52,980 --> 0:46:55,980
+ It's a pretty cool feature.
+
+779
+0:46:55,980 --> 0:46:56,980
+ For a long while,
+
+780
+0:46:56,980 --> 0:46:58,980
+ it was like a special plugin on Windows
+
+781
+0:46:58,980 --> 0:47:01,980
+ where they had it on Linux,
+
+782
+0:47:01,980 --> 0:47:03,980
+ where they had it on Windows and I also think Mac.
+
+783
+0:47:03,980 --> 0:47:06,980
+ But now it's built in from the beginning.
+
+784
+0:47:09,980 --> 0:47:10,980
+ Hi.
+
+785
+0:47:10,980 --> 0:47:11,980
+ Hi.
+
+786
+0:47:11,980 --> 0:47:13,980
+ I've heard that the Linux version of OBS
+
+787
+0:47:13,980 --> 0:47:17,980
+ is more limited than the Windows version.
+
+788
+0:47:17,980 --> 0:47:19,980
+ Is that still the case or...
+
+789
+0:47:19,980 --> 0:47:22,980
+ I think so, yes.
+
+790
+0:47:22,980 --> 0:47:23,980
+ It's still...
+
+791
+0:47:23,980 --> 0:47:27,980
+ One of the specific example was the virtual webcam
+
+792
+0:47:27,980 --> 0:47:29,980
+ where you needed a special plugin
+
+793
+0:47:29,980 --> 0:47:31,980
+ that someone else had created for the Linux version.
+
+794
+0:47:31,980 --> 0:47:34,980
+ That is now built in.
+
+795
+0:47:34,980 --> 0:47:37,980
+ And there are some other limitations,
+
+796
+0:47:37,980 --> 0:47:38,980
+ but it's...
+
+797
+0:47:38,980 --> 0:47:40,980
+ I've been running this on Linux for four and a half years
+
+798
+0:47:40,980 --> 0:47:42,980
+ and I'm happy, happy.
+
+799
+0:47:42,980 --> 0:47:45,980
+ You can't remember any other limitations?
+
+800
+0:47:45,980 --> 0:47:46,980
+ No, no.
+
+801
+0:47:46,980 --> 0:47:49,980
+ I haven't met anything where I've been limited
+
+802
+0:47:49,980 --> 0:47:52,980
+ and then what usually happens is
+
+803
+0:47:52,980 --> 0:47:54,980
+ if I find something and I start Googling
+
+804
+0:47:54,980 --> 0:47:55,980
+ and then they say,
+
+805
+0:47:55,980 --> 0:47:57,980
+ hey, there's this function you blah, blah.
+
+806
+0:47:57,980 --> 0:47:59,980
+ And then I see, oh, okay,
+
+807
+0:47:59,980 --> 0:48:00,980
+ so that's like a Windows function
+
+808
+0:48:00,980 --> 0:48:01,980
+ and then I Google a bit more
+
+809
+0:48:01,980 --> 0:48:02,980
+ and then I find out, okay,
+
+810
+0:48:02,980 --> 0:48:04,980
+ so that's not available on Linux yet.
+
+811
+0:48:04,980 --> 0:48:05,980
+ But it's...
+
+812
+0:48:05,980 --> 0:48:07,980
+ So far, the only thing I've seen
+
+813
+0:48:07,980 --> 0:48:10,980
+ was the webcam, the virtual webcam function.
+
+814
+0:48:10,980 --> 0:48:11,980
+ Okay, thank you.
+
+815
+0:48:11,980 --> 0:48:20,980
+ Hello again.
+
+816
+0:48:20,980 --> 0:48:22,980
+ So as I said, I do presentations at work,
+
+817
+0:48:22,980 --> 0:48:23,980
+ you know, Monday meetings,
+
+818
+0:48:23,980 --> 0:48:25,980
+ but I'm considering live streaming.
+
+819
+0:48:25,980 --> 0:48:26,980
+ Yeah.
+
+820
+0:48:26,980 --> 0:48:29,980
+ I'm not sure what I'm going to do yet.
+
+821
+0:48:29,980 --> 0:48:30,980
+ Earlier in the settings,
+
+822
+0:48:30,980 --> 0:48:33,980
+ you were scrolling through like the video and audio
+
+823
+0:48:33,980 --> 0:48:35,980
+ and I saw shortcuts.
+
+824
+0:48:35,980 --> 0:48:37,980
+ When you're recording for yourself
+
+825
+0:48:37,980 --> 0:48:39,980
+ or doing a presentation,
+
+826
+0:48:39,980 --> 0:48:41,980
+ do you use any shortcuts?
+
+827
+0:48:41,980 --> 0:48:43,980
+ For like scene changing?
+
+828
+0:48:43,980 --> 0:48:44,980
+ I do that.
+
+829
+0:48:44,980 --> 0:48:47,980
+ If I use more than two or three scenes,
+
+830
+0:48:47,980 --> 0:48:50,980
+ I can put shortcuts on specific scenes
+
+831
+0:48:50,980 --> 0:48:52,980
+ so that I know that if I hit F2
+
+832
+0:48:52,980 --> 0:48:53,980
+ or something like that,
+
+833
+0:48:53,980 --> 0:48:55,980
+ it will, in the preview,
+
+834
+0:48:55,980 --> 0:48:56,980
+ switch to a specific scene
+
+835
+0:48:56,980 --> 0:48:58,980
+ so I don't have to scroll and look for it.
+
+836
+0:48:58,980 --> 0:49:00,980
+ I can just hit a button.
+
+837
+0:49:00,980 --> 0:49:01,980
+ That was also what we had
+
+838
+0:49:01,980 --> 0:49:04,980
+ on the video box set up here
+
+839
+0:49:04,980 --> 0:49:07,980
+ way back when, when we used OBS.
+
+840
+0:49:07,980 --> 0:49:09,980
+ And that works really nicely
+
+841
+0:49:09,980 --> 0:49:10,980
+ because that's a big help.
+
+842
+0:49:10,980 --> 0:49:11,980
+ If you have any questions,
+
+843
+0:49:11,980 --> 0:49:13,980
+ we have many scenes you're switching between.
+
+844
+0:49:13,980 --> 0:49:14,980
+ Okay.
+
+845
+0:49:14,980 --> 0:49:17,980
+ And I'll assume that all the shortcuts
+
+846
+0:49:17,980 --> 0:49:20,980
+ are defaulted in the application
+
+847
+0:49:20,980 --> 0:49:22,980
+ and you don't need to add yourself
+
+848
+0:49:22,980 --> 0:49:25,980
+ because when I was researching a week ago
+
+849
+0:49:25,980 --> 0:49:26,980
+ when I looked on YouTube
+
+850
+0:49:26,980 --> 0:49:28,980
+ to some reviews about OBS,
+
+851
+0:49:28,980 --> 0:49:31,980
+ they all, most of them suggested
+
+852
+0:49:31,980 --> 0:49:32,980
+ to get one of these devices
+
+853
+0:49:32,980 --> 0:49:34,980
+ with like multiple buttons and so on.
+
+854
+0:49:34,980 --> 0:49:35,980
+ Yeah.
+
+855
+0:49:35,980 --> 0:49:36,980
+ But they're very pricey.
+
+856
+0:49:36,980 --> 0:49:39,980
+ So I was wondering if everything is just doable
+
+857
+0:49:39,980 --> 0:49:40,980
+ on just a regular keyboard
+
+858
+0:49:40,980 --> 0:49:42,980
+ with your computer or on the laptop.
+
+859
+0:49:42,980 --> 0:49:44,980
+ I actually can't remember.
+
+860
+0:49:44,980 --> 0:49:46,980
+ Yeah, see, you have here like start streaming,
+
+861
+0:49:46,980 --> 0:49:47,980
+ stop streaming.
+
+862
+0:49:47,980 --> 0:49:49,980
+ You have keys for that
+
+863
+0:49:49,980 --> 0:49:51,980
+ that you can put in.
+
+864
+0:49:51,980 --> 0:49:53,980
+ I'm guessing then you just put in
+
+865
+0:49:53,980 --> 0:49:56,980
+ the key combination you want.
+
+866
+0:49:56,980 --> 0:50:03,980
+ But there's also a way to put
+
+867
+0:50:03,980 --> 0:50:07,980
+ key shortcuts on your specific scenes.
+
+868
+0:50:07,980 --> 0:50:09,980
+ I just can't remember how.
+
+869
+0:50:10,980 --> 0:50:14,980
+ Okay, so let's try this.
+
+870
+0:50:14,980 --> 0:50:16,980
+ I have to put in this.
+
+871
+0:50:25,980 --> 0:50:27,980
+ I can't remember how you do that,
+
+872
+0:50:27,980 --> 0:50:28,980
+ but there's a way to do it.
+
+873
+0:50:28,980 --> 0:50:31,980
+ You can bind a shortcut to a specific scene?
+
+874
+0:50:31,980 --> 0:50:33,980
+ Yeah, there's a way to do that
+
+875
+0:50:33,980 --> 0:50:36,980
+ but I just can't remember right now how you do that.
+
+876
+0:50:36,980 --> 0:50:37,980
+ Thank you.
+
+877
+0:50:37,980 --> 0:50:38,980
+ It's there.
+
+878
+0:50:40,980 --> 0:50:50,240
+ The green screen function, does it have to be green or can you designate pretty much
+
+879
+0:50:50,240 --> 0:50:52,000
+ any color to be the back?
+
+880
+0:50:52,000 --> 0:50:57,280
+ You can use other colors and you can tell OBS exactly what color you have.
+
+881
+0:50:57,280 --> 0:51:03,120
+ Some colors work better than others and you also have to consider, but like if your brand
+
+882
+0:51:03,120 --> 0:51:07,520
+ colors are green and you're wearing a lot of green, you need to figure out another color
+
+883
+0:51:07,520 --> 0:51:12,260
+ because otherwise everything will be very weird.
+
+884
+0:51:12,260 --> 0:51:13,800
+ So you can do other colors.
+
+885
+0:51:13,800 --> 0:51:18,420
+ Blue is another traditional color for, then it's blue screen instead of green screen.
+
+886
+0:51:18,420 --> 0:51:19,420
+ That also works really well.
+
+887
+0:51:19,420 --> 0:51:23,280
+ So it works better if it's a primary color?
+
+888
+0:51:23,280 --> 0:51:24,280
+ Yeah.
+
+889
+0:51:24,280 --> 0:51:29,880
+ So you just need to, and you can, in the chroma key settings, you can specify the color of
+
+890
+0:51:29,880 --> 0:51:31,760
+ your green screen.
+
+891
+0:51:31,760 --> 0:51:32,760
+ Yeah.
+
+892
+0:51:32,760 --> 0:51:35,760
+ Any more questions?
+
+893
+0:51:35,760 --> 0:51:36,760
+ No?
+
+894
+0:51:36,760 --> 0:51:37,520
+ Okay.
+
+895
+0:51:37,520 --> 0:51:43,420
+ So if you get any questions, then you're welcome to stop me on the street here and
+
+896
+0:51:43,420 --> 0:51:47,240
+ say hi or send me an email or anything.
+
+897
+0:51:47,240 --> 0:51:51,160
+ I'll be happy to answer your questions.
+
+898
+0:51:51,160 --> 0:51:54,160
+ Please give a big round of applause to Arete.
+
+899
+0:51:54,160 --> 0:51:55,160
+ Thank you.
+
+900
+0:51:55,160 --> 0:51:56,160
+ Thank you.

@@ -1,0 +1,3927 @@
+# Transcribed 2023-11-12T13 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:12,160
+ For our next speaker, we have Nikolaj, who will be talking about some sexy SSH hacks.
+
+2
+0:00:12,160 --> 0:00:16,440
+ Make sure to give him a round of applause.
+
+3
+0:00:16,440 --> 0:00:21,120
+ All right.
+
+4
+0:00:21,120 --> 0:00:26,680
+ So hopefully you are ready for 45 minutes of random SSH talk.
+
+5
+0:00:26,680 --> 0:00:31,280
+ So question, how many people have used SSH before?
+
+6
+0:00:31,280 --> 0:00:32,280
+ A lot of people.
+
+7
+0:00:32,280 --> 0:00:33,280
+ Great.
+
+8
+0:00:33,280 --> 0:00:35,200
+ If you haven't used SSH before, this is going to be very boring.
+
+9
+0:00:35,200 --> 0:00:38,160
+ How many have used it within the last month?
+
+10
+0:00:38,160 --> 0:00:39,160
+ And a week?
+
+11
+0:00:39,160 --> 0:00:40,160
+ Today?
+
+12
+0:00:40,160 --> 0:00:41,160
+ Okay.
+
+13
+0:00:41,160 --> 0:00:43,380
+ A lot of people, great.
+
+14
+0:00:43,380 --> 0:00:49,840
+ So I use SSH maybe not on a daily basis, but at least on a weekly basis.
+
+15
+0:00:49,840 --> 0:00:54,900
+ And I probably use it the same way as you use it, you know, SSH into a random server
+
+16
+0:00:54,900 --> 0:00:56,500
+ and run a few commands.
+
+17
+0:00:56,500 --> 0:00:58,860
+ Maybe copy and paste a file.
+
+18
+0:00:58,860 --> 0:01:01,240
+ All the usual stuff.
+
+19
+0:01:01,240 --> 0:01:04,740
+ And I've been using SSH for quite some time.
+
+20
+0:01:04,740 --> 0:01:10,040
+ And then three years ago, I was sitting in the Pyjamas camp and we were creating these
+
+21
+0:01:10,040 --> 0:01:11,040
+ weird machines.
+
+22
+0:01:11,040 --> 0:01:17,240
+ And then I found out you can actually make a snake game in the login prompt of SSH.
+
+23
+0:01:17,240 --> 0:01:21,000
+ So that looks, yeah, this is like some time ago, that looks like this.
+
+24
+0:01:21,000 --> 0:01:26,180
+ So that kind of like piqued my interest in SSH.
+
+25
+0:01:26,180 --> 0:01:28,960
+ And I was like, what else can I do?
+
+26
+0:01:28,960 --> 0:01:32,140
+ And just for the fun of it, let's actually try to demo it.
+
+27
+0:01:32,140 --> 0:01:36,160
+ So SSH, snake, whatever.
+
+28
+0:01:36,160 --> 0:01:40,260
+ And then when I log in, normally you can log in with a username and password, right?
+
+29
+0:01:40,260 --> 0:01:43,580
+ You can log in with a public key where you sign something.
+
+30
+0:01:43,580 --> 0:01:45,900
+ But you can also send this like challenge response.
+
+31
+0:01:45,900 --> 0:01:48,980
+ I think that's pretty cool because then your challenge can just be, you know, the full
+
+32
+0:01:48,980 --> 0:01:50,880
+ game state.
+
+33
+0:01:50,880 --> 0:01:53,180
+ And as you can see, I cannot actually render like NC escape codes.
+
+34
+0:01:53,180 --> 0:01:54,180
+ So I'm going to do that.
+
+35
+0:01:54,180 --> 0:01:55,180
+ I'm going to do that.
+
+36
+0:01:55,180 --> 0:01:56,180
+ I'm going to do that.
+
+37
+0:01:56,180 --> 0:01:57,180
+ I'm going to do that.
+
+38
+0:01:57,180 --> 0:02:00,560
+ But I'm pretty sure three years ago at my setup at that time it worked.
+
+39
+0:02:00,560 --> 0:02:06,680
+ So if this works for you and you don't get that weird like escape code in the top, then
+
+40
+0:02:06,680 --> 0:02:11,020
+ I would love to see your setup because then it should actually work for you.
+
+41
+0:02:11,020 --> 0:02:16,620
+ And you can see I'm kind of just, you know, my answer to the game state is a, you know,
+
+42
+0:02:16,620 --> 0:02:20,140
+ arrow down and then enter and then I can play snake.
+
+43
+0:02:20,140 --> 0:02:23,060
+ And it's, you know, a bit broken, but it kind of works.
+
+44
+0:02:23,060 --> 0:02:24,060
+ I think that is very cool.
+
+45
+0:02:24,060 --> 0:02:25,980
+ And I, you know, I kind of like building these.
+
+46
+0:02:25,980 --> 0:02:28,340
+ We have machines.
+
+47
+0:02:28,340 --> 0:02:30,160
+ So let me go back.
+
+48
+0:02:30,160 --> 0:02:31,760
+ All right.
+
+49
+0:02:31,760 --> 0:02:33,600
+ So this is the agenda.
+
+50
+0:02:33,600 --> 0:02:38,800
+ And as I said, I did for the last about three years, I've just been writing down, you know,
+
+51
+0:02:38,800 --> 0:02:42,060
+ fun, cool hacks from Hacker News and so on.
+
+52
+0:02:42,060 --> 0:02:46,040
+ And then try to, you know, merge them into a presentation.
+
+53
+0:02:46,040 --> 0:02:50,480
+ And then two weeks ago, somebody asked me, so whenever you say SSH, you mean SSH 2.0,
+
+54
+0:02:50,480 --> 0:02:51,480
+ right?
+
+55
+0:02:51,480 --> 0:02:52,480
+ What is SSH 1?
+
+56
+0:02:52,480 --> 0:02:54,820
+ I was like, oh, shit, I have no idea.
+
+57
+0:02:54,820 --> 0:02:55,820
+ So.
+
+58
+0:02:55,980 --> 0:02:56,980
+ So we also.
+
+59
+0:02:56,980 --> 0:02:58,560
+ All right.
+
+60
+0:02:58,560 --> 0:02:59,880
+ So who am I?
+
+61
+0:02:59,880 --> 0:03:01,540
+ My name is Anirudh Subol.
+
+62
+0:03:01,540 --> 0:03:06,340
+ I have the domain sub.org, which is a bit weird because you have to purely code it.
+
+63
+0:03:06,340 --> 0:03:10,260
+ So if you see this weird XN whatever domain, that is my domain.
+
+64
+0:03:10,260 --> 0:03:15,920
+ I love doing weird hacks, making snake game as a login prompt.
+
+65
+0:03:15,920 --> 0:03:18,200
+ And I also like to play capture the flag.
+
+66
+0:03:18,200 --> 0:03:24,340
+ I think that's a very nice way to have a useful way or like a good reason to spend, you know,
+
+67
+0:03:24,340 --> 0:03:25,340
+ three hours reading an RFC.
+
+68
+0:03:25,340 --> 0:03:25,380
+ All right.
+
+69
+0:03:25,980 --> 0:03:26,980
+ So.
+
+70
+0:03:26,980 --> 0:03:27,980
+ Anyways.
+
+71
+0:03:27,980 --> 0:03:29,800
+ What is SSH 1.0?
+
+72
+0:03:29,800 --> 0:03:35,420
+ So if you look up the spec, the SSH 2.0 spec, you find this quote saying that, you know,
+
+73
+0:03:35,420 --> 0:03:41,320
+ the best documentation is in the source code of a specific client of SSH 1.0.
+
+74
+0:03:41,320 --> 0:03:44,380
+ And then there's a link to an FTP server.
+
+75
+0:03:44,380 --> 0:03:47,100
+ And this is, you know, 20 years ago.
+
+76
+0:03:47,100 --> 0:03:50,980
+ So I was a bit, you know, I wonder if I can find it.
+
+77
+0:03:50,980 --> 0:03:54,100
+ But surprisingly, and this is why I love the Internet, right?
+
+78
+0:03:54,100 --> 0:03:55,820
+ You just FTP into the web server.
+
+79
+0:03:55,820 --> 0:04:00,200
+ And for 20 years, they have been hosting, you know, a random version of the source code
+
+80
+0:04:00,200 --> 0:04:05,060
+ of SSH 1.0 and drinking games going back all the way to 1993.
+
+81
+0:04:05,060 --> 0:04:06,980
+ So that's, I mean, that's fucking cool.
+
+82
+0:04:06,980 --> 0:04:10,900
+ And I hope that in 20 years from now, we can still find the source code of, you know, old
+
+83
+0:04:10,900 --> 0:04:14,520
+ defecated software.
+
+84
+0:04:14,520 --> 0:04:20,820
+ Architecture wise, I read a bit on SSH 1.0, but I was like, it's not so interesting.
+
+85
+0:04:20,820 --> 0:04:23,820
+ And from a very high level perspective, there's not a lot of changes.
+
+86
+0:04:23,820 --> 0:04:24,820
+ Like, there's, you know, an awful lot of changes.
+
+87
+0:04:24,820 --> 0:04:30,600
+ There's, you know, another hash function, another format of input outputs and so on.
+
+88
+0:04:30,600 --> 0:04:32,660
+ But that's not the fun part.
+
+89
+0:04:32,660 --> 0:04:39,560
+ I think the more fun part about SSH 1.0 is kind of like, why do we have SSH 1.0?
+
+90
+0:04:39,560 --> 0:04:43,740
+ And you know, this is almost before my time, right?
+
+91
+0:04:43,740 --> 0:04:47,060
+ So I don't have any memory of it.
+
+92
+0:04:47,060 --> 0:04:51,880
+ But apparently before SSH, you had RSH and RCP and so on, right, where you could copy
+
+93
+0:04:51,880 --> 0:04:53,220
+ paste the file.
+
+94
+0:04:53,220 --> 0:04:54,200
+ And it, you know, it would do what you want.
+
+95
+0:04:54,200 --> 0:04:59,680
+ It would do what you expect it to do, just, you know, without any encryption, yay.
+
+96
+0:04:59,680 --> 0:05:03,380
+ Then came NSA and Let's Encrypt.
+
+97
+0:05:03,380 --> 0:05:04,780
+ And today, it's another time, right?
+
+98
+0:05:04,780 --> 0:05:07,400
+ So of course, we want to encrypt our communication.
+
+99
+0:05:07,400 --> 0:05:10,920
+ So that's the kind of like the main diff, let's say it like that, right?
+
+100
+0:05:10,920 --> 0:05:15,320
+ You just add TLS to something else.
+
+101
+0:05:15,320 --> 0:05:19,100
+ All right.
+
+102
+0:05:19,100 --> 0:05:22,040
+ So let's look at SSH from an IFC perspective.
+
+103
+0:05:22,040 --> 0:05:23,040
+ And let's start with SSH.
+
+104
+0:05:23,040 --> 0:05:24,040
+ Let's start with SSH.
+
+105
+0:05:24,040 --> 0:05:28,540
+ And if you go to the IFC spec, you see there's like three main parts of it.
+
+106
+0:05:28,540 --> 0:05:32,420
+ So it's very simple, right?
+
+107
+0:05:32,420 --> 0:05:33,420
+ You connect to a server.
+
+108
+0:05:33,420 --> 0:05:39,220
+ You do a like a key exchange dance, and then you have a secure connection to the server.
+
+109
+0:05:39,220 --> 0:05:41,420
+ Then you have a protocol for authentication.
+
+110
+0:05:41,420 --> 0:05:46,200
+ And then finally, when you have this secure authenticated protocol, you can split that
+
+111
+0:05:46,200 --> 0:05:50,320
+ into like multiple logical channels, right?
+
+112
+0:05:50,320 --> 0:05:51,320
+ So you can do port forwarding.
+
+113
+0:05:51,320 --> 0:05:52,920
+ You can do X11 forwarding.
+
+114
+0:05:52,920 --> 0:05:53,920
+ You can have a shell.
+
+115
+0:05:53,920 --> 0:05:54,000
+ Right?
+
+116
+0:05:54,040 --> 0:05:59,040
+ So I'll mostly be focusing on like the two top parts.
+
+117
+0:05:59,040 --> 0:06:01,040
+ All right.
+
+118
+0:06:01,040 --> 0:06:07,140
+ So the way I like to approach a new protocol is just to play around with it.
+
+119
+0:06:07,140 --> 0:06:09,160
+ Before I would never start reading the IFC.
+
+120
+0:06:09,160 --> 0:06:10,940
+ I would just connect to it.
+
+121
+0:06:10,940 --> 0:06:14,440
+ So what happens when you just connect to an SSH server?
+
+122
+0:06:14,440 --> 0:06:15,440
+ Let's try it.
+
+123
+0:06:15,440 --> 0:06:16,440
+ Right?
+
+124
+0:06:16,440 --> 0:06:17,760
+ So let's kill it.
+
+125
+0:06:17,760 --> 0:06:22,800
+ So netcat my server port 22.
+
+126
+0:06:22,800 --> 0:06:23,800
+ Right?
+
+127
+0:06:23,800 --> 0:06:25,800
+ So I didn't really know what to expect, right?
+
+128
+0:06:25,800 --> 0:06:31,340
+ I would maybe expect a bunch of binary stuff, but actually you get a text string.
+
+129
+0:06:31,340 --> 0:06:35,980
+ And then if you put something in, you get another text string out, right?
+
+130
+0:06:35,980 --> 0:06:40,160
+ So I went and looked at the spec, and the spec tells you, oh, this is the format of
+
+131
+0:06:40,160 --> 0:06:41,160
+ the banner, right?
+
+132
+0:06:41,160 --> 0:06:45,460
+ You need to see this from the server, and then you know as a client that you can connect
+
+133
+0:06:45,460 --> 0:06:47,080
+ to it.
+
+134
+0:06:47,080 --> 0:06:53,140
+ And already now from a security point of view, this is something you need to pass, right?
+
+135
+0:06:53,140 --> 0:06:58,420
+ You need to look at, you know, what is the maximum length of the line.
+
+136
+0:06:58,420 --> 0:07:01,160
+ Also what if you get a line that doesn't start with SSH 1?
+
+137
+0:07:01,160 --> 0:07:05,380
+ Then the spec tells you, oh, just continue reading a line.
+
+138
+0:07:05,380 --> 0:07:07,980
+ So you can set up a bunch of fun stuff.
+
+139
+0:07:07,980 --> 0:07:12,380
+ You can set up something called, like the project name is awesome, right?
+
+140
+0:07:12,380 --> 0:07:16,860
+ Endless SSH that just continues sending a banner forever.
+
+141
+0:07:16,860 --> 0:07:22,420
+ And then if your client doesn't time out, or you stop after some amount of time, it'll
+
+142
+0:07:22,420 --> 0:07:25,580
+ just continue being stuck trying to connect forever, right?
+
+143
+0:07:25,580 --> 0:07:30,740
+ So maybe if you all set this up, then, you know, you'll have no spammers on the internet.
+
+144
+0:07:30,740 --> 0:07:32,880
+ Just kidding.
+
+145
+0:07:32,880 --> 0:07:37,780
+ Another thing you can do with this is that you have these polyglot files.
+
+146
+0:07:37,780 --> 0:07:42,920
+ So you have a file where if you pass it as a PNG, it's a valid PNG with stuff at the end.
+
+147
+0:07:42,920 --> 0:07:46,180
+ And if you pass it as a zip file, which you pass from the bottom, right, it's a valid
+
+148
+0:07:46,180 --> 0:07:48,900
+ zip file with stuff in the front you just ignore.
+
+149
+0:07:48,900 --> 0:07:51,860
+ And you can kind of do the same with SSH.
+
+150
+0:07:52,420 --> 0:07:57,700
+ And you can have an SSH server sending a banner being like, I'm an HTTP server.
+
+151
+0:07:57,700 --> 0:08:01,480
+ And if you're an HTTP client, you'll just read, you know, the length of the body, and
+
+152
+0:08:01,480 --> 0:08:02,800
+ then you will stop.
+
+153
+0:08:02,800 --> 0:08:07,380
+ And if you are an SSH client, you will just, you know, ignore the banner, and then you
+
+154
+0:08:07,380 --> 0:08:08,800
+ will continue connecting.
+
+155
+0:08:08,800 --> 0:08:13,340
+ So I tried to set that up the other day, and it works surprisingly well.
+
+156
+0:08:13,340 --> 0:08:21,160
+ So if you do the same, now we can try to just curl it on port.
+
+157
+0:08:21,160 --> 0:08:22,280
+ I didn't know what port to use.
+
+158
+0:08:22,280 --> 0:08:23,280
+ So I used 4.22.
+
+159
+0:08:23,280 --> 0:08:28,200
+ I think that's a pretty nice port for SSH and HTTP.
+
+160
+0:08:28,200 --> 0:08:29,340
+ So I curl it.
+
+161
+0:08:29,340 --> 0:08:31,620
+ I get, you know, a valid reply back.
+
+162
+0:08:31,620 --> 0:08:34,100
+ It's just a web server, right?
+
+163
+0:08:34,100 --> 0:08:48,660
+ But if I instead, instead of curling it, I do SSH on this port, then it's an SSH server.
+
+164
+0:08:48,660 --> 0:08:50,160
+ Yeah.
+
+165
+0:08:50,160 --> 0:08:51,400
+ So.
+
+166
+0:08:51,400 --> 0:08:52,280
+ Yeah.
+
+167
+0:08:52,280 --> 0:08:54,340
+ So this is not very useful, right?
+
+168
+0:08:54,340 --> 0:08:56,960
+ But it's just fun to play around with the protocol.
+
+169
+0:08:56,960 --> 0:08:59,720
+ And in a way, it's also a bit scary, right?
+
+170
+0:08:59,720 --> 0:09:03,240
+ Because this is not, maybe not something that should be fun to play around with.
+
+171
+0:09:03,240 --> 0:09:06,080
+ It's maybe not something that should be flexible, right?
+
+172
+0:09:06,080 --> 0:09:12,040
+ So I think one takeaway is if you design software like this, maybe you should be more restrictive,
+
+173
+0:09:12,040 --> 0:09:13,040
+ right?
+
+174
+0:09:13,040 --> 0:09:18,900
+ Like maybe the banner is just one line, and, you know, no infinite amount of text can just
+
+175
+0:09:18,900 --> 0:09:19,900
+ be there, right?
+
+176
+0:09:19,900 --> 0:09:20,900
+ So yeah.
+
+177
+0:09:20,900 --> 0:09:21,900
+ Polyglot.
+
+178
+0:09:22,280 --> 0:09:23,280
+ Polyglot.
+
+179
+0:09:23,280 --> 0:09:24,280
+ Don't do that.
+
+180
+0:09:24,280 --> 0:09:25,280
+ All right.
+
+181
+0:09:25,280 --> 0:09:28,840
+ But let's not, you know, get, like, let's go back a step, right?
+
+182
+0:09:28,840 --> 0:09:29,840
+ So I connect.
+
+183
+0:09:29,840 --> 0:09:30,840
+ I get a banner.
+
+184
+0:09:30,840 --> 0:09:32,720
+ I assume there's no malicious stuff.
+
+185
+0:09:32,720 --> 0:09:35,660
+ How do I turn, you know, my connection into a secure connection?
+
+186
+0:09:35,660 --> 0:09:36,660
+ All right.
+
+187
+0:09:36,660 --> 0:09:39,400
+ So I do the normal Diffie-Hellman dance, right?
+
+188
+0:09:39,400 --> 0:09:40,840
+ I generate a secret.
+
+189
+0:09:40,840 --> 0:09:44,380
+ The server generates a secret, just like a number.
+
+190
+0:09:44,380 --> 0:09:48,960
+ You combine the number with maybe a generator on a field, and then you get a public key.
+
+191
+0:09:48,960 --> 0:09:49,960
+ The public key is random.
+
+192
+0:09:49,960 --> 0:09:51,040
+ Like both the public keys are random.
+
+193
+0:09:51,040 --> 0:09:52,040
+ Okay.
+
+194
+0:09:52,040 --> 0:09:53,040
+ So you have a random write.
+
+195
+0:09:53,040 --> 0:09:54,040
+ You have a secret.
+
+196
+0:09:54,040 --> 0:09:57,040
+ You send only the public keys.
+
+197
+0:09:57,040 --> 0:09:58,340
+ Holy Moses.
+
+198
+0:09:58,340 --> 0:10:05,880
+ And then if you have a passive attacker, they can only see the public keys, and you cannot
+
+199
+0:10:05,880 --> 0:10:07,000
+ turn the public key.
+
+200
+0:10:07,000 --> 0:10:12,440
+ You have to combine a secret key with a public key to turn it into the shared secret.
+
+201
+0:10:12,440 --> 0:10:17,360
+ So with this setup, we know that any passive attackers will be defeated, but there could
+
+202
+0:10:17,360 --> 0:10:20,040
+ be an active attacker just replacing the key.
+
+203
+0:10:20,040 --> 0:10:21,040
+ And in this case...
+
+204
+0:10:21,040 --> 0:10:26,500
+ So I basically only get, like, a secure connection between me and somebody, right?
+
+205
+0:10:26,500 --> 0:10:32,320
+ Me and an attacker, active attacker, or me or the actual server.
+
+206
+0:10:32,320 --> 0:10:42,040
+ So what happens afterwards is the server will take its other public key and sign this transaction.
+
+207
+0:10:42,040 --> 0:10:43,740
+ Yeah.
+
+208
+0:10:43,740 --> 0:10:44,840
+ And then you can kind of...
+
+209
+0:10:44,840 --> 0:10:49,580
+ The server can prove to me that this, whatever random public key I get, is actually signed
+
+210
+0:10:49,580 --> 0:10:50,840
+ by the actual server.
+
+211
+0:10:50,840 --> 0:10:56,460
+ But how do I trust the actual server key?
+
+212
+0:10:56,460 --> 0:10:59,300
+ So there's a pretty nice quote from the RFC.
+
+213
+0:10:59,300 --> 0:11:00,300
+ This is from...
+
+214
+0:11:00,300 --> 0:11:03,500
+ I think it's from 2006 or something, right?
+
+215
+0:11:03,500 --> 0:11:07,680
+ So it tells you this whole kind of, like, you need to map a server name into a public
+
+216
+0:11:07,680 --> 0:11:09,180
+ key.
+
+217
+0:11:09,180 --> 0:11:10,720
+ And how do you do that?
+
+218
+0:11:10,720 --> 0:11:15,860
+ Well, I mean, you can have, like, a database of public keys, the known host file.
+
+219
+0:11:15,860 --> 0:11:19,540
+ You can use, like, a certificate authority kind of setup, like we do with TLS.
+
+220
+0:11:19,540 --> 0:11:20,540
+ Or you can use...
+
+221
+0:11:20,540 --> 0:11:23,540
+ Or you can trust the key on first use, which is what we normally do.
+
+222
+0:11:23,540 --> 0:11:27,480
+ We see a random key, just do, like, yes, I believe this key is good.
+
+223
+0:11:27,480 --> 0:11:31,520
+ And then you save the, like, the hash of the key for next time.
+
+224
+0:11:31,520 --> 0:11:35,040
+ But then the spec tells us, like, oh, but at some point, you know, in the future, of
+
+225
+0:11:35,040 --> 0:11:40,240
+ course, somebody will create a, like, widely deployed key infrastructure that we can just
+
+226
+0:11:40,240 --> 0:11:41,860
+ use.
+
+227
+0:11:41,860 --> 0:11:47,600
+ And this is, again, like, 20 years ago, and we don't really have a good PKI, or do we?
+
+228
+0:11:47,600 --> 0:11:49,880
+ So I'll probably not be very popular in this sense.
+
+229
+0:11:49,880 --> 0:11:52,620
+ But we actually do have, like, a widely deployed PKI.
+
+230
+0:11:52,620 --> 0:11:59,820
+ We have DNSSEC, which everybody loves to hate, but it's actually a pretty cool setup.
+
+231
+0:11:59,820 --> 0:12:06,720
+ So if my domain name is signed by DNS, and I put my public key in DNS, then I, you know,
+
+232
+0:12:06,720 --> 0:12:08,980
+ I can just distribute it.
+
+233
+0:12:08,980 --> 0:12:12,380
+ And there's, like, a spec for that.
+
+234
+0:12:12,380 --> 0:12:13,700
+ And the format is fairly simple, right?
+
+235
+0:12:13,700 --> 0:12:19,760
+ You have, like, a dedicated DNS record, where you try to put in the algorithm of the key,
+
+236
+0:12:19,760 --> 0:12:29,800
+ and then the type of the fingerprint. I've read a lot of the spec and SSH is very flexible.
+
+237
+0:12:29,800 --> 0:12:33,600
+ Like whenever you can have multiple types, you will be able to have multiple types. It's
+
+238
+0:12:33,600 --> 0:12:38,380
+ never just hash it with this algorithm. It's always have a type of the hash and then you
+
+239
+0:12:38,380 --> 0:12:46,440
+ know, yeah. So it's a bit complicated, right? But this is how it looked originally on my
+
+240
+0:12:46,440 --> 0:12:52,300
+ setup, right? So I have my domain name. I have multiple keys on my server because that's
+
+241
+0:12:52,300 --> 0:13:00,180
+ the default. Then I pick one of the keys, host, DSA, whatever. I hash it and then I
+
+242
+0:13:00,180 --> 0:13:07,020
+ put in the hash and DNS. Then in my local config, I can say, please look up DNS. Make
+
+243
+0:13:07,020 --> 0:13:11,680
+ sure that the DNS record is authenticated and then stuff should just work without the
+
+244
+0:13:11,680 --> 0:13:15,940
+ known host file and no trust on first use. So let's try that.
+
+245
+0:13:15,940 --> 0:13:16,440
+ Okay.
+
+246
+0:13:16,440 --> 0:13:33,920
+ And my domain name was. So first of all, you'll see I don't have like many keys left. I only
+
+247
+0:13:33,920 --> 0:13:38,600
+ have like a single key. And I think that's a very sane default. Like just if you don't
+
+248
+0:13:38,600 --> 0:13:45,440
+ need, I think by default, you know, your SSH server, whatever will come with like multiple
+
+249
+0:13:45,440 --> 0:13:46,240
+ keys of types.
+
+250
+0:13:46,440 --> 0:13:51,600
+ So on, you know, just delete the three of them and see if it still works. So in this
+
+251
+0:13:51,600 --> 0:13:57,400
+ case, I'm using a Type 4 key, which I think when I took this screenshot was not a thing.
+
+252
+0:13:57,400 --> 0:14:08,180
+ So it's still a very evolving set up. So this is like one of these fancy ED 255-119 keys.
+
+253
+0:14:08,180 --> 0:14:15,940
+ And then you see I have a hash of the keys. So if I go to my SSH folder and my known host,
+
+254
+0:14:15,940 --> 0:14:19,160
+ this one, and just kill it, right?
+
+255
+0:14:19,160 --> 0:14:23,340
+ Then, now I have no idea about any server fingerprints,
+
+256
+0:14:23,340 --> 0:14:27,180
+ but if I try to log into my website,
+
+257
+0:14:27,180 --> 0:14:30,520
+ then, hopefully, ah, okay, damn.
+
+258
+0:14:30,520 --> 0:14:33,280
+ And it doesn't work because I don't have my key added.
+
+259
+0:14:39,240 --> 0:14:41,540
+ Yeah, that's because I have another demo later.
+
+260
+0:14:45,940 --> 0:14:50,940
+ Demo gods, please, what is my password?
+
+261
+0:14:56,000 --> 0:14:57,080
+ Is it not that one?
+
+262
+0:14:57,080 --> 0:14:58,080
+ It should be that one.
+
+263
+0:15:12,060 --> 0:15:12,900
+ Okay, whey!
+
+264
+0:15:15,940 --> 0:15:18,380
+ I know my password, okay, awesome.
+
+265
+0:15:18,380 --> 0:15:21,840
+ So, what I'm trying to do, I'm trying to SSH in the right,
+
+266
+0:15:21,840 --> 0:15:25,000
+ but I have no idea what the fingerprint should be.
+
+267
+0:15:25,000 --> 0:15:28,800
+ And hopefully, it's a bit slow, I'll get in, right?
+
+268
+0:15:28,800 --> 0:15:30,880
+ So, that is pretty awesome.
+
+269
+0:15:31,880 --> 0:15:34,120
+ And what happens if you try to then authenticate
+
+270
+0:15:34,120 --> 0:15:38,840
+ to something without a fingerprint in DNS?
+
+271
+0:15:39,880 --> 0:15:44,000
+ Let's take this one, then you'll get the normal,
+
+272
+0:15:44,000 --> 0:15:45,720
+ you know, prompt saying here, say,
+
+273
+0:15:45,940 --> 0:15:48,900
+ a fingerprint of this server's key.
+
+274
+0:15:48,900 --> 0:15:51,660
+ I have no idea, do you want to trust on first use?
+
+275
+0:15:51,660 --> 0:15:53,420
+ I can be yes, no, whatever.
+
+276
+0:15:54,560 --> 0:15:58,560
+ And what happens if I try to log into a broken setup?
+
+277
+0:16:04,280 --> 0:16:07,700
+ Then, I'll get this big fat warning saying, you know,
+
+278
+0:16:07,700 --> 0:16:09,140
+ I actually found a fingerprint,
+
+279
+0:16:09,140 --> 0:16:10,820
+ and the fingerprint is wrong, right?
+
+280
+0:16:10,820 --> 0:16:13,140
+ So, like, an even bigger error message.
+
+281
+0:16:13,140 --> 0:16:14,000
+ But I think this is a nice setup because if you,
+
+282
+0:16:14,000 --> 0:16:15,000
+ if you have a fingerprint, and you have a fingerprint,
+
+283
+0:16:15,000 --> 0:16:15,880
+ and you have a fingerprint, and you have a fingerprint,
+
+284
+0:16:15,880 --> 0:16:17,580
+ if you manage a lot of servers,
+
+285
+0:16:19,020 --> 0:16:21,940
+ at least in my experience, every now and then,
+
+286
+0:16:21,940 --> 0:16:24,700
+ you might change the key for various reasons,
+
+287
+0:16:24,700 --> 0:16:27,380
+ or you might lose your known host file, or whatnot.
+
+288
+0:16:27,380 --> 0:16:31,280
+ So, it is, instead of just being yes,
+
+289
+0:16:31,280 --> 0:16:33,300
+ then, you know, try to put it in DNS.
+
+290
+0:16:33,300 --> 0:16:34,640
+ It's pretty cool.
+
+291
+0:16:36,000 --> 0:16:36,840
+ All right.
+
+292
+0:16:36,840 --> 0:16:37,680
+ Yeah.
+
+293
+0:16:40,800 --> 0:16:41,640
+ Yes.
+
+294
+0:16:43,360 --> 0:16:45,420
+ Okay, so what is the requirement, right?
+
+295
+0:16:45,420 --> 0:16:49,540
+ So, you need a DNS provider that supports
+
+296
+0:16:49,540 --> 0:16:52,460
+ this very specific record type, right?
+
+297
+0:16:52,460 --> 0:16:53,940
+ SSH, FP.
+
+298
+0:16:53,940 --> 0:16:55,720
+ So, that's a bit annoying.
+
+299
+0:16:55,720 --> 0:16:57,720
+ Then, you need to trust DNS, right?
+
+300
+0:16:57,720 --> 0:17:00,720
+ So, you need DNS on your domain and on your clients.
+
+301
+0:17:02,240 --> 0:17:06,760
+ And then, I don't know how many people used Gratis DNS,
+
+302
+0:17:06,760 --> 0:17:09,140
+ but they changed to one.com,
+
+303
+0:17:09,140 --> 0:17:12,900
+ and one.com did not support SSH FP,
+
+304
+0:17:12,900 --> 0:17:13,560
+ and they, you know, this changed, occurred, why?
+
+305
+0:17:13,560 --> 0:17:14,560
+ And then, I don't know how many people used Gratis DNS, but they changed to one.com, and one.com did not support SSH FP, and they, you know, this changed, occurred, why?
+
+306
+0:17:15,420 --> 0:17:17,960
+ I was testing around and changing my key,
+
+307
+0:17:17,960 --> 0:17:20,340
+ so I was stuck with this, you know, forever warning,
+
+308
+0:17:20,340 --> 0:17:22,000
+ because I cannot change my DNS record
+
+309
+0:17:22,000 --> 0:17:24,820
+ because I'm stuck on a provider that does not support it,
+
+310
+0:17:24,820 --> 0:17:26,260
+ and I'm using a new key.
+
+311
+0:17:26,260 --> 0:17:28,540
+ So, that was a bit annoying.
+
+312
+0:17:28,540 --> 0:17:31,140
+ But anyways, they support it now, which is pretty cool.
+
+313
+0:17:32,420 --> 0:17:33,260
+ All right.
+
+314
+0:17:33,260 --> 0:17:36,160
+ So, going back a bit, right?
+
+315
+0:17:36,160 --> 0:17:37,800
+ So, I'm connecting to a server,
+
+316
+0:17:37,800 --> 0:17:39,340
+ we're doing the Diffie-Hellman dance,
+
+317
+0:17:39,340 --> 0:17:42,760
+ I'm trusting the key because I have some way of trusting it.
+
+318
+0:17:42,760 --> 0:17:43,640
+ What then, right?
+
+319
+0:17:43,640 --> 0:17:45,400
+ So, I have a, like a shared secret,
+
+320
+0:17:45,420 --> 0:17:50,420
+ the stuff below, in the bottom of the picture, if all.
+
+321
+0:17:51,140 --> 0:17:56,100
+ And so, for some of the next slides,
+
+322
+0:17:56,100 --> 0:17:57,440
+ I just have some stuff, you know,
+
+323
+0:17:57,440 --> 0:17:59,480
+ I like about SSH and some stuff I don't like.
+
+324
+0:17:59,480 --> 0:18:02,940
+ So, what I like is they have this exchange hash,
+
+325
+0:18:02,940 --> 0:18:05,280
+ so the key, of course, you never would,
+
+326
+0:18:05,280 --> 0:18:06,200
+ don't ever share that, right?
+
+327
+0:18:06,200 --> 0:18:08,760
+ Don't put it in log files, don't do stuff like that.
+
+328
+0:18:08,760 --> 0:18:11,540
+ But you would love to have a way to like reference to the key.
+
+329
+0:18:11,540 --> 0:18:13,980
+ So, it's a very simple protocol set up, right?
+
+330
+0:18:13,980 --> 0:18:15,420
+ You just be like, here's the key,
+
+331
+0:18:15,420 --> 0:18:18,420
+ that secret, hash the key, and then this is public.
+
+332
+0:18:18,420 --> 0:18:20,020
+ I think that's a pretty nice set up,
+
+333
+0:18:20,020 --> 0:18:22,180
+ because then you can like refer to this,
+
+334
+0:18:22,180 --> 0:18:25,300
+ you know, temporary set up we have.
+
+335
+0:18:25,300 --> 0:18:27,680
+ Then next, we kind of like want to split this key
+
+336
+0:18:27,680 --> 0:18:31,520
+ into multiple keys, and what SSH does is,
+
+337
+0:18:31,520 --> 0:18:33,220
+ it just hashes together, you know,
+
+338
+0:18:33,220 --> 0:18:35,820
+ this secret key with, you know, the letter A,
+
+339
+0:18:35,820 --> 0:18:37,940
+ the letter B, the letter C, and so on.
+
+340
+0:18:37,940 --> 0:18:41,260
+ I kind of like this set up, it's pretty simple.
+
+341
+0:18:41,260 --> 0:18:45,180
+ Probably, like, if you should design a new SSH 3.0,
+
+342
+0:18:45,180 --> 0:18:46,680
+ whatever, you should use a, like,
+
+343
+0:18:46,680 --> 0:18:48,820
+ a real key iteration function.
+
+344
+0:18:48,820 --> 0:18:52,500
+ But, I mean, this is a pretty neat, like, easy set up.
+
+345
+0:18:54,000 --> 0:18:55,300
+ But there's something a bit weird, right?
+
+346
+0:18:55,300 --> 0:18:57,020
+ Why do I need so many keys, right?
+
+347
+0:18:57,020 --> 0:18:58,940
+ It's quite a lot of keys.
+
+348
+0:18:58,940 --> 0:19:00,320
+ And that's the next thing, right?
+
+349
+0:19:00,320 --> 0:19:03,620
+ So, the spec tells you, you need to, like,
+
+350
+0:19:03,620 --> 0:19:05,620
+ you do have a secure connection,
+
+351
+0:19:05,620 --> 0:19:08,020
+ you have a bunch of, you know, packages
+
+352
+0:19:08,020 --> 0:19:10,580
+ with control messages going back and forth,
+
+353
+0:19:10,580 --> 0:19:13,980
+ and then you agree on, should we compress data,
+
+354
+0:19:13,980 --> 0:19:14,980
+ which type of cipher should we use,
+
+355
+0:19:15,180 --> 0:19:16,680
+ and so on.
+
+356
+0:19:16,680 --> 0:19:19,200
+ And the spec tells you, you must be able to,
+
+357
+0:19:19,200 --> 0:19:21,340
+ you know, independently of the direction,
+
+358
+0:19:21,340 --> 0:19:26,020
+ change the selected cipher and compression, and so on.
+
+359
+0:19:26,020 --> 0:19:28,640
+ So, it's perfectly valid for me to send compressed AES
+
+360
+0:19:28,640 --> 0:19:30,840
+ to my server, and then get uncompressed
+
+361
+0:19:30,840 --> 0:19:32,540
+ DES-encrypted data back.
+
+362
+0:19:32,540 --> 0:19:34,920
+ And that's super, super weird.
+
+363
+0:19:34,920 --> 0:19:37,780
+ But it's valid SSL, SSH.
+
+364
+0:19:37,780 --> 0:19:40,880
+ So, again, I would love to see this being removed
+
+365
+0:19:40,880 --> 0:19:42,760
+ from the spec, just, you know, it should be the same.
+
+366
+0:19:42,760 --> 0:19:44,900
+ Right, I should never want to use one cipher,
+
+367
+0:19:44,900 --> 0:19:47,660
+ going to my server, and then another cipher going back.
+
+368
+0:19:49,780 --> 0:19:52,760
+ Okay, so, I can encrypt data, but how do I know
+
+369
+0:19:52,760 --> 0:19:54,300
+ somebody is not going to just, you know,
+
+370
+0:19:54,300 --> 0:19:55,820
+ do random bit flips, right?
+
+371
+0:19:55,820 --> 0:19:58,360
+ AES does not protect against bit flips.
+
+372
+0:19:58,360 --> 0:20:01,440
+ At least, you know, I can do some stuff with it.
+
+373
+0:20:01,440 --> 0:20:05,940
+ So, the underlying protocol is called
+
+374
+0:20:05,940 --> 0:20:08,940
+ the binary package protocol in SSH.
+
+375
+0:20:11,680 --> 0:20:14,660
+ And the format is quite simple.
+
+376
+0:20:14,900 --> 0:20:17,280
+ It's, you know, you encrypt some data,
+
+377
+0:20:17,280 --> 0:20:20,560
+ and then you have a, like a message authentication code
+
+378
+0:20:20,560 --> 0:20:24,920
+ giving you integrity after the encrypted data.
+
+379
+0:20:24,920 --> 0:20:28,580
+ And then, you know, this inner package is just, you know,
+
+380
+0:20:28,580 --> 0:20:31,140
+ the length of the package, the length of some padding,
+
+381
+0:20:31,140 --> 0:20:33,320
+ and then the package, and then the padding.
+
+382
+0:20:34,520 --> 0:20:36,240
+ It looks like this.
+
+383
+0:20:36,240 --> 0:20:39,140
+ And this is a very weird setup, because how, like,
+
+384
+0:20:39,140 --> 0:20:40,700
+ how do we pass it?
+
+385
+0:20:40,700 --> 0:20:43,480
+ So, you get some ciphertext, but you maybe don't know
+
+386
+0:20:43,480 --> 0:20:44,680
+ how much ciphertext it needs.
+
+387
+0:20:44,680 --> 0:20:47,800
+ And the only way to figure out is if you decrypt
+
+388
+0:20:47,800 --> 0:20:51,040
+ the first block, and then you can,
+
+389
+0:20:51,040 --> 0:20:53,260
+ after you have decrypted, like, the first block
+
+390
+0:20:53,260 --> 0:20:55,040
+ of the ciphertext, you can figure out,
+
+391
+0:20:55,040 --> 0:20:56,880
+ ah, I need to read a few more packages,
+
+392
+0:20:56,880 --> 0:20:59,160
+ and then you can check the MAC.
+
+393
+0:20:59,160 --> 0:21:03,740
+ But that means I can now do, I can start tampering
+
+394
+0:21:03,740 --> 0:21:06,840
+ with, like, the first part of the, of whatever this is,
+
+395
+0:21:06,840 --> 0:21:08,460
+ right, because you have no idea how to check it
+
+396
+0:21:08,460 --> 0:21:10,740
+ without just decrypting it.
+
+397
+0:21:10,740 --> 0:21:12,700
+ And then you can do these, like, kind of like
+
+398
+0:21:12,700 --> 0:21:14,400
+ active attack against the cipher.
+
+399
+0:21:14,680 --> 0:21:19,680
+ For instance, if I want to decrypt a package
+
+400
+0:21:20,420 --> 0:21:22,860
+ that contains all F, or I believe it's, like,
+
+401
+0:21:22,860 --> 0:21:26,140
+ F, F, F, F, F, F, F, and I put that as the first package,
+
+402
+0:21:26,140 --> 0:21:28,620
+ and you decrypt it, and you figure out, oh,
+
+403
+0:21:28,620 --> 0:21:31,180
+ so the length must be F, F, F, F, F,
+
+404
+0:21:31,180 --> 0:21:35,780
+ so you just continue reading data from the wire
+
+405
+0:21:35,780 --> 0:21:38,520
+ until, you know, you get F, F, F, F, F data,
+
+406
+0:21:38,520 --> 0:21:40,780
+ which, of course, won't happen, right?
+
+407
+0:21:42,260 --> 0:21:44,300
+ But if it's zero, zero, zero, zero, zero,
+
+408
+0:21:44,680 --> 0:21:47,260
+ then, you know, you know that there should be no more data,
+
+409
+0:21:47,260 --> 0:21:48,880
+ so you can check the MAC, the MAC will fail,
+
+410
+0:21:48,880 --> 0:21:50,360
+ and you close the connection.
+
+411
+0:21:50,360 --> 0:21:53,640
+ So now you can do these attacks where you can at least
+
+412
+0:21:53,640 --> 0:21:56,180
+ guess some stuff from the cipher.
+
+413
+0:21:57,700 --> 0:22:00,640
+ This is called encryption and MACing,
+
+414
+0:22:00,640 --> 0:22:03,840
+ and it's a bit kind of like in, I would say,
+
+415
+0:22:03,840 --> 0:22:07,300
+ 2000 wipes, where you didn't really know how to do it,
+
+416
+0:22:07,300 --> 0:22:10,540
+ right, there's also encryption, then MACing,
+
+417
+0:22:10,540 --> 0:22:12,560
+ which is almost the same.
+
+418
+0:22:12,560 --> 0:22:13,980
+ What you should do is called,
+
+419
+0:22:14,680 --> 0:22:16,460
+ sorry, MAC then encrypt,
+
+420
+0:22:16,460 --> 0:22:19,560
+ what you should do is encrypt then MAC, ETM,
+
+421
+0:22:19,560 --> 0:22:23,540
+ and in ETM, you just do the order a bit different,
+
+422
+0:22:23,540 --> 0:22:27,000
+ but now you need to, now you can check the MAC
+
+423
+0:22:27,000 --> 0:22:29,760
+ before you even try to decrypt data.
+
+424
+0:22:29,760 --> 0:22:32,480
+ But this require the length to be public, right,
+
+425
+0:22:32,480 --> 0:22:34,560
+ but the length is already a bit public, right,
+
+426
+0:22:34,560 --> 0:22:37,760
+ because you already need to know, if you're an attacker,
+
+427
+0:22:37,760 --> 0:22:39,900
+ you can just, you know, look at the length
+
+428
+0:22:39,900 --> 0:22:42,900
+ of the encrypted data on the wire,
+
+429
+0:22:42,900 --> 0:22:44,660
+ so it doesn't really leak anything.
+
+430
+0:22:44,680 --> 0:22:47,560
+ And if you want to enable this,
+
+431
+0:22:47,560 --> 0:22:50,940
+ then you can configure your server and your client
+
+432
+0:22:50,940 --> 0:22:55,180
+ to accept only ciphers ending with ETM.
+
+433
+0:22:55,180 --> 0:22:56,900
+ So you'll also see that in my config later,
+
+434
+0:22:56,900 --> 0:22:59,520
+ that you can just go in and enable this, right,
+
+435
+0:22:59,520 --> 0:23:04,280
+ so this is an OpenSSH extension,
+
+436
+0:23:05,360 --> 0:23:07,280
+ so it's not part of the original spec,
+
+437
+0:23:07,280 --> 0:23:09,180
+ but it's a much better way of doing it.
+
+438
+0:23:10,200 --> 0:23:12,580
+ And, yeah.
+
+439
+0:23:12,580 --> 0:23:16,300
+ So there's another, like, a cool trick, actually,
+
+440
+0:23:16,300 --> 0:23:20,460
+ as I said to Stas, which is that the MAC is not only the,
+
+441
+0:23:20,460 --> 0:23:21,840
+ I was lying a bit here, right,
+
+442
+0:23:21,840 --> 0:23:23,860
+ it's not only the inner part of the message,
+
+443
+0:23:23,860 --> 0:23:27,820
+ it's actually the, whoops, it's actually a sequence number,
+
+444
+0:23:27,820 --> 0:23:29,760
+ and then the inner part of the message.
+
+445
+0:23:29,760 --> 0:23:32,480
+ And the sequence number is not sent over the wire,
+
+446
+0:23:32,480 --> 0:23:34,580
+ but it's just, you know, a counter going up,
+
+447
+0:23:34,580 --> 0:23:37,040
+ and the idea here is that if you reorder packages,
+
+448
+0:23:37,040 --> 0:23:39,360
+ then the sequence number will be incorrect,
+
+449
+0:23:39,360 --> 0:23:42,500
+ and then you can detect somebody reordering packages.
+
+450
+0:23:42,580 --> 0:23:47,520
+ So this is pretty neat, but I read a lot of, you know,
+
+451
+0:23:47,520 --> 0:23:50,520
+ message threads about people being a bit annoyed,
+
+452
+0:23:50,520 --> 0:23:53,280
+ because it also means that the input to the MAC function
+
+453
+0:23:53,280 --> 0:23:56,120
+ is not the same as the input to the encryption function.
+
+454
+0:23:56,120 --> 0:23:59,140
+ So if you wanna replace all of this with just AES
+
+455
+0:23:59,140 --> 0:24:01,680
+ in GCM mode, which is authenticated,
+
+456
+0:24:01,680 --> 0:24:04,680
+ then you have this, you know, a bit annoying thing
+
+457
+0:24:04,680 --> 0:24:07,360
+ where you need to, you're not encrypting the same stuff
+
+458
+0:24:07,360 --> 0:24:09,420
+ as what you're actually checking.
+
+459
+0:24:09,420 --> 0:24:12,040
+ It's not an issue, it's just a bit annoying.
+
+460
+0:24:12,040 --> 0:24:14,940
+ So yeah, somebody spent a long time on that.
+
+461
+0:24:16,140 --> 0:24:19,660
+ All right, so I have a way to connect to a server.
+
+462
+0:24:19,660 --> 0:24:24,060
+ The server, we agree with, we generate a secure channel.
+
+463
+0:24:24,060 --> 0:24:25,980
+ I can authenticate that the server is actually
+
+464
+0:24:25,980 --> 0:24:30,980
+ who it tells me it is, but the server have no idea who I am.
+
+465
+0:24:31,280 --> 0:24:33,680
+ So you need to, now we go to the next step,
+
+466
+0:24:33,680 --> 0:24:35,620
+ the authentication protocol.
+
+467
+0:24:35,620 --> 0:24:37,900
+ And in the authentication protocol,
+
+468
+0:24:37,900 --> 0:24:41,880
+ you select a method, and there's, of course, a few more,
+
+469
+0:24:41,880 --> 0:24:43,700
+ in later extensions.
+
+470
+0:24:45,100 --> 0:24:48,900
+ What I find pretty fun is that password authentication
+
+471
+0:24:48,900 --> 0:24:53,400
+ is not required, so it's valid, again, to be an SSH server,
+
+472
+0:24:53,400 --> 0:24:55,620
+ and be like, no, I don't wanna do passwords.
+
+473
+0:24:55,620 --> 0:24:56,460
+ I think that's pretty cool.
+
+474
+0:24:56,460 --> 0:24:59,280
+ I guess most people, the first time you use SSH,
+
+475
+0:24:59,280 --> 0:25:01,740
+ you just have a username and password.
+
+476
+0:25:01,740 --> 0:25:02,920
+ But actually, you can be like,
+
+477
+0:25:02,920 --> 0:25:04,720
+ I only want to support public keys.
+
+478
+0:25:05,760 --> 0:25:08,340
+ Another thing is, you can also have a non method,
+
+479
+0:25:08,340 --> 0:25:10,040
+ so you can just connect to a server, be like, I'm root,
+
+480
+0:25:10,040 --> 0:25:10,800
+ and I don't need to authenticate.
+
+481
+0:25:11,880 --> 0:25:14,260
+ I just want to authenticate who I am.
+
+482
+0:25:14,260 --> 0:25:17,000
+ Of course, the server is not going to allow that, right?
+
+483
+0:25:17,000 --> 0:25:19,620
+ But it is technically valid for the server to be like,
+
+484
+0:25:19,620 --> 0:25:20,460
+ okay, I guess.
+
+485
+0:25:22,840 --> 0:25:27,840
+ And then, yeah, let's see, oh, wait a minute.
+
+486
+0:25:29,340 --> 0:25:34,340
+ So you have this ping pong flow where you get a list of,
+
+487
+0:25:34,400 --> 0:25:36,640
+ the server can tell you, oh, but you need public key
+
+488
+0:25:36,640 --> 0:25:38,100
+ and the passwords.
+
+489
+0:25:38,100 --> 0:25:39,100
+ Or for the snake game I did initially, you have this challenge,
+
+490
+0:25:39,100 --> 0:25:40,100
+ for the snake game I did initially, you have this challenge,
+
+491
+0:25:40,100 --> 0:25:41,100
+ for the snake game I did initially, you have this challenge,
+
+492
+0:25:41,100 --> 0:25:45,900
+ response method.
+
+493
+0:25:45,900 --> 0:25:49,380
+ And for every reply you get from the server,
+
+494
+0:25:49,380 --> 0:25:53,760
+ the server can tell you that you had a partial success
+
+495
+0:25:53,760 --> 0:25:54,900
+ when you logged in.
+
+496
+0:25:56,180 --> 0:25:57,880
+ So for instance, you'd be like,
+
+497
+0:25:59,060 --> 0:26:01,580
+ I would like to log in with this username and password.
+
+498
+0:26:01,580 --> 0:26:04,180
+ You log in, and then the server's like, that's good,
+
+499
+0:26:04,180 --> 0:26:06,280
+ but you need to prove a bit more.
+
+500
+0:26:06,280 --> 0:26:09,940
+ So you can also use this to have two factor when you log in.
+
+501
+0:26:11,100 --> 0:26:14,700
+ Yeah, of course, if you do two factor,
+
+502
+0:26:14,700 --> 0:26:16,660
+ you should also have some kind of rate limits, right?
+
+503
+0:26:16,660 --> 0:26:18,960
+ Because it's very easy to boot for us otherwise.
+
+504
+0:26:20,560 --> 0:26:24,260
+ And this is the request you sign if you use a public key.
+
+505
+0:26:25,160 --> 0:26:26,500
+ It's fairly simple, right?
+
+506
+0:26:26,500 --> 0:26:30,420
+ You have, you put in, I would like to do,
+
+507
+0:26:31,640 --> 0:26:34,260
+ like the service name is, I think,
+
+508
+0:26:34,260 --> 0:26:38,000
+ the difference between X11 forwarding and just a shell.
+
+509
+0:26:38,000 --> 0:26:39,460
+ You put in your username,
+
+510
+0:26:39,460 --> 0:26:41,020
+ then you put in your session identifier.
+
+511
+0:26:41,020 --> 0:26:45,100
+ That's the public part of the shared secret from before.
+
+512
+0:26:46,040 --> 0:26:46,880
+ So that's pretty cool,
+
+513
+0:26:46,880 --> 0:26:49,520
+ but that kind of like binds this signature
+
+514
+0:26:49,520 --> 0:26:52,760
+ to the channel I have right now
+
+515
+0:26:52,760 --> 0:26:56,380
+ that is generated uniquely to this session.
+
+516
+0:26:57,700 --> 0:27:01,380
+ And then I put my public key, and that's it.
+
+517
+0:27:01,380 --> 0:27:04,700
+ There's like one field missing from this one,
+
+518
+0:27:04,700 --> 0:27:06,020
+ which is not part of the spec,
+
+519
+0:27:06,020 --> 0:27:08,340
+ but it would have made the spec so much nicer.
+
+520
+0:27:08,340 --> 0:27:10,640
+ So I'm only signing that,
+
+521
+0:27:11,020 --> 0:27:15,880
+ I'm now connecting to whatever this is.
+
+522
+0:27:15,880 --> 0:27:19,100
+ But if I connect to one server,
+
+523
+0:27:19,100 --> 0:27:20,920
+ and from that server I'd like to connect to another server,
+
+524
+0:27:20,920 --> 0:27:22,780
+ and to another server, and to another server,
+
+525
+0:27:22,780 --> 0:27:26,080
+ then this, which is agent forwarding,
+
+526
+0:27:26,080 --> 0:27:27,260
+ we'll talk about later,
+
+527
+0:27:27,260 --> 0:27:29,860
+ then all these signatures,
+
+528
+0:27:29,860 --> 0:27:32,380
+ they will be signed by my key on my laptop,
+
+529
+0:27:32,380 --> 0:27:33,700
+ but I don't know what I'm assigning.
+
+530
+0:27:33,700 --> 0:27:36,740
+ I'm just signing random session identifiers.
+
+531
+0:27:36,740 --> 0:27:40,940
+ So the other servers along the way, they can just be like, okay,
+
+532
+0:27:40,940 --> 0:27:42,380
+ you would like to connect to GitHub?
+
+533
+0:27:42,380 --> 0:27:43,880
+ Yes, just sign this signature.
+
+534
+0:27:43,880 --> 0:27:46,340
+ And then they actually are in the process of connecting
+
+535
+0:27:46,340 --> 0:27:48,360
+ to like an internal server or whatnot.
+
+536
+0:27:49,380 --> 0:27:51,940
+ So this would have been much nicer
+
+537
+0:27:51,940 --> 0:27:55,680
+ if you had the public key of who you are actually connecting to.
+
+538
+0:27:58,880 --> 0:28:01,840
+ All right, and then there's a pretty nice project
+
+539
+0:28:01,840 --> 0:28:04,480
+ by a guy called Filippo,
+
+540
+0:28:04,480 --> 0:28:08,240
+ who has scraped all public GitHub keys.
+
+541
+0:28:08,240 --> 0:28:09,800
+ And then when you log into the server,
+
+542
+0:28:09,800 --> 0:28:10,640
+ I'll send my,
+
+543
+0:28:10,940 --> 0:28:14,280
+ my key, whoops,
+
+544
+0:28:14,280 --> 0:28:16,580
+ that one, like the key in the bottom of it.
+
+545
+0:28:16,580 --> 0:28:17,460
+ And then he can just, you know,
+
+546
+0:28:17,460 --> 0:28:18,740
+ do like a reverse lookup, right?
+
+547
+0:28:18,740 --> 0:28:20,980
+ So this key must be somebody.
+
+548
+0:28:20,980 --> 0:28:22,540
+ And that works quite well.
+
+549
+0:28:25,080 --> 0:28:25,920
+ Let's try it.
+
+550
+0:28:33,320 --> 0:28:34,160
+ Filippo.
+
+551
+0:28:39,860 --> 0:28:40,920
+ Yes, I'd like to connect.
+
+552
+0:28:40,940 --> 0:28:42,660
+ And then,
+
+553
+0:28:42,660 --> 0:28:49,660
+ and then he can look up that the key I have is connected
+
+554
+0:28:50,520 --> 0:28:51,700
+ to my GitHub, right?
+
+555
+0:28:51,700 --> 0:28:54,620
+ So that's, that's very revealing.
+
+556
+0:28:54,620 --> 0:28:56,360
+ And you can actually also do the opposite,
+
+557
+0:28:56,360 --> 0:28:57,640
+ which is pretty cool.
+
+558
+0:28:57,640 --> 0:29:01,820
+ So when you connect to an SSH server,
+
+559
+0:29:01,820 --> 0:29:06,580
+ you can send a list of public keys,
+
+560
+0:29:06,580 --> 0:29:08,120
+ and then you can ask the server,
+
+561
+0:29:08,120 --> 0:29:10,780
+ which of these public keys works for this user on this account?
+
+562
+0:29:10,780 --> 0:29:12,400
+ On this system.
+
+563
+0:29:13,940 --> 0:29:15,560
+ And then the server can reply back saying,
+
+564
+0:29:15,560 --> 0:29:18,160
+ oh, the, you know, the third key works.
+
+565
+0:29:18,160 --> 0:29:19,460
+ And the reason you,
+
+566
+0:29:19,460 --> 0:29:22,900
+ you can do that is because let's say you have a,
+
+567
+0:29:22,900 --> 0:29:26,220
+ like a physical hardware key you need to click to use,
+
+568
+0:29:26,220 --> 0:29:28,300
+ then you don't want the user to,
+
+569
+0:29:28,300 --> 0:29:30,600
+ to, you know, click a bunch of hardware keys
+
+570
+0:29:30,600 --> 0:29:32,960
+ to find the right key that actually works.
+
+571
+0:29:32,960 --> 0:29:34,540
+ And, but it also means that,
+
+572
+0:29:34,540 --> 0:29:35,720
+ let's say I want to,
+
+573
+0:29:35,720 --> 0:29:40,160
+ to, to reveal some kind of a Tor hidden service.
+
+574
+0:29:40,160 --> 0:29:43,420
+ All right, then I might SSH into the hidden service.
+
+575
+0:29:43,420 --> 0:29:44,640
+ And then I might just, you know,
+
+576
+0:29:44,640 --> 0:29:47,540
+ start from the, from the beginning of all the GitHub keys
+
+577
+0:29:47,540 --> 0:29:49,440
+ and try like, can this key authenticate?
+
+578
+0:29:49,440 --> 0:29:50,880
+ Can this key authenticate?
+
+579
+0:29:50,880 --> 0:29:53,180
+ And then maybe I'll find a key and then I can, you know,
+
+580
+0:29:53,180 --> 0:29:57,420
+ look up that somebody has access to us to,
+
+581
+0:29:57,420 --> 0:30:00,600
+ might have access to a hidden service,
+
+582
+0:30:00,600 --> 0:30:02,060
+ like a public name.
+
+583
+0:30:02,060 --> 0:30:05,200
+ So that's, I think that's also a bit of a,
+
+584
+0:30:05,200 --> 0:30:06,960
+ I don't know if I like it or if I don't like it
+
+585
+0:30:06,960 --> 0:30:07,800
+ as part of the spec.
+
+586
+0:30:07,800 --> 0:30:08,440
+ I understand the idea, but I, I think it's a bit,
+
+587
+0:30:08,440 --> 0:30:09,280
+ I think it's a bit of a, I think it's a bit of a,
+
+588
+0:30:09,280 --> 0:30:10,520
+ I think it's a bit weird
+
+589
+0:30:10,520 --> 0:30:12,260
+ that you can actually query a server.
+
+590
+0:30:12,260 --> 0:30:13,780
+ The server can, of course, just lie,
+
+591
+0:30:13,780 --> 0:30:15,820
+ say like, no, none of the key works.
+
+592
+0:30:15,820 --> 0:30:18,220
+ But then if you actually use the key, it will work.
+
+593
+0:30:21,780 --> 0:30:25,920
+ All right, so if I,
+
+594
+0:30:25,920 --> 0:30:29,080
+ if I SSH from, from my system into another system,
+
+595
+0:30:29,080 --> 0:30:31,900
+ and then I would like to SSH from that other system
+
+596
+0:30:31,900 --> 0:30:33,440
+ and further along the way,
+
+597
+0:30:33,440 --> 0:30:37,460
+ then I probably don't want to copy paste my keys around.
+
+598
+0:30:37,460 --> 0:30:38,920
+ So I can use,
+
+599
+0:30:38,920 --> 0:30:40,840
+ something called agent forwarding.
+
+600
+0:30:40,840 --> 0:30:43,720
+ And let's actually test that, right?
+
+601
+0:30:45,640 --> 0:30:46,720
+ So,
+
+602
+0:30:53,560 --> 0:30:55,140
+ so I have a demo system.
+
+603
+0:30:56,620 --> 0:30:59,220
+ On the demo system, I start an SSH agent.
+
+604
+0:31:05,440 --> 0:31:08,720
+ Then in my agent, I add a, one of my keys.
+
+605
+0:31:08,920 --> 0:31:13,920
+ So now I, it basically just a background process, right?
+
+606
+0:31:15,280 --> 0:31:18,060
+ Then if I, from this system, SSH into a,
+
+607
+0:31:20,260 --> 0:31:21,100
+ excuse me,
+
+608
+0:31:26,380 --> 0:31:27,220
+ a moment.
+
+609
+0:31:37,120 --> 0:31:37,960
+ To this system.
+
+610
+0:31:37,960 --> 0:31:38,800
+ Whoop.
+
+611
+0:31:38,920 --> 0:31:49,080
+ Okay, so I'm, you know, from one system,
+
+612
+0:31:49,080 --> 0:31:50,480
+ jumping into another system.
+
+613
+0:31:51,780 --> 0:31:52,620
+ Nope, sorry.
+
+614
+0:31:52,620 --> 0:31:54,620
+ And I'm forwarding my agents.
+
+615
+0:31:56,380 --> 0:31:59,040
+ Then from the terminal in the bottom,
+
+616
+0:31:59,040 --> 0:32:01,440
+ I'll jump to the second system directly.
+
+617
+0:32:04,280 --> 0:32:07,760
+ And from this system, I'm going to look at what,
+
+618
+0:32:07,760 --> 0:32:08,760
+ which file I attempt.
+
+619
+0:32:08,920 --> 0:32:13,920
+ So that's a few files, but nothing, nothing important, right?
+
+620
+0:32:18,000 --> 0:32:20,780
+ So from the top system, the demo box,
+
+621
+0:32:20,780 --> 0:32:23,140
+ I'm jumping into the Hetzner box.
+
+622
+0:32:23,140 --> 0:32:28,140
+ And from the Hetzner box, I now have forwarded agents.
+
+623
+0:32:28,820 --> 0:32:31,560
+ So if I look at and attempt again,
+
+624
+0:32:31,560 --> 0:32:34,020
+ I should be able to see an SSH folder.
+
+625
+0:32:34,880 --> 0:32:36,280
+ And if I go to that folder,
+
+626
+0:32:38,920 --> 0:32:43,920
+ then I can see that there is a socket available.
+
+627
+0:32:43,940 --> 0:32:45,640
+ So if I write something to this socket,
+
+628
+0:32:45,640 --> 0:32:49,200
+ it will be forwarded back from,
+
+629
+0:32:49,200 --> 0:32:52,400
+ through the SSH connection, back to the original box.
+
+630
+0:32:53,840 --> 0:32:55,060
+ And this is very dangerous, right?
+
+631
+0:32:55,060 --> 0:32:59,460
+ Because if I'm root on the, on the bottom window,
+
+632
+0:32:59,460 --> 0:33:01,420
+ then I of course have access to the socket, right?
+
+633
+0:33:01,420 --> 0:33:03,720
+ The socket can only be protected by
+
+634
+0:33:03,720 --> 0:33:05,080
+ whoever the first user is.
+
+635
+0:33:06,020 --> 0:33:08,860
+ So that means that I can now, from the, from the Hetzner box,
+
+636
+0:33:08,920 --> 0:33:11,400
+ from the bottom, from the attacker's point of view,
+
+637
+0:33:11,400 --> 0:33:15,840
+ I can just ask the socket to sign a request
+
+638
+0:33:15,840 --> 0:33:17,480
+ on the behalf of the first user.
+
+639
+0:33:20,360 --> 0:33:23,060
+ And so the demo is a bit boring
+
+640
+0:33:23,060 --> 0:33:26,000
+ because you just set an environment variable,
+
+641
+0:33:26,000 --> 0:33:29,860
+ and then you use all the normal SSH tools.
+
+642
+0:33:29,860 --> 0:33:31,700
+ So I'm not going to demo it.
+
+643
+0:33:31,700 --> 0:33:36,700
+ But what is cool is that in very new versions of OpenSSH,
+
+644
+0:33:38,920 --> 0:33:42,960
+ you can actually use something called agent restriction.
+
+645
+0:33:43,860 --> 0:33:46,560
+ The problem is agent restrictions require changes
+
+646
+0:33:46,560 --> 0:33:48,120
+ to all of your binaries, right?
+
+647
+0:33:48,120 --> 0:33:52,100
+ Like your SSH agent, SSH add, and SSH statement.
+
+648
+0:33:52,100 --> 0:33:54,220
+ But if you have these newer versions,
+
+649
+0:33:54,220 --> 0:33:56,560
+ then you can specify a conflict like this.
+
+650
+0:33:57,700 --> 0:33:59,440
+ When I add, before when I added the key,
+
+651
+0:33:59,440 --> 0:34:01,560
+ I just added to the agent, you know,
+
+652
+0:34:01,560 --> 0:34:03,280
+ this key is available for everybody
+
+653
+0:34:03,280 --> 0:34:04,940
+ to do basically everything, right?
+
+654
+0:34:04,940 --> 0:34:06,300
+ Sign stuff on my regard.
+
+655
+0:34:06,300 --> 0:34:07,400
+ With this, I can do basically anything, right?
+
+656
+0:34:07,400 --> 0:34:08,360
+ Sign stuff on my regard.
+
+657
+0:34:08,360 --> 0:34:11,000
+ With this new setup, I can tell the agent,
+
+658
+0:34:11,000 --> 0:34:13,120
+ when you get a request to sign something,
+
+659
+0:34:13,120 --> 0:34:15,260
+ you should actually check what you're signing.
+
+660
+0:34:15,260 --> 0:34:18,800
+ So in this case, I'm saying, if I'm trying to,
+
+661
+0:34:18,800 --> 0:34:21,540
+ so like a common case, I think, would be,
+
+662
+0:34:21,540 --> 0:34:23,580
+ I'm often SSH-ing into my server,
+
+663
+0:34:23,580 --> 0:34:27,740
+ and for my server, I would like to SSH into GitHub
+
+664
+0:34:27,740 --> 0:34:29,680
+ because I have my stuff on GitHub, right?
+
+665
+0:34:29,680 --> 0:34:31,860
+ But I don't want to copy my file,
+
+666
+0:34:31,860 --> 0:34:33,360
+ my private key to my server.
+
+667
+0:34:34,700 --> 0:34:37,260
+ So it would be nice just to be,
+
+668
+0:34:37,260 --> 0:34:38,200
+ to make it a little bit easier.
+
+669
+0:34:38,200 --> 0:34:41,420
+ To add the restriction that the agent
+
+670
+0:34:41,420 --> 0:34:46,020
+ must only sign the user git on the domain
+
+671
+0:34:46,020 --> 0:34:48,720
+ git.data.coop, for instance.
+
+672
+0:34:49,800 --> 0:34:51,880
+ And if you go back like a ton of slides,
+
+673
+0:34:51,880 --> 0:34:54,580
+ you see that that's not possible with this format.
+
+674
+0:34:54,580 --> 0:34:56,000
+ So you need to change the format, right?
+
+675
+0:34:56,000 --> 0:34:57,800
+ I can only check the username
+
+676
+0:34:57,800 --> 0:35:01,660
+ because this is the request I'm getting on my agent to sign.
+
+677
+0:35:03,740 --> 0:35:06,120
+ But with this new setup, you know,
+
+678
+0:35:06,120 --> 0:35:08,120
+ there are some changes to the, to, to, to, to, to, to, to, to,
+
+679
+0:35:08,120 --> 0:35:09,160
+ to what I'm actually signing,
+
+680
+0:35:09,160 --> 0:35:11,960
+ which is why you need all the changes in the binaries.
+
+681
+0:35:11,960 --> 0:35:14,620
+ And, but then you can actually, you know,
+
+682
+0:35:14,620 --> 0:35:16,840
+ change these things.
+
+683
+0:35:16,840 --> 0:35:19,780
+ Another kind of like implementation detail is that
+
+684
+0:35:19,780 --> 0:35:22,260
+ it doesn't really make sense to restrict stuff
+
+685
+0:35:22,260 --> 0:35:23,900
+ on a hostname basis,
+
+686
+0:35:23,900 --> 0:35:28,040
+ because one key can have multiple hostnames,
+
+687
+0:35:28,960 --> 0:35:30,580
+ or how do I kind of like check that?
+
+688
+0:35:30,580 --> 0:35:32,960
+ So what actually happens behind the scenes is that,
+
+689
+0:35:32,960 --> 0:35:36,760
+ SSH add will look up what is the host key
+
+690
+0:35:38,120 --> 0:35:40,720
+ for these domains and then add the restriction there.
+
+691
+0:35:43,060 --> 0:35:44,520
+ Right?
+
+692
+0:35:44,520 --> 0:35:46,320
+ This is fun and awesome, but it's very new,
+
+693
+0:35:46,320 --> 0:35:48,560
+ so it might not work, but if you can use it,
+
+694
+0:35:48,560 --> 0:35:50,980
+ then you should absolutely restrict stuff
+
+695
+0:35:50,980 --> 0:35:53,160
+ if you're going to forward your agents.
+
+696
+0:35:53,160 --> 0:35:55,440
+ And then you should absolutely only forward your agent
+
+697
+0:35:55,440 --> 0:35:58,840
+ if you must, because it's very dangerous,
+
+698
+0:35:58,840 --> 0:36:03,840
+ because if somebody can attack the server
+
+699
+0:36:03,900 --> 0:36:07,580
+ you're SSHing into, then they can just ask your agent
+
+700
+0:36:07,580 --> 0:36:09,140
+ to sign anything.
+
+701
+0:36:09,140 --> 0:36:13,140
+ All right, so that's kind of like the first part
+
+702
+0:36:15,920 --> 0:36:18,180
+ of the presentation, and then let's go through
+
+703
+0:36:18,180 --> 0:36:20,760
+ some other, you know, random notes.
+
+704
+0:36:20,760 --> 0:36:24,220
+ First is, if you're using an ISA key,
+
+705
+0:36:24,220 --> 0:36:26,540
+ which you might be, because that's the standard,
+
+706
+0:36:26,540 --> 0:36:29,060
+ then you know, don't, this is ugly as fuck.
+
+707
+0:36:30,680 --> 0:36:34,280
+ Instead, you should generate a new key of type,
+
+708
+0:36:35,140 --> 0:36:37,420
+ an elliptic curve key if you can,
+
+709
+0:36:37,580 --> 0:36:39,340
+ and you get the same security level,
+
+710
+0:36:39,340 --> 0:36:41,900
+ it's just much smaller, which is very cool,
+
+711
+0:36:41,900 --> 0:36:45,560
+ and some, often it's much easier to actually implement.
+
+712
+0:36:46,440 --> 0:36:48,180
+ So, absolutely do that.
+
+713
+0:36:49,300 --> 0:36:50,500
+ Yay.
+
+714
+0:36:50,500 --> 0:36:53,340
+ Next, you can do some pretty neat stuff
+
+715
+0:36:53,340 --> 0:36:56,500
+ with FIDO keys, like USB sticks,
+
+716
+0:36:56,500 --> 0:36:59,960
+ but also if you have the mid-ID device,
+
+717
+0:36:59,960 --> 0:37:01,220
+ you can also use that.
+
+718
+0:37:01,220 --> 0:37:03,720
+ I forgot it, so I cannot share a demo with it.
+
+719
+0:37:05,920 --> 0:37:06,880
+ One, a bit, and, and, and, and, and, and, and, and, and, and,
+
+720
+0:37:06,880 --> 0:37:07,760
+ and, and, and, and, and, and, and, and, and, and, and,
+
+721
+0:37:07,760 --> 0:37:08,340
+ and, I'm still playing around
+
+722
+0:37:08,340 --> 0:37:09,200
+ cause there's not a FIDO key,
+
+723
+0:37:10,560 --> 0:37:12,760
+ okay?
+
+724
+0:37:12,760 --> 0:37:15,480
+ This ad also, Google overwhelmed an E-mail system
+
+725
+0:37:15,480 --> 0:37:18,920
+ of the ED245 format to GTP is,
+
+726
+0:37:18,920 --> 0:37:20,820
+ if you have natural- generatedthing.
+
+727
+0:37:20,820 --> 0:37:22,640
+ But go for it if you have a headless,
+
+728
+0:37:22,640 --> 0:37:23,960
+ but it's possible to,
+
+729
+0:37:23,960 --> 0:37:26,120
+ so you'll have the extra,
+
+730
+0:37:26,120 --> 0:37:27,700
+ of course you guys can do this,
+
+731
+0:37:27,700 --> 0:37:30,720
+ if you, to be an E 3 dots focus,
+
+732
+0:37:30,720 --> 0:37:32,660
+ and then you are that way.
+
+733
+0:37:32,660 --> 0:37:35,640
+ Doesn't, it's pretty easy because you can use them for,
+
+734
+0:37:35,640 --> 0:37:36,620
+ oh, oh, T為ç.
+
+735
+0:37:36,620 --> 0:37:39,600
+ I think that stands for security key, maybe.
+
+736
+0:37:39,600 --> 0:37:41,920
+ The key is very long, because it actually contains
+
+737
+0:37:41,920 --> 0:37:44,400
+ a proof that, or it can contain a proof
+
+738
+0:37:44,400 --> 0:37:48,520
+ that it was signed on some hardware.
+
+739
+0:37:49,580 --> 0:37:52,140
+ So they are a bit long and annoying.
+
+740
+0:37:52,140 --> 0:37:54,960
+ You can also, I think, include in the key
+
+741
+0:37:54,960 --> 0:37:58,020
+ if you need to physically click on the key
+
+742
+0:37:58,020 --> 0:38:00,460
+ to sign the request, or if you can just send the request
+
+743
+0:38:00,460 --> 0:38:02,860
+ to the key and then it will automatically sign.
+
+744
+0:38:03,940 --> 0:38:06,420
+ I was hoping that when they implemented this,
+
+745
+0:38:06,420 --> 0:38:08,720
+ they would do some kind of fancy,
+
+746
+0:38:08,720 --> 0:38:12,560
+ how do we cheat the key, because the FIDO2 standard
+
+747
+0:38:12,560 --> 0:38:15,320
+ is not very, that's meant for browsers, right?
+
+748
+0:38:15,320 --> 0:38:19,620
+ How do you merge SSH into that?
+
+749
+0:38:20,800 --> 0:38:22,060
+ They're not doing anything fancy,
+
+750
+0:38:22,060 --> 0:38:24,620
+ like trying to get the key to believe
+
+751
+0:38:24,620 --> 0:38:26,240
+ that it's actually signing a web request,
+
+752
+0:38:26,240 --> 0:38:28,100
+ but it's an open SSH request.
+
+753
+0:38:28,100 --> 0:38:29,600
+ They're just telling the key,
+
+754
+0:38:32,340 --> 0:38:33,940
+ what I showed before, what you're signing.
+
+755
+0:38:33,940 --> 0:38:35,280
+ You're signing something completely different
+
+756
+0:38:35,280 --> 0:38:36,400
+ if you're using one of these keys.
+
+757
+0:38:36,400 --> 0:38:38,900
+ So that's not very fun.
+
+758
+0:38:40,360 --> 0:38:44,800
+ You can most likely also use a TPM, which is very cool.
+
+759
+0:38:45,660 --> 0:38:48,540
+ So I think this is from Ledger,
+
+760
+0:38:48,540 --> 0:38:51,500
+ the Bitcoin, crypto, whatever company.
+
+761
+0:38:51,500 --> 0:38:53,960
+ They have actually been pushing pretty hard for this.
+
+762
+0:38:53,960 --> 0:38:56,920
+ So the TPM standard is apparently very new.
+
+763
+0:38:56,920 --> 0:39:00,180
+ There's a tool called TPM2PKCS11,
+
+764
+0:39:00,180 --> 0:39:02,860
+ which is like the talk to a smart card standard.
+
+765
+0:39:04,500 --> 0:39:06,380
+ And it is most likely in your distro.
+
+766
+0:39:06,400 --> 0:39:10,880
+ Today, so I tried it before and it worked super nice.
+
+767
+0:39:10,880 --> 0:39:13,160
+ And that's why my key was failing.
+
+768
+0:39:13,160 --> 0:39:15,560
+ So let's see, go back here.
+
+769
+0:39:15,560 --> 0:39:20,200
+ So in this demo, I have no identities added
+
+770
+0:39:20,200 --> 0:39:23,840
+ to my SSH agents, meaning that it's going to fail
+
+771
+0:39:23,840 --> 0:39:25,480
+ when I log into stuff.
+
+772
+0:39:25,480 --> 0:39:27,500
+ And if I look in my SSH folder,
+
+773
+0:39:27,500 --> 0:39:29,480
+ you see that I have no keys in my folder.
+
+774
+0:39:29,480 --> 0:39:32,860
+ That's why I had to do the SSH add before.
+
+775
+0:39:32,860 --> 0:39:34,420
+ So you would very much expect that if I try to SSH into something,
+
+776
+0:39:34,420 --> 0:39:35,440
+ that I have no keys in my folder. That's why I had to do the SSH add before.
+
+777
+0:39:35,440 --> 0:39:36,380
+ So you would very much expect that if I try to SSH into something,
+
+778
+0:39:36,400 --> 0:39:37,360
+ that I have no keys in my folder. That's why I had to do the SSH add before.
+
+779
+0:39:37,360 --> 0:39:38,540
+ Then that will fail.
+
+780
+0:39:38,540 --> 0:39:41,180
+ I have no keys on disk.
+
+781
+0:39:41,180 --> 0:39:42,200
+ So let's try it.
+
+782
+0:39:45,880 --> 0:39:48,260
+ And then it asked me for a pin.
+
+783
+0:39:48,260 --> 0:39:51,720
+ And now in this case, SSH is a label in my TPM.
+
+784
+0:39:54,980 --> 0:39:57,220
+ And I really hope I can remember the key.
+
+785
+0:39:57,220 --> 0:39:58,380
+ And then it worked, right?
+
+786
+0:39:58,380 --> 0:39:59,840
+ So this is very cool.
+
+787
+0:39:59,840 --> 0:40:04,000
+ Now it means that if you had my laptop,
+
+788
+0:40:04,000 --> 0:40:05,080
+ there's nothing to steal.
+
+789
+0:40:05,080 --> 0:40:06,020
+ You can ask my laptop, there's nothing to steal.
+
+790
+0:40:06,020 --> 0:40:10,880
+ You can ask my TPM live to sign something.
+
+791
+0:40:10,880 --> 0:40:12,060
+ But when I close down the screen,
+
+792
+0:40:12,060 --> 0:40:14,300
+ or shut down, pull out the battery,
+
+793
+0:40:14,300 --> 0:40:19,300
+ then I know that nobody can re-sign stuff on my behalf.
+
+794
+0:40:24,300 --> 0:40:27,020
+ There's a bunch of stuff that doesn't really work,
+
+795
+0:40:27,020 --> 0:40:28,860
+ or you get a bunch of error messages when you do it,
+
+796
+0:40:28,860 --> 0:40:30,320
+ but that's, yeah.
+
+797
+0:40:31,900 --> 0:40:33,520
+ All right, so I have a bunch of random configs,
+
+798
+0:40:33,520 --> 0:40:36,020
+ All right, so I have a bunch of random configs,
+
+799
+0:40:36,020 --> 0:40:37,580
+ and I'll go through them very quickly,
+
+800
+0:40:37,580 --> 0:40:39,520
+ because I guess you all know them.
+
+801
+0:40:40,520 --> 0:40:42,400
+ So aliases are very cool.
+
+802
+0:40:43,800 --> 0:40:46,220
+ And let's actually look at my SSH config.
+
+803
+0:40:47,480 --> 0:40:49,740
+ SSH config.
+
+804
+0:40:49,740 --> 0:40:51,860
+ So aliases.
+
+805
+0:40:51,860 --> 0:40:54,820
+ I have a bunch of stuff that I just don't remember
+
+806
+0:40:54,820 --> 0:40:58,420
+ the name of, so you can add this maps to that,
+
+807
+0:40:58,420 --> 0:41:00,100
+ and then you can also tap complete it.
+
+808
+0:41:00,100 --> 0:41:02,220
+ And if you have weird options,
+
+809
+0:41:02,220 --> 0:41:04,320
+ then you can also add that to your config.
+
+810
+0:41:06,020 --> 0:41:11,020
+ Then if you ever do like a SCP and you copy paste a file,
+
+811
+0:41:13,360 --> 0:41:16,120
+ but you cannot remember what that path is again,
+
+812
+0:41:16,120 --> 0:41:18,080
+ then you should for sure look into multiplexing
+
+813
+0:41:18,080 --> 0:41:19,660
+ or control master.
+
+814
+0:41:20,920 --> 0:41:22,820
+ Let's see if we can do a good demo.
+
+815
+0:41:22,820 --> 0:41:25,620
+ So currently it is disabled.
+
+816
+0:41:25,620 --> 0:41:28,260
+ So if I go, let's remove all of this.
+
+817
+0:41:32,720 --> 0:41:33,560
+ Let's see.
+
+818
+0:41:36,020 --> 0:41:41,020
+ So what is the, I'm trying to tap complete,
+
+819
+0:41:43,780 --> 0:41:45,460
+ oh it's slow, slow, slow.
+
+820
+0:41:45,460 --> 0:41:49,900
+ Oh, okay that's a root, what's in root?
+
+821
+0:41:49,900 --> 0:41:53,300
+ So slow, right?
+
+822
+0:41:53,300 --> 0:41:56,760
+ Let's enable the control master.
+
+823
+0:41:56,760 --> 0:42:00,200
+ And let's try again.
+
+824
+0:42:00,200 --> 0:42:01,460
+ Oops.
+
+825
+0:42:01,460 --> 0:42:05,400
+ What's in root?
+
+826
+0:42:05,400 --> 0:42:05,420
+ Okay.
+
+827
+0:42:05,420 --> 0:42:05,500
+ What's in root?
+
+828
+0:42:05,500 --> 0:42:05,560
+ That's slow, that's good.
+
+829
+0:42:05,560 --> 0:42:05,860
+ Okay.
+
+830
+0:42:05,860 --> 0:42:05,900
+ Okay.
+
+831
+0:42:05,900 --> 0:42:05,980
+ Okay.
+
+832
+0:42:05,980 --> 0:42:06,020
+ Okay.
+
+833
+0:42:06,020 --> 0:42:10,080
+ in root, it takes a long time to generate the first connection, but now I am connected
+
+834
+0:42:10,080 --> 0:42:15,680
+ so I should be able to easily see, there is a bunch of files in temp, I don't want to
+
+835
+0:42:15,680 --> 0:42:22,680
+ show my files, but I can actually pretty quickly tap complete stuff and how does it work? If
+
+836
+0:42:24,520 --> 0:42:31,520
+ I go to my SSH folder, I have a folder called control master and in this folder I just have
+
+837
+0:42:31,520 --> 0:42:37,140
+ a socket and the socket, whenever I need to create a new connection, it just looks
+
+838
+0:42:37,140 --> 0:42:43,080
+ in this folder, is there already a socket. You see that the socket is a user name at
+
+839
+0:42:43,080 --> 0:42:50,080
+ domain port and that comes from the config, so I spent a lot of time debugging why random
+
+840
+0:42:52,620 --> 0:42:58,740
+ options didn't work and in my case it was because I was adding the option down here,
+
+841
+0:42:58,740 --> 0:43:01,520
+ but I had a control master already open.
+
+842
+0:43:01,520 --> 0:43:07,920
+ So SSH did not know that I changed the options, so you see RP, RHP, whatever, you can add
+
+843
+0:43:07,920 --> 0:43:14,040
+ more stuff to that and it probably should be much more like, I would love for this to
+
+844
+0:43:14,040 --> 0:43:18,580
+ be like a hash of everything, every single option, so if I went down here and changed
+
+845
+0:43:18,580 --> 0:43:22,280
+ one of the options, it would automatically know that it has to create a new socket, that
+
+846
+0:43:22,280 --> 0:43:29,280
+ doesn't work, you easily get stuck on that. And then you see this is to get the TPM working,
+
+847
+0:43:31,520 --> 0:43:38,320
+ adding all the ETM stuff, if you use kitty then you probably want to ask, automatically
+
+848
+0:43:38,320 --> 0:43:45,320
+ send environment variables to unbrick your terminal and so on. So a lot of options, they
+
+849
+0:43:45,380 --> 0:43:50,820
+ are very nice, look into it, jump host, also instead of first SSH-ing into something and
+
+850
+0:43:50,820 --> 0:43:53,720
+ then SSH-ing further along.
+
+851
+0:43:53,720 --> 0:44:00,720
+ All right, hardening, if you change all the configs I showed you, ETM, removing old ciphers
+
+852
+0:44:01,520 --> 0:44:05,980
+ deleting old keys and so on, you probably will see this in your log, random people trying
+
+853
+0:44:05,980 --> 0:44:11,280
+ to connect to a server, to brute force and then they can't even do like a key exchange,
+
+854
+0:44:11,280 --> 0:44:15,840
+ I think that's pretty cool, I hope some spammer somewhere is trying to debug why they also
+
+855
+0:44:15,840 --> 0:44:21,340
+ get where they were in their int, that would be fun.
+
+856
+0:44:21,340 --> 0:44:25,440
+ There's a very nice tool called SSH-out audit, where you can test both your server and your
+
+857
+0:44:25,440 --> 0:44:30,780
+ client, they write something about, you know, there's some ciphers made by NIST that might
+
+858
+0:44:30,780 --> 0:44:31,420
+ be backdoored.
+
+859
+0:44:31,420 --> 0:44:37,600
+ I think that's a bit bullshit, but what not.
+
+860
+0:44:37,600 --> 0:44:44,600
+ And I tried to get recently this CV found in agent forwarding, and the idea was that
+
+861
+0:44:46,260 --> 0:44:52,740
+ if you do agent forwarding, then on, so I'm on one server, I go to another server and
+
+862
+0:44:52,740 --> 0:44:58,700
+ I have forwarded my agents, right, I have a socket that you can use to ask my agent
+
+863
+0:44:58,700 --> 0:45:00,800
+ to sign something.
+
+864
+0:45:00,800 --> 0:45:09,760
+ That's bad by itself, but what if I on this attacker system could get my agent to do RCE,
+
+865
+0:45:09,760 --> 0:45:14,080
+ if I could do like a remote code execution on the original system.
+
+866
+0:45:14,080 --> 0:45:19,680
+ And then there are some people who found out that, you know, there's a bug, it's written
+
+867
+0:45:19,680 --> 0:45:26,800
+ in C, surprise, surprise, but actually I couldn't get it to work, which was a bit annoying,
+
+868
+0:45:26,800 --> 0:45:27,800
+ right?
+
+869
+0:45:27,800 --> 0:45:29,560
+ But to get it to work, you would do the following.
+
+870
+0:45:29,560 --> 0:45:30,760
+ First of all, you would do the following.
+
+871
+0:45:30,760 --> 0:45:36,820
+ First, you would send the socket of whoever you are targeting, and then you can use SSH
+
+872
+0:45:36,820 --> 0:45:43,360
+ add to ask the agent on the target system to load a library, and apparently there's
+
+873
+0:45:43,360 --> 0:45:46,600
+ no like restrictions on what library can you load.
+
+874
+0:45:46,600 --> 0:45:52,240
+ The only restriction is it has to be a library already on your system.
+
+875
+0:45:52,240 --> 0:45:58,440
+ And then they found out that if you install the right amount of packages from, at least
+
+876
+0:45:58,440 --> 0:46:00,600
+ from, you know, some Ubuntu packages.
+
+877
+0:46:00,600 --> 0:46:07,240
+ Then you can actually get them to execute code by just loading and unloading them.
+
+878
+0:46:07,240 --> 0:46:09,840
+ And that's very amazing.
+
+879
+0:46:09,840 --> 0:46:16,500
+ So in this case, if you load this binary, then your stack will be executable.
+
+880
+0:46:16,500 --> 0:46:20,800
+ Then there are like, of course, there's a buffer overflow in some codes.
+
+881
+0:46:20,800 --> 0:46:25,180
+ So you could, you could store a bunch of stuff on the stack.
+
+882
+0:46:25,180 --> 0:46:29,660
+ Then if you load this library, there's a, whatever signal handler that would be registered,
+
+883
+0:46:29,660 --> 0:46:30,600
+ but it'll put it on the stack.
+
+884
+0:46:30,600 --> 0:46:32,480
+ It'll point to some memory address.
+
+885
+0:46:32,480 --> 0:46:35,800
+ And then you unload the library, so now it points to nothing, right?
+
+886
+0:46:35,800 --> 0:46:39,500
+ Then you load this one, and it has some kind of no deletes thingy.
+
+887
+0:46:39,500 --> 0:46:45,320
+ So now this sick handler will point to some random place in this new library.
+
+888
+0:46:45,320 --> 0:46:49,040
+ You unload it, but it has no deletes, so it's still there.
+
+889
+0:46:49,040 --> 0:46:52,140
+ And then if you load this one, it will trigger the signal handler.
+
+890
+0:46:52,140 --> 0:46:56,740
+ The signal handler will run some random code somewhere, which will end up jumping to your
+
+891
+0:46:56,740 --> 0:47:00,080
+ stack, and the stack is full of knobs.
+
+892
+0:47:00,080 --> 0:47:02,440
+ And then some codes.
+
+893
+0:47:02,440 --> 0:47:06,760
+ So this was like, from a research perspective, super amazing.
+
+894
+0:47:06,760 --> 0:47:09,860
+ From an SSH perspective, it's not very relevant, right?
+
+895
+0:47:09,860 --> 0:47:15,840
+ If you do agent forwarding on a system that is already compromised, you have already lost.
+
+896
+0:47:15,840 --> 0:47:22,840
+ Yeah, so very cool, look into it.
+
+897
+0:47:22,840 --> 0:47:23,840
+ Final remarks.
+
+898
+0:47:23,840 --> 0:47:28,960
+ I was expecting the counter to be much higher, right, but I only lost access to my server
+
+899
+0:47:28,960 --> 0:47:29,960
+ one time.
+
+900
+0:47:30,080 --> 0:47:32,920
+ I lost access three years, and then I had the broken DNS.
+
+901
+0:47:32,920 --> 0:47:35,960
+ But if you play around with stuff, make sure you can get access, right?
+
+902
+0:47:35,960 --> 0:47:40,240
+ It's very easy to lock yourself out of the system.
+
+903
+0:47:40,240 --> 0:47:49,980
+ And then, final final, when you go home and generate a bunch of new fancy ED-25519 keys,
+
+904
+0:47:49,980 --> 0:47:56,800
+ then you can use OpenSSH SSH copy ID to just copy all your keys over to servers.
+
+905
+0:47:56,800 --> 0:47:58,440
+ This is a very nice tool.
+
+906
+0:47:58,440 --> 0:48:00,040
+ So you just, you know.
+
+907
+0:48:00,080 --> 0:48:03,200
+ Copy all my keys to a new server, and then you're good.
+
+908
+0:48:03,200 --> 0:48:07,280
+ So that's actually it.
+
+909
+0:48:07,280 --> 0:48:10,280
+ Yeah.
+
+910
+0:48:10,280 --> 0:48:29,080
+ Do we have any questions?
+
+911
+0:48:29,080 --> 0:48:30,080
+ So you just said.
+
+912
+0:48:30,080 --> 0:48:35,000
+ You can use SSH copy ID to copy all of our keys to a server.
+
+913
+0:48:35,000 --> 0:48:41,200
+ Would it, I mean, would it make sense to have, like, different SSH keys for different servers,
+
+914
+0:48:41,200 --> 0:48:44,200
+ or is that not really that important?
+
+915
+0:48:44,200 --> 0:48:45,200
+ Yeah.
+
+916
+0:48:45,200 --> 0:48:48,220
+ Yeah, I should probably correct it a bit.
+
+917
+0:48:48,220 --> 0:48:52,700
+ So you can copy all your public keys to a server, but of course it makes you, if you
+
+918
+0:48:52,700 --> 0:48:57,200
+ have many public keys, you might restrict, like, if I have one very important server,
+
+919
+0:48:57,200 --> 0:48:58,200
+ I probably don't want all of my keys there.
+
+920
+0:48:58,200 --> 0:48:59,200
+ I don't need the, for fun.
+
+921
+0:48:59,200 --> 0:48:59,480
+ Yeah.
+
+922
+0:48:59,480 --> 0:48:59,600
+ Yeah.
+
+923
+0:48:59,600 --> 0:48:59,880
+ Yeah.
+
+924
+0:48:59,880 --> 0:48:59,900
+ Yeah.
+
+925
+0:48:59,900 --> 0:49:00,040
+ Yeah.
+
+926
+0:49:00,080 --> 0:49:02,900
+ I don't protect the keys or whatnot.
+
+927
+0:49:02,900 --> 0:49:09,920
+ So for sure, if you actually do this on a mall, not on just a hobby level, then you
+
+928
+0:49:09,920 --> 0:49:15,720
+ should not just randomly copy keys, yeah.
+
+929
+0:49:15,720 --> 0:49:17,400
+ Thanks for that talk.
+
+930
+0:49:17,400 --> 0:49:24,940
+ I was wondering, do you know, having looked at the protocol, if you don't verify the server's
+
+931
+0:49:24,940 --> 0:49:29,880
+ public key, but you're using public key authentication, so the server knows your public key.
+
+932
+0:49:29,880 --> 0:49:35,760
+ But you don't know it, can somebody actually do a man-in-the-middle attack, or could they
+
+933
+0:49:35,760 --> 0:49:37,440
+ just give you a fake shell?
+
+934
+0:49:37,440 --> 0:49:40,880
+ Like obviously they could give you a different server, so you try to log in and the man-in-the-middle
+
+935
+0:49:40,880 --> 0:49:42,820
+ just gives you a different server completely.
+
+936
+0:49:42,820 --> 0:49:44,080
+ You can't authenticate the server.
+
+937
+0:49:44,080 --> 0:49:50,040
+ But it seems like the encryption could be reliant on your authentication key in some
+
+938
+0:49:50,040 --> 0:49:52,400
+ way, and I'm wondering if you know if SSH does that.
+
+939
+0:49:52,400 --> 0:49:58,720
+ Like if you're a man-in-the-middle and the user doesn't know the server's public key,
+
+940
+0:49:58,720 --> 0:49:59,720
+ can you actually man-in-the-middle?
+
+941
+0:49:59,720 --> 0:50:02,480
+ Can you man-in-the-middle them when they're using public key authentication?
+
+942
+0:50:02,480 --> 0:50:10,200
+ Yeah, so you are going to sign the session identifier hash, right?
+
+943
+0:50:10,200 --> 0:50:14,220
+ And that should point uniquely to my current session.
+
+944
+0:50:14,220 --> 0:50:19,680
+ So that would be towards the real server or towards a completely fake man-in-the-middle
+
+945
+0:50:19,680 --> 0:50:20,740
+ server.
+
+946
+0:50:20,740 --> 0:50:27,000
+ So if I haven't checked, like if I don't know the server's public key and I'm connecting
+
+947
+0:50:27,000 --> 0:50:28,560
+ to a wrong server, then yeah.
+
+948
+0:50:28,560 --> 0:50:37,500
+ Then I'm not sure.
+
+949
+0:50:37,500 --> 0:50:42,340
+ I think I would have to draw it, but I think I would be cheated, but you cannot take my
+
+950
+0:50:42,340 --> 0:50:45,580
+ proof and forward it to the other server.
+
+951
+0:50:45,580 --> 0:50:46,580
+ Yeah.
+
+952
+0:50:46,580 --> 0:50:48,680
+ Yes, I agree with that.
+
+953
+0:50:48,680 --> 0:50:56,920
+ So the server key is in the key exchange phase, which is quite early, way, way before there
+
+954
+0:50:56,920 --> 0:50:58,560
+ is any authentication of the client.
+
+955
+0:50:58,560 --> 0:51:00,540
+ Going on.
+
+956
+0:51:00,540 --> 0:51:08,140
+ And once the client gets an authentication challenge for the public key, it will sign
+
+957
+0:51:08,140 --> 0:51:09,140
+ it, right?
+
+958
+0:51:09,140 --> 0:51:10,140
+ Yeah.
+
+959
+0:51:10,140 --> 0:51:13,540
+ And there's no verification of the server anymore at that stage.
+
+960
+0:51:13,540 --> 0:51:14,540
+ Yeah.
+
+961
+0:51:14,540 --> 0:51:15,540
+ Yeah.
+
+962
+0:51:15,540 --> 0:51:16,540
+ Any more questions?
+
+963
+0:51:16,540 --> 0:51:17,540
+ Okay.
+
+964
+0:51:17,540 --> 0:51:18,540
+ Thank you.
+
+965
+0:51:18,540 --> 0:51:19,540
+ Thank you.
+
+966
+0:51:19,540 --> 0:51:20,540
+ Thank you.
+
+967
+0:51:20,540 --> 0:51:21,540
+ Thank you.
+
+968
+0:51:21,540 --> 0:51:22,540
+ Thank you.
+
+969
+0:51:22,540 --> 0:51:23,540
+ Thank you.
+
+970
+0:51:23,540 --> 0:51:24,540
+ Thank you.
+
+971
+0:51:24,540 --> 0:51:25,540
+ Thank you.
+
+972
+0:51:25,540 --> 0:51:26,540
+ Thank you.
+
+973
+0:51:26,540 --> 0:51:27,540
+ Thank you.
+
+974
+0:51:27,540 --> 0:51:28,540
+ Thank you.
+
+975
+0:51:28,560 --> 0:51:29,580
+ Thank you.
+
+976
+0:51:29,580 --> 0:51:30,580
+ Thank you.
+
+977
+0:51:30,580 --> 0:51:31,580
+ Thank you.
+
+978
+0:51:31,580 --> 0:51:32,580
+ Thank you.
+
+979
+0:51:32,580 --> 0:51:33,580
+ What?
+
+980
+0:51:33,580 --> 0:51:34,580
+ Don't fire me so late.
+
+981
+0:51:34,580 --> 0:51:38,900
+ Let's give Nicolai another round of applause for a fantastic talk.

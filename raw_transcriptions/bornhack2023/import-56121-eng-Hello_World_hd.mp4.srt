@@ -1,0 +1,3435 @@
+# Transcribed 2023-11-12T14 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tanya Cushman Reviewer Reviewer's Name
+
+2
+0:00:07,000 --> 0:00:10,000
+ Hello, everybody, and welcome to BornHack 2023.
+
+3
+0:00:21,500 --> 0:00:25,000
+ The first organizers arrived here about a week ago,
+
+4
+0:00:25,000 --> 0:00:28,500
+ and it is insane to look around and see how much has changed,
+
+5
+0:00:28,500 --> 0:00:32,500
+ and all the volunteers who have helped have done so much work
+
+6
+0:00:32,500 --> 0:00:34,500
+ and deserve all our gratitude.
+
+7
+0:00:34,500 --> 0:00:36,500
+ We'll get back to that later,
+
+8
+0:00:36,500 --> 0:00:40,500
+ but it is fantastic to see everybody putting up camps
+
+9
+0:00:40,500 --> 0:00:42,500
+ and moving into the field and unpacking
+
+10
+0:00:42,500 --> 0:00:46,500
+ and starting to build our temporary home for the next week.
+
+11
+0:00:46,500 --> 0:00:49,500
+ Well, technically, BornHack is a two-week event, right?
+
+12
+0:00:49,500 --> 0:00:52,500
+ Only the volunteers know that secret,
+
+13
+0:00:52,500 --> 0:00:54,500
+ so you get to be here much longer
+
+14
+0:00:54,500 --> 0:00:57,500
+ if you help out with build-up and tear-down.
+
+15
+0:00:57,500 --> 0:00:58,500
+ No.
+
+16
+0:00:58,500 --> 0:01:02,500
+ We are very excited.
+
+17
+0:01:02,500 --> 0:01:05,500
+ This has been a year of many challenges,
+
+18
+0:01:05,500 --> 0:01:07,500
+ and, well, it always is,
+
+19
+0:01:07,500 --> 0:01:10,500
+ but maybe some particularly big ones this year.
+
+20
+0:01:10,500 --> 0:01:13,500
+ In particular, some sad news.
+
+21
+0:01:13,500 --> 0:01:16,500
+ We lost one of our organizers, Jesper, this year,
+
+22
+0:01:16,500 --> 0:01:18,500
+ or last year, in October,
+
+23
+0:01:18,500 --> 0:01:21,500
+ very suddenly and way too soon,
+
+24
+0:01:21,500 --> 0:01:24,500
+ and it hit all of us hard.
+
+25
+0:01:24,500 --> 0:01:30,500
+ We dedicated the tagline for this year to Jesper,
+
+26
+0:01:30,500 --> 0:01:31,500
+ Make Legacy,
+
+27
+0:01:31,500 --> 0:01:35,500
+ because we feel that, well, everybody wants to leave a legacy,
+
+28
+0:01:35,500 --> 0:01:39,500
+ and Jesper absolutely did leave a legacy.
+
+29
+0:01:39,500 --> 0:01:44,500
+ He had a tremendous impact on BornHack as an organization
+
+30
+0:01:44,500 --> 0:01:48,500
+ and on all of us personally.
+
+31
+0:01:48,500 --> 0:01:53,500
+ And...
+
+32
+0:01:53,500 --> 0:01:55,500
+ he left a giant void.
+
+33
+0:01:57,500 --> 0:02:00,500
+ Thank you to the people in info
+
+34
+0:02:00,500 --> 0:02:02,500
+ and the people in wellness
+
+35
+0:02:02,500 --> 0:02:04,500
+ who have stepped up to fill the void after him.
+
+36
+0:02:04,500 --> 0:02:06,500
+ Thank you in particular
+
+37
+0:02:06,500 --> 0:02:09,500
+ to the new radio team
+
+38
+0:02:09,500 --> 0:02:11,500
+ and to Maunus,
+
+39
+0:02:11,500 --> 0:02:14,500
+ who have sponsored the new radios
+
+40
+0:02:14,500 --> 0:02:16,500
+ and the new repeater and everything,
+
+41
+0:02:16,500 --> 0:02:19,500
+ so we can continue the work that Jesper did
+
+42
+0:02:19,500 --> 0:02:22,500
+ in every sense of the word.
+
+43
+0:02:22,500 --> 0:02:27,500
+ There's nothing really we can do to properly mark this,
+
+44
+0:02:27,500 --> 0:02:31,500
+ but I wanted to do a minute of silence,
+
+45
+0:02:31,500 --> 0:02:33,500
+ but instead, I think that doesn't feel right,
+
+46
+0:02:33,500 --> 0:02:37,500
+ because Jesper wasn't the silent type.
+
+47
+0:02:37,500 --> 0:02:40,500
+ Instead, we'll do 30 seconds of silence
+
+48
+0:02:40,500 --> 0:02:44,500
+ and then 30 seconds of applause to celebrate his life.
+
+49
+0:02:44,500 --> 0:02:46,500
+ Starting now.
+
+50
+0:02:52,500 --> 0:03:02,500
+ .
+
+51
+0:03:02,500 --> 0:03:12,500
+ .
+
+52
+0:03:12,500 --> 0:03:16,500
+ .
+
+53
+0:03:16,500 --> 0:03:17,500
+ .
+
+54
+0:03:17,500 --> 0:03:18,500
+ .
+
+55
+0:03:18,500 --> 0:03:20,500
+ .
+
+56
+0:03:20,500 --> 0:03:21,500
+ .
+
+57
+0:03:21,500 --> 0:03:24,500
+ .
+
+58
+0:03:24,500 --> 0:03:26,500
+ .
+
+59
+0:03:26,500 --> 0:03:27,500
+ .
+
+60
+0:03:27,500 --> 0:03:29,500
+ .
+
+61
+0:03:29,500 --> 0:03:31,500
+ .
+
+62
+0:03:31,500 --> 0:03:32,500
+ .
+
+63
+0:03:32,500 --> 0:03:36,500
+ .
+
+64
+0:03:36,500 --> 0:03:39,500
+ .
+
+65
+0:03:39,500 --> 0:03:41,500
+ .
+
+66
+0:03:41,500 --> 0:03:42,500
+ .
+
+67
+0:03:42,500 --> 0:03:46,500
+ .
+
+68
+0:03:46,500 --> 0:03:48,500
+ .
+
+69
+0:03:48,500 --> 0:03:49,500
+ .
+
+70
+0:03:49,500 --> 0:04:17,580
+ Thank you all, it means a lot, give me 30 seconds.
+
+71
+0:04:17,580 --> 0:04:23,480
+ It's not a fun first slide, but let's pick it up from here.
+
+72
+0:04:23,480 --> 0:04:28,260
+ The code of conduct is pretty basic to BornHack, and it's actually one of the things that Jesper
+
+73
+0:04:28,260 --> 0:04:33,240
+ also helped out a lot with, I forgot to mention that Morten from the NOC team stepped up and
+
+74
+0:04:33,240 --> 0:04:38,480
+ took Jesper's place in the code of conduct team, so thank you also, Morten, for that.
+
+75
+0:04:38,480 --> 0:04:42,440
+ The code of conduct, you probably have all seen it by now, because it's taped to the
+
+76
+0:04:42,440 --> 0:04:46,580
+ inside of the toilet doors, so it's pretty hard to miss.
+
+77
+0:04:46,580 --> 0:04:47,580
+ We take this seriously.
+
+78
+0:04:47,580 --> 0:04:49,600
+ We expect you to do the same.
+
+79
+0:04:49,600 --> 0:04:55,480
+ It is about being nice to each other and respecting each other's personal space.
+
+80
+0:04:55,480 --> 0:04:58,680
+ It's a photo policy and much more.
+
+81
+0:04:58,680 --> 0:05:01,220
+ Make sure you read it, make sure you follow it.
+
+82
+0:05:01,220 --> 0:05:07,520
+ If you have questions, we are available, there's a conduct team that you can speak to, and
+
+83
+0:05:07,520 --> 0:05:14,520
+ we usually don't have to resort to any major code of conduct things.
+
+84
+0:05:14,520 --> 0:05:16,940
+ People are generally very, very nice to each other here.
+
+85
+0:05:16,940 --> 0:05:17,540
+ We really appreciate it.
+
+86
+0:05:17,580 --> 0:05:23,040
+ We appreciate that, and we think and hope that that will continue, of course, but the
+
+87
+0:05:23,040 --> 0:05:29,520
+ code of conduct is there to be a guideline in case some people have questions about that.
+
+88
+0:05:29,520 --> 0:05:32,580
+ Reach out to the conduct team, please.
+
+89
+0:05:32,580 --> 0:05:33,580
+ Okay.
+
+90
+0:05:33,580 --> 0:05:44,800
+ Like I said, everybody who some people even showed up on the first day or second day,
+
+91
+0:05:44,800 --> 0:05:45,700
+ so have been here almost a week, along with the first officer.
+
+92
+0:05:45,700 --> 0:05:46,700
+ I'm not sure if you can see the difference.
+
+93
+0:05:46,700 --> 0:05:46,900
+ I'm not sure.
+
+94
+0:05:46,900 --> 0:05:46,980
+ I'm not sure.
+
+95
+0:05:46,980 --> 0:05:47,040
+ I'm not sure.
+
+96
+0:05:47,040 --> 0:05:47,120
+ I'm not sure.
+
+97
+0:05:47,120 --> 0:05:47,220
+ I'm not sure.
+
+98
+0:05:47,220 --> 0:05:47,260
+ I'm not sure.
+
+99
+0:05:47,260 --> 0:05:47,280
+ I'm not sure.
+
+100
+0:05:47,280 --> 0:05:47,360
+ I'm not sure.
+
+101
+0:05:47,360 --> 0:05:47,380
+ I'm not sure.
+
+102
+0:05:47,380 --> 0:05:47,400
+ I'm not sure.
+
+103
+0:05:47,400 --> 0:05:47,420
+ I'm not sure.
+
+104
+0:05:47,420 --> 0:05:47,460
+ I'm not sure.
+
+105
+0:05:47,460 --> 0:05:47,520
+ I'm not sure.
+
+106
+0:05:47,580 --> 0:05:47,980
+ I'm not sure.
+
+107
+0:05:47,980 --> 0:05:48,040
+ I'm not sure.
+
+108
+0:05:48,040 --> 0:05:48,120
+ I'm not sure.
+
+109
+0:05:48,120 --> 0:05:48,140
+ I'm not sure.
+
+110
+0:05:48,140 --> 0:05:48,160
+ I'm not sure.
+
+111
+0:05:48,160 --> 0:05:48,500
+ I'm not sure.
+
+112
+0:05:48,500 --> 0:05:48,520
+ I'm not sure.
+
+113
+0:05:48,520 --> 0:05:48,560
+ I'm not sure.
+
+114
+0:05:48,560 --> 0:05:48,580
+ I'm not sure.
+
+115
+0:05:48,580 --> 0:05:48,600
+ I'm not sure.
+
+116
+0:05:48,600 --> 0:05:48,640
+ I'm not sure.
+
+117
+0:05:49,100 --> 0:05:54,840
+ It is such a big job putting up all this stuff, and the rain has not, the weather
+
+118
+0:05:54,840 --> 0:05:56,460
+ has not helped one bit.
+
+119
+0:05:56,760 --> 0:06:02,020
+ It has been not only raining, but very unstable, so occasionally raining and occasionally very
+
+120
+0:06:02,020 --> 0:06:06,680
+ hot, so you have to change in and out of outfits every 10 seconds.
+
+121
+0:06:06,860 --> 0:06:11,600
+ There's been a lot of work, and to the people who take extra days off of work and stuff
+
+122
+0:06:11,600 --> 0:06:15,580
+ to come and help make this happen, and also in the other end who stay for the teardown
+
+123
+0:06:15,580 --> 0:06:17,560
+ and extra space.
+
+124
+0:06:17,560 --> 0:06:18,900
+ Rachel, a big thank you.
+
+125
+0:06:19,020 --> 0:06:23,900
+ Can you please all stand up, people who helped with the build-up, so we can see how many people
+
+126
+0:06:23,900 --> 0:06:24,600
+ there actually is?
+
+127
+0:06:44,600 --> 0:06:44,960
+ Thank you.
+
+128
+0:06:44,960 --> 0:06:47,440
+ Born Hackers, like the bar, always a work in progress.
+
+129
+0:06:47,440 --> 0:06:56,620
+ Even though we have had a bit more of a less stressful build-up because we had a few more
+
+130
+0:06:56,620 --> 0:07:02,380
+ days and some stuff got delivered and put up earlier than usual, so it's been a nice example
+
+131
+0:07:02,380 --> 0:07:06,220
+ of a build-up the way it should be and not too stressful and not too many long nights
+
+132
+0:07:06,220 --> 0:07:11,160
+ and stuff, but it would be crazy to think that we have remembered everything and gotten
+
+133
+0:07:11,160 --> 0:07:15,500
+ everything done, so there's still small things to do, and there'll be stuff that keeps popping
+
+134
+0:07:15,500 --> 0:07:16,420
+ up over the week.
+
+135
+0:07:17,440 --> 0:07:24,160
+ We'll put jobs on the whiteboard by the info desk, so if you come by and see something and
+
+136
+0:07:24,160 --> 0:07:28,820
+ think, I can do that, and I have some time and I want to help out, then by all means,
+
+137
+0:07:28,820 --> 0:07:35,420
+ please talk to the info desk or somebody if you need to, or just do the job if it's easy
+
+138
+0:07:35,420 --> 0:07:39,020
+ to do.
+
+139
+0:07:39,020 --> 0:07:41,900
+ If you see something wrong and you can't fix it, then please let us know.
+
+140
+0:07:41,900 --> 0:07:44,480
+ We will find somebody who can fix it.
+
+141
+0:07:44,480 --> 0:07:47,240
+ I have a venue map.
+
+142
+0:07:47,240 --> 0:07:54,860
+ At some point, and the venue continually evolving over the week is exemplified by, I made these
+
+143
+0:07:54,860 --> 0:07:59,620
+ slides two hours ago and the map is already outdated, so bear with me on that.
+
+144
+0:07:59,620 --> 0:08:04,560
+ I'll try to explain what happened when we get to it, but we're rolling with the punches
+
+145
+0:08:04,560 --> 0:08:08,820
+ and we'll make everything work, of course.
+
+146
+0:08:08,820 --> 0:08:09,980
+ Oh, here it is.
+
+147
+0:08:09,980 --> 0:08:11,820
+ It's not terribly big, but...
+
+148
+0:08:11,820 --> 0:08:12,820
+ Yeah, okay.
+
+149
+0:08:12,820 --> 0:08:13,820
+ It's not terribly big.
+
+150
+0:08:13,820 --> 0:08:14,820
+ It's not terribly big.
+
+151
+0:08:14,820 --> 0:08:15,820
+ It's not terribly big.
+
+152
+0:08:15,820 --> 0:08:16,820
+ It's not terribly big.
+
+153
+0:08:16,820 --> 0:08:17,820
+ It's not terribly big.
+
+154
+0:08:17,820 --> 0:08:18,820
+ It's not terribly big.
+
+155
+0:08:18,820 --> 0:08:19,820
+ Okay.
+
+156
+0:08:19,820 --> 0:08:20,820
+ So...
+
+157
+0:08:20,820 --> 0:08:23,820
+ Well, I'll just use the colors.
+
+158
+0:08:23,820 --> 0:08:24,820
+ Okay.
+
+159
+0:08:24,820 --> 0:08:31,640
+ So we are in the white square in the middle of the light blue triangle, the general camping,
+
+160
+0:08:31,640 --> 0:08:35,240
+ and this is the speaker stand.
+
+161
+0:08:35,240 --> 0:08:37,060
+ Across the road, straight ahead is the bar.
+
+162
+0:08:37,060 --> 0:08:38,060
+ It is hard to miss.
+
+163
+0:08:38,060 --> 0:08:42,820
+ It is a big, colorful, loud place with all the beers.
+
+164
+0:08:42,820 --> 0:08:46,440
+ We have northeast of this general camping.
+
+165
+0:08:46,440 --> 0:08:48,440
+ In the pointy end, we have the caravans.
+
+166
+0:08:48,440 --> 0:08:54,200
+ This year, they moved to the other side of the road, and across the road from them, we
+
+167
+0:08:54,200 --> 0:08:57,440
+ have some more general camping for our tents.
+
+168
+0:08:57,440 --> 0:09:03,440
+ On the other, between the bar and general camping is the orga area with the info desk
+
+169
+0:09:03,440 --> 0:09:04,440
+ and all that.
+
+170
+0:09:04,440 --> 0:09:10,440
+ It is also the organizer's personal village and where we go to chill out and get away
+
+171
+0:09:10,440 --> 0:09:15,440
+ from people, like everybody needs to occasionally.
+
+172
+0:09:15,440 --> 0:09:21,440
+ So, please, unless you have something urgent, try to reach somebody in the info desk or
+
+173
+0:09:21,440 --> 0:09:28,440
+ somewhere else, and please stay out of the orga village as much as possible.
+
+174
+0:09:28,440 --> 0:09:33,940
+ Not that we don't love you all, but we also have our stock of booze and everything in
+
+175
+0:09:33,940 --> 0:09:34,940
+ there.
+
+176
+0:09:34,940 --> 0:09:37,440
+ We want to just keep it free of people.
+
+177
+0:09:37,440 --> 0:09:42,440
+ That is for us to drink.
+
+178
+0:09:42,440 --> 0:09:43,440
+ No.
+
+179
+0:09:43,440 --> 0:09:44,440
+ Yeah.
+
+180
+0:09:44,440 --> 0:09:54,440
+ So, following the central main road south, there's an entrance into the food area, and
+
+181
+0:09:54,440 --> 0:09:58,440
+ past the food area, there's the noisy camping area.
+
+182
+0:09:58,440 --> 0:10:00,440
+ Sorry, party camping area.
+
+183
+0:10:00,440 --> 0:10:04,440
+ You don't have to be noisy down there.
+
+184
+0:10:04,440 --> 0:10:08,440
+ On the other side of the road from that is the cozy camping area, which we introduced
+
+185
+0:10:08,440 --> 0:10:11,440
+ last year when we moved the speaker's tent down here.
+
+186
+0:10:11,440 --> 0:10:13,440
+ It has turned out to be quite a nice little camping area.
+
+187
+0:10:13,440 --> 0:10:15,440
+ It's very popular this year.
+
+188
+0:10:15,440 --> 0:10:16,440
+ It's nice to see.
+
+189
+0:10:16,440 --> 0:10:21,440
+ Going further up the road, there's a big shower and toilet building.
+
+190
+0:10:21,440 --> 0:10:25,440
+ All the showers are down in the south end of the venue.
+
+191
+0:10:25,440 --> 0:10:29,440
+ There's a separate building that has two showers and four toilets, and inside the main building,
+
+192
+0:10:29,440 --> 0:10:32,440
+ there's two more showers and two more toilets.
+
+193
+0:10:32,440 --> 0:10:35,440
+ Also, there's two toilets down here by the bar.
+
+194
+0:10:35,440 --> 0:10:37,440
+ That's the venue.
+
+195
+0:10:37,440 --> 0:10:39,440
+ If you have questions...
+
+196
+0:10:39,440 --> 0:10:41,440
+ Oh, and the silent area, the neon light bulb.
+
+197
+0:10:41,440 --> 0:10:42,440
+ No.
+
+198
+0:10:42,440 --> 0:10:48,440
+ The light blue area in the top is the silent camping, and the eastern part of that, or
+
+199
+0:10:48,440 --> 0:10:52,440
+ maybe the western part, it's not fully clear yet, will be converted to an extra caravan
+
+200
+0:10:52,440 --> 0:10:55,440
+ area, because we're kind of running out of space.
+
+201
+0:10:55,440 --> 0:11:03,440
+ There's ample space down there, so we'll kind of remodel the venue a little bit last minute,
+
+202
+0:11:03,440 --> 0:11:04,440
+ forced by...
+
+203
+0:11:04,440 --> 0:11:10,440
+ Well, we kind of estimated wrong, I think, how much room caravans take or something.
+
+204
+0:11:10,440 --> 0:11:11,440
+ Okay.
+
+205
+0:11:11,440 --> 0:11:14,440
+ The info desk is across the road from...
+
+206
+0:11:14,440 --> 0:11:17,440
+ Yeah, and a bit down the road from where we are now.
+
+207
+0:11:17,440 --> 0:11:20,440
+ Many of you have probably been there to get your wristband.
+
+208
+0:11:20,440 --> 0:11:25,440
+ You can come back to get more hacks, get some mate if the bar isn't open, ask questions,
+
+209
+0:11:25,440 --> 0:11:29,440
+ pick up merchandise, pick up the badges when we get to that.
+
+210
+0:11:29,440 --> 0:11:34,440
+ They will be ready soon, I think, tomorrow or the day after or something.
+
+211
+0:11:34,440 --> 0:11:37,440
+ The team needs people to help cover the shifts.
+
+212
+0:11:37,440 --> 0:11:39,440
+ It's not difficult work.
+
+213
+0:11:39,440 --> 0:11:44,440
+ They sit down and just help people, and they have a thorough introduction, so most people
+
+214
+0:11:44,440 --> 0:11:46,440
+ should be able to do it.
+
+215
+0:11:46,440 --> 0:11:51,440
+ They really need some help, so please go to the info desk and ask them if you're interested
+
+216
+0:11:51,440 --> 0:11:52,440
+ in helping out.
+
+217
+0:11:52,440 --> 0:11:57,440
+ They would love to be able to cover the shifts without having to work all of them all the
+
+218
+0:11:57,440 --> 0:11:58,440
+ time.
+
+219
+0:11:58,440 --> 0:12:06,440
+ For those of you who haven't been here before, we have something called Hacks.
+
+220
+0:12:06,440 --> 0:12:07,440
+ You might have heard about it already.
+
+221
+0:12:07,440 --> 0:12:08,440
+ It is our internal...
+
+222
+0:12:08,440 --> 0:12:11,440
+ It is our internal local currency.
+
+223
+0:12:11,440 --> 0:12:16,440
+ We packed it to the Danish Krona, so it is worth the same as Danish Krona.
+
+224
+0:12:16,440 --> 0:12:21,440
+ If something costs 150 hacks, it is the same as 150 Danish Krona.
+
+225
+0:12:21,440 --> 0:12:26,440
+ They can be bought at the info desk or at the bar when the bar is open, or you can buy
+
+226
+0:12:26,440 --> 0:12:31,440
+ them online and just buy them on the web shop and use the ticket in the bar or the info
+
+227
+0:12:31,440 --> 0:12:32,440
+ desk.
+
+228
+0:12:32,440 --> 0:12:35,440
+ You can also use them at the food...
+
+229
+0:12:35,440 --> 0:12:37,440
+ Apart from the info desk and the bar, the food vendor accepts them.
+
+230
+0:12:37,440 --> 0:12:47,440
+ They can basically be used like real money, except the only way to buy alcohol is with
+
+231
+0:12:47,440 --> 0:12:48,440
+ hacks.
+
+232
+0:12:48,440 --> 0:12:53,440
+ You cannot buy it with real money, which is the main reason we have them.
+
+233
+0:12:53,440 --> 0:12:54,440
+ You will need...
+
+234
+0:12:54,440 --> 0:12:57,440
+ If you want to go to the bar and buy anything with any kind of alcohol in it, you will need
+
+235
+0:12:57,440 --> 0:12:59,440
+ to go get some hacks in the info desk to do that.
+
+236
+0:12:59,440 --> 0:13:01,440
+ They are these little...
+
+237
+0:13:01,440 --> 0:13:03,440
+ We haven't even gotten any yet.
+
+238
+0:13:03,440 --> 0:13:04,440
+ Little colored coins.
+
+239
+0:13:04,440 --> 0:13:05,440
+ You will see them everywhere.
+
+240
+0:13:05,440 --> 0:13:06,440
+ Thank you.
+
+241
+0:13:06,440 --> 0:13:07,440
+ Thank you.
+
+242
+0:13:07,440 --> 0:13:08,440
+ Thank you very much.
+
+243
+0:13:08,440 --> 0:13:09,440
+ Thank you.
+
+244
+0:13:09,440 --> 0:13:10,440
+ Okay.
+
+245
+0:13:10,440 --> 0:13:17,440
+ If you order village tents or tables and chairs and stuff, the tents you probably found,
+
+246
+0:13:17,440 --> 0:13:20,440
+ tables and chairs, if you still need to get that, you can go to the info desk.
+
+247
+0:13:20,440 --> 0:13:22,440
+ Please coordinate with the info desk.
+
+248
+0:13:22,440 --> 0:13:26,440
+ Don't just take stuff, because then we have no chance to keep track of it.
+
+249
+0:13:26,440 --> 0:13:27,440
+ It is not logged in.
+
+250
+0:13:27,440 --> 0:13:30,440
+ We know you can just walk up and take it, and we know you have paid for it and stuff,
+
+251
+0:13:30,440 --> 0:13:32,440
+ but please coordinate with us.
+
+252
+0:13:32,440 --> 0:13:35,440
+ It is really tricky to keep track of stuff when people just take it.
+
+253
+0:13:35,440 --> 0:13:38,440
+ Don't just take it and tell us in the bar at 1 a.m.
+
+254
+0:13:38,440 --> 0:13:41,440
+ I took two chairs and four tables.
+
+255
+0:13:41,440 --> 0:13:47,440
+ So please go do it properly in the info desk when they are open.
+
+256
+0:13:47,440 --> 0:13:51,440
+ We may have a few extra tables and chairs and benches.
+
+257
+0:13:51,440 --> 0:13:55,440
+ Go by info tomorrow and check if we have any surplus.
+
+258
+0:13:55,440 --> 0:14:02,440
+ If you forgot to order, you will need some extras.
+
+259
+0:14:02,440 --> 0:14:04,440
+ We have electricity all over the venue.
+
+260
+0:14:04,440 --> 0:14:06,440
+ Thanks to the hard-working power team.
+
+261
+0:14:06,440 --> 0:14:11,440
+ They have rolled out more than a kilometre of the very heavy cables.
+
+262
+0:14:11,440 --> 0:14:16,440
+ And the power points are more or less all over the venue.
+
+263
+0:14:16,440 --> 0:14:22,440
+ Please keep them covered from the rain so we don't have any outages because something got wet.
+
+264
+0:14:22,440 --> 0:14:27,440
+ And if you see one without cover, please fix it yourself or notify somebody who can fix it.
+
+265
+0:14:27,440 --> 0:14:31,440
+ Please don't just ignore it and leave it and think somebody else will do it.
+
+266
+0:14:31,440 --> 0:14:33,440
+ Let everybody help out.
+
+267
+0:14:33,440 --> 0:14:38,440
+ And things will get fixed much quicker and stop from breaking.
+
+268
+0:14:38,440 --> 0:14:41,440
+ There's an example here.
+
+269
+0:14:41,440 --> 0:14:43,440
+ It is not the biggest picture.
+
+270
+0:14:43,440 --> 0:14:46,440
+ But a happy-looking power point.
+
+271
+0:14:46,440 --> 0:14:48,440
+ It has a bag over it.
+
+272
+0:14:48,440 --> 0:14:53,440
+ And the bag is secured with some pegs in the back.
+
+273
+0:14:53,440 --> 0:14:55,440
+ Or what are they called?
+
+274
+0:14:55,440 --> 0:14:56,440
+ Yeah.
+
+275
+0:14:56,440 --> 0:14:59,440
+ Some secured in the back.
+
+276
+0:14:59,440 --> 0:15:01,440
+ It is cloth pegs.
+
+277
+0:15:01,440 --> 0:15:02,440
+ Yeah.
+
+278
+0:15:02,440 --> 0:15:03,440
+ Cloth pegs.
+
+279
+0:15:03,440 --> 0:15:04,440
+ Okay.
+
+280
+0:15:04,440 --> 0:15:09,440
+ Connect your cables if you need an adaptor because we don't have...
+
+281
+0:15:09,440 --> 0:15:12,440
+ We have the weird Danish standard here.
+
+282
+0:15:12,440 --> 0:15:14,440
+ Maybe we have some...
+
+283
+0:15:14,440 --> 0:15:16,440
+ Do we have some in the info desk or not?
+
+284
+0:15:16,440 --> 0:15:17,440
+ I don't know actually.
+
+285
+0:15:17,440 --> 0:15:19,440
+ Ask somebody who knows.
+
+286
+0:15:21,440 --> 0:15:22,440
+ We don't.
+
+287
+0:15:22,440 --> 0:15:24,440
+ Well...
+
+288
+0:15:24,440 --> 0:15:25,440
+ Yeah.
+
+289
+0:15:25,440 --> 0:15:26,440
+ We'll figure it out.
+
+290
+0:15:26,440 --> 0:15:30,440
+ Come ask us if you can't get power because things don't fit.
+
+291
+0:15:30,440 --> 0:15:32,440
+ We'll make it fit somehow.
+
+292
+0:15:39,440 --> 0:15:43,440
+ Along the same lines, the network team have been working hard to get the network up and running.
+
+293
+0:15:43,440 --> 0:15:47,440
+ You can get gigabit Ethernet to your table.
+
+294
+0:15:47,440 --> 0:15:48,440
+ You can get Wi-Fi.
+
+295
+0:15:48,440 --> 0:15:53,440
+ You can even get a fiber blink if you arrange it especially with the network team.
+
+296
+0:15:53,440 --> 0:15:59,440
+ So if you have special needs other than Wi-Fi, you can absolutely get that sorted.
+
+297
+0:15:59,440 --> 0:16:01,440
+ We have three SSIDs.
+
+298
+0:16:01,440 --> 0:16:08,440
+ The bornhack NAT is the one that acts mostly like a home Internet connection.
+
+299
+0:16:08,440 --> 0:16:14,440
+ The bornhack 802.1X is with 802.1X authentication, funnily enough.
+
+300
+0:16:14,440 --> 0:16:23,440
+ And the IPv6 one is with the modern IP family without the legacy IPv4 one.
+
+301
+0:16:23,440 --> 0:16:28,440
+ We get constant requests to use more bandwidth and I guess that applies this year as well.
+
+302
+0:16:28,440 --> 0:16:29,440
+ Does it?
+
+303
+0:16:29,440 --> 0:16:30,440
+ Knock team?
+
+304
+0:16:30,440 --> 0:16:31,440
+ Yes.
+
+305
+0:16:32,440 --> 0:16:33,440
+ Great.
+
+306
+0:16:33,440 --> 0:16:38,440
+ So please use more bandwidth.
+
+307
+0:16:38,440 --> 0:16:41,440
+ The bar, as you can see, is progressing nicely.
+
+308
+0:16:41,440 --> 0:16:47,440
+ It is always fascinating even to, I think, even to the people building it, how it's going to look.
+
+309
+0:16:47,440 --> 0:16:58,440
+ But to everybody watching it during buildup and in the first days, so much happens and it becomes increasingly more awesome as the days go by.
+
+310
+0:16:58,440 --> 0:16:59,440
+ Please use the bar.
+
+311
+0:16:59,440 --> 0:17:07,440
+ It is an important part of the money that we use to make this event work, especially this year.
+
+312
+0:17:07,440 --> 0:17:14,440
+ We've had a few sponsors fall off, fall away, and it's been difficult to make ends meet.
+
+313
+0:17:14,440 --> 0:17:16,440
+ So we've had to cut a few things.
+
+314
+0:17:16,440 --> 0:17:19,440
+ The hot tub, for example, is not here this year.
+
+315
+0:17:19,440 --> 0:17:26,440
+ Very sad to say, but we had to make some difficult cuts here and there, and that was one of the things that we had to take away.
+
+316
+0:17:26,440 --> 0:17:27,440
+ We hope it will be better.
+
+317
+0:17:27,440 --> 0:17:29,440
+ We hope it will be back next year.
+
+318
+0:17:29,440 --> 0:17:31,440
+ But please use the bar.
+
+319
+0:17:31,440 --> 0:17:37,440
+ We absolutely depend on the profits from the bar to make this whole thing work.
+
+320
+0:17:37,440 --> 0:17:46,440
+ We have a very nice selection of craft beer and booze and can make cocktails, and there's all the mate in the world.
+
+321
+0:17:46,440 --> 0:17:52,440
+ We might have slightly overdone it on the mate this year, so please.
+
+322
+0:17:57,440 --> 0:18:07,440
+ There's many, many kinds and many, many bottles of each kind, so that's great.
+
+323
+0:18:07,440 --> 0:18:15,440
+ The bar has closing hours.
+
+324
+0:18:15,440 --> 0:18:20,440
+ We have a permit to sell booze from the authorities, and that ends at 2 a.m. every night.
+
+325
+0:18:20,440 --> 0:18:23,440
+ So there's last rounds at 1.50.
+
+326
+0:18:23,440 --> 0:18:25,440
+ Get your purchases in there.
+
+327
+0:18:25,440 --> 0:18:26,440
+ Get in line.
+
+328
+0:18:26,440 --> 0:18:30,440
+ Get in line, because we have to stop selling alcohol.
+
+329
+0:18:30,440 --> 0:18:36,440
+ And the bar doesn't necessarily have to shut down entirely, but we cannot sell any more alcohol.
+
+330
+0:18:36,440 --> 0:18:43,440
+ So buy your bottles and stuff before 2, and then stick around.
+
+331
+0:18:43,440 --> 0:18:45,440
+ When does it reopen?
+
+332
+0:18:45,440 --> 0:18:54,440
+ Well, I mean...
+
+333
+0:18:54,440 --> 0:18:57,440
+ That is thinking like a hacker.
+
+334
+0:18:57,440 --> 0:19:06,440
+ No, we better not play games with them, but, yeah, it opens when the first bar staff wakes up the next day.
+
+335
+0:19:06,440 --> 0:19:09,440
+ Usually around noon-ish, I would say.
+
+336
+0:19:09,440 --> 0:19:13,440
+ So, yeah.
+
+337
+0:19:13,440 --> 0:19:16,440
+ Okay.
+
+338
+0:19:16,440 --> 0:19:22,440
+ When we are a lot of people gathered, we generate a lot of trash that is inevitable,
+
+339
+0:19:22,440 --> 0:19:25,440
+ from food and drinks and everything.
+
+340
+0:19:25,440 --> 0:19:31,440
+ And it is a lot of work handling trash from just a few hundred people like we are,
+
+341
+0:19:31,440 --> 0:19:36,440
+ generates so much trash and so much deposit, like empty bottles and cans and stuff,
+
+342
+0:19:36,440 --> 0:19:42,440
+ that we need to handle it properly from the beginning to not generate massive amounts of work.
+
+343
+0:19:42,440 --> 0:19:51,440
+ And also, if it's not handled properly, we get wasps and a thousand nasty things as a result of not handling trash properly.
+
+344
+0:19:52,440 --> 0:19:57,440
+ So, we have some trash cans around, and there are signs on them.
+
+345
+0:19:57,440 --> 0:20:02,440
+ Please look at the signs before you put stuff in, so you use the correct trash cans.
+
+346
+0:20:02,440 --> 0:20:05,440
+ We have five different ones.
+
+347
+0:20:05,440 --> 0:20:09,440
+ Two of them are for deposits.
+
+348
+0:20:09,440 --> 0:20:11,440
+ They have this circular logo thing.
+
+349
+0:20:11,440 --> 0:20:13,440
+ It's on the trash cans as well.
+
+350
+0:20:13,440 --> 0:20:17,440
+ And if the bottles have that, you know the system from wherever you live.
+
+351
+0:20:17,440 --> 0:20:21,440
+ And the deposit cans and plastic bottles go in one container.
+
+352
+0:20:21,440 --> 0:20:25,440
+ And the deposit glass bottles go in another container.
+
+353
+0:20:25,440 --> 0:20:31,440
+ Apart from that, there's a glass container for just booze glass bottles or whatever glass that doesn't have deposit.
+
+354
+0:20:31,440 --> 0:20:33,440
+ And one for cardboard.
+
+355
+0:20:33,440 --> 0:20:38,440
+ And finally, one that doesn't fit for all the trash that doesn't fit in any of the others.
+
+356
+0:20:38,440 --> 0:20:40,440
+ Is that pretty clear?
+
+357
+0:20:40,440 --> 0:20:42,440
+ Two different kinds of deposit.
+
+358
+0:20:42,440 --> 0:20:43,440
+ One for cans and plastic bottles.
+
+359
+0:20:43,440 --> 0:20:44,440
+ One for glass.
+
+360
+0:20:44,440 --> 0:20:47,440
+ And then there's glass, cardboard, and the rest.
+
+361
+0:20:47,440 --> 0:20:48,440
+ Okay?
+
+362
+0:20:48,440 --> 0:20:49,440
+ Fantastic.
+
+363
+0:20:49,440 --> 0:20:51,440
+ The people sorting it at the end.
+
+364
+0:20:51,440 --> 0:20:58,440
+ It will send you happy thoughts forever if you don't generate too much sorting.
+
+365
+0:20:58,440 --> 0:21:06,440
+ As you can imagine, sorting 300-400 people's deposit after a week or two is not fun work.
+
+366
+0:21:06,440 --> 0:21:12,440
+ So the less stuff that has been put in wrong, the less we have to sort, the better.
+
+367
+0:21:12,440 --> 0:21:15,440
+ So please spend the extra ten seconds.
+
+368
+0:21:15,440 --> 0:21:16,440
+ Check the signs.
+
+369
+0:21:16,440 --> 0:21:17,440
+ Put it in properly.
+
+370
+0:21:17,440 --> 0:21:20,440
+ And please and thank you from the sanitation team.
+
+371
+0:21:21,440 --> 0:21:22,440
+ Thank you.
+
+372
+0:21:22,440 --> 0:21:23,440
+ Yes?
+
+373
+0:21:23,440 --> 0:21:24,440
+ What about plastic?
+
+374
+0:21:24,440 --> 0:21:25,440
+ Plastic what?
+
+375
+0:21:25,440 --> 0:21:26,440
+ Just general plastic.
+
+376
+0:21:26,440 --> 0:21:27,440
+ Yeah.
+
+377
+0:21:27,440 --> 0:21:33,440
+ In this municipality, they haven't joined the rest of us in the 21st century.
+
+378
+0:21:33,440 --> 0:21:36,440
+ So it's not going to fix this issue?
+
+379
+0:21:36,440 --> 0:21:37,440
+ No, absolutely not.
+
+380
+0:21:37,440 --> 0:21:38,440
+ No, no.
+
+381
+0:21:38,440 --> 0:21:40,440
+ We would sort in ten kinds if we could.
+
+382
+0:21:40,440 --> 0:21:43,440
+ But they are just going to mix it all together when they pick it up anyway.
+
+383
+0:21:43,440 --> 0:21:45,440
+ So there's no reason.
+
+384
+0:21:45,440 --> 0:21:46,440
+ Sadly.
+
+385
+0:21:46,440 --> 0:21:50,440
+ We hope next year we come back and see ten trash cans outside.
+
+386
+0:21:50,440 --> 0:21:52,440
+ But we've been hoping that for four years now.
+
+387
+0:21:52,440 --> 0:21:54,440
+ Let's see when it happens.
+
+388
+0:21:54,440 --> 0:21:55,440
+ Thank you.
+
+389
+0:21:55,440 --> 0:21:56,440
+ Sure.
+
+390
+0:21:56,440 --> 0:21:59,440
+ Good question, though.
+
+391
+0:21:59,440 --> 0:22:00,440
+ OK.
+
+392
+0:22:00,440 --> 0:22:05,440
+ Like I mentioned, we've had a rough time of it with sponsors this year.
+
+393
+0:22:05,440 --> 0:22:09,440
+ But we have managed to find some new sponsors.
+
+394
+0:22:09,440 --> 0:22:14,440
+ And we are, of course, always tremendously grateful for all the support we are getting.
+
+395
+0:22:14,440 --> 0:22:19,440
+ Some sponsors pay cash and help just with the general finances of the event.
+
+396
+0:22:20,440 --> 0:22:24,440
+ Some lenders stuff that we would otherwise have to spend money on getting, which is
+
+397
+0:22:24,440 --> 0:22:27,440
+ just as good as getting money.
+
+398
+0:22:27,440 --> 0:22:29,440
+ And it all helps out.
+
+399
+0:22:29,440 --> 0:22:37,440
+ And even small sponsors that may not be big companies and can't put in that much, it all
+
+400
+0:22:37,440 --> 0:22:38,440
+ helps.
+
+401
+0:22:38,440 --> 0:22:44,440
+ Because I'd much rather have five small sponsors than one big one if the amount is the same,
+
+402
+0:22:44,440 --> 0:22:48,440
+ because it's just nicer.
+
+403
+0:22:48,440 --> 0:22:55,440
+ So to all the sponsors, big and small, thank you to all the people who jumped in when the
+
+404
+0:22:55,440 --> 0:22:57,440
+ shit hit the fan.
+
+405
+0:22:57,440 --> 0:23:00,440
+ And we really needed to find new sponsors on pretty short notice.
+
+406
+0:23:00,440 --> 0:23:05,440
+ Thank you all for jumping in to assist me and the others on the sponsors team and coming
+
+407
+0:23:05,440 --> 0:23:06,440
+ with new leads.
+
+408
+0:23:06,440 --> 0:23:11,440
+ If any of you have an idea for an organization that might want to help, please send them
+
+409
+0:23:11,440 --> 0:23:14,440
+ my way or towards the sponsors' email.
+
+410
+0:23:14,440 --> 0:23:16,440
+ And we can reach out to them.
+
+411
+0:23:16,440 --> 0:23:17,440
+ Thank you.
+
+412
+0:23:17,440 --> 0:23:24,440
+ The absolute most successful way to do it is if you know somebody who can make the decision
+
+413
+0:23:24,440 --> 0:23:29,440
+ about giving some money or not and prepare them and then put us in contact with them.
+
+414
+0:23:29,440 --> 0:23:33,440
+ That method has close to 100% success rate.
+
+415
+0:23:33,440 --> 0:23:38,440
+ And just getting a contact, call this dude and this company, has a close to 0% success
+
+416
+0:23:38,440 --> 0:23:39,440
+ rate.
+
+417
+0:23:39,440 --> 0:23:41,440
+ It is a massive difference.
+
+418
+0:23:41,440 --> 0:23:45,440
+ So if you know somebody, can go poke your boss and say, hey, we should pay 10,000 to
+
+419
+0:23:45,440 --> 0:23:46,440
+ this event next year.
+
+420
+0:23:46,440 --> 0:23:49,440
+ Because they are really cool and they help the community a lot and such and such.
+
+421
+0:23:49,440 --> 0:23:50,440
+ It helps us a lot.
+
+422
+0:23:50,440 --> 0:23:56,440
+ And it's barely any money in a company's budget for the whole year.
+
+423
+0:23:56,440 --> 0:24:01,440
+ Almost no matter how small a company, except ours.
+
+424
+0:24:01,440 --> 0:24:05,440
+ So thank you to all of you who helped find sponsors.
+
+425
+0:24:05,440 --> 0:24:06,440
+ I'll go through them now.
+
+426
+0:24:06,440 --> 0:24:09,440
+ And there will be their logos on the website and everything.
+
+427
+0:24:09,440 --> 0:24:14,440
+ We have a small paper with the badges this year that also have the sponsors' logo on
+
+428
+0:24:14,440 --> 0:24:15,440
+ them.
+
+429
+0:24:15,440 --> 0:24:22,440
+ Please send them your thanks and thoughts and use their services if you at all can.
+
+430
+0:24:22,440 --> 0:24:27,440
+ The big ones this year are DKNOCK, which is another event.
+
+431
+0:24:27,440 --> 0:24:30,440
+ And they're full of lovely networking people.
+
+432
+0:24:30,440 --> 0:24:35,440
+ And they stepped in when they heard we were struggling and helped out a fellow event.
+
+433
+0:24:35,440 --> 0:24:41,440
+ Samdata is a big labor union in Denmark that, among other things, has...
+
+434
+0:24:41,440 --> 0:24:43,440
+ HK is a big labor union.
+
+435
+0:24:43,440 --> 0:24:50,440
+ Samdata is the IT department for IT people.
+
+436
+0:24:50,440 --> 0:24:56,440
+ And Zebra Group is my employer that has lots of companies, among others the one where I'm
+
+437
+0:24:56,440 --> 0:24:58,440
+ employed called MindFuture.
+
+438
+0:25:10,440 --> 0:25:11,440
+ Silver sponsors.
+
+439
+0:25:11,440 --> 0:25:16,440
+ Epson has, for the fourth year in a row, I think, sponsored this very nice video setup
+
+440
+0:25:16,440 --> 0:25:23,440
+ with a high intensity brightness projector that works even when the sun is shining and
+
+441
+0:25:23,440 --> 0:25:25,440
+ the weather is sweet.
+
+442
+0:25:25,440 --> 0:25:27,440
+ So thank you for that.
+
+443
+0:25:27,440 --> 0:25:30,440
+ And that's a good example of something we would otherwise have to go out and rent.
+
+444
+0:25:30,440 --> 0:25:33,440
+ And they are very expensive.
+
+445
+0:25:33,440 --> 0:25:36,440
+ Jobindex and CIMA4 are both new sponsors.
+
+446
+0:25:36,440 --> 0:25:38,440
+ And thank you to those as well.
+
+447
+0:25:41,440 --> 0:25:53,440
+ Among the sponsors are also Bornholm Spirits, who continue to supply.
+
+448
+0:25:53,440 --> 0:25:57,440
+ We started out at Bornholm, but they continue to supply SaberBlurter and other nice things
+
+449
+0:25:57,440 --> 0:25:59,440
+ for us at a very nice price.
+
+450
+0:25:59,440 --> 0:26:05,440
+ Feebaboo is providing the internet connection, not the fiber, but the actual uplink to the
+
+451
+0:26:05,440 --> 0:26:06,440
+ internet.
+
+452
+0:26:06,440 --> 0:26:10,440
+ Magenta, PCBWay, are sponsoring the...
+
+453
+0:26:10,440 --> 0:26:12,440
+ The PCBs for the badges.
+
+454
+0:26:12,440 --> 0:26:14,440
+ And Raymion are sponsoring speakers.
+
+455
+0:26:14,440 --> 0:26:22,440
+ And Roskilde Auto and Skade Center is sponsoring the shuttle car.
+
+456
+0:26:22,440 --> 0:26:24,440
+ And the rest are financial...
+
+457
+0:26:24,440 --> 0:26:28,440
+ No, TukTek is hosting, sponsor for the Bornhack stuff.
+
+458
+0:26:28,440 --> 0:26:30,440
+ And the rest are financial sponsors.
+
+459
+0:26:30,440 --> 0:26:32,440
+ And thank you so much to them.
+
+460
+0:26:40,440 --> 0:26:44,440
+ There's a full year now until the next Bornhack.
+
+461
+0:26:44,440 --> 0:26:48,440
+ And a lot of this sponsor stuff takes some months to settle.
+
+462
+0:26:48,440 --> 0:26:52,440
+ And it's really tricky to do two weeks before Bornhack.
+
+463
+0:26:52,440 --> 0:26:58,440
+ So if you have an idea, get started in the start of next year, not in June or July.
+
+464
+0:26:58,440 --> 0:27:03,440
+ Because it might be too late for decision-makers have gone on holiday and everything.
+
+465
+0:27:03,440 --> 0:27:08,440
+ So spring is a good time to be thinking about sponsors for Bornhack.
+
+466
+0:27:10,440 --> 0:27:13,440
+ Oh, that's quite the segue.
+
+467
+0:27:13,440 --> 0:27:18,440
+ So we are in an area that sometimes has...
+
+468
+0:27:18,440 --> 0:27:20,440
+ Well, all the time has ticks.
+
+469
+0:27:20,440 --> 0:27:28,440
+ And sometimes they latch onto people and sit down by the angles or in humid places on the body.
+
+470
+0:27:28,440 --> 0:27:29,440
+ They are nasty.
+
+471
+0:27:29,440 --> 0:27:33,440
+ They can sometimes rarely but occasionally have a disease.
+
+472
+0:27:33,440 --> 0:27:36,440
+ And it can infect people and can get really nasty.
+
+473
+0:27:36,440 --> 0:27:39,440
+ So if you discover a tick, get it removed as soon as possible.
+
+474
+0:27:39,440 --> 0:27:42,440
+ We have tick removers in the info desk.
+
+475
+0:27:42,440 --> 0:27:45,440
+ And SIRT can help remove them.
+
+476
+0:27:45,440 --> 0:27:47,440
+ It can be difficult to check.
+
+477
+0:27:47,440 --> 0:27:50,440
+ Like it's the back of the knees and weird places.
+
+478
+0:27:50,440 --> 0:27:52,440
+ Have a friend help you in the tent.
+
+479
+0:27:52,440 --> 0:27:53,440
+ It might be fun.
+
+480
+0:28:04,440 --> 0:28:07,440
+ And make sure you check when you're in the shower.
+
+481
+0:28:07,440 --> 0:28:09,440
+ And if you feel that might be a problem,
+
+482
+0:28:09,440 --> 0:28:11,440
+ they are very, very small.
+
+483
+0:28:11,440 --> 0:28:13,440
+ They can look like just a little piece of dirt.
+
+484
+0:28:13,440 --> 0:28:16,440
+ Some of them are incredibly tiny.
+
+485
+0:28:16,440 --> 0:28:23,440
+ So, yeah, make sure you keep an eye out for those little fuckers.
+
+486
+0:28:23,440 --> 0:28:24,440
+ Okay.
+
+487
+0:28:24,440 --> 0:28:25,440
+ Bicycles.
+
+488
+0:28:25,440 --> 0:28:30,440
+ The info desk is the place to go if you need to ride a bike somewhere.
+
+489
+0:28:30,440 --> 0:28:36,440
+ Maybe go shopping or maybe just go for a nice ride around in nature or whatever you need.
+
+490
+0:28:36,440 --> 0:28:38,440
+ We have helmets and locks and lights and stuff for them.
+
+491
+0:28:38,440 --> 0:28:40,440
+ Different sizes.
+
+492
+0:28:40,440 --> 0:28:42,440
+ There's a few children's bikes too.
+
+493
+0:28:42,440 --> 0:28:44,440
+ And there's a trailer or two as well.
+
+494
+0:28:44,440 --> 0:28:46,440
+ They are free still.
+
+495
+0:28:46,440 --> 0:28:50,440
+ This is one of the things we considered introducing a payment for when we were,
+
+496
+0:28:50,440 --> 0:28:53,440
+ because we are struggling a bit financially.
+
+497
+0:28:53,440 --> 0:28:56,440
+ Instead, we suggest a small donation to cover the cost.
+
+498
+0:28:56,440 --> 0:28:58,440
+ But there's no, they are free.
+
+499
+0:28:58,440 --> 0:29:02,440
+ But please consider donating something if you take a bike.
+
+500
+0:29:05,440 --> 0:29:06,440
+ The parking lot.
+
+501
+0:29:06,440 --> 0:29:07,440
+ Most of you arrived by car.
+
+502
+0:29:07,440 --> 0:29:10,440
+ So you will have noticed the parking lot.
+
+503
+0:29:10,440 --> 0:29:14,440
+ I just wanted to mention, please park sensibly.
+
+504
+0:29:14,440 --> 0:29:20,440
+ And, like, don't, it goes without saying, don't double park and don't park so other people can't get out.
+
+505
+0:29:20,440 --> 0:29:25,440
+ There's plenty of room down there for all the tickets we sold if people park sensibly.
+
+506
+0:29:25,440 --> 0:29:34,440
+ So last year we had a, no, two years ago, an annoying incident where we had to run around and find somebody who was parked so other people couldn't get out.
+
+507
+0:29:34,440 --> 0:29:36,440
+ So please consider everybody when you get out.
+
+508
+0:29:36,440 --> 0:29:39,440
+ Everybody when you put your car down.
+
+509
+0:29:39,440 --> 0:29:43,440
+ If there's any issues in the parking lot, please notify the info desk.
+
+510
+0:29:43,440 --> 0:29:49,440
+ We don't necessarily know because we're not, not all of us are driving around.
+
+511
+0:29:49,440 --> 0:29:52,440
+ We arrive here and then we leave two weeks later.
+
+512
+0:29:52,440 --> 0:29:54,440
+ So we might not notice.
+
+513
+0:29:54,440 --> 0:30:01,440
+ So please notify us if there's something with the driving plates or someone is parked badly or something.
+
+514
+0:30:06,440 --> 0:30:13,440
+ If you ordered T-shirts, hoodies, and merchandise, it will be produced during the week.
+
+515
+0:30:13,440 --> 0:30:19,440
+ And when it's ready, we'll announce it and you can pick it up in the info desk.
+
+516
+0:30:19,440 --> 0:30:22,440
+ It is being produced by, yeah, and a few other volunteers.
+
+517
+0:30:22,440 --> 0:30:24,440
+ We're doing a lot of work for it.
+
+518
+0:30:24,440 --> 0:30:27,440
+ And it's always such nice merchandise we get.
+
+519
+0:30:27,440 --> 0:30:34,440
+ So thank you for all the work you're doing.
+
+520
+0:30:34,440 --> 0:30:35,440
+ Oh.
+
+521
+0:30:35,440 --> 0:30:38,440
+ Badges.
+
+522
+0:30:38,440 --> 0:30:42,440
+ This year's badge is NFC focused.
+
+523
+0:30:42,440 --> 0:30:46,440
+ It can, it consists of two badges actually.
+
+524
+0:30:46,440 --> 0:30:55,440
+ There's a reader which is the active part that has the computer and a tag which is a passive thing that can be read with the active part.
+
+525
+0:30:55,440 --> 0:30:59,440
+ It's a very cool setup and it enables a lot of fun NFC hacking.
+
+526
+0:30:59,440 --> 0:31:03,440
+ And we hope to see some cool things, cool applications of it.
+
+527
+0:31:03,440 --> 0:31:07,440
+ As mentioned quite a few times by now, we are kind of broke.
+
+528
+0:31:07,440 --> 0:31:12,440
+ And other events have charged for badges for a while.
+
+529
+0:31:12,440 --> 0:31:19,440
+ And we've never done that because we, yeah, we kind of feel that we would love for this to just be a part of the ticket.
+
+530
+0:31:19,440 --> 0:31:25,440
+ We haven't announced this earlier because we've been trying to secure sponsors to make it fully free.
+
+531
+0:31:25,440 --> 0:31:27,440
+ That has not been possible.
+
+532
+0:31:27,440 --> 0:31:29,440
+ A badge is 100 hacks.
+
+533
+0:31:29,440 --> 0:31:32,440
+ If you have a full week ticket, then you have a QR code.
+
+534
+0:31:32,440 --> 0:31:35,440
+ QR code in the same PDF as your ticket.
+
+535
+0:31:35,440 --> 0:31:39,440
+ And you can use that to get a hacks, sorry, a badge for 100 hacks.
+
+536
+0:31:39,440 --> 0:31:46,440
+ If you want additional badges or you are here on a one day ticket or you want one to take home to a friend or something, it's 150 hacks.
+
+537
+0:31:46,440 --> 0:31:52,440
+ Hopefully next year we can go back to the full week tickets including a badge in the prize.
+
+538
+0:31:52,440 --> 0:31:55,440
+ Sadly this was the best we could do this year.
+
+539
+0:31:55,440 --> 0:31:58,440
+ The badges will be presented tomorrow.
+
+540
+0:32:02,440 --> 0:32:07,440
+ Thank you.
+
+541
+0:32:07,440 --> 0:32:15,440
+ The badges will be presented tomorrow at 1300 by Floma from the badge team who will talk about the design and what it can do.
+
+542
+0:32:15,440 --> 0:32:20,440
+ And I'm sure there will be a lot of fun things about it.
+
+543
+0:32:20,440 --> 0:32:23,440
+ They look, I wanted to include a picture but I didn't have time.
+
+544
+0:32:23,440 --> 0:32:25,440
+ They look fantastically cool.
+
+545
+0:32:25,440 --> 0:32:28,440
+ So I'm looking forward to seeing them all around the venue.
+
+546
+0:32:28,440 --> 0:32:29,440
+ Thank you.
+
+547
+0:32:29,440 --> 0:32:30,440
+ Thank you.
+
+548
+0:32:30,440 --> 0:32:31,440
+ Thank you.
+
+549
+0:32:31,440 --> 0:32:35,440
+ So we still have a few teams that need members.
+
+550
+0:32:35,440 --> 0:32:39,440
+ The info team is continuously onboarding new people.
+
+551
+0:32:39,440 --> 0:32:42,440
+ They always need people to set up there.
+
+552
+0:32:42,440 --> 0:32:46,440
+ Sometimes they have to sit two or three people to manage the load.
+
+553
+0:32:46,440 --> 0:32:51,440
+ And it just takes a lot of volunteers to keep the info desk open.
+
+554
+0:32:51,440 --> 0:32:56,440
+ The video team manages this stuff right here.
+
+555
+0:32:56,440 --> 0:32:58,440
+ Make sure stuff is recorded and streamed.
+
+556
+0:32:58,440 --> 0:33:00,440
+ And we can watch the recordings later.
+
+557
+0:33:00,440 --> 0:33:03,440
+ Or at least sit in the tents and watch the streams live.
+
+558
+0:33:03,440 --> 0:33:05,440
+ Not everything is recorded.
+
+559
+0:33:05,440 --> 0:33:09,440
+ Please make sure you note in the program if there's a little recording icon or not.
+
+560
+0:33:09,440 --> 0:33:12,440
+ And if not, you have to be present here if you want to see it.
+
+561
+0:33:12,440 --> 0:33:19,440
+ The stuff that's being recorded, if you're prevented from seeing it, you can catch it later on the stream.
+
+562
+0:33:19,440 --> 0:33:28,440
+ If you want to join the video meeting, the video team, there's an onboarding meeting tomorrow Thursday at noon here in the speaker's tent.
+
+563
+0:33:28,440 --> 0:33:29,440
+ They have a very thorough onboarding.
+
+564
+0:33:29,440 --> 0:33:33,440
+ And it looks a bit intimidating, all the equipment.
+
+565
+0:33:33,440 --> 0:33:35,440
+ But it is easy to do.
+
+566
+0:33:35,440 --> 0:33:38,440
+ And you get a first-row seat for the talks.
+
+567
+0:33:38,440 --> 0:33:41,440
+ And we would appreciate help with that.
+
+568
+0:33:41,440 --> 0:33:48,440
+ The sanitation team, colloquially Team Shit, handles...
+
+569
+0:33:48,440 --> 0:33:50,440
+ They do not clean toilets.
+
+570
+0:33:50,440 --> 0:33:52,440
+ Might occasionally unclog one.
+
+571
+0:33:52,440 --> 0:33:54,440
+ But cleaning is handled by an external cleaning company.
+
+572
+0:33:54,440 --> 0:33:58,440
+ But they handle stuff like making sure there's handpaper.
+
+573
+0:33:58,440 --> 0:34:02,440
+ Handpaper towels and soap and stuff in the toilets.
+
+574
+0:34:02,440 --> 0:34:07,440
+ And the trash being emptied and put in the container.
+
+575
+0:34:07,440 --> 0:34:10,440
+ And the deposit bags being emptied and stuff like that.
+
+576
+0:34:10,440 --> 0:34:15,440
+ So it's handling all the waste but not actually cleaning toilets.
+
+577
+0:34:15,440 --> 0:34:16,440
+ We have people for that.
+
+578
+0:34:16,440 --> 0:34:18,440
+ They're also onboarding continuously.
+
+579
+0:34:18,440 --> 0:34:23,440
+ And you can go to the info desk and speak to Anke, I guess, if you're interested in joining.
+
+580
+0:34:23,440 --> 0:34:26,440
+ On the website, there's a list of teams.
+
+581
+0:34:26,440 --> 0:34:29,440
+ And you can see there which ones still need members.
+
+582
+0:34:29,440 --> 0:34:37,440
+ We've also, as a new initiative, started a daily volunteer meeting every day at 14.00.
+
+583
+0:34:37,440 --> 0:34:40,440
+ It is in the start tent across from the info desk.
+
+584
+0:34:40,440 --> 0:34:46,440
+ And it is an attempt to keep some of the awesome communication going we've had during build-up.
+
+585
+0:34:46,440 --> 0:34:49,440
+ We have meetings after each meal.
+
+586
+0:34:49,440 --> 0:34:54,440
+ And we have breakfast, lunch, and dinner prepared by Jonathan, which is always fantastic.
+
+587
+0:34:54,440 --> 0:34:56,440
+ And after that, we have a conference.
+
+588
+0:34:56,440 --> 0:34:58,440
+ And we talk about what needs to be done.
+
+589
+0:34:58,440 --> 0:35:01,440
+ And people put up their hands and go do stuff.
+
+590
+0:35:01,440 --> 0:35:05,440
+ And that kind of stops when the event starts because we lose contact to all the volunteers.
+
+591
+0:35:05,440 --> 0:35:07,440
+ We don't have these regular meetings anymore.
+
+592
+0:35:07,440 --> 0:35:13,440
+ And we want to remedy that by doing this daily volunteer meetup at 14.00.
+
+593
+0:35:13,440 --> 0:35:15,440
+ Everybody, you don't have to be on a team.
+
+594
+0:35:15,440 --> 0:35:22,440
+ If you don't have anything to do, if you want to help out, show up at the start tent across from info desk.
+
+595
+0:35:22,440 --> 0:35:25,440
+ One of the recurring themes will be,
+
+596
+0:35:25,440 --> 0:35:30,440
+ since we are a bit broke this year, we could not afford as much cleaning as we normally can.
+
+597
+0:35:30,440 --> 0:35:32,440
+ So the food area will not be clean for us.
+
+598
+0:35:32,440 --> 0:35:34,440
+ We have to do that ourselves.
+
+599
+0:35:34,440 --> 0:35:37,440
+ And one of the things we will do every day at 2.00 is to take a bunch of volunteers,
+
+600
+0:35:37,440 --> 0:35:40,440
+ go down there, do the tornado, make it look really nice.
+
+601
+0:35:40,440 --> 0:35:43,440
+ And hopefully we can keep it going.
+
+602
+0:35:43,440 --> 0:35:48,440
+ You are also, of course, all required to clean up after yourself when you use the food area,
+
+603
+0:35:48,440 --> 0:35:51,440
+ when you cook, when you do dishes.
+
+604
+0:35:51,440 --> 0:35:53,440
+ If you spill something, please fix it yourself.
+
+605
+0:35:53,440 --> 0:35:54,440
+ It's not necessary.
+
+606
+0:35:54,440 --> 0:35:55,440
+ It's not necessary to say.
+
+607
+0:35:55,440 --> 0:36:00,440
+ But we know that when many people use the kitchen, no matter how careful everybody is,
+
+608
+0:36:00,440 --> 0:36:04,440
+ there's going to be spills and stuff that needs cleaning.
+
+609
+0:36:04,440 --> 0:36:07,440
+ And since there are no cleaners doing it, we have to do it ourselves.
+
+610
+0:36:07,440 --> 0:36:09,440
+ If you see something, clean it up.
+
+611
+0:36:09,440 --> 0:36:10,440
+ Absolutely.
+
+612
+0:36:10,440 --> 0:36:12,440
+ That would be fantastic.
+
+613
+0:36:12,440 --> 0:36:17,440
+ But we are planning to take a team of people once a day and give it the once over.
+
+614
+0:36:17,440 --> 0:36:20,440
+ So it stays nice and inviting to use.
+
+615
+0:36:20,440 --> 0:36:24,440
+ So if you feel like helping out with that and other stuff that pops up,
+
+616
+0:36:24,440 --> 0:36:28,440
+ it will be every day at 14.00 in the volunteer tent.
+
+617
+0:36:28,440 --> 0:36:30,440
+ We hope to see many people.
+
+618
+0:36:30,440 --> 0:36:36,440
+ And we are excited to introduce this new...
+
+619
+0:36:36,440 --> 0:36:41,440
+ We think it's going to be a great addition to an already great event.
+
+620
+0:36:45,440 --> 0:36:51,440
+ SIRT are here to take care of us in case something happens.
+
+621
+0:36:51,440 --> 0:36:53,440
+ It is our medic team.
+
+622
+0:36:54,440 --> 0:37:01,440
+ We take care of small and big things like ticks or small cuts or worse.
+
+623
+0:37:01,440 --> 0:37:07,440
+ We haven't had much of the worst, but we have people to handle it in case it happens.
+
+624
+0:37:07,440 --> 0:37:09,440
+ We have a hard starter.
+
+625
+0:37:09,440 --> 0:37:11,440
+ We have first aid kits.
+
+626
+0:37:11,440 --> 0:37:17,440
+ We have educated people who have been in situations where they have to take care of people before.
+
+627
+0:37:17,440 --> 0:37:19,440
+ And we are in good hands.
+
+628
+0:37:19,440 --> 0:37:21,440
+ They are wearing orange vests.
+
+629
+0:37:21,440 --> 0:37:23,440
+ They can be called on the radio.
+
+630
+0:37:23,440 --> 0:37:25,440
+ You can call the born hack phone.
+
+631
+0:37:25,440 --> 0:37:27,440
+ There will also be...
+
+632
+0:37:27,440 --> 0:37:29,440
+ If you have a deck phone, then there's a...
+
+633
+0:37:29,440 --> 0:37:31,440
+ You can call 112 on the deck phone.
+
+634
+0:37:31,440 --> 0:37:34,440
+ And there's a lot of ways to get in touch with them.
+
+635
+0:37:34,440 --> 0:37:36,440
+ And they will also be visible on the site.
+
+636
+0:37:36,440 --> 0:37:40,440
+ There's always 24 hours a SIRT person on duty.
+
+637
+0:37:40,440 --> 0:37:44,440
+ They need more people, if I recall correctly.
+
+638
+0:37:44,440 --> 0:37:45,440
+ Yes.
+
+639
+0:37:45,440 --> 0:37:47,440
+ And they have a team meeting Thursday.
+
+640
+0:37:47,440 --> 0:37:50,440
+ That's tomorrow at 11 in the cabin.
+
+641
+0:37:50,440 --> 0:37:52,440
+ I can't see if you're nodding.
+
+642
+0:37:52,440 --> 0:37:53,440
+ Yes.
+
+643
+0:37:53,440 --> 0:37:54,440
+ Yes.
+
+644
+0:37:54,440 --> 0:37:55,440
+ Thank you.
+
+645
+0:37:55,440 --> 0:37:56,440
+ In the cabin.
+
+646
+0:37:56,440 --> 0:37:58,440
+ And they need team members.
+
+647
+0:37:58,440 --> 0:38:00,440
+ And they need members, yes.
+
+648
+0:38:00,440 --> 0:38:04,440
+ You don't have to be like a trained anything.
+
+649
+0:38:04,440 --> 0:38:10,440
+ But it, of course, helps if you are.
+
+650
+0:38:10,440 --> 0:38:14,440
+ Photo team will wear white vests.
+
+651
+0:38:14,440 --> 0:38:16,440
+ It is...
+
+652
+0:38:16,440 --> 0:38:18,440
+ They are recognizable for a good reason.
+
+653
+0:38:18,440 --> 0:38:21,440
+ We have a code of conduct, like I mentioned.
+
+654
+0:38:21,440 --> 0:38:23,440
+ And one of the important...
+
+655
+0:38:23,440 --> 0:38:29,440
+ One of the parts of it, they're all important, is that you're not allowed to take pictures
+
+656
+0:38:29,440 --> 0:38:36,440
+ at Bonn Heck unless everybody or all people in the photo agree to the photo being taken.
+
+657
+0:38:36,440 --> 0:38:39,440
+ This means I cannot take a crowd photo here.
+
+658
+0:38:39,440 --> 0:38:41,440
+ It would take forever to ask everybody.
+
+659
+0:38:41,440 --> 0:38:43,440
+ Well, I have a microphone.
+
+660
+0:38:43,440 --> 0:38:46,440
+ But still, generally, you can take crowd pictures.
+
+661
+0:38:46,440 --> 0:38:47,440
+ It's tricky.
+
+662
+0:38:47,440 --> 0:38:48,440
+ And it's sad.
+
+663
+0:38:48,440 --> 0:38:50,440
+ But we have to protect people's privacy.
+
+664
+0:38:50,440 --> 0:38:56,440
+ And prioritize that over people's desire to take cool pictures of crowds.
+
+665
+0:39:05,440 --> 0:39:08,440
+ We do, however, want to see cool pictures.
+
+666
+0:39:08,440 --> 0:39:10,440
+ And that is quite the dilemma.
+
+667
+0:39:10,440 --> 0:39:12,440
+ So we have a photo team.
+
+668
+0:39:12,440 --> 0:39:13,440
+ They all know...
+
+669
+0:39:13,440 --> 0:39:16,440
+ Well, you all know the code of conduct because you've used the toilets.
+
+670
+0:39:16,440 --> 0:39:19,440
+ But they know...
+
+671
+0:39:19,440 --> 0:39:26,440
+ A lot of people here personally know who they can take pictures of and who has already said no.
+
+672
+0:39:26,440 --> 0:39:30,440
+ And if they see new people, they might come and ask, is it okay I take a picture here?
+
+673
+0:39:30,440 --> 0:39:33,440
+ You are free to say no and stay where you are.
+
+674
+0:39:33,440 --> 0:39:35,440
+ You are free to say no and step out.
+
+675
+0:39:35,440 --> 0:39:39,440
+ And the photographer can take the picture, make it work somehow.
+
+676
+0:39:39,440 --> 0:39:46,440
+ But they are visible in white vests and, of course, a piece of huge optics around their neck.
+
+677
+0:39:46,440 --> 0:39:47,440
+ And...
+
+678
+0:39:47,440 --> 0:39:49,440
+ And they will ask permissions for pictures.
+
+679
+0:39:49,440 --> 0:39:56,440
+ And if you feel like a picture has been taken where you weren't asked or maybe you were in it or you are not sure,
+
+680
+0:39:56,440 --> 0:40:00,440
+ you are very welcome to go ask the photographer to see the pictures and browse through.
+
+681
+0:40:00,440 --> 0:40:03,440
+ And if you feel like you are on one of them or you are...
+
+682
+0:40:03,440 --> 0:40:05,440
+ Then it can be deleted.
+
+683
+0:40:05,440 --> 0:40:06,440
+ But it shouldn't happen.
+
+684
+0:40:06,440 --> 0:40:08,440
+ They are careful and they know what they are doing.
+
+685
+0:40:08,440 --> 0:40:09,440
+ I'm not sure.
+
+686
+0:40:09,440 --> 0:40:11,440
+ Does the photo team need more people?
+
+687
+0:40:14,440 --> 0:40:16,440
+ Yes, everybody is welcome.
+
+688
+0:40:17,440 --> 0:40:23,440
+ Okay, so if you like taking pictures and this sounds like something you could and would do,
+
+689
+0:40:23,440 --> 0:40:30,440
+ then talk to Tobias Fonsmark and he can introduce you to the whole thing.
+
+690
+0:40:30,440 --> 0:40:33,440
+ There is a meeting tomorrow at noon.
+
+691
+0:40:33,440 --> 0:40:35,440
+ Is it also in the cabin?
+
+692
+0:40:35,440 --> 0:40:37,440
+ Yes, exactly.
+
+693
+0:40:37,440 --> 0:40:38,440
+ Also in the cabin.
+
+694
+0:40:38,440 --> 0:40:39,440
+ Great.
+
+695
+0:40:41,440 --> 0:40:44,440
+ The game team has prepared a token game again this year.
+
+696
+0:40:44,440 --> 0:40:46,440
+ The tokens are little text strings.
+
+697
+0:40:46,440 --> 0:40:54,440
+ They are hidden around the venue offline and online on physical signs or it could be on servers or networks.
+
+698
+0:40:54,440 --> 0:40:56,440
+ There are all kinds of things.
+
+699
+0:40:56,440 --> 0:40:59,440
+ There are hints in your profile on the website.
+
+700
+0:40:59,440 --> 0:41:06,440
+ And I think they will keep adding tokens throughout the week.
+
+701
+0:41:06,440 --> 0:41:08,440
+ And the hunt is usually great.
+
+702
+0:41:08,440 --> 0:41:15,440
+ The hunt is usually competitive and fun and it's kind of like a treasure hunt for nerds all around the venue.
+
+703
+0:41:15,440 --> 0:41:18,440
+ It is a great tradition and I hope many of you will play.
+
+704
+0:41:18,440 --> 0:41:21,440
+ I know the game team has put a lot of work into it.
+
+705
+0:41:26,440 --> 0:41:30,440
+ The last slide is just a thank you to the volunteers.
+
+706
+0:41:30,440 --> 0:41:35,440
+ This event would not be possible without the volunteers.
+
+707
+0:41:35,440 --> 0:41:36,440
+ That goes without saying.
+
+708
+0:41:36,440 --> 0:41:44,440
+ We are, what, 11 people in the Orga group and it would absolutely not be possible to do all this without them.
+
+709
+0:41:44,440 --> 0:41:53,440
+ Without 30 or 40 people helping out with carrying stuff around and helping us with our crazy ideas.
+
+710
+0:41:53,440 --> 0:41:55,440
+ And, hey, we want to build a weird thing here.
+
+711
+0:41:55,440 --> 0:41:56,440
+ Can you?
+
+712
+0:41:56,440 --> 0:41:57,440
+ And people just run over and start building.
+
+713
+0:41:57,440 --> 0:42:02,440
+ It's just fantastic to be around people with this kind of drive and this kind of passion.
+
+714
+0:42:02,440 --> 0:42:09,440
+ And it's so nice that you throw that drive and that passion towards helping us make this event even more fantastic.
+
+715
+0:42:09,440 --> 0:42:11,440
+ So, again, thank you all.
+
+716
+0:42:14,440 --> 0:42:17,440
+ And a big thanks to the rest of our colleagues as well.
+
+717
+0:42:17,440 --> 0:42:18,440
+ Thank you.
+
+718
+0:42:18,440 --> 0:42:23,440
+ Thank you.
+
+719
+0:42:23,440 --> 0:42:27,440
+ Please consider showing up for the meetings at the 1400.
+
+720
+0:42:27,440 --> 0:42:35,440
+ We've been a bit jiggy and added it to the schedule, so it will show up in your giggity and in your feedreaders and calendars and stuff.
+
+721
+0:42:35,440 --> 0:42:41,440
+ So give it a try, show up if you have nothing else to do.
+
+722
+0:42:41,440 --> 0:42:43,440
+ I added this slide in case I thought of something to say.
+
+723
+0:42:43,440 --> 0:42:44,440
+ I wanted to say one thing.
+
+724
+0:42:44,440 --> 0:42:48,040
+ talking, but I haven't.
+
+725
+0:42:48,040 --> 0:42:54,960
+ So I don't think I have anything else, but if any team leads may have comments or stuff
+
+726
+0:42:54,960 --> 0:43:02,100
+ I forgot to include that would be relevant to include now, then we can do that.
+
+727
+0:43:02,100 --> 0:43:21,660
+ We are getting a microphone, just a second.
+
+728
+0:43:21,660 --> 0:43:22,660
+ Is there a regular Bonhag network?
+
+729
+0:43:22,660 --> 0:43:23,660
+ Is there?
+
+730
+0:43:23,660 --> 0:43:24,660
+ Yes.
+
+731
+0:43:24,660 --> 0:43:25,660
+ Oh, I didn't see.
+
+732
+0:43:25,660 --> 0:43:26,660
+ Oh, sorry.
+
+733
+0:43:26,660 --> 0:43:29,740
+ There's four SSIDs and one of them is just called Bonhag and it's a plain old public
+
+734
+0:43:29,740 --> 0:43:30,740
+ V4 and V6.
+
+735
+0:43:30,740 --> 0:43:32,080
+ You get a real IP address.
+
+736
+0:43:32,080 --> 0:43:37,460
+ Make sure your firewall is properly configured because that's like going on the old school
+
+737
+0:43:37,460 --> 0:43:40,460
+ internet back in the 90s.
+
+738
+0:43:40,460 --> 0:43:51,040
+ It's supposed to be.
+
+739
+0:43:51,040 --> 0:43:52,040
+ It's not.
+
+740
+0:43:52,040 --> 0:43:53,040
+ It's supposed to be.
+
+741
+0:43:53,040 --> 0:43:54,040
+ It's not.
+
+742
+0:43:54,040 --> 0:43:55,040
+ It's supposed to be.
+
+743
+0:43:55,040 --> 0:43:56,040
+ It's not.
+
+744
+0:43:56,040 --> 0:43:57,040
+ It's supposed to be.
+
+745
+0:43:57,040 --> 0:43:58,040
+ It's not.
+
+746
+0:43:58,040 --> 0:43:59,040
+ It's not.
+
+747
+0:43:59,040 --> 0:44:00,040
+ It's not.
+
+748
+0:44:00,040 --> 0:44:01,040
+ It's not.
+
+749
+0:44:01,040 --> 0:44:02,040
+ It's not.
+
+750
+0:44:02,040 --> 0:44:03,040
+ It's not.
+
+751
+0:44:03,040 --> 0:44:04,040
+ It's not.
+
+752
+0:44:04,040 --> 0:44:05,040
+ It's not.
+
+753
+0:44:05,040 --> 0:44:06,040
+ It's not.
+
+754
+0:44:06,040 --> 0:44:07,040
+ It's not.
+
+755
+0:44:07,040 --> 0:44:08,040
+ It's not.
+
+756
+0:44:08,040 --> 0:44:09,040
+ Oh, damn.
+
+757
+0:44:09,040 --> 0:44:10,040
+ Okay.
+
+758
+0:44:10,040 --> 0:44:13,900
+ I'll repeat because the audio was a bit low.
+
+759
+0:44:13,900 --> 0:44:20,580
+ If you ordered village gear and you ordered the black upholstered chairs, sorry, you ordered
+
+760
+0:44:20,580 --> 0:44:24,940
+ the white garden chairs and accidentally instead took the black upholstered chairs, please
+
+761
+0:44:24,940 --> 0:44:26,980
+ bring them back because we need them.
+
+762
+0:44:26,980 --> 0:44:29,420
+ The people who actually ordered them need them.
+
+763
+0:44:29,420 --> 0:44:30,940
+ And come back and get some V4s.
+
+764
+0:44:30,940 --> 0:44:31,940
+ Thanks.
+
+765
+0:44:31,940 --> 0:44:33,000
+ white garden chairs instead.
+
+766
+0:44:33,740 --> 0:44:35,800
+ Basically, the garden chairs, the white ones, are
+
+767
+0:44:35,800 --> 0:44:37,880
+ good for the grass, and the other ones are good for when
+
+768
+0:44:37,880 --> 0:44:40,080
+ you have a floor in your
+
+769
+0:44:40,080 --> 0:44:41,800
+ tent. It's
+
+770
+0:44:41,800 --> 0:44:43,740
+ kind of late to change now, because we can't
+
+771
+0:44:43,740 --> 0:44:45,200
+ change the order, but
+
+772
+0:44:45,200 --> 0:44:47,820
+ if you did get the
+
+773
+0:44:47,820 --> 0:44:49,960
+ upholstered chairs, and you have those on your receipt,
+
+774
+0:44:50,080 --> 0:44:51,880
+ and you know, you know what
+
+775
+0:44:51,880 --> 0:44:53,880
+ I'm saying. If you took the wrong chairs,
+
+776
+0:44:53,980 --> 0:44:55,460
+ please bring them back. Thank you.
+
+777
+0:44:57,440 --> 0:44:57,840
+ Any
+
+778
+0:44:57,840 --> 0:44:58,880
+ other questions?
+
+779
+0:45:00,140 --> 0:45:01,480
+ Just ask without the microphone.
+
+780
+0:45:02,480 --> 0:45:03,780
+ How do you submit a category
+
+781
+0:45:03,780 --> 0:45:05,760
+ to Hacker Jeopardy? Oh, that's a very
+
+782
+0:45:05,760 --> 0:45:06,320
+ good question.
+
+783
+0:45:07,840 --> 0:45:09,960
+ The Hacker Jeopardy will be on tomorrow,
+
+784
+0:45:10,260 --> 0:45:11,800
+ and then again Saturday,
+
+785
+0:45:12,060 --> 0:45:13,880
+ and again Monday for the finals.
+
+786
+0:45:14,780 --> 0:45:15,920
+ Sign-ups is
+
+787
+0:45:15,920 --> 0:45:17,920
+ to info at bornhack.dk
+
+788
+0:45:17,920 --> 0:45:19,720
+ by mail. We already got the first sign-up
+
+789
+0:45:19,720 --> 0:45:20,920
+ a few days before the event,
+
+790
+0:45:21,600 --> 0:45:22,440
+ and
+
+791
+0:45:22,440 --> 0:45:25,860
+ we always, the game team, always
+
+792
+0:45:25,860 --> 0:45:27,380
+ needs more categories.
+
+793
+0:45:27,840 --> 0:45:29,600
+ If you've played Hacker Jeopardy before,
+
+794
+0:45:29,800 --> 0:45:31,620
+ or been a
+
+795
+0:45:31,620 --> 0:45:31,920
+ spectator,
+
+796
+0:45:31,940 --> 0:45:33,820
+ you know what this is about.
+
+797
+0:45:34,040 --> 0:45:34,300
+ It is
+
+798
+0:45:34,300 --> 0:45:37,820
+ find a fun category, find some questions that are
+
+799
+0:45:37,820 --> 0:45:38,520
+ not too difficult.
+
+800
+0:45:38,800 --> 0:45:41,440
+ The one trap people always fall in
+
+801
+0:45:41,440 --> 0:45:43,880
+ is like, okay, I'm an expert on this,
+
+802
+0:45:43,940 --> 0:45:45,840
+ I'll make a category so difficult that I'm
+
+803
+0:45:45,840 --> 0:45:47,840
+ the only person in the room who can answer it.
+
+804
+0:45:48,180 --> 0:45:49,400
+ And that's just
+
+805
+0:45:49,400 --> 0:45:51,960
+ not a lot of fun to other people than the person
+
+806
+0:45:51,960 --> 0:45:52,940
+ who knows all the answers.
+
+807
+0:45:54,000 --> 0:45:55,740
+ What we want is categories
+
+808
+0:45:55,740 --> 0:45:58,020
+ that go from the most difficult one,
+
+809
+0:45:58,760 --> 0:45:59,440
+ maybe
+
+810
+0:45:59,440 --> 0:46:01,560
+ maybe 25% knows it,
+
+811
+0:46:01,560 --> 0:46:03,780
+ and the easiest one, almost everybody knows it,
+
+812
+0:46:03,780 --> 0:46:05,380
+ and it's a chase for the buttons.
+
+813
+0:46:05,620 --> 0:46:07,980
+ It has to be, it's much more fun that way.
+
+814
+0:46:07,980 --> 0:46:10,040
+ Trust us, we've tried both ways,
+
+815
+0:46:10,040 --> 0:46:11,740
+ and take our words for it.
+
+816
+0:46:12,940 --> 0:46:14,900
+ So please send categories to,
+
+817
+0:46:14,900 --> 0:46:22,500
+ is there a game-team at bornhack.dk
+
+818
+0:46:22,860 --> 0:46:25,100
+ and send your categories, or send questions.
+
+819
+0:46:25,100 --> 0:46:26,900
+ If you don't know quite how to formulate it,
+
+820
+0:46:26,900 --> 0:46:28,700
+ they will be happy to get you started.
+
+821
+0:46:29,280 --> 0:46:31,460
+ If you're playing and you submitted a category,
+
+822
+0:46:31,460 --> 0:46:33,220
+ please let us know the day you're on,
+
+823
+0:46:33,280 --> 0:46:35,760
+ so we don't accidentally schedule your own questions
+
+824
+0:46:35,760 --> 0:46:36,460
+ when you're playing.
+
+825
+0:46:41,460 --> 0:46:42,540
+ Yeah, yes?
+
+826
+0:46:43,300 --> 0:46:47,060
+ I missed POC in this point.
+
+827
+0:46:47,200 --> 0:46:49,240
+ It would be fun to say that DECT is working now.
+
+828
+0:46:51,020 --> 0:46:53,180
+ For the first time in a few years,
+
+829
+0:46:53,280 --> 0:46:54,780
+ we have a working DECT network.
+
+830
+0:46:55,100 --> 0:46:57,260
+ Thank you to the POC team for getting that up and running.
+
+831
+0:47:01,460 --> 0:47:02,200
+ Thank you.
+
+832
+0:47:02,200 --> 0:47:03,200
+ Thank you.
+
+833
+0:47:05,680 --> 0:47:08,980
+ This means you can go to the website,
+
+834
+0:47:08,980 --> 0:47:11,180
+ register a phone number in the phone book there
+
+835
+0:47:11,180 --> 0:47:14,160
+ with your account, and then you get an activation code,
+
+836
+0:47:14,160 --> 0:47:16,800
+ you dial that on your DECT phone, and you are rolling.
+
+837
+0:47:16,800 --> 0:47:19,300
+ It's easy, and it's fucking awesome,
+
+838
+0:47:19,300 --> 0:47:22,500
+ and I'm looking forward to getting my own phones hooked up
+
+839
+0:47:22,500 --> 0:47:25,920
+ as soon as I don't have a million other things to do.
+
+840
+0:47:26,780 --> 0:47:29,580
+ So, oh, any more questions?
+
+841
+0:47:30,280 --> 0:47:31,300
+ I can't really see.
+
+842
+0:47:31,460 --> 0:47:50,460
+ You forgot to give a hand to the Orca team.
+
+843
+0:47:50,460 --> 0:47:51,460
+ Thank you.
+
+844
+0:48:01,460 --> 0:48:06,700
+ We love you, too.
+
+845
+0:48:06,700 --> 0:48:11,620
+ We forgot to say, you can spot the organisers from these very snazzy latest fashion black
+
+846
+0:48:11,620 --> 0:48:13,980
+ vests that we're wearing this year.
+
+847
+0:48:13,980 --> 0:48:18,660
+ So black vests for Orca, white vests for photo team, orange for SIRT, and the yellow vest
+
+848
+0:48:18,660 --> 0:48:22,660
+ is other volunteers.
+
+849
+0:48:22,660 --> 0:48:27,700
+ So that's the colour scheme for this year, or hopefully going forward.
+
+850
+0:48:27,700 --> 0:48:30,080
+ OK, fantastic.
+
+851
+0:48:30,080 --> 0:48:31,080
+ We got through it.
+
+852
+0:48:31,080 --> 0:48:32,080
+ Under an hour.
+
+853
+0:48:32,080 --> 0:48:37,840
+ That's the new record, and I almost didn't cry, and we're pretty good.
+
+854
+0:48:37,840 --> 0:48:38,840
+ So...
+
+855
+0:48:38,840 --> 0:48:40,840
+ See you at the bar!
+
+856
+0:48:40,840 --> 0:48:41,840
+ Yes, exactly.
+
+857
+0:48:41,840 --> 0:48:42,840
+ We'll see you all at the bar.
+
+858
+0:48:42,840 --> 0:48:43,840
+ Thank you for everything.

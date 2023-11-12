@@ -1,0 +1,2543 @@
+# Transcribed 2023-11-12T11 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:21,600
+ Let's give a big hand to the last speaker we have this year, Tick with Goodbye World.
+
+2
+0:00:21,600 --> 0:00:23,540
+ Thank you everybody.
+
+3
+0:00:23,540 --> 0:00:28,880
+ We are nearing the end of what has been an amazing BornHack 2023.
+
+4
+0:00:28,880 --> 0:00:32,920
+ It is always a bit weird.
+
+5
+0:00:32,920 --> 0:00:38,820
+ The week goes by incredibly fast, it feels like, and so much has happened that it can
+
+6
+0:00:38,820 --> 0:00:42,100
+ be difficult to get your head around it.
+
+7
+0:00:42,100 --> 0:00:45,760
+ We had some weather over the last couple of days.
+
+8
+0:00:45,760 --> 0:00:50,560
+ We have reduced the number of pavilions significantly on the site.
+
+9
+0:00:50,560 --> 0:00:57,300
+ I guess we considered starting teardown early, an unplanned teardown.
+
+10
+0:00:57,300 --> 0:01:03,040
+ Most of the important things are still standing, and we hope that the worst of the weather has
+
+11
+0:01:03,040 --> 0:01:09,340
+ passed, especially right after this, where we hope to take down the big tent.
+
+12
+0:01:09,340 --> 0:01:12,140
+ Please stay dry.
+
+13
+0:01:12,140 --> 0:01:17,920
+ I have a lot of fun stats about the week that went by, and some practical info.
+
+14
+0:01:17,920 --> 0:01:22,720
+ I want to start out by talking a little bit about Grafen.
+
+15
+0:01:22,720 --> 0:01:27,140
+ As you remember from Hello World, and as most of you know, we lost an organizer this year,
+
+16
+0:01:27,140 --> 0:01:33,020
+ last year, but between the last BornHack and this BornHack.
+
+17
+0:01:33,020 --> 0:01:39,380
+ We have been struggling to figure out a good way to remember him, and we've decided to
+
+18
+0:01:39,380 --> 0:01:42,200
+ plant a tree here at Hylgedam.
+
+19
+0:01:42,200 --> 0:01:49,380
+ It will be placed out here by the radio tower, and it is being delivered the day after tomorrow,
+
+20
+0:01:49,380 --> 0:01:50,380
+ probably.
+
+21
+0:01:50,380 --> 0:01:56,000
+ There's some logistics involved when you're getting a sizable tree delivered, but we hope
+
+22
+0:01:56,000 --> 0:01:57,000
+ it will be here.
+
+23
+0:01:57,000 --> 0:02:00,220
+ It will be delivered later than Thursday.
+
+24
+0:02:00,220 --> 0:02:06,820
+ We have put up a mailbox in the bar where everybody is encouraged to write a letter
+
+25
+0:02:06,820 --> 0:02:12,300
+ to Grafen, and all the letters will be buried under the tree, put in the hole before we
+
+26
+0:02:12,300 --> 0:02:18,680
+ put in the tree when we put it in on Thursday or whenever it's going to be.
+
+27
+0:02:18,680 --> 0:02:24,220
+ The mailbox is in the bar, and we hope you will take time to write down some thoughts.
+
+28
+0:02:24,220 --> 0:02:25,880
+ Nobody will ever read it.
+
+29
+0:02:25,880 --> 0:02:26,880
+ So.
+
+30
+0:02:26,880 --> 0:02:30,100
+ It's more for you than for anyone else.
+
+31
+0:02:30,100 --> 0:02:48,700
+ The tree is a silver linden.
+
+32
+0:02:48,700 --> 0:02:54,100
+ I don't know much about trees, but it's pretty, and we hope it will be here for many years.
+
+33
+0:02:54,100 --> 0:02:55,100
+ Thank you.
+
+34
+0:02:55,100 --> 0:02:56,100
+ Thank you.
+
+35
+0:02:56,100 --> 0:02:59,320
+ Thank you.
+
+36
+0:02:59,320 --> 0:03:00,320
+ Okay.
+
+37
+0:03:00,320 --> 0:03:05,320
+ Let's get on to the more fun stuff.
+
+38
+0:03:05,320 --> 0:03:11,920
+ Statistics.
+
+39
+0:03:11,920 --> 0:03:13,980
+ We all love that, right?
+
+40
+0:03:13,980 --> 0:03:16,220
+ The program grew significantly this year.
+
+41
+0:03:16,220 --> 0:03:24,320
+ There was a few fewer talks, but overall it was a more full program than it has ever been
+
+42
+0:03:24,320 --> 0:03:25,320
+ before.
+
+43
+0:03:25,320 --> 0:03:26,320
+ I want to give a big thank you to everybody who submitted.
+
+44
+0:03:26,320 --> 0:03:33,380
+ We had 23 of the regular talks, which is fewer than last year, 11 lightning talks, which
+
+45
+0:03:33,380 --> 0:03:39,020
+ is quite a bit more than last year, 18 workshops, which is a lot, and some of them were way
+
+46
+0:03:39,020 --> 0:03:42,640
+ overcrowded, so there could probably have been more.
+
+47
+0:03:42,640 --> 0:03:48,380
+ We had the panel debate, which was, again, a great success, and 12 meetups this year,
+
+48
+0:03:48,380 --> 0:03:53,440
+ which is double what we had last year, a couple of music acts, and 19 recreational events.
+
+49
+0:03:53,440 --> 0:03:54,440
+ Thank you.
+
+50
+0:03:54,440 --> 0:03:54,640
+ Thank you.
+
+51
+0:03:54,640 --> 0:03:55,640
+ Thank you.
+
+52
+0:03:55,640 --> 0:03:57,940
+ I just had to talk about some of the events, various things submitted by villages and everything.
+
+53
+0:03:57,940 --> 0:04:01,360
+ It's been so good to see all the activities going on.
+
+54
+0:04:01,360 --> 0:04:06,560
+ The content team has been working hard putting this together, and all the people who've submitted,
+
+55
+0:04:06,560 --> 0:04:07,560
+ thank you all.
+
+56
+0:04:07,560 --> 0:04:17,940
+ Let's give everybody involved a big round of applause.
+
+57
+0:04:17,940 --> 0:04:23,060
+ Of course, let's not forget the video team, who are tirelessly working to stream locally
+
+58
+0:04:23,060 --> 0:04:24,060
+ and stream online.
+
+59
+0:04:24,060 --> 0:04:24,480
+ All this is doing a great job.
+
+60
+0:04:24,640 --> 0:04:30,460
+ Also everything is being recorded so we can go, let's give it a month, we have to recover
+
+61
+0:04:30,460 --> 0:04:36,360
+ a bit but pretty soon you'll be able to see it on media.ccc.de once we've done the post
+
+62
+0:04:36,360 --> 0:04:38,460
+ processing and stuff.
+
+63
+0:04:38,460 --> 0:04:52,100
+ And the video team has been handling all that like pros so thank you for that.
+
+64
+0:04:52,100 --> 0:04:57,920
+ The NOC team has as always delivered an impressive infrastructure out here in the middle of nowhere.
+
+65
+0:04:57,920 --> 0:05:03,940
+ We had very fast uplink speeds, I think I saw a speed test from a tent of eight and
+
+66
+0:05:03,940 --> 0:05:11,400
+ a half gigabits or something, and that's to the outside world, 35 access points were put
+
+67
+0:05:11,400 --> 0:05:20,580
+ up by NOC for the Wi-Fi, 300 almost, 350 unique connected devices, oh no, max, simultaneous
+
+68
+0:05:20,580 --> 0:05:21,580
+ I think it means.
+
+69
+0:05:21,580 --> 0:05:22,080
+ So that's it.
+
+70
+0:05:22,100 --> 0:05:30,660
+ Quite some data was pulled through our connection, 42 terabytes uploaded and 6 terabytes downloaded
+
+71
+0:05:30,660 --> 0:05:36,820
+ and of the 42 terabytes, a single tent and a single user is responsible for 90% of it,
+
+72
+0:05:36,820 --> 0:05:45,140
+ so well done.
+
+73
+0:05:45,140 --> 0:05:51,580
+ I happen to know it is data going to a really good course so it is very good to see.
+
+74
+0:05:51,580 --> 0:05:58,340
+ Bar numbers, as you know we depend on the bar to stay above water financially and you
+
+75
+0:05:58,340 --> 0:06:01,580
+ have been very good at using the bar, we really appreciate it.
+
+76
+0:06:01,580 --> 0:06:09,280
+ There's some impressive stats from down there, they sold 3700 things, over 2600 transactions,
+
+77
+0:06:09,280 --> 0:06:14,620
+ 628 cocktails, I may be responsible for quite a few of those.
+
+78
+0:06:14,620 --> 0:06:20,660
+ 619 liters of beer, I am absolutely responsible for zero of those.
+
+79
+0:06:20,660 --> 0:06:21,160
+ Okay.
+
+80
+0:06:21,580 --> 0:06:29,780
+ 445 liters of mate, same, 17 tsunamis, I may also be involved there and we had this
+
+81
+0:06:29,780 --> 0:06:34,740
+ year four free kegs bought by participants in the bar and put up for free for everybody
+
+82
+0:06:34,740 --> 0:06:41,840
+ to drink, three of them were weddings and the last one was 40 around birthday.
+
+83
+0:06:41,840 --> 0:06:50,060
+ The bar has been open almost like I've been awake, there hasn't been many times where
+
+84
+0:06:50,060 --> 0:06:51,060
+ I've walked by the bar.
+
+85
+0:06:51,060 --> 0:06:56,700
+ And it's been closed and it's down to an amazing bar team both constructing it and keeping
+
+86
+0:06:56,700 --> 0:07:01,940
+ it alive and involving over the week and also tending, cleaning up and doing everything
+
+87
+0:07:01,940 --> 0:07:04,740
+ that's needed to keep our bar running.
+
+88
+0:07:04,740 --> 0:07:17,620
+ Let's give them a big round of applause.
+
+89
+0:07:17,620 --> 0:07:19,520
+ So the game team once again.
+
+90
+0:07:19,520 --> 0:07:19,980
+ Organised.
+
+91
+0:07:19,980 --> 0:07:20,260
+ Organised.
+
+92
+0:07:20,260 --> 0:07:20,680
+ Amazing.
+
+93
+0:07:20,680 --> 0:07:22,540
+ token game. It's
+
+94
+0:07:22,540 --> 0:07:24,620
+ sort of a treasure hunt for little text strings
+
+95
+0:07:24,620 --> 0:07:26,600
+ all over the venue. They are offline
+
+96
+0:07:26,600 --> 0:07:28,600
+ and online and all over
+
+97
+0:07:28,600 --> 0:07:30,820
+ the place. 60 people
+
+98
+0:07:30,820 --> 0:07:32,380
+ took place in the
+
+99
+0:07:32,380 --> 0:07:34,340
+ contest and
+
+100
+0:07:34,340 --> 0:07:36,380
+ 27 tokens were found
+
+101
+0:07:36,380 --> 0:07:38,240
+ and 242 times
+
+102
+0:07:38,240 --> 0:07:40,660
+ a token was found. Game team,
+
+103
+0:07:40,740 --> 0:07:41,780
+ do we have a winner to announce?
+
+104
+0:07:42,540 --> 0:07:44,540
+ They have been announced. Oh, I didn't see.
+
+105
+0:07:44,620 --> 0:07:46,380
+ Sorry. The winner has been announced
+
+106
+0:07:46,380 --> 0:07:48,520
+ and I hope they are happy they got a free ticket
+
+107
+0:07:48,520 --> 0:07:49,720
+ for next year's event.
+
+108
+0:07:51,500 --> 0:07:52,580
+ Let's give a
+
+109
+0:07:52,580 --> 0:07:53,940
+ big round of applause to the game team.
+
+110
+0:08:02,080 --> 0:08:04,200
+ Between the token game and
+
+111
+0:08:04,200 --> 0:08:06,400
+ the Jeopardy and everything,
+
+112
+0:08:06,560 --> 0:08:08,280
+ they are really doing a lot of work
+
+113
+0:08:08,280 --> 0:08:10,200
+ that used to fall on Orga,
+
+114
+0:08:10,380 --> 0:08:12,480
+ so we are very, very happy with
+
+115
+0:08:12,480 --> 0:08:13,920
+ that and it's working so well, so
+
+116
+0:08:13,920 --> 0:08:14,980
+ thank you.
+
+117
+0:08:16,920 --> 0:08:18,520
+ The shuttle team has
+
+118
+0:08:18,520 --> 0:08:20,380
+ also been busy this year. They almost
+
+119
+0:08:20,380 --> 0:08:22,460
+ got out of it. We almost didn't get a shuttle car
+
+120
+0:08:22,460 --> 0:08:24,440
+ but we managed to get one
+
+121
+0:08:24,440 --> 0:08:26,400
+ last minute thanks to Dennis
+
+122
+0:08:26,400 --> 0:08:27,300
+ who helped find a sponsor.
+
+123
+0:08:28,520 --> 0:08:30,400
+ The shuttle team does the drives
+
+124
+0:08:30,400 --> 0:08:32,380
+ back and forth to the station mostly and
+
+125
+0:08:32,380 --> 0:08:34,000
+ to the supermarket occasionally.
+
+126
+0:08:36,020 --> 0:08:36,460
+ 47
+
+127
+0:08:36,460 --> 0:08:37,480
+ trips and
+
+128
+0:08:37,480 --> 0:08:40,420
+ a lot of communication and coordination in
+
+129
+0:08:40,420 --> 0:08:42,580
+ the mailbox and a few
+
+130
+0:08:42,580 --> 0:08:44,320
+ jumping runs. They are still
+
+131
+0:08:44,320 --> 0:08:46,220
+ doing shuttle runs, so
+
+132
+0:08:46,220 --> 0:08:48,300
+ when you need to leave tomorrow or
+
+133
+0:08:48,300 --> 0:08:50,200
+ whenever you need to leave, you can
+
+134
+0:08:50,200 --> 0:08:52,220
+ write an email to the shuttle team
+
+135
+0:08:52,220 --> 0:08:54,000
+ and hopefully they can take you.
+
+136
+0:08:55,600 --> 0:08:56,440
+ I don't even
+
+137
+0:08:56,440 --> 0:08:58,200
+ see, I hope Floma is here
+
+138
+0:08:58,200 --> 0:09:00,400
+ and some of the
+
+139
+0:09:00,400 --> 0:09:01,760
+ other shuttle team people because
+
+140
+0:09:01,760 --> 0:09:04,300
+ they really provide a service that, for
+
+141
+0:09:04,300 --> 0:09:06,460
+ participants at least, makes it so much easier
+
+142
+0:09:06,460 --> 0:09:08,260
+ to get to and from the event, so thank you
+
+143
+0:09:08,260 --> 0:09:08,620
+ to them.
+
+144
+0:09:18,420 --> 0:09:20,140
+ The power team has again,
+
+145
+0:09:20,200 --> 0:09:22,380
+ rolled out an impressive amount of copper on
+
+146
+0:09:22,380 --> 0:09:24,040
+ the venue so we could all get
+
+147
+0:09:24,040 --> 0:09:26,380
+ something resembling 230
+
+148
+0:09:26,380 --> 0:09:26,840
+ volts.
+
+149
+0:09:29,140 --> 0:09:30,520
+ It is tricky
+
+150
+0:09:30,520 --> 0:09:31,580
+ with the
+
+151
+0:09:31,580 --> 0:09:34,440
+ resources we have
+
+152
+0:09:34,440 --> 0:09:36,440
+ available and the way the power is wired
+
+153
+0:09:36,440 --> 0:09:38,340
+ on the venue. It is very difficult to
+
+154
+0:09:38,340 --> 0:09:40,300
+ provide stable power
+
+155
+0:09:40,300 --> 0:09:41,920
+ at the voltages we would like to but
+
+156
+0:09:41,920 --> 0:09:44,220
+ they are again and again
+
+157
+0:09:44,220 --> 0:09:46,440
+ proving that it can be done with
+
+158
+0:09:46,440 --> 0:09:47,660
+ a few
+
+159
+0:09:47,660 --> 0:09:49,920
+ low voltages.
+
+160
+0:09:50,200 --> 0:09:52,200
+ It is very hard to avoid completely
+
+161
+0:09:52,200 --> 0:09:54,200
+ because with the weather we have been having
+
+162
+0:09:54,200 --> 0:09:56,200
+ it is tricky keeping water out of everything.
+
+163
+0:09:56,200 --> 0:09:58,200
+ And when you do take down your village,
+
+164
+0:09:58,200 --> 0:10:00,200
+ please unplug stuff before you start touching
+
+165
+0:10:00,200 --> 0:10:02,200
+ the roof and stuff so we don't get any
+
+166
+0:10:02,200 --> 0:10:04,200
+ outages during teardown.
+
+167
+0:10:04,200 --> 0:10:06,200
+ The power team has been very quick to respond
+
+168
+0:10:06,200 --> 0:10:08,200
+ when there has been outages.
+
+169
+0:10:08,200 --> 0:10:10,200
+ They go from the distribution point
+
+170
+0:10:10,200 --> 0:10:12,200
+ to the
+
+171
+0:10:12,200 --> 0:10:14,200
+ distribution point.
+
+172
+0:10:14,200 --> 0:10:16,200
+ The power team has been very quick to respond
+
+173
+0:10:16,200 --> 0:10:18,200
+ when there has been outages.
+
+174
+0:10:18,200 --> 0:10:20,200
+ They go from the distribution point to the
+
+175
+0:10:20,200 --> 0:10:22,200
+ distribution point and try to turn it off
+
+176
+0:10:22,200 --> 0:10:24,200
+ and isolate and eventually find the culprit
+
+177
+0:10:24,200 --> 0:10:26,200
+ and get it fixed and everybody
+
+178
+0:10:26,200 --> 0:10:28,200
+ has power again. It is usually a quick process.
+
+179
+0:10:28,200 --> 0:10:30,200
+ Thank you so much to the power
+
+180
+0:10:30,200 --> 0:10:32,200
+ team, Flemming and the others.
+
+181
+0:10:42,200 --> 0:10:44,200
+ As you know
+
+182
+0:10:44,200 --> 0:10:46,200
+ we are, as you may know,
+
+183
+0:10:46,200 --> 0:10:48,200
+ we are about 10 people or 11 people
+
+184
+0:10:48,200 --> 0:10:50,200
+ in the ORGA group and it takes
+
+185
+0:10:50,200 --> 0:10:52,200
+ maybe 50 people to run this event
+
+186
+0:10:52,200 --> 0:10:54,200
+ or more. We would
+
+187
+0:10:54,200 --> 0:10:56,200
+ be unable to
+
+188
+0:10:56,200 --> 0:10:58,200
+ even begin considering doing this
+
+189
+0:10:58,200 --> 0:11:00,200
+ if we didn't get all the help
+
+190
+0:11:00,200 --> 0:11:02,200
+ from all the volunteers. Especially this
+
+191
+0:11:02,200 --> 0:11:04,200
+ year it has been a joy.
+
+192
+0:11:04,200 --> 0:11:06,200
+ There has been volunteer meetings every day
+
+193
+0:11:06,200 --> 0:11:08,200
+ at 14 in the
+
+194
+0:11:08,200 --> 0:11:10,200
+ what used to be the start end across from
+
+195
+0:11:10,200 --> 0:11:12,200
+ the info desk until it disappeared.
+
+196
+0:11:12,200 --> 0:11:14,200
+ And people have
+
+197
+0:11:14,200 --> 0:11:16,200
+ been willing and
+
+198
+0:11:16,200 --> 0:11:18,200
+ have been helping out even
+
+199
+0:11:18,200 --> 0:11:20,200
+ on their own, discovering things
+
+200
+0:11:20,200 --> 0:11:22,200
+ and just putting a message in the signal group
+
+201
+0:11:22,200 --> 0:11:24,200
+ this was off, I fixed it, you don't need to
+
+202
+0:11:24,200 --> 0:11:26,200
+ worry about it. It is such a
+
+203
+0:11:26,200 --> 0:11:28,200
+ huge load off of
+
+204
+0:11:28,200 --> 0:11:30,200
+ ORGA specs which means that
+
+205
+0:11:30,200 --> 0:11:32,200
+ we've had excess cycles
+
+206
+0:11:32,200 --> 0:11:34,200
+ to do other stuff that would usually
+
+207
+0:11:34,200 --> 0:11:36,200
+ pile up towards the end of the event.
+
+208
+0:11:36,200 --> 0:11:38,200
+ Stuff like economy
+
+209
+0:11:38,200 --> 0:11:40,200
+ stuff that's usually
+
+210
+0:11:40,200 --> 0:11:42,200
+ lying because that can be
+
+211
+0:11:42,200 --> 0:11:44,200
+ pushed forward.
+
+212
+0:11:44,200 --> 0:11:46,200
+ It means a lot to us because
+
+213
+0:11:46,200 --> 0:11:48,200
+ when we get home we, like everybody else,
+
+214
+0:11:48,200 --> 0:11:50,200
+ need to wind down and
+
+215
+0:11:50,200 --> 0:11:52,200
+ that's difficult when you know you have a pile of work
+
+216
+0:11:52,200 --> 0:11:54,200
+ waiting for you. And a lot of that
+
+217
+0:11:54,200 --> 0:11:56,200
+ has already been done from day to day
+
+218
+0:11:56,200 --> 0:11:58,200
+ and that's all thanks to all the volunteers.
+
+219
+0:11:58,200 --> 0:12:00,200
+ Can everybody who helped out please stand up
+
+220
+0:12:00,200 --> 0:12:02,200
+ and be applauded.
+
+221
+0:12:20,200 --> 0:12:22,200
+ Thank you.
+
+222
+0:12:22,200 --> 0:12:24,200
+ We are
+
+223
+0:12:24,200 --> 0:12:26,200
+ preparing tear down
+
+224
+0:12:26,200 --> 0:12:28,200
+ at
+
+225
+0:12:28,200 --> 0:12:30,200
+ right after this talk we'll take down
+
+226
+0:12:30,200 --> 0:12:32,200
+ this tent. I'll talk more about that
+
+227
+0:12:32,200 --> 0:12:34,200
+ after. But tomorrow
+
+228
+0:12:34,200 --> 0:12:36,200
+ at noon the event is officially over
+
+229
+0:12:36,200 --> 0:12:38,200
+ and then we'll start taking down power and
+
+230
+0:12:38,200 --> 0:12:40,200
+ network and all the infrastructure
+
+231
+0:12:40,200 --> 0:12:42,200
+ until noon tomorrow
+
+232
+0:12:42,200 --> 0:12:44,200
+ there will be full power and network
+
+233
+0:12:44,200 --> 0:12:46,200
+ and everything. The only thing we are taking down
+
+234
+0:12:46,200 --> 0:12:48,200
+ is this tent. But
+
+235
+0:12:48,200 --> 0:12:50,200
+ we do need help with tear down
+
+236
+0:12:50,200 --> 0:12:52,200
+ so if you have one or two
+
+237
+0:12:52,200 --> 0:12:54,200
+ extra days and you can stick around and help us
+
+238
+0:12:54,200 --> 0:12:56,200
+ sort, carry,
+
+239
+0:12:56,200 --> 0:12:58,200
+ stack stuff, return
+
+240
+0:12:58,200 --> 0:13:00,200
+ it, get it ready to return to
+
+241
+0:13:00,200 --> 0:13:02,200
+ all the suppliers who are showing up
+
+242
+0:13:02,200 --> 0:13:04,200
+ Thursday or Friday to do
+
+243
+0:13:04,200 --> 0:13:06,200
+ pickups, then it
+
+244
+0:13:06,200 --> 0:13:08,200
+ I mean the more the merrier. We can always
+
+245
+0:13:08,200 --> 0:13:10,200
+ use more hands. Jonathan is cooking
+
+246
+0:13:10,200 --> 0:13:12,200
+ from starting tomorrow evening
+
+247
+0:13:12,200 --> 0:13:14,200
+ and it's always
+
+248
+0:13:14,200 --> 0:13:16,200
+ yes.
+
+249
+0:13:20,200 --> 0:13:24,200
+ And it is actually always
+
+250
+0:13:24,200 --> 0:13:26,200
+ good fun even though it's of course
+
+251
+0:13:26,200 --> 0:13:28,200
+ hard work and you have a full week
+
+252
+0:13:28,200 --> 0:13:30,200
+ of event and maybe even build up
+
+253
+0:13:30,200 --> 0:13:32,200
+ in your system already.
+
+254
+0:13:32,200 --> 0:13:34,200
+ The more the merrier.
+
+255
+0:13:34,200 --> 0:13:36,200
+ Not all of it is hard work and hopefully
+
+256
+0:13:36,200 --> 0:13:38,200
+ the weather will treat us
+
+257
+0:13:38,200 --> 0:13:40,200
+ nicely and
+
+258
+0:13:40,200 --> 0:13:42,200
+ yeah, maybe some
+
+259
+0:13:42,200 --> 0:13:44,200
+ bar leftovers. It's usually
+
+260
+0:13:44,200 --> 0:13:46,200
+ a good time. Fires every
+
+261
+0:13:46,200 --> 0:13:48,200
+ evening and everything you
+
+262
+0:13:48,200 --> 0:13:50,200
+ can want. All
+
+263
+0:13:50,200 --> 0:13:52,200
+ the work you could ask for.
+
+264
+0:13:52,200 --> 0:13:54,200
+ Yeah.
+
+265
+0:13:54,200 --> 0:13:56,200
+ Even a little helps. Even a half a day
+
+266
+0:13:56,200 --> 0:13:58,200
+ or something. So please consider
+
+267
+0:13:58,200 --> 0:14:00,200
+ staying for tear down.
+
+268
+0:14:02,200 --> 0:14:04,200
+ We had the first coordination
+
+269
+0:14:04,200 --> 0:14:06,200
+ meeting at 1600
+
+270
+0:14:06,200 --> 0:14:08,200
+ in the bar start tent where we also had
+
+271
+0:14:08,200 --> 0:14:10,200
+ the volunteer meetings during
+
+272
+0:14:12,200 --> 0:14:14,200
+ during build up. The tent is disassembling
+
+273
+0:14:14,200 --> 0:14:16,200
+ itself as we speak. It knows
+
+274
+0:14:16,200 --> 0:14:18,200
+ what's about to happen.
+
+275
+0:14:18,200 --> 0:14:20,200
+ So at
+
+276
+0:14:20,200 --> 0:14:22,200
+ 16 tomorrow in the
+
+277
+0:14:22,200 --> 0:14:24,200
+ start tent by the bar we will have the first
+
+278
+0:14:24,200 --> 0:14:26,200
+ coordination meeting and at 19 we will
+
+279
+0:14:26,200 --> 0:14:28,200
+ have the first official tear down meal
+
+280
+0:14:28,200 --> 0:14:30,200
+ and those of you who have tried it before know
+
+281
+0:14:30,200 --> 0:14:32,200
+ after each meal there will
+
+282
+0:14:32,200 --> 0:14:34,200
+ be 9, 13 and 19
+
+283
+0:14:34,200 --> 0:14:36,200
+ we have a coordination meeting
+
+284
+0:14:36,200 --> 0:14:38,200
+ and hand out the tasks.
+
+285
+0:14:38,200 --> 0:14:40,200
+ We have the venue until
+
+286
+0:14:40,200 --> 0:14:42,200
+ Saturday officially. We are aiming
+
+287
+0:14:42,200 --> 0:14:44,200
+ for most things to be fixed by
+
+288
+0:14:44,200 --> 0:14:46,200
+ Friday.
+
+289
+0:14:46,200 --> 0:14:48,200
+ Barring any
+
+290
+0:14:48,200 --> 0:14:50,200
+ violent weather or something can
+
+291
+0:14:50,200 --> 0:14:52,200
+ easily delay things but
+
+292
+0:14:52,200 --> 0:14:54,200
+ we think we should be
+
+293
+0:14:54,200 --> 0:14:56,200
+ ready around Friday, Saturday.
+
+294
+0:15:00,200 --> 0:15:02,200
+ We would like to know what you thought
+
+295
+0:15:02,200 --> 0:15:04,200
+ of the event. Sometimes
+
+296
+0:15:04,200 --> 0:15:06,200
+ it's easier to sit down and gather
+
+297
+0:15:06,200 --> 0:15:08,200
+ your thoughts and put it in writing so
+
+298
+0:15:08,200 --> 0:15:10,200
+ we have the, and it's easier for us
+
+299
+0:15:10,200 --> 0:15:12,200
+ to remember.
+
+300
+0:15:12,200 --> 0:15:14,200
+ Bornhack.dk feedback
+
+301
+0:15:14,200 --> 0:15:16,200
+ please post positive and negative feedback
+
+302
+0:15:16,200 --> 0:15:18,200
+ is greatly appreciated
+
+303
+0:15:18,200 --> 0:15:20,200
+ and there's also an option
+
+304
+0:15:20,200 --> 0:15:22,200
+ on the individual events in the program
+
+305
+0:15:22,200 --> 0:15:24,200
+ to give feedback to the speaker
+
+306
+0:15:24,200 --> 0:15:26,200
+ about the event and
+
+307
+0:15:26,200 --> 0:15:28,200
+ that is also appreciated by the content team
+
+308
+0:15:28,200 --> 0:15:30,200
+ because then they know what to get more of
+
+309
+0:15:30,200 --> 0:15:32,200
+ next year so
+
+310
+0:15:32,200 --> 0:15:34,200
+ the program can be even better.
+
+311
+0:15:38,200 --> 0:15:40,200
+ If you lost anything or you found
+
+312
+0:15:40,200 --> 0:15:42,200
+ something then please take it to the info desk
+
+313
+0:15:42,200 --> 0:15:44,200
+ and we will try to get it untangled
+
+314
+0:15:44,200 --> 0:15:46,200
+ and get the right stuff sent home with the right
+
+315
+0:15:46,200 --> 0:15:48,200
+ people so nobody leaves anything
+
+316
+0:15:48,200 --> 0:15:50,200
+ in funeral.
+
+317
+0:15:50,200 --> 0:15:52,200
+ Our food vendor
+
+318
+0:15:52,200 --> 0:15:54,200
+ will leave
+
+319
+0:15:54,200 --> 0:15:56,200
+ tomorrow around 14
+
+320
+0:15:56,200 --> 0:15:58,200
+ so there's time to get lunch tomorrow
+
+321
+0:15:58,200 --> 0:16:00,200
+ and then there will be a
+
+322
+0:16:00,200 --> 0:16:02,200
+ tear down meal in the
+
+323
+0:16:02,200 --> 0:16:04,200
+ dinner in the cabin from 19
+
+324
+0:16:04,200 --> 0:16:06,200
+ but you do need to
+
+325
+0:16:06,200 --> 0:16:08,200
+ we're not serving
+
+326
+0:16:08,200 --> 0:16:10,200
+ volunteer lunch tomorrow
+
+327
+0:16:10,200 --> 0:16:12,200
+ so make sure you eat on your own
+
+328
+0:16:12,200 --> 0:16:14,200
+ and then we will start taking
+
+329
+0:16:14,200 --> 0:16:16,200
+ care of the meals starting tomorrow evening.
+
+330
+0:16:16,200 --> 0:16:18,200
+ The food area
+
+331
+0:16:18,200 --> 0:16:20,200
+ tent will stay up until
+
+332
+0:16:20,200 --> 0:16:22,200
+ Thursday and we will start
+
+333
+0:16:22,200 --> 0:16:24,200
+ taking it down there so there's also the option
+
+334
+0:16:24,200 --> 0:16:26,200
+ of cooking for yourself over the next couple of days.
+
+335
+0:16:28,200 --> 0:16:30,200
+ The food area team has been keeping
+
+336
+0:16:30,200 --> 0:16:32,200
+ and we are talking about a
+
+337
+0:16:32,200 --> 0:16:34,200
+ two man army or two person army
+
+338
+0:16:34,200 --> 0:16:36,200
+ has been keeping the food area so
+
+339
+0:16:36,200 --> 0:16:38,200
+ nice and tidy so let's give them a
+
+340
+0:16:38,200 --> 0:16:40,200
+ big round of applause.
+
+341
+0:16:50,200 --> 0:16:52,200
+ It's a fun story because
+
+342
+0:16:52,200 --> 0:16:54,200
+ we didn't quite
+
+343
+0:16:54,200 --> 0:16:56,200
+ understand what happened
+
+344
+0:16:56,200 --> 0:16:58,200
+ suddenly the food area started being really
+
+345
+0:16:58,200 --> 0:17:00,200
+ messy and dirty and we had to get cleaners
+
+346
+0:17:00,200 --> 0:17:02,200
+ to fix it and everything and it turned out that
+
+347
+0:17:02,200 --> 0:17:04,200
+ these two lovely people just missed a couple of
+
+348
+0:17:04,200 --> 0:17:06,200
+ born hacks and wasn't doing all the cleaning
+
+349
+0:17:06,200 --> 0:17:08,200
+ they were usually doing and suddenly
+
+350
+0:17:08,200 --> 0:17:10,200
+ the absence of something
+
+351
+0:17:10,200 --> 0:17:12,200
+ like that becomes very obvious when it's
+
+352
+0:17:12,200 --> 0:17:14,200
+ not there so they have been doing this
+
+353
+0:17:14,200 --> 0:17:16,200
+ we just maybe
+
+354
+0:17:16,200 --> 0:17:18,200
+ forgot to notice or appreciate it
+
+355
+0:17:18,200 --> 0:17:20,200
+ fantastic work thank you.
+
+356
+0:17:20,200 --> 0:17:28,200
+ applause
+
+357
+0:17:28,200 --> 0:17:30,200
+ okay we
+
+358
+0:17:30,200 --> 0:17:32,200
+ have a tradition that goes back all
+
+359
+0:17:32,200 --> 0:17:34,200
+ the way to the first born hack that
+
+360
+0:17:34,200 --> 0:17:36,200
+ the speakers chair is built
+
+361
+0:17:36,200 --> 0:17:38,200
+ carefully and lovingly and
+
+362
+0:17:38,200 --> 0:17:40,200
+ artfully and then
+
+363
+0:17:40,200 --> 0:17:42,200
+ when we are done with it we burn it
+
+364
+0:17:42,200 --> 0:17:44,200
+ and it's kind of a weird tradition
+
+365
+0:17:44,200 --> 0:17:46,200
+ but it is a tradition nonetheless
+
+366
+0:17:46,200 --> 0:17:48,200
+ and
+
+367
+0:17:48,200 --> 0:17:50,200
+ tomorrow evening whether permitting or
+
+368
+0:17:50,200 --> 0:17:52,200
+ otherwise Thursday we are probably
+
+369
+0:17:52,200 --> 0:17:54,200
+ having a fire anyway but
+
+370
+0:17:54,200 --> 0:17:56,200
+ one of these days the
+
+371
+0:17:56,200 --> 0:17:58,200
+ speakers chair is going
+
+372
+0:17:58,200 --> 0:18:00,200
+ it's usually great fun
+
+373
+0:18:00,200 --> 0:18:02,200
+ we can get rid of some hand sanitizer
+
+374
+0:18:02,200 --> 0:18:04,200
+ while we are at it
+
+375
+0:18:04,200 --> 0:18:06,200
+ laughter
+
+376
+0:18:10,200 --> 0:18:12,200
+ so post camp
+
+377
+0:18:12,200 --> 0:18:14,200
+ blues can be pretty rough
+
+378
+0:18:14,200 --> 0:18:16,200
+ being surrounded by so many lovely
+
+379
+0:18:16,200 --> 0:18:18,200
+ people and
+
+380
+0:18:18,200 --> 0:18:20,200
+ enjoying the content and
+
+381
+0:18:20,200 --> 0:18:22,200
+ the environment and the community
+
+382
+0:18:22,200 --> 0:18:24,200
+ and the feeling of togetherness
+
+383
+0:18:24,200 --> 0:18:26,200
+ and then returning to
+
+384
+0:18:26,200 --> 0:18:28,200
+ a pretty bleak reality
+
+385
+0:18:28,200 --> 0:18:30,200
+ on the outside of these walls can be
+
+386
+0:18:30,200 --> 0:18:32,200
+ a little rough and
+
+387
+0:18:32,200 --> 0:18:34,200
+ and that's I mean
+
+388
+0:18:34,200 --> 0:18:36,200
+ there's nothing to do
+
+389
+0:18:36,200 --> 0:18:38,200
+ you have to come down when you've
+
+390
+0:18:38,200 --> 0:18:40,200
+ been up right but
+
+391
+0:18:40,200 --> 0:18:42,200
+ there's some suggested remedies
+
+392
+0:18:42,200 --> 0:18:44,200
+ for when you feel the sadness
+
+393
+0:18:44,200 --> 0:18:46,200
+ watch some of the talks you missed
+
+394
+0:18:46,200 --> 0:18:48,200
+ we are getting them up as soon as
+
+395
+0:18:48,200 --> 0:18:50,200
+ we can you can play with your bass
+
+396
+0:18:50,200 --> 0:18:52,200
+ or some of the previous years badges
+
+397
+0:18:52,200 --> 0:18:54,200
+ you can organize all your pictures and
+
+398
+0:18:54,200 --> 0:18:56,200
+ send the cool ones to us if they are
+
+399
+0:18:56,200 --> 0:18:58,200
+ in a creative commons lies under
+
+400
+0:18:58,200 --> 0:19:00,200
+ creative commons license so we can use
+
+401
+0:19:00,200 --> 0:19:02,200
+ them we would greatly appreciate that
+
+402
+0:19:02,200 --> 0:19:04,200
+ stay in touch online
+
+403
+0:19:04,200 --> 0:19:06,200
+ we have the ISE channel we have the
+
+404
+0:19:06,200 --> 0:19:08,200
+ signal groups talk to old and new
+
+405
+0:19:08,200 --> 0:19:10,200
+ friends keep the community going
+
+406
+0:19:10,200 --> 0:19:12,200
+ throughout the year
+
+407
+0:19:12,200 --> 0:19:14,200
+ buy a ticket for born hack 2024
+
+408
+0:19:14,200 --> 0:19:16,200
+ they will be for sale as soon as we've
+
+409
+0:19:16,200 --> 0:19:18,200
+ recovered from this during the fall at
+
+410
+0:19:18,200 --> 0:19:20,200
+ some point
+
+411
+0:19:20,200 --> 0:19:22,200
+ and keep on hacking
+
+412
+0:19:22,200 --> 0:19:24,200
+ applause
+
+413
+0:19:24,200 --> 0:19:26,200
+ applause
+
+414
+0:19:26,200 --> 0:19:28,200
+ applause
+
+415
+0:19:28,200 --> 0:19:30,200
+ applause
+
+416
+0:19:30,200 --> 0:19:32,200
+ applause
+
+417
+0:19:32,200 --> 0:19:34,200
+ applause
+
+418
+0:19:34,200 --> 0:19:36,200
+ born hack 2024 has moved forward slightly
+
+419
+0:19:36,200 --> 0:19:38,200
+ it is scheduled
+
+420
+0:19:38,200 --> 0:19:40,200
+ for the 17th to the 24th
+
+421
+0:19:40,200 --> 0:19:42,200
+ of July 2024
+
+422
+0:19:42,200 --> 0:19:44,200
+ it's a Wednesday to Wednesday
+
+423
+0:19:44,200 --> 0:19:46,200
+ we realize moving it is going to be
+
+424
+0:19:46,200 --> 0:19:48,200
+ inconvenient for some people
+
+425
+0:19:48,200 --> 0:19:50,200
+ for other people it will be convenient
+
+426
+0:19:50,200 --> 0:19:52,200
+ there's no way to
+
+427
+0:19:52,200 --> 0:19:54,200
+ make everybody happy with this
+
+428
+0:19:54,200 --> 0:19:56,200
+ the current dates in
+
+429
+0:19:56,200 --> 0:19:58,200
+ like mid-August that we've been doing
+
+430
+0:19:58,200 --> 0:20:00,200
+ for some years
+
+431
+0:20:00,200 --> 0:20:02,200
+ conflict with the big German and Dutch
+
+432
+0:20:02,200 --> 0:20:04,200
+ camps in a way that makes it really
+
+433
+0:20:04,200 --> 0:20:06,200
+ difficult for us to get the venue because
+
+434
+0:20:06,200 --> 0:20:08,200
+ this venue has to be booked about two
+
+435
+0:20:08,200 --> 0:20:10,200
+ years in advance and when the big Dutch
+
+436
+0:20:10,200 --> 0:20:12,200
+ and German events don't decide on their
+
+437
+0:20:12,200 --> 0:20:14,200
+ dates until eight months before then we
+
+438
+0:20:14,200 --> 0:20:16,200
+ have
+
+439
+0:20:16,200 --> 0:20:18,200
+ as you can see an impossible job of
+
+440
+0:20:18,200 --> 0:20:20,200
+ picking a date that doesn't fit the
+
+441
+0:20:20,200 --> 0:20:22,200
+ conflict because we are the small
+
+442
+0:20:22,200 --> 0:20:24,200
+ camp if we end up being
+
+443
+0:20:24,200 --> 0:20:26,200
+ at the same time a CCC camp or the
+
+444
+0:20:26,200 --> 0:20:28,200
+ Dutch events we will lose
+
+445
+0:20:28,200 --> 0:20:30,200
+ even Orga would not show up because we
+
+446
+0:20:30,200 --> 0:20:32,200
+ want to go to the big events too
+
+447
+0:20:32,200 --> 0:20:34,200
+ so we want to avoid that and
+
+448
+0:20:34,200 --> 0:20:36,200
+ I mean
+
+449
+0:20:36,200 --> 0:20:38,200
+ moving it ahead a bit means that we dodge
+
+450
+0:20:38,200 --> 0:20:40,200
+ both the big German and the big
+
+451
+0:20:40,200 --> 0:20:42,200
+ Dutch events there will be other conflicts
+
+452
+0:20:42,200 --> 0:20:44,200
+ some people might be unable to attend
+
+453
+0:20:44,200 --> 0:20:46,200
+ that have been coming for years we are very
+
+454
+0:20:46,200 --> 0:20:48,200
+ sorry about that hopefully this will
+
+455
+0:20:48,200 --> 0:20:50,200
+ allow other people to come and
+
+456
+0:20:50,200 --> 0:20:52,200
+ at the very least it will make it so we
+
+457
+0:20:52,200 --> 0:20:54,200
+ don't have to ask the venue people to
+
+458
+0:20:54,200 --> 0:20:56,200
+ move other people who rented the venue
+
+459
+0:20:56,200 --> 0:20:58,200
+ where we needed so they have to
+
+460
+0:20:58,200 --> 0:21:00,200
+ cancel other
+
+461
+0:21:00,200 --> 0:21:02,200
+ renters at Hylkedam so they can
+
+462
+0:21:02,200 --> 0:21:04,200
+ fit us in
+
+463
+0:21:04,200 --> 0:21:06,200
+ they did it twice
+
+464
+0:21:06,200 --> 0:21:08,200
+ and we've been here in four years and it's just
+
+465
+0:21:08,200 --> 0:21:10,200
+ too stressful and it's too much to ask
+
+466
+0:21:10,200 --> 0:21:12,200
+ we cannot keep doing this and we cannot
+
+467
+0:21:12,200 --> 0:21:14,200
+ demand from CCC or the Dutch
+
+468
+0:21:14,200 --> 0:21:16,200
+ events that they put their dates
+
+469
+0:21:16,200 --> 0:21:18,200
+ out several years in advance
+
+470
+0:21:18,200 --> 0:21:20,200
+ that's not going to happen the only way we can do
+
+471
+0:21:20,200 --> 0:21:22,200
+ this is to kind of
+
+472
+0:21:22,200 --> 0:21:24,200
+ roll with the punches and move
+
+473
+0:21:24,200 --> 0:21:26,200
+ to a place in the calendar that
+
+474
+0:21:26,200 --> 0:21:28,200
+ doesn't have so many big events
+
+475
+0:21:28,200 --> 0:21:30,200
+ so BornHack 2024
+
+476
+0:21:30,200 --> 0:21:32,200
+ will be from the 17th to the 24th
+
+477
+0:21:32,200 --> 0:21:34,200
+ of July we hope very much to
+
+478
+0:21:34,200 --> 0:21:36,200
+ see you all there
+
+479
+0:21:46,200 --> 0:21:48,200
+ speaking of avoiding Hacker Blues
+
+480
+0:21:48,200 --> 0:21:50,200
+ another way of doing that is just to keep
+
+481
+0:21:50,200 --> 0:21:52,200
+ on trucking when we're done with
+
+482
+0:21:52,200 --> 0:21:54,200
+ Teardown we will
+
+483
+0:21:54,200 --> 0:21:56,200
+ repeat our great
+
+484
+0:21:56,200 --> 0:21:58,200
+ success from 2019
+
+485
+0:21:58,200 --> 0:22:00,200
+ where the CCC camp was also right after
+
+486
+0:22:00,200 --> 0:22:02,200
+ BornHack what we did was basically
+
+487
+0:22:02,200 --> 0:22:04,200
+ finish Teardown pack everything
+
+488
+0:22:04,200 --> 0:22:06,200
+ and then do a big convoy of
+
+489
+0:22:06,200 --> 0:22:08,200
+ 10-15 vehicles and just drive
+
+490
+0:22:08,200 --> 0:22:10,200
+ down there with radios and
+
+491
+0:22:10,200 --> 0:22:12,200
+ everything it was amazingly
+
+492
+0:22:12,200 --> 0:22:14,200
+ good fun and we arrived
+
+493
+0:22:14,200 --> 0:22:16,200
+ at CCC camp
+
+494
+0:22:16,200 --> 0:22:18,200
+ maybe one vehicle didn't
+
+495
+0:22:18,200 --> 0:22:20,200
+ get there until 48 hours later
+
+496
+0:22:20,200 --> 0:22:22,200
+ it's quite a story you can ask Omni about that
+
+497
+0:22:22,200 --> 0:22:24,200
+ but mostly
+
+498
+0:22:24,200 --> 0:22:26,200
+ it went very well
+
+499
+0:22:26,200 --> 0:22:28,200
+ and we are repeating it
+
+500
+0:22:28,200 --> 0:22:30,200
+ so as soon as we are done here
+
+501
+0:22:30,200 --> 0:22:32,200
+ everybody gets in their cars and we
+
+502
+0:22:32,200 --> 0:22:34,200
+ drive
+
+503
+0:22:34,200 --> 0:22:36,200
+ to CCC camp
+
+504
+0:22:36,200 --> 0:22:38,200
+ you are welcome to
+
+505
+0:22:38,200 --> 0:22:40,200
+ if you need to leave and come
+
+506
+0:22:40,200 --> 0:22:42,200
+ back you can do that but most people will probably
+
+507
+0:22:42,200 --> 0:22:44,200
+ stay and help with Teardown and then leave
+
+508
+0:22:44,200 --> 0:22:46,200
+ when we are done it should be good fun
+
+509
+0:22:46,200 --> 0:22:48,200
+ and it's a good way to recover
+
+510
+0:22:48,200 --> 0:22:50,200
+ what better way to recover from BornHack
+
+511
+0:22:50,200 --> 0:22:52,200
+ than by going to another
+
+512
+0:22:52,200 --> 0:22:54,200
+ hacker camp
+
+513
+0:22:58,200 --> 0:23:00,200
+ okay we have some inventory
+
+514
+0:23:00,200 --> 0:23:02,200
+ left in the bar that we don't want to
+
+515
+0:23:02,200 --> 0:23:04,200
+ carry around too much we would like
+
+516
+0:23:04,200 --> 0:23:06,200
+ all of you to take it home
+
+517
+0:23:06,200 --> 0:23:08,200
+ so we are selling booze bottles
+
+518
+0:23:08,200 --> 0:23:10,200
+ and infodesk at reduced prices
+
+519
+0:23:10,200 --> 0:23:12,200
+ you can get a full bottle for
+
+520
+0:23:12,200 --> 0:23:14,200
+ 200 hacks instead of 300
+
+521
+0:23:14,200 --> 0:23:16,200
+ and there is Ackervit
+
+522
+0:23:16,200 --> 0:23:18,200
+ and vodka and Säbeblöd
+
+523
+0:23:18,200 --> 0:23:20,200
+ up there also mate
+
+524
+0:23:20,200 --> 0:23:22,200
+ and beer I think
+
+525
+0:23:22,200 --> 0:23:24,200
+ it should be already ready in the infodesk
+
+526
+0:23:24,200 --> 0:23:26,200
+ I don't think they will open about now
+
+527
+0:23:26,200 --> 0:23:28,200
+ and be open today
+
+528
+0:23:28,200 --> 0:23:30,200
+ and also tomorrow
+
+529
+0:23:30,200 --> 0:23:32,200
+ so when you leave
+
+530
+0:23:32,200 --> 0:23:34,200
+ or about to leave consider going by there
+
+531
+0:23:34,200 --> 0:23:36,200
+ and getting some nice Säbeblöd
+
+532
+0:23:36,200 --> 0:23:38,200
+ or Ackervit or vodka to take home
+
+533
+0:23:40,200 --> 0:23:42,200
+ it is also a good way to get rid of the hacker blues
+
+534
+0:23:48,200 --> 0:23:50,200
+ okay I'm almost done
+
+535
+0:23:50,200 --> 0:23:52,200
+ we would like some help
+
+536
+0:23:52,200 --> 0:23:54,200
+ right now with taking down the speakers tent
+
+537
+0:23:54,200 --> 0:23:56,200
+ this is a massively parallelizable
+
+538
+0:23:56,200 --> 0:23:58,200
+ job we could almost do it
+
+539
+0:23:58,200 --> 0:24:00,200
+ with the GPU
+
+540
+0:24:00,200 --> 0:24:02,200
+ but we do need some help
+
+541
+0:24:02,200 --> 0:24:04,200
+ so
+
+542
+0:24:04,200 --> 0:24:06,200
+ it is
+
+543
+0:24:06,200 --> 0:24:08,200
+ once people get up and start running
+
+544
+0:24:08,200 --> 0:24:10,200
+ around it gets a bit chaotic
+
+545
+0:24:10,200 --> 0:24:12,200
+ so I'm going to go over it slowly
+
+546
+0:24:12,200 --> 0:24:14,200
+ and explain what we would like
+
+547
+0:24:14,200 --> 0:24:16,200
+ and once we start
+
+548
+0:24:16,200 --> 0:24:18,200
+ please everybody be careful
+
+549
+0:24:18,200 --> 0:24:20,200
+ nobody hurt themselves we used to time
+
+550
+0:24:20,200 --> 0:24:22,200
+ taking down of the speakers tent
+
+551
+0:24:22,200 --> 0:24:24,200
+ we don't do that anymore because people are way too competitive
+
+552
+0:24:24,200 --> 0:24:26,200
+ and will end up hurting themselves
+
+553
+0:24:26,200 --> 0:24:28,200
+ and we of course
+
+554
+0:24:28,200 --> 0:24:30,200
+ don't want that
+
+555
+0:24:30,200 --> 0:24:32,200
+ we have a bunch of helmets that we are getting
+
+556
+0:24:32,200 --> 0:24:34,200
+ for when the frame has to come down
+
+557
+0:24:34,200 --> 0:24:36,200
+ but before all that
+
+558
+0:24:36,200 --> 0:24:38,200
+ the very first thing is
+
+559
+0:24:38,200 --> 0:24:40,200
+ you get up take the chair you are sitting on
+
+560
+0:24:40,200 --> 0:24:42,200
+ and take it to the car
+
+561
+0:24:42,200 --> 0:24:44,200
+ park right outside and stack it inside
+
+562
+0:24:44,200 --> 0:24:46,200
+ that I'm guessing
+
+563
+0:24:46,200 --> 0:24:48,200
+ two people inside it to stack
+
+564
+0:24:48,200 --> 0:24:50,200
+ and then an anthill
+
+565
+0:24:50,200 --> 0:24:52,200
+ of people taking out chairs
+
+566
+0:24:52,200 --> 0:24:54,200
+ after that
+
+567
+0:24:54,200 --> 0:24:56,200
+ we are taking out all the tables
+
+568
+0:24:56,200 --> 0:24:58,200
+ there is a row of metal frames
+
+569
+0:24:58,200 --> 0:25:00,200
+ out here the tables go on the metal frame
+
+570
+0:25:00,200 --> 0:25:02,200
+ 20 high or so
+
+571
+0:25:02,200 --> 0:25:04,200
+ and then they get a ratchet strap
+
+572
+0:25:04,200 --> 0:25:06,200
+ there will be organizers in these black
+
+573
+0:25:06,200 --> 0:25:08,200
+ auger vests at all the stacks
+
+574
+0:25:08,200 --> 0:25:10,200
+ and they know all of them know
+
+575
+0:25:10,200 --> 0:25:12,200
+ how to stack it
+
+576
+0:25:12,200 --> 0:25:14,200
+ so there is nothing worse than having
+
+577
+0:25:14,200 --> 0:25:16,200
+ to restack a stack
+
+578
+0:25:16,200 --> 0:25:18,200
+ of tables that turned out to be stacked wrongly
+
+579
+0:25:18,200 --> 0:25:20,200
+ or a stack of floor plates
+
+580
+0:25:20,200 --> 0:25:22,200
+ in two or three days
+
+581
+0:25:22,200 --> 0:25:24,200
+ before they pick it up because our arms
+
+582
+0:25:24,200 --> 0:25:26,200
+ are hanging down there at that point
+
+583
+0:25:26,200 --> 0:25:28,200
+ so let's get it right the first time
+
+584
+0:25:28,200 --> 0:25:30,200
+ so it's much better to do it a little slowly
+
+585
+0:25:30,200 --> 0:25:32,200
+ a little more slowly
+
+586
+0:25:32,200 --> 0:25:34,200
+ than to get it wrong and we have to redo it
+
+587
+0:25:34,200 --> 0:25:36,200
+ and especially the chairs
+
+588
+0:25:36,200 --> 0:25:38,200
+ sorry the tables and the floor plates
+
+589
+0:25:38,200 --> 0:25:40,200
+ have historically been
+
+590
+0:25:40,200 --> 0:25:42,200
+ sources of
+
+591
+0:25:42,200 --> 0:25:44,200
+ restacking work
+
+592
+0:25:44,200 --> 0:25:46,200
+ so let's get it right
+
+593
+0:25:46,200 --> 0:25:48,200
+ and just check with the vests before you leave anything
+
+594
+0:25:48,200 --> 0:25:50,200
+ even though you think you might know
+
+595
+0:25:50,200 --> 0:25:52,200
+ it's a very
+
+596
+0:25:52,200 --> 0:25:54,200
+ we're all very capable in our
+
+597
+0:25:54,200 --> 0:25:56,200
+ daily work and stuff and it's easy to
+
+598
+0:25:56,200 --> 0:25:58,200
+ I know how to do this I'll just get it going
+
+599
+0:25:58,200 --> 0:26:00,200
+ but please check with somebody in a vest
+
+600
+0:26:00,200 --> 0:26:02,200
+ before you place things
+
+601
+0:26:02,200 --> 0:26:04,200
+ the chairs go to the auger van
+
+602
+0:26:04,200 --> 0:26:06,200
+ the tables go on the
+
+603
+0:26:06,200 --> 0:26:08,200
+ the frames
+
+604
+0:26:08,200 --> 0:26:10,200
+ out here and the floors go
+
+605
+0:26:10,200 --> 0:26:12,200
+ on the wooden pallets that have the big
+
+606
+0:26:12,200 --> 0:26:14,200
+ wooden plates on top
+
+607
+0:26:14,200 --> 0:26:16,200
+ the floors
+
+608
+0:26:16,200 --> 0:26:18,200
+ the floors
+
+609
+0:26:18,200 --> 0:26:20,200
+ kind of snap into each other when you stack them
+
+610
+0:26:20,200 --> 0:26:22,200
+ so it's not like a pile
+
+611
+0:26:22,200 --> 0:26:24,200
+ it's a very neat pile when you're done
+
+612
+0:26:24,200 --> 0:26:26,200
+ so they click into each other
+
+613
+0:26:26,200 --> 0:26:28,200
+ so they're completely straight the sides
+
+614
+0:26:28,200 --> 0:26:30,200
+ so if they're not straight they have to be
+
+615
+0:26:30,200 --> 0:26:32,200
+ restacked so put it down
+
+616
+0:26:32,200 --> 0:26:34,200
+ get it into place so it clicks in
+
+617
+0:26:34,200 --> 0:26:36,200
+ and then put the next one in
+
+618
+0:26:36,200 --> 0:26:38,200
+ the video team
+
+619
+0:26:38,200 --> 0:26:40,200
+ will start taking down all this stuff
+
+620
+0:26:40,200 --> 0:26:42,200
+ and they will
+
+621
+0:26:42,200 --> 0:26:44,200
+ handle that themselves
+
+622
+0:26:44,200 --> 0:26:46,200
+ so tables and chairs and when we're done with that
+
+623
+0:26:46,200 --> 0:26:48,200
+ we can start taking up the floor
+
+624
+0:26:48,200 --> 0:26:50,200
+ and putting that down and taking down the sides
+
+625
+0:26:50,200 --> 0:26:52,200
+ and folding those and putting them on the pallets
+
+626
+0:26:52,200 --> 0:26:54,200
+ if you have questions
+
+627
+0:26:54,200 --> 0:26:56,200
+ or doubts then stop
+
+628
+0:26:56,200 --> 0:26:58,200
+ working and just stand around
+
+629
+0:26:58,200 --> 0:27:00,200
+ look what others are doing or come ask an auger person
+
+630
+0:27:00,200 --> 0:27:02,200
+ much rather get it
+
+631
+0:27:02,200 --> 0:27:04,200
+ right than doing it twice
+
+632
+0:27:08,200 --> 0:27:10,200
+ that is it we love you all
+
+633
+0:27:10,200 --> 0:27:12,200
+ we will see you next year and thank you for
+
+634
+0:27:12,200 --> 0:27:14,200
+ everything
+
+635
+0:27:20,200 --> 0:27:24,200
+ applause

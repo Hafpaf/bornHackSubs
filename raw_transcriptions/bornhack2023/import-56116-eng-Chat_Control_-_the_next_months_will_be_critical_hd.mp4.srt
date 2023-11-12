@@ -1,0 +1,2863 @@
+# Transcribed 2023-11-12T12 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:13,840
+ The next speakers we have is Karen Melchior, a member of the European Parliament, and Jesper
+
+2
+0:00:13,840 --> 0:00:17,520
+ Lund, the chair of the IT poll.
+
+3
+0:00:17,520 --> 0:00:21,000
+ They will speak about chat control.
+
+4
+0:00:21,000 --> 0:00:23,480
+ The next month will be critical.
+
+5
+0:00:23,480 --> 0:00:26,380
+ Please give them a hand.
+
+6
+0:00:26,380 --> 0:00:37,480
+ Thank you very much, and thanks for coming to this, I think, one of several presentations
+
+7
+0:00:37,480 --> 0:00:44,060
+ about chat control, a surveillance proposal from the EU Commission.
+
+8
+0:00:44,060 --> 0:00:50,060
+ And there was a talk yesterday by Jan, and today we will focus on what is happening at
+
+9
+0:00:50,060 --> 0:00:52,580
+ the political institutions.
+
+10
+0:00:52,580 --> 0:00:59,080
+ And in the EU, and why the next couple of months will be critical for our fundamental
+
+11
+0:00:59,080 --> 0:01:02,420
+ rights in the years to come.
+
+12
+0:01:02,420 --> 0:01:05,360
+ So this is a quick outline.
+
+13
+0:01:05,360 --> 0:01:12,120
+ We will do a very quick outline of what chat control is about, and what is the real name
+
+14
+0:01:12,120 --> 0:01:14,300
+ of chat control.
+
+15
+0:01:14,300 --> 0:01:18,800
+ And then we will, without hopefully making it too boring, explain how the EU law-making
+
+16
+0:01:18,800 --> 0:01:20,280
+ process works.
+
+17
+0:01:20,280 --> 0:01:22,480
+ Because a sort of...
+
+18
+0:01:22,580 --> 0:01:28,800
+ Some understanding of that is very useful to sort of, first of all, influence the process,
+
+19
+0:01:28,800 --> 0:01:35,760
+ but also understand why does it matter that council did this and that, and so forth.
+
+20
+0:01:35,760 --> 0:01:45,100
+ And in the end, we will suggest how you, or those listening to this online, or seeing
+
+21
+0:01:45,100 --> 0:01:50,420
+ it afterwards, can try to influence the process so that this mass surveillance proposal can
+
+22
+0:01:50,420 --> 0:01:51,420
+ be implemented.
+
+23
+0:01:51,420 --> 0:01:52,420
+ Thank you.
+
+24
+0:01:52,580 --> 0:01:53,580
+ And I think that is very important.
+
+25
+0:01:53,580 --> 0:01:54,580
+ But I think that's a good point.
+
+26
+0:01:54,580 --> 0:01:55,580
+ And I think that's a good point.
+
+27
+0:01:55,580 --> 0:01:56,580
+ And I think that's a good point.
+
+28
+0:01:56,580 --> 0:01:57,580
+ I think that's a good point.
+
+29
+0:01:57,580 --> 0:01:58,580
+ And I think that's a good point.
+
+30
+0:01:58,580 --> 0:01:59,580
+ And I think that's a good point.
+
+31
+0:01:59,580 --> 0:02:00,580
+ So, to be honest, I think that the proposal doesn't become reality.
+
+32
+0:02:00,580 --> 0:02:01,580
+ And then this is...
+
+33
+0:02:01,580 --> 0:02:04,580
+ Really the crux of the issue when we're looking at the proposals.
+
+34
+0:02:04,580 --> 0:02:09,980
+ Every time we have a presentation of the Commission's proposal, the proponents of the proposal
+
+35
+0:02:09,980 --> 0:02:17,200
+ will start out with spending ten minutes, 20 minutes out of an hour explaining how terrible
+
+36
+0:02:17,200 --> 0:02:20,700
+ sexual abuse of children is, and how it's grown online in the last couple of years.
+
+37
+0:02:20,700 --> 0:02:21,700
+ And it's...
+
+38
+0:02:21,700 --> 0:02:22,580
+ It's not...
+
+39
+0:02:22,580 --> 0:02:25,520
+ and sort of really explaining what has happened to the children
+
+40
+0:02:25,520 --> 0:02:31,500
+ and how difficult it is for the police to prosecute the criminals that have committed this
+
+41
+0:02:31,500 --> 0:02:35,800
+ without actually going into sort of, okay, there are criminal networks that are behind this
+
+42
+0:02:35,800 --> 0:02:37,680
+ and there are things going on in the physical space.
+
+43
+0:02:37,900 --> 0:02:40,880
+ They just jump to, okay, we need to do something about this online
+
+44
+0:02:40,880 --> 0:02:42,940
+ because we need to save the children.
+
+45
+0:02:43,580 --> 0:02:46,460
+ And look at these two cute young girls.
+
+46
+0:02:46,520 --> 0:02:50,040
+ Who would be able to say no to save them from being abused?
+
+47
+0:02:50,040 --> 0:02:55,840
+ Who would say no to actually help children from experiencing horrible things
+
+48
+0:02:55,840 --> 0:03:00,880
+ and being subject to criminals and criminal networks
+
+49
+0:03:00,880 --> 0:03:04,020
+ and having their pictures and images shared across the world?
+
+50
+0:03:04,700 --> 0:03:11,340
+ That makes it very difficult to say the children's safety online proposal,
+
+51
+0:03:12,560 --> 0:03:18,740
+ child sexual abuse material handling is something that we don't want to do anything about.
+
+52
+0:03:19,040 --> 0:03:20,020
+ And that is ridiculous.
+
+53
+0:03:20,040 --> 0:03:24,500
+ That is really the political environment and the discussion and the debate
+
+54
+0:03:24,500 --> 0:03:27,240
+ that we're going into when we're talking about this.
+
+55
+0:03:27,740 --> 0:03:31,680
+ So we need to remember to think about the feelings of the people that we're talking to
+
+56
+0:03:31,680 --> 0:03:35,220
+ and not only think about the sort of technicalities
+
+57
+0:03:35,220 --> 0:03:38,220
+ because we all want to save children from abuse,
+
+58
+0:03:38,440 --> 0:03:40,960
+ but we actually want to do it in a way that works.
+
+59
+0:03:41,340 --> 0:03:43,200
+ And what we have on the table doesn't work.
+
+60
+0:03:43,620 --> 0:03:48,220
+ And we want to let the politicians know that, and I'm one of them,
+
+61
+0:03:49,040 --> 0:03:50,000
+ that we're going to do it in a way that works.
+
+62
+0:03:50,000 --> 0:03:50,020
+ And we want to let the politicians know that, I'm one of them,
+
+63
+0:03:50,020 --> 0:03:50,040
+ that we're going to do it in a way that works.
+
+64
+0:03:50,040 --> 0:03:53,760
+ And we want to have legislation that can save the kids in a way that works.
+
+65
+0:03:56,460 --> 0:04:01,440
+ And as I was mentioning with the Kids Online Safety Act, it's not only in the EU.
+
+66
+0:04:02,020 --> 0:04:05,940
+ We are having proposals being made across the world.
+
+67
+0:04:06,180 --> 0:04:10,540
+ We have in the US where they're also mixing it up with a little bit of some of the content
+
+68
+0:04:10,540 --> 0:04:12,820
+ that we had in the DSA in the EU.
+
+69
+0:04:13,400 --> 0:04:20,020
+ The UK also has an online safety bill that is proposing some of the same things.
+
+70
+0:04:20,020 --> 0:04:20,520
+ The UK also has an online safety bill that is proposing some of the same things.
+
+71
+0:04:20,520 --> 0:04:23,980
+ On client scanning, so this is a sort of global phenomenon.
+
+72
+0:04:24,200 --> 0:04:29,860
+ And therefore, we need to help each other across the different countries and regions to fight this
+
+73
+0:04:29,920 --> 0:04:32,140
+ and try and find strategies that work.
+
+74
+0:04:32,340 --> 0:04:37,300
+ Because just saying no to saving the kids is not going to appeal to sort of the masses.
+
+75
+0:04:37,920 --> 0:04:43,400
+ And we need to make sure that we have technology that works, technical arguments
+
+76
+0:04:43,400 --> 0:04:45,800
+ for why the proposals that they have don't work.
+
+77
+0:04:46,420 --> 0:04:49,620
+ But at the same time, saying we're actually doing this to help the kids
+
+78
+0:04:49,900 --> 0:04:50,000
+ as well.
+
+79
+0:04:50,000 --> 0:04:57,420
+ So, this, the next couple of minutes will be a quick outline
+
+80
+0:04:57,420 --> 0:05:02,320
+ of what is about and also revealing the real name.
+
+81
+0:05:02,380 --> 0:05:05,580
+ So, that's why it's called on social media.
+
+82
+0:05:05,580 --> 0:05:09,480
+ I think a phrase coined by Patrick Byer of the German Pirate Party.
+
+83
+0:05:09,940 --> 0:05:15,880
+ So, the full name is Regulation Laying Down Rules to Prevent and Combat Child Sexual Abuse.
+
+84
+0:05:16,320 --> 0:05:19,880
+ At ICPOL is a member of the board.
+
+85
+0:05:19,880 --> 0:05:24,100
+ I'm a member of ITRI and I participate actually in ITRI's work on this file.
+
+86
+0:05:24,420 --> 0:05:35,680
+ We call it the CSA Regulation or CSAR and that is, obviously, we don't have time to go
+
+87
+0:05:35,680 --> 0:05:37,880
+ through everything and that would be incredibly boring.
+
+88
+0:05:37,880 --> 0:05:44,920
+ So, I'll just focus on the most interesting parts or the most troublesome parts
+
+89
+0:05:44,920 --> 0:05:49,760
+ of the CSA Regulation and clearly the most,
+
+90
+0:05:49,760 --> 0:05:56,480
+ the absolutely most troublesome part is the Article 7 through 11 on detection orders,
+
+91
+0:05:57,780 --> 0:05:59,960
+ which is sort of basically why it's called chat control.
+
+92
+0:06:00,440 --> 0:06:06,440
+ These can apply to messenger services or interpersonal communication services
+
+93
+0:06:06,440 --> 0:06:10,000
+ as they are officially called and hosting services.
+
+94
+0:06:10,820 --> 0:06:15,520
+ And so, messenger services are always private communication services.
+
+95
+0:06:15,520 --> 0:06:19,640
+ Hosting services can be public services like social media, but it can also be,
+
+96
+0:06:19,640 --> 0:06:27,260
+ really, private services like cloud storage on Google Drive, Microsoft OneDrive and whatever
+
+97
+0:06:27,260 --> 0:06:29,120
+ it's called.
+
+98
+0:06:29,120 --> 0:06:34,880
+ And if a service provider is issued a so-called detection order, that will be an obligation
+
+99
+0:06:34,880 --> 0:06:40,980
+ to scan all users' content for three different things, depending on which type of order is
+
+100
+0:06:40,980 --> 0:06:41,980
+ given.
+
+101
+0:06:41,980 --> 0:06:47,660
+ Known child sexual abuse material, which is, which will be done using some hashing matching
+
+102
+0:06:47,660 --> 0:06:48,660
+ algorithm.
+
+103
+0:06:48,660 --> 0:06:49,640
+ Okay.
+
+104
+0:06:49,640 --> 0:06:52,020
+ Or perceptual hashing, typically.
+
+105
+0:06:52,020 --> 0:06:57,860
+ But there are also possibilities for detection orders for unknown child sexual abuse material
+
+106
+0:06:57,860 --> 0:06:58,860
+ and grooming.
+
+107
+0:06:58,860 --> 0:07:05,680
+ And the latter two will be done through some sort of AI classifiers that come with extremely
+
+108
+0:07:05,680 --> 0:07:10,200
+ high error rates.
+
+109
+0:07:10,200 --> 0:07:14,020
+ These orders, detection orders cannot be issued to all services.
+
+110
+0:07:14,020 --> 0:07:19,640
+ There's a requirement of significant risk of child sexual abuse after the so-called
+
+111
+0:07:19,640 --> 0:07:23,140
+ detection measures that I'll talk about in a minute.
+
+112
+0:07:23,140 --> 0:07:29,720
+ But the way that significant risk is defined in the regulation itself will very likely
+
+113
+0:07:29,720 --> 0:07:36,320
+ in practice mean that a lot of services will have a significant risk that they can be used
+
+114
+0:07:36,320 --> 0:07:40,400
+ or abused for something bad involving children.
+
+115
+0:07:40,400 --> 0:07:45,140
+ Especially as the very purpose of messenger services is that people can communicate privately
+
+116
+0:07:45,140 --> 0:07:47,020
+ without the service provider monitoring what people are talking about.
+
+117
+0:07:47,020 --> 0:07:48,020
+ Okay.
+
+118
+0:07:48,020 --> 0:07:55,920
+ And that means it will actually be very difficult for the service provider to say that there
+
+119
+0:07:55,920 --> 0:08:03,260
+ is not a significant risk of the service being used for child sexual abuse.
+
+120
+0:08:03,260 --> 0:08:07,480
+ One interesting thing is to say, well, what about encrypted services where, which are
+
+121
+0:08:07,480 --> 0:08:13,240
+ specifically designed so that it's impossible to scan the content of people's communication?
+
+122
+0:08:13,240 --> 0:08:17,240
+ Well, encryption is barely mentioned in the proposal itself.
+
+123
+0:08:17,240 --> 0:08:17,340
+ Okay.
+
+124
+0:08:17,340 --> 0:08:17,400
+ Okay.
+
+125
+0:08:17,400 --> 0:08:22,780
+ So, the proposal itself, but it is presented as technologically neutral, which means that
+
+126
+0:08:22,780 --> 0:08:27,380
+ it will simply be up to the service provider to figure out how to do the impossible of
+
+127
+0:08:27,380 --> 0:08:32,420
+ scanning communication content that is end-to-end encrypted.
+
+128
+0:08:32,420 --> 0:08:38,660
+ This is not explained particularly well in the proposal itself.
+
+129
+0:08:38,660 --> 0:08:45,880
+ But there was a Q&A published by the Commission along with the proposal where it is spelled
+
+130
+0:08:45,880 --> 0:08:46,880
+ out that...
+
+131
+0:08:46,880 --> 0:08:47,300
+ Okay.
+
+132
+0:08:47,300 --> 0:08:47,400
+ Okay.
+
+133
+0:08:47,400 --> 0:08:48,400
+ Very well.
+
+134
+0:08:48,400 --> 0:08:49,400
+ Well, let me just add something here.
+
+135
+0:08:49,400 --> 0:08:50,640
+ And there's this question about encryption.
+
+136
+0:08:50,640 --> 0:08:51,780
+ So, there is a sort ofjection that we're missing points about how that can be
+
+137
+0:08:51,780 --> 0:08:53,980
+ subject to some sort of demasiado special CE regulations.
+
+138
+0:08:53,980 --> 0:08:58,900
+ Can we be compensatory to other solutions by saying this in appelleged Hermann and
+
+139
+0:08:58,900 --> 0:09:02,400
+ to Hermann and come to STF-34 and say if the service provider just needs 완전 security
+
+140
+0:09:02,400 --> 0:09:04,240
+ of its services, why can't we knit them apart inside out.
+
+141
+0:09:04,240 --> 0:09:07,300
+ And it is a different topic, especially in the context of KPMG, and they are lumière
+
+142
+0:09:07,300 --> 0:09:08,300
+ intellect that EagleE vér.
+
+143
+0:09:08,300 --> 0:09:09,300
+ That's theahrw they do it by.
+
+144
+0:09:09,300 --> 0:09:10,300
+ Right.
+
+145
+0:09:10,300 --> 0:09:11,300
+ Yes!
+
+146
+0:09:11,300 --> 0:09:11,960
+ There's a lot that goes into that ahe.
+
+147
+0:09:11,960 --> 0:09:13,260
+ Because, you know, because while our home office sł u2smashnár scurp lose
+
+148
+0:09:13,260 --> 0:09:17,300
+ this for reasons of time, because we want to get to the interesting stuff, what can
+
+149
+0:09:17,300 --> 0:09:20,520
+ be done about these bad things.
+
+150
+0:09:20,520 --> 0:09:25,620
+ And we will distribute the slides afterwards, so don't worry about that.
+
+151
+0:09:25,620 --> 0:09:32,100
+ I also want to talk a bit about risk assessment and risk mitigation, which is something that
+
+152
+0:09:32,100 --> 0:09:37,300
+ is supposed to come before detection orders can be issued.
+
+153
+0:09:37,300 --> 0:09:44,220
+ This is sort of a mixed bag of something that is, some is good, some is bad.
+
+154
+0:09:44,220 --> 0:09:52,200
+ So taking the positive hat on is about making services, platforms safer for children, which
+
+155
+0:09:52,200 --> 0:09:56,860
+ is an admirable objective and a good idea.
+
+156
+0:09:56,860 --> 0:10:01,980
+ And if this is something that service providers haven't done already, then having an obligation
+
+157
+0:10:01,980 --> 0:10:06,680
+ in EU law to do it is a good idea.
+
+158
+0:10:06,680 --> 0:10:07,280
+ The problem with this is that it's not a good idea.
+
+159
+0:10:07,280 --> 0:10:12,460
+ The problem with this is that it's done in a way that presents the internet as inherently
+
+160
+0:10:12,460 --> 0:10:17,860
+ dangerous, and if something is inherently dangerous, we should keep children away from
+
+161
+0:10:17,860 --> 0:10:18,080
+ it.
+
+162
+0:10:19,400 --> 0:10:24,420
+ So just to walk you through what will happen, service providers will first be required to
+
+163
+0:10:24,420 --> 0:10:31,300
+ assess the risk of their services being used for child sexual abuse, which is a difficult
+
+164
+0:10:31,300 --> 0:10:36,000
+ exercise, and then they should take mitigation measures.
+
+165
+0:10:36,860 --> 0:10:37,260
+ The risk assessment is a good idea.
+
+166
+0:10:37,260 --> 0:10:41,280
+ The problem with this is that it's rather vaguely defined, except the sort of the notion
+
+167
+0:10:41,280 --> 0:10:44,340
+ that the incident is a dangerous space.
+
+168
+0:10:44,340 --> 0:10:49,280
+ And the only thing that is sort of really concrete is that online age verification is
+
+169
+0:10:49,280 --> 0:10:54,420
+ a good idea in the eyes of the Commission.
+
+170
+0:10:54,420 --> 0:11:01,300
+ But some incentives are created to make services safer, which, so maybe having less sharing
+
+171
+0:11:01,300 --> 0:11:05,260
+ of personal data by default, especially for accounts belonging to children, that would
+
+172
+0:11:05,260 --> 0:11:07,260
+ be a great idea.
+
+173
+0:11:07,260 --> 0:11:10,940
+ But that is actually not in the Commission proposal, but in some of the amendments that
+
+174
+0:11:10,940 --> 0:11:12,940
+ are coming out.
+
+175
+0:11:12,940 --> 0:11:18,600
+ And then the sort of heavily contested idea of age verification that is also coming up
+
+176
+0:11:18,600 --> 0:11:29,540
+ in sort of national politics in Denmark, Germany, the UK, with the online safety bill, and France,
+
+177
+0:11:29,540 --> 0:11:34,520
+ and maybe potentially other countries.
+
+178
+0:11:34,520 --> 0:11:36,840
+ That is a not so good idea.
+
+179
+0:11:36,840 --> 0:11:40,880
+ And by the way, there's also, I don't really have time to go into that, there's also an
+
+180
+0:11:40,880 --> 0:11:46,700
+ age verification requirement for app stores, which will apply to all app stores, whether
+
+181
+0:11:46,700 --> 0:11:53,520
+ they are large, like Apple's app store, or Google Play app store, or small, such as fDroid,
+
+182
+0:11:53,520 --> 0:11:59,200
+ the alternative app store for Android devices.
+
+183
+0:11:59,200 --> 0:12:04,240
+ And since these alternative app stores really don't know their users, they have no way of
+
+184
+0:12:04,240 --> 0:12:06,420
+ enforcing age verification.
+
+185
+0:12:06,420 --> 0:12:12,040
+ So, the problem with online age verification, which I won't really have time to go into,
+
+186
+0:12:12,040 --> 0:12:16,580
+ is that there's no good way to do it.
+
+187
+0:12:16,580 --> 0:12:25,040
+ But it is being proposed, and typically it involves bad solutions, such as uploading
+
+188
+0:12:25,040 --> 0:12:32,820
+ copies of ID documents, which sort of invites identity theft, doing some form of biometric
+
+189
+0:12:32,820 --> 0:12:34,060
+ facial analysis.
+
+190
+0:12:34,060 --> 0:12:35,420
+ A company called Yoti.
+
+191
+0:12:35,420 --> 0:12:36,420
+ Yoti?
+
+192
+0:12:36,420 --> 0:12:42,040
+ Yoti is heavily invested in doing that, which is at best an estimation of your age, not
+
+193
+0:12:42,040 --> 0:12:49,040
+ a verification of your age, checks your payment cards, and then maybe 10, 15 years from now,
+
+194
+0:12:49,040 --> 0:12:53,920
+ some really fancy solutions where you can prove your age anonymously without revealing
+
+195
+0:12:53,920 --> 0:12:58,300
+ anything, but this is nowhere ready for deployment.
+
+196
+0:12:58,300 --> 0:13:03,980
+ Irrespective of what comes out of this, there's a risk of digital exclusion, users that will
+
+197
+0:13:03,980 --> 0:13:06,080
+ not be able to comply with these age verification requirements.
+
+198
+0:13:06,080 --> 0:13:06,420
+ So, there's a risk of digital exclusion.
+
+199
+0:13:06,420 --> 0:13:06,920
+ So, there's a risk of digital exclusion, users that will not be able to comply with these
+
+200
+0:13:06,920 --> 0:13:10,200
+ age verification requirements, whether they are children or adults, will be locked out
+
+201
+0:13:10,200 --> 0:13:19,120
+ of online services that they want to use, potentially even including Digipedia.
+
+202
+0:13:19,120 --> 0:13:25,180
+ We thought we'd give you a quick outline of how legislation in the European Union works.
+
+203
+0:13:25,180 --> 0:13:33,800
+ If you study political science or law, you will spend years of classes and 10 or 20 ECTS
+
+204
+0:13:33,800 --> 0:13:34,800
+ points on this.
+
+205
+0:13:34,800 --> 0:13:36,300
+ So, we're going to do it very briefly.
+
+206
+0:13:36,300 --> 0:13:36,340
+ Okay.
+
+207
+0:13:36,420 --> 0:13:42,540
+ In basically one slide, the Commission comes with a proposal, then both the member states
+
+208
+0:13:42,540 --> 0:13:48,080
+ and the Council, and us in the European Parliament, we look at it together.
+
+209
+0:13:48,080 --> 0:13:53,300
+ The Commission came with a proposal last year in May, and already at last year's Bonhack,
+
+210
+0:13:53,300 --> 0:13:57,920
+ there was a group of us that got together and said, this looks really bad, let's try
+
+211
+0:13:57,920 --> 0:13:59,560
+ and do something about it.
+
+212
+0:13:59,560 --> 0:14:04,800
+ That's why we have, together with Jorn, who talked yesterday, we have set up a website
+
+213
+0:14:04,800 --> 0:14:06,300
+ called chatcontrol.dk and .com.
+
+214
+0:14:06,300 --> 0:14:13,440
+ We also have a mailing list, so please support us on working on that so that we can influence
+
+215
+0:14:13,440 --> 0:14:17,980
+ both member states and the parliamentarians.
+
+216
+0:14:17,980 --> 0:14:23,540
+ We are in the Parliament in the process of making our amendments to the Commission proposal,
+
+217
+0:14:23,540 --> 0:14:27,800
+ and we'll probably have a vote here in the fall on this.
+
+218
+0:14:27,800 --> 0:14:35,340
+ The member states are also making their amendments and trying to have a joint position, and that's
+
+219
+0:14:35,340 --> 0:14:36,180
+ where the...
+
+220
+0:14:36,180 --> 0:14:42,880
+ We're advocating for national parliaments come in, and then after both the member states
+
+221
+0:14:42,880 --> 0:14:51,060
+ and the parliament have come with their positions, then you go into what's called trilogue negotiations
+
+222
+0:14:51,060 --> 0:14:58,660
+ where we sit down together with the Commission, the presidency of the European Council, so
+
+223
+0:14:58,660 --> 0:15:00,760
+ that's going to be Belgium.
+
+224
+0:15:00,760 --> 0:15:05,340
+ That was Belgium this spring, and then now it's Spain, and then you'll have Hungary and
+
+225
+0:15:05,340 --> 0:15:05,580
+ Poland.
+
+226
+0:15:05,580 --> 0:15:05,980
+ And then you'll have...
+
+227
+0:15:05,980 --> 0:15:06,060
+ And then you'll have...
+
+228
+0:15:06,060 --> 0:15:06,160
+ And then you'll have...
+
+229
+0:15:06,180 --> 0:15:08,180
+ In the next coming six-month periods.
+
+230
+0:15:09,020 --> 0:15:12,960
+ And that's when they sit in an enclosed room and try to hash things out and figure out
+
+231
+0:15:12,960 --> 0:15:14,780
+ how the legislation will look like.
+
+232
+0:15:15,460 --> 0:15:19,820
+ And that's, as Jesper has written down, it's typically somewhere between the parliament
+
+233
+0:15:19,820 --> 0:15:22,220
+ and the council position.
+
+234
+0:15:23,620 --> 0:15:27,940
+ And Jesper is going to talk us through the way it looks in the council between all of
+
+235
+0:15:27,940 --> 0:15:28,480
+ the member states.
+
+236
+0:15:28,720 --> 0:15:31,800
+ Yeah, I'll do the bad guys, and Karen will do the good guys.
+
+237
+0:15:31,800 --> 0:15:36,140
+ That's how we divided the EU legislature on this file.
+
+238
+0:15:36,180 --> 0:15:42,800
+ No, just kidding, actually a couple of months ago I was more optimistic about Council than
+
+239
+0:15:42,800 --> 0:15:48,660
+ Parliament, but there was a bombshell event in April that changed a lot in Parliament,
+
+240
+0:15:48,660 --> 0:15:51,760
+ but not in Council.
+
+241
+0:15:51,760 --> 0:16:01,260
+ So a working group, the Law Enforcement Working Party, and don't be confused by the word,
+
+242
+0:16:01,260 --> 0:16:04,940
+ it has nothing to do with parties, it's sort of a working group that is always called Working
+
+243
+0:16:04,940 --> 0:16:05,940
+ Parties.
+
+244
+0:16:05,940 --> 0:16:15,700
+ The Law Enforcement Working Party has worked on this proposal since June last year, and
+
+245
+0:16:15,700 --> 0:16:23,120
+ they are, so the plan they have announced is that on 28 September they will adopt their
+
+246
+0:16:23,120 --> 0:16:24,120
+ position.
+
+247
+0:16:24,120 --> 0:16:32,900
+ This has to be done at a meeting where the ministers are present, the Interior and Justice
+
+248
+0:16:32,900 --> 0:16:34,440
+ Ministers.
+
+249
+0:16:34,440 --> 0:16:34,920
+ So they...
+
+250
+0:16:34,920 --> 0:16:41,640
+ They have a Justice and Home Affairs Council, which will be held on the 28th September,
+
+251
+0:16:41,640 --> 0:16:48,420
+ where their plan is to adopt the Council position, which so becomes the negotiating position
+
+252
+0:16:48,420 --> 0:16:54,860
+ for the EU member states when they get together with the European Parliament in the trilogues
+
+253
+0:16:54,860 --> 0:16:57,740
+ that Karen talked about.
+
+254
+0:16:57,740 --> 0:17:03,980
+ And looking at the, sort of the most recent Council text, it has a lot of amendments,
+
+255
+0:17:03,980 --> 0:17:04,920
+ but...
+
+256
+0:17:04,920 --> 0:17:08,600
+ But it has very few amendments to detection orders.
+
+257
+0:17:08,600 --> 0:17:14,540
+ They still apply general and indiscriminately to all users, irrespective of whether they
+
+258
+0:17:14,540 --> 0:17:20,080
+ are suspected of actual involvement in child sexual abuse or not.
+
+259
+0:17:20,080 --> 0:17:29,620
+ So the only thing that Council saw a need to exclude was real-time voice calls.
+
+260
+0:17:29,620 --> 0:17:33,800
+ Everything else, including encrypted services, are still included in the...
+
+261
+0:17:33,800 --> 0:17:34,800
+ In this group of the proposal.
+
+262
+0:17:34,920 --> 0:17:44,140
+ There was, a couple of weeks ago, under the former Swedish presidency, a proposal to exclude
+
+263
+0:17:44,140 --> 0:17:50,320
+ or not necessarily exclude encrypted services from the proposal, but to protect them from
+
+264
+0:17:50,320 --> 0:17:56,420
+ detection orders and at least make sure that encryption is not undermined.
+
+265
+0:17:56,420 --> 0:18:00,640
+ And this was framed in a way that clients are scanning, that I'm sure Jan talked about
+
+266
+0:18:00,640 --> 0:18:03,600
+ yesterday, pending the spyware on your mobile phone.
+
+267
+0:18:03,600 --> 0:18:04,600
+ So...
+
+268
+0:18:04,920 --> 0:18:30,380
+ So if you look at this last panel, you can see just the amount of changes to
+
+269
+0:18:30,380 --> 0:18:31,920
+ that proposal.
+
+270
+0:18:31,920 --> 0:18:32,740
+ To a extent.
+
+271
+0:18:32,740 --> 0:18:34,260
+ In fact, what you see is two deception changes as well.
+
+272
+0:18:34,260 --> 0:18:34,800
+ So the first one was a perception of all needs.
+
+273
+0:18:34,800 --> 0:18:43,920
+ not talk about. One interesting thing is that they decided to completely ignore a
+
+274
+0:18:43,920 --> 0:18:48,120
+ legal opinion that the member states themselves requested from the Council
+
+275
+0:18:48,120 --> 0:18:54,900
+ Legal Service. The specialist lawyers are employed to advise member states on
+
+276
+0:18:54,900 --> 0:19:00,900
+ whether a proposal complies with EU primary law, including the Charter of
+
+277
+0:19:00,900 --> 0:19:06,600
+ Fundamental Rights. They don't usually ask for such an opinion because there's
+
+278
+0:19:06,600 --> 0:19:11,800
+ a presumption that new laws are consistent with the Constitution of the
+
+279
+0:19:11,800 --> 0:19:18,000
+ EU, but in this case they did, and they got a very unusual opinion back at the
+
+280
+0:19:18,000 --> 0:19:22,540
+ end of April, which clearly said, no, this is not consistent, this does not comply
+
+281
+0:19:22,540 --> 0:19:28,600
+ with the Charter of Fundamental Rights. And I must say in Italy we have done our
+
+282
+0:19:28,600 --> 0:19:30,480
+ own fundamental rights assessment and
+
+283
+0:19:30,480 --> 0:19:35,880
+ that was actually quite lacking, or at least not quite lacking. That was
+
+284
+0:19:35,880 --> 0:19:39,840
+ sort of less complete than the one that the Council Legal Service did, and we're
+
+285
+0:19:39,840 --> 0:19:43,020
+ supposed to be the radicals on fundamental rights, but in this case we
+
+286
+0:19:43,020 --> 0:19:50,220
+ were not. So just to quickly summarize, they used the data retention case law, we
+
+287
+0:19:50,220 --> 0:19:54,300
+ did that as well, and concluded that general and indiscriminate detection
+
+288
+0:19:54,300 --> 0:19:58,600
+ orders are not limited to what is strictly necessary, which is sort of the
+
+289
+0:19:58,600 --> 0:20:00,240
+ yardstick for doing something in
+
+290
+0:20:00,240 --> 0:20:00,460
+ public.
+
+291
+0:20:00,480 --> 0:20:09,840
+ They also, and this is where it gets really unusual, said that the proposal is
+
+292
+0:20:09,840 --> 0:20:16,000
+ likely to violate the essence of the right to privacy, and that is the sort of
+
+293
+0:20:16,000 --> 0:20:21,960
+ generalized scanning of content of communications for everybody. It goes
+
+294
+0:20:21,960 --> 0:20:29,360
+ back to the first SRAMS judgment in 2015, where they were referring to the
+
+295
+0:20:29,360 --> 0:20:30,460
+ National Security Agency, and they said, well, we're not going to do that, and we're not going to do that, and we're not going to do that, and we're not going to do that, and we're not going to do that.
+
+296
+0:20:30,480 --> 0:20:40,100
+ So basically, they pointed out that this would create a state of sort of a
+
+297
+0:20:40,100 --> 0:20:43,940
+ permanent surveillance society, where all interpersonal communications are
+
+298
+0:20:43,940 --> 0:20:49,920
+ monitored. And the lawyers, the clever lawyers, pointed out that detection
+
+299
+0:20:49,920 --> 0:20:54,060
+ orders must be targeted against individuals where there's actual
+
+300
+0:20:54,060 --> 0:21:00,160
+ suspicion of involvement in child sexual abuse, not the general population. Very
+
+301
+0:21:00,160 --> 0:21:05,900
+ Very interesting, they also pointed out that doing this on end-to-end encrypted services
+
+302
+0:21:05,900 --> 0:21:10,420
+ where they use the word backdoor, although it doesn't really have a legal meaning, creates
+
+303
+0:21:10,420 --> 0:21:18,800
+ an additional interference with a right to data security, which is very interesting.
+
+304
+0:21:18,800 --> 0:21:23,540
+ To make a long story short, the commission response to all this was that, well, the content
+
+305
+0:21:23,540 --> 0:21:28,920
+ is the crime, so we need to monitor everybody's communication, which is a completely untested
+
+306
+0:21:28,920 --> 0:21:32,900
+ legal argument, so it will be interesting if this ever gets to the Court of Justice
+
+307
+0:21:32,900 --> 0:21:38,620
+ what the judges will say to the commission.
+
+308
+0:21:38,620 --> 0:21:48,460
+ But member states are seemingly set to ignore this altogether, so what can possibly stop
+
+309
+0:21:48,460 --> 0:21:56,780
+ a disaster with the CSA regulation in council?
+
+310
+0:21:56,780 --> 0:21:58,900
+ A better negotiating position?
+
+311
+0:21:58,900 --> 0:22:02,940
+ A negotiation for member states that does not include mass surveillance?
+
+312
+0:22:02,940 --> 0:22:12,500
+ Well, if there is a blocking minority for member states representing at least 35% of
+
+313
+0:22:12,500 --> 0:22:16,020
+ the EU population, it's not enough to have a majority in council, there needs to be a
+
+314
+0:22:16,020 --> 0:22:24,460
+ supermajority of 65% of the EU population, but if there's a blocking minority, they can
+
+315
+0:22:24,460 --> 0:22:27,720
+ in principle stop the position.
+
+316
+0:22:27,720 --> 0:22:28,720
+ Okay.
+
+317
+0:22:28,720 --> 0:22:34,360
+ So, I think, in its current form, going forward, and we know there's substantial disagreement
+
+318
+0:22:34,360 --> 0:22:39,240
+ in the law enforcement working party about detection orders in the child sexual abuse
+
+319
+0:22:39,240 --> 0:22:44,960
+ regulation, that is why they requested the legal opinion from the council legal service.
+
+320
+0:22:44,960 --> 0:22:51,500
+ It is also why they sort of escalated their disagreement to the ambassador level in Corabier
+
+321
+0:22:51,500 --> 0:22:56,760
+ – I'm not pronouncing this correctly – in the end of May.
+
+322
+0:22:56,760 --> 0:22:57,760
+ That's why.
+
+323
+0:22:57,760 --> 0:23:04,920
+ But the ambassadors basically reaffirmed, we want to monitor everybody, potentially
+
+324
+0:23:04,920 --> 0:23:08,340
+ even including all your communication.
+
+325
+0:23:08,340 --> 0:23:14,140
+ Some of the good guys, the good member states include Germany, Austria, the Netherlands,
+
+326
+0:23:14,140 --> 0:23:19,580
+ possibly Poland and Estonia, who have all in their response voiced criticism of this,
+
+327
+0:23:19,580 --> 0:23:25,720
+ and then there's a like-minded group of other countries – Belgium, Bulgaria, and so forth
+
+328
+0:23:25,720 --> 0:23:26,680
+ – that…
+
+329
+0:23:26,680 --> 0:23:27,680
+ Okay.
+
+330
+0:23:27,760 --> 0:23:30,920
+ …want the proposal in its current form.
+
+331
+0:23:30,920 --> 0:23:35,340
+ If you're wondering what does Denmark think about all this, well, Denmark has the most
+
+332
+0:23:35,340 --> 0:23:37,740
+ absurd position.
+
+333
+0:23:37,740 --> 0:23:42,680
+ Denmark wants end-to-end encrypted services to be included in the proposal, but they do
+
+334
+0:23:42,680 --> 0:23:47,120
+ not want – Denmark does not want to weaken encryption in any way, and it's a bit hard
+
+335
+0:23:47,120 --> 0:23:55,440
+ to sort of monitor and get access to encrypted communication without weakening encryption
+
+336
+0:23:55,440 --> 0:23:57,720
+ in some way, because the whole point of encryption is…
+
+337
+0:23:57,720 --> 0:23:58,720
+ Okay.
+
+338
+0:23:58,720 --> 0:23:59,720
+ …to prevent this minor swing.
+
+339
+0:23:59,720 --> 0:24:08,320
+ So the big question now going forward is, will the majority among the member states
+
+340
+0:24:08,320 --> 0:24:15,760
+ be able to pressure the minority to give up its opposition so that council reaches a compromise?
+
+341
+0:24:15,760 --> 0:24:24,320
+ That is often how it plays out, because sort of the way council works is seeking compromises.
+
+342
+0:24:24,320 --> 0:24:25,880
+ But this really remains to be seen.
+
+343
+0:24:25,880 --> 0:24:26,880
+ And now I want to…
+
+344
+0:24:26,880 --> 0:24:27,080
+ Okay.
+
+345
+0:24:27,080 --> 0:24:27,200
+ Okay.
+
+346
+0:24:27,200 --> 0:24:27,440
+ Okay.
+
+347
+0:24:27,440 --> 0:24:27,480
+ Okay.
+
+348
+0:24:27,480 --> 0:24:27,680
+ Okay.
+
+349
+0:24:27,680 --> 0:24:27,700
+ Okay.
+
+350
+0:24:27,720 --> 0:24:31,940
+ I'll hand over to Karen, because we also have the good guys in the European Parliament.
+
+351
+0:24:32,340 --> 0:24:36,120
+ Well, sort of the good guys we have in the European Parliament, we have a lot of different
+
+352
+0:24:36,120 --> 0:24:36,460
+ committees.
+
+353
+0:24:36,920 --> 0:24:40,460
+ The main committee is our Fundamental Rights Committee, which is called LIBE.
+
+354
+0:24:40,800 --> 0:24:48,880
+ They are the ones sort of writing the main opinion from the parliament regarding the
+
+355
+0:24:48,880 --> 0:24:49,300
+ proposal.
+
+356
+0:24:49,820 --> 0:24:54,860
+ Then we have a bunch of other committees, including the FAM Committee, which is for
+
+357
+0:24:54,860 --> 0:24:57,620
+ equality, and also the Cult on the Budget.
+
+358
+0:24:57,620 --> 0:24:58,620
+ So, the most important part of the committee is the public opinion.
+
+359
+0:24:58,620 --> 0:24:59,620
+ So, the most important part of the committee is the public opinion, because if you want
+
+360
+0:24:59,620 --> 0:25:03,500
+ to have a public opinion, we write opinions, and let the LIBE Committee know what we…what
+
+361
+0:25:03,500 --> 0:25:04,840
+ we think that they should include.
+
+362
+0:25:04,840 --> 0:25:12,000
+ But they can usually just disregard what we're saying and just continue on with what they're
+
+363
+0:25:12,000 --> 0:25:13,000
+ thinking.
+
+364
+0:25:13,000 --> 0:25:19,220
+ We've had a draft report from the LIBE rapporteurs in April, where they do have protection of
+
+365
+0:25:19,220 --> 0:25:23,540
+ message content for end-to-end encryption, but I mean this is a little bit like, I don't
+
+366
+0:25:23,540 --> 0:25:26,620
+ know if you recall the copyright directive debate.
+
+367
+0:25:26,620 --> 0:25:27,280
+ You know, the, the…
+
+368
+0:25:27,280 --> 0:25:31,120
+ where they said well we're not going to have upload filters but we're going to
+
+369
+0:25:31,120 --> 0:25:35,200
+ ask you as a service provider as a platform to do something that you can
+
+370
+0:25:35,200 --> 0:25:40,660
+ only do without with an upload filter we're not asking you to have it but
+
+371
+0:25:40,660 --> 0:25:45,460
+ we're asking you to provide us with an end result that requires you to have an
+
+372
+0:25:45,460 --> 0:25:50,380
+ upload filter and this is a little bit what the problem is with the debate in
+
+373
+0:25:50,380 --> 0:25:55,240
+ this crypto war 4.0 which is going to be the next debate as well here in the
+
+374
+0:25:55,240 --> 0:26:00,640
+ PON hack is that they're not actually saying precisely what it is that they
+
+375
+0:26:00,640 --> 0:26:04,420
+ want the service providers to be doing because they know that's gonna be
+
+376
+0:26:04,420 --> 0:26:08,740
+ unpopular so they just sort of fudge it and say we are gonna have we're gonna
+
+377
+0:26:08,740 --> 0:26:12,120
+ ask you to provide us with this end result but we're not going to tell you
+
+378
+0:26:12,120 --> 0:26:19,680
+ where it is and we've had also in the Draft Report from the lead committee
+
+379
+0:26:19,680 --> 0:26:25,180
+ voluntary detection orders which is sort of trying to improve the position and
+
+380
+0:26:25,180 --> 0:26:25,220
+ the drift so I would argue it's one. Feel free to speak to the floor if you have any other comments or comments?
+
+381
+0:26:25,220 --> 0:26:29,560
+ the proposal that we came from the commission.
+
+382
+0:26:29,740 --> 0:26:32,400
+ So instead of having it mandatory, then it's just voluntary.
+
+383
+0:26:33,060 --> 0:26:36,440
+ And also we are going to have supporting age verification.
+
+384
+0:26:37,140 --> 0:26:42,440
+ We're hoping that it's going to have not last 10, 15 years before we have something,
+
+385
+0:26:42,440 --> 0:26:48,140
+ but we have sort of e-wallet where you'll be able to have age verification
+
+386
+0:26:48,140 --> 0:26:51,080
+ without sharing your identity.
+
+387
+0:26:51,080 --> 0:26:57,400
+ And also different mitigation measures so that you don't need to have detection orders.
+
+388
+0:26:57,580 --> 0:27:02,460
+ In the FAM committee where I was what's called the shadow rapporteur from the Renew Group,
+
+389
+0:27:03,020 --> 0:27:08,340
+ we actually had a lot of proposals on how to improve the proposal, so amendments.
+
+390
+0:27:09,040 --> 0:27:14,700
+ But unfortunately, they said that this was too technical for the Equality Committee to look at.
+
+391
+0:27:15,200 --> 0:27:17,700
+ So they said that they were out of scope for the FAM opinion.
+
+392
+0:27:19,120 --> 0:27:20,660
+ So this is...
+
+393
+0:27:21,080 --> 0:27:24,680
+ was also we have a Swedish rapporteur in the committee.
+
+394
+0:27:25,400 --> 0:27:29,500
+ And the commissioner that has put the proposal forward is also a Swedish commissioner.
+
+395
+0:27:30,240 --> 0:27:36,340
+ And this is like her piece de resistance, her like big thing that she wants to achieve
+
+396
+0:27:36,340 --> 0:27:39,300
+ in this mandate of her being a commissioner.
+
+397
+0:27:39,800 --> 0:27:42,300
+ So there's a lot of personal pride and ego in this.
+
+398
+0:27:42,740 --> 0:27:46,680
+ So the Swedish rapporteur in the FAM committee managed to get all
+
+399
+0:27:46,680 --> 0:27:49,960
+ of our amendments taken off the table.
+
+400
+0:27:50,140 --> 0:27:51,080
+ So they weren't included.
+
+401
+0:27:51,080 --> 0:27:53,440
+ So they weren't included in the FAM opinion.
+
+402
+0:27:55,100 --> 0:27:57,900
+ Jesper already mentioned the council's legal service.
+
+403
+0:27:58,900 --> 0:28:03,040
+ And that they had an opinion saying basically you can't do this
+
+404
+0:28:03,200 --> 0:28:05,680
+ and respect our charter of fundamental rights.
+
+405
+0:28:05,920 --> 0:28:09,480
+ So basically you're going against the sort of fundamental laws of the European Union
+
+406
+0:28:09,840 --> 0:28:12,080
+ if you want to go forward with this proposal.
+
+407
+0:28:12,760 --> 0:28:17,960
+ We in the parliament asked our lawyers, the parliament legal service, to look at the proposal.
+
+408
+0:28:18,360 --> 0:28:21,080
+ And they came up with the same conclusion.
+
+409
+0:28:21,280 --> 0:28:25,840
+ That this proposal is garbage and you shouldn't adopt it.
+
+410
+0:28:26,320 --> 0:28:29,620
+ And it should actually be taken away and looked at again.
+
+411
+0:28:31,040 --> 0:28:37,240
+ Unfortunately, the people who've invested a lot of private pride
+
+412
+0:28:37,240 --> 0:28:41,420
+ and commitment to this are actually still going ahead.
+
+413
+0:28:42,320 --> 0:28:45,140
+ So we have, this is the complimentary impact assessments.
+
+414
+0:28:45,140 --> 0:28:50,880
+ We're also saying, okay, it's not, you cannot technically have detection orders.
+
+415
+0:28:50,880 --> 0:28:51,060
+ So we're also saying, okay, it's not, you cannot technically have detection orders.
+
+416
+0:28:51,060 --> 0:28:55,760
+ You can only do that for known CSAM.
+
+417
+0:28:56,160 --> 0:29:01,060
+ And even then, if you're doing it with hash, you can circumvent that and it doesn't actually work.
+
+418
+0:29:01,160 --> 0:29:04,940
+ The problem with the proposal from the commission, in my opinion,
+
+419
+0:29:05,020 --> 0:29:11,040
+ is that you're trying to use technology to protect kids that is not actually going
+
+420
+0:29:11,040 --> 0:29:12,840
+ to protect them because it can be circumvented.
+
+421
+0:29:13,260 --> 0:29:18,460
+ Whether we're talking about hashing for known CSAM, but also if you're looking
+
+422
+0:29:18,460 --> 0:29:20,860
+ at age verification, age verification.
+
+423
+0:29:20,860 --> 0:29:25,740
+ For example, in app stores, then you can find the apps somewhere outside
+
+424
+0:29:25,740 --> 0:29:27,720
+ of the app store and then upload it to your device.
+
+425
+0:29:28,680 --> 0:29:34,500
+ We have amendments from LIBE that are actually looking quite good with protection
+
+426
+0:29:34,560 --> 0:29:40,300
+ of end-to-end encryption and also that the targeted detection orders are actually going
+
+427
+0:29:40,300 --> 0:29:44,520
+ against persons that are suspected in involvement of child sexual abuse.
+
+428
+0:29:45,260 --> 0:29:50,660
+ Where we're saying, okay, you can actually detect stuff, but only if you have, of course,
+
+429
+0:29:50,660 --> 0:29:54,340
+ a court order looking at it if there is an investigation going on.
+
+430
+0:29:55,120 --> 0:29:59,400
+ Because I usually say you can't, you shouldn't, if you want to find a needle in a haystack,
+
+431
+0:29:59,900 --> 0:30:03,300
+ you shouldn't make the haystack bigger, but you should actually find a magnet.
+
+432
+0:30:03,800 --> 0:30:11,520
+ And if you are going to have detection orders and scanning of all of our communication,
+
+433
+0:30:11,720 --> 0:30:13,440
+ you're going to be making the haystack bigger.
+
+434
+0:30:14,220 --> 0:30:18,220
+ And then also, I mean, we are a parliament that's quite split on this,
+
+435
+0:30:18,220 --> 0:30:20,280
+ so there are also some bad amendments on.
+
+436
+0:30:20,660 --> 0:30:22,340
+ For example, voluntary detection.
+
+437
+0:30:23,020 --> 0:30:30,280
+ And the situation in the parliament is that we are very split on this proposal.
+
+438
+0:30:30,720 --> 0:30:34,560
+ And unfortunately, a lot of the people that are the rapporteurs
+
+439
+0:30:34,560 --> 0:30:38,700
+ of the shadows are quite pro the proposal, a little bit the situation that I was talking
+
+440
+0:30:38,700 --> 0:30:45,080
+ about in the family committee where the person writing the opinion liked the proposal
+
+441
+0:30:45,080 --> 0:30:46,820
+ and is not listening to the criticism.
+
+442
+0:30:47,500 --> 0:30:49,580
+ So therefore, it's really important.
+
+443
+0:30:50,040 --> 0:30:50,640
+ Not only.
+
+444
+0:30:50,660 --> 0:30:53,940
+ to influence the people that are the rapporteurs
+
+445
+0:30:53,940 --> 0:30:56,900
+ or the shadows of the proposal, but also their wider group.
+
+446
+0:30:59,240 --> 0:31:03,440
+ So the next steps are going to be that there are compromise amendments
+
+447
+0:31:03,440 --> 0:31:10,380
+ for the LIBE report, and that works as the rapporteur
+
+448
+0:31:10,380 --> 0:31:16,520
+ that we looked at here from Spain, Javier and the conservative groups.
+
+449
+0:31:16,660 --> 0:31:18,280
+ My Spanish is not good enough to pronounce that.
+
+450
+0:31:18,280 --> 0:31:22,640
+ But he will negotiate with the other political groups
+
+451
+0:31:22,640 --> 0:31:27,300
+ about the amendments that have been put forward
+
+452
+0:31:27,300 --> 0:31:31,120
+ and trying to find out if they can reach a compromise on the amendments.
+
+453
+0:31:32,180 --> 0:31:36,320
+ And once they have those, they are going to be put to a vote
+
+454
+0:31:36,320 --> 0:31:40,080
+ in the LIBE committee, and then after that,
+
+455
+0:31:40,500 --> 0:31:42,300
+ they're going to be put to a vote in the plenary.
+
+456
+0:31:42,500 --> 0:31:45,720
+ We're all 705 of us, or a little bit less,
+
+457
+0:31:45,720 --> 0:31:47,440
+ and people don't care to show up.
+
+458
+0:31:47,440 --> 0:31:50,680
+ They're going to vote on the proposal as a whole.
+
+459
+0:31:51,540 --> 0:31:54,380
+ LIBE has been postponed until October,
+
+460
+0:31:55,100 --> 0:31:59,480
+ and then after that, there will be a vote in the plenary.
+
+461
+0:32:00,200 --> 0:32:04,360
+ And it is, so if that's going to be in October, possibly later,
+
+462
+0:32:04,660 --> 0:32:08,240
+ it will probably be in the spring, just before the election
+
+463
+0:32:08,240 --> 0:32:10,120
+ of the next European Parliament.
+
+464
+0:32:10,680 --> 0:32:15,420
+ That means that there is a lot of personal interest
+
+465
+0:32:15,420 --> 0:32:17,420
+ of the different parliamentarians,
+
+466
+0:32:17,440 --> 0:32:21,340
+ in the result coming out, because they need to go out
+
+467
+0:32:21,340 --> 0:32:25,200
+ and defend it only weeks later in the general public.
+
+468
+0:32:25,500 --> 0:32:28,760
+ And I think that is a real big opportunity for us
+
+469
+0:32:28,760 --> 0:32:31,880
+ to actually influence the people in parliament,
+
+470
+0:32:32,400 --> 0:32:35,020
+ to say, are you able to go out and meet your voters
+
+471
+0:32:35,020 --> 0:32:37,140
+ and defend what you voted through?
+
+472
+0:32:37,700 --> 0:32:43,620
+ But that means that we need to actually try and influence
+
+473
+0:32:43,620 --> 0:32:46,620
+ not just the people in the specific committee,
+
+474
+0:32:46,620 --> 0:32:47,400
+ but more.
+
+475
+0:32:47,440 --> 0:32:48,620
+ I think that is a huge opportunity.
+
+476
+0:32:48,620 --> 0:32:50,340
+ And I think that is something that we need to do more widely.
+
+477
+0:32:50,340 --> 0:32:53,400
+ In Renew, for example, we have a lot,
+
+478
+0:32:53,400 --> 0:32:57,020
+ we have a couple of members from the FTP in Germany.
+
+479
+0:32:57,020 --> 0:33:00,340
+ And Germany, even the government is against the proposal,
+
+480
+0:33:00,340 --> 0:33:01,560
+ as Jesper was saying.
+
+481
+0:33:01,900 --> 0:33:03,980
+ And the debates that we've been having internally
+
+482
+0:33:03,980 --> 0:33:07,040
+ in the group has actually shifted the position
+
+483
+0:33:07,360 --> 0:33:09,840
+ of our rapporteur, who is a Belgium lady,
+
+484
+0:33:09,840 --> 0:33:13,900
+ called Hilde Bartmans, who is very pro the proposal.
+
+485
+0:33:14,540 --> 0:33:17,340
+ And there has been a lot of,
+
+486
+0:33:17,440 --> 0:33:22,660
+ a lot of lobbying from companies that can provide technology
+
+487
+0:33:22,660 --> 0:33:25,820
+ for doing client science scanning and scanning in general.
+
+488
+0:33:26,380 --> 0:33:30,700
+ And also Ashton Kutcher will be appearing later
+
+489
+0:33:30,700 --> 0:33:31,640
+ in the slides as well.
+
+490
+0:33:33,080 --> 0:33:35,380
+ And the S&D is also split.
+
+491
+0:33:35,520 --> 0:33:40,260
+ They have a large German fraction in the political group.
+
+492
+0:33:40,940 --> 0:33:44,760
+ And they are trying to then also shift the position
+
+493
+0:33:44,880 --> 0:33:47,300
+ of the S&D group.
+
+494
+0:33:47,440 --> 0:33:50,440
+ And they have a lot of work to do there.
+
+495
+0:33:50,600 --> 0:33:53,180
+ But there they have the problem that the commissioner,
+
+496
+0:33:53,400 --> 0:33:56,060
+ she is a Swedish social democrat.
+
+497
+0:33:56,060 --> 0:34:00,200
+ And then how do you then balance supporting your political family
+
+498
+0:34:00,200 --> 0:34:02,460
+ commissioner and having good legislation?
+
+499
+0:34:02,460 --> 0:34:05,760
+ So I will very quickly, sort of, outline who is trying
+
+500
+0:34:05,760 --> 0:34:08,820
+ to influence the legislative process,
+
+501
+0:34:08,980 --> 0:34:12,560
+ what is sometimes called lobbying.
+
+502
+0:34:12,560 --> 0:34:14,480
+ We have sort of three groups of,
+
+503
+0:34:14,480 --> 0:34:17,260
+ of efforts on the S&D group.
+
+504
+0:34:17,260 --> 0:34:20,700
+ Free advocacy groups, civil society organizations like IDRI,
+
+505
+0:34:23,260 --> 0:34:27,120
+ Victorian Frontier Foundation, CGT, and others.
+
+506
+0:34:27,220 --> 0:34:28,300
+ It's not an exhaustive list.
+
+507
+0:34:30,060 --> 0:34:36,160
+ They tend to sort of oppose the main elements of the child sexual abuse regulation,
+
+508
+0:34:36,280 --> 0:34:38,600
+ detection orders, and age identification that I've talked about.
+
+509
+0:34:38,600 --> 0:34:43,160
+ And at IDRI, we have also called for the entire proposal to be rejected
+
+510
+0:34:43,160 --> 0:34:45,040
+ because children deserve better.
+
+511
+0:34:45,040 --> 0:34:48,360
+ So if you take detection orders out of her proposal,
+
+512
+0:34:48,480 --> 0:34:50,060
+ that is basically all about mass surveillance.
+
+513
+0:34:50,240 --> 0:34:54,220
+ There's very little death doing something for children online.
+
+514
+0:34:55,540 --> 0:34:59,740
+ So opposing us are mainly the child protection organization,
+
+515
+0:34:59,880 --> 0:35:03,560
+ or I should say some of them are critical,
+
+516
+0:35:03,560 --> 0:35:10,140
+ but a majority of child protection organizations throughout Europe support the proposal,
+
+517
+0:35:11,000 --> 0:35:14,940
+ and they are sort of the most staunch supporters,
+
+518
+0:35:15,040 --> 0:35:21,440
+ are really an organization called THORN, led by Ashton Kuster,
+
+519
+0:35:22,180 --> 0:35:25,960
+ who pushes for technological solutions and goes to the European Parliament
+
+520
+0:35:25,960 --> 0:35:29,800
+ and gives movie-style explanations of how technology works.
+
+521
+0:35:30,280 --> 0:35:36,320
+ For instance, that Ashton Kuster's scanning technology cannot be used for anything else
+
+522
+0:35:36,320 --> 0:35:41,720
+ than child sexual abuse material, so there's absolutely no risk of mission creep.
+
+523
+0:35:41,920 --> 0:35:44,220
+ We're talking about matching hash values,
+
+524
+0:35:44,320 --> 0:35:45,020
+ and these hash values are very important.
+
+525
+0:35:45,040 --> 0:35:48,260
+ Hash values can be anything, but that is sort of forgotten.
+
+526
+0:35:50,360 --> 0:35:56,680
+ Big tech, service providers, Google, Meta, Apple, and so forth, are also involved.
+
+527
+0:35:57,400 --> 0:36:01,080
+ They tend to oppose mandatory measures,
+
+528
+0:36:01,220 --> 0:36:05,100
+ but they like voluntary measures when nobody tells them what to do.
+
+529
+0:36:06,020 --> 0:36:08,700
+ And sort of the most principal opposition that has come out
+
+530
+0:36:08,700 --> 0:36:14,280
+ is an opposition to weakening encryption
+
+531
+0:36:14,280 --> 0:36:15,020
+ just because it's not a good thing.
+
+532
+0:36:15,020 --> 0:36:18,700
+ It's because a law in the United Kingdom or in the European Union requires it,
+
+533
+0:36:18,700 --> 0:36:20,460
+ because this will have global effects.
+
+534
+0:36:20,680 --> 0:36:24,780
+ So WhatsApp, Signal, and Apple, I forgot to add that to the slide,
+
+535
+0:36:24,920 --> 0:36:30,740
+ have said that in principle they will refuse to comply with such demands.
+
+536
+0:36:31,240 --> 0:36:34,680
+ Then maybe one day Signal will be blocked in the European Union,
+
+537
+0:36:34,820 --> 0:36:38,000
+ just like Signal is blocked in Iran, and we'll have to use it for proxies.
+
+538
+0:36:38,440 --> 0:36:38,840
+ Who knows?
+
+539
+0:36:39,120 --> 0:36:40,920
+ That could be what we're looking at.
+
+540
+0:36:41,920 --> 0:36:43,920
+ This is just a dude.
+
+541
+0:36:45,020 --> 0:36:49,880
+ This is Moritz Koerner, one of Karen's colleagues in the Renew group,
+
+542
+0:36:50,460 --> 0:36:52,660
+ making jokes about who is advising the commission.
+
+543
+0:36:52,900 --> 0:36:55,380
+ It's actually more tragic than it's funny.
+
+544
+0:36:56,740 --> 0:37:01,780
+ And this is just to give you an example of sort of how this lobbying activity works,
+
+545
+0:37:01,920 --> 0:37:05,340
+ sending briefing papers to parliamentarians,
+
+546
+0:37:05,480 --> 0:37:06,720
+ or rather to their assistants,
+
+547
+0:37:06,820 --> 0:37:08,700
+ because they don't have time to read them themselves.
+
+548
+0:37:09,600 --> 0:37:13,940
+ So there was a fact check of top nine claims, blah, blah, blah,
+
+549
+0:37:13,940 --> 0:37:14,940
+ from around the child protection,
+
+550
+0:37:15,100 --> 0:37:17,020
+ from around the child protection organizations,
+
+551
+0:37:17,400 --> 0:37:21,580
+ which was immediately followed by a fact checking of the fact checking
+
+552
+0:37:22,120 --> 0:37:27,060
+ done by Idri, actually by myself, because Ella Jakubowski was on holiday.
+
+553
+0:37:29,740 --> 0:37:34,580
+ Yeah, I will, in view of time, I'll skip our Idri advocacy efforts
+
+554
+0:37:34,700 --> 0:37:40,420
+ and just mention that the commission really has no response to the criticism
+
+555
+0:37:40,540 --> 0:37:44,380
+ from the tech community and criticism of technical issues
+
+556
+0:37:44,380 --> 0:37:45,380
+ in general.
+
+557
+0:37:47,600 --> 0:37:50,800
+ There was an open letter from the scientific community,
+
+558
+0:37:50,920 --> 0:37:54,220
+ signed by more than 500 at present scientists,
+
+559
+0:37:54,640 --> 0:37:59,100
+ saying that detection technologies are deeply flawed and vulnerable to attack,
+
+560
+0:37:59,760 --> 0:38:03,380
+ and that undermining inter- and encrypted services,
+
+561
+0:38:03,500 --> 0:38:06,660
+ back-drawering them will have severe technical implications.
+
+562
+0:38:07,520 --> 0:38:09,360
+ Well, what was the response from the commission?
+
+563
+0:38:11,200 --> 0:38:14,260
+ Well, she gave a speech a week later where she sort of compared that
+
+564
+0:38:14,260 --> 0:38:18,480
+ letter to a report from a victim of child sexual abuse,
+
+565
+0:38:18,480 --> 0:38:21,020
+ typically not happening online, but that's beside the point.
+
+566
+0:38:21,580 --> 0:38:25,720
+ So on one hand, we have this report from that individual.
+
+567
+0:38:25,720 --> 0:38:30,020
+ On the other, we have an article that is the scientific letter that only speaks
+
+568
+0:38:30,020 --> 0:38:36,140
+ about technical hypotheticals, and she's sort of basically calling it
+
+569
+0:38:36,140 --> 0:38:41,620
+ conspiracy theories, which is totally insane because it's a well-founded critique
+
+570
+0:38:41,620 --> 0:38:42,920
+ of the proposal.
+
+571
+0:38:44,260 --> 0:38:50,500
+ And now, Karen will tell you how you can stop this, or help stopping this.
+
+572
+0:38:50,840 --> 0:38:55,280
+ I think the last slide is quite evocative of the problem.
+
+573
+0:38:55,840 --> 0:39:00,840
+ They're proposing a technical solution where the technology that they're pointing
+
+574
+0:39:00,840 --> 0:39:03,180
+ to simply isn't going to be working.
+
+575
+0:39:03,720 --> 0:39:09,240
+ At the same time, you have sort of front organizations saying that they're working
+
+576
+0:39:09,240 --> 0:39:14,240
+ to protect children against sexual abuse online, saying that they're not going to be able to
+
+577
+0:39:14,260 --> 0:39:16,000
+ protect children against sexual abuse online.
+
+578
+0:39:16,000 --> 0:39:19,600
+ And so, we have to get some of the other organizations on board to say,
+
+579
+0:39:19,600 --> 0:39:24,040
+ okay, this is going to help, and it's the only way of helping children against sexual abuse.
+
+580
+0:39:24,040 --> 0:39:28,600
+ And therefore, we need to say, okay, we want to actually help children against sexual abuse.
+
+581
+0:39:28,600 --> 0:39:33,700
+ We need to get some of the other children's rights organizations on board on this,
+
+582
+0:39:33,700 --> 0:39:40,840
+ and get them to speak out about the problems that this proposal is going to have on protecting kids.
+
+583
+0:39:40,840 --> 0:39:43,840
+ Because I think if we just look at the very real technical criticism,
+
+584
+0:39:43,840 --> 0:39:50,160
+ then we're going to lose a lot of people, because they don't actually care about the technology
+
+585
+0:39:50,660 --> 0:39:53,400
+ and the solutions that could be proposed or not.
+
+586
+0:39:53,600 --> 0:39:57,300
+ Because it's like, oh, it's, there's a debate on one side and the other side,
+
+587
+0:39:57,300 --> 0:39:59,460
+ and then we'll just ignore both of them.
+
+588
+0:40:01,000 --> 0:40:05,900
+ There is the EDRI campaign teams, both at a European level.
+
+589
+0:40:06,500 --> 0:40:11,860
+ There is a working group, a campaign working group that, on a slide that Jesper skipped.
+
+590
+0:40:12,420 --> 0:40:13,680
+ And then there are the national organizations.
+
+591
+0:40:13,680 --> 0:40:13,820
+ Okay.
+
+592
+0:40:13,820 --> 0:40:17,900
+ So, I think one of the most important things you should do if you're a Dane sitting here,
+
+593
+0:40:18,280 --> 0:40:22,360
+ is go and actually become a member of IIT Politisk Feijoneg.
+
+594
+0:40:22,640 --> 0:40:29,060
+ It costs you 100 haks a year, and will help to sort of reinforce the organization.
+
+595
+0:40:29,460 --> 0:40:34,160
+ And then also join the communication campaign on this.
+
+596
+0:40:34,820 --> 0:40:41,900
+ At the national level, the current government and members of the parliament in a lot of countries need
+
+597
+0:40:41,900 --> 0:40:43,640
+ to approve the communication campaign.
+
+598
+0:40:43,640 --> 0:40:43,740
+ The President has recently been called on to do that.
+
+599
+0:40:43,740 --> 0:40:43,800
+ And so, I think, we actually need to do that.
+
+600
+0:40:43,800 --> 0:40:43,820
+ And so, I think, we actually need to do that.
+
+601
+0:40:43,820 --> 0:40:49,000
+ Decision made by the government when they go into the council. So in Denmark EU will value
+
+602
+0:40:49,680 --> 0:40:56,860
+ Will open value will have to approve the mandate for negotiations and the final vote of the
+
+603
+0:40:57,560 --> 0:41:02,500
+ Of the Danish government when they go to the vote on the 28th of September
+
+604
+0:41:02,580 --> 0:41:07,180
+ So therefore it's really important that you target for example the EU
+
+605
+0:41:07,180 --> 0:41:13,840
+ Spokesperson in the different political parties and also the person dealing with technology and in Denmark
+
+606
+0:41:13,840 --> 0:41:17,560
+ we even have a digitalization minister now and try and
+
+607
+0:41:18,380 --> 0:41:22,960
+ Explain to them in easy tangible ways of how
+
+608
+0:41:23,720 --> 0:41:25,520
+ this
+
+609
+0:41:25,520 --> 0:41:33,040
+ Proposal is not going to be working in the European Parliament. You could go in and then contact the individual MEPs
+
+610
+0:41:34,040 --> 0:41:35,960
+ both in Liba
+
+611
+0:41:35,960 --> 0:41:37,120
+ ahead of the vote in
+
+612
+0:41:37,120 --> 0:41:41,240
+ You can go in on the committee website and see who the members are
+
+613
+0:41:42,880 --> 0:41:44,740
+ Emails are
+
+614
+0:41:44,740 --> 0:41:47,700
+ already available you can contact us and
+
+615
+0:41:48,740 --> 0:41:50,740
+ Try and provide us with
+
+616
+0:41:51,260 --> 0:41:54,660
+ Arguments that we can then also bring forward in our groups
+
+617
+0:41:56,120 --> 0:41:59,160
+ Individual emails are of course better than
+
+618
+0:42:00,940 --> 0:42:02,940
+ Then the
+
+619
+0:42:03,120 --> 0:42:04,980
+ sort of mass
+
+620
+0:42:04,980 --> 0:42:07,100
+ Emailing systems where we just put up a filter
+
+621
+0:42:07,120 --> 0:42:12,500
+ And put that in a folder or delete it because I mean we we're not that technically smart, but we can
+
+622
+0:42:13,040 --> 0:42:15,540
+ Work around outlook which is so what we're using
+
+623
+0:42:17,060 --> 0:42:22,020
+ Technical input is of course very important let us know what doesn't work and
+
+624
+0:42:22,780 --> 0:42:26,500
+ Then also I mean, I think it's really important to try and use
+
+625
+0:42:27,480 --> 0:42:34,620
+ personal tangible and national arguments we were discussing a little bit about whether we should actually use
+
+626
+0:42:35,240 --> 0:42:37,080
+ mention the Rasmus Paludan and the
+
+627
+0:42:37,120 --> 0:42:41,700
+ And the sort of debate that we have in Denmark and Sweden about the Quran burnings
+
+628
+0:42:41,820 --> 0:42:50,520
+ But I mean try and use the political debates that are in each member state and try and get the journalists and the politicians involved
+
+629
+0:42:52,160 --> 0:42:56,780
+ Communicate about this there's a lot of people communicating about why they think it's a good proposal
+
+630
+0:42:57,340 --> 0:43:04,340
+ You need to help communicate the problems that are there with the proposal. I think it's
+
+631
+0:43:05,180 --> 0:43:07,120
+ taking what yes was writing for example
+
+632
+0:43:07,120 --> 0:43:13,820
+ mighty police screening and repeating it on your own websites or wherever is it's going to be useful and
+
+633
+0:43:14,060 --> 0:43:18,200
+ Use the platforms that are there that you know how to use to get people's attention
+
+634
+0:43:19,820 --> 0:43:22,780
+ We know that this is not
+
+635
+0:43:23,480 --> 0:43:27,180
+ Working. I mean Google has had an automated tool to detect abusive
+
+636
+0:43:27,800 --> 0:43:30,940
+ images of children, but the system is getting it wrong and
+
+637
+0:43:31,800 --> 0:43:35,180
+ We need to make sure that people actually understand
+
+638
+0:43:35,900 --> 0:43:37,060
+ how amazing
+
+639
+0:43:37,060 --> 0:43:43,160
+ The internet is what it can be used for good things and also that it allows young
+
+640
+0:43:43,500 --> 0:43:50,300
+ Persons and children to actually engage with communities that they are a part of but might not be present where they're living
+
+641
+0:43:50,720 --> 0:43:55,940
+ Geographically and also that we need to make sure that the technology that we use
+
+642
+0:43:57,560 --> 0:43:59,620
+ Encourage children to actually think for themselves
+
+643
+0:44:01,160 --> 0:44:04,000
+ We can use technology in a good way
+
+644
+0:44:04,880 --> 0:44:06,880
+ but the the proposal
+
+645
+0:44:07,060 --> 0:44:13,220
+ From the Commission is not the way to use technology. We're trying to hide away things
+
+646
+0:44:13,220 --> 0:44:21,440
+ We're trying to filter things we are breaking encryption where and instead of using technology to actually empower kids to
+
+647
+0:44:22,680 --> 0:44:27,820
+ be able to identify danger and seek help when they need it and also and
+
+648
+0:44:28,460 --> 0:44:36,780
+ To have the privacy that they also deserve so we need to actually use technology to empower children and to help them rather than
+
+649
+0:44:37,060 --> 0:44:39,480
+ To take away their freedom and their rights
+
+650
+0:44:40,020 --> 0:44:42,020
+ We have a couple of minutes left
+
+651
+0:44:42,680 --> 0:44:48,900
+ One or two for questions, and I don't think we have like a thank you slide. We're not very polite. We're Danish
+
+652
+0:44:50,760 --> 0:44:55,080
+ So I think there is a roaming mic if you have a question or two and otherwise
+
+653
+0:44:55,080 --> 0:44:58,340
+ We'll go out of the tent and we'll be happy to take questions
+
+654
+0:45:07,060 --> 0:45:09,060
+ You
+
+655
+0:45:09,060 --> 0:45:11,900
+ started out by saying that that your
+
+656
+0:45:12,360 --> 0:45:16,180
+ Way into this was going out to tell these people that we're also trying to protect the children
+
+657
+0:45:16,880 --> 0:45:18,320
+ but
+
+658
+0:45:18,320 --> 0:45:20,320
+ You didn't really come up with
+
+659
+0:45:20,600 --> 0:45:23,500
+ very much in terms of alternatives
+
+660
+0:45:25,260 --> 0:45:27,260
+ What are the alternatives
+
+661
+0:45:27,320 --> 0:45:32,320
+ The alternatives are actually spending money on having police enforcement
+
+662
+0:45:33,200 --> 0:45:37,020
+ looking at investigations and looking at the criminal networks
+
+663
+0:45:37,060 --> 0:45:40,140
+ that are distributing and creating
+
+664
+0:45:40,880 --> 0:45:44,620
+ child sexual abuse material it is also having
+
+665
+0:45:45,240 --> 0:45:47,240
+ more responsible
+
+666
+0:45:47,380 --> 0:45:49,380
+ social media platforms for example
+
+667
+0:45:50,160 --> 0:45:55,380
+ And also having like use of for example pop-up functions if they detect
+
+668
+0:45:56,040 --> 0:46:01,420
+ You're being asked to share your address or meet with somebody that you have somebody online
+
+669
+0:46:02,120 --> 0:46:06,220
+ That you have like a pop-up that saying well, I usually you know this person
+
+670
+0:46:07,060 --> 0:46:12,360
+ Is this somebody that you trust that you want to meet with?
+
+671
+0:46:12,520 --> 0:46:15,500
+ Do you really want to share your address with the person?
+
+672
+0:46:15,620 --> 0:46:18,180
+ Do you want to share your phone number with them?
+
+673
+0:46:19,220 --> 0:46:22,500
+ Help kids also to, if they want to share nude images,
+
+674
+0:46:23,280 --> 0:46:26,660
+ to think about it before they do so they make conscious choices.
+
+675
+0:46:27,080 --> 0:46:32,060
+ And also to make sure that we don't spend a lot of money on technology
+
+676
+0:46:32,060 --> 0:46:33,140
+ that's not going to be working,
+
+677
+0:46:33,140 --> 0:46:39,700
+ but actually spend it on supporting kids and the children's rights organizations
+
+678
+0:46:39,700 --> 0:46:42,260
+ rather than just spending it on technology.
+
+679
+0:46:42,560 --> 0:46:45,440
+ But it's not been written up as a formal proposal or amendment?
+
+680
+0:46:46,560 --> 0:46:49,080
+ I have written it up as formal amendments
+
+681
+0:46:49,080 --> 0:46:52,460
+ that were then taken out of the Equality Committee.
+
+682
+0:46:54,280 --> 0:46:57,540
+ The problem as well is that we have, for example,
+
+683
+0:46:57,660 --> 0:47:01,440
+ Edry that's saying we should take the proposal completely off the table
+
+684
+0:47:01,440 --> 0:47:03,120
+ and say it's so bad.
+
+685
+0:47:03,140 --> 0:47:05,540
+ That we shouldn't even be discussing it
+
+686
+0:47:05,540 --> 0:47:08,220
+ and therefore don't want to engage with the proposal
+
+687
+0:47:08,220 --> 0:47:09,920
+ and trying to see how we can improve it.
+
+688
+0:47:10,980 --> 0:47:13,420
+ And then we have the people that just love it.
+
+689
+0:47:13,700 --> 0:47:16,120
+ And I've been trying to strike a middle ground saying
+
+690
+0:47:16,120 --> 0:47:19,640
+ if this is going to go through, we need to improve it a lot
+
+691
+0:47:19,640 --> 0:47:24,540
+ so that it's acceptable what's being put into law at the end.
+
+692
+0:47:26,000 --> 0:47:30,420
+ But it's easier to say let's keep out of it
+
+693
+0:47:30,420 --> 0:47:32,420
+ and ask the Commission to take it off the table completely.
+
+694
+0:47:33,140 --> 0:47:38,240
+ And that's why there's not a lot of us trying to engage with the proposal
+
+695
+0:47:38,240 --> 0:47:40,280
+ in terms of trying to improve it
+
+696
+0:47:40,280 --> 0:47:43,340
+ rather than just getting it off the table or saying that it's wonderful.
+
+697
+0:47:43,820 --> 0:47:46,860
+ I think it's also the case that the Commission spent typically years
+
+698
+0:47:46,860 --> 0:47:49,880
+ preparing a proposal, doing multiple rounds of consultation,
+
+699
+0:47:50,160 --> 0:47:52,620
+ writing hundreds of pages of impact assessments,
+
+700
+0:47:52,780 --> 0:47:54,000
+ considering policy options.
+
+701
+0:47:54,660 --> 0:47:59,300
+ And for a civil society organization like Edry to sort of do that,
+
+702
+0:48:00,420 --> 0:48:01,360
+ well, we've thought about it,
+
+703
+0:48:01,360 --> 0:48:02,360
+ but which I know...
+
+704
+0:48:03,140 --> 0:48:05,720
+ We can't do that in a credible way.
+
+705
+0:48:06,240 --> 0:48:09,220
+ So the right thing to do is call for the proposal to be rejected
+
+706
+0:48:09,220 --> 0:48:11,060
+ so that the Commission, the next Commission,
+
+707
+0:48:11,860 --> 0:48:13,260
+ without Ylva Johansson,
+
+708
+0:48:13,500 --> 0:48:17,320
+ can come up with a better proposal to protect tourism online.
+
+709
+0:48:21,900 --> 0:48:24,380
+ Maybe we should move it outside for...
+
+710
+0:48:24,380 --> 0:48:24,620
+ Yes.
+
+711
+0:48:24,680 --> 0:48:25,980
+ Yes, by all means.
+
+712
+0:48:26,160 --> 0:48:27,880
+ Further questions is outside.
+
+713
+0:48:28,440 --> 0:48:30,780
+ Thank you for being here, Karen and Jesper.
+
+714
+0:48:30,780 --> 0:48:32,780
+ Let's give them a round of applause.
+
+715
+0:48:33,140 --> 0:48:33,420
+ Thank you.

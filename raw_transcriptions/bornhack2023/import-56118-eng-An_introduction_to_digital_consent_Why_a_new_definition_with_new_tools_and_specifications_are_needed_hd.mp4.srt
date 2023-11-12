@@ -1,0 +1,3295 @@
+# Transcribed 2023-11-12T12 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:08,180
+ Okay, we are about to begin the next presentation.
+
+2
+0:00:08,180 --> 0:00:13,500
+ We have Benjamin who is here to talk about an introduction to digital consent, why a
+
+3
+0:00:13,500 --> 0:00:16,740
+ new definition with new tools and specifications are needed.
+
+4
+0:00:16,740 --> 0:00:24,040
+ Let's give a round of applause for Benjamin.
+
+5
+0:00:24,040 --> 0:00:25,400
+ Thank you so much.
+
+6
+0:00:25,400 --> 0:00:30,040
+ I have a quick sponsorship message before starting the talk, so I just want to start
+
+7
+0:00:30,040 --> 0:00:33,720
+ with that so I don't forget it.
+
+8
+0:00:33,720 --> 0:00:41,040
+ A Danish organization called Django Denmark is hosting Django Day, like an annual one-day
+
+9
+0:00:41,040 --> 0:00:43,940
+ event for Django people.
+
+10
+0:00:43,940 --> 0:00:44,940
+ It's in Copenhagen.
+
+11
+0:00:44,940 --> 0:00:52,760
+ We found a really lovely venue on Nørrebro and talks are coming in and tickets are on
+
+12
+0:00:52,760 --> 0:00:54,300
+ sale and so on.
+
+13
+0:00:54,300 --> 0:00:55,300
+ So that's on the 6th of January.
+
+14
+0:00:55,300 --> 0:00:59,460
+ And that's the website for that.
+
+15
+0:00:59,460 --> 0:01:01,260
+ So I hope that maybe you're interested.
+
+16
+0:01:01,260 --> 0:01:06,300
+ There is also a little Django perspective in this talk.
+
+17
+0:01:06,300 --> 0:01:19,340
+ So I'm a software developer and I want to talk about consent with the background that
+
+18
+0:01:19,340 --> 0:01:23,620
+ I have as a software developer.
+
+19
+0:01:23,620 --> 0:01:25,140
+ And maybe I'm not.
+
+20
+0:01:25,140 --> 0:01:28,580
+ Maybe I'm not so precise on the legal aspect.
+
+21
+0:01:28,580 --> 0:01:32,320
+ So this is not like legal advice about how to do consent.
+
+22
+0:01:32,320 --> 0:01:40,660
+ But I hope it aligns with your understanding of GDPR and those sorts of legal obligations
+
+23
+0:01:40,660 --> 0:01:45,520
+ that we have when we build systems with data, basically.
+
+24
+0:01:45,520 --> 0:01:49,300
+ So it's also the first time in a long time that I'm doing a talk.
+
+25
+0:01:49,300 --> 0:01:50,300
+ And last time I was part of a conference.
+
+26
+0:01:50,300 --> 0:01:51,300
+ I was part of a conference.
+
+27
+0:01:51,300 --> 0:01:52,300
+ I was part of a conference.
+
+28
+0:01:52,300 --> 0:01:53,300
+ I was part of a conference.
+
+29
+0:01:53,300 --> 0:01:54,300
+ I was part of a conference.
+
+30
+0:01:54,300 --> 0:02:05,060
+ And last time I was preparing a talk, I found out that I was very confused around what focus
+
+31
+0:02:05,060 --> 0:02:06,060
+ to find.
+
+32
+0:02:06,060 --> 0:02:16,140
+ So now I ask, like, why do I think this is a talk to present here for you and for your
+
+33
+0:02:16,140 --> 0:02:18,100
+ sake, for my sake?
+
+34
+0:02:18,100 --> 0:02:22,220
+ And let's just make those terms clear.
+
+35
+0:02:22,220 --> 0:02:23,740
+ Let's make the purpose of the talk clear.
+
+36
+0:02:23,740 --> 0:02:35,300
+ I really want, like, more people to care about the question of consent, digital consent.
+
+37
+0:02:35,300 --> 0:02:41,140
+ But in order so that we can build something, and so that we can build something together.
+
+38
+0:02:41,140 --> 0:02:46,980
+ So I'll try to, as a software developer, maintain the aspect that we talk a lot about consent,
+
+39
+0:02:46,980 --> 0:02:49,500
+ but in the end, let's try to make it – turn it into a tool so that when we want to, you're
+
+40
+0:02:49,500 --> 0:02:50,500
+ going to be able to implement it.
+
+41
+0:02:50,500 --> 0:02:51,500
+ So if you're going to be able to do it, you're going to be able to do it.
+
+42
+0:02:51,500 --> 0:02:52,500
+ So that's part of the talk.
+
+43
+0:02:52,500 --> 0:02:53,500
+ Yeah.
+
+44
+0:02:53,500 --> 0:03:04,200
+ have consent for something in an application, we're doing it the best possible way. So I
+
+45
+0:03:04,200 --> 0:03:21,180
+ hope you agree to that. Some of it is below the phone suit. It's also Latin. So I'll try
+
+46
+0:03:21,180 --> 0:03:32,740
+ to cover these four aspects here. First, those pesky cookie banners that we all know about.
+
+47
+0:03:32,740 --> 0:03:42,280
+ They're everywhere. And then I'll talk a bit about consent, like what can we say, what
+
+48
+0:03:42,280 --> 0:03:51,180
+ sort of properties can we attach to consent in order to have a definition of it. Then
+
+49
+0:03:51,180 --> 0:03:58,520
+ from that definition, can we specify something that we can use to implement software? And
+
+50
+0:03:58,520 --> 0:04:07,560
+ then finally I'll just share a little bit about what I've been trying to do. I hope
+
+51
+0:04:07,560 --> 0:04:17,520
+ that people can hear because it's very loud for me up here with the rain. Okay. Cool.
+
+52
+0:04:17,520 --> 0:04:20,620
+ So those pesky cookie banners.
+
+53
+0:04:21,180 --> 0:04:32,660
+ I'll just show you a few examples to get the thought process started, what's happening
+
+54
+0:04:32,660 --> 0:04:35,520
+ right now with consent.
+
+55
+0:04:35,520 --> 0:04:46,820
+ It's basically that people want to continue to use and share data, it's still okay.
+
+56
+0:04:46,820 --> 0:04:53,660
+ They want to continue to use and share data the same way, kind of business as usual, but
+
+57
+0:04:53,660 --> 0:05:01,580
+ we'll just add even more layers of terms and conditions.
+
+58
+0:05:01,580 --> 0:05:09,060
+ And I've been annoyed at it and posted stuff on social media when I saw a dialogue that
+
+59
+0:05:09,060 --> 0:05:16,420
+ I didn't like, and I was trying to figure out some examples before the talk, and basically
+
+60
+0:05:16,420 --> 0:05:16,540
+ I just said, you know what, I don't want to do this.
+
+61
+0:05:16,540 --> 0:05:16,580
+ I don't want to do this.
+
+62
+0:05:16,580 --> 0:05:16,640
+ I don't want to do this.
+
+63
+0:05:16,640 --> 0:05:16,680
+ I don't want to do this.
+
+64
+0:05:16,680 --> 0:05:16,780
+ I don't want to do this.
+
+65
+0:05:16,780 --> 0:05:16,800
+ I don't want to do this.
+
+66
+0:05:16,800 --> 0:05:16,820
+ I don't want to do this.
+
+67
+0:05:16,820 --> 0:05:22,100
+ I just went to the first two kind of random pages that I found, so these are not, these
+
+68
+0:05:22,100 --> 0:05:24,020
+ examples are not cherry-picked.
+
+69
+0:05:24,200 --> 0:05:36,820
+ I just went on the normal internet and looked, and I went to wordpress.com, and they say
+
+70
+0:05:37,420 --> 0:05:45,340
+ they're the world's most popular website building tool, so let's hope they get consent right
+
+71
+0:05:45,340 --> 0:05:48,740
+ and I would say they don't.
+
+72
+0:05:48,740 --> 0:06:02,220
+ You go to the front page, and there is no consent dialogue at all, but there is trackers.
+
+73
+0:06:05,020 --> 0:06:09,780
+ So there is trackers on the website.
+
+74
+0:06:09,780 --> 0:06:09,900
+ Okay.
+
+75
+0:06:09,900 --> 0:06:20,820
+ For the stream, people, I can say there is a very heavy rain coming down right now, so
+
+76
+0:06:20,820 --> 0:06:23,540
+ we have a lot of problems with the sound in here.
+
+77
+0:06:27,200 --> 0:06:31,040
+ I'll let folks move a little bit.
+
+78
+0:06:33,900 --> 0:06:34,720
+ Yeah, okay.
+
+79
+0:06:35,200 --> 0:06:39,720
+ So people are just moving around in the room here so that we can sit a little bit closer.
+
+80
+0:06:39,720 --> 0:06:39,860
+ Okay.
+
+81
+0:06:39,860 --> 0:06:39,880
+ Okay.
+
+82
+0:06:39,900 --> 0:06:44,540
+ And then we hope the rain will cool off.
+
+83
+0:07:04,120 --> 0:07:05,080
+ That's a lot better.
+
+84
+0:07:06,300 --> 0:07:06,540
+ Okay.
+
+85
+0:07:06,820 --> 0:07:08,600
+ Yeah, it was the weather not the technique.
+
+86
+0:07:08,600 --> 0:07:09,500
+ Yeah.
+
+87
+0:07:09,500 --> 0:07:24,660
+ So now the sound is better, and people are closer to the microphone.
+
+88
+0:07:25,140 --> 0:07:26,620
+ I guess we continue.
+
+89
+0:07:28,960 --> 0:07:34,160
+ I went to the front page of wordpress.com, and there was no consent dialogue.
+
+90
+0:07:35,160 --> 0:07:37,360
+ I click get started.
+
+91
+0:07:37,360 --> 0:07:37,560
+ Okay.
+
+92
+0:07:37,560 --> 0:07:37,600
+ Okay.
+
+93
+0:07:37,600 --> 0:07:37,620
+ Okay.
+
+94
+0:07:37,620 --> 0:07:37,660
+ Okay.
+
+95
+0:07:37,660 --> 0:07:37,720
+ Okay.
+
+96
+0:07:37,720 --> 0:07:37,740
+ Okay.
+
+97
+0:07:37,740 --> 0:07:37,760
+ Okay.
+
+98
+0:07:37,760 --> 0:07:37,780
+ Okay.
+
+99
+0:07:37,780 --> 0:07:37,840
+ Okay.
+
+100
+0:07:37,840 --> 0:07:37,860
+ Okay.
+
+101
+0:07:37,860 --> 0:07:37,900
+ Okay.
+
+102
+0:07:37,900 --> 0:07:37,940
+ Okay.
+
+103
+0:07:37,940 --> 0:07:37,960
+ Okay.
+
+104
+0:07:37,960 --> 0:07:37,980
+ Okay.
+
+105
+0:07:37,980 --> 0:07:38,000
+ Okay.
+
+106
+0:07:38,000 --> 0:07:38,020
+ Okay.
+
+107
+0:07:38,020 --> 0:07:38,060
+ Okay.
+
+108
+0:07:38,060 --> 0:07:38,080
+ Okay.
+
+109
+0:07:38,080 --> 0:07:38,100
+ Okay.
+
+110
+0:07:38,100 --> 0:07:38,160
+ Okay.
+
+111
+0:07:38,160 --> 0:07:38,200
+ Okay.
+
+112
+0:07:38,600 --> 0:07:38,900
+ Okay.
+
+113
+0:07:38,900 --> 0:07:39,060
+ Okay.
+
+114
+0:07:39,060 --> 0:07:41,820
+ I go to the second page, and then the consent dialogue pops up.
+
+115
+0:07:41,820 --> 0:07:47,220
+ I think the designers of the web site decided that the consent dialogue is probably not
+
+116
+0:07:47,220 --> 0:07:52,340
+ a good user experience, so they want to hide that on a secondary page.
+
+117
+0:07:52,340 --> 0:08:04,900
+ I looked at the trackers, and they were the same on those two pages, as far as I could
+
+118
+0:08:04,900 --> 0:08:05,000
+ tell.
+
+119
+0:08:05,440 --> 0:08:06,060
+ And then of course, they have this silly thing where you need to generate a story where you
+
+120
+0:08:06,060 --> 0:08:06,600
+ will know the text you want to have the new cerums.
+
+121
+0:08:06,600 --> 0:08:07,120
+ No, no.
+
+122
+0:08:07,120 --> 0:08:07,160
+ No.
+
+123
+0:08:07,160 --> 0:08:07,540
+ No, no.
+
+124
+0:08:07,560 --> 0:08:07,580
+ No.
+
+125
+0:08:07,580 --> 0:08:07,720
+ No.
+
+126
+0:08:07,720 --> 0:08:07,780
+ No.
+
+127
+0:08:07,780 --> 0:08:07,820
+ No.
+
+128
+0:08:07,820 --> 0:08:08,280
+ That's it.
+
+129
+0:08:08,280 --> 0:08:08,560
+ No.
+
+130
+0:08:08,560 --> 0:08:16,700
+ to click customize, and then you have to toggle something in order to actually reject it.
+
+131
+0:08:16,700 --> 0:08:22,760
+ That's a pattern of, you know, trying to make people accept things, called a dark pattern
+
+132
+0:08:22,760 --> 0:08:32,180
+ often. Then I have a different example here that is, like, really, that's when you go
+
+133
+0:08:32,180 --> 0:08:42,500
+ to Bloomberg.com, it's a giant thing you have to either accept all or reject all. And
+
+134
+0:08:42,500 --> 0:08:51,200
+ what I thought was very interesting about this one is a text that reads that you can
+
+135
+0:08:51,200 --> 0:09:02,160
+ actually manage those choices any time, which I would understand that it's a good effect
+
+136
+0:09:02,160 --> 0:09:10,700
+ for this dialogue. You can manage those choices any time you want, but that doesn't really
+
+137
+0:09:10,700 --> 0:09:14,160
+ make sense, because if I go to the website again with a different browser session, how
+
+138
+0:09:14,160 --> 0:09:21,380
+ am I going to manage those choices from the previous visit? It's bizarre. The link just
+
+139
+0:09:21,380 --> 0:09:29,480
+ points to a generic page that's dependent on the cookie. So that's one of those real
+
+140
+0:09:29,480 --> 0:09:32,140
+ absurdities of revoking.
+
+141
+0:09:32,140 --> 0:09:40,900
+ Making cookie consent, like, how do you... You may need to actually store those cookies
+
+142
+0:09:40,900 --> 0:09:49,320
+ yourself in order to revisit the sites. You may also need to have a log of your own IP
+
+143
+0:09:49,320 --> 0:09:53,660
+ addresses you've been delegated and whatever goes into your fingerprint that's used for
+
+144
+0:09:53,660 --> 0:09:58,860
+ this kind of ad profiling.
+
+145
+0:09:58,860 --> 0:10:02,120
+ Looking at the... Looking at those terms and conditions, I think it's very important to
+
+146
+0:10:02,120 --> 0:10:06,900
+ remember that the terms and conditions, those consent dialogues, they all contain something
+
+147
+0:10:06,900 --> 0:10:15,620
+ about profiling. So that's not profiling that is explicit, but it says that it may contain
+
+148
+0:10:15,620 --> 0:10:22,460
+ this and this and this element. And so in order to revoke it, I would post that then
+
+149
+0:10:22,460 --> 0:10:30,020
+ the user needs to be able to know that about their own web browsing in order to, for instance,
+
+150
+0:10:30,020 --> 0:10:31,780
+ invoke the right to be forgotten.
+
+151
+0:10:31,780 --> 0:10:43,880
+ Or the right to have... To see your own data. All those individual GDPR rights. And that
+
+152
+0:10:43,880 --> 0:10:51,240
+ is absurd. I think no one's going to do that. Even on the highest technical level, knowing
+
+153
+0:10:51,240 --> 0:10:59,100
+ that and putting it into practice seems very far-fetched.
+
+154
+0:10:59,100 --> 0:11:01,160
+ So some other absurdities that...
+
+155
+0:11:01,160 --> 0:11:03,220
+ SIGNDAL
+
+156
+0:11:03,220 --> 0:11:04,160
+ As Resources Engine.
+
+157
+0:11:04,160 --> 0:11:05,160
+ SPEAKER 3
+
+158
+0:11:05,160 --> 0:11:06,220
+ SAMUEL MITCHELL
+
+159
+0:11:06,220 --> 0:11:09,180
+ That kind of Listenability's problem here is that we notice is that there is actually
+
+160
+0:11:09,180 --> 0:11:14,720
+ a great HTTP header, do not track header, and it seems to me that it would be easier
+
+161
+0:11:14,720 --> 0:11:21,040
+ if the ones that own websites instead would read that header, instead of letting everyone
+
+162
+0:11:21,040 --> 0:11:25,340
+ have to read those awfully long terms and conditions. That's just a very simple solution
+
+163
+0:11:25,340 --> 0:11:31,140
+ to not consent to tracking. And then if that header is set, you don't even have to show
+
+164
+0:11:31,160 --> 0:11:36,680
+ show those dialogues, you can give the user a better experience.
+
+165
+0:11:36,680 --> 0:11:44,320
+ And then there's browser extensions, kind of doing the same, let's say you own a website
+
+166
+0:11:44,320 --> 0:11:49,940
+ and you can see that people are using tracker bloggers or ad bloggers, that's probably because
+
+167
+0:11:49,940 --> 0:11:56,020
+ they do not consent to the tracking, right, so you don't need to show them the dialogue.
+
+168
+0:11:56,020 --> 0:12:00,780
+ And then there is the very strange behavior of saying, like, if you continue browsing
+
+169
+0:12:00,780 --> 0:12:03,180
+ this website, then you automatically agree.
+
+170
+0:12:03,180 --> 0:12:08,520
+ Like how do you note that someone actually saw that dialogue?
+
+171
+0:12:08,520 --> 0:12:11,380
+ And you might as well have missed it.
+
+172
+0:12:11,380 --> 0:12:13,980
+ That's the case of the Bloomberg thing here.
+
+173
+0:12:13,980 --> 0:12:21,160
+ They have in the background there, you can see there is a tiny, small, like yellow thing
+
+174
+0:12:21,160 --> 0:12:25,700
+ that says that they have updated their terms and conditions and if you continue surfing
+
+175
+0:12:25,700 --> 0:12:25,800
+ the site, you can see that they are updating their terms and conditions.
+
+176
+0:12:25,800 --> 0:12:25,900
+ And if you continue surfing the site, you can see that they are updating their terms
+
+177
+0:12:25,900 --> 0:12:26,000
+ and conditions.
+
+178
+0:12:26,000 --> 0:12:30,000
+ And if you continue surfing the site, you just automatically agree to those changes.
+
+179
+0:12:30,000 --> 0:12:33,540
+ Very strange, I would say.
+
+180
+0:12:33,540 --> 0:12:36,080
+ Okay.
+
+181
+0:12:36,080 --> 0:12:39,320
+ So let's be a little bit positive now.
+
+182
+0:12:39,320 --> 0:12:49,320
+ I would say that there is maybe an okay thing to think about during the past, like GDPR
+
+183
+0:12:49,320 --> 0:12:55,000
+ times and maybe the past, I don't know, maybe it's a decade now that the cookie banners
+
+184
+0:12:55,000 --> 0:12:55,880
+ have been out.
+
+185
+0:12:55,880 --> 0:13:08,080
+ But they did spread an awareness of tracking and so on in the larger population, right?
+
+186
+0:13:08,080 --> 0:13:11,380
+ And maybe that's an advantage.
+
+187
+0:13:11,380 --> 0:13:19,060
+ It could also be a disadvantage, though, because we get this, you know, this consent fatigue.
+
+188
+0:13:19,060 --> 0:13:22,000
+ We have to look at way too many things and consent to them.
+
+189
+0:13:22,000 --> 0:13:24,760
+ So of course, we just stop looking.
+
+190
+0:13:24,760 --> 0:13:25,760
+ We stop caring.
+
+191
+0:13:25,760 --> 0:13:29,600
+ And that's quite human.
+
+192
+0:13:29,600 --> 0:13:37,960
+ Oh, this talk just keeps getting gloomier and gloomier.
+
+193
+0:13:37,960 --> 0:13:47,960
+ So the normalizing is part of the fatigue, you could say, but it's also part of maybe
+
+194
+0:13:47,960 --> 0:13:51,640
+ saying, you know, oh, this tracking, it's innocent.
+
+195
+0:13:51,640 --> 0:13:52,640
+ Everyone does it.
+
+196
+0:13:52,640 --> 0:13:53,840
+ Like, it's completely fine that we have a...
+
+197
+0:13:53,840 --> 0:13:54,840
+ It's completely fine that we have a...
+
+198
+0:13:54,840 --> 0:14:05,000
+ I think one of the cookie consent frameworks, they advertise that they automatically have
+
+199
+0:14:05,000 --> 0:14:14,560
+ an updated list of 2,000 third-party tracking companies, data processors, it's quite a lot,
+
+200
+0:14:14,560 --> 0:14:18,680
+ but then that's kind of just normal.
+
+201
+0:14:18,680 --> 0:14:23,680
+ And I think even worse is like that.
+
+202
+0:14:23,680 --> 0:14:30,580
+ We get a bit like nihilism is creeping in, like Big Tech is just doing whatever they
+
+203
+0:14:30,580 --> 0:14:35,360
+ want with our data and we can't even read all these dialogues that we keep getting thrown
+
+204
+0:14:35,360 --> 0:14:37,560
+ at us.
+
+205
+0:14:37,560 --> 0:14:40,040
+ But yeah, good news.
+
+206
+0:14:40,040 --> 0:14:45,940
+ I think that cookie consent is not really any consent thing.
+
+207
+0:14:45,940 --> 0:14:49,080
+ Maybe we should find a better word for it.
+
+208
+0:14:49,080 --> 0:14:53,040
+ It's very hard to claim that this is informed consent.
+
+209
+0:14:53,040 --> 0:14:53,060
+ Maybe we should find a better word for it.
+
+210
+0:14:53,060 --> 0:14:53,140
+ It's very hard to claim that this is informed consent.
+
+211
+0:14:53,680 --> 0:15:05,440
+ And we already can see how like very explicit revocations of consent that are being indicated
+
+212
+0:15:05,440 --> 0:15:08,860
+ in HTTP headers are being ignored.
+
+213
+0:15:08,860 --> 0:15:15,180
+ And yes, I think I've argued the case that it's in practice it's not possible to revoke
+
+214
+0:15:15,180 --> 0:15:17,600
+ this type of consent.
+
+215
+0:15:17,600 --> 0:15:28,540
+ I asked a bit around, and I was happy to see that the general born hack audience in the
+
+216
+0:15:28,540 --> 0:15:36,360
+ Fediverse also had a majority of saying let's reject this as a solution to tracking.
+
+217
+0:15:36,360 --> 0:15:42,240
+ Like asking for consent in this way doesn't make tracking okay is how I would interpret
+
+218
+0:15:42,240 --> 0:15:44,600
+ the response here.
+
+219
+0:15:44,600 --> 0:15:46,560
+ But also that...
+
+220
+0:15:46,560 --> 0:15:47,560
+ Yeah.
+
+221
+0:15:47,560 --> 0:15:52,380
+ I think some people have kind of given up hope.
+
+222
+0:15:52,380 --> 0:16:00,560
+ Some people also believe that we can improve cookie banners so that the consent can work.
+
+223
+0:16:00,560 --> 0:16:05,840
+ I'd really like to hear from them also.
+
+224
+0:16:05,840 --> 0:16:14,040
+ Let's say that we had a workshop and we could talk a bit more about our experiences with
+
+225
+0:16:14,040 --> 0:16:17,480
+ both cookie consent, but also other types of consents where you...
+
+226
+0:16:17,480 --> 0:16:27,420
+ I agree to some terms and conditions in a shop or with the public sector, then it would
+
+227
+0:16:27,420 --> 0:16:31,400
+ be a great fit to ask these basic simple questions.
+
+228
+0:16:31,400 --> 0:16:36,320
+ Is the consent I'm dealing with here, is it informed consent, meaning that the user knows
+
+229
+0:16:36,320 --> 0:16:46,140
+ what's going on and how to withdraw that, and also the curious case because often this
+
+230
+0:16:46,140 --> 0:16:47,300
+ legitimate interest is being...
+
+231
+0:16:47,300 --> 0:16:48,300
+ Yeah.
+
+232
+0:16:48,300 --> 0:16:49,300
+ ...mixed up.
+
+233
+0:16:49,300 --> 0:16:58,360
+ Often there is a blurry line that looks like you have to consent to something, but actually
+
+234
+0:16:58,360 --> 0:17:00,100
+ it's called legitimate interest.
+
+235
+0:17:00,100 --> 0:17:09,240
+ But I'll try to come back to that, but that's a great idea for a workshop, I think, so I
+
+236
+0:17:09,240 --> 0:17:13,980
+ hope someone would be interested in that too.
+
+237
+0:17:13,980 --> 0:17:15,240
+ So moving on from the cookie banners.
+
+238
+0:17:15,240 --> 0:17:16,240
+ Yeah.
+
+239
+0:17:16,240 --> 0:17:17,240
+ Yeah.
+
+240
+0:17:17,240 --> 0:17:24,860
+ So moving on from the cookie banners, let's try to define something.
+
+241
+0:17:24,860 --> 0:17:34,520
+ Let's try to say what properties should real consent contain, and I don't know, strong
+
+242
+0:17:34,520 --> 0:17:39,720
+ consent, true consent, just kind of trying to distance it from this mix-up with the cookie
+
+243
+0:17:39,720 --> 0:17:40,720
+ banners.
+
+244
+0:17:40,720 --> 0:17:45,240
+ First of all, real consent should be voluntary.
+
+245
+0:17:45,240 --> 0:17:46,240
+ Yeah.
+
+246
+0:17:46,240 --> 0:17:53,480
+ It's a voluntary thing, so if there is only one button called accept, and you need to
+
+247
+0:17:53,480 --> 0:18:00,420
+ accept in order to access something, it's not consent, it's an agreement or it's like
+
+248
+0:18:00,420 --> 0:18:05,500
+ the terms, but that's nothing to do with consent.
+
+249
+0:18:05,500 --> 0:18:13,500
+ We want the term to have meaning, and that meaning comes when it's a voluntary declaration
+
+250
+0:18:13,500 --> 0:18:14,760
+ or agreement between.
+
+251
+0:18:14,760 --> 0:18:15,760
+ Yeah.
+
+252
+0:18:15,760 --> 0:18:16,280
+ Yeah.
+
+253
+0:18:16,280 --> 0:18:19,180
+ Two parties.
+
+254
+0:18:19,180 --> 0:18:25,200
+ And secondly, it needs to be informed, so all this stuff about agreeing without reading,
+
+255
+0:18:25,200 --> 0:18:30,020
+ we need to get into a situation where someone consenting to something actually has an incentive
+
+256
+0:18:30,020 --> 0:18:34,100
+ to be informed about it.
+
+257
+0:18:34,100 --> 0:18:36,000
+ Then it should be revocable.
+
+258
+0:18:36,000 --> 0:18:43,160
+ That's also a very hard technical term, technical task, so to implement that a consent is suddenly
+
+259
+0:18:43,160 --> 0:18:44,380
+ being revoked.
+
+260
+0:18:44,380 --> 0:18:48,620
+ That could happen any time to the system, needs to get a signal, needs to do something,
+
+261
+0:18:48,620 --> 0:18:54,620
+ needs to scrub data, maybe tell other systems that they need to do the same.
+
+262
+0:18:54,620 --> 0:18:58,060
+ That can become quite complicated.
+
+263
+0:18:58,060 --> 0:19:00,620
+ Then it needs to be manageable by the user.
+
+264
+0:19:00,620 --> 0:19:01,800
+ So what does that mean?
+
+265
+0:19:01,800 --> 0:19:06,060
+ That could mean that the user needs a copy of what they're consenting to, or they need
+
+266
+0:19:06,060 --> 0:19:11,160
+ some kind of permanent access to the system.
+
+267
+0:19:11,160 --> 0:19:13,300
+ Maybe they need to store it in a wallet.
+
+268
+0:19:13,300 --> 0:19:14,300
+ Yeah.
+
+269
+0:19:14,300 --> 0:19:19,380
+ There are many ways probably of implementing this.
+
+270
+0:19:19,380 --> 0:19:27,340
+ And then it needs to be auditable, so we need to be able to say when we did this, and this
+
+271
+0:19:27,340 --> 0:19:35,020
+ action requires consent, then we need to track the action in a way that we can prove that
+
+272
+0:19:35,020 --> 0:19:39,020
+ we had the consent when we did that.
+
+273
+0:19:39,020 --> 0:19:42,080
+ So it needs to be auditable by someone.
+
+274
+0:19:42,080 --> 0:19:43,740
+ And especially when it comes to consent.
+
+275
+0:19:43,740 --> 0:19:50,780
+ When it comes to GDPR, then users can at any point in time require that you show proof
+
+276
+0:19:50,780 --> 0:19:55,120
+ that what you did was based on consent or legitimate interest.
+
+277
+0:19:55,120 --> 0:20:01,500
+ But you need to be able to prove that.
+
+278
+0:20:01,500 --> 0:20:08,740
+ And other functions from GDPR is this right to be forgotten and also the right to have
+
+279
+0:20:08,740 --> 0:20:11,740
+ your data corrected and so on.
+
+280
+0:20:11,740 --> 0:20:12,740
+ Good point.
+
+281
+0:20:12,740 --> 0:20:13,740
+ Thank you.
+
+282
+0:20:13,740 --> 0:20:15,240
+ It's good to have all of that.
+
+283
+0:20:15,240 --> 0:20:22,880
+ And then it's a task now to implement.
+
+284
+0:20:22,880 --> 0:20:30,980
+ I just want to show this table, though, because what we found when working with specification
+
+285
+0:20:30,980 --> 0:20:37,960
+ for consent was that people working with other systems that needed consent, they were sometimes
+
+286
+0:20:37,960 --> 0:20:42,060
+ confusing it with a normal agreement, but also they were asking the question, can we
+
+287
+0:20:42,060 --> 0:20:43,740
+ also use this consent system?
+
+288
+0:20:43,740 --> 0:20:48,120
+ Can we use it to store regular agreements, any kind of contract in?
+
+289
+0:20:48,120 --> 0:20:53,240
+ And that's where the consent specification gets too muddy.
+
+290
+0:20:53,240 --> 0:21:00,920
+ So we want to be strict on what is consent and what is something else like a regular
+
+291
+0:21:00,920 --> 0:21:01,920
+ contract.
+
+292
+0:21:01,920 --> 0:21:05,540
+ The first thing was this point of it being voluntary.
+
+293
+0:21:05,540 --> 0:21:10,080
+ Like if there is a reject and an accept button, then we're good.
+
+294
+0:21:10,080 --> 0:21:11,080
+ Then it's voluntary.
+
+295
+0:21:11,080 --> 0:21:12,080
+ People can reject it.
+
+296
+0:21:12,080 --> 0:21:16,560
+ The system understands the rejection.
+
+297
+0:21:16,560 --> 0:21:21,300
+ Then we need to have a purpose declared, an intention.
+
+298
+0:21:21,300 --> 0:21:22,960
+ That's kind of what consent does.
+
+299
+0:21:22,960 --> 0:21:32,940
+ You say yes to something that then happens, probably also has expiry.
+
+300
+0:21:32,940 --> 0:21:39,680
+ But with contracts and agreements, then you have more like requirements or obligations
+
+301
+0:21:39,680 --> 0:21:41,080
+ that have to happen.
+
+302
+0:21:41,080 --> 0:21:42,080
+ Yeah.
+
+303
+0:21:42,080 --> 0:21:46,600
+ And they probably also will happen.
+
+304
+0:21:46,600 --> 0:21:52,240
+ Because contracts and agreements, they have like things about what happens if you don't
+
+305
+0:21:52,240 --> 0:21:54,740
+ do that.
+
+306
+0:21:54,740 --> 0:21:59,180
+ It's a promise of some kind, whereas consent, the one that gives the consent can just revoke
+
+307
+0:21:59,180 --> 0:22:00,180
+ it.
+
+308
+0:22:00,180 --> 0:22:02,360
+ So I put those in contrast.
+
+309
+0:22:02,360 --> 0:22:09,200
+ And then the auditable part is something where I would say that the contract and agreement
+
+310
+0:22:09,200 --> 0:22:10,560
+ often is signed in a way that in itself, it becomes a contract.
+
+311
+0:22:10,560 --> 0:22:11,560
+ It becomes a contract.
+
+312
+0:22:11,560 --> 0:22:19,040
+ It becomes the object that upholds its own content, where the consent relates to a lot
+
+313
+0:22:19,040 --> 0:22:29,180
+ of actions that need to prove that they are related to that particular consent.
+
+314
+0:22:29,180 --> 0:22:40,100
+ So some examples that are not cookie banners is that government, for instance, I'll just
+
+315
+0:22:40,100 --> 0:22:41,060
+ mention the two last ones.
+
+316
+0:22:41,060 --> 0:22:41,120
+ I'll just mention the two last ones.
+
+317
+0:22:41,120 --> 0:22:41,220
+ I'll just mention the two last ones.
+
+318
+0:22:41,220 --> 0:22:51,500
+ But a very typical government institution will want to get your personal data from a
+
+319
+0:22:51,500 --> 0:22:57,840
+ registry somewhere or exchange data in some kind of way to do an administrative task.
+
+320
+0:22:57,840 --> 0:23:00,500
+ That needs consent often.
+
+321
+0:23:00,500 --> 0:23:02,440
+ But that's because you can reject it.
+
+322
+0:23:02,440 --> 0:23:05,400
+ So if you reject it, you replace it with another process.
+
+323
+0:23:05,400 --> 0:23:10,780
+ Then you can just like give them the information by showing your ID or by fetching it from
+
+324
+0:23:10,780 --> 0:23:14,980
+ somewhere and manually handing it over and so on.
+
+325
+0:23:14,980 --> 0:23:20,100
+ Another example is communication where you accept that someone sends you a newsletter
+
+326
+0:23:20,100 --> 0:23:25,440
+ and when you withdraw that consent, they stop sending you the newsletter.
+
+327
+0:23:25,440 --> 0:23:30,020
+ And then the one sending out the newsletter can, of course, store like now I sent to these
+
+328
+0:23:30,020 --> 0:23:32,160
+ people based on this consent.
+
+329
+0:23:32,160 --> 0:23:35,540
+ You can anonymize or hash the email addresses.
+
+330
+0:23:35,540 --> 0:23:37,780
+ So you can build a nice little system that's consent-based.
+
+331
+0:23:37,780 --> 0:23:38,780
+ And then you can send out the newsletter.
+
+332
+0:23:38,780 --> 0:23:39,780
+ And then the one sending out the newsletter can, of course, store like now I sent to these
+
+333
+0:23:39,780 --> 0:23:40,780
+ people based on this consent.
+
+334
+0:23:40,780 --> 0:23:48,720
+ And actually, it's the subscribe-unsubscribe function of the newsletter.
+
+335
+0:23:48,720 --> 0:23:56,420
+ So when we build this, we need to ask some questions like in order to establish informed
+
+336
+0:23:56,420 --> 0:24:01,400
+ consent, there are some risks.
+
+337
+0:24:01,400 --> 0:24:09,540
+ And the best example of consent when it comes to risks is medical consent.
+
+338
+0:24:09,540 --> 0:24:10,740
+ There will be a lot of risks.
+
+339
+0:24:10,740 --> 0:24:14,120
+ There are risks implied with a medical procedure.
+
+340
+0:24:14,120 --> 0:24:19,500
+ And if the patient is conscious, you want informed consent.
+
+341
+0:24:19,500 --> 0:24:24,940
+ And they are incentivized to read it because the risks are very high.
+
+342
+0:24:24,940 --> 0:24:32,700
+ Whereas in the example of data exchange, the user can perceive no risk at all and not want
+
+343
+0:24:32,700 --> 0:24:33,700
+ to read it.
+
+344
+0:24:33,700 --> 0:24:39,840
+ And that's where it gets a little bit more of a UX task, like how do we present this
+
+345
+0:24:39,840 --> 0:24:40,680
+ thing?
+
+346
+0:24:40,680 --> 0:24:47,680
+ So the user actually perceives an incentive to go through it.
+
+347
+0:24:47,680 --> 0:24:54,020
+ And that's a task not just for the legal department.
+
+348
+0:24:54,020 --> 0:24:58,200
+ I think if you just ask the legal department to do the whole consent thing, you're going
+
+349
+0:24:58,200 --> 0:24:59,860
+ to get a legal text.
+
+350
+0:24:59,860 --> 0:25:04,500
+ And then you will have the problem of turning the legal text into informed consent.
+
+351
+0:25:04,500 --> 0:25:10,060
+ You need something that feeds people an understanding of the purpose and the risks and so on.
+
+352
+0:25:10,680 --> 0:25:17,660
+ And then the last part is also to ask, like, is any of this in the user's interest?
+
+353
+0:25:17,660 --> 0:25:19,980
+ Maybe ask that.
+
+354
+0:25:19,980 --> 0:25:25,640
+ And then if the answer is no, then ask if consent is really the solution then, if you're
+
+355
+0:25:25,640 --> 0:25:30,820
+ doing something against the user's interest or not zero interest in it.
+
+356
+0:25:30,820 --> 0:25:37,240
+ It's hard to push in consent because it will not be informed consent.
+
+357
+0:25:37,240 --> 0:25:39,680
+ So try to put this proposal.
+
+358
+0:25:39,680 --> 0:25:40,680
+ Kind of.
+
+359
+0:25:40,680 --> 0:25:42,780
+ It's a little bit academic.
+
+360
+0:25:42,780 --> 0:25:50,900
+ That consent is understood as a voluntary, well informed and revocable declaration by
+
+361
+0:25:50,900 --> 0:25:58,800
+ an individual for another party to use and process that data in a specific way.
+
+362
+0:25:58,800 --> 0:26:09,660
+ And we have established a similar definition in a project that I'm part of that is government
+
+363
+0:26:09,660 --> 0:26:10,660
+ oriented.
+
+364
+0:26:10,680 --> 0:26:13,580
+ It's a little bit like a slightly simpler version of it.
+
+365
+0:26:13,580 --> 0:26:19,480
+ So before giving the talk, I decided to add some more to the definition to make sure it's
+
+366
+0:26:19,480 --> 0:26:21,980
+ like a good and strong definition.
+
+367
+0:26:21,980 --> 0:26:35,760
+ So then in this project called GovStack, where we are working with a specification for consent,
+
+368
+0:26:35,760 --> 0:26:38,780
+ we have also had to add something.
+
+369
+0:26:38,780 --> 0:26:39,860
+ So like as an example.
+
+370
+0:26:39,860 --> 0:26:44,580
+ An example of what consent is not.
+
+371
+0:26:44,580 --> 0:26:53,680
+ And that's like the second clause to the definition is, let's say, the use of consent should be
+
+372
+0:26:53,680 --> 0:26:56,540
+ avoided in these cases.
+
+373
+0:26:56,540 --> 0:27:03,960
+ When a person is simply informed by an organization, it's like it's just an information and you
+
+374
+0:27:03,960 --> 0:27:07,360
+ cannot project it or whatever.
+
+375
+0:27:07,360 --> 0:27:08,860
+ And when the consent.
+
+376
+0:27:08,860 --> 0:27:18,480
+ It's like a system or a platform that is dealing with consent has no way to identify the person.
+
+377
+0:27:18,480 --> 0:27:24,580
+ Or like has no way to establish the consent is actually real.
+
+378
+0:27:24,580 --> 0:27:29,920
+ Because then the owner of the consent platform can also suddenly like invent consent.
+
+379
+0:27:29,920 --> 0:27:32,420
+ That's not so good.
+
+380
+0:27:32,420 --> 0:27:37,060
+ So we want a system that's like tied up to some other system that can ensure that there
+
+381
+0:27:37,060 --> 0:27:37,980
+ is a signature.
+
+382
+0:27:37,980 --> 0:27:38,580
+ So something like that.
+
+383
+0:27:38,580 --> 0:27:43,520
+ So some kind of stamp on the consent.
+
+384
+0:27:43,520 --> 0:27:48,740
+ I'll get back to the data models for this because now is the time for getting closer
+
+385
+0:27:48,740 --> 0:27:56,340
+ to I've made a typo there for the specification for digital consent.
+
+386
+0:27:56,340 --> 0:28:02,120
+ And I have copy pasted the typo to each and every of the following slides.
+
+387
+0:28:02,120 --> 0:28:07,380
+ So the high level requirement is to say we need privacy by design and privacy by default.
+
+388
+0:28:07,380 --> 0:28:08,380
+ I hope that you've heard that.
+
+389
+0:28:08,380 --> 0:28:15,240
+ I hope that you've heard the terms before because I just really like those terms and
+
+390
+0:28:15,240 --> 0:28:21,440
+ they're a very good starting point for specifying the system.
+
+391
+0:28:21,440 --> 0:28:29,700
+ And in privacy by design, we want to say we start to design our whole system of data models,
+
+392
+0:28:29,700 --> 0:28:35,320
+ not just the consent models, but also in the rest of the system when something has to do
+
+393
+0:28:35,320 --> 0:28:36,320
+ with consent.
+
+394
+0:28:36,320 --> 0:28:37,520
+ We need to sort of plug in.
+
+395
+0:28:37,520 --> 0:28:38,220
+ We need to plug in.
+
+396
+0:28:38,220 --> 0:28:45,480
+ We need to plug it into our consent system so that we know what to do when consent expires.
+
+397
+0:28:45,480 --> 0:28:52,660
+ So like do things based on the fact that consent should exist.
+
+398
+0:28:52,660 --> 0:28:56,580
+ If you are doing an operation in a system, maybe you need to check for the consent before
+
+399
+0:28:56,580 --> 0:28:59,980
+ even proceeding.
+
+400
+0:28:59,980 --> 0:29:02,840
+ That could be a way.
+
+401
+0:29:02,840 --> 0:29:04,980
+ Then we also want the privacy by default.
+
+402
+0:29:04,980 --> 0:29:06,780
+ So that's very simple with this.
+
+403
+0:29:06,780 --> 0:29:08,180
+ Like we just assume that the user.
+
+404
+0:29:08,180 --> 0:29:10,600
+ The user hasn't consented.
+
+405
+0:29:10,600 --> 0:29:11,940
+ That's how we design the whole system.
+
+406
+0:29:11,940 --> 0:29:12,940
+ There is no consent.
+
+407
+0:29:12,940 --> 0:29:19,280
+ And then we have the entire track of how the system should work without the consent.
+
+408
+0:29:19,280 --> 0:29:29,760
+ So the advantage is that actually consent can be a liability in itself if you're storing
+
+409
+0:29:29,760 --> 0:29:37,500
+ a lot of consent with person-identifiable information next to the consent, then the
+
+410
+0:29:37,500 --> 0:29:45,560
+ consent system in itself contains things that are privacy-related.
+
+411
+0:29:45,560 --> 0:29:50,980
+ And if people are rejecting something and you are then storing their rejection, then
+
+412
+0:29:50,980 --> 0:29:55,660
+ you're storing the fact that this person doesn't want to do this.
+
+413
+0:29:55,660 --> 0:30:04,920
+ So we can get rid of that by defaulting to having a rejection state.
+
+414
+0:30:04,920 --> 0:30:06,960
+ Okay.
+
+415
+0:30:06,960 --> 0:30:22,360
+ We did some work in the GovStack project, and these are five pillars of the work.
+
+416
+0:30:22,360 --> 0:30:28,000
+ Firstly we have done this based on some use cases.
+
+417
+0:30:28,000 --> 0:30:36,320
+ And the first use case is related to a mother and child that goes to a health care center.
+
+418
+0:30:36,320 --> 0:30:44,300
+ And how this child is being registered in the health care center.
+
+419
+0:30:44,300 --> 0:30:53,400
+ And the second one is about payment in a public sector also.
+
+420
+0:30:53,400 --> 0:30:56,140
+ So benefits, you can say.
+
+421
+0:30:56,140 --> 0:31:03,180
+ And how to do those payouts and sort of manage data around citizens.
+
+422
+0:31:03,180 --> 0:31:05,520
+ We're not quite there yet.
+
+423
+0:31:05,520 --> 0:31:09,720
+ There's a lot of complexity in this.
+
+424
+0:31:09,720 --> 0:31:16,700
+ But we've started now to have enough that we can say that we have a functional specification
+
+425
+0:31:16,700 --> 0:31:18,880
+ for the most simple things.
+
+426
+0:31:18,880 --> 0:31:26,780
+ And there are some requirements, some UX requirements, some data models, and an open API specification.
+
+427
+0:31:26,780 --> 0:31:31,440
+ In the functional requirements, you need the administration part of the system.
+
+428
+0:31:31,440 --> 0:31:35,500
+ Someone needs to be able to configure and set up a system.
+
+429
+0:31:35,520 --> 0:31:37,220
+ Everything.
+
+430
+0:31:37,220 --> 0:31:43,000
+ So the administrator or configuration owner, those are the ones that are responsible for
+
+431
+0:31:43,000 --> 0:31:51,500
+ adding things that are like the texts that the user sees and should be able to update
+
+432
+0:31:51,500 --> 0:31:55,500
+ those texts and see how things work out.
+
+433
+0:31:55,500 --> 0:31:59,720
+ Maybe mass reject everything when the consent is updated.
+
+434
+0:31:59,720 --> 0:32:03,720
+ The administrator also needs to be able to configure.
+
+435
+0:32:03,720 --> 0:32:04,720
+ And that's what we're trying to do.
+
+436
+0:32:04,720 --> 0:32:04,920
+ Okay.
+
+437
+0:32:04,920 --> 0:32:05,120
+ Thank you.
+
+438
+0:32:05,120 --> 0:32:05,220
+ Thank you.
+
+439
+0:32:05,220 --> 0:32:05,320
+ Thank you.
+
+440
+0:32:05,320 --> 0:32:05,420
+ Thank you.
+
+441
+0:32:05,420 --> 0:32:05,520
+ Thank you.
+
+442
+0:32:05,520 --> 0:32:05,640
+ Okay.
+
+443
+0:32:06,840 --> 0:32:06,880
+ All right.
+
+444
+0:32:06,880 --> 0:32:06,920
+ Thank you.
+
+445
+0:32:06,920 --> 0:32:14,700
+ Then we've got the general policy, privacy policy, that guides maybe all the handling
+
+446
+0:32:14,700 --> 0:32:16,560
+ of data inside the organization.
+
+447
+0:32:16,760 --> 0:32:19,660
+ So we've got a bunch of functionality there.
+
+448
+0:32:20,400 --> 0:32:33,700
+ Then we've got the individual user who is in need of seeing her consent agreement, as
+
+449
+0:32:33,700 --> 0:32:34,200
+ we call it.
+
+450
+0:32:34,500 --> 0:32:35,120
+ So being...
+
+451
+0:32:35,120 --> 0:32:35,220
+ So being a...
+
+452
+0:32:35,220 --> 0:32:42,980
+ being presented by something to consent to, and then actually accepting or rejecting that.
+
+453
+0:32:42,980 --> 0:32:52,220
+ What we're used to seeing is like mega collections of a million things to toggle on and off,
+
+454
+0:32:52,220 --> 0:32:56,720
+ and we've just kind of envisioned that there is one thing at a time, and then you click
+
+455
+0:32:56,720 --> 0:33:06,780
+ accept or reject, and of course, they need to be able to look at what they have consented
+
+456
+0:33:06,780 --> 0:33:16,200
+ to later, and they need to be able to send revocations for things later in time.
+
+457
+0:33:16,200 --> 0:33:18,480
+ So it's kind of obvious.
+
+458
+0:33:18,480 --> 0:33:20,820
+ The other part is not so obvious.
+
+459
+0:33:20,820 --> 0:33:26,140
+ That's the auditing part, and we've kept that separate.
+
+460
+0:33:26,140 --> 0:33:26,700
+ From the audit part, we've kept that separate.
+
+461
+0:33:26,700 --> 0:33:27,840
+ From the audit part, we've kept that separate.
+
+462
+0:33:27,840 --> 0:33:35,660
+ System administration and users' individual functions.
+
+463
+0:33:35,660 --> 0:33:47,700
+ So this is an area that I think we will have a lot of future work with, and kind of understanding
+
+464
+0:33:47,700 --> 0:33:53,480
+ this whole aspect of what does auditing versus privacy mean, like what are we actually now
+
+465
+0:33:53,480 --> 0:33:56,120
+ delegating the auditor to have access to?
+
+466
+0:33:56,120 --> 0:34:04,940
+ Auditing can also happen through that someone looks into the consent system to see what
+
+467
+0:34:04,940 --> 0:34:09,260
+ is stored in the system, but it can also happen that auditors should be able to access the
+
+468
+0:34:09,260 --> 0:34:14,740
+ system that is doing stuff based on consent to see that things matches.
+
+469
+0:34:14,740 --> 0:34:19,960
+ Auditing can also be that a third party is owning copies of what is happening in this
+
+470
+0:34:19,960 --> 0:34:25,000
+ consent platform, and then able to do their own auditing afterwards.
+
+471
+0:34:25,000 --> 0:34:25,960
+ We've tried not to.
+
+472
+0:34:25,960 --> 0:34:32,200
+ We've tried not to specify exactly how that happens, but to have a larger palette for
+
+473
+0:34:32,200 --> 0:34:35,720
+ that.
+
+474
+0:34:35,720 --> 0:34:42,520
+ Then we have the UX requirements, which I really wanted to have shown some of the mockups,
+
+475
+0:34:42,520 --> 0:34:44,560
+ but I didn't have the latest copy.
+
+476
+0:34:44,560 --> 0:34:48,740
+ But it's fairly simple requirements.
+
+477
+0:34:48,740 --> 0:34:53,820
+ I think that's the common sense that you would have if you thought about consent from your
+
+478
+0:34:53,820 --> 0:34:54,820
+ own perspective.
+
+479
+0:34:54,820 --> 0:34:55,840
+ Like, how would I like to be able to do this?
+
+480
+0:34:55,840 --> 0:34:59,400
+ How would I like to be asked?
+
+481
+0:34:59,400 --> 0:35:05,680
+ The first requirement that I really liked in this UX specification was that we want
+
+482
+0:35:05,680 --> 0:35:11,600
+ to just be clear about what data do we need, or what are we doing here?
+
+483
+0:35:11,600 --> 0:35:18,520
+ Why are we doing it, and what does the user benefit from this or risk from it?
+
+484
+0:35:18,520 --> 0:35:20,600
+ And then the duration is also really important.
+
+485
+0:35:20,600 --> 0:35:25,380
+ Like, is this indefinite, or is it just some data that we have for a week, and then we
+
+486
+0:35:25,380 --> 0:35:26,380
+ nuke it again?
+
+487
+0:35:26,380 --> 0:35:33,940
+ Super nice things to be reminded of, and I think that reading the UX specification can
+
+488
+0:35:33,940 --> 0:35:44,380
+ even end up being the entry point for understanding this platform, however it's made up.
+
+489
+0:35:44,380 --> 0:35:51,660
+ They also had a really nice note in the UX requirements, which is kind of a different
+
+490
+0:35:51,660 --> 0:35:52,940
+ take on what I have said earlier.
+
+491
+0:35:52,940 --> 0:35:53,940
+ That the system...
+
+492
+0:35:53,940 --> 0:35:54,940
+ If the user...
+
+493
+0:35:54,940 --> 0:36:00,280
+ If the users reject the consent request, then the ones that are designing UX for a whole
+
+494
+0:36:00,280 --> 0:36:05,320
+ application, they need to actually have a user journey where the consent is rejected.
+
+495
+0:36:05,320 --> 0:36:10,520
+ Many people always think how people would like to use their system in the accept kind
+
+496
+0:36:10,520 --> 0:36:16,440
+ of scenario, and then they forget that there is also a user journey where consent has been
+
+497
+0:36:16,440 --> 0:36:22,700
+ rejected.
+
+498
+0:36:22,700 --> 0:36:24,440
+ Very important also.
+
+499
+0:36:24,440 --> 0:36:31,880
+ When you're having the first exchange with the user and showing we need your consent
+
+500
+0:36:31,880 --> 0:36:34,820
+ here, of course, it should be visible.
+
+501
+0:36:34,820 --> 0:36:38,180
+ What do you do then if you change your mind?
+
+502
+0:36:38,180 --> 0:36:45,260
+ I've also seen UX mockups that actually lodge a consent dialogue in a survey all the way
+
+503
+0:36:45,260 --> 0:36:46,260
+ through the survey.
+
+504
+0:36:46,260 --> 0:36:51,480
+ So you start by saying, yes, I can accept this, but then as you're asked more and more
+
+505
+0:36:51,480 --> 0:36:53,340
+ questions in the survey, you're reminded that...
+
+506
+0:36:53,340 --> 0:36:54,340
+ Oh, no.
+
+507
+0:36:54,340 --> 0:37:01,960
+ Now I'm sharing this data, now I'm sharing this data, so then you can actually reject
+
+508
+0:37:01,960 --> 0:37:06,020
+ having your personal details attached to the answer or something like that.
+
+509
+0:37:06,020 --> 0:37:15,720
+ But have this information about changing your mind visible and have first class user interface
+
+510
+0:37:15,720 --> 0:37:18,580
+ for it.
+
+511
+0:37:18,580 --> 0:37:23,720
+ So then we had some data.
+
+512
+0:37:24,340 --> 0:37:29,100
+ We had some data models, and now is the time that I can again say that I'm a software developer,
+
+513
+0:37:29,100 --> 0:37:35,340
+ so I kind of want to get to this step because then I know what to do.
+
+514
+0:37:35,340 --> 0:37:43,300
+ And this was the most simple version we could come up with to just show what are the general
+
+515
+0:37:43,300 --> 0:37:46,220
+ entities in the system.
+
+516
+0:37:46,220 --> 0:37:48,580
+ We have this configuration area.
+
+517
+0:37:48,580 --> 0:37:55,220
+ That's where we manage the components of consent.
+
+518
+0:37:55,220 --> 0:38:06,320
+ So then we have the individual models that store the consent of the individuals to something.
+
+519
+0:38:06,320 --> 0:38:10,700
+ And our terminology is that...
+
+520
+0:38:10,700 --> 0:38:14,580
+ And this is the core of building this system.
+
+521
+0:38:14,580 --> 0:38:15,580
+ It's to understand this.
+
+522
+0:38:15,580 --> 0:38:16,580
+ And this is the core of building this system.
+
+523
+0:38:16,580 --> 0:38:17,580
+ It's to understand this.
+
+524
+0:38:17,580 --> 0:38:18,580
+ And this is the core of building this system.
+
+525
+0:38:18,580 --> 0:38:19,580
+ And this is the core of building this system.
+
+526
+0:38:19,580 --> 0:38:20,580
+ And this is the core of building this system.
+
+527
+0:38:20,580 --> 0:38:25,400
+ So this is data models, because then I think we'll go to a nice place where consent makes
+
+528
+0:38:25,400 --> 0:38:32,700
+ sense, or at least makes more sense, is to model with a data policy.
+
+529
+0:38:32,700 --> 0:38:35,660
+ So that's your general policy for data.
+
+530
+0:38:35,660 --> 0:38:39,420
+ Keep that separate.
+
+531
+0:38:39,420 --> 0:38:45,820
+ And then the consent agreement itself, which is the purpose, what data and why and for
+
+532
+0:38:45,820 --> 0:38:47,580
+ how long and so on.
+
+533
+0:38:47,580 --> 0:38:55,520
+ some properties. We call that a consent agreement. And then we have a consent record. So a consent
+
+534
+0:38:55,520 --> 0:39:03,420
+ record, as you can see with the arrow, that's the link between an individual and a consent
+
+535
+0:39:03,420 --> 0:39:11,240
+ agreement stating that the individual has consented to it. And now, of course, I should
+
+536
+0:39:11,240 --> 0:39:16,560
+ say that we have a model that's called individual, but whether or not it's a natural person,
+
+537
+0:39:16,560 --> 0:39:24,460
+ that doesn't matter to this system. It can be any kind of unique. If it's just an email
+
+538
+0:39:24,460 --> 0:39:32,820
+ address, many just contains a hash of the email address, and then that's all the system
+
+539
+0:39:32,820 --> 0:39:42,900
+ knows. So, we also have the data. We have a data
+
+540
+0:39:42,900 --> 0:39:45,980
+ provider, a consumer or a processor.
+
+541
+0:39:45,980 --> 0:39:46,540
+ Maybe....
+
+542
+0:39:46,540 --> 0:39:54,840
+ But they also need to be able to look at consent in order to determine if the operation that
+
+543
+0:39:54,840 --> 0:39:59,240
+ they are doing has consent stored.
+
+544
+0:39:59,240 --> 0:40:06,100
+ Then there is also a procedure, of course, that makes sure that the system can return
+
+545
+0:40:06,100 --> 0:40:13,780
+ yes or no, but not necessarily state whether the user exists or not.
+
+546
+0:40:13,780 --> 0:40:20,580
+ It's an API, basically.
+
+547
+0:40:20,580 --> 0:40:22,840
+ So I really like this slide.
+
+548
+0:40:22,840 --> 0:40:23,840
+ I think that's...
+
+549
+0:40:23,840 --> 0:40:27,100
+ Sorry it took so long to get here.
+
+550
+0:40:27,100 --> 0:40:37,180
+ But if you have any questions around it, then be sure to ask them if we have time.
+
+551
+0:40:37,180 --> 0:40:43,280
+ Now I'll just make it a little bit worse, because I thought this was okay simple.
+
+552
+0:40:43,280 --> 0:40:43,780
+ Okay.
+
+553
+0:40:43,780 --> 0:40:49,320
+ And add a little bit.
+
+554
+0:40:49,320 --> 0:40:56,540
+ What I'm adding here is the auditing part, because what we are especially interested
+
+555
+0:40:56,540 --> 0:41:04,660
+ in is that if the user changes their mind, or the consent agreement changes, or the data
+
+556
+0:41:04,660 --> 0:41:08,160
+ policy changes, then we need to track that.
+
+557
+0:41:08,160 --> 0:41:12,340
+ Otherwise, we don't know anything about the past.
+
+558
+0:41:12,340 --> 0:41:13,780
+ So in the specification...
+
+559
+0:41:13,780 --> 0:41:21,420
+ We have proposed that there is a revisioning system that can track things, if it's okay
+
+560
+0:41:21,420 --> 0:41:24,400
+ to track them.
+
+561
+0:41:24,400 --> 0:41:27,720
+ And we have signatures.
+
+562
+0:41:27,720 --> 0:41:35,380
+ And if there is a way for the individual to actually sign their consent, of course they
+
+563
+0:41:35,380 --> 0:41:38,460
+ should be able to do that, especially if it's the public sector.
+
+564
+0:41:38,460 --> 0:41:43,280
+ They have all sorts of platforms for that.
+
+565
+0:41:43,780 --> 0:41:54,720
+ And we've also added the lifecycle.
+
+566
+0:41:54,720 --> 0:42:02,200
+ And preparing the system, the specification, was a way of understanding that consent has
+
+567
+0:42:02,200 --> 0:42:08,500
+ a lifecycle from where it hatches in a legal department, maybe, that says, we need this,
+
+568
+0:42:08,500 --> 0:42:13,280
+ and then in a place where the whole...
+
+569
+0:42:13,280 --> 0:42:17,420
+ The whole legal aspect of it maybe is being prepared.
+
+570
+0:42:17,420 --> 0:42:24,660
+ And then people interact with the system, but it may get used, it may change.
+
+571
+0:42:24,660 --> 0:42:27,160
+ That's why we have the revisioning.
+
+572
+0:42:27,160 --> 0:42:33,600
+ And finally, we need to be able to establish proofs, both so that systems that are using
+
+573
+0:42:33,600 --> 0:42:39,880
+ it can see that there is consent, and so that auditing can see that.
+
+574
+0:42:39,880 --> 0:42:42,220
+ So this high-level view is also...
+
+575
+0:42:42,220 --> 0:42:43,280
+ Okay.
+
+576
+0:42:43,280 --> 0:42:49,800
+ Turned into an open API specification where it's like specific schemas with specific fields,
+
+577
+0:42:49,800 --> 0:42:52,020
+ so that's very nice.
+
+578
+0:42:52,020 --> 0:42:58,200
+ All of this is just a specification, though, so it's not an actual tool.
+
+579
+0:42:58,200 --> 0:43:03,060
+ So I want to go further now, because...
+
+580
+0:43:03,060 --> 0:43:10,180
+ What I think we are ready to do is to take this specification, build an open source tool
+
+581
+0:43:10,180 --> 0:43:11,220
+ that is...
+
+582
+0:43:11,220 --> 0:43:12,420
+ Not necessarily...
+
+583
+0:43:12,420 --> 0:43:16,180
+ Not necessarily for governments.
+
+584
+0:43:16,180 --> 0:43:18,260
+ That's probably very heavy.
+
+585
+0:43:18,260 --> 0:43:23,240
+ But at least can work for organizations that we are dealing with in our everyday life that
+
+586
+0:43:23,240 --> 0:43:30,580
+ wants to ask our users simple things, like send a newsletter or store some information,
+
+587
+0:43:30,580 --> 0:43:36,260
+ because we want to do a statistic in our organization about something.
+
+588
+0:43:36,260 --> 0:43:39,420
+ Let's have a tool that can do that the right way.
+
+589
+0:43:39,420 --> 0:43:40,420
+ And...
+
+590
+0:43:40,420 --> 0:43:41,420
+ Okay.
+
+591
+0:43:41,420 --> 0:43:42,420
+ Okay.
+
+592
+0:43:42,420 --> 0:43:43,420
+ Okay.
+
+593
+0:43:43,420 --> 0:43:49,680
+ I thought that since I'm from the Django world, I thought that we can build it with Django,
+
+594
+0:43:49,680 --> 0:43:55,240
+ because it's so nice to write data models in Django, and it's kind of like a rapid thing,
+
+595
+0:43:55,240 --> 0:44:06,180
+ so we can get quickly from prototype to something that we can implement in a real project.
+
+596
+0:44:06,180 --> 0:44:11,180
+ And I hope that this platform will turn into something that can both be a standalone platform,
+
+597
+0:44:11,180 --> 0:44:11,980
+ that has an API.
+
+598
+0:44:11,980 --> 0:44:16,440
+ So that you don't need to use Django in order to use the application here.
+
+599
+0:44:16,440 --> 0:44:21,480
+ But if you use Django, then you can also do some added things.
+
+600
+0:44:21,480 --> 0:44:28,400
+ So especially I'm thinking about adding a specific Django consent field that data models
+
+601
+0:44:28,400 --> 0:44:33,980
+ can say, I'm a row in a database that's based on consent.
+
+602
+0:44:33,980 --> 0:44:39,640
+ And if the consent changes, then I want to be deleted, or I want to be...
+
+603
+0:44:39,640 --> 0:44:40,980
+ Have this particular field anonymized.
+
+604
+0:44:40,980 --> 0:44:41,980
+ Okay.
+
+605
+0:44:41,980 --> 0:44:44,160
+ So whatever that can...
+
+606
+0:44:44,160 --> 0:44:50,140
+ And people have been playing around with this before, but I found that the older tools were
+
+607
+0:44:50,140 --> 0:44:56,000
+ based on GDPR understandings, and they were kind of abandoned now.
+
+608
+0:44:56,000 --> 0:45:04,160
+ So the idea was to start the project and have these thoughts around the consent definition
+
+609
+0:45:04,160 --> 0:45:10,740
+ and specification from GovStack used as a way to bootstrap the project.
+
+610
+0:45:10,740 --> 0:45:11,740
+ So it has a...
+
+611
+0:45:11,740 --> 0:45:13,920
+ It has a repository.
+
+612
+0:45:13,920 --> 0:45:17,800
+ I just added a matrix channel today.
+
+613
+0:45:17,800 --> 0:45:22,800
+ So if you're interested in joining that channel, and just...
+
+614
+0:45:22,800 --> 0:45:26,800
+ You can use it to get updated on how it's going with the project, and you're also very
+
+615
+0:45:26,800 --> 0:45:30,980
+ welcome to participate in it.
+
+616
+0:45:30,980 --> 0:45:37,740
+ And then I wanted to add that I'm here, but only today at the event.
+
+617
+0:45:37,740 --> 0:45:38,740
+ So I hope you enjoyed that.
+
+618
+0:45:38,740 --> 0:45:39,740
+ Thank you.
+
+619
+0:45:39,740 --> 0:45:40,740
+ Bye-bye.
+
+620
+0:45:40,740 --> 0:45:41,740
+ Bye-bye.
+
+621
+0:45:41,740 --> 0:45:42,740
+ Bye-bye.
+
+622
+0:45:42,740 --> 0:45:43,740
+ Sorry.
+
+623
+0:45:43,740 --> 0:45:44,740
+ You have to grab me to talk some more about consent.
+
+624
+0:45:44,740 --> 0:45:45,740
+ Maybe here.
+
+625
+0:45:45,740 --> 0:45:46,740
+ Maybe in the back.
+
+626
+0:45:46,740 --> 0:45:47,740
+ I will use your input.
+
+627
+0:45:47,740 --> 0:45:48,740
+ I hope that's okay.
+
+628
+0:45:48,740 --> 0:45:54,740
+ So if you tell me something about how you think about consent, I will definitely get
+
+629
+0:45:54,740 --> 0:45:59,200
+ inspired and try it and use that.
+
+630
+0:45:59,200 --> 0:46:02,400
+ If you want to get involved in the project, that would be super awesome.
+
+631
+0:46:02,400 --> 0:46:09,920
+ And my last recommendation here is that there is a super nice little episode of all hail
+
+632
+0:46:09,920 --> 0:46:10,940
+ and всем ... maod.
+
+633
+0:46:11,740 --> 0:46:18,840
+ the algorithm, which is an Al Jazeera series, that some years ago actually took up the point
+
+634
+0:46:18,840 --> 0:46:26,660
+ of concept and really communicates it super well, makes it exciting and makes it essential
+
+635
+0:46:26,660 --> 0:46:31,340
+ for everyday folks.
+
+636
+0:46:31,340 --> 0:46:34,860
+ I take questions if there are any.
+
+637
+0:46:34,860 --> 0:46:35,860
+ Thank you.
+
+638
+0:46:35,860 --> 0:46:45,080
+ Do we have any questions for Benjamin?
+
+639
+0:46:45,080 --> 0:46:50,800
+ We talked about this a bit earlier, but it seems to me the biggest players in the game
+
+640
+0:46:50,800 --> 0:46:58,460
+ of tracking people's PII have a vested interest in not really getting consent from people
+
+641
+0:46:58,460 --> 0:47:02,960
+ and patterns of behavior that indicate that they're not really interested in informed
+
+642
+0:47:02,960 --> 0:47:03,960
+ user consent.
+
+643
+0:47:03,960 --> 0:47:04,960
+ They're interested in mainstream consent.
+
+644
+0:47:04,960 --> 0:47:05,840
+ They're interested in mainstream consent.
+
+645
+0:47:05,840 --> 0:47:10,020
+ They're interested in maintaining their status quo and finding loopholes that allow them to
+
+646
+0:47:10,020 --> 0:47:11,020
+ continue doing that.
+
+647
+0:47:11,020 --> 0:47:16,400
+ And I think it's great that we think about how we can serve our users and how we can
+
+648
+0:47:16,400 --> 0:47:23,900
+ respect their data and their privacy, but it feels to me like the biggest problem is
+
+649
+0:47:23,900 --> 0:47:29,020
+ these bigger organizations that aren't going to play ball no matter what solutions exist.
+
+650
+0:47:29,020 --> 0:47:34,800
+ And I was wondering what you think about that and ways that you see of affecting a more
+
+651
+0:47:34,800 --> 0:47:35,800
+ positive change.
+
+652
+0:47:35,800 --> 0:47:40,980
+ Given those actors, like Google, Facebook, other tech.
+
+653
+0:47:40,980 --> 0:47:43,240
+ Yeah.
+
+654
+0:47:43,240 --> 0:47:45,820
+ That's a really great question.
+
+655
+0:47:45,820 --> 0:47:50,920
+ I think there is some kind of tactical political game buried here that maybe we should stop
+
+656
+0:47:50,920 --> 0:47:57,120
+ even allowing them the right to use the word consent for these cookie banners.
+
+657
+0:47:57,120 --> 0:48:00,060
+ Maybe it's better to just say cookie banners.
+
+658
+0:48:00,060 --> 0:48:03,880
+ And then if we can get as far as building a tool that deals with this, I think it's really
+
+659
+0:48:03,880 --> 0:48:04,880
+ important.
+
+660
+0:48:04,880 --> 0:48:05,640
+ Yeah.
+
+661
+0:48:05,640 --> 0:48:05,680
+ Yeah.
+
+662
+0:48:05,680 --> 0:48:05,760
+ Yeah.
+
+663
+0:48:05,760 --> 0:48:05,780
+ Yeah.
+
+664
+0:48:05,800 --> 0:48:07,380
+ And if we can get as far as building a tool that deals with real consent, I think we'll
+
+665
+0:48:07,380 --> 0:48:11,820
+ discover that the tool is absolutely useless for the type of data sharing that cookie banners
+
+666
+0:48:11,820 --> 0:48:12,820
+ are used for.
+
+667
+0:48:12,820 --> 0:48:18,400
+ So we'll just have a great tool that is great for actual consent and then it's easier to
+
+668
+0:48:18,400 --> 0:48:21,620
+ see the differences.
+
+669
+0:48:21,620 --> 0:48:30,640
+ If that can work as a strategy, I would pick that because it's always nice to be able to
+
+670
+0:48:30,640 --> 0:48:35,760
+ show like the real consent.
+
+671
+0:48:35,760 --> 0:48:43,540
+ And, yes, they will not, I mean, I'm pretty sure that at some point someone's going to
+
+672
+0:48:43,540 --> 0:48:48,160
+ make a proposal in the European Parliament because now it has, it's not the same Parliament
+
+673
+0:48:48,160 --> 0:48:53,300
+ that gave us GDPR, it's a different Parliament, and someone's going to say, look at this.
+
+674
+0:48:53,300 --> 0:48:54,300
+ This is absurd.
+
+675
+0:48:54,300 --> 0:48:58,240
+ Let's get rid of it and go back to the good old days where we just shared data without
+
+676
+0:48:58,240 --> 0:49:00,040
+ even having the cookie banners.
+
+677
+0:49:00,040 --> 0:49:05,200
+ I mean, maybe that could even be better for actually having consent now that everyone
+
+678
+0:49:05,200 --> 0:49:05,640
+ understands it.
+
+679
+0:49:05,640 --> 0:49:13,780
+ It's kind of weird to have a cookie banner that you just kind of know that it's being
+
+680
+0:49:13,780 --> 0:49:19,880
+ mismanaged and it's not really authentic, so, yeah, that's...
+
+681
+0:49:19,880 --> 0:49:24,560
+ Do you have one more question?
+
+682
+0:49:24,560 --> 0:49:25,560
+ Thank you.
+
+683
+0:49:25,560 --> 0:49:30,700
+ I had a similar thought, but I think during the presentation you, without intending, proposed
+
+684
+0:49:30,700 --> 0:49:35,420
+ an approach to dealing with the disservices that don't respect end user freedom.
+
+685
+0:49:35,420 --> 0:49:42,540
+ You said it's impractical to record every IP address I've used and every website I've
+
+686
+0:49:42,540 --> 0:49:45,040
+ accessed, but actually I don't think so.
+
+687
+0:49:45,040 --> 0:49:50,680
+ We could make a browser extension that does that and automatically request to be forgotten.
+
+688
+0:49:50,680 --> 0:49:55,980
+ Would that be a reasonable approach for dealing with the sort of company that we were just
+
+689
+0:49:55,980 --> 0:49:56,980
+ discussing?
+
+690
+0:49:56,980 --> 0:50:05,100
+ Yeah, I didn't think anyone would say that, but I'm glad you say it, because if someone
+
+691
+0:50:05,100 --> 0:50:13,420
+ can establish what they are doing as a person and giving and not giving consent to, and
+
+692
+0:50:13,420 --> 0:50:19,480
+ then use that to inquire into their data in a very precise manner and finding out that
+
+693
+0:50:19,480 --> 0:50:25,460
+ things are happening or not happening as they should be, then we have a case that can be
+
+694
+0:50:25,460 --> 0:50:27,240
+ a legal case, right?
+
+695
+0:50:27,240 --> 0:50:30,380
+ Then we can escalate from there.
+
+696
+0:50:30,380 --> 0:50:33,060
+ But I mean...
+
+697
+0:50:33,060 --> 0:50:34,300
+ With all those pages in a typical browser...
+
+698
+0:50:34,300 --> 0:50:34,500
+ Yeah.
+
+699
+0:50:34,500 --> 0:50:34,600
+ Yeah.
+
+700
+0:50:34,600 --> 0:50:34,700
+ Yeah.
+
+701
+0:50:34,700 --> 0:50:34,800
+ Yeah.
+
+702
+0:50:34,800 --> 0:50:34,900
+ Yeah.
+
+703
+0:50:34,900 --> 0:50:35,000
+ Yeah.
+
+704
+0:50:35,000 --> 0:50:35,060
+ Yeah.
+
+705
+0:50:35,060 --> 0:50:35,080
+ Yeah.
+
+706
+0:50:35,100 --> 0:50:42,500
+ With all these political consent cookie bannas, I should say, sorry, it seems like there's
+
+707
+0:50:42,500 --> 0:50:49,700
+ a very lot of legal details going on, so it would be a big thing if we get that, but if
+
+708
+0:50:49,700 --> 0:50:55,240
+ we make the first step and we can see that there is something more, then I think it's
+
+709
+0:50:55,240 --> 0:50:58,640
+ worth doing, especially with the do not track header.
+
+710
+0:50:58,640 --> 0:51:03,920
+ Maybe that's also a simple way to establish, I'm using a do not track header, why are you
+
+711
+0:51:03,920 --> 0:51:04,900
+ not respecting it?
+
+712
+0:51:04,900 --> 0:51:06,740
+ Should you legally respect that?
+
+713
+0:51:11,460 --> 0:51:17,960
+ I'm interested in why you connect government building blocks to consent.
+
+714
+0:51:19,160 --> 0:51:25,300
+ Because from my understanding, most of what we do in government don't really need any consent.
+
+715
+0:51:26,140 --> 0:51:30,000
+ So is government here actually the holder of the consents?
+
+716
+0:51:30,400 --> 0:51:33,000
+ Or why is government involved?
+
+717
+0:51:33,000 --> 0:51:44,540
+ So I didn't include anything on the GovStack project because I was afraid that would take up a lot of time to explain.
+
+718
+0:51:45,800 --> 0:51:52,760
+ But GovStack is essentially not a government-owned project,
+
+719
+0:51:52,760 --> 0:52:02,180
+ but it does have governments in it that the German foreign aid ministry is in it, Estonian government is in it.
+
+720
+0:52:03,000 --> 0:52:10,580
+ The ITU, the International Telecoms Union is in it, and the Digital Impact Alliance is in it.
+
+721
+0:52:10,580 --> 0:52:22,660
+ So these organizations, they wanted from the beginning to be able to supply that functionality
+
+722
+0:52:22,660 --> 0:52:28,260
+ from an understanding that it is the right thing to do.
+
+723
+0:52:29,240 --> 0:52:31,520
+ But there's many places where you don't need it.
+
+724
+0:52:31,600 --> 0:52:32,580
+ You could just, like...
+
+725
+0:52:33,000 --> 0:52:37,640
+ You could not have this so-called building block in your set of building blocks
+
+726
+0:52:37,640 --> 0:52:42,680
+ because the legal situation would say you can do whatever you want because you're a government.
+
+727
+0:52:43,480 --> 0:52:47,680
+ But I think when the tool is available, at least even though the government doesn't have to,
+
+728
+0:52:47,780 --> 0:52:48,340
+ then they could.
+
+729
+0:52:50,400 --> 0:52:55,980
+ And what we found also when we were building this specification
+
+730
+0:52:55,980 --> 0:53:01,180
+ was that there aren't any tools that satisfy our specification.
+
+731
+0:53:01,600 --> 0:53:02,780
+ So I think that was...
+
+732
+0:53:03,000 --> 0:53:08,380
+ It was an important discovery in itself, was to work with this, set up the specification,
+
+733
+0:53:08,600 --> 0:53:14,240
+ and then discover, hey, we actually need open source tools.
+
+734
+0:53:14,580 --> 0:53:16,680
+ And GovStack is based on open source.
+
+735
+0:53:16,780 --> 0:53:21,520
+ That makes it also interesting, digital common goods in this context.
+
+736
+0:53:22,160 --> 0:53:28,460
+ And we need a digital common good that can satisfy this consent specification.
+
+737
+0:53:28,900 --> 0:53:28,980
+ Yeah.
+
+738
+0:53:31,600 --> 0:53:32,260
+ Thank you.
+
+739
+0:53:33,000 --> 0:53:36,680
+ Sorry, I wasn't for the whole talk.
+
+740
+0:53:36,820 --> 0:53:41,760
+ So I apologize in advance if I'm asking something that you already brought to the topic.
+
+741
+0:53:41,760 --> 0:53:44,680
+ But I have two questions.
+
+742
+0:53:45,200 --> 0:53:46,220
+ Actually, the first one.
+
+743
+0:53:47,480 --> 0:53:53,180
+ So talking about legal, have you made some approach to some kind of organization?
+
+744
+0:53:54,100 --> 0:53:58,820
+ Like, I mean, we have an organization called Legal Tech Lab.
+
+745
+0:53:59,360 --> 0:54:01,900
+ So legal tech is kind of a buzzword for now.
+
+746
+0:54:03,000 --> 0:54:08,640
+ Is there something happening in that, and that you can make a case regarding, like,
+
+747
+0:54:08,720 --> 0:54:18,420
+ hey, I'm not giving consent, or this consent was not acquired in a legal attaining context.
+
+748
+0:54:18,680 --> 0:54:19,720
+ So this is not valid.
+
+749
+0:54:19,800 --> 0:54:22,620
+ Therefore, you're not permitted to keep my data.
+
+750
+0:54:23,140 --> 0:54:25,240
+ So that's the first question that I have.
+
+751
+0:54:27,280 --> 0:54:31,240
+ It's unfortunate that I don't...
+
+752
+0:54:31,920 --> 0:54:32,240
+ Personally...
+
+753
+0:54:33,000 --> 0:54:37,760
+ Go out and do the work of seeing what's going on in that department.
+
+754
+0:54:37,940 --> 0:54:39,080
+ But it's a very...
+
+755
+0:54:39,080 --> 0:54:47,880
+ It seems like in the room there is actually a little spark of energy to also go that direction.
+
+756
+0:54:47,880 --> 0:54:56,020
+ So we could say, like, we are building a tool that can actually do the things we want in relation to consent.
+
+757
+0:54:56,160 --> 0:55:01,240
+ But then we also want to expose, like, these practices of fake consent.
+
+758
+0:55:03,000 --> 0:55:05,940
+ Or, like, not respecting the consent.
+
+759
+0:55:07,020 --> 0:55:13,620
+ So I would encourage myself and everyone to look for that.
+
+760
+0:55:13,800 --> 0:55:15,760
+ Because it could be something, yeah.
+
+761
+0:55:16,620 --> 0:55:21,200
+ And, yeah, the second question that I had is, like, also considering, like,
+
+762
+0:55:21,340 --> 0:55:24,480
+ reaching to the parliament for having something to pass by.
+
+763
+0:55:25,100 --> 0:55:32,260
+ That will require, for instance, taking a look at vulnerable groups.
+
+764
+0:55:32,260 --> 0:55:32,860
+ Like, like...
+
+765
+0:55:32,860 --> 0:55:35,460
+ Let's say, Germany is not my first language.
+
+766
+0:55:35,920 --> 0:55:40,760
+ So I will just be giving consent in order to get into a website to search for an apartment.
+
+767
+0:55:42,140 --> 0:55:44,620
+ So things of that nature.
+
+768
+0:55:45,440 --> 0:55:49,520
+ Saying, like, okay, if you are requesting consent from this person,
+
+769
+0:55:49,640 --> 0:55:55,260
+ at least have the decency to put the information on the language that they can understand.
+
+770
+0:55:55,760 --> 0:55:59,440
+ Or for sites that are just providing that in a certain language.
+
+771
+0:55:59,440 --> 0:56:02,440
+ Or also looking at...
+
+772
+0:56:02,860 --> 0:56:05,960
+ I mean, it's not necessarily people that, for them, would be like,
+
+773
+0:56:05,960 --> 0:56:07,360
+ yeah, I mean, I don't know.
+
+774
+0:56:07,360 --> 0:56:09,740
+ I just want to see pictures of my nieces.
+
+775
+0:56:09,740 --> 0:56:11,280
+ Just get me in there.
+
+776
+0:56:11,280 --> 0:56:13,100
+ I will consent to anything.
+
+777
+0:56:13,100 --> 0:56:16,620
+ So it feels like kind of taking advantage.
+
+778
+0:56:16,620 --> 0:56:22,620
+ So I was just asking if this is also something that can be considered.
+
+779
+0:56:22,900 --> 0:56:23,500
+ Yeah.
+
+780
+0:56:23,500 --> 0:56:30,440
+ It definitely makes me want to say again, like, the informed part of consent,
+
+781
+0:56:30,440 --> 0:56:32,440
+ it should be part of the definition.
+
+782
+0:56:32,440 --> 0:56:35,680
+ If there is no informed consent, then it's not really consent.
+
+783
+0:56:35,800 --> 0:56:36,400
+ What is it, then?
+
+784
+0:56:36,520 --> 0:56:36,980
+ I don't know.
+
+785
+0:56:37,880 --> 0:56:42,940
+ The second part was that I forgot to mention accessibility and UX requirements.
+
+786
+0:56:43,420 --> 0:56:50,260
+ So, of course, UX has to be catering for the user's needs.
+
+787
+0:56:51,300 --> 0:56:52,620
+ Yeah, super basic stuff.
+
+788
+0:56:53,220 --> 0:56:54,640
+ I should have added that.
+
+789
+0:56:55,540 --> 0:56:56,080
+ Thank you.
+
+790
+0:56:56,080 --> 0:56:56,120
+ Thank you.
+
+791
+0:57:00,560 --> 0:57:02,180
+ In my experience,
+
+792
+0:57:02,180 --> 0:57:09,240
+ users, or everyday users, they find it very hard to make that risk assessment of what
+
+793
+0:57:09,240 --> 0:57:14,140
+ is the consequence of me giving, except that you can use my data.
+
+794
+0:57:14,140 --> 0:57:18,900
+ So how will this tool help people do that risk assessment?
+
+795
+0:57:18,900 --> 0:57:24,040
+ I know for the site, okay, I can see if I make a consent, I can do this, I cannot do
+
+796
+0:57:24,040 --> 0:57:25,040
+ that.
+
+797
+0:57:25,040 --> 0:57:26,040
+ I understand that.
+
+798
+0:57:26,040 --> 0:57:29,120
+ But in the broader picture, how will it help that assessment?
+
+799
+0:57:29,120 --> 0:57:31,020
+ I think it's really important.
+
+800
+0:57:31,020 --> 0:57:32,020
+ Yeah.
+
+801
+0:57:32,020 --> 0:57:39,780
+ I think that knowing that you can always go back and revoke your consent, and from
+
+802
+0:57:39,780 --> 0:57:47,920
+ the beginning, knowing how to do that is super critical because, yes, we cannot guarantee
+
+803
+0:57:47,920 --> 0:57:52,440
+ that the user actually reads what they accept.
+
+804
+0:57:52,440 --> 0:57:54,580
+ There's no guarantee of that.
+
+805
+0:57:54,580 --> 0:57:58,780
+ They scroll through the window in two seconds, or five seconds, or 20 seconds.
+
+806
+0:57:58,780 --> 0:58:00,140
+ When have they read it?
+
+807
+0:58:00,140 --> 0:58:01,140
+ It's...
+
+808
+0:58:01,140 --> 0:58:01,880
+ It's...
+
+809
+0:58:01,880 --> 0:58:08,020
+ These types of functionality doesn't work, but maybe establishing a convention about
+
+810
+0:58:08,020 --> 0:58:15,960
+ consent, so that if you have a user interface, then kind of the same way that we are switching
+
+811
+0:58:15,960 --> 0:58:23,340
+ between light, dark mode themes, or switching languages, we also know that this icon means
+
+812
+0:58:23,340 --> 0:58:24,340
+ consent.
+
+813
+0:58:24,340 --> 0:58:26,000
+ I don't even know if...
+
+814
+0:58:26,000 --> 0:58:29,840
+ Maybe someone uses the checkbox to say it's about consent, but yeah.
+
+815
+0:58:29,840 --> 0:58:30,840
+ Like a...
+
+816
+0:58:30,840 --> 0:58:36,800
+ Well-established convention for consent will mean that people can change it, and then
+
+817
+0:58:36,800 --> 0:58:40,940
+ have a system that understands that consent can always change at any time.
+
+818
+0:58:40,940 --> 0:58:41,940
+ That's...
+
+819
+0:58:41,940 --> 0:58:42,940
+ Awesome.
+
+820
+0:58:42,940 --> 0:58:45,480
+ We are at the hour.
+
+821
+0:58:45,480 --> 0:58:47,480
+ Let's give a round of applause for Benjamin.
+
+822
+0:58:47,480 --> 0:58:48,480
+ Yeah.
+
+823
+0:58:48,480 --> 0:58:49,480
+ Thank you for listening.

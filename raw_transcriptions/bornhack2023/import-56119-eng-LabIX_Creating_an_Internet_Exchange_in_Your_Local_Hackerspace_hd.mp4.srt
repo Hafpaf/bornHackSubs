@@ -1,0 +1,1999 @@
+# Transcribed 2023-11-12T12 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:11,560
+ To find information on how an internet exchange operates, there is some information that is
+
+2
+0:00:11,560 --> 0:00:16,860
+ a very high level and doesn't really explain too much.
+
+3
+0:00:16,860 --> 0:00:21,960
+ And then there is also the administration of talking to RIPE and what objects do you
+
+4
+0:00:21,960 --> 0:00:26,600
+ need and how do you get IP addresses and stuff like that.
+
+5
+0:00:26,600 --> 0:00:31,620
+ There's many policies included, and yes, I wrote everything as an acronym soup because
+
+6
+0:00:31,620 --> 0:00:35,040
+ that's pretty much what it is.
+
+7
+0:00:35,040 --> 0:00:41,260
+ So Labix is a community-run internet exchange.
+
+8
+0:00:41,260 --> 0:00:49,680
+ We made this because I like BGP and network routing, and I would like to play more with
+
+9
+0:00:49,680 --> 0:00:51,020
+ it.
+
+10
+0:00:51,020 --> 0:00:54,860
+ So in Labasat we have a facility called Labicolo.
+
+11
+0:00:54,860 --> 0:00:56,540
+ We will get more into that.
+
+12
+0:00:56,540 --> 0:00:58,200
+ At some point.
+
+13
+0:00:58,200 --> 0:01:04,320
+ But we offer a service called a route server.
+
+14
+0:01:04,320 --> 0:01:06,880
+ Again I will get more into it.
+
+15
+0:01:06,880 --> 0:01:17,120
+ What that is, we can assist you in how should you talk to a local internet registry to get
+
+16
+0:01:17,120 --> 0:01:19,680
+ an AS number and IP addresses.
+
+17
+0:01:19,680 --> 0:01:24,860
+ You can actually start looking into real network routing stuff and not just play with it in
+
+18
+0:01:24,860 --> 0:01:26,540
+ a virtual machine.
+
+19
+0:01:26,540 --> 0:01:37,200
+ You can do BGP stuff, BGP security, and research and build on what is RPKI and things like this.
+
+20
+0:01:37,200 --> 0:01:44,400
+ Also, yes, I wrote 9KM2, we don't have that currently, but we will very soon set that
+
+21
+0:01:44,400 --> 0:01:45,400
+ up to 9KM2.
+
+22
+0:01:45,400 --> 0:01:49,620
+ It's currently 1,500, like most.
+
+23
+0:01:49,620 --> 0:01:51,200
+ So what is an internet exchange?
+
+24
+0:01:51,200 --> 0:01:53,200
+ Well, it's a very simple way.
+
+25
+0:01:53,200 --> 0:01:54,200
+ It's a VLAN on a little switch.
+
+26
+0:01:54,200 --> 0:01:55,200
+ It's a very simple way.
+
+27
+0:01:55,200 --> 0:01:56,200
+ It's a VLAN on a little switch.
+
+28
+0:01:56,200 --> 0:02:00,320
+ And then some networks are connected to it.
+
+29
+0:02:00,320 --> 0:02:03,500
+ Well, that doesn't really say much.
+
+30
+0:02:03,500 --> 0:02:07,020
+ So let me explain what is the internet.
+
+31
+0:02:07,020 --> 0:02:14,760
+ First, this is how you do it, how to do internet routing or network routing.
+
+32
+0:02:14,760 --> 0:02:15,760
+ We have some prefixes.
+
+33
+0:02:15,760 --> 0:02:20,160
+ You find a facility that would like to host you, that includes some power and cooling
+
+34
+0:02:20,160 --> 0:02:22,260
+ and stuff like that.
+
+35
+0:02:22,260 --> 0:02:23,260
+ You install your machines.
+
+36
+0:02:23,260 --> 0:02:24,260
+ You set up a routing daemon.
+
+37
+0:02:24,260 --> 0:02:25,260
+ There could be like a bird.
+
+38
+0:02:25,260 --> 0:02:26,200
+ If you do that, it's a bird.
+
+39
+0:02:26,200 --> 0:02:30,700
+ You can use Linux or other things.
+
+40
+0:02:30,700 --> 0:02:37,120
+ Then you have some peers that are operating network operators.
+
+41
+0:02:37,120 --> 0:02:40,660
+ And you will peer with them to get their content.
+
+42
+0:02:40,660 --> 0:02:47,860
+ And then you also need a transit uplink, which is how do you, well, now you're in like facility
+
+43
+0:02:47,860 --> 0:02:52,120
+ with, and you can connect with the other people in that facility, but how do you connect with
+
+44
+0:02:52,120 --> 0:02:53,120
+ the rest of the world?
+
+45
+0:02:53,120 --> 0:02:54,120
+ We're not Copenhagen.
+
+46
+0:02:54,120 --> 0:02:55,200
+ It's just, it doesn't contain the whole network.
+
+47
+0:02:55,200 --> 0:02:56,200
+ Yeah.
+
+48
+0:02:56,200 --> 0:02:58,020
+ It's just the whole internet.
+
+49
+0:02:58,020 --> 0:03:06,920
+ So you need a transit that says we will like to transport the traffic from your network
+
+50
+0:03:06,920 --> 0:03:11,780
+ over to the destination and profit, I guess.
+
+51
+0:03:11,780 --> 0:03:15,140
+ So let's set a scenario.
+
+52
+0:03:15,140 --> 0:03:16,520
+ You want Eyeball ISP.
+
+53
+0:03:16,520 --> 0:03:24,700
+ You are currently located in Hyggedam, coincidentally where we are, and an Eyeball ISP is that we
+
+54
+0:03:24,700 --> 0:03:25,700
+ have some customers.
+
+55
+0:03:25,700 --> 0:03:33,520
+ And Eyeballs, they consume content that could be watching their favorite series or watching
+
+56
+0:03:33,520 --> 0:03:37,940
+ the news or somehow get content.
+
+57
+0:03:37,940 --> 0:03:42,120
+ You don't host servers necessarily.
+
+58
+0:03:42,120 --> 0:03:54,060
+ So for you to be able to have, to say, like when a customer wants to, when a customer
+
+59
+0:03:54,060 --> 0:03:55,060
+ wants to...
+
+60
+0:03:55,060 --> 0:04:01,120
+ Connect to another provider to get content, you need some IP addresses.
+
+61
+0:04:01,120 --> 0:04:07,380
+ That is, well, hopefully most of you know, some is like an address, like a postal address
+
+62
+0:04:07,380 --> 0:04:09,720
+ where I do the thing you need to go.
+
+63
+0:04:09,720 --> 0:04:13,820
+ You also need that for your servers.
+
+64
+0:04:13,820 --> 0:04:18,260
+ Then yeah, you need housing and fiber stuff.
+
+65
+0:04:18,260 --> 0:04:22,300
+ I won't go into the fiber stuff.
+
+66
+0:04:22,300 --> 0:04:24,880
+ I don't dig too much into layer one things.
+
+67
+0:04:24,880 --> 0:04:28,740
+ Layer three, in this case.
+
+68
+0:04:28,740 --> 0:04:35,160
+ So how does the network connect with other networks?
+
+69
+0:04:35,160 --> 0:04:38,300
+ You probably cannot see my mouse.
+
+70
+0:04:38,300 --> 0:04:44,640
+ So we have in the left, it's called, well, in this case, it's called Acme.
+
+71
+0:04:44,640 --> 0:04:46,440
+ This is one network provider.
+
+72
+0:04:46,440 --> 0:04:52,540
+ What if Acme is, Acme one and Acme two are not located in the same city and the same
+
+73
+0:04:52,540 --> 0:04:53,540
+ facility?
+
+74
+0:04:53,540 --> 0:04:54,540
+ Well.
+
+75
+0:04:54,540 --> 0:04:59,000
+ So in our lovely picture here, we can have, we have two transit providers that need to
+
+76
+0:04:59,000 --> 0:05:02,360
+ go through first.
+
+77
+0:05:02,360 --> 0:05:08,800
+ So says Comcast and say DDT, which are some providers in the world that exist.
+
+78
+0:05:08,800 --> 0:05:12,020
+ And then we can go into Acme number two.
+
+79
+0:05:12,020 --> 0:05:21,980
+ That could be where all the nice services are hosted or similar.
+
+80
+0:05:21,980 --> 0:05:23,540
+ It could also be that.
+
+81
+0:05:23,540 --> 0:05:24,540
+ What if Acme one is not located in the same city and the same facility?
+
+82
+0:05:24,540 --> 0:05:30,760
+ Well, Acme one and Acme two are located in the same city, they're just not really connected.
+
+83
+0:05:30,760 --> 0:05:33,460
+ And it would be perhaps too expensive to connect them.
+
+84
+0:05:33,460 --> 0:05:37,100
+ So let's look at what is an autonomous system.
+
+85
+0:05:37,100 --> 0:05:43,720
+ It says AS one and AS two here, AS something, something, something in other ones.
+
+86
+0:05:43,720 --> 0:05:51,660
+ So we have a lovely RFC that describes AS as a connected group of one or more prefixes
+
+87
+0:05:51,660 --> 0:05:53,360
+ run by one or more network operators.
+
+88
+0:05:53,360 --> 0:05:54,360
+ Which has a set of prefixes.
+
+89
+0:05:54,360 --> 0:05:58,780
+ Has a single and clearly defined routing policy.
+
+90
+0:05:58,780 --> 0:06:00,980
+ I can explain a tiny bit more on that.
+
+91
+0:06:00,980 --> 0:06:06,160
+ But it is the most clear explanation I have found until now.
+
+92
+0:06:06,160 --> 0:06:08,920
+ So that's why it's here.
+
+93
+0:06:08,920 --> 0:06:22,900
+ So an AS is an organization, as I said, and we have used what we call AS numbers or ASNs
+
+94
+0:06:22,900 --> 0:06:23,900
+ to identify.
+
+95
+0:06:23,900 --> 0:06:26,340
+ Identify an organization.
+
+96
+0:06:26,340 --> 0:06:27,340
+ That could be your transit provider.
+
+97
+0:06:27,340 --> 0:06:31,440
+ That could also be your friends in the other side of the facility.
+
+98
+0:06:31,440 --> 0:06:37,120
+ And they have some, well, you and the other ASs have some prefixes allocated to them so
+
+99
+0:06:37,120 --> 0:06:44,780
+ you know where the content should go or the traffic should go.
+
+100
+0:06:44,780 --> 0:06:47,820
+ So the routing policy.
+
+101
+0:06:47,820 --> 0:06:52,320
+ Well it's found in databases.
+
+102
+0:06:52,320 --> 0:06:53,320
+ Regional internet.
+
+103
+0:06:53,320 --> 0:06:59,700
+ Registry database like RIPE's database.
+
+104
+0:06:59,700 --> 0:07:08,040
+ These routing policies says something like I have authorized to use these IP prefixes
+
+105
+0:07:08,040 --> 0:07:15,800
+ and they should, so now see IP prefixes at all traffic to these prefixes should be different
+
+106
+0:07:15,800 --> 0:07:16,800
+ to me.
+
+107
+0:07:16,800 --> 0:07:21,560
+ It could also be that you have some customers that may be a little bit more fancy with their
+
+108
+0:07:21,560 --> 0:07:22,560
+ networking.
+
+109
+0:07:23,320 --> 0:07:28,000
+ And they would also like to announce through you.
+
+110
+0:07:28,000 --> 0:07:31,160
+ So you are their transit.
+
+111
+0:07:31,160 --> 0:07:37,680
+ And that could be some business customers, for example, or in our case, Labitat or me
+
+112
+0:07:37,680 --> 0:07:41,960
+ where Labitat is my uplink.
+
+113
+0:07:41,960 --> 0:07:49,700
+ I have included a lot of places, links to things that could be read more since I found
+
+114
+0:07:49,700 --> 0:07:50,700
+ this useful.
+
+115
+0:07:50,700 --> 0:07:51,700
+ I have left them in.
+
+116
+0:07:51,700 --> 0:07:52,700
+ Okay.
+
+117
+0:07:52,700 --> 0:07:58,080
+ So peering and transit.
+
+118
+0:07:58,080 --> 0:08:04,460
+ Well first peering is that we agree it's free to both of us.
+
+119
+0:08:04,460 --> 0:08:09,420
+ There is some optics fibers included and like things like cross connect where you have to
+
+120
+0:08:09,420 --> 0:08:15,520
+ like you are located in data center and you would like to connect to the other side of
+
+121
+0:08:15,520 --> 0:08:16,520
+ the data center.
+
+122
+0:08:16,520 --> 0:08:18,580
+ So the data center takes a bit of money for that.
+
+123
+0:08:18,580 --> 0:08:19,700
+ It costs usually some X amount per month.
+
+124
+0:08:19,700 --> 0:08:20,700
+ Okay.
+
+125
+0:08:20,700 --> 0:08:21,700
+ So that's that.
+
+126
+0:08:21,700 --> 0:08:22,700
+ Okay.
+
+127
+0:08:22,700 --> 0:08:25,700
+ So we only send traffic to each other.
+
+128
+0:08:25,700 --> 0:08:28,460
+ That is totally fine.
+
+129
+0:08:28,460 --> 0:08:35,140
+ As long as we don't, that's like a balance and we don't tip the balance where I send
+
+130
+0:08:35,140 --> 0:08:38,920
+ a lot of traffic to you and you don't send that much traffic to me.
+
+131
+0:08:38,920 --> 0:08:39,920
+ But it's fine.
+
+132
+0:08:39,920 --> 0:08:42,060
+ We peer with a lot of people.
+
+133
+0:08:42,060 --> 0:08:43,700
+ Then we also have transit.
+
+134
+0:08:43,700 --> 0:08:47,700
+ So transit is, yes, where it costs per megabit.
+
+135
+0:08:47,700 --> 0:08:50,700
+ And this I will transport traffic from you to other networks.
+
+136
+0:08:50,700 --> 0:08:51,700
+ Okay.
+
+137
+0:08:51,700 --> 0:08:58,320
+ As I always said, it's if you want to go to other side of the globe, you perhaps don't
+
+138
+0:08:58,320 --> 0:09:02,560
+ have the funds to lay a cable over the Atlantic or something similar.
+
+139
+0:09:02,560 --> 0:09:07,940
+ So someone has done that for you and you would just pay them.
+
+140
+0:09:07,940 --> 0:09:12,100
+ Well what is the instant exchange then?
+
+141
+0:09:12,100 --> 0:09:15,580
+ We keep local traffic local.
+
+142
+0:09:15,580 --> 0:09:17,700
+ We avoid what we call the Trombone effect.
+
+143
+0:09:17,700 --> 0:09:18,700
+ This is an image.
+
+144
+0:09:18,700 --> 0:09:19,700
+ Okay.
+
+145
+0:09:19,700 --> 0:09:29,040
+ This is an image of the United States, San Francisco, New York, and Los Angeles.
+
+146
+0:09:29,040 --> 0:09:34,940
+ So what would be the shortest path between San Francisco and Los Angeles?
+
+147
+0:09:34,940 --> 0:09:40,160
+ Clearly not New York at least.
+
+148
+0:09:40,160 --> 0:09:46,320
+ That can sometimes happen with how due to some characteristics with our network routing,
+
+149
+0:09:46,320 --> 0:09:48,320
+ you usually don't have a lot of traffic.
+
+150
+0:09:48,320 --> 0:09:49,320
+ Okay.
+
+151
+0:09:49,320 --> 0:09:57,700
+ You look at the shortest path, for example, in many, many cases, also other things.
+
+152
+0:09:57,700 --> 0:10:03,580
+ But it could be that your transit just didn't have a direct connection between San Francisco
+
+153
+0:10:03,580 --> 0:10:05,440
+ and Los Angeles.
+
+154
+0:10:05,440 --> 0:10:10,480
+ So you would need to go over New York.
+
+155
+0:10:10,480 --> 0:10:15,320
+ So we have the instant exchange to avoid these kind of things.
+
+156
+0:10:15,320 --> 0:10:18,660
+ It also gives lower latency because, again, we keep local traffic local.
+
+157
+0:10:18,660 --> 0:10:27,040
+ It's easier to interconnect with other networks.
+
+158
+0:10:27,040 --> 0:10:33,380
+ So what if we are two small providers and we don't necessarily have the need to connect
+
+159
+0:10:33,380 --> 0:10:35,380
+ to each other?
+
+160
+0:10:35,380 --> 0:10:40,660
+ But why should we pay transit when we are located in the same facility?
+
+161
+0:10:40,660 --> 0:10:48,660
+ We can't justify paying the fees to have this cross-connect active.
+
+162
+0:10:48,660 --> 0:10:51,660
+ We have similar things.
+
+163
+0:10:51,660 --> 0:11:00,360
+ So when you have the internet exchange, it makes things a bit easier when you are local.
+
+164
+0:11:00,360 --> 0:11:07,860
+ So here is a very, very simplified topology of an internet exchange point.
+
+165
+0:11:07,860 --> 0:11:11,960
+ Well there are four providers of some kind.
+
+166
+0:11:11,960 --> 0:11:17,040
+ They all connect with one link into a Meet Me room, as we call it.
+
+167
+0:11:17,040 --> 0:11:18,000
+ And they connect to a meeting room.
+
+168
+0:11:18,000 --> 0:11:32,520
+ With this, we now, instead of everybody connecting to each other, I have one cable to you, you
+
+169
+0:11:32,520 --> 0:11:36,940
+ have one cable to you, I have one cable to you, we just have one cable in and then we
+
+170
+0:11:36,940 --> 0:11:38,760
+ get the traffic via that cable.
+
+171
+0:11:38,760 --> 0:11:46,720
+ That could be like a larger cable, for example.
+
+172
+0:11:46,720 --> 0:11:54,900
+ What I showed here is, yes, we do have the meet-me-room, but in an internet exchange,
+
+173
+0:11:54,900 --> 0:12:06,580
+ we also can go from what we call bilateral to multilateral peering.
+
+174
+0:12:06,580 --> 0:12:13,900
+ It is from many-to-many to one-to-many, as the image also shows.
+
+175
+0:12:13,900 --> 0:12:16,600
+ We have the route server.
+
+176
+0:12:16,600 --> 0:12:26,000
+ Again, I have explained this because it was not easy for me in the first five hours to
+
+177
+0:12:26,000 --> 0:12:30,280
+ understand, why do we need a route server?
+
+178
+0:12:30,280 --> 0:12:34,540
+ It was not clear, but now it is more clear for me at least.
+
+179
+0:12:34,540 --> 0:12:39,700
+ So the control plane traffic is now aggregated to the route server.
+
+180
+0:12:39,700 --> 0:12:45,780
+ We don't necessarily aggregate the data plane traffic.
+
+181
+0:12:45,780 --> 0:12:48,080
+ but we at least control the traffic.
+
+182
+0:12:49,420 --> 0:12:50,760
+ It kind of looks like this.
+
+183
+0:12:51,800 --> 0:12:56,800
+ So we need less maintenance, we need less points,
+
+184
+0:12:57,340 --> 0:13:02,340
+ like less configurations that you can screw up with.
+
+185
+0:13:05,460 --> 0:13:08,820
+ If I'm already connected to a route server
+
+186
+0:13:08,820 --> 0:13:13,820
+ and we have some new clients that comes to our IXP
+
+187
+0:13:13,820 --> 0:13:15,500
+ and then joins the route server,
+
+188
+0:13:15,500 --> 0:13:17,260
+ we can immediately peer with each other
+
+189
+0:13:17,260 --> 0:13:20,320
+ without necessarily agreeing
+
+190
+0:13:21,120 --> 0:13:24,260
+ and talk to each other directly.
+
+191
+0:13:24,260 --> 0:13:27,940
+ We can have our peering policy set as,
+
+192
+0:13:27,940 --> 0:13:31,140
+ yes, I would like to accept everybody who's on the route server.
+
+193
+0:13:32,580 --> 0:13:33,760
+ We can also have a little more sense
+
+194
+0:13:33,760 --> 0:13:37,600
+ on what is going on in our IXP, like traffic stats.
+
+195
+0:13:39,940 --> 0:13:42,560
+ So our route server looks like this.
+
+196
+0:13:42,560 --> 0:13:43,800
+ It's a very, very, very, very, very, very, very, very,
+
+197
+0:13:43,800 --> 0:13:44,940
+ very, very small machine.
+
+198
+0:13:46,020 --> 0:13:47,420
+ It uses six for the power.
+
+199
+0:13:50,100 --> 0:13:53,360
+ We chose this because it was free and we had it,
+
+200
+0:13:53,360 --> 0:13:54,740
+ I had it in my storage.
+
+201
+0:13:54,740 --> 0:13:59,740
+ So it fits really well for our use case.
+
+202
+0:14:01,220 --> 0:14:04,180
+ The Labasat Internet Exchange is only
+
+203
+0:14:04,180 --> 0:14:07,760
+ for very small devices, embedded devices,
+
+204
+0:14:07,760 --> 0:14:11,920
+ like APU2 or Raspberry Pi.
+
+205
+0:14:11,920 --> 0:14:12,760
+ So,
+
+206
+0:14:13,800 --> 0:14:18,800
+ yeah, it didn't really make sense to have a large machine
+
+207
+0:14:20,140 --> 0:14:24,380
+ that could do fancy stuff and have many more routes
+
+208
+0:14:24,380 --> 0:14:26,260
+ and things like that.
+
+209
+0:14:26,260 --> 0:14:30,020
+ So the software is, well, Debian is,
+
+210
+0:14:30,020 --> 0:14:33,600
+ we use a route server as a config parser
+
+211
+0:14:33,600 --> 0:14:38,460
+ to then to create our BERT config.
+
+212
+0:14:38,460 --> 0:14:40,600
+ We use BERT as a BTP speaker.
+
+213
+0:14:40,600 --> 0:14:43,100
+ So a route server does a very, very, very, very, very, very,
+
+214
+0:14:43,100 --> 0:14:47,300
+ there's a lot of automation of,
+
+215
+0:14:47,300 --> 0:14:49,900
+ like we have a list of clients and we have some,
+
+216
+0:14:52,900 --> 0:14:55,120
+ we have some AS sets and we have some prefixes
+
+217
+0:14:55,120 --> 0:14:57,900
+ and similar things.
+
+218
+0:14:57,900 --> 0:15:02,480
+ And then a route server creates all the,
+
+219
+0:15:02,480 --> 0:15:05,260
+ all the 300,000 line config files.
+
+220
+0:15:06,180 --> 0:15:07,840
+ So we don't need to maintain that.
+
+221
+0:15:10,480 --> 0:15:12,400
+ Yes, server hosting, it's located in Labicorps,
+
+222
+0:15:12,400 --> 0:15:17,400
+ again, there's links all over the place.
+
+223
+0:15:19,100 --> 0:15:24,100
+ And we, yeah, Oliver and Eskian will go more into details
+
+224
+0:15:24,860 --> 0:15:27,980
+ on the Labicorps on a talk on Sunday, so.
+
+225
+0:15:28,820 --> 0:15:30,300
+ But there's a very short version is,
+
+226
+0:15:30,300 --> 0:15:33,800
+ it's intended for things like Raspberry Pis and APU2s.
+
+227
+0:15:36,100 --> 0:15:41,100
+ But at Bornhag, you can connect to a Labifer village,
+
+228
+0:15:41,240 --> 0:15:42,200
+ or you can connect via BERT.
+
+229
+0:15:42,200 --> 0:15:45,020
+ You can connect via VLAN, which I haven't received yet.
+
+230
+0:15:45,020 --> 0:15:48,000
+ So, yeah, but you can connect.
+
+231
+0:15:49,240 --> 0:15:52,880
+ So we have, we have made it so,
+
+232
+0:15:52,880 --> 0:15:54,900
+ since our uplink is very nice,
+
+233
+0:15:55,840 --> 0:16:00,660
+ that we have transported the VLAN via Labitat
+
+234
+0:16:00,660 --> 0:16:04,080
+ and then over FiberVue,
+
+235
+0:16:05,680 --> 0:16:09,660
+ and which is then Bornhag's uplink.
+
+236
+0:16:09,660 --> 0:16:10,500
+ And that means we can have the whole VLAN transported,
+
+237
+0:16:10,500 --> 0:16:11,400
+ and that means we can have the whole VLAN transported,
+
+238
+0:16:11,400 --> 0:16:11,780
+ and that means we can have the whole VLAN transported,
+
+239
+0:16:11,780 --> 0:16:12,620
+ and that means we can have the whole VLAN transported,
+
+240
+0:16:12,620 --> 0:16:13,440
+ and that means we can have the whole VLAN transported,
+
+241
+0:16:13,440 --> 0:16:16,440
+ and that the whole peeing line transported down to the camp.
+
+242
+0:16:16,440 --> 0:16:17,540
+ and that the whole peeing line transported down to the camp.
+
+243
+0:16:17,540 --> 0:16:20,540
+ That's a bit weird, but we can, since we could, we did it.
+
+244
+0:16:20,540 --> 0:16:22,540
+ That's a bit weird, but we can, since we could, we did it.
+
+245
+0:16:24,180 --> 0:16:26,100
+ So our switch looks like,
+
+246
+0:16:26,100 --> 0:16:28,120
+ our switch and our rack looks like this.
+
+247
+0:16:28,120 --> 0:16:29,940
+ It's a horrible mess.
+
+248
+0:16:29,940 --> 0:16:34,940
+ But again, the switch was a pre-used thing,
+
+249
+0:16:36,360 --> 0:16:38,380
+ it's a Cisco switch.
+
+250
+0:16:38,380 --> 0:16:39,860
+ We are all using it.
+
+251
+0:16:39,860 --> 0:16:41,260
+ It could do Mac port filtering, and that's like,
+
+252
+0:16:41,260 --> 0:16:43,260
+ It could do Mac port filtering, and that's like,
+
+253
+0:16:43,260 --> 0:16:46,660
+ fine, it's nice for writing loops.
+
+254
+0:16:48,580 --> 0:16:51,800
+ So, yeah, it's a switch,
+
+255
+0:16:51,800 --> 0:16:54,640
+ that's not really much to show,
+
+256
+0:16:54,640 --> 0:16:55,880
+ other than they can do that.
+
+257
+0:16:55,880 --> 0:16:58,980
+ We actually tested out a switch which we found out
+
+258
+0:16:58,980 --> 0:17:02,860
+ could not use Mac port filtering, so yeah.
+
+259
+0:17:02,860 --> 0:17:04,020
+ That's why we keep this.
+
+260
+0:17:06,660 --> 0:17:09,680
+ We have a peeing policy set up.
+
+261
+0:17:11,260 --> 0:17:14,840
+ So when you join a Internet Exchange or join,
+
+262
+0:17:16,400 --> 0:17:18,760
+ start peering with other networks,
+
+263
+0:17:18,760 --> 0:17:22,560
+ it, you accept that peering policy.
+
+264
+0:17:22,560 --> 0:17:25,920
+ So it could be like, I only accept traffic
+
+265
+0:17:25,920 --> 0:17:30,920
+ that is distant to you, and how, and sorry,
+
+266
+0:17:31,040 --> 0:17:33,440
+ you only, I want to send traffic distant to you,
+
+267
+0:17:33,440 --> 0:17:36,120
+ and you want to send traffic distant to me.
+
+268
+0:17:36,120 --> 0:17:39,380
+ In a Internet Exchange, we have a few more things,
+
+269
+0:17:39,380 --> 0:17:40,220
+ not much.
+
+270
+0:17:40,220 --> 0:17:41,100
+ Not much. Well, we say a few things, not much.
+
+271
+0:17:41,100 --> 0:17:50,680
+ We can say we will accept IPv4, ARP and IPv6 addresses, Ethernet frames, sorry.
+
+272
+0:17:50,680 --> 0:17:57,220
+ We do not like ProxyARP, we do not like OSPF and other kinds of things.
+
+273
+0:17:57,220 --> 0:18:04,740
+ We will do make port filtering again to avoid a lot of loops and the same with ProxyARP,
+
+274
+0:18:04,740 --> 0:18:09,300
+ it creates funny things on the network.
+
+275
+0:18:09,300 --> 0:18:24,240
+ So yes, we will not, routes learned through the peering network are not allowed to be
+
+276
+0:18:24,240 --> 0:18:35,300
+ announced by BGP and we also would not like to be connected via a tunnel of some kind
+
+277
+0:18:35,300 --> 0:18:38,840
+ where the MTU is lower than 1500.
+
+278
+0:18:38,840 --> 0:18:46,000
+ So this means you have to be directly connected to us and not a remote IEX which defeats a
+
+279
+0:18:46,000 --> 0:18:50,280
+ lot of the purposes of an internet exchange.
+
+280
+0:18:50,280 --> 0:18:57,320
+ Though I have nothing against remote internet exchanges, but for all purposes, it didn't
+
+281
+0:18:57,320 --> 0:19:01,920
+ really fit.
+
+282
+0:19:01,920 --> 0:19:08,780
+ So well, you have to get some IP address.
+
+283
+0:19:08,780 --> 0:19:14,960
+ Also, internet resources, I call it here, but yeah, IP allocations.
+
+284
+0:19:14,960 --> 0:19:22,640
+ So an AS number and an IP address is like, there is a large pool, I usually call it a
+
+285
+0:19:22,640 --> 0:19:31,660
+ cake, so a large cake, IANA owns a cake and then RIPE, which is the organization handing
+
+286
+0:19:31,660 --> 0:19:35,780
+ out IP addresses in Europe and Russia and Middle East.
+
+287
+0:19:35,780 --> 0:19:38,020
+ They get a bit smaller.
+
+288
+0:19:38,020 --> 0:19:43,680
+ They get a bit smaller piece of the cake, which they can then hand out.
+
+289
+0:19:43,680 --> 0:19:51,920
+ So you have the local internet registry that then they can then have a little smaller piece
+
+290
+0:19:51,920 --> 0:19:55,920
+ of the cake, which they can then hand out to you.
+
+291
+0:19:55,920 --> 0:20:04,640
+ So RIPE do not want to talk to you, and they have decided that they do not talk to you
+
+292
+0:20:04,640 --> 0:20:06,200
+ unless you are a local internet registry.
+
+293
+0:20:06,200 --> 0:20:07,200
+ And that means you are RIPE NCC.
+
+294
+0:20:07,200 --> 0:20:08,000
+ That means you are RIPE NCC.
+
+295
+0:20:08,020 --> 0:20:10,180
+ That means you are RIPE NCC member.
+
+296
+0:20:10,180 --> 0:20:15,300
+ I am a private person, so if I want an AS number, I do not necessarily want to pay the
+
+297
+0:20:15,300 --> 0:20:21,700
+ 1,600 euro fee per year to be able to talk to RIPE.
+
+298
+0:20:21,700 --> 0:20:29,540
+ So you need a sponsoring LIA to be able to get addresses.
+
+299
+0:20:29,540 --> 0:20:32,300
+ You can find some nice people.
+
+300
+0:20:32,300 --> 0:20:37,680
+ You can also pay a bit for it, and there are multiple ways to do it.
+
+301
+0:20:38,020 --> 0:20:41,380
+ So we have found a LIA that we really like.
+
+302
+0:20:41,380 --> 0:20:49,460
+ It is a project called Free Transit Project, and they are some nice people.
+
+303
+0:20:49,460 --> 0:20:55,460
+ So what is the difference between IP addresses when you have an IXP and you are a network
+
+304
+0:20:55,460 --> 0:21:01,420
+ operator is that you would usually like your IP address to be globally routable.
+
+305
+0:21:01,420 --> 0:21:02,900
+ That means it is your IP addresses, and the route to them is in everybody's routing table.
+
+306
+0:21:02,900 --> 0:21:03,820
+ So basically what you are doing here is you are going to go to the IP addresses at this
+
+307
+0:21:03,820 --> 0:21:06,780
+ IP address and you are going to go to your IP addresses at this IP address and the IP address
+
+308
+0:21:06,780 --> 0:21:07,780
+ and the IP address is in this IP address.
+
+309
+0:21:08,020 --> 0:21:20,840
+ So, that is reasonable, but when you have an IXP, you do not necessarily want to be
+
+310
+0:21:20,840 --> 0:21:22,520
+ globally routable.
+
+311
+0:21:22,520 --> 0:21:29,300
+ There's no reasons for the routers in your network to have a global route.
+
+312
+0:21:29,300 --> 0:21:36,040
+ It should only be the routers on the peering LAN which should be able to connect to you.
+
+313
+0:21:36,040 --> 0:21:39,280
+ So yeah.
+
+314
+0:21:39,280 --> 0:21:52,980
+ You have the, well, yeah, when you, well, so how do you, how do I know that you have
+
+315
+0:21:52,980 --> 0:21:56,180
+ some resources allocated?
+
+316
+0:21:56,180 --> 0:22:04,020
+ It is available in the regional Internet registries databases, again, like RIPE, that we use in
+
+317
+0:22:04,020 --> 0:22:05,420
+ our case.
+
+318
+0:22:05,420 --> 0:22:12,420
+ And you, so what you need to create an IX, or just as a person, you need an organization
+
+319
+0:22:12,420 --> 0:22:22,240
+ object, you need a maintainer object, you need a person object, and also, as a network
+
+320
+0:22:22,240 --> 0:22:24,800
+ operator, you need an AS set.
+
+321
+0:22:24,800 --> 0:22:32,660
+ This is for other networks to include in their routing policies, so they, so others can know
+
+322
+0:22:32,660 --> 0:22:34,660
+ that you are a network operator.
+
+323
+0:22:34,660 --> 0:22:35,180
+ Okay.
+
+324
+0:22:35,180 --> 0:22:40,000
+ And that they are allowed to announce your prefixes, for example.
+
+325
+0:22:40,000 --> 0:22:47,640
+ And I've, again, included a course in, a small, very nice course, in the bottom here.
+
+326
+0:22:47,640 --> 0:22:53,240
+ So I also found out there's some miscellaneous info I could never have guessed.
+
+327
+0:22:53,240 --> 0:23:00,180
+ When talking to our local Internet registry, which then forwarded it all directly to RIPE,
+
+328
+0:23:00,180 --> 0:23:02,180
+ well, the obvious one is that, well, your IX needs a name.
+
+329
+0:23:02,180 --> 0:23:03,180
+ So you need a name.
+
+330
+0:23:03,180 --> 0:23:04,180
+ So you need a name.
+
+331
+0:23:04,180 --> 0:23:05,180
+ So you need a name.
+
+332
+0:23:05,180 --> 0:23:06,180
+ Yeah.
+
+333
+0:23:06,180 --> 0:23:07,180
+ I guess.
+
+334
+0:23:07,180 --> 0:23:12,120
+ So do you also, like, want a route server?
+
+335
+0:23:12,120 --> 0:23:13,820
+ You have to, like, think of that.
+
+336
+0:23:13,820 --> 0:23:15,800
+ And you probably do.
+
+337
+0:23:15,800 --> 0:23:19,880
+ So then that means you need an AS number.
+
+338
+0:23:19,880 --> 0:23:26,320
+ And also, you should probably get a 16-bit AS number, because you never know if some
+
+339
+0:23:26,320 --> 0:23:30,760
+ customers bring really old equipment that cannot handle 32-bit AS numbers.
+
+340
+0:23:30,760 --> 0:23:34,180
+ A little bonus is that, also, that a 32-bit AS number is a bit more expensive than a 32-bit
+
+341
+0:23:34,180 --> 0:23:35,180
+ AS number.
+
+342
+0:23:35,180 --> 0:23:38,080
+ A 32-bit AS number fits on a Danish number plate.
+
+343
+0:23:38,080 --> 0:23:47,560
+ So you can get some, you can find a number plate that is valid in Denmark.
+
+344
+0:23:47,560 --> 0:23:50,000
+ So you also need some prefixes.
+
+345
+0:23:50,000 --> 0:24:00,920
+ And this is one of the reasons why I said this, but not global routable and globally
+
+346
+0:24:00,920 --> 0:24:01,920
+ routable.
+
+347
+0:24:01,920 --> 0:24:11,320
+ You do have a shortage of IPv4 IP addresses, so RIPE is not very keen to hand them out
+
+348
+0:24:11,320 --> 0:24:13,880
+ unless you really, really need.
+
+349
+0:24:13,880 --> 0:24:17,600
+ They have set aside some addresses.
+
+350
+0:24:17,600 --> 0:24:26,300
+ And that's why you say, yes, I so and so swear that I would not use these two as normal services.
+
+351
+0:24:26,300 --> 0:24:28,920
+ And then you will get them.
+
+352
+0:24:28,920 --> 0:24:29,920
+ Hooray.
+
+353
+0:24:29,920 --> 0:24:30,920
+ Hooray.
+
+354
+0:24:30,920 --> 0:24:31,920
+ Hooray.
+
+355
+0:24:31,920 --> 0:24:32,920
+ I will do that.
+
+356
+0:24:32,920 --> 0:24:36,880
+ And then you will get the IP address if you really need, but you probably do not need
+
+357
+0:24:36,880 --> 0:24:37,880
+ a large address.
+
+358
+0:24:37,880 --> 0:24:44,280
+ We use six addresses out of a lot.
+
+359
+0:24:44,280 --> 0:24:45,860
+ So yeah.
+
+360
+0:24:45,860 --> 0:24:55,100
+ So, yeah, again, things I had not thought of was get a hold of a seed or contract confirming
+
+361
+0:24:55,100 --> 0:24:57,820
+ connectivity to IXP Colo site.
+
+362
+0:24:57,820 --> 0:25:01,160
+ I had to find our bell to our uplink.
+
+363
+0:25:01,160 --> 0:25:01,820
+ Oh, yeah.
+
+364
+0:25:01,820 --> 0:25:08,180
+ I guess it makes sense that our facilities somehow should have an uplink.
+
+365
+0:25:08,180 --> 0:25:14,620
+ You also need to say, yes, I do have three customers that are willing to appear at our
+
+366
+0:25:14,620 --> 0:25:27,280
+ XP, so I'm not just creating an XP for one, for me, and then I have no customers.
+
+367
+0:25:27,280 --> 0:25:33,780
+ This also matters if you want to go in and be present on peeringdb as an XP.
+
+368
+0:25:33,780 --> 0:25:43,860
+ Again, it's like the magic number is at least three, and also with the XP database.
+
+369
+0:25:43,860 --> 0:25:53,460
+ These are some databases that network operators use to find out what XP should we go to and
+
+370
+0:25:53,460 --> 0:25:55,980
+ what facilities should we go to and who is there.
+
+371
+0:25:55,980 --> 0:25:57,260
+ So it's a very nice way.
+
+372
+0:25:57,260 --> 0:26:01,600
+ It's a way of network operators talking to each other.
+
+373
+0:26:01,600 --> 0:26:04,820
+ It's kind of like a social media, but we don't post pictures.
+
+374
+0:26:04,820 --> 0:26:09,480
+ We just post where we are.
+
+375
+0:26:09,480 --> 0:26:17,540
+ So yeah, again, facilities, like what is my address, and then you also need at least one
+
+376
+0:26:17,540 --> 0:26:21,300
+ contact person and a phone number.
+
+377
+0:26:21,300 --> 0:26:27,260
+ Just things I didn't know, and then it took five days extra to get all these.
+
+378
+0:26:27,260 --> 0:26:34,480
+ So if you can send it at the same time, it will save a few days of talking back and forth.
+
+379
+0:26:34,480 --> 0:26:39,980
+ So yes, the local internet registry, well, we use the Free Transit project.
+
+380
+0:26:39,980 --> 0:26:42,140
+ I have used it for my own AS number.
+
+381
+0:26:42,140 --> 0:26:46,040
+ There are some nice people, also some hackers.
+
+382
+0:26:46,040 --> 0:26:54,260
+ So I like this, but also I have a bias because I know some of them personally.
+
+383
+0:26:54,260 --> 0:26:55,260
+ Yeah.
+
+384
+0:26:55,260 --> 0:26:56,260
+ Yeah.
+
+385
+0:26:56,260 --> 0:26:57,260
+ Yeah.
+
+386
+0:26:57,260 --> 0:27:03,260
+ So if you want to find some local internet registry services, you can search on an engine
+
+387
+0:27:03,260 --> 0:27:10,300
+ right there service, and someone will gladly take your money to get an AS number and some
+
+388
+0:27:10,300 --> 0:27:13,860
+ prefixes.
+
+389
+0:27:13,860 --> 0:27:19,440
+ It is really expensive as just an organization to get IPv4 addresses, but I won't dwell too
+
+390
+0:27:19,440 --> 0:27:20,440
+ much into that.
+
+391
+0:27:20,440 --> 0:27:25,300
+ It's just because we have a shortage, and there's a market for that shortage.
+
+392
+0:27:25,300 --> 0:27:26,300
+ So yeah.
+
+393
+0:27:26,300 --> 0:27:27,700
+ So similar projects, well...
+
+394
+0:27:27,700 --> 0:27:28,700
+ Sorry.
+
+395
+0:27:28,700 --> 0:27:29,700
+ My tech phone is calling.
+
+396
+0:27:29,700 --> 0:27:30,700
+ Okay.
+
+397
+0:27:30,700 --> 0:27:31,700
+ There we go.
+
+398
+0:27:31,700 --> 0:27:36,700
+ I'm not answering that.
+
+399
+0:27:36,700 --> 0:27:37,700
+ Sorry.
+
+400
+0:27:37,700 --> 0:27:38,700
+ No.
+
+401
+0:27:38,700 --> 0:27:39,700
+ It's all right.
+
+402
+0:27:39,700 --> 0:27:40,700
+ It's fine.
+
+403
+0:27:40,700 --> 0:27:41,700
+ Thank you.
+
+404
+0:27:41,700 --> 0:27:42,700
+ Thank you.
+
+405
+0:27:42,700 --> 0:27:43,700
+ Thank you.
+
+406
+0:27:43,700 --> 0:27:44,700
+ Thank you so much.
+
+407
+0:27:44,700 --> 0:27:45,700
+ Oh, hello.
+
+408
+0:27:45,700 --> 0:27:46,700
+ Thank you.
+
+409
+0:27:46,700 --> 0:27:47,700
+ Nice to meet you.
+
+410
+0:27:47,700 --> 0:27:48,700
+ Nice to meet you.
+
+411
+0:27:48,700 --> 0:27:49,700
+ Nice to meet you.
+
+412
+0:27:49,700 --> 0:27:50,700
+ Yeah.
+
+413
+0:27:50,700 --> 0:27:51,700
+ Thank you.
+
+414
+0:27:51,700 --> 0:27:52,700
+ Thanks, guys.
+
+415
+0:27:52,700 --> 0:27:53,700
+ All right.
+
+416
+0:27:53,700 --> 0:27:54,700
+ Thanks, everyone.
+
+417
+0:27:54,700 --> 0:27:55,700
+ Thank you.
+
+418
+0:27:55,700 --> 0:28:07,520
+ There are many internet exchanges in the world that are community run by network operators,
+
+419
+0:28:07,520 --> 0:28:12,100
+ and it kind of makes sense.
+
+420
+0:28:12,100 --> 0:28:15,380
+ Some people got to get an OAB and said, hey, why don't we do this?
+
+421
+0:28:15,380 --> 0:28:17,060
+ And then they did this.
+
+422
+0:28:17,060 --> 0:28:27,300
+ So yeah, that is also commercially run, a lot of them also, but I find it kind of inspiring
+
+423
+0:28:27,300 --> 0:28:35,880
+ that a lot of them are just, hey, let's do this, and then we did this, and people donated
+
+424
+0:28:35,880 --> 0:28:43,200
+ equipment and money and hosting and stuff, and it kind of just worked really nice.
+
+425
+0:28:43,200 --> 0:28:46,900
+ So yeah.
+
+426
+0:28:46,900 --> 0:28:47,020
+ That's all.
+
+427
+0:28:47,060 --> 0:28:55,380
+ There's also some hosting, some projects similar to ours, our hackerspace.
+
+428
+0:28:55,380 --> 0:29:01,600
+ We have Coloclue in Amsterdam, we have K-Space in Tallinn, we have Community Rec in Zurich.
+
+429
+0:29:01,600 --> 0:29:08,560
+ They offer some hosting of some kind also to small machines and some for larger machines
+
+430
+0:29:08,560 --> 0:29:14,000
+ for private persons or small businesses.
+
+431
+0:29:14,000 --> 0:29:16,900
+ There's also BGP.whatthefuck.
+
+432
+0:29:16,900 --> 0:29:25,400
+ They do BGP stuff similar to us, but they are just in Warsaw instead.
+
+433
+0:29:25,400 --> 0:29:31,840
+ And we have InBerlin also, which I learned recently also existed.
+
+434
+0:29:31,840 --> 0:29:38,040
+ So if you're interested in finding some of these, I will say thanks to my collaborators.
+
+435
+0:29:38,040 --> 0:29:43,900
+ So I did this as a school project also, so hooray, I got easy test points for this thing.
+
+436
+0:29:43,900 --> 0:29:46,740
+ Olivia and Daniel.
+
+437
+0:29:46,740 --> 0:29:53,280
+ They helped me build this, and we also have Jori, which is from the Free Transit project
+
+438
+0:29:53,280 --> 0:29:54,980
+ and really nice.
+
+439
+0:29:54,980 --> 0:30:02,180
+ And then Aspern Tønnesen for having way too much knowledge about networking.
+
+440
+0:30:02,180 --> 0:30:08,940
+ And it's a bit dangerous asking a question because then you get a very long answer.
+
+441
+0:30:08,940 --> 0:30:16,580
+ So here are some good resources, like PNGDB, the interconnection database.
+
+442
+0:30:16,580 --> 0:30:20,340
+ Yes, knock meetups like we have in Denmark.
+
+443
+0:30:20,340 --> 0:30:21,340
+ Most countries have them.
+
+444
+0:30:21,340 --> 0:30:22,340
+ That's the RIPE Academy.
+
+445
+0:30:22,340 --> 0:30:27,340
+ I learned a lot on IPv6 with the course.
+
+446
+0:30:27,340 --> 0:30:29,580
+ That was really nice.
+
+447
+0:30:29,580 --> 0:30:32,080
+ You don't have to take the certificate.
+
+448
+0:30:32,080 --> 0:30:33,360
+ You can take the course.
+
+449
+0:30:33,360 --> 0:30:37,820
+ You can also pay to take the certificate if you want, but you can learn a lot for free.
+
+450
+0:30:37,820 --> 0:30:44,820
+ And yes, the Network Start Research Center.
+
+451
+0:30:44,820 --> 0:30:52,060
+ They also helped me in some of the introductions and slides they have.
+
+452
+0:30:52,060 --> 0:30:54,880
+ It was really nice.
+
+453
+0:30:54,880 --> 0:30:59,420
+ That's also, I didn't go into BGP filtering.
+
+454
+0:30:59,420 --> 0:31:04,020
+ It's a very important thing of network security.
+
+455
+0:31:04,020 --> 0:31:11,580
+ But there is a small guide that InnoNog have made collaboratively, and then InnoNog also
+
+456
+0:31:11,580 --> 0:31:14,380
+ have a thing they call InnoNog Ring.
+
+457
+0:31:14,380 --> 0:31:22,900
+ It's a nice way to find out how reachable is my prefix.
+
+458
+0:31:22,900 --> 0:31:30,600
+ And you can find us in Bornhag, in the Labitat or Labifery Village, as a tech number.
+
+459
+0:31:30,600 --> 0:31:35,140
+ And in all other days, you can find us on Labitat.
+
+460
+0:31:35,140 --> 0:31:37,140
+ We have a website for the IX.
+
+461
+0:31:37,140 --> 0:31:40,000
+ You can also find us on PNGDB.
+
+462
+0:31:40,000 --> 0:31:43,440
+ So if you already got an AS number, you can join us.
+
+463
+0:31:43,440 --> 0:31:44,380
+ Yes.
+
+464
+0:31:44,380 --> 0:31:46,380
+ We would very much like to have you.
+
+465
+0:31:46,380 --> 0:31:49,380
+ Again, VLAN is not decided.
+
+466
+0:31:49,380 --> 0:31:55,820
+ We can also, if you bring a machine, we can probably host it.
+
+467
+0:31:55,820 --> 0:32:01,460
+ And if anyone wants to kind of sponsor this project, because it's been paid out of my
+
+468
+0:32:01,460 --> 0:32:07,680
+ money until now, it wasn't really that expensive, but still, I'm a student, so money.
+
+469
+0:32:07,680 --> 0:32:09,940
+ All hardware is just things we found.
+
+470
+0:32:09,940 --> 0:32:12,900
+ And we're very nice with some updates.
+
+471
+0:32:12,900 --> 0:32:13,900
+ Thank you.
+
+472
+0:32:14,380 --> 0:32:20,580
+ Updated hardware and maybe a second Uplink, because you never know, some machine may just
+
+473
+0:32:20,580 --> 0:32:24,460
+ dig up the road and kill the whole Uplink or something, something.
+
+474
+0:32:24,460 --> 0:32:27,420
+ And we like stickers.
+
+475
+0:32:27,420 --> 0:32:30,200
+ So what is next for this project?
+
+476
+0:32:30,200 --> 0:32:34,500
+ Well, we have RxP running, which is pretty nice.
+
+477
+0:32:34,500 --> 0:32:37,800
+ We have a route server running.
+
+478
+0:32:37,800 --> 0:32:42,700
+ But we would also like to have some, well, more peers, of course, but Looking Glass,
+
+479
+0:32:42,700 --> 0:32:44,180
+ which we have not set up.
+
+480
+0:32:44,180 --> 0:32:57,300
+ But I would very much like to set up ARP sponge to limit ARP requests, yeah, more monitoring,
+
+481
+0:32:57,300 --> 0:33:01,600
+ more documentation, and set up a RPKI relay.
+
+482
+0:33:01,600 --> 0:33:06,960
+ I have set up one for my own network, but not for this.
+
+483
+0:33:06,960 --> 0:33:12,180
+ It uses a very inefficient way to check if AS number and prefix match.
+
+484
+0:33:12,180 --> 0:33:13,180
+ So, yeah.
+
+485
+0:33:13,180 --> 0:33:14,180
+ All right.
+
+486
+0:33:14,180 --> 0:33:15,180
+ Thank you for listening.
+
+487
+0:33:15,180 --> 0:33:16,180
+ Here's to you all.
+
+488
+0:33:16,180 --> 0:33:17,180
+ Good talk.
+
+489
+0:33:44,180 --> 0:33:45,180
+ Thank you.
+
+490
+0:33:45,180 --> 0:33:46,180
+ Thank you.
+
+491
+0:33:46,180 --> 0:33:47,180
+ Bye bye.
+
+492
+0:33:47,180 --> 0:33:48,180
+ Bye bye.
+
+493
+0:33:48,180 --> 0:33:49,180
+ Bye bye.
+
+494
+0:33:49,180 --> 0:33:50,180
+ Bye bye.
+
+495
+0:33:50,180 --> 0:33:51,180
+ .
+
+496
+0:34:14,180 --> 0:34:44,160
+ Thank you.
+
+497
+0:34:44,180 --> 0:34:46,180
+ You
+
+498
+0:35:14,180 --> 0:35:16,180
+ You
+
+499
+0:35:44,180 --> 0:35:46,180
+ You
