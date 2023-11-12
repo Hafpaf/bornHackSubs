@@ -1,0 +1,3663 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:01,040
+ you
+
+2
+0:00:30,000 --> 0:00:31,040
+ you
+
+3
+0:01:00,000 --> 0:01:02,540
+ They did it in the ADA programming language
+
+4
+0:01:03,300 --> 0:01:04,680
+ because
+
+5
+0:01:04,680 --> 0:01:11,780
+ first of all, they like that language, but second because Ada was mainly used by organizations with a lot of money and
+
+6
+0:01:12,960 --> 0:01:14,960
+ they did and
+
+7
+0:01:15,000 --> 0:01:18,220
+ Found out that existing computers were too slow to execute it
+
+8
+0:01:18,780 --> 0:01:25,180
+ the best computers for Ada at the time with the data general eclipse computers and it was too slow even if you had the
+
+9
+0:01:25,180 --> 0:01:29,020
+ Biggest eclipse as a personal workstation. It was still not satisfactory
+
+10
+0:01:30,520 --> 0:01:33,440
+ So they gather the team they built a computer
+
+11
+0:01:35,400 --> 0:01:39,240
+ Then they upgraded the IO processor some years later from a PDP 11
+
+12
+0:01:39,880 --> 0:01:40,940
+ to a
+
+13
+0:01:40,940 --> 0:01:43,760
+ 68,000 processor and then they did so to a
+
+14
+0:01:45,300 --> 0:01:49,360
+ 6820 processor later on but still the same main CPU and
+
+15
+0:01:50,620 --> 0:01:54,500
+ eventually other hardware caught up specifically the RS 6000 computers and
+
+16
+0:01:55,120 --> 0:01:58,980
+ Then they sold the business to IBM for a couple of billions in 2003
+
+17
+0:02:00,000 --> 0:02:04,340
+ The customer base was Department of Defense people
+
+18
+0:02:05,140 --> 0:02:09,160
+ In Denmark, it was Tamar one of the larger European customers apparently
+
+19
+0:02:10,360 --> 0:02:13,280
+ the list price for the machine was 1 million dollars and
+
+20
+0:02:14,060 --> 0:02:18,620
+ You could run between four and eight terminals on it
+
+21
+0:02:20,300 --> 0:02:25,400
+ That's probably built something around a thousand nobody who knows will tell
+
+22
+0:02:26,320 --> 0:02:29,400
+ yet, but we'll get that number and they had absolutely
+
+23
+0:02:30,000 --> 0:02:32,000
+ five-star customer service
+
+24
+0:02:32,180 --> 0:02:38,360
+ What you see on the right side is from the field engineering handbook how to get to Tamar from Copenhagen Airport
+
+25
+0:02:42,900 --> 0:02:45,380
+ All these computers were used for classified work
+
+26
+0:02:46,980 --> 0:02:52,640
+ That's where the money was for that kind of luxury which means there's two ways of get rid of them
+
+27
+0:02:52,980 --> 0:02:57,440
+ The easy one is to run them for a shredder or the other one is to do a hell of a lot of paperwork
+
+28
+0:02:58,580 --> 0:02:59,820
+ so of the
+
+29
+0:02:59,820 --> 0:03:01,820
+ 1,000 or whatever many produced
+
+30
+0:03:02,580 --> 0:03:04,580
+ almost all have been destroyed as
+
+31
+0:03:07,420 --> 0:03:09,420
+ Declassification
+
+32
+0:03:09,420 --> 0:03:14,600
+ At this point in time I know of four surviving rational thousand computers in the entire world
+
+33
+0:03:15,180 --> 0:03:23,440
+ Glenn Beck who worked at rational has one in his basement in New Zealand. It doesn't have a power supply and it doesn't have an IO processor
+
+34
+0:03:24,260 --> 0:03:26,860
+ Probably because they were sent to Denmark to Tamar
+
+35
+0:03:27,720 --> 0:03:29,720
+ So we may actually have those
+
+36
+0:03:30,020 --> 0:03:33,860
+ There's one in computer history museum that Intel has IBM has donated
+
+37
+0:03:34,240 --> 0:03:40,280
+ It probably has all the usual failures according to people in the know and has no software
+
+38
+0:03:41,980 --> 0:03:45,980
+ There was one under the University of hot Alsace in Strasbourg
+
+39
+0:03:47,040 --> 0:03:49,040
+ That's Pierre alarm
+
+40
+0:03:49,060 --> 0:03:52,400
+ Miller's machine it had the usual IOC failure and
+
+41
+0:03:53,060 --> 0:03:57,220
+ Then the one in data museum that we got from Tamar because I did the paperwork
+
+42
+0:03:57,780 --> 0:03:59,780
+ It has no software we got high
+
+43
+0:03:59,980 --> 0:04:01,980
+ Discs, but they had never been in that machine
+
+44
+0:04:02,980 --> 0:04:11,340
+ And it had the usual IOC failure the board on the right is the IOC board. This is the IO controller. It's a 68k system
+
+45
+0:04:12,000 --> 0:04:14,280
+ I think it has one megabyte of RAM
+
+46
+0:04:15,600 --> 0:04:22,780
+ Running full speed on the CPU and then it interfaces to the main CPU, which it does disk and terminal access for
+
+47
+0:04:23,440 --> 0:04:26,900
+ The rest of the CPU takes up five boards of the same size
+
+48
+0:04:27,520 --> 0:04:29,520
+ filled a little
+
+49
+0:04:29,520 --> 0:04:32,520
+ little more chips on them than this one
+
+50
+0:04:35,440 --> 0:04:41,020
+ The only known surviving software were in the basement under the University of hot Alsace in Strasbourg
+
+51
+0:04:42,040 --> 0:04:46,520
+ Various tapes some disks in the machine was what Caroline told us
+
+52
+0:04:47,340 --> 0:04:52,100
+ so the long story is that when we got this machine we decided we wanted to get this running again and
+
+53
+0:04:52,760 --> 0:04:58,440
+ We had to fix those RAM errors on the IOC and for various reasons that took us seven years to do
+
+54
+0:04:59,520 --> 0:05:05,120
+ The main part of the reason was to power up the board. We needed a 5-volt 40 amp power supply and we didn't have one
+
+55
+0:05:07,520 --> 0:05:13,100
+ And Peter fixed the power supply trouble the power supply is a 5 volt
+
+56
+0:05:18,800 --> 0:05:23,660
+ 250 ampere power supply the cables look like two garden hoses
+
+57
+0:05:25,280 --> 0:05:27,280
+ And
+
+58
+0:05:27,280 --> 0:05:29,280
+ And
+
+59
+0:05:29,500 --> 0:05:32,640
+ We have some mailing addresses for some of the old rational people
+
+60
+0:05:32,640 --> 0:05:37,200
+ So I sent an email saying well we got further now then we can power it on and yada yada
+
+61
+0:05:37,780 --> 0:05:41,120
+ Then we got an email from France saying I'm popping around next week
+
+62
+0:05:42,380 --> 0:05:43,800
+ Okay
+
+63
+0:05:43,800 --> 0:05:47,340
+ and next week PLM popped up round with his truck and
+
+64
+0:05:47,880 --> 0:05:49,880
+ a rational thousand
+
+65
+0:05:50,080 --> 0:05:52,080
+ some spare boards
+
+66
+0:05:52,520 --> 0:05:54,520
+ some manuals and stuff and
+
+67
+0:05:55,400 --> 0:05:57,240
+ the story was when he received our
+
+68
+0:05:57,240 --> 0:06:02,240
+ Email he thought his cat he used to teach computer science and in the meantime he'd become
+
+69
+0:06:02,560 --> 0:06:06,260
+ Vice president of innovation and now he's president of the entire thing down there
+
+70
+0:06:07,400 --> 0:06:09,740
+ But he thought I'll go and see what I have in the basement
+
+71
+0:06:10,000 --> 0:06:15,560
+ So he goes over to the CS department and goes into the basement and the caretaker said oh good thing
+
+72
+0:06:15,560 --> 0:06:17,780
+ you came because we're cleaning out that room in two weeks and
+
+73
+0:06:19,500 --> 0:06:25,240
+ The way he told it we got the impression that the vice president innovation had
+
+74
+0:06:25,240 --> 0:06:26,880
+ not
+
+75
+0:06:26,880 --> 0:06:28,880
+ Taken that kindly
+
+76
+0:06:29,060 --> 0:06:33,120
+ But he decided having slept on it to load all of it up in his truck and drive it up to us
+
+77
+0:06:33,620 --> 0:06:39,540
+ So now we have two rational thousands that can potentially be brought alive and one of them is still running right now
+
+78
+0:06:41,720 --> 0:06:46,600
+ We made mirror copies of his disks and gently put them into our machine
+
+79
+0:06:48,140 --> 0:06:49,680
+ Turned it on
+
+80
+0:06:49,680 --> 0:06:50,960
+ waited
+
+81
+0:06:50,960 --> 0:06:55,100
+ 45 minutes while it actually more like an hour while it did garbage collection
+
+82
+0:06:55,760 --> 0:06:58,620
+ And then it come came up and says username colon
+
+83
+0:06:59,920 --> 0:07:05,260
+ And yeah, that's had PAM and then it's a password and then it went oh
+
+84
+0:07:08,660 --> 0:07:13,280
+ But he could remember the name of a former girlfriend
+
+85
+0:07:16,340 --> 0:07:18,340
+ So we have a running rational thousand
+
+86
+0:07:20,300 --> 0:07:22,920
+ And it's quite an interesting machine
+
+87
+0:07:24,060 --> 0:07:25,000
+ You can go into
+
+88
+0:07:25,000 --> 0:07:32,080
+ some Ada module in a huge project and say I need to change that line and then you change that line and it
+
+89
+0:07:32,180 --> 0:07:34,180
+ recompiles that line and
+
+90
+0:07:34,580 --> 0:07:36,040
+ nothing else
+
+91
+0:07:36,040 --> 0:07:41,940
+ Because it knows semantically that this line is inside the private part of this class. So all the rest will be fine
+
+92
+0:07:44,800 --> 0:07:49,600
+ You don't recompile your entire project because that's not a fast thing that can take a week
+
+93
+0:07:52,520 --> 0:07:54,520
+ So it works what's the problem?
+
+94
+0:07:55,000 --> 0:07:57,620
+ Having the last and very likely
+
+95
+0:07:58,240 --> 0:08:02,160
+ Only rational thousand that will ever run again is a responsibility
+
+96
+0:08:02,880 --> 0:08:04,880
+ We can keep this machine running
+
+97
+0:08:05,740 --> 0:08:09,180
+ 2040 yeah, we'll do that 2050 me
+
+98
+0:08:11,320 --> 0:08:15,180
+ 2100 nah, then the plastic will start to disintegrate and
+
+99
+0:08:16,360 --> 0:08:18,360
+ You cannot get 45
+
+100
+0:08:18,640 --> 0:08:21,140
+ 75 F chips anymore and stuff like that
+
+101
+0:08:22,260 --> 0:08:24,260
+ so
+
+102
+0:08:24,960 --> 0:08:29,460
+ We're probably also the only people who can write the software emulator for it because we have a machine that works we can compare with
+
+103
+0:08:31,200 --> 0:08:37,040
+ And then the Covid 19 lock down happen and some idiot says, ah, how hot can that be?
+
+104
+0:08:41,700 --> 0:08:46,280
+ So normally when you write a software emulation of a computer you simulate the instruction set, right
+
+105
+0:08:47,600 --> 0:08:49,700
+ Move instruction, okay. We move these bytes
+
+106
+0:08:50,420 --> 0:08:54,180
+ Well, there is no instruction set
+
+107
+0:08:54,260 --> 0:08:55,060
+ on this computer.
+
+108
+0:08:56,120 --> 0:08:58,100
+ There's no technical reference manual.
+
+109
+0:08:58,300 --> 0:08:59,920
+ There's no assembler programmer's manual.
+
+110
+0:09:00,480 --> 0:09:02,240
+ According to them, there's never been written,
+
+111
+0:09:03,080 --> 0:09:04,480
+ handwritten assembler on this computer.
+
+112
+0:09:06,420 --> 0:09:08,620
+ What we have is the guru course,
+
+113
+0:09:09,200 --> 0:09:10,660
+ chapter one, or day one.
+
+114
+0:09:11,140 --> 0:09:12,720
+ Apparently, when Rational went out
+
+115
+0:09:12,720 --> 0:09:13,600
+ of the hardware business,
+
+116
+0:09:14,320 --> 0:09:15,780
+ they toured the remaining customers,
+
+117
+0:09:16,420 --> 0:09:17,400
+ gave them a one-week,
+
+118
+0:09:18,240 --> 0:09:19,960
+ really heavy-duty course,
+
+119
+0:09:19,960 --> 0:09:21,920
+ and said, good luck.
+
+120
+0:09:21,920 --> 0:09:27,260
+ We have an Ada description
+
+121
+0:09:27,260 --> 0:09:28,680
+ of the instruction set,
+
+122
+0:09:29,400 --> 0:09:30,140
+ which is nice.
+
+123
+0:09:31,220 --> 0:09:33,280
+ But if you look carefully at this source code,
+
+124
+0:09:33,540 --> 0:09:34,280
+ there's no numbers.
+
+125
+0:09:35,320 --> 0:09:36,780
+ It says what the instructions are,
+
+126
+0:09:37,300 --> 0:09:39,460
+ tells the Ada compiler to put them into
+
+127
+0:09:39,460 --> 0:09:41,060
+ some kind of data structure
+
+128
+0:09:41,060 --> 0:09:42,860
+ that fits in 16 bits,
+
+129
+0:09:43,460 --> 0:09:45,240
+ and the Ada compiler does that,
+
+130
+0:09:45,460 --> 0:09:47,120
+ however Ada compilers do that.
+
+131
+0:09:47,580 --> 0:09:49,440
+ We don't know where the fields are,
+
+132
+0:09:49,520 --> 0:09:50,420
+ how long they are, whatever.
+
+133
+0:09:51,540 --> 0:09:51,900
+ But the data compiler does that.
+
+134
+0:09:51,900 --> 0:09:55,220
+ But there's also two or three pages
+
+135
+0:09:55,220 --> 0:09:57,400
+ about the debugger that's actually there,
+
+136
+0:09:58,000 --> 0:10:00,200
+ which can clearly disassemble instructions,
+
+137
+0:10:00,480 --> 0:10:01,640
+ and there we have numbers.
+
+138
+0:10:02,800 --> 0:10:03,220
+ All right?
+
+139
+0:10:05,400 --> 0:10:07,320
+ We've reverse-engineered the instruction set.
+
+140
+0:10:08,980 --> 0:10:10,300
+ We had a backup tape.
+
+141
+0:10:10,780 --> 0:10:11,860
+ We could take that apart,
+
+142
+0:10:11,960 --> 0:10:13,900
+ find objects where we had the binary object,
+
+143
+0:10:14,000 --> 0:10:14,800
+ where we had the source code,
+
+144
+0:10:14,840 --> 0:10:15,700
+ by looking at the strings.
+
+145
+0:10:16,620 --> 0:10:19,380
+ We found one that did some very rudimentary,
+
+146
+0:10:19,380 --> 0:10:21,380
+ I think, third-order polygons,
+
+147
+0:10:21,900 --> 0:10:23,900
+ and we found one that did some very rudimentary,
+
+148
+0:10:23,900 --> 0:10:25,900
+ very polynomial approximations of sine and cosine
+
+149
+0:10:25,900 --> 0:10:26,900
+ and stuff like that.
+
+150
+0:10:26,900 --> 0:10:28,900
+ So we could start reversing during the instruction set.
+
+151
+0:10:28,900 --> 0:10:32,900
+ Then we had a breakthrough,
+
+152
+0:10:32,900 --> 0:10:36,900
+ because we found an object that looked like the disassembler
+
+153
+0:10:36,900 --> 0:10:38,900
+ from they have used in the,
+
+154
+0:10:38,900 --> 0:10:42,900
+ and that had a list of all the instruction names,
+
+155
+0:10:42,900 --> 0:10:44,900
+ and it did all the usual and with seven bits here
+
+156
+0:10:44,900 --> 0:10:46,900
+ and what does this do.
+
+157
+0:10:46,900 --> 0:10:50,900
+ So Alan pretty much brute-forced the entire instruction set,
+
+158
+0:10:50,900 --> 0:10:51,600
+ using that.
+
+159
+0:10:51,600 --> 0:10:53,600
+ So now we have the instruction set,
+
+160
+0:10:53,600 --> 0:10:55,600
+ ready to simulate, right?
+
+161
+0:10:55,600 --> 0:10:59,600
+ So we have instructions like execute heap access
+
+162
+0:10:59,600 --> 0:11:02,600
+ adaptive balanced tree lookup.
+
+163
+0:11:02,600 --> 0:11:05,600
+ And we don't know what it does.
+
+164
+0:11:05,600 --> 0:11:09,600
+ Well, it probably looks up in an active adaptive balanced tree
+
+165
+0:11:09,600 --> 0:11:10,600
+ somewhere in the heap,
+
+166
+0:11:10,600 --> 0:11:15,600
+ but the closer details, eh.
+
+167
+0:11:15,600 --> 0:11:17,600
+ So what's going on here?
+
+168
+0:11:17,600 --> 0:11:20,600
+ Well, transpires the instruction set,
+
+169
+0:11:20,600 --> 0:11:22,600
+ the instruction set is a private contract
+
+170
+0:11:22,600 --> 0:11:25,600
+ between the guys from the compiler group's
+
+171
+0:11:25,600 --> 0:11:31,600
+ code generation department and the microcode guys.
+
+172
+0:11:31,600 --> 0:11:34,600
+ There's been 15 versions of the instruction set.
+
+173
+0:11:34,600 --> 0:11:37,600
+ We have the latest one, version 15.
+
+174
+0:11:37,600 --> 0:11:38,600
+ It's never been documented,
+
+175
+0:11:38,600 --> 0:11:43,600
+ because only these people need to know it.
+
+176
+0:11:43,600 --> 0:11:48,600
+ So software emulation at instructions level, nope.
+
+177
+0:11:48,600 --> 0:11:49,600
+ Okay.
+
+178
+0:11:50,600 --> 0:11:54,600
+ But we have the schematics.
+
+179
+0:11:54,600 --> 0:11:55,600
+ They're not very good.
+
+180
+0:11:55,600 --> 0:11:57,600
+ They've been copied down and photocopied
+
+181
+0:11:57,600 --> 0:11:59,600
+ and photocopied and so on.
+
+182
+0:11:59,600 --> 0:12:01,600
+ It's really hard to see the difference
+
+183
+0:12:01,600 --> 0:12:04,600
+ between a zero and an eight, for instance.
+
+184
+0:12:04,600 --> 0:12:07,600
+ Or B and D are hard too.
+
+185
+0:12:07,600 --> 0:12:10,600
+ And we even have some documentation of the microcode.
+
+186
+0:12:10,600 --> 0:12:13,600
+ The layout of the microcode instructions.
+
+187
+0:12:13,600 --> 0:12:16,600
+ And we have the IO processor which downloads the microcode,
+
+188
+0:12:16,600 --> 0:12:18,600
+ so we also have the microcode.
+
+189
+0:12:18,600 --> 0:12:19,600
+ So, okay.
+
+190
+0:12:19,600 --> 0:12:22,600
+ Here we go.
+
+191
+0:12:22,600 --> 0:12:24,600
+ But yeah, that's that footnote.
+
+192
+0:12:24,600 --> 0:12:28,600
+ When you turn it on, the IO processor runs and says,
+
+193
+0:12:28,600 --> 0:12:30,600
+ I've downloaded the microcode.
+
+194
+0:12:30,600 --> 0:12:33,600
+ And then it says,
+
+195
+0:12:33,600 --> 0:12:40,600
+ R1000 CPU running now owns the console.
+
+196
+0:12:40,600 --> 0:12:44,600
+ And then nothing happens for 45 minutes
+
+197
+0:12:44,600 --> 0:12:46,600
+ when it runs off a SSD disk.
+
+198
+0:12:46,600 --> 0:12:48,600
+ It takes more time on a hard disk.
+
+199
+0:12:48,600 --> 0:12:51,600
+ While it garbage collects its image,
+
+200
+0:12:51,600 --> 0:12:55,600
+ and we have no idea what that means,
+
+201
+0:12:55,600 --> 0:12:59,600
+ what it does, what goes on.
+
+202
+0:12:59,600 --> 0:13:02,600
+ That's not a very good debugging environment.
+
+203
+0:13:02,600 --> 0:13:13,600
+ So the final thing we can do is to go down
+
+204
+0:13:13,600 --> 0:13:17,600
+ and simulate the circuits.
+
+205
+0:13:17,600 --> 0:13:19,600
+ The hardware.
+
+206
+0:13:19,600 --> 0:13:21,600
+ Here's a NAND gate.
+
+207
+0:13:21,600 --> 0:13:22,600
+ Here's a register.
+
+208
+0:13:22,600 --> 0:13:24,600
+ Here's a...
+
+209
+0:13:24,600 --> 0:13:28,600
+ And if we do a microcode simulation,
+
+210
+0:13:28,600 --> 0:13:32,600
+ we can probably get it to run at regular speed,
+
+211
+0:13:32,600 --> 0:13:34,600
+ which is megahertz.
+
+212
+0:13:34,600 --> 0:13:36,600
+ The top clock rate is 20 megahertz,
+
+213
+0:13:36,600 --> 0:13:39,600
+ but really most of it runs at around 10 or 5.
+
+214
+0:13:39,600 --> 0:13:43,600
+ We'll have to figure out what the microcode does
+
+215
+0:13:43,600 --> 0:13:46,600
+ from the schematics and from the documentation we have.
+
+216
+0:13:46,600 --> 0:13:51,600
+ And we cannot use the diagnostic facilities
+
+217
+0:13:51,600 --> 0:13:54,600
+ of the computer.
+
+218
+0:13:54,600 --> 0:13:57,600
+ Unless we do the circuit thing.
+
+219
+0:13:57,600 --> 0:14:00,600
+ Then we can use the diagnostic facilities of the computer.
+
+220
+0:14:00,600 --> 0:14:03,600
+ The bad news is that it probably runs at kilohertz speeds.
+
+221
+0:14:03,600 --> 0:14:06,600
+ So...
+
+222
+0:14:06,600 --> 0:14:08,600
+ Yeah.
+
+223
+0:14:08,600 --> 0:14:10,600
+ Not good.
+
+224
+0:14:10,600 --> 0:14:13,600
+ Either way, we need to do something with the schematics.
+
+225
+0:14:13,600 --> 0:14:15,600
+ So about the diagnostics.
+
+226
+0:14:15,600 --> 0:14:21,600
+ The 68k CPU talks to 8052 mask ROM microcontrollers.
+
+227
+0:14:21,600 --> 0:14:23,600
+ There's one on each board.
+
+228
+0:14:23,600 --> 0:14:29,600
+ And these 8052s do what is essentially JTAG,
+
+229
+0:14:29,600 --> 0:14:34,600
+ except JTAG is from 1985.
+
+230
+0:14:34,600 --> 0:14:39,600
+ But the I.O. processor can download a byte stream
+
+231
+0:14:39,600 --> 0:14:42,600
+ to the 8052 and say, do this.
+
+232
+0:14:42,600 --> 0:14:44,600
+ And it would interpret these bytes
+
+233
+0:14:44,600 --> 0:14:46,600
+ as an instruction set.
+
+234
+0:14:46,600 --> 0:14:48,600
+ And go out and poke this register
+
+235
+0:14:48,600 --> 0:14:49,600
+ and load this in here
+
+236
+0:14:49,600 --> 0:14:51,600
+ and see what happened over here and so on.
+
+237
+0:14:51,600 --> 0:14:55,600
+ And there's tons of these diagnostic programs.
+
+238
+0:14:55,600 --> 0:14:58,600
+ Um...
+
+239
+0:14:58,600 --> 0:15:01,600
+ The stuff out is one of the diagnostic files.
+
+240
+0:15:01,600 --> 0:15:03,600
+ So they define the parameters first
+
+241
+0:15:03,600 --> 0:15:05,600
+ and then come to the bytes,
+
+242
+0:15:05,600 --> 0:15:07,600
+ which are downloaded to the 8052.
+
+243
+0:15:07,600 --> 0:15:09,600
+ It's not like it's high-level language.
+
+244
+0:15:09,600 --> 0:15:11,600
+ So, yeah, we did a simple reversion
+
+245
+0:15:11,600 --> 0:15:13,600
+ in that instruction set too.
+
+246
+0:15:14,600 --> 0:15:16,600
+ It's kind of getting a thing with this machine.
+
+247
+0:15:16,600 --> 0:15:18,600
+ Um...
+
+248
+0:15:18,600 --> 0:15:20,600
+ It's all built on what they call experiments.
+
+249
+0:15:20,600 --> 0:15:24,600
+ And experiments are written in a high-level macro language
+
+250
+0:15:24,600 --> 0:15:27,600
+ that says, load this here and load that there
+
+251
+0:15:27,600 --> 0:15:30,600
+ and pull these bytes out and take these bytes and do stuff.
+
+252
+0:15:30,600 --> 0:15:32,600
+ And there's more than 1,000 of these
+
+253
+0:15:32,600 --> 0:15:36,600
+ on the hard disk of the I.O. processor.
+
+254
+0:15:36,600 --> 0:15:39,600
+ So that's a lot of help getting things to work,
+
+255
+0:15:39,600 --> 0:15:41,600
+ um...
+
+256
+0:15:41,600 --> 0:15:43,600
+ that we can really use in this effort.
+
+257
+0:15:44,600 --> 0:15:48,600
+ And once you start looking at this computer at that level,
+
+258
+0:15:48,600 --> 0:15:50,600
+ you realize that's some really bright people
+
+259
+0:15:50,600 --> 0:15:52,600
+ who've made this computer.
+
+260
+0:15:52,600 --> 0:15:54,600
+ It has a 20-megahertz crystal.
+
+261
+0:15:54,600 --> 0:15:57,600
+ It also has a 21-megahertz crystal.
+
+262
+0:15:57,600 --> 0:16:01,600
+ So they can test it out running 5% faster
+
+263
+0:16:01,600 --> 0:16:04,600
+ when the field engineer is there.
+
+264
+0:16:04,600 --> 0:16:06,600
+ They can also raise the power supply
+
+265
+0:16:06,600 --> 0:16:09,600
+ and lower the power supply by a quarter of a volt.
+
+266
+0:16:09,600 --> 0:16:13,600
+ And if it runs at plus-minus 250 millivolts,
+
+267
+0:16:13,600 --> 0:16:15,600
+ and plus 5% clock,
+
+268
+0:16:15,600 --> 0:16:19,600
+ it probably runs okay and is stable at normal conditions.
+
+269
+0:16:19,600 --> 0:16:21,600
+ Um...
+
+270
+0:16:21,600 --> 0:16:25,600
+ It's really people who were not going to have any goff happen
+
+271
+0:16:25,600 --> 0:16:27,600
+ on these computers.
+
+272
+0:16:27,600 --> 0:16:29,600
+ This is actually the circuit.
+
+273
+0:16:29,600 --> 0:16:31,600
+ It's very hard to read,
+
+274
+0:16:31,600 --> 0:16:33,600
+ but the top crystal is 21 megahertz.
+
+275
+0:16:33,600 --> 0:16:35,600
+ The bottom one is 20 megahertz.
+
+276
+0:16:35,600 --> 0:16:37,600
+ Um...
+
+277
+0:16:37,600 --> 0:16:39,600
+ And a little state machine to make sure
+
+278
+0:16:39,600 --> 0:16:41,600
+ the handover is smooth and so on.
+
+279
+0:16:41,600 --> 0:16:44,600
+ So the plan right now
+
+280
+0:16:44,600 --> 0:16:47,600
+ is to implement the schematics in System C.
+
+281
+0:16:47,600 --> 0:16:51,600
+ System C is C++ classes for simulating hardware.
+
+282
+0:16:51,600 --> 0:16:55,600
+ It's used a lot for people who create system on chips
+
+283
+0:16:55,600 --> 0:16:59,600
+ to test that all the bits talk together the right way and so on.
+
+284
+0:16:59,600 --> 0:17:02,600
+ It's going to be horribly slow.
+
+285
+0:17:02,600 --> 0:17:04,600
+ It will probably take a month
+
+286
+0:17:04,600 --> 0:17:07,600
+ for the machine to do the garbage collect.
+
+287
+0:17:07,600 --> 0:17:09,600
+ But if we can make it work,
+
+288
+0:17:09,600 --> 0:17:11,600
+ we can optimize it afterwards.
+
+289
+0:17:11,600 --> 0:17:14,600
+ For instance, we don't need to simulate
+
+290
+0:17:14,600 --> 0:17:16,600
+ all the individual RAM chips.
+
+291
+0:17:16,600 --> 0:17:19,600
+ We can just say we have this magic RAM chip
+
+292
+0:17:19,600 --> 0:17:24,600
+ which is one megabyte by 175 bits.
+
+293
+0:17:24,600 --> 0:17:26,600
+ And stuff like that.
+
+294
+0:17:26,600 --> 0:17:28,600
+ There's a lot of places where optimizations can be done.
+
+295
+0:17:28,600 --> 0:17:31,600
+ So we hope that getting it run as a first step
+
+296
+0:17:31,600 --> 0:17:34,600
+ and then optimize it to get it to a usable speed.
+
+297
+0:17:34,600 --> 0:17:37,600
+ Even if we cannot get it to run at a usable speed,
+
+298
+0:17:37,600 --> 0:17:40,600
+ having a software emulation is historically
+
+299
+0:17:40,600 --> 0:17:42,600
+ preservation.
+
+300
+0:17:42,600 --> 0:17:44,600
+ Then we'll have to figure out what to do later.
+
+301
+0:17:44,600 --> 0:17:47,600
+ Maybe synthesize it to an FPGA or something.
+
+302
+0:17:49,600 --> 0:17:53,600
+ System C, as I said, is C++ classes for hardware.
+
+303
+0:17:53,600 --> 0:17:55,600
+ They add some syntactic sugar with macros.
+
+304
+0:17:55,600 --> 0:17:58,600
+ So once it's SC module, this and that and so on.
+
+305
+0:17:58,600 --> 0:18:07,600
+ But basically, this is a 138, 328 decoder.
+
+306
+0:18:07,600 --> 0:18:09,600
+ And you go in and you say, well, if the enabled bits
+
+307
+0:18:09,600 --> 0:18:12,600
+ are not set, then all go high.
+
+308
+0:18:12,600 --> 0:18:15,600
+ And then we have to set this one high and so on.
+
+309
+0:18:15,600 --> 0:18:17,600
+ And the kernel of system C then goes out and says,
+
+310
+0:18:17,600 --> 0:18:18,600
+ okay, this signal changed.
+
+311
+0:18:18,600 --> 0:18:20,600
+ I have to call this one over here.
+
+312
+0:18:20,600 --> 0:18:21,600
+ And I have to call this one.
+
+313
+0:18:21,600 --> 0:18:25,600
+ And keeps track of the clock delta update stuff and so on.
+
+314
+0:18:25,600 --> 0:18:28,600
+ It's pretty brilliant.
+
+315
+0:18:28,600 --> 0:18:33,600
+ It's also rather tedious as all hardware ends up being.
+
+316
+0:18:33,600 --> 0:18:35,600
+ But we can use it.
+
+317
+0:18:35,600 --> 0:18:37,600
+ It works.
+
+318
+0:18:37,600 --> 0:18:38,600
+ So schematics.
+
+319
+0:18:38,600 --> 0:18:40,600
+ We have 470 pages.
+
+320
+0:18:40,600 --> 0:18:43,600
+ And as you can see on the top left corner there,
+
+321
+0:18:43,600 --> 0:18:48,600
+ they have suffered through copying and so on.
+
+322
+0:18:48,600 --> 0:18:52,600
+ The originals seem to have been 24 by 16 inches.
+
+323
+0:18:52,600 --> 0:19:00,600
+ That's something like 80 by 40 something-ish centimeters.
+
+324
+0:19:00,600 --> 0:19:02,600
+ There's a thick margin, a thin margin.
+
+325
+0:19:02,600 --> 0:19:06,600
+ And they have these inch marks along the edges.
+
+326
+0:19:06,600 --> 0:19:09,600
+ Along the border.
+
+327
+0:19:09,600 --> 0:19:13,600
+ And we can use those to correct all the disturbances,
+
+328
+0:19:13,600 --> 0:19:16,600
+ distortions that have happened.
+
+329
+0:19:16,600 --> 0:19:20,600
+ So there is a correspondence between the original inch
+
+330
+0:19:20,600 --> 0:19:23,600
+ coordinates and the pixel coordinates we have.
+
+331
+0:19:23,600 --> 0:19:24,600
+ And it's non-trivial.
+
+332
+0:19:24,600 --> 0:19:27,600
+ It's bent and twisted and shaped and so on.
+
+333
+0:19:27,600 --> 0:19:30,600
+ So when you try to OGR read something like this,
+
+334
+0:19:30,600 --> 0:19:34,600
+ which is geometric, it's a lot easier to do so if you get the
+
+335
+0:19:34,600 --> 0:19:36,600
+ straight lines to be straight.
+
+336
+0:19:36,600 --> 0:19:38,600
+ Before you start.
+
+337
+0:19:38,600 --> 0:19:40,600
+ So that's the first thing we do.
+
+338
+0:19:40,600 --> 0:19:43,600
+ We're going to find the thick exterior border.
+
+339
+0:19:43,600 --> 0:19:45,600
+ And then we're going to recenter the page.
+
+340
+0:19:45,600 --> 0:19:48,600
+ There's a big white margin with three holes in it on top of all
+
+341
+0:19:48,600 --> 0:19:49,600
+ the pages.
+
+342
+0:19:49,600 --> 0:19:50,600
+ We don't need that.
+
+343
+0:19:50,600 --> 0:19:52,600
+ Stuff like that.
+
+344
+0:19:52,600 --> 0:19:55,600
+ So we crop the page around the thick margin.
+
+345
+0:19:55,600 --> 0:19:57,600
+ There's also a page that's slipped in the outer feeders
+
+346
+0:19:57,600 --> 0:19:59,600
+ that will lack one-third of it.
+
+347
+0:19:59,600 --> 0:20:01,600
+ We'll shift that into space and so on.
+
+348
+0:20:01,600 --> 0:20:05,600
+ And then we find the thick border and the thin border and the arrows.
+
+349
+0:20:05,600 --> 0:20:11,600
+ And that gives us an inch-pixel relationship all the way around
+
+350
+0:20:11,600 --> 0:20:12,600
+ the drawing.
+
+351
+0:20:12,600 --> 0:20:15,600
+ We can use that to reconstruct the geometry.
+
+352
+0:20:15,600 --> 0:20:19,600
+ So a bit about some of these slides may be confusing because
+
+353
+0:20:19,600 --> 0:20:22,600
+ real inch coordinates are first quadrant.
+
+354
+0:20:22,600 --> 0:20:26,600
+ But image quadrants in computers are almost always fourth
+
+355
+0:20:26,600 --> 0:20:29,600
+ quadrant where the eye axis goes down.
+
+356
+0:20:29,600 --> 0:20:34,600
+ And we use NumPy in Python, which has Fortran context so you
+
+357
+0:20:34,600 --> 0:20:38,600
+ have the Y coordinate before the X coordinate in your indexes.
+
+358
+0:20:38,600 --> 0:20:43,600
+ And the dots per inch of the original images is 265-ish.
+
+359
+0:20:43,600 --> 0:20:45,600
+ It's not constant.
+
+360
+0:20:45,600 --> 0:20:49,600
+ And black is minus one and white is plus one.
+
+361
+0:20:49,600 --> 0:20:51,600
+ I'll get to that in a moment.
+
+362
+0:20:51,600 --> 0:20:55,600
+ So the first thing we have to do is find the thick exterior border.
+
+363
+0:20:55,600 --> 0:20:58,600
+ And if you never tried to do any kind of image processing,
+
+364
+0:20:58,600 --> 0:21:00,600
+ you'll think, how hard can that be?
+
+365
+0:21:00,600 --> 0:21:03,600
+ And then you'll realize that's actually a surprisingly hard problem.
+
+366
+0:21:04,600 --> 0:21:08,600
+ Because any vertical line will confuse your code.
+
+367
+0:21:08,600 --> 0:21:13,600
+ The diagram might have a thick bus running right inside the border.
+
+368
+0:21:13,600 --> 0:21:15,600
+ So which one do you pick?
+
+369
+0:21:15,600 --> 0:21:19,600
+ But we have the advantage we're looking for a thick and a thin border.
+
+370
+0:21:19,600 --> 0:21:23,600
+ We're looking for two lines 53 pixels apart.
+
+371
+0:21:23,600 --> 0:21:28,600
+ So we simply go searching and say, find the places where we have a pixel
+
+372
+0:21:28,600 --> 0:21:32,600
+ here and 53 pixels further down, which are both black.
+
+373
+0:21:32,600 --> 0:21:33,600
+ And then you get a histogram.
+
+374
+0:21:33,600 --> 0:21:38,600
+ And then you get a histogram like this with a totally unmistakable peak.
+
+375
+0:21:38,600 --> 0:21:42,600
+ A lot of image processing like that is very counterintuitive
+
+376
+0:21:42,600 --> 0:21:47,600
+ because our vision system is brilliant.
+
+377
+0:21:47,600 --> 0:21:52,600
+ It does things like recognize a truck with traffic lights on it,
+
+378
+0:21:52,600 --> 0:21:56,600
+ which Teslas can't do, for instance.
+
+379
+0:21:56,600 --> 0:22:01,600
+ And Tesla has some of the most advanced vision software right now.
+
+380
+0:22:01,600 --> 0:22:03,600
+ But a lot of these things are counterintuitive,
+
+381
+0:22:03,600 --> 0:22:07,600
+ so one has to think about them to get it to work.
+
+382
+0:22:07,600 --> 0:22:10,600
+ Similar, to find the corners, how hard can that be?
+
+383
+0:22:10,600 --> 0:22:14,600
+ So the way you do it is you build a histogram of the longest stretch
+
+384
+0:22:14,600 --> 0:22:17,600
+ of black pixels you can find.
+
+385
+0:22:17,600 --> 0:22:20,600
+ And then you find the median of that and you use a threshold
+
+386
+0:22:20,600 --> 0:22:23,600
+ to find out where you have your corners.
+
+387
+0:22:23,600 --> 0:22:29,600
+ Just saying find corners is not a thing in pixel-based image processing.
+
+388
+0:22:29,600 --> 0:22:31,600
+ And similar, when you find something that looks like a corner,
+
+389
+0:22:31,600 --> 0:22:32,600
+ it may not be a corner.
+
+390
+0:22:32,600 --> 0:22:35,600
+ It may be a T-intersection.
+
+391
+0:22:35,600 --> 0:22:37,600
+ So you need an algorithm that can say,
+
+392
+0:22:37,600 --> 0:22:40,600
+ how many legs does this corner actually have?
+
+393
+0:22:40,600 --> 0:22:44,600
+ So you make, you count pixels in the four directions
+
+394
+0:22:44,600 --> 0:22:47,600
+ and you should only have in two of them.
+
+395
+0:22:47,600 --> 0:22:52,600
+ And they should be at 90 degrees angles to each other.
+
+396
+0:22:52,600 --> 0:22:54,600
+ It's fortunately pretty easy to do in Python these days,
+
+397
+0:22:54,600 --> 0:22:57,600
+ this kind of stuff.
+
+398
+0:22:57,600 --> 0:23:00,600
+ Similarly, finding the center of the arrow.
+
+399
+0:23:00,600 --> 0:23:03,600
+ Do not look for the average.
+
+400
+0:23:03,600 --> 0:23:07,600
+ Because the average, a single pixel can throw your average off.
+
+401
+0:23:07,600 --> 0:23:09,600
+ Look for the median.
+
+402
+0:23:09,600 --> 0:23:12,600
+ In image processing, always look for the median.
+
+403
+0:23:12,600 --> 0:23:15,600
+ So we simply build a list of all the X coordinates
+
+404
+0:23:15,600 --> 0:23:17,600
+ and then we take the middle of that list.
+
+405
+0:23:17,600 --> 0:23:21,600
+ That's where the center of the arrow is.
+
+406
+0:23:21,600 --> 0:23:25,600
+ So having established these points, we need to do a projection
+
+407
+0:23:25,600 --> 0:23:29,600
+ from the pixel-based coordinate system to the inch-based coordinate system.
+
+408
+0:23:30,600 --> 0:23:33,600
+ And we need two projections.
+
+409
+0:23:33,600 --> 0:23:35,600
+ We need one that goes from pixel this and that
+
+410
+0:23:35,600 --> 0:23:38,600
+ to the X coordinate in inches and the Y coordinate in inches.
+
+411
+0:23:38,600 --> 0:23:41,600
+ And it's actually also very useful to have them going the other way
+
+412
+0:23:41,600 --> 0:23:43,600
+ because the things are drawn in inches.
+
+413
+0:23:43,600 --> 0:23:46,600
+ So being able to say, I have this pixel.
+
+414
+0:23:46,600 --> 0:23:50,600
+ Find me the pixel that's drawn half an inch further down.
+
+415
+0:23:50,600 --> 0:23:54,600
+ You convert to inches, you go, and then you convert back to pixels.
+
+416
+0:23:54,600 --> 0:23:57,600
+ And even if the paper is angled at some degrees,
+
+417
+0:23:57,600 --> 0:23:59,600
+ you'll find the right spot that way.
+
+418
+0:23:59,600 --> 0:24:03,600
+ So the way one does that is to connect all the control points by triangles,
+
+419
+0:24:03,600 --> 0:24:05,600
+ find out which triangle you're in,
+
+420
+0:24:05,600 --> 0:24:11,600
+ then interpolate into that triangle with a triangular coordinate system.
+
+421
+0:24:11,600 --> 0:24:15,600
+ But that's also not quite easy.
+
+422
+0:24:15,600 --> 0:24:17,600
+ So if you have one or two points,
+
+423
+0:24:17,600 --> 0:24:21,600
+ there are many ways you can draw triangles between them.
+
+424
+0:24:21,600 --> 0:24:25,600
+ And you want as round triangles as possible.
+
+425
+0:24:25,600 --> 0:24:27,600
+ Ideally, you would want 60-degree,
+
+426
+0:24:29,600 --> 0:24:32,600
+ equal-sided triangles, if you could.
+
+427
+0:24:32,600 --> 0:24:35,600
+ Long, thin triangles mean to come out
+
+428
+0:24:35,600 --> 0:24:38,600
+ basically in tangent mathematics,
+
+429
+0:24:38,600 --> 0:24:41,600
+ which gives you some very abrupt changes
+
+430
+0:24:41,600 --> 0:24:44,600
+ and distortions in the output.
+
+431
+0:24:44,600 --> 0:24:47,600
+ So somebody, Russian,
+
+432
+0:24:47,600 --> 0:24:50,600
+ published a paper which was translated to French,
+
+433
+0:24:50,600 --> 0:24:54,600
+ and therefore his name is pronounced Delaunay,
+
+434
+0:24:54,600 --> 0:24:56,600
+ but he's Russian.
+
+435
+0:24:56,600 --> 0:24:59,600
+ Anyway, his rule is that,
+
+436
+0:24:59,600 --> 0:25:01,600
+ when you circumscribe your triangle,
+
+437
+0:25:01,600 --> 0:25:05,600
+ so you draw a circle that goes through the three points of the triangle,
+
+438
+0:25:05,600 --> 0:25:11,600
+ no other triangle has a point inside that circle.
+
+439
+0:25:11,600 --> 0:25:13,600
+ And it's horrible to construct.
+
+440
+0:25:13,600 --> 0:25:19,600
+ You start out by defining three or four points outside all your points,
+
+441
+0:25:19,600 --> 0:25:21,600
+ and then make a triangle there,
+
+442
+0:25:21,600 --> 0:25:23,600
+ and then you add your points one by one,
+
+443
+0:25:23,600 --> 0:25:25,600
+ and find out, and flip, and so on.
+
+444
+0:25:25,600 --> 0:25:27,600
+ I've written it once, it's not fun,
+
+445
+0:25:27,600 --> 0:25:28,600
+ but fortunately these days,
+
+446
+0:25:28,600 --> 0:25:31,600
+ import Skypey,
+
+447
+0:25:31,600 --> 0:25:33,600
+ I want one of these,
+
+448
+0:25:33,600 --> 0:25:35,600
+ and you're done.
+
+449
+0:25:35,600 --> 0:25:38,600
+ So you can use pretty heavy-duty algorithms
+
+450
+0:25:38,600 --> 0:25:41,600
+ without reading all of numerical algorithms again.
+
+451
+0:25:41,600 --> 0:25:44,600
+ That's a nice thing.
+
+452
+0:25:44,600 --> 0:25:46,600
+ It's still tricky.
+
+453
+0:25:46,600 --> 0:25:50,600
+ It's not a free lunch, but it works.
+
+454
+0:25:50,600 --> 0:25:53,600
+ The top one is a page where
+
+455
+0:25:53,600 --> 0:25:56,600
+ I've used the inch marks as control points,
+
+456
+0:25:56,600 --> 0:25:59,600
+ the top left corner of the drawing box,
+
+457
+0:25:59,600 --> 0:26:02,600
+ down in the corner where all the text is.
+
+458
+0:26:02,600 --> 0:26:05,600
+ The bottom one, I've taken all the tilde characters,
+
+459
+0:26:05,600 --> 0:26:07,600
+ because that's a nice symmetric character,
+
+460
+0:26:07,600 --> 0:26:09,600
+ and they're easy to find,
+
+461
+0:26:09,600 --> 0:26:11,600
+ and used those as control points too.
+
+462
+0:26:11,600 --> 0:26:14,600
+ But you can see I get these very thin, long triangles
+
+463
+0:26:14,600 --> 0:26:17,600
+ if I have too many control points to close together.
+
+464
+0:26:17,600 --> 0:26:19,600
+ For instance,
+
+465
+0:26:19,600 --> 0:26:23,600
+ here I have five control points right next to each other,
+
+466
+0:26:23,600 --> 0:26:25,600
+ so I get these long, thin triangles.
+
+467
+0:26:25,600 --> 0:26:27,600
+ That's not a good idea.
+
+468
+0:26:27,600 --> 0:26:30,600
+ It's better to just have two points there, for instance.
+
+469
+0:26:30,600 --> 0:26:32,600
+ But the other thing is,
+
+470
+0:26:32,600 --> 0:26:34,600
+ this shows the x-coordinate.
+
+471
+0:26:34,600 --> 0:26:37,600
+ Notice the very clear blue-red-blue pattern.
+
+472
+0:26:37,600 --> 0:26:40,600
+ That is very typical when you run paper
+
+473
+0:26:40,600 --> 0:26:42,600
+ through any kind of paper feeder.
+
+474
+0:26:42,600 --> 0:26:45,600
+ You start out with the first drive rollers,
+
+475
+0:26:45,600 --> 0:26:47,600
+ the blue part.
+
+476
+0:26:47,600 --> 0:26:50,600
+ Then you come to the second drive rollers.
+
+477
+0:26:50,600 --> 0:26:52,600
+ Then it runs faster.
+
+478
+0:26:52,600 --> 0:26:54,600
+ Then the first rollers leave it again,
+
+479
+0:26:54,600 --> 0:26:56,600
+ and then it runs slower again.
+
+480
+0:26:56,600 --> 0:26:58,600
+ So that's a very typical pattern.
+
+481
+0:26:58,600 --> 0:26:59,600
+ If you go down,
+
+482
+0:26:59,600 --> 0:27:01,600
+ and you can do this kind of calibration
+
+483
+0:27:01,600 --> 0:27:03,600
+ on anything that's scanned or printed,
+
+484
+0:27:03,600 --> 0:27:06,600
+ you will find this pattern on pretty much everything,
+
+485
+0:27:06,600 --> 0:27:08,600
+ and it will tell you what way
+
+486
+0:27:08,600 --> 0:27:11,600
+ the paper went through the copier,
+
+487
+0:27:11,600 --> 0:27:14,600
+ if that's useful for you.
+
+488
+0:27:14,600 --> 0:27:16,600
+ So moving on,
+
+489
+0:27:16,600 --> 0:27:20,600
+ two of these Delaunay projectors,
+
+490
+0:27:20,600 --> 0:27:22,600
+ we can project things.
+
+491
+0:27:22,600 --> 0:27:24,600
+ But since many image processing apps
+
+492
+0:27:24,600 --> 0:27:26,600
+ and algorithms scale with
+
+493
+0:27:26,600 --> 0:27:28,600
+ the square of the number of pixels,
+
+494
+0:27:28,600 --> 0:27:30,600
+ which means they scale with the
+
+495
+0:27:30,600 --> 0:27:35,600
+ fourth power of the resolution,
+
+496
+0:27:35,600 --> 0:27:38,600
+ we want a low-resolution image to work on.
+
+497
+0:27:38,600 --> 0:27:41,600
+ So we take the projection backwards
+
+498
+0:27:41,600 --> 0:27:43,600
+ and make a 50 DPI image.
+
+499
+0:27:43,600 --> 0:27:45,600
+ That's very crude,
+
+500
+0:27:45,600 --> 0:27:47,600
+ but it's good enough to find things.
+
+501
+0:27:47,600 --> 0:27:49,600
+ And having found them in the 50 DPI image,
+
+502
+0:27:49,600 --> 0:27:51,600
+ we can go back to the other one
+
+503
+0:27:51,600 --> 0:27:52,600
+ and work on the full resolution
+
+504
+0:27:52,600 --> 0:27:54,600
+ to find the precise coordinates.
+
+505
+0:27:54,600 --> 0:27:57,600
+ So for instance,
+
+506
+0:27:57,600 --> 0:27:58,600
+ on this schematic,
+
+507
+0:27:58,600 --> 0:27:59,600
+ chips are drawn,
+
+508
+0:27:59,600 --> 0:28:01,600
+ most of them are drawn as boxes.
+
+509
+0:28:01,600 --> 0:28:03,600
+ Boxes have four corners.
+
+510
+0:28:03,600 --> 0:28:06,600
+ So we're going to find all the potential corners,
+
+511
+0:28:06,600 --> 0:28:07,600
+ all the potential top left,
+
+512
+0:28:07,600 --> 0:28:08,600
+ bottom left,
+
+513
+0:28:08,600 --> 0:28:09,600
+ top right,
+
+514
+0:28:09,600 --> 0:28:10,600
+ bottom right,
+
+515
+0:28:10,600 --> 0:28:11,600
+ and then we're going to say,
+
+516
+0:28:11,600 --> 0:28:12,600
+ okay, what do we have
+
+517
+0:28:12,600 --> 0:28:14,600
+ that corresponds to this top left image?
+
+518
+0:28:14,600 --> 0:28:15,600
+ Find these two.
+
+519
+0:28:15,600 --> 0:28:17,600
+ Is there a fourth one that fits?
+
+520
+0:28:17,600 --> 0:28:20,600
+ And then we have all the rectangles.
+
+521
+0:28:20,600 --> 0:28:22,600
+ So the way we do this
+
+522
+0:28:22,600 --> 0:28:24,600
+ is with 2D correlation.
+
+523
+0:28:24,600 --> 0:28:27,600
+ We built what's called a kernel,
+
+524
+0:28:27,600 --> 0:28:30,600
+ except it's with an A,
+
+525
+0:28:30,600 --> 0:28:32,600
+ which is basically a picture
+
+526
+0:28:32,600 --> 0:28:35,600
+ of an idealized corner.
+
+527
+0:28:35,600 --> 0:28:39,600
+ So we have ones corresponding to white over here,
+
+528
+0:28:39,600 --> 0:28:41,600
+ we have minus ones corresponding to black,
+
+529
+0:28:41,600 --> 0:28:44,600
+ and we have zeros corresponding to gray.
+
+530
+0:28:44,600 --> 0:28:45,600
+ And then we take this one
+
+531
+0:28:45,600 --> 0:28:47,600
+ and multiply it with the image
+
+532
+0:28:47,600 --> 0:28:51,600
+ at every single pixel.
+
+533
+0:28:51,600 --> 0:28:53,600
+ And remember I said black pixels are minus one
+
+534
+0:28:53,600 --> 0:28:55,600
+ and white pixels are plus one?
+
+535
+0:28:55,600 --> 0:28:59,600
+ So we multiply minus one with minus one.
+
+536
+0:28:59,600 --> 0:29:01,600
+ We expect to find black,
+
+537
+0:29:01,600 --> 0:29:02,600
+ we have black,
+
+538
+0:29:02,600 --> 0:29:05,600
+ we get plus one out.
+
+539
+0:29:05,600 --> 0:29:07,600
+ If we come in and multiply one by one,
+
+540
+0:29:07,600 --> 0:29:08,600
+ we expect white,
+
+541
+0:29:08,600 --> 0:29:09,600
+ we find white,
+
+542
+0:29:09,600 --> 0:29:11,600
+ we get a one out.
+
+543
+0:29:11,600 --> 0:29:12,600
+ But the other way around,
+
+544
+0:29:12,600 --> 0:29:13,600
+ we expect black,
+
+545
+0:29:13,600 --> 0:29:15,600
+ we find white,
+
+546
+0:29:15,600 --> 0:29:17,600
+ we get a minus one.
+
+547
+0:29:17,600 --> 0:29:18,600
+ Wrong color.
+
+548
+0:29:18,600 --> 0:29:20,600
+ And if we multiply by zero,
+
+549
+0:29:20,600 --> 0:29:21,600
+ we don't care what color it is.
+
+550
+0:29:21,600 --> 0:29:22,600
+ It doesn't add up.
+
+551
+0:29:22,600 --> 0:29:24,600
+ So you sum up all these,
+
+552
+0:29:24,600 --> 0:29:26,600
+ and then the better the match,
+
+553
+0:29:26,600 --> 0:29:29,600
+ the higher the number you get.
+
+554
+0:29:29,600 --> 0:29:30,600
+ It's really simple.
+
+555
+0:29:30,600 --> 0:29:31,600
+ The only problem is
+
+556
+0:29:31,600 --> 0:29:36,600
+ you multiply all pixels by all pixels.
+
+557
+0:29:36,600 --> 0:29:38,600
+ It's called 2D image correlation
+
+558
+0:29:38,600 --> 0:29:40,600
+ or 2D convolution.
+
+559
+0:29:40,600 --> 0:29:42,600
+ And it calculates
+
+560
+0:29:42,600 --> 0:29:44,600
+ how alike two images are.
+
+561
+0:29:44,600 --> 0:29:48,600
+ Typically a large one and a small one.
+
+562
+0:29:48,600 --> 0:29:51,600
+ And again, scales with a quadruple
+
+563
+0:29:51,600 --> 0:29:53,600
+ of the resolution you scanned in.
+
+564
+0:29:53,600 --> 0:29:55,600
+ So don't do this on a 600 DPI.
+
+565
+0:29:55,600 --> 0:29:57,600
+ Certainly not in Python.
+
+566
+0:29:57,600 --> 0:30:00,600
+ The problem is a lot of people
+
+567
+0:30:00,600 --> 0:30:02,600
+ look at the output and say,
+
+568
+0:30:02,600 --> 0:30:05,600
+ meh, that doesn't look very useful.
+
+569
+0:30:05,600 --> 0:30:07,600
+ And the point is the output
+
+570
+0:30:07,600 --> 0:30:08,600
+ is actually not an image.
+
+571
+0:30:08,600 --> 0:30:09,600
+ It looks like one,
+
+572
+0:30:09,600 --> 0:30:11,600
+ but it is not an image.
+
+573
+0:30:11,600 --> 0:30:13,600
+ It's a probability map
+
+574
+0:30:13,600 --> 0:30:15,600
+ if we want to get serious about it.
+
+575
+0:30:15,600 --> 0:30:16,600
+ But if you look in the four circles,
+
+576
+0:30:16,600 --> 0:30:18,600
+ you can see there is a bright white spot
+
+577
+0:30:18,600 --> 0:30:20,600
+ in each of them.
+
+578
+0:30:20,600 --> 0:30:22,600
+ It's brighter than anything else in the image.
+
+579
+0:30:22,600 --> 0:30:26,600
+ And those are the four corners we're looking for.
+
+580
+0:30:26,600 --> 0:30:27,600
+ So you simply take,
+
+581
+0:30:27,600 --> 0:30:29,600
+ you run through all these multiplications
+
+582
+0:30:29,600 --> 0:30:30,600
+ and additions,
+
+583
+0:30:30,600 --> 0:30:31,600
+ then you find the maximum value.
+
+584
+0:30:31,600 --> 0:30:33,600
+ That's your most likely corner.
+
+585
+0:30:33,600 --> 0:30:34,600
+ And then you can proceed down the list
+
+586
+0:30:34,600 --> 0:30:36,600
+ until you've found everything you think
+
+587
+0:30:36,600 --> 0:30:39,600
+ might be relevant.
+
+588
+0:30:39,600 --> 0:30:45,600
+ So we find all the chips.
+
+589
+0:30:45,600 --> 0:30:47,600
+ We also find a lot of other crap
+
+590
+0:30:47,600 --> 0:30:49,600
+ because a rectangle is a rectangle.
+
+591
+0:30:49,600 --> 0:30:54,600
+ So usually after a 2D correlation step,
+
+592
+0:30:54,600 --> 0:30:56,600
+ you need some kind of sanity check
+
+593
+0:30:56,600 --> 0:30:57,600
+ or geometric check
+
+594
+0:30:57,600 --> 0:31:01,600
+ or other way to get the confusion out of it.
+
+595
+0:31:01,600 --> 0:31:02,600
+ In this case,
+
+596
+0:31:02,600 --> 0:31:05,600
+ there's only a finite number of chips
+
+597
+0:31:05,600 --> 0:31:06,600
+ used in these schematics,
+
+598
+0:31:06,600 --> 0:31:08,600
+ and they only have a finite number of sizes.
+
+599
+0:31:08,600 --> 0:31:10,600
+ So I can simply make a positive list
+
+600
+0:31:10,600 --> 0:31:11,600
+ and say these sizes are legal.
+
+601
+0:31:11,600 --> 0:31:16,600
+ Anything else is junk.
+
+602
+0:31:16,600 --> 0:31:17,600
+ Similar, we have AND gates
+
+603
+0:31:17,600 --> 0:31:18,600
+ and NAND gates
+
+604
+0:31:18,600 --> 0:31:19,600
+ and NOR gates
+
+605
+0:31:19,600 --> 0:31:22,600
+ and stuff like that.
+
+606
+0:31:22,600 --> 0:31:25,600
+ So I hand-built a kernel
+
+607
+0:31:25,600 --> 0:31:28,600
+ which I've run over the 50 DPI image.
+
+608
+0:31:28,600 --> 0:31:30,600
+ And then when that gives a hit,
+
+609
+0:31:30,600 --> 0:31:32,600
+ we go down on the high resolution one
+
+610
+0:31:32,600 --> 0:31:36,600
+ and use a machine build.
+
+611
+0:31:36,600 --> 0:31:38,600
+ First time I went through and sorted,
+
+612
+0:31:38,600 --> 0:31:40,600
+ you know, hits, misses,
+
+613
+0:31:40,600 --> 0:31:41,600
+ took them apart.
+
+614
+0:31:41,600 --> 0:31:45,600
+ So 90% of the hits have white
+
+615
+0:31:45,600 --> 0:31:47,600
+ in the areas that's white on this one.
+
+616
+0:31:47,600 --> 0:31:48,600
+ 90% of the hits
+
+617
+0:31:48,600 --> 0:31:51,600
+ have black here.
+
+618
+0:31:51,600 --> 0:31:52,600
+ And the rest of the pixels,
+
+619
+0:31:52,600 --> 0:31:55,600
+ I say, they don't care.
+
+620
+0:31:55,600 --> 0:31:58,600
+ Now I have a high resolution kernel
+
+621
+0:31:58,600 --> 0:32:01,600
+ I can run around just the small area
+
+622
+0:32:01,600 --> 0:32:03,600
+ where the 50 DPI image says
+
+623
+0:32:03,600 --> 0:32:05,600
+ there's one there.
+
+624
+0:32:05,600 --> 0:32:08,600
+ I can run it on plus minus 20 pixels
+
+625
+0:32:08,600 --> 0:32:09,600
+ on that area.
+
+626
+0:32:09,600 --> 0:32:10,600
+ So that's very fast
+
+627
+0:32:10,600 --> 0:32:14,600
+ even though I run it at 600 DPI.
+
+628
+0:32:14,600 --> 0:32:16,600
+ Oh.
+
+629
+0:32:16,600 --> 0:32:17,600
+ The problem again is,
+
+630
+0:32:17,600 --> 0:32:19,600
+ it's looking for one of those,
+
+631
+0:32:19,600 --> 0:32:21,600
+ and that one in the middle
+
+632
+0:32:21,600 --> 0:32:24,600
+ actually looks pretty close
+
+633
+0:32:24,600 --> 0:32:27,600
+ when you look at it pixel by pixel.
+
+634
+0:32:27,600 --> 0:32:28,600
+ So you need to add a layer
+
+635
+0:32:28,600 --> 0:32:31,600
+ of geometric understanding.
+
+636
+0:32:31,600 --> 0:32:33,600
+ So what I do in this case is,
+
+637
+0:32:33,600 --> 0:32:34,600
+ I say all the lines
+
+638
+0:32:34,600 --> 0:32:36,600
+ have to have black pixels
+
+639
+0:32:36,600 --> 0:32:37,600
+ because I know it has to be
+
+640
+0:32:37,600 --> 0:32:39,600
+ a closed figure.
+
+641
+0:32:39,600 --> 0:32:41,600
+ So all the lines,
+
+642
+0:32:41,600 --> 0:32:42,600
+ horizontal and vertical,
+
+643
+0:32:42,600 --> 0:32:43,600
+ there must be a black pixel
+
+644
+0:32:43,600 --> 0:32:44,600
+ in all those lines.
+
+645
+0:32:44,600 --> 0:32:45,600
+ And the middle one fails
+
+646
+0:32:45,600 --> 0:32:46,600
+ on the horizontal lines
+
+647
+0:32:46,600 --> 0:32:47,600
+ in the middle.
+
+648
+0:32:47,600 --> 0:32:49,600
+ They have no black pixels.
+
+649
+0:32:49,600 --> 0:32:51,600
+ So that one gets filtered out.
+
+650
+0:32:51,600 --> 0:32:53,600
+ And I don't know if you can see
+
+651
+0:32:53,600 --> 0:32:54,600
+ it at that distance,
+
+652
+0:32:54,600 --> 0:32:56,600
+ but this is a bestiarium
+
+653
+0:32:56,600 --> 0:32:57,600
+ over trivial gates
+
+654
+0:32:57,600 --> 0:33:00,600
+ in the rational thousand computer.
+
+655
+0:33:00,600 --> 0:33:02,600
+ And it's actually kind of,
+
+656
+0:33:02,600 --> 0:33:03,600
+ I kind of like it.
+
+657
+0:33:03,600 --> 0:33:04,600
+ I'm thinking about having
+
+658
+0:33:04,600 --> 0:33:06,600
+ a poster made with it.
+
+659
+0:33:06,600 --> 0:33:07,600
+ Sort of like, you know,
+
+660
+0:33:07,600 --> 0:33:10,600
+ butterflies of the Northern Europe
+
+661
+0:33:10,600 --> 0:33:13,600
+ kind of thing.
+
+662
+0:33:13,600 --> 0:33:15,600
+ So yeah, we can take a schematic,
+
+663
+0:33:15,600 --> 0:33:18,600
+ we can find all the flags
+
+664
+0:33:18,600 --> 0:33:20,600
+ that link to different schematics.
+
+665
+0:33:20,600 --> 0:33:23,600
+ We can find the ones that link
+
+666
+0:33:23,600 --> 0:33:25,600
+ single signals instead of buses.
+
+667
+0:33:25,600 --> 0:33:28,600
+ We can find all the backplane connections
+
+668
+0:33:28,600 --> 0:33:33,600
+ as 4,200, 2,100 backplane connections
+
+669
+0:33:33,600 --> 0:33:36,600
+ and 2,100 frontplane connections
+
+670
+0:33:36,600 --> 0:33:37,600
+ in this computer.
+
+671
+0:33:37,600 --> 0:33:39,600
+ We can find those two.
+
+672
+0:33:39,600 --> 0:33:41,600
+ We can find the NOR gates.
+
+673
+0:33:41,600 --> 0:33:44,600
+ We can find the AND, NAND gates.
+
+674
+0:33:44,600 --> 0:33:46,600
+ We can find the INVERTERs,
+
+675
+0:33:46,600 --> 0:33:49,600
+ and we can find the CHIPs.
+
+676
+0:33:49,600 --> 0:33:51,600
+ Now we have the coordinates of them
+
+677
+0:33:51,600 --> 0:33:53,600
+ in the inch-based coordinate system
+
+678
+0:33:53,600 --> 0:33:55,600
+ they were drawn.
+
+679
+0:33:55,600 --> 0:33:58,600
+ So we can construct a KiCad schematic
+
+680
+0:33:58,600 --> 0:34:02,600
+ pre-filled with those components.
+
+681
+0:34:02,600 --> 0:34:04,600
+ And then we can take a grayscale image
+
+682
+0:34:04,600 --> 0:34:06,600
+ of the original schematic
+
+683
+0:34:06,600 --> 0:34:09,600
+ as a background.
+
+684
+0:34:09,600 --> 0:34:13,600
+ And then simply draw by numbers,
+
+685
+0:34:13,600 --> 0:34:16,600
+ to connect up and reconstruct
+
+686
+0:34:16,600 --> 0:34:19,600
+ the schematics in KiCad.
+
+687
+0:34:19,600 --> 0:34:21,600
+ I'm looking at trying to see,
+
+688
+0:34:21,600 --> 0:34:23,600
+ can I also recognize the buses and lines?
+
+689
+0:34:23,600 --> 0:34:25,600
+ But I'm running into a problem
+
+690
+0:34:25,600 --> 0:34:28,600
+ where the connectivity model
+
+691
+0:34:28,600 --> 0:34:30,600
+ of the CAD software they used
+
+692
+0:34:30,600 --> 0:34:32,600
+ have three levels,
+
+693
+0:34:32,600 --> 0:34:35,600
+ where KiCad only has two levels.
+
+694
+0:34:35,600 --> 0:34:38,600
+ It has inside the schematic and global.
+
+695
+0:34:38,600 --> 0:34:40,600
+ And they had three levels to play with.
+
+696
+0:34:40,600 --> 0:34:42,600
+ And I'm not sure
+
+697
+0:34:42,600 --> 0:34:44,600
+ how I could map that
+
+698
+0:34:44,600 --> 0:34:46,600
+ and do it automatically.
+
+699
+0:34:46,600 --> 0:34:48,600
+ So I think we'll have to do
+
+700
+0:34:48,600 --> 0:34:50,600
+ the draw by numbers thing
+
+701
+0:34:50,600 --> 0:34:51,600
+ to get it in.
+
+702
+0:34:51,600 --> 0:34:53,600
+ And also, the letters are very,
+
+703
+0:34:53,600 --> 0:34:55,600
+ very hard to recognize.
+
+704
+0:34:55,600 --> 0:34:57,600
+ I have some progress on it,
+
+705
+0:34:57,600 --> 0:34:58,600
+ but then comes the question,
+
+706
+0:34:58,600 --> 0:34:59,600
+ is this a comment,
+
+707
+0:34:59,600 --> 0:35:00,600
+ or is this actually a circuit label,
+
+708
+0:35:00,600 --> 0:35:01,600
+ and so on.
+
+709
+0:35:01,600 --> 0:35:03,600
+ So it may not be faster
+
+710
+0:35:03,600 --> 0:35:05,600
+ to do recognition on the letters.
+
+711
+0:35:05,600 --> 0:35:08,600
+ Time will tell.
+
+712
+0:35:08,600 --> 0:35:10,600
+ But then when you start looking
+
+713
+0:35:10,600 --> 0:35:11,600
+ at these schematics,
+
+714
+0:35:11,600 --> 0:35:13,600
+ it's like,
+
+715
+0:35:13,600 --> 0:35:15,600
+ take a look at those resistors.
+
+716
+0:35:15,600 --> 0:35:18,600
+ They look odd, don't they?
+
+717
+0:35:18,600 --> 0:35:22,600
+ Long, thin boxes at the top,
+
+718
+0:35:22,600 --> 0:35:24,600
+ and the one at the bottom,
+
+719
+0:35:24,600 --> 0:35:26,600
+ major zigzagging compared to
+
+720
+0:35:26,600 --> 0:35:28,600
+ how Americans normally draw
+
+721
+0:35:28,600 --> 0:35:30,600
+ their schematics.
+
+722
+0:35:30,600 --> 0:35:34,600
+ That's weird.
+
+723
+0:35:34,600 --> 0:35:36,600
+ And then if you look at the number,
+
+724
+0:35:36,600 --> 0:35:39,600
+ digit two,
+
+725
+0:35:39,600 --> 0:35:41,600
+ it's smeared,
+
+726
+0:35:41,600 --> 0:35:43,600
+ symmetrically.
+
+727
+0:35:43,600 --> 0:35:49,600
+ The bottom curve of the digit two
+
+728
+0:35:49,600 --> 0:35:51,600
+ looks pretty unharmed,
+
+729
+0:35:51,600 --> 0:35:52,600
+ but the front curve
+
+730
+0:35:52,600 --> 0:35:56,600
+ is almost filled in.
+
+731
+0:35:56,600 --> 0:35:58,600
+ So how many people here
+
+732
+0:35:58,600 --> 0:35:59,600
+ have ever used
+
+733
+0:35:59,600 --> 0:36:03,600
+ a VersaTech electrostatic plotter?
+
+734
+0:36:03,600 --> 0:36:05,600
+ Oh, you're lucky.
+
+735
+0:36:11,600 --> 0:36:19,600
+ Weẹ
+
+736
+0:36:19,600 --> 0:36:20,800
+ I had a test last evening and
+
+737
+0:36:20,800 --> 0:36:21,600
+ I had ankle commercials
+
+738
+0:36:21,600 --> 0:36:22,400
+ about an
+
+739
+0:36:22,400 --> 0:36:22,600
+ In Hell A-Pot
+
+740
+0:36:22,600 --> 0:36:23,600
+ together.
+
+741
+0:36:23,600 --> 0:36:24,100
+ And, it was absolutely
+
+742
+0:36:24,100 --> 0:36:25,600
+ all working.
+
+743
+0:36:25,600 --> 0:36:26,600
+ Yeah,
+
+744
+0:36:26,600 --> 0:36:27,600
+ that's it,
+
+745
+0:36:27,600 --> 0:36:30,180
+ because that was the
+
+746
+0:36:30,180 --> 0:36:31,600
+ first step.
+
+747
+0:36:31,600 --> 0:36:33,600
+ Insonge was more intense.
+
+748
+0:36:33,600 --> 0:36:34,600
+ That test was all supposed
+
+749
+0:36:34,600 --> 0:36:35,600
+ to be done
+
+750
+0:36:35,600 --> 0:36:36,600
+ by you and
+
+751
+0:36:36,600 --> 0:36:37,600
+ were only
+
+752
+0:36:37,600 --> 0:36:39,600
+ two people.
+
+753
+0:36:39,600 --> 0:36:47,180
+ immersed in the liquid and if that sounds messy you are absolutely correct. So they
+
+754
+0:36:47,180 --> 0:36:52,500
+ bought a company called Versatech which used to make penplotters and said we have this
+
+755
+0:36:52,500 --> 0:37:01,320
+ pattern do something with it and Versatech did. They make Versatech matrixplotters and
+
+756
+0:37:01,320 --> 0:37:13,500
+ I think one of these, if my computer can deal with this one. There is a drawing here that
+
+757
+0:37:13,500 --> 0:37:23,980
+ shows the principle. Yeah that one. So basically you have the paper specially coated a little
+
+758
+0:37:23,980 --> 0:37:30,880
+ bit like the thermo paper in shop receipts and so on. And then you have a bunch of needle
+
+759
+0:37:30,880 --> 0:37:31,320
+ pins.
+
+760
+0:37:31,320 --> 0:37:39,080
+ And you fire a high voltage pulse on those which puts a small charge at the coating of
+
+761
+0:37:39,080 --> 0:37:46,500
+ the paper. And then you move it over to a small fountain of very dirty water. And the
+
+762
+0:37:46,500 --> 0:37:52,340
+ dirt will stick to the electrical charge and then you quickly dry it and get the color
+
+763
+0:37:52,340 --> 0:38:00,880
+ particles to melt into the sort of waxen layer on top of the paper. It's absolutely disgusting.
+
+764
+0:38:01,500 --> 0:38:04,700
+ You get and idea of when something went wrong when they are very proud of their air tight
+
+765
+0:38:04,700 --> 0:38:16,560
+ paper chamber. Uh...but they made these uplotters and um they made them in
+
+766
+0:38:16,560 --> 0:38:29,800
+ 1975 and if you do the math on a utlnotter like this, so its only 20 inch wide about 0.5mm.
+
+767
+0:38:29,800 --> 0:38:37,680
+ It prints at 100 dpi, that means it needs 2,000 dots per line, and it prints 3 inches
+
+768
+0:38:37,680 --> 0:38:41,000
+ a second, so it does 300 lines a second.
+
+769
+0:38:41,000 --> 0:38:45,680
+ That means you have to feed it 73 kilobytes per second in 1975.
+
+770
+0:38:45,680 --> 0:38:53,560
+ There was a lot of computers that couldn't do that.
+
+771
+0:38:53,560 --> 0:38:59,080
+ So it was very used, almost typical, you'd have the plotter sitting on specialized hardware
+
+772
+0:38:59,080 --> 0:39:03,640
+ for driving it, and you'd come with a Mac tape, and the specialized, whatever it was,
+
+773
+0:39:03,640 --> 0:39:06,020
+ would then drive the plotter.
+
+774
+0:39:06,020 --> 0:39:11,240
+ And one of the things Versatech had to do was very fast character generators, so that
+
+775
+0:39:11,240 --> 0:39:15,840
+ if you just wanted to print something where you had, if you could split your drawing into
+
+776
+0:39:15,840 --> 0:39:22,200
+ a bunch of symbols, you could just send symbol 7, 9, 10, like we do with the printer, and
+
+777
+0:39:22,200 --> 0:39:24,840
+ then you could feed it at full speed.
+
+778
+0:39:24,840 --> 0:39:27,760
+ And the CAD program they used...
+
+779
+0:39:27,760 --> 0:39:28,760
+ I'm sorry.
+
+780
+0:39:28,760 --> 0:39:34,300
+ It was originally set up for driving a Versatech printer.
+
+781
+0:39:34,300 --> 0:39:40,820
+ Everything is drawn in a 0.1 times 0.1 inch grid.
+
+782
+0:39:40,820 --> 0:39:46,580
+ All the letters are spaced exactly 0.245 millimeters apart.
+
+783
+0:39:46,580 --> 0:39:49,620
+ There's no letters that's raised half a line or anything like that.
+
+784
+0:39:49,620 --> 0:39:54,880
+ It has to fit in the grid because that's what the character generator can do.
+
+785
+0:39:54,880 --> 0:39:57,560
+ That's actually incredibly useful.
+
+786
+0:39:57,560 --> 0:39:58,640
+ Because now I know everything is...
+
+787
+0:39:58,640 --> 0:40:00,600
+ It's on a grid.
+
+788
+0:40:00,600 --> 0:40:08,160
+ That means I can draw my chips in ASCII art, because that's basically what they did.
+
+789
+0:40:08,160 --> 0:40:15,220
+ And then I can use that to generate a key card symbol, which, as you can see, overlays
+
+790
+0:40:15,220 --> 0:40:20,440
+ pretty nicely on the original schematic.
+
+791
+0:40:20,440 --> 0:40:24,640
+ And then the next thing I can do when I have my ASCII art, I can build a chip signature.
+
+792
+0:40:24,640 --> 0:40:25,640
+ Right?
+
+793
+0:40:25,640 --> 0:40:26,760
+ We have pins here, here, here, here, here.
+
+794
+0:40:26,760 --> 0:40:27,760
+ We have pins here, here, here, here.
+
+795
+0:40:27,760 --> 0:40:27,960
+ We have pins here, here, here, here.
+
+796
+0:40:27,960 --> 0:40:28,000
+ We have pins here, here, here, here.
+
+797
+0:40:28,000 --> 0:40:28,480
+ We have pins here, here, here, here.
+
+798
+0:40:28,480 --> 0:40:28,500
+ We have pins here, here, here, here.
+
+799
+0:40:28,500 --> 0:40:29,500
+ We have pins here, here, here, here, here.
+
+800
+0:40:29,500 --> 0:40:31,140
+ We have pins here, here, here, here, here.
+
+801
+0:40:31,140 --> 0:40:35,340
+ So I can build a signature that says, on the left side, pin, space, space, space, pin,
+
+802
+0:40:35,340 --> 0:40:37,420
+ space, space, pin, space.
+
+803
+0:40:37,420 --> 0:40:42,900
+ Right side, pin, pin, space, and so on.
+
+804
+0:40:42,900 --> 0:40:47,060
+ And I can recognize that on the schematic.
+
+805
+0:40:47,060 --> 0:40:52,500
+ When I find the box, the rectangle on the schematic, I can say, where do I have pins?
+
+806
+0:40:52,500 --> 0:40:54,020
+ Oh, this signature.
+
+807
+0:40:54,020 --> 0:40:57,820
+ So that's got to be in 74F244.
+
+808
+0:40:57,820 --> 0:40:58,340
+ Okay.
+
+809
+0:40:58,340 --> 0:41:11,580
+ So, status right now is that I have 407 schematics and I've found 10,772 components on them.
+
+810
+0:41:11,580 --> 0:41:21,200
+ And most of them I know what chip it is.
+
+811
+0:41:21,200 --> 0:41:23,780
+ I didn't think that was possible when I started.
+
+812
+0:41:23,780 --> 0:41:27,820
+ I thought this was something I would use a couple of days on and then I would give it
+
+813
+0:41:27,820 --> 0:41:37,320
+ up, go away, start a crowd project to get all these schematics digitized.
+
+814
+0:41:37,320 --> 0:41:43,140
+ I'm really surprised this was possible.
+
+815
+0:41:43,140 --> 0:41:48,960
+ There's still things outstanding, signals, labels, bosses, all that stuff.
+
+816
+0:41:48,960 --> 0:41:57,800
+ But a lot of that seems to be a problem with mapping it into KiCad.
+
+817
+0:41:57,800 --> 0:42:01,740
+ I don't know if, I'm not quite concluded where I am yet.
+
+818
+0:42:01,740 --> 0:42:09,660
+ Recognizing the letters and digits is going to be tough because they've really suffered
+
+819
+0:42:09,660 --> 0:42:11,200
+ the copying process hard.
+
+820
+0:42:11,200 --> 0:42:16,920
+ Telling a zero and an eight apart just by looking at them, forget it.
+
+821
+0:42:16,920 --> 0:42:19,100
+ But many of them are in the context.
+
+822
+0:42:19,100 --> 0:42:22,980
+ For instance, this one, we know what the pin numbers are.
+
+823
+0:42:22,980 --> 0:42:25,160
+ So, we know that is a 10.
+
+824
+0:42:25,160 --> 0:42:26,600
+ We know that is a one, zero.
+
+825
+0:42:26,600 --> 0:42:26,680
+ Okay.
+
+826
+0:42:26,680 --> 0:42:26,720
+ Okay.
+
+827
+0:42:26,720 --> 0:42:26,760
+ Okay.
+
+828
+0:42:26,760 --> 0:42:26,800
+ Okay.
+
+829
+0:42:26,800 --> 0:42:26,820
+ Okay.
+
+830
+0:42:26,820 --> 0:42:26,860
+ Okay.
+
+831
+0:42:26,860 --> 0:42:26,900
+ Okay.
+
+832
+0:42:26,900 --> 0:42:26,920
+ Okay.
+
+833
+0:42:26,920 --> 0:42:26,960
+ Okay.
+
+834
+0:42:26,960 --> 0:42:27,020
+ Okay.
+
+835
+0:42:27,020 --> 0:42:27,100
+ Okay.
+
+836
+0:42:27,100 --> 0:42:27,120
+ Okay.
+
+837
+0:42:27,120 --> 0:42:27,160
+ Okay.
+
+838
+0:42:27,160 --> 0:42:27,200
+ Okay.
+
+839
+0:42:27,200 --> 0:42:27,220
+ Okay.
+
+840
+0:42:27,220 --> 0:42:27,260
+ Okay.
+
+841
+0:42:27,260 --> 0:42:27,300
+ Okay.
+
+842
+0:42:27,300 --> 0:42:27,320
+ Okay.
+
+843
+0:42:27,320 --> 0:42:27,360
+ Okay.
+
+844
+0:42:27,360 --> 0:42:27,400
+ Okay.
+
+845
+0:42:27,400 --> 0:42:27,420
+ Okay.
+
+846
+0:42:27,800 --> 0:42:28,120
+ Okay.
+
+847
+0:42:28,120 --> 0:42:28,180
+ Okay.
+
+848
+0:42:28,180 --> 0:42:28,220
+ Okay.
+
+849
+0:42:28,220 --> 0:42:28,260
+ Okay.
+
+850
+0:42:28,260 --> 0:42:28,380
+ Okay.
+
+851
+0:42:28,380 --> 0:42:28,400
+ Okay.
+
+852
+0:42:28,400 --> 0:42:28,460
+ Okay.
+
+853
+0:42:28,460 --> 0:42:28,480
+ Okay.
+
+854
+0:42:28,480 --> 0:42:33,120
+ Whenever we have a schematic with that chip on it, we know that's a zero.
+
+855
+0:42:33,120 --> 0:42:39,360
+ So, that gives us a reference for that piece of paper with the copings, that have been through.
+
+856
+0:42:39,360 --> 0:42:43,200
+ But, I'm still not sure it's enough to actually be able to decode it.
+
+857
+0:42:43,200 --> 0:42:47,560
+ But, I'm going to continue working on this a bit.
+
+858
+0:42:47,560 --> 0:42:49,940
+ There's also other sources of text.
+
+859
+0:42:49,940 --> 0:42:53,180
+ Very often you have a buzz of eight signals.
+
+860
+0:42:53,180 --> 0:42:56,920
+ That's you know, blah, blah, blah, seven, blah, blah, blah, six, blah, blah, blah, five.
+
+861
+0:42:56,920 --> 0:43:01,160
+ that kind of context you can also figure out that yeah they probably didn't swap 18 and
+
+862
+0:43:01,160 --> 0:43:10,940
+ 10 didn't and so on but it may be faster simply to draw it by hand in keycat so that was my
+
+863
+0:43:10,940 --> 0:43:26,060
+ little summer vacation product this year I tried to simulate the the clock circuit
+
+864
+0:43:38,620 --> 0:43:40,300
+ what's the name of it
+
+865
+0:43:40,940 --> 0:44:09,100
+ so
+
+866
+0:44:09,100 --> 0:44:10,900
+ so when you run the um the system
+
+867
+0:44:10,900 --> 0:44:10,920
+ system
+
+868
+0:44:10,920 --> 0:44:10,940
+ system
+
+869
+0:44:10,940 --> 0:44:17,180
+ c simulation you can get it to produce very log compatible wave files and you can pull those up
+
+870
+0:44:17,180 --> 0:44:25,320
+ in a gtk wave and look at them and what you have here is actually here it's running 20 megahertz
+
+871
+0:44:25,320 --> 0:44:32,720
+ here's running 21 and here's running 20 megahertz and that's by taking the keycat schematic exporting
+
+872
+0:44:32,720 --> 0:44:39,820
+ a netlist running that through some python code that generates system c files and then compiling
+
+873
+0:44:39,820 --> 0:44:40,920
+ those and running that
+
+874
+0:44:40,920 --> 0:44:49,080
+ and saving the the wave file um because there's 407 files i'm i'm thinking a lot about the workflow
+
+875
+0:44:49,080 --> 0:44:54,040
+ of this i don't want to have to do something manually 407 times if i can automate it
+
+876
+0:44:55,800 --> 0:45:04,120
+ so the structure of the system c code how to get that to work differently and and i have these five
+
+877
+0:45:04,120 --> 0:45:08,040
+ major boards of the computer that's connected with a backplane and a front plane and how to get
+
+878
+0:45:08,680 --> 0:45:10,280
+ system c to understand that these
+
+879
+0:45:10,920 --> 0:45:18,120
+ are sort of connectors and so on but it's it's looking promising and if nothing else i can use
+
+880
+0:45:18,120 --> 0:45:26,440
+ this to look at specific sub circuits and say what does this do um and then try to get things working
+
+881
+0:45:28,120 --> 0:45:32,520
+ so maybe we will get a software emulation of the rational thousand it's still not impossible
+
+882
+0:45:37,640 --> 0:45:38,760
+ so yeah questions
+
+883
+0:45:40,920 --> 0:45:43,640
+ yes no i don't know what to do about a leaky roof
+
+884
+0:45:50,200 --> 0:45:59,160
+ you were using this system to see instead of doing vhdl or something why um portability um
+
+885
+0:46:01,160 --> 0:46:08,600
+ vhdl if i wanted to to do an fpga version i would go vhdl in particular i would do vhdl because it's
+
+886
+0:46:08,600 --> 0:46:09,720
+ originally ada based
+
+887
+0:46:10,960 --> 0:46:17,240
+ um but the goal here is to make a accessible
+
+888
+0:46:17,800 --> 0:46:24,520
+ emulation of the uh of the rational thousand so would really prefer if we could avoid
+
+889
+0:46:25,240 --> 0:46:30,840
+ that um that that people have to buy special hardware to run it
+
+890
+0:46:32,040 --> 0:46:39,720
+ and system c is literally just c plus plus classes so i figured we can probably find out how to run c++
+
+891
+0:46:39,720 --> 0:46:46,480
+ code a hundred years from now also oh yeah well actually that's a good
+
+892
+0:46:46,480 --> 0:46:50,520
+ question a lot more effort has gone into optimizing VHDL because a lot more
+
+893
+0:46:50,520 --> 0:46:57,140
+ people do it but simulating VHDL at speed is a very expensive hobby
+
+894
+0:46:57,140 --> 0:47:05,320
+ simulating system C at speed is a slightly more expensive hobby I talked
+
+895
+0:47:05,320 --> 0:47:14,500
+ to some of the people from the system C world and one advantage of not calling
+
+896
+0:47:14,500 --> 0:47:18,140
+ people on the phone but doing a video conference is you can see the eyes go
+
+897
+0:47:18,140 --> 0:47:27,380
+ this guy thought what but but when I explain to them what a situation is
+
+898
+0:47:27,380 --> 0:47:33,920
+ there yeah yeah that's probably the way to do it I hope you're a patient man but
+
+899
+0:47:33,920 --> 0:47:35,000
+ but I only I'm
+
+900
+0:47:35,000 --> 0:47:35,300
+ mainly
+
+901
+0:47:35,300 --> 0:47:40,120
+ see the system see as a way to to get something working enough that we can
+
+902
+0:47:40,120 --> 0:47:47,960
+ start optimizing without risking it stop working but yeah waiting one month for
+
+903
+0:47:47,960 --> 0:47:55,080
+ it to boot not optimal but the good thing about system C is that you can
+
+904
+0:47:55,080 --> 0:48:03,180
+ actually synthesize that to VHDL if you write it for it so so that option is
+
+905
+0:48:03,180 --> 0:48:04,980
+ still open I mean basically this is about
+
+906
+0:48:04,980 --> 0:48:09,240
+ getting a net list for the computer and if you have that you can transform it to
+
+907
+0:48:09,240 --> 0:48:12,600
+ anything that you want to just in this eye so if we want to do a rational
+
+908
+0:48:12,600 --> 0:48:21,380
+ thousand on a chip as a souvenir in our future data museum yeah we could do that
+
+909
+0:48:22,380 --> 0:48:32,360
+ any more questions thank you very much
+
+910
+0:48:32,360 --> 0:48:32,980
+ you're welcome
+
+911
+0:48:32,980 --> 0:48:33,480
+ you're welcome
+
+912
+0:48:33,480 --> 0:48:33,980
+ you're welcome
+
+913
+0:48:33,980 --> 0:48:34,480
+ you're welcome
+
+914
+0:48:34,480 --> 0:48:34,980
+ you're welcome
+
+915
+0:48:34,980 --> 0:48:35,480
+ you're welcome

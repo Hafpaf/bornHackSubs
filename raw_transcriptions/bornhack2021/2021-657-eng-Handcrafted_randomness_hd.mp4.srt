@@ -1,0 +1,2487 @@
+# Transcribed 2023-11-12T19 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:10,000
+ Hello and welcome to this talk. This was all planned to show you how we handle chaos.
+
+2
+0:00:10,000 --> 0:00:13,000
+ Give the word to Nikolai.
+
+3
+0:00:13,000 --> 0:00:20,000
+ Thank you. Thank you.
+
+4
+0:00:20,000 --> 0:00:26,000
+ Thank you very much. I prepared a long talk about how randomness is hard.
+
+5
+0:00:26,000 --> 0:00:35,000
+ True randomness. Apparently CloudFlare has a whole wall of lava lights that they film in order to generate true randomness.
+
+6
+0:00:35,000 --> 0:00:43,000
+ But this that you will be witnessing for the next 45 minutes is the good old fashioned handcrafted randomness.
+
+7
+0:00:43,000 --> 0:00:52,000
+ This is the plan. What I'm trying that I'll go through in 3D print.
+
+8
+0:00:52,000 --> 0:00:56,000
+ So it's a bit of bits and bobs and odds and ends.
+
+9
+0:00:56,000 --> 0:01:03,000
+ Insane 3D print. Why we will end up in the matrix.
+
+10
+0:01:03,000 --> 0:01:08,000
+ I have some free business plans that you can just take and run with.
+
+11
+0:01:08,000 --> 0:01:15,000
+ A 377 kilowatt computer. AI fumblings still watching you.
+
+12
+0:01:15,000 --> 0:01:20,000
+ And then if we can cut the connection to the Internet, the Bitcoin heist.
+
+13
+0:01:20,000 --> 0:01:23,000
+ I need your help. It's a good one.
+
+14
+0:01:23,000 --> 0:01:25,000
+ All right. Insane 3D print.
+
+15
+0:01:25,000 --> 0:01:26,000
+ I've been following this.
+
+16
+0:01:26,000 --> 0:01:31,000
+ Field of additive manufacturing for a few years.
+
+17
+0:01:31,000 --> 0:01:39,000
+ And yesterday I was at a like a 3D printing conference conference thing.
+
+18
+0:01:39,000 --> 0:01:44,000
+ And the the detail in it, you can see I just took this picture.
+
+19
+0:01:44,000 --> 0:01:48,000
+ It actually has.
+
+20
+0:01:48,000 --> 0:01:53,000
+ It has air air canals in it, like the detail is insane.
+
+21
+0:01:53,000 --> 0:01:55,000
+ And I brought them. And when we finish, you're more than.
+
+22
+0:01:55,000 --> 0:02:00,000
+ Welcome to look through. It's it's mind numbing.
+
+23
+0:02:00,000 --> 0:02:03,000
+ How detailed 3D print has has become.
+
+24
+0:02:03,000 --> 0:02:06,000
+ Also, this is 3D printed.
+
+25
+0:02:06,000 --> 0:02:09,000
+ Quite interesting. All right.
+
+26
+0:02:09,000 --> 0:02:14,000
+ In December, I bought a Tesla, which I'm very happy with.
+
+27
+0:02:14,000 --> 0:02:17,000
+ And it there's a thing called scan my Tesla.
+
+28
+0:02:17,000 --> 0:02:23,000
+ It's an Android app. And you you hook up the car to the app and you get access to all sorts of very interesting.
+
+29
+0:02:23,000 --> 0:02:28,000
+ Things. What's going on?
+
+30
+0:02:28,000 --> 0:02:36,000
+ Evie sort of evangelists often say, well, there's just one moving part in an electric car and therefore it will never break.
+
+31
+0:02:36,000 --> 0:02:39,000
+ I can assure you there are much more than one moving part.
+
+32
+0:02:39,000 --> 0:02:41,000
+ There are tons of pumps and things going on.
+
+33
+0:02:41,000 --> 0:02:43,000
+ It's it's quite interesting.
+
+34
+0:02:43,000 --> 0:02:48,000
+ One of the things that I find extra interesting is on the right.
+
+35
+0:02:48,000 --> 0:02:52,000
+ You see regen when you lift the gas pedal in an EV.
+
+36
+0:02:52,000 --> 0:02:57,000
+ You regen on the battery and actually 20 percent of my driving is pure regen.
+
+37
+0:02:57,000 --> 0:02:59,000
+ And I mean, 20 percent. That's not nothing.
+
+38
+0:02:59,000 --> 0:03:07,000
+ It's a fifth of the consumption for free, which would have otherwise gone to the birds in the brakes.
+
+39
+0:03:07,000 --> 0:03:10,000
+ There's another thing. And this might be kind of a nerdy thing.
+
+40
+0:03:10,000 --> 0:03:19,000
+ But I'm I'm thinking about having a talk with my insurance company because insurance is based on how much horsepower you have.
+
+41
+0:03:19,000 --> 0:03:22,000
+ And the thing is, this car has three hundred and seventy six horsepower.
+
+42
+0:03:22,000 --> 0:03:27,000
+ It has three hundred and seventy seven kilowatts of horsepower sometimes, but only sometimes.
+
+43
+0:03:27,000 --> 0:03:35,000
+ Because if the weather is cold, if the battery is cold or if it's depleted, it has far from three hundred and seventy seven horsepower.
+
+44
+0:03:35,000 --> 0:03:38,000
+ And I mean, why do I have to pay full price?
+
+45
+0:03:38,000 --> 0:03:43,000
+ A gas car always potentially has the maximum amount of horsepower.
+
+46
+0:03:43,000 --> 0:03:49,000
+ I cannot confirm. Of course, Tesla is known for this autopilot thing.
+
+47
+0:03:49,000 --> 0:03:51,000
+ Someone said that this was an option.
+
+48
+0:03:52,000 --> 0:03:54,000
+ I think it's true because it has a nag.
+
+49
+0:03:54,000 --> 0:03:57,000
+ Of course, it wants to know that there's still a driver there. Right.
+
+50
+0:03:57,000 --> 0:03:59,000
+ So you have to put torque on the steering wheel.
+
+51
+0:03:59,000 --> 0:04:02,000
+ It also has a camera that they're going to utilize.
+
+52
+0:04:02,000 --> 0:04:08,000
+ But of course, this is saying to keep my hands on the steering wheel and to be prepared for what they're aiming at.
+
+53
+0:04:08,000 --> 0:04:10,000
+ And actually, Elon promises a lot of things, right.
+
+54
+0:04:10,000 --> 0:04:13,000
+ But what they're aiming at is full self-driving.
+
+55
+0:04:13,000 --> 0:04:21,000
+ And they say, if you buy a Tesla today, it will be fully autonomous eventually, which is hard to believe.
+
+56
+0:04:21,000 --> 0:04:31,000
+ But when you see these YouTube videos of people who have access to the full self-driving beta, it seems less and less unlikely.
+
+57
+0:04:31,000 --> 0:04:33,000
+ So it might happen.
+
+58
+0:04:33,000 --> 0:04:44,000
+ In the meantime, there's a guy called George Hutts who has made a kit that you can install if you have a reasonably new car.
+
+59
+0:04:44,000 --> 0:04:48,000
+ This is in Danish. Nerd builds his own self-driving car.
+
+60
+0:04:48,000 --> 0:04:50,000
+ It's just to show you the installation.
+
+61
+0:04:51,000 --> 0:04:55,000
+ Make your old, boring car into a self-driving car.
+
+62
+0:04:55,000 --> 0:04:58,000
+ On time. We're starting now.
+
+63
+0:04:58,000 --> 0:05:01,000
+ Change your old, boring car into an autonomous car.
+
+64
+0:05:01,000 --> 0:05:03,000
+ Come on.
+
+65
+0:05:03,000 --> 0:05:06,000
+ And that is an Android phone.
+
+66
+0:05:06,000 --> 0:05:11,000
+ A package with a fan that runs when it gets up.
+
+67
+0:05:15,000 --> 0:05:17,000
+ And of course, they only sell you the hardware.
+
+68
+0:05:17,000 --> 0:05:20,000
+ Software you gotta find on their webpage.
+
+69
+0:05:21,000 --> 0:05:23,000
+ Here.
+
+70
+0:05:23,000 --> 0:05:24,000
+ Dut.
+
+71
+0:05:25,000 --> 0:05:27,000
+ Then you take...
+
+72
+0:05:29,000 --> 0:05:31,000
+ It happens here on this side of the mirror.
+
+73
+0:05:31,000 --> 0:05:33,000
+ You can see better here.
+
+74
+0:05:33,000 --> 0:05:34,000
+ There.
+
+75
+0:05:34,000 --> 0:05:36,000
+ Then you take that one and shoot it.
+
+76
+0:05:36,000 --> 0:05:37,000
+ There.
+
+77
+0:05:37,000 --> 0:05:40,000
+ Then you take that one and shoot it.
+
+78
+0:05:40,000 --> 0:05:41,000
+ There.
+
+79
+0:05:42,000 --> 0:05:46,000
+ Then you take this one and shoot it.
+
+80
+0:05:48,000 --> 0:05:49,000
+ Down here.
+
+81
+0:05:49,000 --> 0:05:50,000
+ Dut.
+
+82
+0:05:51,000 --> 0:05:53,000
+ Then you take that one and shoot it.
+
+83
+0:05:53,000 --> 0:05:54,000
+ Down here.
+
+84
+0:05:54,000 --> 0:05:55,000
+ Then you take that one and shoot it.
+
+85
+0:05:55,000 --> 0:05:56,000
+ Down here.
+
+86
+0:05:56,000 --> 0:05:57,000
+ Then you take that one and shoot it.
+
+87
+0:05:57,000 --> 0:05:58,000
+ Down here.
+
+88
+0:05:58,000 --> 0:05:59,000
+ Then you take that one and shoot it.
+
+89
+0:05:59,000 --> 0:06:00,000
+ Down here.
+
+90
+0:06:00,000 --> 0:06:04,000
+ And of course, you can make the guides a little nicer.
+
+91
+0:06:04,000 --> 0:06:05,000
+ Um...
+
+92
+0:06:05,000 --> 0:06:07,000
+ I have driven...
+
+93
+0:06:07,000 --> 0:06:08,000
+ What was that?
+
+94
+0:06:08,000 --> 0:06:09,000
+ Half a minute?
+
+95
+0:06:09,000 --> 0:06:14,000
+ I have driven 1500 kilometers with this setup.
+
+96
+0:06:14,000 --> 0:06:16,000
+ And it's very good.
+
+97
+0:06:16,000 --> 0:06:17,000
+ And it's very capable.
+
+98
+0:06:17,000 --> 0:06:19,000
+ Um...
+
+99
+0:06:19,000 --> 0:06:24,000
+ Bottom left is me on a closed area.
+
+100
+0:06:24,000 --> 0:06:31,000
+ The other ones I found on the internet.
+
+101
+0:06:31,000 --> 0:06:38,000
+ But you can see even on a dirt road, an unmarked dirt road, this system is...
+
+102
+0:06:38,000 --> 0:06:43,000
+ One could argue overconfident, but it's pretty capable.
+
+103
+0:06:43,000 --> 0:06:48,000
+ And interestingly enough, it actually utilizes, because even though it's...
+
+104
+0:06:48,000 --> 0:06:55,000
+ Even though it's kind of a hacker thing, it does have a nag also.
+
+105
+0:06:55,000 --> 0:06:59,000
+ It utilizes the phone's front cameras to see you.
+
+106
+0:06:59,000 --> 0:07:03,000
+ And if you're not watching the road, if you're watching on your phone, it says, beep, beep,
+
+107
+0:07:03,000 --> 0:07:04,000
+ watch the road.
+
+108
+0:07:04,000 --> 0:07:09,000
+ And it will nag you a few times, and then it brings the car to a stop.
+
+109
+0:07:09,000 --> 0:07:10,000
+ All right.
+
+110
+0:07:10,000 --> 0:07:12,000
+ Free business plans.
+
+111
+0:07:12,000 --> 0:07:13,000
+ Um...
+
+112
+0:07:13,000 --> 0:07:15,000
+ This is kind of a stupid one.
+
+113
+0:07:15,000 --> 0:07:17,000
+ But it's not as stupid as it sounds.
+
+114
+0:07:17,000 --> 0:07:19,000
+ I made a program.
+
+115
+0:07:19,000 --> 0:07:21,000
+ It's not out yet.
+
+116
+0:07:21,000 --> 0:07:26,000
+ But for some reason, light in refrigerators sucks.
+
+117
+0:07:26,000 --> 0:07:28,000
+ There's only one light.
+
+118
+0:07:28,000 --> 0:07:32,000
+ If you buy really, really expensive refrigerators, you can get more than one light.
+
+119
+0:07:32,000 --> 0:07:37,000
+ Or if you go online and pay 149 kroners, you can install this.
+
+120
+0:07:37,000 --> 0:07:41,000
+ You see on the right, this 360 insta-fridge light.
+
+121
+0:07:41,000 --> 0:07:43,000
+ I would definitely make a business.
+
+122
+0:07:43,000 --> 0:07:46,000
+ It's a passive infrared detector.
+
+123
+0:07:46,000 --> 0:07:49,000
+ So, it's actually made for a walk-in closet.
+
+124
+0:07:49,000 --> 0:07:51,000
+ But you just put it up in the fridge.
+
+125
+0:07:51,000 --> 0:07:54,000
+ And whenever you open it, you have this beautiful light in your fridge.
+
+126
+0:07:54,000 --> 0:07:55,000
+ Just, I mean, watch it.
+
+127
+0:07:55,000 --> 0:07:57,000
+ It's...
+
+128
+0:07:57,000 --> 0:07:58,000
+ It's beautiful.
+
+129
+0:07:58,000 --> 0:07:59,000
+ All right.
+
+130
+0:07:59,000 --> 0:08:03,000
+ Second free business plan is another project I worked on in this TV show.
+
+131
+0:08:03,000 --> 0:08:08,000
+ And it's called Smart Köhler or Smart Fridge.
+
+132
+0:08:08,000 --> 0:08:16,000
+ And basically, the task I was trying to solve was, why do I have to shop for ordinary things?
+
+133
+0:08:16,000 --> 0:08:21,000
+ Like, why does my fridge know when things are beginning to run out?
+
+134
+0:08:21,000 --> 0:08:31,000
+ So, this is a proof of concept, I guess, with a pretty simple, pretty lean neural network that can identify a milk.
+
+135
+0:08:31,000 --> 0:08:34,000
+ And then you put the milk on scales inside the kitchen.
+
+136
+0:08:34,000 --> 0:08:38,000
+ And if the milk is less than 300 grams, then it orders some new milk.
+
+137
+0:08:38,000 --> 0:08:42,000
+ And of course, you don't want to do it like this.
+
+138
+0:08:42,000 --> 0:08:45,000
+ You want to put the fridge on a weight, right?
+
+139
+0:08:45,000 --> 0:08:49,000
+ And have a much smarter AI that can tell what goes in and goes out.
+
+140
+0:08:49,000 --> 0:08:53,000
+ And can elaborate on, okay, so what is the typical...
+
+141
+0:08:53,000 --> 0:08:55,000
+ When do things expire?
+
+142
+0:08:55,000 --> 0:08:57,000
+ Like, you used so much of this product.
+
+143
+0:08:57,000 --> 0:09:03,000
+ And why don't you lessen your food waste by utilizing, you know, a few things that you have.
+
+144
+0:09:03,000 --> 0:09:07,000
+ If you take that little thing you have and this little thing.
+
+145
+0:09:07,000 --> 0:09:09,000
+ I think this will...
+
+146
+0:09:09,000 --> 0:09:10,000
+ Someone should do this.
+
+147
+0:09:10,000 --> 0:09:13,000
+ Because it's not impossible, I think.
+
+148
+0:09:13,000 --> 0:09:14,000
+ All right.
+
+149
+0:09:14,000 --> 0:09:19,000
+ So, this is screen capture from an app.
+
+150
+0:09:19,000 --> 0:09:22,000
+ It's a drone called Skydio R2.
+
+151
+0:09:22,000 --> 0:09:30,000
+ And from what I know, it's the first 100% functioning, totally autonomous vehicle.
+
+152
+0:09:30,000 --> 0:09:32,000
+ It's a drone.
+
+153
+0:09:32,000 --> 0:09:36,000
+ And it does simultaneous mapping and planning.
+
+154
+0:09:36,000 --> 0:09:38,000
+ And it actually works.
+
+155
+0:09:38,000 --> 0:09:42,000
+ It can fly itself in the forest.
+
+156
+0:09:42,000 --> 0:09:44,000
+ And it can do a lot of things.
+
+157
+0:09:44,000 --> 0:09:46,000
+ So, what I'm thinking is, all right.
+
+158
+0:09:46,000 --> 0:09:48,000
+ So, let's try and disrupt some businesses, right?
+
+159
+0:09:48,000 --> 0:09:50,000
+ So, now we have this thing.
+
+160
+0:09:50,000 --> 0:09:54,000
+ And this was actually in front of my apartment a few weeks back.
+
+161
+0:09:54,000 --> 0:09:57,000
+ It says the gutter troll?
+
+162
+0:09:57,000 --> 0:09:59,000
+ The gutter gnome?
+
+163
+0:09:59,000 --> 0:10:00,000
+ I don't know.
+
+164
+0:10:00,000 --> 0:10:02,000
+ But their business is basically cleaning gutters, right?
+
+165
+0:10:02,000 --> 0:10:08,000
+ And you can see they have, like, a long carbon fiber tube all the way up to the gutters on the fifth floor.
+
+166
+0:10:08,000 --> 0:10:10,000
+ And they're cleaning the gutters.
+
+167
+0:10:10,000 --> 0:10:12,000
+ So, what I'm thinking is, okay.
+
+168
+0:10:12,000 --> 0:10:14,000
+ So, this company, they have customers, right?
+
+169
+0:10:14,000 --> 0:10:17,000
+ And maybe each company can have 100 kilometers of gutter.
+
+170
+0:10:17,000 --> 0:10:19,000
+ That is sort of their business.
+
+171
+0:10:19,000 --> 0:10:28,000
+ But if you have a drone like this, you could just, you know, you can take on much more, much more, many more clients.
+
+172
+0:10:28,000 --> 0:10:34,000
+ Because you can just have your drone go and inspect the gutters and only actually clean where it's needed.
+
+173
+0:10:34,000 --> 0:10:40,000
+ Or if you're not into gutter cleaning, you can be the guy who make, or the girl, or the person,
+
+174
+0:10:40,000 --> 0:10:44,000
+ who makes the app, the gutter cleaning company app, right?
+
+175
+0:10:44,000 --> 0:10:46,000
+ For 30% revenue.
+
+176
+0:10:46,000 --> 0:10:52,000
+ And so, I think a lot of businesses are, will be affected by this.
+
+177
+0:10:52,000 --> 0:10:57,000
+ Oh, by the way, you're more than welcome to comment or ask questions along the way.
+
+178
+0:10:57,000 --> 0:10:59,000
+ If you have any.
+
+179
+0:10:59,000 --> 0:11:03,000
+ Now things will take a turn.
+
+180
+0:11:03,000 --> 0:11:05,000
+ This is why we'll end up in the matrix.
+
+181
+0:11:05,000 --> 0:11:06,000
+ If we're not already here.
+
+182
+0:11:06,000 --> 0:11:08,000
+ I don't know.
+
+183
+0:11:08,000 --> 0:11:10,000
+ Back in the old days, things were pretty simple.
+
+184
+0:11:10,000 --> 0:11:11,000
+ Right?
+
+185
+0:11:11,000 --> 0:11:14,000
+ But then we got screens.
+
+186
+0:11:14,000 --> 0:11:18,000
+ The economy back in the old days, this is, of course, oversimplified.
+
+187
+0:11:18,000 --> 0:11:19,000
+ But it was pretty basic.
+
+188
+0:11:19,000 --> 0:11:22,000
+ You, entertainment was a luxury.
+
+189
+0:11:22,000 --> 0:11:24,000
+ You paid to get entertainment.
+
+190
+0:11:24,000 --> 0:11:26,000
+ And it cost a lot of money.
+
+191
+0:11:26,000 --> 0:11:32,000
+ And of course, right now, we all have all the entertainment we want for free.
+
+192
+0:11:32,000 --> 0:11:35,000
+ There's, like, no matter what you're into, there's something for you.
+
+193
+0:11:35,000 --> 0:11:38,000
+ And the business model, of course, looks different.
+
+194
+0:11:38,000 --> 0:11:40,000
+ Because when it's free.
+
+195
+0:11:40,000 --> 0:11:41,000
+ You're not paying.
+
+196
+0:11:41,000 --> 0:11:42,000
+ But, of course, I'm paying.
+
+197
+0:11:42,000 --> 0:11:45,000
+ And Ana spoke to this earlier today.
+
+198
+0:11:45,000 --> 0:11:49,000
+ Of course, I'm paying with all my data.
+
+199
+0:11:49,000 --> 0:11:52,000
+ This is a horrible fact.
+
+200
+0:11:52,000 --> 0:11:59,000
+ I think that Facebook is one of the world's most valuable companies without any of us paying them anything.
+
+201
+0:11:59,000 --> 0:12:08,000
+ Which is just sort of a litmus test that data is definitely worth something.
+
+202
+0:12:08,000 --> 0:12:11,000
+ But it will end up here or there or there.
+
+203
+0:12:11,000 --> 0:12:14,000
+ And some people argue this will never happen.
+
+204
+0:12:14,000 --> 0:12:17,000
+ And I say, well, we are on our way.
+
+205
+0:12:17,000 --> 0:12:20,000
+ Right?
+
+206
+0:12:20,000 --> 0:12:25,000
+ This is a company called Inspired Entertainment.
+
+207
+0:12:25,000 --> 0:12:35,000
+ And what they do is because gambling, vice, right?
+
+208
+0:12:35,000 --> 0:12:38,000
+ You can always make people make money from people's vices.
+
+209
+0:12:38,000 --> 0:12:44,000
+ What they do is synthetic sports that you can bet on.
+
+210
+0:12:44,000 --> 0:12:49,000
+ So, I mean, nobody wants to watch a 90-minute game when you can have a 10-minute game.
+
+211
+0:12:49,000 --> 0:12:50,000
+ Right?
+
+212
+0:12:50,000 --> 0:12:51,000
+ So, it's a thing.
+
+213
+0:12:51,000 --> 0:12:55,000
+ And this is 100% synthetic.
+
+214
+0:12:55,000 --> 0:13:07,000
+ And there's a company called Riff that, you know, are already changing the reality of our television screens.
+
+215
+0:13:07,000 --> 0:13:11,000
+ And, of course, this is going to be my argument is that this is going to be much more prominent.
+
+216
+0:13:11,000 --> 0:13:16,000
+ Because with technology, the prices are falling and falling and falling.
+
+217
+0:13:16,000 --> 0:13:32,000
+ And we know that the sort of the basic economic model of social media is attention.
+
+218
+0:13:32,000 --> 0:13:33,000
+ Right?
+
+219
+0:13:33,000 --> 0:13:36,000
+ So, right now, it will do whatever it can.
+
+220
+0:13:36,000 --> 0:13:43,000
+ It's a very powerful machine to grab our attention.
+
+221
+0:13:43,000 --> 0:13:46,000
+ This material has to be produced.
+
+222
+0:13:46,000 --> 0:13:47,000
+ Right?
+
+223
+0:13:47,000 --> 0:13:56,000
+ And even though there might be a lot of things that could grab your attention, what if I could make something that will grab your specifically your attention?
+
+224
+0:13:56,000 --> 0:13:58,000
+ And what if I could make it for free?
+
+225
+0:13:58,000 --> 0:14:02,000
+ And that is my basic argument here that we're moving towards that.
+
+226
+0:14:02,000 --> 0:14:05,000
+ This is an example from Nvidia.
+
+227
+0:14:05,000 --> 0:14:17,000
+ They are, instead of, you know, digitizing and compressing and sending video frames when you do Zoom meetings, they just make an artificial puppet.
+
+228
+0:14:17,000 --> 0:14:20,000
+ And they just send the data that controls the puppet.
+
+229
+0:14:20,000 --> 0:14:23,000
+ So, the person you're talking to is no longer a real person.
+
+230
+0:14:23,000 --> 0:14:31,000
+ It's just basically a deep fake puppet being controlled by the person in the other end.
+
+231
+0:14:31,000 --> 0:14:34,000
+ And they, of course, want to do this for good.
+
+232
+0:14:34,000 --> 0:14:41,000
+ And everybody knows this from Zoom meetings that you can't watch, you can't look into the camera and look at your screen at the same time.
+
+233
+0:14:41,000 --> 0:14:43,000
+ But it doesn't matter when you're a puppet.
+
+234
+0:14:43,000 --> 0:14:45,000
+ We can just turn your face.
+
+235
+0:14:45,000 --> 0:14:46,000
+ Right?
+
+236
+0:14:46,000 --> 0:14:49,000
+ So, I'm staring at you even though I'm not.
+
+237
+0:14:49,000 --> 0:14:55,000
+ So, this, of course, all hinges on synthetic entertainment.
+
+238
+0:14:55,000 --> 0:14:58,000
+ These are a few animals I made a few years back.
+
+239
+0:14:58,000 --> 0:15:02,000
+ These are synthetic animals.
+
+240
+0:15:02,000 --> 0:15:03,000
+ This.
+
+241
+0:15:03,000 --> 0:15:14,000
+ I think often one can look to the more artistic expressions in order to find or get some clues as to where we're going.
+
+242
+0:15:14,000 --> 0:15:17,000
+ This rental does not exist.
+
+243
+0:15:17,000 --> 0:15:19,000
+ And it's 100% synthetic.
+
+244
+0:15:19,000 --> 0:15:22,000
+ Everything you see is synthetic.
+
+245
+0:15:22,000 --> 0:15:24,000
+ They're just imaginations.
+
+246
+0:15:24,000 --> 0:15:31,000
+ I have a friend who sells books on Amazon that are written by an AI.
+
+247
+0:15:31,000 --> 0:15:39,000
+ And even the commenters and the reviewers are AI.
+
+248
+0:15:39,000 --> 0:15:42,000
+ These are synthetic cars.
+
+249
+0:15:42,000 --> 0:15:54,000
+ And in the field of synthetic faces, things are moving in a pretty rapid pace.
+
+250
+0:15:54,000 --> 0:15:57,000
+ Of course, these things are just still images for now.
+
+251
+0:15:57,000 --> 0:15:59,000
+ But eventually.
+
+252
+0:15:59,000 --> 0:16:02,000
+ These are synthetic situations.
+
+253
+0:16:02,000 --> 0:16:07,000
+ And, again, they're 100% synthetic.
+
+254
+0:16:07,000 --> 0:16:09,000
+ There's nothing real about them.
+
+255
+0:16:09,000 --> 0:16:16,000
+ This is a computer playing free jazz over, you know, we can see a guy water skiing.
+
+256
+0:16:16,000 --> 0:16:18,000
+ And we're playing football.
+
+257
+0:16:18,000 --> 0:16:19,000
+ We're doing things.
+
+258
+0:16:19,000 --> 0:16:20,000
+ Right?
+
+259
+0:16:20,000 --> 0:16:25,000
+ And I'm, well, I'm often, the art tells us where we're going.
+
+260
+0:16:25,000 --> 0:16:28,000
+ And this is actually a live transmission from the future.
+
+261
+0:16:28,000 --> 0:16:37,000
+ Where whatever social media exists at that time will serve you whatever it is you want the most.
+
+262
+0:16:53,000 --> 0:16:56,000
+ If you haven't seen the movie Being Jan Malkovich.
+
+263
+0:16:56,000 --> 0:16:59,000
+ This is a recommendation.
+
+264
+0:16:59,000 --> 0:17:04,000
+ There's a guy in an office.
+
+265
+0:17:04,000 --> 0:17:11,000
+ And behind a filing cabinet, there's a portal that leads into Jan Malkovich's head.
+
+266
+0:17:11,000 --> 0:17:17,000
+ And you can pay and take a trip to be inside Jan Malkovich's head.
+
+267
+0:17:17,000 --> 0:17:19,000
+ And Jan Malkovich finds this out.
+
+268
+0:17:19,000 --> 0:17:22,000
+ And he sort of feels like someone's in his head.
+
+269
+0:17:22,000 --> 0:17:25,000
+ And this is then what happens when he goes to the office.
+
+270
+0:17:25,000 --> 0:17:28,000
+ And demands to try this out.
+
+271
+0:17:28,000 --> 0:17:30,000
+ This tour that everyone is taking.
+
+272
+0:17:30,000 --> 0:17:32,000
+ So he ends up in his own head.
+
+273
+0:17:32,000 --> 0:17:34,000
+ Never mind.
+
+274
+0:17:34,000 --> 0:17:36,000
+ Don't worry.
+
+275
+0:17:36,000 --> 0:17:38,000
+ They're still watching you.
+
+276
+0:17:38,000 --> 0:17:40,000
+ This is not a test.
+
+277
+0:17:40,000 --> 0:17:48,000
+ This is an Amazon product that you wear around your wrist that evaluates your interactions with other people during the day.
+
+278
+0:17:48,000 --> 0:17:50,000
+ If they're positive or negative.
+
+279
+0:17:50,000 --> 0:17:52,000
+ And, you know.
+
+280
+0:17:52,000 --> 0:17:54,000
+ So you can buy that from Jeff Bezos.
+
+281
+0:17:55,000 --> 0:17:57,000
+ Oldies but goldies.
+
+282
+0:17:57,000 --> 0:17:58,000
+ Complain otherwise.
+
+283
+0:17:58,000 --> 0:18:01,000
+ If you sit and do nothing, you're fucked.
+
+284
+0:18:01,000 --> 0:18:08,000
+ I'm quoting William Binney, the former technical director of the NSA.
+
+285
+0:18:08,000 --> 0:18:17,000
+ And often it's maybe hard to wrap your head around why this surveillance is a problem.
+
+286
+0:18:17,000 --> 0:18:24,000
+ Because most likely most of us, we don't experience any harassment.
+
+287
+0:18:24,000 --> 0:18:27,000
+ Because we still live in a pretty good democracy.
+
+288
+0:18:27,000 --> 0:18:43,000
+ But this is a story from a BBC journalist who he posted on his WeChat some pictures from the 30-year celebration of nothing happening at the Tiananmen Square.
+
+289
+0:18:43,000 --> 0:18:46,000
+ The pictures were from Hong Kong.
+
+290
+0:18:46,000 --> 0:18:47,000
+ And there are no signs.
+
+291
+0:18:47,000 --> 0:18:48,000
+ There are no nothing.
+
+292
+0:18:48,000 --> 0:18:52,000
+ They're just people, you know, there's a lot of people in the street.
+
+293
+0:18:52,000 --> 0:18:53,000
+ And he posts these pictures.
+
+294
+0:18:53,000 --> 0:18:56,000
+ And his Chinese friends ask, what is this?
+
+295
+0:18:56,000 --> 0:18:58,000
+ Why are people gathering?
+
+296
+0:18:58,000 --> 0:19:04,000
+ And then what happens is that his WeChat stops working.
+
+297
+0:19:04,000 --> 0:19:06,000
+ And I mean, okay, fine.
+
+298
+0:19:06,000 --> 0:19:07,000
+ It's just an app.
+
+299
+0:19:07,000 --> 0:19:08,000
+ Right?
+
+300
+0:19:08,000 --> 0:19:22,000
+ But if it's just an app where you use it for everything, when you contact other people, when you call people, when you text people, when you want to get on the bus, when you want to buy something in the supermarket, it means that you can know what's going on.
+
+301
+0:19:22,000 --> 0:19:29,000
+ It means that you can no longer act in society because this app is locked down.
+
+302
+0:19:29,000 --> 0:19:41,000
+ And you can open it or he could open it by recording a video of himself, not giving any sort of testimony or anything, just reading some sample texts.
+
+303
+0:19:41,000 --> 0:19:44,000
+ And then WeChat magically opens again.
+
+304
+0:19:44,000 --> 0:19:46,000
+ Right?
+
+305
+0:19:46,000 --> 0:19:50,000
+ So that's, of course, a way of really controlling people.
+
+306
+0:19:50,000 --> 0:19:51,000
+ Yeah.
+
+307
+0:19:51,000 --> 0:19:58,000
+ All right.
+
+308
+0:19:58,000 --> 0:20:01,000
+ You can just read this.
+
+309
+0:20:01,000 --> 0:20:03,000
+ Righty.
+
+310
+0:20:03,000 --> 0:20:05,000
+ Apple.
+
+311
+0:20:05,000 --> 0:20:10,000
+ They've always crowded.
+
+312
+0:20:10,000 --> 0:20:12,000
+ They've always.
+
+313
+0:20:12,000 --> 0:20:16,000
+ It's a selling point for iPhones especially.
+
+314
+0:20:16,000 --> 0:20:19,000
+ They had a big banner a few years back in London.
+
+315
+0:20:19,000 --> 0:20:20,000
+ Yeah.
+
+316
+0:20:20,000 --> 0:20:21,000
+ Yeah.
+
+317
+0:20:21,000 --> 0:20:27,000
+ In Las Vegas where it said what happens on your iPhone stays on your iPhone.
+
+318
+0:20:27,000 --> 0:20:34,000
+ And they've been very public and they've been fighting the FBI and they don't want to do back doors and things like that.
+
+319
+0:20:34,000 --> 0:20:38,000
+ But right now they have maybe crossed the line.
+
+320
+0:20:38,000 --> 0:20:49,000
+ The thing is that they want to scan your pictures to, of course, to make sure you don't have child pornography on your phone.
+
+321
+0:20:49,000 --> 0:20:50,000
+ And they do this locally.
+
+322
+0:20:50,000 --> 0:21:03,000
+ And the way they do it is by your phone has a hash of known problematic pictures that it then compares to.
+
+323
+0:21:03,000 --> 0:21:04,000
+ So it's still on your phone.
+
+324
+0:21:04,000 --> 0:21:07,000
+ Whatever happens on your phone stays on your phone and all that.
+
+325
+0:21:07,000 --> 0:21:19,000
+ And this picture hash, of course, is unique for each of the bi-professionals, these NGOs that deal with child pornography and those abusive things.
+
+326
+0:21:19,000 --> 0:21:27,000
+ They sort of identify and put a public check mark on these things and they make a hash and then they distribute the hash, right?
+
+327
+0:21:27,000 --> 0:21:36,000
+ Which is all fine and dandy except when you have hash collusions where two different images produces the same hash.
+
+328
+0:21:36,000 --> 0:21:45,000
+ And in a very few days, clever people have come up with pictures that produces the same hash.
+
+329
+0:21:45,000 --> 0:21:48,000
+ Which Apple says, oh, this will never happen in a zillion years.
+
+330
+0:21:48,000 --> 0:21:52,000
+ But, I mean, it happened.
+
+331
+0:21:52,000 --> 0:21:55,000
+ This is sort of a biting its own tail.
+
+332
+0:21:55,000 --> 0:22:00,000
+ This picture's neural hash is and that is the neural hash of the picture.
+
+333
+0:22:00,000 --> 0:22:04,000
+ And I think this describes the situation pretty well.
+
+334
+0:22:04,000 --> 0:22:07,000
+ Why did you decide to release this right now?
+
+335
+0:22:07,000 --> 0:22:08,000
+ Was there pressure on you?
+
+336
+0:22:08,000 --> 0:22:09,000
+ No, not really.
+
+337
+0:22:09,000 --> 0:22:11,000
+ It came down to we figured it out.
+
+338
+0:22:11,000 --> 0:22:17,000
+ We figured out how to create the first abusable technology in human history that won't be abused.
+
+339
+0:22:18,000 --> 0:22:19,000
+ And then we figured out how much more we could survive that.
+
+340
+0:22:19,000 --> 0:22:24,000
+ So I don't know where these apps helped in the sobie because we had to actually make it happen.
+
+341
+0:22:24,000 --> 0:22:28,000
+ Besides, I think some of what we found, a lot of the stuff that I've put up on this host now appears just like we just shared, right?
+
+342
+0:22:28,000 --> 0:22:33,000
+ Things have changed, you know, by the way.
+
+343
+0:22:33,000 --> 0:22:36,000
+ Now you get to впер Block, those are the videos I was telling you about earlier.
+
+344
+0:22:36,000 --> 0:22:37,000
+ Yeah.
+
+345
+0:22:37,000 --> 0:22:38,000
+ Yes.
+
+346
+0:22:38,000 --> 0:22:40,000
+ Does it affect technology in the่
+
+347
+0:22:40,000 --> 0:22:41,000
+ Why do you think that?
+
+348
+0:22:41,000 --> 0:22:43,000
+ Okay.
+
+349
+0:22:43,000 --> 0:22:44,000
+ Do you feel uncomfortable with the harden tools?
+
+350
+0:22:44,000 --> 0:22:45,000
+ Well, they are available in Google дело complicated.
+
+351
+0:22:45,000 --> 0:22:46,000
+ The browser.
+
+352
+0:22:46,000 --> 0:22:47,000
+ It makes meMANDe pretty much everyone is white in Googleализing a merge health hack, right?
+
+353
+0:22:47,000 --> 0:22:51,920
+ that was solved I don't know 20 that this is my previous car I mean it's it's
+
+354
+0:22:51,920 --> 0:22:58,760
+ the sensor exists this thing worked perfectly the cars that I've had that
+
+355
+0:22:58,760 --> 0:23:05,300
+ has rain sensors it works beautifully and then you buy this computer on wheels
+
+356
+0:23:05,300 --> 0:23:10,700
+ that even has you know it's called deep rain and we used a million images and
+
+357
+0:23:10,700 --> 0:23:16,460
+ it's crap right but of course there will be an update eventually maybe who knows
+
+358
+0:23:16,460 --> 0:23:20,240
+ and there's a little button there's not a lot of buttons in that car but there
+
+359
+0:23:20,240 --> 0:23:27,380
+ is a little button where you can wipe your windows if you want to gpd3 an AI
+
+360
+0:23:27,380 --> 0:23:34,880
+ that has it's a it's a language AI that has read and understood a lot of the
+
+361
+0:23:34,880 --> 0:23:39,080
+ internet and you give it a prompt and then it's it just you know play some
+
+362
+0:23:39,080 --> 0:23:45,740
+ jazz and what it's writing is often well sometimes it's complete gibberish but
+
+363
+0:23:45,740 --> 0:23:46,400
+ often it's
+
+364
+0:23:46,460 --> 0:23:57,860
+ scarily good it's eerily good yeah fumblings this is a nest smart camera
+
+365
+0:23:57,860 --> 0:24:03,620
+ and one of the functions it has is it can recognize people that it know and
+
+366
+0:24:03,620 --> 0:24:07,460
+ people that it doesn't know and if it sees someone that it doesn't know it
+
+367
+0:24:07,460 --> 0:24:12,320
+ gives you an it gives you an alert on your phone so you can tell when your
+
+368
+0:24:12,320 --> 0:24:16,340
+ kids have new you know who's that in my household or whatever that's a little bit of a fun thing to do.
+
+369
+0:24:16,460 --> 0:24:24,680
+ but this is a sort of a stupid attack I did on that because these you might recognize this guy
+
+370
+0:24:28,400 --> 0:24:33,380
+ from before that is not a person that is a generated person this is a synthetic person
+
+371
+0:24:33,380 --> 0:24:37,220
+ so these people are not people in fact but the camera sees them as people
+
+372
+0:24:38,960 --> 0:24:45,740
+ um this is in Danish uh uh um I hope the Chinese government will evaluate the whole situation
+
+373
+0:24:46,460 --> 0:24:50,780
+ and don't look at this just in the light of freedom rights and the right to privacy
+
+374
+0:24:52,340 --> 0:25:00,740
+ um and this is a sad joke this guy Jakob ma shangama he's a like a human rights uh act not
+
+375
+0:25:00,740 --> 0:25:08,120
+ an activist to human rights uh I don't know what it's called sorry Jacob if you want to anyway the
+
+376
+0:25:08,120 --> 0:25:13,160
+ thing is that that what he said was not he said the Chinese government but this is actually a
+
+377
+0:25:13,160 --> 0:25:16,440
+ quote from our prime minister uh I hope the
+
+378
+0:25:16,460 --> 0:25:20,960
+ parliament doesn't look at this just with freedom rights and the right to
+
+379
+0:25:20,960 --> 0:25:30,560
+ privacy and this is what I see sort of a outline for a campaign we I want to take
+
+380
+0:25:30,560 --> 0:25:36,740
+ care of Denmark and that might require some tools that we don't really like and
+
+381
+0:25:36,740 --> 0:25:44,360
+ I think when you look at dates I think that tool is facial recognition this is
+
+382
+0:25:44,360 --> 0:25:52,100
+ our Minister of Justice in freedom that yeah I hope most of you have seen this
+
+383
+0:25:52,100 --> 0:26:13,840
+ this is the Minister of Justice you could make that up could you
+
+384
+0:26:13,840 --> 0:26:14,340
+ well you could make that up could you well you could make that up could you
+
+385
+0:26:14,340 --> 0:26:20,580
+ could but then you would be a novelist but a Minister of Justice saying that and
+
+386
+0:26:20,580 --> 0:26:24,480
+ of course there's this beautiful thing
+
+387
+0:26:26,280 --> 0:26:32,420
+ Amazon has a product for that of course recognition they they post it now to be
+
+388
+0:26:32,420 --> 0:26:37,480
+ fair but they they do have a product that can that can see if if someone is
+
+389
+0:26:37,480 --> 0:26:41,680
+ in the wants its archives and it doesn't work
+
+390
+0:26:41,680 --> 0:26:43,820
+ it identifies
+
+391
+0:26:43,820 --> 0:26:45,880
+ It has a lot of false positives.
+
+392
+0:26:47,820 --> 0:26:51,400
+ One could try and do the same in Denmark, I would hope.
+
+393
+0:26:51,820 --> 0:26:52,400
+ Someone would.
+
+394
+0:26:52,860 --> 0:26:57,480
+ Oh, and on a side note, someone has made something that can identify your asshole, right?
+
+395
+0:26:59,320 --> 0:27:00,060
+ All right.
+
+396
+0:27:02,380 --> 0:27:06,060
+ We're still on the, that is a real thing.
+
+397
+0:27:06,260 --> 0:27:07,600
+ That is a real Stanford thing.
+
+398
+0:27:07,680 --> 0:27:11,920
+ Someone made an anus, you know, identifier for whatever reason.
+
+399
+0:27:12,800 --> 0:27:13,720
+ I know why.
+
+400
+0:27:14,060 --> 0:27:14,580
+ Never mind.
+
+401
+0:27:17,300 --> 0:27:23,460
+ America, you blame me for interfering with your democracy, but I don't have to.
+
+402
+0:27:24,000 --> 0:27:25,760
+ You are doing it to yourselves.
+
+403
+0:27:27,020 --> 0:27:28,380
+ Polling stations are closing.
+
+404
+0:27:29,000 --> 0:27:30,220
+ You don't know who to trust.
+
+405
+0:27:31,020 --> 0:27:31,820
+ You are divided.
+
+406
+0:27:33,180 --> 0:27:37,600
+ There are strings we can pull, but we don't have to.
+
+407
+0:27:38,560 --> 0:27:40,660
+ You are pulling them for us.
+
+408
+0:27:43,320 --> 0:27:43,800
+ Right.
+
+409
+0:27:44,580 --> 0:27:46,620
+ So this is a deep fake.
+
+410
+0:27:47,100 --> 0:27:48,500
+ Oh, my God, what do we do?
+
+411
+0:27:48,840 --> 0:27:52,180
+ Well, we, of course, get an AI to identify deep fakes.
+
+412
+0:27:52,500 --> 0:27:55,280
+ And I actually tried that.
+
+413
+0:27:56,160 --> 0:27:58,100
+ And you can see this is not a deep fake.
+
+414
+0:27:58,760 --> 0:28:05,260
+ Even though it says in the YouTube hashtag, it says deep fake.
+
+415
+0:28:05,260 --> 0:28:09,700
+ And I mean, this company who has a product scan and detect deep fake videos.
+
+416
+0:28:11,340 --> 0:28:12,160
+ Come on.
+
+417
+0:28:13,820 --> 0:28:14,140
+ Right.
+
+418
+0:28:14,400 --> 0:28:14,800
+ All right.
+
+419
+0:28:14,920 --> 0:28:27,340
+ So on the fumblings of AI, this is a very, very, very simple, basic, basic neural network.
+
+420
+0:28:27,340 --> 0:28:38,020
+ And what this shows is that it comes up with different solutions, even though the start conditions are the same.
+
+421
+0:28:39,360 --> 0:28:41,880
+ I guess this lab lamp at CloudFlare.
+
+422
+0:28:41,880 --> 0:28:54,320
+ And of course, this being a very simple sort of classification, or like, are you within or out of bounds?
+
+423
+0:28:54,720 --> 0:28:56,180
+ It's a very basic thing.
+
+424
+0:28:56,300 --> 0:28:58,180
+ It's not like a thousand-dimensional problem.
+
+425
+0:28:58,300 --> 0:28:59,300
+ But here we can see it.
+
+426
+0:29:00,380 --> 0:29:05,160
+ There's this app called Babylon, which is a doctor in your phone.
+
+427
+0:29:07,100 --> 0:29:10,160
+ And this person here is a...
+
+428
+0:29:10,720 --> 0:29:11,160
+ Okay.
+
+429
+0:29:11,880 --> 0:29:17,380
+ Chain-smoking old lady who describes a heart attack.
+
+430
+0:29:17,780 --> 0:29:21,240
+ And the machine says, well, it's probably a panic attack, right?
+
+431
+0:29:21,940 --> 0:29:25,300
+ So hence the caption, death by chat robot.
+
+432
+0:29:27,820 --> 0:29:32,140
+ Let's train AIs to identify pneumonia in x-rays.
+
+433
+0:29:32,940 --> 0:29:40,100
+ And this is viable, but it's not like just sprinkle some AI on your problem and the problem is gone.
+
+434
+0:29:40,640 --> 0:29:41,300
+ In this case...
+
+435
+0:29:41,880 --> 0:29:49,920
+ What the AI became really good at was not identifying pneumonia, but identifying which machines the pictures came from.
+
+436
+0:29:50,560 --> 0:29:53,940
+ Because some machines obviously have a higher...
+
+437
+0:29:53,940 --> 0:29:58,120
+ It's more often that it will be a pneumonia person from this machine.
+
+438
+0:29:58,600 --> 0:30:09,960
+ Also, on a similar sort of fumbling, identifying skin cancer, much more likely if there's a ruler in the picture.
+
+439
+0:30:11,880 --> 0:30:21,640
+ So, a few years ago, a Danish politician maybe spent a lot of the public's money drinking in Iceland.
+
+440
+0:30:21,780 --> 0:30:27,400
+ They were on this studio tour, this, you know, inspirational thing to Iceland.
+
+441
+0:30:27,620 --> 0:30:29,000
+ And they're...
+
+442
+0:30:29,000 --> 0:30:30,900
+ I don't know if they're partying.
+
+443
+0:30:31,260 --> 0:30:34,160
+ Someone posts a picture on Facebook.
+
+444
+0:30:35,500 --> 0:30:38,360
+ And this is the editor-in-chief at that time.
+
+445
+0:30:38,860 --> 0:30:41,520
+ It's obviously not a beer that she's holding.
+
+446
+0:30:42,440 --> 0:30:42,800
+ Okay.
+
+447
+0:30:42,960 --> 0:30:44,360
+ Well, she says it's not a beer.
+
+448
+0:30:45,480 --> 0:30:46,840
+ It looks like a beer.
+
+449
+0:30:47,120 --> 0:30:50,560
+ So, I had my AI machine, my AI judge, have a look.
+
+450
+0:30:50,940 --> 0:30:52,980
+ And actually, she's not holding a beer.
+
+451
+0:30:53,960 --> 0:30:57,740
+ It can see a person and a person and a bottle and a person, but no beer.
+
+452
+0:30:57,900 --> 0:30:59,240
+ So, she must be right, right?
+
+453
+0:31:01,460 --> 0:31:03,980
+ Soon, there will be cameras.
+
+454
+0:31:03,980 --> 0:31:10,600
+ And they will dish out fines if you use your handheld phone while you're driving.
+
+455
+0:31:11,240 --> 0:31:11,860
+ Which is fine.
+
+456
+0:31:11,880 --> 0:31:14,400
+ If it's a perfect...
+
+457
+0:31:14,400 --> 0:31:17,720
+ Well, if we have the discussion and decide that it's fine.
+
+458
+0:31:17,900 --> 0:31:20,060
+ And then the machine is perfect, right?
+
+459
+0:31:20,140 --> 0:31:22,100
+ But no such thing as perfect machines.
+
+460
+0:31:22,740 --> 0:31:24,900
+ And this is actually a rerun.
+
+461
+0:31:25,020 --> 0:31:31,660
+ But just to show you, this is an AI that describes what is in the picture.
+
+462
+0:31:32,100 --> 0:31:34,000
+ A man in a suit and tie is smiling.
+
+463
+0:31:35,140 --> 0:31:37,240
+ A man sitting at a table with a glass of wine.
+
+464
+0:31:37,900 --> 0:31:39,660
+ I'm trying to hold up the glass.
+
+465
+0:31:39,660 --> 0:31:43,780
+ It's running locally, so it's a bit, you know.
+
+466
+0:31:47,420 --> 0:31:50,560
+ A man holding a cell phone in his right hand.
+
+467
+0:31:52,020 --> 0:31:54,280
+ Which is not a stupid assumption.
+
+468
+0:31:54,280 --> 0:31:57,760
+ If you just, you know, walk in the door and you see this.
+
+469
+0:31:57,920 --> 0:31:59,240
+ Okay, he's holding a cell phone.
+
+470
+0:31:59,440 --> 0:32:04,320
+ But now I'm getting a fine for holding a cell phone while I'm not holding a cell phone, am I?
+
+471
+0:32:05,680 --> 0:32:06,520
+ Well, you were.
+
+472
+0:32:06,520 --> 0:32:08,980
+ I wouldn't bench in the middle of a forest.
+
+473
+0:32:09,660 --> 0:32:12,620
+ But a birthday cake with a train on it.
+
+474
+0:32:15,840 --> 0:32:20,480
+ These are other examples of not blindly trusting the AI.
+
+475
+0:32:21,960 --> 0:32:25,400
+ We have a black person holding an infrared thermometer.
+
+476
+0:32:26,040 --> 0:32:29,020
+ And this is the Google classification.
+
+477
+0:32:29,420 --> 0:32:31,920
+ And it says gun, photography, firearm, plant.
+
+478
+0:32:31,920 --> 0:32:36,780
+ And then we have an Asian person holding it and its technology electronic device.
+
+479
+0:32:37,420 --> 0:32:39,420
+ And someone actually...
+
+480
+0:32:39,420 --> 0:32:41,520
+ Did something really clever.
+
+481
+0:32:42,180 --> 0:32:44,400
+ And just cropped the hand, right?
+
+482
+0:32:45,020 --> 0:32:47,540
+ And the machine says handgun.
+
+483
+0:32:48,120 --> 0:32:51,720
+ So, does it have anything to do with the color of the hand?
+
+484
+0:32:51,720 --> 0:32:53,760
+ Well, it does.
+
+485
+0:32:58,500 --> 0:32:59,300
+ Right.
+
+486
+0:33:01,780 --> 0:33:04,640
+ These are thought experiments.
+
+487
+0:33:04,900 --> 0:33:08,880
+ And this thought experiment is actually Paul Henning Kamp, who was here earlier.
+
+488
+0:33:08,880 --> 0:33:12,780
+ I think it was his sort of brainchild at one time.
+
+489
+0:33:13,780 --> 0:33:23,100
+ For the longest time, the Danish tax thing, they've been trying to make a computer that can evaluate what people's houses are worth.
+
+490
+0:33:24,100 --> 0:33:26,160
+ And it always never works, right?
+
+491
+0:33:26,340 --> 0:33:32,880
+ And one should think that it's a pretty simple thing to train a neural network into, you know, their parameters.
+
+492
+0:33:33,640 --> 0:33:37,280
+ And you just shuffle them in and you train it and it comes out with an answer.
+
+493
+0:33:37,280 --> 0:33:37,820
+ Right.
+
+494
+0:33:38,060 --> 0:33:38,580
+ Right.
+
+495
+0:33:38,580 --> 0:33:38,680
+ Right.
+
+496
+0:33:38,680 --> 0:33:38,700
+ Right.
+
+497
+0:33:38,700 --> 0:33:38,720
+ Right.
+
+498
+0:33:38,720 --> 0:33:38,740
+ Right.
+
+499
+0:33:38,740 --> 0:33:38,760
+ Right.
+
+500
+0:33:38,760 --> 0:33:38,780
+ Right.
+
+501
+0:33:38,780 --> 0:33:38,820
+ Right.
+
+502
+0:33:38,820 --> 0:33:38,840
+ Right.
+
+503
+0:33:38,840 --> 0:33:38,860
+ Right.
+
+504
+0:33:38,880 --> 0:33:39,000
+ Right.
+
+505
+0:33:39,000 --> 0:33:39,020
+ Right.
+
+506
+0:33:39,020 --> 0:33:39,040
+ Right.
+
+507
+0:33:39,040 --> 0:33:39,060
+ Right.
+
+508
+0:33:39,060 --> 0:33:39,080
+ Right.
+
+509
+0:33:39,080 --> 0:33:39,100
+ Right.
+
+510
+0:33:39,100 --> 0:33:39,120
+ Right.
+
+511
+0:33:39,120 --> 0:33:39,140
+ Right.
+
+512
+0:33:39,140 --> 0:33:39,160
+ Right.
+
+513
+0:33:39,160 --> 0:33:39,180
+ Right.
+
+514
+0:33:39,180 --> 0:33:39,200
+ Right.
+
+515
+0:33:39,200 --> 0:33:39,220
+ Right.
+
+516
+0:33:39,220 --> 0:33:39,240
+ Right.
+
+517
+0:33:39,240 --> 0:33:39,260
+ Right.
+
+518
+0:33:39,260 --> 0:33:44,340
+ Paul Henning Kamp, who theorized that, well, they did make this machine and it worked.
+
+519
+0:33:45,140 --> 0:33:46,080
+ And that's the problem.
+
+520
+0:33:46,480 --> 0:33:51,380
+ Because the machine says, your houses are way overrated.
+
+521
+0:33:51,820 --> 0:33:54,840
+ You're all in this hot air balloon.
+
+522
+0:33:55,500 --> 0:33:55,760
+ Right?
+
+523
+0:33:57,620 --> 0:33:59,360
+ And we can't have that.
+
+524
+0:33:59,580 --> 0:34:06,820
+ Because then if we sort of, you know, correct things, people will be, you know, insolvent.
+
+525
+0:34:06,820 --> 0:34:08,380
+ They won't be able to pay their bills.
+
+526
+0:34:08,380 --> 0:34:11,620
+ Because a lot of value will disappear from society.
+
+527
+0:34:12,200 --> 0:34:17,120
+ So, of course, someone gets to be the fall guy and go and pull the plug on this perfect computer model.
+
+528
+0:34:17,280 --> 0:34:17,360
+ Right?
+
+529
+0:34:18,200 --> 0:34:19,320
+ It's just a thought.
+
+530
+0:34:20,660 --> 0:34:21,080
+ All right.
+
+531
+0:34:21,520 --> 0:34:28,380
+ IBM had this supercomputer Watson that they utilized in healthcare in Denmark.
+
+532
+0:34:29,000 --> 0:34:32,380
+ And it didn't work on many levels.
+
+533
+0:34:32,540 --> 0:34:34,640
+ There are tons of reasons it didn't work.
+
+534
+0:34:34,640 --> 0:34:37,880
+ But one, the thing is that.
+
+535
+0:34:38,380 --> 0:34:44,200
+ The way it was implemented, of course, is the computer comes up with a suggestion.
+
+536
+0:34:44,200 --> 0:34:48,000
+ And this suggestion is then evaluated by a person.
+
+537
+0:34:48,600 --> 0:34:53,640
+ And this person can only think what a person can think.
+
+538
+0:34:53,800 --> 0:34:53,880
+ Right?
+
+539
+0:34:54,660 --> 0:35:04,200
+ So, if the machine says something preposterous, like this person needs crystal therapy and, you know, lukewarm water, that's the right treatment.
+
+540
+0:35:04,520 --> 0:35:07,940
+ The doctor, the trained person would go, no, that's not the right treatment.
+
+541
+0:35:07,940 --> 0:35:09,260
+ And give Watson a mark.
+
+542
+0:35:09,920 --> 0:35:11,480
+ But it might be right.
+
+543
+0:35:11,600 --> 0:35:12,600
+ We will never know.
+
+544
+0:35:15,180 --> 0:35:16,340
+ We will never know.
+
+545
+0:35:16,340 --> 0:35:19,960
+ Hold the thought of machines doing preposterous things.
+
+546
+0:35:20,860 --> 0:35:26,320
+ This is from the documentary on Netflix called Elfeco.
+
+547
+0:35:26,820 --> 0:35:33,320
+ It's where DeepMind, which is a Google-owned company, played against one of the world's best Go players.
+
+548
+0:35:33,920 --> 0:35:36,520
+ And this is a move 37.
+
+549
+0:35:37,940 --> 0:35:59,980
+ It really...
+
+550
+0:35:59,980 --> 0:36:03,940
+icerly...
+
+551
+0:36:03,940 --> 0:36:05,400
+ value.
+
+552
+0:36:05,400 --> 0:36:05,580
+ Value.
+
+553
+0:36:05,580 --> 0:36:05,660
+ Value.
+
+554
+0:36:05,660 --> 0:36:06,540
+ Value.
+
+555
+0:36:06,540 --> 0:36:06,600
+ Value.
+
+556
+0:36:06,600 --> 0:36:07,100
+ Value.
+
+557
+0:36:07,100 --> 0:36:07,260
+ Value.
+
+558
+0:36:07,260 --> 0:36:07,280
+ Value.
+
+559
+0:36:07,280 --> 0:36:07,540
+ Value.
+
+560
+0:36:07,940 --> 0:36:10,300
+ That's a very surprising move.
+
+561
+0:36:10,740 --> 0:36:13,900
+ I thought it was a mistake.
+
+562
+0:36:15,280 --> 0:36:18,520
+ When I see this move, for me, it's just a big shock.
+
+563
+0:36:19,000 --> 0:36:19,260
+ What?
+
+564
+0:36:20,520 --> 0:36:23,920
+ Normally, humans, we never play this one because it's bad.
+
+565
+0:36:25,140 --> 0:36:29,060
+ So this is a very concrete example of a...
+
+566
+0:36:29,060 --> 0:36:30,100
+ Because it wasn't a bad move.
+
+567
+0:36:30,220 --> 0:36:31,240
+ It was an excellent move.
+
+568
+0:36:31,400 --> 0:36:34,180
+ And the way that these computers play Go
+
+569
+0:36:34,180 --> 0:36:37,080
+ have changed the way people play Go.
+
+570
+0:36:37,080 --> 0:36:41,460
+ So I'm not saying that Watson was right,
+
+571
+0:36:41,700 --> 0:36:43,900
+ but, I mean, how do we know, right?
+
+572
+0:36:45,700 --> 0:36:50,500
+ To round off this part, I have a little quote,
+
+573
+0:36:50,900 --> 0:36:52,840
+ and this is not edited quote.
+
+574
+0:36:52,920 --> 0:36:55,440
+ This is a true quote from GPT-3.
+
+575
+0:36:56,240 --> 0:36:59,140
+ Technology is replacing humans, but it can't replace humans.
+
+576
+0:36:59,260 --> 0:37:00,060
+ Doesn't that seem obvious?
+
+577
+0:37:00,480 --> 0:37:01,580
+ We need humans.
+
+578
+0:37:02,360 --> 0:37:06,180
+ And that is the end of my talk.
+
+579
+0:37:07,080 --> 0:37:08,180
+ Thank you for your kind attention.
+
+580
+0:37:17,180 --> 0:37:18,620
+ Any questions?
+
+581
+0:37:29,400 --> 0:37:32,200
+ We have a drone that flies around.
+
+582
+0:37:32,200 --> 0:37:33,140
+ Just a thought.
+
+583
+0:37:33,820 --> 0:37:36,820
+ These fake pictures you could use on presentations,
+
+584
+0:37:37,080 --> 0:37:40,020
+ and stuff, the faces were one-to-one.
+
+585
+0:37:40,300 --> 0:37:41,660
+ Even those could be fake.
+
+586
+0:37:42,020 --> 0:37:44,240
+ You could present it to be in other people that you are,
+
+587
+0:37:44,320 --> 0:37:46,340
+ man-to-woman, man-to-other-man, and stuff.
+
+588
+0:37:46,600 --> 0:37:47,760
+ Just a thought.
+
+589
+0:37:48,200 --> 0:37:50,460
+ No, no, this has happened in real life.
+
+590
+0:37:50,460 --> 0:37:53,560
+ I have a slide somewhere else
+
+591
+0:37:53,560 --> 0:37:58,360
+ where there's a lobbyist working in, you know,
+
+592
+0:37:58,500 --> 0:38:00,900
+ an American lobbyist that does not exist.
+
+593
+0:38:01,000 --> 0:38:03,580
+ The picture doesn't exist, so you can't reverse-Google it, right?
+
+594
+0:38:04,780 --> 0:38:07,060
+ This will touch many.
+
+595
+0:38:07,080 --> 0:38:08,080
+ Industries.
+
+596
+0:38:08,080 --> 0:38:11,080
+ Also, if you're into, like, if you're doing,
+
+597
+0:38:11,080 --> 0:38:14,080
+ like, you need a new font.
+
+598
+0:38:14,080 --> 0:38:17,080
+ You need a new typeface for your company, right?
+
+599
+0:38:17,080 --> 0:38:20,080
+ Instead of buying a new one, you just have an AI make you one,
+
+600
+0:38:20,080 --> 0:38:24,080
+ and you just sit and pull the sliders until you have something uniquely yours.
+
+601
+0:38:24,080 --> 0:38:30,080
+ Or you need a scene, you know, a beautiful white family eating breakfast, right?
+
+602
+0:38:30,080 --> 0:38:33,080
+ I can go on Shutterstock and buy this picture,
+
+603
+0:38:33,080 --> 0:38:36,080
+ but very soon I will just make that picture.
+
+604
+0:38:36,080 --> 0:38:37,080
+ No, make that picture.
+
+605
+0:38:37,080 --> 0:38:39,080
+ Make the cereal box a bit bigger.
+
+606
+0:38:39,080 --> 0:38:44,080
+ So, and it's basically, and maybe I wasn't that clear,
+
+607
+0:38:44,080 --> 0:38:50,080
+ but where it links into this entertainment industry
+
+608
+0:38:50,080 --> 0:38:53,080
+ is they will always try to drive their costs down
+
+609
+0:38:53,080 --> 0:38:57,080
+ and try and hit you, you know, more focused.
+
+610
+0:38:57,080 --> 0:38:59,080
+ So, yeah.
+
+611
+0:39:01,080 --> 0:39:03,080
+ Any more questions?
+
+612
+0:39:03,080 --> 0:39:05,080
+ Thank you very much for the talk.
+
+613
+0:39:05,080 --> 0:39:06,080
+ Are we streaming? No?
+
+614
+0:39:06,080 --> 0:39:07,080
+ No.
+
+615
+0:39:07,080 --> 0:39:08,080
+ We're not streaming?
+
+616
+0:39:08,080 --> 0:39:09,080
+ You promise?
+
+617
+0:39:09,080 --> 0:39:10,080
+ You pinky promise?
+
+618
+0:39:10,080 --> 0:39:11,080
+ We can stop the recording?
+
+619
+0:39:11,080 --> 0:39:12,080
+ Yeah.
+
+620
+0:39:12,080 --> 0:39:13,080
+ Could you?
+
+621
+0:39:13,080 --> 0:39:14,080
+ Stop the recording?

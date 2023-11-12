@@ -1,0 +1,3091 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:13,680
+ So, I'm going to talk a bit about why nothing is free if it's cost your email.
+
+2
+0:00:14,480 --> 0:00:21,020
+ So, what I'm going to cover in this talk is, first, I'm going to give you a little disclaimer.
+
+3
+0:00:21,360 --> 0:00:26,340
+ I'm going to give you a very short introduction to who I am and why I'm making this talk.
+
+4
+0:00:26,340 --> 0:00:35,320
+ Then, we're going to look at email marketers. Who are they? What's email marketing? Who's doing it?
+
+5
+0:00:37,140 --> 0:00:41,700
+ We're going to look a bit into how do you actually end up on all these email lists.
+
+6
+0:00:42,780 --> 0:00:54,200
+ And then, I'm going to take you behind the scenes in MailChimp, which is one of the very big email providers used worldwide.
+
+7
+0:00:54,780 --> 0:00:56,320
+ And then, I'm going to give you a little bit of a background.
+
+8
+0:00:56,340 --> 0:01:02,140
+ I'm going to give you some simple steps to make yourself track less.
+
+9
+0:01:02,760 --> 0:01:08,360
+ And I'm also going to put in a few words about the upcoming iOS 15 update,
+
+10
+0:01:08,660 --> 0:01:17,300
+ which will presumably make life a bit harder for the email marketers and take some privacy measurements.
+
+11
+0:01:18,980 --> 0:01:21,120
+ And then, of course, we have room for questions.
+
+12
+0:01:21,120 --> 0:01:26,120
+ So, first of all, this is not a GDPR conversation.
+
+13
+0:01:26,340 --> 0:01:27,340
+ This is a GDPR talk.
+
+14
+0:01:27,340 --> 0:01:33,340
+ When we're talking email marketing, GDPR is, of course, a huge issue.
+
+15
+0:01:33,340 --> 0:01:42,340
+ And basically, most of what's going on at the moment, at least if you're using the big American providers like MailChimp,
+
+16
+0:01:42,340 --> 0:01:48,340
+ and basically like most of them, and even if you're using some of the European-based ones,
+
+17
+0:01:48,340 --> 0:01:52,340
+ then some of them might also use American services.
+
+18
+0:01:52,340 --> 0:01:56,340
+ Most of what's going on is not GDPR compliant.
+
+19
+0:01:56,340 --> 0:01:57,340
+ I know that.
+
+20
+0:01:57,340 --> 0:01:59,340
+ Some of the email marketers know that.
+
+21
+0:01:59,340 --> 0:02:01,340
+ Some of them don't know that.
+
+22
+0:02:01,340 --> 0:02:03,340
+ But that's not what this talk is about.
+
+23
+0:02:03,340 --> 0:02:11,340
+ So, also in the question section, I'm not going into any GDPR discussions because, yes, we know we have a problem.
+
+24
+0:02:11,340 --> 0:02:15,340
+ No, we don't have an easy available solution right now.
+
+25
+0:02:15,340 --> 0:02:22,340
+ So, I'm going to tell you what is actually possible, what can I, as an email marketer, see.
+
+26
+0:02:22,340 --> 0:02:25,340
+ And then we can save the legal discussion for later.
+
+27
+0:02:25,340 --> 0:02:26,340
+ Thank you.
+
+28
+0:02:26,340 --> 0:02:28,340
+ For another time.
+
+29
+0:02:28,340 --> 0:02:29,340
+ Yeah.
+
+30
+0:02:29,340 --> 0:02:31,340
+ So, why am I here?
+
+31
+0:02:31,340 --> 0:02:35,340
+ I've been running my own business since 2012.
+
+32
+0:02:35,340 --> 0:02:39,340
+ Started out as a writing instructor.
+
+33
+0:02:39,340 --> 0:02:45,340
+ And then decided that yelling at people in a writing arena was a bit hard to make a living,
+
+34
+0:02:45,340 --> 0:02:49,340
+ especially if I wanted afternoons and evenings with my family.
+
+35
+0:02:49,340 --> 0:02:55,340
+ So, in 2013, I started doing online courses on horse training and riding.
+
+36
+0:02:55,340 --> 0:02:58,340
+ And we were two persons in Denmark doing that.
+
+37
+0:02:58,340 --> 0:03:11,340
+ Then, from about 2015, I figured out that getting business owners to pay me instead of private persons who already spent all their money on their horses, that was a bit easier.
+
+38
+0:03:11,340 --> 0:03:18,340
+ And I had a flair for the technical side of things and for explaining tech stuff to people.
+
+39
+0:03:18,340 --> 0:03:23,340
+ So, since then, I've mostly been making a living on helping other people set up their online courses.
+
+40
+0:03:23,340 --> 0:03:28,340
+ Their email marketing systems.
+
+41
+0:03:28,340 --> 0:03:31,340
+ I use a platform called Simplero.
+
+42
+0:03:31,340 --> 0:03:35,340
+ But I also use webinar platforms and stuff like that.
+
+43
+0:03:35,340 --> 0:03:46,340
+ So, basically, I'm one of those evil, evil email marketers that are making a living from bombarding people's inboxes with sales mail.
+
+44
+0:03:46,340 --> 0:03:49,340
+ And show me ads and stuff like that.
+
+45
+0:03:49,340 --> 0:03:51,340
+ That's not the talk completely.
+
+46
+0:03:51,340 --> 0:03:52,340
+ So, that's me.
+
+47
+0:03:52,340 --> 0:03:59,340
+ So, what is email marketing and who's doing it?
+
+48
+0:03:59,340 --> 0:04:12,340
+ Email marketing is basically everything you get in your email inbox with the aim to sell or get to know a company better.
+
+49
+0:04:12,340 --> 0:04:18,340
+ It can be a regular newsletter with very little sales or with a lot of sales.
+
+50
+0:04:18,340 --> 0:04:21,340
+ It can be something with videos or images.
+
+51
+0:04:21,340 --> 0:04:23,340
+ Or get to know us emails.
+
+52
+0:04:23,340 --> 0:04:28,340
+ Or it can be this week's special offer some people have.
+
+53
+0:04:28,340 --> 0:04:36,340
+ Or companies have regular weekly or monthly or daily emails with a very specific content.
+
+54
+0:04:36,340 --> 0:04:44,340
+ Other people and companies have like random, oh, I think I'm going to write an email today to my list.
+
+55
+0:04:44,340 --> 0:04:45,340
+ Boom.
+
+56
+0:04:45,340 --> 0:04:46,340
+ Email sent.
+
+57
+0:04:46,340 --> 0:04:48,340
+ I'm probably selling something.
+
+58
+0:04:48,340 --> 0:04:50,340
+ So, it's everything from very, very simple.
+
+59
+0:04:50,340 --> 0:04:57,340
+ Everything from very, very organized to very random marketing.
+
+60
+0:04:57,340 --> 0:05:06,340
+ Also, what the email marketers are looking at is everything from super, super organized to pretty much random.
+
+61
+0:05:06,340 --> 0:05:13,340
+ Because it's like you can extract a lot of data from these systems.
+
+62
+0:05:13,340 --> 0:05:15,340
+ And some people do.
+
+63
+0:05:15,340 --> 0:05:18,340
+ And that's where the really not free part comes in.
+
+64
+0:05:18,340 --> 0:05:24,340
+ Because it's actually amazing what I, and that was what inspired me to make this talk.
+
+65
+0:05:24,340 --> 0:05:37,340
+ Because I'm actually almost a bit scared on a daily basis of what amount of data I have available about both my paying customers and those people who just signed up to one of my lists.
+
+66
+0:05:37,340 --> 0:05:40,340
+ It's quite amazing.
+
+67
+0:05:40,340 --> 0:05:44,340
+ So, email marketing is like a lot of different things.
+
+68
+0:05:44,340 --> 0:05:46,340
+ And it's not just big evil companies doing it.
+
+69
+0:05:46,340 --> 0:05:47,340
+ It's not just big companies doing it.
+
+70
+0:05:47,340 --> 0:05:51,340
+ It's like, of course, lots of big companies does it.
+
+71
+0:05:51,340 --> 0:05:54,340
+ And they usually do it in a more systematic way.
+
+72
+0:05:54,340 --> 0:05:58,340
+ But it's also your hairdresser.
+
+73
+0:05:58,340 --> 0:06:02,340
+ It's the pizzeria.
+
+74
+0:06:02,340 --> 0:06:05,340
+ It's the gym.
+
+75
+0:06:05,340 --> 0:06:07,340
+ The football club.
+
+76
+0:06:07,340 --> 0:06:11,340
+ Everybody is using email lists.
+
+77
+0:06:11,340 --> 0:06:15,340
+ And email marketing in some way.
+
+78
+0:06:15,340 --> 0:06:16,340
+ That's been amazing.
+
+79
+0:06:16,340 --> 0:06:23,340
+ So, there's been a lot of talk over the last many years now that, oh, well, email marketing is dead.
+
+80
+0:06:23,340 --> 0:06:30,340
+ We need to only be available on social media or only send text messages and stuff.
+
+81
+0:06:30,340 --> 0:06:33,340
+ And I think that's just not true.
+
+82
+0:06:33,340 --> 0:06:42,340
+ There's a lot of value still in getting people's emails, being able to get directly into their inbox.
+
+83
+0:06:42,340 --> 0:06:44,340
+ It has a lot of meaning.
+
+84
+0:06:44,340 --> 0:06:51,340
+ So, email marketing is a lot of different things.
+
+85
+0:06:51,340 --> 0:06:58,340
+ And, of course, the strategies behind email marketing is also very different.
+
+86
+0:06:58,340 --> 0:07:05,340
+ Some people really have analyst settings and looking at the numbers and what do we do.
+
+87
+0:07:05,340 --> 0:07:09,340
+ People open this mail and then we send them to that flow and then we do that.
+
+88
+0:07:09,340 --> 0:07:11,340
+ And if they click this link, then this happens.
+
+89
+0:07:11,340 --> 0:07:13,340
+ And other people are a bit more like, hey, what's going on?
+
+90
+0:07:13,340 --> 0:07:17,340
+ A bit more like happy-go-lucky and, oh, someone purchased.
+
+91
+0:07:17,340 --> 0:07:19,340
+ Whoa, awesome.
+
+92
+0:07:19,340 --> 0:07:41,340
+ So, regardless of what those people whose list you sign up for actually do, they will have most of the data available to make these analysis and to do either general profiling and say we have this segment of list subscribers.
+
+93
+0:07:41,340 --> 0:07:42,340
+ They behave like that.
+
+94
+0:07:42,340 --> 0:07:43,340
+ And we have another segment.
+
+95
+0:07:43,340 --> 0:07:45,340
+ They behave like this.
+
+96
+0:07:45,340 --> 0:07:49,340
+ Or go in and look specifically at, oh, I know this guy.
+
+97
+0:07:49,340 --> 0:07:51,340
+ He's just signed up for my list.
+
+98
+0:07:51,340 --> 0:07:53,340
+ Let's see how he behaves.
+
+99
+0:07:53,340 --> 0:07:55,340
+ And I think that's like the more scary part.
+
+100
+0:07:55,340 --> 0:08:02,340
+ I don't mind being in a segment with 200 other people of them who always click the yellow links.
+
+101
+0:08:02,340 --> 0:08:04,340
+ That's fine with me.
+
+102
+0:08:04,340 --> 0:08:09,340
+ But I don't like that people can actually go in and click my name in their email list.
+
+103
+0:08:09,340 --> 0:08:11,340
+ And then they can see for the past six months.
+
+104
+0:08:11,340 --> 0:08:14,340
+ Any mails I opened or clicked that.
+
+105
+0:08:14,340 --> 0:08:19,340
+ That's the part I'm not super happy about.
+
+106
+0:08:19,340 --> 0:08:25,340
+ So, how do we get on all these email lists?
+
+107
+0:08:25,340 --> 0:08:30,340
+ Yeah, well, one very popular term in email marketing is a freebie.
+
+108
+0:08:30,340 --> 0:08:34,340
+ A freebie means basically something people get for free.
+
+109
+0:08:34,340 --> 0:08:40,340
+ But that's, again, we agree that's a big fat lie because they pay with their email for this freebie.
+
+110
+0:08:40,340 --> 0:08:43,340
+ But it's still, it's a popular tool.
+
+111
+0:08:43,340 --> 0:08:45,340
+ You have to make something.
+
+112
+0:08:45,340 --> 0:08:46,340
+ It can be an ebook.
+
+113
+0:08:46,340 --> 0:08:47,340
+ It can be a video guide.
+
+114
+0:08:47,340 --> 0:08:49,340
+ It can be a webinar.
+
+115
+0:08:49,340 --> 0:09:01,340
+ As I say here, you give people something that has enough value or that they hope have enough value that they will give you their name and their email address.
+
+116
+0:09:01,340 --> 0:09:04,340
+ So, that's like, that's a tradeoff.
+
+117
+0:09:04,340 --> 0:09:09,340
+ I provide some content like a video guide or PDF.
+
+118
+0:09:09,340 --> 0:09:17,340
+ Or a setup guide for some software or whatever it is in my business that I can say, I have this.
+
+119
+0:09:17,340 --> 0:09:19,340
+ It will make a difference for people.
+
+120
+0:09:19,340 --> 0:09:22,340
+ They don't need to pay me any money.
+
+121
+0:09:22,340 --> 0:09:28,340
+ But I would like them to get on my email list because then I can email them, tell them more about me, get them to know me.
+
+122
+0:09:28,340 --> 0:09:31,340
+ And then I can get them to purchase some of my other products.
+
+123
+0:09:31,340 --> 0:09:34,340
+ Or at least I can get some of them.
+
+124
+0:09:34,340 --> 0:09:37,340
+ A certain amount of the people who get on my list should.
+
+125
+0:09:37,340 --> 0:09:38,340
+ Uh.
+
+126
+0:09:38,340 --> 0:09:41,340
+ Turn out to be paying customers.
+
+127
+0:09:41,340 --> 0:09:48,340
+ If none of the people who get on my list turn out to be paying customers, then I'm not running a very successful business.
+
+128
+0:09:48,340 --> 0:09:51,340
+ So, that's like the point.
+
+129
+0:09:51,340 --> 0:09:55,340
+ It can also be when you take part in competitions.
+
+130
+0:09:55,340 --> 0:09:57,340
+ You need to sign your email address.
+
+131
+0:09:57,340 --> 0:09:59,340
+ You do a test or quiz.
+
+132
+0:09:59,340 --> 0:10:01,340
+ You purchase something online.
+
+133
+0:10:01,340 --> 0:10:07,340
+ And there's like this little checkbox that, by the way, is not allowed to be checked beforehand.
+
+134
+0:10:07,340 --> 0:10:15,340
+ You have to actually check it yourself on sign out that you want to subscribe to their newsletter and email marketing.
+
+135
+0:10:15,340 --> 0:10:21,340
+ And then there are all those organizations who get you to sign up for something.
+
+136
+0:10:21,340 --> 0:10:27,340
+ And then in very, very small lettering, it also says we're sharing this with our partners.
+
+137
+0:10:27,340 --> 0:10:34,340
+ And then if you look into the details, there should be a link to some sort of privacy policy or terms.
+
+138
+0:10:34,340 --> 0:10:36,340
+ And then you have this like two-page long list of things.
+
+139
+0:10:36,340 --> 0:10:41,340
+ You have this like two-page long list of partners that they're sharing your email address with.
+
+140
+0:10:41,340 --> 0:10:46,340
+ Then you know, okay, I'll get bombarded with offers from all kind of people.
+
+141
+0:10:46,340 --> 0:10:56,340
+ So, if you see one of those, sign up with a crap email address instead of your real email address because you would get a lot of funny stuff.
+
+142
+0:10:56,340 --> 0:10:59,340
+ And then there, of course, is that this is all the legit businesses.
+
+143
+0:10:59,340 --> 0:11:02,340
+ Then there, of course, is all the spammers.
+
+144
+0:11:02,340 --> 0:11:06,340
+ People who get your email list from somewhere.
+
+145
+0:11:06,340 --> 0:11:08,340
+ And sign you to random list.
+
+146
+0:11:08,340 --> 0:11:11,340
+ And there's also all the companies who believe that.
+
+147
+0:11:11,340 --> 0:11:15,340
+ If you, I believe some of you are also running companies.
+
+148
+0:11:15,340 --> 0:11:22,340
+ If you're not a private person but it's a company email, people believe they're actually allowed to send your email.
+
+149
+0:11:22,340 --> 0:11:26,340
+ But the rules are exactly, at least in Denmark, they are exactly the same.
+
+150
+0:11:26,340 --> 0:11:28,340
+ It's spam.
+
+151
+0:11:28,340 --> 0:11:36,340
+ If you reach out to someone in any way electronical, whether that's like email, text, messenger, or whatever.
+
+152
+0:11:36,340 --> 0:11:43,340
+ With the purpose of, maybe not in the first message, but down the road selling them something.
+
+153
+0:11:43,340 --> 0:11:47,340
+ And they haven't beforehand agreed to this electronic communication.
+
+154
+0:11:47,340 --> 0:11:49,340
+ It's spam.
+
+155
+0:11:49,340 --> 0:11:54,340
+ So, there's the category of, oh, I didn't know the law, spammers.
+
+156
+0:11:54,340 --> 0:11:58,340
+ And then there's all the, yes, we know, but we don't care, spammers.
+
+157
+0:11:58,340 --> 0:12:02,340
+ So, there's a lot of way to get on these lists.
+
+158
+0:12:02,340 --> 0:12:05,340
+ And we shouldn't just, of course, you can just say.
+
+159
+0:12:05,340 --> 0:12:07,340
+ Well, I never sign up to any list.
+
+160
+0:12:07,340 --> 0:12:12,340
+ Yeah, well, but then you might get, it might be a good bargain.
+
+161
+0:12:12,340 --> 0:12:18,340
+ It might be value for email to sign up to some of these lists.
+
+162
+0:12:18,340 --> 0:12:22,340
+ That could be, I hope that some of the people, most of the people who sign up to my lists.
+
+163
+0:12:22,340 --> 0:12:27,340
+ That they're actually happy with what I'm providing even though I'm also trying to sell them things.
+
+164
+0:12:27,340 --> 0:12:34,340
+ But there are other lists where, well, the bargain isn't really in your favor.
+
+165
+0:12:34,340 --> 0:12:37,340
+ You signed up for something.
+
+166
+0:12:37,340 --> 0:12:39,340
+ You get some crappy ebook.
+
+167
+0:12:39,340 --> 0:12:42,340
+ And then you get a ton of marketing emails.
+
+168
+0:12:42,340 --> 0:12:45,340
+ And maybe also from third parties.
+
+169
+0:12:45,340 --> 0:12:51,340
+ So, every time we sign up to a list, look at it.
+
+170
+0:12:51,340 --> 0:12:55,340
+ Who's making a win here?
+
+171
+0:12:55,340 --> 0:13:02,340
+ So, I'm going to give you a look behind the scenes in MailChimp.
+
+172
+0:13:02,340 --> 0:13:03,340
+ So, we can actually see what's going on.
+
+173
+0:13:04,340 --> 0:13:07,340
+ And this is like, this is a free MailChimp.
+
+174
+0:13:07,340 --> 0:13:15,340
+ What we're going to look into here is a free MailChimp account that I've set up many years ago.
+
+175
+0:13:15,340 --> 0:13:18,340
+ But now I'm only using it for this test purpose.
+
+176
+0:13:18,340 --> 0:13:25,340
+ And this MailChimp account, it's like this is what everybody who uses MailChimp has access to.
+
+177
+0:13:25,340 --> 0:13:32,340
+ If I had a paid account, I could even pay MailChimp to give me even more information.
+
+178
+0:13:32,340 --> 0:13:36,340
+ And to make more advanced analysis.
+
+179
+0:13:36,340 --> 0:13:39,340
+ And one thing is what I can see.
+
+180
+0:13:39,340 --> 0:13:41,340
+ Because I can see a lot.
+
+181
+0:13:41,340 --> 0:13:43,340
+ MailChimp can see even more.
+
+182
+0:13:43,340 --> 0:13:52,340
+ And MailChimp is known for actually collecting data across platforms or across accounts.
+
+183
+0:13:52,340 --> 0:13:58,340
+ So, if I sign up with my email on one list in MailChimp and another list in MailChimp and a third list in MailChimp.
+
+184
+0:13:58,340 --> 0:14:01,340
+ Then the people on the individual accounts.
+
+185
+0:14:01,340 --> 0:14:03,340
+ They don't know I'm on other lists.
+
+186
+0:14:03,340 --> 0:14:05,340
+ But MailChimp knows that.
+
+187
+0:14:05,340 --> 0:14:07,340
+ And they're using that for profiling.
+
+188
+0:14:07,340 --> 0:14:15,340
+ So, when I send a broadcast from MailChimp.
+
+189
+0:14:15,340 --> 0:14:17,340
+ I of course get a report.
+
+190
+0:14:17,340 --> 0:14:19,340
+ So, if we have like...
+
+191
+0:14:23,340 --> 0:14:25,340
+ Here.
+
+192
+0:14:25,340 --> 0:14:27,340
+ We just have to get out of here.
+
+193
+0:14:29,340 --> 0:14:31,340
+ We have the campaigns.
+
+194
+0:14:31,340 --> 0:14:40,340
+ And then I have sent a few emails here over the last couple of days.
+
+195
+0:14:40,340 --> 0:14:44,340
+ So, I have an overview here of my campaigns.
+
+196
+0:14:44,340 --> 0:14:48,340
+ I can see I sent these three born hack emails.
+
+197
+0:14:48,340 --> 0:14:51,340
+ And on the first one.
+
+198
+0:14:51,340 --> 0:14:55,340
+ I had a 50% open rate and a 25% click rate.
+
+199
+0:14:55,340 --> 0:15:00,340
+ So, if I look into this one.
+
+200
+0:15:01,340 --> 0:15:03,340
+ We can say view the report.
+
+201
+0:15:03,340 --> 0:15:05,340
+ We want to know what happened here.
+
+202
+0:15:07,340 --> 0:15:09,340
+ So, open rates.
+
+203
+0:15:12,340 --> 0:15:18,340
+ They're tracked by loading a tiny pixel.
+
+204
+0:15:18,340 --> 0:15:20,340
+ A tiny invisible image.
+
+205
+0:15:20,340 --> 0:15:23,340
+ So, if you don't load images.
+
+206
+0:15:23,340 --> 0:15:26,340
+ I would guess that in this audience.
+
+207
+0:15:26,340 --> 0:15:29,340
+ There's an above average number of people.
+
+208
+0:15:29,340 --> 0:15:31,340
+ Who in their email client.
+
+209
+0:15:31,340 --> 0:15:33,340
+ Don't load images.
+
+210
+0:15:33,340 --> 0:15:36,340
+ I always get notification from email list.
+
+211
+0:15:36,340 --> 0:15:40,340
+ That hey, you haven't opened any of our emails in the last six months.
+
+212
+0:15:40,340 --> 0:15:41,340
+ Do you still want to stay on the list?
+
+213
+0:15:41,340 --> 0:15:42,340
+ And I'm like.
+
+214
+0:15:42,340 --> 0:15:45,340
+ Yeah, I'm like reading every second one of your emails.
+
+215
+0:15:45,340 --> 0:15:47,340
+ But I never load the images.
+
+216
+0:15:47,340 --> 0:15:49,340
+ Because I don't want you to actually track me.
+
+217
+0:15:49,340 --> 0:15:57,340
+ So, that is one of the ways that we prevent tracking.
+
+218
+0:15:57,340 --> 0:16:00,340
+ So, when we have open rates here.
+
+219
+0:16:00,340 --> 0:16:06,340
+ It's only those who actually loaded the images.
+
+220
+0:16:06,340 --> 0:16:08,340
+ This is quite interesting.
+
+221
+0:16:08,340 --> 0:16:13,340
+ So, I can see here information about my audience.
+
+222
+0:16:13,340 --> 0:16:18,340
+ And that is like that we have like over 65% female from 25 and up.
+
+223
+0:16:18,340 --> 0:16:20,340
+ And that's a bit funny.
+
+224
+0:16:20,340 --> 0:16:24,340
+ Because this is like only signing up random email addresses.
+
+225
+0:16:24,340 --> 0:16:26,340
+ That only exists right here.
+
+226
+0:16:26,340 --> 0:16:32,340
+ But they're giving me this demographics info.
+
+227
+0:16:32,340 --> 0:16:34,340
+ So, I can see here.
+
+228
+0:16:34,340 --> 0:16:41,340
+ I have like an open rate of 50.
+
+229
+0:16:41,340 --> 0:16:48,340
+ I can compare it to my average performance for these ones.
+
+230
+0:16:48,340 --> 0:16:50,340
+ This is still fairly okay.
+
+231
+0:16:50,340 --> 0:16:52,340
+ It's like I can see this.
+
+232
+0:16:52,340 --> 0:16:55,340
+ And I don't know if it's Peter or Johanna or whoever.
+
+233
+0:16:55,340 --> 0:16:57,340
+ Clicked and did what.
+
+234
+0:16:57,340 --> 0:17:01,340
+ And it might be helpful or it might be useless to know this.
+
+235
+0:17:01,340 --> 0:17:07,340
+ Some email marketers are like extremely concerned about open rates.
+
+236
+0:17:07,340 --> 0:17:11,340
+ That's like the golden calf of email marketing.
+
+237
+0:17:11,340 --> 0:17:13,340
+ That's to get people to open your emails.
+
+238
+0:17:13,340 --> 0:17:17,340
+ And I'm a bit like, yeah, well, but what about all the people who doesn't load the images.
+
+239
+0:17:17,340 --> 0:17:19,340
+ So, you don't know if they're opening or not.
+
+240
+0:17:19,340 --> 0:17:24,340
+ And actually the important thing is in the end who ends up buying.
+
+241
+0:17:24,340 --> 0:17:26,340
+ It's not who opens your emails.
+
+242
+0:17:26,340 --> 0:17:28,340
+ It's who ends up buying from you.
+
+243
+0:17:28,340 --> 0:17:33,340
+ So, I'm going to come back to that iOS 15 update.
+
+244
+0:17:33,340 --> 0:17:40,340
+ But one of the things it's going to make harder is the open tracking.
+
+245
+0:17:40,340 --> 0:17:42,340
+ And I'm not too concerned about that.
+
+246
+0:17:42,340 --> 0:17:44,340
+ But I know a lot of people are.
+
+247
+0:17:44,340 --> 0:17:52,340
+ So, we can also see here MailChimp is super interested in getting me to look at my open rates.
+
+248
+0:17:52,340 --> 0:17:55,340
+ And improve my open rates.
+
+249
+0:17:55,340 --> 0:17:58,340
+ And making me psyched about that.
+
+250
+0:17:58,340 --> 0:17:59,340
+ But now I can see.
+
+251
+0:17:59,340 --> 0:18:02,340
+ Now I come down to the detail description here.
+
+252
+0:18:02,340 --> 0:18:05,340
+ I had like this mail was delivered to four people.
+
+253
+0:18:05,340 --> 0:18:09,340
+ I can see I had two total opens.
+
+254
+0:18:09,340 --> 0:18:11,340
+ I had one who clicked.
+
+255
+0:18:11,340 --> 0:18:14,340
+ And I can see when they did it.
+
+256
+0:18:14,340 --> 0:18:19,340
+ So, I can click here and say, oh, well, so the opens.
+
+257
+0:18:19,340 --> 0:18:21,340
+ There was like two total opens.
+
+258
+0:18:21,340 --> 0:18:26,340
+ Then I can go in and see, okay, so who opened this email?
+
+259
+0:18:26,340 --> 0:18:28,340
+ I could also automate things.
+
+260
+0:18:28,340 --> 0:18:30,340
+ I could put actions on.
+
+261
+0:18:30,340 --> 0:18:32,340
+ I actually don't know MailChimp.
+
+262
+0:18:32,340 --> 0:18:35,340
+ I think in MailChimp I can put actions on people who open my emails.
+
+263
+0:18:35,340 --> 0:18:49,340
+ But I definitely can put actions like tagging people or sending them through an automated, another automated sequence or skipping emails based on how they handle the emails.
+
+264
+0:18:49,340 --> 0:18:50,340
+ Do they open them?
+
+265
+0:18:50,340 --> 0:18:51,340
+ Do they click?
+
+266
+0:18:51,340 --> 0:18:54,340
+ So, I can do a lot of automated stuff.
+
+267
+0:18:54,340 --> 0:19:02,340
+ But I can also just manually go in and see, okay, so this is the two people who opened my email.
+
+268
+0:19:02,340 --> 0:19:10,340
+ And then I can actually click here on the name of this person or the email address of this person.
+
+269
+0:19:10,340 --> 0:19:14,340
+ And then I can see, okay, so this is not so interesting.
+
+270
+0:19:14,340 --> 0:19:20,340
+ It was opened August 11th at 2.52 p.m.
+
+271
+0:19:20,340 --> 0:19:27,340
+ But I can still see this one person, this specific email address opened this email at this time.
+
+272
+0:19:27,340 --> 0:19:39,340
+ Then if I click on the email address, then I come to the contact page of this one person in my MailChimp system.
+
+273
+0:19:39,340 --> 0:19:44,340
+ So, I can see here when does this person actually opt in.
+
+274
+0:19:44,340 --> 0:19:49,340
+ I can see what sign-up form they used.
+
+275
+0:19:50,340 --> 0:19:53,340
+ I could write notes here.
+
+276
+0:19:53,340 --> 0:20:09,340
+ Be aware this is not a place for person, what do you call that, whatever, sensitive information.
+
+277
+0:20:09,340 --> 0:20:12,340
+ This is not a system to handle that.
+
+278
+0:20:12,340 --> 0:20:19,340
+ That's also like one of the issues I have with some of these systems is that you have all the information.
+
+279
+0:20:19,340 --> 0:20:22,340
+ That you have all this information available.
+
+280
+0:20:22,340 --> 0:20:25,340
+ You have all these opportunities available.
+
+281
+0:20:25,340 --> 0:20:33,340
+ And as I said, this is not just the only big companies with specific people handling this who knows their GDPR
+
+282
+0:20:33,340 --> 0:20:37,340
+ and who knows their data security and who knows how to handle stuff
+
+283
+0:20:37,340 --> 0:20:41,340
+ and who knows that two-factor authentication is a good thing and stuff like that.
+
+284
+0:20:41,340 --> 0:20:47,340
+ This is also your average hairdresser, yoga instructor,
+
+285
+0:20:49,340 --> 0:20:54,340
+ restaurant owner, everybody can sign up for a MailChimp account.
+
+286
+0:20:54,340 --> 0:20:57,340
+ In MailChimp, you don't even need your own email domain.
+
+287
+0:20:57,340 --> 0:21:01,340
+ You can actually send from your Gmail address or whatever
+
+288
+0:21:01,340 --> 0:21:08,340
+ and it will still have a reasonable deliverability rate due to some of the MailChimp setup.
+
+289
+0:21:08,340 --> 0:21:13,340
+ So, everybody can get access to this.
+
+290
+0:21:13,340 --> 0:21:16,340
+ And since the opportunity here for...
+
+291
+0:21:16,340 --> 0:21:18,340
+ There's the option here to write notes on contact.
+
+292
+0:21:18,340 --> 0:21:25,340
+ That means that someone will use this note function for sensitive information
+
+293
+0:21:25,340 --> 0:21:28,340
+ because it's like here, oh, I have a physiotherapy clinic.
+
+294
+0:21:28,340 --> 0:21:30,340
+ I can use this for my journaling.
+
+295
+0:21:30,340 --> 0:21:33,340
+ Professional physiotherapists probably won't do that.
+
+296
+0:21:33,340 --> 0:21:40,340
+ But if you just went to some coaching seminar or massage course or something like that,
+
+297
+0:21:40,340 --> 0:21:42,340
+ you might not actually know the rules.
+
+298
+0:21:42,340 --> 0:21:47,340
+ And then you just say, oh, well, but this can handle both my journaling and my emails.
+
+299
+0:21:48,340 --> 0:21:50,340
+ Don't go there.
+
+300
+0:21:50,340 --> 0:21:55,340
+ But that also means we need to be careful about what information we are giving to people
+
+301
+0:21:55,340 --> 0:21:58,340
+ whose email list we are signing up to.
+
+302
+0:21:58,340 --> 0:22:01,340
+ If you get like, when you sign up to an email list,
+
+303
+0:22:01,340 --> 0:22:06,340
+ the minimum you need to provide is your email address.
+
+304
+0:22:06,340 --> 0:22:11,340
+ There's like no maximum amount of data people can ask you to provide on sign up.
+
+305
+0:22:11,340 --> 0:22:14,340
+ It's like, yeah, well, okay, I give my name and my email.
+
+306
+0:22:14,340 --> 0:22:16,340
+ Okay, that's relatively fair.
+
+307
+0:22:18,340 --> 0:22:20,340
+ Maybe they want my full name.
+
+308
+0:22:20,340 --> 0:22:24,340
+ They want my home address.
+
+309
+0:22:24,340 --> 0:22:26,340
+ They want my phone number.
+
+310
+0:22:26,340 --> 0:22:28,340
+ They want my birth date.
+
+311
+0:22:28,340 --> 0:22:31,340
+ They want to know how many kids I have.
+
+312
+0:22:31,340 --> 0:22:35,340
+ They want to know the color of my eyes, my shoe size, my height, whatever.
+
+313
+0:22:35,340 --> 0:22:42,340
+ There's a lot of profiling going on, and we need to be aware when we sign up
+
+314
+0:22:42,340 --> 0:22:44,340
+ what information we're actually giving.
+
+315
+0:22:44,340 --> 0:22:45,340
+ Yes, I can just lie.
+
+316
+0:22:45,340 --> 0:22:46,340
+ I know that.
+
+317
+0:22:46,340 --> 0:22:47,340
+ But if you ask me, I know that.
+
+318
+0:22:47,340 --> 0:22:52,340
+ If you ask those questions, a lot of people will truthfully answer them.
+
+319
+0:22:52,340 --> 0:22:54,340
+ Not you guys, I presume.
+
+320
+0:22:54,340 --> 0:23:00,340
+ But a lot of average Joes will answer those questions honestly,
+
+321
+0:23:00,340 --> 0:23:03,340
+ and then their information, their real information,
+
+322
+0:23:03,340 --> 0:23:06,340
+ will be inside systems like MailChimp and the other ones.
+
+323
+0:23:06,340 --> 0:23:12,340
+ So if you're an email marketer, don't ask for anything you don't need.
+
+324
+0:23:12,340 --> 0:23:16,340
+ Don't use a, oh, it would be nice to know
+
+325
+0:23:17,340 --> 0:23:20,340
+ if they're living, or it would be nice to know if they have kids,
+
+326
+0:23:20,340 --> 0:23:23,340
+ or it would be nice to know whatever, if they're occupied,
+
+327
+0:23:23,340 --> 0:23:26,340
+ or how much money they earn, or anything.
+
+328
+0:23:26,340 --> 0:23:28,340
+ Ask what you need.
+
+329
+0:23:28,340 --> 0:23:30,340
+ Don't ask any more than that.
+
+330
+0:23:30,340 --> 0:23:35,340
+ So that was me taking off on a note here.
+
+331
+0:23:35,340 --> 0:23:40,340
+ So I can see that this contact has, from the mails she's been sent,
+
+332
+0:23:40,340 --> 0:23:44,340
+ a 50% open rate, hasn't clicked anything.
+
+333
+0:23:44,340 --> 0:23:46,340
+ I can hook up MailChimp.
+
+334
+0:23:46,340 --> 0:23:50,340
+ With whatever shop system I use,
+
+335
+0:23:50,340 --> 0:23:52,340
+ and then I can also track my orders,
+
+336
+0:23:52,340 --> 0:23:54,340
+ so I would also be able to see,
+
+337
+0:23:54,340 --> 0:23:57,340
+ is this person actually the one who's buying stuff,
+
+338
+0:23:57,340 --> 0:23:59,340
+ and making money for me,
+
+339
+0:23:59,340 --> 0:24:05,340
+ or is this one just someone who's freeloading.
+
+340
+0:24:05,340 --> 0:24:09,340
+ I've got some profile information.
+
+341
+0:24:09,340 --> 0:24:12,340
+ I've got some GDPR info.
+
+342
+0:24:12,340 --> 0:24:15,340
+ I know something about the link.
+
+343
+0:24:15,340 --> 0:24:19,340
+ The language the person is speaking.
+
+344
+0:24:19,340 --> 0:24:23,340
+ I know something about the location.
+
+345
+0:24:23,340 --> 0:24:26,340
+ That's based on the sign-up IP.
+
+346
+0:24:26,340 --> 0:24:29,340
+ I know the favorite email client.
+
+347
+0:24:29,340 --> 0:24:32,340
+ This actually says a lot about people.
+
+348
+0:24:32,340 --> 0:24:35,340
+ So my favorite email client for this customer,
+
+349
+0:24:35,340 --> 0:24:39,340
+ for this test person, is Thunderbird.
+
+350
+0:24:39,340 --> 0:24:42,340
+ You can also use this for profiling.
+
+351
+0:24:42,340 --> 0:24:45,340
+ Because, hey, if you have this small amount of your people,
+
+352
+0:24:45,340 --> 0:24:47,340
+ who actually use Outlook,
+
+353
+0:24:47,340 --> 0:24:49,340
+ you can do something specific for them.
+
+354
+0:24:49,340 --> 0:24:53,340
+ There's a lot of information
+
+355
+0:24:53,340 --> 0:24:56,340
+ in what email client people are using,
+
+356
+0:24:56,340 --> 0:24:59,340
+ that says something about who they are,
+
+357
+0:24:59,340 --> 0:25:01,340
+ and the kind of way they're working.
+
+358
+0:25:01,340 --> 0:25:06,340
+ If this was some mail client for Android or something,
+
+359
+0:25:06,340 --> 0:25:07,340
+ that would say, hey, okay,
+
+360
+0:25:07,340 --> 0:25:10,340
+ she's usually reading emails from her phone.
+
+361
+0:25:10,340 --> 0:25:13,340
+ That's valuable information.
+
+362
+0:25:15,340 --> 0:25:19,340
+ And again, Mailchimp, behind the scenes,
+
+363
+0:25:19,340 --> 0:25:22,340
+ can see a lot more than this.
+
+364
+0:25:22,340 --> 0:25:24,340
+ They can see what Thunderbird version I'm running
+
+365
+0:25:24,340 --> 0:25:27,340
+ and stuff like that.
+
+366
+0:25:27,340 --> 0:25:30,340
+ So then we have the activity feed.
+
+367
+0:25:30,340 --> 0:25:36,340
+ And this is where I think this is like the most important
+
+368
+0:25:36,340 --> 0:25:39,340
+ not free part.
+
+369
+0:25:39,340 --> 0:25:44,340
+ Because I don't know in Mailchimp how long this activity feed
+
+370
+0:25:44,340 --> 0:25:46,340
+ goes back.
+
+371
+0:25:46,340 --> 0:25:51,340
+ In most system, you can see at least six months back.
+
+372
+0:25:51,340 --> 0:25:54,340
+ So I can see here, I opted into emails.
+
+373
+0:25:54,340 --> 0:25:57,340
+ Then I was sent the first email.
+
+374
+0:25:57,340 --> 0:25:58,340
+ I opened that one.
+
+375
+0:25:58,340 --> 0:25:59,340
+ I was sent the second one.
+
+376
+0:25:59,340 --> 0:26:00,340
+ I didn't open that.
+
+377
+0:26:00,340 --> 0:26:03,340
+ But this here will have all my history of my clicks
+
+378
+0:26:03,340 --> 0:26:10,340
+ and my opens in my Mailchimp, on this Mailchimp account.
+
+379
+0:26:10,340 --> 0:26:14,340
+ So you can imagine, if you sign up,
+
+380
+0:26:14,340 --> 0:26:19,340
+ for a list and stays there for a long while,
+
+381
+0:26:19,340 --> 0:26:22,340
+ this information will be quite extensive.
+
+382
+0:26:22,340 --> 0:26:24,340
+ People can see, okay, what are people actually doing?
+
+383
+0:26:24,340 --> 0:26:29,340
+ And if I get someone on my list who I would,
+
+384
+0:26:29,340 --> 0:26:33,340
+ if you sign up with your real name and your real email,
+
+385
+0:26:33,340 --> 0:26:35,340
+ and I like to know, oh, that was interesting.
+
+386
+0:26:35,340 --> 0:26:37,340
+ He signed up to my list.
+
+387
+0:26:37,340 --> 0:26:40,340
+ I'm wondering, how is he behaving in this system?
+
+388
+0:26:40,340 --> 0:26:42,340
+ I actually have an awful lot of data,
+
+389
+0:26:42,340 --> 0:26:44,340
+ because this is all being kept track of.
+
+390
+0:26:44,340 --> 0:26:49,340
+ It's not just that I can go in and see on the specific email
+
+391
+0:26:49,340 --> 0:26:52,340
+ who opened it and maybe do it like that.
+
+392
+0:26:52,340 --> 0:26:56,340
+ I can actually go into one specific person in my email system
+
+393
+0:26:56,340 --> 0:27:01,340
+ and follow how they are behaving.
+
+394
+0:27:01,340 --> 0:27:09,340
+ I could, if I wanted, I could put tags on this or automate things.
+
+395
+0:27:09,340 --> 0:27:11,340
+ So if people behave in a specific way,
+
+396
+0:27:11,340 --> 0:27:13,340
+ we send them to another email sequence,
+
+397
+0:27:13,340 --> 0:27:16,340
+ because then I know, hey, if they click that link
+
+398
+0:27:16,340 --> 0:27:18,340
+ and they haven't purchased anything yet,
+
+399
+0:27:18,340 --> 0:27:20,340
+ so they're probably interested,
+
+400
+0:27:20,340 --> 0:27:22,340
+ but they haven't reached a decision yet.
+
+401
+0:27:22,340 --> 0:27:24,340
+ I need to send them a few more emails.
+
+402
+0:27:24,340 --> 0:27:28,340
+ So in one way, that's like good business sense,
+
+403
+0:27:28,340 --> 0:27:32,340
+ because I say, okay, I don't want to nag those people
+
+404
+0:27:32,340 --> 0:27:34,340
+ who didn't click any of the links in this campaign.
+
+405
+0:27:34,340 --> 0:27:37,340
+ I don't want to nag them with too many more emails.
+
+406
+0:27:37,340 --> 0:27:40,340
+ But those people who are like on the verge,
+
+407
+0:27:40,340 --> 0:27:43,340
+ and they might be convinced to purchase
+
+408
+0:27:43,340 --> 0:27:45,340
+ if I send them a few more emails,
+
+409
+0:27:45,340 --> 0:27:47,340
+ I would like to send them some more emails,
+
+410
+0:27:47,340 --> 0:27:49,340
+ because those who hasn't clicked this campaign,
+
+411
+0:27:49,340 --> 0:27:51,340
+ maybe they'd be interested in the next,
+
+412
+0:27:51,340 --> 0:27:55,340
+ and I don't want them to actually just go and unsubscribe.
+
+413
+0:27:55,340 --> 0:27:58,340
+ So as an email marketer, I have to be a bit like,
+
+414
+0:27:58,340 --> 0:28:02,340
+ yeah, okay, so I would like to use this information,
+
+415
+0:28:02,340 --> 0:28:05,340
+ because it's actually valuable information,
+
+416
+0:28:05,340 --> 0:28:08,340
+ and I can use it to customize my campaign.
+
+417
+0:28:08,340 --> 0:28:10,340
+ I can say, okay, so people who don't click this,
+
+418
+0:28:10,340 --> 0:28:12,340
+ and people who click that,
+
+419
+0:28:12,340 --> 0:28:16,340
+ we send them to a special email sequence
+
+420
+0:28:16,340 --> 0:28:19,340
+ instead of those who didn't click anything,
+
+421
+0:28:19,340 --> 0:28:21,340
+ they just get a few more emails,
+
+422
+0:28:21,340 --> 0:28:24,340
+ and then we quiet it down a bit.
+
+423
+0:28:24,340 --> 0:28:26,340
+ And this can be automated,
+
+424
+0:28:26,340 --> 0:28:28,340
+ it can be like an onboarding sequence
+
+425
+0:28:28,340 --> 0:28:29,340
+ where you automate it,
+
+426
+0:28:29,340 --> 0:28:31,340
+ or it can be a specific campaign
+
+427
+0:28:31,340 --> 0:28:34,340
+ for a specific here and now purchase.
+
+428
+0:28:34,340 --> 0:28:36,340
+ But there's a lot of opportunities,
+
+429
+0:28:36,340 --> 0:28:38,340
+ and I get all these data,
+
+430
+0:28:38,340 --> 0:28:39,340
+ and it's just the same,
+
+431
+0:28:39,340 --> 0:28:43,340
+ as with when we've been discussing things
+
+432
+0:28:43,340 --> 0:28:47,340
+ about how people, Russians or whoever,
+
+433
+0:28:47,340 --> 0:28:52,340
+ are going to affect elections and stuff like that.
+
+434
+0:28:52,340 --> 0:28:54,340
+ We know people are susceptible
+
+435
+0:28:54,340 --> 0:28:59,340
+ to various kinds of nudging and information,
+
+436
+0:28:59,340 --> 0:29:02,340
+ and if I keep hitting the right people
+
+437
+0:29:02,340 --> 0:29:03,340
+ with the right information,
+
+438
+0:29:03,340 --> 0:29:05,340
+ I might actually be able to convince someone
+
+439
+0:29:05,340 --> 0:29:08,340
+ to purchase something that they might not have purchased
+
+440
+0:29:08,340 --> 0:29:10,340
+ had I just sent them like two emails.
+
+441
+0:29:10,340 --> 0:29:13,340
+ But now I send them this specific email
+
+442
+0:29:13,340 --> 0:29:15,340
+ based on some specific behavior,
+
+443
+0:29:15,340 --> 0:29:17,340
+ and then I can convince them to purchase.
+
+444
+0:29:17,340 --> 0:29:19,340
+ And there are some people out there,
+
+445
+0:29:19,340 --> 0:29:21,340
+ some companies that really specialize
+
+446
+0:29:21,340 --> 0:29:24,340
+ in analyzing this and setting up campaigns
+
+447
+0:29:24,340 --> 0:29:27,340
+ based on all this behavior tracking,
+
+448
+0:29:27,340 --> 0:29:32,340
+ and I think basically it's not overly ethical,
+
+449
+0:29:32,340 --> 0:29:34,340
+ and it's a bit scaring that people
+
+450
+0:29:34,340 --> 0:29:36,340
+ can actually see all this about us.
+
+451
+0:29:36,340 --> 0:29:37,340
+ So,
+
+452
+0:29:38,340 --> 0:29:43,340
+ we have,
+
+453
+0:29:43,340 --> 0:29:45,340
+ as an average MailChimp user,
+
+454
+0:29:45,340 --> 0:29:47,340
+ which I'm not because I'm not on a daily basis
+
+455
+0:29:47,340 --> 0:29:49,340
+ using MailChimp,
+
+456
+0:29:49,340 --> 0:29:50,340
+ but a lot of people are,
+
+457
+0:29:50,340 --> 0:29:52,340
+ and that's like the go-to tool
+
+458
+0:29:52,340 --> 0:29:53,340
+ because you can use it for free
+
+459
+0:29:53,340 --> 0:29:55,340
+ for up to a thousand subscribers,
+
+460
+0:29:55,340 --> 0:29:58,340
+ so a lot of people are using MailChimp,
+
+461
+0:29:58,340 --> 0:30:02,340
+ and it has all this data available for free.
+
+462
+0:30:02,340 --> 0:30:04,340
+ So,
+
+463
+0:30:04,340 --> 0:30:05,340
+ if I have,
+
+464
+0:30:05,340 --> 0:30:07,340
+ as a person who signed up to an email,
+
+465
+0:30:07,340 --> 0:30:09,340
+ who signed up to an email list,
+
+466
+0:30:09,340 --> 0:30:10,340
+ if I need to ask myself,
+
+467
+0:30:10,340 --> 0:30:12,340
+ okay, if it doesn't cost any money,
+
+468
+0:30:12,340 --> 0:30:14,340
+ what am I paying with?
+
+469
+0:30:14,340 --> 0:30:17,340
+ Then when I sign up for a free MailChimp account,
+
+470
+0:30:17,340 --> 0:30:19,340
+ I have to ask myself,
+
+471
+0:30:19,340 --> 0:30:22,340
+ what am I and my subscribers paying with?
+
+472
+0:30:22,340 --> 0:30:25,340
+ And we are definitely paying with more emails,
+
+473
+0:30:25,340 --> 0:30:30,340
+ more information fed into the MailChimp system.
+
+474
+0:30:30,340 --> 0:30:31,340
+ So,
+
+475
+0:30:31,340 --> 0:30:32,340
+ so it's not free for me,
+
+476
+0:30:32,340 --> 0:30:36,340
+ it's not free for my subscribers.
+
+477
+0:30:36,340 --> 0:30:39,340
+ MailChimp actually has a feature
+
+478
+0:30:39,340 --> 0:30:42,340
+ where you can set up your emails to be sent,
+
+479
+0:30:42,340 --> 0:30:45,340
+ then they analyze the email addresses,
+
+480
+0:30:45,340 --> 0:30:46,340
+ and they say,
+
+481
+0:30:46,340 --> 0:30:48,340
+ okay, so I would usually send this email
+
+482
+0:30:48,340 --> 0:30:50,340
+ at 2 p.m. in the afternoon.
+
+483
+0:30:50,340 --> 0:30:52,340
+ They would go and look at my list and say,
+
+484
+0:30:52,340 --> 0:30:53,340
+ okay, what is the,
+
+485
+0:30:53,340 --> 0:30:54,340
+ for each person on my list,
+
+486
+0:30:54,340 --> 0:30:58,340
+ what is the best time to send these emails?
+
+487
+0:30:58,340 --> 0:31:00,340
+ And no, they're not just basing that
+
+488
+0:31:00,340 --> 0:31:03,340
+ on my one monthly newsletter,
+
+489
+0:31:03,340 --> 0:31:05,340
+ they are definitely basing that
+
+490
+0:31:05,340 --> 0:31:07,340
+ on all the info they have
+
+491
+0:31:07,340 --> 0:31:11,340
+ on that specific email address in the system.
+
+492
+0:31:11,340 --> 0:31:13,340
+ But that's a paid feature.
+
+493
+0:31:13,340 --> 0:31:14,340
+ Yeah.
+
+494
+0:31:14,340 --> 0:31:17,340
+ So,
+
+495
+0:31:17,340 --> 0:31:19,340
+ I so didn't want to do that.
+
+496
+0:31:24,340 --> 0:31:27,340
+ We just go back to opening this one.
+
+497
+0:31:27,340 --> 0:31:29,340
+ There it goes.
+
+498
+0:31:35,340 --> 0:31:37,340
+ Yeah.
+
+499
+0:31:37,340 --> 0:31:39,340
+ So, that was MailChimp,
+
+500
+0:31:39,340 --> 0:31:42,340
+ and MailChimp is basically no worse
+
+501
+0:31:42,340 --> 0:31:46,340
+ or no better than the rest of the systems out there.
+
+502
+0:31:46,340 --> 0:31:48,340
+ They just have a free option,
+
+503
+0:31:48,340 --> 0:31:51,340
+ so that's why I picked on them.
+
+504
+0:31:51,340 --> 0:31:53,340
+ So,
+
+505
+0:31:53,340 --> 0:31:55,340
+ what can you do as a user
+
+506
+0:31:55,340 --> 0:31:59,340
+ who would like to subscribe to email lists
+
+507
+0:31:59,340 --> 0:32:03,340
+ and don't get overly profiled and tracked?
+
+508
+0:32:03,340 --> 0:32:04,340
+ Well, first of all,
+
+509
+0:32:04,340 --> 0:32:09,340
+ don't just sign up for everything.
+
+510
+0:32:09,340 --> 0:32:11,340
+ Think before you sign up.
+
+511
+0:32:11,340 --> 0:32:14,340
+ Consider, is this actually worth it?
+
+512
+0:32:14,340 --> 0:32:15,340
+ Do I think,
+
+513
+0:32:15,340 --> 0:32:17,340
+ will I get something of value
+
+514
+0:32:17,340 --> 0:32:19,340
+ from giving my name and my email address?
+
+515
+0:32:19,340 --> 0:32:21,340
+ If it's one of those places
+
+516
+0:32:21,340 --> 0:32:23,340
+ where you also need to give your phone number
+
+517
+0:32:23,340 --> 0:32:25,340
+ and 10 other things,
+
+518
+0:32:25,340 --> 0:32:26,340
+ well,
+
+519
+0:32:26,340 --> 0:32:28,340
+ it really needs to be something really,
+
+520
+0:32:28,340 --> 0:32:31,340
+ really good to be worth it.
+
+521
+0:32:31,340 --> 0:32:33,340
+ User-specific,
+
+522
+0:32:33,340 --> 0:32:34,340
+ or random,
+
+523
+0:32:34,340 --> 0:32:37,340
+ emails for lists.
+
+524
+0:32:37,340 --> 0:32:40,340
+ If you want to be profiled slightly less,
+
+525
+0:32:40,340 --> 0:32:42,340
+ don't use your main email
+
+526
+0:32:42,340 --> 0:32:46,340
+ for signing up to all those crappy email lists
+
+527
+0:32:46,340 --> 0:32:47,340
+ or all the good ones.
+
+528
+0:32:47,340 --> 0:32:49,340
+ Or have like several,
+
+529
+0:32:49,340 --> 0:32:51,340
+ this is like my favorite email
+
+530
+0:32:51,340 --> 0:32:53,340
+ for important lists.
+
+531
+0:32:53,340 --> 0:32:54,340
+ There might be some lists
+
+532
+0:32:54,340 --> 0:32:56,340
+ that actually provide real value
+
+533
+0:32:56,340 --> 0:32:59,340
+ where you want to keep up.
+
+534
+0:32:59,340 --> 0:33:02,340
+ This is an email for less important lists,
+
+535
+0:33:02,340 --> 0:33:04,340
+ and this is the email address
+
+536
+0:33:04,340 --> 0:33:07,340
+ I use for everything
+
+537
+0:33:07,340 --> 0:33:09,340
+ where it doesn't matter.
+
+538
+0:33:09,340 --> 0:33:10,340
+ I don't really,
+
+539
+0:33:10,340 --> 0:33:12,340
+ maybe it's just you set up a rule,
+
+540
+0:33:12,340 --> 0:33:13,340
+ it goes directly into spam,
+
+541
+0:33:13,340 --> 0:33:17,340
+ whatever is sent to that email.
+
+542
+0:33:17,340 --> 0:33:18,340
+ Then,
+
+543
+0:33:18,340 --> 0:33:20,340
+ don't load images.
+
+544
+0:33:20,340 --> 0:33:23,340
+ If you set your email client
+
+545
+0:33:23,340 --> 0:33:25,340
+ as default to not load images
+
+546
+0:33:25,340 --> 0:33:28,340
+ unless you ask it to,
+
+547
+0:33:28,340 --> 0:33:30,340
+ the email marketers
+
+548
+0:33:30,340 --> 0:33:32,340
+ will have a lot of hard time
+
+549
+0:33:32,340 --> 0:33:33,340
+ tracking you
+
+550
+0:33:33,340 --> 0:33:35,340
+ because then they can't,
+
+551
+0:33:35,340 --> 0:33:37,340
+ you won't load their pixels
+
+552
+0:33:37,340 --> 0:33:38,340
+ and they can't see you
+
+553
+0:33:38,340 --> 0:33:40,340
+ actually open the email.
+
+554
+0:33:40,340 --> 0:33:42,340
+ That will also make you think
+
+555
+0:33:42,340 --> 0:33:43,340
+ because it's like,
+
+556
+0:33:43,340 --> 0:33:45,340
+ I'm pretty amazed
+
+557
+0:33:45,340 --> 0:33:47,340
+ when I get lots of emails,
+
+558
+0:33:47,340 --> 0:33:49,340
+ I have like this big empty box,
+
+559
+0:33:49,340 --> 0:33:50,340
+ and then the next empty box,
+
+560
+0:33:50,340 --> 0:33:52,340
+ and then there's like one line of text,
+
+561
+0:33:52,340 --> 0:33:53,340
+ and then there's like two more
+
+562
+0:33:53,340 --> 0:33:54,340
+ big empty boxes.
+
+563
+0:33:54,340 --> 0:33:55,340
+ And that's especially
+
+564
+0:33:55,340 --> 0:33:57,340
+ with the MailChimp emails
+
+565
+0:33:57,340 --> 0:33:59,340
+ really are not designed for people
+
+566
+0:33:59,340 --> 0:34:01,340
+ who don't load images.
+
+567
+0:34:01,340 --> 0:34:04,340
+ So you can really see,
+
+568
+0:34:04,340 --> 0:34:07,340
+ okay, people are really trying to,
+
+569
+0:34:07,340 --> 0:34:11,340
+ only trying to send this to people
+
+570
+0:34:11,340 --> 0:34:13,340
+ who actually load the images.
+
+571
+0:34:13,340 --> 0:34:15,340
+ A lot of email marketers
+
+572
+0:34:15,340 --> 0:34:17,340
+ don't even think about the fact
+
+573
+0:34:17,340 --> 0:34:20,340
+ that some of their readers
+
+574
+0:34:20,340 --> 0:34:22,340
+ don't load the images.
+
+575
+0:34:22,340 --> 0:34:24,340
+ So I always say to my clients that,
+
+576
+0:34:24,340 --> 0:34:25,340
+ hey, when you send emails,
+
+577
+0:34:25,340 --> 0:34:28,340
+ make sure it can actually be read
+
+578
+0:34:28,340 --> 0:34:30,340
+ without loading the images.
+
+579
+0:34:30,340 --> 0:34:32,340
+ Yes, I know you want people
+
+580
+0:34:32,340 --> 0:34:33,340
+ to load the images
+
+581
+0:34:33,340 --> 0:34:35,340
+ so you can track the open rates.
+
+582
+0:34:35,340 --> 0:34:37,340
+ I would much prefer to actually
+
+583
+0:34:37,340 --> 0:34:39,340
+ just have people be able
+
+584
+0:34:39,340 --> 0:34:43,340
+ to read my emails.
+
+585
+0:34:43,340 --> 0:34:45,340
+ If they want to load the images,
+
+586
+0:34:45,340 --> 0:34:46,340
+ that's awesome.
+
+587
+0:34:46,340 --> 0:34:48,340
+ If they don't want to load them,
+
+588
+0:34:48,340 --> 0:34:52,340
+ well, the point should still be
+
+589
+0:34:52,340 --> 0:34:54,340
+ understandable.
+
+590
+0:34:54,340 --> 0:34:57,340
+ Make sure to use alt tags
+
+591
+0:34:57,340 --> 0:34:58,340
+ for your images
+
+592
+0:34:58,340 --> 0:35:00,340
+ if you have like an employee
+
+593
+0:35:00,340 --> 0:35:01,340
+ who has an important video
+
+594
+0:35:01,340 --> 0:35:02,340
+ they need to click
+
+595
+0:35:02,340 --> 0:35:03,340
+ or something like that.
+
+596
+0:35:03,340 --> 0:35:04,340
+ Put in that this is actually
+
+597
+0:35:04,340 --> 0:35:08,340
+ a video, go click it.
+
+598
+0:35:08,340 --> 0:35:10,340
+ So we can protect ourselves
+
+599
+0:35:10,340 --> 0:35:16,340
+ by not loading all them images.
+
+600
+0:35:16,340 --> 0:35:18,340
+ So a few words
+
+601
+0:35:18,340 --> 0:35:24,340
+ about the iOS 15 updates.
+
+602
+0:35:24,340 --> 0:35:25,340
+ None of us,
+
+603
+0:35:25,340 --> 0:35:26,340
+ I've tried reading up a bit
+
+604
+0:35:26,340 --> 0:35:27,340
+ because it was like
+
+605
+0:35:27,340 --> 0:35:28,340
+ it was announced.
+
+606
+0:35:28,340 --> 0:35:30,340
+ I think it's a couple of months
+
+607
+0:35:30,340 --> 0:35:33,340
+ back now that with the iOS 14
+
+608
+0:35:33,340 --> 0:35:36,340
+ something update,
+
+609
+0:35:36,340 --> 0:35:40,340
+ Apple tried to restrict
+
+610
+0:35:40,340 --> 0:35:43,340
+ cookie tracking,
+
+611
+0:35:43,340 --> 0:35:45,340
+ which is right now giving people
+
+612
+0:35:45,340 --> 0:35:47,340
+ a really, really hard time
+
+613
+0:35:47,340 --> 0:35:49,340
+ with their Facebook ads.
+
+614
+0:35:49,340 --> 0:35:51,340
+ I love that update.
+
+615
+0:35:51,340 --> 0:35:53,340
+ But now they have announced
+
+616
+0:35:53,340 --> 0:35:55,340
+ with iOS 15 that they're going
+
+617
+0:35:55,340 --> 0:35:57,340
+ to make some privacy updates
+
+618
+0:35:57,340 --> 0:35:59,340
+ to email reading.
+
+619
+0:35:59,340 --> 0:36:00,340
+ And you can,
+
+620
+0:36:00,340 --> 0:36:03,340
+ I don't really like
+
+621
+0:36:03,340 --> 0:36:06,340
+ Apple's privacy thoughts,
+
+622
+0:36:06,340 --> 0:36:07,340
+ but this here,
+
+623
+0:36:07,340 --> 0:36:09,340
+ I like the idea about
+
+624
+0:36:09,340 --> 0:36:10,340
+ behind this one
+
+625
+0:36:10,340 --> 0:36:11,340
+ and then there with the other hand
+
+626
+0:36:11,340 --> 0:36:13,340
+ they're doing really weird tracking stuff
+
+627
+0:36:13,340 --> 0:36:15,340
+ of their own customers,
+
+628
+0:36:15,340 --> 0:36:16,340
+ but then it's them doing the tracking,
+
+629
+0:36:16,340 --> 0:36:18,340
+ so that's apparently okay.
+
+630
+0:36:18,340 --> 0:36:20,340
+ But this here is that
+
+631
+0:36:20,340 --> 0:36:21,340
+ they're going to,
+
+632
+0:36:21,340 --> 0:36:25,340
+ when they fetch,
+
+633
+0:36:25,340 --> 0:36:26,340
+ when an email is sent
+
+634
+0:36:26,340 --> 0:36:28,340
+ to an iOS user,
+
+635
+0:36:28,340 --> 0:36:31,340
+ the images in that email
+
+636
+0:36:31,340 --> 0:36:34,340
+ will be loaded at a random time
+
+637
+0:36:34,340 --> 0:36:35,340
+ and it will be loaded
+
+638
+0:36:35,340 --> 0:36:38,340
+ by their server somewhere
+
+639
+0:36:38,340 --> 0:36:41,340
+ and then rerouted
+
+640
+0:36:41,340 --> 0:36:43,340
+ to the recipient.
+
+641
+0:36:43,340 --> 0:36:44,340
+ So that will mean that
+
+642
+0:36:44,340 --> 0:36:47,340
+ as I read it,
+
+643
+0:36:47,340 --> 0:36:49,340
+ it will mean that people
+
+644
+0:36:49,340 --> 0:36:51,340
+ not opening the mails
+
+645
+0:36:51,340 --> 0:36:53,340
+ will actually possibly be counted
+
+646
+0:36:53,340 --> 0:36:56,340
+ as opens because the images
+
+647
+0:36:56,340 --> 0:36:58,340
+ are being loaded by Apple.
+
+648
+0:36:58,340 --> 0:36:59,340
+ On some server
+
+649
+0:36:59,340 --> 0:37:01,340
+ and then the recipient
+
+650
+0:37:01,340 --> 0:37:02,340
+ might or might not
+
+651
+0:37:02,340 --> 0:37:04,340
+ collect those images.
+
+652
+0:37:04,340 --> 0:37:07,340
+ That means since a lot of people,
+
+653
+0:37:07,340 --> 0:37:10,340
+ and this is not a default feature,
+
+654
+0:37:10,340 --> 0:37:11,340
+ it's something you will be able
+
+655
+0:37:11,340 --> 0:37:13,340
+ to turn on,
+
+656
+0:37:13,340 --> 0:37:15,340
+ but it will mean that
+
+657
+0:37:15,340 --> 0:37:18,340
+ when iOS 15 is rolled out,
+
+658
+0:37:18,340 --> 0:37:21,340
+ open tracking will be
+
+659
+0:37:21,340 --> 0:37:22,340
+ a lot less reliable
+
+660
+0:37:22,340 --> 0:37:23,340
+ and we definitely,
+
+661
+0:37:23,340 --> 0:37:24,340
+ in those systems
+
+662
+0:37:24,340 --> 0:37:25,340
+ where you have like
+
+663
+0:37:25,340 --> 0:37:27,340
+ automatic tagging
+
+664
+0:37:27,340 --> 0:37:31,340
+ or action based on opens,
+
+665
+0:37:31,340 --> 0:37:35,340
+ that will be,
+
+666
+0:37:35,340 --> 0:37:37,340
+ yeah, you can't really rely
+
+667
+0:37:37,340 --> 0:37:39,340
+ on that anymore.
+
+668
+0:37:39,340 --> 0:37:41,340
+ And they will also cloak
+
+669
+0:37:41,340 --> 0:37:43,340
+ the recipient IP,
+
+670
+0:37:43,340 --> 0:37:45,340
+ which I think is nice.
+
+671
+0:37:45,340 --> 0:37:46,340
+ Then they also have this
+
+672
+0:37:46,340 --> 0:37:47,340
+ kind of cool feature
+
+673
+0:37:47,340 --> 0:37:49,340
+ where you can get
+
+674
+0:37:49,340 --> 0:37:53,340
+ a random Apple email
+
+675
+0:37:53,340 --> 0:37:54,340
+ that you just,
+
+676
+0:37:54,340 --> 0:37:55,340
+ for one time,
+
+677
+0:37:55,340 --> 0:37:57,340
+ sign up to a list
+
+678
+0:37:57,340 --> 0:37:59,340
+ with this crappy
+
+679
+0:37:59,340 --> 0:38:00,340
+ at apple.com
+
+680
+0:38:00,340 --> 0:38:02,340
+ or whatever email address
+
+681
+0:38:02,340 --> 0:38:04,340
+ and then in the system,
+
+682
+0:38:04,340 --> 0:38:05,340
+ Apple knows that
+
+683
+0:38:05,340 --> 0:38:06,340
+ this belongs to you,
+
+684
+0:38:06,340 --> 0:38:08,340
+ but MailChimp doesn't know
+
+685
+0:38:08,340 --> 0:38:12,340
+ what email Apple is redirecting it to.
+
+686
+0:38:12,340 --> 0:38:14,340
+ So that is also kind of nice
+
+687
+0:38:14,340 --> 0:38:15,340
+ to be able to sign up
+
+688
+0:38:15,340 --> 0:38:17,340
+ to things without
+
+689
+0:38:17,340 --> 0:38:20,340
+ giving your own email address.
+
+690
+0:38:20,340 --> 0:38:22,340
+ The thing that should still be trackable
+
+691
+0:38:22,340 --> 0:38:23,340
+ is the clicks
+
+692
+0:38:23,340 --> 0:38:24,340
+ because when you click a link
+
+693
+0:38:24,340 --> 0:38:25,340
+ in an email
+
+694
+0:38:25,340 --> 0:38:26,340
+ in a marketing site,
+
+695
+0:38:26,340 --> 0:38:29,340
+ in a marketing email,
+
+696
+0:38:29,340 --> 0:38:31,340
+ usually,
+
+697
+0:38:31,340 --> 0:38:33,340
+ that links takes you through,
+
+698
+0:38:33,340 --> 0:38:34,340
+ like it's,
+
+699
+0:38:34,340 --> 0:38:35,340
+ if you put the mouse over,
+
+700
+0:38:35,340 --> 0:38:36,340
+ then you can see,
+
+701
+0:38:36,340 --> 0:38:38,340
+ well, this is not like
+
+702
+0:38:38,340 --> 0:38:41,340
+ I put in .bornhack.dk,
+
+703
+0:38:41,340 --> 0:38:43,340
+ but the link would actually be
+
+704
+0:38:43,340 --> 0:38:44,340
+ something, something,
+
+705
+0:38:44,340 --> 0:38:46,340
+ MailChimp, something, something,
+
+706
+0:38:46,340 --> 0:38:47,340
+ because they're taking it
+
+707
+0:38:47,340 --> 0:38:49,340
+ through their server,
+
+708
+0:38:49,340 --> 0:38:51,340
+ redirecting you to the page,
+
+709
+0:38:51,340 --> 0:38:52,340
+ and then they can see,
+
+710
+0:38:52,340 --> 0:38:53,340
+ okay, they can track
+
+711
+0:38:53,340 --> 0:38:54,340
+ the links that way.
+
+712
+0:38:54,340 --> 0:38:55,340
+ That should still be working
+
+713
+0:38:55,340 --> 0:38:56,340
+ because you will actually
+
+714
+0:38:56,340 --> 0:38:58,340
+ have to click the links.
+
+715
+0:38:58,340 --> 0:39:01,340
+ So we'll see.
+
+716
+0:39:01,340 --> 0:39:02,340
+ Only time will show
+
+717
+0:39:02,340 --> 0:39:03,340
+ what this is actually going to mean
+
+718
+0:39:03,340 --> 0:39:06,340
+ in real life.
+
+719
+0:39:06,340 --> 0:39:08,340
+ Yeah, questions?
+
+720
+0:39:23,340 --> 0:39:24,340
+ Thank you.
+
+721
+0:39:24,340 --> 0:39:26,340
+ So the click rate,
+
+722
+0:39:26,340 --> 0:39:27,340
+ you say,
+
+723
+0:39:27,340 --> 0:39:28,340
+ so you can have opens
+
+724
+0:39:28,340 --> 0:39:30,340
+ or you can have mails
+
+725
+0:39:30,340 --> 0:39:31,340
+ that do not get opened
+
+726
+0:39:31,340 --> 0:39:32,340
+ because we don't track
+
+727
+0:39:32,340 --> 0:39:34,340
+ or they have disenabled
+
+728
+0:39:34,340 --> 0:39:35,340
+ that feature,
+
+729
+0:39:35,340 --> 0:39:36,340
+ but you can see
+
+730
+0:39:36,340 --> 0:39:38,340
+ if they click something.
+
+731
+0:39:38,340 --> 0:39:39,340
+ So the click thing
+
+732
+0:39:39,340 --> 0:39:40,340
+ is the important thing here,
+
+733
+0:39:40,340 --> 0:39:41,340
+ I think.
+
+734
+0:39:41,340 --> 0:39:42,340
+ Yeah, exactly.
+
+735
+0:39:42,340 --> 0:39:43,340
+ We will see,
+
+736
+0:39:43,340 --> 0:39:44,340
+ as an email marketer,
+
+737
+0:39:44,340 --> 0:39:45,340
+ I will have to move
+
+738
+0:39:45,340 --> 0:39:48,340
+ from monitoring opens
+
+739
+0:39:48,340 --> 0:39:49,340
+ to monitoring clicks
+
+740
+0:39:49,340 --> 0:39:50,340
+ and then actually
+
+741
+0:39:50,340 --> 0:39:52,340
+ maybe reframe
+
+742
+0:39:52,340 --> 0:39:53,340
+ some of my way
+
+743
+0:39:53,340 --> 0:39:54,340
+ of writing,
+
+744
+0:39:54,340 --> 0:39:55,340
+ so I'm writing emails
+
+745
+0:39:55,340 --> 0:39:56,340
+ so I,
+
+746
+0:39:56,340 --> 0:39:57,340
+ in a much higher percentage
+
+747
+0:39:57,340 --> 0:39:58,340
+ of my emails,
+
+748
+0:39:58,340 --> 0:39:59,340
+ have something
+
+749
+0:39:59,340 --> 0:40:00,340
+ that people,
+
+750
+0:40:00,340 --> 0:40:01,340
+ like,
+
+751
+0:40:01,340 --> 0:40:02,340
+ have a read more link.
+
+752
+0:40:02,340 --> 0:40:04,340
+ Maybe I'm not actually writing
+
+753
+0:40:04,340 --> 0:40:05,340
+ all of the stuff
+
+754
+0:40:05,340 --> 0:40:06,340
+ in an email.
+
+755
+0:40:06,340 --> 0:40:07,340
+ I might be writing
+
+756
+0:40:07,340 --> 0:40:08,340
+ a blog post
+
+757
+0:40:08,340 --> 0:40:09,340
+ and then I want
+
+758
+0:40:09,340 --> 0:40:10,340
+ to redirect people
+
+759
+0:40:10,340 --> 0:40:11,340
+ to the blog post
+
+760
+0:40:11,340 --> 0:40:12,340
+ to actually read the rest
+
+761
+0:40:12,340 --> 0:40:14,340
+ or see a video
+
+762
+0:40:14,340 --> 0:40:15,340
+ on a page
+
+763
+0:40:15,340 --> 0:40:16,340
+ or something like that
+
+764
+0:40:16,340 --> 0:40:18,340
+ instead of just relying
+
+765
+0:40:18,340 --> 0:40:19,340
+ on the open rates
+
+766
+0:40:19,340 --> 0:40:20,340
+ to show me
+
+767
+0:40:20,340 --> 0:40:21,340
+ how things are going.
+
+768
+0:40:21,340 --> 0:40:22,340
+ Yeah.
+
+769
+0:40:24,340 --> 0:40:28,340
+ Any more questions?
+
+770
+0:40:28,340 --> 0:40:29,340
+ Well,
+
+771
+0:40:29,340 --> 0:40:30,340
+ thank you very much.
+
+772
+0:40:30,340 --> 0:40:31,340
+ Thank you.

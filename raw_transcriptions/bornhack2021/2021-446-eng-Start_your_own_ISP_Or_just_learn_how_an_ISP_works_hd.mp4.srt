@@ -1,0 +1,1459 @@
+# Transcribed 2023-11-12T21 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:10,600
+ Welcome to this talk, where William will teach us how to become an ISP.
+
+2
+0:00:13,740 --> 0:00:19,600
+ So, welcome. This is a case study into the series of troops riding with cat videos, which is also known as the internet.
+
+3
+0:00:20,660 --> 0:00:23,080
+ So, who am I, and why are you listening to me?
+
+4
+0:00:23,080 --> 0:00:38,540
+ I am the former chairman, and I've been in operations for four years at Conet Deco, which is a student-run ISP over in Copenhagen, in Lundby, that provides the internet for all the DTU dorms, and one of the oldest ISPs in Denmark.
+
+5
+0:00:39,660 --> 0:00:44,520
+ And I'm also, and I was, the Supreme Packet Lord and Switch Commander at the Nubagold dorm.
+
+6
+0:00:44,840 --> 0:00:48,640
+ I also gave myself that title, because there was no one to tell me I couldn't have that title.
+
+7
+0:00:49,020 --> 0:00:52,640
+ And then I also got my bachelor's in networks technology.
+
+8
+0:00:53,080 --> 0:00:57,340
+ And I also got my bachelor's in IT from DTU, which is now called cyber technology.
+
+9
+0:00:58,180 --> 0:00:59,820
+ So, what is an internet service provider?
+
+10
+0:01:00,300 --> 0:01:03,460
+ They do other things that just annoy you with their terrible customer support.
+
+11
+0:01:03,560 --> 0:01:06,940
+ They actually provide a useful service, which is the internet.
+
+12
+0:01:08,300 --> 0:01:10,220
+ So, quick step. Let's create our own.
+
+13
+0:01:10,480 --> 0:01:18,800
+ So, what you do, you go on your phone, you turn on a personal hotspot, you have someone pay you five kroners for the network, and that's it.
+
+14
+0:01:18,900 --> 0:01:19,800
+ You're done. That's your ISP.
+
+15
+0:01:21,060 --> 0:01:22,520
+ Obviously, there's a bit more to that.
+
+16
+0:01:23,080 --> 0:01:25,540
+ So, here's basic how simple ISPs work.
+
+17
+0:01:25,840 --> 0:01:28,300
+ They just share a connection they get from someone else.
+
+18
+0:01:29,320 --> 0:01:31,620
+ So, ISPs, they come in three different tiers.
+
+19
+0:01:32,080 --> 0:01:33,620
+ There are tier one ISPs.
+
+20
+0:01:33,800 --> 0:01:35,520
+ These are big guys.
+
+21
+0:01:35,760 --> 0:01:36,800
+ Some of them you've heard of.
+
+22
+0:01:36,920 --> 0:01:37,900
+ Some of them you haven't heard of.
+
+23
+0:01:38,400 --> 0:01:39,680
+ Then there's tier two ISPs.
+
+24
+0:01:39,800 --> 0:01:45,020
+ There's things like TDC, Global Connect, formerly Neonet, Hurricane Electric, a whole bunch of companies.
+
+25
+0:01:45,020 --> 0:01:52,820
+ And then there is tier three ISPs, which is, you know, Feebopu, Fullrate, Bonhacks internet connection.
+
+26
+0:01:53,080 --> 0:02:00,640
+ And then there's a tier three ISP as well, where, and let's start with tier threes, at least, because these are the simplest ISPs.
+
+27
+0:02:00,640 --> 0:02:03,640
+ But like humans, they come in many different shapes and sizes.
+
+28
+0:02:03,640 --> 0:02:11,640
+ What they do is they pay entirely for their internet connection from a tier one or tier two ISP, and what they do is provide the last mile coverage.
+
+29
+0:02:11,640 --> 0:02:16,640
+ And, as I said, they can come in very different shapes and sizes, put it this way, in scale.
+
+30
+0:02:16,640 --> 0:02:22,640
+ So, it could be an antenna phoning in your apartment building, which just has a patch panel down in the basement.
+
+31
+0:02:23,080 --> 0:02:33,080
+ And then make sure to put together a deal with some tier two ISP to get internet to the entire building, or it can be a bit more complex than that.
+
+32
+0:02:33,080 --> 0:02:51,080
+ So, we are going to take the case where we are Bonhacknet, the newest ISP on the block, and through some sort of sitcom situation, we have ended up having to provide the internet connection for the new Luneideholm Island in Copenhagen, which is being built.
+
+33
+0:02:51,080 --> 0:02:52,080
+ So, the requirements.
+
+34
+0:02:52,080 --> 0:02:53,080
+ We need to provide internet.
+
+35
+0:02:53,080 --> 0:02:55,080
+ We need to provide internet for at least one apartment building.
+
+36
+0:02:55,080 --> 0:02:59,080
+ We want to scale it up, you know, to more, 49 plus is what we are going to say.
+
+37
+0:02:59,080 --> 0:03:04,080
+ We also want to comply with the Danish logging regulations because, sadly, we have to do that.
+
+38
+0:03:04,080 --> 0:03:08,080
+ And we want to prioritize getting this set up as fast as possible.
+
+39
+0:03:08,080 --> 0:03:15,080
+ So, we are going to have very simple topology here, where what we are going to do is we are going to find some tier two ISP.
+
+40
+0:03:15,080 --> 0:03:19,080
+ We are probably going to go to Global Connect and say, hey, we are starting an internet provider.
+
+41
+0:03:19,080 --> 0:03:20,080
+ We want some internet.
+
+42
+0:03:20,080 --> 0:03:21,080
+ And they will say, great.
+
+43
+0:03:21,080 --> 0:03:22,080
+ Here is a fiber panel.
+
+44
+0:03:22,080 --> 0:03:24,080
+ Here is a fiber panel you can connect to.
+
+45
+0:03:24,080 --> 0:03:33,080
+ We will give you one gig per second of internet connection and we will give you who knows how many IP addresses you ask for.
+
+46
+0:03:33,080 --> 0:03:36,080
+ And, obviously, we are not going to give us that many IP addresses.
+
+47
+0:03:36,080 --> 0:03:39,080
+ So, we are going to want to route this into a router with NAT support.
+
+48
+0:03:39,080 --> 0:03:41,080
+ This is network address translation.
+
+49
+0:03:41,080 --> 0:03:45,080
+ So, this is where you take the, well, there is the Bonhack NAT network.
+
+50
+0:03:45,080 --> 0:03:47,080
+ I am pretty sure you all know what NAT is, at least.
+
+51
+0:03:47,080 --> 0:03:50,080
+ And then we are also going to want a DHCP server to provide, you know, the IP address.
+
+52
+0:03:50,080 --> 0:03:52,080
+ So, all the people living in apartment buildings.
+
+53
+0:03:52,080 --> 0:03:57,080
+ And then we are going to want to run cables from our main router, which takes the fiber connection in from the tier two.
+
+54
+0:03:57,080 --> 0:04:03,080
+ And we want to send that into switches in different apartment buildings so we can send connections to different apartments.
+
+55
+0:04:03,080 --> 0:04:04,080
+ All done?
+
+56
+0:04:04,080 --> 0:04:05,080
+ Obviously not.
+
+57
+0:04:05,080 --> 0:04:06,080
+ There are issues here.
+
+58
+0:04:06,080 --> 0:04:08,080
+ So, we don't have isolation between the individual apartments.
+
+59
+0:04:08,080 --> 0:04:12,080
+ Everyone here is in the same broadcast domain, which means all devices could see all of our devices.
+
+60
+0:04:12,080 --> 0:04:14,080
+ This also doesn't live up to the logging requirements.
+
+61
+0:04:14,080 --> 0:04:16,080
+ So, we are going to want to run this in a different way.
+
+62
+0:04:16,080 --> 0:04:18,080
+ So, we are going to run this in a different way.
+
+63
+0:04:18,080 --> 0:04:19,080
+ So, we are going to run this in a different way.
+
+64
+0:04:19,080 --> 0:04:21,080
+ This also doesn't live up to the logging requirements.
+
+65
+0:04:21,080 --> 0:04:27,080
+ And it's really not scalable because we are not going to get a core switch which has more than 48 ports.
+
+66
+0:04:27,080 --> 0:04:33,080
+ So, here, what we want to add, and, yes, this diagram has issues in it.
+
+67
+0:04:33,080 --> 0:04:35,080
+ It is the exact same as the one from before.
+
+68
+0:04:35,080 --> 0:04:41,080
+ What we want to add here is, first of all, we want to add a firewall in between our tier two ISP and our router.
+
+69
+0:04:41,080 --> 0:04:49,080
+ Generally, we want to get, like, an ISP grade one because this will allow us to get all the logging we need from, to comply with the Danish rules.
+
+70
+0:04:49,080 --> 0:04:51,080
+ And this is one of the Danish requirements.
+
+71
+0:04:51,080 --> 0:04:56,080
+ And here, the Danish requirements, they are that we need to log the metadata from connection.
+
+72
+0:04:56,080 --> 0:05:01,080
+ So, we don't need to be, you know, we don't need to log the actual data that's being transmitted.
+
+73
+0:05:01,080 --> 0:05:07,080
+ But we need to say this IP address accessed this address, this other IP address at this time.
+
+74
+0:05:07,080 --> 0:05:09,080
+ And it was this person that was behind it.
+
+75
+0:05:09,080 --> 0:05:11,080
+ This is what happens when the forwardies come.
+
+76
+0:05:11,080 --> 0:05:17,080
+ Then what we also want to do is we want to fix this issue with the broadcast domain.
+
+77
+0:05:17,080 --> 0:05:20,080
+ So, we can do that for lots of different ways.
+
+78
+0:05:20,080 --> 0:05:30,080
+ But the easiest way is to use what are called VLANs, virtual LANs, where we'll then assign each apartment with its own VLAN, its own virtual LAN.
+
+79
+0:05:30,080 --> 0:05:33,080
+ And this way, there will be isolation between each apartment.
+
+80
+0:05:33,080 --> 0:05:36,080
+ And, of course, also, we want to make this scalable.
+
+81
+0:05:36,080 --> 0:05:42,080
+ So, this would include then we could add more routers in between here.
+
+82
+0:05:42,080 --> 0:05:47,080
+ So, we have our core router, which will connect to a second layer of routers, which will then connect to the switches in the apartment buildings.
+
+83
+0:05:47,080 --> 0:05:51,080
+ And then you could have a router for every ten buildings or whatever.
+
+84
+0:05:51,080 --> 0:05:55,080
+ Next, you know, great, we have a very simple ISP.
+
+85
+0:05:55,080 --> 0:06:00,080
+ And, honestly, this is not more complex than what some people even are running at home.
+
+86
+0:06:00,080 --> 0:06:03,080
+ Tier 3 ISPs are simple.
+
+87
+0:06:03,080 --> 0:06:06,080
+ But Tier 2 ISPs, this is where we get the more interesting stuff.
+
+88
+0:06:06,080 --> 0:06:10,080
+ This is where we learn a bit more how the Internet is actually structured together.
+
+89
+0:06:10,080 --> 0:06:12,080
+ They also come in many different shapes and sizes.
+
+90
+0:06:12,080 --> 0:06:15,080
+ What they do is they can pay for transit from others.
+
+91
+0:06:15,080 --> 0:06:16,080
+ This is what we were doing before with the other Tier 2 ISPs.
+
+92
+0:06:16,080 --> 0:06:19,080
+ Where we were paying them for the connection.
+
+93
+0:06:19,080 --> 0:06:23,080
+ However, they can also engage in peering with other networks.
+
+94
+0:06:23,080 --> 0:06:28,080
+ And peering is the networking version of sharing is caring.
+
+95
+0:06:28,080 --> 0:06:33,080
+ So, peering, when two networks love each other very, very much, they celebrate by peering.
+
+96
+0:06:33,080 --> 0:06:42,080
+ And this occurs and peering involves networks connecting to each other and say, okay, let's freely exchange data with each other.
+
+97
+0:06:42,080 --> 0:06:45,080
+ You have a data center on your network hosting.
+
+98
+0:06:45,080 --> 0:06:47,080
+ I don't know, Facebook, let's say.
+
+99
+0:06:47,080 --> 0:06:50,080
+ And I want to access Facebook for free, so let's set up a peering agreement.
+
+100
+0:06:50,080 --> 0:06:57,080
+ And most of the time, if we ignore Cognant, because they aren't so nice, most of the time, these peering agreements are free.
+
+101
+0:06:57,080 --> 0:07:00,080
+ And a lot of time, they're also informal as well to a certain degree.
+
+102
+0:07:00,080 --> 0:07:04,080
+ It's not big legal contracts I need to get through as well.
+
+103
+0:07:04,080 --> 0:07:07,080
+ And peering occurs at Internet exchange points.
+
+104
+0:07:07,080 --> 0:07:13,080
+ These Internet exchange points are the core infrastructure of the Internet.
+
+105
+0:07:13,080 --> 0:07:14,080
+ So, if peering is consensual in terms of the Internet, then it's not a big deal.
+
+106
+0:07:14,080 --> 0:07:16,080
+ Peering is consensual interchange packets.
+
+107
+0:07:16,080 --> 0:07:20,080
+ Then IXPs, Internet exchange points, are the Internet swinger clubs.
+
+108
+0:07:20,080 --> 0:07:22,080
+ It's where ISPs meet.
+
+109
+0:07:22,080 --> 0:07:27,080
+ They connect to the IXP.
+
+110
+0:07:27,080 --> 0:07:30,080
+ And then they'll get a connection in the switch here.
+
+111
+0:07:30,080 --> 0:07:37,080
+ And then they can go into peering agreements with other ISPs.
+
+112
+0:07:37,080 --> 0:07:42,080
+ So, peering, as I said before, free, sort of informal process.
+
+113
+0:07:42,080 --> 0:07:47,080
+ So, if you follow these rules here, then you can peer with us.
+
+114
+0:07:47,080 --> 0:07:57,080
+ So, Hurricane Electric, for example, which is one of the largest tier two ISPs, they'll say, okay, you only send traffic which we are announcing to us.
+
+115
+0:07:57,080 --> 0:08:02,080
+ You have to peer with us at all ISPs that you are present in and so on.
+
+116
+0:08:02,080 --> 0:08:07,080
+ And peering policy, as I said, both parties need to follow them.
+
+117
+0:08:07,080 --> 0:08:10,080
+ And to put it simply, if you follow these rules here, then you can peer with us.
+
+118
+0:08:10,080 --> 0:08:12,080
+ Parties need to follow them.
+
+119
+0:08:12,080 --> 0:08:17,080
+ And to peer, we also need what's called an AS, Autonomous System.
+
+120
+0:08:17,080 --> 0:08:19,080
+ So, what in the world is an AS?
+
+121
+0:08:19,080 --> 0:08:24,080
+ It is fancy nerd speak for just having a set of IP addresses.
+
+122
+0:08:24,080 --> 0:08:28,080
+ So, here at Bonhack, we even have our own AS number, I believe.
+
+123
+0:08:28,080 --> 0:08:31,080
+ I actually, we do.
+
+124
+0:08:31,080 --> 0:08:40,080
+ And what this AS is, it's just a way to say, okay, all these different subnets that we have from the IPv4 and IPv6 ranges,
+
+125
+0:08:40,080 --> 0:08:43,080
+ they belong to these organizations.
+
+126
+0:08:43,080 --> 0:08:47,080
+ Autonomous systems are assigned by the regional internet registry.
+
+127
+0:08:47,080 --> 0:08:49,080
+ So, in Europe, it's the RIPE NCC.
+
+128
+0:08:49,080 --> 0:08:53,080
+ There is ARIN in the U.S.
+
+129
+0:08:53,080 --> 0:08:56,080
+ And then there's a couple others which I can't remember.
+
+130
+0:08:56,080 --> 0:09:01,080
+ And generally, they aren't free, but they aren't that expensive either to get.
+
+131
+0:09:01,080 --> 0:09:09,080
+ And the only requirement to have an AS is really, at least on the public-facing internet, is that you need to have some IP addresses,
+
+132
+0:09:09,080 --> 0:09:16,080
+ which IPv6 addresses you can get freely pretty easily once you are registered at a regional internet registry.
+
+133
+0:09:16,080 --> 0:09:22,080
+ And IPv4 addresses, well, they're kind of expensive nowadays because we've run out of them.
+
+134
+0:09:22,080 --> 0:09:23,080
+ So, how do you peer-to?
+
+135
+0:09:23,080 --> 0:09:29,080
+ So, first of all, you get a lot of money because you are going to be digging a lot of fiber cables to your nearest IXP.
+
+136
+0:09:29,080 --> 0:09:34,080
+ You can probably pay to use another internet provider's fiber cables as well.
+
+137
+0:09:34,080 --> 0:09:38,080
+ But eventually, you are going to need to be able to hook up to the IXP.
+
+138
+0:09:38,080 --> 0:09:40,080
+ And as I said, they are in certain locations.
+
+139
+0:09:40,080 --> 0:09:48,080
+ So, here in Copenhagen, for example, here in Denmark, for example, the oldest IXP is in DTU Building 304.
+
+140
+0:09:48,080 --> 0:09:55,080
+ So, if you were to start an IXP out there where we said in Copenhagen of the new Lund-Niederhall-Meilenwehr building,
+
+141
+0:09:55,080 --> 0:10:01,080
+ you will need to have a fiber connection from your offices there or from your data center there all the way to the IXP.
+
+142
+0:10:01,080 --> 0:10:06,080
+ And then, obviously, we add step three, and then we get profit, right?
+
+143
+0:10:06,080 --> 0:10:08,080
+ Not that simple, obviously.
+
+144
+0:10:08,080 --> 0:10:11,080
+ Things are never that simple.
+
+145
+0:10:11,080 --> 0:10:13,080
+ So, for peering, there is a bit more technical.
+
+146
+0:10:13,080 --> 0:10:17,080
+ Obviously, once we have reached out to a couple of Tier 2 ISPs and they said,
+
+147
+0:10:17,080 --> 0:10:19,080
+ yeah, let's peer, let's, you know, that would be great.
+
+148
+0:10:19,080 --> 0:10:22,080
+ We can freely exchange data.
+
+149
+0:10:22,080 --> 0:10:24,080
+ You need to set up some routing protocols as well.
+
+150
+0:10:24,080 --> 0:10:30,080
+ And the main ones that are used is OSPF, open shortest path first, which is also what's on my T-shirt,
+
+151
+0:10:30,080 --> 0:10:38,080
+ is this is an IGP or an interior gateway protocol where this routes within,
+
+152
+0:10:38,080 --> 0:10:41,080
+ your AS, because obviously when we're getting this point here,
+
+153
+0:10:41,080 --> 0:10:46,080
+ we've scaled a bit up from the simple having one core router and a couple of switches and a couple of apartment buildings.
+
+154
+0:10:46,080 --> 0:10:51,080
+ Here, we would generally be having several main locations we are accessing from,
+
+155
+0:10:51,080 --> 0:10:53,080
+ and we're going to be one of routing around in this as well.
+
+156
+0:10:53,080 --> 0:10:55,080
+ So, we use the OSPF protocol.
+
+157
+0:10:55,080 --> 0:10:57,080
+ And this can recover from failed links.
+
+158
+0:10:57,080 --> 0:10:59,080
+ They could also do traffic engineering.
+
+159
+0:10:59,080 --> 0:11:04,080
+ And from the name open shortest path first, it takes the shortest path that's available first.
+
+160
+0:11:04,080 --> 0:11:06,080
+ Next, once we want to route traffic to our T-shirt,
+
+161
+0:11:06,080 --> 0:11:09,080
+ we use what's called BGP, the border gateway protocol.
+
+162
+0:11:09,080 --> 0:11:12,080
+ And this is the main protocol behind the internet.
+
+163
+0:11:12,080 --> 0:11:15,080
+ And by default, it is hilariously insecure.
+
+164
+0:11:15,080 --> 0:11:21,080
+ And, like, seriously, if you actually set yourself and go really dig into BGP,
+
+165
+0:11:21,080 --> 0:11:23,080
+ you're wondering how the hell does the internet work.
+
+166
+0:11:23,080 --> 0:11:25,080
+ It shouldn't work.
+
+167
+0:11:25,080 --> 0:11:30,080
+ So, here we're going to have a little side rant, which is why BGP is a terrible protocol.
+
+168
+0:11:30,080 --> 0:11:31,080
+ Brief history.
+
+169
+0:11:31,080 --> 0:11:35,080
+ As you can see, BGP is a terrible protocol.
+
+170
+0:11:35,080 --> 0:11:36,080
+ Brief history.
+
+171
+0:11:36,080 --> 0:11:43,080
+ Originally, on two napkins, back in 19, I want to say, 84,
+
+172
+0:11:43,080 --> 0:11:46,080
+ but I'm not fully sure about the year,
+
+173
+0:11:46,080 --> 0:11:49,080
+ on two napkins, they defined the border gateway protocol.
+
+174
+0:11:49,080 --> 0:11:52,080
+ So, simple protocol at least.
+
+175
+0:11:52,080 --> 0:11:54,080
+ There are some issues with it, however.
+
+176
+0:11:54,080 --> 0:11:58,080
+ And I'm not going to go into explaining how the protocol works in general.
+
+177
+0:11:58,080 --> 0:12:03,080
+ This can be reading for yourself afterwards because it can get a bit complex at times as well.
+
+178
+0:12:03,080 --> 0:12:05,080
+ But some issues with it are,
+
+179
+0:12:05,080 --> 0:12:07,080
+ there are bad distance metrics.
+
+180
+0:12:07,080 --> 0:12:11,080
+ So, how BGP chooses hops, next hops.
+
+181
+0:12:11,080 --> 0:12:14,080
+ For OSPF, it would choose the shortest path.
+
+182
+0:12:14,080 --> 0:12:17,080
+ Here, the issue with BGP is it uses AS path.
+
+183
+0:12:17,080 --> 0:12:22,080
+ So, how many autonomous systems would a packet pass through to get the shortest path?
+
+184
+0:12:22,080 --> 0:12:26,080
+ The issue is some of these autonomous systems can have huge geographical distances.
+
+185
+0:12:26,080 --> 0:12:30,080
+ So, if you were to send a packet, if you're in Singapore and were to send a packet to a server in China,
+
+186
+0:12:30,080 --> 0:12:33,080
+ it could get routed through Los Angeles, which would, you know,
+
+187
+0:12:33,080 --> 0:12:34,080
+ you're going halfway across the world.
+
+188
+0:12:34,080 --> 0:12:36,080
+ You're going halfway across the world there and back again
+
+189
+0:12:36,080 --> 0:12:40,080
+ for something which should not be that distance as well.
+
+190
+0:12:40,080 --> 0:12:46,080
+ Another issue with it is manual manipulation of this next best hop is also possible.
+
+191
+0:12:46,080 --> 0:12:50,080
+ And because of this,
+
+192
+0:12:50,080 --> 0:12:57,080
+ not as friendly ISP would try to discard appearing traffic.
+
+193
+0:12:57,080 --> 0:13:00,080
+ And this means it would be then sending it on to another AS
+
+194
+0:13:00,080 --> 0:13:02,080
+ because they want the transit traffic.
+
+195
+0:13:02,080 --> 0:13:04,080
+ This is the traffic that's generating the money.
+
+196
+0:13:04,080 --> 0:13:09,080
+ Transit traffic could also then be maliciously routed for financial gain.
+
+197
+0:13:09,080 --> 0:13:12,080
+ So, they could say, oh, yes, it's maybe one hop,
+
+198
+0:13:12,080 --> 0:13:16,080
+ but our contract says you pay us for every single hop that we do.
+
+199
+0:13:16,080 --> 0:13:20,080
+ So, we're going to route it through five hops to earn some more money.
+
+200
+0:13:20,080 --> 0:13:26,080
+ BGP, by default, also trusts a bit too much as ASs can advertise routes they do not own.
+
+201
+0:13:26,080 --> 0:13:28,080
+ This is BGP leaks.
+
+202
+0:13:28,080 --> 0:13:32,080
+ For example, back in 2019, it was a large part of the internet was knocked down.
+
+203
+0:13:32,080 --> 0:13:37,080
+ This was because Verizon and another small American ISP,
+
+204
+0:13:37,080 --> 0:13:40,080
+ which were buying their transit from Verizon,
+
+205
+0:13:40,080 --> 0:13:43,080
+ the small ISP, they were using a BGP optimizer,
+
+206
+0:13:43,080 --> 0:13:46,080
+ a piece of software to help them optimize their BGP routes.
+
+207
+0:13:46,080 --> 0:13:50,080
+ And what they happened is they accidentally advertised a whole bunch of routes
+
+208
+0:13:50,080 --> 0:13:52,080
+ which they didn't have access to.
+
+209
+0:13:52,080 --> 0:13:54,080
+ So, they said, hey, you can reach Google.
+
+210
+0:13:54,080 --> 0:13:56,080
+ You can reach CloudFare, all these IP addresses.
+
+211
+0:13:56,080 --> 0:13:58,080
+ You can reach them at us.
+
+212
+0:13:58,080 --> 0:14:00,080
+ And then they sent it onwards.
+
+213
+0:14:00,080 --> 0:14:02,080
+ And BGP is a gossipy protocol.
+
+214
+0:14:02,080 --> 0:14:05,080
+ So, Verizon, their internet service provider, Verizon should have said,
+
+215
+0:14:05,080 --> 0:14:09,080
+ hey, you obviously don't own all these IP addresses here.
+
+216
+0:14:09,080 --> 0:14:11,080
+ Other people do.
+
+217
+0:14:11,080 --> 0:14:13,080
+ I'm just not going to send it forward.
+
+218
+0:14:13,080 --> 0:14:16,080
+ But they didn't because either they had configured something wrong
+
+219
+0:14:16,080 --> 0:14:20,080
+ or they didn't go too much into the postmortem, of course,
+
+220
+0:14:20,080 --> 0:14:22,080
+ trying to save a bit of face.
+
+221
+0:14:22,080 --> 0:14:24,080
+ And what happened is large parts of the internet went down
+
+222
+0:14:24,080 --> 0:14:28,080
+ because suddenly CloudFare, Linenode, and a whole bunch of others
+
+223
+0:14:28,080 --> 0:14:31,080
+ were routing to this one ISP in Pennsylvania.
+
+224
+0:14:31,080 --> 0:14:34,080
+ Not the best.
+
+225
+0:14:34,080 --> 0:14:39,080
+ BGP leaks can also be maliciously made.
+
+226
+0:14:39,080 --> 0:14:45,080
+ So, it has occurred several times before where countries such as China and Russia,
+
+227
+0:14:45,080 --> 0:14:52,080
+ they will leak BGP routes, which is saying they'll set falsely advertised routes.
+
+228
+0:14:52,080 --> 0:14:57,080
+ And when traffic will then maybe quickly happen, sometimes for a long period of time,
+
+229
+0:14:57,080 --> 0:15:00,080
+ where they'll route traffic through their own ISP.
+
+230
+0:15:00,080 --> 0:15:06,080
+ Maybe this is just used for data collection or, you know, who knows what it's used for.
+
+231
+0:15:06,080 --> 0:15:12,080
+ And yeah, this is also just what I just talked about, BGP leaks.
+
+232
+0:15:12,080 --> 0:15:14,080
+ So, we know a bit about BGP.
+
+233
+0:15:14,080 --> 0:15:15,080
+ We know how it works.
+
+234
+0:15:15,080 --> 0:15:17,080
+ We know how to peer as well.
+
+235
+0:15:17,080 --> 0:15:18,080
+ We go make an agreement.
+
+236
+0:15:18,080 --> 0:15:23,080
+ We set up our BGP, configure our BGP protocol on our core router to say,
+
+237
+0:15:23,080 --> 0:15:26,080
+ yes, we want to peer with these ISPs here.
+
+238
+0:15:26,080 --> 0:15:27,080
+ All good.
+
+239
+0:15:27,080 --> 0:15:29,080
+ What else can you do as a tier two ISP?
+
+240
+0:15:29,080 --> 0:15:31,080
+ And this is where there's some fun stuff going on.
+
+241
+0:15:31,080 --> 0:15:36,080
+ You can get free hardware if you ask Google or CDNs or Netflix or whatever.
+
+242
+0:15:36,080 --> 0:15:41,080
+ Because they obviously want to get their static content.
+
+243
+0:15:41,080 --> 0:15:44,080
+ They want it to get as close to the users as possible.
+
+244
+0:15:44,080 --> 0:15:49,080
+ Because this then they avoid a whole bunch of transit traffic they have to pay for in that.
+
+245
+0:15:49,080 --> 0:15:51,080
+ And also lower latency.
+
+246
+0:15:51,080 --> 0:15:56,080
+ So, you can go to Google and say, hey, I want a peer review and I want to get a cash box here.
+
+247
+0:15:56,080 --> 0:15:57,080
+ And they'll go, great.
+
+248
+0:15:57,080 --> 0:15:58,080
+ They'll check if you've fulfilled the requirements.
+
+249
+0:15:58,080 --> 0:16:02,080
+ If they do, they will send you a box that you slot into your data center.
+
+250
+0:16:02,080 --> 0:16:05,080
+ And then they'll cash static content which becomes popular.
+
+251
+0:16:05,080 --> 0:16:08,080
+ This could be things like YouTube videos or ads for YouTube videos.
+
+252
+0:16:08,080 --> 0:16:13,080
+ Which is why ads always seem to load faster than some obscure video you're trying to watch at 3 in the morning.
+
+253
+0:16:16,080 --> 0:16:19,080
+ You can also register really dumb IPv6 subnets.
+
+254
+0:16:19,080 --> 0:16:20,080
+ For example, deadbeef.
+
+255
+0:16:20,080 --> 0:16:22,080
+ That's a valid IPv6 address.
+
+256
+0:16:22,080 --> 0:16:24,080
+ It's not assigned to anyone.
+
+257
+0:16:24,080 --> 0:16:28,080
+ There's a whole bunch of heckspeak IPv6 subnets that aren't assigned to anyone.
+
+258
+0:16:28,080 --> 0:16:33,080
+ You can also cry a lot because maintaining a tier 2 ISP is a lot of work as well.
+
+259
+0:16:33,080 --> 0:16:35,080
+ It's not too easy.
+
+260
+0:16:35,080 --> 0:16:38,080
+ And you can also make lots of money because that's what we're all here for.
+
+261
+0:16:38,080 --> 0:16:40,080
+ Learning to make money in business.
+
+262
+0:16:40,080 --> 0:16:43,080
+ So, how do you become tier 1 ISP?
+
+263
+0:16:43,080 --> 0:16:46,080
+ Well, you don't.
+
+264
+0:16:46,080 --> 0:16:51,080
+ Tier 1 ISPs is literally a cartel of ISPs who say, okay, we'll peer with you guys.
+
+265
+0:16:51,080 --> 0:16:53,080
+ And we won't peer with anyone else.
+
+266
+0:16:53,080 --> 0:16:56,080
+ And if someone buys transit off them.
+
+267
+0:16:56,080 --> 0:16:59,080
+ Then the people we peer with also get access to that route there.
+
+268
+0:16:59,080 --> 0:17:00,080
+ So, really.
+
+269
+0:17:00,080 --> 0:17:02,080
+ You really want to know how to become tier 1 ISP.
+
+270
+0:17:07,080 --> 0:17:08,080
+ So, this part here.
+
+271
+0:17:08,080 --> 0:17:10,080
+ I didn't have time to make these slides.
+
+272
+0:17:10,080 --> 0:17:15,080
+ But here's theoretically how you could become a tier 1 ISP.
+
+273
+0:17:15,080 --> 0:17:19,080
+ First of all, you would not need to peer with any other network to begin with.
+
+274
+0:17:19,080 --> 0:17:23,080
+ Yet, you would somehow also need to have an internet service.
+
+275
+0:17:23,080 --> 0:17:25,080
+ Which was so hugely popular.
+
+276
+0:17:25,080 --> 0:17:30,080
+ That through transit, you would end up costing these tier 1 ISPs lots of money.
+
+277
+0:17:30,080 --> 0:17:34,080
+ So, say if you were Google.
+
+278
+0:17:34,080 --> 0:17:38,080
+ And you somehow created, you know, they created a global spanning ISP.
+
+279
+0:17:38,080 --> 0:17:40,080
+ And they got a lot of customers.
+
+280
+0:17:40,080 --> 0:17:43,080
+ And they said, okay, you have to pay us now for transit.
+
+281
+0:17:43,080 --> 0:17:46,080
+ They say to all the tier 1 ISPs, you have to pay us for transit.
+
+282
+0:17:46,080 --> 0:17:48,080
+ They're not going to be too happy.
+
+283
+0:17:48,080 --> 0:17:51,080
+ And maybe, just maybe, they would let you into this cartel of tier 1 ISPs.
+
+284
+0:17:51,080 --> 0:17:54,080
+ But really, that would also mean, you know, you're taking yourself off.
+
+285
+0:17:54,080 --> 0:17:56,080
+ The internet.
+
+286
+0:17:56,080 --> 0:17:58,080
+ To get access to the internet.
+
+287
+0:17:58,080 --> 0:18:01,080
+ It's not really possible to become a tier 1 ISP.
+
+288
+0:18:01,080 --> 0:18:04,080
+ And generally, this cartel also becomes smaller and smaller.
+
+289
+0:18:04,080 --> 0:18:09,080
+ Because Layer 3 keeps up buying more of the other.
+
+290
+0:18:09,080 --> 0:18:10,080
+ Wait, no.
+
+291
+0:18:10,080 --> 0:18:12,080
+ Lumen Technologies bought Layer 3.
+
+292
+0:18:12,080 --> 0:18:15,080
+ Where Layer 3 bought someone else.
+
+293
+0:18:15,080 --> 0:18:18,080
+ And they're basically all just becoming one big monopolistic ISP.
+
+294
+0:18:18,080 --> 0:18:22,080
+ But however, you can avoid tier 1 ISPs to a certain degree.
+
+295
+0:18:22,080 --> 0:18:24,080
+ As there are a lot of other ISPs.
+
+296
+0:18:24,080 --> 0:18:26,080
+ There are some really big tier 2 ISPs.
+
+297
+0:18:26,080 --> 0:18:28,080
+ Who will peer with lots of people.
+
+298
+0:18:28,080 --> 0:18:32,080
+ And they can peer with basically every other tier 2 ISP.
+
+299
+0:18:32,080 --> 0:18:36,080
+ Again, thank you for the talk.
+
+300
+0:18:36,080 --> 0:18:38,080
+ I know this might have been a bit short.
+
+301
+0:18:38,080 --> 0:18:40,080
+ I actually have no idea how long it took.
+
+302
+0:18:40,080 --> 0:18:42,080
+ You can contact me on email.
+
+303
+0:18:42,080 --> 0:18:44,080
+ On LinkedIn.
+
+304
+0:18:44,080 --> 0:18:46,080
+ Or you can just find me in the Pyjamas camp.
+
+305
+0:18:46,080 --> 0:18:48,080
+ With the other people in Pyjamas.
+
+306
+0:18:48,080 --> 0:18:50,080
+ Or you can find me at the bar if you want to have a chat.
+
+307
+0:18:50,080 --> 0:18:52,080
+ Yes.
+
+308
+0:18:52,080 --> 0:18:54,080
+ We got 25 minutes for questions.
+
+309
+0:18:54,080 --> 0:18:56,080
+ Longer than I expected.
+
+310
+0:19:12,080 --> 0:19:14,080
+ If you'd rather not answer this question.
+
+311
+0:19:14,080 --> 0:19:16,080
+ Say that you didn't understand me.
+
+312
+0:19:16,080 --> 0:19:23,080
+ How does the BornHack tier 3 ISP comply with the logging requirements of Denmark?
+
+313
+0:19:24,080 --> 0:19:26,080
+ Our director questions the network team.
+
+314
+0:19:26,080 --> 0:19:28,080
+ Sitting right there.
+
+315
+0:19:28,080 --> 0:19:30,080
+ Those fancy gentlemen.
+
+316
+0:19:30,080 --> 0:19:34,080
+ I think the answer could very well be they're not.
+
+317
+0:19:34,080 --> 0:19:38,080
+ I know there are some ISPs.
+
+318
+0:19:38,080 --> 0:19:40,080
+ I know some ISPs.
+
+319
+0:19:40,080 --> 0:19:42,080
+ The one I was chairman of.
+
+320
+0:19:42,080 --> 0:19:44,080
+ We didn't follow the Danish regulation.
+
+321
+0:19:44,080 --> 0:19:46,080
+ We followed the EU regulation.
+
+322
+0:19:46,080 --> 0:19:48,080
+ Because we didn't fully agree with the Danish one.
+
+323
+0:19:48,080 --> 0:19:50,080
+ It's a long story.
+
+324
+0:19:50,080 --> 0:19:52,080
+ But in short.
+
+325
+0:19:52,080 --> 0:19:54,080
+ If there's an upstream network logging already.
+
+326
+0:19:54,080 --> 0:19:56,080
+ You don't have to log.
+
+327
+0:19:56,080 --> 0:19:58,080
+ And it has been the policy of logging in the BornHack network.
+
+328
+0:19:58,080 --> 0:20:00,080
+ Since I've been here from the start.
+
+329
+0:20:00,080 --> 0:20:02,080
+ 2016.
+
+330
+0:20:02,080 --> 0:20:04,080
+ When we did the first one.
+
+331
+0:20:04,080 --> 0:20:06,080
+ We are logging as little as possible.
+
+332
+0:20:06,080 --> 0:20:08,080
+ We are only looking at traffic if we need to debug stuff.
+
+333
+0:20:08,080 --> 0:20:10,080
+ So in general.
+
+334
+0:20:10,080 --> 0:20:12,080
+ We are not logging.
+
+335
+0:20:12,080 --> 0:20:14,080
+ We are logging a little bit.
+
+336
+0:20:14,080 --> 0:20:16,080
+ Because we are monitoring the network.
+
+337
+0:20:16,080 --> 0:20:18,080
+ Using LibreNMS.
+
+338
+0:20:18,080 --> 0:20:20,080
+ And then we are like deleting those as fast as we can.
+
+339
+0:20:20,080 --> 0:20:22,080
+ When we get home.
+
+340
+0:20:22,080 --> 0:20:24,080
+ As little as possible.
+
+341
+0:20:34,080 --> 0:20:36,080
+ I want to just add.
+
+342
+0:20:36,080 --> 0:20:38,080
+ That there's also not any logging happening.
+
+343
+0:20:38,080 --> 0:20:40,080
+ Of the BornHack connection at the upstream.
+
+344
+0:20:40,080 --> 0:20:42,080
+ And.
+
+345
+0:20:44,080 --> 0:20:46,080
+ We have a little bit of sflow in between.
+
+346
+0:20:46,080 --> 0:20:48,080
+ That gets actually logged.
+
+347
+0:20:48,080 --> 0:20:50,080
+ But it's not a big deal.
+
+348
+0:20:50,080 --> 0:20:52,080
+ I created.
+
+349
+0:20:52,080 --> 0:20:54,080
+ But.
+
+350
+0:20:54,080 --> 0:20:56,080
+ That is only transient.
+
+351
+0:20:56,080 --> 0:20:58,080
+ And not stored.
+
+352
+0:20:58,080 --> 0:21:00,080
+ And then in addition.
+
+353
+0:21:00,080 --> 0:21:02,080
+ If anyone has an AS number.
+
+354
+0:21:02,080 --> 0:21:04,080
+ And some address space.
+
+355
+0:21:04,080 --> 0:21:06,080
+ And wants to announce it.
+
+356
+0:21:06,080 --> 0:21:08,080
+ Here.
+
+357
+0:21:08,080 --> 0:21:10,080
+ We can probably figure that out.
+
+358
+0:21:10,080 --> 0:21:12,080
+ Come talk to me.
+
+359
+0:21:16,080 --> 0:21:18,080
+ Any more questions?
+
+360
+0:21:18,080 --> 0:21:20,080
+ 20 minutes left.
+
+361
+0:21:20,080 --> 0:21:22,080
+ Otherwise we can go to the bar.
+
+362
+0:21:22,080 --> 0:21:24,080
+ And have questions.
+
+363
+0:21:24,080 --> 0:21:26,080
+ And beer.
+
+364
+0:21:26,080 --> 0:21:28,080
+ Thank you very much for the talk.

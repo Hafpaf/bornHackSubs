@@ -1,0 +1,395 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:09,640
+ Yes, so welcome to today's lightning talk.
+
+2
+0:00:09,960 --> 0:00:12,940
+ We are going to start with a talk about cactus comment.
+
+3
+0:00:13,260 --> 0:00:15,840
+ So you have five minutes. Go ahead.
+
+4
+0:00:30,000 --> 0:00:59,980
+ Thank you.
+
+5
+0:01:00,000 --> 0:01:10,340
+ Uh-huh. Does this work? Good.
+
+6
+0:01:10,840 --> 0:01:13,840
+ Okay. So this is not cactus comments.
+
+7
+0:01:13,980 --> 0:01:15,340
+ This is a traditional comment system.
+
+8
+0:01:15,760 --> 0:01:18,000
+ You have a bunch of users that all use the same client
+
+9
+0:01:18,000 --> 0:01:20,260
+ to access comments that are only hosted in one place.
+
+10
+0:01:21,060 --> 0:01:22,580
+ This is what it looks like in Matrix.
+
+11
+0:01:23,000 --> 0:01:25,160
+ You have users that can use different clients
+
+12
+0:01:25,160 --> 0:01:27,300
+ to interact with different servers
+
+13
+0:01:27,300 --> 0:01:29,000
+ and still have the same conversation.
+
+14
+0:01:30,000 --> 0:01:33,200
+ So you have sort of the email reminiscent structure
+
+15
+0:01:33,200 --> 0:01:36,240
+ of having IDs on different servers,
+
+16
+0:01:36,680 --> 0:01:39,100
+ but they can still be in a room that's shared between servers.
+
+17
+0:01:41,400 --> 0:01:45,920
+ So cactus comments is just a Matrix client.
+
+18
+0:01:46,560 --> 0:01:49,080
+ It runs in the browser. It's written in Elm.
+
+19
+0:01:50,360 --> 0:01:52,260
+ And you have a login button.
+
+20
+0:01:52,700 --> 0:01:56,220
+ And in that login button, you can put in the login field,
+
+21
+0:01:56,220 --> 0:01:58,960
+ you can put in the URL of your own home server,
+
+22
+0:02:00,000 --> 0:02:02,520
+ and then you just connect to your own server.
+
+23
+0:02:02,980 --> 0:02:04,300
+ So the browser, from that point on,
+
+24
+0:02:04,540 --> 0:02:07,720
+ doesn't need to talk to anything that's hosted by the website owner.
+
+25
+0:02:08,060 --> 0:02:09,960
+ You just log in through your own Matrix server.
+
+26
+0:02:12,620 --> 0:02:16,440
+ There's also another component that runs on the server side,
+
+27
+0:02:16,660 --> 0:02:18,720
+ which is Matrix application service.
+
+28
+0:02:19,460 --> 0:02:21,760
+ This part isn't strictly necessary
+
+29
+0:02:21,760 --> 0:02:23,760
+ to actually use cactus comments,
+
+30
+0:02:23,760 --> 0:02:27,000
+ but it adds some nice quality-of-life features.
+
+31
+0:02:28,440 --> 0:02:29,760
+ So this means that you don't...
+
+32
+0:02:30,000 --> 0:02:32,000
+ you don't have to manually go and create rooms.
+
+33
+0:02:32,000 --> 0:02:34,000
+ The application service can do that for you.
+
+34
+0:02:34,000 --> 0:02:36,000
+ And it also does some nice moderation stuff.
+
+35
+0:02:36,000 --> 0:02:38,000
+ If you make somebody an admin in one room,
+
+36
+0:02:38,000 --> 0:02:40,000
+ they will have admin privileges in the other rooms.
+
+37
+0:02:44,000 --> 0:02:46,000
+ Yeah, and it's all a chatbot interface,
+
+38
+0:02:46,000 --> 0:02:52,000
+ so you talk to and configure the application service through Matrix.
+
+39
+0:02:54,000 --> 0:02:56,000
+ So why did we build this?
+
+40
+0:02:56,000 --> 0:02:58,000
+ Why would we want to have comments on Matrix?
+
+41
+0:02:58,000 --> 0:03:00,000
+ Why would we want to have comments on Matrix?
+
+42
+0:03:00,000 --> 0:03:02,000
+ Does it give us any advantages,
+
+43
+0:03:02,000 --> 0:03:04,000
+ or is it just more complexity?
+
+44
+0:03:04,000 --> 0:03:06,000
+ This could probably be five slides,
+
+45
+0:03:06,000 --> 0:03:08,000
+ but it's one slide.
+
+46
+0:03:12,000 --> 0:03:14,000
+ One reason is identity defragmentation.
+
+47
+0:03:14,000 --> 0:03:18,000
+ Right now, in order to comment on blogA.com,
+
+48
+0:03:18,000 --> 0:03:20,000
+ you have one identity there,
+
+49
+0:03:20,000 --> 0:03:22,000
+ and then in order to comment on blogB.com,
+
+50
+0:03:22,000 --> 0:03:24,000
+ you have a different identity there.
+
+51
+0:03:24,000 --> 0:03:26,000
+ In Matrix, we can sort of unify that,
+
+52
+0:03:26,000 --> 0:03:28,000
+ and have the same identity across different platforms.
+
+53
+0:03:28,000 --> 0:03:30,000
+ and have the same identity across different platforms.
+
+54
+0:03:30,000 --> 0:03:32,000
+ We have more comedian follow ups.
+
+55
+0:03:32,000 --> 0:03:34,000
+ We have more comedian follow ups.
+
+56
+0:03:34,000 --> 0:03:36,000
+ I can install the Element app on my phone,
+
+57
+0:03:36,000 --> 0:03:38,000
+ and I'll get notifications
+
+58
+0:03:38,000 --> 0:03:40,000
+ when somebody puts a comment on my blog post.
+
+59
+0:03:40,000 --> 0:03:42,000
+ That's really nice.
+
+60
+0:03:42,000 --> 0:03:44,000
+ There's a resilience point.
+
+61
+0:03:44,000 --> 0:03:46,000
+ There's a resilience point.
+
+62
+0:03:46,000 --> 0:03:48,000
+ If the conversation can outlast
+
+63
+0:03:48,000 --> 0:03:50,000
+ the infrastructure of the website
+
+64
+0:03:50,000 --> 0:03:52,000
+ that the comment section is on.
+
+65
+0:03:52,000 --> 0:03:54,000
+ that the infrastructure of the website
+
+66
+0:03:54,000 --> 0:03:56,000
+ that the comment section is on.
+
+67
+0:03:56,000 --> 0:04:00,920
+ the website that uses cactus comments and maybe by default people can log in
+
+68
+0:04:00,920 --> 0:04:04,620
+ you on my matrix server and then two wonderful nerds meet and have a
+
+69
+0:04:04,620 --> 0:04:08,820
+ conversation there and then I kill my blog someday as long as those two
+
+70
+0:04:08,820 --> 0:04:12,020
+ different nerds are on two different matrix home servers the comment section
+
+71
+0:04:12,020 --> 0:04:16,940
+ still exists so the conversation can outlive the website infrastructure which is
+
+72
+0:04:16,940 --> 0:04:21,860
+ really cool it's resistant to third-party censorship because you can
+
+73
+0:04:21,860 --> 0:04:25,760
+ run your own matrix server so you don't have to do the Facebook comments or
+
+74
+0:04:25,760 --> 0:04:29,460
+ Disqus thing of relying on a big company that could go and remove your
+
+75
+0:04:29,460 --> 0:04:34,900
+ stuff and then you have more interaction options maybe some people would like to
+
+76
+0:04:34,900 --> 0:04:40,580
+ keep a conversation going in the comments or get notifications but don't
+
+77
+0:04:40,580 --> 0:04:44,560
+ want to log into the web browser and get the thing you can choose which clients
+
+78
+0:04:44,560 --> 0:04:48,640
+ you're participating in the conversation from so there's many different clients
+
+79
+0:04:48,640 --> 0:04:52,080
+ and you choose the one that works for you if you're a terminal geek you boot up
+
+80
+0:04:52,080 --> 0:04:54,720
+ WeChat if you like simple clients you boot up
+
+81
+0:04:54,720 --> 0:04:55,760
+ PluffyChat if you like simple clients you boot up PluffyChat if you like
+
+82
+0:04:55,760 --> 0:04:59,760
+ Or you can use element.
+
+83
+0:04:59,760 --> 0:05:01,760
+ Cool. That's Cactus comments.
+
+84
+0:05:01,760 --> 0:05:03,760
+ What now? How do you participate?
+
+85
+0:05:03,760 --> 0:05:05,760
+ We have a room on matrix.
+
+86
+0:05:05,760 --> 0:05:08,760
+ It's cactus colon cactus dot chat.
+
+87
+0:05:08,760 --> 0:05:12,760
+ We are on GitLab.
+
+88
+0:05:12,760 --> 0:05:14,760
+ It's all open source.
+
+89
+0:05:14,760 --> 0:05:16,760
+ It's GPL licensed.
+
+90
+0:05:16,760 --> 0:05:18,760
+ Going to be moving to LGPL soon.
+
+91
+0:05:18,760 --> 0:05:20,760
+ That's a different thing.
+
+92
+0:05:20,760 --> 0:05:23,760
+ But go and contribute or have a look at the code if you want.
+
+93
+0:05:23,760 --> 0:05:27,760
+ We have a website which has documentation and how to use it.
+
+94
+0:05:27,760 --> 0:05:29,760
+ Should be pretty straightforward.
+
+95
+0:05:29,760 --> 0:05:32,760
+ And then, of course, come catch me if you want to talk about it.
+
+96
+0:05:32,760 --> 0:05:34,760
+ I'll be in the bar or I'll be down in Noisy.
+
+97
+0:05:34,760 --> 0:05:37,760
+ And we have stickers.
+
+98
+0:05:37,760 --> 0:05:40,760
+ All right. That's it.

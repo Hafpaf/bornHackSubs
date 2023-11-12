@@ -1,0 +1,827 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:18,000
+ Welcome to second day with presentations here at BornHack. I would like to welcome Mark-Jan Bastian and your talk about power supply, stability and risks.
+
+2
+0:00:18,000 --> 0:00:28,000
+ Yes, thank you. Well, welcome everybody. This talk, my name is Mark-Jan Bastian and the presentation is called Power Supply, Stability and Risks.
+
+3
+0:00:28,000 --> 0:00:42,000
+ For a very quick thing, which I will discuss in this presentation is always verify the operational life of your electrolytic capacitors, perform stability tests for load step up and step down.
+
+4
+0:00:42,000 --> 0:00:46,000
+ You can do that for example with electronic load.
+
+5
+0:00:46,000 --> 0:00:48,000
+ Repeat that for every new battery.
+
+6
+0:00:48,000 --> 0:00:58,000
+ Use a lot of hardware because you never know which kind of chips end up in your supply chain, especially in these days where there is a lot of scarcity of chips.
+
+7
+0:00:58,000 --> 0:01:03,000
+ And the design time, well there are a few things which you can do.
+
+8
+0:01:03,000 --> 0:01:17,000
+ The power supply of the control signals in your power source, feedback loops, well that is a very academic topic, but I will just do it very practically which things in practice can go wrong.
+
+9
+0:01:17,000 --> 0:01:18,000
+ And then you can do a lot of other things. You can do a lot of other things, but I will just do it very practically which things in practice can go wrong.
+
+10
+0:01:18,000 --> 0:01:48,000
+ And then you can do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but I will just do a lot of other things, but
+
+11
+0:01:48,000 --> 0:01:54,440
+ so yeah this should be reasonable for any power supply like uh audio amplifier and that kind of
+
+12
+0:01:54,440 --> 0:02:00,880
+ stuff so uh yeah it was a pretty good deal i got a bit weird things when i was ordering it because
+
+13
+0:02:00,880 --> 0:02:08,980
+ somebody mentioned uh that there could be a back door into in this power supply i mean well that
+
+14
+0:02:08,980 --> 0:02:14,180
+ was very interesting and i definitely want that so i bought two of them i mean well how can you
+
+15
+0:02:14,180 --> 0:02:18,460
+ have a back door in an electronic load that's what's uh well i'll definitely want to check that
+
+16
+0:02:18,460 --> 0:02:25,660
+ out um there's a there's rs2d3d2 port uh actually serial port on the back which you can use to
+
+17
+0:02:25,660 --> 0:02:32,680
+ control it uh but well i mean yeah that was a very weird story but well you can just use it with the
+
+18
+0:02:32,680 --> 0:02:38,440
+ buttons and just verify all the results with your scope uh all the time domains are not uh
+
+19
+0:02:38,440 --> 0:02:42,700
+ interconnected and the only way they talk to each other is via the line they share so
+
+20
+0:02:42,700 --> 0:02:44,160
+ yeah i don't see any way
+
+21
+0:02:44,180 --> 0:02:49,280
+ to make a back door in an electronic load but you could maybe make a back door in a in a power
+
+22
+0:02:49,280 --> 0:02:53,460
+ supply to actually have it fail at some point so and that's where this talk is about
+
+23
+0:02:53,460 --> 0:03:03,180
+ and well maybe one of the things that you might be familiar with in 2015 was a user
+
+24
+0:03:03,180 --> 0:03:08,040
+ on the raspberry pi forum that actually found out that he made if he made a xenon flash
+
+25
+0:03:08,040 --> 0:03:13,780
+ of his raspberry pi board the power supply crashed and he actually fixed it by putting a piece of
+
+26
+0:03:13,780 --> 0:03:14,160
+ blue text on the back of the power supply and he actually fixed it by putting a piece of blue text
+
+27
+0:03:14,180 --> 0:03:16,820
+ uh on his raspberry pi
+
+28
+0:03:19,700 --> 0:03:25,540
+ and well that's uh that was actually uh very interesting of course well that's that looks like
+
+29
+0:03:25,540 --> 0:03:33,380
+ a an attack on the power supply and that was actually due to uh the the power supply the
+
+30
+0:03:33,380 --> 0:03:37,860
+ power controller itself it was kind of transparent for the wavelength of xenon
+
+31
+0:03:37,860 --> 0:03:43,780
+ and actually uh well caused a glitch which caused a power outage in the raspberry pi
+
+32
+0:03:44,180 --> 0:03:49,620
+ and then caused a reset so that was quite interesting but well relatively easy to fix
+
+33
+0:03:53,300 --> 0:03:56,340
+ well then well we'll go into the several uh power
+
+34
+0:03:58,180 --> 0:04:02,180
+ power supply circuits that you can find on any board or if you design your own board
+
+35
+0:04:02,180 --> 0:04:09,060
+ most common already since the 70s or maybe even earlier is a linear regulator which
+
+36
+0:04:09,060 --> 0:04:13,540
+ basically transistor which controls the current from v into v out and all power
+
+37
+0:04:14,660 --> 0:04:21,860
+ all the voltage difference is actually dissipated in that transistor so it's not very efficient so
+
+38
+0:04:21,860 --> 0:04:25,940
+ you actually if you would do this on a battery power thing and you have a very big difference
+
+39
+0:04:25,940 --> 0:04:31,940
+ between your battery voltage and the usable voltage then you waste a lot of power and that
+
+40
+0:04:31,940 --> 0:04:36,980
+ is of course not uh not good for your better for your battery life so the idea is to always use a
+
+41
+0:04:38,100 --> 0:04:43,700
+ way to do dcd's conversion with a high high efficiency and well the efficiency should be above
+
+42
+0:04:43,700 --> 0:04:53,540
+ 70 percent or uh in some cases even up 79 to 98 percent uh those are uh well those direct
+
+43
+0:04:53,540 --> 0:04:59,940
+ c regulators which are capable of doing that on reasonably high power levels um well the most
+
+44
+0:04:59,940 --> 0:05:07,300
+ common uh conversion you will find in mobile phones and battery powered stuff is buck converters
+
+45
+0:05:07,300 --> 0:05:13,380
+ and this is basically the cdc converter where you're having an inductor and the capacitor
+
+46
+0:05:13,700 --> 0:05:20,100
+ the inductor is usually around one to ten micro hundred so it's relatively small and it should
+
+47
+0:05:20,100 --> 0:05:27,620
+ having uh should have a decent dc carrying capability like a few amps and output capacitor
+
+48
+0:05:27,620 --> 0:05:32,100
+ is usually a ceramic capacitor because while they're having a low very low esr so a series
+
+49
+0:05:32,100 --> 0:05:40,340
+ resistance and that's make also makes well it's both a storage and you can also see it as an lc
+
+50
+0:05:40,340 --> 0:05:43,220
+ filter that filters out all the switching noise because the the the the the the the the the the
+
+51
+0:05:43,220 --> 0:05:43,620
+ the the the the the the the the the the the the the the the the the the the the the the the the the
+
+52
+0:05:43,620 --> 0:05:48,180
+ the power will be generated by using two switches there's a high side switch and a low side switch
+
+53
+0:05:50,180 --> 0:05:52,180
+ and while the high side switch is used to actually
+
+54
+0:05:53,780 --> 0:05:59,140
+ put a jolt of current into the inductor the inductor will get the triangular
+
+55
+0:06:02,180 --> 0:06:09,860
+ voltage over it and then the v out itself will be will be stable and depends on the duty cycle
+
+56
+0:06:09,860 --> 0:06:12,980
+ you apply to the top switch there's also a switch here on the bottom
+
+57
+0:06:13,620 --> 0:06:18,420
+ that's not strictly needed for all converters but you can use that to actually
+
+58
+0:06:19,540 --> 0:06:23,300
+ make the converter a little bit more efficient because there's a voltage drop over here and
+
+59
+0:06:23,300 --> 0:06:29,220
+ dissipation and if you use a mosfet here then you have less voltage drop there and while you
+
+60
+0:06:29,220 --> 0:06:35,380
+ can having a little bit better regulation so for all the high power server scenarios usually it's
+
+61
+0:06:36,980 --> 0:06:43,460
+ using both switches well this is then a picture from wikipedia about how a lot of the power is
+
+62
+0:06:43,620 --> 0:06:50,020
+ being produced so it's a big converter works so you see a relatively short on time a relatively
+
+63
+0:06:50,020 --> 0:06:57,380
+ long off time you see here the input voltage and the voltage over the inductor here it's this yellow
+
+64
+0:06:57,380 --> 0:07:02,820
+ area which is both positive and negative if you measure it over the inductor and the output voltage
+
+65
+0:07:02,820 --> 0:07:09,220
+ is relatively constant and that's in continuous mode and if you don't do not have too much load
+
+66
+0:07:09,220 --> 0:07:13,540
+ then you might be in this continuous mode and then it looks a little bit different and you see it's
+
+67
+0:07:13,540 --> 0:07:18,040
+ there's no voltage drop over the inductor this all ideal but inductors
+
+68
+0:07:18,040 --> 0:07:26,100
+ are not ideal but yeah it's just a concept well then if you implement this
+
+69
+0:07:26,100 --> 0:07:31,280
+ in a chip then you want to achieve put all the semiconductors in one chip then
+
+70
+0:07:31,280 --> 0:07:35,740
+ so if you put all the transistors and the diode and everything in one chip and
+
+71
+0:07:35,740 --> 0:07:38,640
+ only have the external components of inductor and capacitor on the output
+
+72
+0:07:38,640 --> 0:07:44,400
+ then yeah it's relatively simple you can do then use a p-channel a MOSFET on the
+
+73
+0:07:44,400 --> 0:07:51,940
+ top and you put a negative yeah you have to pull the signal down to turn the
+
+74
+0:07:51,940 --> 0:07:57,020
+ switch on and it will do that with a certain P with PWM and it will be
+
+75
+0:07:57,020 --> 0:08:01,580
+ control circuits also integrated in the chip which takes the feedback output and
+
+76
+0:08:01,580 --> 0:08:07,800
+ then but this is relatively simple and cheap but if you want to make a little
+
+77
+0:08:07,800 --> 0:08:08,620
+ bit more higher power
+
+78
+0:08:08,620 --> 0:08:12,580
+ scenario then using n-channel MOSFETs and the reason why you want to use
+
+79
+0:08:12,580 --> 0:08:16,240
+ n-channel MOSFETs is because well they are relatively they have usually better
+
+80
+0:08:16,240 --> 0:08:20,860
+ specifications than p-channel MOSFETs for a lower RDS on higher current
+
+81
+0:08:20,860 --> 0:08:28,120
+ capability and you can also sometimes use them as external components so if
+
+82
+0:08:28,120 --> 0:08:32,680
+ you have a separate n-channel MOSFETs external to your regulator you can then
+
+83
+0:08:32,680 --> 0:08:37,720
+ draw much more power because you can optimize control logic to which you just
+
+84
+0:08:37,720 --> 0:08:38,580
+ be engaged
+
+85
+0:08:38,620 --> 0:08:43,460
+ and you can also use a p-channel MOSFETs for external MOSFETs and external MOSFETs
+
+86
+0:08:43,460 --> 0:08:51,660
+ put on the board and even put heat sinks on them to make it even more simple yeah
+
+87
+0:08:51,660 --> 0:08:54,960
+ but there's then there's a difference because n-channel MOSFETs you need the
+
+88
+0:08:54,960 --> 0:08:59,200
+ positive voltage to turn them on and that creates a problem on the bottom
+
+89
+0:08:59,200 --> 0:09:03,220
+ side that's usually not a problem because your VIN is probably higher than
+
+90
+0:09:03,220 --> 0:09:06,620
+ three volts and three volts is usually you kind of threshold for high power
+
+91
+0:09:06,620 --> 0:09:07,620
+ MOSFETs
+
+92
+0:09:08,620 --> 0:09:14,080
+ if this MOSFET needs to be turned on then you also need more than a three
+
+93
+0:09:14,080 --> 0:09:18,380
+ volts over here but if your input voltage is when this thing is on
+
+94
+0:09:18,380 --> 0:09:22,780
+ there will be almost no voltage drop between a drain and the source so you
+
+95
+0:09:22,780 --> 0:09:27,040
+ need gate voltage needs to be above VIN so that's interesting problem and
+
+96
+0:09:27,040 --> 0:09:33,580
+ well you have to solve the problem somehow well it is and you could do that
+
+97
+0:09:33,580 --> 0:09:36,620
+ by actually making
+
+98
+0:09:36,620 --> 0:09:38,580
+ a
+
+99
+0:09:38,620 --> 0:09:45,160
+ internal using a charge pump or something like that in your chip but although those charge
+
+100
+0:09:45,160 --> 0:09:50,060
+ pump needs capacitors the capacitors are very expensive in the chip you cannot get more than
+
+101
+0:09:50,060 --> 0:09:58,780
+ a few picofarads in the chip so or even less so then usually what the chip designers do they give
+
+102
+0:09:58,780 --> 0:10:03,740
+ you a boost input and then you have to put an external capacitor which is connected to the
+
+103
+0:10:03,740 --> 0:10:09,240
+ switching node and this you will be basically at a kind of square wave on this node you do
+
+104
+0:10:09,240 --> 0:10:14,820
+ those things switching initially the gates might be not be very good conducting but as soon as you
+
+105
+0:10:14,820 --> 0:10:21,680
+ got a few cycles you actually use power to charge them here inside the chip and then your power
+
+106
+0:10:21,680 --> 0:10:27,440
+ gets more stable and sometimes you can also help that the charge pump by actually providing external
+
+107
+0:10:27,440 --> 0:10:33,380
+ diode and that's that sometimes very handy so also some power supply manufacturers
+
+108
+0:10:33,740 --> 0:10:39,740
+ provide application nodes how to do that and that's yeah that's you should really always
+
+109
+0:10:39,740 --> 0:10:45,500
+ check if there are application nodes for the chip that you you picked because well if you do if you
+
+110
+0:10:45,500 --> 0:10:52,140
+ forget that there might be some issues if you do not provide the power here quick enough
+
+111
+0:10:54,700 --> 0:11:01,260
+ well what's more yeah this this is the most important part i think for this part
+
+112
+0:11:02,620 --> 0:11:03,580
+ oh yeah but you also see
+
+113
+0:11:03,740 --> 0:11:07,360
+ there's always body diodes inside all MOSFETs.
+
+114
+0:11:07,360 --> 0:11:08,800
+ I always put them in my schematics
+
+115
+0:11:08,800 --> 0:11:12,060
+ because it makes a swapping drain
+
+116
+0:11:12,060 --> 0:11:13,520
+ and source on the MOSFET in the schematic
+
+117
+0:11:13,520 --> 0:11:15,700
+ is very disastrous, you don't want to do that.
+
+118
+0:11:15,700 --> 0:11:17,300
+ And it's also a bit more logical
+
+119
+0:11:17,300 --> 0:11:19,180
+ because if you reverse power anything
+
+120
+0:11:19,180 --> 0:11:20,820
+ or you have some back EMF,
+
+121
+0:11:20,820 --> 0:11:23,560
+ well you have to, you can just trace the path
+
+122
+0:11:23,560 --> 0:11:25,700
+ the current goes.
+
+123
+0:11:25,700 --> 0:11:34,100
+ Then there's another thing about the feedback loop stability.
+
+124
+0:11:34,100 --> 0:11:40,260
+ There's a voltage divider usually on the output
+
+125
+0:11:40,260 --> 0:11:44,260
+ and then, so if you're out to say 3 volts
+
+126
+0:11:44,260 --> 0:11:47,260
+ or 3.3 volts, then there's a voltage divider
+
+127
+0:11:47,260 --> 0:11:50,160
+ which well maybe a few hundred kiloamps
+
+128
+0:11:50,160 --> 0:11:54,560
+ drawing a few microamps or less.
+
+129
+0:11:54,560 --> 0:11:55,680
+ And then you're having a output
+
+130
+0:11:55,680 --> 0:11:58,560
+ voltage which is typically around 1.2
+
+131
+0:11:58,560 --> 0:12:00,960
+ or 0.8 or 0.6 volts or something like that.
+
+132
+0:12:00,960 --> 0:12:03,420
+ And then there's a feedback input
+
+133
+0:12:03,420 --> 0:12:05,160
+ on the controller of your power supply
+
+134
+0:12:05,160 --> 0:12:07,620
+ and there will be comparator which
+
+135
+0:12:07,620 --> 0:12:09,500
+ compares that output voltage and uses
+
+136
+0:12:09,500 --> 0:12:12,560
+ that to adjust the PWM rate of both MOSFETs
+
+137
+0:12:12,560 --> 0:12:17,060
+ just to make sure the
+
+138
+0:12:17,060 --> 0:12:19,620
+ UXC gain the output voltage.
+
+139
+0:12:19,620 --> 0:12:23,460
+ There's also some, yeah there's also
+
+140
+0:12:23,460 --> 0:12:25,080
+ filter response, there's a delay in there
+
+141
+0:12:25,080 --> 0:12:25,660
+ and then there's a filter response
+
+142
+0:12:25,660 --> 0:12:28,660
+ which will tell you how to calculate it.
+
+143
+0:12:28,660 --> 0:12:30,940
+ Usually the data sheet will tell you how to calculate it.
+
+144
+0:12:30,940 --> 0:12:33,620
+ Well, you have to very carefully always check
+
+145
+0:12:33,620 --> 0:12:34,980
+ if you're doing that right.
+
+146
+0:12:34,980 --> 0:12:40,760
+ But might be also some issues with the speed
+
+147
+0:12:40,760 --> 0:12:42,640
+ of which this feedback loop works.
+
+148
+0:12:42,640 --> 0:12:45,380
+ Because if you're for example having outputs
+
+149
+0:12:45,380 --> 0:12:48,280
+ and you put a very quick load step on it,
+
+150
+0:12:48,280 --> 0:12:49,720
+ well you can for example generate that
+
+151
+0:12:49,720 --> 0:12:51,780
+ with an electronic load.
+
+152
+0:12:52,960 --> 0:12:55,060
+ And you actually go from 10% of your current
+
+153
+0:12:55,060 --> 0:13:02,440
+ to say 90% of your current then there might be some oscillations into the
+
+154
+0:13:02,440 --> 0:13:07,720
+ control loop which actually eventually crash your power supply and well if you
+
+155
+0:13:07,720 --> 0:13:12,220
+ just run normal software on it and it seems to work then yeah you think well
+
+156
+0:13:12,220 --> 0:13:16,040
+ everything is fine yeah well let's just ship it but well it's important to
+
+157
+0:13:16,040 --> 0:13:21,160
+ actually just do the extra step use an electronic load to do this step
+
+158
+0:13:21,160 --> 0:13:27,340
+ response from 10% to 90% but also from 90% to 10% because that creates
+
+159
+0:13:27,340 --> 0:13:31,180
+ additional capacitance and then creates more delay times and well that could
+
+160
+0:13:31,180 --> 0:13:39,540
+ also cause issues it's a very practical thing very simple to do and and it works
+
+161
+0:13:39,540 --> 0:13:44,660
+ irrespective of your data sheet so if you bought a component and you see well
+
+162
+0:13:44,660 --> 0:13:49,640
+ yeah it should work because it's pin compatible and you found the data sheet
+
+163
+0:13:49,640 --> 0:13:51,080
+ and well everything seems to work
+
+164
+0:13:51,080 --> 0:13:51,140
+ yeah it should work because it's pin compatible and you found the data sheet
+
+165
+0:13:51,140 --> 0:13:57,500
+ we've just performed this practical test it's very easy to verify whether you
+
+166
+0:13:57,500 --> 0:14:04,620
+ actually made the right choice but also there might be issues with the current
+
+167
+0:14:04,620 --> 0:14:09,900
+ through this feedback resistor there's some data sheets of some regulators they
+
+168
+0:14:09,900 --> 0:14:12,900
+ also say that you have to add an additional capacitor so you see the
+
+169
+0:14:12,900 --> 0:14:17,780
+ green capacitor over there and that actually creates actually enhances the
+
+170
+0:14:17,780 --> 0:14:21,060
+ performance of the output to the feedback
+
+171
+0:14:21,060 --> 0:14:26,740
+ and so if there's additional capacitance here or some input loads then that's
+
+172
+0:14:26,740 --> 0:14:30,820
+ capacitor could be only a few hundred picofarads actually improves the
+
+173
+0:14:30,820 --> 0:14:37,200
+ response of the feedback loop so yeah if you just if you see issues just
+
+174
+0:14:37,200 --> 0:14:46,060
+ experiment with those capacitor values to see if your step response improves so
+
+175
+0:14:46,060 --> 0:14:50,900
+ well this is basically all the most important parts
+
+176
+0:14:51,060 --> 0:14:59,740
+ so it's very roughly simple and the quick thing so these are the all the
+
+177
+0:14:59,740 --> 0:15:04,740
+ things verified operational operational life for electrical capacitors well
+
+178
+0:15:04,740 --> 0:15:11,340
+ that's because the if you're a capacitor capacitor dry out they usually the ESR
+
+179
+0:15:11,340 --> 0:15:17,740
+ actually goes goes up and it means that the capacitor is doing its work less it
+
+180
+0:15:17,740 --> 0:15:20,980
+ will dissipate more and more power so they get a hotter and hotter and hotter
+
+181
+0:15:20,980 --> 0:15:25,060
+ they will evaporate directly electrolytes much faster so if you
+
+182
+0:15:25,060 --> 0:15:30,740
+ have old consumer hardware the easiest way to repair it is just verify reduce
+
+183
+0:15:30,740 --> 0:15:42,100
+ all of the electric testers verify their impedance using LCR meter and then see
+
+184
+0:15:42,100 --> 0:15:45,160
+ if that's still within spec and otherwise find other capacitors to
+
+185
+0:15:45,160 --> 0:15:50,460
+ replace them with what is the load step up and step down so there's 10% to 80
+
+186
+0:15:50,460 --> 0:15:50,960
+ 90%
+
+187
+0:15:50,980 --> 0:15:57,220
+ of your current yeah and if you have new batches of hardware well you could there
+
+188
+0:15:57,220 --> 0:16:04,340
+ could be new chips in your thing your hardware supply chain so always just
+
+189
+0:16:04,340 --> 0:16:08,100
+ check well if you have new new new new new new rule of components coming in
+
+190
+0:16:08,100 --> 0:16:16,260
+ just verify a hardware and also the power supplies well the driving for
+
+191
+0:16:16,260 --> 0:16:19,580
+ electronics power source basically what is the bootstrap capacitor story that I
+
+192
+0:16:19,580 --> 0:16:20,460
+ just told
+
+193
+0:16:20,460 --> 0:16:25,800
+ the feedback loop that's the small capacitor on the voltage divider yeah
+
+194
+0:16:25,800 --> 0:16:31,100
+ they're ringing itself that's yeah you can see just what about looks best I
+
+195
+0:16:31,100 --> 0:16:36,340
+ mean if you go if it goes up and then there's a lot of things ringing before
+
+196
+0:16:36,340 --> 0:16:42,640
+ it becomes come stable yeah that might be getting problematic if the transient
+
+197
+0:16:42,640 --> 0:16:50,300
+ becomes even sharper so yeah it's best to just make it fast and smooth oh yeah and the softness of the power supply is also important
+
+198
+0:16:50,300 --> 0:16:53,100
+ time so if you have a residential product and then you haveoff start function疫al
+
+199
+0:16:53,100 --> 0:16:54,100
+ update you worked out in this I'm
+
+200
+0:16:54,100 --> 0:16:55,700
+ and that now you might won't wanna we have a
+
+201
+0:16:55,700 --> 0:17:18,140
+我就
+
+202
+0:17:20,300 --> 0:17:25,160
+ so if you just do it in sequence all the power supplies and making sure it's fast
+
+203
+0:17:25,160 --> 0:17:32,000
+ and reliable that saves a lot of debugging for the electronic part so
+
+204
+0:17:32,000 --> 0:17:37,460
+ well this is my this all file this was my talk so hopefully well maybe there
+
+205
+0:17:37,460 --> 0:17:41,900
+ are some questions or other things you can do some more experiments any
+
+206
+0:17:41,900 --> 0:17:49,020
+ questions no but thank you

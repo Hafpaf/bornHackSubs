@@ -1,0 +1,983 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:12,600
+ I would like to welcome Flummer, who is going to speak about this year's batch.
+
+2
+0:00:12,600 --> 0:00:13,600
+ You go ahead.
+
+3
+0:00:13,600 --> 0:00:16,680
+ Thank you very much.
+
+4
+0:00:16,680 --> 0:00:21,560
+ So yeah, this year we actually managed to have batches ready for check-in.
+
+5
+0:00:21,560 --> 0:00:27,560
+ So I guess most of you already have the batch.
+
+6
+0:00:27,560 --> 0:00:33,960
+ In the next little time, we'll go through some of the thoughts behind the decisions
+
+7
+0:00:33,960 --> 0:00:41,140
+ that we made about batches this year, and then explain a little on what's on the batch,
+
+8
+0:00:41,140 --> 0:00:47,420
+ and what can be added to the batch, and also how to add stuff to the batch.
+
+9
+0:00:47,420 --> 0:00:55,820
+ Little ideas, and finish off with ways of integrating with existing batches if you
+
+10
+0:00:55,820 --> 0:00:57,540
+ have one from a previous year.
+
+11
+0:00:57,540 --> 0:01:03,140
+ And then the last thing is a little competition, so to get people started and sort of motivate.
+
+12
+0:01:03,140 --> 0:01:08,140
+ So do a little thing and see if you can manage to hack something.
+
+13
+0:01:08,140 --> 0:01:13,140
+ We have a little competition.
+
+14
+0:01:13,140 --> 0:01:25,780
+ So the past year and a half, especially last year, electronics sort of supply chain has
+
+15
+0:01:25,780 --> 0:01:27,100
+ had some issues.
+
+16
+0:01:27,540 --> 0:01:34,780
+ Some companies thought that when Corona hit, they wouldn't sell anything, so they canceled
+
+17
+0:01:34,780 --> 0:01:37,180
+ their pre-orders.
+
+18
+0:01:37,180 --> 0:01:41,160
+ But people still wanted cars because people didn't want to sit in buses.
+
+19
+0:01:41,160 --> 0:01:47,400
+ So when the car industry figured out and then found out that people still want to buy cars,
+
+20
+0:01:47,400 --> 0:01:49,820
+ they kind of want their parts back.
+
+21
+0:01:49,820 --> 0:01:55,540
+ But the whole supply chain had said, yeah, we already sold that slot to somebody else,
+
+22
+0:01:55,540 --> 0:01:56,140
+ because the whole graphic card system.
+
+23
+0:01:56,140 --> 0:01:56,240
+ Yeah.
+
+24
+0:01:56,240 --> 0:01:56,540
+ Yeah.
+
+25
+0:01:56,540 --> 0:01:56,840
+ Yeah.
+
+26
+0:01:56,840 --> 0:01:57,140
+ Yeah.
+
+27
+0:01:57,140 --> 0:01:57,340
+ Yeah.
+
+28
+0:01:57,340 --> 0:01:57,440
+ Yeah.
+
+29
+0:01:57,440 --> 0:01:57,540
+ Yeah.
+
+30
+0:01:57,540 --> 0:01:58,040
+ Yeah.
+
+31
+0:01:58,040 --> 0:02:01,120
+ And obviously, the parts business and Bitcoin mining and people working from home need the
+
+32
+0:02:01,120 --> 0:02:02,680
+ extra graphic card.
+
+33
+0:02:02,680 --> 0:02:04,240
+ They needed the extra capacity.
+
+34
+0:02:04,240 --> 0:02:11,840
+ So stuff didn't sort of work out as the auto industry had hoped.
+
+35
+0:02:11,840 --> 0:02:13,960
+ And that has sort of trickled out.
+
+36
+0:02:13,960 --> 0:02:19,320
+ And right now, we are in a state where some parts you can easily get, you can just buy
+
+37
+0:02:19,320 --> 0:02:25,840
+ them as you normally could, but other parts, especially ones are sort of silicon and some
+
+38
+0:02:25,840 --> 0:02:26,840
+ more advanced stuff.
+
+39
+0:02:26,840 --> 0:02:32,840
+ some simple like voltage regulators that everybody needs them but but they still
+
+40
+0:02:32,840 --> 0:02:36,560
+ need to be manufactured a little bit more sort of advanced than the very
+
+41
+0:02:36,560 --> 0:02:43,300
+ simple parts those parts are sort of just not able to you can't get them
+
+42
+0:02:43,300 --> 0:02:48,680
+ especially parts that are little sort of have a very specific feature they they
+
+43
+0:02:48,680 --> 0:02:54,860
+ are like the screenshot here that's I took it like earlier today this is not
+
+44
+0:02:54,860 --> 0:02:59,600
+ that bad it's only half a year out you can get the parts but normally they had
+
+45
+0:02:59,600 --> 0:03:04,340
+ like 47 like 47 weekly time that means when you order them that it'll be 47
+
+46
+0:03:04,340 --> 0:03:11,420
+ weeks until you get them for large-scale production where you plan ahead might be
+
+47
+0:03:11,420 --> 0:03:18,800
+ okay normally it's in the five maybe 20 weeks but for a little batch project
+
+48
+0:03:18,800 --> 0:03:24,140
+ that we do we usually sort of rely on the distributors just having stock that
+
+49
+0:03:24,140 --> 0:03:24,840
+ we can get them like that and then we can get the parts that we need to get
+
+50
+0:03:24,840 --> 0:03:34,500
+ like day to day almost um so with this little sort of uncertainty uh we decided
+
+51
+0:03:34,500 --> 0:03:39,900
+ this spring uh that's making a patch that had a bunch of these parts that are somewhat
+
+52
+0:03:39,900 --> 0:03:47,580
+ difficult to get um would be a challenge where it's not fun to have a badge like two weeks after
+
+53
+0:03:47,580 --> 0:03:54,780
+ born hack um so so we ended up even though I had more or less a design for a batch and making one
+
+54
+0:03:54,840 --> 0:04:00,660
+ from parts in the way in my little workshop that I can do that but if we need like several hundred
+
+55
+0:04:00,660 --> 0:04:09,000
+ of them um this whole production setup is it needs to be sort of used and and if that is somewhat
+
+56
+0:04:09,000 --> 0:04:16,680
+ flaky the risk of not having a badge is very high the previous years this has been just like the
+
+57
+0:04:16,680 --> 0:04:22,980
+ first or second day of born hack they are done um if we're pushing that just a few days it breaks down
+
+58
+0:04:24,840 --> 0:04:32,940
+ um years batch is something very different um it's a batch that focuses much more on the
+
+59
+0:04:32,940 --> 0:04:43,020
+ electronic side than the previous year's patches um it's simple um but what you want to make of
+
+60
+0:04:43,020 --> 0:04:48,900
+ it you can sort of choose yourself a little bit um the batch has a bunch of prototyping area
+
+61
+0:04:48,900 --> 0:04:54,780
+ that's little holes and the little pads that that sits on the on the front of the badge the holes
+
+62
+0:04:54,840 --> 0:05:02,220
+ are spaced in a distance that is very common for many little sort of through hole parts where you
+
+63
+0:05:02,220 --> 0:05:09,060
+ put the pins through the holes and then you sort of them on the back side where the the pads without
+
+64
+0:05:09,060 --> 0:05:15,360
+ the holes little square ones those are for the surface mount components and the spacing are also
+
+65
+0:05:16,020 --> 0:05:24,240
+ useful for the for for the slightly larger parts um so it though the the shape of the pads and the
+
+66
+0:05:24,240 --> 0:05:24,780
+ placing will help
+
+67
+0:05:24,840 --> 0:05:31,680
+ in soldering them um you don't have to solder SMD parts but having a little practice I think it's
+
+68
+0:05:31,680 --> 0:05:39,240
+ a good thing if you want to fix uh your electronics stuff does break down and often you can fix it and
+
+69
+0:05:39,240 --> 0:05:47,400
+ every type of electronics you have today will be SMD surface mounted devices um so the badge also
+
+70
+0:05:47,400 --> 0:05:53,580
+ has the connector um it's a similar collector connector as the um connect the footprint similar
+
+71
+0:05:53,580 --> 0:05:54,480
+ to the previous years
+
+72
+0:05:54,840 --> 0:05:59,940
+ uh but for this patch you can actually decide whether you want the batch as
+
+73
+0:06:00,600 --> 0:06:06,780
+ uh a batch that has maybe power and then you can power other add-ons or you can use this batch as
+
+74
+0:06:06,780 --> 0:06:11,580
+ an add-on by putting the connector on the back side instead um and then you can have it as add-on
+
+75
+0:06:11,580 --> 0:06:17,820
+ to previous years batches if you want for instance to to get started coding and that's sort of what
+
+76
+0:06:17,820 --> 0:06:22,920
+ you want then you can make this into an add-on and then make some LEDs or temp sensor or something on
+
+77
+0:06:22,920 --> 0:06:24,720
+ this and then you can do the coding on the
+
+78
+0:06:24,840 --> 0:06:32,040
+ batch from the previous year the little uh that's a little connector called uh quick or stem acuity
+
+79
+0:06:32,040 --> 0:06:41,940
+ that's a standard that uh spark fun and uh Adafruit has made it uses similar connectivity as the add-on
+
+80
+0:06:41,940 --> 0:06:48,120
+ connector so that's also there'll be a slide also a little later also the I2C pins are sort
+
+81
+0:06:48,120 --> 0:06:54,000
+ of broken out so it's easier if you want to add something from functionality both on the throughhole area
+
+82
+0:06:54,840 --> 0:06:59,940
+ and markings on the back and then on the SMD area if you want to add a little temp sensor or something
+
+83
+0:07:01,380 --> 0:07:06,900
+ you can also write your name on it if it's uh I guess that's the bare minimum of hacking your
+
+84
+0:07:06,900 --> 0:07:14,760
+ batch it's just a writing name on with a sharpie the batch is open source so for us like the previous
+
+85
+0:07:14,760 --> 0:07:22,140
+ years you can download the files their KiCad files there's also a schematic um the URLs on the batch
+
+86
+0:07:24,840 --> 0:07:31,200
+ is PCB way so we got them to to make them and a nice glossy gold finish
+
+87
+0:07:35,340 --> 0:07:41,760
+ so since these are very sort of hardware focused uh and people usually don't bring a lot of parts
+
+88
+0:07:42,540 --> 0:07:49,620
+ uh I made a bunch of boxes with little containers in them with a lot of different parts it's not
+
+89
+0:07:49,620 --> 0:07:53,340
+ everything because millions of parts exist but they are parts that are
+
+90
+0:07:53,340 --> 0:07:54,460
+ Meats for higherد
+
+91
+0:07:54,840 --> 0:07:56,980
+ fairly easy to sort of get going with.
+
+92
+0:07:56,980 --> 0:08:00,520
+ It's resistors, capacitors, some transistors
+
+93
+0:08:00,520 --> 0:08:02,300
+ so you can make very simple circuits.
+
+94
+0:08:02,300 --> 0:08:03,800
+ And there's a bunch of LEDs.
+
+95
+0:08:03,800 --> 0:08:06,140
+ I have colored LEDs in, I think I have six,
+
+96
+0:08:06,140 --> 0:08:08,980
+ seven different types, some of them with multiple colors
+
+97
+0:08:08,980 --> 0:08:09,980
+ in the same one.
+
+98
+0:08:09,980 --> 0:08:11,620
+ There's even LEDs that blink themselves
+
+99
+0:08:11,620 --> 0:08:13,160
+ and you just need to power and then they
+
+100
+0:08:13,160 --> 0:08:14,940
+ will do little flashy things.
+
+101
+0:08:14,940 --> 0:08:18,860
+ So depending on what sort of type of hacking
+
+102
+0:08:18,860 --> 0:08:21,140
+ you are interested in, you can start
+
+103
+0:08:21,140 --> 0:08:22,560
+ get going with very simple things,
+
+104
+0:08:22,560 --> 0:08:24,300
+ just add some sort of battery holder.
+
+105
+0:08:24,300 --> 0:08:26,520
+ I have three different types.
+
+106
+0:08:26,520 --> 0:08:28,640
+ Then maybe a little bit of wire and then an LED
+
+107
+0:08:28,640 --> 0:08:31,060
+ and then you have something that will blink in the bar.
+
+108
+0:08:35,360 --> 0:08:37,040
+ We have a hardware hacking area.
+
+109
+0:08:37,040 --> 0:08:41,040
+ It's the big white tent in the middle of the general camping.
+
+110
+0:08:41,040 --> 0:08:42,980
+ Up there, there are sawing irons,
+
+111
+0:08:42,980 --> 0:08:46,000
+ there are extra lights for detail work.
+
+112
+0:08:46,000 --> 0:08:48,340
+ There are these boxes with parts and you're welcome
+
+113
+0:08:48,340 --> 0:08:50,480
+ to grab parts and add to your batch.
+
+114
+0:08:50,480 --> 0:08:52,500
+ It's of course not meant to grab the whole box
+
+115
+0:08:52,500 --> 0:08:54,280
+ but taking it out.
+
+116
+0:08:54,300 --> 0:08:56,120
+ But if you're taking individual parts and hanging them on
+
+117
+0:08:56,120 --> 0:08:58,060
+ and putting it on and making something,
+
+118
+0:08:58,060 --> 0:08:59,300
+ that's what they're for.
+
+119
+0:08:59,300 --> 0:09:00,520
+ So feel free.
+
+120
+0:09:00,520 --> 0:09:04,920
+ There are also some microcontroller stuff.
+
+121
+0:09:04,920 --> 0:09:06,740
+ It's mostly MSP430s.
+
+122
+0:09:06,740 --> 0:09:11,440
+ They are very easy to get going, three volts, no problem.
+
+123
+0:09:11,440 --> 0:09:14,660
+ I also have some programmers for the different types
+
+124
+0:09:14,660 --> 0:09:17,400
+ of microcontrollers that are there.
+
+125
+0:09:17,400 --> 0:09:23,440
+ Come get me and we can figure out how to program these chips.
+
+126
+0:09:23,440 --> 0:09:25,540
+ The whole microcontroller thing is for people
+
+127
+0:09:25,540 --> 0:09:27,380
+ who maybe have a little experience
+
+128
+0:09:27,380 --> 0:09:30,000
+ because they are very, it's just the chip
+
+129
+0:09:30,000 --> 0:09:32,000
+ and some capacitors and then you have
+
+130
+0:09:32,000 --> 0:09:33,420
+ to do everything yourself.
+
+131
+0:09:34,540 --> 0:09:37,200
+ But if you want to do that, that's definitely an option.
+
+132
+0:09:38,160 --> 0:09:41,160
+ There are even some with Wi-Fi on the little breakout board.
+
+133
+0:09:43,680 --> 0:09:46,520
+ Some ideas like blinking LEDs,
+
+134
+0:09:46,520 --> 0:09:48,920
+ definitely have some flashy for the bar.
+
+135
+0:09:49,980 --> 0:09:53,260
+ There are also a little buzzer or some jacks for headphones
+
+136
+0:09:53,260 --> 0:09:57,400
+ if you want to make some audio thing maybe playing with that.
+
+137
+0:09:57,400 --> 0:10:01,580
+ With a few transistors, two capacitors, and some resistors,
+
+138
+0:10:01,580 --> 0:10:02,920
+ you can actually make audio.
+
+139
+0:10:02,920 --> 0:10:05,700
+ You can make sounds in different frequencies.
+
+140
+0:10:05,700 --> 0:10:10,280
+ So playing with that could be an interesting idea for.
+
+141
+0:10:10,280 --> 0:10:12,160
+ Also, we have some vibration sensors,
+
+142
+0:10:12,160 --> 0:10:15,000
+ maybe like an alarm system where if you touch the badge,
+
+143
+0:10:15,000 --> 0:10:16,580
+ then it'll trigger a little LED and you
+
+144
+0:10:16,580 --> 0:10:17,840
+ can see somebody has touched your badge.
+
+145
+0:10:17,840 --> 0:10:20,320
+ You can put it on top of your laptop, have an alarm there.
+
+146
+0:10:20,320 --> 0:10:22,440
+ Also, of course, there's a lot of stuff
+
+147
+0:10:22,440 --> 0:10:23,160
+ that you can do.
+
+148
+0:10:23,160 --> 0:10:28,160
+ So a vibration motor, maybe some identifier or alert stuff,
+
+149
+0:10:28,260 --> 0:10:30,700
+ maybe combining with another badge.
+
+150
+0:10:30,700 --> 0:10:33,640
+ And then, of course, the microcontrollers.
+
+151
+0:10:33,640 --> 0:10:35,460
+ I also have some temp sensors.
+
+152
+0:10:35,460 --> 0:10:38,300
+ These are, the temp sensors are surface mounts
+
+153
+0:10:38,300 --> 0:10:41,240
+ and they require a little practice maybe.
+
+154
+0:10:42,500 --> 0:10:45,380
+ But we will hang out in the hardware hacking area
+
+155
+0:10:45,380 --> 0:10:46,420
+ and be able to help.
+
+156
+0:10:46,420 --> 0:10:49,520
+ So if people want to learn to solder for the first time,
+
+157
+0:10:49,520 --> 0:10:50,700
+ I'll be happy to help.
+
+158
+0:10:50,700 --> 0:10:52,600
+ And there are also a bunch of other,
+
+159
+0:10:53,160 --> 0:10:55,080
+ team members that will hang out there
+
+160
+0:10:55,080 --> 0:10:57,580
+ and know how to solder and can teach people.
+
+161
+0:11:00,220 --> 0:11:03,120
+ A little on the little, there's a connector on the edge
+
+162
+0:11:03,120 --> 0:11:04,580
+ that, well, on the badge it's empty,
+
+163
+0:11:04,580 --> 0:11:06,120
+ but you can add this little connector.
+
+164
+0:11:06,120 --> 0:11:08,000
+ I also have these connectors.
+
+165
+0:11:08,000 --> 0:11:08,920
+ It's for a standard.
+
+166
+0:11:08,920 --> 0:11:12,920
+ I don't have the modules, but this standard
+
+167
+0:11:12,920 --> 0:11:16,960
+ seems to be fairly popular.
+
+168
+0:11:16,960 --> 0:11:19,400
+ Both SparkFun and Adafruit are using them
+
+169
+0:11:19,400 --> 0:11:21,800
+ for a lot of different ports they have.
+
+170
+0:11:21,800 --> 0:11:23,000
+ And I've seen people.
+
+171
+0:11:23,000 --> 0:11:26,160
+ I've used these for getting prototypes very quickly.
+
+172
+0:11:27,520 --> 0:11:32,200
+ And if you make the badge into an add-on for another badge,
+
+173
+0:11:32,200 --> 0:11:35,820
+ the I2C signals are passed through out to this connector
+
+174
+0:11:35,820 --> 0:11:39,320
+ so you can add sensors or buttons or whatever
+
+175
+0:11:40,360 --> 0:11:44,940
+ in this sort of series of add-ons via this badge
+
+176
+0:11:44,940 --> 0:11:46,820
+ on to other badges.
+
+177
+0:11:49,000 --> 0:11:51,000
+ And also, yeah, I have all the connectors.
+
+178
+0:11:53,000 --> 0:11:57,480
+ This is a little indication of how it will look
+
+179
+0:11:57,480 --> 0:12:00,920
+ when you add the badge as an add-on.
+
+180
+0:12:02,200 --> 0:12:05,380
+ Last year's badge didn't have the connector populated,
+
+181
+0:12:05,380 --> 0:12:07,220
+ but there was a spot for it.
+
+182
+0:12:08,260 --> 0:12:11,040
+ The connectors you can use for last year's badge,
+
+183
+0:12:11,040 --> 0:12:13,660
+ those will also be in the hardware hacking area,
+
+184
+0:12:13,660 --> 0:12:16,060
+ so if you want to add that to your badge.
+
+185
+0:12:20,880 --> 0:12:22,360
+ And then to get people,
+
+186
+0:12:23,000 --> 0:12:26,840
+ you can add a lot of different things to the badge.
+
+187
+0:12:26,840 --> 0:12:28,900
+ So that's how it's going.
+
+188
+0:12:28,900 --> 0:12:31,260
+ We have a bit of little merge things.
+
+189
+0:12:31,260 --> 0:12:34,020
+ And I think for the first five people
+
+190
+0:12:34,020 --> 0:12:36,620
+ who have something blinking on the badge,
+
+191
+0:12:36,620 --> 0:12:39,620
+ the kids, for the kids it's okay to use the little LEDs
+
+192
+0:12:39,620 --> 0:12:41,420
+ that blink themselves.
+
+193
+0:12:41,420 --> 0:12:43,300
+ I think for everybody else,
+
+194
+0:12:43,300 --> 0:12:46,340
+ something else should be controlling the LEDs.
+
+195
+0:12:47,760 --> 0:12:52,760
+ How you do it, I'm open to pretty much anything.
+
+196
+0:12:53,000 --> 0:12:54,320
+ You can use another badge,
+
+197
+0:12:54,320 --> 0:12:55,720
+ but it should be a self-containing thing
+
+198
+0:12:55,720 --> 0:12:58,720
+ that can hang around your neck and have batteries on there.
+
+199
+0:13:00,460 --> 0:13:02,600
+ And if you use another badge,
+
+200
+0:13:02,600 --> 0:13:03,840
+ you should use the connector.
+
+201
+0:13:03,840 --> 0:13:06,440
+ You can't just do random wires.
+
+202
+0:13:08,880 --> 0:13:13,880
+ But I think it's not that difficult.
+
+203
+0:13:14,000 --> 0:13:14,960
+ It should be possible.
+
+204
+0:13:14,960 --> 0:13:19,960
+ And for the first five that come and show a badge blinking,
+
+205
+0:13:20,080 --> 0:13:21,260
+ that'll be a little gift,
+
+206
+0:13:21,260 --> 0:13:23,000
+ one of the little badges that we got
+
+207
+0:13:23,000 --> 0:13:26,360
+ from the sponsor, all these little rulers.
+
+208
+0:13:26,360 --> 0:13:27,240
+ They're very handy.
+
+209
+0:13:27,240 --> 0:13:29,320
+ They have all the little measurements
+
+210
+0:13:29,320 --> 0:13:31,540
+ and the hole sizes and component sizes.
+
+211
+0:13:31,540 --> 0:13:32,780
+ Very, very nifty.
+
+212
+0:13:36,240 --> 0:13:39,460
+ So I would say, happy hacking.
+
+213
+0:13:40,660 --> 0:13:44,960
+ And if there are questions, I'd love to answer.
+
+214
+0:13:44,960 --> 0:13:46,860
+ Yeah, in the back.
+
+215
+0:13:49,920 --> 0:13:52,800
+ That'll be a microphone, also for the stream.
+
+216
+0:13:53,000 --> 0:13:55,800
+ We need the microphone.
+
+217
+0:14:05,400 --> 0:14:07,580
+ In the central connector,
+
+218
+0:14:07,580 --> 0:14:09,400
+ the six pin connector in the middle,
+
+219
+0:14:09,400 --> 0:14:12,580
+ there is a pin called ground,
+
+220
+0:14:12,580 --> 0:14:14,460
+ and ground is clearly connected
+
+221
+0:14:14,460 --> 0:14:18,500
+ to the row of the breadboard called ground.
+
+222
+0:14:18,500 --> 0:14:20,720
+ But there are only three wires going to the corner
+
+223
+0:14:20,720 --> 0:14:22,340
+ that connects to the...
+
+224
+0:14:22,340 --> 0:14:28,980
+ if I remember correctly, all the area in between the little holes are actually ground.
+
+225
+0:14:30,680 --> 0:14:36,600
+ So there's like a flood of copper all the way around, and that is connected to ground.
+
+226
+0:14:39,080 --> 0:14:44,120
+ I have a microscope up in the hardware hacking area, and we can go in and look.
+
+227
+0:14:44,360 --> 0:14:49,340
+ So usually when you look very close to the little path, the round path,
+
+228
+0:14:49,340 --> 0:14:50,980
+ there will be a little extra going out.
+
+229
+0:14:50,980 --> 0:14:56,360
+ So the flood fill on the PCB, we can also open it up in KiCad,
+
+230
+0:14:56,500 --> 0:15:00,280
+ and I can show you how the copper layers are on the batch.
+
+231
+0:15:00,860 --> 0:15:01,240
+ All right.
+
+232
+0:15:02,880 --> 0:15:03,880
+ Other questions?
+
+233
+0:15:13,880 --> 0:15:16,660
+ Yeah, do you have any proximity sensors?
+
+234
+0:15:16,660 --> 0:15:20,420
+ I have a few of these, yeah, Echo.
+
+235
+0:15:20,980 --> 0:15:24,960
+ It's like little modules, but I have a few of those, actually, yeah.
+
+236
+0:15:25,200 --> 0:15:25,400
+ Okay.
+
+237
+0:15:27,060 --> 0:15:27,340
+ Other?
+
+238
+0:15:38,120 --> 0:15:42,740
+ You said you didn't have any Stamak-QT modules, but do you have the wires for the Stamak-QT?
+
+239
+0:15:44,120 --> 0:15:47,280
+ I think I can find one of two if you want to test stuff out.
+
+240
+0:15:47,280 --> 0:15:48,920
+ I have a little collection of my own stuff.
+
+241
+0:15:50,340 --> 0:15:50,900
+ Yeah.
+
+242
+0:15:50,980 --> 0:15:53,640
+ Any other questions?
+
+243
+0:15:56,600 --> 0:15:57,080
+ No?
+
+244
+0:15:57,420 --> 0:16:01,480
+ Then let's give Flummer a hand, both for the talk and the work with the batch.
+
+245
+0:16:02,620 --> 0:16:03,260
+ Thank you.

@@ -1,0 +1,4815 @@
+# Transcribed 2023-11-12T19 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:11,360
+ On stage for the first time to tell about my flamethrowers, or flame devices as I call them, flame effects.
+
+2
+0:00:12,620 --> 0:00:18,720
+ And my talk is called, How to Build Your Own Flamethrower and Not Blow Up Yourself in the Process.
+
+3
+0:00:23,560 --> 0:00:27,060
+ So I made up a small agenda for today's talk.
+
+4
+0:00:27,060 --> 0:00:31,860
+ Of course, since we are working with gas, there's a mandatory safety talk.
+
+5
+0:00:33,500 --> 0:00:35,680
+ Then an overview, how does it work?
+
+6
+0:00:36,380 --> 0:00:41,540
+ A lot of people questioned it after the last couple of days, so I will show you exactly how it works.
+
+7
+0:00:42,280 --> 0:00:45,280
+ What do you need to build your own flamethrower? The parts.
+
+8
+0:00:46,620 --> 0:00:50,360
+ The best practices, improvements, and maybe future plans I have.
+
+9
+0:00:51,440 --> 0:00:54,320
+ I show some videos I shot of the flames in effect.
+
+10
+0:00:55,120 --> 0:00:57,040
+ And I can point out some interesting details.
+
+11
+0:00:57,060 --> 0:01:01,880
+ And in the end, I would like to take the questions you might have.
+
+12
+0:01:04,380 --> 0:01:10,160
+ So first, for all people in hackerspaces and working with fire, you all know rule zero.
+
+13
+0:01:10,900 --> 0:01:13,600
+ Don't be on fire. It's very important.
+
+14
+0:01:14,680 --> 0:01:18,780
+ So please keep in mind rule zero. Don't be on fire.
+
+15
+0:01:20,880 --> 0:01:24,900
+ Then there is this obligatory fire triangle.
+
+16
+0:01:27,600 --> 0:01:29,600
+ To make a fire, you need three things.
+
+17
+0:01:29,600 --> 0:01:33,600
+ You need oxygen, that can be either in the air or in the fuel.
+
+18
+0:01:34,400 --> 0:01:36,400
+ You need fuel, and you need heat.
+
+19
+0:01:36,400 --> 0:01:41,660
+ And heat can be a spark, a flame, sunlight, a chemical reaction.
+
+20
+0:01:42,800 --> 0:01:45,800
+ If you take one of these three away, the flame will die.
+
+21
+0:01:45,800 --> 0:01:51,800
+ So in our case, keep in mind, you're working with gas, if something goes wrong, turn off the gas.
+
+22
+0:01:51,800 --> 0:01:55,800
+ Then you take away this part of the safety triangle.
+
+23
+0:01:57,060 --> 0:01:59,060
+ And then the flame will die.
+
+24
+0:01:59,060 --> 0:02:01,060
+ You can take the oxygen out of the air.
+
+25
+0:02:01,060 --> 0:02:05,060
+ You can take the heat, you can try to blow it out, but I wouldn't recommend that.
+
+26
+0:02:05,060 --> 0:02:09,060
+ So take the fuel away, and the fire will die.
+
+27
+0:02:09,060 --> 0:02:15,060
+ That's very important safety aspect, the fuel of the fire triangle.
+
+28
+0:02:17,060 --> 0:02:21,060
+ Then some properties of propane.
+
+29
+0:02:21,060 --> 0:02:25,060
+ Propane formula is C3H8.
+
+30
+0:02:25,060 --> 0:02:27,060
+ Butane is C4H8.
+
+31
+0:02:27,060 --> 0:02:29,060
+ H10.
+
+32
+0:02:29,060 --> 0:02:35,060
+ It's colorless odourless, and people say, hey, but if I open the gas bottle, I smell it.
+
+33
+0:02:35,060 --> 0:02:39,060
+ That's because there's Mccaptain added, it's ethentyl.
+
+34
+0:02:39,060 --> 0:02:44,060
+ And that's a, you are very sensitive to smell that particular smell.
+
+35
+0:02:44,060 --> 0:02:50,060
+ You only need between a tenth and one parts per billion, and then you can even smell it already.
+
+36
+0:02:50,060 --> 0:02:53,060
+ So it's very handy to detect gas in an early stage.
+
+37
+0:02:55,060 --> 0:02:57,060
+ When you burn one kilo of propane,
+
+38
+0:02:57,060 --> 0:02:59,060
+ it's about two liters.
+
+39
+0:02:59,060 --> 0:03:02,060
+ It's 13.9 kilowatt hours you get from it.
+
+40
+0:03:02,060 --> 0:03:05,060
+ So there's a lot of energy in propane.
+
+41
+0:03:05,060 --> 0:03:07,060
+ The boiling point is minus 42 degrees.
+
+42
+0:03:07,060 --> 0:03:11,060
+ So that means if you open up a bottle and you draw gas from it,
+
+43
+0:03:11,060 --> 0:03:17,060
+ it will immediately start to evaporate and fill up the empty space above the gas in the bottle.
+
+44
+0:03:19,060 --> 0:03:21,060
+ Evaporation costs energy.
+
+45
+0:03:21,060 --> 0:03:24,060
+ So after a while, you will see the bottles freeze up.
+
+46
+0:03:24,060 --> 0:03:27,060
+ And I will tell you what I do to counter that effect.
+
+47
+0:03:27,060 --> 0:03:31,060
+ If you have a perfect combustion of propane,
+
+48
+0:03:31,060 --> 0:03:33,060
+ then you get CO2 on border.
+
+49
+0:03:33,060 --> 0:03:39,060
+ That sounds, yeah, the CO2 part is bad, of course.
+
+50
+0:03:39,060 --> 0:03:41,060
+ But for the rest, you think it's good.
+
+51
+0:03:41,060 --> 0:03:43,060
+ But we don't live in a perfect world.
+
+52
+0:03:43,060 --> 0:03:47,060
+ And you already saw the orange flames from the flamethrowers.
+
+53
+0:03:47,060 --> 0:03:51,060
+ So we don't have a perfect world.
+
+54
+0:03:51,060 --> 0:03:55,060
+ So what happens if you have an incomplete combustion,
+
+55
+0:03:55,060 --> 0:03:57,060
+ you also get carbon.
+
+56
+0:03:57,060 --> 0:04:00,060
+ So soot and carbon monoxide.
+
+57
+0:04:00,060 --> 0:04:03,060
+ But the carbon you will find on the end of the flame tube,
+
+58
+0:04:03,060 --> 0:04:04,060
+ it's all black.
+
+59
+0:04:04,060 --> 0:04:06,060
+ If you touch it, your hands are black.
+
+60
+0:04:06,060 --> 0:04:10,060
+ And the orange flame indicates that you don't have a full combustion.
+
+61
+0:04:10,060 --> 0:04:14,060
+ For us, it's an advantage because if you have a full combustion,
+
+62
+0:04:14,060 --> 0:04:16,060
+ then you would have a blue flame.
+
+63
+0:04:16,060 --> 0:04:21,060
+ And a blue flame is less visible than an orange cloud of fire.
+
+64
+0:04:23,060 --> 0:04:24,060
+ I put these in red
+
+65
+0:04:24,060 --> 0:04:27,060
+ because these are the most important things about propane.
+
+66
+0:04:27,060 --> 0:04:29,060
+ The relative density of propane is 1.56.
+
+67
+0:04:29,060 --> 0:04:31,060
+ That means it's heavier than air.
+
+68
+0:04:31,060 --> 0:04:33,060
+ That's the reason why in most countries
+
+69
+0:04:33,060 --> 0:04:36,060
+ you are not allowed to store gas bottles in your basement.
+
+70
+0:04:36,060 --> 0:04:38,060
+ Because it's heavier than air.
+
+71
+0:04:38,060 --> 0:04:39,060
+ It fills up the room.
+
+72
+0:04:39,060 --> 0:04:41,060
+ If somebody with a cigarette would go down,
+
+73
+0:04:41,060 --> 0:04:43,060
+ the whole house could explode,
+
+74
+0:04:43,060 --> 0:04:45,060
+ or a boat, or where you store it.
+
+75
+0:04:45,060 --> 0:04:49,060
+ That's also the reason why you don't want to be on a festival
+
+76
+0:04:49,060 --> 0:04:52,060
+ and just completely wrap those bottles
+
+77
+0:04:52,060 --> 0:04:53,060
+ or build them into something.
+
+78
+0:04:53,060 --> 0:04:55,060
+ Or build them into a cabin or whatever.
+
+79
+0:04:55,060 --> 0:04:56,060
+ Keep it open.
+
+80
+0:04:56,060 --> 0:04:58,060
+ If you want to shield it from people,
+
+81
+0:04:58,060 --> 0:05:00,060
+ use like these mesh-type structures
+
+82
+0:05:00,060 --> 0:05:02,060
+ that the wind can blow through.
+
+83
+0:05:02,060 --> 0:05:04,060
+ So if there is a leak, the gas will be away.
+
+84
+0:05:04,060 --> 0:05:07,060
+ And it cannot accumulate to make a big explosion.
+
+85
+0:05:07,060 --> 0:05:10,060
+ So always keep in mind it's heavier than air.
+
+86
+0:05:10,060 --> 0:05:12,060
+ It will float around the bottles
+
+87
+0:05:12,060 --> 0:05:14,060
+ and not go up in the air.
+
+88
+0:05:14,060 --> 0:05:17,060
+ Then we have two important abbreviations.
+
+89
+0:05:17,060 --> 0:05:19,060
+ It's the LEL and the UAL.
+
+90
+0:05:19,060 --> 0:05:21,060
+ That's the lower explosive limit
+
+91
+0:05:21,060 --> 0:05:23,060
+ and the upper explosive limit.
+
+92
+0:05:23,060 --> 0:05:25,060
+ Pure propane, you can light it.
+
+93
+0:05:25,060 --> 0:05:27,060
+ If you have 470 degrees or higher,
+
+94
+0:05:27,060 --> 0:05:29,060
+ propane will burn.
+
+95
+0:05:29,060 --> 0:05:31,060
+ But it won't explode.
+
+96
+0:05:31,060 --> 0:05:34,060
+ Explosion, you need 2.1% or 9.5%.
+
+97
+0:05:34,060 --> 0:05:36,060
+ If you are between that,
+
+98
+0:05:36,060 --> 0:05:38,060
+ you have an explosive mixture.
+
+99
+0:05:38,060 --> 0:05:40,060
+ One liter of propane expands
+
+100
+0:05:40,060 --> 0:05:43,060
+ to about three cubic meters of gas.
+
+101
+0:05:43,060 --> 0:05:45,060
+ So to have an explosive mixture,
+
+102
+0:05:45,060 --> 0:05:47,060
+ then you need 30 cubic meters
+
+103
+0:05:47,060 --> 0:05:49,060
+ totally air and gas.
+
+104
+0:05:49,060 --> 0:05:51,060
+ So imagine if that blows up,
+
+105
+0:05:51,060 --> 0:05:53,060
+ you have like a huge fireball.
+
+106
+0:05:53,060 --> 0:05:56,060
+ And that's only one liter of propane.
+
+107
+0:05:56,060 --> 0:05:58,060
+ So that's the upper and lower
+
+108
+0:05:58,060 --> 0:06:00,060
+ explosive limit.
+
+109
+0:06:00,060 --> 0:06:02,060
+ The gas tension in a bottle
+
+110
+0:06:02,060 --> 0:06:04,060
+ at room temperature is 8.3 bars.
+
+111
+0:06:04,060 --> 0:06:06,060
+ This is the, yeah,
+
+112
+0:06:06,060 --> 0:06:08,060
+ if you do flame effects like we do,
+
+113
+0:06:08,060 --> 0:06:10,060
+ it's the most important thing
+
+114
+0:06:10,060 --> 0:06:12,060
+ because you have 8.3 bars
+
+115
+0:06:12,060 --> 0:06:14,060
+ which you can turn down
+
+116
+0:06:14,060 --> 0:06:16,060
+ with a high pressure regulator.
+
+117
+0:06:16,060 --> 0:06:17,060
+ But when you draw gas,
+
+118
+0:06:17,060 --> 0:06:19,060
+ the evaporation causes energy.
+
+119
+0:06:19,060 --> 0:06:20,060
+ The bottle gets cold.
+
+120
+0:06:20,060 --> 0:06:21,060
+ It freezes up.
+
+121
+0:06:21,060 --> 0:06:22,060
+ The temperature drops.
+
+122
+0:06:22,060 --> 0:06:25,060
+ And also the pressure in your bottle will drop
+
+123
+0:06:25,060 --> 0:06:27,060
+ to the point that hardly anything comes out.
+
+124
+0:06:27,060 --> 0:06:29,060
+ You can see that at night when we start,
+
+125
+0:06:29,060 --> 0:06:30,060
+ we have big flames.
+
+126
+0:06:30,060 --> 0:06:31,060
+ And over time,
+
+127
+0:06:31,060 --> 0:06:33,060
+ you will see them getting lower.
+
+128
+0:06:33,060 --> 0:06:35,060
+ That's not only the gas running out.
+
+129
+0:06:35,060 --> 0:06:37,060
+ It's also the bottle freezing up.
+
+130
+0:06:37,060 --> 0:06:41,060
+ So we have to fight the freezing of the bottle.
+
+131
+0:06:41,060 --> 0:06:43,060
+ And I come back to that later.
+
+132
+0:06:46,060 --> 0:06:48,060
+ So then if you make an effect yourself,
+
+133
+0:06:48,060 --> 0:06:50,060
+ safety is important.
+
+134
+0:06:50,060 --> 0:06:51,060
+ In the Netherlands,
+
+135
+0:06:51,060 --> 0:06:53,060
+ the fire brigade comes and they check.
+
+136
+0:06:53,060 --> 0:06:55,060
+ So they ask you to flame it, to fire it.
+
+137
+0:06:55,060 --> 0:06:57,060
+ They measure the distance.
+
+138
+0:06:57,060 --> 0:06:59,060
+ And they said a safe distance would be
+
+139
+0:06:59,060 --> 0:07:01,060
+ at least five meters, preferably more.
+
+140
+0:07:01,060 --> 0:07:03,060
+ So that's the reason I always want to
+
+141
+0:07:03,060 --> 0:07:05,060
+ mount them up in towers
+
+142
+0:07:05,060 --> 0:07:07,060
+ six meters up, nine meters up.
+
+143
+0:07:07,060 --> 0:07:10,060
+ That makes them visible over the whole terrain
+
+144
+0:07:10,060 --> 0:07:13,060
+ and immediately fills in that requirement
+
+145
+0:07:13,060 --> 0:07:14,060
+ by the fire brigade
+
+146
+0:07:14,060 --> 0:07:16,060
+ to have them at least five meters away
+
+147
+0:07:16,060 --> 0:07:18,060
+ so people can stand next to your tower
+
+148
+0:07:18,060 --> 0:07:20,060
+ and still be in the safe area.
+
+149
+0:07:21,060 --> 0:07:24,060
+ But more is better.
+
+150
+0:07:24,060 --> 0:07:26,060
+ Always try to mount on something metal.
+
+151
+0:07:26,060 --> 0:07:27,060
+ They are on the container.
+
+152
+0:07:27,060 --> 0:07:30,060
+ The container won't combust or bust in flames.
+
+153
+0:07:30,060 --> 0:07:32,060
+ It's a metal.
+
+154
+0:07:32,060 --> 0:07:34,060
+ You can do truss as well.
+
+155
+0:07:34,060 --> 0:07:36,060
+ You can make clamps.
+
+156
+0:07:36,060 --> 0:07:39,060
+ So make them solid
+
+157
+0:07:39,060 --> 0:07:42,060
+ and make sure they can tip over or fall over.
+
+158
+0:07:42,060 --> 0:07:44,060
+ In my future projects, I will make a sensor.
+
+159
+0:07:44,060 --> 0:07:46,060
+ If it does tip, it doesn't fire.
+
+160
+0:07:46,060 --> 0:07:54,060
+ So now we have the safety stuff.
+
+161
+0:07:54,060 --> 0:07:56,060
+ So now it's time to go.
+
+162
+0:07:56,060 --> 0:07:59,060
+ What if something does go wrong?
+
+163
+0:07:59,060 --> 0:08:01,060
+ Of course, you can build something yourself
+
+164
+0:08:01,060 --> 0:08:04,060
+ in your backyard or maybe at your hackerspace.
+
+165
+0:08:04,060 --> 0:08:07,060
+ You try it and something is not working as you planned.
+
+166
+0:08:07,060 --> 0:08:11,060
+ The pilot flame is way higher than you expected.
+
+167
+0:08:11,060 --> 0:08:13,060
+ It can go sideways.
+
+168
+0:08:13,060 --> 0:08:15,060
+ You're like, okay, that's not good.
+
+169
+0:08:15,060 --> 0:08:18,060
+ Maybe your valve will turn or whatever.
+
+170
+0:08:18,060 --> 0:08:20,060
+ So always stay calm.
+
+171
+0:08:20,060 --> 0:08:22,060
+ It's propane.
+
+172
+0:08:22,060 --> 0:08:23,060
+ It's burning.
+
+173
+0:08:23,060 --> 0:08:25,060
+ If you start to panic,
+
+174
+0:08:25,060 --> 0:08:27,060
+ nasty stuff can happen.
+
+175
+0:08:27,060 --> 0:08:29,060
+ So just remain calm.
+
+176
+0:08:29,060 --> 0:08:31,060
+ Shut down the gas.
+
+177
+0:08:31,060 --> 0:08:34,060
+ I mean, you take away the fuel in the fire triangle.
+
+178
+0:08:34,060 --> 0:08:36,060
+ So you take away the fire
+
+179
+0:08:36,060 --> 0:08:38,060
+ and it will slowly go out.
+
+180
+0:08:38,060 --> 0:08:42,060
+ If you can and you have a filled storage buffer,
+
+181
+0:08:42,060 --> 0:08:43,060
+ you can fire it.
+
+182
+0:08:43,060 --> 0:08:45,060
+ If you see it's safe to go,
+
+183
+0:08:45,060 --> 0:08:47,060
+ just let all the gas go.
+
+184
+0:08:47,060 --> 0:08:49,060
+ And then immediately, of course,
+
+185
+0:08:49,060 --> 0:08:51,060
+ most of the gas is gone
+
+186
+0:08:51,060 --> 0:08:53,060
+ and then it will even go out faster.
+
+187
+0:08:53,060 --> 0:08:55,060
+ But only do that if it's possible.
+
+188
+0:08:55,060 --> 0:08:57,060
+ Else, just let it burn slowly.
+
+189
+0:08:57,060 --> 0:08:59,060
+ If you mount it on something metal
+
+190
+0:08:59,060 --> 0:09:01,060
+ or stay away from it,
+
+191
+0:09:01,060 --> 0:09:04,060
+ it can slowly die, the flame.
+
+192
+0:09:04,060 --> 0:09:05,060
+ And remember rule zero.
+
+193
+0:09:05,060 --> 0:09:07,060
+ Don't go there and try to do stuff
+
+194
+0:09:07,060 --> 0:09:08,060
+ when it's burning.
+
+195
+0:09:08,060 --> 0:09:10,060
+ Don't put yourself in danger.
+
+196
+0:09:10,060 --> 0:09:12,060
+ Stay at a safe distance.
+
+197
+0:09:12,060 --> 0:09:14,060
+ And then on the camp,
+
+198
+0:09:14,060 --> 0:09:16,060
+ if you see me running,
+
+199
+0:09:16,060 --> 0:09:17,060
+ try to keep up.
+
+200
+0:09:20,060 --> 0:09:21,060
+ So that was the safety stuff.
+
+201
+0:09:21,060 --> 0:09:22,060
+ That is very important.
+
+202
+0:09:22,060 --> 0:09:25,060
+ And I hope you all use that
+
+203
+0:09:25,060 --> 0:09:26,060
+ and use this knowledge
+
+204
+0:09:26,060 --> 0:09:28,060
+ to build your own effects.
+
+205
+0:09:28,060 --> 0:09:30,060
+ So now, of course,
+
+206
+0:09:30,060 --> 0:09:31,060
+ people want to know,
+
+207
+0:09:31,060 --> 0:09:32,060
+ how does it work?
+
+208
+0:09:32,060 --> 0:09:35,060
+ Well, this is the flamethrower
+
+209
+0:09:35,060 --> 0:09:36,060
+ or the flame effect
+
+210
+0:09:36,060 --> 0:09:38,060
+ that is on the left-hand side.
+
+211
+0:09:38,060 --> 0:09:40,060
+ I keep using the words
+
+212
+0:09:40,060 --> 0:09:42,060
+ flamethrower and flame effect.
+
+213
+0:09:42,060 --> 0:09:44,060
+ I try to avoid the word flame
+
+214
+0:09:44,060 --> 0:09:46,060
+ because, A,
+
+215
+0:09:46,060 --> 0:09:48,060
+ when you contact a hacker camp
+
+216
+0:09:48,060 --> 0:09:50,060
+ or a hacker festival,
+
+217
+0:09:50,060 --> 0:09:51,060
+ and you say,
+
+218
+0:09:51,060 --> 0:09:52,060
+ hey, I'm bringing a flamethrower,
+
+219
+0:09:52,060 --> 0:09:53,060
+ people think you bring
+
+220
+0:09:53,060 --> 0:09:54,060
+ a portable device
+
+221
+0:09:54,060 --> 0:09:56,060
+ that sprays liquid flames
+
+222
+0:09:56,060 --> 0:09:57,060
+ in a tent-y environment
+
+223
+0:09:57,060 --> 0:09:58,060
+ with lots of tents and stuff,
+
+224
+0:09:58,060 --> 0:09:59,060
+ which is flammable.
+
+225
+0:09:59,060 --> 0:10:00,060
+ It's not a good idea,
+
+226
+0:10:00,060 --> 0:10:02,060
+ so it will scare them away.
+
+227
+0:10:02,060 --> 0:10:03,060
+ But more importantly,
+
+228
+0:10:03,060 --> 0:10:05,060
+ I found out in practice
+
+229
+0:10:05,060 --> 0:10:07,060
+ that if you travel across Europe
+
+230
+0:10:07,060 --> 0:10:09,060
+ and Border Patrol asks
+
+231
+0:10:09,060 --> 0:10:10,060
+ what you are bringing,
+
+232
+0:10:10,060 --> 0:10:11,060
+ and you say,
+
+233
+0:10:11,060 --> 0:10:12,060
+ oh, I bring lasers and flamethrowers,
+
+234
+0:10:12,060 --> 0:10:14,060
+ you can immediately empty your whole car,
+
+235
+0:10:14,060 --> 0:10:16,060
+ and if you just say,
+
+236
+0:10:16,060 --> 0:10:17,060
+ I bring stage effects
+
+237
+0:10:17,060 --> 0:10:19,060
+ and flame effects,
+
+238
+0:10:19,060 --> 0:10:21,060
+ or you say just stage effects
+
+239
+0:10:21,060 --> 0:10:22,060
+ and lasers,
+
+240
+0:10:22,060 --> 0:10:23,060
+ they're like,
+
+241
+0:10:23,060 --> 0:10:24,060
+ oh, this is a laser guy or something,
+
+242
+0:10:24,060 --> 0:10:25,060
+ and then you can go on
+
+243
+0:10:25,060 --> 0:10:27,060
+ and just continue your trip,
+
+244
+0:10:27,060 --> 0:10:28,060
+ and else it takes you an hour
+
+245
+0:10:28,060 --> 0:10:29,060
+ to unpack and pack
+
+246
+0:10:29,060 --> 0:10:31,060
+ and explain every little detail
+
+247
+0:10:31,060 --> 0:10:33,060
+ to the Border Patrol.
+
+248
+0:10:33,060 --> 0:10:35,060
+ So try to avoid the word flamethrower.
+
+249
+0:10:35,060 --> 0:10:37,060
+ I rather use flame effect.
+
+250
+0:10:37,060 --> 0:10:40,060
+ So then, how does it work?
+
+251
+0:10:40,060 --> 0:10:42,060
+ We have the high-pressure gas.
+
+252
+0:10:42,060 --> 0:10:44,060
+ In the bottle, it's eight bars.
+
+253
+0:10:44,060 --> 0:10:48,060
+ So we bring it down,
+
+254
+0:10:48,060 --> 0:10:49,060
+ the eight bars,
+
+255
+0:10:49,060 --> 0:10:51,060
+ we bring it down
+
+256
+0:10:51,060 --> 0:10:53,060
+ to something more,
+
+257
+0:10:53,060 --> 0:10:55,060
+ yeah, handleable,
+
+258
+0:10:55,060 --> 0:10:58,060
+ like in between 1.5, 3 bars, 4 bars.
+
+259
+0:10:58,060 --> 0:11:01,060
+ The regulators you can use for that
+
+260
+0:11:01,060 --> 0:11:03,060
+ is the ones, for instance,
+
+261
+0:11:03,060 --> 0:11:05,060
+ you can use for the wheat burners.
+
+262
+0:11:05,060 --> 0:11:06,060
+ You have those wheat burners
+
+263
+0:11:06,060 --> 0:11:08,060
+ to burn the wheat in your garden.
+
+264
+0:11:08,060 --> 0:11:11,060
+ They have a high volume
+
+265
+0:11:11,060 --> 0:11:14,060
+ or high-capacity regulator.
+
+266
+0:11:14,060 --> 0:11:16,060
+ The barbecue regulator,
+
+267
+0:11:16,060 --> 0:11:17,060
+ we'll come to that later,
+
+268
+0:11:17,060 --> 0:11:18,060
+ that's not enough.
+
+269
+0:11:18,060 --> 0:11:20,060
+ That's only 30 millibars,
+
+270
+0:11:20,060 --> 0:11:24,060
+ and we want 3,000 millibars.
+
+271
+0:11:24,060 --> 0:11:26,060
+ So we need more.
+
+272
+0:11:26,060 --> 0:11:28,060
+ So don't use a barbecue regulator
+
+273
+0:11:28,060 --> 0:11:30,060
+ because it will take ages,
+
+274
+0:11:30,060 --> 0:11:32,060
+ and then the pressure in the bottle
+
+275
+0:11:32,060 --> 0:11:33,060
+ will be low.
+
+276
+0:11:33,060 --> 0:11:36,060
+ So you need a high-pressure regulator.
+
+277
+0:11:36,060 --> 0:11:37,060
+ As you can see,
+
+278
+0:11:37,060 --> 0:11:39,060
+ we go through the barbecue regulator,
+
+279
+0:11:39,060 --> 0:11:43,060
+ which is there to feed the pilot flame.
+
+280
+0:11:43,060 --> 0:11:46,060
+ So it will go up in low pressure,
+
+281
+0:11:46,060 --> 0:11:47,060
+ indicated in blue,
+
+282
+0:11:47,060 --> 0:11:49,060
+ it will go up.
+
+283
+0:11:49,060 --> 0:11:50,060
+ It's a copper tube,
+
+284
+0:11:50,060 --> 0:11:52,060
+ and there's holes in it,
+
+285
+0:11:52,060 --> 0:11:55,060
+ and around it is steel wool.
+
+286
+0:11:55,060 --> 0:11:57,060
+ So the stuff you put in your pants
+
+287
+0:11:57,060 --> 0:11:58,060
+ to clean your pants,
+
+288
+0:11:58,060 --> 0:11:59,060
+ to scrub them,
+
+289
+0:11:59,060 --> 0:12:01,060
+ that's there to avoid
+
+290
+0:12:01,060 --> 0:12:04,060
+ the flame being blown out by the wind
+
+291
+0:12:04,060 --> 0:12:07,060
+ and also blown out by the gas.
+
+292
+0:12:07,060 --> 0:12:09,060
+ As you learned,
+
+293
+0:12:09,060 --> 0:12:11,060
+ pure propane isn't explosive.
+
+294
+0:12:11,060 --> 0:12:12,060
+ You can light it,
+
+295
+0:12:12,060 --> 0:12:14,060
+ but it's not explosive.
+
+296
+0:12:14,060 --> 0:12:16,060
+ So if it comes out of the bottle,
+
+297
+0:12:16,060 --> 0:12:17,060
+ it's pure,
+
+298
+0:12:17,060 --> 0:12:19,060
+ and the pressure is free bars,
+
+299
+0:12:19,060 --> 0:12:21,060
+ so it can blow out the pilot flame.
+
+300
+0:12:21,060 --> 0:12:23,060
+ So what you want is to have steel wool in the top
+
+301
+0:12:23,060 --> 0:12:25,060
+ that will trap a bit of the gas
+
+302
+0:12:25,060 --> 0:12:27,060
+ and burn slowly.
+
+303
+0:12:27,060 --> 0:12:29,060
+ So if you blow a lot of propane through it,
+
+304
+0:12:29,060 --> 0:12:34,060
+ there's always some residual gas in there,
+
+305
+0:12:34,060 --> 0:12:36,060
+ so your flame will come up.
+
+306
+0:12:36,060 --> 0:12:38,060
+ You can see it very well on the middle one
+
+307
+0:12:38,060 --> 0:12:39,060
+ we have at Bornack.
+
+308
+0:12:39,060 --> 0:12:40,060
+ If you fire it,
+
+309
+0:12:40,060 --> 0:12:41,060
+ you'll see it goes down,
+
+310
+0:12:41,060 --> 0:12:43,060
+ and it goes back up again.
+
+311
+0:12:43,060 --> 0:12:45,060
+ So that's the gas that's inside the steel wool
+
+312
+0:12:45,060 --> 0:12:47,060
+ that keeps the flame burning.
+
+313
+0:12:50,060 --> 0:12:51,060
+ So this is your pilot flame.
+
+314
+0:12:51,060 --> 0:12:53,060
+ It's roughly about 50 centimeters.
+
+315
+0:12:53,060 --> 0:12:56,060
+ There's people that make this recalible.
+
+316
+0:12:56,060 --> 0:12:59,060
+ They put a small reculator or a tap in between,
+
+317
+0:12:59,060 --> 0:13:00,060
+ and you can even turn it down.
+
+318
+0:13:00,060 --> 0:13:02,060
+ So if you don't want a big flame,
+
+319
+0:13:02,060 --> 0:13:04,060
+ because if you leave it running,
+
+320
+0:13:04,060 --> 0:13:05,060
+ it looks really nice,
+
+321
+0:13:05,060 --> 0:13:08,060
+ but it also can already freeze up the bottle,
+
+322
+0:13:08,060 --> 0:13:10,060
+ and you need that pressure for when you shoot it.
+
+323
+0:13:10,060 --> 0:13:12,060
+ So you can turn it down a little.
+
+324
+0:13:12,060 --> 0:13:14,060
+ So if you can find a rec,
+
+325
+0:13:14,060 --> 0:13:17,060
+ one that is being able to be adjusted,
+
+326
+0:13:17,060 --> 0:13:18,060
+ that's even better.
+
+327
+0:13:20,060 --> 0:13:22,060
+ So then the high-pressure gas also goes straight on
+
+328
+0:13:22,060 --> 0:13:24,060
+ to the T-split,
+
+329
+0:13:24,060 --> 0:13:26,060
+ and it will fill the storage buffer,
+
+330
+0:13:26,060 --> 0:13:28,060
+ which is, in my case,
+
+331
+0:13:28,060 --> 0:13:30,060
+ an old fire extinguisher.
+
+332
+0:13:30,060 --> 0:13:33,060
+ The only remark I got from the Dutch fire brigade is,
+
+333
+0:13:33,060 --> 0:13:35,060
+ you can paint it black
+
+334
+0:13:35,060 --> 0:13:37,060
+ because it might confuse people.
+
+335
+0:13:37,060 --> 0:13:39,060
+ They think it's a fire extinguishing device,
+
+336
+0:13:39,060 --> 0:13:41,060
+ but it's the opposite.
+
+337
+0:13:41,060 --> 0:13:42,060
+ So if you make it black,
+
+338
+0:13:42,060 --> 0:13:45,060
+ it won't confuse people.
+
+339
+0:13:45,060 --> 0:13:47,060
+ I use the large ones.
+
+340
+0:13:47,060 --> 0:13:51,060
+ It's the six-kilogram CO2 bottle.
+
+341
+0:13:51,060 --> 0:13:53,060
+ But as a test, I did a small one here
+
+342
+0:13:53,060 --> 0:13:55,060
+ in the middle and bone heck,
+
+343
+0:13:55,060 --> 0:13:57,060
+ and that one actually works quite good.
+
+344
+0:13:57,060 --> 0:13:59,060
+ And the advantage is it fills faster,
+
+345
+0:13:59,060 --> 0:14:02,060
+ so you can do .
+
+346
+0:14:02,060 --> 0:14:04,060
+ You can play songs with it.
+
+347
+0:14:04,060 --> 0:14:06,060
+ So it's really cool.
+
+348
+0:14:06,060 --> 0:14:07,060
+ But then you need a valve
+
+349
+0:14:07,060 --> 0:14:08,060
+ that holds in the gas
+
+350
+0:14:08,060 --> 0:14:11,060
+ until the moment it's there to fire it.
+
+351
+0:14:11,060 --> 0:14:14,060
+ I use the two 30-volts
+
+352
+0:14:14,060 --> 0:14:17,060
+ because I think they are a little faster
+
+353
+0:14:17,060 --> 0:14:19,060
+ than the 12- and 24-volts,
+
+354
+0:14:19,060 --> 0:14:22,060
+ but basically it's a coil that opens the valve.
+
+355
+0:14:22,060 --> 0:14:25,060
+ And for me it's easier as I use a switchback,
+
+356
+0:14:25,060 --> 0:14:28,060
+ which is a DMX-controlled box
+
+357
+0:14:28,060 --> 0:14:30,060
+ with four outlets.
+
+358
+0:14:30,060 --> 0:14:31,060
+ I just put the plugs in,
+
+359
+0:14:31,060 --> 0:14:33,060
+ and then I can send the DMX signal
+
+360
+0:14:33,060 --> 0:14:35,060
+ to open the valve.
+
+361
+0:14:35,060 --> 0:14:36,060
+ So that's easy for me.
+
+362
+0:14:36,060 --> 0:14:37,060
+ But you can, of course,
+
+363
+0:14:37,060 --> 0:14:40,060
+ use Arduinos with relay boards
+
+364
+0:14:40,060 --> 0:14:43,060
+ and use 12- and 24-volts.
+
+365
+0:14:43,060 --> 0:14:44,060
+ If you want to go really fast,
+
+366
+0:14:44,060 --> 0:14:46,060
+ that's my future projects,
+
+367
+0:14:46,060 --> 0:14:50,060
+ then you can use an air-assisted valve.
+
+368
+0:14:50,060 --> 0:14:54,060
+ The air-assisted valve requires a compressor,
+
+369
+0:14:54,060 --> 0:14:56,060
+ which will power the valve,
+
+370
+0:14:56,060 --> 0:14:58,060
+ and at the moment you switch it open,
+
+371
+0:14:58,060 --> 0:15:01,060
+ it not only uses the magnetic power
+
+372
+0:15:01,060 --> 0:15:02,060
+ to open up the valve,
+
+373
+0:15:02,060 --> 0:15:04,060
+ but it also uses the compressed air,
+
+374
+0:15:04,060 --> 0:15:06,060
+ so it will really go very fast.
+
+375
+0:15:06,060 --> 0:15:07,060
+ It will open.
+
+376
+0:15:07,060 --> 0:15:09,060
+ And that's a requirement you need
+
+377
+0:15:09,060 --> 0:15:12,060
+ for larger diameter valves.
+
+378
+0:15:16,060 --> 0:15:18,060
+ And then when you open the valve,
+
+379
+0:15:18,060 --> 0:15:21,060
+ the high-pressure gas shoots out through a flame.
+
+380
+0:15:21,060 --> 0:15:22,060
+ As we learned,
+
+381
+0:15:22,060 --> 0:15:24,060
+ 470 degrees is enough to light it.
+
+382
+0:15:24,060 --> 0:15:26,060
+ The propane is still pure
+
+383
+0:15:26,060 --> 0:15:29,060
+ when it comes out of the tube.
+
+384
+0:15:29,060 --> 0:15:30,060
+ So in the movies,
+
+385
+0:15:30,060 --> 0:15:31,060
+ I'll show you later on,
+
+386
+0:15:31,060 --> 0:15:32,060
+ you will see sometimes
+
+387
+0:15:32,060 --> 0:15:34,060
+ that it doesn't burn for the first 50 centimeters
+
+388
+0:15:34,060 --> 0:15:36,060
+ because it's pure propane.
+
+389
+0:15:36,060 --> 0:15:37,060
+ The air is getting mixed in,
+
+390
+0:15:37,060 --> 0:15:39,060
+ and then it shoots up in the flame.
+
+391
+0:15:39,060 --> 0:15:40,060
+ And you will see also
+
+392
+0:15:40,060 --> 0:15:42,060
+ that the flame sometimes climbs.
+
+393
+0:15:42,060 --> 0:15:45,060
+ So first the propane shoots up and evaporates,
+
+394
+0:15:45,060 --> 0:15:46,060
+ makes a combustible mixture,
+
+395
+0:15:46,060 --> 0:15:48,060
+ and then the flame follows.
+
+396
+0:15:48,060 --> 0:15:50,060
+ So it climbs up the flame.
+
+397
+0:15:54,060 --> 0:15:56,060
+ So now about the parts I use.
+
+398
+0:15:56,060 --> 0:15:59,060
+ It's all very easy parts.
+
+399
+0:15:59,060 --> 0:16:03,060
+ You can find them anywhere.
+
+400
+0:16:03,060 --> 0:16:05,060
+ First you need a...
+
+401
+0:16:06,060 --> 0:16:07,060
+ like a vessel,
+
+402
+0:16:07,060 --> 0:16:08,060
+ a fat,
+
+403
+0:16:08,060 --> 0:16:11,060
+ a barrel to hold in the gas.
+
+404
+0:16:11,060 --> 0:16:13,060
+ So it needs to be gas-tight.
+
+405
+0:16:13,060 --> 0:16:15,060
+ I use the fire extinguisher
+
+406
+0:16:15,060 --> 0:16:16,060
+ because these,
+
+407
+0:16:16,060 --> 0:16:17,060
+ when they are pressurized,
+
+408
+0:16:17,060 --> 0:16:19,060
+ there are between 40 and 60 bars of CO2 in there.
+
+409
+0:16:19,060 --> 0:16:22,060
+ But it means their rating is like 200 bars.
+
+410
+0:16:22,060 --> 0:16:24,060
+ And we are only using two free bars.
+
+411
+0:16:24,060 --> 0:16:26,060
+ So you know you're on the safe side.
+
+412
+0:16:26,060 --> 0:16:27,060
+ You have something that's cheap,
+
+413
+0:16:27,060 --> 0:16:29,060
+ people often throw them away,
+
+414
+0:16:29,060 --> 0:16:30,060
+ or you can get them from companies
+
+415
+0:16:30,060 --> 0:16:33,060
+ when they are not being used anymore
+
+416
+0:16:33,060 --> 0:16:35,060
+ or not within the specified date.
+
+417
+0:16:36,060 --> 0:16:37,060
+ And for us it's good.
+
+418
+0:16:37,060 --> 0:16:39,060
+ I also have diving cylinders,
+
+419
+0:16:39,060 --> 0:16:42,060
+ all diving cylinders of the German fire department,
+
+420
+0:16:42,060 --> 0:16:44,060
+ which they use for compressed air.
+
+421
+0:16:44,060 --> 0:16:47,060
+ Also ones for rescue from the fire brigade
+
+422
+0:16:47,060 --> 0:16:49,060
+ to have oxygen when they go into fires
+
+423
+0:16:49,060 --> 0:16:50,060
+ with the oxygen mask.
+
+424
+0:16:50,060 --> 0:16:55,060
+ These also run out of a certain certification date.
+
+425
+0:16:55,060 --> 0:16:58,060
+ So these bottles are all very well to use
+
+426
+0:16:58,060 --> 0:17:01,060
+ and they all have a nice thread in the top.
+
+427
+0:17:01,060 --> 0:17:03,060
+ This one is three quarters of an inch.
+
+428
+0:17:03,060 --> 0:17:06,060
+ So you can use standard piping like this.
+
+429
+0:17:06,060 --> 0:17:11,060
+ So these are just very cheap pipes,
+
+430
+0:17:11,060 --> 0:17:14,060
+ which you can just buy with the tool station
+
+431
+0:17:14,060 --> 0:17:16,060
+ or your do-it-yourself shop.
+
+432
+0:17:16,060 --> 0:17:19,060
+ It's three quarters of an inch and they turn,
+
+433
+0:17:19,060 --> 0:17:21,060
+ you can screw them into this bottle.
+
+434
+0:17:21,060 --> 0:17:24,060
+ It's all parts like this tube is,
+
+435
+0:17:24,060 --> 0:17:26,060
+ I think, two euros or something.
+
+436
+0:17:26,060 --> 0:17:28,060
+ And the T-split is like three euros.
+
+437
+0:17:28,060 --> 0:17:30,060
+ So you can use very cheap parts.
+
+438
+0:17:30,060 --> 0:17:32,060
+ I think the whole thing can be built
+
+439
+0:17:32,060 --> 0:17:34,060
+ for under 100 euros, easy.
+
+440
+0:17:36,060 --> 0:17:39,060
+ You need a magnetic valve.
+
+441
+0:17:39,060 --> 0:17:43,060
+ Most ones are capable of doing one megapascal,
+
+442
+0:17:43,060 --> 0:17:44,060
+ which is 10 bars.
+
+443
+0:17:44,060 --> 0:17:47,060
+ Sometimes you can even go up to 16 bars.
+
+444
+0:17:47,060 --> 0:17:50,060
+ Well, we're using two to three bars,
+
+445
+0:17:50,060 --> 0:17:53,060
+ maybe sometimes four if you really want a big flame.
+
+446
+0:17:53,060 --> 0:17:55,060
+ If you go higher, you will probably see,
+
+447
+0:17:55,060 --> 0:17:56,060
+ even with the steel wool,
+
+448
+0:17:56,060 --> 0:17:58,060
+ you will blow out the pilot flame.
+
+449
+0:17:58,060 --> 0:18:00,060
+ So you can buy a six bar regulator,
+
+450
+0:18:00,060 --> 0:18:02,060
+ turn it all the way up.
+
+451
+0:18:02,060 --> 0:18:03,060
+ It might work
+
+452
+0:18:03,060 --> 0:18:06,060
+ or you might make the pilot flame bigger.
+
+453
+0:18:06,060 --> 0:18:07,060
+ Or more turns,
+
+454
+0:18:07,060 --> 0:18:10,060
+ but you will see at above four or five bars,
+
+455
+0:18:10,060 --> 0:18:11,060
+ you will blow it out anyway
+
+456
+0:18:11,060 --> 0:18:14,060
+ because there's so much propane coming through
+
+457
+0:18:14,060 --> 0:18:16,060
+ and it's still not combustible at the moment.
+
+458
+0:18:16,060 --> 0:18:17,060
+ So it will just douse the flame.
+
+459
+0:18:17,060 --> 0:18:20,060
+ So basically you make some sort of fire extinguisher
+
+460
+0:18:20,060 --> 0:18:23,060
+ from the fire extinguisher with gas.
+
+461
+0:18:23,060 --> 0:18:26,060
+ So yeah, you have to have a valve
+
+462
+0:18:26,060 --> 0:18:28,060
+ that can switch to 10 bars.
+
+463
+0:18:28,060 --> 0:18:30,060
+ And the seals are very important.
+
+464
+0:18:30,060 --> 0:18:32,060
+ You have phyton seals, NBR,
+
+465
+0:18:32,060 --> 0:18:35,060
+ which is something called nitrile butane rubber.
+
+466
+0:18:35,060 --> 0:18:40,060
+ Different seals are there for different gases or liquids.
+
+467
+0:18:40,060 --> 0:18:44,060
+ So some valves are very good in switching water.
+
+468
+0:18:44,060 --> 0:18:46,060
+ Others are better for switching gas.
+
+469
+0:18:46,060 --> 0:18:49,060
+ So do some research to which seals you use.
+
+470
+0:18:49,060 --> 0:18:51,060
+ I have a mix of phyton and NBR.
+
+471
+0:18:51,060 --> 0:18:53,060
+ And for gas, they work.
+
+472
+0:18:53,060 --> 0:18:55,060
+ But if you want to do other stuff,
+
+473
+0:18:55,060 --> 0:18:57,060
+ you have to check the valves.
+
+474
+0:18:57,060 --> 0:19:00,060
+ And some valves are not suitable for gas.
+
+475
+0:19:00,060 --> 0:19:02,060
+ So don't use those.
+
+476
+0:19:02,060 --> 0:19:06,060
+ I already talked about the high-pressure regulator,
+
+477
+0:19:06,060 --> 0:19:08,060
+ the wheat burner or just a regulator.
+
+478
+0:19:08,060 --> 0:19:12,060
+ Here in Denmark, I saw they have the clip-on stuff.
+
+479
+0:19:12,060 --> 0:19:15,060
+ A lot of them have the barbecue regulator built in.
+
+480
+0:19:15,060 --> 0:19:17,060
+ You don't want that one.
+
+481
+0:19:17,060 --> 0:19:19,060
+ And a lot of them are 0 to 2 bars.
+
+482
+0:19:19,060 --> 0:19:20,060
+ You can still fire.
+
+483
+0:19:20,060 --> 0:19:22,060
+ Yesterday we fired with 2 bars.
+
+484
+0:19:22,060 --> 0:19:23,060
+ It looked good.
+
+485
+0:19:23,060 --> 0:19:25,060
+ But if you really want to refill faster,
+
+486
+0:19:25,060 --> 0:19:27,060
+ you need more pressure.
+
+487
+0:19:27,060 --> 0:19:30,060
+ So the pressure makes more pressure in the barrel.
+
+488
+0:19:30,060 --> 0:19:31,060
+ It makes sometimes the flame go higher.
+
+489
+0:19:31,060 --> 0:19:35,060
+ But it also makes the bottle recharge faster.
+
+490
+0:19:35,060 --> 0:19:37,060
+ So you can fire faster.
+
+491
+0:19:37,060 --> 0:19:40,060
+ Now you see it takes 5 seconds to charge.
+
+492
+0:19:40,060 --> 0:19:42,060
+ Also because the line is 25 meters.
+
+493
+0:19:42,060 --> 0:19:44,060
+ Because I need this for another project.
+
+494
+0:19:44,060 --> 0:19:46,060
+ So if you keep the line short,
+
+495
+0:19:46,060 --> 0:19:50,060
+ you will be able to recharge your bottle faster.
+
+496
+0:19:50,060 --> 0:19:52,060
+ So with a 5 meter and a 2 bar,
+
+497
+0:19:52,060 --> 0:19:55,060
+ you will probably be able to fill it in 2 seconds.
+
+498
+0:19:55,060 --> 0:19:59,060
+ The barbecue regulator, I already talked about it.
+
+499
+0:19:59,060 --> 0:20:01,060
+ In the Netherlands, it's 30 million.
+
+500
+0:20:01,060 --> 0:20:04,060
+ In some countries, it's 50 millibars.
+
+501
+0:20:04,060 --> 0:20:06,060
+ If you take the 50 millibars,
+
+502
+0:20:06,060 --> 0:20:08,060
+ you will notice that your bottle will freeze up faster.
+
+503
+0:20:08,060 --> 0:20:10,060
+ Even if you just let it run for an hour,
+
+504
+0:20:10,060 --> 0:20:12,060
+ the bottle will freeze up.
+
+505
+0:20:12,060 --> 0:20:14,060
+ So the lower, if you can find the 19,
+
+506
+0:20:14,060 --> 0:20:17,060
+ because some countries also have 29 or lower,
+
+507
+0:20:17,060 --> 0:20:18,060
+ or the adjustable one,
+
+508
+0:20:18,060 --> 0:20:20,060
+ it will save your bottle from freezing up.
+
+509
+0:20:20,060 --> 0:20:23,060
+ Because sometimes on an effect, they want just the flame.
+
+510
+0:20:23,060 --> 0:20:25,060
+ And then at some point, they want to fire it.
+
+511
+0:20:25,060 --> 0:20:27,060
+ But they already want it light,
+
+512
+0:20:27,060 --> 0:20:29,060
+ because you can make a whole path of fire
+
+513
+0:20:29,060 --> 0:20:30,060
+ that people can come into.
+
+514
+0:20:30,060 --> 0:20:32,060
+ For instance, the entrance of a festival.
+
+515
+0:20:32,060 --> 0:20:34,060
+ So it looks really nice.
+
+516
+0:20:34,060 --> 0:20:35,060
+ But if they are burning,
+
+517
+0:20:35,060 --> 0:20:36,060
+ then your bottles are frozen.
+
+518
+0:20:36,060 --> 0:20:37,060
+ And the first time you shoot them,
+
+519
+0:20:37,060 --> 0:20:39,060
+ there's only one 2 meter flame,
+
+520
+0:20:39,060 --> 0:20:41,060
+ because the pressure has dropped.
+
+521
+0:20:41,060 --> 0:20:43,060
+ So the lower you can get this,
+
+522
+0:20:43,060 --> 0:20:45,060
+ the better it is.
+
+523
+0:20:45,060 --> 0:20:47,060
+ Well, then I talked about the piping.
+
+524
+0:20:47,060 --> 0:20:48,060
+ It's very cheap piping.
+
+525
+0:20:48,060 --> 0:20:50,060
+ In this case, 3 quarters of an inch,
+
+526
+0:20:50,060 --> 0:20:52,060
+ because it fits in straight into the neck
+
+527
+0:20:52,060 --> 0:20:55,060
+ of the fire extinguisher.
+
+528
+0:20:55,060 --> 0:20:57,060
+ Then the copper tubing.
+
+529
+0:20:57,060 --> 0:20:59,060
+ I have an example here.
+
+530
+0:20:59,060 --> 0:21:02,060
+ This is 8 millimeter copper tubing.
+
+531
+0:21:02,060 --> 0:21:04,060
+ I bend it into a ring.
+
+532
+0:21:04,060 --> 0:21:08,060
+ And then I punch holes in the inside of the ring.
+
+533
+0:21:08,060 --> 0:21:10,060
+ Because propane is heavier than air.
+
+534
+0:21:10,060 --> 0:21:12,060
+ If you put it on the underside,
+
+535
+0:21:12,060 --> 0:21:14,060
+ the propane will drop.
+
+536
+0:21:14,060 --> 0:21:16,060
+ So you put it on the inside of the ring.
+
+537
+0:21:16,060 --> 0:21:19,060
+ So the propane will get at least out like this.
+
+538
+0:21:19,060 --> 0:21:21,060
+ And then get on fire.
+
+539
+0:21:21,060 --> 0:21:23,060
+ And then you have the pilot flame.
+
+540
+0:21:23,060 --> 0:21:25,060
+ And I also did some on the top.
+
+541
+0:21:25,060 --> 0:21:28,060
+ So that it keeps on feeding the pilot flame.
+
+542
+0:21:29,060 --> 0:21:31,060
+ You can just bend this.
+
+543
+0:21:31,060 --> 0:21:32,060
+ I bought a pipe bending device.
+
+544
+0:21:32,060 --> 0:21:34,060
+ One of the new ones I made.
+
+545
+0:21:34,060 --> 0:21:36,060
+ I had to practice a little.
+
+546
+0:21:36,060 --> 0:21:37,060
+ If you want really nice bends,
+
+547
+0:21:37,060 --> 0:21:39,060
+ you can fill them with fine sand.
+
+548
+0:21:39,060 --> 0:21:42,060
+ You have this fine sand.
+
+549
+0:21:42,060 --> 0:21:44,060
+ You put it in and then bend it.
+
+550
+0:21:44,060 --> 0:21:46,060
+ Then you can easily shake the sand out.
+
+551
+0:21:46,060 --> 0:21:48,060
+ And then you can make nice bends.
+
+552
+0:21:48,060 --> 0:21:50,060
+ This I just bent on the stone here
+
+553
+0:21:50,060 --> 0:21:52,060
+ on a born hack.
+
+554
+0:21:52,060 --> 0:21:54,060
+ This is a radiator clip.
+
+555
+0:21:54,060 --> 0:21:57,060
+ It's also there to keep it in place.
+
+556
+0:21:57,060 --> 0:21:58,060
+ The gas hose.
+
+557
+0:21:58,060 --> 0:22:00,060
+ This is the hose that I use.
+
+558
+0:22:00,060 --> 0:22:03,060
+ Firefighters are very, very interested in hearing
+
+559
+0:22:03,060 --> 0:22:05,060
+ that you know that you should replace
+
+560
+0:22:05,060 --> 0:22:07,060
+ these hoses every five years.
+
+561
+0:22:07,060 --> 0:22:09,060
+ So the short piece I used here,
+
+562
+0:22:09,060 --> 0:22:11,060
+ I used the one with the date on it.
+
+563
+0:22:11,060 --> 0:22:13,060
+ So it says 2021.
+
+564
+0:22:13,060 --> 0:22:15,060
+ So I can use this piece of hose
+
+565
+0:22:15,060 --> 0:22:17,060
+ for the next five years on festivals.
+
+566
+0:22:17,060 --> 0:22:19,060
+ So if they ask me about it,
+
+567
+0:22:19,060 --> 0:22:21,060
+ I can show them.
+
+568
+0:22:21,060 --> 0:22:23,060
+ And if you say that you saved this piece of hose
+
+569
+0:22:23,060 --> 0:22:25,060
+ with the date on it,
+
+570
+0:22:25,060 --> 0:22:27,060
+ they know that you know your stuff.
+
+571
+0:22:27,060 --> 0:22:29,060
+ And that helps in getting approved.
+
+572
+0:22:29,060 --> 0:22:30,060
+ Because some festivals say,
+
+573
+0:22:30,060 --> 0:22:31,060
+ sorry, it's too dangerous.
+
+574
+0:22:31,060 --> 0:22:33,060
+ We don't want it.
+
+575
+0:22:33,060 --> 0:22:35,060
+ Most firefighters, if you show them,
+
+576
+0:22:35,060 --> 0:22:36,060
+ and you let them know that you know
+
+577
+0:22:36,060 --> 0:22:38,060
+ that propane is heavier than air,
+
+578
+0:22:38,060 --> 0:22:40,060
+ that you took care of the gas storage,
+
+579
+0:22:40,060 --> 0:22:42,060
+ and that you made them high up,
+
+580
+0:22:42,060 --> 0:22:44,060
+ then they are most of the time
+
+581
+0:22:44,060 --> 0:22:46,060
+ already very happy with you.
+
+582
+0:22:46,060 --> 0:22:48,060
+ And they will give you an approval
+
+583
+0:22:48,060 --> 0:22:50,060
+ to use them at festivals.
+
+584
+0:22:50,060 --> 0:22:52,060
+ So use proper hoses.
+
+585
+0:22:52,060 --> 0:22:54,060
+ And use them in a garbage bag.
+
+586
+0:22:54,060 --> 0:22:56,060
+ So if you are done with the festival,
+
+587
+0:22:56,060 --> 0:22:58,060
+ roll up the hose,
+
+588
+0:22:58,060 --> 0:23:00,060
+ and put it in a garbage bag.
+
+589
+0:23:00,060 --> 0:23:04,060
+ Because UV will make these hoses deteriorate.
+
+590
+0:23:04,060 --> 0:23:06,060
+ They become cracks in it.
+
+591
+0:23:06,060 --> 0:23:09,060
+ So the nicer it looks when the fireman checks it,
+
+592
+0:23:09,060 --> 0:23:11,060
+ the better it is, of course.
+
+593
+0:23:11,060 --> 0:23:13,060
+ Then you have the T-splits.
+
+594
+0:23:13,060 --> 0:23:15,060
+ Well, that's the parts over here.
+
+595
+0:23:15,060 --> 0:23:17,060
+ I already showed you.
+
+596
+0:23:17,060 --> 0:23:19,060
+ It's very easy.
+
+597
+0:23:19,060 --> 0:23:21,060
+ You need some connectors for the T-splits
+
+598
+0:23:21,060 --> 0:23:23,060
+ to put them in.
+
+599
+0:23:23,060 --> 0:23:26,060
+ I use the left hand and the right hand
+
+600
+0:23:26,060 --> 0:23:27,060
+ connector.
+
+601
+0:23:27,060 --> 0:23:28,060
+ I couldn't find it here.
+
+602
+0:23:28,060 --> 0:23:29,060
+ I forgot it.
+
+603
+0:23:29,060 --> 0:23:32,060
+ But it's this connector,
+
+604
+0:23:32,060 --> 0:23:34,060
+ because this in the Netherlands
+
+605
+0:23:34,060 --> 0:23:35,060
+ is left hand thread,
+
+606
+0:23:35,060 --> 0:23:36,060
+ because it's gas.
+
+607
+0:23:36,060 --> 0:23:38,060
+ You can recognize that,
+
+608
+0:23:38,060 --> 0:23:40,060
+ because on the nut
+
+609
+0:23:40,060 --> 0:23:42,060
+ there will be an indentation around it.
+
+610
+0:23:42,060 --> 0:23:44,060
+ So if you see a nut with small marks on it,
+
+611
+0:23:44,060 --> 0:23:45,060
+ it's not damaged.
+
+612
+0:23:45,060 --> 0:23:47,060
+ It means it's left hand thread.
+
+613
+0:23:47,060 --> 0:23:49,060
+ So it's not righty-tighty,
+
+614
+0:23:49,060 --> 0:23:51,060
+ but it's lefty-tighty.
+
+615
+0:23:52,060 --> 0:23:55,060
+ The T-split is a normal one.
+
+616
+0:23:55,060 --> 0:23:57,060
+ A normal one and a half,
+
+617
+0:23:57,060 --> 0:23:59,060
+ normal half inch thread.
+
+618
+0:23:59,060 --> 0:24:00,060
+ So therefore you need a converter
+
+619
+0:24:00,060 --> 0:24:02,060
+ to go from normal thread
+
+620
+0:24:02,060 --> 0:24:04,060
+ to left hand thread.
+
+621
+0:24:04,060 --> 0:24:06,060
+ Then there are some converter rings
+
+622
+0:24:06,060 --> 0:24:08,060
+ which are used in here.
+
+623
+0:24:08,060 --> 0:24:10,060
+ So you go in with the hose pillar
+
+624
+0:24:10,060 --> 0:24:13,060
+ and then go to three quarters of an inch.
+
+625
+0:24:13,060 --> 0:24:15,060
+ So that's all stuff that's only costing
+
+626
+0:24:15,060 --> 0:24:17,060
+ like one or two euros.
+
+627
+0:24:17,060 --> 0:24:19,060
+ Then you have the clamp I talked about
+
+628
+0:24:19,060 --> 0:24:21,060
+ to hold the piece of copper to the big tube.
+
+629
+0:24:21,060 --> 0:24:24,060
+ Steel wool, kitchen sponges,
+
+630
+0:24:24,060 --> 0:24:26,060
+ 69 cents in the supermarket.
+
+631
+0:24:28,060 --> 0:24:30,060
+ Something like, what is it?
+
+632
+0:24:30,060 --> 0:24:32,060
+ Six kroner or something.
+
+633
+0:24:35,060 --> 0:24:36,060
+ Some iron wire.
+
+634
+0:24:36,060 --> 0:24:40,060
+ That's very nice to hold the copper steel wool
+
+635
+0:24:40,060 --> 0:24:43,060
+ into place as the pilot flame.
+
+636
+0:24:43,060 --> 0:24:47,060
+ You need the Teflon tape to seal.
+
+637
+0:24:47,060 --> 0:24:48,060
+ You can see it here.
+
+638
+0:24:48,060 --> 0:24:50,060
+ All the white stuff is Teflon tape.
+
+639
+0:24:50,060 --> 0:24:52,060
+ But if you have to build this,
+
+640
+0:24:52,060 --> 0:24:53,060
+ you have like one, two, three.
+
+641
+0:24:53,060 --> 0:24:54,060
+ You have lots of connections.
+
+642
+0:24:54,060 --> 0:24:58,060
+ You have to roll the Teflon tape or wire.
+
+643
+0:24:58,060 --> 0:24:59,060
+ Wire is easier.
+
+644
+0:24:59,060 --> 0:25:00,060
+ This is Teflon wire.
+
+645
+0:25:00,060 --> 0:25:02,060
+ You can nicely fit it in the threads.
+
+646
+0:25:02,060 --> 0:25:05,060
+ Makes it already work easier.
+
+647
+0:25:05,060 --> 0:25:09,060
+ But I find this is a hydraulic sealant.
+
+648
+0:25:09,060 --> 0:25:12,060
+ This is capable of extending 320 bars.
+
+649
+0:25:12,060 --> 0:25:14,060
+ So you can also put this on
+
+650
+0:25:14,060 --> 0:25:15,060
+ and it's really quick.
+
+651
+0:25:15,060 --> 0:25:17,060
+ It needs some time to dry.
+
+652
+0:25:17,060 --> 0:25:18,060
+ So you can't use it immediately.
+
+653
+0:25:18,060 --> 0:25:19,060
+ But if you're making it
+
+654
+0:25:19,060 --> 0:25:20,060
+ and using it the next day,
+
+655
+0:25:20,060 --> 0:25:22,060
+ you can put this in the threads.
+
+656
+0:25:22,060 --> 0:25:24,060
+ You can just screw the whole thing together.
+
+657
+0:25:24,060 --> 0:25:26,060
+ So it's all mounted.
+
+658
+0:25:26,060 --> 0:25:28,060
+ Leave it to harden.
+
+659
+0:25:28,060 --> 0:25:29,060
+ And then you're done.
+
+660
+0:25:29,060 --> 0:25:30,060
+ And you don't have to check.
+
+661
+0:25:30,060 --> 0:25:33,060
+ And then, yeah, it's very good.
+
+662
+0:25:33,060 --> 0:25:35,060
+ It fills the threads.
+
+663
+0:25:35,060 --> 0:25:37,060
+ And then I would suggest buying a bottle of,
+
+664
+0:25:37,060 --> 0:25:40,060
+ yeah, it's basically dishwashing liquid
+
+665
+0:25:40,060 --> 0:25:42,060
+ in a spray can.
+
+666
+0:25:42,060 --> 0:25:43,060
+ It's a leak detector.
+
+667
+0:25:43,060 --> 0:25:44,060
+ So when you're done,
+
+668
+0:25:44,060 --> 0:25:46,060
+ you put pressure on it.
+
+669
+0:25:46,060 --> 0:25:47,060
+ You could also use air
+
+670
+0:25:47,060 --> 0:25:48,060
+ if you're really careful.
+
+671
+0:25:49,060 --> 0:25:59,060
+ Sorry.
+
+672
+0:25:59,060 --> 0:26:02,060
+ You could use compressed air to test it.
+
+673
+0:26:02,060 --> 0:26:04,060
+ So you pressurize the whole system.
+
+674
+0:26:04,060 --> 0:26:05,060
+ If the valve is closed,
+
+675
+0:26:05,060 --> 0:26:08,060
+ only some air should go out there,
+
+676
+0:26:08,060 --> 0:26:11,060
+ but not through all the connections.
+
+677
+0:26:11,060 --> 0:26:14,060
+ But you can use this liquid gas leak detection.
+
+678
+0:26:14,060 --> 0:26:15,060
+ You spray it on.
+
+679
+0:26:15,060 --> 0:26:16,060
+ And if there's a gas leak,
+
+680
+0:26:16,060 --> 0:26:18,060
+ it will form bubbles.
+
+681
+0:26:18,060 --> 0:26:20,060
+ So then stop the gas,
+
+682
+0:26:20,060 --> 0:26:22,060
+ take apart that connection,
+
+683
+0:26:22,060 --> 0:26:24,060
+ and try again.
+
+684
+0:26:24,060 --> 0:26:26,060
+ And then there's some hose clamps.
+
+685
+0:26:26,060 --> 0:26:28,060
+ You need some hose clamps
+
+686
+0:26:28,060 --> 0:26:30,060
+ to keep this in place,
+
+687
+0:26:30,060 --> 0:26:32,060
+ to keep this in place,
+
+688
+0:26:32,060 --> 0:26:33,060
+ and one on the regulator.
+
+689
+0:26:33,060 --> 0:26:35,060
+ So you need four hose clamps.
+
+690
+0:26:35,060 --> 0:26:36,060
+ So all in all,
+
+691
+0:26:36,060 --> 0:26:38,060
+ you can build this for around,
+
+692
+0:26:38,060 --> 0:26:40,060
+ I think, 100 euros.
+
+693
+0:26:40,060 --> 0:26:44,060
+ So that's 700 kroner.
+
+694
+0:26:48,060 --> 0:26:56,060
+ Some best practices.
+
+695
+0:26:56,060 --> 0:26:58,060
+ Store gas cans in a container
+
+696
+0:26:58,060 --> 0:27:00,060
+ or bucket of water.
+
+697
+0:27:00,060 --> 0:27:02,060
+ On the EMF camp,
+
+698
+0:27:02,060 --> 0:27:05,060
+ I used the 600 liter garbage container,
+
+699
+0:27:05,060 --> 0:27:06,060
+ the blue ones,
+
+700
+0:27:06,060 --> 0:27:07,060
+ the very big ones,
+
+701
+0:27:07,060 --> 0:27:10,060
+ normally used for paper collection.
+
+702
+0:27:10,060 --> 0:27:12,060
+ I put four gas bottles in them,
+
+703
+0:27:12,060 --> 0:27:13,060
+ 600 liters of water.
+
+704
+0:27:13,060 --> 0:27:14,060
+ In the end of the night,
+
+705
+0:27:14,060 --> 0:27:16,060
+ it was one cubic meter of ice
+
+706
+0:27:16,060 --> 0:27:18,060
+ with four bottles frozen into them.
+
+707
+0:27:18,060 --> 0:27:20,060
+ So the bottles will freeze up.
+
+708
+0:27:20,060 --> 0:27:21,060
+ The best thing is
+
+709
+0:27:21,060 --> 0:27:23,060
+ to really submerge them in water.
+
+710
+0:27:23,060 --> 0:27:24,060
+ The regulator can take that.
+
+711
+0:27:24,060 --> 0:27:25,060
+ It's no problem.
+
+712
+0:27:25,060 --> 0:27:27,060
+ So take the whole bottle.
+
+713
+0:27:27,060 --> 0:27:28,060
+ We took four.
+
+714
+0:27:28,060 --> 0:27:29,060
+ We took a pallet,
+
+715
+0:27:29,060 --> 0:27:30,060
+ a wooden pallet,
+
+716
+0:27:30,060 --> 0:27:31,060
+ put it on top,
+
+717
+0:27:31,060 --> 0:27:32,060
+ pressed them down
+
+718
+0:27:32,060 --> 0:27:33,060
+ so the bottles were completely
+
+719
+0:27:33,060 --> 0:27:34,060
+ submerged in water.
+
+720
+0:27:34,060 --> 0:27:35,060
+ And even then,
+
+721
+0:27:35,060 --> 0:27:37,060
+ it took a night of playing,
+
+722
+0:27:37,060 --> 0:27:38,060
+ but even then,
+
+723
+0:27:38,060 --> 0:27:39,060
+ the bottles were frozen up.
+
+724
+0:27:39,060 --> 0:27:41,060
+ We burned 600 kilos of propane
+
+725
+0:27:41,060 --> 0:27:42,060
+ in that weekend.
+
+726
+0:27:42,060 --> 0:27:43,060
+ So in three days,
+
+727
+0:27:43,060 --> 0:27:45,060
+ we burned 600 kilos of propane.
+
+728
+0:27:45,060 --> 0:27:46,060
+ It was a lot,
+
+729
+0:27:46,060 --> 0:27:48,060
+ and it was really awesome.
+
+730
+0:27:48,060 --> 0:27:50,060
+ This is how we do it at Bornhek.
+
+731
+0:27:50,060 --> 0:27:52,060
+ They are behind the info desk.
+
+732
+0:27:52,060 --> 0:27:54,060
+ We took cement tubs,
+
+733
+0:27:54,060 --> 0:27:57,060
+ but you see they are not completely covered,
+
+734
+0:27:57,060 --> 0:28:00,060
+ so they are freezing up faster.
+
+735
+0:28:00,060 --> 0:28:01,060
+ A better idea would be
+
+736
+0:28:01,060 --> 0:28:03,060
+ to take the gray containers
+
+737
+0:28:03,060 --> 0:28:05,060
+ and put them in completely
+
+738
+0:28:05,060 --> 0:28:06,060
+ and press them down.
+
+739
+0:28:06,060 --> 0:28:08,060
+ That would have been a better solution,
+
+740
+0:28:08,060 --> 0:28:10,060
+ but we're short of containers.
+
+741
+0:28:10,060 --> 0:28:12,060
+ So we fix it like this.
+
+742
+0:28:12,060 --> 0:28:13,060
+ So the bottles are there,
+
+743
+0:28:13,060 --> 0:28:15,060
+ open air as you can see.
+
+744
+0:28:15,060 --> 0:28:16,060
+ So if there is something,
+
+745
+0:28:16,060 --> 0:28:17,060
+ a leak or whatever,
+
+746
+0:28:17,060 --> 0:28:19,060
+ the gas will just blow away.
+
+747
+0:28:19,060 --> 0:28:21,060
+ So don't, again,
+
+748
+0:28:21,060 --> 0:28:23,060
+ don't make a box around it
+
+749
+0:28:23,060 --> 0:28:25,060
+ or try to seal them or whatever.
+
+750
+0:28:25,060 --> 0:28:26,060
+ Leave them there,
+
+751
+0:28:26,060 --> 0:28:29,060
+ and everybody sees it's the flames,
+
+752
+0:28:29,060 --> 0:28:32,060
+ so they won't touch it.
+
+753
+0:28:34,060 --> 0:28:37,060
+ This is what happens after 45 minutes.
+
+754
+0:28:37,060 --> 0:28:38,060
+ This is the regulator.
+
+755
+0:28:38,060 --> 0:28:40,060
+ This is my high pressure regulator,
+
+756
+0:28:40,060 --> 0:28:41,060
+ zero to four bars.
+
+757
+0:28:41,060 --> 0:28:42,060
+ As you can see,
+
+758
+0:28:42,060 --> 0:28:44,060
+ it's almost fully open,
+
+759
+0:28:44,060 --> 0:28:46,060
+ so it was at four bars.
+
+760
+0:28:46,060 --> 0:28:48,060
+ And after 45 minutes,
+
+761
+0:28:48,060 --> 0:28:50,060
+ the water in the buckets,
+
+762
+0:28:50,060 --> 0:28:52,060
+ these buckets,
+
+763
+0:28:52,060 --> 0:28:54,060
+ dropped to 5.5 degrees.
+
+764
+0:28:54,060 --> 0:28:56,060
+ So my friends dropped their beer in it.
+
+765
+0:28:56,060 --> 0:28:59,060
+ It was a very good beer cooler,
+
+766
+0:28:59,060 --> 0:29:01,060
+ but the regulator froze up.
+
+767
+0:29:01,060 --> 0:29:02,060
+ And when this is starting to happen,
+
+768
+0:29:02,060 --> 0:29:04,060
+ you will see the pressure drops.
+
+769
+0:29:04,060 --> 0:29:06,060
+ So then you will see the flames go down.
+
+770
+0:29:06,060 --> 0:29:08,060
+ If you submerge the whole bottle,
+
+771
+0:29:08,060 --> 0:29:09,060
+ including the regulator,
+
+772
+0:29:09,060 --> 0:29:12,060
+ you will prevent the water from,
+
+773
+0:29:12,060 --> 0:29:14,060
+ the regulator from freezing up.
+
+774
+0:29:14,060 --> 0:29:15,060
+ So you keep longer high pressure.
+
+775
+0:29:16,060 --> 0:29:19,060
+ This was the bottom of the gas bottle.
+
+776
+0:29:19,060 --> 0:29:20,060
+ When we were done,
+
+777
+0:29:20,060 --> 0:29:23,060
+ it was covered in two centimeters of ice.
+
+778
+0:29:23,060 --> 0:29:24,060
+ So we took it out.
+
+779
+0:29:24,060 --> 0:29:25,060
+ Beer was ice cold,
+
+780
+0:29:25,060 --> 0:29:28,060
+ and we had like a cap of ice underneath the bottle.
+
+781
+0:29:28,060 --> 0:29:30,060
+ When we put it on the floor,
+
+782
+0:29:30,060 --> 0:29:31,060
+ it broke off,
+
+783
+0:29:31,060 --> 0:29:33,060
+ and it was two centimeters thick.
+
+784
+0:29:33,060 --> 0:29:36,060
+ And that was just probably one hour of playing.
+
+785
+0:29:39,060 --> 0:29:42,060
+ Some improvements I made during camp,
+
+786
+0:29:42,060 --> 0:29:44,060
+ which I was really happy with.
+
+787
+0:29:44,060 --> 0:29:45,060
+ The first nights,
+
+788
+0:29:45,060 --> 0:29:47,060
+ I took a,
+
+789
+0:29:47,060 --> 0:29:48,060
+ how do you say,
+
+790
+0:29:48,060 --> 0:29:49,060
+ fireplace lighter,
+
+791
+0:29:49,060 --> 0:29:50,060
+ the long lighter,
+
+792
+0:29:50,060 --> 0:29:53,060
+ and put it on a long stick with a wire.
+
+793
+0:29:53,060 --> 0:29:54,060
+ It worked for the first night.
+
+794
+0:29:54,060 --> 0:29:55,060
+ The second night,
+
+795
+0:29:55,060 --> 0:29:57,060
+ the button already broke.
+
+796
+0:29:57,060 --> 0:30:00,060
+ So we were trying to get it to light at three meters high,
+
+797
+0:30:00,060 --> 0:30:01,060
+ stay away from the flame,
+
+798
+0:30:01,060 --> 0:30:03,060
+ and we tried to light it.
+
+799
+0:30:03,060 --> 0:30:05,060
+ It didn't work really well.
+
+800
+0:30:05,060 --> 0:30:07,060
+ So I thought of automating it.
+
+801
+0:30:07,060 --> 0:30:10,060
+ I brought glow plugs with me,
+
+802
+0:30:10,060 --> 0:30:11,060
+ the diesel heater glow plugs.
+
+803
+0:30:11,060 --> 0:30:14,060
+ They are like four centimeter sticks of silicon nitride.
+
+804
+0:30:14,060 --> 0:30:17,060
+ With two wires,
+
+805
+0:30:17,060 --> 0:30:19,060
+ basically wire wrapped around them,
+
+806
+0:30:19,060 --> 0:30:21,060
+ because you can't solder on that stuff.
+
+807
+0:30:21,060 --> 0:30:22,060
+ And basically it's just short.
+
+808
+0:30:22,060 --> 0:30:24,060
+ It's a one ohm resistor,
+
+809
+0:30:24,060 --> 0:30:29,060
+ and it turns into 1300 degree orange glow.
+
+810
+0:30:29,060 --> 0:30:31,060
+ So you will see if I light them,
+
+811
+0:30:31,060 --> 0:30:32,060
+ it glows orange,
+
+812
+0:30:32,060 --> 0:30:34,060
+ and then I'll just open the gas.
+
+813
+0:30:34,060 --> 0:30:38,060
+ It will flow next to the glow plug,
+
+814
+0:30:38,060 --> 0:30:40,060
+ and then it will ignite.
+
+815
+0:30:40,060 --> 0:30:42,060
+ So I don't have to go up.
+
+816
+0:30:42,060 --> 0:30:43,060
+ We don't have to be with the stick,
+
+817
+0:30:43,060 --> 0:30:44,060
+ and the lighter.
+
+818
+0:30:44,060 --> 0:30:46,060
+ We just press a button.
+
+819
+0:30:46,060 --> 0:30:49,060
+ It's the fourth channel on my DMX controller.
+
+820
+0:30:49,060 --> 0:30:50,060
+ So it will,
+
+821
+0:30:50,060 --> 0:30:52,060
+ the outer sides are on glow plugs,
+
+822
+0:30:52,060 --> 0:30:55,060
+ and the inner one is a,
+
+823
+0:30:55,060 --> 0:30:58,060
+ an ignition for a central heating system in the house.
+
+824
+0:30:58,060 --> 0:31:00,060
+ So if you have a gas heating in the house,
+
+825
+0:31:00,060 --> 0:31:02,060
+ there's a small box that makes 11 kilovolts,
+
+826
+0:31:02,060 --> 0:31:04,060
+ two electrodes,
+
+827
+0:31:04,060 --> 0:31:05,060
+ and it sparks,
+
+828
+0:31:05,060 --> 0:31:06,060
+ and you can hear it.
+
+829
+0:31:06,060 --> 0:31:07,060
+ When I light the button,
+
+830
+0:31:07,060 --> 0:31:09,060
+ you hear zzzzzzzz.
+
+831
+0:31:09,060 --> 0:31:10,060
+ And then when you flow the gas,
+
+832
+0:31:10,060 --> 0:31:11,060
+ it goes on.
+
+833
+0:31:11,060 --> 0:31:12,060
+ So,
+
+834
+0:31:12,060 --> 0:31:14,060
+ sometimes it can take a while with the glow plugs,
+
+835
+0:31:14,060 --> 0:31:16,060
+ because the left glow plug is a bit slow,
+
+836
+0:31:16,060 --> 0:31:17,060
+ I saw.
+
+837
+0:31:17,060 --> 0:31:19,060
+ So it took some tries.
+
+838
+0:31:19,060 --> 0:31:21,060
+ And what you can then do is just fire the thing.
+
+839
+0:31:21,060 --> 0:31:24,060
+ So then the glow plug gets a lot of propane,
+
+840
+0:31:24,060 --> 0:31:25,060
+ and it goes around.
+
+841
+0:31:25,060 --> 0:31:27,060
+ It gets into a combustible mixture,
+
+842
+0:31:27,060 --> 0:31:29,060
+ and then it turns on anyway.
+
+843
+0:31:32,060 --> 0:31:33,060
+ If you can,
+
+844
+0:31:33,060 --> 0:31:35,060
+ use a DMX safety channel.
+
+845
+0:31:35,060 --> 0:31:37,060
+ So most DMX controllers,
+
+846
+0:31:37,060 --> 0:31:39,060
+ you can say,
+
+847
+0:31:39,060 --> 0:31:42,060
+ if this channel is between 25 and 30,
+
+848
+0:31:42,060 --> 0:31:45,060
+ and 128 for instance,
+
+849
+0:31:45,060 --> 0:31:48,060
+ then you are only allowed to open up the other channel,
+
+850
+0:31:48,060 --> 0:31:50,060
+ and then you will fire.
+
+851
+0:31:50,060 --> 0:31:51,060
+ If you make it like that,
+
+852
+0:31:51,060 --> 0:31:52,060
+ in your Arduino application,
+
+853
+0:31:52,060 --> 0:31:55,060
+ if you do it in Arduino or Raspberry Pi,
+
+854
+0:31:55,060 --> 0:31:57,060
+ then you have to open two channels.
+
+855
+0:31:57,060 --> 0:32:00,060
+ So when somebody pulls all the buttons all the way down,
+
+856
+0:32:00,060 --> 0:32:03,060
+ then they are not between that certain safety range,
+
+857
+0:32:03,060 --> 0:32:05,060
+ and then nothing will happen.
+
+858
+0:32:05,060 --> 0:32:08,060
+ So the safety slider needs to be at a certain position,
+
+859
+0:32:08,060 --> 0:32:10,060
+ and you can decide how much it is.
+
+860
+0:32:10,060 --> 0:32:11,060
+ You can also say,
+
+861
+0:32:11,060 --> 0:32:12,060
+ like 57 and 60,
+
+862
+0:32:12,060 --> 0:32:14,060
+ so it is very specific.
+
+863
+0:32:14,060 --> 0:32:16,060
+ So if someone starts playing with it,
+
+864
+0:32:16,060 --> 0:32:17,060
+ it won't fire.
+
+865
+0:32:17,060 --> 0:32:18,060
+ So if you can do that,
+
+866
+0:32:18,060 --> 0:32:19,060
+ it is safer,
+
+867
+0:32:19,060 --> 0:32:22,060
+ and especially when you do shows with bands and stuff,
+
+868
+0:32:22,060 --> 0:32:24,060
+ they want to see this.
+
+869
+0:32:24,060 --> 0:32:27,060
+ They want to see if you have a safety channel.
+
+870
+0:32:28,060 --> 0:32:30,060
+ You can tune the length of the pipes.
+
+871
+0:32:30,060 --> 0:32:32,060
+ Yesterday I tried to play some songs,
+
+872
+0:32:32,060 --> 0:32:34,060
+ by just...
+
+873
+0:32:34,060 --> 0:32:36,060
+ But if you make different lengths of pipe,
+
+874
+0:32:36,060 --> 0:32:37,060
+ you can tune them,
+
+875
+0:32:37,060 --> 0:32:39,060
+ and you can make your own organ with them.
+
+876
+0:32:39,060 --> 0:32:40,060
+ So if you make four of them,
+
+877
+0:32:40,060 --> 0:32:42,060
+ and you make a 10-centimeter pipe,
+
+878
+0:32:42,060 --> 0:32:44,060
+ 15, 20, and 30,
+
+879
+0:32:44,060 --> 0:32:46,060
+ then you have different tones,
+
+880
+0:32:46,060 --> 0:32:49,060
+ from low bass to really...
+
+881
+0:32:49,060 --> 0:32:50,060
+ very high ones.
+
+882
+0:32:50,060 --> 0:32:52,060
+ So that is really nice.
+
+883
+0:32:54,060 --> 0:32:56,060
+ And use the biggest gas bottle.
+
+884
+0:32:56,060 --> 0:32:58,060
+ That doesn't have to...
+
+885
+0:32:58,060 --> 0:33:00,060
+ I don't mean that you need a lot of gas,
+
+886
+0:33:00,060 --> 0:33:01,060
+ of course,
+
+887
+0:33:01,060 --> 0:33:04,060
+ it takes you longer to switch the bottle,
+
+888
+0:33:04,060 --> 0:33:07,060
+ but the bigger bottle has a bigger surface.
+
+889
+0:33:07,060 --> 0:33:09,060
+ So the evaporation goes faster,
+
+890
+0:33:09,060 --> 0:33:11,060
+ so your refilling of the storage buffer,
+
+891
+0:33:11,060 --> 0:33:13,060
+ the fire extinguisher,
+
+892
+0:33:13,060 --> 0:33:14,060
+ that goes faster.
+
+893
+0:33:14,060 --> 0:33:16,060
+ If you can evaporate more gas,
+
+894
+0:33:16,060 --> 0:33:18,060
+ then you can do...
+
+895
+0:33:18,060 --> 0:33:19,060
+ You can continue to shoot,
+
+896
+0:33:19,060 --> 0:33:22,060
+ and now you have to sometimes wait
+
+897
+0:33:22,060 --> 0:33:24,060
+ for it to fill.
+
+898
+0:33:24,060 --> 0:33:26,060
+ So bigger bottle,
+
+899
+0:33:26,060 --> 0:33:28,060
+ shorter hose length,
+
+900
+0:33:28,060 --> 0:33:30,060
+ high pressure regulator,
+
+901
+0:33:30,060 --> 0:33:31,060
+ that is all...
+
+902
+0:33:31,060 --> 0:33:33,060
+ are all factors
+
+903
+0:33:33,060 --> 0:33:35,060
+ that make how fast you can reload your bottle,
+
+904
+0:33:35,060 --> 0:33:37,060
+ and the size of the bottle.
+
+905
+0:33:37,060 --> 0:33:38,060
+ As you can see, the middle one,
+
+906
+0:33:38,060 --> 0:33:40,060
+ it's way faster than the other ones,
+
+907
+0:33:40,060 --> 0:33:42,060
+ because it's only two kilos.
+
+908
+0:33:42,060 --> 0:33:44,060
+ So it's a third of the capacity,
+
+909
+0:33:44,060 --> 0:33:46,060
+ and the flame should shot just as high.
+
+910
+0:33:46,060 --> 0:33:49,060
+ So I might be looking for small bottles in the future.
+
+911
+0:33:49,060 --> 0:33:51,060
+ They're a little rare,
+
+912
+0:33:51,060 --> 0:33:53,060
+ but at least I have six at home,
+
+913
+0:33:53,060 --> 0:33:55,060
+ so the first six I can build.
+
+914
+0:33:57,060 --> 0:33:58,060
+ Then, well,
+
+915
+0:33:58,060 --> 0:34:00,060
+ we talked already about storing them
+
+916
+0:34:00,060 --> 0:34:02,060
+ in a bucket of water.
+
+917
+0:34:02,060 --> 0:34:04,060
+ Yeah, the last thing is
+
+918
+0:34:04,060 --> 0:34:06,060
+ always unplug them when surfacing.
+
+919
+0:34:06,060 --> 0:34:07,060
+ So when you are there,
+
+920
+0:34:07,060 --> 0:34:09,060
+ your friend is not able to push the button,
+
+921
+0:34:09,060 --> 0:34:11,060
+ because that's not funny.
+
+922
+0:34:11,060 --> 0:34:12,060
+ It needs to be safe,
+
+923
+0:34:12,060 --> 0:34:14,060
+ so always unplug it.
+
+924
+0:34:14,060 --> 0:34:16,060
+ You never know if you make your own Arduino,
+
+925
+0:34:16,060 --> 0:34:17,060
+ I don't know,
+
+926
+0:34:17,060 --> 0:34:18,060
+ you make a counter wrong or whatever,
+
+927
+0:34:18,060 --> 0:34:19,060
+ and you're there,
+
+928
+0:34:19,060 --> 0:34:20,060
+ and the thing fires,
+
+929
+0:34:20,060 --> 0:34:21,060
+ and you don't want to be near the fire
+
+930
+0:34:21,060 --> 0:34:22,060
+ when it fires.
+
+931
+0:34:22,060 --> 0:34:23,060
+ It's very hot,
+
+932
+0:34:23,060 --> 0:34:25,060
+ and you don't want to get burned.
+
+933
+0:34:25,060 --> 0:34:27,060
+ Rule zero, don't be on fire.
+
+934
+0:34:29,060 --> 0:34:32,060
+ So now I will switch to a video I made.
+
+935
+0:34:32,060 --> 0:34:38,060
+ This is during camp,
+
+936
+0:34:38,060 --> 0:34:41,060
+ and here you see a prototype.
+
+937
+0:34:41,060 --> 0:34:42,060
+ And as I said,
+
+938
+0:34:42,060 --> 0:34:44,060
+ use something metal to mount it.
+
+939
+0:34:44,060 --> 0:34:45,060
+ It was on the floor.
+
+940
+0:34:45,060 --> 0:34:47,060
+ We didn't want to climb up every time,
+
+941
+0:34:47,060 --> 0:34:49,060
+ so I used a cart,
+
+942
+0:34:49,060 --> 0:34:51,060
+ a trolley,
+
+943
+0:34:51,060 --> 0:34:53,060
+ which we put on the side,
+
+944
+0:34:53,060 --> 0:34:55,060
+ so we have something metal to attach it to.
+
+945
+0:34:55,060 --> 0:34:58,060
+ So we ratchet strapped it to the metal trolley,
+
+946
+0:34:58,060 --> 0:35:01,060
+ and then we just tested this.
+
+947
+0:35:01,060 --> 0:35:02,060
+ This is the small bottle.
+
+948
+0:35:02,060 --> 0:35:04,060
+ This is a two kilo fire extinguisher,
+
+949
+0:35:04,060 --> 0:35:06,060
+ but we put it on four bars,
+
+950
+0:35:06,060 --> 0:35:08,060
+ so it went something like this.
+
+951
+0:35:14,060 --> 0:35:16,060
+ So here you see the pilot flame.
+
+952
+0:35:16,060 --> 0:35:17,060
+ It's still burning.
+
+953
+0:35:17,060 --> 0:35:19,060
+ I have made some videos,
+
+954
+0:35:19,060 --> 0:35:22,060
+ some different videos to show you.
+
+955
+0:35:22,060 --> 0:35:23,060
+ These are the three of them.
+
+956
+0:35:23,060 --> 0:35:25,060
+ The middle one is the small bottle,
+
+957
+0:35:25,060 --> 0:35:27,060
+ but look at the size in flames.
+
+958
+0:35:27,060 --> 0:35:31,060
+ You don't really see a very big difference.
+
+959
+0:35:31,060 --> 0:35:33,060
+ So this one goes up.
+
+960
+0:35:33,060 --> 0:35:38,060
+ This one shoots up maybe a little lower.
+
+961
+0:35:38,060 --> 0:35:41,060
+ Could also be that the pressure was low,
+
+962
+0:35:41,060 --> 0:35:43,060
+ because in the next video we'll see
+
+963
+0:35:43,060 --> 0:35:45,060
+ it shoot up at least the same height.
+
+964
+0:35:45,060 --> 0:35:47,060
+ We mounted them on pellets,
+
+965
+0:35:47,060 --> 0:35:49,060
+ so we put pellets on the container,
+
+966
+0:35:49,060 --> 0:35:52,060
+ and we put a wooden stick on it,
+
+967
+0:35:52,060 --> 0:35:54,060
+ and then we ratchet strapped it.
+
+968
+0:35:54,060 --> 0:35:59,060
+ These are made at 240 frames per second,
+
+969
+0:35:59,060 --> 0:36:00,060
+ so we can see.
+
+970
+0:36:00,060 --> 0:36:02,060
+ And now you can see that the middle one
+
+971
+0:36:02,060 --> 0:36:04,060
+ is not lower than the other one.
+
+972
+0:36:04,060 --> 0:36:07,060
+ So the two liter bottle works fine as well.
+
+973
+0:36:11,060 --> 0:36:13,060
+ And now I think the next movie will show you
+
+974
+0:36:13,060 --> 0:36:14,060
+ that the pilot flame,
+
+975
+0:36:14,060 --> 0:36:16,060
+ when you shoot,
+
+976
+0:36:16,060 --> 0:36:21,060
+ you will see some distance between the pilot flame
+
+977
+0:36:21,060 --> 0:36:23,060
+ and where the gas ignites.
+
+978
+0:36:23,060 --> 0:36:24,060
+ So when it shoots,
+
+979
+0:36:24,060 --> 0:36:26,060
+ you see a space where it isn't burning.
+
+980
+0:36:28,060 --> 0:36:30,060
+ And that's because it's not,
+
+981
+0:36:30,060 --> 0:36:33,060
+ it's there, it's pure propane at that point.
+
+982
+0:36:38,060 --> 0:36:41,060
+ And this is the only time you are allowed
+
+983
+0:36:41,060 --> 0:36:44,060
+ to film vertically.
+
+984
+0:36:44,060 --> 0:36:45,060
+ So the vertical video syndrome,
+
+985
+0:36:45,060 --> 0:36:46,060
+ when you make flamethrowers,
+
+986
+0:36:46,060 --> 0:36:48,060
+ is not an issue.
+
+987
+0:36:48,060 --> 0:36:50,060
+ Because you want to have the full flame on it,
+
+988
+0:36:50,060 --> 0:36:51,060
+ and not be like,
+
+989
+0:36:51,060 --> 0:36:54,060
+ ah shit, I missed the top of the flame.
+
+990
+0:36:57,060 --> 0:36:58,060
+ So yeah.
+
+991
+0:36:58,060 --> 0:37:01,060
+ This is the end of my presentation.
+
+992
+0:37:01,060 --> 0:37:03,060
+ If there's any questions,
+
+993
+0:37:03,060 --> 0:37:05,060
+ I would love to hear them.
+
+994
+0:37:05,060 --> 0:37:07,060
+ You can always contact me,
+
+995
+0:37:07,060 --> 0:37:09,060
+ I'll be Bob at Bitler.
+
+996
+0:37:09,060 --> 0:37:11,060
+ I'm the chairman of Bitler Hackerspace.
+
+997
+0:37:11,060 --> 0:37:13,060
+ You can find me on Twitter.
+
+998
+0:37:13,060 --> 0:37:15,060
+ And I saw a question in the back.
+
+999
+0:37:18,060 --> 0:37:19,060
+ Thank you.
+
+1000
+0:37:19,060 --> 0:37:20,060
+ I'll be right down.
+
+1001
+0:37:24,060 --> 0:37:25,060
+ Bye bye.
+
+1002
+0:37:28,060 --> 0:37:33,060
+ Do you ever have issues with the backfire?
+
+1003
+0:37:33,060 --> 0:37:34,060
+ So when you,
+
+1004
+0:37:34,060 --> 0:37:37,060
+ we're talking about the mix of the gas,
+
+1005
+0:37:37,060 --> 0:37:39,060
+ and if it's too high or too low,
+
+1006
+0:37:39,060 --> 0:37:40,060
+ then nothing happens.
+
+1007
+0:37:40,060 --> 0:37:42,060
+ But when you turn this thing on and off,
+
+1008
+0:37:42,060 --> 0:37:45,060
+ you must have the proper mix inside the barrel
+
+1009
+0:37:45,060 --> 0:37:46,060
+ from time to time,
+
+1010
+0:37:46,060 --> 0:37:48,060
+ so you'll have fire going inside.
+
+1011
+0:37:53,060 --> 0:37:54,060
+ Hello.
+
+1012
+0:37:54,060 --> 0:37:55,060
+ Yeah.
+
+1013
+0:37:55,060 --> 0:37:57,060
+ That's a very good question.
+
+1014
+0:37:57,060 --> 0:37:59,060
+ Inside the bottle,
+
+1015
+0:37:59,060 --> 0:38:01,060
+ the mixture is pure propane.
+
+1016
+0:38:01,060 --> 0:38:02,060
+ There's a valve in between,
+
+1017
+0:38:02,060 --> 0:38:04,060
+ that has a very small hole.
+
+1018
+0:38:04,060 --> 0:38:07,060
+ And the mixture is still pure propane,
+
+1019
+0:38:07,060 --> 0:38:08,060
+ so it doesn't go back,
+
+1020
+0:38:08,060 --> 0:38:10,060
+ because the pressure is upwards.
+
+1021
+0:38:10,060 --> 0:38:12,060
+ It's the pressure difference
+
+1022
+0:38:12,060 --> 0:38:14,060
+ between outside the bottle and inside
+
+1023
+0:38:14,060 --> 0:38:17,060
+ is at least two to three bars.
+
+1024
+0:38:17,060 --> 0:38:19,060
+ So the pressure is upwards.
+
+1025
+0:38:19,060 --> 0:38:20,060
+ So the flame won't go in
+
+1026
+0:38:20,060 --> 0:38:22,060
+ because there's no combustible mixture
+
+1027
+0:38:22,060 --> 0:38:24,060
+ there at that moment.
+
+1028
+0:38:24,060 --> 0:38:26,060
+ So in the whole hose from the gas bottle,
+
+1029
+0:38:26,060 --> 0:38:28,060
+ to the container,
+
+1030
+0:38:28,060 --> 0:38:30,060
+ it's all pure propane.
+
+1031
+0:38:30,060 --> 0:38:31,060
+ And only when it gets out,
+
+1032
+0:38:31,060 --> 0:38:33,060
+ it gets to the point that it can combust.
+
+1033
+0:38:33,060 --> 0:38:36,060
+ So there's no chance of the flame shooting backwards.
+
+1034
+0:38:36,060 --> 0:38:41,060
+ And there is always the valve in between.
+
+1035
+0:38:41,060 --> 0:38:43,060
+ And if you look inside the valve,
+
+1036
+0:38:43,060 --> 0:38:47,060
+ it seriously has only a diameter of a very thin hole.
+
+1037
+0:38:47,060 --> 0:38:48,060
+ So a lot of,
+
+1038
+0:38:48,060 --> 0:38:52,060
+ the air speed through the valve is really high.
+
+1039
+0:38:52,060 --> 0:38:55,060
+ So as long as you have pure propane,
+
+1040
+0:38:55,060 --> 0:38:56,060
+ people say,
+
+1041
+0:38:56,060 --> 0:38:58,060
+ hey, why don't you put a compressor on it?
+
+1042
+0:38:58,060 --> 0:38:59,060
+ And then you can compress it,
+
+1043
+0:38:59,060 --> 0:39:01,060
+ and then you can go up to 16 bars,
+
+1044
+0:39:01,060 --> 0:39:03,060
+ and then you have propane in there and air,
+
+1045
+0:39:03,060 --> 0:39:05,060
+ and then it gets dangerous,
+
+1046
+0:39:05,060 --> 0:39:07,060
+ because then you're making a combustible mixture
+
+1047
+0:39:07,060 --> 0:39:08,060
+ inside the bottle.
+
+1048
+0:39:08,060 --> 0:39:10,060
+ And then you can't guarantee
+
+1049
+0:39:10,060 --> 0:39:12,060
+ that the flame won't go back,
+
+1050
+0:39:12,060 --> 0:39:14,060
+ because you have a very highly explosive mixture
+
+1051
+0:39:14,060 --> 0:39:15,060
+ in the bottle.
+
+1052
+0:39:15,060 --> 0:39:17,060
+ So stay away from that.
+
+1053
+0:39:17,060 --> 0:39:19,060
+ That's a good question.
+
+1054
+0:39:19,060 --> 0:39:22,060
+ Yes, other questions?
+
+1055
+0:39:25,060 --> 0:39:34,060
+ Have you thought about doing a supply line
+
+1056
+0:39:34,060 --> 0:39:36,060
+ of ice cubes to the bar?
+
+1057
+0:39:36,060 --> 0:39:39,060
+ I think we could have a good slogan,
+
+1058
+0:39:39,060 --> 0:39:42,060
+ cool by fire flamethrowers.
+
+1059
+0:39:42,060 --> 0:39:44,060
+ That would be a good idea for next year.
+
+1060
+0:39:44,060 --> 0:39:45,060
+ Put the beer in there,
+
+1061
+0:39:45,060 --> 0:39:48,060
+ and then have a gas line running from the bar
+
+1062
+0:39:48,060 --> 0:39:49,060
+ to the flamethrowers,
+
+1063
+0:39:49,060 --> 0:39:51,060
+ and then we can make ice.
+
+1064
+0:39:51,060 --> 0:39:54,060
+ You're allowed to put your beer in there tonight,
+
+1065
+0:39:54,060 --> 0:39:55,060
+ and you can see for yourself
+
+1066
+0:39:55,060 --> 0:39:57,060
+ that we can really cool it.
+
+1067
+0:39:57,060 --> 0:39:59,060
+ And in fact, everyone is welcome tonight
+
+1068
+0:39:59,060 --> 0:40:01,060
+ at around 10ish, 10 o'clock.
+
+1069
+0:40:01,060 --> 0:40:03,060
+ You will hear the flames go off,
+
+1070
+0:40:03,060 --> 0:40:05,060
+ so I invite you all to get there,
+
+1071
+0:40:05,060 --> 0:40:08,060
+ and if you like, I can show you backstage,
+
+1072
+0:40:08,060 --> 0:40:10,060
+ and you can feel the water.
+
+1073
+0:40:10,060 --> 0:40:13,060
+ We put a digital temp meter in it,
+
+1074
+0:40:13,060 --> 0:40:15,060
+ so you can see really the temperature go down
+
+1075
+0:40:15,060 --> 0:40:18,060
+ as the flames are used more and more.
+
+1076
+0:40:21,060 --> 0:40:23,060
+ Have you tried different gas mixtures
+
+1077
+0:40:23,060 --> 0:40:24,060
+ in the flamethrowers?
+
+1078
+0:40:24,060 --> 0:40:27,060
+ I have just propane, propane, butane mix.
+
+1079
+0:40:27,060 --> 0:40:30,060
+ Yes, I have also tried pure butane,
+
+1080
+0:40:30,060 --> 0:40:33,060
+ and I noticed that it's great for indoor use,
+
+1081
+0:40:33,060 --> 0:40:35,060
+ because you get flames like this high,
+
+1082
+0:40:35,060 --> 0:40:38,060
+ so the caloric value is around the same,
+
+1083
+0:40:38,060 --> 0:40:39,060
+ but for some reason,
+
+1084
+0:40:39,060 --> 0:40:42,060
+ the boiling point of butane is around zero degrees,
+
+1085
+0:40:42,060 --> 0:40:43,060
+ so if the bottle gets cold,
+
+1086
+0:40:43,060 --> 0:40:45,060
+ the pressure drops immediately,
+
+1087
+0:40:45,060 --> 0:40:47,060
+ so you end up in like half an hour
+
+1088
+0:40:47,060 --> 0:40:49,060
+ with a half a meter flame,
+
+1089
+0:40:49,060 --> 0:40:51,060
+ so you can fire as much as you like.
+
+1090
+0:40:51,060 --> 0:40:53,060
+ So that is not a good mixture.
+
+1091
+0:40:53,060 --> 0:40:55,060
+ I am planning on using,
+
+1092
+0:40:55,060 --> 0:40:57,060
+ but that's a whole different story,
+
+1093
+0:40:57,060 --> 0:40:59,060
+ but I'm planning on using an ethanol-based system,
+
+1094
+0:40:59,060 --> 0:41:01,060
+ because the gas is getting,
+
+1095
+0:41:01,060 --> 0:41:03,060
+ the prices go really up for the gas,
+
+1096
+0:41:03,060 --> 0:41:06,060
+ so I'm looking now to build an ethanol-based system,
+
+1097
+0:41:06,060 --> 0:41:08,060
+ which is using like alcohol,
+
+1098
+0:41:08,060 --> 0:41:10,060
+ but it's liquid,
+
+1099
+0:41:10,060 --> 0:41:14,060
+ and then you run into a whole lot of different risks,
+
+1100
+0:41:14,060 --> 0:41:16,060
+ because it's liquid.
+
+1101
+0:41:16,060 --> 0:41:17,060
+ If it doesn't ignite,
+
+1102
+0:41:17,060 --> 0:41:19,060
+ you shoot ethanol in the air.
+
+1103
+0:41:19,060 --> 0:41:22,060
+ The system I have now in mind and designed
+
+1104
+0:41:22,060 --> 0:41:25,060
+ only shoots like 15 milliliters of ethanol at 10 bars,
+
+1105
+0:41:25,060 --> 0:41:27,060
+ so if you shoot it out,
+
+1106
+0:41:27,060 --> 0:41:30,060
+ it makes it very fine particles,
+
+1107
+0:41:30,060 --> 0:41:31,060
+ so if you shoot it up,
+
+1108
+0:41:31,060 --> 0:41:34,060
+ it probably goes 8 to 10 meters up,
+
+1109
+0:41:34,060 --> 0:41:38,060
+ so then there's less chance of it getting down,
+
+1110
+0:41:38,060 --> 0:41:40,060
+ but there is some risk involved,
+
+1111
+0:41:40,060 --> 0:41:42,060
+ and I'm still working out those details,
+
+1112
+0:41:42,060 --> 0:41:44,060
+ but maybe in the future,
+
+1113
+0:41:44,060 --> 0:41:45,060
+ I bring another device,
+
+1114
+0:41:45,060 --> 0:41:48,060
+ and then you can shoot faster,
+
+1115
+0:41:48,060 --> 0:41:49,060
+ higher,
+
+1116
+0:41:49,060 --> 0:41:50,060
+ and more,
+
+1117
+0:41:50,060 --> 0:41:52,060
+ and it's cheaper to use.
+
+1118
+0:41:52,060 --> 0:41:54,060
+ It's using ethanol,
+
+1119
+0:41:54,060 --> 0:41:56,060
+ but I'm experimenting with stuff,
+
+1120
+0:41:56,060 --> 0:42:01,060
+ and I'm also trying to build the first,
+
+1121
+0:42:01,060 --> 0:42:03,060
+ world's first RGB flamethrower,
+
+1122
+0:42:03,060 --> 0:42:05,060
+ so with three colors you can mix,
+
+1123
+0:42:05,060 --> 0:42:08,060
+ so I will dissolve salts in ethanol,
+
+1124
+0:42:08,060 --> 0:42:10,060
+ and then shoot the flame,
+
+1125
+0:42:10,060 --> 0:42:12,060
+ so then you can have R, G, and B,
+
+1126
+0:42:12,060 --> 0:42:14,060
+ and you can have a flame that first turns red,
+
+1127
+0:42:14,060 --> 0:42:15,060
+ and then turns green,
+
+1128
+0:42:15,060 --> 0:42:16,060
+ and then turns blue,
+
+1129
+0:42:16,060 --> 0:42:18,060
+ and I hope to be the first one to make this,
+
+1130
+0:42:18,060 --> 0:42:19,060
+ but probably saying this
+
+1131
+0:42:19,060 --> 0:42:21,060
+ will make other people make it faster,
+
+1132
+0:42:21,060 --> 0:42:23,060
+ so that's my idea,
+
+1133
+0:42:23,060 --> 0:42:25,060
+ so yes, I have experimented.
+
+1134
+0:42:25,060 --> 0:42:27,060
+ Does that answer your question?
+
+1135
+0:42:31,060 --> 0:42:34,060
+ I see that you are using a straight tube as an exit,
+
+1136
+0:42:34,060 --> 0:42:37,060
+ have you also tried other shapes,
+
+1137
+0:42:37,060 --> 0:42:40,060
+ other nozzles or fan shapes at the top
+
+1138
+0:42:40,060 --> 0:42:42,060
+ to make other shaped flames?
+
+1139
+0:42:42,060 --> 0:42:46,060
+ Yeah, we have tried to go from the tube straight to wider,
+
+1140
+0:42:46,060 --> 0:42:49,060
+ in some cases it helps,
+
+1141
+0:42:49,060 --> 0:42:50,060
+ in some cases not,
+
+1142
+0:42:50,060 --> 0:42:51,060
+ we are still investigating,
+
+1143
+0:42:51,060 --> 0:42:54,060
+ and we also on the right flamethrower,
+
+1144
+0:42:54,060 --> 0:42:56,060
+ if you stand in front of the info desk,
+
+1145
+0:42:56,060 --> 0:42:58,060
+ we put a nozzle that makes it smaller,
+
+1146
+0:42:58,060 --> 0:43:01,060
+ so we go from three quarters of an inch,
+
+1147
+0:43:01,060 --> 0:43:03,060
+ to half an inch,
+
+1148
+0:43:03,060 --> 0:43:06,060
+ and then you will hear it really go whoosh,
+
+1149
+0:43:06,060 --> 0:43:08,060
+ like some sort of jet engine,
+
+1150
+0:43:08,060 --> 0:43:11,060
+ and if you go even smaller it starts to whistle,
+
+1151
+0:43:11,060 --> 0:43:13,060
+ on EMF we also tried the ship's horn,
+
+1152
+0:43:13,060 --> 0:43:14,060
+ which is really nice,
+
+1153
+0:43:14,060 --> 0:43:16,060
+ you have a ship's horn and the flames come out,
+
+1154
+0:43:16,060 --> 0:43:19,060
+ not really exploding really far,
+
+1155
+0:43:19,060 --> 0:43:21,060
+ but you go whoosh,
+
+1156
+0:43:21,060 --> 0:43:23,060
+ but people didn't like it at night,
+
+1157
+0:43:23,060 --> 0:43:25,060
+ because we kept them awake from their sleep,
+
+1158
+0:43:25,060 --> 0:43:28,060
+ but yes, we have experimented,
+
+1159
+0:43:28,060 --> 0:43:32,060
+ and one of the other plans I have is to make a bigger vessel,
+
+1160
+0:43:32,060 --> 0:43:35,060
+ so a bigger bottle with a three inch valve,
+
+1161
+0:43:35,060 --> 0:43:38,060
+ and then you want to go from the three inch valve
+
+1162
+0:43:38,060 --> 0:43:40,060
+ to something like five or six inch pipe,
+
+1163
+0:43:40,060 --> 0:43:42,060
+ and then have the ring in there,
+
+1164
+0:43:42,060 --> 0:43:43,060
+ the fire ring,
+
+1165
+0:43:43,060 --> 0:43:45,060
+ so you don't see the pilot flame,
+
+1166
+0:43:45,060 --> 0:43:48,060
+ and you have a larger expansion of the gas,
+
+1167
+0:43:48,060 --> 0:43:50,060
+ so you get a bigger column,
+
+1168
+0:43:50,060 --> 0:43:54,060
+ so hopefully a more intense higher flame,
+
+1169
+0:43:54,060 --> 0:43:57,060
+ but you can experiment with that,
+
+1170
+0:43:57,060 --> 0:43:59,060
+ and it's always,
+
+1171
+0:43:59,060 --> 0:44:02,060
+ the tip here is to go from small to big,
+
+1172
+0:44:02,060 --> 0:44:04,060
+ it's better than to try and go narrow,
+
+1173
+0:44:04,060 --> 0:44:06,060
+ to see if you shoot higher,
+
+1174
+0:44:06,060 --> 0:44:09,060
+ because then you cannot pass the gas fast enough,
+
+1175
+0:44:09,060 --> 0:44:11,060
+ and then you will burn off a lot of gas,
+
+1176
+0:44:11,060 --> 0:44:13,060
+ which is unburned,
+
+1177
+0:44:13,060 --> 0:44:17,060
+ so going from small to wide will make the expansion easier,
+
+1178
+0:44:17,060 --> 0:44:19,060
+ and will make the ignition easier,
+
+1179
+0:44:19,060 --> 0:44:23,060
+ but sometimes you end up with fireballs instead of a column of fire,
+
+1180
+0:44:23,060 --> 0:44:25,060
+ but yes, some people want that,
+
+1181
+0:44:25,060 --> 0:44:29,060
+ and then you can make like a fireball shoot in the air,
+
+1182
+0:44:29,060 --> 0:44:32,060
+ so yes, experimenting is really important here,
+
+1183
+0:44:32,060 --> 0:44:36,060
+ and helps you in defining which shape you like.
+
+1184
+0:44:36,060 --> 0:44:40,060
+ Yes, any last questions?
+
+1185
+0:44:40,060 --> 0:44:43,060
+ If there are no more questions,
+
+1186
+0:44:43,060 --> 0:44:45,060
+ I'm here all camp,
+
+1187
+0:44:45,060 --> 0:44:46,060
+ again thanks to Borneck
+
+1188
+0:44:46,060 --> 0:44:48,060
+ for having me on stage here,
+
+1189
+0:44:48,060 --> 0:44:49,060
+ if you want to ask questions,
+
+1190
+0:44:49,060 --> 0:44:51,060
+ or tomorrow you think of something,
+
+1191
+0:44:51,060 --> 0:44:52,060
+ just drop by,
+
+1192
+0:44:52,060 --> 0:44:54,060
+ at night I'm in front of the info container,
+
+1193
+0:44:54,060 --> 0:44:57,060
+ I'm 10 meters ahead with a table and a laptop,
+
+1194
+0:44:57,060 --> 0:44:58,060
+ you can have a go tonight,
+
+1195
+0:44:58,060 --> 0:44:59,060
+ if you want to play,
+
+1196
+0:44:59,060 --> 0:45:01,060
+ or want to ask some more questions,
+
+1197
+0:45:01,060 --> 0:45:02,060
+ and as I said,
+
+1198
+0:45:02,060 --> 0:45:04,060
+ I can show you backstage,
+
+1199
+0:45:04,060 --> 0:45:05,060
+ how it's done,
+
+1200
+0:45:05,060 --> 0:45:07,060
+ and how it all operates,
+
+1201
+0:45:07,060 --> 0:45:09,060
+ so thank you so much.
+
+1202
+0:45:09,060 --> 0:45:10,060
+ Thank you.
+
+1203
+0:45:16,060 --> 0:45:17,060
+ Thank you.

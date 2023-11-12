@@ -1,0 +1,4147 @@
+# Transcribed 2023-11-12T18 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:12,000
+ Karina Haupt will talk about how to properly open source source code.
+
+2
+0:00:12,000 --> 0:00:19,000
+ Give her an applause.
+
+3
+0:00:19,000 --> 0:00:24,000
+ Yes, hello and thanks. As already was mentioned, my name is Karina Haupt.
+
+4
+0:00:24,000 --> 0:00:31,000
+ I'm not a lawyer, I'm a software engineer or computer scientist by trade.
+
+5
+0:00:31,000 --> 0:00:38,000
+ So this is all I will tell you is to my best knowledge.
+
+6
+0:00:38,000 --> 0:00:44,000
+ But yeah, I'm not just a developer or software engineer.
+
+7
+0:00:44,000 --> 0:00:48,000
+ I'm a head of a sustainable software engineering group and this is what I deal with.
+
+8
+0:00:48,000 --> 0:00:52,000
+ So I make software more usable for others.
+
+9
+0:00:52,000 --> 0:00:54,000
+ And this is exactly why I'm here.
+
+10
+0:00:54,000 --> 0:00:58,000
+ I'm also a big fan of open source and I'm an open source enthusiast.
+
+11
+0:00:58,000 --> 0:01:01,000
+ And this is why I'm giving this talk today.
+
+12
+0:01:01,000 --> 0:01:04,000
+ I work for the German Aerospace Center.
+
+13
+0:01:04,000 --> 0:01:09,000
+ Yeah, where I'm supporting scientists to develop software in a sustainable way.
+
+14
+0:01:09,000 --> 0:01:16,000
+ And also, I'm there part of a team which consults people regarding open source licenses and open source publishing.
+
+15
+0:01:16,000 --> 0:01:22,000
+ And so this talk is something I talk a lot about during my work also in my free time.
+
+16
+0:01:22,000 --> 0:01:24,000
+ Because yeah, open source.
+
+17
+0:01:24,000 --> 0:01:26,000
+ I'm an open source fan.
+
+18
+0:01:26,000 --> 0:01:32,000
+ So as the title says, I want to tell you about how you open source your code properly.
+
+19
+0:01:32,000 --> 0:01:36,000
+ Because most of the code out there isn't open source properly.
+
+20
+0:01:36,000 --> 0:01:38,000
+ But it's really helpful.
+
+21
+0:01:38,000 --> 0:01:46,000
+ So the idea is that you get away from the right side where you have your closed source which looks like a mess.
+
+22
+0:01:46,000 --> 0:01:48,000
+ And you don't want to share with people.
+
+23
+0:01:48,000 --> 0:01:51,000
+ And this is also an argument I hear the most if I say you should share your code.
+
+24
+0:01:51,000 --> 0:01:52,000
+ Oh, it's a mess.
+
+25
+0:01:52,000 --> 0:01:54,000
+ I don't want to show it to others.
+
+26
+0:01:54,000 --> 0:01:56,000
+ I don't want to show it to you.
+
+27
+0:01:56,000 --> 0:01:58,000
+ So I'm going to show you the behavior on the left where you say, yeah, clear.
+
+28
+0:01:58,000 --> 0:02:00,000
+ It's there on GitHub.
+
+29
+0:02:00,000 --> 0:02:02,000
+ Use it for free.
+
+30
+0:02:02,000 --> 0:02:06,000
+ And it's not only about the idea that you're happy to share your code.
+
+31
+0:02:06,000 --> 0:02:12,000
+ It's also about the other person being able to use your code in a properly and safe way.
+
+32
+0:02:12,000 --> 0:02:15,000
+ And this is the one I want to talk about.
+
+33
+0:02:15,000 --> 0:02:18,000
+ How you can achieve this.
+
+34
+0:02:18,000 --> 0:02:22,000
+ So let's first talk really quickly about free software.
+
+35
+0:02:22,000 --> 0:02:24,000
+ What is free or open source software?
+
+36
+0:02:24,000 --> 0:02:26,000
+ So first it was called free software.
+
+37
+0:02:26,000 --> 0:02:32,000
+ But this didn't really went well with industry because it sounded like it's free like in free beer.
+
+38
+0:02:32,000 --> 0:02:36,000
+ So they introduced the term open source.
+
+39
+0:02:36,000 --> 0:02:41,000
+ But the thing is free is like not in free beer.
+
+40
+0:02:41,000 --> 0:02:43,000
+ It's in freedom.
+
+41
+0:02:43,000 --> 0:02:47,000
+ So the idea of free software is that the user has all the freedoms.
+
+42
+0:02:47,000 --> 0:02:50,000
+ This means to run the software, to copy, to modify it.
+
+43
+0:02:50,000 --> 0:02:52,000
+ To distribute it.
+
+44
+0:02:52,000 --> 0:02:53,000
+ To use it.
+
+45
+0:02:53,000 --> 0:02:54,000
+ To share it.
+
+46
+0:02:54,000 --> 0:02:55,000
+ To share it with others.
+
+47
+0:02:55,000 --> 0:02:57,000
+ And so on and so on.
+
+48
+0:02:57,000 --> 0:02:59,000
+ So this is the idea.
+
+49
+0:02:59,000 --> 0:03:02,000
+ I think most of you know about that.
+
+50
+0:03:02,000 --> 0:03:06,000
+ But I always include it to make sure.
+
+51
+0:03:06,000 --> 0:03:10,000
+ And there's a lot of cases where you can what you can do with open source.
+
+52
+0:03:10,000 --> 0:03:12,000
+ So you can use it, obviously.
+
+53
+0:03:12,000 --> 0:03:20,000
+ Nearly all software on this planet you have the feeling is run using open source software if it's not open source itself.
+
+54
+0:03:20,000 --> 0:03:22,000
+ I mean, the Internet wouldn't exist in a way.
+
+55
+0:03:22,000 --> 0:03:34,000
+ But it's also about how you make external contributions or get external contributions to your open source project where you have to think about a lot of things about open source as well if you contribute to open source.
+
+56
+0:03:34,000 --> 0:03:43,000
+ So all of these use cases where you deal with open source sound totally basic, but all of them require you to think about certain things and ensure certain things.
+
+57
+0:03:43,000 --> 0:03:50,000
+ Because open source is not just an idea or a mentality.
+
+58
+0:03:50,000 --> 0:03:51,000
+ It has a legal basis.
+
+59
+0:03:51,000 --> 0:03:58,000
+ So since I'm from Germany, this is a little bit put on German law.
+
+60
+0:03:58,000 --> 0:04:01,000
+ But it's quite similar in most of Europe.
+
+61
+0:04:01,000 --> 0:04:06,000
+ So in Germany we have the so-called .
+
+62
+0:04:06,000 --> 0:04:08,000
+ Normally you call it copyright.
+
+63
+0:04:08,000 --> 0:04:13,000
+ Which means that you can protect something.
+
+64
+0:04:13,000 --> 0:04:16,000
+ But you can't protect ideas and principles.
+
+65
+0:04:16,000 --> 0:04:19,000
+ So normally you have to do, like, source code and object code and stuff.
+
+66
+0:04:19,000 --> 0:04:20,000
+ You can't do something.
+
+67
+0:04:20,000 --> 0:04:21,000
+ Yeah.
+
+68
+0:04:21,000 --> 0:04:22,000
+ So the copyright is a very important thing.
+
+69
+0:04:22,000 --> 0:04:31,000
+ The important thing is that...
+
+70
+0:04:31,000 --> 0:04:36,000
+ The copyright says first that if you write something, you own it.
+
+71
+0:04:36,000 --> 0:04:39,000
+ So you have some rights on it.
+
+72
+0:04:39,000 --> 0:04:46,000
+ But on the same time, if you work for somebody...
+
+73
+0:04:46,000 --> 0:04:49,000
+ They get the rights to...
+
+74
+0:04:49,000 --> 0:04:56,000
+ To work with it.
+
+75
+0:04:56,000 --> 0:04:57,000
+ So it's like the...
+
+76
+0:04:57,000 --> 0:04:59,000
+ In German it's called .
+
+77
+0:04:59,000 --> 0:05:01,000
+ So it means you have the right to...
+
+78
+0:05:01,000 --> 0:05:03,000
+ Great.
+
+79
+0:05:03,000 --> 0:05:05,000
+ I'm missing a word in English.
+
+80
+0:05:05,000 --> 0:05:07,000
+ You have the rights to do...
+
+81
+0:05:07,000 --> 0:05:08,000
+ Yeah.
+
+82
+0:05:08,000 --> 0:05:15,000
+ You have all the rights to sell it, to open source it, or whatever.
+
+83
+0:05:15,000 --> 0:05:17,000
+ So you have the rights to decide what happens with it.
+
+84
+0:05:17,000 --> 0:05:23,000
+ But you don't get the right, at least in Germany, that you can say you wrote it.
+
+85
+0:05:23,000 --> 0:05:28,000
+ So whenever you write a code, even if you work for somebody else or if you get paid to do it,
+
+86
+0:05:28,000 --> 0:05:30,000
+ you're still allowed to say it's yours.
+
+87
+0:05:30,000 --> 0:05:33,000
+ And they are not allowed to say they did it instead of you.
+
+88
+0:05:33,000 --> 0:05:38,000
+ So this is a small differentiation which is really important.
+
+89
+0:05:38,000 --> 0:05:42,000
+ What is important is that it's based on laws.
+
+90
+0:05:42,000 --> 0:05:45,000
+ And open source licenses are contracts.
+
+91
+0:05:45,000 --> 0:05:53,000
+ Meaning if you don't follow them, if you just use something in a way you're not allowed
+
+92
+0:05:53,000 --> 0:05:57,000
+ to, then you break a contract and you can get in trouble.
+
+93
+0:05:57,000 --> 0:06:04,000
+ So there's civil law and criminal law which protects the open source developer or the
+
+94
+0:06:04,000 --> 0:06:11,240
+ one who writes the code, as well as can, yeah, be used against you if you don't use open
+
+95
+0:06:11,240 --> 0:06:13,000
+ source software in the right way.
+
+96
+0:06:13,000 --> 0:06:15,000
+ This sounds a bit strange.
+
+97
+0:06:15,000 --> 0:06:16,000
+ It's scary.
+
+98
+0:06:16,000 --> 0:06:19,000
+ But in reality, the open source community is really nice.
+
+99
+0:06:19,000 --> 0:06:23,000
+ So normally you get a pointer, like you did something wrong, you have to update something,
+
+100
+0:06:23,000 --> 0:06:27,000
+ you have to do something to follow certain rules.
+
+101
+0:06:27,000 --> 0:06:29,000
+ And then you're fine.
+
+102
+0:06:29,000 --> 0:06:37,000
+ So most times when lawyers and stuff gets included in the process is normally when big
+
+103
+0:06:37,000 --> 0:06:45,000
+ companies don't agree to that their stuff is protected by an open source license or
+
+104
+0:06:45,000 --> 0:06:47,000
+ they are using stuff which is protected under an open source license.
+
+105
+0:06:47,000 --> 0:06:49,000
+ They didn't want to comply.
+
+106
+0:06:49,000 --> 0:06:55,000
+ So they get in trouble.
+
+107
+0:06:55,000 --> 0:07:03,000
+ This, so before I start with open source licenses, details and stuff, I want to present you a
+
+108
+0:07:03,000 --> 0:07:09,000
+ process, you could say, for publishing software, which we introduced at my work.
+
+109
+0:07:09,000 --> 0:07:14,000
+ So it's a German Aerospace Center and which counts for nearly all companies.
+
+110
+0:07:14,000 --> 0:07:18,000
+ So where you work when you want to publish something or even most of the stuff you have
+
+111
+0:07:18,000 --> 0:07:20,000
+ to check also when you do it on your own.
+
+112
+0:07:20,000 --> 0:07:22,000
+ It doesn't matter if you're part of a company.
+
+113
+0:07:22,000 --> 0:07:26,000
+ It's just one or two things which are a little bit special then.
+
+114
+0:07:26,000 --> 0:07:32,000
+ For example, the first thing is just when you don't publish your own code, or it's your
+
+115
+0:07:32,000 --> 0:07:36,000
+ own code, but one which you wrote while you're employed somewhere or something or where you
+
+116
+0:07:36,000 --> 0:07:37,000
+ get paid for it.
+
+117
+0:07:37,000 --> 0:07:42,000
+ So the first thing is you have to ask your organization if you're allowed to publish
+
+118
+0:07:42,000 --> 0:07:43,000
+ it.
+
+119
+0:07:43,000 --> 0:07:47,000
+ It sounds really, really default, but in research, a lot of people just publish code
+
+120
+0:07:47,000 --> 0:07:50,000
+ without asking their bosses or something.
+
+121
+0:07:50,000 --> 0:07:54,000
+ And on the one hand, I love it that there's more open source code out there.
+
+122
+0:07:54,000 --> 0:07:59,000
+ But in the end, the problem is that it's not really theirs to decide because while they
+
+123
+0:07:59,000 --> 0:08:08,000
+ have the right to be named as an author, they don't have the right to commercialize or whatever
+
+124
+0:08:08,000 --> 0:08:13,000
+ to distribute the software further because all of this kind of rights are with the employee.
+
+125
+0:08:13,000 --> 0:08:14,000
+ Normally.
+
+126
+0:08:14,000 --> 0:08:18,000
+ So this is normally stated in your contract that everything you do while you work is owned
+
+127
+0:08:18,000 --> 0:08:20,000
+ by your employee.
+
+128
+0:08:20,000 --> 0:08:23,000
+ So ask him first.
+
+129
+0:08:23,000 --> 0:08:29,000
+ Second, and that's where it gets tricky, is to determine all legal requirements and resulting
+
+130
+0:08:29,000 --> 0:08:36,000
+ tasks out of those, meaning you have to check, am I allowed to publish my code as open source
+
+131
+0:08:36,000 --> 0:08:37,000
+ software?
+
+132
+0:08:37,000 --> 0:08:42,000
+ And if so, do I have perhaps something I have to do?
+
+133
+0:08:42,000 --> 0:08:44,000
+ Do I have something I have to care about?
+
+134
+0:08:44,000 --> 0:08:49,000
+ Or am I perhaps restricted in the type of licenses I'm allowed to use?
+
+135
+0:08:49,000 --> 0:08:51,000
+ And so on.
+
+136
+0:08:51,000 --> 0:08:54,000
+ So there's different things you have to think about.
+
+137
+0:08:54,000 --> 0:08:56,000
+ The first one is who are your contributors?
+
+138
+0:08:56,000 --> 0:08:58,000
+ Is it just you?
+
+139
+0:08:58,000 --> 0:09:00,000
+ Did other people help?
+
+140
+0:09:00,000 --> 0:09:05,000
+ If so, they have to agree that you publish it.
+
+141
+0:09:05,000 --> 0:09:10,000
+ So as soon as you gather an external contributor or your colleague or friend or whoever who
+
+142
+0:09:10,000 --> 0:09:12,000
+ works on the same code too, they have to agree too.
+
+143
+0:09:12,000 --> 0:09:17,000
+ So you have to make sure that it gets published, except if it's all owned by the same employee,
+
+144
+0:09:17,000 --> 0:09:19,000
+ then they can decide.
+
+145
+0:09:19,000 --> 0:09:25,000
+ So you first have to identify everybody so that they on the one hand agree if they have
+
+146
+0:09:25,000 --> 0:09:30,000
+ the rights or that you name them at least as an author because everybody who participated
+
+147
+0:09:30,000 --> 0:09:32,000
+ has the right to be called as an author.
+
+148
+0:09:32,000 --> 0:09:37,000
+ So you normally write an author txt or something like that so that you can say, okay, this
+
+149
+0:09:37,000 --> 0:09:39,000
+ is the people who helped.
+
+150
+0:09:39,000 --> 0:09:42,000
+ This is the people who worked on that because they have the right to be named.
+
+151
+0:09:42,000 --> 0:09:49,000
+ Then something nearly nobody thinks about is something called export restrictions.
+
+152
+0:09:49,000 --> 0:09:54,000
+ And I would be interested if anybody with a show of hands, if anybody knows what export
+
+153
+0:09:54,000 --> 0:09:55,000
+ restrictions are.
+
+154
+0:09:55,000 --> 0:09:56,000
+ I've heard about that.
+
+155
+0:09:56,000 --> 0:09:57,000
+ Okay.
+
+156
+0:09:57,000 --> 0:10:01,000
+ We have like four here or five people know about that.
+
+157
+0:10:01,000 --> 0:10:06,000
+ How many have thought about checking those when you publish software as open source?
+
+158
+0:10:06,000 --> 0:10:08,000
+ Show of hands.
+
+159
+0:10:08,000 --> 0:10:09,000
+ Nobody.
+
+160
+0:10:09,000 --> 0:10:10,000
+ Yeah.
+
+161
+0:10:10,000 --> 0:10:11,000
+ That's normally the typical amount of writing.
+
+162
+0:10:11,000 --> 0:10:12,000
+ Okay.
+
+163
+0:10:12,000 --> 0:10:15,000
+ So I'm going to show you a few examples of what I've got here.
+
+164
+0:10:15,000 --> 0:10:19,000
+ So normally export restrictions are known for stuff like weapons and things, but it's
+
+165
+0:10:19,000 --> 0:10:23,000
+ also the same for software.
+
+166
+0:10:23,000 --> 0:10:29,000
+ In Europe, it's quite easy to estimate if something can use or is used in a military
+
+167
+0:10:29,000 --> 0:10:31,000
+ way, you have export restrictions.
+
+168
+0:10:31,000 --> 0:10:40,000
+ In the US, it's a little bit more complicated because they have this dual use thing, meaning
+
+169
+0:10:40,000 --> 0:10:41,000
+ stuff can be used in a military context.
+
+170
+0:10:41,000 --> 0:10:44,000
+ So you can use it in a military context as well in a civilian context.
+
+171
+0:10:44,000 --> 0:10:46,000
+ And nearly everything is dual use.
+
+172
+0:10:46,000 --> 0:10:52,000
+ For example, Microsoft Excel is dual use because you can use it in a military way to do something,
+
+173
+0:10:52,000 --> 0:10:54,000
+ to calculate whatever.
+
+174
+0:10:54,000 --> 0:11:00,000
+ So you have to check if it's under the export restrictions, but luckily with stuff like
+
+175
+0:11:00,000 --> 0:11:05,000
+ Microsoft Excel or whatever, they are under restrictions, but they don't have any restrictions.
+
+176
+0:11:05,000 --> 0:11:10,000
+ So as they are listed somewhere or fits the description of certain categories, they are
+
+177
+0:11:10,000 --> 0:11:12,000
+ under the export restrictions.
+
+178
+0:11:12,000 --> 0:11:15,000
+ But you don't get any restrictions.
+
+179
+0:11:15,000 --> 0:11:17,000
+ But there's other stuff which is restricted.
+
+180
+0:11:17,000 --> 0:11:24,000
+ So specific cryptography or something, especially if you go to all these things, then you get
+
+181
+0:11:24,000 --> 0:11:26,000
+ in trouble if you want to export it somewhere.
+
+182
+0:11:26,000 --> 0:11:30,000
+ And if you publish it as open source, this normally means you export it to the whole
+
+183
+0:11:30,000 --> 0:11:31,000
+ world.
+
+184
+0:11:31,000 --> 0:11:37,000
+ And as I said, in the European law, it's not a big issue, but the US law is important for
+
+185
+0:11:37,000 --> 0:11:40,000
+ us because it's valid as soon as possible.
+
+186
+0:11:40,000 --> 0:11:47,000
+ So if you have a code which is in a whole car or something, one screw which is from
+
+187
+0:11:47,000 --> 0:11:51,000
+ the US, one tiny screw, you have to follow the US export laws.
+
+188
+0:11:51,000 --> 0:11:53,000
+ And same is for software.
+
+189
+0:11:53,000 --> 0:11:57,000
+ And you can perhaps imagine that might be if you use some libraries or stuff, there
+
+190
+0:11:57,000 --> 0:11:59,000
+ might be some code which came from the US.
+
+191
+0:11:59,000 --> 0:12:01,000
+ So suddenly it's under US export law.
+
+192
+0:12:01,000 --> 0:12:03,000
+ So you have to check.
+
+193
+0:12:03,000 --> 0:12:08,000
+ As a private person writing your small game or whatever, this might be a bit of a challenge
+
+194
+0:12:08,000 --> 0:12:09,000
+ for you.
+
+195
+0:12:09,000 --> 0:12:14,000
+ As a research facility, we have to check this regularly, especially that you don't
+
+196
+0:12:14,000 --> 0:12:19,000
+ get in trouble because the US has some crazy ideas who are evil people, and so you're
+
+197
+0:12:19,000 --> 0:12:24,000
+ not allowed to publish it as open source, so you can get in trouble with them.
+
+198
+0:12:24,000 --> 0:12:30,000
+ Then, again, this is perhaps a little bit specific for research facilities, but it might
+
+199
+0:12:30,000 --> 0:12:36,000
+ be depending on where you work or how you perhaps get some funding for your open source
+
+200
+0:12:36,000 --> 0:12:37,000
+ project.
+
+201
+0:12:37,000 --> 0:12:38,000
+ So that's one thing.
+
+202
+0:12:38,000 --> 0:12:42,000
+ If you're part of a bigger open source project, if you're part of a bigger project, you have
+
+203
+0:12:42,000 --> 0:12:46,000
+ to check if there's some conditions with the funding.
+
+204
+0:12:46,000 --> 0:12:51,000
+ So for example, in Europe, there's a research program called Horizon 2020.
+
+205
+0:12:51,000 --> 0:12:53,000
+ Perhaps some of you have heard of that.
+
+206
+0:12:53,000 --> 0:12:55,000
+ I don't know if you're close to research.
+
+207
+0:12:55,000 --> 0:13:01,000
+ And they say sometimes you're allowed to or you have to publish it as open source, which
+
+208
+0:13:01,000 --> 0:13:03,000
+ is amazing if they do this.
+
+209
+0:13:03,000 --> 0:13:08,000
+ But sometimes they say it has to be under a permissive license or a copyleft license.
+
+210
+0:13:08,000 --> 0:13:09,000
+ And what does this exactly mean?
+
+211
+0:13:09,000 --> 0:13:11,000
+ I'll come to a little bit later.
+
+212
+0:13:11,000 --> 0:13:13,000
+ But so you have to check what they say.
+
+213
+0:13:13,000 --> 0:13:19,000
+ And also it can be that you signed a contract with a company where you wrote something or
+
+214
+0:13:19,000 --> 0:13:23,000
+ a part of what you did there gets into your other project.
+
+215
+0:13:23,000 --> 0:13:28,000
+ And somewhere in the small letters on page, I don't know, 130, it says everything which
+
+216
+0:13:28,000 --> 0:13:33,000
+ results out of this project is not allowed to be published as open source, which is for
+
+217
+0:13:33,000 --> 0:13:38,000
+ us, for example, the case with some bigger companies who write this in all their contracts.
+
+218
+0:13:38,000 --> 0:13:42,000
+ So everything we produce or get the ideas from in this project, we're not allowed to
+
+219
+0:13:42,000 --> 0:13:44,000
+ open source.
+
+220
+0:13:44,000 --> 0:13:48,000
+ The best solution is if you have something before which you put in, open source it before.
+
+221
+0:13:48,000 --> 0:13:52,000
+ So it's already open source, so they can't do anything about it.
+
+222
+0:13:52,000 --> 0:13:56,000
+ But you should always check if you signed some funding contracts because there can be
+
+223
+0:13:56,000 --> 0:14:00,000
+ stuff written somewhere down there regarding the rights or yeah.
+
+224
+0:14:00,000 --> 0:14:04,000
+ And suddenly you have this big, big project or something and there was this one tiny part
+
+225
+0:14:04,000 --> 0:14:06,000
+ and now you're not allowed to publish it.
+
+226
+0:14:06,000 --> 0:14:07,000
+ Again, something.
+
+227
+0:14:07,000 --> 0:14:10,000
+ A lot of people don't think about and check.
+
+228
+0:14:10,000 --> 0:14:11,000
+ And I don't know.
+
+229
+0:14:11,000 --> 0:14:13,000
+ Is here some people from research?
+
+230
+0:14:13,000 --> 0:14:15,000
+ Show of hands.
+
+231
+0:14:15,000 --> 0:14:16,000
+ Oh, yeah.
+
+232
+0:14:16,000 --> 0:14:18,000
+ One, three.
+
+233
+0:14:18,000 --> 0:14:24,000
+ So perhaps those of you know, the history of research project is that you get funding
+
+234
+0:14:24,000 --> 0:14:27,000
+ and the next funding and the next funding and it's over years and years and decades.
+
+235
+0:14:27,000 --> 0:14:31,000
+ And in the end, it's really hard to figure out like where did the funding come from?
+
+236
+0:14:31,000 --> 0:14:33,000
+ Do we have some restrictions?
+
+237
+0:14:33,000 --> 0:14:36,000
+ So you have to note all the stuff down early when you get the money.
+
+238
+0:14:36,000 --> 0:14:37,000
+ There's no restrictions.
+
+239
+0:14:37,000 --> 0:14:38,000
+ There's no regulations or something.
+
+240
+0:14:38,000 --> 0:14:39,000
+ Note it somewhere close to your project.
+
+241
+0:14:39,000 --> 0:14:43,000
+ This is really helpful later.
+
+242
+0:14:43,000 --> 0:14:45,000
+ And now comes this part which everybody needs to do.
+
+243
+0:14:45,000 --> 0:14:51,000
+ And this is as soon as, at least as soon as you use code which is not yours.
+
+244
+0:14:51,000 --> 0:14:56,000
+ Especially libraries, which is completely normal today, I think, to have some code from
+
+245
+0:14:56,000 --> 0:14:57,000
+ others which you use.
+
+246
+0:14:57,000 --> 0:15:02,000
+ So you have to check for the third party code regarding the licenses.
+
+247
+0:15:02,000 --> 0:15:06,000
+ And we'll talk about this a lot in the next part.
+
+248
+0:15:06,000 --> 0:15:12,000
+ But before I come to one more part which is if you have done all of this, you will have
+
+249
+0:15:12,000 --> 0:15:14,000
+ a set of things which you need to do.
+
+250
+0:15:14,000 --> 0:15:17,000
+ So this will be the second part also or third part.
+
+251
+0:15:17,000 --> 0:15:20,000
+ It depends on the kind of talk.
+
+252
+0:15:20,000 --> 0:15:24,000
+ And you have to evaluate a little bit.
+
+253
+0:15:24,000 --> 0:15:25,000
+ Is it worth doing it?
+
+254
+0:15:25,000 --> 0:15:28,000
+ In my opinion, nearly all cases, yes.
+
+255
+0:15:28,000 --> 0:15:29,000
+ Do your stuff open source.
+
+256
+0:15:29,000 --> 0:15:31,000
+ Do it properly.
+
+257
+0:15:31,000 --> 0:15:34,000
+ Work on the project from the beginning that you can do it easily.
+
+258
+0:15:34,000 --> 0:15:35,000
+ But sometimes you have to check.
+
+259
+0:15:35,000 --> 0:15:38,000
+ Sometimes you have to check if the effort is worth it.
+
+260
+0:15:38,000 --> 0:15:40,000
+ And especially who would benefit from it.
+
+261
+0:15:40,000 --> 0:15:43,000
+ Is there somebody else who would use it?
+
+262
+0:15:43,000 --> 0:15:47,000
+ And in some cases, it's true to say, yeah, it doesn't make sense a lot.
+
+263
+0:15:47,000 --> 0:15:48,000
+ It would be a lot of work.
+
+264
+0:15:48,000 --> 0:15:52,000
+ Or we would have to rewrite big parts because of some funding restrictions.
+
+265
+0:15:52,000 --> 0:15:56,000
+ Or we can't give everything out because of some export restriction or something.
+
+266
+0:15:56,000 --> 0:15:59,000
+ And so it doesn't make sense to publish it then.
+
+267
+0:15:59,000 --> 0:16:01,000
+ Sadly, that's sometimes the case.
+
+268
+0:16:01,000 --> 0:16:05,000
+ But you should always think about, okay, what do I need to do?
+
+269
+0:16:05,000 --> 0:16:07,000
+ Is it worth it?
+
+270
+0:16:07,000 --> 0:16:13,000
+ So I stepped quite quickly about this analyze license terms of third party code.
+
+271
+0:16:13,000 --> 0:16:17,000
+ And this is kind of what open source is a lot about.
+
+272
+0:16:17,000 --> 0:16:19,000
+ It's like open source licenses.
+
+273
+0:16:19,000 --> 0:16:26,000
+ And that's why we now do an excourse to the world of open source software licenses.
+
+274
+0:16:26,000 --> 0:16:34,000
+ And in general, it's really fun to talk for me, at least, to talk about software licenses.
+
+275
+0:16:34,000 --> 0:16:35,000
+ Not everybody.
+
+276
+0:16:35,000 --> 0:16:37,000
+ It's a kind of dry topic.
+
+277
+0:16:37,000 --> 0:16:43,000
+ But I'm happy a lot of people or some people showed up to be interested in this.
+
+278
+0:16:43,000 --> 0:16:46,000
+ And so in general, you can say there's all these software licenses.
+
+279
+0:16:46,000 --> 0:16:48,000
+ And there's three types.
+
+280
+0:16:48,000 --> 0:16:52,000
+ The free and open source software licenses, which we talk about today the most.
+
+281
+0:16:52,000 --> 0:16:59,000
+ Then there's public domain, where a lot of people think this is open source, but it isn't.
+
+282
+0:16:59,000 --> 0:17:01,000
+ As well as proprietary.
+
+283
+0:17:01,000 --> 0:17:04,000
+ And a lot of people think proprietary means commercial.
+
+284
+0:17:04,000 --> 0:17:06,000
+ But this is not the case.
+
+285
+0:17:06,000 --> 0:17:09,000
+ Proprietary means everything which is not free and open source or public domain.
+
+286
+0:17:09,000 --> 0:17:12,000
+ It can be commercial, but it doesn't have to be.
+
+287
+0:17:12,000 --> 0:17:17,000
+ So there's like shareware stuff in the early days or stuff which is proprietary.
+
+288
+0:17:17,000 --> 0:17:19,000
+ But it might be free to use.
+
+289
+0:17:19,000 --> 0:17:22,000
+ You might even have access to the code.
+
+290
+0:17:22,000 --> 0:17:25,000
+ But it means it doesn't give you all the rights I mentioned in the beginning.
+
+291
+0:17:25,000 --> 0:17:32,000
+ So free and open source licenses always give you the right to use, to modify, to distribute, and so on and so on.
+
+292
+0:17:32,000 --> 0:17:34,000
+ So you have certain rights you get.
+
+293
+0:17:34,000 --> 0:17:38,000
+ And if you get those, it's a free and open source software license.
+
+294
+0:17:38,000 --> 0:17:44,000
+ Important to know is that the term open source software license or something is not protected.
+
+295
+0:17:44,000 --> 0:17:48,000
+ So there's licenses out there who claim to be open source but aren't.
+
+296
+0:17:48,000 --> 0:17:52,000
+ For example, a quite common one is one which states something like,
+
+297
+0:17:52,000 --> 0:17:57,000
+ you're allowed to do all these things for open source, but you're not allowed to use it for something evil.
+
+298
+0:17:57,000 --> 0:17:59,000
+ It sounds really good.
+
+299
+0:17:59,000 --> 0:18:01,000
+ It sounds like a great idea.
+
+300
+0:18:01,000 --> 0:18:04,000
+ But the problem is who says what is evil and what isn't.
+
+301
+0:18:04,000 --> 0:18:07,000
+ To draw certain lines really, really hard.
+
+302
+0:18:07,000 --> 0:18:12,000
+ And again, free and open source software, it's about non-discrimination.
+
+303
+0:18:12,000 --> 0:18:16,000
+ So it doesn't matter what you use it for, who you are, where you're from or something.
+
+304
+0:18:16,000 --> 0:18:18,000
+ You're allowed to do all the same things.
+
+305
+0:18:18,000 --> 0:18:20,000
+ And this is important.
+
+306
+0:18:20,000 --> 0:18:24,000
+ So even if it feels like a good idea to exclude military use or whatever,
+
+307
+0:18:24,000 --> 0:18:28,000
+ it's not matching the idea of open source software.
+
+308
+0:18:28,000 --> 0:18:35,000
+ In the world of free and open source software licenses,
+
+309
+0:18:35,000 --> 0:18:38,000
+ there's two types of licenses.
+
+310
+0:18:38,000 --> 0:18:40,000
+ Most perhaps know this.
+
+311
+0:18:40,000 --> 0:18:42,000
+ One is copyleft.
+
+312
+0:18:42,000 --> 0:18:44,000
+ So this was a copyleft.
+
+313
+0:18:44,000 --> 0:18:47,000
+ The most well-known is the one with GPL.
+
+314
+0:18:47,000 --> 0:18:50,000
+ And these licenses are effective.
+
+315
+0:18:50,000 --> 0:18:57,000
+ Meaning they come with the moral idea that everything which is free,
+
+316
+0:18:58,000 --> 0:19:01,000
+ should stay free, even if you modified it.
+
+317
+0:19:01,000 --> 0:19:06,000
+ And everything which is building on something which is free also should be free.
+
+318
+0:19:06,000 --> 0:19:14,000
+ This means as soon as you get a little bit software which is licensed under copyleft into your code,
+
+319
+0:19:14,000 --> 0:19:18,000
+ it all has to be, the whole software in the total, has to be free.
+
+320
+0:19:18,000 --> 0:19:25,000
+ Often it even says it has to be published under the same or compatible license.
+
+321
+0:19:25,000 --> 0:19:27,000
+ Then on the other hand,
+
+322
+0:19:27,000 --> 0:19:29,000
+ there's another idea.
+
+323
+0:19:29,000 --> 0:19:31,000
+ That's the permissive licenses.
+
+324
+0:19:31,000 --> 0:19:38,000
+ Well-known examples there are MIT, Apache, BSD.
+
+325
+0:19:38,000 --> 0:19:42,000
+ They come from the idea that you should have the freedom to do really everything.
+
+326
+0:19:42,000 --> 0:19:45,000
+ So even put it in a commercial product.
+
+327
+0:19:45,000 --> 0:19:50,000
+ Or change something and bring it onto your own license.
+
+328
+0:19:50,000 --> 0:19:55,000
+ So the idea is really freedom until the end.
+
+329
+0:19:55,000 --> 0:19:56,000
+ So everything should stay free.
+
+330
+0:19:56,000 --> 0:19:58,000
+ And on the other hand,
+
+331
+0:19:58,000 --> 0:20:03,000
+ the freedom to do really everything.
+
+332
+0:20:03,000 --> 0:20:06,000
+ I prefer the permissive licenses myself.
+
+333
+0:20:06,000 --> 0:20:12,000
+ Because I think it's important that we can also use it in parts which might be sold or commercially in some parts.
+
+334
+0:20:12,000 --> 0:20:14,000
+ Because this can help getting funding.
+
+335
+0:20:14,000 --> 0:20:18,000
+ And there's a lot of mixtures and possibilities.
+
+336
+0:20:18,000 --> 0:20:20,000
+ Copyleft sounds like a great idea.
+
+337
+0:20:20,000 --> 0:20:24,000
+ But can happen that people don't use it because they can't use it to all the stuffs.
+
+338
+0:20:24,000 --> 0:20:25,000
+ Although,
+
+339
+0:20:25,000 --> 0:20:29,000
+ because of this type of different licenses,
+
+340
+0:20:29,000 --> 0:20:33,000
+ we can get into the field of license incompatibilities.
+
+341
+0:20:33,000 --> 0:20:37,000
+ The easiest example is if you have two copyleft licenses,
+
+342
+0:20:37,000 --> 0:20:41,000
+ which both say you have to publish the result or the result has to be,
+
+343
+0:20:41,000 --> 0:20:47,000
+ the whole software has to be under their own license.
+
+344
+0:20:47,000 --> 0:20:50,000
+ The problem is you can't do both at the same time.
+
+345
+0:20:50,000 --> 0:20:53,000
+ So if I put two libraries under two different licenses,
+
+346
+0:20:53,000 --> 0:20:54,000
+ a copyleft license,
+
+347
+0:20:54,000 --> 0:20:56,000
+ into my code,
+
+348
+0:20:56,000 --> 0:20:58,000
+ I have the problem that the software,
+
+349
+0:20:58,000 --> 0:21:01,000
+ the one license says the software has to be under this license A,
+
+350
+0:21:01,000 --> 0:21:04,000
+ and the other one says it has to be under license B.
+
+351
+0:21:04,000 --> 0:21:07,000
+ And while there's something like dual licensing,
+
+352
+0:21:07,000 --> 0:21:16,000
+ then each product would still be breaching the other license.
+
+353
+0:21:16,000 --> 0:21:23,000
+ So it can't be under the same executable or one you can create can be just under one license.
+
+354
+0:21:24,000 --> 0:21:30,000
+ So this results in something I always call like impossible software
+
+355
+0:21:30,000 --> 0:21:31,000
+ because you can build it,
+
+356
+0:21:31,000 --> 0:21:33,000
+ you can use it for yourself,
+
+357
+0:21:33,000 --> 0:21:37,000
+ but you can't distribute it because in that moment you breached one of the licenses.
+
+358
+0:21:37,000 --> 0:21:44,000
+ And this is a big problem with copyleft licenses especially.
+
+359
+0:21:44,000 --> 0:21:47,000
+ So this is about if you have a single license.
+
+360
+0:21:47,000 --> 0:21:48,000
+ Picking one is really easy,
+
+361
+0:21:48,000 --> 0:21:51,000
+ but if you reuse and combine stuff,
+
+362
+0:21:51,000 --> 0:21:53,000
+ it can be really complicated.
+
+363
+0:21:53,000 --> 0:22:02,000
+ So what I want to show you now is really at first a little bit like frightening graphic,
+
+364
+0:22:02,000 --> 0:22:07,000
+ which is about combining modules under different licenses.
+
+365
+0:22:07,000 --> 0:22:11,000
+ And I want to give you a quick overview about what this means
+
+366
+0:22:11,000 --> 0:22:16,000
+ because this is normally where it gets complicated really quickly for a lot of people.
+
+367
+0:22:16,000 --> 0:22:18,000
+ So in the orange thingy on the corner,
+
+368
+0:22:18,000 --> 0:22:20,000
+ we have your own software component,
+
+369
+0:22:20,000 --> 0:22:23,000
+ which you wrote, whatever.
+
+370
+0:22:23,000 --> 0:22:30,000
+ And now you combine it with a copyleft component.
+
+371
+0:22:30,000 --> 0:22:35,000
+ Here there's even a differentiation between copyleft or the components with copyleft
+
+372
+0:22:35,000 --> 0:22:38,000
+ or license with a copyleft with strong copyleft
+
+373
+0:22:38,000 --> 0:22:43,000
+ or here strongly reciprocal and a standard reciprocal.
+
+374
+0:22:43,000 --> 0:22:46,000
+ I hope I pronounced that right.
+
+375
+0:22:46,000 --> 0:22:49,000
+ So normally it's called strong and weak copyleft.
+
+376
+0:22:49,000 --> 0:22:50,000
+ With a strong copyleft,
+
+377
+0:22:50,000 --> 0:22:52,000
+ GPL, most famous example,
+
+378
+0:22:52,000 --> 0:22:55,000
+ it means you combine your stuff.
+
+379
+0:22:55,000 --> 0:22:58,000
+ So if you use it as a normal library
+
+380
+0:22:58,000 --> 0:23:00,000
+ or if you change something on that code,
+
+381
+0:23:00,000 --> 0:23:02,000
+ on this component,
+
+382
+0:23:02,000 --> 0:23:04,000
+ it's a derivative work
+
+383
+0:23:04,000 --> 0:23:07,000
+ and it has to be under the license like the GPL.
+
+384
+0:23:07,000 --> 0:23:10,000
+ It has to stay under that.
+
+385
+0:23:10,000 --> 0:23:12,000
+ This is the right case like so.
+
+386
+0:23:12,000 --> 0:23:18,000
+ So it means it keeps the same rights and laws you have to fulfill.
+
+387
+0:23:18,000 --> 0:23:19,000
+ On the left,
+
+388
+0:23:19,000 --> 0:23:21,000
+ you see there's another possibility,
+
+389
+0:23:21,000 --> 0:23:24,000
+ which is called combined work with strong separation.
+
+390
+0:23:24,000 --> 0:23:26,000
+ This is a tricky one.
+
+391
+0:23:26,000 --> 0:23:33,000
+ So it means there is a way to kind of get a bit around about the GPL.
+
+392
+0:23:33,000 --> 0:23:36,000
+ But as soon as you try to get around it,
+
+393
+0:23:36,000 --> 0:23:38,000
+ it don't be used in a proper way,
+
+394
+0:23:38,000 --> 0:23:41,000
+ you're kind of already screwed up and you can't use this way.
+
+395
+0:23:41,000 --> 0:23:44,000
+ So it normally means a good example how you can do is,
+
+396
+0:23:44,000 --> 0:23:50,000
+ imagine you have a tool which do some data analysis
+
+397
+0:23:50,000 --> 0:23:55,000
+ and it will create a nice PDF with some graphs on it.
+
+398
+0:23:55,000 --> 0:23:58,000
+ And so you include into your project,
+
+399
+0:23:58,000 --> 0:24:02,000
+ into your small analysis and graph writing thingy,
+
+400
+0:24:02,000 --> 0:24:03,000
+ PDF viewer.
+
+401
+0:24:03,000 --> 0:24:05,000
+ And use one which is under GPL.
+
+402
+0:24:05,000 --> 0:24:08,000
+ You put it in and you kind of already created the PDF
+
+403
+0:24:08,000 --> 0:24:11,000
+ and you call it via a command line comment from in your code
+
+404
+0:24:11,000 --> 0:24:13,000
+ like run this tool,
+
+405
+0:24:13,000 --> 0:24:17,000
+ open it up in a separate window or something and show this PDF.
+
+406
+0:24:17,000 --> 0:24:20,000
+ This you would call a combined work with strong separation.
+
+407
+0:24:20,000 --> 0:24:22,000
+ This would be fine.
+
+408
+0:24:22,000 --> 0:24:25,000
+ Then the PDF viewer would be GPL
+
+409
+0:24:25,000 --> 0:24:27,000
+ and you can do with your code whatever you want.
+
+410
+0:24:27,000 --> 0:24:29,000
+ You can do it commercially,
+
+411
+0:24:29,000 --> 0:24:31,000
+ also another copyleft or permissive license.
+
+412
+0:24:31,000 --> 0:24:33,000
+ So why is this possible?
+
+413
+0:24:33,000 --> 0:24:37,000
+ Because you're using officially interfaces.
+
+414
+0:24:37,000 --> 0:24:42,000
+ So if you interact with this program in an interface
+
+415
+0:24:42,000 --> 0:24:45,000
+ which was created by the developers,
+
+416
+0:24:45,000 --> 0:24:47,000
+ by the rights owners,
+
+417
+0:24:47,000 --> 0:24:49,000
+ and you say,
+
+418
+0:24:49,000 --> 0:24:53,000
+ okay, I'm using this like a command line interface or something,
+
+419
+0:24:53,000 --> 0:24:54,000
+ this is fine
+
+420
+0:24:54,000 --> 0:24:56,000
+ because this is a normal intended use
+
+421
+0:24:56,000 --> 0:25:00,000
+ by the developer who owns the rights.
+
+422
+0:25:00,000 --> 0:25:04,000
+ What's not possible is to write a command line interface
+
+423
+0:25:04,000 --> 0:25:06,000
+ for a tool,
+
+424
+0:25:06,000 --> 0:25:07,000
+ push it there,
+
+425
+0:25:07,000 --> 0:25:09,000
+ and then use this on the other side
+
+426
+0:25:09,000 --> 0:25:12,000
+ or as soon as you share objects or whatever internally,
+
+427
+0:25:12,000 --> 0:25:14,000
+ you're screwed anyway.
+
+428
+0:25:14,000 --> 0:25:16,000
+ So this is really something which is more the idea
+
+429
+0:25:16,000 --> 0:25:18,000
+ you combine tools which are already existing
+
+430
+0:25:18,000 --> 0:25:19,000
+ or already running
+
+431
+0:25:19,000 --> 0:25:22,000
+ and you just kind of put it in one installation thing
+
+432
+0:25:22,000 --> 0:25:24,000
+ or you put it together in one interface in a way,
+
+433
+0:25:24,000 --> 0:25:27,000
+ but you use it in a way like you would use the tools normally
+
+434
+0:25:27,000 --> 0:25:29,000
+ if they would be standalone as well.
+
+435
+0:25:29,000 --> 0:25:31,000
+ And your code has to be working standalone
+
+436
+0:25:31,000 --> 0:25:34,000
+ and their code still has to be working standalone.
+
+437
+0:25:34,000 --> 0:25:36,000
+ So then you can work with GPL in your stuff
+
+438
+0:25:36,000 --> 0:25:39,000
+ and a common example is you have your,
+
+439
+0:25:39,000 --> 0:25:42,000
+ if you have a distribution or something for Linux,
+
+440
+0:25:42,000 --> 0:25:44,000
+ okay, that's a special thing,
+
+441
+0:25:44,000 --> 0:25:46,000
+ but even if you have Windows or something
+
+442
+0:25:46,000 --> 0:25:48,000
+ and it could be shipped with GPL applications
+
+443
+0:25:48,000 --> 0:25:50,000
+ because those applications are standalone or something,
+
+444
+0:25:50,000 --> 0:25:51,000
+ it's totally fine
+
+445
+0:25:51,000 --> 0:25:53,000
+ and they are not influencing like all of Windows.
+
+446
+0:25:55,000 --> 0:25:58,000
+ Okay, now this is like the hard copyleft,
+
+447
+0:25:58,000 --> 0:26:01,000
+ so in general you can say you use copyleft,
+
+448
+0:26:01,000 --> 0:26:03,000
+ you get under the license,
+
+449
+0:26:03,000 --> 0:26:06,000
+ just if you have it really, really loosely coupled,
+
+450
+0:26:06,000 --> 0:26:07,000
+ there's a possibility,
+
+451
+0:26:07,000 --> 0:26:09,000
+ but as soon as you try to reach a state
+
+452
+0:26:09,000 --> 0:26:12,000
+ by creating this barrier on your own,
+
+453
+0:26:12,000 --> 0:26:15,000
+ you're screwed because here it's about intention.
+
+454
+0:26:15,000 --> 0:26:17,000
+ If your intention is to get around to GPL,
+
+455
+0:26:17,000 --> 0:26:21,000
+ you don't have any chance with the lawyers.
+
+456
+0:26:24,000 --> 0:26:26,000
+ Because this is really strict,
+
+457
+0:26:26,000 --> 0:26:30,000
+ something like weak copyleft was introduced.
+
+458
+0:26:30,000 --> 0:26:32,000
+ The most well-known is the LGPL,
+
+459
+0:26:32,000 --> 0:26:34,000
+ it's a lesser GPL.
+
+460
+0:26:34,000 --> 0:26:37,000
+ They wanted to show that this is not as good as the real GPL,
+
+461
+0:26:37,000 --> 0:26:39,000
+ but a lot of people prefer it
+
+462
+0:26:39,000 --> 0:26:42,000
+ and it was introduced because there was a need for it,
+
+463
+0:26:42,000 --> 0:26:44,000
+ but as I said, a lot of people prefer it
+
+464
+0:26:44,000 --> 0:26:47,000
+ because you give the people a little bit more freedom,
+
+465
+0:26:47,000 --> 0:26:49,000
+ to decide what they want to do.
+
+466
+0:26:49,000 --> 0:26:52,000
+ So the idea is if you combine it
+
+467
+0:26:52,000 --> 0:26:55,000
+ and you don't change the LGPL code or something
+
+468
+0:26:55,000 --> 0:26:57,000
+ and you just use it in the library,
+
+469
+0:26:57,000 --> 0:27:00,000
+ you have your work which you can put under your license
+
+470
+0:27:00,000 --> 0:27:03,000
+ and you have the LGPL library which is under LGPL.
+
+471
+0:27:03,000 --> 0:27:05,000
+ If somebody would ask you for your code,
+
+472
+0:27:05,000 --> 0:27:08,000
+ you would have to give them the LGPL code,
+
+473
+0:27:08,000 --> 0:27:10,000
+ but not your own.
+
+474
+0:27:10,000 --> 0:27:14,000
+ If you change something, you might have to do this as well.
+
+475
+0:27:14,000 --> 0:27:16,000
+ But it's not as simple as it sounds.
+
+476
+0:27:17,000 --> 0:27:19,000
+ So you have to do it first,
+
+477
+0:27:19,000 --> 0:27:21,000
+ because there still has to be a separation,
+
+478
+0:27:21,000 --> 0:27:28,000
+ meaning the user has to be able to exchange the library.
+
+479
+0:27:28,000 --> 0:27:31,000
+ So he has to be able to take this piece out
+
+480
+0:27:31,000 --> 0:27:33,000
+ and take another LGPL library,
+
+481
+0:27:33,000 --> 0:27:35,000
+ or whatever, another library in there.
+
+482
+0:27:35,000 --> 0:27:38,000
+ So you perhaps have to publish some parts of your code
+
+483
+0:27:38,000 --> 0:27:41,000
+ so that they are able or create a solution
+
+484
+0:27:41,000 --> 0:27:43,000
+ in a way with your software architecture
+
+485
+0:27:43,000 --> 0:27:45,000
+ that you can simply say,
+
+486
+0:27:45,000 --> 0:27:48,000
+ okay, I'm not using this version of the library,
+
+487
+0:27:48,000 --> 0:27:49,000
+ but I changed something,
+
+488
+0:27:49,000 --> 0:27:51,000
+ I improved something to make it faster, whatever,
+
+489
+0:27:51,000 --> 0:27:53,000
+ and I can include it in your code.
+
+490
+0:27:53,000 --> 0:27:55,000
+ This has to be possible.
+
+491
+0:27:55,000 --> 0:27:57,000
+ Obviously, for different programming languages,
+
+492
+0:27:57,000 --> 0:28:00,000
+ this means different approaches.
+
+493
+0:28:00,000 --> 0:28:02,000
+ For some, this works really well,
+
+494
+0:28:02,000 --> 0:28:06,000
+ because it depends on your type of linkage and stuff.
+
+495
+0:28:06,000 --> 0:28:07,000
+ Sometimes it just,
+
+496
+0:28:07,000 --> 0:28:09,000
+ anyway, say you have to install it somewhere,
+
+497
+0:28:09,000 --> 0:28:11,000
+ so they just install another version on their system
+
+498
+0:28:11,000 --> 0:28:12,000
+ and it's fine.
+
+499
+0:28:12,000 --> 0:28:14,000
+ Sometimes you have to provide a bit of your code,
+
+500
+0:28:14,000 --> 0:28:16,000
+ of your APIs, of your interfaces, or whatever,
+
+501
+0:28:16,000 --> 0:28:21,000
+ and especially create a specific architecture before.
+
+502
+0:28:21,000 --> 0:28:24,000
+ So LGPL you can include,
+
+503
+0:28:24,000 --> 0:28:30,000
+ but it might depend on how your software is.
+
+504
+0:28:30,000 --> 0:28:32,000
+ If you can't fulfill this requirement,
+
+505
+0:28:32,000 --> 0:28:34,000
+ then it's again a derivative work,
+
+506
+0:28:34,000 --> 0:28:38,000
+ meaning the result has to be under LGPL.
+
+507
+0:28:38,000 --> 0:28:41,000
+ And last, we come to the permissive components.
+
+508
+0:28:41,000 --> 0:28:43,000
+ Yeah, BSD, MIT, Apache,
+
+509
+0:28:43,000 --> 0:28:46,000
+ with this, the nice thing is you can do whatever.
+
+510
+0:28:46,000 --> 0:28:47,000
+ If you mix it up,
+
+511
+0:28:47,000 --> 0:28:50,000
+ you can put everything under your license in the end.
+
+512
+0:28:50,000 --> 0:28:52,000
+ If you don't change it or something,
+
+513
+0:28:52,000 --> 0:28:54,000
+ you normally say it's a combined work.
+
+514
+0:28:54,000 --> 0:28:56,000
+ This is, say, stay under the license,
+
+515
+0:28:56,000 --> 0:28:58,000
+ your code's done under your license,
+
+516
+0:28:58,000 --> 0:29:00,000
+ and you can do whatever.
+
+517
+0:29:00,000 --> 0:29:03,000
+ So with the right part,
+
+518
+0:29:03,000 --> 0:29:07,000
+ you can do also proprietary software,
+
+519
+0:29:07,000 --> 0:29:11,000
+ and you can do kind of whatever you want.
+
+520
+0:29:11,000 --> 0:29:12,000
+ With GPL,
+
+521
+0:29:12,000 --> 0:29:15,000
+ it's a little bit more complicated.
+
+522
+0:29:15,000 --> 0:29:20,000
+ Commercialization is still possible,
+
+523
+0:29:20,000 --> 0:29:22,000
+ but perhaps not in the way
+
+524
+0:29:22,000 --> 0:29:27,000
+ like with proprietary software.
+
+525
+0:29:27,000 --> 0:29:33,000
+ Okay, so I hope you could kind of follow me through this,
+
+526
+0:29:33,000 --> 0:29:35,000
+ because this is kind of important
+
+527
+0:29:35,000 --> 0:29:39,000
+ if you want to clean up your code.
+
+528
+0:29:39,000 --> 0:29:41,000
+ So if you use GPL,
+
+529
+0:29:41,000 --> 0:29:43,000
+ if you use third-party code,
+
+530
+0:29:43,000 --> 0:29:45,000
+ to put this a little bit in a nutshell,
+
+531
+0:29:45,000 --> 0:29:48,000
+ is you have to check the license,
+
+532
+0:29:48,000 --> 0:29:52,000
+ and you have to check how you integrate it.
+
+533
+0:29:52,000 --> 0:29:53,000
+ So is it a loose coupling?
+
+534
+0:29:53,000 --> 0:29:54,000
+ Is this linking?
+
+535
+0:29:54,000 --> 0:29:56,000
+ Is it source code, your copy?
+
+536
+0:29:56,000 --> 0:29:59,000
+ And it depends also, again,
+
+537
+0:29:59,000 --> 0:30:01,000
+ lastly, like how you distribute your code.
+
+538
+0:30:01,000 --> 0:30:03,000
+ And this all has influence
+
+539
+0:30:03,000 --> 0:30:06,000
+ on which license you can choose for your software.
+
+540
+0:30:06,000 --> 0:30:08,000
+ If you use something with copyleft,
+
+541
+0:30:08,000 --> 0:30:10,000
+ you might have to use exactly this copyleft license.
+
+542
+0:30:10,000 --> 0:30:15,000
+ If you use something with weak copyleft,
+
+543
+0:30:15,000 --> 0:30:17,000
+ it has influence on how you create your structure
+
+544
+0:30:17,000 --> 0:30:19,000
+ from your code.
+
+545
+0:30:19,000 --> 0:30:20,000
+ And if you have something permissive,
+
+546
+0:30:20,000 --> 0:30:23,000
+ you normally are totally easily unhappy.
+
+547
+0:30:23,000 --> 0:30:26,000
+ And the distribution is also kind of important,
+
+548
+0:30:26,000 --> 0:30:29,000
+ because all these licenses
+
+549
+0:30:29,000 --> 0:30:33,000
+ always become really active,
+
+550
+0:30:33,000 --> 0:30:34,000
+ you could say,
+
+551
+0:30:34,000 --> 0:30:37,000
+ when you distribute.
+
+552
+0:30:37,000 --> 0:30:39,000
+ Meaning,
+
+553
+0:30:39,000 --> 0:30:42,000
+ while you get all these permissions
+
+554
+0:30:42,000 --> 0:30:43,000
+ to do whatever you want,
+
+555
+0:30:43,000 --> 0:30:46,000
+ you have certain rights to have,
+
+556
+0:30:46,000 --> 0:30:48,000
+ we have all these rights, sorry,
+
+557
+0:30:48,000 --> 0:30:49,000
+ and these permissions,
+
+558
+0:30:49,000 --> 0:30:52,000
+ you also have certain things you have to follow.
+
+559
+0:30:52,000 --> 0:30:56,000
+ So there's some stuff you have to do.
+
+560
+0:30:56,000 --> 0:30:58,000
+ The one thing we already heard is
+
+561
+0:30:58,000 --> 0:31:00,000
+ it can be for copyleft to put it under the same license
+
+562
+0:31:00,000 --> 0:31:01,000
+ or something.
+
+563
+0:31:01,000 --> 0:31:02,000
+ This is really, really strict.
+
+564
+0:31:02,000 --> 0:31:04,000
+ But there's also further small stuff,
+
+565
+0:31:04,000 --> 0:31:06,000
+ which can be important depending
+
+566
+0:31:06,000 --> 0:31:09,000
+ if you ship it really as an executor,
+
+567
+0:31:09,000 --> 0:31:11,000
+ if you ship it as an executable,
+
+568
+0:31:11,000 --> 0:31:13,000
+ or just put it somewhere and say,
+
+569
+0:31:13,000 --> 0:31:16,000
+ okay, you can get it on your own.
+
+570
+0:31:16,000 --> 0:31:19,000
+ And same is for third-party code.
+
+571
+0:31:19,000 --> 0:31:22,000
+ If you just give instructions,
+
+572
+0:31:22,000 --> 0:31:25,000
+ get yourself all these list of requirements,
+
+573
+0:31:25,000 --> 0:31:28,000
+ install it on your computer or something,
+
+574
+0:31:28,000 --> 0:31:30,000
+ you have to check that the result
+
+575
+0:31:30,000 --> 0:31:32,000
+ is still on a compatible license,
+
+576
+0:31:32,000 --> 0:31:33,000
+ and this works out,
+
+577
+0:31:33,000 --> 0:31:34,000
+ but you don't have to fulfill
+
+578
+0:31:34,000 --> 0:31:36,000
+ everything this license says.
+
+579
+0:31:36,000 --> 0:31:37,000
+ Because licenses say stuff like
+
+580
+0:31:37,000 --> 0:31:39,000
+ you have to provide the license text,
+
+581
+0:31:39,000 --> 0:31:42,000
+ you have to provide, yeah,
+
+582
+0:31:42,000 --> 0:31:44,000
+ sometimes for the other nodes,
+
+583
+0:31:44,000 --> 0:31:46,000
+ like for GPL, if you have a GUI,
+
+584
+0:31:46,000 --> 0:31:47,000
+ like an interface,
+
+585
+0:31:47,000 --> 0:31:49,000
+ you have to have a hint somewhere there
+
+586
+0:31:49,000 --> 0:31:50,000
+ and stuff like that.
+
+587
+0:31:50,000 --> 0:31:52,000
+ It always depends on the license
+
+588
+0:31:52,000 --> 0:31:55,000
+ and often on the distribution type
+
+589
+0:31:55,000 --> 0:31:57,000
+ what you have to fulfill yourself
+
+590
+0:31:57,000 --> 0:31:59,000
+ or which you can kind of outsource
+
+591
+0:31:59,000 --> 0:32:03,000
+ to the user who's building the software themselves.
+
+592
+0:32:03,000 --> 0:32:05,000
+ So this is kind of important.
+
+593
+0:32:05,000 --> 0:32:06,000
+ Think about these things.
+
+594
+0:32:06,000 --> 0:32:09,000
+ And I can't list it for all the licenses.
+
+595
+0:32:09,000 --> 0:32:10,000
+ But most of them require
+
+596
+0:32:10,000 --> 0:32:12,000
+ that you send the license text
+
+597
+0:32:12,000 --> 0:32:13,000
+ or give the license text
+
+598
+0:32:13,000 --> 0:32:17,000
+ and stuff like that.
+
+599
+0:32:17,000 --> 0:32:18,000
+ Okay.
+
+600
+0:32:18,000 --> 0:32:20,000
+ Let's get back to our process.
+
+601
+0:32:20,000 --> 0:32:22,000
+ So now we have a little bit of knowledge
+
+602
+0:32:22,000 --> 0:32:23,000
+ about analyzing the license term
+
+603
+0:32:23,000 --> 0:32:25,000
+ of our third-party code.
+
+604
+0:32:25,000 --> 0:32:28,000
+ So we might have checked what we used.
+
+605
+0:32:28,000 --> 0:32:29,000
+ If it's just permissive stuff,
+
+606
+0:32:29,000 --> 0:32:31,000
+ normally you can just go ahead
+
+607
+0:32:31,000 --> 0:32:33,000
+ and say, okay, this is easy,
+
+608
+0:32:33,000 --> 0:32:36,000
+ this is not much to do.
+
+609
+0:32:36,000 --> 0:32:39,000
+ And if you have copies,
+
+610
+0:32:39,000 --> 0:32:40,000
+ or you have something left or something,
+
+611
+0:32:40,000 --> 0:32:41,000
+ you should check,
+
+612
+0:32:41,000 --> 0:32:43,000
+ do you want to perhaps replace it
+
+613
+0:32:43,000 --> 0:32:46,000
+ depending on what license you want to pick
+
+614
+0:32:46,000 --> 0:32:48,000
+ and what goal you want to have.
+
+615
+0:32:48,000 --> 0:32:49,000
+ So do you want it,
+
+616
+0:32:49,000 --> 0:32:51,000
+ a lot of people use it freely
+
+617
+0:32:51,000 --> 0:32:52,000
+ even in commercial use
+
+618
+0:32:52,000 --> 0:32:53,000
+ because you perhaps get
+
+619
+0:32:53,000 --> 0:32:57,000
+ some pull requests back or something,
+
+620
+0:32:57,000 --> 0:32:59,000
+ get some code optimations or whatever.
+
+621
+0:32:59,000 --> 0:33:02,000
+ Or do you say, okay, it should stay open
+
+622
+0:33:02,000 --> 0:33:03,000
+ and it has to be,
+
+623
+0:33:03,000 --> 0:33:06,000
+ it's a mentality thing.
+
+624
+0:33:06,000 --> 0:33:08,000
+ So when you decide this,
+
+625
+0:33:08,000 --> 0:33:12,320
+ this you are really really good so when you checked all this stuff like export
+
+626
+0:33:12,320 --> 0:33:16,000
+ control and whatever you're now in a good position to say okay is it versus
+
+627
+0:33:16,000 --> 0:33:20,260
+ can I publish it or do I perhaps have stuff from different copyleft licenses
+
+628
+0:33:20,260 --> 0:33:24,920
+ in my thing then I have to change things first and is it worse for me to do this
+
+629
+0:33:24,920 --> 0:33:27,980
+ if it's a really tiny script and you have screwed up with the copyleft
+
+630
+0:33:27,980 --> 0:33:32,540
+ licenses perhaps it's too much effort but perhaps you say okay I want to do
+
+631
+0:33:32,540 --> 0:33:38,360
+ this I want to do it clean so now you have to determine the details of your
+
+632
+0:33:38,360 --> 0:33:44,660
+ publication and implement everything all the tasks you thought about the first
+
+633
+0:33:44,660 --> 0:33:49,540
+ thing is define which license term you take and put it all in your code which
+
+634
+0:33:49,540 --> 0:33:53,060
+ form of publication do you want to create executables with your ship or
+
+635
+0:33:53,060 --> 0:33:56,900
+ will you just provide your code and perhaps a list of instructions how to
+
+636
+0:33:56,900 --> 0:34:02,300
+ set it up and which kind of support strategy do you want to go
+
+637
+0:34:02,300 --> 0:34:02,520
+ so I'm going to show you how to do that so I'm going to show you how to do that
+
+638
+0:34:02,520 --> 0:34:06,540
+ so when it's just perhaps a small script you throw out there you perhaps
+
+639
+0:34:06,540 --> 0:34:10,400
+ have the readme in there perhaps you have a email address which people can
+
+640
+0:34:10,400 --> 0:34:14,340
+ contact or you have a nice issue tracker from github you're using to interact
+
+641
+0:34:14,340 --> 0:34:18,360
+ with people if it's a big project you should think about something else like
+
+642
+0:34:18,360 --> 0:34:23,280
+ do you have a forum or FAQs or how-to tutorials and whatever to support people
+
+643
+0:34:23,280 --> 0:34:28,080
+ using your code and then you have to prepare your software for publication
+
+644
+0:34:28,080 --> 0:34:31,920
+ and this will be a little bit what we'll talk about a little bit later what this
+
+645
+0:34:31,920 --> 0:34:32,160
+ means
+
+646
+0:34:32,520 --> 0:34:39,000
+ because throwing your code out there might seem helpful but often isn't
+
+647
+0:34:39,000 --> 0:34:44,760
+ because I mean how many people have perhaps found some code but there was no
+
+648
+0:34:44,760 --> 0:34:50,580
+ documentation no so you had no clue how to run it or how to install it or you
+
+649
+0:34:50,580 --> 0:34:55,760
+ got in problems so short show of hands who tried to use code from other people
+
+650
+0:34:55,760 --> 0:34:59,280
+ because it sounded great at the beginning but then stopped doing because
+
+651
+0:34:59,280 --> 0:35:02,280
+ yeah you couldn't you just couldn't
+
+652
+0:35:02,280 --> 0:35:08,520
+ okay that's a lot more people so this is important factor and I want to talk
+
+653
+0:35:08,520 --> 0:35:13,800
+ about this too not just about the license part and last checks the
+
+654
+0:35:13,800 --> 0:35:18,540
+ requirements for your publication and release the software means have you done
+
+655
+0:35:18,540 --> 0:35:23,640
+ everything which the license says and stuff like that and last publish the
+
+656
+0:35:23,640 --> 0:35:29,280
+ software put it somewhere so
+
+657
+0:35:29,280 --> 0:35:30,280
+ Oh I screwed something up
+
+658
+0:35:30,280 --> 0:35:31,780
+ I screwed something up
+
+659
+0:35:32,280 --> 0:35:37,920
+ now we talked about I mentioned you need to prepare your code and I brought
+
+660
+0:35:37,920 --> 0:35:42,040
+ a list of minimal generic recommendations because in the end it
+
+661
+0:35:42,040 --> 0:35:49,500
+ always depends on your your project what you need to do but this is like what I
+
+662
+0:35:49,500 --> 0:35:53,760
+ think is kind of the minimum you should do for your project even if it's just a
+
+663
+0:35:53,760 --> 0:35:54,660
+ small thing
+
+664
+0:35:54,660 --> 0:35:59,720
+ this is based on something my colleagues and I wrote which is called a dealer
+
+665
+0:35:59,720 --> 0:36:02,280
+ software engineering guidelines where you find a checklist
+
+666
+0:36:02,280 --> 0:36:09,840
+ of things to do but this is like a generic wrap-up so the first thing
+
+667
+0:36:09,840 --> 0:36:14,220
+ sounds really stupid but put your code under version control system and do this
+
+668
+0:36:14,220 --> 0:36:18,540
+ from the start so people can understand what you did and put in good commit
+
+669
+0:36:18,540 --> 0:36:23,920
+ codes use tax use release or stuff like that yeah it gives us talk to
+
+670
+0:36:23,920 --> 0:36:28,080
+ researchers and they don't do this so this is why this is in there it sounds
+
+671
+0:36:28,080 --> 0:36:32,220
+ like totally yeah that's the first thing all of us might do as a computer science
+
+672
+0:36:32,220 --> 0:36:36,220
+ but researchers who write code and they sent her out tar files and stuff like
+
+673
+0:36:36,220 --> 0:36:44,700
+ that then apply a basic coding style also something a lot of people think
+
+674
+0:36:44,700 --> 0:36:48,960
+ they do but they don't probably do so use a linter get some help to get your
+
+675
+0:36:48,960 --> 0:36:56,220
+ code clean up because it helps a lot to for reading and why go with the modular
+
+676
+0:36:56,220 --> 0:36:59,980
+ design don't do over engineering this is a lot of computer scientists tend to do
+
+677
+0:36:59,980 --> 0:37:01,780
+ they try to
+
+678
+0:37:01,780 --> 0:37:05,180
+ create a solution which is extendable extendable extendable for everything you
+
+679
+0:37:05,180 --> 0:37:09,120
+ could imagine and then nobody can use it
+
+680
+0:37:09,660 --> 0:37:14,160
+ automation great thing to include especially to get a usable versions is
+
+681
+0:37:14,160 --> 0:37:24,180
+ really helpful for your user if they can have one sorry and provides a sexual
+
+682
+0:37:24,180 --> 0:37:29,420
+ documentation this is something which sounds also again like a really really
+
+683
+0:37:29,420 --> 0:37:31,560
+ boring easy thing and everybody should do this
+
+684
+0:37:31,560 --> 0:37:31,760
+ but
+
+685
+0:37:31,780 --> 0:37:36,600
+ we checked on github and a lot of projects don't have a read me or read me
+
+686
+0:37:36,600 --> 0:37:40,560
+ which is not really helpful and what a helpful read me looks like I'll show you
+
+687
+0:37:40,560 --> 0:37:49,560
+ in a sec then again test your software assign a proper release number things
+
+688
+0:37:49,560 --> 0:37:56,780
+ again basics not happening for a lot of projects and if you do public releases
+
+689
+0:37:56,780 --> 0:38:00,220
+ oh here's something I wanted to take out it's sexy open source guidelines this is
+
+690
+0:38:00,220 --> 0:38:01,660
+ kind of what I talked about do this
+
+691
+0:38:01,660 --> 0:38:06,900
+ this whole process what you have to check for if you want to do a public
+
+692
+0:38:06,900 --> 0:38:12,220
+ release and don't just use it internally but if we give it to others do this if
+
+693
+0:38:12,220 --> 0:38:17,260
+ your code is probably and so others can use it in a legal way without getting in
+
+694
+0:38:17,260 --> 0:38:21,340
+ trouble because a lot of code I want to reuse it's not properly licensed or they
+
+695
+0:38:21,340 --> 0:38:24,580
+ didn't check their third-party licenses probably or they don't make it obvious
+
+696
+0:38:24,580 --> 0:38:29,420
+ for me that they do it so I have a problem with that
+
+697
+0:38:29,420 --> 0:38:31,420
+ so
+
+698
+0:38:31,420 --> 0:38:47,900
+ then you have to go back to the
+
+699
+0:38:55,900 --> 0:39:00,420
+ and I'll go back to the demo when I gave you the dependence and check all the
+
+700
+0:39:00,420 --> 0:39:02,020
+ And then you have to pre-code in a way
+
+701
+0:39:02,020 --> 0:39:05,000
+ that you add the license file to your repository,
+
+702
+0:39:05,000 --> 0:39:06,900
+ that you add the license and copyright
+
+703
+0:39:06,900 --> 0:39:08,920
+ hint to all your files.
+
+704
+0:39:08,920 --> 0:39:10,920
+ A lot of people don't do that.
+
+705
+0:39:10,920 --> 0:39:14,040
+ And document the third party dependencies.
+
+706
+0:39:14,040 --> 0:39:15,940
+ So how does this look like?
+
+707
+0:39:15,940 --> 0:39:17,020
+ You add a license file.
+
+708
+0:39:17,020 --> 0:39:20,860
+ This is from the MIT license.
+
+709
+0:39:20,860 --> 0:39:23,820
+ And yeah, again, I give this talk normally to researchers,
+
+710
+0:39:23,820 --> 0:39:25,440
+ and they have really stupid ideas.
+
+711
+0:39:25,440 --> 0:39:27,840
+ For example, they change the license text.
+
+712
+0:39:30,420 --> 0:39:35,260
+ When you use something like MIT, you can't do that.
+
+713
+0:39:35,260 --> 0:39:37,420
+ Then it's not MIT license anymore.
+
+714
+0:39:37,420 --> 0:39:40,060
+ And you should keep the license as it is,
+
+715
+0:39:40,060 --> 0:39:42,740
+ because people know how to deal with it, what it means.
+
+716
+0:39:42,740 --> 0:39:45,700
+ If you change something, they have to read it.
+
+717
+0:39:45,700 --> 0:39:47,980
+ So this is also a reason not to use your own license.
+
+718
+0:39:47,980 --> 0:39:50,220
+ A lot of people love to use their own licenses.
+
+719
+0:39:50,220 --> 0:39:51,760
+ I hate it, because I read the name.
+
+720
+0:39:51,760 --> 0:39:52,880
+ I don't know what it is.
+
+721
+0:39:52,880 --> 0:39:54,420
+ It means I have to read the license.
+
+722
+0:39:54,420 --> 0:39:55,900
+ I have to understand it.
+
+723
+0:39:55,900 --> 0:39:57,900
+ And I have to understand it correctly.
+
+724
+0:39:57,900 --> 0:39:59,740
+ So please use an existence license.
+
+725
+0:39:59,740 --> 0:40:00,400
+ Everybody knows.
+
+726
+0:40:00,400 --> 0:40:01,780
+ It's about.
+
+727
+0:40:01,780 --> 0:40:03,400
+ And the only thing you're allowed to adopt
+
+728
+0:40:03,400 --> 0:40:05,060
+ is the copyright hint.
+
+729
+0:40:05,060 --> 0:40:06,400
+ Again, this is a lot of people.
+
+730
+0:40:06,400 --> 0:40:08,240
+ So they are really happy with, yeah, yeah, I know.
+
+731
+0:40:08,240 --> 0:40:09,640
+ I'm not allowed to change anything.
+
+732
+0:40:09,640 --> 0:40:11,520
+ And they don't change the copyright hint.
+
+733
+0:40:11,520 --> 0:40:14,520
+ So this is something you have to adapt.
+
+734
+0:40:14,520 --> 0:40:16,120
+ You really find a lot of licenses
+
+735
+0:40:16,120 --> 0:40:18,460
+ where there's just a hashtag, like copyright holder.
+
+736
+0:40:18,460 --> 0:40:23,140
+ And then it's like, great, close, nearly.
+
+737
+0:40:23,140 --> 0:40:25,500
+ Please, this tiny thing do.
+
+738
+0:40:25,500 --> 0:40:28,320
+ And then you can add the copyright hint license
+
+739
+0:40:28,320 --> 0:40:29,320
+ into the source file.
+
+740
+0:40:29,320 --> 0:40:30,380
+ And what do you see?
+
+741
+0:40:30,380 --> 0:40:33,520
+ And a lot of code is that they copy the whole license
+
+742
+0:40:33,520 --> 0:40:37,240
+ text, which is legally completely correct.
+
+743
+0:40:37,240 --> 0:40:38,620
+ But it's really, really annoying,
+
+744
+0:40:38,620 --> 0:40:40,820
+ because sometimes you have a really short file.
+
+745
+0:40:40,820 --> 0:40:44,520
+ And three times the file content is the whole license.
+
+746
+0:40:44,520 --> 0:40:46,360
+ And with MIT, we saw the whole license.
+
+747
+0:40:46,360 --> 0:40:47,500
+ It's just OK.
+
+748
+0:40:47,500 --> 0:40:49,760
+ But with GPL, it's pages and pages.
+
+749
+0:40:49,760 --> 0:40:50,980
+ So this doesn't make sense.
+
+750
+0:40:50,980 --> 0:40:57,840
+ So there's a new nice way to do this, which is called SPDX.
+
+751
+0:40:57,840 --> 0:40:59,920
+ It's a copyright hint.
+
+752
+0:40:59,920 --> 0:41:03,260
+ It's readable automatically, so machine-readable.
+
+753
+0:41:03,260 --> 0:41:06,880
+ And you just put in your copyright text and a license
+
+754
+0:41:06,880 --> 0:41:08,220
+ identifier.
+
+755
+0:41:08,220 --> 0:41:10,420
+ And this is this.
+
+756
+0:41:10,420 --> 0:41:15,100
+ And the license has to, so you put the whole license
+
+757
+0:41:15,100 --> 0:41:16,600
+ test still in your project.
+
+758
+0:41:16,600 --> 0:41:19,440
+ It's just stored in the licenses folder.
+
+759
+0:41:19,440 --> 0:41:23,440
+ And it has exactly the tag you use here.
+
+760
+0:41:23,440 --> 0:41:26,800
+ It's an MIT.txt file.
+
+761
+0:41:26,800 --> 0:41:29,800
+ And so it matches automatically the tag to the file name.
+
+762
+0:41:29,920 --> 0:41:32,800
+ So this is really nice.
+
+763
+0:41:32,800 --> 0:41:35,860
+ It's something which was defined by the reuse software
+
+764
+0:41:35,860 --> 0:41:37,140
+ initiative.
+
+765
+0:41:37,140 --> 0:41:39,080
+ And they even have a small tool, which
+
+766
+0:41:39,080 --> 0:41:41,000
+ will put all of this where you can enter, like,
+
+767
+0:41:41,000 --> 0:41:44,760
+ I want this license, and for all of these file types, and so on.
+
+768
+0:41:44,760 --> 0:41:46,500
+ And it will put it in all your code.
+
+769
+0:41:46,500 --> 0:41:50,700
+ And if you have files which are not code files,
+
+770
+0:41:50,700 --> 0:41:52,500
+ but for example, images or something,
+
+771
+0:41:52,500 --> 0:41:55,020
+ you can also say, OK, do this.
+
+772
+0:41:55,020 --> 0:41:58,700
+ And they will put a nice small file next to it, which it has
+
+773
+0:41:58,700 --> 0:41:59,720
+ exactly the same file name.
+
+774
+0:41:59,720 --> 0:42:04,960
+ Like the other one, like logo.png and then .license.
+
+775
+0:42:04,960 --> 0:42:08,060
+ And in this is nothing except this copyright and license
+
+776
+0:42:08,060 --> 0:42:08,740
+ hint.
+
+777
+0:42:08,740 --> 0:42:11,360
+ And you can also use it for stuff like Creative Commons
+
+778
+0:42:11,360 --> 0:42:14,600
+ or whatever to have everything perfectly labeled, which
+
+779
+0:42:14,600 --> 0:42:16,400
+ is great, because everything which is not code
+
+780
+0:42:16,400 --> 0:42:18,020
+ shouldn't be under open source licenses,
+
+781
+0:42:18,020 --> 0:42:21,800
+ but use stuff like the Creative Commons licenses instead.
+
+782
+0:42:21,800 --> 0:42:23,700
+ Because if you want to reuse stuff,
+
+783
+0:42:23,700 --> 0:42:27,440
+ this is the only thing which makes really sense.
+
+784
+0:42:27,440 --> 0:42:29,020
+ And this really helps you do this.
+
+785
+0:42:29,020 --> 0:42:31,320
+ So they have a great site where they explain everything.
+
+786
+0:42:31,320 --> 0:42:34,380
+ And there's this tool, which is really helpful.
+
+787
+0:42:34,380 --> 0:42:35,520
+ And getting improved a lot.
+
+788
+0:42:38,140 --> 0:42:40,100
+ Also important for your license stuff
+
+789
+0:42:40,100 --> 0:42:44,880
+ is to document your dependencies.
+
+790
+0:42:44,880 --> 0:42:47,440
+ You have to do it, you can, on the one hand,
+
+791
+0:42:47,440 --> 0:42:49,840
+ you have often, like for a Python requirement,
+
+792
+0:42:49,840 --> 0:42:52,580
+ TXT where you can write your license.
+
+793
+0:42:52,580 --> 0:42:55,360
+ Important is the dependencies you have.
+
+794
+0:42:55,360 --> 0:42:59,000
+ Important is that you list also which version you're using, as
+
+795
+0:42:59,020 --> 0:43:01,840
+ well as under which license they use.
+
+796
+0:43:01,840 --> 0:43:05,840
+ Here's the license information are in the readme file itself.
+
+797
+0:43:05,840 --> 0:43:07,480
+ So it's written in brackets.
+
+798
+0:43:07,480 --> 0:43:09,760
+ It's like BSD3 clause and something.
+
+799
+0:43:09,760 --> 0:43:12,560
+ And because you don't provide it in this project where
+
+800
+0:43:12,560 --> 0:43:15,760
+ we have this from, we don't provide the libraries
+
+801
+0:43:15,760 --> 0:43:16,420
+ ourselves.
+
+802
+0:43:16,420 --> 0:43:19,060
+ We say you get it via pip or something.
+
+803
+0:43:19,060 --> 0:43:21,520
+ We don't have to ship their license files.
+
+804
+0:43:21,520 --> 0:43:23,520
+ If you create an executable and ship it,
+
+805
+0:43:23,520 --> 0:43:27,140
+ you have to get all these license files from them.
+
+806
+0:43:27,140 --> 0:43:29,000
+ And my suggestion is, or if you're going to do this,
+
+807
+0:43:29,000 --> 0:43:32,140
+ it's quite important to really copy it from their project
+
+808
+0:43:32,140 --> 0:43:34,600
+ and not reuse, even if there's like you have 10 libraries
+
+809
+0:43:34,600 --> 0:43:37,340
+ who are all on a MIT, copy of all of them
+
+810
+0:43:37,340 --> 0:43:39,340
+ because they have different copyright hints
+
+811
+0:43:39,340 --> 0:43:41,620
+ and they might have further information or whatever
+
+812
+0:43:41,620 --> 0:43:45,500
+ in these files and say you have to take their files.
+
+813
+0:43:45,500 --> 0:43:49,380
+ Also, it's not enough to make a link or something.
+
+814
+0:43:50,880 --> 0:43:55,200
+ So yeah, and regarding the version, licenses may change
+
+815
+0:43:55,200 --> 0:43:56,880
+ from one version to another.
+
+816
+0:43:56,880 --> 0:43:58,700
+ PySite was such an example.
+
+817
+0:43:59,000 --> 0:44:03,400
+ And they went to a commercial license from an open source
+
+818
+0:44:03,400 --> 0:44:05,580
+ license, so it's important that you state which version
+
+819
+0:44:05,580 --> 0:44:08,640
+ you are using so it's clear you're using the license
+
+820
+0:44:08,640 --> 0:44:11,760
+ of this version and not of a later version where they perhaps
+
+821
+0:44:11,760 --> 0:44:12,260
+ changed it.
+
+822
+0:44:15,960 --> 0:44:18,480
+ Yeah, this is just example.
+
+823
+0:44:18,480 --> 0:44:20,820
+ Everything is cleaned up, stuff, stuff, stuff, stuff, stuff.
+
+824
+0:44:20,820 --> 0:44:23,640
+ Sorry, I just have one minute, so I have to go quickly through it.
+
+825
+0:44:23,640 --> 0:44:26,320
+ But I kind of explained that already,
+
+826
+0:44:26,320 --> 0:44:28,720
+ that you should clean up your code and stuff.
+
+827
+0:44:28,720 --> 0:44:29,900
+ This can look like this.
+
+828
+0:44:29,900 --> 0:44:33,460
+ Use releases, use tags, especially with GitLab,
+
+829
+0:44:33,460 --> 0:44:35,820
+ it's nice, quite easily.
+
+830
+0:44:35,820 --> 0:44:37,000
+ Have a good documentation.
+
+831
+0:44:37,000 --> 0:44:38,440
+ A README is great.
+
+832
+0:44:38,440 --> 0:44:42,340
+ A README should create or have the following sections.
+
+833
+0:44:42,340 --> 0:44:45,100
+ A software purpose, again, sounds really basic.
+
+834
+0:44:45,100 --> 0:44:48,140
+ It's missing off nearly all readments I stumble across,
+
+835
+0:44:48,140 --> 0:44:51,060
+ like what is it, for whom, and why have you written it?
+
+836
+0:44:51,060 --> 0:44:53,380
+ For example, this is just a small proof of concept.
+
+837
+0:44:53,380 --> 0:44:55,940
+ It's important information for somebody who's using it
+
+838
+0:44:55,940 --> 0:44:58,320
+ or this is a project we're using live in a big production
+
+839
+0:44:58,320 --> 0:45:00,780
+ facility or whatever.
+
+840
+0:45:00,780 --> 0:45:02,160
+ Talk about the main features.
+
+841
+0:45:02,160 --> 0:45:04,320
+ Talk about restraints, like this is just
+
+842
+0:45:04,320 --> 0:45:07,820
+ tested with Python 3.4 and Windows or something.
+
+843
+0:45:07,820 --> 0:45:11,760
+ And make sure that you explain how to install it,
+
+844
+0:45:11,760 --> 0:45:15,000
+ how to use it, and also perhaps give a rough idea
+
+845
+0:45:15,000 --> 0:45:18,720
+ about future plans and ideas, that people know where you're
+
+846
+0:45:18,720 --> 0:45:22,020
+ going with this, so if it makes sense for them to get included
+
+847
+0:45:22,020 --> 0:45:24,320
+ or is this going perhaps in the direction they don't plan
+
+848
+0:45:24,320 --> 0:45:25,000
+ or didn't expect.
+
+849
+0:45:25,000 --> 0:45:26,500
+ If you're interested to get more information about this,
+
+850
+0:45:26,500 --> 0:45:27,700
+ you can click on the link in the chat box.
+
+851
+0:45:27,700 --> 0:45:29,440
+ And if you're interested to get a little bit more detail
+
+852
+0:45:29,440 --> 0:45:32,900
+ how this looks like, I will perhaps later provide this slide
+
+853
+0:45:32,900 --> 0:45:35,520
+ so there's a workshop we give which is just
+
+854
+0:45:35,520 --> 0:45:39,000
+ about make your code ready for publication.
+
+855
+0:45:39,000 --> 0:45:43,140
+ So in the end, the list of recommendations I want
+
+856
+0:45:43,140 --> 0:45:47,740
+ to give you is to know who has exploitation rights.
+
+857
+0:45:47,740 --> 0:45:49,460
+ Ah, that's a word I was missing in the beginning,
+
+858
+0:45:49,460 --> 0:45:50,300
+ the exploitation rights.
+
+859
+0:45:50,300 --> 0:45:52,420
+ Great. On my last slide, I have it.
+
+860
+0:45:52,420 --> 0:45:54,460
+ So you have the ownership rights.
+
+861
+0:45:54,460 --> 0:45:57,700
+ You might have the exploitation rights if it's your code,
+
+862
+0:45:57,700 --> 0:46:00,700
+ if you worked it, created it while you worked for a company,
+
+863
+0:46:00,700 --> 0:46:05,020
+ they have it, talk to those people.
+
+864
+0:46:05,020 --> 0:46:08,840
+ If you accept external contributions, either be aware
+
+865
+0:46:08,840 --> 0:46:12,300
+ that you have then other people who have exploitation rights.
+
+866
+0:46:12,300 --> 0:46:15,980
+ You can create a contributor license agreement
+
+867
+0:46:15,980 --> 0:46:20,360
+ where they handed their exploitation rights to you,
+
+868
+0:46:20,360 --> 0:46:23,020
+ or you ensure you select the right license
+
+869
+0:46:23,020 --> 0:46:25,260
+ on the very beginning because changing the license is
+
+870
+0:46:25,260 --> 0:46:27,460
+ really hard if you don't have all the rights
+
+871
+0:46:27,460 --> 0:46:30,400
+ because you have to ask everybody and they might disappear
+
+872
+0:46:30,400 --> 0:46:34,560
+ and then you have to check like in and try to find them.
+
+873
+0:46:34,560 --> 0:46:37,220
+ And we once had to find somebody who went somewhere
+
+874
+0:46:37,220 --> 0:46:41,660
+ to South America to live in the jungle and we failed.
+
+875
+0:46:41,660 --> 0:46:44,360
+ So we couldn't relicense.
+
+876
+0:46:44,360 --> 0:46:49,780
+ When using third party code, check the license early.
+
+877
+0:46:49,780 --> 0:46:53,360
+ If you want to have the possibility to go commercial
+
+878
+0:46:53,360 --> 0:46:57,460
+ or use a permissive license, avoid GPL or be careful
+
+879
+0:46:57,460 --> 0:47:00,000
+ when you introduce it.
+
+880
+0:47:00,000 --> 0:47:02,060
+ Think about license compatibility.
+
+881
+0:47:02,060 --> 0:47:05,980
+ Don't get different code which then doesn't work together.
+
+882
+0:47:05,980 --> 0:47:09,480
+ And for the love of God, use a standard OS license.
+
+883
+0:47:09,480 --> 0:47:12,140
+ I can understand quickly and I don't want to read your license
+
+884
+0:47:12,140 --> 0:47:14,360
+ because, yeah, it's not fun.
+
+885
+0:47:14,360 --> 0:47:17,240
+ And make your code usable for others, make it clean,
+
+886
+0:47:17,240 --> 0:47:19,480
+ make it understandable, documented,
+
+887
+0:47:19,480 --> 0:47:21,760
+ given instructions, all of this,
+
+888
+0:47:21,760 --> 0:47:25,160
+ so others don't get frustrated by using it.
+
+889
+0:47:25,160 --> 0:47:27,440
+ And while all of this makes,
+
+890
+0:47:27,460 --> 0:47:30,520
+ sound publishing something as open source software
+
+891
+0:47:30,520 --> 0:47:33,100
+ perhaps a little bit scary and a lot of effort,
+
+892
+0:47:33,100 --> 0:47:35,780
+ it doesn't get better when you do it in a proprietary license
+
+893
+0:47:35,780 --> 0:47:38,300
+ because you have to do all the same things.
+
+894
+0:47:38,300 --> 0:47:40,080
+ But you have to think about your own license
+
+895
+0:47:40,080 --> 0:47:43,720
+ and that nobody else is going with your stuff
+
+896
+0:47:43,720 --> 0:47:46,240
+ and how you give support and stuff like this
+
+897
+0:47:46,240 --> 0:47:48,480
+ because then people expect a little bit more.
+
+898
+0:47:48,480 --> 0:47:51,880
+ So it's all of this and more work.
+
+899
+0:47:51,880 --> 0:47:53,560
+ And with this, I'm on the end.
+
+900
+0:47:53,560 --> 0:47:55,120
+ Thank you very much.
+
+901
+0:47:55,120 --> 0:47:57,260
+ And if you have, perhaps you have some time
+
+902
+0:47:57,260 --> 0:47:58,760
+ for questions, I...
+
+903
+0:47:58,760 --> 0:48:00,300
+ We got five minutes for questions.
+
+904
+0:48:00,300 --> 0:48:01,140
+ Yes.
+
+905
+0:48:09,660 --> 0:48:10,500
+ Dr. Totsit.
+
+906
+0:48:11,500 --> 0:48:12,820
+ Oh, thank you.
+
+907
+0:48:12,820 --> 0:48:16,640
+ So I have one question about public domain licensing
+
+908
+0:48:16,640 --> 0:48:19,260
+ and then one about dual licensing.
+
+909
+0:48:19,260 --> 0:48:21,620
+ So I read an article at some point a while ago
+
+910
+0:48:21,620 --> 0:48:25,160
+ that said that public domain sounds
+
+911
+0:48:25,160 --> 0:48:26,300
+ like the most liberal thing,
+
+912
+0:48:26,300 --> 0:48:27,140
+ but it's not,
+
+913
+0:48:27,260 --> 0:48:29,900
+ it's just a part of the world.
+
+914
+0:48:29,900 --> 0:48:32,620
+ And I was wondering if that's the same in all other places.
+
+915
+0:48:32,620 --> 0:48:34,480
+ Exactly, public domain,
+
+916
+0:48:34,480 --> 0:48:37,260
+ so perhaps, because the mic was a bit off,
+
+917
+0:48:37,260 --> 0:48:39,320
+ I'll repeat really quick, public domain,
+
+918
+0:48:40,280 --> 0:48:42,340
+ if it's really the most freedom thing
+
+919
+0:48:42,340 --> 0:48:44,500
+ or it's not really acknowledged everywhere
+
+920
+0:48:44,500 --> 0:48:47,340
+ and that's exactly the problem in Germany, for example,
+
+921
+0:48:47,340 --> 0:48:50,660
+ it doesn't work because you have the ,
+
+922
+0:48:50,660 --> 0:48:52,440
+ which means, so public domains means
+
+923
+0:48:52,440 --> 0:48:54,300
+ you give away all your rights.
+
+924
+0:48:54,300 --> 0:48:56,260
+ So you say here, this is the community,
+
+925
+0:48:56,260 --> 0:48:57,280
+ I don't have anything to do.
+
+926
+0:48:57,280 --> 0:49:00,300
+ You kind of cut yourself off of it.
+
+927
+0:49:00,300 --> 0:49:01,520
+ In Germany, that doesn't work
+
+928
+0:49:01,520 --> 0:49:02,480
+ because you have the Urheberrecht.
+
+929
+0:49:02,480 --> 0:49:04,340
+ You always have the ownership.
+
+930
+0:49:04,340 --> 0:49:05,620
+ You can't do this.
+
+931
+0:49:05,620 --> 0:49:07,320
+ So legally, in the US, this works.
+
+932
+0:49:07,320 --> 0:49:08,540
+ In Germany, not.
+
+933
+0:49:08,540 --> 0:49:10,260
+ So you could say it's not valuable.
+
+934
+0:49:10,260 --> 0:49:13,480
+ So it's kind of no license.
+
+935
+0:49:13,480 --> 0:49:17,580
+ But before, if you talk with a lawyer
+
+936
+0:49:17,580 --> 0:49:20,060
+ or a judge or whatever, they would say
+
+937
+0:49:20,060 --> 0:49:22,980
+ it shows that the intention was given
+
+938
+0:49:22,980 --> 0:49:25,940
+ that it's public domain, that you can do whatever.
+
+939
+0:49:25,940 --> 0:49:27,940
+ So if somebody then would say,
+
+940
+0:49:27,940 --> 0:49:30,560
+ so you use public domain in Germany or whatever.
+
+941
+0:49:30,560 --> 0:49:32,420
+ And so then the owner comes and says,
+
+942
+0:49:32,420 --> 0:49:34,220
+ oh, I still have the ownership in Germany,
+
+943
+0:49:34,220 --> 0:49:36,700
+ so I can sue you because you used it in a way.
+
+944
+0:49:37,700 --> 0:49:39,140
+ And because public domain is not
+
+945
+0:49:39,140 --> 0:49:41,440
+ a legal construct in Germany,
+
+946
+0:49:41,440 --> 0:49:43,660
+ the lawyer, the judge might perhaps say,
+
+947
+0:49:43,660 --> 0:49:47,560
+ yeah, but you really made clear your intention.
+
+948
+0:49:47,560 --> 0:49:50,080
+ So it's a bit tricky.
+
+949
+0:49:50,080 --> 0:49:51,940
+ Also, for example, with public domain,
+
+950
+0:49:51,940 --> 0:49:55,060
+ you don't have to state that it's public domain
+
+951
+0:49:55,060 --> 0:49:55,900
+ or something because you don't have
+
+952
+0:49:55,900 --> 0:49:57,760
+ to give any contribution.
+
+953
+0:49:57,760 --> 0:49:59,400
+ I always, if I use public domain,
+
+954
+0:49:59,400 --> 0:50:01,740
+ write in that it's public domain and where I got it,
+
+955
+0:50:01,740 --> 0:50:03,500
+ so I'm still giving contribution
+
+956
+0:50:03,500 --> 0:50:05,020
+ because I want to make it visible
+
+957
+0:50:05,020 --> 0:50:07,200
+ for others that I took care of that.
+
+958
+0:50:07,200 --> 0:50:08,860
+ So I think you can use it.
+
+959
+0:50:11,280 --> 0:50:13,940
+ Because, yeah, normally in the end,
+
+960
+0:50:13,940 --> 0:50:18,080
+ legally it's not really clean, but it should work out.
+
+961
+0:50:18,080 --> 0:50:20,080
+ And now I forgot your second question.
+
+962
+0:50:20,080 --> 0:50:21,420
+ Oh, dual licenses.
+
+963
+0:50:22,340 --> 0:50:25,020
+ So dual licensing is normally something you do,
+
+964
+0:50:25,020 --> 0:50:26,820
+ like you use one copyleft license
+
+965
+0:50:26,820 --> 0:50:30,300
+ and you use a commercial, that's the normal combination.
+
+966
+0:50:31,320 --> 0:50:35,000
+ This means, for example, you put something under GPL
+
+967
+0:50:35,000 --> 0:50:39,120
+ and somebody can, so everybody can use it
+
+968
+0:50:39,120 --> 0:50:40,980
+ who's happy with using GPL,
+
+969
+0:50:40,980 --> 0:50:43,980
+ but if you want to put it in your commercial project,
+
+970
+0:50:43,980 --> 0:50:45,620
+ you have to go and pay.
+
+971
+0:50:45,620 --> 0:50:46,980
+ So that's the idea behind it.
+
+972
+0:50:48,260 --> 0:50:50,160
+ So you pay then for a commercial license
+
+973
+0:50:50,160 --> 0:50:53,820
+ and this is allowed to do because the owner can decide that,
+
+974
+0:50:53,820 --> 0:50:54,860
+ like, this version, I don't know, I don't know, I don't know,
+
+975
+0:50:54,860 --> 0:50:55,700
+ I don't know.
+
+976
+0:50:55,700 --> 0:50:56,520
+ I don't know.
+
+977
+0:50:56,520 --> 0:50:57,600
+ So I can take this version I built like this executable
+
+978
+0:50:57,600 --> 0:50:58,440
+ because I have all the rights.
+
+979
+0:50:58,440 --> 0:51:00,820
+ If I have all the rights, I can say, this is GPL
+
+980
+0:51:00,820 --> 0:51:02,400
+ and I can take this other one and say,
+
+981
+0:51:02,400 --> 0:51:03,480
+ this is a commercial one.
+
+982
+0:51:03,480 --> 0:51:04,300
+ I can do this.
+
+983
+0:51:04,300 --> 0:51:05,760
+ They are like two entities.
+
+984
+0:51:08,240 --> 0:51:11,180
+ Yeah, so as an owner, I can do this.
+
+985
+0:51:11,180 --> 0:51:12,940
+ I don't recommend it really a lot,
+
+986
+0:51:12,940 --> 0:51:15,440
+ but it's done by some companies to get,
+
+987
+0:51:15,440 --> 0:51:17,800
+ yeah, like a big community to use it
+
+988
+0:51:17,800 --> 0:51:21,440
+ and perhaps even give code back and improve it and stuff
+
+989
+0:51:21,440 --> 0:51:24,120
+ and on the other hand, still do a commercialization.
+
+990
+0:51:24,860 --> 0:51:38,840
+ a question or oh okay yeah this exists to like several the audience so for
+
+991
+0:51:38,840 --> 0:51:44,120
+ example if you have GPL and BSD and MIT simply to just say I don't really know
+
+992
+0:51:44,120 --> 0:51:48,100
+ what the sum of this is I just want to make it the most easy for everyone to
+
+993
+0:51:48,100 --> 0:51:52,700
+ adapt on their terms is that an option and is that possibly like what you're
+
+994
+0:51:52,700 --> 0:51:56,660
+ aiming for with the public domain but more digestible for anyone who cares
+
+995
+0:51:56,660 --> 0:52:01,600
+ about licenses yes so there's some licenses who do stuff like this so
+
+996
+0:52:01,600 --> 0:52:06,260
+ there's like GPL 3 and newer or whatever so you have all this family you don't
+
+997
+0:52:06,260 --> 0:52:10,400
+ have to relicense but there's also some who you can say oh this is MIT and BSD
+
+998
+0:52:10,400 --> 0:52:17,480
+ or whatever to give people the prob as a possibility to not run into license
+
+999
+0:52:17,480 --> 0:52:21,940
+ compatibility issues so this exists people do is this then it's really
+
+1000
+0:52:21,940 --> 0:52:22,680
+ important that you
+
+1001
+0:52:22,680 --> 0:52:26,440
+ state in your project when you use it under which license you're using it
+
+1002
+0:52:26,440 --> 0:52:32,500
+ because for the next user and stuff can this can be relevant this is done by
+
+1003
+0:52:32,500 --> 0:52:37,160
+ some people but it get can get complicated regarding third-party you
+
+1004
+0:52:37,160 --> 0:52:42,540
+ use and also because of the staff which is sometimes written in the licenses so
+
+1005
+0:52:42,540 --> 0:52:47,760
+ it depends some you can combine really well some you can't because some say you
+
+1006
+0:52:47,760 --> 0:52:52,640
+ have to do this and that and yeah so it's a bit
+
+1007
+0:52:52,680 --> 0:52:57,980
+ it depends because they have what's the licenses say some you can combine and
+
+1008
+0:52:57,980 --> 0:53:02,240
+ you can do this as it your licensing or parallel licensing with others you can't
+
+1009
+0:53:02,240 --> 0:53:06,680
+ but it means a lot of effort because for all of those you have to have a special
+
+1010
+0:53:06,680 --> 0:53:11,580
+ like then CI build or something which provides for example the license tag in
+
+1011
+0:53:11,580 --> 0:53:15,900
+ each file and normally you should have in git or something a lot of this
+
+1012
+0:53:15,900 --> 0:53:19,500
+ licenses say you have to have it in the file already not just when you create
+
+1013
+0:53:19,500 --> 0:53:22,480
+ the executable
+
+1014
+0:53:22,680 --> 0:53:28,440
+ you would have to have yeah your own license which include all these possibilities or whatever and so
+
+1015
+0:53:28,440 --> 0:53:34,200
+ it gets complicated really quickly again because yeah you have to have one copy of your code you
+
+1016
+0:53:34,200 --> 0:53:38,360
+ would say with different license tags for every separate license that's why not a lot of people
+
+1017
+0:53:38,360 --> 0:53:47,320
+ do it because it's a lot of effort to stay all of this in sync one quick last question yeah do you
+
+1018
+0:53:47,320 --> 0:53:54,680
+ know any sanity check in either gitlab or github that will verify if you're using gpl when you're
+
+1019
+0:53:54,680 --> 0:54:00,760
+ trying to do mit so if you track something as mit and you have everything including libraries that
+
+1020
+0:54:00,760 --> 0:54:05,480
+ is gpl would is there anything in either gitlab or github that will warn you you're doing something
+
+1021
+0:54:05,480 --> 0:54:10,680
+ that's not compatible or is there an open source project that will check your open source project
+
+1022
+0:54:11,800 --> 0:54:17,240
+ so um there's tools which check this and
+
+1023
+0:54:17,240 --> 0:54:17,320
+ i
+
+1024
+0:54:17,320 --> 0:54:21,400
+ open source the really good ones so there's one open source which is okay it's the really good
+
+1025
+0:54:21,400 --> 0:54:26,280
+ ones which will do all those legal things they will check and they will create the lists and
+
+1026
+0:54:26,280 --> 0:54:32,920
+ everything they cost around six figures so the good tools are really expensive because
+
+1027
+0:54:32,920 --> 0:54:38,680
+ this is a lot of effort and there's a lot of manual effort behind it um so not really
+
+1028
+0:54:39,640 --> 0:54:43,800
+ there's some tools who will at least check like who are all the licenses you have
+
+1029
+0:54:43,800 --> 0:54:47,240
+ um other fights which don't have a license header so you have to check for that
+
+1030
+0:54:47,240 --> 0:54:54,440
+ why can't somebody verify for that and this is the list of licenses you have in there and you
+
+1031
+0:54:54,440 --> 0:54:58,600
+ can have a first glance over it and they will try to give you some info and warnings and stuff but
+
+1032
+0:54:58,600 --> 0:55:05,240
+ it's not that they do everything for you um i forgot to be honest which the name was from the
+
+1033
+0:55:05,240 --> 0:55:11,240
+ one open source tool it looks like really from the 90s or something i can look it up um if you if you
+
+1034
+0:55:11,240 --> 0:55:17,080
+ find me later what the name was and yeah part of it no in gitlab github there's nothing yet really
+
+1035
+0:55:17,080 --> 0:55:17,980
+ would be great.
+
+1036
+0:55:19,320 --> 0:55:20,360
+ Thank you very much.

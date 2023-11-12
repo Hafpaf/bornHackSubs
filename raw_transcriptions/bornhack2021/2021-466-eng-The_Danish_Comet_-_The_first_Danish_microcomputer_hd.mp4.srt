@@ -1,0 +1,5323 @@
+# Transcribed 2023-11-12T19 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tijana Mihajlović Reviewer Reviewer's Name
+
+2
+0:00:07,000 --> 0:00:09,000
+ Well, thank you very much.
+
+3
+0:00:09,000 --> 0:00:12,000
+ So, this is the title of my book,
+
+4
+0:00:12,000 --> 0:00:17,000
+ and you are going to be the test audience for the synopsis of my book.
+
+5
+0:00:17,000 --> 0:00:21,000
+ So, what I've done now is I've taken the subjects in the order
+
+6
+0:00:21,000 --> 0:00:24,000
+ I'm going to talk about them and put them into a slide.
+
+7
+0:00:24,000 --> 0:00:27,000
+ I'm not going to read you the entire book,
+
+8
+0:00:27,000 --> 0:00:31,000
+ but I'm going to tell you the story in a lecture form,
+
+9
+0:00:31,000 --> 0:00:33,000
+ so in a shorter way.
+
+10
+0:00:33,000 --> 0:00:37,000
+ And I would really much like for you afterwards to tell me
+
+11
+0:00:37,000 --> 0:00:42,000
+ if this order is good for the book or if you think I should change anything.
+
+12
+0:00:42,000 --> 0:00:45,000
+ But you will also be getting a really nice story,
+
+13
+0:00:45,000 --> 0:00:47,000
+ so I hope you enjoy it.
+
+14
+0:00:47,000 --> 0:00:52,000
+ So, first of all, this machine is arguably
+
+15
+0:00:52,000 --> 0:00:56,000
+ the first serial series-produced Danish microcomputer,
+
+16
+0:00:56,000 --> 0:00:59,000
+ but the predecessor to it, the Pearl Stripe,
+
+17
+0:00:59,000 --> 0:01:03,000
+ is undoubtedly the first Danish microcomputer ever.
+
+18
+0:01:03,000 --> 0:01:06,000
+ So, there was a bit about who did what first,
+
+19
+0:01:06,000 --> 0:01:09,000
+ and if you announce the computer before you produce it,
+
+20
+0:01:09,000 --> 0:01:11,000
+ who wins and stuff like that.
+
+21
+0:01:11,000 --> 0:01:14,000
+ So, I choose to call this the first Danish microcomputer,
+
+22
+0:01:14,000 --> 0:01:20,000
+ and I have like 50 kilos of arguments for that back in my office
+
+23
+0:01:20,000 --> 0:01:23,000
+ because I have collected a lot of material.
+
+24
+0:01:23,000 --> 0:01:25,000
+ This is most likely the...
+
+25
+0:01:26,000 --> 0:01:29,000
+ most well-prepared talk you'll hear this year.
+
+26
+0:01:29,000 --> 0:01:33,000
+ I have been studying for this for almost four years.
+
+27
+0:01:33,000 --> 0:01:37,000
+ So, and when I started researching about this computer,
+
+28
+0:01:37,000 --> 0:01:41,000
+ I was expecting it to be an article, a really short thing,
+
+29
+0:01:41,000 --> 0:01:43,000
+ maybe a Wikipedia thing.
+
+30
+0:01:43,000 --> 0:01:47,000
+ And then I started digging, and suddenly it all blew up in my head,
+
+31
+0:01:47,000 --> 0:01:51,000
+ and I was taken back to 1972
+
+32
+0:01:51,000 --> 0:01:54,000
+ where this Danish dude by the name Boe,
+
+33
+0:01:54,000 --> 0:01:55,000
+ I'm so sorry.
+
+34
+0:01:55,000 --> 0:01:58,000
+ He died before we could take a good picture of him.
+
+35
+0:01:58,000 --> 0:02:05,000
+ But Boe Rosgaard Christensen, nice last name,
+
+36
+0:02:05,000 --> 0:02:12,000
+ was an associate professor in Tønder College of Education.
+
+37
+0:02:12,000 --> 0:02:15,000
+ That is a Danish school where they train teachers
+
+38
+0:02:15,000 --> 0:02:17,000
+ for like the rest of the country.
+
+39
+0:02:17,000 --> 0:02:21,000
+ It's not the only of its kind, but it's one of them.
+
+40
+0:02:21,000 --> 0:02:23,000
+ He was an eager and insisting advocate
+
+41
+0:02:23,000 --> 0:02:24,000
+ for proper computer science.
+
+42
+0:02:24,000 --> 0:02:26,000
+ Proper computer science teaching in Denmark.
+
+43
+0:02:26,000 --> 0:02:30,000
+ So he's famous for saying that basics should be illegal.
+
+44
+0:02:30,000 --> 0:02:34,000
+ And he was an extremely productive author.
+
+45
+0:02:34,000 --> 0:02:37,000
+ I have 12 books by his name,
+
+46
+0:02:37,000 --> 0:02:40,000
+ and that's only the 12 I succeeded to get my hands on.
+
+47
+0:02:40,000 --> 0:02:44,000
+ Yeah, and then he was a language geek.
+
+48
+0:02:44,000 --> 0:02:47,000
+ I don't know if you know about the language Interlingua.
+
+49
+0:02:47,000 --> 0:02:49,000
+ You most likely know about Esperanto.
+
+50
+0:02:49,000 --> 0:02:51,000
+ Interlingua is...
+
+51
+0:02:51,000 --> 0:02:53,000
+ Don't quote me on this, but...
+
+52
+0:02:54,000 --> 0:02:55,000
+ More or less the same.
+
+53
+0:02:55,000 --> 0:02:58,000
+ So they're trying to make an international language
+
+54
+0:02:58,000 --> 0:03:00,000
+ without any exceptions.
+
+55
+0:03:00,000 --> 0:03:02,000
+ So if you know the grammar rules,
+
+56
+0:03:02,000 --> 0:03:05,000
+ those will always apply.
+
+57
+0:03:05,000 --> 0:03:09,000
+ And he spent 20 years of his life as a board member
+
+58
+0:03:09,000 --> 0:03:12,000
+ for the committee developing this language.
+
+59
+0:03:12,000 --> 0:03:16,000
+ So it's safe to say that A, that dude likes rules,
+
+60
+0:03:16,000 --> 0:03:19,000
+ and B, that dude likes languages.
+
+61
+0:03:19,000 --> 0:03:22,000
+ So that's a bit about him.
+
+62
+0:03:22,000 --> 0:03:26,000
+ Back in 72, no, 71,
+
+63
+0:03:26,000 --> 0:03:30,000
+ his institution got a data general computer
+
+64
+0:03:30,000 --> 0:03:33,000
+ called Nova 1200.
+
+65
+0:03:33,000 --> 0:03:35,000
+ This was a machine sold by Reines & Thalen
+
+66
+0:03:35,000 --> 0:03:37,000
+ under a different name,
+
+67
+0:03:37,000 --> 0:03:41,000
+ but in essence, this was a data general machine.
+
+68
+0:03:41,000 --> 0:03:43,000
+ He started teaching on it,
+
+69
+0:03:43,000 --> 0:03:46,000
+ and he started teaching his students BASIC.
+
+70
+0:03:46,000 --> 0:03:49,000
+ And if any of you know how to program BASIC,
+
+71
+0:03:49,000 --> 0:03:50,000
+ you know that it's fine,
+
+72
+0:03:50,000 --> 0:03:51,000
+ as long as all the languages,
+
+73
+0:03:51,000 --> 0:03:54,000
+ as long as all the lines of code can be on the screen.
+
+74
+0:03:54,000 --> 0:03:56,000
+ As soon as you reach line number 25,
+
+75
+0:03:56,000 --> 0:03:59,000
+ it starts becoming chaos.
+
+76
+0:03:59,000 --> 0:04:02,000
+ So he complained a lot about this,
+
+77
+0:04:02,000 --> 0:04:05,000
+ and around the spring of 72,
+
+78
+0:04:05,000 --> 0:04:07,000
+ he met this computer scientist in Aarhus
+
+79
+0:04:07,000 --> 0:04:09,000
+ called Benedikt Lyfstedt,
+
+80
+0:04:09,000 --> 0:04:11,000
+ and together with him,
+
+81
+0:04:11,000 --> 0:04:13,000
+ they started formulating this new language,
+
+82
+0:04:13,000 --> 0:04:17,000
+ which should be a combination of Pascal and BASIC.
+
+83
+0:04:17,000 --> 0:04:20,000
+ And this Bero dude is very talkative
+
+84
+0:04:20,000 --> 0:04:22,000
+ and very convincing,
+
+85
+0:04:22,000 --> 0:04:25,000
+ and has like the energy of a nuclear bomb.
+
+86
+0:04:25,000 --> 0:04:28,000
+ So I'm sure he just overwhelmed Reines & Thalen
+
+87
+0:04:28,000 --> 0:04:31,000
+ with good intentions and with questions
+
+88
+0:04:31,000 --> 0:04:32,000
+ and with interest,
+
+89
+0:04:32,000 --> 0:04:36,000
+ because sometime during the first half of 1972,
+
+90
+0:04:36,000 --> 0:04:39,000
+ they actually gave him the source code for the BASIC
+
+91
+0:04:39,000 --> 0:04:41,000
+ they used on their systems.
+
+92
+0:04:41,000 --> 0:04:42,000
+ He hired some student workers
+
+93
+0:04:42,000 --> 0:04:44,000
+ and got those student workers
+
+94
+0:04:44,000 --> 0:04:47,000
+ to change this BASIC into a COMAL.
+
+95
+0:04:47,000 --> 0:04:49,000
+ So one of the main differences is that
+
+96
+0:04:49,000 --> 0:04:53,000
+ COMAL in COMAL GoTo is like prohibited.
+
+97
+0:04:53,000 --> 0:04:56,000
+ It's not, but in essence,
+
+98
+0:04:56,000 --> 0:04:57,000
+ you shouldn't use it.
+
+99
+0:04:57,000 --> 0:04:59,000
+ So you have function calls and procedure calls,
+
+100
+0:04:59,000 --> 0:05:01,000
+ and it's a more structured language.
+
+101
+0:05:01,000 --> 0:05:04,000
+ So they turned this old BASIC
+
+102
+0:05:04,000 --> 0:05:06,000
+ into a more structured BASIC,
+
+103
+0:05:06,000 --> 0:05:07,000
+ and in the beginning,
+
+104
+0:05:07,000 --> 0:05:09,000
+ they actually called it RCE BASIC,
+
+105
+0:05:09,000 --> 0:05:10,000
+ Reines & Thalen BASIC,
+
+106
+0:05:10,000 --> 0:05:12,000
+ but soon they changed the name to COMAL,
+
+107
+0:05:12,000 --> 0:05:16,000
+ which is short for COMAL.
+
+108
+0:05:16,000 --> 0:05:18,000
+ I should have written this down.
+
+109
+0:05:18,000 --> 0:05:20,000
+ Common...
+
+110
+0:05:20,000 --> 0:05:21,000
+ Did I write...?
+
+111
+0:05:21,000 --> 0:05:22,000
+ Yeah, of course I did write that.
+
+112
+0:05:22,000 --> 0:05:24,000
+ Common Algorithmic Language.
+
+113
+0:05:24,000 --> 0:05:25,000
+ I did write it down.
+
+114
+0:05:25,000 --> 0:05:26,000
+ Thank you.
+
+115
+0:05:28,000 --> 0:05:32,000
+ And then he used his position
+
+116
+0:05:32,000 --> 0:05:34,000
+ as a teacher-teacher.
+
+117
+0:05:34,000 --> 0:05:36,000
+ So he teaches the teachers
+
+118
+0:05:36,000 --> 0:05:38,000
+ to influence the teachers
+
+119
+0:05:38,000 --> 0:05:41,000
+ that they should use COMAL,
+
+120
+0:05:41,000 --> 0:05:43,000
+ which is super awesome,
+
+121
+0:05:43,000 --> 0:05:46,000
+ because during the last part of the 70s,
+
+122
+0:05:46,000 --> 0:05:47,000
+ suddenly it became
+
+123
+0:05:47,000 --> 0:05:49,000
+ a standard demand from schools.
+
+124
+0:05:49,000 --> 0:05:50,000
+ Oh, by the way,
+
+125
+0:05:50,000 --> 0:05:52,000
+ your computer doesn't run COMAL.
+
+126
+0:05:52,000 --> 0:05:53,000
+ We don't want it.
+
+127
+0:05:53,000 --> 0:05:55,000
+ But it's better and cheaper.
+
+128
+0:05:55,000 --> 0:05:56,000
+ It doesn't run COMAL.
+
+129
+0:05:56,000 --> 0:05:58,000
+ So he kind of forced everybody
+
+130
+0:05:58,000 --> 0:06:00,000
+ to implement COMAL
+
+131
+0:06:00,000 --> 0:06:02,000
+ in order to get
+
+132
+0:06:02,000 --> 0:06:06,000
+ systems to the Danish schools.
+
+133
+0:06:06,000 --> 0:06:09,000
+ We got a story from the head
+
+134
+0:06:09,000 --> 0:06:11,000
+ of the data department
+
+135
+0:06:11,000 --> 0:06:15,000
+ on Odense College of Education
+
+136
+0:06:15,000 --> 0:06:17,000
+ where he called the guy,
+
+137
+0:06:17,000 --> 0:06:20,000
+ the 26th of December,
+
+138
+0:06:20,000 --> 0:06:21,000
+ and said,
+
+139
+0:06:21,000 --> 0:06:22,000
+ oh, can I come by?
+
+140
+0:06:22,000 --> 0:06:23,000
+ I need to show you something.
+
+141
+0:06:23,000 --> 0:06:24,000
+ Ah, we're really busy.
+
+142
+0:06:24,000 --> 0:06:26,000
+ We have this family thing, you know.
+
+143
+0:06:26,000 --> 0:06:28,000
+ Okay, tomorrow then?
+
+144
+0:06:28,000 --> 0:06:33,000
+ So during the Christmas holiday,
+
+145
+0:06:33,000 --> 0:06:35,000
+ he influenced his colleague
+
+146
+0:06:35,000 --> 0:06:38,000
+ at the next over college of education
+
+147
+0:06:38,000 --> 0:06:40,000
+ to start using COMAL as well,
+
+148
+0:06:40,000 --> 0:06:42,000
+ and he succeeded in just one day.
+
+149
+0:06:42,000 --> 0:06:44,000
+ He gave some guest lectures
+
+150
+0:06:44,000 --> 0:06:46,000
+ in Germany, West Germany,
+
+151
+0:06:46,000 --> 0:06:49,000
+ and he got it spread
+
+152
+0:06:49,000 --> 0:06:50,000
+ to most of Europe
+
+153
+0:06:50,000 --> 0:06:52,000
+ just by being really energetic
+
+154
+0:06:52,000 --> 0:06:54,000
+ and talking about it.
+
+155
+0:06:54,000 --> 0:06:55,000
+ And down the road,
+
+156
+0:06:55,000 --> 0:06:58,000
+ he actually managed to sell
+
+157
+0:06:58,000 --> 0:07:00,000
+ this idea to Commodore.
+
+158
+0:07:00,000 --> 0:07:01,000
+ And during the 80s,
+
+159
+0:07:01,000 --> 0:07:03,000
+ Commodore made a version,
+
+160
+0:07:03,000 --> 0:07:05,000
+ the best ever,
+
+161
+0:07:05,000 --> 0:07:08,000
+ and they sold it in the entire world.
+
+162
+0:07:08,000 --> 0:07:10,000
+ And actually, it has been taught
+
+163
+0:07:10,000 --> 0:07:13,000
+ that the biggest user group
+
+164
+0:07:13,000 --> 0:07:15,000
+ of COMAL in general is American.
+
+165
+0:07:15,000 --> 0:07:18,000
+ And we have like 2,400 pages
+
+166
+0:07:18,000 --> 0:07:21,000
+ of their user magazine,
+
+167
+0:07:21,000 --> 0:07:24,000
+ which is a huge source of information.
+
+168
+0:07:24,000 --> 0:07:27,000
+ And finally, he used
+
+169
+0:07:27,000 --> 0:07:28,000
+ the university center
+
+170
+0:07:28,000 --> 0:07:29,000
+ of Southern Jutland
+
+171
+0:07:29,000 --> 0:07:32,000
+ to fund lots of his work.
+
+172
+0:07:32,000 --> 0:07:34,000
+ So this is not a real university.
+
+173
+0:07:34,000 --> 0:07:35,000
+ It was like,
+
+174
+0:07:35,000 --> 0:07:36,000
+ so in Southern Jutland,
+
+175
+0:07:36,000 --> 0:07:39,000
+ they asked the government
+
+176
+0:07:39,000 --> 0:07:40,000
+ for a university,
+
+177
+0:07:40,000 --> 0:07:41,000
+ and during,
+
+178
+0:07:41,000 --> 0:07:42,000
+ I don't remember it exactly,
+
+179
+0:07:42,000 --> 0:07:44,000
+ but around 1773,
+
+180
+0:07:44,000 --> 0:07:45,000
+ the government said,
+
+181
+0:07:45,000 --> 0:07:46,000
+ yes, you can have a university
+
+182
+0:07:46,000 --> 0:07:47,000
+ in two years.
+
+183
+0:07:47,000 --> 0:07:49,000
+ So the local municipality said,
+
+184
+0:07:49,000 --> 0:07:51,000
+ cool, we'll just get started,
+
+185
+0:07:51,000 --> 0:07:54,000
+ and they funded the startup
+
+186
+0:07:54,000 --> 0:07:55,000
+ of it themselves.
+
+187
+0:07:55,000 --> 0:07:56,000
+ And after two years,
+
+188
+0:07:56,000 --> 0:07:57,000
+ the government was just like,
+
+189
+0:07:57,000 --> 0:07:58,000
+ nah, we're good.
+
+190
+0:07:58,000 --> 0:08:00,000
+ And so they just kept
+
+191
+0:08:00,000 --> 0:08:02,000
+ funding it themselves.
+
+192
+0:08:02,000 --> 0:08:03,000
+ So it's not a real university,
+
+193
+0:08:03,000 --> 0:08:06,000
+ but for all practical purposes,
+
+194
+0:08:06,000 --> 0:08:07,000
+ it is.
+
+195
+0:08:07,000 --> 0:08:08,000
+ They had some money,
+
+196
+0:08:08,000 --> 0:08:09,000
+ which they could use
+
+197
+0:08:09,000 --> 0:08:10,000
+ for research,
+
+198
+0:08:10,000 --> 0:08:11,000
+ and Berg Christensen
+
+199
+0:08:11,000 --> 0:08:13,000
+ got paid some money
+
+200
+0:08:13,000 --> 0:08:14,000
+ to develop Comal.
+
+201
+0:08:14,000 --> 0:08:15,000
+ And later on,
+
+202
+0:08:15,000 --> 0:08:17,000
+ he got this crazy idea
+
+203
+0:08:17,000 --> 0:08:18,000
+ that I'll talk more about
+
+204
+0:08:18,000 --> 0:08:20,000
+ in a little bit,
+
+205
+0:08:20,000 --> 0:08:21,000
+ because we need to travel
+
+206
+0:08:21,000 --> 0:08:22,000
+ back in time again.
+
+207
+0:08:22,000 --> 0:08:24,000
+ Now we're back in 1777,
+
+208
+0:08:24,000 --> 0:08:25,000
+ where this dude
+
+209
+0:08:25,000 --> 0:08:26,000
+ called Mons Pele,
+
+210
+0:08:26,000 --> 0:08:28,000
+ he finished his degree
+
+211
+0:08:28,000 --> 0:08:30,000
+ of Electrical Engineering
+
+212
+0:08:30,000 --> 0:08:31,000
+ in 1773,
+
+213
+0:08:31,000 --> 0:08:33,000
+ and has been writing
+
+214
+0:08:33,000 --> 0:08:34,000
+ technical instructions,
+
+215
+0:08:34,000 --> 0:08:35,000
+ you know,
+
+216
+0:08:35,000 --> 0:08:37,000
+ build guides for,
+
+217
+0:08:37,000 --> 0:08:38,000
+ you know,
+
+218
+0:08:38,000 --> 0:08:39,000
+ back then when you were a geek,
+
+219
+0:08:39,000 --> 0:08:40,000
+ you didn't have the internet,
+
+220
+0:08:40,000 --> 0:08:41,000
+ so you bought these things
+
+221
+0:08:41,000 --> 0:08:42,000
+ out of paper
+
+222
+0:08:42,000 --> 0:08:44,000
+ called magazines,
+
+223
+0:08:44,000 --> 0:08:45,000
+ and there was basically
+
+224
+0:08:45,000 --> 0:08:46,000
+ a large block,
+
+225
+0:08:46,000 --> 0:08:49,000
+ and he wrote guides
+
+226
+0:08:49,000 --> 0:08:50,000
+ on to build different stuff
+
+227
+0:08:50,000 --> 0:08:52,000
+ for this block.
+
+228
+0:08:52,000 --> 0:08:54,000
+ Well, mostly he read guides
+
+229
+0:08:54,000 --> 0:08:56,000
+ from international magazines,
+
+230
+0:08:56,000 --> 0:08:57,000
+ translated them to Danish,
+
+231
+0:08:57,000 --> 0:08:59,000
+ and republished them.
+
+232
+0:08:59,000 --> 0:09:01,000
+ And that is so many years ago
+
+233
+0:09:01,000 --> 0:09:03,000
+ that it's probably not,
+
+234
+0:09:03,000 --> 0:09:04,000
+ I don't know,
+
+235
+0:09:04,000 --> 0:09:05,000
+ it's probably still illegal,
+
+236
+0:09:05,000 --> 0:09:07,000
+ but it was a bit sketchy.
+
+237
+0:09:07,000 --> 0:09:08,000
+ Anyway,
+
+238
+0:09:08,000 --> 0:09:09,000
+ that was what he did,
+
+239
+0:09:09,000 --> 0:09:11,000
+ and he used this platform
+
+240
+0:09:11,000 --> 0:09:12,000
+ to,
+
+241
+0:09:12,000 --> 0:09:13,000
+ when he got access
+
+242
+0:09:13,000 --> 0:09:15,000
+ to a Zilog Z80 processor,
+
+243
+0:09:15,000 --> 0:09:17,000
+ as one of the first in Denmark,
+
+244
+0:09:17,000 --> 0:09:18,000
+ he used the platform
+
+245
+0:09:18,000 --> 0:09:19,000
+ from this magazine
+
+246
+0:09:19,000 --> 0:09:21,000
+ to start publishing schematics
+
+247
+0:09:21,000 --> 0:09:23,000
+ for a computer that he designed,
+
+248
+0:09:23,000 --> 0:09:27,000
+ and started a movement
+
+249
+0:09:27,000 --> 0:09:29,000
+ of data machine amateurs,
+
+250
+0:09:29,000 --> 0:09:31,000
+ he called them.
+
+251
+0:09:31,000 --> 0:09:33,000
+ They were in several
+
+252
+0:09:33,000 --> 0:09:35,000
+ global Danish medias,
+
+253
+0:09:35,000 --> 0:09:38,000
+ and he got really a lot
+
+254
+0:09:38,000 --> 0:09:39,000
+ of press on that,
+
+255
+0:09:39,000 --> 0:09:41,000
+ so he founded a company
+
+256
+0:09:41,000 --> 0:09:43,000
+ down here,
+
+257
+0:09:43,000 --> 0:09:45,000
+ Metanic APS,
+
+258
+0:09:45,000 --> 0:09:48,000
+ and started selling PCBs,
+
+259
+0:09:48,000 --> 0:09:50,000
+ and in the beginning
+
+260
+0:09:50,000 --> 0:09:52,000
+ he only wanted to sell PCBs,
+
+261
+0:09:52,000 --> 0:09:54,000
+ but then suddenly a guy
+
+262
+0:09:54,000 --> 0:09:57,000
+ from this Southern University Center
+
+263
+0:09:57,000 --> 0:09:59,000
+ wrote him and said,
+
+264
+0:09:59,000 --> 0:10:00,000
+ I read your article
+
+265
+0:10:00,000 --> 0:10:01,000
+ about that computer,
+
+266
+0:10:01,000 --> 0:10:02,000
+ I want to buy one.
+
+267
+0:10:02,000 --> 0:10:03,000
+ And he was just like,
+
+268
+0:10:03,000 --> 0:10:04,000
+ we don't sell them,
+
+269
+0:10:04,000 --> 0:10:05,000
+ but I want to buy one,
+
+270
+0:10:05,000 --> 0:10:07,000
+ you can build one.
+
+271
+0:10:07,000 --> 0:10:08,000
+ I don't want to buy one,
+
+272
+0:10:08,000 --> 0:10:10,000
+ I want to buy one.
+
+273
+0:10:10,000 --> 0:10:11,000
+ So he built one,
+
+274
+0:10:11,000 --> 0:10:13,000
+ and sold to that guy,
+
+275
+0:10:13,000 --> 0:10:14,000
+ and that guy was
+
+276
+0:10:14,000 --> 0:10:16,000
+ Bero Christensen.
+
+277
+0:10:16,000 --> 0:10:19,000
+ So that escalated,
+
+278
+0:10:19,000 --> 0:10:22,000
+ but yeah,
+
+279
+0:10:22,000 --> 0:10:23,000
+ before we get to that,
+
+280
+0:10:23,000 --> 0:10:24,000
+ I just want to mention,
+
+281
+0:10:24,000 --> 0:10:27,000
+ the users that started
+
+282
+0:10:27,000 --> 0:10:28,000
+ building this machine
+
+283
+0:10:28,000 --> 0:10:29,000
+ also founded the user group,
+
+284
+0:10:29,000 --> 0:10:30,000
+ and they actually produced
+
+285
+0:10:30,000 --> 0:10:32,000
+ the NPS 2000 user group magazine
+
+286
+0:10:32,000 --> 0:10:33,000
+ for about a year,
+
+287
+0:10:33,000 --> 0:10:35,000
+ which is also one of the great
+
+288
+0:10:35,000 --> 0:10:38,000
+ sources we have for these stories.
+
+289
+0:10:38,000 --> 0:10:39,000
+ And I might,
+
+290
+0:10:39,000 --> 0:10:41,000
+ I might have forgot to mention
+
+291
+0:10:41,000 --> 0:10:42,000
+ in the beginning,
+
+292
+0:10:42,000 --> 0:10:44,000
+ but all this information
+
+293
+0:10:44,000 --> 0:10:45,000
+ is something I have dug out
+
+294
+0:10:45,000 --> 0:10:47,000
+ from either interviews,
+
+295
+0:10:47,000 --> 0:10:48,000
+ or old magazines,
+
+296
+0:10:48,000 --> 0:10:49,000
+ or like,
+
+297
+0:10:49,000 --> 0:10:50,000
+ there's no history book about this,
+
+298
+0:10:50,000 --> 0:10:53,000
+ this is what I'm writing.
+
+299
+0:10:53,000 --> 0:10:54,000
+ So I have been through
+
+300
+0:10:54,000 --> 0:10:55,000
+ old archives,
+
+301
+0:10:55,000 --> 0:10:57,000
+ through old reading,
+
+302
+0:10:57,000 --> 0:10:59,000
+ 30 year old newspapers,
+
+303
+0:10:59,000 --> 0:11:01,000
+ and accountings,
+
+304
+0:11:01,000 --> 0:11:03,000
+ and it's been a really like
+
+305
+0:11:03,000 --> 0:11:05,000
+ investigative journalism
+
+306
+0:11:05,000 --> 0:11:08,000
+ with 40 years of delay.
+
+307
+0:11:08,000 --> 0:11:09,000
+ Anyway,
+
+308
+0:11:09,000 --> 0:11:10,000
+ let's go to the
+
+309
+0:11:10,000 --> 0:11:12,000
+ Southern University Center.
+
+310
+0:11:12,000 --> 0:11:13,000
+ So in 72,
+
+311
+0:11:13,000 --> 0:11:16,000
+ they decided that
+
+312
+0:11:16,000 --> 0:11:18,000
+ we need some of this,
+
+313
+0:11:18,000 --> 0:11:20,000
+ in Danish we said
+
+314
+0:11:20,000 --> 0:11:21,000
+ EDB,
+
+315
+0:11:21,000 --> 0:11:22,000
+ which stands for
+
+316
+0:11:22,000 --> 0:11:24,000
+ Electronical Data
+
+317
+0:11:24,000 --> 0:11:25,000
+ Behandling,
+
+318
+0:11:25,000 --> 0:11:26,000
+ Processing,
+
+319
+0:11:26,000 --> 0:11:27,000
+ which is,
+
+320
+0:11:27,000 --> 0:11:28,000
+ you can translate it today
+
+321
+0:11:28,000 --> 0:11:29,000
+ with IT,
+
+322
+0:11:29,000 --> 0:11:30,000
+ information technology,
+
+323
+0:11:30,000 --> 0:11:32,000
+ but they founded
+
+324
+0:11:32,000 --> 0:11:35,000
+ the EDB Council,
+
+325
+0:11:35,000 --> 0:11:38,000
+ and the idea with the EDB Council
+
+326
+0:11:38,000 --> 0:11:39,000
+ was that they should build
+
+327
+0:11:39,000 --> 0:11:42,000
+ a data center in Esbjerg,
+
+328
+0:11:42,000 --> 0:11:44,000
+ which is one of the most,
+
+329
+0:11:44,000 --> 0:11:45,000
+ so well,
+
+330
+0:11:45,000 --> 0:11:47,000
+ if you leave towards Jutland now
+
+331
+0:11:47,000 --> 0:11:49,000
+ and just keep driving west,
+
+332
+0:11:49,000 --> 0:11:50,000
+ you'll end up in Esbjerg,
+
+333
+0:11:50,000 --> 0:11:52,000
+ that's one of the most,
+
+334
+0:11:52,000 --> 0:11:53,000
+ I don't know if they still do fishing,
+
+335
+0:11:53,000 --> 0:11:55,000
+ but it's a big harbor city,
+
+336
+0:11:55,000 --> 0:11:57,000
+ and the,
+
+337
+0:11:57,000 --> 0:11:58,000
+ well,
+
+338
+0:11:58,000 --> 0:12:00,000
+ they were promised
+
+339
+0:12:00,000 --> 0:12:01,000
+ that by 75,
+
+340
+0:12:01,000 --> 0:12:02,000
+ they would get funding
+
+341
+0:12:02,000 --> 0:12:03,000
+ for both the university
+
+342
+0:12:03,000 --> 0:12:06,000
+ and for the data center,
+
+343
+0:12:06,000 --> 0:12:08,000
+ and as you might already have spotted,
+
+344
+0:12:08,000 --> 0:12:09,000
+ there was a lot of money
+
+345
+0:12:09,000 --> 0:12:10,000
+ spread ahead,
+
+346
+0:12:10,000 --> 0:12:11,000
+ that was denied,
+
+347
+0:12:11,000 --> 0:12:12,000
+ so this is transformed
+
+348
+0:12:12,000 --> 0:12:14,000
+ into a general coordination council,
+
+349
+0:12:14,000 --> 0:12:15,000
+ which would coordinate
+
+350
+0:12:15,000 --> 0:12:18,000
+ the educational institutions
+
+351
+0:12:18,000 --> 0:12:20,000
+ in the municipality,
+
+352
+0:12:20,000 --> 0:12:24,000
+ and help them avoid wasting money
+
+353
+0:12:24,000 --> 0:12:27,000
+ on this computer stuff,
+
+354
+0:12:27,000 --> 0:12:30,000
+ and then in 77,
+
+355
+0:12:30,000 --> 0:12:32,000
+ Mons Pelle discovered,
+
+356
+0:12:32,000 --> 0:12:33,000
+ no,
+
+357
+0:12:33,000 --> 0:12:35,000
+ Berg Christensen discovered Mons Pelle,
+
+358
+0:12:35,000 --> 0:12:37,000
+ and bought this computer from him,
+
+359
+0:12:37,000 --> 0:12:39,000
+ and then the Southern University Center
+
+360
+0:12:39,000 --> 0:12:41,000
+ more or less took over the project,
+
+361
+0:12:41,000 --> 0:12:43,000
+ so if you read Børsen,
+
+362
+0:12:43,000 --> 0:12:45,000
+ Børsen is a Danish newspaper
+
+363
+0:12:45,000 --> 0:12:47,000
+ for business interested people,
+
+364
+0:12:47,000 --> 0:12:48,000
+ or Jyllands Posten,
+
+365
+0:12:48,000 --> 0:12:49,000
+ which is,
+
+366
+0:12:49,000 --> 0:12:50,000
+ yeah,
+
+367
+0:12:50,000 --> 0:12:51,000
+ all the major newspapers,
+
+368
+0:12:51,000 --> 0:12:53,000
+ they talked about this machine,
+
+369
+0:12:53,000 --> 0:12:56,000
+ and they called it the SUC computer,
+
+370
+0:12:56,000 --> 0:12:59,000
+ and it was called the people's computer,
+
+371
+0:12:59,000 --> 0:13:01,000
+ because it was built to be cheap,
+
+372
+0:13:01,000 --> 0:13:02,000
+ and was built,
+
+373
+0:13:02,000 --> 0:13:03,000
+ you could freely build it yourself,
+
+374
+0:13:03,000 --> 0:13:05,000
+ and the idea was that you wanted
+
+375
+0:13:05,000 --> 0:13:07,000
+ to provide ordinary people,
+
+376
+0:13:07,000 --> 0:13:08,000
+ with computers,
+
+377
+0:13:08,000 --> 0:13:10,000
+ which is something,
+
+378
+0:13:10,000 --> 0:13:11,000
+ yeah,
+
+379
+0:13:11,000 --> 0:13:12,000
+ well,
+
+380
+0:13:12,000 --> 0:13:13,000
+ that was an idea
+
+381
+0:13:13,000 --> 0:13:14,000
+ that got very popular
+
+382
+0:13:14,000 --> 0:13:15,000
+ like 10,
+
+383
+0:13:15,000 --> 0:13:16,000
+ 15 years later,
+
+384
+0:13:16,000 --> 0:13:17,000
+ mainly by,
+
+385
+0:13:17,000 --> 0:13:20,000
+ pushed by a guy named Bill Gates,
+
+386
+0:13:20,000 --> 0:13:22,000
+ so they were a bit ahead,
+
+387
+0:13:22,000 --> 0:13:23,000
+ but,
+
+388
+0:13:23,000 --> 0:13:24,000
+ yeah,
+
+389
+0:13:24,000 --> 0:13:26,000
+ so the idea was that
+
+390
+0:13:26,000 --> 0:13:30,000
+ the SUC funded this prototype,
+
+391
+0:13:30,000 --> 0:13:32,000
+ which Berg Christensen
+
+392
+0:13:32,000 --> 0:13:34,000
+ then bought from Mons Pelle,
+
+393
+0:13:34,000 --> 0:13:35,000
+ and then he was like,
+
+394
+0:13:35,000 --> 0:13:36,000
+ I need some software for it,
+
+395
+0:13:36,000 --> 0:13:38,000
+ so he also got some money
+
+396
+0:13:38,000 --> 0:13:39,000
+ to develop some software,
+
+397
+0:13:39,000 --> 0:13:44,000
+ and if you read in 1979,
+
+398
+0:13:44,000 --> 0:13:45,000
+ when this machine was about
+
+399
+0:13:45,000 --> 0:13:46,000
+ to be published,
+
+400
+0:13:46,000 --> 0:13:49,000
+ everybody said that this was supposed
+
+401
+0:13:49,000 --> 0:13:51,000
+ to be sold under the name
+
+402
+0:13:51,000 --> 0:13:53,000
+ of SUC Data Maiden,
+
+403
+0:13:53,000 --> 0:13:55,000
+ it didn't happen like that,
+
+404
+0:13:55,000 --> 0:13:57,000
+ but,
+
+405
+0:13:57,000 --> 0:13:58,000
+ and then,
+
+406
+0:13:58,000 --> 0:14:00,000
+ and I'm going to jump a bit again,
+
+407
+0:14:00,000 --> 0:14:01,000
+ because I need some more,
+
+408
+0:14:01,000 --> 0:14:02,000
+ what do you call that,
+
+409
+0:14:02,000 --> 0:14:04,000
+ prehistory,
+
+410
+0:14:04,000 --> 0:14:05,000
+ what's that,
+
+411
+0:14:05,000 --> 0:14:06,000
+ history,
+
+412
+0:14:06,000 --> 0:14:07,000
+ background history,
+
+413
+0:14:07,000 --> 0:14:08,000
+ so,
+
+414
+0:14:08,000 --> 0:14:10,000
+ I mentioned that this
+
+415
+0:14:10,000 --> 0:14:12,000
+ thing got that popular,
+
+416
+0:14:12,000 --> 0:14:13,000
+ that school just said,
+
+417
+0:14:13,000 --> 0:14:15,000
+ we need this,
+
+418
+0:14:15,000 --> 0:14:16,000
+ and then,
+
+419
+0:14:16,000 --> 0:14:17,000
+ like,
+
+420
+0:14:17,000 --> 0:14:19,000
+ one and a half month ago,
+
+421
+0:14:19,000 --> 0:14:22,000
+ a dude in Jutland died,
+
+422
+0:14:22,000 --> 0:14:24,000
+ and one of his friends called me,
+
+423
+0:14:24,000 --> 0:14:26,000
+ because he knew that I might be interested
+
+424
+0:14:26,000 --> 0:14:28,000
+ in some of his old computers,
+
+425
+0:14:28,000 --> 0:14:30,000
+ I'm really sad he didn't call me
+
+426
+0:14:30,000 --> 0:14:31,000
+ half a year ago before he died,
+
+427
+0:14:31,000 --> 0:14:32,000
+ but,
+
+428
+0:14:32,000 --> 0:14:33,000
+ yeah,
+
+429
+0:14:33,000 --> 0:14:34,000
+ you can't win every time,
+
+430
+0:14:34,000 --> 0:14:35,000
+ however,
+
+431
+0:14:35,000 --> 0:14:37,000
+ I worked in
+
+432
+0:14:39,000 --> 0:14:41,000
+ Ribe County,
+
+433
+0:14:41,000 --> 0:14:43,000
+ or Ribe Amt,
+
+434
+0:14:43,000 --> 0:14:45,000
+ department for purchasing
+
+435
+0:14:45,000 --> 0:14:47,000
+ educational materials,
+
+436
+0:14:47,000 --> 0:14:50,000
+ and in,
+
+437
+0:14:50,000 --> 0:14:51,000
+ so,
+
+438
+0:14:51,000 --> 0:14:52,000
+ back in 78,
+
+439
+0:14:52,000 --> 0:14:53,000
+ they founded this committee,
+
+440
+0:14:53,000 --> 0:14:54,000
+ and said,
+
+441
+0:14:54,000 --> 0:14:56,000
+ Ribe Amt needs to buy some computers
+
+442
+0:14:56,000 --> 0:14:58,000
+ for education,
+
+443
+0:14:58,000 --> 0:15:00,000
+ so they requested
+
+444
+0:15:00,000 --> 0:15:03,000
+ which is the Danish version of ICL,
+
+445
+0:15:03,000 --> 0:15:04,000
+ and they requested ICL,
+
+446
+0:15:04,000 --> 0:15:07,000
+ which is the British version of Reinecentral,
+
+447
+0:15:07,000 --> 0:15:08,000
+ Data General,
+
+448
+0:15:08,000 --> 0:15:11,000
+ and some other large manufacturers,
+
+449
+0:15:11,000 --> 0:15:13,000
+ and also they visited some of them,
+
+450
+0:15:13,000 --> 0:15:15,000
+ so they flew to Copenhagen,
+
+451
+0:15:15,000 --> 0:15:17,000
+ and to Great Britain,
+
+452
+0:15:17,000 --> 0:15:19,000
+ and saw some of these machines
+
+453
+0:15:19,000 --> 0:15:20,000
+ in use,
+
+454
+0:15:20,000 --> 0:15:21,000
+ and at this point,
+
+455
+0:15:21,000 --> 0:15:23,000
+ we were talking about,
+
+456
+0:15:23,000 --> 0:15:24,000
+ yeah,
+
+457
+0:15:24,000 --> 0:15:25,000
+ so the committee said,
+
+458
+0:15:25,000 --> 0:15:26,000
+ we want Kummel,
+
+459
+0:15:26,000 --> 0:15:28,000
+ and we want microcomputers.
+
+460
+0:15:28,000 --> 0:15:30,000
+ Do I need to tell you?
+
+461
+0:15:30,000 --> 0:15:32,000
+ Probably I do,
+
+462
+0:15:32,000 --> 0:15:33,000
+ so back in the,
+
+463
+0:15:33,000 --> 0:15:36,000
+ back before the PCs,
+
+464
+0:15:36,000 --> 0:15:38,000
+ when we talked about computers,
+
+465
+0:15:38,000 --> 0:15:40,000
+ a computer would typically be a system
+
+466
+0:15:40,000 --> 0:15:43,000
+ that would require its own building,
+
+467
+0:15:43,000 --> 0:15:46,000
+ and a minicomputer would be a computer
+
+468
+0:15:46,000 --> 0:15:47,000
+ that you could fit inside
+
+469
+0:15:47,000 --> 0:15:49,000
+ one or two small closets,
+
+470
+0:15:49,000 --> 0:15:52,000
+ and a microcomputer would be something like,
+
+471
+0:15:54,000 --> 0:15:55,000
+ like this,
+
+472
+0:15:55,000 --> 0:15:57,000
+ that you could have,
+
+473
+0:15:57,000 --> 0:15:58,000
+ okay,
+
+474
+0:15:58,000 --> 0:15:59,000
+ this one,
+
+475
+0:15:59,000 --> 0:16:00,000
+ that you could have on your own disk,
+
+476
+0:16:00,000 --> 0:16:02,000
+ so this was a microcomputer.
+
+477
+0:16:02,000 --> 0:16:05,000
+ What you would probably call a computer back then,
+
+478
+0:16:05,000 --> 0:16:08,000
+ we would most likely call that a data center,
+
+479
+0:16:08,000 --> 0:16:09,000
+ because that is,
+
+480
+0:16:09,000 --> 0:16:11,000
+ that is five or six,
+
+481
+0:16:11,000 --> 0:16:13,000
+ at least five or six racks of equipment,
+
+482
+0:16:13,000 --> 0:16:14,000
+ and readers,
+
+483
+0:16:14,000 --> 0:16:15,000
+ and really,
+
+484
+0:16:15,000 --> 0:16:16,000
+ really huge,
+
+485
+0:16:16,000 --> 0:16:17,000
+ and we,
+
+486
+0:16:17,000 --> 0:16:20,000
+ some of the offers they got were for one and a half million
+
+487
+0:16:20,000 --> 0:16:21,000
+ crores,
+
+488
+0:16:21,000 --> 0:16:23,000
+ divided by seven for euros.
+
+489
+0:16:23,000 --> 0:16:26,000
+ Yeah,
+
+490
+0:16:26,000 --> 0:16:28,000
+ so said,
+
+491
+0:16:28,000 --> 0:16:29,000
+ well,
+
+492
+0:16:29,000 --> 0:16:30,000
+ we hear you,
+
+493
+0:16:30,000 --> 0:16:31,000
+ you want Kummel,
+
+494
+0:16:31,000 --> 0:16:32,000
+ you want to buy a computer,
+
+495
+0:16:32,000 --> 0:16:33,000
+ well,
+
+496
+0:16:33,000 --> 0:16:34,000
+ you can have a mainframe.
+
+497
+0:16:34,000 --> 0:16:35,000
+ ECL was like,
+
+498
+0:16:35,000 --> 0:16:36,000
+ well,
+
+499
+0:16:36,000 --> 0:16:37,000
+ Kummel,
+
+500
+0:16:37,000 --> 0:16:38,000
+ no,
+
+501
+0:16:38,000 --> 0:16:39,000
+ we have this obscure thing we made ourselves
+
+502
+0:16:39,000 --> 0:16:40,000
+ that nobody likes,
+
+503
+0:16:40,000 --> 0:16:42,000
+ and a mainframe.
+
+504
+0:16:42,000 --> 0:16:43,000
+ So,
+
+505
+0:16:43,000 --> 0:16:44,000
+ I say,
+
+506
+0:16:44,000 --> 0:16:45,000
+ said,
+
+507
+0:16:45,000 --> 0:16:46,000
+ oh,
+
+508
+0:16:46,000 --> 0:16:47,000
+ well,
+
+509
+0:16:47,000 --> 0:16:48,000
+ by the way,
+
+510
+0:16:48,000 --> 0:16:49,000
+ we found this guy called Mons Pelle and Bero Christensen,
+
+511
+0:16:49,000 --> 0:16:50,000
+ and they have built this computer,
+
+512
+0:16:50,000 --> 0:16:52,000
+ and now we are selling that for them.
+
+513
+0:16:52,000 --> 0:16:53,000
+ They said that in the,
+
+514
+0:16:53,000 --> 0:16:55,000
+ in the fall of 1979,
+
+515
+0:16:55,000 --> 0:16:57,000
+ and only two weeks later,
+
+516
+0:16:57,000 --> 0:16:59,000
+ Reiner Strahlen went back and said,
+
+517
+0:16:59,000 --> 0:17:00,000
+ no,
+
+518
+0:17:00,000 --> 0:17:01,000
+ we don't want to sell that anyway,
+
+519
+0:17:01,000 --> 0:17:04,000
+ but we are going to build our own microcomputer,
+
+520
+0:17:04,000 --> 0:17:07,000
+ which will cost the same as a mainframe,
+
+521
+0:17:07,000 --> 0:17:10,000
+ but can only be used by one person.
+
+522
+0:17:10,000 --> 0:17:12,000
+ That was a really good offer.
+
+523
+0:17:12,000 --> 0:17:13,000
+ Surprisingly,
+
+524
+0:17:13,000 --> 0:17:14,000
+ surprisingly,
+
+525
+0:17:14,000 --> 0:17:15,000
+ like 14 days,
+
+526
+0:17:15,000 --> 0:17:16,000
+ no,
+
+527
+0:17:16,000 --> 0:17:17,000
+ actually,
+
+528
+0:17:17,000 --> 0:17:20,000
+ I got the two messages from so-called Telex,
+
+529
+0:17:20,000 --> 0:17:22,000
+ which was the email of the day,
+
+530
+0:17:22,000 --> 0:17:23,000
+ and,
+
+531
+0:17:23,000 --> 0:17:25,000
+ and there are hours in difference from when,
+
+532
+0:17:25,000 --> 0:17:27,000
+ when they received the message from Reiner Strahlen
+
+533
+0:17:27,000 --> 0:17:29,000
+ and the message from ICL.
+
+534
+0:17:29,000 --> 0:17:30,000
+ So it was,
+
+535
+0:17:30,000 --> 0:17:32,000
+ either it was the same day or the day after.
+
+536
+0:17:32,000 --> 0:17:33,000
+ So very,
+
+537
+0:17:33,000 --> 0:17:34,000
+ very close.
+
+538
+0:17:34,000 --> 0:17:35,000
+ ICL comes back and say,
+
+539
+0:17:35,000 --> 0:17:38,000
+ now we sell the computer that Mons Pelle and,
+
+540
+0:17:38,000 --> 0:17:44,000
+ and Bero Christensen is selling.
+
+541
+0:17:44,000 --> 0:17:45,000
+ So that,
+
+542
+0:17:45,000 --> 0:17:46,000
+ that's a bit back and forth,
+
+543
+0:17:46,000 --> 0:17:47,000
+ but all in all,
+
+544
+0:17:47,000 --> 0:17:50,000
+ it ended up that ICL would be the computer,
+
+545
+0:17:50,000 --> 0:17:54,000
+ be the manufacturing company who sold this machine.
+
+546
+0:17:54,000 --> 0:17:57,000
+ So we started with this company called,
+
+547
+0:17:57,000 --> 0:17:58,000
+ called Metanic.
+
+548
+0:17:58,000 --> 0:18:00,000
+ And if you,
+
+549
+0:18:00,000 --> 0:18:01,000
+ it's right here.
+
+550
+0:18:01,000 --> 0:18:02,000
+ And if you notice,
+
+551
+0:18:02,000 --> 0:18:07,000
+ it's probably now I need to mention that Bero Christensen is not on this picture.
+
+552
+0:18:07,000 --> 0:18:13,000
+ Bero Christensen really did not want to be a part of the public story because he was just like this,
+
+553
+0:18:13,000 --> 0:18:15,000
+ a bit of a hippie type and a commercial,
+
+554
+0:18:15,000 --> 0:18:17,000
+ commercial companies were a bit yucky.
+
+555
+0:18:17,000 --> 0:18:22,000
+ And actually Bersen wrote that Bero Christensen was part of that.
+
+556
+0:18:22,000 --> 0:18:25,000
+ And I think one or two days later,
+
+557
+0:18:25,000 --> 0:18:27,000
+ there was a message in Bersen saying,
+
+558
+0:18:27,000 --> 0:18:28,000
+ oh,
+
+559
+0:18:28,000 --> 0:18:29,000
+ we didn't mean that.
+
+560
+0:18:29,000 --> 0:18:30,000
+ It was a mistake.
+
+561
+0:18:30,000 --> 0:18:31,000
+ And I mean,
+
+562
+0:18:31,000 --> 0:18:32,000
+ they don't do that by themselves.
+
+563
+0:18:32,000 --> 0:18:33,000
+ Some,
+
+564
+0:18:33,000 --> 0:18:35,000
+ somebody called them and yelled at them for saying it.
+
+565
+0:18:35,000 --> 0:18:36,000
+ So,
+
+566
+0:18:36,000 --> 0:18:41,000
+ so I'm sure he was very eager by not getting commercially associated with this project
+
+567
+0:18:41,000 --> 0:18:47,000
+ because he wanted to use his contacts in academia without him being accused of wanting to make a buck on it.
+
+568
+0:18:47,000 --> 0:18:48,000
+ That's my theory.
+
+569
+0:18:48,000 --> 0:18:50,000
+ I can't prove it because the guy is dead,
+
+570
+0:18:50,000 --> 0:18:51,000
+ but I have,
+
+571
+0:18:51,000 --> 0:18:53,000
+ I have a lot of,
+
+572
+0:18:53,000 --> 0:18:54,000
+ uh,
+
+573
+0:18:54,000 --> 0:18:55,000
+ indicia for that.
+
+574
+0:18:55,000 --> 0:18:56,000
+ What is that called?
+
+575
+0:18:57,000 --> 0:18:58,000
+ So,
+
+576
+0:18:58,000 --> 0:18:59,000
+ you know,
+
+577
+0:18:59,000 --> 0:19:01,000
+ not circumstantial evidence that points to that.
+
+578
+0:19:01,000 --> 0:19:02,000
+ Yeah.
+
+579
+0:19:02,000 --> 0:19:03,000
+ Okay.
+
+580
+0:19:03,000 --> 0:19:04,000
+ So,
+
+581
+0:19:04,000 --> 0:19:05,000
+ um,
+
+582
+0:19:05,000 --> 0:19:06,000
+ I put Reinenstrahlen in there because,
+
+583
+0:19:06,000 --> 0:19:07,000
+ um,
+
+584
+0:19:07,000 --> 0:19:08,000
+ yeah,
+
+585
+0:19:08,000 --> 0:19:15,000
+ a lot of people mistake this and thinks that Reinenstrahlen made this computer and that is wrong,
+
+586
+0:19:15,000 --> 0:19:17,000
+ but it could have been true.
+
+587
+0:19:17,000 --> 0:19:18,000
+ And that's fun.
+
+588
+0:19:18,000 --> 0:19:19,000
+ That's a fun,
+
+589
+0:19:19,000 --> 0:19:20,000
+ uh,
+
+590
+0:19:20,000 --> 0:19:21,000
+ fun fact,
+
+591
+0:19:21,000 --> 0:19:22,000
+ I think.
+
+592
+0:19:22,000 --> 0:19:23,000
+ So,
+
+593
+0:19:23,000 --> 0:19:24,000
+ um,
+
+594
+0:19:24,000 --> 0:19:25,000
+ in Horsens,
+
+595
+0:19:25,000 --> 0:19:26,000
+ and I'm probably going to make a whole chapter about this in the book alone.
+
+596
+0:19:26,000 --> 0:19:27,000
+ In Horsens,
+
+597
+0:19:27,000 --> 0:19:28,000
+ back in the,
+
+598
+0:19:28,000 --> 0:19:29,000
+ um,
+
+599
+0:19:29,000 --> 0:19:30,000
+ in the 70s,
+
+600
+0:19:30,000 --> 0:19:31,000
+ there was this huge television factory.
+
+601
+0:19:31,000 --> 0:19:32,000
+ Actually,
+
+602
+0:19:32,000 --> 0:19:33,000
+ it started out like a bicycle factory.
+
+603
+0:19:33,000 --> 0:19:36,000
+ They also did chemicals and lots of other stuff,
+
+604
+0:19:36,000 --> 0:19:39,000
+ but they had a department for building televisions and radios,
+
+605
+0:19:39,000 --> 0:19:41,000
+ which burned down in the late 60s,
+
+606
+0:19:41,000 --> 0:19:42,000
+ like,
+
+607
+0:19:42,000 --> 0:19:43,000
+ 69,
+
+608
+0:19:43,000 --> 0:19:44,000
+ I think,
+
+609
+0:19:44,000 --> 0:19:45,000
+ 70,
+
+610
+0:19:45,000 --> 0:19:46,000
+ around there.
+
+611
+0:19:46,000 --> 0:19:47,000
+ All these details will,
+
+612
+0:19:47,000 --> 0:19:48,000
+ of course,
+
+613
+0:19:48,000 --> 0:19:49,000
+ be in the book,
+
+614
+0:19:49,000 --> 0:19:50,000
+ by the books.
+
+615
+0:19:50,000 --> 0:19:51,000
+ There's a link in the,
+
+616
+0:19:51,000 --> 0:19:52,000
+ in the bottom of the screen slides.
+
+617
+0:19:52,000 --> 0:19:53,000
+ Um,
+
+618
+0:19:53,000 --> 0:19:54,000
+ and,
+
+619
+0:19:54,000 --> 0:19:55,000
+ um,
+
+620
+0:19:55,000 --> 0:19:56,000
+ a Dutch or British,
+
+621
+0:19:56,000 --> 0:19:57,000
+ uh,
+
+622
+0:19:57,000 --> 0:19:58,000
+ company,
+
+623
+0:19:58,000 --> 0:19:59,000
+ a,
+
+624
+0:19:59,000 --> 0:20:00,000
+ a trans-European company,
+
+625
+0:20:00,000 --> 0:20:01,000
+ uh,
+
+626
+0:20:01,000 --> 0:20:02,000
+ decided to,
+
+627
+0:20:02,000 --> 0:20:03,000
+ to,
+
+628
+0:20:03,000 --> 0:20:04,000
+ to enter this,
+
+629
+0:20:04,000 --> 0:20:05,000
+ um,
+
+630
+0:20:05,000 --> 0:20:06,000
+ this,
+
+631
+0:20:06,000 --> 0:20:07,000
+ um,
+
+632
+0:20:07,000 --> 0:20:08,000
+ factory and fund the rebuilding of it.
+
+633
+0:20:08,000 --> 0:20:09,000
+ And,
+
+634
+0:20:09,000 --> 0:20:10,000
+ um,
+
+635
+0:20:10,000 --> 0:20:11,000
+ they went bankrupt in 1975.
+
+636
+0:20:11,000 --> 0:20:12,000
+ Uh,
+
+637
+0:20:12,000 --> 0:20:13,000
+ and then they had like,
+
+638
+0:20:13,000 --> 0:20:14,000
+ I think,
+
+639
+0:20:14,000 --> 0:20:15,000
+ 400 workers,
+
+640
+0:20:15,000 --> 0:20:16,000
+ uh,
+
+641
+0:20:16,000 --> 0:20:17,000
+ in this,
+
+642
+0:20:17,000 --> 0:20:18,000
+ um,
+
+643
+0:20:18,000 --> 0:20:19,000
+ part of the company.
+
+644
+0:20:19,000 --> 0:20:20,000
+ And they were just like,
+
+645
+0:20:20,000 --> 0:20:21,000
+ well,
+
+646
+0:20:21,000 --> 0:20:22,000
+ if this international company can do this,
+
+647
+0:20:22,000 --> 0:20:23,000
+ sure,
+
+648
+0:20:23,000 --> 0:20:24,000
+ we can do it ourselves.
+
+649
+0:20:24,000 --> 0:20:25,000
+ So,
+
+650
+0:20:25,000 --> 0:20:26,000
+ uh,
+
+651
+0:20:26,000 --> 0:20:27,000
+ the,
+
+652
+0:20:27,000 --> 0:20:28,000
+ the,
+
+653
+0:20:28,000 --> 0:20:29,000
+ the estate,
+
+654
+0:20:29,000 --> 0:20:30,000
+ can you say that about a company?
+
+655
+0:20:30,000 --> 0:20:31,000
+ I'm not sure.
+
+656
+0:20:31,000 --> 0:20:32,000
+ Um,
+
+657
+0:20:32,000 --> 0:20:33,000
+ anyway,
+
+658
+0:20:33,000 --> 0:20:34,000
+ so,
+
+659
+0:20:34,000 --> 0:20:35,000
+ so,
+
+660
+0:20:35,000 --> 0:20:36,000
+ so,
+
+661
+0:20:36,000 --> 0:20:37,000
+ so,
+
+662
+0:20:37,000 --> 0:20:38,000
+ so they took over the company.
+
+663
+0:20:38,000 --> 0:20:39,000
+ This was a huge story.
+
+664
+0:20:39,000 --> 0:20:40,000
+ They got the municipality to pay some of it.
+
+665
+0:20:40,000 --> 0:20:41,000
+ Uh,
+
+666
+0:20:41,000 --> 0:20:42,000
+ uh,
+
+667
+0:20:42,000 --> 0:20:43,000
+ lot of it.
+
+668
+0:20:43,000 --> 0:20:44,000
+ They made,
+
+669
+0:20:44,000 --> 0:20:45,000
+ uh,
+
+670
+0:20:45,000 --> 0:20:46,000
+ like stocks you could sell to,
+
+671
+0:20:46,000 --> 0:20:47,000
+ uh,
+
+672
+0:20:47,000 --> 0:20:48,000
+ or,
+
+673
+0:20:48,000 --> 0:20:49,000
+ it's called the people stocks,
+
+674
+0:20:49,000 --> 0:20:50,000
+ .
+
+675
+0:20:50,000 --> 0:20:51,000
+ So,
+
+676
+0:20:51,000 --> 0:20:52,000
+ so it was a huge deal,
+
+677
+0:20:52,000 --> 0:20:53,000
+ uh,
+
+678
+0:20:53,000 --> 0:20:54,000
+ with publicity and,
+
+679
+0:20:54,000 --> 0:20:55,000
+ and,
+
+680
+0:20:55,000 --> 0:20:56,000
+ the,
+
+681
+0:20:56,000 --> 0:20:57,000
+ uh,
+
+682
+0:20:57,000 --> 0:20:58,000
+ most people who released a few hundred shares by the time,
+
+683
+0:20:58,000 --> 0:20:59,000
+ bought,
+
+684
+0:20:59,000 --> 0:21:00,000
+ uh,
+
+685
+0:21:00,000 --> 0:21:01,000
+ the majority of the shares in the company,
+
+686
+0:21:01,000 --> 0:21:02,000
+ and kept it afloat for,
+
+687
+0:21:02,000 --> 0:21:03,000
+ uh,
+
+688
+0:21:03,000 --> 0:21:04,000
+ until,
+
+689
+0:21:04,000 --> 0:21:05,000
+ uh,
+
+690
+0:21:05,000 --> 0:21:06,000
+ 1979.
+
+691
+0:21:06,000 --> 0:21:07,000
+ Um,
+
+692
+0:21:07,000 --> 0:21:08,000
+ but,
+
+693
+0:21:08,000 --> 0:21:09,000
+ the,
+
+694
+0:21:09,000 --> 0:21:10,000
+ the,
+
+695
+0:21:10,000 --> 0:21:11,000
+ the,
+
+696
+0:21:11,000 --> 0:21:12,000
+ the vibe of the people's television factory was still there,
+
+697
+0:21:12,000 --> 0:21:13,000
+ and they tried to use that to market the computer as the people's computer.
+
+698
+0:21:13,000 --> 0:21:14,000
+ But,
+
+699
+0:21:14,000 --> 0:21:15,000
+ it didn't go,
+
+700
+0:21:15,000 --> 0:21:16,000
+ 3F went,
+
+701
+0:21:16,000 --> 0:21:17,000
+ uh,
+
+702
+0:21:17,000 --> 0:21:18,000
+ bankrupt.
+
+703
+0:21:18,000 --> 0:21:19,000
+ And they went bankrupt,
+
+704
+0:21:19,000 --> 0:21:20,000
+ like months before they had promised to deliver these machines.
+
+705
+0:21:20,000 --> 0:21:21,000
+ Um,
+
+706
+0:21:21,000 --> 0:21:22,000
+ and there are a couple of machines which had,
+
+707
+0:21:22,000 --> 0:21:23,000
+ uh,
+
+708
+0:21:23,000 --> 0:21:27,000
+ a couple of machines that were built at this point, but we don't know who built them.
+
+709
+0:21:27,000 --> 0:21:31,760
+ I have talked to Mons Pele and he doesn't remember what he had for breakfast last day.
+
+710
+0:21:31,760 --> 0:21:36,520
+ So that's, by the way, that's his own words, I'm not mugging him anyway.
+
+711
+0:21:36,520 --> 0:21:38,760
+ He really has a bad memory.
+
+712
+0:21:38,760 --> 0:21:44,080
+ So we're trying to jolt his memory by showing him, yeah, everything I come up with I send
+
+713
+0:21:44,080 --> 0:21:46,160
+ to him and he says, oh, yeah, I remember that.
+
+714
+0:21:46,160 --> 0:21:48,800
+ And then slowly we get the memories back from him.
+
+715
+0:21:48,800 --> 0:21:51,460
+ But he doesn't recall where these machines were built.
+
+716
+0:21:51,460 --> 0:21:57,140
+ The best I got from him was like that, oh, yeah, I might have built them myself.
+
+717
+0:21:57,140 --> 0:22:02,580
+ Which is possible because we are talking about somewhere between 30 and 50 machines.
+
+718
+0:22:02,580 --> 0:22:07,440
+ You can build that in a couple of months, maybe hire a couple of young ones to help
+
+719
+0:22:07,440 --> 0:22:08,440
+ you.
+
+720
+0:22:08,440 --> 0:22:14,540
+ So we have another example of a young guy who built 400 machines with his wife at the
+
+721
+0:22:14,540 --> 0:22:18,660
+ kitchen table and sold them to institutions in all of Finland.
+
+722
+0:22:18,660 --> 0:22:21,460
+ So it has happened before, so it could have happened.
+
+723
+0:22:21,460 --> 0:22:28,060
+ So they shipped these machines off to another factory they found in northern Zeeland, which
+
+724
+0:22:28,060 --> 0:22:30,340
+ started the production.
+
+725
+0:22:30,340 --> 0:22:37,140
+ And that ended up being what was called the ICL, Comet MPS 2000.
+
+726
+0:22:37,140 --> 0:22:42,040
+ And just to put Komal back in there, then the same company who built the machine actually
+
+727
+0:22:42,040 --> 0:22:47,460
+ started developing the first version of Komal for the Z80-based machines.
+
+728
+0:22:47,460 --> 0:22:50,140
+ So we still have Komal tagging in here.
+
+729
+0:22:50,140 --> 0:22:51,340
+ And Metanic was designed.
+
+730
+0:22:51,460 --> 0:22:53,400
+ He was designing the hardware but not building it.
+
+731
+0:22:53,400 --> 0:22:55,900
+ But he was also designing the software.
+
+732
+0:22:55,900 --> 0:23:00,660
+ So this Mons Pelle dude was trying to be the intellectual master without having to do the
+
+733
+0:23:00,660 --> 0:23:06,420
+ actual work, which in theory was a good idea, only in theory.
+
+734
+0:23:06,420 --> 0:23:17,140
+ So the machine, we think there were made about 200 of them, running with a Zilac Z80 CPU of
+
+735
+0:23:17,140 --> 0:23:19,780
+ 1 megahertz and 4 kilobytes of memory.
+
+736
+0:23:19,780 --> 0:23:20,780
+ And they used a tape.
+
+737
+0:23:20,780 --> 0:23:21,220
+ Do you remember?
+
+738
+0:23:21,220 --> 0:23:27,540
+ Do you remember these small tapes from we used in the 90s for voice answering machines?
+
+739
+0:23:27,540 --> 0:23:33,620
+ Or for those, you know, the doctor would speak into a thing to make notes, the dictaphone?
+
+740
+0:23:33,620 --> 0:23:35,460
+ Do you remember those?
+
+741
+0:23:35,460 --> 0:23:36,900
+ They used those for data.
+
+742
+0:23:36,900 --> 0:23:42,940
+ They could cram 128 kilobytes of data into one of these machines.
+
+743
+0:23:42,940 --> 0:23:47,940
+ Impressive.
+
+744
+0:23:47,940 --> 0:23:50,160
+ And they lived happily ever after.
+
+745
+0:23:50,160 --> 0:23:51,060
+ Of course they didn't.
+
+746
+0:23:51,220 --> 0:23:55,160
+ Because this is IT.
+
+747
+0:23:55,160 --> 0:23:58,040
+ You have to have people not lagging each other.
+
+748
+0:23:58,040 --> 0:24:03,540
+ So I'm going to talk a bit about HH Electronic, which was the company who took over the production
+
+749
+0:24:03,540 --> 0:24:04,860
+ of the machines.
+
+750
+0:24:04,860 --> 0:24:08,100
+ This company was founded in 1976.
+
+751
+0:24:08,100 --> 0:24:13,600
+ And it didn't stop in 1980, but that's where I'm stopping for this chapter.
+
+752
+0:24:13,600 --> 0:24:17,620
+ So the company was founded by a young engineer.
+
+753
+0:24:17,620 --> 0:24:19,220
+ Actually they sprung out of a company who made gas engines.
+
+754
+0:24:19,220 --> 0:24:20,220
+ And this was the first company to do that.
+
+755
+0:24:20,220 --> 0:24:21,220
+ And this was the first company to do that.
+
+756
+0:24:21,220 --> 0:24:22,220
+ And he was like, can you buy gas systems?
+
+757
+0:24:22,220 --> 0:24:25,600
+ So, like, regulators and stuff like that.
+
+758
+0:24:25,600 --> 0:24:30,540
+ And the boss of that company asked him to say, can you buy, can you, now, sorry, can
+
+759
+0:24:30,540 --> 0:24:33,040
+ you develop a process control system for us?
+
+760
+0:24:33,040 --> 0:24:35,620
+ And he was just like, yeah, I can do that.
+
+761
+0:24:35,620 --> 0:24:44,180
+ So he also got his hand on a Z80 processor and built a Z80 based process control platform.
+
+762
+0:24:44,180 --> 0:24:51,060
+ And in 1978, he announced in Børsen, again, the same magazine as we talked about before,
+
+763
+0:24:51,220 --> 0:24:56,380
+ that he had developed a version of BASIC, which were more structured than BASIC, and
+
+764
+0:24:56,380 --> 0:24:58,940
+ called it HH BASIC.
+
+765
+0:24:58,940 --> 0:25:04,680
+ And news like that, you can publish that in a local, in a global, what is it called?
+
+766
+0:25:04,680 --> 0:25:09,460
+ In a countrywide Danish paper without Børs Kristensen noticing.
+
+767
+0:25:09,460 --> 0:25:16,760
+ So in 1978, Børs Kristensen called AHS Electronic and got to talk with them about their BASIC.
+
+768
+0:25:16,760 --> 0:25:19,220
+ So that was how the connection was made.
+
+769
+0:25:19,220 --> 0:25:20,220
+ Oh, and I'm sorry.
+
+770
+0:25:20,220 --> 0:25:21,220
+ Sorry.
+
+771
+0:25:21,220 --> 0:25:24,220
+ Actually, it was in 1979.
+
+772
+0:25:24,220 --> 0:25:25,220
+ It says here.
+
+773
+0:25:25,220 --> 0:25:28,220
+ So probably right.
+
+774
+0:25:28,220 --> 0:25:29,580
+ Yeah.
+
+775
+0:25:29,580 --> 0:25:35,040
+ So this machine wasn't really usable, mainly because it took 20 minutes to load the tape
+
+776
+0:25:35,040 --> 0:25:38,980
+ with 128 kilobytes of memory, of program.
+
+777
+0:25:38,980 --> 0:25:43,460
+ So imagine you're having a class, and you need to teach them COMAL.
+
+778
+0:25:43,460 --> 0:25:45,600
+ And you've got four machines.
+
+779
+0:25:45,600 --> 0:25:48,720
+ And each machine, there are four students around each machine.
+
+780
+0:25:48,720 --> 0:25:50,760
+ And they start at 8 o'clock.
+
+781
+0:25:50,760 --> 0:25:53,320
+ And they start with loading the tape, and they wait 20 minutes.
+
+782
+0:25:53,320 --> 0:25:57,020
+ And then two of the machines breaks down and needs to be restarted.
+
+783
+0:25:57,020 --> 0:26:00,060
+ So now the class is over.
+
+784
+0:26:00,060 --> 0:26:01,060
+ That wasn't...
+
+785
+0:26:01,060 --> 0:26:03,460
+ Yeah, they didn't like that.
+
+786
+0:26:03,460 --> 0:26:07,080
+ So Jørgen Høgh went to ICL and said, you know what?
+
+787
+0:26:07,080 --> 0:26:12,740
+ I like this idea with these computers, but I don't like this most .
+
+788
+0:26:12,740 --> 0:26:17,760
+ So either I'm leaving, and you can keep your system, or we are going to make a new computer,
+
+789
+0:26:17,760 --> 0:26:18,760
+ and you can keep your system, and you can keep your system, and you can keep your system,
+
+790
+0:26:18,760 --> 0:26:19,760
+ or we are going to make a new computer.
+
+791
+0:26:19,760 --> 0:26:25,800
+ And we are going to make a new computer based on our process control system, and is leaving.
+
+792
+0:26:25,800 --> 0:26:31,800
+ And ICL had, at this point, been fighting for almost two years to find a factory that
+
+793
+0:26:31,800 --> 0:26:32,940
+ could produce these machines.
+
+794
+0:26:32,940 --> 0:26:38,180
+ So ICL was just like, well, are we going with the guy who had all these crazy ideas and
+
+795
+0:26:38,180 --> 0:26:39,520
+ couldn't put them into life?
+
+796
+0:26:39,520 --> 0:26:45,620
+ Or with this guy who actually put these crazy ideas into reality, but now want to scale
+
+797
+0:26:45,620 --> 0:26:46,740
+ a little bit back?
+
+798
+0:26:46,740 --> 0:26:48,960
+ So they, of course, went with HH-Electronic.
+
+799
+0:26:49,760 --> 0:26:52,840
+ And they developed the MPS3000.
+
+800
+0:26:52,840 --> 0:26:56,260
+ And the MPS2000 was dropped, or phased out slowly.
+
+801
+0:26:56,260 --> 0:27:06,780
+ A funny story about this was that nobody remembered to tell Mons Pelle that.
+
+802
+0:27:06,780 --> 0:27:14,480
+ So he didn't know until around 1980, the spring 1980, when he went to this factory and wanted
+
+803
+0:27:14,480 --> 0:27:15,760
+ to pick up his check.
+
+804
+0:27:15,760 --> 0:27:16,960
+ So how many computers have you made?
+
+805
+0:27:16,960 --> 0:27:17,760
+ And can I please have my check?
+
+806
+0:27:17,760 --> 0:27:18,760
+ And he was just like, we didn't make it.
+
+807
+0:27:18,760 --> 0:27:19,760
+ And he was like, we didn't make it.
+
+808
+0:27:19,760 --> 0:27:21,720
+ Any computers, you can't have any check.
+
+809
+0:27:22,000 --> 0:27:23,200
+ We are doing it ourselves now.
+
+810
+0:27:25,340 --> 0:27:28,520
+ So that's not a good way to...
+
+811
+0:27:28,520 --> 0:27:30,500
+ Well, it could have been done smarter.
+
+812
+0:27:31,020 --> 0:27:32,640
+ More about that during the next slide.
+
+813
+0:27:33,500 --> 0:27:36,620
+ We made this machine, and this is what most of...
+
+814
+0:27:36,620 --> 0:27:37,000
+ Ah, okay.
+
+815
+0:27:37,400 --> 0:27:40,740
+ Most Danish guys in my dad's age
+
+816
+0:27:40,740 --> 0:27:44,120
+ would probably have seen in the school.
+
+817
+0:27:44,120 --> 0:27:46,820
+ That would be this orange case
+
+818
+0:27:46,820 --> 0:27:52,300
+ made out of 1.5 millimeter steel plate.
+
+819
+0:27:54,180 --> 0:27:59,120
+ And, well, today you would probably not be allowed
+
+820
+0:27:59,120 --> 0:28:02,320
+ to move this by the government
+
+821
+0:28:02,320 --> 0:28:04,360
+ because health and safety risks.
+
+822
+0:28:04,580 --> 0:28:05,760
+ It's really, really heavy.
+
+823
+0:28:06,480 --> 0:28:11,120
+ And its power supply is...
+
+824
+0:28:11,640 --> 0:28:14,760
+ Yeah, well, you don't touch the cabinet on the back
+
+825
+0:28:14,760 --> 0:28:15,460
+ when it's turned on.
+
+826
+0:28:15,540 --> 0:28:16,800
+ You'll burn because it's...
+
+827
+0:28:16,800 --> 0:28:17,760
+ Really, really, really hot.
+
+828
+0:28:18,420 --> 0:28:19,960
+ Anyway, the machines became very popular,
+
+829
+0:28:20,300 --> 0:28:22,820
+ and overall, they were produced
+
+830
+0:28:22,820 --> 0:28:24,600
+ about 3,000 units of these machines.
+
+831
+0:28:25,940 --> 0:28:27,420
+ Nothing much to say about that.
+
+832
+0:28:28,180 --> 0:28:28,900
+ It's...
+
+833
+0:28:28,900 --> 0:28:30,580
+ Yeah, it was a new beginning.
+
+834
+0:28:31,580 --> 0:28:33,060
+ But Mons Pelle was just like,
+
+835
+0:28:33,320 --> 0:28:35,640
+ no, hell no, I don't want to be part of this,
+
+836
+0:28:35,980 --> 0:28:37,340
+ and they're not going to screw me over.
+
+837
+0:28:37,460 --> 0:28:39,560
+ So he made a new computer.
+
+838
+0:28:40,120 --> 0:28:42,460
+ He made the MPS 2001.
+
+839
+0:28:43,320 --> 0:28:44,500
+ So now you see what's happening
+
+840
+0:28:44,500 --> 0:28:46,000
+ is we have this first computer,
+
+841
+0:28:46,200 --> 0:28:46,700
+ and now it's...
+
+842
+0:28:46,700 --> 0:28:46,780
+ It's a new computer.
+
+843
+0:28:46,780 --> 0:28:48,940
+ It's forking out into two different machines.
+
+844
+0:28:49,240 --> 0:28:50,140
+ Which one is the following?
+
+845
+0:28:50,360 --> 0:28:52,520
+ Which one is number two, if any?
+
+846
+0:28:53,180 --> 0:28:54,680
+ If you take this machine apart,
+
+847
+0:28:55,180 --> 0:28:56,960
+ on the motherboard, you will actually see
+
+848
+0:28:56,960 --> 0:28:58,400
+ it's called MPS 2001.
+
+849
+0:28:58,980 --> 0:29:00,720
+ However, that's the only place you will see that
+
+850
+0:29:00,720 --> 0:29:03,840
+ because he partnered up with a bunch of young salesmen
+
+851
+0:29:03,840 --> 0:29:06,500
+ from the mid-Utlands,
+
+852
+0:29:07,280 --> 0:29:09,940
+ and those guys could sell.
+
+853
+0:29:11,100 --> 0:29:13,380
+ So he built this machine.
+
+854
+0:29:13,580 --> 0:29:14,720
+ Don't know where, don't know how.
+
+855
+0:29:15,720 --> 0:29:16,520
+ As he said,
+
+856
+0:29:16,780 --> 0:29:18,220
+ I might have done it myself.
+
+857
+0:29:18,220 --> 0:29:21,020
+ I really would like to have interviewed this guy
+
+858
+0:29:21,020 --> 0:29:22,620
+ for 20 years ago, but...
+
+859
+0:29:22,620 --> 0:29:27,120
+ So, and this machine was built during the same time,
+
+860
+0:29:27,120 --> 0:29:28,320
+ and if you look at the specs,
+
+861
+0:29:28,320 --> 0:29:31,020
+ this is a hell of a lot of a faster machine.
+
+862
+0:29:31,020 --> 0:29:32,360
+ It's four times faster.
+
+863
+0:29:32,360 --> 0:29:34,160
+ I know four megahertz doesn't have much today,
+
+864
+0:29:34,160 --> 0:29:35,840
+ but if you're used to one megahertz,
+
+865
+0:29:35,840 --> 0:29:37,660
+ this is four times as much.
+
+866
+0:29:37,660 --> 0:29:40,800
+ And if you're used to a system with 48 kilobytes of memory,
+
+867
+0:29:40,800 --> 0:29:43,480
+ this one goes up to 128 kilobytes of memory.
+
+868
+0:29:43,480 --> 0:29:45,840
+ The ROM is not included in that.
+
+869
+0:29:45,840 --> 0:29:46,680
+ We have ROM,
+
+870
+0:29:46,680 --> 0:29:51,620
+ and on top of that it's all built into one machine
+
+871
+0:29:51,620 --> 0:29:53,120
+ that would be eight more years
+
+872
+0:29:53,120 --> 0:29:55,920
+ until ICL would catch up to this.
+
+873
+0:29:55,920 --> 0:29:59,120
+ So he got it right the second time at least.
+
+874
+0:30:01,260 --> 0:30:03,800
+ So I'm probably going to go into a bit
+
+875
+0:30:03,800 --> 0:30:05,700
+ about Bokeh Datasystemer.
+
+876
+0:30:05,700 --> 0:30:10,640
+ That means Bokeh doesn't mean anything, data systems.
+
+877
+0:30:10,640 --> 0:30:14,100
+ That was the young guys who sold it,
+
+878
+0:30:14,100 --> 0:30:15,940
+ and that's a story as well,
+
+879
+0:30:15,940 --> 0:30:17,980
+ but I'm not going to get into that yet
+
+880
+0:30:17,980 --> 0:30:19,920
+ because I collected a lot of materials about it,
+
+881
+0:30:19,920 --> 0:30:21,080
+ but I haven't read it yet.
+
+882
+0:30:21,080 --> 0:30:22,240
+ I'm not kidding.
+
+883
+0:30:22,240 --> 0:30:24,080
+ I have an entire shelf,
+
+884
+0:30:25,620 --> 0:30:30,620
+ one entire IKEA shelf filled with binders and books
+
+885
+0:30:31,880 --> 0:30:34,720
+ and photocopies and hardware.
+
+886
+0:30:36,160 --> 0:30:38,020
+ Actually, I have a room full of hardware,
+
+887
+0:30:38,020 --> 0:30:40,260
+ but I have a lot of material,
+
+888
+0:30:40,260 --> 0:30:42,500
+ and I haven't gone through it all yet.
+
+889
+0:30:42,500 --> 0:30:45,780
+ Anyway, this machine was being traded,
+
+890
+0:30:45,940 --> 0:30:48,840
+ and it was being sold for the next eight years,
+
+891
+0:30:48,840 --> 0:30:50,540
+ more or less without modifications,
+
+892
+0:30:50,540 --> 0:30:53,120
+ and it could keep up with ICL,
+
+893
+0:30:53,120 --> 0:30:56,180
+ which at this point in time was like this huge international,
+
+894
+0:30:56,180 --> 0:30:58,420
+ it was the IBM of Europe.
+
+895
+0:30:59,880 --> 0:31:04,700
+ ICL had to improve, so HH Electronics and ICL
+
+896
+0:31:04,700 --> 0:31:06,000
+ kept on developing.
+
+897
+0:31:06,000 --> 0:31:08,960
+ As you see now, they got up to four megahertz as well
+
+898
+0:31:08,960 --> 0:31:10,760
+ and 64 kilobytes of memory.
+
+899
+0:31:10,760 --> 0:31:13,360
+ They also managed to put in up to one megabyte of memory
+
+900
+0:31:13,360 --> 0:31:14,400
+ in this machine.
+
+901
+0:31:14,400 --> 0:31:15,780
+ If you were very rich, one application,
+
+902
+0:31:15,780 --> 0:31:15,800
+ one computer, one computer, one computer, one computer,
+
+903
+0:31:15,800 --> 0:31:18,000
+ you could get up to one gigabyte of memory
+
+904
+0:31:18,000 --> 0:31:19,200
+ in the same machine.
+
+905
+0:31:19,200 --> 0:31:21,180
+ So the reason of this was that it was used for drawing,
+
+906
+0:31:21,180 --> 0:31:24,040
+ for CAD diagrams, and you could add up to one megabyte
+
+907
+0:31:24,040 --> 0:31:27,000
+ of memory into it, and they had a requirement
+
+908
+0:31:27,000 --> 0:31:29,520
+ that it should be able to contain the entire drawings
+
+909
+0:31:29,520 --> 0:31:32,720
+ of the Concorde plane, and that took up one megabyte
+
+910
+0:31:32,720 --> 0:31:37,020
+ of memory, and I think it was about 120,000 Danish krones
+
+911
+0:31:37,020 --> 0:31:38,800
+ for that megabyte of memory.
+
+912
+0:31:38,800 --> 0:31:41,620
+ That was insane, and by the way, my dad did that software,
+
+913
+0:31:41,620 --> 0:31:45,640
+ so he had memory for 120,000 krones in his computer.
+
+914
+0:31:45,640 --> 0:31:49,160
+ I don't know if we had an insurance for that, but yeah.
+
+915
+0:31:49,420 --> 0:31:51,280
+ That was when I connected with these computers
+
+916
+0:31:51,280 --> 0:31:53,780
+ because when I was like, like, like, yay big,
+
+917
+0:31:54,020 --> 0:31:56,700
+ my dad worked on one of these machines.
+
+918
+0:31:57,780 --> 0:31:59,680
+ And it has intrigued me ever since.
+
+919
+0:31:59,940 --> 0:32:04,400
+ I never really get to play with it until I got, like, what's older?
+
+920
+0:32:04,740 --> 0:32:06,080
+ Well, that's not true.
+
+921
+0:32:06,180 --> 0:32:08,580
+ When I was yay big, I get to like,
+
+922
+0:32:08,660 --> 0:32:10,220
+ eh, I'm working on the computer
+
+923
+0:32:10,220 --> 0:32:13,600
+ because this keyboard was made of, again, sheet metal.
+
+924
+0:32:13,600 --> 0:32:16,880
+ Well, if something would break by me using that,
+
+925
+0:32:17,140 --> 0:32:18,560
+ it would be me breaking.
+
+926
+0:32:18,800 --> 0:32:19,660
+ The computer would not.
+
+927
+0:32:20,700 --> 0:32:21,460
+ That was for sure.
+
+928
+0:32:23,100 --> 0:32:26,000
+ This machine, line-of-machine, supported hard drives
+
+929
+0:32:26,000 --> 0:32:28,760
+ as one of the first in this series.
+
+930
+0:32:29,780 --> 0:32:34,940
+ So this was more or less the final iteration of the ICL Comet,
+
+931
+0:32:35,220 --> 0:32:36,880
+ at least in the early years.
+
+932
+0:32:37,120 --> 0:32:39,580
+ That's not the final, but anyway, for now it's the final.
+
+933
+0:32:40,720 --> 0:32:43,580
+ But ATS Electronics, they wanted to develop this further
+
+934
+0:32:43,680 --> 0:32:47,420
+ and they realized that 8-bit computers and CPM
+
+935
+0:32:47,720 --> 0:32:51,720
+ was probably not going to outlive, yeah,
+
+936
+0:32:52,880 --> 0:32:56,120
+ it was obvious that it would be,
+
+937
+0:32:57,260 --> 0:33:00,940
+ that the market would be troubled over by, among else, IBM.
+
+938
+0:33:01,340 --> 0:33:04,540
+ So they wanted to try to be better than the IBM.
+
+939
+0:33:04,920 --> 0:33:08,140
+ So they started developing something that I liked really much.
+
+940
+0:33:08,600 --> 0:33:10,460
+ They started developing a Unix computer.
+
+941
+0:33:11,640 --> 0:33:12,920
+ Now we are back home again.
+
+942
+0:33:12,920 --> 0:33:12,940
+ We like it.
+
+943
+0:33:12,940 --> 0:33:12,980
+ We like it.
+
+944
+0:33:12,980 --> 0:33:13,040
+ We like it.
+
+945
+0:33:13,040 --> 0:33:13,120
+ We like it.
+
+946
+0:33:13,120 --> 0:33:13,180
+ We like it.
+
+947
+0:33:13,180 --> 0:33:13,280
+ We like it.
+
+948
+0:33:13,280 --> 0:33:13,380
+ We like it.
+
+949
+0:33:13,380 --> 0:33:13,440
+ We like it.
+
+950
+0:33:13,440 --> 0:33:13,540
+ We like it.
+
+951
+0:33:13,540 --> 0:33:13,580
+ We like it.
+
+952
+0:33:13,580 --> 0:33:13,720
+ We like it.
+
+953
+0:33:13,720 --> 0:33:13,780
+ We like it.
+
+954
+0:33:13,780 --> 0:33:13,920
+ We like it.
+
+955
+0:33:13,920 --> 0:33:14,020
+ We like it.
+
+956
+0:33:14,020 --> 0:33:14,040
+ We like it.
+
+957
+0:33:14,040 --> 0:33:15,880
+ We like Unix machines.
+
+958
+0:33:15,880 --> 0:33:23,880
+ So this was a 14 megahertz computer,
+
+959
+0:33:23,880 --> 0:33:26,860
+ with 2 megabytes of memory and 12 megabytes of hard drive,
+
+960
+0:33:26,860 --> 0:33:31,060
+ which ran a full Unix system.
+
+961
+0:33:31,060 --> 0:33:34,800
+ Can you run anything on 12 megabytes today?
+
+962
+0:33:34,800 --> 0:33:39,680
+ Maybe even the Arduino development suite is larger than that.
+
+963
+0:33:41,380 --> 0:33:43,140
+ And this is actually about the same weight
+
+964
+0:33:43,140 --> 0:33:43,380
+ and this is actually about the same weight
+
+965
+0:33:43,380 --> 0:33:45,920
+ the other computers, but there are more stuff in them.
+
+966
+0:33:48,920 --> 0:33:52,460
+ This was developed in unison with a Swedish company,
+
+967
+0:33:52,640 --> 0:33:56,640
+ which I'm still investigating, and I have a contact.
+
+968
+0:33:57,160 --> 0:34:00,040
+ I'm speaking with a few of the workers from over there,
+
+969
+0:34:00,400 --> 0:34:02,820
+ but I really don't have anything yet.
+
+970
+0:34:02,820 --> 0:34:07,680
+ But I suspect there's an entire chapter about this machine as well,
+
+971
+0:34:08,000 --> 0:34:09,720
+ and I have one of these machines.
+
+972
+0:34:09,720 --> 0:34:14,680
+ By the way, almost all the pictures I've taken myself,
+
+973
+0:34:15,160 --> 0:34:17,380
+ and I have, except for the Comet 2000,
+
+974
+0:34:17,740 --> 0:34:21,740
+ I actually have, either I or the Dressing Museum have all the machines.
+
+975
+0:34:25,100 --> 0:34:27,400
+ This was sold to commerce schools.
+
+976
+0:34:29,120 --> 0:34:31,180
+ I don't know what they used them for.
+
+977
+0:34:31,840 --> 0:34:33,100
+ I'd still like to find that out,
+
+978
+0:34:33,220 --> 0:34:36,880
+ but I actually think there's an entire book in this machine alone
+
+979
+0:34:36,880 --> 0:34:39,120
+ when I start digging through it.
+
+980
+0:34:39,120 --> 0:34:41,860
+ So I don't know what will show up, if anything.
+
+981
+0:34:42,740 --> 0:34:48,820
+ But the Butler machine, when he started selling that in 1981,
+
+982
+0:34:49,260 --> 0:34:52,480
+ it was actually already prepared to do multi-user setups.
+
+983
+0:34:52,860 --> 0:34:55,460
+ So you would have one large machine with a floppy drive,
+
+984
+0:34:56,040 --> 0:34:58,160
+ and you would have five or six terminals
+
+985
+0:34:58,160 --> 0:35:01,140
+ that would all use the same printer and the same floppy drive.
+
+986
+0:35:01,940 --> 0:35:05,340
+ So it only took five years for ICL to catch up with that.
+
+987
+0:35:06,020 --> 0:35:09,100
+ So this machine contains a processor and some memory,
+
+988
+0:35:09,800 --> 0:35:12,000
+ and it wasn't a dump terminal.
+
+989
+0:35:12,180 --> 0:35:13,840
+ It was a semi-intelligent terminal
+
+990
+0:35:13,840 --> 0:35:17,120
+ because it used the hard drive from the central computer,
+
+991
+0:35:17,520 --> 0:35:19,860
+ but it did all its calculations by itself.
+
+992
+0:35:20,440 --> 0:35:22,620
+ So I could load my program into memory,
+
+993
+0:35:22,760 --> 0:35:24,400
+ and I could work on it all day
+
+994
+0:35:24,400 --> 0:35:26,320
+ without having to wait for the master computer,
+
+995
+0:35:26,760 --> 0:35:28,920
+ and I would have my own resources.
+
+996
+0:35:29,520 --> 0:35:31,140
+ That was a pretty clever move.
+
+997
+0:35:31,960 --> 0:35:33,640
+ I haven't looked into the pricing yet,
+
+998
+0:35:33,720 --> 0:35:35,300
+ but this was significantly cheaper,
+
+999
+0:35:35,680 --> 0:35:38,120
+ both because it only had four...
+
+1000
+0:35:39,100 --> 0:35:46,280
+ These machines were built on something we call Eurocards,
+
+1001
+0:35:46,640 --> 0:35:48,460
+ which is a print on that size,
+
+1002
+0:35:48,920 --> 0:35:50,240
+ which has a standard connector,
+
+1003
+0:35:50,580 --> 0:35:54,340
+ and you have a row of circuits you can just slide them into,
+
+1004
+0:35:54,340 --> 0:35:58,140
+ and all the connectors are just connected parallel
+
+1005
+0:35:58,140 --> 0:35:59,460
+ the entire way through.
+
+1006
+0:36:00,020 --> 0:36:02,460
+ So you can put anything into that you want.
+
+1007
+0:36:02,820 --> 0:36:05,040
+ And that's a good system
+
+1008
+0:36:05,040 --> 0:36:08,460
+ because you can get these prints and the racks,
+
+1009
+0:36:09,100 --> 0:36:10,000
+ ready-made,
+
+1010
+0:36:10,580 --> 0:36:13,080
+ and that's cheaper than building large prints.
+
+1011
+0:36:14,580 --> 0:36:18,240
+ And this machine was actually pretty easy for them to develop
+
+1012
+0:36:18,240 --> 0:36:21,040
+ because you just take the memory card, the CPU card,
+
+1013
+0:36:21,080 --> 0:36:24,160
+ and then build a card for the remote storage,
+
+1014
+0:36:24,840 --> 0:36:28,000
+ and then you could start producing these machines.
+
+1015
+0:36:29,880 --> 0:36:34,940
+ So this was a cheap research and development process,
+
+1016
+0:36:34,940 --> 0:36:38,500
+ and they now could sell more users per machine,
+
+1017
+0:36:38,760 --> 0:36:38,940
+ and...
+
+1018
+0:36:39,100 --> 0:36:41,560
+ the schools could pay less for more workstations,
+
+1019
+0:36:42,920 --> 0:36:46,960
+ which would be...
+
+1020
+0:36:48,520 --> 0:36:49,960
+ Yeah, which is a good argument
+
+1021
+0:36:49,960 --> 0:36:53,680
+ when your competitors are selling machines for 150,000 drones
+
+1022
+0:36:53,680 --> 0:36:54,880
+ that can be used by one person.
+
+1023
+0:36:56,720 --> 0:36:59,380
+ Finally, we get to the ICL Combat MPS 8.
+
+1024
+0:36:59,880 --> 0:37:03,500
+ So this is when ICL caught fully up to the Butler machine.
+
+1025
+0:37:03,840 --> 0:37:05,120
+ This machine is more or less the same.
+
+1026
+0:37:06,820 --> 0:37:09,020
+ Everything is built on one board, like on the Butler,
+
+1027
+0:37:09,100 --> 0:37:11,760
+ and it has this memory switching,
+
+1028
+0:37:12,240 --> 0:37:14,160
+ and then it had a pretty nice thing.
+
+1029
+0:37:14,260 --> 0:37:17,340
+ It used a 1.45 megabyte floppy drive.
+
+1030
+0:37:17,900 --> 0:37:19,520
+ I don't know if you know anything about CPM,
+
+1031
+0:37:19,520 --> 0:37:23,600
+ but 1.44 megabyte of CPM software.
+
+1032
+0:37:24,540 --> 0:37:28,500
+ You can almost have every conceivable piece of software
+
+1033
+0:37:28,500 --> 0:37:30,500
+ made for a CPM machine on one floppy,
+
+1034
+0:37:31,120 --> 0:37:34,040
+ and that one floppy is like eight times faster
+
+1035
+0:37:34,040 --> 0:37:36,440
+ than anything else this machine had ever seen.
+
+1036
+0:37:36,760 --> 0:37:38,520
+ So this was a huge markup,
+
+1037
+0:37:39,100 --> 0:37:40,160
+ and a huge improvement.
+
+1038
+0:37:41,060 --> 0:37:43,860
+ The machine also went from costing 30,000 drones a piece
+
+1039
+0:37:43,860 --> 0:37:45,520
+ to 5,000 drones a piece.
+
+1040
+0:37:46,100 --> 0:37:48,920
+ So this was really, really, really efficient,
+
+1041
+0:37:49,140 --> 0:37:51,100
+ but also you can repair it.
+
+1042
+0:37:51,260 --> 0:37:52,460
+ I got one which is broken
+
+1043
+0:37:52,460 --> 0:37:54,920
+ because the keyboard's LED has broken off,
+
+1044
+0:37:55,180 --> 0:37:56,100
+ and you can repair it
+
+1045
+0:37:56,100 --> 0:37:59,600
+ because the keyboard has been press-fitted
+
+1046
+0:37:59,600 --> 0:38:00,540
+ and melded together.
+
+1047
+0:38:01,280 --> 0:38:02,200
+ So, yeah.
+
+1048
+0:38:04,160 --> 0:38:05,320
+ So this was the...
+
+1049
+0:38:05,320 --> 0:38:06,440
+ I made a video about this.
+
+1050
+0:38:06,520 --> 0:38:08,560
+ This was the last Danish 8-bit computer,
+
+1051
+0:38:08,740 --> 0:38:09,080
+ and when I made it,
+
+1052
+0:38:09,080 --> 0:38:09,600
+ I made the video.
+
+1053
+0:38:09,720 --> 0:38:10,140
+ It worked.
+
+1054
+0:38:10,220 --> 0:38:11,160
+ You can see that on the picture.
+
+1055
+0:38:12,080 --> 0:38:14,060
+ It's full of tensile capacitors,
+
+1056
+0:38:14,180 --> 0:38:15,120
+ so it's not working anymore,
+
+1057
+0:38:15,660 --> 0:38:18,420
+ but we had it working for just a short while,
+
+1058
+0:38:18,540 --> 0:38:19,940
+ and I'm, of course, going to fix it.
+
+1059
+0:38:21,540 --> 0:38:24,360
+ But HHS Electronics had realized
+
+1060
+0:38:24,360 --> 0:38:29,280
+ that this PC thing will take over the market,
+
+1061
+0:38:29,820 --> 0:38:33,100
+ so they actually stopped developing the machines themselves
+
+1062
+0:38:33,100 --> 0:38:36,880
+ and was like,
+
+1063
+0:38:36,880 --> 0:38:38,720
+ again, I'm going to...
+
+1064
+0:38:38,720 --> 0:38:43,040
+ Yeah, they stopped the development
+
+1065
+0:38:43,040 --> 0:38:44,440
+ and the sales process themselves
+
+1066
+0:38:44,440 --> 0:38:47,720
+ and started making PCs.
+
+1067
+0:38:49,340 --> 0:38:50,200
+ Oh, well, they tried.
+
+1068
+0:38:50,860 --> 0:38:56,020
+ So they wanted to use Danish as an argument for buying PCs,
+
+1069
+0:38:56,680 --> 0:38:59,500
+ and they made an expensive design cabinet
+
+1070
+0:38:59,500 --> 0:39:01,900
+ and built the boards in Denmark
+
+1071
+0:39:01,900 --> 0:39:03,660
+ and built everything in Denmark
+
+1072
+0:39:03,660 --> 0:39:04,880
+ and tried to say,
+
+1073
+0:39:04,880 --> 0:39:06,180
+ this is so much better quality,
+
+1074
+0:39:06,380 --> 0:39:07,880
+ but it wasn't because...
+
+1075
+0:39:08,720 --> 0:39:13,960
+ Yeah, maybe the Chinese factory does it twice as bad,
+
+1076
+0:39:14,180 --> 0:39:16,440
+ but they can make four in the time you make one,
+
+1077
+0:39:16,600 --> 0:39:20,480
+ so, yeah, I think I talked to the guy.
+
+1078
+0:39:20,580 --> 0:39:21,880
+ I think he made 20 of them,
+
+1079
+0:39:21,960 --> 0:39:23,380
+ so it wasn't really a thing.
+
+1080
+0:39:25,140 --> 0:39:26,480
+ This is more or less the story.
+
+1081
+0:39:27,380 --> 0:39:29,300
+ I'm going to finish off with a chapter
+
+1082
+0:39:29,300 --> 0:39:33,660
+ where I'm going to quickly run through what happens.
+
+1083
+0:39:33,660 --> 0:39:36,640
+ The IBM PC was launched in 1981,
+
+1084
+0:39:37,300 --> 0:39:38,700
+ so more or less from the beginning,
+
+1085
+0:39:38,720 --> 0:39:40,340
+ they knew this was going to be over
+
+1086
+0:39:40,340 --> 0:39:42,800
+ because IBM has already entered the market.
+
+1087
+0:39:44,480 --> 0:39:48,540
+ In 1985, Mons Pelle bought the company
+
+1088
+0:39:48,540 --> 0:39:51,320
+ which sold his machines.
+
+1089
+0:39:53,160 --> 0:39:58,200
+ Bero Christensen died way, way too early in 1989.
+
+1090
+0:39:59,500 --> 0:40:02,380
+ 1988, HHS Electronics just were like,
+
+1091
+0:40:02,560 --> 0:40:04,360
+ we don't want to do this shit anymore
+
+1092
+0:40:04,360 --> 0:40:06,140
+ and started making...
+
+1093
+0:40:06,140 --> 0:40:08,220
+ And hold on, you can't make this shit up.
+
+1094
+0:40:08,720 --> 0:40:10,020
+ Bike lights.
+
+1095
+0:40:12,340 --> 0:40:16,120
+ They patented the first ever LED-based bike light
+
+1096
+0:40:16,120 --> 0:40:18,140
+ and made a huge fuss about it,
+
+1097
+0:40:18,180 --> 0:40:19,020
+ and when people asked them,
+
+1098
+0:40:19,060 --> 0:40:20,040
+ oh, but that's the back light,
+
+1099
+0:40:20,320 --> 0:40:21,280
+ can we have the front light?
+
+1100
+0:40:21,580 --> 0:40:24,360
+ And they said, no, we don't have white LEDs yet.
+
+1101
+0:40:24,440 --> 0:40:25,580
+ They are not invented yet.
+
+1102
+0:40:26,040 --> 0:40:27,220
+ So they sold back lights,
+
+1103
+0:40:27,660 --> 0:40:29,420
+ but actually they sold the patent
+
+1104
+0:40:29,420 --> 0:40:33,440
+ to one of Europe's largest producers of bike lights,
+
+1105
+0:40:33,820 --> 0:40:35,660
+ Basta, I think they call.
+
+1106
+0:40:36,040 --> 0:40:38,660
+ So it's more or less being...
+
+1107
+0:40:38,720 --> 0:40:39,760
+ Used today, still.
+
+1108
+0:40:40,340 --> 0:40:43,940
+ And then they started selling equipment for ships
+
+1109
+0:40:43,940 --> 0:40:48,240
+ and in 1989, they bought a plane.
+
+1110
+0:40:48,540 --> 0:40:50,180
+ So somehow they made money.
+
+1111
+0:40:51,960 --> 0:40:54,280
+ Unicomal, which was the last...
+
+1112
+0:40:54,280 --> 0:40:57,300
+ Oh, no, ICL bought Reinecentralen.
+
+1113
+0:40:57,920 --> 0:40:59,980
+ And Unicomal, which was the last company
+
+1114
+0:40:59,980 --> 0:41:01,340
+ who actually produced Comal,
+
+1115
+0:41:01,800 --> 0:41:03,100
+ closed down in 1993.
+
+1116
+0:41:04,200 --> 0:41:06,760
+ 2002, Fujitsu acquired ICL.
+
+1117
+0:41:07,480 --> 0:41:08,420
+ And 2019,
+
+1118
+0:41:08,720 --> 0:41:11,780
+ the last known production software
+
+1119
+0:41:11,780 --> 0:41:15,000
+ written in BASIC was taken out of commission.
+
+1120
+0:41:15,600 --> 0:41:16,700
+ That was the chimney sweeper
+
+1121
+0:41:16,700 --> 0:41:18,860
+ in a small town in Jutland
+
+1122
+0:41:18,860 --> 0:41:22,520
+ who made his own software in Comal
+
+1123
+0:41:22,520 --> 0:41:24,460
+ that would take care of his business,
+
+1124
+0:41:24,740 --> 0:41:27,260
+ which customers am I to visit now
+
+1125
+0:41:27,260 --> 0:41:28,980
+ and who am I going to bill and all that.
+
+1126
+0:41:29,200 --> 0:41:32,080
+ He wrote that himself and used that until 2019.
+
+1127
+0:41:32,760 --> 0:41:34,520
+ I think that's so awesome.
+
+1128
+0:41:35,420 --> 0:41:36,980
+ Same year, Mike decided to write a book.
+
+1129
+0:41:38,720 --> 0:41:41,060
+ Time for questions.
+
+1130
+0:41:43,600 --> 0:41:44,760
+ Thank you very much
+
+1131
+0:41:44,760 --> 0:41:47,440
+ for this very interesting history talk.
+
+1132
+0:41:47,600 --> 0:41:48,700
+ Are there questions?
+
+1133
+0:41:57,700 --> 0:41:59,480
+ So, hello, hello.
+
+1134
+0:42:00,580 --> 0:42:05,040
+ So, this Comal language was designed
+
+1135
+0:42:05,040 --> 0:42:07,120
+ or inspired by Pascal.
+
+1136
+0:42:07,500 --> 0:42:08,600
+ Why not go with...
+
+1137
+0:42:08,600 --> 0:42:10,460
+ Just Pascal instead of BASIC?
+
+1138
+0:42:10,760 --> 0:42:12,300
+ So, the reason why they didn't do that
+
+1139
+0:42:12,300 --> 0:42:14,480
+ was that Comal...
+
+1140
+0:42:14,480 --> 0:42:16,060
+ Have you tried working on a Commodore 64?
+
+1141
+0:42:17,560 --> 0:42:18,000
+ Okay.
+
+1142
+0:42:18,260 --> 0:42:19,340
+ When you have a Commodore 64
+
+1143
+0:42:19,340 --> 0:42:20,640
+ and nothing else,
+
+1144
+0:42:20,680 --> 0:42:21,440
+ you just turn it on
+
+1145
+0:42:21,440 --> 0:42:22,420
+ and you're in BASIC.
+
+1146
+0:42:22,580 --> 0:42:22,820
+ Bam.
+
+1147
+0:42:23,360 --> 0:42:24,480
+ You write 10
+
+1148
+0:42:24,480 --> 0:42:25,960
+ and you write space
+
+1149
+0:42:25,960 --> 0:42:27,220
+ and you write print hello world.
+
+1150
+0:42:27,760 --> 0:42:29,400
+ Press enter and type run.
+
+1151
+0:42:29,760 --> 0:42:30,920
+ Now you're a software developer.
+
+1152
+0:42:31,900 --> 0:42:32,380
+ More or less.
+
+1153
+0:42:32,960 --> 0:42:35,780
+ That is super easy to teach to students.
+
+1154
+0:42:36,440 --> 0:42:37,580
+ Let's try that in Pascal.
+
+1155
+0:42:37,980 --> 0:42:38,220
+ Okay.
+
+1156
+0:42:38,220 --> 0:42:40,380
+ Now you need to start the computer
+
+1157
+0:42:40,380 --> 0:42:41,260
+ and insert a Floppy.
+
+1158
+0:42:41,540 --> 0:42:42,180
+ Enter that Floppy.
+
+1159
+0:42:42,320 --> 0:42:44,060
+ Start PolyPascal.
+
+1160
+0:42:44,600 --> 0:42:45,600
+ That's a keyboard combination
+
+1161
+0:42:45,600 --> 0:42:47,740
+ for going from command mode
+
+1162
+0:42:47,740 --> 0:42:49,360
+ into text, into insert mode.
+
+1163
+0:42:49,680 --> 0:42:51,760
+ Now you need to write use CRT.
+
+1164
+0:42:52,820 --> 0:42:54,280
+ Use something.
+
+1165
+0:42:54,400 --> 0:42:55,240
+ You need to use the library
+
+1166
+0:42:55,240 --> 0:42:56,700
+ in order to print out to the screen.
+
+1167
+0:42:57,040 --> 0:42:58,620
+ Then you have to write begin and end
+
+1168
+0:42:58,620 --> 0:43:00,020
+ and then write write line
+
+1169
+0:43:00,020 --> 0:43:01,340
+ and hello world.
+
+1170
+0:43:01,460 --> 0:43:02,400
+ Now you need to compile it.
+
+1171
+0:43:02,620 --> 0:43:05,540
+ Now you need to exit your IDE
+
+1172
+0:43:05,540 --> 0:43:07,180
+ and run that through the command line.
+
+1173
+0:43:08,220 --> 0:43:11,100
+ Which one of those would you prefer to teach
+
+1174
+0:43:11,100 --> 0:43:13,840
+ to ground school students?
+
+1175
+0:43:15,180 --> 0:43:16,080
+ That was the argument.
+
+1176
+0:43:17,520 --> 0:43:20,180
+ So they merged together,
+
+1177
+0:43:20,260 --> 0:43:22,160
+ Komal and Pascal,
+
+1178
+0:43:22,160 --> 0:43:25,320
+ and made an integrated development environment
+
+1179
+0:43:25,320 --> 0:43:27,100
+ and it got hugely popular.
+
+1180
+0:43:27,920 --> 0:43:29,880
+ There's probably going to be written books
+
+1181
+0:43:29,880 --> 0:43:31,280
+ about that in itself,
+
+1182
+0:43:31,520 --> 0:43:32,140
+ but not by me.
+
+1183
+0:43:32,560 --> 0:43:33,700
+ I have enough by this book,
+
+1184
+0:43:33,920 --> 0:43:35,160
+ I hope, I guess, I think.
+
+1185
+0:43:36,060 --> 0:43:36,120
+ Yeah.
+
+1186
+0:43:37,100 --> 0:43:37,300
+ So,
+
+1187
+0:43:38,220 --> 0:43:40,040
+ until more questions come up,
+
+1188
+0:43:40,100 --> 0:43:40,460
+ I can just,
+
+1189
+0:43:40,960 --> 0:43:44,660
+ I'm most likely going to publish this book myself.
+
+1190
+0:43:45,380 --> 0:43:45,540
+ So,
+
+1191
+0:43:46,120 --> 0:43:48,460
+ why is this not plugged in?
+
+1192
+0:43:49,480 --> 0:43:49,920
+ No, okay.
+
+1193
+0:43:50,440 --> 0:43:51,240
+ Apparently not important.
+
+1194
+0:43:51,780 --> 0:43:53,960
+ I'm most likely going to publish this book myself.
+
+1195
+0:43:54,200 --> 0:43:54,300
+ So,
+
+1196
+0:43:54,940 --> 0:43:56,940
+ if any one of you think this is interesting,
+
+1197
+0:43:57,220 --> 0:43:58,380
+ please go to my website
+
+1198
+0:43:58,380 --> 0:44:00,000
+ and pre-order.
+
+1199
+0:44:00,160 --> 0:44:02,040
+ And this is just a pre-order
+
+1200
+0:44:02,040 --> 0:44:04,200
+ because you're essentially just signing up
+
+1201
+0:44:04,200 --> 0:44:05,200
+ for a mailing list
+
+1202
+0:44:05,200 --> 0:44:06,880
+ and once I'm ready to sell the book,
+
+1203
+0:44:06,960 --> 0:44:08,000
+ I'm going to write out and say,
+
+1204
+0:44:08,100 --> 0:44:08,200
+ hey,
+
+1205
+0:44:08,480 --> 0:44:09,280
+ give me money
+
+1206
+0:44:09,280 --> 0:44:10,060
+ and I'll give you a book.
+
+1207
+0:44:10,360 --> 0:44:11,580
+ And if you don't want to give me money,
+
+1208
+0:44:11,660 --> 0:44:12,580
+ I'm not going to give you a book.
+
+1209
+0:44:12,800 --> 0:44:14,400
+ So, that's how it works.
+
+1210
+0:44:15,280 --> 0:44:18,080
+ But I hope to raise some money
+
+1211
+0:44:18,080 --> 0:44:20,400
+ so I can print some really nice books
+
+1212
+0:44:20,400 --> 0:44:22,660
+ with hardcover and golden letters
+
+1213
+0:44:22,660 --> 0:44:24,440
+ and make a really, really nice book.
+
+1214
+0:44:25,200 --> 0:44:26,440
+ I hope, I hope so.
+
+1215
+0:44:26,640 --> 0:44:28,280
+ It might just be a PDF, I don't know.
+
+1216
+0:44:28,640 --> 0:44:29,180
+ Let's see.
+
+1217
+0:44:30,020 --> 0:44:30,660
+ Any more questions?
+
+1218
+0:44:38,220 --> 0:44:39,660
+ Thank you so much for listening.
+
+1219
+0:44:39,760 --> 0:44:40,420
+ Oh, that was a question.
+
+1220
+0:44:42,580 --> 0:44:43,680
+ So, these machines,
+
+1221
+0:44:43,800 --> 0:44:45,900
+ they actually use Zilog Z80 processors,
+
+1222
+0:44:46,600 --> 0:44:48,340
+ but did that also mean
+
+1223
+0:44:48,340 --> 0:44:49,180
+ that they were compatible
+
+1224
+0:44:49,180 --> 0:44:50,820
+ with like abundance of software
+
+1225
+0:44:50,820 --> 0:44:51,680
+ from like,
+
+1226
+0:44:51,740 --> 0:44:53,460
+ from Sinclair and stuff
+
+1227
+0:44:53,460 --> 0:44:55,200
+ because there are lots of software back then
+
+1228
+0:44:55,200 --> 0:44:56,040
+ for bookkeeping
+
+1229
+0:44:56,040 --> 0:44:57,620
+ and it was really compelling
+
+1230
+0:44:57,620 --> 0:44:59,780
+ for people to actually buy one of those.
+
+1231
+0:45:00,540 --> 0:45:02,120
+ But did it ever got a chance
+
+1232
+0:45:02,120 --> 0:45:03,440
+ to run on these machines?
+
+1233
+0:45:04,400 --> 0:45:05,660
+ Can you repeat the last sentence?
+
+1234
+0:45:06,640 --> 0:45:08,200
+ Is it possible to run like,
+
+1235
+0:45:08,220 --> 0:45:09,800
+ like Z80 software
+
+1236
+0:45:09,800 --> 0:45:11,940
+ for the Sinclair on these machines?
+
+1237
+0:45:12,340 --> 0:45:14,500
+ So, yeah, it runs CPM.
+
+1238
+0:45:14,680 --> 0:45:16,440
+ So, every piece of CPM software
+
+1239
+0:45:16,440 --> 0:45:18,240
+ that's not dependent on special hardware
+
+1240
+0:45:18,240 --> 0:45:18,800
+ will work.
+
+1241
+0:45:19,340 --> 0:45:20,300
+ So, every, more or less,
+
+1242
+0:45:20,400 --> 0:45:23,340
+ every text-based piece of CPM software,
+
+1243
+0:45:23,760 --> 0:45:25,420
+ we had, we went to Berlin
+
+1244
+0:45:25,420 --> 0:45:26,680
+ to the Winter Festival,
+
+1245
+0:45:26,900 --> 0:45:29,080
+ Winter Community Festival Berlin in 2019
+
+1246
+0:45:29,080 --> 0:45:31,160
+ and displayed one of the machines
+
+1247
+0:45:31,160 --> 0:45:31,900
+ running Sork.
+
+1248
+0:45:32,420 --> 0:45:34,740
+ Sork is a famous text adventure game
+
+1249
+0:45:34,740 --> 0:45:37,620
+ which was classical CPM game
+
+1250
+0:45:37,620 --> 0:45:38,200
+ and that was,
+
+1251
+0:45:38,200 --> 0:45:39,020
+ that runs on the machines.
+
+1252
+0:45:39,660 --> 0:45:40,080
+ So, yes.
+
+1253
+0:45:41,380 --> 0:45:42,340
+ Which was, of course,
+
+1254
+0:45:42,460 --> 0:45:44,300
+ a really important point
+
+1255
+0:45:44,300 --> 0:45:45,840
+ because you could tell the schools
+
+1256
+0:45:45,840 --> 0:45:46,620
+ and you could just go
+
+1257
+0:45:46,620 --> 0:45:48,540
+ and buy almost any kind of software
+
+1258
+0:45:48,540 --> 0:45:50,380
+ except PC software
+
+1259
+0:45:50,380 --> 0:45:51,220
+ and that would run on it.
+
+1260
+0:45:51,820 --> 0:45:52,780
+ Which was, of course,
+
+1261
+0:45:52,840 --> 0:45:54,000
+ why it died later
+
+1262
+0:45:54,000 --> 0:45:56,100
+ because everything turned PC
+
+1263
+0:45:56,100 --> 0:45:57,140
+ during the 90s.
+
+1264
+0:46:00,400 --> 0:46:02,340
+ Well, maybe a short question from me.
+
+1265
+0:46:02,600 --> 0:46:03,780
+ On which hardware
+
+1266
+0:46:03,780 --> 0:46:06,960
+ was this last Komal software running?
+
+1267
+0:46:08,200 --> 0:46:10,500
+ On my laptop,
+
+1268
+0:46:11,500 --> 0:46:12,100
+ it's still running.
+
+1269
+0:46:12,880 --> 0:46:13,720
+ But, yeah, sure,
+
+1270
+0:46:14,360 --> 0:46:16,300
+ the software for TeamSweeper
+
+1271
+0:46:16,300 --> 0:46:17,040
+ you were talking about, right?
+
+1272
+0:46:17,420 --> 0:46:19,920
+ Actually, that was the correct answer
+
+1273
+0:46:19,920 --> 0:46:21,640
+ because I got that software from him
+
+1274
+0:46:21,640 --> 0:46:22,820
+ three months ago
+
+1275
+0:46:22,820 --> 0:46:24,120
+ and it's running on my laptop now.
+
+1276
+0:46:24,580 --> 0:46:27,660
+ But he built it on this,
+
+1277
+0:46:29,320 --> 0:46:30,580
+ actually, this machine,
+
+1278
+0:46:31,180 --> 0:46:33,500
+ the very first machine I showed you
+
+1279
+0:46:33,500 --> 0:46:35,760
+ belonged to one of his friends.
+
+1280
+0:46:35,760 --> 0:46:37,960
+ Come on, you can do it.
+
+1281
+0:46:38,200 --> 0:46:41,800
+ So, maybe I didn't tell you that,
+
+1282
+0:46:41,900 --> 0:46:43,380
+ but this was a machine
+
+1283
+0:46:43,380 --> 0:46:44,880
+ where you would buy it
+
+1284
+0:46:44,880 --> 0:46:48,720
+ as a kit.
+
+1285
+0:46:49,420 --> 0:46:51,180
+ So, the cabinet and the keyboard,
+
+1286
+0:46:51,320 --> 0:46:52,480
+ everything was something
+
+1287
+0:46:52,480 --> 0:46:53,580
+ the individual builder
+
+1288
+0:46:53,580 --> 0:46:54,380
+ chose by himself.
+
+1289
+0:46:55,460 --> 0:46:57,180
+ But this was a machine like that
+
+1290
+0:46:57,180 --> 0:46:59,500
+ ran the TeamSweeper software.
+
+1291
+0:47:00,220 --> 0:47:01,660
+ And then the TeamSweeper
+
+1292
+0:47:01,660 --> 0:47:04,940
+ upgraded to a machine like
+
+1293
+0:47:04,940 --> 0:47:06,680
+ that one?
+
+1294
+0:47:06,680 --> 0:47:06,940
+ No.
+
+1295
+0:47:08,200 --> 0:47:10,620
+ Come on, that one.
+
+1296
+0:47:11,040 --> 0:47:11,980
+ And had that for some years.
+
+1297
+0:47:12,520 --> 0:47:13,700
+ And then, actually,
+
+1298
+0:47:14,340 --> 0:47:15,420
+ the friend of the TeamSweeper,
+
+1299
+0:47:15,840 --> 0:47:17,100
+ the priest from the same town,
+
+1300
+0:47:17,580 --> 0:47:19,920
+ started writing software for ICL.
+
+1301
+0:47:20,660 --> 0:47:24,860
+ So, that will be part of the book as well.
+
+1302
+0:47:25,600 --> 0:47:27,260
+ And then he got the larger one
+
+1303
+0:47:27,260 --> 0:47:29,960
+ and then during, I think it was 87,
+
+1304
+0:47:30,120 --> 0:47:32,300
+ he said he bought a 386 PC
+
+1305
+0:47:32,300 --> 0:47:34,540
+ and split it to Unicomal
+
+1306
+0:47:34,540 --> 0:47:36,340
+ and kept running his software there.
+
+1307
+0:47:37,020 --> 0:47:38,180
+ And then just upgraded it.
+
+1308
+0:47:38,200 --> 0:47:38,780
+ And then he upgraded the computer
+
+1309
+0:47:38,780 --> 0:47:39,940
+ all the way until he had
+
+1310
+0:47:39,940 --> 0:47:41,360
+ something like a Core i,
+
+1311
+0:47:41,480 --> 0:47:44,060
+ something which is insanely huge
+
+1312
+0:47:44,060 --> 0:47:45,120
+ for a piece of software
+
+1313
+0:47:45,120 --> 0:47:46,440
+ that could be run on an 8-bit machine
+
+1314
+0:47:46,440 --> 0:47:48,060
+ with 64 kilobytes of memory.
+
+1315
+0:47:48,400 --> 0:47:49,420
+ I like the irony of that.
+
+1316
+0:47:49,860 --> 0:47:51,920
+ And the reason why he stopped using it
+
+1317
+0:47:51,920 --> 0:47:53,600
+ was he retired
+
+1318
+0:47:53,600 --> 0:47:56,020
+ and he couldn't get any more printers
+
+1319
+0:47:56,020 --> 0:47:57,220
+ that would work with a printer port.
+
+1320
+0:47:58,280 --> 0:47:59,740
+ So, they went USB.
+
+1321
+0:48:00,280 --> 0:48:01,040
+ So, yeah.
+
+1322
+0:48:05,160 --> 0:48:05,600
+ Okay.
+
+1323
+0:48:06,080 --> 0:48:07,120
+ Any further questions?
+
+1324
+0:48:07,120 --> 0:48:07,560
+ Otherwise,
+
+1325
+0:48:08,200 --> 0:48:10,660
+ let's thank the speaker again.
+
+1326
+0:48:11,580 --> 0:48:12,260
+ And...
+
+1327
+0:48:12,260 --> 0:48:19,400
+ Thank you for listening.
+
+1328
+0:48:20,100 --> 0:48:21,120
+ Pre-order my book.
+
+1329
+0:48:21,520 --> 0:48:23,120
+ With that, we finished our lectures
+
+1330
+0:48:23,660 --> 0:48:24,980
+ in the tent today.

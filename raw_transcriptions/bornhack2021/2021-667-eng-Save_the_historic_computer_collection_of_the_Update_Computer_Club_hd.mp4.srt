@@ -1,0 +1,335 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:12,240
+ Hi, I'm Celta Field from the Update Computer Club and I want to tell you a little bit about
+
+2
+0:00:12,240 --> 0:00:16,280
+ the problem we have with our collection of historic computers.
+
+3
+0:00:16,280 --> 0:00:20,680
+ Unfortunately I could not be here today or otherwise I would have loved to talk to you
+
+4
+0:00:20,680 --> 0:00:27,540
+ vintage computing fans at the vintage computing meetup this evening in the bar area.
+
+5
+0:00:27,540 --> 0:00:29,980
+ So what is Update?
+
+6
+0:00:29,980 --> 0:00:32,980
+ Update was founded as a student club.
+
+7
+0:00:32,980 --> 0:00:37,720
+ Now my neighbor started drilling, I'm very sorry for the background noise.
+
+8
+0:00:37,720 --> 0:00:43,740
+ It was founded at Uppsala University in Sweden already in the 1980s.
+
+9
+0:00:43,740 --> 0:00:49,720
+ And its aim is to promote interest in and broaden knowledge about the field of computing.
+
+10
+0:00:49,720 --> 0:00:55,480
+ It is located in the basement of the IT department and at the moment has about 80 to 90 members.
+
+11
+0:00:55,480 --> 0:00:59,960
+ Most of the members are students, but there are also a lot of alumni that are students.
+
+12
+0:00:59,960 --> 0:01:03,960
+ So I'm still in touch with Update.
+
+13
+0:01:03,960 --> 0:01:06,340
+ What does Update do?
+
+14
+0:01:06,340 --> 0:01:08,320
+ We have several rooms.
+
+15
+0:01:08,320 --> 0:01:16,420
+ Some of them are used for students for working on their homework and exchanging knowledge.
+
+16
+0:01:16,420 --> 0:01:19,340
+ And we have a library there as well.
+
+17
+0:01:19,340 --> 0:01:27,860
+ And we use our space to organize lectures, conferences, workshops, and our computers
+
+18
+0:01:27,860 --> 0:01:28,960
+ are also shown to the public in action.
+
+19
+0:01:28,960 --> 0:01:29,960
+ And we have a library there as well.
+
+20
+0:01:29,960 --> 0:01:30,960
+ And we have a library there as well.
+
+21
+0:01:30,960 --> 0:01:32,280
+ And of course we also have social activities.
+
+22
+0:01:32,280 --> 0:01:34,680
+ And of course we also have social activities.
+
+23
+0:01:34,680 --> 0:01:44,360
+ We have a server hall where we run both modern and historic hardware.
+
+24
+0:01:44,360 --> 0:01:48,520
+ Here you can see our rooms.
+
+25
+0:01:48,520 --> 0:01:54,760
+ This is the terminal hall where we sit and hang out and talk about computer stuff.
+
+26
+0:01:54,760 --> 0:01:58,960
+ And there is also one of our very special collection items, Elsa, the PDP-12, which
+
+27
+0:01:58,960 --> 0:02:08,580
+ What you can see here is the server room, it is about 32 square meters big.
+
+28
+0:02:08,580 --> 0:02:14,200
+ Not all of the computers there are running 24-7, some of the old computers are online
+
+29
+0:02:14,200 --> 0:02:18,840
+ only sometimes.
+
+30
+0:02:18,840 --> 0:02:24,700
+ And here in the hallway we have an exhibition about some of the computers, but we also have
+
+31
+0:02:24,700 --> 0:02:30,820
+ exhibitions in other rooms of the university and also sometimes in completely different
+
+32
+0:02:30,820 --> 0:02:32,900
+ locations.
+
+33
+0:02:32,900 --> 0:02:40,980
+ And then back here we have several storage rooms.
+
+34
+0:02:40,980 --> 0:02:45,840
+ Our computer collection contains basically everything from microcomputers to entry-level
+
+35
+0:02:45,840 --> 0:02:51,880
+ supercomputers and it also spans a very long time frame.
+
+36
+0:02:51,880 --> 0:02:54,620
+ The earliest items are from the 60s.
+
+37
+0:02:54,620 --> 0:03:03,940
+ And we even got one IBM 026 keypunch from 1949 recently.
+
+38
+0:03:03,940 --> 0:03:09,460
+ We don't just have the computers, but we also have software, documentation, peripherals,
+
+39
+0:03:09,460 --> 0:03:12,940
+ everything you need to actually use the computers.
+
+40
+0:03:12,940 --> 0:03:14,940
+ And we try to keep them running.
+
+41
+0:03:14,940 --> 0:03:19,820
+ So we sometimes replace modules or solder things that broke.
+
+42
+0:03:19,820 --> 0:03:22,820
+ So, yes.
+
+43
+0:03:22,820 --> 0:03:23,820
+ We actively use them.
+
+44
+0:03:23,820 --> 0:03:24,020
+ We have a lot of them.
+
+45
+0:03:24,020 --> 0:03:24,220
+ We have a lot of them.
+
+46
+0:03:24,220 --> 0:03:24,320
+ We have a lot of them.
+
+47
+0:03:24,320 --> 0:03:24,420
+ We have a lot of them.
+
+48
+0:03:24,420 --> 0:03:24,580
+ We have a lot of them.
+
+49
+0:03:24,580 --> 0:03:24,620
+ We have a lot of them.
+
+50
+0:03:24,620 --> 0:03:25,080
+ We have a lot of them.
+
+51
+0:03:25,080 --> 0:03:25,620
+ We have a lot of them.
+
+52
+0:03:25,620 --> 0:03:26,620
+ We have a lot of them.
+
+53
+0:03:26,620 --> 0:03:27,620
+ We use these things.
+
+54
+0:03:27,620 --> 0:03:29,620
+ We don't just put them there to collect dust.
+
+55
+0:03:29,620 --> 0:03:35,620
+ And we would like to run a small computer museum in the future, where we can present
+
+56
+0:03:35,620 --> 0:03:39,620
+ running computers.
+
+57
+0:03:39,620 --> 0:03:40,620
+ Some of our computers.
+
+58
+0:03:40,620 --> 0:03:47,620
+ I don't want to go through all of them in detail, but you can find all of them and some
+
+59
+0:03:47,620 --> 0:03:49,620
+ background information on them in our wiki.
+
+60
+0:03:49,620 --> 0:03:50,620
+ It's in Swedish, but just use Google Translate or something.
+
+61
+0:03:50,620 --> 0:03:51,620
+ And then you have all the information on them in our wiki.
+
+62
+0:03:51,620 --> 0:03:52,620
+ It's in Swedish, but just use Google Translate or something.
+
+63
+0:03:52,620 --> 0:03:53,620
+ All the information is there.
+
+64
+0:03:53,620 --> 0:03:54,580
+ And if you want to have a look at them, you can.
+
+65
+0:03:54,580 --> 0:04:01,340
+ So what's the problem?
+
+66
+0:04:01,340 --> 0:04:05,460
+ Well the IT department is going to move to a new building at the end of this year and
+
+67
+0:04:05,460 --> 0:04:08,180
+ we will lose our current rooms.
+
+68
+0:04:08,180 --> 0:04:14,540
+ They have so far been very generously providing rooms, electricity and internet for us.
+
+69
+0:04:14,540 --> 0:04:19,800
+ But in the future we will ourselves need to finance them and we need at least 60 square
+
+70
+0:04:19,800 --> 0:04:25,660
+ meters, better 150 square meters so we can make use of the computers, because of course
+
+71
+0:04:25,660 --> 0:04:31,820
+ they take up a lot of space and if you want to run them and work on them even more.
+
+72
+0:04:31,820 --> 0:04:37,000
+ And on top of the rent of course we have to finance the electricity and everything that
+
+73
+0:04:37,000 --> 0:04:42,700
+ comes with running a hackerspace basically.
+
+74
+0:04:42,700 --> 0:04:48,980
+ But so far unfortunately there was no real interest from the university or from the municipality
+
+75
+0:04:48,980 --> 0:04:49,780
+ to further...
+
+76
+0:04:49,780 --> 0:04:52,260
+ support us.
+
+77
+0:04:52,260 --> 0:04:55,600
+ So we're asking you for help.
+
+78
+0:04:55,600 --> 0:04:58,740
+ Please support us by becoming a member.
+
+79
+0:04:58,740 --> 0:05:10,480
+ For approximately 1000 crowns per year or 725 Danish crowns or 97 euros we can get about
+
+80
+0:05:10,480 --> 0:05:15,020
+ a square meter per year, but the membership fee is flexible, you can pay what you want
+
+81
+0:05:15,020 --> 0:05:19,640
+ or donate or help us find sponsors or just tell others about us.
+
+82
+0:05:19,640 --> 0:05:27,640
+ Thanks, I hope you were interested in this, please get in touch if you have questions
+
+83
+0:05:27,640 --> 0:05:28,520
+ and thanks for coming.

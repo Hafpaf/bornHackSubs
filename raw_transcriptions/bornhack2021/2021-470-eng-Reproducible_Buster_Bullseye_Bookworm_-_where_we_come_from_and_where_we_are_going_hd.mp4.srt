@@ -1,0 +1,2175 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:10,720
+ Welcome to the afternoon talk.
+
+2
+0:00:14,220 --> 0:00:16,680
+ Let's hope our picture stays with us.
+
+3
+0:00:18,720 --> 0:00:24,880
+ And Holger Leveson will talk about reproducible booster, bullseye, bookworm.
+
+4
+0:00:26,140 --> 0:00:27,820
+ Yeah. Enjoy.
+
+5
+0:00:30,000 --> 0:00:31,940
+ Holger Leveson Hello, everybody.
+
+6
+0:00:31,940 --> 0:00:35,500
+ For those who don't know, Buster, Bullseye,
+
+7
+0:00:35,500 --> 0:00:38,360
+ and Bookworm are these lovely Debian release names.
+
+8
+0:00:38,360 --> 0:00:41,180
+ I will not only talk about Debian today.
+
+9
+0:00:41,180 --> 0:00:47,940
+ So this is about the last mile and other light years ahead
+
+10
+0:00:47,940 --> 0:00:50,380
+ because this last mile has been very long.
+
+11
+0:00:50,380 --> 0:00:57,760
+ So this talk is a dual talk to be streamed later today
+
+12
+0:00:57,760 --> 0:00:59,800
+ at DEBCONF 21 taking place
+
+13
+0:00:59,800 --> 0:00:59,980
+ on the Debian server.
+
+14
+0:00:59,980 --> 0:01:05,920
+ And I will also give the talk in person at Bornhek in Denmark.
+
+15
+0:01:05,920 --> 0:01:07,820
+ So thank you all for being here.
+
+16
+0:01:07,820 --> 0:01:08,640
+ It's great.
+
+17
+0:01:08,640 --> 0:01:13,020
+ And hi to the people at DEBCONF.
+
+18
+0:01:13,020 --> 0:01:16,120
+ I miss Debian people and DEBCONF.
+
+19
+0:01:16,120 --> 0:01:18,920
+ And the world is not fine.
+
+20
+0:01:18,920 --> 0:01:21,100
+ It's all wrong.
+
+21
+0:01:21,100 --> 0:01:22,880
+ But it is what it is.
+
+22
+0:01:22,880 --> 0:01:28,320
+ So anyway, and this is not my work.
+
+23
+0:01:28,320 --> 0:01:29,780
+ This is the work of many people.
+
+24
+0:01:29,780 --> 0:01:36,940
+ Who have contributed to this in Debian and elsewhere.
+
+25
+0:01:36,940 --> 0:01:42,460
+ And we used to do this talk at DEBCONF with like four
+
+26
+0:01:42,460 --> 0:01:43,960
+ or five people on stage.
+
+27
+0:01:43,960 --> 0:01:49,400
+ And now it's the second time in a row that I'm doing this alone.
+
+28
+0:01:49,400 --> 0:01:53,020
+ So this talk misses many, many updates.
+
+29
+0:01:53,020 --> 0:01:56,600
+ Like Diffoscope, our main tool, has seen over 50 releases
+
+30
+0:01:56,600 --> 0:01:57,900
+ in the last two years.
+
+31
+0:01:57,900 --> 0:01:59,580
+ And I will just mention it in here.
+
+32
+0:01:59,580 --> 0:02:07,520
+ So about me, I'm a Debian user since almost 20,
+
+33
+0:02:07,520 --> 0:02:09,220
+ since more than 25 years.
+
+34
+0:02:09,220 --> 0:02:12,240
+ I'm contributing to Debian since some time.
+
+35
+0:02:12,240 --> 0:02:13,640
+ Located in Hamburg.
+
+36
+0:02:13,640 --> 0:02:18,340
+ And since the last release, I'm also, I have uploaded more
+
+37
+0:02:18,340 --> 0:02:21,320
+ than 10% of the Debian archive.
+
+38
+0:02:21,320 --> 0:02:24,240
+ Which is like completely insane.
+
+39
+0:02:24,240 --> 0:02:26,880
+ I will explain later why I did this
+
+40
+0:02:26,880 --> 0:02:29,380
+ and how I didn't really do much about that.
+
+41
+0:02:29,580 --> 0:02:34,820
+ So, reproducible builds.
+
+42
+0:02:34,820 --> 0:02:41,840
+ Who of you is not familiar with reproducible builds?
+
+43
+0:02:41,840 --> 0:02:48,420
+ Who? So, I'll anyway explain the problem briefly.
+
+44
+0:02:48,420 --> 0:02:52,020
+ So, there's source code of free software available,
+
+45
+0:02:52,020 --> 0:02:54,100
+ which is pretty cool.
+
+46
+0:02:54,100 --> 0:02:58,220
+ But most people install pre-compiled binaries.
+
+47
+0:02:58,220 --> 0:02:59,420
+ And nobody really knows.
+
+48
+0:02:59,420 --> 0:02:59,520
+ So, I'm going to explain this.
+
+49
+0:02:59,520 --> 0:03:00,520
+ But most people install pre-compiled binaries.
+
+50
+0:03:00,520 --> 0:03:03,140
+ And nobody really knows whether they really correspond.
+
+51
+0:03:03,140 --> 0:03:05,700
+ Because there's, they are built on some machine.
+
+52
+0:03:05,700 --> 0:03:09,400
+ There's binary artifact included.
+
+53
+0:03:09,400 --> 0:03:14,620
+ And so, there's various classes of supply chain attacks,
+
+54
+0:03:14,620 --> 0:03:16,460
+ which have become more and more popular.
+
+55
+0:03:16,460 --> 0:03:19,800
+ Like when you, PyPy has been back-doored so that
+
+56
+0:03:19,800 --> 0:03:21,920
+ when you download binaries from there, you get them.
+
+57
+0:03:21,920 --> 0:03:23,060
+ Or other archives.
+
+58
+0:03:23,060 --> 0:03:26,640
+ And this is becoming more and more widespread.
+
+59
+0:03:26,640 --> 0:03:29,360
+ And our solution for that is to end reproducible builds.
+
+60
+0:03:29,360 --> 0:03:34,280
+ And we define this, enable anyone to independently verify
+
+61
+0:03:34,280 --> 0:03:42,380
+ that a given source produces bit-by-bit identical results.
+
+62
+0:03:42,380 --> 0:03:47,100
+ And as a side effect, then you can be sure
+
+63
+0:03:47,100 --> 0:03:49,100
+ that the binary is free software.
+
+64
+0:03:49,100 --> 0:03:51,900
+ Because you can be sure it comes from the binary.
+
+65
+0:03:51,900 --> 0:03:55,040
+ And that's really the only way to be sure the binary comes
+
+66
+0:03:55,040 --> 0:03:57,160
+ from the source.
+
+67
+0:03:57,160 --> 0:03:59,360
+ So, you can only know if it's free software.
+
+68
+0:03:59,360 --> 0:04:00,660
+ If it's reproducible.
+
+69
+0:04:00,660 --> 0:04:08,400
+ And of course, reproducible builds are just one building block
+
+70
+0:04:08,400 --> 0:04:11,600
+ for secure distribution of binaries.
+
+71
+0:04:11,600 --> 0:04:13,840
+ There's other stuff needed as well.
+
+72
+0:04:13,840 --> 0:04:17,580
+ But it's an important step there.
+
+73
+0:04:17,580 --> 0:04:20,900
+ So, when is a build reproducible?
+
+74
+0:04:20,900 --> 0:04:24,160
+ What the definition here says, the build is reproducible
+
+75
+0:04:24,160 --> 0:04:26,420
+ if given the same source code, build environment,
+
+76
+0:04:26,420 --> 0:04:29,340
+ and build instructions, any party can recreate bit-by-bit
+
+77
+0:04:29,360 --> 0:04:32,920
+ identical copies of all specified artifacts.
+
+78
+0:04:32,920 --> 0:04:35,660
+ And we have written that down.
+
+79
+0:04:35,660 --> 0:04:38,940
+ It's readable in our documentation.
+
+80
+0:04:38,940 --> 0:04:40,460
+ That's the definition.
+
+81
+0:04:40,460 --> 0:04:45,400
+ And it's pretty clear to me what it is.
+
+82
+0:04:45,400 --> 0:04:48,600
+ I hope it's clear to everybody else.
+
+83
+0:04:48,600 --> 0:04:54,640
+ So, I mostly ignore why and how to do such builds now.
+
+84
+0:04:54,640 --> 0:04:57,480
+ And I just mentioned that this has widely been understood
+
+85
+0:04:57,480 --> 0:04:58,780
+ as a problem.
+
+86
+0:04:58,780 --> 0:04:59,360
+ Biden.
+
+87
+0:04:59,360 --> 0:05:05,040
+ Biden has done a statement, a cyber defense something act
+
+88
+0:05:05,040 --> 0:05:06,340
+ about supply chains.
+
+89
+0:05:06,340 --> 0:05:09,540
+ And there was a White House briefing and they spent to,
+
+90
+0:05:09,540 --> 0:05:17,740
+ they plan to spend billions in fixing these kinds of problems.
+
+91
+0:05:17,740 --> 0:05:21,860
+ But I will just focus on how and why today.
+
+92
+0:05:21,860 --> 0:05:27,500
+ So, first, some other projects than Debian.
+
+93
+0:05:27,500 --> 0:05:28,780
+ And this is how I understand it.
+
+94
+0:05:28,780 --> 0:05:33,420
+ I'm a Debian developer and I'm not an expert
+
+95
+0:05:33,420 --> 0:05:36,500
+ on all these projects mentioning now.
+
+96
+0:05:36,500 --> 0:05:39,320
+ So, Tails has reproducible builds.
+
+97
+0:05:39,320 --> 0:05:44,660
+ And I wrote easy because Tails only produces one ISO.
+
+98
+0:05:44,660 --> 0:05:49,260
+ So, you rebuild the Tails ISO and either it matches or it doesn't.
+
+99
+0:05:49,260 --> 0:05:52,180
+ While Debian consists of 30,000 packages and you need
+
+100
+0:05:52,180 --> 0:05:56,000
+ to confirm them all and that's more complicated.
+
+101
+0:05:56,000 --> 0:05:58,580
+ And I only also wrote pragmatically.
+
+102
+0:05:58,580 --> 0:05:59,720
+ Europe didn't produce that.
+
+103
+0:05:59,720 --> 0:06:02,020
+ We don't really do that, exactly.
+
+104
+0:06:02,020 --> 0:06:04,420
+ First, we do this called, however,
+
+105
+0:06:04,420 --> 0:06:07,280
+ because now, basically, you have trials,
+
+106
+0:06:07,280 --> 0:06:09,100
+ you have, remember when you were just typing your code,
+
+107
+0:06:09,100 --> 0:06:09,760
+ you know, the code you already use,
+
+108
+0:06:09,760 --> 0:06:10,680
+ you're like okay that world is for you.
+
+109
+0:06:10,680 --> 0:06:11,980
+ So, you'll have people about everybody else.
+
+110
+0:06:11,980 --> 0:06:13,500
+ If they didn't ask about it,
+
+111
+0:06:13,500 --> 0:06:15,300
+ then I think that translations are very likely going to solve
+
+112
+0:06:15,300 --> 0:06:16,660
+ but not systematically because when Tails has a release now,
+
+113
+0:06:16,660 --> 0:06:17,760
+ they, you do the release
+
+114
+0:06:17,760 --> 0:06:18,900
+ and they announce the checksum of the ISO.
+
+115
+0:06:18,900 --> 0:06:22,300
+ And then, you can reproduce the ISO and you don't.
+
+116
+0:06:22,300 --> 0:06:26,460
+ But there's no systematic effort in like whatever,
+
+117
+0:06:26,460 --> 0:06:27,500
+ different countries produce different projects,
+
+118
+0:06:27,500 --> 0:06:28,380
+ different ISOs for Tails, that's not being done yet.
+
+119
+0:06:28,580 --> 0:06:33,580
+ Arch Linux has, in a way, overtaken Debian a bit
+
+120
+0:06:33,580 --> 0:06:36,100
+ because Arch Linux has real rebuilders now.
+
+121
+0:06:36,100 --> 0:06:39,020
+ They check their results.
+
+122
+0:06:39,020 --> 0:06:40,960
+ But there's also not really user tools
+
+123
+0:06:40,960 --> 0:06:43,340
+ or integration or documentation.
+
+124
+0:06:43,340 --> 0:06:45,880
+ It works on a technical level, and that's great.
+
+125
+0:06:49,360 --> 0:06:52,040
+ Zuza has also active development.
+
+126
+0:06:52,040 --> 0:06:54,340
+ One person mostly, Bernard Wiedemann,
+
+127
+0:06:54,340 --> 0:06:56,580
+ who also does the QA efforts.
+
+128
+0:06:56,580 --> 0:06:59,100
+ He's doing a lot of there.
+
+129
+0:06:59,100 --> 0:07:01,900
+ And Zuza could be reproducible in theory,
+
+130
+0:07:01,900 --> 0:07:05,500
+ but they don't set some bits for RPMs,
+
+131
+0:07:05,500 --> 0:07:08,240
+ so Zuza is not reproducible in practice.
+
+132
+0:07:12,240 --> 0:07:16,200
+ Then there's NixOS, which recently,
+
+133
+0:07:16,200 --> 0:07:20,240
+ very recently on this r13yreproducibility.com,
+
+134
+0:07:20,240 --> 0:07:22,740
+ they also show the minimal installation image.
+
+135
+0:07:22,740 --> 0:07:26,580
+ And their installation image is 94% reproducible,
+
+136
+0:07:26,580 --> 0:07:29,980
+ so again, the whole image is not reproducible,
+
+137
+0:07:29,980 --> 0:07:32,560
+ but cool nonetheless.
+
+138
+0:07:32,560 --> 0:07:34,340
+ And there's GNU Geeks,
+
+139
+0:07:34,340 --> 0:07:37,540
+ also reproducible by design like NixOS,
+
+140
+0:07:37,540 --> 0:07:40,700
+ but their design also allows unreproducible software
+
+141
+0:07:40,700 --> 0:07:43,680
+ because some software is still unreproducible.
+
+142
+0:07:43,680 --> 0:07:45,860
+ And they have this Geeks challenge thing
+
+143
+0:07:45,860 --> 0:07:48,160
+ so you can check whether one specific software
+
+144
+0:07:48,160 --> 0:07:50,660
+ is reproducible.
+
+145
+0:07:50,660 --> 0:07:54,340
+ Yocto, which is an embedded build environment,
+
+146
+0:07:54,340 --> 0:07:56,140
+ also has reproducible images,
+
+147
+0:07:56,140 --> 0:07:56,380
+ and they also have a little bit of information, you know,
+
+148
+0:07:56,380 --> 0:07:56,540
+ that's still not reproducible, but it's still reproducible.
+
+149
+0:07:56,540 --> 0:07:56,560
+ Of course, the softwares are still reproducible.
+
+150
+0:07:56,580 --> 0:08:00,520
+ For some of their software, but the tool chain and everything supported
+
+151
+0:08:00,960 --> 0:08:05,800
+ Doctor is quite becoming quite big in some embedded words, and that's really cool
+
+152
+0:08:07,020 --> 0:08:08,220
+ but
+
+153
+0:08:08,220 --> 0:08:13,220
+ That's all I know and all they've been doing you can create images which are reproducible
+
+154
+0:08:13,380 --> 0:08:16,520
+ but all the user tools are again lacking and
+
+155
+0:08:17,580 --> 0:08:24,760
+ asteroid also support after all this this up store for Android phones after it also supports reproducible builds they have some
+
+156
+0:08:24,760 --> 0:08:30,440
+ Applications which do we produce will bits, but it's really arcane to find out
+
+157
+0:08:30,440 --> 0:08:34,280
+ There's a web page with all the AP case and if there's a file
+
+158
+0:08:34,920 --> 0:08:41,580
+ Installed I think then it's reproducible and if there's a file different scope that HTML it shows the differences
+
+159
+0:08:41,840 --> 0:08:46,720
+ So you as a human can call that and find out if your application is reproducible or not
+
+160
+0:08:48,120 --> 0:08:54,740
+ But that's not a UI and there's also no promises for further ups whether one up which stays and is in the
+
+161
+0:08:54,760 --> 0:09:00,180
+ Upstore reproducible today whether it will only be there if it continues to be reproducible
+
+162
+0:09:04,220 --> 0:09:08,140
+ Alpine also has basic support basic bit like your core
+
+163
+0:09:09,080 --> 0:09:17,080
+ Free BSD net BSD open BSD. I don't know about open BSD, but I know the base image of free and that BSD
+
+164
+0:09:17,640 --> 0:09:24,380
+ Can be built reproducible we have not looked at to the ports and as far as I know no BSD person
+
+165
+0:09:25,400 --> 0:09:26,500
+ definitely
+
+166
+0:09:26,500 --> 0:09:31,840
+ can
+
+167
+0:09:39,020 --> 0:09:41,020
+ him
+
+168
+0:09:41,020 --> 0:09:43,020
+ Contentment continue suspense time on this
+
+169
+0:09:45,740 --> 0:09:49,300
+ And feed or red had we going to seem not to be interested
+
+170
+0:09:52,540 --> 0:09:54,340
+ So many projects support reproducible bills
+
+171
+0:09:54,340 --> 0:09:59,340
+ And a kind of different approach is something KPCYRD,
+
+172
+0:10:00,380 --> 0:10:04,580
+ which is his nick, started last week, I think.
+
+173
+0:10:04,580 --> 0:10:06,320
+ He made a project on GitHub,
+
+174
+0:10:06,320 --> 0:10:08,820
+ I probably didn't backdoor this,
+
+175
+0:10:08,820 --> 0:10:10,800
+ which is Justifying Manual,
+
+176
+0:10:10,800 --> 0:10:14,320
+ where he describes a simple hello world program
+
+177
+0:10:14,320 --> 0:10:18,180
+ written in Rust, how to review the source code,
+
+178
+0:10:18,180 --> 0:10:22,580
+ the compiler, and then he reproduces the elf binary,
+
+179
+0:10:22,580 --> 0:10:26,760
+ reproduces a Docker image, and an Arch Linux package.
+
+180
+0:10:27,700 --> 0:10:29,820
+ And he says he didn't backdoor them,
+
+181
+0:10:29,820 --> 0:10:32,820
+ and you can check whether it's true.
+
+182
+0:10:34,140 --> 0:10:37,420
+ It's a nice effort, and it shows that it's not enough
+
+183
+0:10:37,420 --> 0:10:39,780
+ to have just the binary reproducible,
+
+184
+0:10:39,780 --> 0:10:42,020
+ but also the whole package, the system,
+
+185
+0:10:42,020 --> 0:10:43,360
+ you install the image.
+
+186
+0:10:47,420 --> 0:10:50,180
+ Yeah, and then there's another project
+
+187
+0:10:50,180 --> 0:10:51,760
+ from Bernard Wiedemann,
+
+188
+0:10:51,760 --> 0:10:52,580
+ The Unreproducible,
+
+189
+0:10:52,580 --> 0:10:55,960
+ which contains some examples
+
+190
+0:10:55,960 --> 0:10:59,920
+ how a package is made unreproducible.
+
+191
+0:10:59,920 --> 0:11:03,140
+ So what pitfalls you can introduce,
+
+192
+0:11:03,140 --> 0:11:05,220
+ which you should not do,
+
+193
+0:11:05,220 --> 0:11:09,640
+ because it's much easier to show problems
+
+194
+0:11:09,640 --> 0:11:11,580
+ than to show the absence of problems.
+
+195
+0:11:14,780 --> 0:11:16,620
+ So now to Debian,
+
+196
+0:11:19,080 --> 0:11:22,340
+ which I'll start with my wishes or goals for DepCon 12.0.1.2.2.
+
+197
+0:11:22,580 --> 0:11:24,580
+ So Debian is a very good example of a package
+
+198
+0:11:24,580 --> 0:11:26,300
+ that can be reproducible.
+
+199
+0:11:26,300 --> 0:11:27,620
+ And it's a very good example of a package
+
+200
+0:11:27,620 --> 0:11:29,020
+ that can be reproducible.
+
+201
+0:11:29,020 --> 0:11:31,400
+ So we had the problem of CI builds versus rebuilds.
+
+202
+0:11:31,400 --> 0:11:35,160
+ CI builds is just where we take the source code
+
+203
+0:11:35,160 --> 0:11:38,260
+ and do many variations, as many as possible,
+
+204
+0:11:38,260 --> 0:11:42,580
+ and hope that the package is still reproducible.
+
+205
+0:11:42,580 --> 0:11:44,800
+ That's nice to find problems,
+
+206
+0:11:44,800 --> 0:11:47,820
+ but we don't test whether we can actually rebuild
+
+207
+0:11:47,820 --> 0:11:50,920
+ what Debian distributes on the FTP servers.
+
+208
+0:11:52,580 --> 0:11:55,860
+ Then we had some issues with build info files.
+
+209
+0:11:55,860 --> 0:11:59,220
+ Build info files contain the instructions,
+
+210
+0:11:59,220 --> 0:12:01,560
+ the hashes of the source code,
+
+211
+0:12:01,560 --> 0:12:05,200
+ the depends which are needed to build depends,
+
+212
+0:12:05,200 --> 0:12:07,780
+ and the resulting artifacts.
+
+213
+0:12:07,780 --> 0:12:10,420
+ And I'll come to that in this moment.
+
+214
+0:12:11,380 --> 0:12:14,480
+ And then we also had thousands of packages in Debian
+
+215
+0:12:14,480 --> 0:12:16,380
+ without build info files.
+
+216
+0:12:17,200 --> 0:12:19,640
+ That was why I did those 3,000 uploads.
+
+217
+0:12:20,520 --> 0:12:22,060
+ And we had a script,
+
+218
+0:12:22,060 --> 0:12:23,880
+ or have a script, deb rebuild,
+
+219
+0:12:25,020 --> 0:12:28,540
+ which had some problems, and we had other issues.
+
+220
+0:12:30,740 --> 0:12:34,860
+ And back then I said how to use reproducible builds
+
+221
+0:12:34,860 --> 0:12:39,000
+ and user interfaces are not even on my radar anymore.
+
+222
+0:12:39,000 --> 0:12:40,880
+ That was the status last year,
+
+223
+0:12:40,880 --> 0:12:43,340
+ and I'll now explain where we got there.
+
+224
+0:12:44,560 --> 0:12:46,860
+ So the status of these wishes today,
+
+225
+0:12:46,860 --> 0:12:49,940
+ there's some progress with the rebuilders.
+
+226
+0:12:49,940 --> 0:12:51,900
+ Debian build info files got better.
+
+227
+0:12:52,060 --> 0:12:54,900
+ This thousands uploads, thousands uploads has happened.
+
+228
+0:12:54,900 --> 0:12:59,300
+ Deep rebuild was mostly or partly addressed,
+
+229
+0:12:59,300 --> 0:13:01,780
+ but we made huge infrastructure progress.
+
+230
+0:13:01,780 --> 0:13:04,400
+ And there's always other issues.
+
+231
+0:13:06,600 --> 0:13:10,700
+ But then first I want to repeat my frustration with 2019,
+
+232
+0:13:10,700 --> 0:13:14,420
+ or actually 2019 or the previous years.
+
+233
+0:13:14,420 --> 0:13:17,280
+ Because I have given many times the warning,
+
+234
+0:13:17,280 --> 0:13:20,020
+ the next Debian release will not be reproducible.
+
+235
+0:13:20,020 --> 0:13:21,020
+ So last year I committed a big mistake, I say no, and then I got a solution.
+
+236
+0:13:21,020 --> 0:13:28,180
+ So last year I said Stretch could have been reproducible but wasn't in practice.
+
+237
+0:13:28,180 --> 0:13:34,260
+ Buster we missed it and Bullseye we'll probably also miss it again.
+
+238
+0:13:34,260 --> 0:13:39,380
+ And so this year, yeah, Bullseye we almost made it.
+
+239
+0:13:39,380 --> 0:13:43,940
+ And for Bookworm, the next release in two years,
+
+240
+0:13:43,940 --> 0:13:47,920
+ I hope we'll have some meaningful reproducibility.
+
+241
+0:13:47,920 --> 0:13:50,720
+ Because we can reproduce like many packages,
+
+242
+0:13:50,720 --> 0:13:56,320
+ but if there's always some, it doesn't really help.
+
+243
+0:13:56,320 --> 0:14:00,240
+ So what first about the CI versus rebuild issue?
+
+244
+0:14:03,740 --> 0:14:11,400
+ So not Debian is wrong, but most people who see this number
+
+245
+0:14:11,400 --> 0:14:17,160
+ are wrong because it's a lie because these are CI results.
+
+246
+0:14:17,920 --> 0:14:22,700
+ And so what happens is that the blockers are not reproducible.
+
+247
+0:14:22,700 --> 0:14:27,220
+ There's some good ones to use, but not how Debian is really
+
+248
+0:14:27,220 --> 0:14:30,180
+ reproducible, what we distribute.
+
+249
+0:14:30,180 --> 0:14:35,120
+ So we only have builders but not rebuilders and we need
+
+250
+0:14:35,120 --> 0:14:37,780
+ to rebuild Debian and compare this to get the number.
+
+251
+0:14:37,780 --> 0:14:44,300
+ This is what Arch Linux is already doing and Debian is not doing yet.
+
+252
+0:14:44,300 --> 0:14:47,680
+ And up until very recently, we had two main blockers for this,
+
+253
+0:14:47,680 --> 0:14:50,380
+ and I fixed this by uploading them all,
+
+254
+0:14:50,380 --> 0:14:52,780
+ which I just did a source-only upload
+
+255
+0:14:52,780 --> 0:14:54,280
+ where I did not note no changes
+
+256
+0:14:54,280 --> 0:14:57,880
+ except increasing the version number and change log
+
+257
+0:14:57,880 --> 0:15:01,980
+ and upload it so that then a built-in profile is generated.
+
+258
+0:15:01,980 --> 0:15:06,180
+ And to my surprise, that worked hardly,
+
+259
+0:15:06,180 --> 0:15:08,180
+ mostly without complaints.
+
+260
+0:15:08,180 --> 0:15:10,380
+ Some complaints were there.
+
+261
+0:15:10,380 --> 0:15:12,780
+ And then we have Snapshot Debian org,
+
+262
+0:15:12,780 --> 0:15:16,180
+ which is a Debian server which has all packages
+
+263
+0:15:16,180 --> 0:15:20,880
+ since 2005, all ever uploaded for all architectures,
+
+264
+0:15:20,880 --> 0:15:22,980
+ and that doesn't scale.
+
+265
+0:15:22,980 --> 0:15:25,080
+ It's fine to download one package,
+
+266
+0:15:25,080 --> 0:15:27,380
+ but if you really need to download 500 of them
+
+267
+0:15:27,380 --> 0:15:28,780
+ in very specific versions,
+
+268
+0:15:28,780 --> 0:15:32,580
+ and you want to do this 24 hours for weeks,
+
+269
+0:15:32,580 --> 0:15:35,880
+ then you would get connection issues and stuff.
+
+270
+0:15:35,880 --> 0:15:42,380
+ And so Frederic, Pierre, and Josh fixed this by writing
+
+271
+0:15:42,380 --> 0:15:46,080
+ and Snapshot clone and different RP.
+
+272
+0:15:46,080 --> 0:15:53,080
+ They'll give a talk about this on Thursday at DEBCONF
+
+273
+0:15:53,080 --> 0:15:57,180
+ where they explain what they do much better than I could do this.
+
+274
+0:15:57,180 --> 0:16:02,380
+ And so we have now a partial Snapshot mirror for AMD64 only,
+
+275
+0:16:02,380 --> 0:16:04,380
+ not for the other architectures,
+
+276
+0:16:04,380 --> 0:16:08,180
+ and only going back until January 2017.
+
+277
+0:16:08,180 --> 0:16:12,680
+ So that includes all packages from the Buster cycle, I think,
+
+278
+0:16:12,680 --> 0:16:14,780
+ or maybe Bullseye, I think it's Bullseye.
+
+279
+0:16:16,080 --> 0:16:24,180
+ But there's their talk on Thursday, the 26th at 21 UTC.
+
+280
+0:16:24,180 --> 0:16:28,180
+ So this 93 number was wrong.
+
+281
+0:16:28,180 --> 0:16:34,880
+ Actually, today we are at 95.5% reproducibility.
+
+282
+0:16:34,880 --> 0:16:40,480
+ And now this is more showing how to lie with statistic.
+
+283
+0:16:40,480 --> 0:16:45,480
+ So we improved 2% from 93.9 to 95.
+
+284
+0:16:45,480 --> 0:16:45,980
+ But this is not true.
+
+285
+0:16:45,980 --> 0:16:50,280
+ We also increased 3,000 more reproducible packages.
+
+286
+0:16:50,280 --> 0:16:55,080
+ 3,000 new reproducible packages sounds way better than 2% more.
+
+287
+0:16:55,080 --> 0:16:58,580
+ Or we solved one-third of the remaining 6%.
+
+288
+0:17:02,580 --> 0:17:04,780
+ Anyhow.
+
+289
+0:17:04,780 --> 0:17:10,680
+ This build info files, I will not get too much into details what it is.
+
+290
+0:17:10,680 --> 0:17:13,580
+ We have this build info Stebian net service,
+
+291
+0:17:13,580 --> 0:17:15,380
+ which is kind of proof of fact.
+
+292
+0:17:15,380 --> 0:17:17,580
+ It's kind of proof of concept, but it works.
+
+293
+0:17:17,580 --> 0:17:19,680
+ But it should be on Debian infrastructure.
+
+294
+0:17:19,680 --> 0:17:23,680
+ It's a hack I wrote on this unrelated service.
+
+295
+0:17:23,680 --> 0:17:26,780
+ And it's still running, but it should be done better.
+
+296
+0:17:26,780 --> 0:17:29,680
+ This problem has been solved with 3,000 packages.
+
+297
+0:17:29,680 --> 0:17:34,380
+ And this also has been worked around that the Debian infrastructure needs
+
+298
+0:17:34,380 --> 0:17:37,980
+ to update the build info files.
+
+299
+0:17:37,980 --> 0:17:41,680
+ And this is basically the same.
+
+300
+0:17:41,680 --> 0:17:44,380
+ This are solved with Band-Aid.
+
+301
+0:17:44,380 --> 0:17:45,180
+ But we still have to do this.
+
+302
+0:17:45,180 --> 0:17:49,380
+ We still have some problem with build info files.
+
+303
+0:17:49,380 --> 0:17:51,680
+ Namely, that for security updates,
+
+304
+0:17:51,680 --> 0:17:55,380
+ these build info files are not published the way other.
+
+305
+0:17:55,380 --> 0:17:58,180
+ That's because how the way Debian archive works.
+
+306
+0:17:58,180 --> 0:18:00,380
+ This is mostly not for the people in the Bonhack room,
+
+307
+0:18:00,380 --> 0:18:06,180
+ but you at devconf21, hello, you can address this issue.
+
+308
+0:18:06,180 --> 0:18:08,280
+ Which means when there's a new security update,
+
+309
+0:18:08,280 --> 0:18:10,780
+ we cannot rebuild it reproducibly.
+
+310
+0:18:10,780 --> 0:18:12,380
+ We need to wait for the point release
+
+311
+0:18:12,380 --> 0:18:14,180
+ when it's put into the main archive.
+
+312
+0:18:14,180 --> 0:18:18,180
+ And similar for Debian LTS, there's the same problem.
+
+313
+0:18:18,180 --> 0:18:23,180
+ But until Bookworm, no, Bullseye will become LTS,
+
+314
+0:18:23,180 --> 0:18:24,180
+ it will be three years.
+
+315
+0:18:24,180 --> 0:18:26,180
+ So we have three years to fix this bug.
+
+316
+0:18:26,180 --> 0:18:30,180
+ And then maybe there can be reproducible LTS updates.
+
+317
+0:18:30,180 --> 0:18:35,180
+ And another problem with rebuilding is DPG keys expire.
+
+318
+0:18:35,180 --> 0:18:42,180
+ And the archive keys, so you cannot create a base Debian setup,
+
+319
+0:18:42,180 --> 0:18:43,180
+ build environment.
+
+320
+0:18:43,180 --> 0:18:46,180
+ In some years to come.
+
+321
+0:18:46,180 --> 0:18:49,180
+ And maybe it would be better not to expire the keys.
+
+322
+0:18:49,180 --> 0:18:52,180
+ I'm not sure.
+
+323
+0:18:52,180 --> 0:18:56,180
+ Yeah, about the rebuilders, what I said last year,
+
+324
+0:18:56,180 --> 0:18:59,180
+ we had this dev rebuild script, which has some problem.
+
+325
+0:18:59,180 --> 0:19:02,180
+ And most of them have been addressed.
+
+326
+0:19:02,180 --> 0:19:06,180
+ But rebuilding needs a working snapshot service.
+
+327
+0:19:06,180 --> 0:19:08,180
+ And snapshot doesn't scale.
+
+328
+0:19:08,180 --> 0:19:11,180
+ So that's what I said, Frederick and Josh have solved this
+
+329
+0:19:11,180 --> 0:19:13,180
+ with this partial mirror.
+
+330
+0:19:13,180 --> 0:19:16,180
+ So that's good.
+
+331
+0:19:16,180 --> 0:19:18,180
+ And you should really see the talks.
+
+332
+0:19:18,180 --> 0:19:20,180
+ There's an API how to use this.
+
+333
+0:19:20,180 --> 0:19:26,180
+ And we also plan to increase this, not only have AMD64,
+
+334
+0:19:26,180 --> 0:19:31,180
+ but also soon ARM64 and probably ARMHF.
+
+335
+0:19:31,180 --> 0:19:37,180
+ But we don't have the resources yet for all 11 Debian architectures.
+
+336
+0:19:37,180 --> 0:19:42,180
+ So what we really want is to make snapshot Debian org scale
+
+337
+0:19:42,180 --> 0:19:44,180
+ or work.
+
+338
+0:19:44,180 --> 0:19:46,180
+ But as long as this doesn't happen,
+
+339
+0:19:46,180 --> 0:19:48,180
+ and because that's a much bigger problem,
+
+340
+0:19:48,180 --> 0:19:52,180
+ we kind of are happy that we have this workaround for AMD64.
+
+341
+0:19:57,180 --> 0:20:02,180
+ So Frederick hosts his mirror at his private machine
+
+342
+0:20:02,180 --> 0:20:07,180
+ at his place, which is this Debian not set France URL.
+
+343
+0:20:07,180 --> 0:20:10,180
+ We'll soon have a mirror of that mirror
+
+344
+0:20:10,180 --> 0:20:16,180
+ at Toasted at the Oregon State University open source labs.
+
+345
+0:20:16,180 --> 0:20:20,180
+ And then we can set up rebuilders and hammer this service.
+
+346
+0:20:20,180 --> 0:20:23,180
+ And you can use it already.
+
+347
+0:20:23,180 --> 0:20:28,180
+ And then we'll have rebuilders for both Bullseye and Bookworm,
+
+348
+0:20:28,180 --> 0:20:35,180
+ because previous releases are really not interesting to reproduce anymore.
+
+349
+0:20:35,180 --> 0:20:38,180
+ And Frederick also has a proof of concept for a rebuilder.
+
+350
+0:20:38,180 --> 0:20:39,180
+ So I'm looking forward to integrating this.
+
+351
+0:20:39,180 --> 0:20:43,180
+ I'm looking forward to integrate this into the coming weeks or months
+
+352
+0:20:43,180 --> 0:20:48,180
+ and then finally have results for Debian rebuilders for real.
+
+353
+0:20:53,180 --> 0:20:57,180
+ And the last part is the meaningful reproducibility of Debian.
+
+354
+0:20:57,180 --> 0:21:00,180
+ Finally, since a week or something,
+
+355
+0:21:00,180 --> 0:21:04,180
+ all 21 essential source packages are reproducible.
+
+356
+0:21:04,180 --> 0:21:05,180
+ Yay.
+
+357
+0:21:05,180 --> 0:21:08,180
+ This is really something new and something small.
+
+358
+0:21:08,180 --> 0:21:13,180
+ But then if you go to the required set, it's only 26 of 29.
+
+359
+0:21:13,180 --> 0:21:22,180
+ And the two unreproducible packages are GCC10, Upt, and GCC9, I think.
+
+360
+0:21:22,180 --> 0:21:24,180
+ And everybody needs them.
+
+361
+0:21:24,180 --> 0:21:28,180
+ So unless we don't fix this, there will be always something,
+
+362
+0:21:28,180 --> 0:21:33,180
+ and quite important part of this something, which is not reproducible.
+
+363
+0:21:33,180 --> 0:21:36,180
+ Of the most installed packages, there's 50 which are not reproducible.
+
+364
+0:21:36,180 --> 0:21:41,180
+ Out of the GNOME package set, it's only 28.
+
+365
+0:21:41,180 --> 0:21:46,180
+ So it's a bit better, but you need to have, it's still not enough.
+
+366
+0:21:46,180 --> 0:21:50,180
+ And then also the Debian installer images are not reproducible.
+
+367
+0:21:50,180 --> 0:21:53,180
+ I think we have patches for all problems,
+
+368
+0:21:53,180 --> 0:21:58,180
+ and now that the Bookworm, Bullseye, Bookworm,
+
+369
+0:21:58,180 --> 0:22:00,180
+ Bookworm, these names,
+
+370
+0:22:00,180 --> 0:22:02,180
+ the Bookworm development cycle has started,
+
+371
+0:22:02,180 --> 0:22:04,180
+ we can hopefully get these patches integrated.
+
+372
+0:22:04,180 --> 0:22:11,180
+ And the last bit is Debian live images are not reproducible.
+
+373
+0:22:11,180 --> 0:22:14,180
+ We also need to work on this,
+
+374
+0:22:14,180 --> 0:22:19,180
+ so there's also the problem that Debian live images need a new maintainer.
+
+375
+0:22:19,180 --> 0:22:21,180
+ That's a problem with the Debian live images.
+
+376
+0:22:21,180 --> 0:22:25,180
+ But I think that's a good goal to have for Bookworm,
+
+377
+0:22:25,180 --> 0:22:28,180
+ to have those images reproducible.
+
+378
+0:22:28,180 --> 0:22:31,180
+ Because we will not get these 95 or 96,
+
+379
+0:22:31,180 --> 0:22:34,180
+ but we can hopefully make a minimal Debian live image
+
+380
+0:22:34,180 --> 0:22:36,180
+ which is reproducible.
+
+381
+0:22:36,180 --> 0:22:39,180
+ Eventually.
+
+382
+0:22:39,180 --> 0:22:44,180
+ Oh yeah, and eventually we also want up to warm
+
+383
+0:22:44,180 --> 0:22:47,180
+ when there's a non-reproducible package to be installed.
+
+384
+0:22:47,180 --> 0:22:49,180
+ I think this bug has a patch even,
+
+385
+0:22:49,180 --> 0:22:51,180
+ so that could be done today.
+
+386
+0:22:51,180 --> 0:22:58,180
+ I just wanted to remove.
+
+387
+0:22:58,180 --> 0:23:01,180
+ It's still true.
+
+388
+0:23:01,180 --> 0:23:03,180
+ We have last release cycle,
+
+389
+0:23:03,180 --> 0:23:05,180
+ the testing team,
+
+390
+0:23:05,180 --> 0:23:10,180
+ release team introduced that the package can only migrate to testing
+
+391
+0:23:10,180 --> 0:23:13,180
+ if there was a,
+
+392
+0:23:13,180 --> 0:23:16,180
+ if the build happened on the Debian build,
+
+393
+0:23:16,180 --> 0:23:18,180
+ these are not at the maintainers.
+
+394
+0:23:18,180 --> 0:23:19,180
+ And we were happy,
+
+395
+0:23:19,180 --> 0:23:21,180
+ very happy that they implemented this blocking.
+
+396
+0:23:21,180 --> 0:23:22,180
+ And at the same time,
+
+397
+0:23:22,180 --> 0:23:26,180
+ they brought up the idea of making migration to testing faster
+
+398
+0:23:26,180 --> 0:23:28,180
+ if the package is reproducible.
+
+399
+0:23:28,180 --> 0:23:30,180
+ We would like that,
+
+400
+0:23:30,180 --> 0:23:33,180
+ but this is just a development process detail.
+
+401
+0:23:33,180 --> 0:23:35,180
+ That's it.
+
+402
+0:23:35,180 --> 0:23:37,180
+ Thank you for being here,
+
+403
+0:23:37,180 --> 0:23:39,180
+ for working on reproducible builds.
+
+404
+0:23:46,180 --> 0:23:48,180
+ Thank you very much for your talk.
+
+405
+0:23:48,180 --> 0:23:50,180
+ I think it's a great achievement,
+
+406
+0:23:50,180 --> 0:23:53,180
+ given that I still remember a few years ago
+
+407
+0:23:53,180 --> 0:23:57,180
+ when people were talking about having maybe Tor browser
+
+408
+0:23:57,180 --> 0:23:59,180
+ and Tails reproducible.
+
+409
+0:23:59,180 --> 0:24:02,180
+ And so that we now have the first OS's
+
+410
+0:24:02,180 --> 0:24:05,180
+ which are close to it is very good, I think.
+
+411
+0:24:05,180 --> 0:24:07,180
+ Are there questions to the talk?
+
+412
+0:24:16,180 --> 0:24:19,180
+ So, do you have,
+
+413
+0:24:19,180 --> 0:24:22,180
+ is it the same problems we have in the packages
+
+414
+0:24:22,180 --> 0:24:24,180
+ that makes them unreducible?
+
+415
+0:24:24,180 --> 0:24:26,180
+ Or are there a million different ways
+
+416
+0:24:26,180 --> 0:24:28,180
+ of making them unreproducible?
+
+417
+0:24:28,180 --> 0:24:31,180
+ There are many ways to make a package unreproducible.
+
+418
+0:24:31,180 --> 0:24:33,180
+ Like hundreds.
+
+419
+0:24:33,180 --> 0:24:35,180
+ Like it's also,
+
+420
+0:24:35,180 --> 0:24:38,180
+ there's different classes of problems,
+
+421
+0:24:38,180 --> 0:24:41,180
+ and then there's also toolkits which have problems.
+
+422
+0:24:41,180 --> 0:24:43,180
+ So there's whatever,
+
+423
+0:24:43,180 --> 0:24:47,180
+ the most documentation toolkits embed the build,
+
+424
+0:24:47,180 --> 0:24:50,180
+ or used to embed the build time in the build product.
+
+425
+0:24:50,180 --> 0:24:54,180
+ And then there's like 50 tools creating documentation
+
+426
+0:24:54,180 --> 0:24:57,180
+ from HTML, from XML, from PDF, whatever,
+
+427
+0:24:57,180 --> 0:24:59,180
+ and they all have these kind of problems.
+
+428
+0:24:59,180 --> 0:25:05,180
+ So when you say that rebuilding them is,
+
+429
+0:25:05,180 --> 0:25:07,180
+ it's a scaling issue also,
+
+430
+0:25:07,180 --> 0:25:10,180
+ it will require, well, basically a lot of extra infrastructure.
+
+431
+0:25:10,180 --> 0:25:14,180
+ Could you have a system where you would be sampling the packages
+
+432
+0:25:14,180 --> 0:25:17,180
+ in order to learn what kind of common pitfalls there are
+
+433
+0:25:17,180 --> 0:25:20,180
+ instead of reproducing everything blindly?
+
+434
+0:25:20,180 --> 0:25:23,180
+ What was the suggestion?
+
+435
+0:25:23,180 --> 0:25:27,180
+ So when you have thousands and thousands and thousands of packages,
+
+436
+0:25:27,180 --> 0:25:30,180
+ it's going to cost a lot of resources
+
+437
+0:25:30,180 --> 0:25:33,180
+ in order to rebuild them in a nice way again and again.
+
+438
+0:25:33,180 --> 0:25:36,180
+ So if you had a strategy for sampling these
+
+439
+0:25:36,180 --> 0:25:42,180
+ so you could document what kind of unreproducibility problems you had
+
+440
+0:25:42,180 --> 0:25:45,180
+ in order to cluster them, if you like.
+
+441
+0:25:45,180 --> 0:25:50,180
+ Well, first the resource problem is really not a problem
+
+442
+0:25:50,180 --> 0:25:55,180
+ because it doesn't need that much CPU power or bandwidth to rebuild.
+
+443
+0:25:55,180 --> 0:25:57,180
+ That is basically fine.
+
+444
+0:25:57,180 --> 0:26:01,180
+ The problem is rather looking at the results,
+
+445
+0:26:01,180 --> 0:26:05,180
+ which we are sampling or automatic categorization could help.
+
+446
+0:26:05,180 --> 0:26:12,180
+ And also you want to always want to retest new software
+
+447
+0:26:12,180 --> 0:26:16,180
+ because if even though you have a software which is reproducible now,
+
+448
+0:26:16,180 --> 0:26:19,180
+ like to a browser, at any moment for the fire,
+
+449
+0:26:19,180 --> 0:26:23,180
+ upstream Firefox can introduce changes which make the build unreproducible again.
+
+450
+0:26:23,180 --> 0:26:26,180
+ So you need to retest every new release.
+
+451
+0:26:26,180 --> 0:26:33,180
+ And every new release of dependent binaries as libraries as well.
+
+452
+0:26:33,180 --> 0:26:44,180
+ You mentioned that the kind of key packages missing are apt and gcc.
+
+453
+0:26:44,180 --> 0:26:47,180
+ I was a bit surprised about apt,
+
+454
+0:26:47,180 --> 0:26:50,180
+ but can you say why these two packages are not reproducible?
+
+455
+0:26:50,180 --> 0:26:52,180
+ No.
+
+456
+0:26:52,180 --> 0:26:54,180
+ Okay.
+
+457
+0:26:54,180 --> 0:26:55,180
+ I can...
+
+458
+0:26:55,180 --> 0:26:57,180
+ I mean apt is...
+
+459
+0:26:57,180 --> 0:26:59,180
+ It's all your responsibility, right?
+
+460
+0:26:59,180 --> 0:27:00,180
+ So...
+
+461
+0:27:00,180 --> 0:27:01,180
+ Yeah.
+
+462
+0:27:01,180 --> 0:27:04,180
+ Mine.
+
+463
+0:27:04,180 --> 0:27:06,180
+ No, I don't know what...
+
+464
+0:27:06,180 --> 0:27:11,180
+ I could...
+
+465
+0:27:11,180 --> 0:27:13,180
+ Does build ID...
+
+466
+0:27:13,180 --> 0:27:15,180
+ gcc, that is not relevant for us.
+
+467
+0:27:15,180 --> 0:27:17,180
+ We have gcc captures build pass.
+
+468
+0:27:17,180 --> 0:27:22,180
+ That is something...
+
+469
+0:27:22,180 --> 0:27:24,180
+ This is something where...
+
+470
+0:27:24,180 --> 0:27:26,180
+ gcc embeds the build pass,
+
+471
+0:27:26,180 --> 0:27:30,180
+ and we solve this by rebuilding in the same pass.
+
+472
+0:27:30,180 --> 0:27:34,180
+ We still track this issue because we want to support rebuilding in a different pass,
+
+473
+0:27:34,180 --> 0:27:37,180
+ but this is not the apt problem.
+
+474
+0:27:37,180 --> 0:27:39,180
+ Ah, it's non-deterministic.
+
+475
+0:27:39,180 --> 0:27:43,180
+ To do end of fires in documentation generated by doxygen, probably.
+
+476
+0:27:43,180 --> 0:27:46,180
+ Um...
+
+477
+0:27:46,180 --> 0:27:48,180
+ What is this?
+
+478
+0:27:48,180 --> 0:27:50,180
+ What is this?
+
+479
+0:27:50,180 --> 0:27:52,180
+ Oh, this is unstable.
+
+480
+0:27:52,180 --> 0:27:55,180
+ Oh, this is unstable.
+
+481
+0:28:02,180 --> 0:28:04,180
+ Yeah, it's doxygen.
+
+482
+0:28:04,180 --> 0:28:06,180
+ If you look at the...
+
+483
+0:28:06,180 --> 0:28:07,180
+ Yeah.
+
+484
+0:28:07,180 --> 0:28:11,180
+ It's the doxygen issues in apt.
+
+485
+0:28:16,180 --> 0:28:17,180
+ Hi.
+
+486
+0:28:17,180 --> 0:28:21,180
+ You mentioned there was a problem with the snapshot server,
+
+487
+0:28:21,180 --> 0:28:25,180
+ where you couldn't fetch a large quantity of packages that you needed.
+
+488
+0:28:25,180 --> 0:28:28,180
+ Is that problem simply a hardware?
+
+489
+0:28:28,180 --> 0:28:29,180
+ Lack of...
+
+490
+0:28:29,180 --> 0:28:30,180
+ No.
+
+491
+0:28:30,180 --> 0:28:31,180
+ Lack of hosting?
+
+492
+0:28:31,180 --> 0:28:34,180
+ It's a huge database with...
+
+493
+0:28:34,180 --> 0:28:35,180
+ I forgot...
+
+494
+0:28:35,180 --> 0:28:38,180
+ 15 terabytes files and...
+
+495
+0:28:38,180 --> 0:28:39,180
+ 10...
+
+496
+0:28:39,180 --> 0:28:42,180
+ 15 terabytes size and 10 million files and...
+
+497
+0:28:42,180 --> 0:28:43,180
+ It's not hardware.
+
+498
+0:28:43,180 --> 0:28:44,180
+ It's scaling.
+
+499
+0:28:44,180 --> 0:28:45,180
+ Yeah.
+
+500
+0:28:45,180 --> 0:28:46,180
+ Scaling.
+
+501
+0:28:46,180 --> 0:28:47,180
+ I understand.
+
+502
+0:28:47,180 --> 0:28:49,180
+ And some of the bugs have been addressed,
+
+503
+0:28:49,180 --> 0:28:50,180
+ and the others...
+
+504
+0:28:50,180 --> 0:28:54,180
+ We are working around and trying to fix them, really.
+
+505
+0:28:54,180 --> 0:28:56,180
+ But it's...
+
+506
+0:28:56,180 --> 0:28:58,180
+ It's complicated.
+
+507
+0:29:05,180 --> 0:29:09,180
+ Is it possible to have maybe Debian ports
+
+508
+0:29:09,180 --> 0:29:13,180
+ that doesn't support all the unsupported architectures?
+
+509
+0:29:13,180 --> 0:29:16,180
+ Would there be any effort to have reproducible builds there as well?
+
+510
+0:29:16,180 --> 0:29:19,180
+ Or is that the responsibility of Debian ports,
+
+511
+0:29:19,180 --> 0:29:20,180
+ that is not official?
+
+512
+0:29:20,180 --> 0:29:21,180
+ Well, they...
+
+513
+0:29:21,180 --> 0:29:22,180
+ They gain most of the stuff we did.
+
+514
+0:29:22,180 --> 0:29:23,180
+ Like the build info files,
+
+515
+0:29:23,180 --> 0:29:24,180
+ they are produced by their builds.
+
+516
+0:29:24,180 --> 0:29:25,180
+ So that's...
+
+517
+0:29:25,180 --> 0:29:26,180
+ Should be fine.
+
+518
+0:29:26,180 --> 0:29:27,180
+ Yeah.
+
+519
+0:29:27,180 --> 0:29:28,180
+ Yeah.
+
+520
+0:29:28,180 --> 0:29:29,180
+ It's the same with Ubuntu.
+
+521
+0:29:29,180 --> 0:29:30,180
+ Ubuntu could also take our work,
+
+522
+0:29:30,180 --> 0:29:31,180
+ and it's...
+
+523
+0:29:31,180 --> 0:29:32,180
+ It just takes some work.
+
+524
+0:29:32,180 --> 0:29:33,180
+ Are there further questions?
+
+525
+0:29:33,180 --> 0:29:34,180
+ No.
+
+526
+0:29:34,180 --> 0:29:35,180
+ No.
+
+527
+0:29:35,180 --> 0:29:36,180
+ No.
+
+528
+0:29:36,180 --> 0:29:37,180
+ No.
+
+529
+0:29:37,180 --> 0:29:38,180
+ No.
+
+530
+0:29:38,180 --> 0:29:39,180
+ No.
+
+531
+0:29:39,180 --> 0:29:40,180
+ No.
+
+532
+0:29:40,180 --> 0:29:41,180
+ No.
+
+533
+0:29:41,180 --> 0:29:42,180
+ No.
+
+534
+0:29:42,180 --> 0:29:43,180
+ No.
+
+535
+0:29:43,180 --> 0:29:44,180
+ No.
+
+536
+0:29:44,180 --> 0:29:45,180
+ No.
+
+537
+0:29:45,180 --> 0:29:46,180
+ No.
+
+538
+0:29:46,180 --> 0:29:47,180
+ No.
+
+539
+0:29:47,180 --> 0:29:48,180
+ No.
+
+540
+0:29:48,180 --> 0:29:49,180
+ No.
+
+541
+0:29:49,180 --> 0:29:50,180
+ No.
+
+542
+0:29:50,180 --> 0:29:51,180
+ I don't see it.
+
+543
+0:29:51,180 --> 0:29:53,180
+ Then let's thanks the speaker again.

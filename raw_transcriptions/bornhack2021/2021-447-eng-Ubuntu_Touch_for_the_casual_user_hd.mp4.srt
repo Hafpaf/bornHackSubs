@@ -1,0 +1,1031 @@
+# Transcribed 2023-11-12T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Thank you very much.
+
+2
+0:00:30,000 --> 0:00:30,920
+ Ubuntu phones.
+
+3
+0:00:35,000 --> 0:00:36,000
+ Okay, hi.
+
+4
+0:00:36,460 --> 0:00:37,020
+ Welcome.
+
+5
+0:00:37,260 --> 0:00:38,180
+ Can everybody hear me?
+
+6
+0:00:40,420 --> 0:00:42,260
+ Those who cannot, please say yes.
+
+7
+0:00:43,460 --> 0:00:45,120
+ Just to make things more confusing.
+
+8
+0:00:45,380 --> 0:00:48,020
+ So Ubuntu Touch, what isn't it?
+
+9
+0:00:49,260 --> 0:00:50,700
+ Ubuntu Touch is not Android.
+
+10
+0:00:51,520 --> 0:00:52,800
+ Ubuntu Touch is not iOS.
+
+11
+0:00:53,380 --> 0:00:54,780
+ It's not desktop Ubuntu.
+
+12
+0:00:55,660 --> 0:00:57,640
+ I'm sorry if this disappoints any of you.
+
+13
+0:00:58,200 --> 0:00:59,960
+ It shares a base with Android.
+
+14
+0:00:59,980 --> 0:01:01,980
+ But not very much else.
+
+15
+0:01:02,860 --> 0:01:04,180
+ It does not phone home to Google.
+
+16
+0:01:05,160 --> 0:01:06,860
+ Which is a thing that I like.
+
+17
+0:01:07,640 --> 0:01:10,060
+ It does not phone home to Apple.
+
+18
+0:01:11,420 --> 0:01:13,120
+ So what is Ubuntu Touch?
+
+19
+0:01:13,380 --> 0:01:15,980
+ It is an OS made for mobile devices.
+
+20
+0:01:17,820 --> 0:01:23,080
+ It runs on 64, no, currently 65 devices.
+
+21
+0:01:23,600 --> 0:01:23,980
+ Mostly smartphones.
+
+22
+0:01:24,840 --> 0:01:26,040
+ Some are tablets.
+
+23
+0:01:27,040 --> 0:01:28,140
+ It's easy to use.
+
+24
+0:01:28,240 --> 0:01:28,840
+ It's elegant.
+
+25
+0:01:28,840 --> 0:01:28,960
+ It's elegant.
+
+26
+0:01:28,960 --> 0:01:34,880
+ There's a show and tell device making its way through the seat.
+
+27
+0:01:34,980 --> 0:01:37,840
+ So you can just take a look and touch it if you like.
+
+28
+0:01:38,100 --> 0:01:40,060
+ Just swipe and do whatever you like.
+
+29
+0:01:42,540 --> 0:01:45,700
+ It comes with a pretty decent set of installable apps.
+
+30
+0:01:46,140 --> 0:01:50,640
+ There is the possibility to run some desktop apps through something called Libertine.
+
+31
+0:01:51,740 --> 0:01:54,340
+ But most of them do not run well on a small screen.
+
+32
+0:01:54,860 --> 0:01:57,060
+ And they're not made for a touch interface anyway.
+
+33
+0:01:58,960 --> 0:02:00,960
+ So, how did Ubuntu Touch come about?
+
+34
+0:02:00,960 --> 0:02:10,960
+ The development began in 2011 at Canonical, which you've probably all heard of, the Ubuntu people.
+
+35
+0:02:10,960 --> 0:02:15,960
+ And it was meant to be Ubuntu plus convergence.
+
+36
+0:02:15,960 --> 0:02:21,960
+ So bringing the same OS to phones, tablets, smart TVs, and all kinds of interesting things.
+
+37
+0:02:21,960 --> 0:02:25,960
+ And this somehow never quite materialized.
+
+38
+0:02:25,960 --> 0:02:27,880
+ So by 2013, Ubuntu Touch was launched.
+
+39
+0:02:27,880 --> 0:02:28,960
+ It was the first mobile device in the world.
+
+40
+0:02:28,960 --> 0:02:33,960
+ It came to release of a version that could be used on a small number of smartphones.
+
+41
+0:02:35,960 --> 0:02:39,960
+ And it was released to manufacturers in 2014.
+
+42
+0:02:40,960 --> 0:02:47,960
+ Then in 2015 came the BQ Aquarius, which is now currently in the hands of one of you.
+
+43
+0:02:47,960 --> 0:02:52,960
+ And it was manufactured right away with Ubuntu Touch on it.
+
+44
+0:02:52,960 --> 0:02:54,960
+ So it's pretty unique that way.
+
+45
+0:02:55,960 --> 0:02:57,960
+ And it's a really cute little thing.
+
+46
+0:02:58,960 --> 0:03:02,960
+ And it went on sale in February 2015.
+
+47
+0:03:02,960 --> 0:03:07,960
+ But it didn't all quite work out as planned.
+
+48
+0:03:07,960 --> 0:03:11,960
+ By 2017, Canonical announced they would drop the project.
+
+49
+0:03:11,960 --> 0:03:15,960
+ And it was then taken over by the community.
+
+50
+0:03:15,960 --> 0:03:19,960
+ So there was a foundation started called UBports.
+
+51
+0:03:19,960 --> 0:03:25,960
+ And they got the code and they got the right to use the name, which is quite a big thing.
+
+52
+0:03:25,960 --> 0:03:27,960
+ And the styling of Ubuntu.
+
+53
+0:03:28,960 --> 0:03:35,960
+ They started a community with forums, telegram groups, and so on.
+
+54
+0:03:35,960 --> 0:03:41,960
+ And then in 2018, they reached OTA 4.
+
+55
+0:03:41,960 --> 0:03:50,960
+ The upgrade that brought us to the base of Ubuntu 16.04 instead of 15.04.
+
+56
+0:03:50,960 --> 0:03:52,960
+ So that was pretty good.
+
+57
+0:03:52,960 --> 0:03:55,960
+ So that's the past.
+
+58
+0:03:55,960 --> 0:03:57,960
+ And what about the future?
+
+59
+0:03:57,960 --> 0:04:03,960
+ The future means Ubuntu 20.04, which is a bit late, I know.
+
+60
+0:04:03,960 --> 0:04:05,960
+ They're working really hard on it.
+
+61
+0:04:05,960 --> 0:04:08,960
+ And they're very sorry, but it's going to be great.
+
+62
+0:04:08,960 --> 0:04:13,960
+ And there's also something interesting called WayDroid.
+
+63
+0:04:13,960 --> 0:04:18,960
+ WayDroid is sort of an improved version of NBox, which you may have heard of.
+
+64
+0:04:18,960 --> 0:04:24,960
+ NBox is meant to allow running Android apps on Ubuntu Touch.
+
+65
+0:04:24,960 --> 0:04:26,960
+ But it didn't work very well.
+
+66
+0:04:27,960 --> 0:04:38,960
+ So WayDroid is a much improved version of NBox, which will make it possible to run a lot more Android apps on Ubuntu Touch.
+
+67
+0:04:38,960 --> 0:04:40,960
+ So that's pretty good news.
+
+68
+0:04:40,960 --> 0:04:44,960
+ So who are the people making this happen?
+
+69
+0:04:44,960 --> 0:04:46,960
+ They're the foundation called UBports.
+
+70
+0:04:46,960 --> 0:04:49,960
+ And they're located in Germany.
+
+71
+0:04:49,960 --> 0:04:54,960
+ And they have a cute logo, which is always a good thing.
+
+72
+0:04:54,960 --> 0:04:56,960
+ And the developers are very approachable.
+
+73
+0:04:56,960 --> 0:04:58,960
+ They're easy to talk to.
+
+74
+0:04:58,960 --> 0:05:00,960
+ They have regular Q&A sessions.
+
+75
+0:05:00,960 --> 0:05:04,960
+ You can just message them, and they'll answer.
+
+76
+0:05:04,960 --> 0:05:08,960
+ They're pretty decent folks, and they're an international bunch as well.
+
+77
+0:05:08,960 --> 0:05:12,960
+ There's this community, and there's a forum and everything.
+
+78
+0:05:12,960 --> 0:05:15,960
+ And a lot of people in there also contribute.
+
+79
+0:05:15,960 --> 0:05:21,960
+ So it's really made by the community, which is pretty cool, I think.
+
+80
+0:05:21,960 --> 0:05:25,960
+ But then, how did I get involved?
+
+81
+0:05:26,960 --> 0:05:30,960
+ Oops, I was forgetting to press the buttons.
+
+82
+0:05:30,960 --> 0:05:34,960
+ So why was I interested in Ubuntu Touch at all?
+
+83
+0:05:34,960 --> 0:05:39,960
+ Well, I've always been Google-averse.
+
+84
+0:05:39,960 --> 0:05:42,960
+ I've always disliked the big G.
+
+85
+0:05:42,960 --> 0:05:47,960
+ And I've been using Linux since 2015.
+
+86
+0:05:47,960 --> 0:05:49,960
+ You can laugh if you want.
+
+87
+0:05:49,960 --> 0:05:51,960
+ Thank you.
+
+88
+0:05:51,960 --> 0:05:55,960
+ I've been using an old black phone that I got for cheap.
+
+89
+0:05:55,960 --> 0:05:58,960
+ Hoping it would improve my privacy.
+
+90
+0:05:58,960 --> 0:06:03,960
+ Then I got into Lineage OS, which was pretty good.
+
+91
+0:06:03,960 --> 0:06:07,960
+ But I wanted something even more Google-free.
+
+92
+0:06:07,960 --> 0:06:11,960
+ And I don't use a lot of Android apps anyway.
+
+93
+0:06:11,960 --> 0:06:15,960
+ So I heard about Ubuntu Touch, and it sounded neat.
+
+94
+0:06:15,960 --> 0:06:18,960
+ It sounded like it was easy to install.
+
+95
+0:06:18,960 --> 0:06:20,960
+ There was a GUI installer.
+
+96
+0:06:20,960 --> 0:06:21,960
+ Yay, clicky things.
+
+97
+0:06:21,960 --> 0:06:23,960
+ I like clicky things.
+
+98
+0:06:23,960 --> 0:06:24,960
+ And...
+
+99
+0:06:25,960 --> 0:06:26,960
+ Yeah.
+
+100
+0:06:26,960 --> 0:06:33,960
+ So I happened to have a very well-supported device, which is the OnePlus One.
+
+101
+0:06:33,960 --> 0:06:37,960
+ Which is a very decent piece of hardware still, even now.
+
+102
+0:06:37,960 --> 0:06:42,960
+ It's better than it has any right to be at the price people paid for it.
+
+103
+0:06:42,960 --> 0:06:43,960
+ It's just outdated.
+
+104
+0:06:43,960 --> 0:06:48,960
+ Well, not with Ubuntu Touch it isn't.
+
+105
+0:06:48,960 --> 0:06:50,960
+ So I managed to install it.
+
+106
+0:06:50,960 --> 0:06:51,960
+ Whoo!
+
+107
+0:06:51,960 --> 0:06:53,960
+ To my own surprise.
+
+108
+0:06:53,960 --> 0:06:56,960
+ And I just wanted to try it out for two weeks.
+
+109
+0:06:56,960 --> 0:06:59,960
+ And it's been more than a year since.
+
+110
+0:06:59,960 --> 0:07:02,960
+ Those two weeks are ongoing.
+
+111
+0:07:02,960 --> 0:07:06,960
+ I'm not exactly sure what happened here, but I do think I like it.
+
+112
+0:07:08,960 --> 0:07:10,960
+ Well, why do I like it?
+
+113
+0:07:11,960 --> 0:07:14,960
+ Okay, there is a lot of purple.
+
+114
+0:07:16,960 --> 0:07:18,960
+ It really is easy to use.
+
+115
+0:07:18,960 --> 0:07:20,960
+ It's easy to get used to.
+
+116
+0:07:20,960 --> 0:07:22,960
+ Swiping is everything here.
+
+117
+0:07:23,960 --> 0:07:27,960
+ Different from Android in very pleasant ways.
+
+118
+0:07:27,960 --> 0:07:29,960
+ The learning curve is short.
+
+119
+0:07:29,960 --> 0:07:30,960
+ It feels friendly.
+
+120
+0:07:30,960 --> 0:07:31,960
+ It feels polished.
+
+121
+0:07:31,960 --> 0:07:33,960
+ It feels well thought out.
+
+122
+0:07:33,960 --> 0:07:35,960
+ There's a community.
+
+123
+0:07:35,960 --> 0:07:36,960
+ It's friendly.
+
+124
+0:07:36,960 --> 0:07:37,960
+ It's welcoming.
+
+125
+0:07:37,960 --> 0:07:38,960
+ It's not commercial.
+
+126
+0:07:38,960 --> 0:07:40,960
+ I like that.
+
+127
+0:07:40,960 --> 0:07:42,960
+ It's privacy focused.
+
+128
+0:07:42,960 --> 0:07:45,960
+ It makes you feel like you're in control of your device.
+
+129
+0:07:46,960 --> 0:07:48,960
+ So that's all very positive.
+
+130
+0:07:48,960 --> 0:07:50,960
+ And I'm not even getting paid for this.
+
+131
+0:07:50,960 --> 0:07:52,960
+ But what do I not like about it?
+
+132
+0:07:53,960 --> 0:07:57,960
+ Okay, apart from the purple, there's a fair deal of orange.
+
+133
+0:07:58,960 --> 0:08:00,960
+ I don't like orange all that much.
+
+134
+0:08:02,960 --> 0:08:05,960
+ It cannot be used on every smartphone.
+
+135
+0:08:05,960 --> 0:08:08,960
+ So you would need to get a suitable device.
+
+136
+0:08:08,960 --> 0:08:11,960
+ That's a bit of a shame, but they're working on it.
+
+137
+0:08:11,960 --> 0:08:16,960
+ The app you may want may not or not yet exist.
+
+138
+0:08:17,960 --> 0:08:22,960
+ My personal bugbear is that the UT app for Signal is unfinished.
+
+139
+0:08:22,960 --> 0:08:24,960
+ And missing features.
+
+140
+0:08:24,960 --> 0:08:33,960
+ If anyone's interested and competent in app development or encryption algorithms and want to help, please hit me up after I'm done.
+
+141
+0:08:33,960 --> 0:08:34,960
+ Please.
+
+142
+0:08:36,960 --> 0:08:40,960
+ So what is it like?
+
+143
+0:08:40,960 --> 0:08:42,960
+ Because that's what you want to know, right?
+
+144
+0:08:44,960 --> 0:08:46,960
+ There's no home screen.
+
+145
+0:08:46,960 --> 0:08:48,960
+ That's really different.
+
+146
+0:08:48,960 --> 0:08:50,960
+ It looks like Unity, to be honest.
+
+147
+0:08:50,960 --> 0:08:51,960
+ Doesn't it?
+
+148
+0:08:52,960 --> 0:08:54,960
+ It looks like Unity.
+
+149
+0:08:54,960 --> 0:08:58,960
+ It has a launcher that shows a row of your favorite apps.
+
+150
+0:08:58,960 --> 0:09:00,960
+ Yes, you can edit that.
+
+151
+0:09:00,960 --> 0:09:06,960
+ So this version of Unity is called Lomiri, and it was developed especially for Ubuntu Touch.
+
+152
+0:09:06,960 --> 0:09:14,960
+ And besides the launcher that you're seeing, is there an app drawer that holds all of your apps.
+
+153
+0:09:14,960 --> 0:09:20,960
+ And if you are a bit set in your Android ways, like I was,
+
+154
+0:09:20,960 --> 0:09:26,960
+ you can install one of several apps that does give you a more conventional home screen.
+
+155
+0:09:26,960 --> 0:09:30,960
+ So you could have all the buttons you want right there.
+
+156
+0:09:30,960 --> 0:09:32,960
+ I won't judge.
+
+157
+0:09:32,960 --> 0:09:34,960
+ I do it myself.
+
+158
+0:09:34,960 --> 0:09:38,960
+ So it's a really swipe-centric OS.
+
+159
+0:09:38,960 --> 0:09:40,960
+ It's all about the swiping.
+
+160
+0:09:40,960 --> 0:09:44,960
+ You can do things by swiping from the edges of the screen inwards.
+
+161
+0:09:44,960 --> 0:09:48,960
+ Sometimes a long swipe does a different thing than a short swipe.
+
+162
+0:09:48,960 --> 0:09:52,960
+ You can swipe from the bottom to get different options.
+
+163
+0:09:52,960 --> 0:09:58,960
+ Long swiping from the right edge...
+
+164
+0:09:58,960 --> 0:10:02,960
+ No, short swiping first, that takes you back to the previously used app.
+
+165
+0:10:02,960 --> 0:10:06,960
+ So that's like a back button, which it doesn't have.
+
+166
+0:10:06,960 --> 0:10:11,960
+ But if you go from the right for a long swipe, then you get the concertina view,
+
+167
+0:10:11,960 --> 0:10:15,960
+ which you are seeing here, which I think looks pretty Linux-y.
+
+168
+0:10:15,960 --> 0:10:17,960
+ Pretty cool.
+
+169
+0:10:17,960 --> 0:10:20,960
+ It's a good way to impress people.
+
+170
+0:10:20,960 --> 0:10:23,960
+ The lock screen looks really cool.
+
+171
+0:10:23,960 --> 0:10:25,960
+ It has this circle.
+
+172
+0:10:25,960 --> 0:10:27,960
+ The circle represents the day of the month.
+
+173
+0:10:27,960 --> 0:10:31,960
+ And the petals that look like a flower represent what you've been doing all month.
+
+174
+0:10:31,960 --> 0:10:34,960
+ So taking pictures, taking calls, stuff like that.
+
+175
+0:10:34,960 --> 0:10:36,960
+ It's all represented there.
+
+176
+0:10:36,960 --> 0:10:39,960
+ But of course you can add a different picture.
+
+177
+0:10:39,960 --> 0:10:41,960
+ This is mine.
+
+178
+0:10:41,960 --> 0:10:45,960
+ Which I think looks pretty neat.
+
+179
+0:10:45,960 --> 0:10:47,960
+ So the lock screen is...
+
+180
+0:10:47,960 --> 0:10:49,960
+ It's very specific to Ubuntu Touch.
+
+181
+0:10:49,960 --> 0:10:51,960
+ Nobody else uses that.
+
+182
+0:10:53,960 --> 0:10:58,960
+ So I'm sure that by now you're pretty, pretty eager to try this all out for yourself.
+
+183
+0:10:58,960 --> 0:11:02,960
+ So, how do I get Ubuntu Touch?
+
+184
+0:11:02,960 --> 0:11:05,960
+ Well, first you would need a supported device.
+
+185
+0:11:05,960 --> 0:11:11,960
+ There's a nice big list of supported devices, which also tells you how well supported they are.
+
+186
+0:11:11,960 --> 0:11:14,960
+ Can it make calls? Can you use the camera?
+
+187
+0:11:14,960 --> 0:11:16,960
+ Pretty interesting stuff.
+
+188
+0:11:17,960 --> 0:11:19,960
+ And there's an installer.
+
+189
+0:11:19,960 --> 0:11:22,960
+ And the installer runs on a lot of computer platforms.
+
+190
+0:11:22,960 --> 0:11:24,960
+ Yes, the one you're using too.
+
+191
+0:11:24,960 --> 0:11:26,960
+ Probably.
+
+192
+0:11:26,960 --> 0:11:32,960
+ Or you can be lazy and spend a little more money and buy a pre-installed new device.
+
+193
+0:11:32,960 --> 0:11:35,960
+ There is the PinePhone. There is the Vola.
+
+194
+0:11:35,960 --> 0:11:37,960
+ They're a bit...
+
+195
+0:11:37,960 --> 0:11:40,960
+ Not all features work just yet.
+
+196
+0:11:40,960 --> 0:11:43,960
+ They're gonna be really nice, like pretty soon.
+
+197
+0:11:43,960 --> 0:11:45,960
+ Maybe not just today.
+
+198
+0:11:47,960 --> 0:11:55,960
+ And the third option is to buy a used device that somebody else has already flashed to Ubuntu Touch.
+
+199
+0:11:55,960 --> 0:12:02,960
+ Which is in most countries a very viable option for the lazy and works really well.
+
+200
+0:12:05,960 --> 0:12:11,960
+ But your best option is probably, because of more choice, to get a supported device and flash it yourself.
+
+201
+0:12:11,960 --> 0:12:14,960
+ And if I can do it, you can probably do it too.
+
+202
+0:12:14,960 --> 0:12:18,960
+ This is a look at the devices page.
+
+203
+0:12:18,960 --> 0:12:20,960
+ It shows you which devices are supported.
+
+204
+0:12:20,960 --> 0:12:25,960
+ You'll see some right at the top, which are the best supported.
+
+205
+0:12:25,960 --> 0:12:27,960
+ And the list goes on and on.
+
+206
+0:12:27,960 --> 0:12:32,960
+ As you can see, this picture was not taken today, but because there's one more today.
+
+207
+0:12:32,960 --> 0:12:37,960
+ And then you use the installer and it leads you through it.
+
+208
+0:12:37,960 --> 0:12:40,960
+ And it pretty much always works.
+
+209
+0:12:40,960 --> 0:12:42,960
+ And it's not hard.
+
+210
+0:12:42,960 --> 0:12:43,960
+ And there are instructions.
+
+211
+0:12:43,960 --> 0:12:46,960
+ It works fairly well.
+
+212
+0:12:46,960 --> 0:12:51,960
+ So, if you're interested, where else should you look?
+
+213
+0:12:51,960 --> 0:12:54,960
+ You should definitely look at this website.
+
+214
+0:12:54,960 --> 0:13:03,960
+ Because this is where you find the most important information about Ubuntu Touch and all the other websites that are related follow from here.
+
+215
+0:13:06,960 --> 0:13:09,960
+ So, are there any questions?
+
+216
+0:13:09,960 --> 0:13:14,960
+ If they're too technical, I will not be able to answer them.
+
+217
+0:13:14,960 --> 0:13:18,960
+ But I can probably point you to the place where you can get an answer.
+
+218
+0:13:18,960 --> 0:13:20,960
+ Or I can ask someone else.
+
+219
+0:13:20,960 --> 0:13:21,960
+ So, try me.
+
+220
+0:13:25,960 --> 0:13:29,960
+ And if I don't have an answer, I can always nod and smile.
+
+221
+0:13:29,960 --> 0:13:30,960
+ Okay.
+
+222
+0:13:30,960 --> 0:13:32,960
+ I just tried the demo device.
+
+223
+0:13:32,960 --> 0:13:33,960
+ Yes.
+
+224
+0:13:33,960 --> 0:13:38,960
+ And I was able to gain root by typing sudo i without typing any password.
+
+225
+0:13:38,960 --> 0:13:42,960
+ Do you know why that decision was made?
+
+226
+0:13:42,960 --> 0:13:47,960
+ Most likely because I set it to not lock in any way so you folks could look at it.
+
+227
+0:13:47,960 --> 0:13:48,960
+ Okay.
+
+228
+0:13:48,960 --> 0:13:49,960
+ Yeah.
+
+229
+0:13:49,960 --> 0:13:51,960
+ This is not standard security.
+
+230
+0:13:51,960 --> 0:13:53,960
+ This is no security.
+
+231
+0:13:53,960 --> 0:13:56,960
+ I also tried this.
+
+232
+0:13:56,960 --> 0:13:58,960
+ I could gain root the same way.
+
+233
+0:13:58,960 --> 0:13:59,960
+ Okay.
+
+234
+0:13:59,960 --> 0:14:01,960
+ That's pretty interesting.
+
+235
+0:14:01,960 --> 0:14:04,960
+ You have now hit the wall of my knowledge.
+
+236
+0:14:04,960 --> 0:14:05,960
+ Yeah.
+
+237
+0:14:05,960 --> 0:14:07,960
+ Also, on how to make a nice transparent.
+
+238
+0:14:07,960 --> 0:14:08,960
+ PNG.
+
+239
+0:14:08,960 --> 0:14:09,960
+ But, well.
+
+240
+0:14:09,960 --> 0:14:16,960
+ By default, Ubuntu Touch is right only.
+
+241
+0:14:16,960 --> 0:14:18,960
+ The root, at least, is right only.
+
+242
+0:14:18,960 --> 0:14:20,960
+ So, yes, you can gain root access.
+
+243
+0:14:20,960 --> 0:14:22,960
+ But you have to know how.
+
+244
+0:14:22,960 --> 0:14:23,960
+ It's done.
+
+245
+0:14:23,960 --> 0:14:25,960
+ It's not recommended unless you know what you're doing.
+
+246
+0:14:25,960 --> 0:14:28,960
+ Which I don't.
+
+247
+0:14:28,960 --> 0:14:30,960
+ So, it's not top secure.
+
+248
+0:14:30,960 --> 0:14:33,960
+ And that is not what it's there for.
+
+249
+0:14:33,960 --> 0:14:36,960
+ It's mostly focused on privacy more than on security.
+
+250
+0:14:36,960 --> 0:14:39,960
+ There are more secure phones.
+
+251
+0:14:39,960 --> 0:14:42,960
+ Does that answer your question in any way?
+
+252
+0:14:42,960 --> 0:14:44,960
+ Thank you.
+
+253
+0:14:44,960 --> 0:14:45,960
+ Anybody else?
+
+254
+0:14:55,960 --> 0:14:56,960
+ That was talk.
+
+255
+0:14:56,960 --> 0:14:58,960
+ If there are no more questions, then we're done here.
+
+256
+0:14:58,960 --> 0:15:02,960
+ Well, give an applause to Noam.
+
+257
+0:15:06,960 --> 0:15:16,960
+ Thank you very much.
