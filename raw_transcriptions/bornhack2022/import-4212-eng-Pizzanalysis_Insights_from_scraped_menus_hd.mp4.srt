@@ -1,0 +1,315 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tanya Cushman Reviewer.
+
+2
+0:00:16,200 --> 0:00:20,200
+ So, a long time ago, I scraped Just Eat,
+
+3
+0:00:20,200 --> 0:00:24,240
+ and the reason I did it was I had a coop.pizza domain,
+
+4
+0:00:24,240 --> 0:00:26,740
+ and I needed a project.
+
+5
+0:00:26,740 --> 0:00:31,340
+ The database consisted of over 200,000 pizzas.
+
+6
+0:00:31,340 --> 0:00:32,980
+ And here's an example.
+
+7
+0:00:32,980 --> 0:00:34,640
+ So, I have some columns here.
+
+8
+0:00:34,640 --> 0:00:36,380
+ We have a description, name, price,
+
+9
+0:00:36,380 --> 0:00:38,280
+ and I also have restaurant data.
+
+10
+0:00:39,200 --> 0:00:40,500
+ So, let's explore.
+
+11
+0:00:41,740 --> 0:00:43,940
+ If we look at a heat map of the restaurants,
+
+12
+0:00:43,940 --> 0:00:46,700
+ we can see Copenhagen is very popular.
+
+13
+0:00:46,700 --> 0:00:50,840
+ And if we zoom in on Copenhagen, we can see lines.
+
+14
+0:00:50,840 --> 0:00:53,240
+ These are actually the regional S-trains.
+
+15
+0:00:54,120 --> 0:00:56,080
+ And with all heat maps,
+
+16
+0:00:56,080 --> 0:00:59,280
+ with geography, it's just a measure
+
+17
+0:00:59,280 --> 0:01:02,320
+ of how dense the population is.
+
+18
+0:01:03,740 --> 0:01:07,520
+ Now, if we look at the descriptions of pizzas,
+
+19
+0:01:07,520 --> 0:01:10,120
+ we can see they list the ingredients.
+
+20
+0:01:10,120 --> 0:01:13,520
+ So, with some tricks, we can pass the ingredients,
+
+21
+0:01:14,520 --> 0:01:17,420
+ and then we can embed the ingredients in the vector space
+
+22
+0:01:17,420 --> 0:01:19,840
+ using Google's Word2Vec,
+
+23
+0:01:19,840 --> 0:01:22,080
+ and now we get pizza2vec.
+
+24
+0:01:22,080 --> 0:01:24,840
+ So, I have, I don't know if you can see the vectors,
+
+25
+0:01:24,840 --> 0:01:26,040
+ but ingredients,
+
+26
+0:01:26,040 --> 0:01:28,700
+ that are used together in pizzas,
+
+27
+0:01:28,700 --> 0:01:31,380
+ are close together in the vector space.
+
+28
+0:01:31,380 --> 0:01:35,580
+ So, now we can ask interesting questions like,
+
+29
+0:01:35,580 --> 0:01:39,600
+ what is the most similar ingredient to pineapple?
+
+30
+0:01:39,600 --> 0:01:40,780
+ And the answer is peas.
+
+31
+0:01:42,780 --> 0:01:45,580
+ And which ingredients are the most similar to pesto?
+
+32
+0:01:46,560 --> 0:01:49,580
+ And it's like, ingredients on fancy pizzas.
+
+33
+0:01:51,000 --> 0:01:52,760
+ And like, in general, we can see,
+
+34
+0:01:52,760 --> 0:01:56,040
+ if we use clustering algorithms on the vector space,
+
+35
+0:01:56,040 --> 0:01:59,220
+ we can see clusters of typical pizzas,
+
+36
+0:01:59,220 --> 0:02:02,740
+ like pepperoni pizzas, or salad pizzas, or fancy pizzas.
+
+37
+0:02:05,780 --> 0:02:07,280
+ Another interesting thing,
+
+38
+0:02:07,280 --> 0:02:08,620
+ when we consider the ingredients,
+
+39
+0:02:08,620 --> 0:02:12,380
+ is how much value does an ingredient add
+
+40
+0:02:12,380 --> 0:02:13,700
+ to the price of the pizza?
+
+41
+0:02:15,380 --> 0:02:18,040
+ So, can we predict prices,
+
+42
+0:02:18,040 --> 0:02:20,200
+ pizza prices, from the ingredients,
+
+43
+0:02:20,200 --> 0:02:24,040
+ and then look at how much does an ingredient affect the price?
+
+44
+0:02:25,080 --> 0:02:25,960
+ So, I did that.
+
+45
+0:02:26,040 --> 0:02:28,260
+ And like, I think we can, for certain,
+
+46
+0:02:28,260 --> 0:02:32,880
+ say that pineapple on pizza, like, is bad, economically.
+
+47
+0:02:33,940 --> 0:02:35,880
+ So, if we like, ignore causality,
+
+48
+0:02:35,880 --> 0:02:38,420
+ like, you could pull away the pineapple on the pizza
+
+49
+0:02:38,420 --> 0:02:43,220
+ and sell it for more, in another place.
+
+50
+0:02:43,220 --> 0:02:44,440
+ And like, we can definitely see, like,
+
+51
+0:02:44,440 --> 0:02:46,120
+ more fancy pizzas at the top,
+
+52
+0:02:46,120 --> 0:02:49,080
+ like adding pesto to your pizza increases the price
+
+53
+0:02:49,080 --> 0:02:50,660
+ by, what, eight kroner?
+
+54
+0:02:54,240 --> 0:02:55,400
+ Another interesting thing,
+
+55
+0:02:55,400 --> 0:02:58,100
+ is to look at something I call the margarita index.
+
+56
+0:02:58,100 --> 0:03:01,780
+ So, like, we can just look at normal-sized margaritas
+
+57
+0:03:01,780 --> 0:03:05,040
+ on all, like, on all pizzerias.
+
+58
+0:03:06,940 --> 0:03:10,520
+ The problem is, margarita is, like, very hard to spell.
+
+59
+0:03:11,780 --> 0:03:13,040
+ So, it's more like this.
+
+60
+0:03:15,580 --> 0:03:17,200
+ This was hard to visualize.
+
+61
+0:03:17,200 --> 0:03:20,160
+ But, like, in general, we can see that slices,
+
+62
+0:03:20,160 --> 0:03:22,540
+ like, pizza slices, cheaper in bigger cities,
+
+63
+0:03:22,540 --> 0:03:25,280
+ and whole pizzas aren't cheaper in the bigger cities.
+
+64
+0:03:25,400 --> 0:03:30,160
+ And that's it.
+
+65
+0:03:30,160 --> 0:03:33,440
+ Like, I think there's a lot of interesting further research,
+
+66
+0:03:33,440 --> 0:03:36,500
+ like what's the opposite of a pineapple pizza?
+
+67
+0:03:36,500 --> 0:03:38,780
+ Like, we can embed pizzas into a vector space, as well,
+
+68
+0:03:38,780 --> 0:03:41,200
+ and just look at, like, the opposite vector.
+
+69
+0:03:41,200 --> 0:03:44,400
+ But also, like, I noticed that I had a database dump
+
+70
+0:03:44,400 --> 0:03:45,900
+ from, like, several months ago,
+
+71
+0:03:45,900 --> 0:03:48,220
+ so I can actually track inflation...
+
+72
+0:03:48,220 --> 0:03:50,700
+ Quite well.
+
+73
+0:03:50,700 --> 0:03:52,940
+ And also, like, looking at purchasing power,
+
+74
+0:03:52,940 --> 0:03:54,080
+ so we can look at these, like, prices of pizza.
+
+75
+0:03:54,080 --> 0:03:57,700
+ like prices of pizza versus how much do people earn in that region.
+
+76
+0:03:58,780 --> 0:04:02,080
+ And I think this is a really interesting indicator for the stock market.
+
+77
+0:04:02,440 --> 0:04:06,800
+ And I think I can find spurious correlations that gives that result.
+
+78
+0:04:07,680 --> 0:04:08,480
+ And that's it.

@@ -1,0 +1,2107 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tanya Cushman Reviewer:"Tanya Cushman Reviewer:"
+
+2
+0:00:14,720 --> 0:00:15,800
+ Right, let's begin.
+
+3
+0:00:15,800 --> 0:00:17,360
+ Blinking lights, friend or foe,
+
+4
+0:00:17,360 --> 0:00:19,760
+ a history of sideline attacks through the ages.
+
+5
+0:00:19,760 --> 0:00:21,600
+ First of all, who am I?
+
+6
+0:00:23,680 --> 0:00:26,200
+ I'm a security consultant at WebSecure.
+
+7
+0:00:26,200 --> 0:00:29,160
+ I'm also a CTF player for a camera union,
+
+8
+0:00:29,160 --> 0:00:32,160
+ and I'm also a Bonhack participant here in the Pyjamas camp.
+
+9
+0:00:33,640 --> 0:00:36,960
+ So a quick TLDR, what is this talk going to cover?
+
+10
+0:00:36,960 --> 0:00:40,240
+ First of all, if you were expecting it to be about the hit 2000 movie,
+
+11
+0:00:40,240 --> 0:00:43,120
+ Blinking lights, it's sadly not going to be about that,
+
+12
+0:00:43,120 --> 0:00:45,040
+ but it is a good movie.
+
+13
+0:00:45,040 --> 0:00:48,880
+ What we're going to talk about first is what are sideline attacks,
+
+14
+0:00:48,880 --> 0:00:54,080
+ a history of the sideline attacks starting around the 1940s going up to the 80s.
+
+15
+0:00:54,080 --> 0:00:56,480
+ We're going to talk about a bunch more sideline attacks,
+
+16
+0:00:56,480 --> 0:00:58,880
+ how they work, how can we categorize them,
+
+17
+0:00:58,880 --> 0:01:03,160
+ why attacks like these pop up, and why they matter.
+
+18
+0:01:03,160 --> 0:01:07,440
+ So first of all, what is a sideline attack?
+
+19
+0:01:07,440 --> 0:01:10,520
+ And this is the formal definition you'll find if you go on Wikipedia.
+
+20
+0:01:10,520 --> 0:01:14,040
+ It's a sideline attack is any attack based on extra information
+
+21
+0:01:14,040 --> 0:01:16,600
+ that can be gathered because of the fundamental way
+
+22
+0:01:16,600 --> 0:01:19,760
+ a computer protocol or algorithm is implemented,
+
+23
+0:01:19,760 --> 0:01:24,080
+ rather than flaws in the design of the protocol or algorithm itself.
+
+24
+0:01:24,080 --> 0:01:25,920
+ I don't agree with this definition.
+
+25
+0:01:25,920 --> 0:01:28,560
+ For me, it's just any attack being based on...
+
+26
+0:01:28,880 --> 0:01:31,640
+ information gathered in a fundamental way
+
+27
+0:01:31,640 --> 0:01:34,040
+ because of how the system is implemented.
+
+28
+0:01:34,040 --> 0:01:37,280
+ It doesn't have to be on computer protocols or algorithms.
+
+29
+0:01:37,280 --> 0:01:40,560
+ You can do side channel attacks on anything.
+
+30
+0:01:40,560 --> 0:01:43,520
+ So start an example, you are a baker in a small town,
+
+31
+0:01:43,520 --> 0:01:45,400
+ like Gilstedtel here, for example,
+
+32
+0:01:45,400 --> 0:01:49,000
+ and there opens up a competing baker who starts stealing a lot of your business.
+
+33
+0:01:49,000 --> 0:01:50,880
+ You're suddenly every single day throwing bread out
+
+34
+0:01:50,880 --> 0:01:51,880
+ because you're making too much.
+
+35
+0:01:51,880 --> 0:01:53,840
+ You don't know how many customers you've stolen.
+
+36
+0:01:53,840 --> 0:01:55,440
+ And of course, you're a bit mad at him.
+
+37
+0:01:55,440 --> 0:01:56,400
+ You can't just go up and ask him,
+
+38
+0:01:56,400 --> 0:01:58,160
+ hey, how many people are you selling to?
+
+39
+0:01:58,880 --> 0:02:02,440
+ So instead, what you do, you go first in the morning,
+
+40
+0:02:02,440 --> 0:02:05,040
+ you go buy a piece of bread from him, first thing, as soon as he opens,
+
+41
+0:02:05,040 --> 0:02:06,480
+ and you keep the receipt.
+
+42
+0:02:06,480 --> 0:02:09,600
+ End of day, you go back, buy another piece of bread or whatever,
+
+43
+0:02:09,600 --> 0:02:11,280
+ and you get the other receipt.
+
+44
+0:02:11,280 --> 0:02:13,640
+ You now have two receipts with two order numbers,
+
+45
+0:02:13,640 --> 0:02:16,640
+ and you can see exactly how many orders were made in the day
+
+46
+0:02:16,640 --> 0:02:22,120
+ because on all receipts, order numbers like this are sequential most of the time.
+
+47
+0:02:22,120 --> 0:02:23,920
+ There's nothing technical here.
+
+48
+0:02:23,920 --> 0:02:28,680
+ It was just a system that was implemented for the rival baker to keep track of how many,
+
+49
+0:02:28,880 --> 0:02:30,640
+ how many orders he's had.
+
+50
+0:02:30,640 --> 0:02:35,360
+ You used it for your own advantage to figure out how many customers he's gotten.
+
+51
+0:02:35,360 --> 0:02:38,120
+ So we start our story in the Second World War,
+
+52
+0:02:38,120 --> 0:02:42,960
+ where this was what side channel tax started popping up and becoming a thing.
+
+53
+0:02:42,960 --> 0:02:45,960
+ So right before D-Day, we had the Panzer V Panther tank.
+
+54
+0:02:45,960 --> 0:02:49,360
+ It was new, created by the Germans, and American tanks,
+
+55
+0:02:49,360 --> 0:02:51,760
+ it was unknown how effective they were against them.
+
+56
+0:02:51,760 --> 0:02:56,800
+ However, they had only been seen in Italy so far, so no stress on that front.
+
+57
+0:02:56,800 --> 0:02:58,720
+ However, in the couple of days
+
+58
+0:02:58,880 --> 0:03:02,200
+ leading up to D-Day, there were suddenly lots of rumors about these tanks appearing
+
+59
+0:03:02,200 --> 0:03:05,200
+ in France and Normandy, where the landings would happen,
+
+60
+0:03:05,200 --> 0:03:10,200
+ and the Allied forces really needed to know how many tanks are going to be there.
+
+61
+0:03:10,200 --> 0:03:11,600
+ So what did they do?
+
+62
+0:03:11,600 --> 0:03:14,440
+ For the tanks they already had destroyed or captured,
+
+63
+0:03:14,440 --> 0:03:16,360
+ they started tearing them apart.
+
+64
+0:03:16,360 --> 0:03:21,520
+ And inside the gearboxes, the cogwheels were sequentially numbered with their serial numbers.
+
+65
+0:03:21,520 --> 0:03:26,200
+ And also importantly, it also had the number of what gear mold produced the cogwheel.
+
+66
+0:03:26,200 --> 0:03:27,800
+ Based off this information,
+
+67
+0:03:27,800 --> 0:03:28,840
+ they could actually estimate
+
+68
+0:03:28,840 --> 0:03:30,640
+ how many tanks they had been able to produce,
+
+69
+0:03:30,640 --> 0:03:32,080
+ because they knew how many gear molds they had,
+
+70
+0:03:32,080 --> 0:03:34,720
+ and you can't have a tank without a gearbox.
+
+71
+0:03:34,720 --> 0:03:39,800
+ And they estimated 270 tanks had been produced in February 1944.
+
+72
+0:03:39,800 --> 0:03:43,240
+ And this was substantially higher than any rumors that they had.
+
+73
+0:03:43,240 --> 0:03:45,080
+ So this was really important information to get.
+
+74
+0:03:45,080 --> 0:03:47,360
+ They could prepare for this.
+
+75
+0:03:47,360 --> 0:03:53,800
+ After the war, documents confirmed 276 Panzer V Panther tanks had been produced.
+
+76
+0:03:53,800 --> 0:03:57,960
+ They had estimated this just off the serial numbers on gearboxes.
+
+77
+0:03:57,960 --> 0:04:01,080
+ This is honestly where I would start saying side-channel attacks.
+
+78
+0:04:01,080 --> 0:04:06,320
+ This is where they started getting used in military applications or by governments for attackers.
+
+79
+0:04:06,320 --> 0:04:08,320
+ There was a system that was introduced.
+
+80
+0:04:08,320 --> 0:04:10,440
+ Without consideration of every single part of it,
+
+81
+0:04:10,440 --> 0:04:15,280
+ they didn't consider how could the serial numbers on gears be abused.
+
+82
+0:04:15,280 --> 0:04:18,160
+ And it was abused.
+
+83
+0:04:18,160 --> 0:04:21,240
+ Next up, we have the 131 B-2 Mixer.
+
+84
+0:04:21,240 --> 0:04:24,880
+ This was an encrypted teleprinter in use during the Second World War,
+
+85
+0:04:24,880 --> 0:04:26,880
+ and it was built off the one-time pad principle.
+
+86
+0:04:27,960 --> 0:04:32,760
+ And it was basically built with a whole bunch of electromechanical relays or switches,
+
+87
+0:04:32,760 --> 0:04:37,840
+ which turns out they actually gave off quite a bit of electromagnetic radiation.
+
+88
+0:04:37,840 --> 0:04:41,200
+ And turns out by observing this information here,
+
+89
+0:04:41,200 --> 0:04:44,400
+ you could actually figure out the plain text.
+
+90
+0:04:44,400 --> 0:04:49,040
+ And this was actually Alexander Graham Bell of the Bell Telephone Company
+
+91
+0:04:49,040 --> 0:04:51,120
+ who discovered this attack.
+
+92
+0:04:51,120 --> 0:04:57,280
+ And he researched and he found there was three different radiated signals that were of importance.
+
+93
+0:04:57,280 --> 0:05:01,800
+ There was just signals, the standard EMF radiation in the local area.
+
+94
+0:05:01,800 --> 0:05:07,280
+ There was noise being carried by the communication wires in which the plain text could be snatched up.
+
+95
+0:05:07,280 --> 0:05:10,040
+ And there was through the magnetic fields as well.
+
+96
+0:05:10,040 --> 0:05:15,760
+ So we created a new version, the 131 A-1, which had shielding and filtering and stuff like that.
+
+97
+0:05:15,760 --> 0:05:18,200
+ But it was large. It was unwieldy.
+
+98
+0:05:18,200 --> 0:05:20,920
+ It didn't really work on the battlefield.
+
+99
+0:05:20,920 --> 0:05:24,160
+ Turns out we just implemented a 30-meter perimeter around the thing,
+
+100
+0:05:24,160 --> 0:05:26,640
+ and that kind of solved most of the issues at least.
+
+101
+0:05:26,640 --> 0:05:28,400
+ Made it safe enough to use.
+
+102
+0:05:28,400 --> 0:05:30,320
+ However, it turns out later in 1951,
+
+103
+0:05:30,320 --> 0:05:34,400
+ the CIA discovered they could retrieve the signals from this half a kilometer away
+
+104
+0:05:34,400 --> 0:05:36,240
+ due to the noise being sent through the signals.
+
+105
+0:05:36,240 --> 0:05:39,920
+ And we're like, oh no, we've got to fix it because they'd still been using the same system.
+
+106
+0:05:39,920 --> 0:05:43,840
+ And then they started developing signal and power line filters.
+
+107
+0:05:43,840 --> 0:05:48,120
+ They started isolating it as much as they could.
+
+108
+0:05:48,120 --> 0:05:49,560
+ And it kind of turned into a cat and mouse game
+
+109
+0:05:49,560 --> 0:05:52,360
+ because this machine was also quite loud while it was encrypting.
+
+110
+0:05:52,360 --> 0:05:54,560
+ All these switches were triggering.
+
+111
+0:05:54,560 --> 0:05:56,640
+ Turns out you could also, through just listening to it,
+
+112
+0:05:56,640 --> 0:05:58,520
+ you could extract the plain text as well.
+
+113
+0:05:58,520 --> 0:06:02,040
+ So they soundproofed the room and they soundproofed the box the room was in.
+
+114
+0:06:02,040 --> 0:06:04,600
+ Turns out it just made the signals easier to record.
+
+115
+0:06:04,600 --> 0:06:07,360
+ So they just created a 100-meter perimeter and said,
+
+116
+0:06:07,360 --> 0:06:09,440
+ okay, you know what, let's get onwards with it.
+
+117
+0:06:09,440 --> 0:06:11,960
+ We kind of got to get something else.
+
+118
+0:06:11,960 --> 0:06:14,080
+ But this is where they were like, oh shit,
+
+119
+0:06:14,080 --> 0:06:18,920
+ we've got to do something about these signals that are being radiated out.
+
+120
+0:06:18,920 --> 0:06:22,560
+ Next up towards the end of the war in 1944,
+
+121
+0:06:22,560 --> 0:06:25,680
+ the Russians and the U.S. were still in good terms there.
+
+122
+0:06:25,680 --> 0:06:26,400
+ So, I don't know if you've heard this, but the Russians and the U.S. were still in good terms there.
+
+123
+0:06:26,400 --> 0:06:26,600
+ So, I don't know if you've heard this, but the Russians and the U.S. were still in good terms there.
+
+124
+0:06:26,640 --> 0:06:26,720
+ So, I don't know if you've heard this, but the Russians and the U.S. were still in good terms there.
+
+125
+0:06:26,720 --> 0:06:26,760
+ So, I don't know if you've heard this, but the Russians and the U.S. were still in good terms there.
+
+126
+0:06:26,760 --> 0:06:26,800
+ So, I don't know if you've heard this, but the Russians and the U.S. were still in good terms there.
+
+127
+0:06:26,800 --> 0:06:30,640
+ A bunch of Russian boy scouts, they gifted this lovely wooden seal
+
+128
+0:06:30,640 --> 0:06:33,600
+ to the U.S. ambassador in the Soviet Union.
+
+129
+0:06:33,600 --> 0:06:37,320
+ And yeah, okay, it's still something gifted by the Soviet Union,
+
+130
+0:06:37,320 --> 0:06:38,600
+ you don't really trust it.
+
+131
+0:06:38,600 --> 0:06:41,240
+ But they scanned it with nonlinear junction detectors,
+
+132
+0:06:41,240 --> 0:06:44,400
+ which basically just search for active electronics.
+
+133
+0:06:44,400 --> 0:06:46,040
+ They couldn't find anything.
+
+134
+0:06:46,040 --> 0:06:49,000
+ As far as they knew, it was just a piece of wood
+
+135
+0:06:49,000 --> 0:06:51,440
+ carved into the U.S. seal there.
+
+136
+0:06:52,960 --> 0:06:55,200
+ Key word was active components.
+
+137
+0:06:55,200 --> 0:06:56,400
+ Inside there was a complete,
+
+138
+0:06:56,400 --> 0:07:00,520
+ completely passive bug where it consisted of an antenna
+
+139
+0:07:00,520 --> 0:07:01,520
+ and a membrane.
+
+140
+0:07:01,520 --> 0:07:04,920
+ And the membrane essentially being just a piece of plastic.
+
+141
+0:07:04,920 --> 0:07:08,440
+ Sound waves inside the room would vibrate this membrane,
+
+142
+0:07:08,440 --> 0:07:10,560
+ which was attached to the antenna.
+
+143
+0:07:10,560 --> 0:07:12,600
+ And what happened is this antenna,
+
+144
+0:07:12,600 --> 0:07:15,640
+ when you hit it with the right frequency radio signal,
+
+145
+0:07:15,640 --> 0:07:18,720
+ it would then resonate and it will give off its own signal,
+
+146
+0:07:18,720 --> 0:07:20,600
+ which could be picked up by radio.
+
+147
+0:07:20,600 --> 0:07:23,400
+ And the sound waves would then modulate the people talking
+
+148
+0:07:23,400 --> 0:07:26,160
+ within the room, this signal onto the,
+
+149
+0:07:26,160 --> 0:07:27,880
+ repeated signal.
+
+150
+0:07:27,880 --> 0:07:30,160
+ And so it turns out you could,
+
+151
+0:07:30,160 --> 0:07:34,600
+ they sent a 300 kilohertz signal, I believe it was, to it.
+
+152
+0:07:34,600 --> 0:07:36,320
+ And then they could hear everything that was going on
+
+153
+0:07:36,320 --> 0:07:38,480
+ inside the ambassador's private quarters,
+
+154
+0:07:38,480 --> 0:07:40,320
+ which is quite a lot of information leaked.
+
+155
+0:07:40,320 --> 0:07:43,200
+ Turns out then in 1951, a British radio operator
+
+156
+0:07:43,200 --> 0:07:45,960
+ at the British embassy, just down the road,
+
+157
+0:07:45,960 --> 0:07:49,000
+ he was listening to open Soviet Air Force radio channels,
+
+158
+0:07:49,000 --> 0:07:50,680
+ and suddenly he heard the U.S. ambassador
+
+159
+0:07:50,680 --> 0:07:52,960
+ to the Soviet Union talking.
+
+160
+0:07:52,960 --> 0:07:54,720
+ Kind of bad, doesn't really work.
+
+161
+0:07:56,160 --> 0:07:59,880
+ And turns out, just a couple of fun facts about this.
+
+162
+0:07:59,880 --> 0:08:01,520
+ One, it was created by Leon Farriman,
+
+163
+0:08:01,520 --> 0:08:03,760
+ the guy who created the Farriman instrument.
+
+164
+0:08:03,760 --> 0:08:06,960
+ And it's also essentially how RFID works.
+
+165
+0:08:06,960 --> 0:08:10,400
+ You send a radio signal, resonate an antenna,
+
+166
+0:08:10,400 --> 0:08:12,280
+ and you get data out from that.
+
+167
+0:08:12,280 --> 0:08:15,080
+ But this is where side channel attacks had begun.
+
+168
+0:08:17,160 --> 0:08:18,760
+ Introducing Tempest.
+
+169
+0:08:18,760 --> 0:08:20,560
+ Tempest was then a U.S. code word
+
+170
+0:08:20,560 --> 0:08:23,280
+ for dealing with side channel attacks.
+
+171
+0:08:23,280 --> 0:08:25,880
+ It has then been backronym to telecommunications electronics,
+
+172
+0:08:25,880 --> 0:08:29,720
+ material protected from emanating spurious transmissions.
+
+173
+0:08:29,720 --> 0:08:31,480
+ And I will not be repeating that.
+
+174
+0:08:33,240 --> 0:08:35,480
+ But it's both a set of standards
+
+175
+0:08:35,480 --> 0:08:37,880
+ for protecting hardware from leaking signals.
+
+176
+0:08:37,880 --> 0:08:41,560
+ It's also just the term for all side channel attacks
+
+177
+0:08:41,560 --> 0:08:43,160
+ that the NSA use.
+
+178
+0:08:43,160 --> 0:08:46,280
+ It's just attacks that attack systems
+
+179
+0:08:46,280 --> 0:08:47,680
+ and not attack it directly,
+
+180
+0:08:47,680 --> 0:08:49,400
+ but what's getting leaked out of it.
+
+181
+0:08:49,400 --> 0:08:51,720
+ These standards, it leads to development of things
+
+182
+0:08:51,720 --> 0:08:53,440
+ such as red-black separation,
+
+183
+0:08:53,440 --> 0:08:55,680
+ where there physically has to be a few centimeters
+
+184
+0:08:55,680 --> 0:08:58,160
+ of separation between red wires and black wires,
+
+185
+0:08:58,160 --> 0:09:00,000
+ where black wires carry plain text
+
+186
+0:09:00,000 --> 0:09:02,480
+ and red wires carry only cipher text.
+
+187
+0:09:03,800 --> 0:09:07,960
+ And then 1958, first policy regarding EMF radiation standards
+
+188
+0:09:07,960 --> 0:09:10,880
+ for military use was put in place.
+
+189
+0:09:10,880 --> 0:09:12,640
+ It was stopped, U.S. came with it first,
+
+190
+0:09:12,640 --> 0:09:15,040
+ but it was quickly adopted by Canada, UK,
+
+191
+0:09:15,040 --> 0:09:18,280
+ and other allied forces at least.
+
+192
+0:09:18,280 --> 0:09:20,440
+ And with the Cold War well underway,
+
+193
+0:09:20,440 --> 0:09:23,280
+ they really needed to start controlling these signals.
+
+194
+0:09:23,280 --> 0:09:24,920
+ Because at the same time,
+
+195
+0:09:24,920 --> 0:09:29,600
+ over 900 different listening devices and sensors
+
+196
+0:09:29,600 --> 0:09:31,200
+ had been found in U.S. installations
+
+197
+0:09:31,200 --> 0:09:32,520
+ behind the Iron Curtain.
+
+198
+0:09:33,720 --> 0:09:36,160
+ You could not just ignore tempest leakages.
+
+199
+0:09:36,160 --> 0:09:38,400
+ This was something they had to take care of.
+
+200
+0:09:38,400 --> 0:09:40,560
+ This led to a whole bunch of developments,
+
+201
+0:09:40,560 --> 0:09:43,200
+ such as what's called inside rooms.
+
+202
+0:09:43,200 --> 0:09:46,680
+ So they took an anechoic chamber like this,
+
+203
+0:09:46,680 --> 0:09:48,840
+ and they put another room inside of it
+
+204
+0:09:48,840 --> 0:09:51,480
+ to avoid any signals leaking out.
+
+205
+0:09:51,480 --> 0:09:54,440
+ And we also have rooms like these, which just isolate,
+
+206
+0:09:54,440 --> 0:09:57,840
+ isolate completely for RF radiation as well.
+
+207
+0:09:57,840 --> 0:10:01,200
+ And what was our one issue is all the employees
+
+208
+0:10:01,200 --> 0:10:03,800
+ of these embassies and that,
+
+209
+0:10:03,800 --> 0:10:05,880
+ they kind of refer to these as the meat lockers
+
+210
+0:10:05,880 --> 0:10:06,720
+ because they were really hot,
+
+211
+0:10:06,720 --> 0:10:08,640
+ so we just left the door open,
+
+212
+0:10:08,640 --> 0:10:10,840
+ kind of ruining the entire attack.
+
+213
+0:10:10,840 --> 0:10:12,760
+ But you can buy one, first of all,
+
+214
+0:10:12,760 --> 0:10:14,360
+ you can buy one of these boxes for yourself,
+
+215
+0:10:14,360 --> 0:10:16,400
+ a couple of million dollars if you want.
+
+216
+0:10:16,400 --> 0:10:18,280
+ Second of all, they're not just used
+
+217
+0:10:18,280 --> 0:10:20,840
+ for protecting against military attacks,
+
+218
+0:10:20,840 --> 0:10:24,120
+ so that if you do any research regarding radar waves,
+
+219
+0:10:24,120 --> 0:10:26,160
+ for example, you're going to be doing it
+
+220
+0:10:26,160 --> 0:10:27,840
+ inside one of these rooms.
+
+221
+0:10:27,840 --> 0:10:29,800
+ It's essentially a big Faraday cage.
+
+222
+0:10:29,800 --> 0:10:31,480
+ But also, if you have an installation
+
+223
+0:10:31,480 --> 0:10:33,440
+ where secure numbers are being generated,
+
+224
+0:10:33,440 --> 0:10:35,520
+ such as in banking sector, stuff like that,
+
+225
+0:10:35,520 --> 0:10:37,320
+ it also occurs within one of these rooms
+
+226
+0:10:37,320 --> 0:10:41,000
+ because this security needs to be taken seriously.
+
+227
+0:10:41,000 --> 0:10:42,840
+ And so on, this cat and mouse game
+
+228
+0:10:42,840 --> 0:10:46,400
+ between both the Americans and the Russians
+
+229
+0:10:46,400 --> 0:10:48,080
+ and side channel attacks on both sides
+
+230
+0:10:48,080 --> 0:10:51,080
+ continued at least until the 80s,
+
+231
+0:10:51,080 --> 0:10:53,680
+ beginning the age of hackers, at least
+
+232
+0:10:54,120 --> 0:10:56,080
+ in the 1980s,
+
+233
+0:10:56,080 --> 0:10:57,520
+ and then the 80s,
+
+234
+0:10:57,520 --> 0:10:59,120
+ when the 80s came along,
+
+235
+0:10:59,120 --> 0:11:00,640
+ and the 80s was the time
+
+236
+0:11:00,640 --> 0:11:03,040
+ when the world was going through a lot of chaos.
+
+237
+0:11:03,040 --> 0:11:05,000
+ And so far, all these attacks,
+
+238
+0:11:05,000 --> 0:11:06,600
+ they had been government only.
+
+239
+0:11:06,600 --> 0:11:10,040
+ It was quite massive amount of resources in that.
+
+240
+0:11:10,040 --> 0:11:12,720
+ But the 80s, computers starting to become pretty popular.
+
+241
+0:11:12,720 --> 0:11:14,320
+ I'm pretty sure there's several people in the audience
+
+242
+0:11:14,320 --> 0:11:17,160
+ who were already playing with their first computers back then.
+
+243
+0:11:17,160 --> 0:11:20,560
+ And I'm just going to cut to a BBC video clip from the 80s
+
+244
+0:11:20,560 --> 0:11:22,240
+ because it just explains what happened
+
+245
+0:11:22,240 --> 0:11:24,080
+ so much better than I ever could.
+
+246
+0:11:24,120 --> 0:11:25,720
+ This receiving system here,
+
+247
+0:11:25,720 --> 0:11:27,800
+ that's not linked to it in any way at all.
+
+248
+0:11:27,800 --> 0:11:29,440
+ It's only £100 worth of equipment,
+
+249
+0:11:29,440 --> 0:11:31,680
+ so it's not the greatest picture,
+
+250
+0:11:31,680 --> 0:11:33,920
+ and I'll try and stabilise it a bit there.
+
+251
+0:11:33,920 --> 0:11:36,320
+ And if I move the aerial,
+
+252
+0:11:36,320 --> 0:11:39,400
+ you can see that the information disappears off the screen.
+
+253
+0:11:39,400 --> 0:11:43,320
+ Move it back, and it returns.
+
+254
+0:11:43,320 --> 0:11:45,920
+ Now, all we've got here is an ordinary television set
+
+255
+0:11:45,920 --> 0:11:47,600
+ with an aerial and an amplifier
+
+256
+0:11:47,600 --> 0:11:50,120
+ and a rather special, if cheap, box of tricks.
+
+257
+0:11:50,120 --> 0:11:52,720
+ But we had to go to the Dr. Nair Laboratories in Holland
+
+258
+0:11:52,720 --> 0:11:53,840
+ to get hold of it.
+
+259
+0:11:54,120 --> 0:11:56,160
+ And actually, they use this equipment quite legally
+
+260
+0:11:56,160 --> 0:11:58,280
+ to investigate this very problem.
+
+261
+0:11:58,280 --> 0:12:01,720
+ And they were the only people who we knew
+
+262
+0:12:01,720 --> 0:12:04,960
+ who could find out and would admit to having it.
+
+263
+0:12:04,960 --> 0:12:08,080
+ Well, we've seen it working in the controlled conditions of the studio,
+
+264
+0:12:08,080 --> 0:12:12,080
+ but yesterday, we set this up to see how it would work outside.
+
+265
+0:12:12,080 --> 0:12:14,080
+ There you go.
+
+266
+0:12:14,080 --> 0:12:17,760
+ So, as you can see, we're outside an office block in West London,
+
+267
+0:12:17,760 --> 0:12:20,440
+ and we found that there's a VDU screen operating
+
+268
+0:12:20,440 --> 0:12:23,840
+ about halfway up the building, probably on the seventh or eighth floor.
+
+269
+0:12:24,120 --> 0:12:28,960
+ And in fact, it's a letter being typed out on that screen.
+
+270
+0:12:28,960 --> 0:12:30,560
+ I can actually read it here.
+
+271
+0:12:30,560 --> 0:12:34,800
+ It says, Dear Mr. Jackson, thank you for your...
+
+272
+0:12:34,800 --> 0:12:40,240
+ Whoops. Thank you for your letter requesting the use...
+
+273
+0:12:40,240 --> 0:12:41,600
+ Whoops, I've lost it again.
+
+274
+0:12:41,600 --> 0:12:44,440
+ ...requesting the use of our facilities.
+
+275
+0:12:44,440 --> 0:12:47,120
+ At least stop the video there.
+
+276
+0:12:47,120 --> 0:12:50,480
+ But what had happened was someone called Wim van Eyck,
+
+277
+0:12:50,480 --> 0:12:53,080
+ he had discovered what's called van Eyck phreaking.
+
+278
+0:12:53,080 --> 0:12:53,960
+ And they even said they could do it
+
+279
+0:12:53,960 --> 0:12:56,400
+ for a hundred pounds.
+
+280
+0:12:56,400 --> 0:12:59,600
+ Turns out you could actually do it for like a hundred kroners' worth of equipment.
+
+281
+0:12:59,600 --> 0:13:01,600
+ You could read the signals being...
+
+282
+0:13:01,600 --> 0:13:05,960
+ that were coming off from a CRT monitor remotely from large distances.
+
+283
+0:13:05,960 --> 0:13:08,120
+ And this was kind of a big deal,
+
+284
+0:13:08,120 --> 0:13:10,520
+ because he had done it as a private person
+
+285
+0:13:10,520 --> 0:13:12,080
+ with a hundred kroners' worth of equipment,
+
+286
+0:13:12,080 --> 0:13:15,440
+ antenna and something, bought a radio shack, basically.
+
+287
+0:13:15,440 --> 0:13:18,000
+ Everyone thought so far, oh no, attacks like these,
+
+288
+0:13:18,000 --> 0:13:22,480
+ only... it's only governments we need to take care of it, threat actors.
+
+289
+0:13:22,480 --> 0:13:23,760
+ But turns out everyone could,
+
+290
+0:13:23,960 --> 0:13:26,000
+ and this kind of split the entire field.
+
+291
+0:13:26,000 --> 0:13:27,800
+ Everyone was rushing.
+
+292
+0:13:27,800 --> 0:13:31,600
+ And from here, we kind of can't really talk about like,
+
+293
+0:13:31,600 --> 0:13:34,480
+ historically, what side channel attacks come on next,
+
+294
+0:13:34,480 --> 0:13:37,200
+ because there are just so many attacks.
+
+295
+0:13:37,200 --> 0:13:39,600
+ It's more important to talk about them in general.
+
+296
+0:13:41,040 --> 0:13:44,280
+ So for next up here, the implications of aesthetics.
+
+297
+0:13:44,280 --> 0:13:45,680
+ Everyone's seen a network switch,
+
+298
+0:13:45,680 --> 0:13:47,480
+ and on every single network switch in the world,
+
+299
+0:13:47,480 --> 0:13:52,480
+ there is a small activity LEDs there saying what ports are active.
+
+300
+0:13:53,960 --> 0:13:57,560
+ Or as we like to call them, blinking lights.
+
+301
+0:13:57,560 --> 0:14:00,080
+ This led to this lovely sign being created,
+
+302
+0:14:00,080 --> 0:14:06,320
+ which it turns out this sign had actually been hanging around IBM computer rooms since 1955.
+
+303
+0:14:06,320 --> 0:14:08,200
+ And it says,
+
+304
+0:14:08,200 --> 0:14:11,040
+ .
+
+305
+0:14:11,040 --> 0:14:15,440
+ .
+
+306
+0:14:15,440 --> 0:14:21,360
+ .
+
+307
+0:14:21,360 --> 0:14:23,040
+ .
+
+308
+0:14:23,040 --> 0:14:34,360
+ .
+
+309
+0:14:34,360 --> 0:14:38,200
+ But back to the diagnostic LEDs, back to the network switch.
+
+310
+0:14:38,200 --> 0:14:40,000
+ And let's put yourself in the shoes.
+
+311
+0:14:40,000 --> 0:14:42,880
+ You are an engineer that's been tasked to build the network switch,
+
+312
+0:14:42,880 --> 0:14:47,320
+ and specifically, you have to create these activity LEDs.
+
+313
+0:14:47,320 --> 0:14:51,120
+ We have the pin out here of an ethernet cable, RJ45 cable,
+
+314
+0:14:51,120 --> 0:14:52,520
+ where, of course, you can see there's
+
+315
+0:14:52,520 --> 0:14:55,040
+ just RX plus minus.
+
+316
+0:14:55,040 --> 0:14:59,200
+ So why don't we just hook the LED directly up to that wire there?
+
+317
+0:14:59,200 --> 0:15:01,760
+ And then we don't have to create any fancy electronics
+
+318
+0:15:01,760 --> 0:15:06,200
+ to handle to figure out when these ports are active.
+
+319
+0:15:06,200 --> 0:15:10,120
+ Does anyone see the problem here?
+
+320
+0:15:10,120 --> 0:15:13,760
+ In 2002, Joe Lurie and David A. Umphress,
+
+321
+0:15:13,760 --> 0:15:15,960
+ they had a research paper came out titled,
+
+322
+0:15:15,960 --> 0:15:18,960
+ Information Leakage from Optical Ammonitions.
+
+323
+0:15:18,960 --> 0:15:21,840
+ They had realized you can just record the LED, and that way,
+
+324
+0:15:21,840 --> 0:15:25,840
+ you can get all the data coming off the cable.
+
+325
+0:15:25,840 --> 0:15:27,000
+ Bit of an issue.
+
+326
+0:15:27,000 --> 0:15:29,800
+ And this, everyone, when this paper came out, were like,
+
+327
+0:15:29,800 --> 0:15:32,080
+ holy shit, we've been idiots.
+
+328
+0:15:32,080 --> 0:15:35,720
+ Why did we not think about this?
+
+329
+0:15:35,720 --> 0:15:38,400
+ So we're now just going to go talk about the different types
+
+330
+0:15:38,400 --> 0:15:40,920
+ of side channel attacks of these, because there are a lot.
+
+331
+0:15:40,920 --> 0:15:45,320
+ And this is generally how they do get categorized.
+
+332
+0:15:45,320 --> 0:15:48,200
+ So for timing attacks, if we have this little snippet of code
+
+333
+0:15:48,200 --> 0:15:51,680
+ here, which checks passwords, we can see we loop over.
+
+334
+0:15:51,680 --> 0:15:54,920
+ We can see the correct password and the input.
+
+335
+0:15:54,920 --> 0:15:57,560
+ And we check each character if they match.
+
+336
+0:15:57,560 --> 0:16:00,440
+ If the character doesn't match, we break.
+
+337
+0:16:00,440 --> 0:16:02,320
+ Obviously, what we can do is we can just
+
+338
+0:16:02,320 --> 0:16:03,760
+ start checking the first character
+
+339
+0:16:03,760 --> 0:16:06,560
+ for every single A, B, C, D, E, F, G.
+
+340
+0:16:06,560 --> 0:16:09,920
+ And at one point, we're going to have one of these calls
+
+341
+0:16:09,920 --> 0:16:12,000
+ to the password checking function, which is going
+
+342
+0:16:12,000 --> 0:16:14,360
+ to take a little bit longer.
+
+343
+0:16:14,360 --> 0:16:17,080
+ When we have that one that's a little bit longer,
+
+344
+0:16:17,080 --> 0:16:19,120
+ we know we have the correct letter map position.
+
+345
+0:16:19,120 --> 0:16:21,480
+ We go onwards to the next position.
+
+346
+0:16:21,480 --> 0:16:22,520
+ This is a timing attack.
+
+347
+0:16:22,520 --> 0:16:25,120
+ It's easy to abuse, at least, if you just
+
+348
+0:16:25,120 --> 0:16:28,040
+ can get accurate timing out.
+
+349
+0:16:28,040 --> 0:16:29,840
+ Next up, we have power monitoring attacks.
+
+350
+0:16:29,840 --> 0:16:34,600
+ These are mostly known for the AES differential power analysis
+
+351
+0:16:34,600 --> 0:16:35,400
+ attacks.
+
+352
+0:16:35,400 --> 0:16:39,240
+ This is where, by looking at the power usage of a CPU
+
+353
+0:16:39,240 --> 0:16:43,200
+ doing AES encryption, you can actually extract the key.
+
+354
+0:16:43,200 --> 0:16:47,000
+ And honestly, I could talk about power monitoring attacks
+
+355
+0:16:47,000 --> 0:16:49,140
+ for absolutely ages.
+
+356
+0:16:49,140 --> 0:16:51,380
+ So I realized I just brought the hardware with me here
+
+357
+0:16:51,380 --> 0:16:52,100
+ to bone hack.
+
+358
+0:16:52,100 --> 0:16:55,220
+ And later today, like midnight-ish,
+
+359
+0:16:55,220 --> 0:16:57,920
+ going to hold a very impromptu hardware hacking workshop
+
+360
+0:16:57,920 --> 0:17:02,960
+ where we're going to do a power monitoring attack like this.
+
+361
+0:17:02,960 --> 0:17:05,540
+ Next up, we have cache attacks.
+
+362
+0:17:05,540 --> 0:17:07,040
+ This was Meltdown and Spectre.
+
+363
+0:17:07,040 --> 0:17:10,180
+ These were two attacks which came out in 2018.
+
+364
+0:17:10,180 --> 0:17:12,640
+ And for those of you who aren't massive security nerds,
+
+365
+0:17:12,640 --> 0:17:14,600
+ you might have heard your security nerd friends
+
+366
+0:17:14,600 --> 0:17:16,100
+ talking about this.
+
+367
+0:17:16,100 --> 0:17:20,520
+ But essentially, all processors nowadays, or back
+
+368
+0:17:20,520 --> 0:17:21,340
+ before this tech came.
+
+369
+0:17:21,340 --> 0:17:23,800
+ And they still do it as well, did what's
+
+370
+0:17:23,800 --> 0:17:26,260
+ called speculative execution, where they just
+
+371
+0:17:26,260 --> 0:17:28,920
+ try to guess what you were going to do next.
+
+372
+0:17:28,920 --> 0:17:31,620
+ If you had an if statement, it would execute both branches.
+
+373
+0:17:31,620 --> 0:17:34,300
+ Because why wait for user input when you can already
+
+374
+0:17:34,300 --> 0:17:36,120
+ get the data ready?
+
+375
+0:17:36,120 --> 0:17:40,000
+ Issue was, this meant you could load secrets into cache
+
+376
+0:17:40,000 --> 0:17:42,660
+ and then not go down that execution path.
+
+377
+0:17:42,660 --> 0:17:44,860
+ And you could then read those secrets out of the cache
+
+378
+0:17:44,860 --> 0:17:46,720
+ because the cache didn't get wiped.
+
+379
+0:17:46,720 --> 0:17:49,180
+ This could then be used to, example, leak passwords
+
+380
+0:17:49,180 --> 0:17:50,140
+ from another browser's app.
+
+381
+0:17:50,140 --> 0:17:50,460
+ And quite frankly, this is not the case.
+
+382
+0:17:50,460 --> 0:17:50,820
+ This is not the case.
+
+383
+0:17:50,820 --> 0:17:50,980
+ This is not the case.
+
+384
+0:17:50,980 --> 0:17:51,020
+ This is not the case.
+
+385
+0:17:51,020 --> 0:17:51,060
+ This is not the case.
+
+386
+0:17:51,060 --> 0:17:51,140
+ This is not the case.
+
+387
+0:17:51,140 --> 0:17:51,320
+ This is not the case.
+
+388
+0:17:51,320 --> 0:17:51,800
+ This is not the case.
+
+389
+0:17:51,800 --> 0:17:52,300
+ This is not the case.
+
+390
+0:17:52,300 --> 0:17:52,740
+ This is not the case.
+
+391
+0:17:52,740 --> 0:17:54,260
+ Quite effectively, these attacks here,
+
+392
+0:17:54,260 --> 0:17:57,420
+ they were in charge of massive slowdown
+
+393
+0:17:57,420 --> 0:17:59,580
+ for cloud computing systems.
+
+394
+0:17:59,580 --> 0:18:01,660
+ And if you ever start up a VM nowadays,
+
+395
+0:18:01,660 --> 0:18:02,620
+ you'll get that option.
+
+396
+0:18:02,620 --> 0:18:04,420
+ And it will often be recommended,
+
+397
+0:18:04,420 --> 0:18:07,440
+ which is in your own laptop, to disable side channel attack
+
+398
+0:18:07,440 --> 0:18:12,240
+ mitigations, which mitigate attacks like these.
+
+399
+0:18:12,240 --> 0:18:13,980
+ Next up, we have acoustic attacks
+
+400
+0:18:13,980 --> 0:18:16,440
+ where there's small video running in the background here.
+
+401
+0:18:16,440 --> 0:18:17,820
+ But this is an attack where someone
+
+402
+0:18:17,820 --> 0:18:21,120
+ has trained the machine learning model to listen to what's,
+
+403
+0:18:21,120 --> 0:18:23,500
+ listen to what's being typed.
+
+404
+0:18:24,180 --> 0:18:25,940
+ And you see here, he's running it on his phone.
+
+405
+0:18:26,880 --> 0:18:28,400
+ No cable plugged in there.
+
+406
+0:18:29,580 --> 0:18:31,400
+ Goes down to the bottom of the screen there.
+
+407
+0:18:32,580 --> 0:18:33,700
+ And he just starts recording.
+
+408
+0:18:33,780 --> 0:18:34,780
+ Of course, permissions pop up.
+
+409
+0:18:36,120 --> 0:18:37,880
+ Starts recording what's being typed.
+
+410
+0:18:38,920 --> 0:18:40,780
+ And very quickly, we'll go on here.
+
+411
+0:18:41,180 --> 0:18:42,700
+ You'll see he's going to hold up a phone,
+
+412
+0:18:42,700 --> 0:18:45,440
+ and it's basically going to be a one-to-one recreation of what he typed.
+
+413
+0:18:46,020 --> 0:18:48,480
+ Now, he did train this specifically for his keyboard.
+
+414
+0:18:48,480 --> 0:18:53,060
+ However, if you can get enough training data for your victim's keyboard,
+
+415
+0:18:53,440 --> 0:18:55,700
+ then you could also easily execute this attack.
+
+416
+0:18:56,480 --> 0:19:00,140
+ There's also research out there which suggests you can do acoustic attacks
+
+417
+0:19:00,140 --> 0:19:03,620
+ by listening to the stresses in a heat sink
+
+418
+0:19:03,620 --> 0:19:07,240
+ that occur from the changing temperatures during encryption.
+
+419
+0:19:08,680 --> 0:19:11,080
+ That is my face when I read that.
+
+420
+0:19:11,400 --> 0:19:14,480
+ It should not make any sense that that happens,
+
+421
+0:19:15,120 --> 0:19:17,880
+ but apparently we can listen to heat sinks.
+
+422
+0:19:17,880 --> 0:19:18,000
+ Yes.
+
+423
+0:19:18,000 --> 0:19:20,040
+ And that way gain useful information.
+
+424
+0:19:21,320 --> 0:19:23,260
+ There's also software-initiated attacks
+
+425
+0:19:23,260 --> 0:19:25,740
+ where Rowhammer, a lot of people might have heard of,
+
+426
+0:19:26,240 --> 0:19:28,160
+ but if you haven't, what you did is
+
+427
+0:19:28,160 --> 0:19:32,220
+ you had your victim row in a memory
+
+428
+0:19:32,220 --> 0:19:34,900
+ where you could figure out where this was
+
+429
+0:19:34,900 --> 0:19:36,880
+ with some low-level Linux knowledge.
+
+430
+0:19:36,880 --> 0:19:39,660
+ At least, and say, for example, in this victim row,
+
+431
+0:19:40,040 --> 0:19:43,220
+ there was the bits being stored which said what permissions you had.
+
+432
+0:19:44,040 --> 0:19:47,540
+ Turns out you could then aggressively toggle the rows
+
+433
+0:19:47,540 --> 0:19:47,880
+ next to each other.
+
+434
+0:19:47,880 --> 0:19:47,980
+ So you could do that.
+
+435
+0:19:48,000 --> 0:19:49,660
+ And then you could actually switch bits to it on and off repeatedly,
+
+436
+0:19:50,060 --> 0:19:52,400
+ and it would actually flip bits in the victim row
+
+437
+0:19:52,400 --> 0:19:53,840
+ if you didn't have error-correcting memory.
+
+438
+0:19:54,600 --> 0:19:57,480
+ And you could then, for example, flip bits,
+
+439
+0:19:57,580 --> 0:19:59,340
+ and if you got lucky, you suddenly got admin
+
+440
+0:19:59,340 --> 0:20:00,740
+ because you flipped the bits correctly.
+
+441
+0:20:02,380 --> 0:20:06,160
+ There's also optical attacks, and this is a really fun one
+
+442
+0:20:06,160 --> 0:20:08,560
+ because I'm pretty sure someone here upon hack
+
+443
+0:20:08,560 --> 0:20:09,560
+ has all the equipment needed.
+
+444
+0:20:10,600 --> 0:20:14,300
+ And while we already covered stuff like looking at activity LEDs
+
+445
+0:20:14,300 --> 0:20:17,600
+ on switches, we can also use lasers for optical attacks.
+
+446
+0:20:18,000 --> 0:20:36,680
+ So here, by taking a laser pointer, pointing it at a window, and then capturing the reflected beam from the laser on a photocell, soldering that photocell to an AUX cable, plugging it into your laptop and opening Audacity, you can record what the laser is picking up by what it's pointed at.
+
+447
+0:20:36,680 --> 0:20:43,060
+ So if it's pointed at a window, the glass will vibrate, and you can then listen to it from there, from a distance.
+
+448
+0:20:43,060 --> 0:20:51,980
+ We also just covered that you can listen to keyboard recording and capture text like that, and lasers can go pretty far if you have a strong laser.
+
+449
+0:20:53,300 --> 0:21:01,840
+ Now, just one thing, this is very illegal if you don't have permission to do it, so don't go about just doing it regularly, even though it is that simple.
+
+450
+0:21:02,480 --> 0:21:05,840
+ And it also doesn't have to be on a piece of glass that you're recording from.
+
+451
+0:21:06,060 --> 0:21:08,900
+ It could be anything that vibrates, so a bag of chips.
+
+452
+0:21:09,080 --> 0:21:12,900
+ If you've ever been in a really top-secret meeting, there's going to be no...
+
+453
+0:21:13,060 --> 0:21:16,420
+ No recording allowed, because you don't actually need the laser pointer.
+
+454
+0:21:16,800 --> 0:21:26,020
+ A video from the room, and something vibrating in the room, like a leaf or a bag of chips or something, that's enough if you have a high enough budget.
+
+455
+0:21:26,660 --> 0:21:29,560
+ And that's back in the NSA government-level area.
+
+456
+0:21:30,940 --> 0:21:36,160
+ Another optical attack, which I like to include, because this one was actually covered a lot back in 2019,
+
+457
+0:21:36,160 --> 0:21:40,460
+ it was laser-based audio injection on voice-controllable systems.
+
+458
+0:21:41,040 --> 0:21:42,160
+ So if you had a smart speaker...
+
+459
+0:21:43,060 --> 0:21:52,560
+ And you placed it by your window, you could trigger the smart speaker with a laser by doing essentially the opposite of encoding your voice into the laser.
+
+460
+0:21:52,860 --> 0:21:58,060
+ And by pointing it at the right place on the smart speaker, on specifically on what's called a MEMS microphone,
+
+461
+0:21:58,460 --> 0:22:06,060
+ which, again, all these home assistant smart speakers have, you could inject the sound into it from kilometers away.
+
+462
+0:22:06,680 --> 0:22:12,220
+ So imagine if you have a nice, fancy smart home, and you put this smart speaker in your window,
+
+463
+0:22:12,220 --> 0:22:12,840
+ because it looks nice.
+
+464
+0:22:12,840 --> 0:22:13,740
+ It looks nice in the window.
+
+465
+0:22:14,440 --> 0:22:18,640
+ Then, as me, as a thief, I could point my laser at it, and I could say,
+
+466
+0:22:18,640 --> 0:22:20,640
+ Hey, open the garage doors.
+
+467
+0:22:21,040 --> 0:22:22,340
+ I have access to your house now.
+
+468
+0:22:24,340 --> 0:22:27,840
+ There are also many, many other kinds of side-channel attacks.
+
+469
+0:22:28,440 --> 0:22:35,340
+ Recently, there was the Satan attack, it's called, where they turned SATA cables into antennas,
+
+470
+0:22:36,240 --> 0:22:42,640
+ and then they could get around air gap security by sending the right data, by encoding the data through the signals coming out of these antennas.
+
+471
+0:22:43,340 --> 0:22:48,340
+ There's really no limits to what side-channel attacks can do, and there's so many of them.
+
+472
+0:22:48,940 --> 0:22:52,540
+ And before people ask, yes, data exfiltration is still a side-channel attack.
+
+473
+0:22:52,540 --> 0:22:56,440
+ You're still abusing this system in a way it wasn't supposed to, to gain information.
+
+474
+0:22:56,440 --> 0:23:00,340
+ In this case, it's just to get information out, but you're still gaining information.
+
+475
+0:23:01,940 --> 0:23:03,940
+ So what can we learn from all of this?
+
+476
+0:23:05,040 --> 0:23:11,640
+ Systems are hard to implement, and if there's a design consideration, for example, stamping the gear mode serial number
+
+477
+0:23:11,640 --> 0:23:12,640
+ onto a call, or a message, or something like that, it's not going to work.
+
+478
+0:23:12,640 --> 0:23:19,140
+ If you have a call going to a tank so you can track down defects in production, it can be abused.
+
+479
+0:23:19,740 --> 0:23:24,840
+ This can be if you send out any IDs from your web app, who knows what.
+
+480
+0:23:26,240 --> 0:23:29,640
+ And for the love of God, use someone else's cryptographic libraries.
+
+481
+0:23:29,940 --> 0:23:32,940
+ And this is what people mean when they say, don't roll your own crypto,
+
+482
+0:23:33,740 --> 0:23:40,740
+ because other people's libraries have hopefully been tested for these kinds of side-channel attacks, and you can minimize it.
+
+483
+0:23:41,140 --> 0:23:42,440
+ Because there's a lot of these attacks.
+
+484
+0:23:42,440 --> 0:23:49,740
+ Like the timing attacks and power monitoring attacks that are quite easy to do, and it doesn't take more of an afternoon to learn how to do it.
+
+485
+0:23:51,840 --> 0:23:57,040
+ If you want some further reading, I can highly recommend Silence of the Wire by Michael Zaleski.
+
+486
+0:23:58,040 --> 0:23:58,840
+ Great book.
+
+487
+0:23:59,240 --> 0:24:01,940
+ Talks in general just about side-channel attacks.
+
+488
+0:24:02,840 --> 0:24:04,640
+ There's also Art of Intrusion by Kevin Mitnick.
+
+489
+0:24:05,440 --> 0:24:10,140
+ Not so much about side-channel attacks, but does have a quite cool cryptographic attack on a
+
+490
+0:24:10,140 --> 0:24:11,640
+ on a
+
+491
+0:24:12,440 --> 0:24:17,240
+ slot machine in the casino they talk about, and how they could predict the random number generator.
+
+492
+0:24:18,340 --> 0:24:22,240
+ And there's also A Cuckoo's Egg by Clifford Stahl, which is just a great book about hacking.
+
+493
+0:24:22,340 --> 0:24:24,040
+ Not really too much about side-channel attacks in it.
+
+494
+0:24:26,140 --> 0:24:27,240
+ Thank you for coming to my talk.
+
+495
+0:24:27,640 --> 0:24:30,340
+ I'll be putting the slides up on my website at some point.
+
+496
+0:24:30,340 --> 0:24:32,440
+ I just need to fix some attribution stuff a little bit there.
+
+497
+0:24:32,740 --> 0:24:37,240
+ You want to follow me on untapped, because that's really the most important communication media.
+
+498
+0:24:37,740 --> 0:24:38,840
+ You can follow me there.
+
+499
+0:24:38,940 --> 0:24:40,740
+ And there's just a CTF flag.
+
+500
+0:24:40,740 --> 0:24:41,640
+ Just ignore that.
+
+501
+0:24:41,640 --> 0:24:42,340
+ It's going to be using like,
+
+502
+0:24:42,440 --> 0:24:43,440
+ 90 days or so.
+
+503
+0:24:45,740 --> 0:24:46,240
+ Thank you.
+
+504
+0:24:57,640 --> 0:24:58,240
+ Thanks.
+
+505
+0:24:58,640 --> 0:24:59,740
+ Are there any questions?
+
+506
+0:25:03,740 --> 0:25:07,040
+ What is the best way to introduce some noise to make this less effective?
+
+507
+0:25:08,140 --> 0:25:11,940
+ Introduce some noise to make it less effective.
+
+508
+0:25:12,440 --> 0:25:14,140
+ It depends on your threat model.
+
+509
+0:25:14,140 --> 0:25:15,940
+ I mean, depends on what you're building.
+
+510
+0:25:15,940 --> 0:25:20,940
+ Of course, starters don't use sequential IDs.
+
+511
+0:25:20,940 --> 0:25:23,240
+ You can always guess those because we're sequential.
+
+512
+0:25:24,240 --> 0:25:31,140
+ But again, if you are using some, say, we have a cryptographic system running on a processor, but you made your own.
+
+513
+0:25:31,440 --> 0:25:39,440
+ This can be making sure that you have some background tasks running to make sure power usage is linear and you can record that.
+
+514
+0:25:39,540 --> 0:25:41,840
+ You can make sure that you add just some.
+
+515
+0:25:41,840 --> 0:25:47,840
+ Make sure the programmers run for X amount of seconds, at least, no matter how fast it runs to avoid timing attacks, stuff like that.
+
+516
+0:25:48,040 --> 0:25:51,840
+ Again, it depends on your threat model and there are just so many attacks.
+
+517
+0:25:51,840 --> 0:25:54,940
+ So you can't really add noise for every single thing.
+
+518
+0:25:54,940 --> 0:25:58,640
+ You cannot fully protect yourself from side channel attacks.
+
+519
+0:25:58,740 --> 0:26:02,840
+ You can't fully protect yourself from any kind of attack, really.
+
+520
+0:26:03,340 --> 0:26:08,940
+ Security is always about knowing your risk and doing what you can to defeat that risk.
+
+521
+0:26:09,340 --> 0:26:11,540
+ As we were talking, I was talking about the Tempest Room.
+
+522
+0:26:11,540 --> 0:26:21,040
+ The rooms that they made, the rooms inside rooms, this was a large, extreme security measure, but it was just too inconvenient for users to use, so they left the doors open.
+
+523
+0:26:22,040 --> 0:26:25,040
+ This is what we mean when we say security is a bit of a balance.
+
+524
+0:26:25,040 --> 0:26:32,040
+ You can't just go all out and make an unhackable system because there's always a more dedicated hacker and there's always users you have to deal with.
+
+525
+0:26:37,040 --> 0:26:38,040
+ No more questions?
+
+526
+0:26:38,040 --> 0:26:42,540
+ No, in that case, thanks a lot.

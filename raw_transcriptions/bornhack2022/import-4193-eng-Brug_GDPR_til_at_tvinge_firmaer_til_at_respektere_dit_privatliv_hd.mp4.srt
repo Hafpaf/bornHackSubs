@@ -1,0 +1,5015 @@
+# Transcribed 2023-11-12T15 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:14,160
+ Hvad er din rejse igennem det her GDPR?
+
+2
+0:00:14,160 --> 0:00:18,140
+ Jeg skal fortælle jer lidt om min rejse igennem det her GDPR.
+
+3
+0:00:18,580 --> 0:00:21,180
+ En rejse, som jeg ikke havde regnet med, at jeg nogensinde skulle ud på.
+
+4
+0:00:22,580 --> 0:00:24,540
+ Jeg kommer fra fagforeningen Prosa.
+
+5
+0:00:25,340 --> 0:00:27,080
+ Eller rettere, det gør jeg ikke i dag.
+
+6
+0:00:27,080 --> 0:00:31,520
+ Fordi i dag er jeg privatåle og ikke prosaåle.
+
+7
+0:00:32,220 --> 0:00:37,020
+ Prosa er ganske vist interesseret i den her sag, og de bakker også op om den, og de betaler også min tid i dag.
+
+8
+0:00:37,380 --> 0:00:42,020
+ Men ham der står her, det er privatåle og ikke prosaåle.
+
+9
+0:00:42,620 --> 0:00:45,680
+ Det er privatåle, der kører den her sag.
+
+10
+0:00:48,320 --> 0:00:51,560
+ Spørgsmålet til det, det tyder ikke at være tilfældet.
+
+11
+0:00:51,560 --> 0:00:54,600
+ Vi skal jo også have mikrofon på, så vi er nok nødt til at gemme spørgsmålene.
+
+12
+0:00:57,080 --> 0:01:00,760
+ Lige en kort tidslinje om, hvor er det, vi kommer fra.
+
+13
+0:01:00,760 --> 0:01:05,760
+ I 2011-2014 bliver GDPR forhandlet.
+
+14
+0:01:05,760 --> 0:01:09,960
+ Det er den her privatlivslovgivning, som EU er kommet med.
+
+15
+0:01:09,960 --> 0:01:16,320
+ Og Snowdens afsløringer, de kom på simpelthen perfekt time, og det kunne ikke være bedre.
+
+16
+0:01:16,320 --> 0:01:22,620
+ Fordi det er lige der, hvor man skal have forhandlet de her privatlivsbeskyttende ændringsforslag.
+
+17
+0:01:22,620 --> 0:01:26,140
+ Om de skal være med, eller de ikke skal være med.
+
+18
+0:01:26,140 --> 0:01:26,640
+ Ej.
+
+19
+0:01:27,080 --> 0:01:32,600
+ Og man kan bare se, at de her lobbyister fra Google, Apple, Facebook, Amazon og Microsoft,
+
+20
+0:01:32,600 --> 0:01:39,200
+ de render rundt og hiver sig i håret, fordi de ikke får et ben til jorden, fordi der er Snowdens afsløringer.
+
+21
+0:01:39,200 --> 0:01:40,720
+ Alle taler om Snowdens afsløringer.
+
+22
+0:01:40,720 --> 0:01:46,440
+ Og vi får langt flere privatlivsbeskyttende elementer med i GDPR, end vi ellers ville have fået.
+
+23
+0:01:46,440 --> 0:01:47,720
+ Det er helt vildt.
+
+24
+0:01:47,720 --> 0:01:56,560
+ Hvis I har set filmen om GDPR, der laves sådan en fantastisk dokumentar, hvor de siger, wow, det fik vi også med.
+
+25
+0:01:57,080 --> 0:02:00,160
+ Og det er helt fantastisk at se.
+
+26
+0:02:00,160 --> 0:02:00,960
+ Nå.
+
+27
+0:02:00,960 --> 0:02:06,120
+ I 2018 træder GDPR i kraft, og der er jo ingen, der er 100% compliant.
+
+28
+0:02:06,120 --> 0:02:07,120
+ Sådan er det.
+
+29
+0:02:07,120 --> 0:02:08,680
+ Men det er jo også okay.
+
+30
+0:02:08,680 --> 0:02:11,560
+ Det er ikke det, der er problemet.
+
+31
+0:02:11,560 --> 0:02:17,600
+ Så længe man arbejder på at gøre det bedre, og lytter, når der er nogen, der påpeger nogle fejl,
+
+32
+0:02:17,600 --> 0:02:19,240
+ så er det, hvor jeg siger, at det er fint nok.
+
+33
+0:02:19,240 --> 0:02:20,880
+ Vi skal nok komme derhen ad.
+
+34
+0:02:20,880 --> 0:02:23,380
+ Vi skal bare i den her retning.
+
+35
+0:02:23,380 --> 0:02:25,320
+ Øhm.
+
+36
+0:02:25,320 --> 0:02:25,920
+ Ja.
+
+37
+0:02:25,920 --> 0:02:26,520
+ Øhm.
+
+38
+0:02:26,520 --> 0:02:27,480
+ Nå, det er det ikke.
+
+39
+0:02:27,480 --> 0:02:28,120
+ Øhm.
+
+40
+0:02:28,120 --> 0:02:35,080
+ I 2018, så er der hen ved sommerferien, der kommer der sådan en prøveballon,
+
+41
+0:02:35,080 --> 0:02:38,360
+ hvor der er et udkast til et lovforslag.
+
+42
+0:02:38,360 --> 0:02:42,560
+ Måske nærmere en idé til et lovforslag fra den danske regering.
+
+43
+0:02:42,560 --> 0:02:49,600
+ Og de vil gerne have adgang til målinger for at afsløre snyd med sociale ydelser.
+
+44
+0:02:49,600 --> 0:02:52,000
+ Og det er jo helt klart en formodsforskydning.
+
+45
+0:02:52,000 --> 0:02:55,640
+ Altså, de her data er indsamlet for, at jeg kan betale min endelregning,
+
+46
+0:02:55,640 --> 0:03:02,040
+ ikke for, at man kan kontrollere, om jeg snyder med børnepenge eller med hvad det nu ellers måtte være.
+
+47
+0:03:02,040 --> 0:03:03,200
+ Øhm.
+
+48
+0:03:03,200 --> 0:03:07,800
+ Og på det tidspunkt, så falder jeg over en YouTube-video,
+
+49
+0:03:07,800 --> 0:03:13,280
+ hvor der er nogle gale tyskere, der ud fra at kigge på deres elmåler,
+
+50
+0:03:13,280 --> 0:03:17,200
+ kan se, hvad det er for en film, der bliver vist på ens storskærm.
+
+51
+0:03:17,200 --> 0:03:22,680
+ Og det kan de, fordi den her storskærm, når den viser et hvidt billede,
+
+52
+0:03:22,680 --> 0:03:25,480
+ så bruger den mere strøm, end hvis den viser et sort billede.
+
+53
+0:03:25,480 --> 0:03:30,920
+ Og så kan man simpelthen tegne sådan en graf, og så er det sådan et bjerglandskab.
+
+54
+0:03:30,920 --> 0:03:34,680
+ Og ud af det her bjerglandskab, kan man lave nogle meget simple statistiske modeller,
+
+55
+0:03:34,680 --> 0:03:37,600
+ og se, hvad er det for en film, det her måtte have kommet fra,
+
+56
+0:03:37,600 --> 0:03:40,880
+ og hvor langt er du i øvrigt henne, at se den her film.
+
+57
+0:03:40,880 --> 0:03:43,400
+ Det gælder naturligvis ikke sådan, hvis du ser det på en laptop,
+
+58
+0:03:43,400 --> 0:03:46,280
+ for så er der jo batteri imellem, og skærmen er ikke stor nok,
+
+59
+0:03:46,280 --> 0:03:50,600
+ men det gælder, at på den store skærm der, der spiser mere strøm for hvide pixels.
+
+60
+0:03:50,600 --> 0:03:53,240
+ Øh, super sjov video at se.
+
+61
+0:03:53,240 --> 0:03:53,600
+ Rigtig.
+
+62
+0:03:53,600 --> 0:03:56,800
+ Det er, jeg kan varmt vandbefale den.
+
+63
+0:03:56,800 --> 0:03:59,040
+ Øhm,
+
+64
+0:03:59,040 --> 0:04:01,320
+ de måler hver sekund.
+
+65
+0:04:01,320 --> 0:04:02,640
+ Det behøvede de jo ikke.
+
+66
+0:04:02,640 --> 0:04:08,400
+ Altså, hvis jeg skal afregne min elafregning, så taler vi jo om at afregne hver time,
+
+67
+0:04:08,400 --> 0:04:10,680
+ øh, eller hver kvarter.
+
+68
+0:04:10,680 --> 0:04:13,640
+ Men selv hvis det er færre målinger, så er der altså sådan,
+
+69
+0:04:13,640 --> 0:04:15,720
+ så vil man kunne se ting om dig.
+
+70
+0:04:15,720 --> 0:04:18,840
+ Altså f.eks. så, hvis I giver mig adgang til at se jeres elmåler,
+
+71
+0:04:18,840 --> 0:04:22,080
+ tror jeg godt, at jeg kan komme med et godt gæt på, hvornår I står op.
+
+72
+0:04:22,080 --> 0:04:23,560
+ Øh, og så om du har et elgård.
+
+73
+0:04:23,560 --> 0:04:28,200
+ Eller om du er på ferie.
+
+74
+0:04:28,200 --> 0:04:34,320
+ Og hvis jeres elselskab gik hen til jer og spurgte, hvornår er det egentlig, du står op og går i seng,
+
+75
+0:04:34,320 --> 0:04:37,720
+ så tror jeg, I ville kigge meget underligt på jeres elselskab og sige,
+
+76
+0:04:37,720 --> 0:04:40,800
+ det kommer overhovedet ikke jer ved.
+
+77
+0:04:40,800 --> 0:04:42,640
+ Det styrer jeg da selv.
+
+78
+0:04:42,640 --> 0:04:46,960
+ Og når man ligesom har den fornemmelse af, at det rager ikke jer,
+
+79
+0:04:46,960 --> 0:04:49,960
+ så er det fordi, vi er inde i røre ved noget, der hedder privatliv.
+
+80
+0:04:49,960 --> 0:04:53,080
+ Så er det fordi, det her, det er jeres privatliv,
+
+81
+0:04:53,080 --> 0:04:54,880
+ hvornår I står op og går i seng.
+
+82
+0:04:57,880 --> 0:05:02,560
+ I 2018 kommer også mit første blogindlæg på version 2 om den her sag her.
+
+83
+0:05:02,560 --> 0:05:08,920
+ Og jeg, det fortæller jeg blandt andet om den her tyske video her.
+
+84
+0:05:08,920 --> 0:05:13,240
+ Og jeg tager kontakt til Radius, og telefonisk så bekræfter de over for mig,
+
+85
+0:05:13,240 --> 0:05:16,920
+ at de faktisk måler i kilowattimer og ikke i kroner.
+
+86
+0:05:18,920 --> 0:05:22,680
+ Og så sender jeg en mail til Radius og siger,
+
+87
+0:05:22,680 --> 0:05:26,880
+ hey, jeg hører, I er i gang med at skifte til de her fjernaflæsende måler.
+
+88
+0:05:26,880 --> 0:05:31,440
+ Det må I sende til godt, men hvis I skal skifte den hos mig,
+
+89
+0:05:31,440 --> 0:05:34,520
+ så skal I være en, som respekterer mit privatliv.
+
+90
+0:05:34,520 --> 0:05:37,040
+ Ellers så tager vi den i retten.
+
+91
+0:05:37,040 --> 0:05:41,080
+ Og så linker jeg i øvrigt til Microsoft, som har lavet sådan en løsning,
+
+92
+0:05:41,080 --> 0:05:45,720
+ som laver privatlysbeskyttelse på sådan noget fjernaflæst elmåler.
+
+93
+0:05:45,720 --> 0:05:50,360
+ Det er tydeligt, at den her løsning, som Microsoft har lavet, ikke er i produktion.
+
+94
+0:05:50,360 --> 0:05:51,480
+ Det er et forskningsprojekt.
+
+95
+0:05:51,480 --> 0:05:52,480
+ Det er et forskningsprojekt.
+
+96
+0:05:52,680 --> 0:05:55,640
+ At sådan her kunne man i teorien gøre det,
+
+97
+0:05:55,640 --> 0:05:58,480
+ og måske er der nogen, der vil implementere det en dag.
+
+98
+0:06:01,200 --> 0:06:05,560
+ Svaret på den email fra Radius, den er, hey, vi overholder GDPR,
+
+99
+0:06:05,560 --> 0:06:11,080
+ men uden i øvrigt, at de forholder sig til sådan de mere konkrete ting, som jeg påpeger.
+
+100
+0:06:11,080 --> 0:06:15,560
+ Måske ikke rigtig overraskende, fordi det er svar fra en eller anden first line supporter.
+
+101
+0:06:17,960 --> 0:06:22,640
+ I 19 og i 20, så kommer der deadline for, hvornår vi skal have skiftet de her elmåler.
+
+102
+0:06:22,680 --> 0:06:28,680
+ Målerbekendtgørelsen fra 19, den giver nemlig en deadline for, hvornår de skal være skiftet.
+
+103
+0:06:28,680 --> 0:06:32,680
+ Og i Danmark, der skal de være skiftet den 31.12.2020.
+
+104
+0:06:32,680 --> 0:06:39,680
+ Og derfor, så er min papirpostkasse fuld af breve fra Radius, der siger, hey, vi vil meget gerne komme og skifte dine elmåler.
+
+105
+0:06:39,680 --> 0:06:44,680
+ Og jeg svarer jo hver gang tilbage til dem og siger, det må I gerne, når den overholder GDPR.
+
+106
+0:06:44,680 --> 0:06:50,680
+ Og det seneste svar, jeg får i den der stribe, det er, at jamen, du kan også få en ekstern antenne.
+
+107
+0:06:50,680 --> 0:06:51,800
+ Du kan også få en ekstern antenne.
+
+108
+0:06:51,800 --> 0:06:52,120
+ Du kan også få en ekstern antenne.
+
+109
+0:06:52,680 --> 0:06:54,680
+ Du kan også få en ekstern antenne.
+
+110
+0:06:54,680 --> 0:06:56,680
+ Du kan også få en ekstern antenne.
+
+111
+0:06:56,680 --> 0:07:00,680
+ Jeg forstår det ikke helt, men jeg vender tilbage til den senere.
+
+112
+0:07:00,680 --> 0:07:07,680
+ I de svar, jeg sender tilbage til dem, der bliver mit løsningsforslag gjort skarpere og nemmere at forklare.
+
+113
+0:07:07,680 --> 0:07:13,680
+ Og lidt længere hen, så kommer vi igennem og siger, hvordan er det egentlig, mit løsningsforslag går ud på.
+
+114
+0:07:13,680 --> 0:07:20,680
+ I 2020-2021, så begynder Radius at true med foden, for nu vil de faktisk have skiftet den der elmåler.
+
+115
+0:07:20,680 --> 0:07:21,800
+ Fordi den skulle jo være skiftet ved nytår.
+
+116
+0:07:21,800 --> 0:07:23,800
+ Nu er vi jo på den anden side af nytår.
+
+117
+0:07:23,800 --> 0:07:25,800
+ Nu er vi jo på den anden side af nytår.
+
+118
+0:07:25,800 --> 0:07:36,800
+ Og det er så der, jeg sætter en GDPR-advokat på, for ligesom at være sikker på, okay, vi må hellere være helt sikre på, at det, jeg gør, er inden for rammerne, og at jeg ikke laver nogle fodfejl.
+
+119
+0:07:36,800 --> 0:07:42,800
+ Og vi har så, mig og advokaten, vi har så et møde med Radius.
+
+120
+0:07:42,800 --> 0:07:45,800
+ Det her er under corona, så det er selvfølgelig et online møde.
+
+121
+0:07:45,800 --> 0:07:50,800
+ Og der siger Radius, jamen, vi lever op til forskrifterne, og det gør din løsning ikke, så derfor kan vi jo ikke bruge din løsning.
+
+122
+0:07:50,800 --> 0:07:59,800
+ Og indtil sidst så får de jo ligesom sagt, at deres ansvar, jamen, det stopper ved forskrifterne.
+
+123
+0:07:59,800 --> 0:08:03,800
+ Og det kan godt være, at forskrifterne er lovsledige, men det er jo ikke deres problem.
+
+124
+0:08:03,800 --> 0:08:07,800
+ Og vi skal jo, siger Radius, have skiftet alle de her måler inden nytår.
+
+125
+0:08:07,800 --> 0:08:11,800
+ Vi er i øvrigt allerede over nytår, så vi skal jo også have skiftet din.
+
+126
+0:08:11,800 --> 0:08:16,800
+ Og så har vi en højesteretsdom for, at vi kan komme ind og skifte den.
+
+127
+0:08:16,800 --> 0:08:18,800
+ Ikke godt nok en højesteretsdom, der argumenterer over for, at vi skal have skiftet din.
+
+128
+0:08:18,800 --> 0:08:19,800
+ Det er ikke godt nok en højesteretsdom, der argumenterer over for, at vi skal have skiftet din.
+
+129
+0:08:19,800 --> 0:08:20,800
+ Det er ikke godt nok en højesteretsdom, der argumenterer over for, at vi skal have skiftet din.
+
+130
+0:08:20,800 --> 0:08:22,800
+ Jeg har også argumenter over for en elektrooverfølsom persone,
+
+131
+0:08:22,800 --> 0:08:24,800
+ altså en, som er bange for strålerne,
+
+132
+0:08:24,800 --> 0:08:26,800
+ Hvorefter det jo så i mit hoved siger,
+
+133
+0:08:26,800 --> 0:08:27,800
+ ÄÅĒÅÅÅÅÅÅÅÅÅ monkey
+
+134
+0:08:27,800 --> 0:08:29,800
+ Det er der, den der antenne kommer ind.
+
+135
+0:08:29,800 --> 0:08:35,800
+ Det er jo fordi, jeg har jo den bunke af brok-hoder.
+
+136
+0:08:35,800 --> 0:08:40,800
+ Og langt de fleste af dem som er elektrooverfølsomme her,
+
+137
+0:08:40,800 --> 0:08:44,800
+ som måske kan nøjes med at få en ekstern antenne,
+
+138
+0:08:44,800 --> 0:08:47,800
+ og det er derfor, de siger, at jeg kan få en ekstern antenne.
+
+139
+0:08:47,800 --> 0:08:49,120
+ Jeg skal jo ikke være i den der punkte.
+
+140
+0:08:49,140 --> 0:08:51,540
+ Jeg skal jo være i den tredje punkte for brokkoder, ikke?
+
+141
+0:08:55,500 --> 0:09:00,960
+ Nå, vi prøver også at få Radius til at forholde sig til min løsning,
+
+142
+0:09:01,040 --> 0:09:03,180
+ så vi ligesom kan sige, okay, I siger godt nok,
+
+143
+0:09:04,060 --> 0:09:09,020
+ at Oles løsning ikke overholder loven og ikke lever op til lovkravene.
+
+144
+0:09:09,940 --> 0:09:13,760
+ Kunne I være lidt mere specifikke og sige, hvad det er for nogle paragrafer, der er problemet?
+
+145
+0:09:14,080 --> 0:09:15,940
+ Sådan, at vi ligesom kan sige dem der.
+
+146
+0:09:15,940 --> 0:09:18,700
+ Nå, det er der, det gør ondt, for måske vil de sige,
+
+147
+0:09:18,820 --> 0:09:21,500
+ nå ja, okay, det har I ret, I skal selvfølgelig have lov til at skifte det.
+
+148
+0:09:22,760 --> 0:09:26,600
+ Nå, men det vil de ikke forholde sig til.
+
+149
+0:09:27,360 --> 0:09:27,540
+ Øv.
+
+150
+0:09:28,340 --> 0:09:31,320
+ Så i 2021, så sender jeg den første klage til datatilsynet,
+
+151
+0:09:31,600 --> 0:09:33,700
+ og den bliver ret hurtigt afvist.
+
+152
+0:09:34,120 --> 0:09:37,340
+ Ja, siger datatilsynet, der er jo ikke noget registreret om dig.
+
+153
+0:09:38,280 --> 0:09:41,420
+ Der er jo ikke samlet nogen data ind endnu, for du har jo ikke fået det skiftet i din elmåler.
+
+154
+0:09:42,700 --> 0:09:45,180
+ Og så er det, at jeg sådan tænker, at helt ærligt,
+
+155
+0:09:45,180 --> 0:09:50,600
+ altså når der står en eller anden gale mafioso nede ved pizzeriaet og siger,
+
+156
+0:09:50,960 --> 0:09:54,000
+ du vil jo nødvendigvis have din pizzeria skal brænde,
+
+157
+0:09:54,260 --> 0:09:55,960
+ skal du ikke betale mig nogle beskyttelsespenge?
+
+158
+0:09:56,540 --> 0:09:57,520
+ Er det ikke det samme?
+
+159
+0:09:58,080 --> 0:09:59,460
+ Men det er der så altså åbenbart ikke.
+
+160
+0:09:59,680 --> 0:10:02,720
+ Nå, og jeg gider jo ikke at blive uvenner med datatilsynet,
+
+161
+0:10:02,800 --> 0:10:05,060
+ jeg skal jo helst ligesom have dem på mit hold.
+
+162
+0:10:06,040 --> 0:10:09,120
+ Så i stedet for, så skriver jeg på versen 2,
+
+163
+0:10:09,280 --> 0:10:13,200
+ hey, nogle af jer, der har fået skiftet i en elmåler,
+
+164
+0:10:13,200 --> 0:10:15,700
+ er der ikke nogen af jer, der har lyst til at klage,
+
+165
+0:10:15,780 --> 0:10:18,320
+ jeg skal nok gøre arbejdet, men det bliver i jeres navn.
+
+166
+0:10:18,480 --> 0:10:20,100
+ Og det er der så fem, der stiller op til og siger,
+
+167
+0:10:20,180 --> 0:10:25,000
+ jamen du skal bare give den gas, vi skal gerne være afsender på den.
+
+168
+0:10:25,780 --> 0:10:28,140
+ Så sender jeg den samme klage igen,
+
+169
+0:10:29,900 --> 0:10:31,540
+ men med meget små ændringer.
+
+170
+0:10:31,960 --> 0:10:34,840
+ En af de mindre ændringer er, at vi får skrevet,
+
+171
+0:10:35,180 --> 0:10:37,940
+ at det er jo ikke nødvendigvis, at det er radiostarproblemet.
+
+172
+0:10:38,060 --> 0:10:39,980
+ Det kan godt være, at Energinet er problemet,
+
+173
+0:10:39,980 --> 0:10:42,160
+ for det er nemlig dem, der står for forskrifterne,
+
+174
+0:10:42,160 --> 0:10:45,600
+ som formodentlig er der, hvor skoen trykker.
+
+175
+0:10:47,380 --> 0:10:50,380
+ Og nu ved jeg ikke, hvor mange af jer har prøvet at klage til datatilsynet.
+
+176
+0:10:51,980 --> 0:10:53,560
+ Okay, godt. Malve har.
+
+177
+0:10:55,660 --> 0:10:58,140
+ Forløbet er noget simplere, end jeg troede, det var.
+
+178
+0:10:58,540 --> 0:11:01,440
+ Altså jeg troede, det var, at man sender sin klage til datatilsynet,
+
+179
+0:11:01,820 --> 0:11:04,880
+ så sender de den videre til høring ude hos modparten,
+
+180
+0:11:04,880 --> 0:11:07,320
+ og så tilbage til mig, og så tilbage til modparten,
+
+181
+0:11:07,320 --> 0:11:09,480
+ og så tilbage til mig, ping-pong, ping-pong, ping-pong.
+
+182
+0:11:10,560 --> 0:11:11,160
+ Det er det ikke.
+
+183
+0:11:11,160 --> 0:11:14,620
+ Det er ping-pong, ping-pong, og så er vi slut.
+
+184
+0:11:15,420 --> 0:11:16,420
+ Hvorfor så?
+
+185
+0:11:16,420 --> 0:11:19,420
+ Så det er, at jeg får sendt klagen ind,
+
+186
+0:11:19,420 --> 0:11:21,420
+ den kommer ud til modparten, og så kommer den til mig,
+
+187
+0:11:21,420 --> 0:11:23,420
+ og så kommer der en afgørelse.
+
+188
+0:11:28,420 --> 0:11:30,420
+ Jeg kan godt mærke, at jeg var lidt glad for,
+
+189
+0:11:30,420 --> 0:11:33,420
+ at vi fik gjort rigtig meget ud af vores svarsskrift til datatilsynet.
+
+190
+0:11:33,420 --> 0:11:36,420
+ For eksempel så har vi fundet ud af,
+
+191
+0:11:36,420 --> 0:11:40,420
+ at i og omkring den her lovgivning om de her fjerneaflæste elmåler,
+
+192
+0:11:40,420 --> 0:11:44,420
+ så har datatilsynet tre gange sagt,
+
+193
+0:11:44,420 --> 0:11:46,420
+ kære Energinet Danmark,
+
+194
+0:11:46,420 --> 0:11:48,420
+ kunne I ikke lige tage og få kigget på det her med privatlivet,
+
+195
+0:11:48,420 --> 0:11:50,420
+ og få tænkt det igennem?
+
+196
+0:11:50,420 --> 0:11:52,420
+ Det gør de tre gange, og det vil jo sige,
+
+197
+0:11:52,420 --> 0:11:54,420
+ at de ikke har fået det gjort hos Energinet.
+
+198
+0:11:54,420 --> 0:11:56,420
+ Så det er sådan, hvor vi siger her,
+
+199
+0:11:56,420 --> 0:11:58,420
+ vi ligger lidt i klagen og siger,
+
+200
+0:11:58,420 --> 0:12:00,420
+ hey, kunne I ikke bare, kære datatilsynet,
+
+201
+0:12:00,420 --> 0:12:02,420
+ jeg synes, I skal afgøre den ligesom datatilsynet,
+
+202
+0:12:02,420 --> 0:12:06,420
+ altså jer, selv har anbefalet.
+
+203
+0:12:06,420 --> 0:12:08,420
+ Men der er altså ikke kommet nogen afgørelse endnu.
+
+204
+0:12:08,420 --> 0:12:10,420
+ Den er blevet udskudt og udskudt og udskudt,
+
+205
+0:12:10,420 --> 0:12:12,420
+ og vi håber på, at der kommer en afgørelse herinde
+
+206
+0:12:12,420 --> 0:12:14,420
+ for de næste par måneder.
+
+207
+0:12:14,420 --> 0:12:16,420
+ Vi gisler en lille smule om,
+
+208
+0:12:16,420 --> 0:12:20,420
+ hvorfor der ikke er kommet afgørelse,
+
+209
+0:12:20,420 --> 0:12:22,420
+ og enten så kan det jo bare være,
+
+210
+0:12:22,420 --> 0:12:24,420
+ fordi der er gået feriemål i det,
+
+211
+0:12:24,420 --> 0:12:26,420
+ men det kan faktisk være,
+
+212
+0:12:26,420 --> 0:12:28,420
+ at det er fordi det her,
+
+213
+0:12:28,420 --> 0:12:30,420
+ det er sådan en lillebittebitte dominobrik,
+
+214
+0:12:30,420 --> 0:12:32,420
+ der er den første i en serie af dominobrikker,
+
+215
+0:12:32,420 --> 0:12:36,420
+ hvor den sidste dominobrik er meget stor.
+
+216
+0:12:36,420 --> 0:12:38,420
+ Og det er ikke sikkert,
+
+217
+0:12:38,420 --> 0:12:40,420
+ at vi helt kan se,
+
+218
+0:12:40,420 --> 0:12:42,420
+ hvad der egentlig er for nogle dominobrikker,
+
+219
+0:12:42,420 --> 0:12:44,420
+ der ligesom er helt ude i enden.
+
+220
+0:12:44,420 --> 0:12:46,420
+ Der kan altså være nogle konsekvenser her,
+
+221
+0:12:46,420 --> 0:12:48,420
+ som er meget større end det,
+
+222
+0:12:48,420 --> 0:12:50,420
+ som vi simpelthen bare kunne se.
+
+223
+0:12:50,420 --> 0:12:54,420
+ Nå, jeg bliver stævnet i efteråret og er i fodretten,
+
+224
+0:12:54,420 --> 0:12:56,420
+ og fodretten de træffer hurtige afgørelser,
+
+225
+0:12:56,420 --> 0:12:58,420
+ og vi argumenterer jo for at sige,
+
+226
+0:12:58,420 --> 0:13:00,420
+ jamen prøv nu at høre her,
+
+227
+0:13:00,420 --> 0:13:02,420
+ det her er ret komplekst,
+
+228
+0:13:02,420 --> 0:13:04,420
+ det er om en elmåler skulle stride mod GDPR,
+
+229
+0:13:04,420 --> 0:13:06,420
+ det er vel noget, vi skal have undersøgt til bund,
+
+230
+0:13:06,420 --> 0:13:08,420
+ så datatilsynet har jo en klage i,
+
+231
+0:13:08,420 --> 0:13:10,420
+ så vi kan jo afvente,
+
+232
+0:13:10,420 --> 0:13:12,420
+ at de kommer med den,
+
+233
+0:13:12,420 --> 0:13:14,420
+ og i øvrigt så,
+
+234
+0:13:14,420 --> 0:13:16,420
+ altså at I først kommer nu og trækker mig i retten,
+
+235
+0:13:16,420 --> 0:13:18,420
+ I har vist det siden 18,
+
+236
+0:13:18,420 --> 0:13:20,420
+ at vi gerne vil have en afklaring på det her,
+
+237
+0:13:20,420 --> 0:13:22,420
+ hvorfor har I ikke sat det i gang noget før?
+
+238
+0:13:22,420 --> 0:13:24,420
+ Og altså,
+
+239
+0:13:24,420 --> 0:13:26,420
+ når nu min elmåler er blevet skiftet,
+
+240
+0:13:26,420 --> 0:13:28,420
+ så bliver den jo ikke skiftet tilbage igen,
+
+241
+0:13:28,420 --> 0:13:30,420
+ kan vi godt blive enige om det?
+
+242
+0:13:30,420 --> 0:13:32,420
+ Så er det jo en one way.
+
+243
+0:13:32,420 --> 0:13:34,420
+ Radius' argumenter, de er noget simplere,
+
+244
+0:13:34,420 --> 0:13:36,420
+ det er,
+
+245
+0:13:36,420 --> 0:13:38,420
+ det er jo sådan set ikke uenig i,
+
+246
+0:13:38,420 --> 0:13:40,420
+ det er jo helt sikkert,
+
+247
+0:13:40,420 --> 0:13:42,420
+ at det er deres elmåler.
+
+248
+0:13:42,420 --> 0:13:44,420
+ Og fodretten,
+
+249
+0:13:44,420 --> 0:13:46,420
+ de træffer jo en afgørelse,
+
+250
+0:13:46,420 --> 0:13:48,420
+ og så bliver elli skiftet,
+
+251
+0:13:48,420 --> 0:13:50,420
+ og vi får holdt en lille forvælseremoni,
+
+252
+0:13:50,420 --> 0:13:52,420
+ for den her elmåler,
+
+253
+0:13:52,420 --> 0:13:54,420
+ og får sagt pænt farvel for,
+
+254
+0:13:54,420 --> 0:13:56,420
+ ja,
+
+255
+0:13:56,420 --> 0:13:58,420
+ 84 til 21,
+
+256
+0:13:58,420 --> 0:14:00,420
+ det er mange års tro tjeneste.
+
+257
+0:14:00,420 --> 0:14:02,420
+ Ja,
+
+258
+0:14:02,420 --> 0:14:04,420
+ det er jo,
+
+259
+0:14:04,420 --> 0:14:06,420
+ jeg ved ikke, om I kan se,
+
+260
+0:14:06,420 --> 0:14:08,420
+ der står der,
+
+261
+0:14:08,420 --> 0:14:10,420
+ kære elmåler, tak for el.
+
+262
+0:14:10,420 --> 0:14:12,420
+ Ja.
+
+263
+0:14:12,420 --> 0:14:14,420
+ Lige efter,
+
+264
+0:14:14,420 --> 0:14:16,420
+ at jeg har været i fodretten,
+
+265
+0:14:16,420 --> 0:14:18,420
+ så kommer der
+
+266
+0:14:18,420 --> 0:14:20,420
+ en BHD-afhandling.
+
+267
+0:14:20,420 --> 0:14:22,420
+ Det er en BHD-afhandling
+
+268
+0:14:22,420 --> 0:14:24,420
+ om privatliv,
+
+269
+0:14:24,420 --> 0:14:26,420
+ og elmålere,
+
+270
+0:14:26,420 --> 0:14:28,420
+ og GDPR.
+
+271
+0:14:28,420 --> 0:14:30,420
+ What are the chances?
+
+272
+0:14:30,420 --> 0:14:32,420
+ Altså,
+
+273
+0:14:32,420 --> 0:14:34,420
+ det var sådan,
+
+274
+0:14:34,420 --> 0:14:36,420
+ okay,
+
+275
+0:14:36,420 --> 0:14:38,420
+ det er jo helt vildt crazy,
+
+276
+0:14:38,420 --> 0:14:40,420
+ at der er nogen, der skriver en BHD om det,
+
+277
+0:14:40,420 --> 0:14:42,420
+ og det er jo en ordentlig mobbedreng
+
+278
+0:14:42,420 --> 0:14:44,420
+ på 360 sider,
+
+279
+0:14:44,420 --> 0:14:46,420
+ så den har jeg ikke taget med i dag,
+
+280
+0:14:46,420 --> 0:14:48,420
+ men noget af det, der er det vigtige,
+
+281
+0:14:48,420 --> 0:14:50,420
+ det er, at de kigger ned i GDPRs og titel 9,
+
+282
+0:14:50,420 --> 0:14:52,420
+ og GDPRs og titel 9,
+
+283
+0:14:52,420 --> 0:14:54,420
+ det er den, der omhandler de her følsomme personoplysninger,
+
+284
+0:14:54,420 --> 0:14:56,420
+ sådan som etniske oprindelser,
+
+285
+0:14:56,420 --> 0:14:58,420
+ raser og politik,
+
+286
+0:14:58,420 --> 0:15:00,420
+ og religiøs eller filosofisk overbevisning.
+
+287
+0:15:02,420 --> 0:15:04,420
+ Og hvorfor det er interessant,
+
+288
+0:15:04,420 --> 0:15:06,420
+ så skal vi snakke om data lige om lidt.
+
+289
+0:15:06,420 --> 0:15:08,420
+ Det kommer vi tilbage til nu,
+
+290
+0:15:08,420 --> 0:15:10,420
+ nemlig, at man ud af elmålerdata
+
+291
+0:15:10,420 --> 0:15:12,420
+ i visse tilfælde
+
+292
+0:15:12,420 --> 0:15:14,420
+ kan udvide folks religion.
+
+293
+0:15:14,420 --> 0:15:16,420
+ Hvordan?
+
+294
+0:15:24,420 --> 0:15:26,420
+ Nogen jøder bruger ikke el på sabbaten,
+
+295
+0:15:26,420 --> 0:15:28,420
+ eller gør det i hvert fald på en anden måde.
+
+296
+0:15:28,420 --> 0:15:30,420
+ Og det er helt rigtigt.
+
+297
+0:15:30,420 --> 0:15:32,420
+ Jøderne er et eksempel på,
+
+298
+0:15:32,420 --> 0:15:34,420
+ at fredag og lørdag,
+
+299
+0:15:34,420 --> 0:15:36,420
+ der har de et mønster,
+
+300
+0:15:36,420 --> 0:15:38,420
+ der er pusset.
+
+301
+0:15:38,420 --> 0:15:40,420
+ Og det samme gælder med muslimer under ramadanen.
+
+302
+0:15:40,420 --> 0:15:42,420
+ Der har de også et elmønster,
+
+303
+0:15:42,420 --> 0:15:44,420
+ der er anderledes end normalt.
+
+304
+0:15:44,420 --> 0:15:46,420
+ Der har de også et elmønster,
+
+305
+0:15:46,420 --> 0:15:48,420
+ der er anderledes end normalt.
+
+306
+0:15:48,420 --> 0:15:50,420
+ Og så begynder der jo pludselig at være noget hov.
+
+307
+0:15:50,420 --> 0:15:52,420
+ Så er vi jo over i den lidt mere farlige kategori.
+
+308
+0:15:52,420 --> 0:15:54,420
+ Så er det jo ikke bare, om Ole er på ferie,
+
+309
+0:15:54,420 --> 0:15:56,420
+ eller om han har elkomfur.
+
+310
+0:15:56,420 --> 0:15:58,420
+ Og PUD'en,
+
+311
+0:15:58,420 --> 0:16:00,420
+ den siger også,
+
+312
+0:16:00,420 --> 0:16:02,420
+ at vi er nødt til at afveje,
+
+313
+0:16:02,420 --> 0:16:04,420
+ retten til privatliv,
+
+314
+0:16:04,420 --> 0:16:06,420
+ og samfundets interesse.
+
+315
+0:16:06,420 --> 0:16:08,420
+ I hvert fald, hvis de konflikter.
+
+316
+0:16:08,420 --> 0:16:10,420
+ Og her ringer PUD'en,
+
+317
+0:16:10,420 --> 0:16:12,420
+ så siger de, jamen,
+
+318
+0:16:12,420 --> 0:16:14,420
+ hvad er samfundets interesse i det her?
+
+319
+0:16:14,420 --> 0:16:16,420
+ Det kunne jo være den grønne dagsorden,
+
+320
+0:16:16,420 --> 0:16:18,420
+ med at vi gerne vil sørge for,
+
+321
+0:16:18,420 --> 0:16:20,420
+ at vi flytter vores strømforbrug til der,
+
+322
+0:16:20,420 --> 0:16:22,420
+ hvor strømmen er mere grøn.
+
+323
+0:16:22,420 --> 0:16:24,420
+ Og de kigger så også på Holland,
+
+324
+0:16:24,420 --> 0:16:26,420
+ hvor det ikke er et problem,
+
+325
+0:16:26,420 --> 0:16:28,420
+ fordi i Holland, der er man nemlig tvunget
+
+326
+0:16:28,420 --> 0:16:30,420
+ til at få skiftet sine elmønner,
+
+327
+0:16:30,420 --> 0:16:32,420
+ Noget af det,
+
+328
+0:16:32,420 --> 0:16:34,420
+ som den her afhandling
+
+329
+0:16:34,420 --> 0:16:36,420
+ ikke kigger på, det er min løsning.
+
+330
+0:16:36,420 --> 0:16:38,420
+ Som både kan give den grønne dagsorden,
+
+331
+0:16:38,420 --> 0:16:40,420
+ og kan give privatlivsbeskyttelsen.
+
+332
+0:16:42,420 --> 0:16:44,420
+ Nå, og min løsning.
+
+333
+0:16:44,420 --> 0:16:46,420
+ Min løsning, den ser cirka sådan her ud.
+
+334
+0:16:46,420 --> 0:16:48,420
+ Selve hovedideen er,
+
+335
+0:16:48,420 --> 0:16:50,420
+ at opsummeringen,
+
+336
+0:16:50,420 --> 0:16:52,420
+ den sker ude hos elmåleren,
+
+337
+0:16:52,420 --> 0:16:54,420
+ den sker ikke hos Netselskabet.
+
+338
+0:16:54,420 --> 0:16:56,420
+ Så måleren, den har seks konti.
+
+339
+0:16:56,420 --> 0:16:58,420
+ Den har en til dit forbrug
+
+340
+0:16:58,420 --> 0:17:00,420
+ af kilowattimer.
+
+341
+0:17:00,420 --> 0:17:02,420
+ Det er det, som
+
+342
+0:17:02,420 --> 0:17:04,420
+ good old Ellie havde.
+
+343
+0:17:04,420 --> 0:17:06,420
+ Men den har også nogle andre konti.
+
+344
+0:17:06,420 --> 0:17:08,420
+ Den har nemlig også forbrug i kroner.
+
+345
+0:17:08,420 --> 0:17:10,420
+ Og det kommer jo an på, hvad
+
+346
+0:17:10,420 --> 0:17:12,420
+ elleverandørens pris er til dig.
+
+347
+0:17:12,420 --> 0:17:14,420
+ Hvad den er.
+
+348
+0:17:14,420 --> 0:17:16,420
+ Så er der en produktion af el.
+
+349
+0:17:16,420 --> 0:17:18,420
+ Ja, hvis du nu har solceller og sender strøm den anden vej.
+
+350
+0:17:18,420 --> 0:17:20,420
+ Så er der
+
+351
+0:17:20,420 --> 0:17:22,420
+ prisen for det her produktions af el.
+
+352
+0:17:22,420 --> 0:17:24,420
+ Det er jo spotprisen ude på
+
+353
+0:17:24,420 --> 0:17:26,420
+ elmarkedet.
+
+354
+0:17:26,420 --> 0:17:28,420
+ Så er der forbrug af transport.
+
+355
+0:17:28,420 --> 0:17:30,420
+ Hvor meget strøm bliver der sendt igennem ledningen.
+
+356
+0:17:30,420 --> 0:17:32,420
+ Og det er jo afhængigt af Netselskabets pris.
+
+357
+0:17:32,420 --> 0:17:34,420
+ Og så er der en indkøbspris
+
+358
+0:17:34,420 --> 0:17:36,420
+ i kroner for elleverandøren.
+
+359
+0:17:36,420 --> 0:17:38,420
+ Og med dem her,
+
+360
+0:17:38,420 --> 0:17:40,420
+ så får vi samlet
+
+361
+0:17:40,420 --> 0:17:42,420
+ de her data, som vi senere
+
+362
+0:17:42,420 --> 0:17:44,420
+ hen skal bruge.
+
+363
+0:17:44,420 --> 0:17:46,420
+ Og ideen er, at vi hver time,
+
+364
+0:17:46,420 --> 0:17:48,420
+ så tager vi og
+
+365
+0:17:48,420 --> 0:17:50,420
+ får Netselskabet
+
+366
+0:17:50,420 --> 0:17:52,420
+ til at fortælle
+
+367
+0:17:52,420 --> 0:17:54,420
+ elmåleren, hvad er timeprisen
+
+368
+0:17:54,420 --> 0:17:56,420
+ for de her forskellige ting.
+
+369
+0:17:56,420 --> 0:17:58,420
+ Og indkøbsprisen og spotprisen
+
+370
+0:17:58,420 --> 0:18:00,420
+ og prisen for transport.
+
+371
+0:18:00,420 --> 0:18:02,420
+ Får de sendt ud til elmåleren, og så tager
+
+372
+0:18:02,420 --> 0:18:04,420
+ elmåleren så og ganger, hvor mange kilowattimer
+
+373
+0:18:04,420 --> 0:18:06,420
+ bruger du lige nu.
+
+374
+0:18:06,420 --> 0:18:08,420
+ Ganger det på, og laver sådan en
+
+375
+0:18:08,420 --> 0:18:10,420
+ opsummering.
+
+376
+0:18:12,420 --> 0:18:14,420
+ Når den er ganget på, så sender vi de her
+
+377
+0:18:14,420 --> 0:18:16,420
+ data krypteret fra
+
+378
+0:18:16,420 --> 0:18:18,420
+ elmåleren ind til Netselskabet.
+
+379
+0:18:18,420 --> 0:18:20,420
+ Og vi sender dem krypteret på en sådan måde,
+
+380
+0:18:20,420 --> 0:18:22,420
+ så elmåleren kan dekryptere det,
+
+381
+0:18:22,420 --> 0:18:24,420
+ så borgeren kan dekryptere det, og så
+
+382
+0:18:24,420 --> 0:18:26,420
+ dommer kan dekryptere det. Jeg ved ikke, hvornår den
+
+383
+0:18:26,420 --> 0:18:28,420
+ dommer skulle få brug for det, men lad os
+
+384
+0:18:28,420 --> 0:18:30,420
+ bare sørge for, at en dommer også kan dekryptere det.
+
+385
+0:18:30,420 --> 0:18:32,420
+ Og det skal vi bruge til, at
+
+386
+0:18:32,420 --> 0:18:34,420
+ hvor mange af jer har sådan en app
+
+387
+0:18:34,420 --> 0:18:36,420
+ på telefonen, så I kan se strømforbruget?
+
+388
+0:18:36,420 --> 0:18:38,420
+ Op med en hånd. Det er nogle få af jer, der har.
+
+389
+0:18:38,420 --> 0:18:40,420
+ Det er jo til det.
+
+390
+0:18:40,420 --> 0:18:42,420
+ Vi skal kunne på den her telefon,
+
+391
+0:18:42,420 --> 0:18:44,420
+ skal borgeren kunne tegne nogle grafer
+
+392
+0:18:44,420 --> 0:18:46,420
+ over sit eget elforbrug.
+
+393
+0:18:48,420 --> 0:18:50,420
+ Så tager vi, når timen er slut,
+
+394
+0:18:50,420 --> 0:18:52,420
+ og så lægger vi det til summen, og hver måned
+
+395
+0:18:52,420 --> 0:18:54,420
+ så sender vi de her månedssummer
+
+396
+0:18:54,420 --> 0:18:56,420
+ til Netselskabet.
+
+397
+0:18:56,420 --> 0:18:58,420
+ Og dem sender vi ukrypteret,
+
+398
+0:18:58,420 --> 0:19:00,420
+ eller i hvert fald sender vi dem på en måde, så de
+
+399
+0:19:00,420 --> 0:19:02,420
+ kan dekrypteres af Netselskabet og elselskabet.
+
+400
+0:19:02,420 --> 0:19:04,420
+ For de har jo behov for at se de her data
+
+401
+0:19:04,420 --> 0:19:06,420
+ til at kunne sige, okay, hvor mange
+
+402
+0:19:06,420 --> 0:19:08,420
+ kilowattimer har du brugt, og
+
+403
+0:19:08,420 --> 0:19:10,420
+ hvor mange kroner skal du betale, fordi det skal vi have skrevet
+
+404
+0:19:10,420 --> 0:19:12,420
+ på fakturen.
+
+405
+0:19:12,420 --> 0:19:14,420
+ Noget af det, som
+
+406
+0:19:14,420 --> 0:19:16,420
+ min løsning er blevet
+
+407
+0:19:16,420 --> 0:19:18,420
+ angrebet for, det er, at det er jo
+
+408
+0:19:18,420 --> 0:19:20,420
+ sørme mange data, der skal sendes ud til
+
+409
+0:19:20,420 --> 0:19:22,420
+ de her elmålere. Det er jo en pris,
+
+410
+0:19:22,420 --> 0:19:24,420
+ de her seks
+
+411
+0:19:24,420 --> 0:19:26,420
+ priser skal sendes ud til den her elmåler,
+
+412
+0:19:26,420 --> 0:19:28,420
+ og det skal de jo gøre hver time. Det er mange data, der
+
+413
+0:19:28,420 --> 0:19:30,420
+ skal sendes der.
+
+414
+0:19:30,420 --> 0:19:32,420
+ Men det er i virkeligheden
+
+415
+0:19:32,420 --> 0:19:34,420
+ meget færre data, der skal sendes, fordi
+
+416
+0:19:34,420 --> 0:19:36,420
+ der er ikke ret mange
+
+417
+0:19:36,420 --> 0:19:38,420
+ elleleverandører i Danmark. Der er omkring 50, tror jeg, det er.
+
+418
+0:19:38,420 --> 0:19:40,420
+ Og de har ikke ret mange forskellige
+
+419
+0:19:40,420 --> 0:19:42,420
+ priser. Lad os sige, de har fem priser hver.
+
+420
+0:19:42,420 --> 0:19:44,420
+ En for fastprisaftale,
+
+421
+0:19:44,420 --> 0:19:46,420
+ en for variable, og så har de måske noget
+
+422
+0:19:46,420 --> 0:19:48,420
+ storkunde, hvad ved jeg.
+
+423
+0:19:48,420 --> 0:19:50,420
+ Så det er i alt 250 priser, der skal sendes ud.
+
+424
+0:19:50,420 --> 0:19:52,420
+ Og de her elmålere,
+
+425
+0:19:52,420 --> 0:19:54,420
+ de sidder i et mesh network.
+
+426
+0:19:54,420 --> 0:19:56,420
+ Og jer, der kender til mesh network, ved,
+
+427
+0:19:56,420 --> 0:19:58,420
+ at lave en broadcast i et mesh network,
+
+428
+0:19:58,420 --> 0:20:00,420
+ det er utroligt billigt. Så man skal bare
+
+429
+0:20:00,420 --> 0:20:02,420
+ sende den her lille data, den her
+
+430
+0:20:02,420 --> 0:20:04,420
+ prisliste, ud til en af de her
+
+431
+0:20:04,420 --> 0:20:06,420
+ elmålere, og så tager den og
+
+432
+0:20:06,420 --> 0:20:08,420
+ kaster det ud til alle de andre. For prislisten
+
+433
+0:20:08,420 --> 0:20:10,420
+ er jo ikke hemmelig.
+
+434
+0:20:10,420 --> 0:20:12,420
+ Så tager min elmåler og siger,
+
+435
+0:20:12,420 --> 0:20:14,420
+ jeg er kunde hos elleleverandør
+
+436
+0:20:14,420 --> 0:20:16,420
+ nummer 34, og jeg
+
+437
+0:20:16,420 --> 0:20:18,420
+ bruger pris nummer 2,
+
+438
+0:20:18,420 --> 0:20:20,420
+ og så suger jeg bare den ud af den her prisliste.
+
+439
+0:20:20,420 --> 0:20:22,420
+ Giver det mening?
+
+440
+0:20:22,420 --> 0:20:24,420
+ Godt.
+
+441
+0:20:26,420 --> 0:20:28,420
+ Jeg er nødt til at sige
+
+442
+0:20:28,420 --> 0:20:30,420
+ et lille ord som fastprisaftaler.
+
+443
+0:20:30,420 --> 0:20:32,420
+ Og jeg ved ikke, om I så nyhederne i går,
+
+444
+0:20:32,420 --> 0:20:34,420
+ hvor
+
+445
+0:20:34,420 --> 0:20:36,420
+ der var nogen af en leverandør,
+
+446
+0:20:36,420 --> 0:20:38,420
+ der havde fastprisaftaler, som ikke
+
+447
+0:20:38,420 --> 0:20:40,420
+ rigtig kunne leve op til det længere. Så han havde
+
+448
+0:20:40,420 --> 0:20:42,420
+ opsagt aftalerne fuldt indenfor
+
+449
+0:20:42,420 --> 0:20:44,420
+ loven, fordi der var tre måneders løbetid, men han
+
+450
+0:20:44,420 --> 0:20:46,420
+ sagde, jeg kan ikke leve op til det der længere.
+
+451
+0:20:46,420 --> 0:20:48,420
+ Og det er fordi fastprisaftaler
+
+452
+0:20:48,420 --> 0:20:50,420
+ er en gambling.
+
+453
+0:20:50,420 --> 0:20:52,420
+ De skal nemlig, altså de her
+
+454
+0:20:52,420 --> 0:20:54,420
+ elleleverandørerne, de skal altid købe det til markedspris,
+
+455
+0:20:54,420 --> 0:20:56,420
+ men sælger det jo så til jer
+
+456
+0:20:56,420 --> 0:20:58,420
+ til en fastpris.
+
+457
+0:20:58,420 --> 0:21:00,420
+ Og det er derfor, vi er nødt til i det her
+
+458
+0:21:00,420 --> 0:21:02,420
+ system at have en konto til deres indkøbspris.
+
+459
+0:21:02,420 --> 0:21:04,420
+ For ellers så kan man jo sige, hvorfor
+
+460
+0:21:04,420 --> 0:21:06,420
+ skal min elle måler vide,
+
+461
+0:21:06,420 --> 0:21:08,420
+ hvad indkøbsprisen er for den strøm,
+
+462
+0:21:08,420 --> 0:21:10,420
+ jeg får fra mine elleleverandører?
+
+463
+0:21:10,420 --> 0:21:12,420
+ Hvorfor skal de bruge det? Men det skal de
+
+464
+0:21:12,420 --> 0:21:14,420
+ på grund af sådan noget som fastprisaftaler.
+
+465
+0:21:16,420 --> 0:21:18,420
+ Og kan det gøres bedre end det her?
+
+466
+0:21:18,420 --> 0:21:20,420
+ Det er
+
+467
+0:21:20,420 --> 0:21:22,420
+ slet ikke kun et tvivl om,
+
+468
+0:21:22,420 --> 0:21:24,420
+ at man kan lave løsninger, der er meget federe
+
+469
+0:21:24,420 --> 0:21:26,420
+ end det, som jeg har lavet. Og sikkert
+
+470
+0:21:26,420 --> 0:21:28,420
+ også meget mere gennemtænkte. Men
+
+471
+0:21:28,420 --> 0:21:30,420
+ et af de ting, som er
+
+472
+0:21:30,420 --> 0:21:32,420
+ vigtigt for mig, det er, at
+
+473
+0:21:32,420 --> 0:21:34,420
+ jeg kan forklare den her model til en
+
+474
+0:21:34,420 --> 0:21:36,420
+ dommer. Og hvis vi begynder at blande
+
+475
+0:21:36,420 --> 0:21:38,420
+ blinded certificates ind i sådan noget her,
+
+476
+0:21:38,420 --> 0:21:40,420
+ og mixnets,
+
+477
+0:21:40,420 --> 0:21:42,420
+ og lignende
+
+478
+0:21:42,420 --> 0:21:44,420
+ anonymiseringsting, så bliver det jo meget hurtigt
+
+479
+0:21:44,420 --> 0:21:46,420
+ meget sort for en dommer. Så derfor skal det
+
+480
+0:21:46,420 --> 0:21:48,420
+ helst være sådan relativt simpelt.
+
+481
+0:21:48,420 --> 0:21:50,420
+ Og essensen er jo, at jeg bare skal vise,
+
+482
+0:21:50,420 --> 0:21:52,420
+ jamen der findes noget, der giver en bedre
+
+483
+0:21:52,420 --> 0:21:54,420
+ privatløsbeskyttelse end det,
+
+484
+0:21:54,420 --> 0:21:56,420
+ som vi har i dag.
+
+485
+0:21:58,420 --> 0:22:00,420
+ Den hollandske beslutning er, at
+
+486
+0:22:00,420 --> 0:22:02,420
+ det er velfrit.
+
+487
+0:22:02,420 --> 0:22:04,420
+ Det er velfrit at få skiftet til
+
+488
+0:22:04,420 --> 0:22:06,420
+ en fjernaflæst 11 måneder. Det er velfrit
+
+489
+0:22:06,420 --> 0:22:08,420
+ at få den fjernaflæst. Du kan også selv
+
+490
+0:22:08,420 --> 0:22:10,420
+ få lov til at aflæse den, hvis du har løst til det.
+
+491
+0:22:10,420 --> 0:22:12,420
+ Og du kan sige, at du vil have den aflæst med en anden
+
+492
+0:22:12,420 --> 0:22:14,420
+ periode. For eksempel en gang om måneden.
+
+493
+0:22:14,420 --> 0:22:16,420
+ Og det vil sige, at det er vi, som har
+
+494
+0:22:16,420 --> 0:22:18,420
+ sådan en trip-trap-trasko med privatløsbeskyttelse.
+
+495
+0:22:18,420 --> 0:22:20,420
+ Og derfor
+
+496
+0:22:20,420 --> 0:22:22,420
+ så den her
+
+497
+0:22:22,420 --> 0:22:24,420
+ mening her, som jeg har,
+
+498
+0:22:24,420 --> 0:22:26,420
+ vil stadig give mening i Holland, fordi
+
+499
+0:22:26,420 --> 0:22:28,420
+ man vil bare sige, jamen ved du hvad, hvis du
+
+500
+0:22:28,420 --> 0:22:30,420
+ vil holde ældre, så gør du bare det.
+
+501
+0:22:30,420 --> 0:22:32,420
+ Det er der ingen problemer i.
+
+502
+0:22:32,420 --> 0:22:34,420
+ Og det får mig
+
+503
+0:22:34,420 --> 0:22:36,420
+ også til at tænke, okay, der er jo ikke nogen
+
+504
+0:22:36,420 --> 0:22:38,420
+ EU-lov, der
+
+505
+0:22:38,420 --> 0:22:40,420
+ påbyder os i Danmark
+
+506
+0:22:40,420 --> 0:22:42,420
+ at have skiftet alle 11 måneder. Det er altså et eller andet,
+
+507
+0:22:42,420 --> 0:22:44,420
+ vi selv har besluttet.
+
+508
+0:22:48,420 --> 0:22:50,420
+ Nu kommer vi ind i et lidt mere juridisk vinkel, og det er sådan,
+
+509
+0:22:50,420 --> 0:22:52,420
+ hvor man siger, hvorfor er det
+
+510
+0:22:52,420 --> 0:22:54,420
+ at Radius siger,
+
+511
+0:22:54,420 --> 0:22:56,420
+ som de siger. Radius
+
+512
+0:22:56,420 --> 0:22:58,420
+ bygger deres argument på
+
+513
+0:22:58,420 --> 0:23:00,420
+ ind i GDPR's artikel 6
+
+514
+0:23:00,420 --> 0:23:02,420
+ stykke 1. Der står
+
+515
+0:23:02,420 --> 0:23:04,420
+ der, at en behandling kun er
+
+516
+0:23:04,420 --> 0:23:06,420
+ lovlig,
+
+517
+0:23:06,420 --> 0:23:08,420
+ hvis den i det her omfang, et af følgende forhold
+
+518
+0:23:08,420 --> 0:23:10,420
+ gør sig gældende, nemlig at
+
+519
+0:23:10,420 --> 0:23:12,420
+ der er en retslig interesse.
+
+520
+0:23:12,420 --> 0:23:14,420
+ Så de henholder sig til
+
+521
+0:23:14,420 --> 0:23:16,420
+ at sige, jamen der er noget lovgivende, der
+
+522
+0:23:16,420 --> 0:23:18,420
+ siger, at vi skal have de her data,
+
+523
+0:23:18,420 --> 0:23:20,420
+ og det er i virkeligheden på samme måde som
+
+524
+0:23:20,420 --> 0:23:22,420
+ når jeres arbejdsgiver afleverer
+
+525
+0:23:22,420 --> 0:23:24,420
+ skatteoplysninger til skattevæsenet,
+
+526
+0:23:24,420 --> 0:23:26,420
+ så er det fordi, der er
+
+527
+0:23:26,420 --> 0:23:28,420
+ en lov, der siger, at de skal gøre det.
+
+528
+0:23:30,420 --> 0:23:32,420
+ De henholder sig også til,
+
+529
+0:23:32,420 --> 0:23:34,420
+ at i elforsyningslovens
+
+530
+0:23:34,420 --> 0:23:36,420
+ paragraf 22, der står der, at
+
+531
+0:23:36,420 --> 0:23:38,420
+ det her skal ske, den her indberetning skal ske
+
+532
+0:23:38,420 --> 0:23:40,420
+ i henhold til nogle forskrifter,
+
+533
+0:23:40,420 --> 0:23:42,420
+ som er udstilt af Energinet.
+
+534
+0:23:42,420 --> 0:23:44,420
+ De har ligesom, okay,
+
+535
+0:23:44,420 --> 0:23:46,420
+ jamen der er noget lov, det er nemlig
+
+536
+0:23:46,420 --> 0:23:48,420
+ elforsyningsloven, og det peger på nogle forskrifter.
+
+537
+0:23:50,420 --> 0:23:52,420
+ Og forskrifterne, det er ét,
+
+538
+0:23:52,420 --> 0:23:54,420
+ siger, at de skal hjemtage nogle værdier
+
+539
+0:23:54,420 --> 0:23:56,420
+ her hver time
+
+540
+0:23:56,420 --> 0:23:58,420
+ eller hver kvarter, og
+
+541
+0:23:58,420 --> 0:24:00,420
+ det lever min løsning op til, og det er ikke det,
+
+542
+0:24:00,420 --> 0:24:02,420
+ der er problemet. Problemet kommer nede i
+
+543
+0:24:02,420 --> 0:24:04,420
+ paragraf 2, hvor
+
+544
+0:24:04,420 --> 0:24:06,420
+ at de her målinger
+
+545
+0:24:06,420 --> 0:24:08,420
+ her, når de bliver hjemtaget,
+
+546
+0:24:08,420 --> 0:24:10,420
+ så skal de alternativt kunne
+
+547
+0:24:10,420 --> 0:24:12,420
+ estimeres. Og det er jo
+
+548
+0:24:12,420 --> 0:24:14,420
+ svært, hvis de er krypteret.
+
+549
+0:24:14,420 --> 0:24:16,420
+ Så kan du ikke lige estimere
+
+550
+0:24:16,420 --> 0:24:18,420
+ de her værdier her.
+
+551
+0:24:18,420 --> 0:24:20,420
+ Og slet ikke indenfor
+
+552
+0:24:20,420 --> 0:24:22,420
+ hvad det er for en time, vi er i.
+
+553
+0:24:22,420 --> 0:24:24,420
+ Måske kunne man estimere det på månedsbasis,
+
+554
+0:24:24,420 --> 0:24:26,420
+ men i hvert fald ikke det andet.
+
+555
+0:24:26,420 --> 0:24:28,420
+ Og så er der det andet problem med,
+
+556
+0:24:28,420 --> 0:24:30,420
+ hvordan kontrollerer du rigtigheden?
+
+557
+0:24:30,420 --> 0:24:32,420
+ Det kommer sådan lidt an på, hvordan du
+
+558
+0:24:32,420 --> 0:24:34,420
+ definerer rigtigheden, for hvis du bare definerer
+
+559
+0:24:34,420 --> 0:24:36,420
+ rigtigheden som, har du modtaget den her
+
+560
+0:24:36,420 --> 0:24:38,420
+ krypteret pakke, og
+
+561
+0:24:38,420 --> 0:24:40,420
+ er den det samme
+
+562
+0:24:40,420 --> 0:24:42,420
+ som vores backup, så har du jo kontrolleret
+
+563
+0:24:42,420 --> 0:24:44,420
+ rigtigheden. Så det er sådan lidt et definitionsspørgsmål,
+
+564
+0:24:44,420 --> 0:24:46,420
+ hvad rigtighed betyder
+
+565
+0:24:46,420 --> 0:24:48,420
+ i den her sammenhed.
+
+566
+0:24:48,420 --> 0:24:50,420
+ Det, der er vigtigt at forstå her, er i virkeligheden
+
+567
+0:24:50,420 --> 0:24:52,420
+ noget andet. Det er vigtigt at forstå,
+
+568
+0:24:52,420 --> 0:24:54,420
+ at forskrifterne, de ændres
+
+569
+0:24:54,420 --> 0:24:56,420
+ og justeres løbende,
+
+570
+0:24:56,420 --> 0:24:58,420
+ uden politikernes udkendelse.
+
+571
+0:24:58,420 --> 0:25:00,420
+ Det er noget, som Energinet gør.
+
+572
+0:25:00,420 --> 0:25:02,420
+ Det er altså nogle embedsfolk, som sammen med
+
+573
+0:25:02,420 --> 0:25:04,420
+ Radius, finder ud af,
+
+574
+0:25:04,420 --> 0:25:06,420
+ det er måske bedre, at vi får at gøre det på den her måde her.
+
+575
+0:25:06,420 --> 0:25:08,420
+ Og det er vigtigt
+
+576
+0:25:08,420 --> 0:25:10,420
+ lige om lidt.
+
+577
+0:25:10,420 --> 0:25:12,420
+ Radius siger altså, at vi efterlever
+
+578
+0:25:12,420 --> 0:25:14,420
+ de her forskrifter som udstedt, og
+
+579
+0:25:14,420 --> 0:25:16,420
+ hvis du synes,
+
+580
+0:25:16,420 --> 0:25:18,420
+ de er dumme, eller loven er dum,
+
+581
+0:25:18,420 --> 0:25:20,420
+ jamen så må du ændre den. Det er ikke
+
+582
+0:25:20,420 --> 0:25:22,420
+ vores spor, siger Radius.
+
+583
+0:25:22,420 --> 0:25:24,420
+ Til gengæld er det vores spor, at vi skal skifte
+
+584
+0:25:24,420 --> 0:25:26,420
+ alle L-måler inden den 31. december.
+
+585
+0:25:28,420 --> 0:25:30,420
+ Men, kommer jeg også og siger jeg,
+
+586
+0:25:30,420 --> 0:25:32,420
+ der står også andre ting i GDPR,
+
+587
+0:25:32,420 --> 0:25:34,420
+ nemlig artikel 5,
+
+588
+0:25:34,420 --> 0:25:36,420
+ nemlig at de her
+
+589
+0:25:36,420 --> 0:25:38,420
+ personoplysninger, de skal opbevares på en måde,
+
+590
+0:25:40,420 --> 0:25:42,420
+ så det ikke er muligt at identificere registreret
+
+591
+0:25:42,420 --> 0:25:44,420
+ i et længere tidsrum, end det er nødvendigt.
+
+592
+0:25:44,420 --> 0:25:46,420
+ Så de skal altså
+
+593
+0:25:46,420 --> 0:25:48,420
+ sørge for, at
+
+594
+0:25:48,420 --> 0:25:50,420
+ man ikke kan identificere mig
+
+595
+0:25:50,420 --> 0:25:52,420
+ i en længere tid,
+
+596
+0:25:52,420 --> 0:25:54,420
+ end de har behov for det,
+
+597
+0:25:54,420 --> 0:25:56,420
+ og gerne så finde en måde,
+
+598
+0:25:56,420 --> 0:25:58,420
+ hvorpå de ikke behøver at identificere mig overhovedet,
+
+599
+0:25:58,420 --> 0:26:00,420
+ fordi så er tidsrummet jo plus 9.
+
+600
+0:26:00,420 --> 0:26:02,420
+ Så hvis de kan finde en måde, hvorpå de
+
+601
+0:26:02,420 --> 0:26:04,420
+ kan gøre det på, så skal de gøre det.
+
+602
+0:26:04,420 --> 0:26:06,420
+ Det understreges i
+
+603
+0:26:06,420 --> 0:26:08,420
+ paragraf 25, eller i artikel 25,
+
+604
+0:26:08,420 --> 0:26:10,420
+ hvor der står, at den dataansvarlige
+
+605
+0:26:10,420 --> 0:26:12,420
+ løbende
+
+606
+0:26:12,420 --> 0:26:14,420
+ skal tilpasse de her tekniske
+
+607
+0:26:14,420 --> 0:26:16,420
+ løsninger her, foranstaltninger,
+
+608
+0:26:16,420 --> 0:26:18,420
+ sådan at der bliver implementeret
+
+609
+0:26:18,420 --> 0:26:20,420
+ en databeskyttelse i det.
+
+610
+0:26:20,420 --> 0:26:22,420
+ Og det inkluderer bl.a. dataminimering.
+
+611
+0:26:24,420 --> 0:26:26,420
+ Artikel 25 har også
+
+612
+0:26:26,420 --> 0:26:28,420
+ et punkt om at sige,
+
+613
+0:26:28,420 --> 0:26:30,420
+ at det skal ikke være noget, du tilvælger.
+
+614
+0:26:30,420 --> 0:26:32,420
+ Det skal det være som udgangspunkt.
+
+615
+0:26:32,420 --> 0:26:34,420
+ Som udgangspunkt skal borgerne have
+
+616
+0:26:34,420 --> 0:26:36,420
+ den her databeskyttelse,
+
+617
+0:26:36,420 --> 0:26:38,420
+ og så kan det jo selvfølgelig være, at man kan vælge noget fra,
+
+618
+0:26:38,420 --> 0:26:40,420
+ men som udgangspunkt skal man have databeskyttelsen.
+
+619
+0:26:42,420 --> 0:26:44,420
+ Og så kommer vi til den restlige trinfølge,
+
+620
+0:26:44,420 --> 0:26:46,420
+ nemlig, hvad er det for nogle
+
+621
+0:26:46,420 --> 0:26:48,420
+ lov, der overtrumfer hinanden?
+
+622
+0:26:48,420 --> 0:26:50,420
+ Og allerøverst op, der har vi grundloven.
+
+623
+0:26:50,420 --> 0:26:52,420
+ Der er ikke noget, der overtrumfer den.
+
+624
+0:26:52,420 --> 0:26:54,420
+ Men lige nedenunder den, der har vi EU-
+
+625
+0:26:54,420 --> 0:26:56,420
+ forordninger, og det er fordi, vi har uddelegeret
+
+626
+0:26:56,420 --> 0:26:58,420
+ noget beslutningskompetence til EU,
+
+627
+0:26:58,420 --> 0:27:00,420
+ og det er bl.a. GDPR, den ligger
+
+628
+0:27:00,420 --> 0:27:02,420
+ der. Nedenunder den har vi
+
+629
+0:27:02,420 --> 0:27:04,420
+ noget dansk lovgivning, som kunne
+
+630
+0:27:04,420 --> 0:27:06,420
+ implementere nogle EU-direktiver, men det
+
+631
+0:27:06,420 --> 0:27:08,420
+ kunne også være sådan noget som elforsyningsloven.
+
+632
+0:27:08,420 --> 0:27:10,420
+ Så har der nogle bekendtgørelser,
+
+633
+0:27:10,420 --> 0:27:12,420
+ og cirkulærer, og så nederst
+
+634
+0:27:12,420 --> 0:27:14,420
+ har vi de her forskrifter.
+
+635
+0:27:14,420 --> 0:27:16,420
+ Og igen, det giver jo god mening, fordi
+
+636
+0:27:16,420 --> 0:27:18,420
+ de her forskrifter,
+
+637
+0:27:18,420 --> 0:27:20,420
+ de er,
+
+638
+0:27:20,420 --> 0:27:22,420
+ bliver udarbejdet af byråkrater,
+
+639
+0:27:22,420 --> 0:27:24,420
+ af embedsfolk, og ikke
+
+640
+0:27:24,420 --> 0:27:26,420
+ af folkevalgte politikere.
+
+641
+0:27:28,420 --> 0:27:30,420
+ Så hvis der er nogle
+
+642
+0:27:30,420 --> 0:27:32,420
+ forskrifter, der strider imod noget
+
+643
+0:27:32,420 --> 0:27:34,420
+ overordnet, ja, så er det det overordnede,
+
+644
+0:27:34,420 --> 0:27:36,420
+ der får forgang. Giver det mening?
+
+645
+0:27:36,420 --> 0:27:38,420
+ Ja.
+
+646
+0:27:38,420 --> 0:27:40,420
+ Godt.
+
+647
+0:27:46,420 --> 0:27:48,420
+ Men nu kommer vi så til
+
+648
+0:27:48,420 --> 0:27:50,420
+ et af spørgsmålene,
+
+649
+0:27:50,420 --> 0:27:52,420
+ som er uafklaret, og som
+
+650
+0:27:52,420 --> 0:27:54,420
+ den her sag drejer sig om.
+
+651
+0:27:54,420 --> 0:27:56,420
+ Der er to kerner
+
+652
+0:27:56,420 --> 0:27:58,420
+ i den her sag, og den ene kerne er
+
+653
+0:27:58,420 --> 0:28:00,420
+ følgende.
+
+654
+0:28:00,420 --> 0:28:02,420
+ Er forskrifter en del
+
+655
+0:28:02,420 --> 0:28:04,420
+ af loven?
+
+656
+0:28:04,420 --> 0:28:06,420
+ For hvis forskrifterne er en del af loven,
+
+657
+0:28:06,420 --> 0:28:08,420
+ ja, så træder
+
+658
+0:28:08,420 --> 0:28:10,420
+ GDPR's artikel 6 i kraft, nemlig den der med
+
+659
+0:28:10,420 --> 0:28:12,420
+ den restlige forpligtelse, og så
+
+660
+0:28:12,420 --> 0:28:14,420
+ har Radios jo ret. Så er de jo en del
+
+661
+0:28:14,420 --> 0:28:16,420
+ af loven, så er der en restlig forpligtelse,
+
+662
+0:28:16,420 --> 0:28:18,420
+ så er de jo nødt til at gøre det, de gør, fordi
+
+663
+0:28:18,420 --> 0:28:20,420
+ det står i forskrifterne.
+
+664
+0:28:20,420 --> 0:28:22,420
+ Men hvis forskrifterne
+
+665
+0:28:22,420 --> 0:28:24,420
+ ikke er en del af loven,
+
+666
+0:28:24,420 --> 0:28:26,420
+ ja, så er de underlagt GDPR,
+
+667
+0:28:26,420 --> 0:28:28,420
+ fordi vi har den restlige trinfølge,
+
+668
+0:28:28,420 --> 0:28:30,420
+ så er det noget, der strider imod GDPR,
+
+669
+0:28:30,420 --> 0:28:32,420
+ og så træder
+
+670
+0:28:32,420 --> 0:28:34,420
+ GDPR's artikel 5 i kraft, nemlig om,
+
+671
+0:28:34,420 --> 0:28:36,420
+ at du ikke må indsamle flere data end nødvendigt,
+
+672
+0:28:36,420 --> 0:28:38,420
+ og du skal dataminimere, hvis du kan.
+
+673
+0:28:38,420 --> 0:28:40,420
+ Okay?
+
+674
+0:28:40,420 --> 0:28:42,420
+ Vi ved ikke,
+
+675
+0:28:42,420 --> 0:28:44,420
+ hvilken eneste
+
+676
+0:28:44,420 --> 0:28:46,420
+ af de her to, der er i,
+
+677
+0:28:46,420 --> 0:28:48,420
+ og det er en af de ting, som den her
+
+678
+0:28:48,420 --> 0:28:50,420
+ sag handler om. Vi aner det simpelthen ikke,
+
+679
+0:28:50,420 --> 0:28:52,420
+ og når jeg snakker med mine
+
+680
+0:28:52,420 --> 0:28:54,420
+ juristkolleger der på gangen, så er de sådan
+
+681
+0:28:54,420 --> 0:28:56,420
+ uh, det er en spændende juridisk ting,
+
+682
+0:28:56,420 --> 0:28:58,420
+ uh, de gotter sig
+
+683
+0:28:58,420 --> 0:29:00,420
+ sådan helt over det. Ja, fordi
+
+684
+0:29:00,420 --> 0:29:02,420
+ det er ikke indlyst, at den er til den ene
+
+685
+0:29:02,420 --> 0:29:04,420
+ eller den anden side.
+
+686
+0:29:04,420 --> 0:29:06,420
+ GDPR
+
+687
+0:29:06,420 --> 0:29:08,420
+ er en one stop shop, og det betyder,
+
+688
+0:29:08,420 --> 0:29:10,420
+ at den dataansvarlige er ansvarlig
+
+689
+0:29:10,420 --> 0:29:12,420
+ for data, og
+
+690
+0:29:12,420 --> 0:29:14,420
+ jeg har en forbrugerbeskyttelse,
+
+691
+0:29:14,420 --> 0:29:16,420
+ i, at jeg ikke kan blive sendt
+
+692
+0:29:16,420 --> 0:29:18,420
+ fra Herodes til Pilatus.
+
+693
+0:29:18,420 --> 0:29:20,420
+ Så, når jeg vil brokke
+
+694
+0:29:20,420 --> 0:29:22,420
+ mig over det her, så brokker
+
+695
+0:29:22,420 --> 0:29:24,420
+ jeg mig til Radius.
+
+696
+0:29:24,420 --> 0:29:26,420
+ Jeg behøver ikke også at brokke mig
+
+697
+0:29:26,420 --> 0:29:28,420
+ til Energinet.
+
+698
+0:29:28,420 --> 0:29:30,420
+ Og, uh,
+
+699
+0:29:30,420 --> 0:29:32,420
+ det giver mig en lille fordel
+
+700
+0:29:32,420 --> 0:29:34,420
+ her, at jeg kan nøjes med
+
+701
+0:29:34,420 --> 0:29:36,420
+ at brokke mig et sted.
+
+702
+0:29:36,420 --> 0:29:38,420
+ I praksis kommer jeg nok til
+
+703
+0:29:38,420 --> 0:29:40,420
+ også at skulle have noget med Energinet at gøre, men jeg håber,
+
+704
+0:29:40,420 --> 0:29:42,420
+ at vi kan komme udenom det med data
+
+705
+0:29:42,420 --> 0:29:44,420
+ tilsyneligt.
+
+706
+0:29:44,420 --> 0:29:46,420
+ Øh,
+
+707
+0:29:46,420 --> 0:29:48,420
+ Nå, ja, vi har været igennem
+
+708
+0:29:48,420 --> 0:29:50,420
+ min løsning, men vi har ikke været igennem, hvordan
+
+709
+0:29:50,420 --> 0:29:52,420
+ den ligesom forholder sig til målerbekendtgørelsen.
+
+710
+0:29:52,420 --> 0:29:54,420
+ Og det her, det er jeg lige virkelig bare for,
+
+711
+0:29:54,420 --> 0:29:56,420
+ noget af det, som jeg
+
+712
+0:29:56,420 --> 0:29:58,420
+ bliver mødt med, når jeg har præsenteret min løsning,
+
+713
+0:29:58,420 --> 0:30:00,420
+ så de siger,
+
+714
+0:30:00,420 --> 0:30:02,420
+ hvad med den her paragraf nede i målerbekendtgørelsen?
+
+715
+0:30:02,420 --> 0:30:04,420
+ Har du taget højde for den?
+
+716
+0:30:04,420 --> 0:30:06,420
+ Og svaret er, ja, det har jeg.
+
+717
+0:30:06,420 --> 0:30:08,420
+ Og nu tager vi lige
+
+718
+0:30:08,420 --> 0:30:10,420
+ i hvert fald de vigtigste af dem.
+
+719
+0:30:10,420 --> 0:30:12,420
+ Og i paragraf
+
+720
+0:30:12,420 --> 0:30:14,420
+ 4, der handler det om
+
+721
+0:30:14,420 --> 0:30:16,420
+ registrering af de her måler.
+
+722
+0:30:16,420 --> 0:30:18,420
+ Og det, altså,
+
+723
+0:30:18,420 --> 0:30:20,420
+ hovedideen i min løsning er jo, at jeg skal
+
+724
+0:30:20,420 --> 0:30:22,420
+ registrere de her tal. De skal bare ikke sendes,
+
+725
+0:30:22,420 --> 0:30:24,420
+ sådan, at
+
+726
+0:30:24,420 --> 0:30:26,420
+ Ratus kan læse dem. Så der er sådan set
+
+727
+0:30:26,420 --> 0:30:28,420
+ ikke noget i vejen med paragraf 4.
+
+728
+0:30:28,420 --> 0:30:30,420
+ Vi registrerer de her tal med nogle
+
+729
+0:30:30,420 --> 0:30:32,420
+ intervaller,
+
+730
+0:30:32,420 --> 0:30:34,420
+ og laver dem til
+
+731
+0:30:34,420 --> 0:30:36,420
+ forbrugsafregning.
+
+732
+0:30:36,420 --> 0:30:38,420
+ Der er også noget om
+
+733
+0:30:38,420 --> 0:30:40,420
+ afbrudsdata, altså hvis
+
+734
+0:30:40,420 --> 0:30:42,420
+ forsyningen
+
+735
+0:30:42,420 --> 0:30:44,420
+ svigter, eller hvis der er for meget
+
+736
+0:30:44,420 --> 0:30:46,420
+ vold, eller for få vold,
+
+737
+0:30:46,420 --> 0:30:48,420
+ så er det også sådan noget, der kan blive sendt en gang imellem,
+
+738
+0:30:48,420 --> 0:30:50,420
+ når der sker fejl på systemet.
+
+739
+0:30:50,420 --> 0:30:52,420
+ Det er heller ikke noget, som min løsning
+
+740
+0:30:52,420 --> 0:30:54,420
+ ændrer ved. Det kan bare forblive, som
+
+741
+0:30:54,420 --> 0:30:56,420
+ det allerede er. Og derfor
+
+742
+0:30:56,420 --> 0:30:58,420
+ vurderer jeg, at den opfylder
+
+743
+0:30:58,420 --> 0:31:00,420
+ paragraf 4 i målerbekendt kørsel.
+
+744
+0:31:00,420 --> 0:31:02,420
+ Paragraf 5 omhandler
+
+745
+0:31:02,420 --> 0:31:04,420
+ om at videreformidle de her målte data,
+
+746
+0:31:04,420 --> 0:31:06,420
+ og de her
+
+747
+0:31:06,420 --> 0:31:08,420
+ tidsserier til
+
+748
+0:31:08,420 --> 0:31:10,420
+ netleverandøren.
+
+749
+0:31:10,420 --> 0:31:12,420
+ Og
+
+750
+0:31:12,420 --> 0:31:14,420
+ det vil jeg jo argumentere
+
+751
+0:31:14,420 --> 0:31:16,420
+ for at sige, at det gør jeg jo.
+
+752
+0:31:16,420 --> 0:31:18,420
+ Jeg krypterer dem ganske vist,
+
+753
+0:31:18,420 --> 0:31:20,420
+ men jeg formidler dem jo en gang i timen,
+
+754
+0:31:20,420 --> 0:31:22,420
+ eller en gang i kvarteret.
+
+755
+0:31:22,420 --> 0:31:24,420
+ Men det er krypteret på en sådan måde,
+
+756
+0:31:24,420 --> 0:31:26,420
+ så forbrugerne kan læse det, så en dommer kan læse det,
+
+757
+0:31:26,420 --> 0:31:28,420
+ men det er jo ikke sådan, at der ikke bliver
+
+758
+0:31:28,420 --> 0:31:30,420
+ videreformidlet den her.
+
+759
+0:31:30,420 --> 0:31:32,420
+ Og
+
+760
+0:31:32,420 --> 0:31:34,420
+ derfor mener jeg også, at paragraf 5
+
+761
+0:31:34,420 --> 0:31:36,420
+ er sådan set opfyldt, fordi der bliver videreformidlet
+
+762
+0:31:36,420 --> 0:31:38,420
+ de her data. Det sker bare på
+
+763
+0:31:38,420 --> 0:31:40,420
+ en speciel måde.
+
+764
+0:31:40,420 --> 0:31:42,420
+ Paragraf 6
+
+765
+0:31:42,420 --> 0:31:44,420
+ handler om,
+
+766
+0:31:44,420 --> 0:31:46,420
+ at man kan
+
+767
+0:31:46,420 --> 0:31:48,420
+ tilpasse og justere
+
+768
+0:31:48,420 --> 0:31:50,420
+ de her intervall,
+
+769
+0:31:50,420 --> 0:31:52,420
+ og så længe
+
+770
+0:31:52,420 --> 0:31:54,420
+ at de her, altså
+
+771
+0:31:54,420 --> 0:31:56,420
+ man kunne i teorien forestille sig at have
+
+772
+0:31:56,420 --> 0:31:58,420
+ et netselskab, der fakturerede hver
+
+773
+0:31:58,420 --> 0:32:00,420
+ time, så der kom en faktura
+
+774
+0:32:00,420 --> 0:32:02,420
+ hver time.
+
+775
+0:32:02,420 --> 0:32:04,420
+ I så fald, så
+
+776
+0:32:04,420 --> 0:32:06,420
+ ville jeg jo ikke rigtig kunne holde det hemmeligt,
+
+777
+0:32:06,420 --> 0:32:08,420
+ hvor meget jeg bruger hver time.
+
+778
+0:32:08,420 --> 0:32:10,420
+ Men det er jo ikke sådan, verden ser ud.
+
+779
+0:32:10,420 --> 0:32:12,420
+ Verden ser ud, at du får en faktura en gang om måneden.
+
+780
+0:32:12,420 --> 0:32:14,420
+ Og derfor så
+
+781
+0:32:14,420 --> 0:32:16,420
+ er det jo, hvor jeg siger, at min
+
+782
+0:32:16,420 --> 0:32:18,420
+ løsning kan sagtens leve op til det her, at du får
+
+783
+0:32:18,420 --> 0:32:20,420
+ en faktura hver måned, og at vi får
+
+784
+0:32:20,420 --> 0:32:22,420
+ at sende de her opsummeringer.
+
+785
+0:32:22,420 --> 0:32:24,420
+ Der står ikke noget i teksten om, at
+
+786
+0:32:24,420 --> 0:32:26,420
+ de her data, som bliver sendt, at de
+
+787
+0:32:26,420 --> 0:32:28,420
+ ikke må være kopteret,
+
+788
+0:32:28,420 --> 0:32:30,420
+ eller de skal være kopteret, men de skal slet ikke nævne,
+
+789
+0:32:30,420 --> 0:32:32,420
+ hvordan de skal transporteres.
+
+790
+0:32:34,420 --> 0:32:36,420
+ Så er der målerbekendtgørelsen
+
+791
+0:32:36,420 --> 0:32:38,420
+ paragraf 7, og den handler om, at jeg som
+
+792
+0:32:38,420 --> 0:32:40,420
+ forbruger skal kunne sætte et device på,
+
+793
+0:32:40,420 --> 0:32:42,420
+ så jeg kan få data ud af den her,
+
+794
+0:32:42,420 --> 0:32:44,420
+ og det påvirker min heller ikke. Altså den del af
+
+795
+0:32:44,420 --> 0:32:46,420
+ elmålerne har jeg slet ikke noget
+
+796
+0:32:46,420 --> 0:32:48,420
+ med at gøre. Selvfølgelig skal
+
+797
+0:32:48,420 --> 0:32:50,420
+ borgeren kunne trække data ud af det.
+
+798
+0:32:52,420 --> 0:32:54,420
+ Der er en stribe andre paragrafer,
+
+799
+0:32:54,420 --> 0:32:56,420
+ men de er endnu mindre
+
+800
+0:32:56,420 --> 0:32:58,420
+ relevante. Mange af dem er sådan,
+
+801
+0:32:58,420 --> 0:33:00,420
+ hvor man siger, kongen
+
+802
+0:33:00,420 --> 0:33:02,420
+ bestemmer et eller andet om
+
+803
+0:33:02,420 --> 0:33:04,420
+ lovgivningen. Det er derfor, man siger, okay,
+
+804
+0:33:04,420 --> 0:33:06,420
+ selvfølgelig opfylder min
+
+805
+0:33:06,420 --> 0:33:08,420
+ løsning også det.
+
+806
+0:33:08,420 --> 0:33:10,420
+ Så flere af dem her,
+
+807
+0:33:10,420 --> 0:33:12,420
+ de opfylder det helt trivialt.
+
+808
+0:33:12,420 --> 0:33:14,420
+ Jeg har taget dem med, hvor man kan sige,
+
+809
+0:33:14,420 --> 0:33:16,420
+ der er lidt kød på.
+
+810
+0:33:18,420 --> 0:33:20,420
+ Og så vender vi lige tilbage til Radios
+
+811
+0:33:20,420 --> 0:33:22,420
+ argumenter her. Vi skal skifte
+
+812
+0:33:22,420 --> 0:33:24,420
+ de her måler her inden den 31.
+
+813
+0:33:24,420 --> 0:33:26,420
+ 12. 2020, og jeg siger så,
+
+814
+0:33:26,420 --> 0:33:28,420
+ jamen, I skal være hjerteligt
+
+815
+0:33:28,420 --> 0:33:30,420
+ velkommen, men gider I lige at skifte en
+
+816
+0:33:30,420 --> 0:33:32,420
+ til en, der overholder GDPR?
+
+817
+0:33:32,420 --> 0:33:34,420
+ Og når Radios siger, vi har en højesteretdom,
+
+818
+0:33:34,420 --> 0:33:36,420
+ så er det, jeg svarer og siger, ja,
+
+819
+0:33:36,420 --> 0:33:38,420
+ det kan godt være, I har en højesteretdom,
+
+820
+0:33:38,420 --> 0:33:40,420
+ men den er jo over for elektrooverfølsomhed.
+
+821
+0:33:40,420 --> 0:33:42,420
+ Det er ikke med hensyn til GDPR.
+
+822
+0:33:42,420 --> 0:33:44,420
+ Og når Radios siger, jamen,
+
+823
+0:33:44,420 --> 0:33:46,420
+ vi lever op til forskrifterne, så er
+
+824
+0:33:46,420 --> 0:33:48,420
+ det jo, at jeg siger, jamen, hov,
+
+825
+0:33:48,420 --> 0:33:50,420
+ hvilket GDPR, så er I
+
+826
+0:33:50,420 --> 0:33:52,420
+ dataansvarende, og så er det jeres
+
+827
+0:33:52,420 --> 0:33:54,420
+ opgave at sørge for,
+
+828
+0:33:54,420 --> 0:33:56,420
+ at det her, det foregår i overensstemmelse
+
+829
+0:33:56,420 --> 0:33:58,420
+ med GDPR, herunder at
+
+830
+0:33:58,420 --> 0:34:00,420
+ de her forskrifter lever op til
+
+831
+0:34:00,420 --> 0:34:02,420
+ GDPR.
+
+832
+0:34:04,420 --> 0:34:06,420
+ Hvis I spørger mig,
+
+833
+0:34:06,420 --> 0:34:08,420
+ så tror jeg, at det,
+
+834
+0:34:08,420 --> 0:34:10,420
+ der i virkeligheden er sket,
+
+835
+0:34:10,420 --> 0:34:12,420
+ det er, at
+
+836
+0:34:12,420 --> 0:34:14,420
+ man har ikke ændret forskrifterne,
+
+837
+0:34:14,420 --> 0:34:16,420
+ da GDPR træder i kraft.
+
+838
+0:34:16,420 --> 0:34:18,420
+ At man ikke rigtigt, der er ikke rigtigt
+
+839
+0:34:18,420 --> 0:34:20,420
+ nogen, der har været særlig opmærksomme på den her
+
+840
+0:34:20,420 --> 0:34:22,420
+ dataindsamling. Altså, det var
+
+841
+0:34:22,420 --> 0:34:24,420
+ bare indsamling, altså skrønt, altså,
+
+842
+0:34:24,420 --> 0:34:26,420
+ what the fuck.
+
+843
+0:34:26,420 --> 0:34:28,420
+ At der er meget få, der har været
+
+844
+0:34:28,420 --> 0:34:30,420
+ opmærksomme på den her artikel 25,
+
+845
+0:34:30,420 --> 0:34:32,420
+ at den skulle have nogen indvirkning her.
+
+846
+0:34:32,420 --> 0:34:34,420
+ Og der er i hvert fald slet ingen, der har tænkt på
+
+847
+0:34:34,420 --> 0:34:36,420
+ en løsning med privatløsbeskyttelse.
+
+848
+0:34:36,420 --> 0:34:38,420
+ Og absolut ingen,
+
+849
+0:34:38,420 --> 0:34:40,420
+ der har tænkt på det her med, at man kunne udlede religion
+
+850
+0:34:40,420 --> 0:34:42,420
+ ud af ens elmålerdata.
+
+851
+0:34:42,420 --> 0:34:44,420
+ Så, altså, hvis jeg
+
+852
+0:34:44,420 --> 0:34:46,420
+ skal ligesom sige det i det her form,
+
+853
+0:34:46,420 --> 0:34:48,420
+ så tror jeg, jeg tror i virkeligheden, at jeg har fundet
+
+854
+0:34:48,420 --> 0:34:50,420
+ en bog i systemet.
+
+855
+0:34:50,420 --> 0:34:52,420
+ Og jeg kan godt mærke,
+
+856
+0:34:52,420 --> 0:34:54,420
+ jeg bliver sådan lidt træt over,
+
+857
+0:34:54,420 --> 0:34:56,420
+ at de så ikke bare retter den her bog.
+
+858
+0:34:56,420 --> 0:34:58,420
+ Kunne I ikke bare tage og rette den?
+
+859
+0:34:58,420 --> 0:35:00,420
+ Jeg accepterer at sige, okay, der er en bog i det her system,
+
+860
+0:35:00,420 --> 0:35:02,420
+ den skal vi selvfølgelig have rettet.
+
+861
+0:35:02,420 --> 0:35:04,420
+ Og det er også derfor, jeg bliver
+
+862
+0:35:04,420 --> 0:35:06,420
+ sådan lidt sur over
+
+863
+0:35:06,420 --> 0:35:08,420
+ at sige, okay, nu må vi jo
+
+864
+0:35:08,420 --> 0:35:10,420
+ tage den her sag her, fordi det er jo
+
+865
+0:35:10,420 --> 0:35:12,420
+ træls, at de ikke bare vil lytte
+
+866
+0:35:12,420 --> 0:35:14,420
+ og se at forrette det.
+
+867
+0:35:14,420 --> 0:35:16,420
+ Det er desværre
+
+868
+0:35:16,420 --> 0:35:18,420
+ ikke gratis. Sådan noget her er
+
+869
+0:35:18,420 --> 0:35:20,420
+ pivhamrende styrt.
+
+870
+0:35:20,420 --> 0:35:22,420
+ Og min retshjælpsforsikring,
+
+871
+0:35:22,420 --> 0:35:24,420
+ jeg ville jo ønske, den ligesom kunne hjælpe mig,
+
+872
+0:35:24,420 --> 0:35:26,420
+ men de vil ikke,
+
+873
+0:35:26,420 --> 0:35:28,420
+ de siger, Ole,
+
+874
+0:35:28,420 --> 0:35:30,420
+ vi hjælper dig gerne, når du står
+
+875
+0:35:30,420 --> 0:35:32,420
+ i en retssal.
+
+876
+0:35:32,420 --> 0:35:34,420
+ Men vi hjælper dig ikke,
+
+877
+0:35:34,420 --> 0:35:36,420
+ før du har udtømt
+
+878
+0:35:36,420 --> 0:35:38,420
+ dine klagemuligheder udenfor retten.
+
+879
+0:35:38,420 --> 0:35:40,420
+ Og det er altså også at klage til datatilsynet.
+
+880
+0:35:42,420 --> 0:35:44,420
+ Og det vil sige, at de vil ikke
+
+881
+0:35:44,420 --> 0:35:46,420
+ betale for, at jeg får hjælp til at få
+
+882
+0:35:46,420 --> 0:35:48,420
+ skrevet den her klage.
+
+883
+0:35:48,420 --> 0:35:50,420
+ Og jeg må bare sige, at hvis jeg havde skrevet
+
+884
+0:35:50,420 --> 0:35:52,420
+ den selv, så havde jeg lavet
+
+885
+0:35:52,420 --> 0:35:54,420
+ fodfejl, der kunne afvise den. Man kan jo sige,
+
+886
+0:35:54,420 --> 0:35:56,420
+ det skete jo allerede. Jeg lavede jo en fodfejl,
+
+887
+0:35:56,420 --> 0:35:58,420
+ nemlig, at der ikke var samlet
+
+888
+0:35:58,420 --> 0:36:00,420
+ data om mig og fik den første version af klagen
+
+889
+0:36:00,420 --> 0:36:02,420
+ afvist. Så jeg er
+
+890
+0:36:02,420 --> 0:36:04,420
+ helt sikker på, at min klage,
+
+891
+0:36:04,420 --> 0:36:06,420
+ er blevet langt bedre af, at jeg har haft professionel
+
+892
+0:36:06,420 --> 0:36:08,420
+ med til at hjælpe med at få udarbejdet
+
+893
+0:36:08,420 --> 0:36:10,420
+ den.
+
+894
+0:36:12,420 --> 0:36:14,420
+ Giver vi retshjælpsforsikringen med det godt,
+
+895
+0:36:14,420 --> 0:36:16,420
+ dækker vi de umiddelbare
+
+896
+0:36:16,420 --> 0:36:18,420
+ omkostninger, som er til fodsagen. Men det er
+
+897
+0:36:18,420 --> 0:36:20,420
+ ret lidt, der er gået
+
+898
+0:36:20,420 --> 0:36:22,420
+ til det. Hvad er det? 2-3 timer, vi har brugt på det.
+
+899
+0:36:22,420 --> 0:36:24,420
+ Det er ikke der,
+
+900
+0:36:24,420 --> 0:36:26,420
+ den store udgift er.
+
+901
+0:36:26,420 --> 0:36:28,420
+ Den store udgift har været i at finde ud af,
+
+902
+0:36:28,420 --> 0:36:30,420
+ hvordan angriber vi overhovedet det her,
+
+903
+0:36:30,420 --> 0:36:32,420
+ og hvordan... Alene det der
+
+904
+0:36:32,420 --> 0:36:34,420
+ at komme frem til, at vi skal klage til datatilsynet,
+
+905
+0:36:34,420 --> 0:36:36,420
+ var faktisk en længere proces. Måske skulle
+
+906
+0:36:36,420 --> 0:36:38,420
+ vi bare sagsøge Radius Direct,
+
+907
+0:36:38,420 --> 0:36:40,420
+ der var mange overvejelser undervejs.
+
+908
+0:36:40,420 --> 0:36:42,420
+ Det vil sige, at vi følger forløbig
+
+909
+0:36:42,420 --> 0:36:44,420
+ regning lige nu. Den er over 50.000 kr.
+
+910
+0:36:44,420 --> 0:36:46,420
+ Hvis I har fulgt min blog
+
+911
+0:36:46,420 --> 0:36:48,420
+ på version 2, så kan I se,
+
+912
+0:36:48,420 --> 0:36:50,420
+ at jeg har startet en indsamling. Nu har jeg så snakket
+
+913
+0:36:50,420 --> 0:36:52,420
+ med Skattevæsenet, at det skal jeg tydeligvis
+
+914
+0:36:52,420 --> 0:36:54,420
+ ikke. Fordi
+
+915
+0:36:54,420 --> 0:36:56,420
+ så er det skattepligtig indkomst.
+
+916
+0:36:56,420 --> 0:36:58,420
+ Til gengæld så
+
+917
+0:36:58,420 --> 0:37:00,420
+ godtog de, at
+
+918
+0:37:00,420 --> 0:37:02,420
+ det kunne være en delt regning.
+
+919
+0:37:02,420 --> 0:37:04,420
+ Det betyder så også,
+
+920
+0:37:04,420 --> 0:37:06,420
+ at jeg ikke kan få noget overskud ud af det.
+
+921
+0:37:06,420 --> 0:37:08,420
+ Det har jo aldrig nogensinde været et mening.
+
+922
+0:37:08,420 --> 0:37:10,420
+ Det har netop været et mening, at vi skulle dele den her regning.
+
+923
+0:37:10,420 --> 0:37:12,420
+ Og indtil videre, så er der modtaget
+
+924
+0:37:12,420 --> 0:37:14,420
+ 40.000, og tusind tak
+
+925
+0:37:14,420 --> 0:37:16,420
+ til jer, der har doneret.
+
+926
+0:37:16,420 --> 0:37:18,420
+ Men der mangler
+
+927
+0:37:18,420 --> 0:37:20,420
+ stadigvæk lidt endnu, for at den er i mål.
+
+928
+0:37:20,420 --> 0:37:22,420
+ Og i øvrigt, så bliver regningen jo større,
+
+929
+0:37:22,420 --> 0:37:24,420
+ før vi er færdige.
+
+930
+0:37:24,420 --> 0:37:26,420
+ Fordi, hvis
+
+931
+0:37:26,420 --> 0:37:28,420
+ jeg vinder den her hos datatilsynet,
+
+932
+0:37:28,420 --> 0:37:30,420
+ så skal jeg jo bagefter i retten
+
+933
+0:37:30,420 --> 0:37:32,420
+ og have sagt til Radius,
+
+934
+0:37:32,420 --> 0:37:34,420
+ at nu skal I rette ind. Så også der
+
+935
+0:37:34,420 --> 0:37:36,420
+ kommer der nogle udgifter selv, hvis jeg vinder.
+
+936
+0:37:42,420 --> 0:37:44,420
+ Men jeg har jo fået lidt blod på tanden af det her.
+
+937
+0:37:44,420 --> 0:37:46,420
+ Og jeg er sådan ved at sige, okay.
+
+938
+0:37:46,420 --> 0:37:48,420
+ Nu har jeg ligesom taget det surslæb
+
+939
+0:37:48,420 --> 0:37:50,420
+ i at sætte mig ind i det her
+
+940
+0:37:50,420 --> 0:37:52,420
+ jord.
+
+941
+0:37:52,420 --> 0:37:54,420
+ Er der andre steder, hvor vi kan bruge
+
+942
+0:37:54,420 --> 0:37:56,420
+ det her? Fordi, altså
+
+943
+0:37:56,420 --> 0:37:58,420
+ lad os nu være ærlige.
+
+944
+0:37:58,420 --> 0:38:00,420
+ Så er der nogen, der
+
+945
+0:38:00,420 --> 0:38:02,420
+ var på kode hen til mig for 10 år siden
+
+946
+0:38:02,420 --> 0:38:04,420
+ og har sagt, der er en eller anden
+
+947
+0:38:04,420 --> 0:38:06,420
+ gud, der er ved at
+
+948
+0:38:06,420 --> 0:38:08,420
+ sagsøge sit elselskab, fordi han ikke
+
+949
+0:38:08,420 --> 0:38:10,420
+ vil have skiftet sine elmåler. Så har jeg jo gjort sådan her.
+
+950
+0:38:12,420 --> 0:38:14,420
+ Han er jo gag.
+
+951
+0:38:14,420 --> 0:38:16,420
+ Det giver jo ingen mening.
+
+952
+0:38:16,420 --> 0:38:18,420
+ Og det giver jo kun mening, fordi
+
+953
+0:38:18,420 --> 0:38:20,420
+ at den her sag
+
+954
+0:38:20,420 --> 0:38:22,420
+ kan bruges som brækjern til
+
+955
+0:38:22,420 --> 0:38:24,420
+ nogle andre sager, som er vigtige,
+
+956
+0:38:24,420 --> 0:38:26,420
+ fordi mit elforbrug
+
+957
+0:38:26,420 --> 0:38:28,420
+ er guddød med det kedeligste
+
+958
+0:38:28,420 --> 0:38:30,420
+ elforbrug i verden. Der er eddermame
+
+959
+0:38:30,420 --> 0:38:32,420
+ ikke noget privat liv, der skal beskyttes der.
+
+960
+0:38:32,420 --> 0:38:34,420
+ Men det er jo fordi,
+
+961
+0:38:34,420 --> 0:38:36,420
+ at kan vi få gennemført,
+
+962
+0:38:36,420 --> 0:38:38,420
+ at det gælder for en elmåler,
+
+963
+0:38:38,420 --> 0:38:40,420
+ så kan vi nok også
+
+964
+0:38:40,420 --> 0:38:42,420
+ få det gennemført andre steder, hvor det er
+
+965
+0:38:42,420 --> 0:38:44,420
+ mere interessant.
+
+966
+0:38:44,420 --> 0:38:46,420
+ Og et af de steder,
+
+967
+0:38:46,420 --> 0:38:48,420
+ hvor det er mere interessant, det er, hvad du køber i supermarkedet.
+
+968
+0:38:48,420 --> 0:38:50,420
+ Og supermarkedet,
+
+969
+0:38:50,420 --> 0:38:52,420
+ de har,
+
+970
+0:38:52,420 --> 0:38:54,420
+ hvis I har prøvet at bruge Menus app,
+
+971
+0:38:54,420 --> 0:38:56,420
+ hvor mange af jer har Menus app?
+
+972
+0:38:56,420 --> 0:38:58,420
+ Okay.
+
+973
+0:38:58,420 --> 0:39:00,420
+ Jeg kan høre, at jeg er blandt folk, som
+
+974
+0:39:00,420 --> 0:39:02,420
+ bruger Menus app.
+
+975
+0:39:02,420 --> 0:39:04,420
+ Men der er der
+
+976
+0:39:04,420 --> 0:39:06,420
+ selvfølgelig en privatlivspolitik, og
+
+977
+0:39:06,420 --> 0:39:08,420
+ i og med, at jeg er den, jeg er,
+
+978
+0:39:08,420 --> 0:39:10,420
+ så er jeg jo en af dem, som ikke
+
+979
+0:39:10,420 --> 0:39:12,420
+ bare klikker next,
+
+980
+0:39:12,420 --> 0:39:14,420
+ når der står privatlivspolitik, men faktisk
+
+981
+0:39:14,420 --> 0:39:16,420
+ klikker på den der og siger,
+
+982
+0:39:16,420 --> 0:39:18,420
+ hvad står der egentlig i den?
+
+983
+0:39:18,420 --> 0:39:20,420
+ Og der står der hos Menus, at de sender
+
+984
+0:39:20,420 --> 0:39:22,420
+ alle mine data til USA, og det må de
+
+985
+0:39:22,420 --> 0:39:24,420
+ gerne, fordi der er den her privacy shield
+
+986
+0:39:24,420 --> 0:39:26,420
+ aftale.
+
+987
+0:39:26,420 --> 0:39:28,420
+ Men den blev underkendt
+
+988
+0:39:28,420 --> 0:39:30,420
+ forrige år.
+
+989
+0:39:30,420 --> 0:39:32,420
+ Så det her er jo en ren tilståelsesag.
+
+990
+0:39:32,420 --> 0:39:34,420
+ Så derfor har jeg sendt jer også lige en klage til
+
+991
+0:39:34,420 --> 0:39:36,420
+ data, så I kan synge over det her og sige, hvad
+
+992
+0:39:36,420 --> 0:39:38,420
+ sker der her?
+
+993
+0:39:38,420 --> 0:39:40,420
+ Og så må vi ligesom se, hvor der kommer noget ud af den.
+
+994
+0:39:42,420 --> 0:39:44,420
+ Og fordi mange af de her
+
+995
+0:39:44,420 --> 0:39:46,420
+ tanker, der ligesom er gået i den her
+
+996
+0:39:46,420 --> 0:39:48,420
+ elmuldersag,
+
+997
+0:39:48,420 --> 0:39:50,420
+ det her var en meget, meget simplere sag, så det var
+
+998
+0:39:50,420 --> 0:39:52,420
+ i virkeligheden at tage min elmuldersag,
+
+999
+0:39:52,420 --> 0:39:54,420
+ klage og svare klip, klip, klip, klip, klip, klip,
+
+1000
+0:39:54,420 --> 0:39:56,420
+ okay, så var der to sider tilbage, og så
+
+1001
+0:39:56,420 --> 0:39:58,420
+ afsted med det.
+
+1002
+0:39:58,420 --> 0:40:00,420
+ Men en af de
+
+1003
+0:40:00,420 --> 0:40:02,420
+ sager, som jeg tror,
+
+1004
+0:40:02,420 --> 0:40:04,420
+ kan blive langt mere interessante,
+
+1005
+0:40:04,420 --> 0:40:06,420
+ det er rejsekortet.
+
+1006
+0:40:06,420 --> 0:40:08,420
+ Rejsekortet registrerer
+
+1007
+0:40:08,420 --> 0:40:10,420
+ alle dine rejser.
+
+1008
+0:40:10,420 --> 0:40:12,420
+ Men det behøver de jo ikke.
+
+1009
+0:40:12,420 --> 0:40:14,420
+ Altså i virkeligheden,
+
+1010
+0:40:14,420 --> 0:40:16,420
+ når nu jeg tager mit kort her
+
+1011
+0:40:16,420 --> 0:40:18,420
+ og binger ind,
+
+1012
+0:40:18,420 --> 0:40:20,420
+ så kunne den jo i virkeligheden
+
+1013
+0:40:20,420 --> 0:40:22,420
+ købe en anonym billet,
+
+1014
+0:40:22,420 --> 0:40:24,420
+ eller give mig et token,
+
+1015
+0:40:24,420 --> 0:40:26,420
+ for det der depositum,
+
+1016
+0:40:26,420 --> 0:40:28,420
+ som de der 650 kroner,
+
+1017
+0:40:28,420 --> 0:40:30,420
+ eller hvor meget det nu er, og så når jeg
+
+1018
+0:40:30,420 --> 0:40:32,420
+ tjekker ud, så kan den se, at jeg har
+
+1019
+0:40:32,420 --> 0:40:34,420
+ rejst fra A til B, så afleverer jeg min billet igen,
+
+1020
+0:40:34,420 --> 0:40:36,420
+ altså min token,
+
+1021
+0:40:36,420 --> 0:40:38,420
+ og så kan den se, at jeg har rejst fra A til B,
+
+1022
+0:40:38,420 --> 0:40:40,420
+ og så kan den rejse prisen ud, og så kan den så sætte,
+
+1023
+0:40:40,420 --> 0:40:42,420
+ give mig det overskydende beløb tilbage,
+
+1024
+0:40:42,420 --> 0:40:44,420
+ men igen,
+
+1025
+0:40:44,420 --> 0:40:46,420
+ som anonym betaling.
+
+1026
+0:40:46,420 --> 0:40:48,420
+ Godt tænkt bitcoins, men man kan lave det
+
+1027
+0:40:48,420 --> 0:40:50,420
+ langt mere effektivt end bitcoins, men det er
+
+1028
+0:40:50,420 --> 0:40:52,420
+ den samme idé med, at vi kan lave en
+
+1029
+0:40:52,420 --> 0:40:54,420
+ anonym betaling.
+
+1030
+0:40:54,420 --> 0:40:56,420
+ Og så vil rejsekortet, de vil stadig
+
+1031
+0:40:56,420 --> 0:40:58,420
+ kunne se, at der er en person,
+
+1032
+0:40:58,420 --> 0:41:00,420
+ der har rejst fra A til B,
+
+1033
+0:41:00,420 --> 0:41:02,420
+ men de kan ikke se,
+
+1034
+0:41:02,420 --> 0:41:04,420
+ og det er det vigtige, de kan ikke se,
+
+1035
+0:41:04,420 --> 0:41:06,420
+ om det er den samme person, der rejser tilbage
+
+1036
+0:41:06,420 --> 0:41:08,420
+ fra B til A.
+
+1037
+0:41:10,420 --> 0:41:12,420
+ Når der kommer en afgørelse
+
+1038
+0:41:12,420 --> 0:41:14,420
+ på elmåleren,
+
+1039
+0:41:14,420 --> 0:41:16,420
+ hvis jeg vinder den, så bliver
+
+1040
+0:41:16,420 --> 0:41:18,420
+ det her det næste, vi skal have kigget på,
+
+1041
+0:41:18,420 --> 0:41:20,420
+ og se, hvad kan vi gøre
+
+1042
+0:41:20,420 --> 0:41:22,420
+ med den, for der
+
+1043
+0:41:22,420 --> 0:41:24,420
+ er der i hvert fald nogle persondata,
+
+1044
+0:41:24,420 --> 0:41:26,420
+ der er noget mere følsomme end
+
+1045
+0:41:26,420 --> 0:41:28,420
+ med elmåleren.
+
+1046
+0:41:28,420 --> 0:41:30,420
+ Så er der
+
+1047
+0:41:30,420 --> 0:41:32,420
+ de andre smart measures,
+
+1048
+0:41:32,420 --> 0:41:34,420
+ det er sådan noget som vand og gas og varme,
+
+1049
+0:41:34,420 --> 0:41:36,420
+ men der er en meget stor forskel
+
+1050
+0:41:36,420 --> 0:41:38,420
+ i forhold til elmåleren, nemlig
+
+1051
+0:41:38,420 --> 0:41:40,420
+ prisen, fordi at
+
+1052
+0:41:40,420 --> 0:41:42,420
+ prisen for el, den kan godt variere en faktor 3
+
+1053
+0:41:42,420 --> 0:41:44,420
+ i løbet af et døgn, og det gør
+
+1054
+0:41:44,420 --> 0:41:46,420
+ den altså ikke for vand
+
+1055
+0:41:46,420 --> 0:41:48,420
+ og varme, og er ikke engang for
+
+1056
+0:41:48,420 --> 0:41:50,420
+ gas i de her tider, til trods for at den stiger voldsomt,
+
+1057
+0:41:50,420 --> 0:41:52,420
+ så er det trods alt ikke en faktor 3
+
+1058
+0:41:52,420 --> 0:41:54,420
+ inden for et døgn.
+
+1059
+0:41:54,420 --> 0:41:56,420
+ Og her kunne man jo nøjes med en aflæsning
+
+1060
+0:41:56,420 --> 0:41:58,420
+ en gang om måneden, og hvis man ligesom var
+
+1061
+0:41:58,420 --> 0:42:00,420
+ fik sørget for, at de her målere her
+
+1062
+0:42:00,420 --> 0:42:02,420
+ de gjorde det, så kan jeg ikke se,
+
+1063
+0:42:02,420 --> 0:42:04,420
+ at der er noget GDPR-problem i den.
+
+1064
+0:42:04,420 --> 0:42:06,420
+ Men det kan godt være, at vi skal tage en lille sag på den,
+
+1065
+0:42:06,420 --> 0:42:08,420
+ fordi jeg hører,
+
+1066
+0:42:08,420 --> 0:42:10,420
+ at de faktisk bliver aflæst
+
+1067
+0:42:10,420 --> 0:42:12,420
+ langt oftere end en gang om måneden,
+
+1068
+0:42:12,420 --> 0:42:14,420
+ og det kan godt være, at vi lige
+
+1069
+0:42:14,420 --> 0:42:16,420
+ skal have rettet op på det. Men det er den ikke,
+
+1070
+0:42:16,420 --> 0:42:18,420
+ man kan sige, den er ikke, for mig at se,
+
+1071
+0:42:18,420 --> 0:42:20,420
+ den er ikke nær så skældsættende.
+
+1072
+0:42:20,420 --> 0:42:22,420
+ Og derfor afventer vi også, at vi får
+
+1073
+0:42:22,420 --> 0:42:24,420
+ den her elmålersag afgørelse, fordi måske er der nogle
+
+1074
+0:42:24,420 --> 0:42:26,420
+ elementer der, der gør det nemmere
+
+1075
+0:42:26,420 --> 0:42:28,420
+ at komme igennem.
+
+1076
+0:42:28,420 --> 0:42:30,420
+ Det var det, jeg havde at sige.
+
+1077
+0:42:30,420 --> 0:42:32,420
+ Jeg havde tre kvarter. Det ser ud som om,
+
+1078
+0:42:32,420 --> 0:42:34,420
+ jeg har ramt. Så er der plads til nogle spørgsmål.
+
+1079
+0:42:34,420 --> 0:42:36,420
+ Sig noget.
+
+1080
+0:42:46,420 --> 0:42:48,420
+ Det er et andet forslag til,
+
+1081
+0:42:48,420 --> 0:42:50,420
+ hvordan du kan få læst
+
+1082
+0:42:50,420 --> 0:42:52,420
+ dine mål-data.
+
+1083
+0:42:52,420 --> 0:42:54,420
+ Min søn bor i England,
+
+1084
+0:42:54,420 --> 0:42:56,420
+ og der har de stedet i en ordentlig lejlighed
+
+1085
+0:42:56,420 --> 0:42:58,420
+ en mønt
+
+1086
+0:42:58,420 --> 0:43:00,420
+ indkastindhæld.
+
+1087
+0:43:00,420 --> 0:43:02,420
+ Det vil sige, at det er prepaid.
+
+1088
+0:43:02,420 --> 0:43:04,420
+ Det kunne man også gøre med det her.
+
+1089
+0:43:04,420 --> 0:43:06,420
+ Det er rimelig nemt. Sæt en tusind kroner på din elmåler.
+
+1090
+0:43:06,420 --> 0:43:08,420
+ Den siger til, at du har brugt det op,
+
+1091
+0:43:08,420 --> 0:43:10,420
+ og de kan udveksle data.
+
+1092
+0:43:10,420 --> 0:43:12,420
+ Det er måske lidt nemmere.
+
+1093
+0:43:12,420 --> 0:43:14,420
+ Og det er en anden fin måde
+
+1094
+0:43:14,420 --> 0:43:16,420
+ at gøre det på.
+
+1095
+0:43:16,420 --> 0:43:18,420
+ Der er ikke bare én måde,
+
+1096
+0:43:18,420 --> 0:43:20,420
+ hvorpå man kunne beskytte privatlivet.
+
+1097
+0:43:20,420 --> 0:43:22,420
+ Der er andre måder også. Og det der er en fin måde
+
+1098
+0:43:22,420 --> 0:43:24,420
+ at kunne gøre det på.
+
+1099
+0:43:24,420 --> 0:43:26,420
+ Flere spørgsmål?
+
+1100
+0:43:26,420 --> 0:43:28,420
+ Ja.
+
+1101
+0:43:32,420 --> 0:43:34,420
+ Tak for oplægget.
+
+1102
+0:43:34,420 --> 0:43:36,420
+ Det der er fascinerende ved
+
+1103
+0:43:36,420 --> 0:43:38,420
+ forordningen, det er, at den er gældende
+
+1104
+0:43:38,420 --> 0:43:40,420
+ dansk ret. Altså så GDPR
+
+1105
+0:43:40,420 --> 0:43:42,420
+ skal ligesom al lovgivning og
+
+1106
+0:43:42,420 --> 0:43:44,420
+ forskrifter osv. leve op til.
+
+1107
+0:43:44,420 --> 0:43:46,420
+ Så uanset om det er en forskrift, eller
+
+1108
+0:43:46,420 --> 0:43:48,420
+ om det er en del af loven, eller ikke er,
+
+1109
+0:43:48,420 --> 0:43:50,420
+ så kan du sige, at de her forskrifter skal
+
+1110
+0:43:50,420 --> 0:43:52,420
+ fortolkes som værende
+
+1111
+0:43:52,420 --> 0:43:54,420
+ i overensstemmelse med GDPR.
+
+1112
+0:43:54,420 --> 0:43:56,420
+ Så det er sådan.
+
+1113
+0:43:56,420 --> 0:43:58,420
+ Det burde de allerede være.
+
+1114
+0:43:58,420 --> 0:44:00,420
+ Men nu
+
+1115
+0:44:00,420 --> 0:44:02,420
+ snakker vi om at skulle have flere elektriske
+
+1116
+0:44:02,420 --> 0:44:04,420
+ biler og bruge vores
+
+1117
+0:44:04,420 --> 0:44:06,420
+ elnat mere. Så vi har
+
+1118
+0:44:06,420 --> 0:44:08,420
+ brug for på en eller anden måde at vide, jamen, hvad er det?
+
+1119
+0:44:08,420 --> 0:44:10,420
+ Hvor meget el kommer der til at blive brugt
+
+1120
+0:44:10,420 --> 0:44:12,420
+ fra de forskellige elmålere?
+
+1121
+0:44:12,420 --> 0:44:14,420
+ Så jeg synes, det er virkelig vigtigt, at vi ligesom får
+
+1122
+0:44:14,420 --> 0:44:16,420
+ smidt privacy ind i det her
+
+1123
+0:44:16,420 --> 0:44:18,420
+ ved den her sag. Men
+
+1124
+0:44:18,420 --> 0:44:20,420
+ hvordan gør vi det, når
+
+1125
+0:44:20,420 --> 0:44:22,420
+ det ligesom kommer til at være endnu mere
+
+1126
+0:44:22,420 --> 0:44:24,420
+ i forhold til mere
+
+1127
+0:44:24,420 --> 0:44:26,420
+ elforbrug osv.? Og så kan man så sige, men
+
+1128
+0:44:26,420 --> 0:44:28,420
+ med den seneste udvikling siden den russiske
+
+1129
+0:44:28,420 --> 0:44:30,420
+ invasion af Ukraine, så kan det også godt være,
+
+1130
+0:44:30,420 --> 0:44:32,420
+ at det kommer til at gælde for gas og
+
+1131
+0:44:32,420 --> 0:44:34,420
+ varmemålerne.
+
+1132
+0:44:34,420 --> 0:44:36,420
+ Yes, og det er et supergodt spørgsmål,
+
+1133
+0:44:36,420 --> 0:44:38,420
+ og det havde jeg ikke med på mine slides.
+
+1134
+0:44:38,420 --> 0:44:40,420
+ Men det har jeg faktisk tænkt ind.
+
+1135
+0:44:40,420 --> 0:44:42,420
+ Og det er,
+
+1136
+0:44:42,420 --> 0:44:44,420
+ vores problem er, hvordan
+
+1137
+0:44:44,420 --> 0:44:46,420
+ får lavet vi kapacitetsplanlægning?
+
+1138
+0:44:46,420 --> 0:44:48,420
+ Hvis vi ikke kan se, hvornår det her strøm
+
+1139
+0:44:48,420 --> 0:44:50,420
+ bliver brugt, hvordan kan vi så ligesom sørge for, at
+
+1140
+0:44:50,420 --> 0:44:52,420
+ de her ledninger er tykt nok? Altså,
+
+1141
+0:44:52,420 --> 0:44:54,420
+ det er jo et reelt problem.
+
+1142
+0:44:54,420 --> 0:44:56,420
+ Og det løser vi simpelthen ved,
+
+1143
+0:44:56,420 --> 0:44:58,420
+ at vi sætter nogle flere
+
+1144
+0:44:58,420 --> 0:45:00,420
+ fællesmåler op. Så vi sætter op en
+
+1145
+0:45:00,420 --> 0:45:02,420
+ fra enden af vejen. Vi sætter op en
+
+1146
+0:45:02,420 --> 0:45:04,420
+ ude ved transformatorstationen. Vi sætter op en
+
+1147
+0:45:04,420 --> 0:45:06,420
+ ved hver opgang.
+
+1148
+0:45:06,420 --> 0:45:08,420
+ For lige så snart, at det drejer sig om
+
+1149
+0:45:08,420 --> 0:45:10,420
+ langt flere folk, altså langt flere familiers
+
+1150
+0:45:10,420 --> 0:45:12,420
+ forbrug, så er det pludselig
+
+1151
+0:45:12,420 --> 0:45:14,420
+ ikke persondata længere. Wabba!
+
+1152
+0:45:14,420 --> 0:45:16,420
+ Og så kan de få lov til at aflæse det lige
+
+1153
+0:45:16,420 --> 0:45:18,420
+ så tit de vil. Det er ikke bare timeaflæsning,
+
+1154
+0:45:18,420 --> 0:45:20,420
+ de kan sekundaflæse det, for min skyld.
+
+1155
+0:45:20,420 --> 0:45:22,420
+ Men det er vigtigt, at det er en
+
+1156
+0:45:22,420 --> 0:45:24,420
+ god, klump mennesker, der
+
+1157
+0:45:24,420 --> 0:45:26,420
+ ligesom er skjult bag ved den her måler.
+
+1158
+0:45:26,420 --> 0:45:28,420
+ Og, altså nu bliver jeg ærlig,
+
+1159
+0:45:28,420 --> 0:45:30,420
+ til kapacitetsplanlægning,
+
+1160
+0:45:30,420 --> 0:45:32,420
+ så er det jo ikke kapaciteten hen til
+
+1161
+0:45:32,420 --> 0:45:34,420
+ dig, der er problemet. Så er det
+
+1162
+0:45:34,420 --> 0:45:36,420
+ kapaciteten hen til ude i
+
+1163
+0:45:36,420 --> 0:45:38,420
+ gaden, ikke? Altså, det er jo ikke
+
+1164
+0:45:38,420 --> 0:45:40,420
+ den sidste 10 meter, der er problemet.
+
+1165
+0:45:46,420 --> 0:45:48,420
+ Det er bare sådan et lille
+
+1166
+0:45:48,420 --> 0:45:50,420
+ mikrodetalje, men det var det der rejsekort.
+
+1167
+0:45:50,420 --> 0:45:52,420
+ Jeg kan ikke helt se, om det
+
+1168
+0:45:52,420 --> 0:45:54,420
+ vil virke, men det er jo noget med, at rejsekortet skulle give
+
+1169
+0:45:54,420 --> 0:45:56,420
+ en rabat, hvis man rejser tit.
+
+1170
+0:45:56,420 --> 0:45:58,420
+ Jeg kan ikke lige helt se,
+
+1171
+0:45:58,420 --> 0:46:00,420
+ om det er en løsning op.
+
+1172
+0:46:00,420 --> 0:46:02,420
+ Hvor holder det? Godt, og hvordan
+
+1173
+0:46:02,420 --> 0:46:04,420
+ kunne man indbygge rejsekortet, så
+
+1174
+0:46:04,420 --> 0:46:06,420
+ det giver valid bekymring at sige,
+
+1175
+0:46:06,420 --> 0:46:08,420
+ jeg skulle jo gerne få en rabat,
+
+1176
+0:46:08,420 --> 0:46:10,420
+ hvis jeg rejser tit.
+
+1177
+0:46:10,420 --> 0:46:12,420
+ Der er to muligheder. Den ene er,
+
+1178
+0:46:12,420 --> 0:46:14,420
+ man siger, hvis du vil have rabatten, så er du nødt til at opgive
+
+1179
+0:46:14,420 --> 0:46:16,420
+ dit privatliv. Det er den ene mulighed.
+
+1180
+0:46:16,420 --> 0:46:18,420
+ Og det er jo rimelig simpelt, for så
+
+1181
+0:46:18,420 --> 0:46:20,420
+ fortsætter du bare som i dag. Den anden
+
+1182
+0:46:20,420 --> 0:46:22,420
+ mulighed er, at man siger, du får rabatten
+
+1183
+0:46:22,420 --> 0:46:24,420
+ på, hvor mange penge, du propper ind på dit
+
+1184
+0:46:24,420 --> 0:46:26,420
+ rejsekort. Så det er ikke, hvor tit du bruger det, men hvor mange
+
+1185
+0:46:26,420 --> 0:46:28,420
+ penge, du bruger på det.
+
+1186
+0:46:28,420 --> 0:46:30,420
+ Og det er sådan, ja ja. Og man kunne jo implementere
+
+1187
+0:46:30,420 --> 0:46:32,420
+ begge dele. Og så kunne vi tage
+
+1188
+0:46:32,420 --> 0:46:34,420
+ en snak om, altså
+
+1189
+0:46:34,420 --> 0:46:36,420
+ jeg er absolut åben for, at man kunne gøre
+
+1190
+0:46:36,420 --> 0:46:38,420
+ det her på langt federe måder. Og igen,
+
+1191
+0:46:38,420 --> 0:46:40,420
+ hvis man kigger på de der folk, der studerer
+
+1192
+0:46:40,420 --> 0:46:42,420
+ blinded certificates, så er der noget af det her,
+
+1193
+0:46:42,420 --> 0:46:44,420
+ hvor man siger, okay, man kunne godt
+
+1194
+0:46:44,420 --> 0:46:46,420
+ gøre det her med nogle underlige krypteringsmåder,
+
+1195
+0:46:46,420 --> 0:46:48,420
+ så man måske også
+
+1196
+0:46:48,420 --> 0:46:50,420
+ kan opnå, at vi kan give
+
+1197
+0:46:50,420 --> 0:46:52,420
+ den her rabat, hvis du rejser meget, men ikke
+
+1198
+0:46:52,420 --> 0:46:54,420
+ bruger ret mange penge. Måske kan vi
+
+1199
+0:46:54,420 --> 0:46:56,420
+ i virkeligheden godt gøre det.
+
+1200
+0:46:56,420 --> 0:46:58,420
+ Det er bare
+
+1201
+0:46:58,420 --> 0:47:00,420
+ ikke lige den. Igen, jeg skal kunne forklare det til
+
+1202
+0:47:00,420 --> 0:47:02,420
+ en dommer, så jeg tror, at vi starter med den simple.
+
+1203
+0:47:02,420 --> 0:47:04,420
+ Og så lader jeg nogle teknikere
+
+1204
+0:47:04,420 --> 0:47:06,420
+ og nogle gode kryptoeksperter finde
+
+1205
+0:47:06,420 --> 0:47:08,420
+ på noget, der er endnu bedre, og hvor
+
+1206
+0:47:08,420 --> 0:47:10,420
+ vi netop får alle de her fede ting med.
+
+1207
+0:47:10,420 --> 0:47:12,420
+ Lad os tage sidste
+
+1208
+0:47:12,420 --> 0:47:14,420
+ spørgsmål.
+
+1209
+0:47:14,420 --> 0:47:16,420
+ Jeg skal prøve at gøre det lidt kort, fordi at når vi
+
+1210
+0:47:16,420 --> 0:47:18,420
+ snakker kapacitetsplanlægning og netop brug af
+
+1211
+0:47:18,420 --> 0:47:20,420
+ elnettet til mange flere ting, med mange
+
+1212
+0:47:20,420 --> 0:47:22,420
+ flere biler og elbiler skal lades,
+
+1213
+0:47:22,420 --> 0:47:24,420
+ så er der i hvert fald to ting, der slår mig
+
+1214
+0:47:24,420 --> 0:47:26,420
+ Den ene det er jo, at på længere sigt
+
+1215
+0:47:26,420 --> 0:47:28,420
+ der er her altså meget fossile mønstre i vores
+
+1216
+0:47:28,420 --> 0:47:30,420
+ forbrug af både el og trafik og netværk.
+
+1217
+0:47:30,420 --> 0:47:32,420
+ Der er mange af vores ting, specielt hvis vi siger
+
+1218
+0:47:32,420 --> 0:47:34,420
+ 100 mennesker i et bestemt område, så bruger de
+
+1219
+0:47:34,420 --> 0:47:36,420
+ sgu det samme, som de gjorde i går og i forår.
+
+1220
+0:47:36,420 --> 0:47:38,420
+ Det er næsten det samme.
+
+1221
+0:47:38,420 --> 0:47:40,420
+ Men så også med de store ting,
+
+1222
+0:47:40,420 --> 0:47:42,420
+ der kommer, som f.eks. biler. Det betyder, at der skal
+
+1223
+0:47:42,420 --> 0:47:44,420
+ jo altså være den luft til, at der er
+
+1224
+0:47:44,420 --> 0:47:46,420
+ 10 biler, der kan blive startet af ladning samtidig.
+
+1225
+0:47:46,420 --> 0:47:48,420
+ Så derfor bliver problemet faktisk
+
+1226
+0:47:48,420 --> 0:47:50,420
+ næsten mindre af, at vi kommer til at
+
+1227
+0:47:50,420 --> 0:47:52,420
+ bruge det mere, fordi der skal være en buffer alligevel.
+
+1228
+0:47:52,420 --> 0:47:54,420
+ Så den der
+
+1229
+0:47:54,420 --> 0:47:56,420
+ detaljplanlægning, som man har med den nuværende
+
+1230
+0:47:56,420 --> 0:47:58,420
+ løsning, er fuldstændig fucked up og dum.
+
+1231
+0:48:04,420 --> 0:48:06,420
+ Havde du også et svar, eller var det bare...
+
+1232
+0:48:06,420 --> 0:48:08,420
+ Jeg ved ikke, om der var noget svar,
+
+1233
+0:48:08,420 --> 0:48:10,420
+ der skulle på det der.
+
+1234
+0:48:10,420 --> 0:48:12,420
+ Man kan sige nogle
+
+1235
+0:48:12,420 --> 0:48:14,420
+ detaljer der, hvor jeg tænker,
+
+1236
+0:48:14,420 --> 0:48:16,420
+ det er ikke specielt vigtigt
+
+1237
+0:48:16,420 --> 0:48:18,420
+ for min sag.
+
+1238
+0:48:18,420 --> 0:48:20,420
+ Jeg er med på, at der er nogle interessante
+
+1239
+0:48:20,420 --> 0:48:22,420
+ vinkler ved det her,
+
+1240
+0:48:22,420 --> 0:48:24,420
+ med elsystemet.
+
+1241
+0:48:24,420 --> 0:48:26,420
+ Det er ikke lige...
+
+1242
+0:48:26,420 --> 0:48:28,420
+ Jeg er jo blevet trukket ind i det her. Det var mod min vilje.
+
+1243
+0:48:28,420 --> 0:48:30,420
+ Det er jo fandme ikke for sjovt, at jeg gider at bøvle med den her
+
+1244
+0:48:30,420 --> 0:48:32,420
+ skide elmåler her. Det er jo da ikke mit fald.
+
+1245
+0:48:32,420 --> 0:48:34,420
+ Det er jo deres.
+
+1246
+0:48:34,420 --> 0:48:36,420
+ Havde de nu givet mig en GDPR-elmåler, så havde jeg jo
+
+1247
+0:48:36,420 --> 0:48:38,420
+ ikke stået her i dag.
+
+1248
+0:48:38,420 --> 0:48:40,420
+ Tak for
+
+1249
+0:48:40,420 --> 0:48:42,420
+ snakken omkring GDPR.
+
+1250
+0:48:42,420 --> 0:48:44,420
+ Hvis I har
+
+1251
+0:48:44,420 --> 0:48:46,420
+ flere spørgsmål, er jeg sikker på, at han gerne vil svare på dem.
+
+1252
+0:48:46,420 --> 0:48:48,420
+ Uden fortælle det.
+
+1253
+0:48:52,420 --> 0:48:54,420
+ Danske tekster af Nicolai Winther

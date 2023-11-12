@@ -1,0 +1,4019 @@
+# Transcribed 2023-11-12T17 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:19,340
+ Hello, just a quick disclaimer, this is going to be a very code heavy talk, but I guess
+
+2
+0:00:19,340 --> 0:00:21,000
+ here it's not really an issue.
+
+3
+0:00:22,460 --> 0:00:26,900
+ I sometimes do talk about more soft things like teamwork and stuff like that, but today
+
+4
+0:00:26,900 --> 0:00:29,100
+ is going to be just very code heavy.
+
+5
+0:00:30,000 --> 0:00:35,340
+ My name is Christian, I come from a company called Effacode, and I work as a technical
+
+6
+0:00:35,340 --> 0:00:39,900
+ agile coach, and not a lot of people know what that is, so I usually start by just breaking
+
+7
+0:00:39,900 --> 0:00:44,400
+ it down, also because it's very different from the title that's become pretty widely
+
+8
+0:00:44,400 --> 0:00:48,440
+ used of just agile coach, the technical part is actually very important.
+
+9
+0:00:49,060 --> 0:00:54,400
+ So I'm called a coach because I like working with people, both individually and as teams.
+
+10
+0:00:55,960 --> 0:00:59,600
+ Agile, obviously, this is very hard to see, but it's the picture from the agile manifesto,
+
+11
+0:01:00,000 --> 0:01:05,800
+ website, I like the agile manifesto, and I especially like the principle that says
+
+12
+0:01:05,800 --> 0:01:08,800
+ we should have continuous attention to technical excellence.
+
+13
+0:01:08,800 --> 0:01:13,560
+ So I go and talk to different organizations and teams about how to do test automation,
+
+14
+0:01:13,560 --> 0:01:17,500
+ clean code, pair programming, software architecture, branding strategy, all of these very heavy
+
+15
+0:01:17,500 --> 0:01:23,000
+ technical practices, very close to the code, and very developer heavy.
+
+16
+0:01:23,000 --> 0:01:28,000
+ And now you might be thinking, if I'm teaching test automation, why is the talk called testless?
+
+17
+0:01:28,000 --> 0:01:29,120
+ And the thing is...
+
+18
+0:01:30,000 --> 0:01:33,400
+ I started my testing journey when I was at university, right?
+
+19
+0:01:33,400 --> 0:01:36,940
+ I learned about testing, and I was like, this is going to be great, right?
+
+20
+0:01:36,940 --> 0:01:38,300
+ I loved it.
+
+21
+0:01:38,300 --> 0:01:43,260
+ Not only because there are like hundreds of ways to make CDD into like a drinking game,
+
+22
+0:01:43,260 --> 0:01:49,080
+ but also because I thought, this is awesome, I'll never have another bug, which was like,
+
+23
+0:01:49,080 --> 0:01:50,080
+ it's a huge deal, right?
+
+24
+0:01:50,080 --> 0:01:53,780
+ I'd already been coding for a long time, and I've always been searching for this aesthetically
+
+25
+0:01:53,780 --> 0:01:59,560
+ perfect code, like a code that doesn't have any errors at all, but spoiler alert, that's
+
+26
+0:02:00,000 --> 0:02:01,700
+ how it went.
+
+27
+0:02:01,700 --> 0:02:05,560
+ In fact, it very quickly became a little bit difficult for me to work with testing.
+
+28
+0:02:05,560 --> 0:02:08,700
+ The first thing I ran into was, how do I actually test GUI?
+
+29
+0:02:08,700 --> 0:02:12,600
+ Like that's not obvious how you can do something like that, or something that's highly integrated,
+
+30
+0:02:12,600 --> 0:02:15,200
+ like how do we test complex systems?
+
+31
+0:02:15,200 --> 0:02:18,880
+ On top of the fact that it was very hard to actually do it right, it's also very easy
+
+32
+0:02:18,880 --> 0:02:20,100
+ to get it wrong.
+
+33
+0:02:20,100 --> 0:02:26,000
+ So there are three main categories that I see tests get wrong all the time.
+
+34
+0:02:26,000 --> 0:02:29,300
+ Like this one, for instance, doesn't test anything, because if the inputs are equal, obviously, the output's going to fail.
+
+35
+0:02:30,000 --> 0:02:32,240
+ So that's nothing.
+
+36
+0:02:32,240 --> 0:02:36,480
+ Here we have something testing something that's actually not coded by us, there's a hash map
+
+37
+0:02:36,480 --> 0:02:41,520
+ or something like, it's a third party thing that we don't have control over.
+
+38
+0:02:41,520 --> 0:02:44,740
+ And the final category is when we test something that's essentially random, whether it will
+
+39
+0:02:44,740 --> 0:02:45,820
+ pass or not.
+
+40
+0:02:45,820 --> 0:02:49,620
+ In this case, inputting something into a database, and then seeing that the created on date is
+
+41
+0:02:49,620 --> 0:02:55,560
+ today, and I literally had this in production at one of the customers I worked with, where
+
+42
+0:02:55,560 --> 0:02:59,960
+ it started failing at midnight, and then it was bells and alarms, and everybody should
+
+43
+0:03:00,000 --> 0:03:04,940
+ wake up and something was wrong, and it turned out it used to run a little bit before midnight,
+
+44
+0:03:04,940 --> 0:03:09,880
+ so that then it was created on the same day, but because we just crossed midnight, it failed
+
+45
+0:03:09,880 --> 0:03:10,880
+ that one time.
+
+46
+0:03:10,880 --> 0:03:14,200
+ So it was basically random whether it would test or not, or at least it was very dependent
+
+47
+0:03:14,200 --> 0:03:16,720
+ on their surroundings.
+
+48
+0:03:16,720 --> 0:03:20,380
+ The testing foundation was further shaken when I learned that Jackstar had this wonderful
+
+49
+0:03:20,380 --> 0:03:24,700
+ quote where he says, tests can only prove the presence of bugs, not their absence.
+
+50
+0:03:24,700 --> 0:03:28,440
+ And I wasn't looking to find out if it had bugs, I know my code has bugs, I wanted to
+
+51
+0:03:28,440 --> 0:03:29,320
+ know it didn't have any bugs, right?
+
+52
+0:03:29,320 --> 0:03:29,760
+ That's what I wanted to know.
+
+53
+0:03:29,760 --> 0:03:30,680
+ That's what I'm going for.
+
+54
+0:03:31,980 --> 0:03:37,700
+ Sticking with it, I eventually hit the industry, and I was like, okay, here must be where the
+
+55
+0:03:37,700 --> 0:03:39,420
+ white castle of testing is.
+
+56
+0:03:39,840 --> 0:03:44,360
+ But I was pretty much the only person at that party, like nobody was doing testing, and
+
+57
+0:03:44,360 --> 0:03:45,580
+ I couldn't understand why.
+
+58
+0:03:46,420 --> 0:03:50,820
+ And so now that I've worked a lot in the industry and with a lot of different companies, I found
+
+59
+0:03:50,820 --> 0:03:55,640
+ out that the primary reason I see for people not doing testing is that it requires that
+
+60
+0:03:55,640 --> 0:03:57,140
+ we have a clean code base.
+
+61
+0:03:57,140 --> 0:03:59,740
+ But in order to get a clean code base, we need testing.
+
+62
+0:03:59,760 --> 0:04:04,760
+ And then we're sort of stuck, right, and it's an infinite loop.
+
+63
+0:04:04,760 --> 0:04:08,660
+ One way to say all of this, or to sum it up, is to say that testing is like an approximative
+
+64
+0:04:08,660 --> 0:04:10,000
+ approach.
+
+65
+0:04:10,000 --> 0:04:13,260
+ You can get infinitely good at it, it can get closer and closer to telling you what
+
+66
+0:04:13,260 --> 0:04:17,460
+ you want to know, but you will never be exact, right, it will never be a photograph.
+
+67
+0:04:17,460 --> 0:04:23,100
+ And some people like that, I'm more of an exact kind of person, I like having a real
+
+68
+0:04:23,100 --> 0:04:27,040
+ result with two lines under it, and then I'm done.
+
+69
+0:04:27,040 --> 0:04:28,080
+ And so I started thinking.
+
+70
+0:04:28,080 --> 0:04:29,040
+ Well.
+
+71
+0:04:29,040 --> 0:04:33,440
+ Testing has all of these problems, like it's difficult to master, it's easy to get wrong,
+
+72
+0:04:33,440 --> 0:04:36,800
+ we can't prove that it's correct, no one's doing it, and it requires a clean code base.
+
+73
+0:04:36,800 --> 0:04:38,780
+ Why are we talking about it at all?
+
+74
+0:04:38,780 --> 0:04:41,120
+ Why does everybody know what testing is?
+
+75
+0:04:41,120 --> 0:04:45,380
+ And it's primarily because it's endorsed by some really, really smart people like Kent
+
+76
+0:04:45,380 --> 0:04:47,280
+ Beck and Robert C. Martin and Martin Fowler.
+
+77
+0:04:47,280 --> 0:04:51,260
+ In fact, where I work, we have a saying, you don't want to disagree with Martin Fowler
+
+78
+0:04:51,260 --> 0:04:54,380
+ because he's unlikely to be wrong.
+
+79
+0:04:54,380 --> 0:04:58,280
+ And so we generally follow that, but in this case, I started thinking about it, and I was
+
+80
+0:04:58,280 --> 0:05:03,480
+ like, well, if a lot of smart people succeed using some method, we can't actually really
+
+81
+0:05:03,480 --> 0:05:04,940
+ say anything about that method.
+
+82
+0:05:04,940 --> 0:05:07,560
+ They might just be smart enough to make it work.
+
+83
+0:05:07,560 --> 0:05:11,660
+ In a similar vein, if a lot of novices get something wrong, it's like it could just be
+
+84
+0:05:11,660 --> 0:05:12,660
+ because of inexperience.
+
+85
+0:05:12,660 --> 0:05:14,780
+ We can't really say anything.
+
+86
+0:05:14,780 --> 0:05:18,800
+ Where the interesting thing happens is if smart people tend to fail at something and
+
+87
+0:05:18,800 --> 0:05:22,680
+ if novices tend to succeed at something, that's where we can actually say something about
+
+88
+0:05:22,680 --> 0:05:23,960
+ the method.
+
+89
+0:05:23,960 --> 0:05:27,680
+ And of course, we need to take into account statistical fluctuation, we need a lot of
+
+90
+0:05:27,680 --> 0:05:29,400
+ smart people and a lot of novices.
+
+91
+0:05:29,400 --> 0:05:33,180
+ Even a broken clock is right twice a day.
+
+92
+0:05:33,180 --> 0:05:38,080
+ I've seen a lot of smart people not be good at testing or not have testing work for them,
+
+93
+0:05:38,080 --> 0:05:41,820
+ and I've never seen a novice just succeed out of the gate with testing.
+
+94
+0:05:41,820 --> 0:05:45,380
+ So that tells me there might be something wrong with the method.
+
+95
+0:05:45,380 --> 0:05:49,820
+ This same argument also applies to Scrum, by the way, if any of you know that.
+
+96
+0:05:49,820 --> 0:05:53,980
+ So it's like, okay, so then maybe testing isn't the thing, so maybe we need something
+
+97
+0:05:53,980 --> 0:05:56,000
+ else instead to do the job of it.
+
+98
+0:05:56,000 --> 0:05:57,020
+ And before we can start searching for it, I want to say something.
+
+99
+0:05:57,020 --> 0:05:59,360
+ I'm searching for it, I wanted to figure out what I'm actually looking for.
+
+100
+0:05:59,360 --> 0:06:01,080
+ I'm looking for quality.
+
+101
+0:06:01,080 --> 0:06:05,600
+ And quality typically comes in three categories, at least in the places that I talk about it.
+
+102
+0:06:05,600 --> 0:06:08,940
+ It can be fast, it can be secure, and it can be correct.
+
+103
+0:06:08,940 --> 0:06:12,620
+ And correct here means doing what the programmer intended.
+
+104
+0:06:12,620 --> 0:06:17,160
+ For me, so first of all, security is also an approximative method.
+
+105
+0:06:17,160 --> 0:06:21,360
+ It's like you can get better and better, but then the attackers also get better, so it's
+
+106
+0:06:21,360 --> 0:06:24,520
+ kind of a race to the top.
+
+107
+0:06:24,520 --> 0:06:25,740
+ Also speed is typically not important in the context of the code.
+
+108
+0:06:25,740 --> 0:06:26,740
+ It's like you can get better and better, but then the attackers also get better, so it's
+
+109
+0:06:26,740 --> 0:06:27,460
+ kind of a race to the top.
+
+110
+0:06:27,460 --> 0:06:31,140
+ And in the context that I talk about, it's not at least as important as correctness because
+
+111
+0:06:31,140 --> 0:06:34,580
+ I don't care how fast you can give me a wrong result.
+
+112
+0:06:34,580 --> 0:06:37,500
+ I want the right result.
+
+113
+0:06:37,500 --> 0:06:41,460
+ And there's also some research showing that correct code or clean code bases are generally
+
+114
+0:06:41,460 --> 0:06:45,620
+ more secure than unclean code bases.
+
+115
+0:06:45,620 --> 0:06:49,200
+ So correctness is the thing I'm going to talk about and synonymize with quality in this
+
+116
+0:06:49,200 --> 0:06:50,520
+ talk.
+
+117
+0:06:50,520 --> 0:06:54,280
+ Then if we want to eliminate all the errors and do what the programmer actually intended,
+
+118
+0:06:54,280 --> 0:06:55,740
+ we also need to categorize what are the types of errors we want to eliminate.
+
+119
+0:06:55,740 --> 0:06:56,740
+ So if we want to eliminate all the errors and do what the programmer actually intended,
+
+120
+0:06:56,740 --> 0:06:57,740
+ we also need to categorize what are the types of errors we want to eliminate.
+
+121
+0:06:57,740 --> 0:06:58,740
+ So if we want to eliminate all the errors and do what the programmer actually intended,
+
+122
+0:06:58,740 --> 0:06:59,740
+ we also need to categorize what are the types of errors we want to eliminate.
+
+123
+0:06:59,740 --> 0:07:00,740
+ And there are also three.
+
+124
+0:07:00,740 --> 0:07:01,960
+ There is the, or three we could go for.
+
+125
+0:07:01,960 --> 0:07:03,320
+ The first one is programming errors.
+
+126
+0:07:03,320 --> 0:07:07,020
+ So when that's something like a null pointer exception or array index out of bounds, something
+
+127
+0:07:07,020 --> 0:07:08,220
+ like that.
+
+128
+0:07:08,220 --> 0:07:12,080
+ It could also be infrastructure errors where a file is missing or something around the
+
+129
+0:07:12,080 --> 0:07:13,080
+ code isn't good.
+
+130
+0:07:13,080 --> 0:07:15,780
+ A database is replying slowly or something like that.
+
+131
+0:07:15,780 --> 0:07:17,980
+ And it can be delivery errors.
+
+132
+0:07:17,980 --> 0:07:22,740
+ The customer doesn't get what they actually expected or what they wanted to get at least.
+
+133
+0:07:22,740 --> 0:07:26,560
+ Typically the third category is solved in a static environment by something like water
+
+134
+0:07:26,560 --> 0:07:30,860
+ falling in a dynamic environment by something like agile.
+
+135
+0:07:30,860 --> 0:07:33,820
+ I know basically nothing about the middle category.
+
+136
+0:07:33,820 --> 0:07:38,880
+ So I'm not very good with databases or with connections and all of that networking stuff.
+
+137
+0:07:38,880 --> 0:07:40,740
+ But I'm pretty good at programming.
+
+138
+0:07:40,740 --> 0:07:44,380
+ So that's the subcategory of quality that I'm going to focus on.
+
+139
+0:07:44,380 --> 0:07:45,860
+ How we can actually improve that.
+
+140
+0:07:45,860 --> 0:07:46,860
+ How's the speed?
+
+141
+0:07:46,860 --> 0:07:47,860
+ Am I talking quick?
+
+142
+0:07:47,860 --> 0:07:48,860
+ Slow?
+
+143
+0:07:48,860 --> 0:07:49,860
+ Good?
+
+144
+0:07:49,860 --> 0:07:50,860
+ Good?
+
+145
+0:07:50,860 --> 0:07:51,860
+ Okay.
+
+146
+0:07:51,860 --> 0:07:52,860
+ Cool.
+
+147
+0:07:52,860 --> 0:07:55,680
+ Before we get into the real weeds, I just want to define a couple of terms that I use
+
+148
+0:07:55,680 --> 0:07:56,560
+ a lot.
+
+149
+0:07:56,560 --> 0:07:59,060
+ Not necessarily common knowledge, I guess.
+
+150
+0:07:59,060 --> 0:08:01,440
+ So invariance is a word I use all the time.
+
+151
+0:08:01,440 --> 0:08:06,420
+ And for me, when I say it, it means something that we, the developer, know, but the compiler
+
+152
+0:08:06,420 --> 0:08:07,420
+ doesn't know.
+
+153
+0:08:07,420 --> 0:08:08,860
+ It isn't aware of it.
+
+154
+0:08:08,860 --> 0:08:11,880
+ I'll get to a few examples in a second here.
+
+155
+0:08:11,880 --> 0:08:16,020
+ Then we have coupling, which is when code is shared between multiple teams.
+
+156
+0:08:16,020 --> 0:08:20,380
+ And if your team works as a bunch of individuals, then I would also consider each of them their
+
+157
+0:08:20,380 --> 0:08:21,380
+ own team.
+
+158
+0:08:21,380 --> 0:08:25,860
+ Then you have single person teams and the coupling will be between those.
+
+159
+0:08:25,860 --> 0:08:30,860
+ Then we have fragility of a code base, which is when change in one place breaks something
+
+160
+0:08:30,860 --> 0:08:32,720
+ seemingly unrelated.
+
+161
+0:08:32,720 --> 0:08:35,540
+ And that happens all of the time due to the other two there.
+
+162
+0:08:35,540 --> 0:08:37,700
+ So here's a very, very small example.
+
+163
+0:08:37,700 --> 0:08:42,440
+ From here on, it's just going to be basically all code, or almost all code.
+
+164
+0:08:42,440 --> 0:08:48,540
+ And in this case, these two lines both show invariance and coupling, which is super interesting.
+
+165
+0:08:48,540 --> 0:08:51,480
+ There are a few different invariants.
+
+166
+0:08:51,480 --> 0:08:54,720
+ The first one is that this addition down here, where we add two, doesn't overflow.
+
+167
+0:08:54,720 --> 0:08:55,720
+ It doesn't overlap.
+
+168
+0:08:55,720 --> 0:08:56,840
+ It doesn't overflow.
+
+169
+0:08:56,840 --> 0:09:00,600
+ That's something that probably we know, otherwise the code is broken at least.
+
+170
+0:09:00,600 --> 0:09:04,040
+ But the compiler isn't aware that this won't overflow.
+
+171
+0:09:04,040 --> 0:09:08,640
+ Another invariant is that as.length is something that's meaningful.
+
+172
+0:09:08,640 --> 0:09:13,120
+ From what we can see here, we can actually say that as.length isn't infinite.
+
+173
+0:09:13,120 --> 0:09:16,940
+ And if it is infinite, then this will be an infinite loop, which is also probably not
+
+174
+0:09:16,940 --> 0:09:18,020
+ what we meant.
+
+175
+0:09:18,020 --> 0:09:23,320
+ It also shows coupling because we can actually say something about this code, about the code
+
+176
+0:09:23,320 --> 0:09:25,720
+ we can't see from what we can see here.
+
+177
+0:09:25,720 --> 0:09:30,100
+ For instance, we can probably say what the type of as is, which is interesting.
+
+178
+0:09:30,100 --> 0:09:33,280
+ So in this case, as is probably an array, I would guess.
+
+179
+0:09:33,280 --> 0:09:36,560
+ It's also probably an numerical array of some sort.
+
+180
+0:09:36,560 --> 0:09:40,920
+ We can even say something about the length which it's written in, because it has this
+
+181
+0:09:40,920 --> 0:09:46,100
+ uppercase L for length, which is quite uncommon.
+
+182
+0:09:46,100 --> 0:09:48,580
+ The only one I know is C sharp.
+
+183
+0:09:48,580 --> 0:09:51,880
+ So probably this is some C sharp code.
+
+184
+0:09:51,880 --> 0:09:55,600
+ To contrast that to another way of writing the same thing, we could do something like,
+
+185
+0:09:55,600 --> 0:09:58,500
+ as.map, and then have this thing.
+
+186
+0:09:58,500 --> 0:10:00,100
+ This code down here has no coupling.
+
+187
+0:10:00,100 --> 0:10:03,880
+ We can't say anything about as, except it's probably a collection or something that has
+
+188
+0:10:03,880 --> 0:10:05,480
+ a map method of some sort.
+
+189
+0:10:05,480 --> 0:10:09,900
+ It still has the invariant that it doesn't overflow that was there before.
+
+190
+0:10:09,900 --> 0:10:14,140
+ But it has lower coupling and one fewer invariance.
+
+191
+0:10:14,140 --> 0:10:19,080
+ The reason coupling and invariance are important is that we have to keep them in our heads
+
+192
+0:10:19,080 --> 0:10:20,580
+ while we're coding.
+
+193
+0:10:20,580 --> 0:10:21,580
+ If we forgot...
+
+194
+0:10:21,580 --> 0:10:25,540
+ If we forget what's sort of assumed about the code or what the previous developer knew,
+
+195
+0:10:25,600 --> 0:10:28,320
+ then we make mistakes, and then bugs get into the code.
+
+196
+0:10:28,320 --> 0:10:32,100
+ We have to keep track of all of the couplings, all of the invariants, and that's just...
+
+197
+0:10:32,100 --> 0:10:36,780
+ We have limited capacity for that while also solving a problem.
+
+198
+0:10:36,780 --> 0:10:40,640
+ That's why all of software architecture is about reducing the cognitive load of working
+
+199
+0:10:40,640 --> 0:10:41,640
+ with a code base.
+
+200
+0:10:41,640 --> 0:10:42,640
+ Cool.
+
+201
+0:10:42,640 --> 0:10:47,480
+ I'm going to use a running example of code so that we can see the same piece of code
+
+202
+0:10:47,480 --> 0:10:54,300
+ evolve over time, or throughout the talk, and I've chosen a simple stack implementation,
+
+203
+0:10:54,300 --> 0:10:55,300
+ because it's...
+
+204
+0:10:55,300 --> 0:10:58,420
+ It's compact, and it shows the things that I like to show.
+
+205
+0:10:58,420 --> 0:11:02,680
+ I'm using a language that's sort of like Java, because Java is a very common language, but
+
+206
+0:11:02,680 --> 0:11:04,340
+ it's not exactly Java.
+
+207
+0:11:04,340 --> 0:11:10,400
+ I'm skipping the access modifiers and stuff just to have some space on the slide.
+
+208
+0:11:10,400 --> 0:11:15,800
+ I'm choosing to implement it using a node class, so an internal node so that we don't
+
+209
+0:11:15,800 --> 0:11:16,920
+ have any bounds.
+
+210
+0:11:16,920 --> 0:11:21,220
+ We can have an infinite number of these nodes, again, except for the infrastructure thing.
+
+211
+0:11:21,220 --> 0:11:24,020
+ It might run out of memory, all of that stuff.
+
+212
+0:11:24,020 --> 0:11:29,220
+ Then we have the simple stack here where we have just a push, a peek, and a pop, which
+
+213
+0:11:29,220 --> 0:11:33,700
+ are implemented in the way that we expect.
+
+214
+0:11:33,700 --> 0:11:35,000
+ Some interesting things about this.
+
+215
+0:11:35,000 --> 0:11:38,620
+ First of all, pop only returns something, or only modifies.
+
+216
+0:11:38,620 --> 0:11:42,260
+ It doesn't also return something, and that makes it a lot simpler to reason about.
+
+217
+0:11:42,260 --> 0:11:47,340
+ It's generally good advice to separate the mutators from the accessors, just so we have
+
+218
+0:11:47,340 --> 0:11:48,340
+ a clean interface.
+
+219
+0:11:48,340 --> 0:11:53,020
+ It's also generic, so it can have any type of element in it, and we can reuse it.
+
+220
+0:11:53,020 --> 0:11:54,020
+ All right.
+
+221
+0:11:54,020 --> 0:11:58,860
+ We use null to represent the empty stack.
+
+222
+0:11:58,860 --> 0:12:04,020
+ As you can see from the fact that it can either be null or a node, and a node has an element.
+
+223
+0:12:04,020 --> 0:12:06,400
+ Cool.
+
+224
+0:12:06,400 --> 0:12:15,300
+ This example is interesting because it illustrates the most common problems that I see in object-oriented
+
+225
+0:12:15,300 --> 0:12:16,980
+ code bases normally.
+
+226
+0:12:16,980 --> 0:12:19,020
+ The first one is null pointer errors.
+
+227
+0:12:19,020 --> 0:12:21,200
+ Here we have two places where they can happen.
+
+228
+0:12:21,200 --> 0:12:23,020
+ They can happen at the peek and at the pop.
+
+229
+0:12:23,020 --> 0:12:28,020
+ That means, because we have a possible error, we also have an implied invariant.
+
+230
+0:12:28,020 --> 0:12:35,020
+ The invariant here is top cannot be null when we call peek and pop, which also is a fairly
+
+231
+0:12:35,020 --> 0:12:38,740
+ simple invariant for a stack implementation, at least it's very common.
+
+232
+0:12:38,740 --> 0:12:41,780
+ Another potential issue comes from the fact that we have side effects.
+
+233
+0:12:41,780 --> 0:12:47,460
+ In this case, we have two specific assignments here to the top element, and side effects
+
+234
+0:12:47,460 --> 0:12:52,400
+ are interesting because they're not always undesirable, but they might be, and at least
+
+235
+0:12:52,400 --> 0:12:53,500
+ they can be dangerous.
+
+236
+0:12:53,500 --> 0:12:58,060
+ To see why they can be dangerous, imagine we have this stack being used with two different
+
+237
+0:12:58,060 --> 0:12:59,640
+ threads here, T1 and T2.
+
+238
+0:12:59,640 --> 0:13:04,740
+ T1 just pushes two elements and then pops them again, but T2 at some point in the middle
+
+239
+0:13:04,740 --> 0:13:10,260
+ will go in and then take one off and put a five instead, which for the most part, this
+
+240
+0:13:10,260 --> 0:13:16,120
+ will succeed, but sometimes T2 will jump in there while the stack is actually empty, and
+
+241
+0:13:16,120 --> 0:13:21,400
+ then the program will crash because they're sharing the same stack, the same memory.
+
+242
+0:13:22,400 --> 0:13:24,400
+ This doesn't have to come from threads.
+
+243
+0:13:24,400 --> 0:13:29,080
+ It can also come from two separate systems that are far away from each other in the code
+
+244
+0:13:29,080 --> 0:13:35,400
+ base where one of them modifies a stack that's also used somewhere else in the code.
+
+245
+0:13:35,400 --> 0:13:40,780
+ If we make a bug over in the UI system, it might be reported or it might be influenced
+
+246
+0:13:40,780 --> 0:13:46,900
+ in the finance system, and that makes it very difficult to debug systems like this.
+
+247
+0:13:46,900 --> 0:13:51,500
+ The invariant caused by side effects is that they encourage non-local effects.
+
+248
+0:13:51,500 --> 0:13:56,180
+ We can have effects that are arbitrarily far away from each other, and if that's what
+
+249
+0:13:56,180 --> 0:13:57,900
+ we want, of course, that's great.
+
+250
+0:13:57,900 --> 0:13:59,900
+ If it's not what we want, that might make it dangerous.
+
+251
+0:13:59,900 --> 0:14:04,280
+ We also have another potential for this, which comes from the fact that the node class is
+
+252
+0:14:04,280 --> 0:14:10,260
+ entirely mutable, so anyone can do anything to this, so long as they have access to it.
+
+253
+0:14:10,260 --> 0:14:14,920
+ The common solution in this case, at least, would be to make node an internal class to
+
+254
+0:14:14,920 --> 0:14:19,600
+ the stack, so only from inside the stack can you reach it, encapsulating it and thereby
+
+255
+0:14:19,600 --> 0:14:21,500
+ limiting the scope of where you can do it.
+
+256
+0:14:21,500 --> 0:14:25,500
+ You can change it, but that still means that six months after I've implemented this stack,
+
+257
+0:14:25,500 --> 0:14:30,520
+ if I go back and make some changes and I break the invariant of the node, then again we have
+
+258
+0:14:30,520 --> 0:14:34,280
+ bugs in the code.
+
+259
+0:14:34,280 --> 0:14:39,560
+ We also have the final potential problem here is the fact that we have class-level generics.
+
+260
+0:14:39,560 --> 0:14:43,400
+ In this case, it's an instance of something called early binding, and I'll get back to
+
+261
+0:14:43,400 --> 0:14:47,740
+ that a little bit later, but the invariant, at least, is that once we instantiate this,
+
+262
+0:14:47,740 --> 0:14:50,200
+ the type will never change because it can't change.
+
+263
+0:14:50,200 --> 0:14:51,200
+ That's how generics work in this case.
+
+264
+0:14:51,500 --> 0:14:58,540
+ The reason that's a problem is we might want to implement something like a map method.
+
+265
+0:14:58,540 --> 0:15:01,900
+ For example, consider we have a stack with these elements, then we might want to implement
+
+266
+0:15:01,900 --> 0:15:06,440
+ a method that goes through and multiplies each of them by two, and then we have this
+
+267
+0:15:06,440 --> 0:15:08,260
+ stack as an output.
+
+268
+0:15:08,260 --> 0:15:14,320
+ If we now try to go and call this same initial stack with divide by two instead and give
+
+269
+0:15:14,320 --> 0:15:17,300
+ me the number as a floating point, we'll have a type error.
+
+270
+0:15:17,300 --> 0:15:20,320
+ That's not possible because it can only store ints at the moment.
+
+271
+0:15:20,320 --> 0:15:21,320
+ All right.
+
+272
+0:15:21,320 --> 0:15:24,840
+ So, that's the thing, and the reason that's a problem, here I've implemented it, or at
+
+273
+0:15:24,840 --> 0:15:29,380
+ least written the obvious way of writing map.
+
+274
+0:15:29,380 --> 0:15:32,420
+ We have this assignment down here at head, the one I've made red.
+
+275
+0:15:32,420 --> 0:15:37,720
+ I hope red is visible because I've tried to highlight the important things with red.
+
+276
+0:15:37,720 --> 0:15:42,840
+ The assignment down there means that the input function here is forced to have the same input
+
+277
+0:15:42,840 --> 0:15:47,820
+ type and output type, so T and T at the top, and that's not what we want.
+
+278
+0:15:47,820 --> 0:15:51,160
+ We want something that can transform these to anything, like objects or whatever.
+
+279
+0:15:51,160 --> 0:15:53,400
+ We might want to do crazy things.
+
+280
+0:15:53,400 --> 0:15:59,260
+ So, I've come up with six principles that are going to fix all of these issues and improve
+
+281
+0:15:59,260 --> 0:16:04,260
+ the code a whole lot, and they're all driven by the compiler, which is super cool.
+
+282
+0:16:04,260 --> 0:16:07,280
+ The first one is to use immutability.
+
+283
+0:16:07,280 --> 0:16:11,560
+ In a lot of languages like Java and TypeScript and other languages, it's fairly straightforward
+
+284
+0:16:11,560 --> 0:16:15,420
+ to make something immutable because we can add the keyword final.
+
+285
+0:16:15,420 --> 0:16:17,240
+ This is very difficult to read.
+
+286
+0:16:17,240 --> 0:16:18,720
+ If it's not important, it's grayed out.
+
+287
+0:16:18,720 --> 0:16:19,720
+ So, just...
+
+288
+0:16:19,720 --> 0:16:20,720
+ Although, I guess...
+
+289
+0:16:20,720 --> 0:16:22,420
+ It's a little bit important.
+
+290
+0:16:22,420 --> 0:16:26,760
+ So, we add final to all of the fields.
+
+291
+0:16:26,760 --> 0:16:31,920
+ In this case, both in the node and in the top, or in the stack, and that means we now
+
+292
+0:16:31,920 --> 0:16:35,100
+ have a bunch of errors in the code.
+
+293
+0:16:35,100 --> 0:16:36,100
+ Is it sort of visible?
+
+294
+0:16:36,100 --> 0:16:40,100
+ You can also see it on the screen.
+
+295
+0:16:40,100 --> 0:16:41,100
+ Yeah, but...
+
+296
+0:16:41,100 --> 0:16:44,480
+ I can't go and change, like, 90 slides.
+
+297
+0:16:44,480 --> 0:16:46,480
+ I'm sorry.
+
+298
+0:16:46,480 --> 0:16:47,480
+ Yeah.
+
+299
+0:16:47,480 --> 0:16:50,660
+ Well, we have some issues because we have two assignments now, and these variables are
+
+300
+0:16:50,660 --> 0:16:55,160
+ made final, so we're not allowed to assign to them anymore.
+
+301
+0:16:55,160 --> 0:16:56,900
+ The solution here is to go and...
+
+302
+0:16:56,900 --> 0:16:59,300
+ So, the compiler will tell us these are errors, right?
+
+303
+0:16:59,300 --> 0:17:01,260
+ We don't have to look for these ourselves.
+
+304
+0:17:01,260 --> 0:17:04,360
+ Once we've made them final, the compiler will be like, here are all the places you can't
+
+305
+0:17:04,360 --> 0:17:05,360
+ change.
+
+306
+0:17:05,360 --> 0:17:10,320
+ Then, the solution is to go and actually wrap them in new stacks every time we wanted to
+
+307
+0:17:10,320 --> 0:17:12,420
+ make a modification and then return that instead.
+
+308
+0:17:12,420 --> 0:17:18,760
+ So, we change all the void functions to be stack functions instead, and then now this
+
+309
+0:17:18,760 --> 0:17:19,760
+ works again.
+
+310
+0:17:19,760 --> 0:17:24,080
+ Except, we still have an assignment in the map function.
+
+311
+0:17:24,080 --> 0:17:26,220
+ This assignment is now illegal.
+
+312
+0:17:26,220 --> 0:17:29,900
+ If we try to fix that, we're going to have to juggle a lot with these different values
+
+313
+0:17:29,900 --> 0:17:35,200
+ because we are sort of changing the type of the node, and so we need to move both all
+
+314
+0:17:35,200 --> 0:17:38,800
+ of the tail elements and the current element at the same time.
+
+315
+0:17:38,800 --> 0:17:40,240
+ There are sort of two ways to do this.
+
+316
+0:17:40,240 --> 0:17:42,260
+ There is the easy way and the hard way.
+
+317
+0:17:42,260 --> 0:17:46,920
+ The reason this can be hard is that we have this definition of node that is recursive.
+
+318
+0:17:46,920 --> 0:17:48,420
+ It refers to itself in tail.
+
+319
+0:17:48,420 --> 0:17:49,420
+ Yeah.
+
+320
+0:17:49,420 --> 0:17:53,560
+ So, that means if we're trying to do all of this with loops, we'll have a really hard
+
+321
+0:17:53,560 --> 0:17:56,180
+ time trying to make that sort of work.
+
+322
+0:17:56,180 --> 0:18:00,140
+ But if we're trying to go through it with recursion, that's a lot easier because the
+
+323
+0:18:00,140 --> 0:18:01,420
+ data type is recursive.
+
+324
+0:18:01,420 --> 0:18:04,920
+ So, when you have recursive data, it makes sense to go through it with recursion, and
+
+325
+0:18:04,920 --> 0:18:06,560
+ that's the second principle.
+
+326
+0:18:06,560 --> 0:18:07,560
+ Use recursion.
+
+327
+0:18:07,560 --> 0:18:11,800
+ I just want to share one of my pet peeves with you guys.
+
+328
+0:18:11,800 --> 0:18:14,900
+ I think a lot of people know what recursion is, and a lot of people know this sort of
+
+329
+0:18:14,900 --> 0:18:15,900
+ meme over here.
+
+330
+0:18:15,900 --> 0:18:17,780
+ In order to understand recursion, you must first understand recursion.
+
+331
+0:18:17,780 --> 0:18:18,780
+ But the thing is...
+
+332
+0:18:18,780 --> 0:18:24,860
+ I have a different take on recursion than I think most people presented, and so I hope
+
+333
+0:18:24,860 --> 0:18:28,560
+ I can still add a little bit of new stuff by explaining how I see it.
+
+334
+0:18:28,560 --> 0:18:30,540
+ First of all, recursion has two rules.
+
+335
+0:18:30,540 --> 0:18:36,020
+ The first one is you have to handle all of the cases as either a base case or a recursive
+
+336
+0:18:36,020 --> 0:18:37,020
+ step.
+
+337
+0:18:37,020 --> 0:18:38,020
+ That sort of makes sense.
+
+338
+0:18:38,020 --> 0:18:42,540
+ But the second rule is it has to have at least one base case.
+
+339
+0:18:42,540 --> 0:18:43,860
+ Otherwise it's not recursion.
+
+340
+0:18:43,860 --> 0:18:44,860
+ It's something else.
+
+341
+0:18:44,860 --> 0:18:45,860
+ It's called co-recursion.
+
+342
+0:18:45,860 --> 0:18:46,780
+ I'm not going to talk about it here.
+
+343
+0:18:46,780 --> 0:18:47,780
+ But the thing is...
+
+344
+0:18:47,780 --> 0:18:48,780
+ That means...
+
+345
+0:18:48,780 --> 0:18:52,400
+ That means this over here is not a valid meme because it has no base cases, right?
+
+346
+0:18:52,400 --> 0:18:56,020
+ So really, it doesn't work at all.
+
+347
+0:18:56,020 --> 0:18:58,120
+ But these two rules are actually going to take us through.
+
+348
+0:18:58,120 --> 0:19:02,960
+ If we want to just make a function that does the mapping like we had before as a recursive
+
+349
+0:19:02,960 --> 0:19:07,880
+ function, we can actually just go through the rules and sort of extrapolate how it should
+
+350
+0:19:07,880 --> 0:19:10,420
+ look without thinking, which is the important thing, right?
+
+351
+0:19:10,420 --> 0:19:14,580
+ Because we want to take stuff out of our brains while we're coding.
+
+352
+0:19:14,580 --> 0:19:15,580
+ The first question...
+
+353
+0:19:15,580 --> 0:19:18,020
+ Oh, the first thing we need to consider is what should the type be of the thing we're
+
+354
+0:19:18,020 --> 0:19:19,020
+ trying to implement?
+
+355
+0:19:19,020 --> 0:19:23,260
+ Well, it should take a function that can take something from T to B, and then it should
+
+356
+0:19:23,260 --> 0:19:27,320
+ take the current stack, which is a node of type T, and then it should return something
+
+357
+0:19:27,320 --> 0:19:29,460
+ that's a stack of type B.
+
+358
+0:19:29,460 --> 0:19:32,620
+ So when we have that, we can say, what are the cases we have?
+
+359
+0:19:32,620 --> 0:19:33,700
+ Well, we have two cases.
+
+360
+0:19:33,700 --> 0:19:36,100
+ We have null and the node.
+
+361
+0:19:36,100 --> 0:19:37,860
+ Those are the two possible values.
+
+362
+0:19:37,860 --> 0:19:39,600
+ And node is the recursive one.
+
+363
+0:19:39,600 --> 0:19:41,960
+ So already there is a hint.
+
+364
+0:19:41,960 --> 0:19:43,840
+ That means null must be a base case.
+
+365
+0:19:43,840 --> 0:19:48,020
+ And we can just input the only value we have, which is return null.
+
+366
+0:19:48,020 --> 0:19:52,280
+ And once we know that node is the recursive step, we also know that we need a recursive
+
+367
+0:19:52,280 --> 0:19:54,920
+ call somewhere in the node code.
+
+368
+0:19:54,920 --> 0:19:57,620
+ So that can go just there.
+
+369
+0:19:57,620 --> 0:20:02,700
+ To satisfy the types that we've put in, we have to instantiate a new node, otherwise
+
+370
+0:20:02,700 --> 0:20:03,700
+ we have nothing.
+
+371
+0:20:03,700 --> 0:20:08,100
+ And the only thing that can go in that last spot is f.applyhead.
+
+372
+0:20:08,100 --> 0:20:12,460
+ And so without thinking at all, just following what the compiler is asking us to do, we can
+
+373
+0:20:12,460 --> 0:20:16,700
+ actually only have this correct implementation of how that looks.
+
+374
+0:20:16,700 --> 0:20:18,020
+ And the only thing...
+
+375
+0:20:18,020 --> 0:20:22,220
+ The only thing we need to replace this old function is to have a wrapper function that
+
+376
+0:20:22,220 --> 0:20:26,460
+ just makes the interface a little bit nicer and hides the fact that we have an extra argument
+
+377
+0:20:26,460 --> 0:20:28,060
+ on our recursive version.
+
+378
+0:20:28,060 --> 0:20:32,340
+ The helper over there has two arguments, and we only want one.
+
+379
+0:20:32,340 --> 0:20:34,280
+ So from doing that, we have...
+
+380
+0:20:34,280 --> 0:20:36,600
+ We've actually fixed our typing issue.
+
+381
+0:20:36,600 --> 0:20:40,540
+ Now it says b in all the right places, and we actually have the map function that we
+
+382
+0:20:40,540 --> 0:20:42,580
+ wanted to have in the beginning.
+
+383
+0:20:42,580 --> 0:20:47,540
+ And I just want to underline what are the advantages we get from using recursion here.
+
+384
+0:20:47,540 --> 0:20:52,080
+ The thing is, we barely had to think while we were implementing it, because the types
+
+385
+0:20:52,080 --> 0:20:53,940
+ were sort of motivating what we had to do.
+
+386
+0:20:53,940 --> 0:20:57,840
+ At each step, it was like, there's only really one thing to do, and so we just follow what
+
+387
+0:20:57,840 --> 0:20:59,780
+ it's telling us to do.
+
+388
+0:20:59,780 --> 0:21:04,760
+ The second thing is that we can reason about each of the cases separately from each other.
+
+389
+0:21:04,760 --> 0:21:07,640
+ So there's a lower coupling, so to say, between the things.
+
+390
+0:21:07,640 --> 0:21:11,380
+ If we were trying to do the same thing with loops, all of the things would sort of interact
+
+391
+0:21:11,380 --> 0:21:12,940
+ with each other all of the time.
+
+392
+0:21:12,940 --> 0:21:16,540
+ But here, we could say, well, null has to do this, and the other case has to do this, and
+
+393
+0:21:16,540 --> 0:21:17,380
+ forget about everything around it.
+
+394
+0:21:17,380 --> 0:21:25,720
+ Which allows us to sort of eat an elephant in small bites, so to speak.
+
+395
+0:21:25,720 --> 0:21:29,600
+ This is not a coincidence that these things happen, and we get these things out of this.
+
+396
+0:21:29,600 --> 0:21:33,940
+ I really just want to share with you some of my passions for this stuff.
+
+397
+0:21:33,940 --> 0:21:39,080
+ And if the theory stuff and very theoretical stuff isn't quite your cup of tea, feel free
+
+398
+0:21:39,080 --> 0:21:41,260
+ to check your email now.
+
+399
+0:21:41,260 --> 0:21:45,540
+ While the slides are blue, it's going to be about very theoretical stuff.
+
+400
+0:21:45,540 --> 0:21:46,540
+ The thing is.
+
+401
+0:21:47,380 --> 0:21:51,540
+ A couple of years ago, this guy invented something really, really useful, right?
+
+402
+0:21:51,540 --> 0:21:55,560
+ He invented numbers, and it was a total game changer.
+
+403
+0:21:55,560 --> 0:21:59,280
+ Of course, people have been using numbers before then, but the thing is, this guy's
+
+404
+0:21:59,280 --> 0:22:03,940
+ numbers were a little bit different, in a very important way, because we call them piano
+
+405
+0:22:03,940 --> 0:22:04,940
+ numbers.
+
+406
+0:22:04,940 --> 0:22:05,940
+ I don't know if he called them that.
+
+407
+0:22:05,940 --> 0:22:07,460
+ That would have been a little bit selfish.
+
+408
+0:22:07,460 --> 0:22:14,180
+ But he defined them as a number being either zero, or it can be the successor of another
+
+409
+0:22:14,180 --> 0:22:15,180
+ number.
+
+410
+0:22:15,180 --> 0:22:17,180
+ And the reason that's important is that he also defined...
+
+411
+0:22:17,180 --> 0:22:20,960
+ He also had a statement to go with these things, and he said, if you can prove that
+
+412
+0:22:20,960 --> 0:22:25,580
+ something is true for zero, and you can prove that if it's true for one number, it's also
+
+413
+0:22:25,580 --> 0:22:29,120
+ true for the next number, then it's true for everything, right?
+
+414
+0:22:29,120 --> 0:22:30,120
+ It's true for all the...
+
+415
+0:22:30,120 --> 0:22:33,980
+ Even once you haven't checked, and even once nobody has ever checked, or even ever thought
+
+416
+0:22:33,980 --> 0:22:34,980
+ of.
+
+417
+0:22:34,980 --> 0:22:39,560
+ All of the numbers are now under this property, which is amazing, and it's so powerful.
+
+418
+0:22:39,560 --> 0:22:46,500
+ It's a cornerstone of mathematics called induction, structural induction, to be precise, and being
+
+419
+0:22:46,500 --> 0:22:49,680
+ mathematicians, of course, they had to find a very complicated way to write it, so they
+
+420
+0:22:49,680 --> 0:22:50,680
+ write it like this.
+
+421
+0:22:50,680 --> 0:22:55,940
+ But it really says the same thing, and it's not important what this says.
+
+422
+0:22:55,940 --> 0:23:00,360
+ The thing is, if I, as a programmer, want to implement a function to do something a
+
+423
+0:23:00,360 --> 0:23:04,440
+ number of times, and then give me back the result, I would need to know three things,
+
+424
+0:23:04,440 --> 0:23:05,440
+ right?
+
+425
+0:23:05,440 --> 0:23:07,480
+ So here, I just want the result back, some generic result.
+
+426
+0:23:07,480 --> 0:23:08,480
+ I don't know what it is.
+
+427
+0:23:08,480 --> 0:23:09,760
+ But I need to know three things.
+
+428
+0:23:09,760 --> 0:23:11,060
+ What is the starting point?
+
+429
+0:23:11,060 --> 0:23:12,440
+ What do I do at each step?
+
+430
+0:23:12,440 --> 0:23:14,200
+ And how many times do you want me to do it, right?
+
+431
+0:23:14,200 --> 0:23:16,380
+ These are the three things I need to know to do something.
+
+432
+0:23:16,500 --> 0:23:20,600
+ And this looks a little bit familiar, at least it does to me.
+
+433
+0:23:20,600 --> 0:23:25,260
+ I can make it even more visible what this sort of represents, right?
+
+434
+0:23:25,260 --> 0:23:29,120
+ Because we have all of the same elements, although not quite in the same order.
+
+435
+0:23:29,120 --> 0:23:34,080
+ We write the return value at the start in a lot of languages, but if the return goes
+
+436
+0:23:34,080 --> 0:23:36,400
+ at the end, then this is literally the same thing.
+
+437
+0:23:36,400 --> 0:23:42,660
+ So really, induction is the type that recursion would have if we just wrote up the type, which
+
+438
+0:23:42,660 --> 0:23:44,820
+ is just an incredible fact.
+
+439
+0:23:44,820 --> 0:23:46,500
+ That means that while we are coding in a recursion.
+
+440
+0:23:46,500 --> 0:23:51,780
+ In a recursive way, our compiler constructs a proof behind our backs that all of the types
+
+441
+0:23:51,780 --> 0:23:54,160
+ work and all of the things are correct.
+
+442
+0:23:54,160 --> 0:23:56,520
+ And that's immensely powerful.
+
+443
+0:23:56,520 --> 0:24:01,220
+ We can still, of course we can still have mistakes, but we're trying to hit the bullseye
+
+444
+0:24:01,220 --> 0:24:05,500
+ of correct code, and where before we could make both small and big mistakes, with the
+
+445
+0:24:05,500 --> 0:24:10,720
+ compiler actually proving something, it's now a big green thing.
+
+446
+0:24:10,720 --> 0:24:12,720
+ Difficult colors.
+
+447
+0:24:12,720 --> 0:24:16,500
+ We can't make small mistakes anymore, because the compiler will detect them now.
+
+448
+0:24:16,500 --> 0:24:19,720
+ So we can only make really big mistakes or no mistakes at all.
+
+449
+0:24:19,720 --> 0:24:22,920
+ Or get compiler errors, of course, until we get it correct.
+
+450
+0:24:22,920 --> 0:24:26,600
+ And luckily, it's less likely that we'll make big mistakes, because most people will be
+
+451
+0:24:26,600 --> 0:24:30,560
+ like, oh, wait, what am I doing at all, and then stop and reassess what direction they're
+
+452
+0:24:30,560 --> 0:24:31,560
+ going.
+
+453
+0:24:31,560 --> 0:24:35,000
+ So that means we already have eliminated a bunch of errors from this.
+
+454
+0:24:35,000 --> 0:24:36,060
+ Okay.
+
+455
+0:24:36,060 --> 0:24:37,980
+ That was like a lot of the theory part.
+
+456
+0:24:37,980 --> 0:24:40,040
+ There's only a little bit more theory later.
+
+457
+0:24:40,040 --> 0:24:43,040
+ But let's get back to the next principle.
+
+458
+0:24:43,040 --> 0:24:44,040
+ Prefer later binding.
+
+459
+0:24:44,040 --> 0:24:45,040
+ That's the thing I promised.
+
+460
+0:24:45,040 --> 0:24:46,040
+ I would just reiterate.
+
+461
+0:24:46,040 --> 0:24:46,140
+ Okay.
+
+462
+0:24:46,500 --> 0:24:48,400
+ You can't do this at the start of the thing.
+
+463
+0:24:48,400 --> 0:24:51,500
+ The thing is, in this code, we have this...
+
+464
+0:24:51,500 --> 0:24:55,560
+ We now have this node element and this other variable that keeps a node element, but node
+
+465
+0:24:55,560 --> 0:24:57,680
+ is entirely immutable.
+
+466
+0:24:57,680 --> 0:25:00,280
+ So there's really no point in encapsulating it anymore.
+
+467
+0:25:00,280 --> 0:25:02,540
+ There's no danger in exposing node directly.
+
+468
+0:25:02,540 --> 0:25:08,840
+ So we just remove the field and then have the regular node just be what it wants to
+
+469
+0:25:08,840 --> 0:25:10,400
+ be all the time.
+
+470
+0:25:10,400 --> 0:25:15,660
+ And that also means that we can now go and look at these different...
+
+471
+0:25:15,660 --> 0:25:16,040
+ These different...
+
+472
+0:25:16,040 --> 0:25:17,900
+ in the places where we use stack,
+
+473
+0:25:18,040 --> 0:25:20,020
+ we obviously don't have stack anymore.
+
+474
+0:25:20,480 --> 0:25:21,520
+ Now they need to be node
+
+475
+0:25:21,520 --> 0:25:22,780
+ because we're exposing the node.
+
+476
+0:25:23,160 --> 0:25:25,060
+ And that also means we need to add the argument
+
+477
+0:25:25,060 --> 0:25:26,700
+ because before it was a field,
+
+478
+0:25:26,820 --> 0:25:27,600
+ now it's a parameter.
+
+479
+0:25:28,220 --> 0:25:29,700
+ So we just moved something
+
+480
+0:25:29,700 --> 0:25:32,900
+ from the state to be a parameter instead.
+
+481
+0:25:33,940 --> 0:25:34,380
+ Everywhere.
+
+482
+0:25:35,060 --> 0:25:36,060
+ And now that we've done that,
+
+483
+0:25:36,240 --> 0:25:38,200
+ this T that the stack has...
+
+484
+0:25:38,200 --> 0:25:39,560
+ Oh, I can't go away from the camera.
+
+485
+0:25:39,840 --> 0:25:41,000
+ This T that the stack has
+
+486
+0:25:41,000 --> 0:25:42,740
+ isn't binding any data.
+
+487
+0:25:43,060 --> 0:25:43,820
+ It's not important.
+
+488
+0:25:43,820 --> 0:25:46,080
+ So we can actually just postpone it
+
+489
+0:25:46,080 --> 0:25:47,740
+ and put it on each of the methods instead.
+
+490
+0:25:48,140 --> 0:25:49,720
+ And now this is not so much a stack
+
+491
+0:25:49,720 --> 0:25:51,340
+ as it is just a class of utilities
+
+492
+0:25:51,340 --> 0:25:52,520
+ to work with a stack.
+
+493
+0:25:52,600 --> 0:25:53,600
+ So we also rename it
+
+494
+0:25:53,600 --> 0:25:55,340
+ because it's a little bit nicer.
+
+495
+0:25:55,760 --> 0:25:56,680
+ But this is really cool
+
+496
+0:25:56,680 --> 0:25:58,120
+ because now where we before
+
+497
+0:25:58,120 --> 0:25:59,580
+ had to make a stack for integers
+
+498
+0:25:59,580 --> 0:26:00,720
+ and a stack for floating point
+
+499
+0:26:00,720 --> 0:26:01,600
+ and a stack for objects,
+
+500
+0:26:01,880 --> 0:26:03,980
+ we can use this stack utils for any type.
+
+501
+0:26:04,060 --> 0:26:04,660
+ It doesn't care.
+
+502
+0:26:05,020 --> 0:26:06,420
+ And all of the methods just work.
+
+503
+0:26:06,980 --> 0:26:07,920
+ They can even be static
+
+504
+0:26:07,920 --> 0:26:09,580
+ if we want to save memory for some reason.
+
+505
+0:26:11,580 --> 0:26:11,980
+ Yeah.
+
+506
+0:26:11,980 --> 0:26:13,780
+ And it's a really...
+
+507
+0:26:13,820 --> 0:26:14,940
+ It's a really powerful technique.
+
+508
+0:26:15,240 --> 0:26:17,160
+ The later we lock in our decisions,
+
+509
+0:26:17,500 --> 0:26:19,320
+ the more reusable the code becomes.
+
+510
+0:26:19,500 --> 0:26:20,080
+ And that's general.
+
+511
+0:26:20,160 --> 0:26:22,740
+ That doesn't only apply to generics.
+
+512
+0:26:22,800 --> 0:26:23,840
+ It also applies to other things.
+
+513
+0:26:23,920 --> 0:26:24,360
+ In this case,
+
+514
+0:26:24,680 --> 0:26:27,420
+ we have two versions of a sorting algorithm
+
+515
+0:26:27,420 --> 0:26:29,200
+ and then we have a master method
+
+516
+0:26:29,200 --> 0:26:31,820
+ to sort of select which algorithm you want to run
+
+517
+0:26:31,820 --> 0:26:33,680
+ for, I don't know, testing purposes or whatever.
+
+518
+0:26:35,260 --> 0:26:36,160
+ But in this case,
+
+519
+0:26:36,300 --> 0:26:37,220
+ if I want to change this,
+
+520
+0:26:37,260 --> 0:26:38,840
+ I need to actually go and change the code.
+
+521
+0:26:39,200 --> 0:26:41,200
+ We can contrast it to using instead
+
+522
+0:26:41,200 --> 0:26:42,580
+ something like an interface
+
+523
+0:26:42,580 --> 0:26:43,580
+ and then have different...
+
+524
+0:26:43,820 --> 0:26:46,060
+ Classes implementing that same interface
+
+525
+0:26:46,060 --> 0:26:48,240
+ that then call the same code, right?
+
+526
+0:26:48,260 --> 0:26:49,400
+ It still calls quicksort.
+
+527
+0:26:49,480 --> 0:26:50,560
+ It still calls insertion sort.
+
+528
+0:26:50,940 --> 0:26:51,640
+ But the thing is,
+
+529
+0:26:51,700 --> 0:26:52,820
+ if I want to change this code,
+
+530
+0:26:52,940 --> 0:26:53,900
+ I need to go into the code,
+
+531
+0:26:54,020 --> 0:26:54,660
+ change the code,
+
+532
+0:26:55,100 --> 0:26:55,980
+ recompile it,
+
+533
+0:26:56,140 --> 0:26:58,160
+ and redeploy it to make the change.
+
+534
+0:26:58,260 --> 0:26:59,320
+ Whereas this code over here,
+
+535
+0:26:59,480 --> 0:27:01,060
+ I can go and add a new class,
+
+536
+0:27:01,200 --> 0:27:02,820
+ compile it separately from the other code,
+
+537
+0:27:03,040 --> 0:27:03,560
+ and then just,
+
+538
+0:27:03,740 --> 0:27:06,020
+ as long as the code has a way of loading a new code,
+
+539
+0:27:06,280 --> 0:27:08,600
+ I can just pluck it in while it's still running.
+
+540
+0:27:08,600 --> 0:27:10,340
+ I don't need to touch any of these things.
+
+541
+0:27:11,180 --> 0:27:12,940
+ So that means we can have, like,
+
+542
+0:27:13,000 --> 0:27:13,740
+ change by addition.
+
+543
+0:27:13,820 --> 0:27:15,360
+ Which is also super nice.
+
+544
+0:27:17,400 --> 0:27:17,880
+ Yeah.
+
+545
+0:27:18,500 --> 0:27:18,720
+ Cool.
+
+546
+0:27:18,960 --> 0:27:19,780
+ Getting back to the stack,
+
+547
+0:27:20,000 --> 0:27:21,960
+ we have an issue now.
+
+548
+0:27:22,840 --> 0:27:25,040
+ We still can have null pointer exceptions
+
+549
+0:27:25,040 --> 0:27:27,240
+ because we still use null to represent an empty stack,
+
+550
+0:27:27,620 --> 0:27:28,980
+ and it's in these cases,
+
+551
+0:27:29,540 --> 0:27:30,580
+ in this case.
+
+552
+0:27:30,880 --> 0:27:32,640
+ So there's a very simple solution for this.
+
+553
+0:27:32,860 --> 0:27:33,560
+ Don't use null.
+
+554
+0:27:35,160 --> 0:27:36,220
+ And unfortunately,
+
+555
+0:27:36,400 --> 0:27:37,820
+ a lot of languages don't support you
+
+556
+0:27:37,820 --> 0:27:39,000
+ disabling null entirely,
+
+557
+0:27:39,420 --> 0:27:41,580
+ but there is a solution that we can use,
+
+558
+0:27:41,580 --> 0:27:42,360
+ and then just,
+
+559
+0:27:42,520 --> 0:27:43,440
+ if we're very vigilant,
+
+560
+0:27:43,820 --> 0:27:48,480
+ if we're very, very good with our other code hygiene,
+
+561
+0:27:48,480 --> 0:27:49,940
+ we should be able to eliminate them.
+
+562
+0:27:50,480 --> 0:27:52,020
+ Checking third-party things and stuff.
+
+563
+0:27:52,020 --> 0:27:54,440
+ The solution is to use something called null object pattern,
+
+564
+0:27:54,440 --> 0:27:57,980
+ where we instead make a new class called empty
+
+565
+0:27:57,980 --> 0:28:00,200
+ to represent an empty stack instead of null,
+
+566
+0:28:00,200 --> 0:28:01,640
+ and then we make an interface,
+
+567
+0:28:01,640 --> 0:28:03,480
+ and then we have both the node class
+
+568
+0:28:03,480 --> 0:28:05,440
+ and the empty representing class
+
+569
+0:28:05,440 --> 0:28:06,940
+ implement that new stack.
+
+570
+0:28:07,820 --> 0:28:08,780
+ That also means, of course,
+
+571
+0:28:08,780 --> 0:28:10,880
+ that node is no longer just pointing to a node,
+
+572
+0:28:10,880 --> 0:28:12,880
+ it's pointing to something that can also be empty.
+
+573
+0:28:13,820 --> 0:28:15,820
+ And then, now,
+
+574
+0:28:15,820 --> 0:28:18,720
+ apart from the fact that we don't get these,
+
+575
+0:28:18,720 --> 0:28:21,520
+ we can also specify now at each place
+
+576
+0:28:21,520 --> 0:28:23,980
+ whether we want a stack that's possibly null
+
+577
+0:28:23,980 --> 0:28:25,820
+ or definitely not null,
+
+578
+0:28:25,820 --> 0:28:27,860
+ because whenever we say node,
+
+579
+0:28:27,860 --> 0:28:30,060
+ we know that it is not empty, right?
+
+580
+0:28:30,060 --> 0:28:31,540
+ It can only be something.
+
+581
+0:28:31,540 --> 0:28:33,220
+ So now we can't have null pointer exceptions.
+
+582
+0:28:33,220 --> 0:28:34,540
+ We have so precise types
+
+583
+0:28:34,540 --> 0:28:36,760
+ that we can say exactly what we want as our input,
+
+584
+0:28:36,760 --> 0:28:38,920
+ and then the compiler will help us figure out
+
+585
+0:28:38,920 --> 0:28:41,880
+ if someone's calling it wrong or prevent them from.
+
+586
+0:28:41,880 --> 0:28:43,820
+ So now there are no longer null pointer exceptions.
+
+587
+0:28:43,820 --> 0:28:47,820
+ We do have a new error that the compiler is informing us of.
+
+588
+0:28:47,820 --> 0:28:49,820
+ At any point in this,
+
+589
+0:28:49,820 --> 0:28:51,820
+ the compiler is telling us what to do next.
+
+590
+0:28:51,820 --> 0:28:53,820
+ It's not like we have to do a lot of thinking.
+
+591
+0:28:53,820 --> 0:28:55,820
+ It's saying that one over there doesn't really work,
+
+592
+0:28:55,820 --> 0:28:56,820
+ because we have a null check,
+
+593
+0:28:56,820 --> 0:28:57,820
+ and we don't use null anymore,
+
+594
+0:28:57,820 --> 0:28:59,820
+ so obviously that's never going to trigger.
+
+595
+0:28:59,820 --> 0:29:02,820
+ And, in fact, we want it to check
+
+596
+0:29:02,820 --> 0:29:05,820
+ if something is an instance of the empty class.
+
+597
+0:29:05,820 --> 0:29:07,820
+ And Java programmers will be quick to suggest
+
+598
+0:29:07,820 --> 0:29:09,820
+ something like instance of,
+
+599
+0:29:09,820 --> 0:29:11,820
+ but that breaks the next principle we're going to go into.
+
+600
+0:29:11,820 --> 0:29:13,820
+ Don't use runtime types.
+
+601
+0:29:13,820 --> 0:29:14,820
+ The thing is,
+
+602
+0:29:14,820 --> 0:29:16,820
+ runtime types are sort of like,
+
+603
+0:29:16,820 --> 0:29:18,820
+ they're not some part of the compiler, right?
+
+604
+0:29:18,820 --> 0:29:19,820
+ It doesn't know anything about them,
+
+605
+0:29:19,820 --> 0:29:21,820
+ so it's sort of telling the compiler to back off,
+
+606
+0:29:21,820 --> 0:29:23,820
+ but it's a really powerful tool.
+
+607
+0:29:23,820 --> 0:29:26,820
+ I've been working on this code to compiler dictionary
+
+608
+0:29:26,820 --> 0:29:27,820
+ to just explain to people
+
+609
+0:29:27,820 --> 0:29:29,820
+ what they're actually saying to the compiler
+
+610
+0:29:29,820 --> 0:29:31,820
+ when they put these things in their code.
+
+611
+0:29:31,820 --> 0:29:32,820
+ The first one is if you put a cast,
+
+612
+0:29:32,820 --> 0:29:33,820
+ you're just telling it,
+
+613
+0:29:33,820 --> 0:29:34,820
+ I know what the type is, you don't.
+
+614
+0:29:34,820 --> 0:29:35,820
+ Like, I know better than you.
+
+615
+0:29:35,820 --> 0:29:37,820
+ And it's literally a type checker.
+
+616
+0:29:37,820 --> 0:29:39,820
+ Like, that's its job.
+
+617
+0:29:39,820 --> 0:29:41,820
+ And it spent 40 years becoming one or something.
+
+618
+0:29:41,820 --> 0:29:43,820
+ Um...
+
+619
+0:29:43,820 --> 0:29:45,820
+ You also have something like instance of
+
+620
+0:29:45,820 --> 0:29:46,820
+ where it's like, I don't know.
+
+621
+0:29:46,820 --> 0:29:47,820
+ We'll just check it at runtime.
+
+622
+0:29:47,820 --> 0:29:48,820
+ We'll just see.
+
+623
+0:29:48,820 --> 0:29:49,820
+ Maybe it's an instance of this thing.
+
+624
+0:29:49,820 --> 0:29:50,820
+ Yeah.
+
+625
+0:29:50,820 --> 0:29:51,820
+ Again, it's like,
+
+626
+0:29:51,820 --> 0:29:54,820
+ it's not a very codey thing to put in there.
+
+627
+0:29:54,820 --> 0:29:56,820
+ We have dynamic types where it's like,
+
+628
+0:29:56,820 --> 0:29:57,820
+ I don't care, so you shouldn't be there.
+
+629
+0:29:57,820 --> 0:29:58,820
+ Just let it be.
+
+630
+0:29:58,820 --> 0:30:00,820
+ Let me do whatever I want.
+
+631
+0:30:00,820 --> 0:30:02,820
+ And finally, the worst one is like reflection
+
+632
+0:30:02,820 --> 0:30:03,820
+ where it's like,
+
+633
+0:30:03,820 --> 0:30:05,820
+ I can literally do your job, right?
+
+634
+0:30:05,820 --> 0:30:06,820
+ All of these are very rude.
+
+635
+0:30:06,820 --> 0:30:08,820
+ Don't do this with your compiler.
+
+636
+0:30:08,820 --> 0:30:11,820
+ It's like, you're saying to the compiler,
+
+637
+0:30:11,820 --> 0:30:12,820
+ stand back, I got this.
+
+638
+0:30:12,820 --> 0:30:13,820
+ And then, you know,
+
+639
+0:30:13,820 --> 0:30:14,820
+ the compiler will stand back
+
+640
+0:30:14,820 --> 0:30:15,820
+ and it will happily watch you
+
+641
+0:30:15,820 --> 0:30:18,820
+ yeet yourself off of a cliff somehow,
+
+642
+0:30:18,820 --> 0:30:20,820
+ which is super uncomfortable.
+
+643
+0:30:20,820 --> 0:30:21,820
+ Um...
+
+644
+0:30:21,820 --> 0:30:23,820
+ The reason, like,
+
+645
+0:30:23,820 --> 0:30:24,820
+ this is super important.
+
+646
+0:30:24,820 --> 0:30:25,820
+ Again, a little bit of theory.
+
+647
+0:30:25,820 --> 0:30:26,820
+ Um...
+
+648
+0:30:26,820 --> 0:30:28,820
+ Is that we have these very strong type systems.
+
+649
+0:30:28,820 --> 0:30:30,820
+ Type systems have two properties
+
+650
+0:30:30,820 --> 0:30:32,820
+ that we actually want of them.
+
+651
+0:30:32,820 --> 0:30:33,820
+ They can be sound,
+
+652
+0:30:33,820 --> 0:30:35,820
+ which means if there are no type errors on compile time,
+
+653
+0:30:35,820 --> 0:30:38,820
+ then there are not gonna be any runtime errors,
+
+654
+0:30:38,820 --> 0:30:39,820
+ which is very nice.
+
+655
+0:30:39,820 --> 0:30:40,820
+ They can also be decidable,
+
+656
+0:30:40,820 --> 0:30:42,820
+ meaning they don't run forever.
+
+657
+0:30:42,820 --> 0:30:44,820
+ That's cool of a compiler to stop eventually.
+
+658
+0:30:44,820 --> 0:30:45,820
+ Um...
+
+659
+0:30:45,820 --> 0:30:47,820
+ At least it sucks when it doesn't.
+
+660
+0:30:47,820 --> 0:30:48,820
+ Unfortunately,
+
+661
+0:30:48,820 --> 0:30:50,820
+ all of the languages that we tend to use
+
+662
+0:30:50,820 --> 0:30:51,820
+ are neither of these two,
+
+663
+0:30:51,820 --> 0:30:52,820
+ but they're close enough.
+
+664
+0:30:52,820 --> 0:30:54,820
+ We can sort of just pretend that they're...
+
+665
+0:30:54,820 --> 0:30:55,820
+ that they are.
+
+666
+0:30:55,820 --> 0:30:56,820
+ Um...
+
+667
+0:30:56,820 --> 0:30:57,820
+ And that means that we have this thing.
+
+668
+0:30:57,820 --> 0:30:59,820
+ If a type system is sound,
+
+669
+0:30:59,820 --> 0:31:00,820
+ we don't need the runtime types.
+
+670
+0:31:00,820 --> 0:31:02,820
+ There's actually no reason they're in there.
+
+671
+0:31:02,820 --> 0:31:03,820
+ And in fact,
+
+672
+0:31:03,820 --> 0:31:04,820
+ Java was born without instance of
+
+673
+0:31:04,820 --> 0:31:06,820
+ because it is not necessary
+
+674
+0:31:06,820 --> 0:31:07,820
+ for its type system at all.
+
+675
+0:31:07,820 --> 0:31:08,820
+ Um...
+
+676
+0:31:08,820 --> 0:31:09,820
+ And that means
+
+677
+0:31:09,820 --> 0:31:10,820
+ we can sort of simulate that.
+
+678
+0:31:10,820 --> 0:31:11,820
+ If we don't use the runtime types,
+
+679
+0:31:11,820 --> 0:31:12,820
+ then we don't have
+
+680
+0:31:12,820 --> 0:31:13,820
+ the runtime types.
+
+681
+0:31:13,820 --> 0:31:14,820
+ We get what's called
+
+682
+0:31:14,820 --> 0:31:15,820
+ theorems for free.
+
+683
+0:31:15,820 --> 0:31:16,820
+ We get a lot of things
+
+684
+0:31:16,820 --> 0:31:17,820
+ being true about our code
+
+685
+0:31:17,820 --> 0:31:18,820
+ and about working with the code
+
+686
+0:31:18,820 --> 0:31:20,820
+ that we can sort of rely on,
+
+687
+0:31:20,820 --> 0:31:21,820
+ both in a very,
+
+688
+0:31:21,820 --> 0:31:22,820
+ very theoretical way.
+
+689
+0:31:22,820 --> 0:31:23,820
+ There's a paper there,
+
+690
+0:31:23,820 --> 0:31:24,820
+ but I won't go into
+
+691
+0:31:24,820 --> 0:31:25,820
+ Reynolds subtraction theorem
+
+692
+0:31:25,820 --> 0:31:27,820
+ for a poem of lambda calculus right now.
+
+693
+0:31:27,820 --> 0:31:28,820
+ Um...
+
+694
+0:31:28,820 --> 0:31:29,820
+ But we also get it
+
+695
+0:31:29,820 --> 0:31:30,820
+ in a very practical way.
+
+696
+0:31:30,820 --> 0:31:31,820
+ In...
+
+697
+0:31:31,820 --> 0:31:32,820
+ In rules like this one,
+
+698
+0:31:32,820 --> 0:31:33,820
+ if we delete a declaration
+
+699
+0:31:33,820 --> 0:31:35,820
+ and the compiler doesn't complain about it,
+
+700
+0:31:35,820 --> 0:31:37,820
+ then that code was unused.
+
+701
+0:31:37,820 --> 0:31:38,820
+ That's true
+
+702
+0:31:38,820 --> 0:31:39,820
+ if you don't use runtime types.
+
+703
+0:31:39,820 --> 0:31:40,820
+ Of course,
+
+704
+0:31:40,820 --> 0:31:41,820
+ if you use runtime types,
+
+705
+0:31:41,820 --> 0:31:42,820
+ you don't know.
+
+706
+0:31:42,820 --> 0:31:43,820
+ And, in fact,
+
+707
+0:31:43,820 --> 0:31:44,820
+ I was with a customer once
+
+708
+0:31:44,820 --> 0:31:46,820
+ helping to refactor the code base,
+
+709
+0:31:46,820 --> 0:31:47,820
+ and I start always by asking,
+
+710
+0:31:47,820 --> 0:31:48,820
+ do you use cast?
+
+711
+0:31:48,820 --> 0:31:49,820
+ Do you use instance of?
+
+712
+0:31:49,820 --> 0:31:50,820
+ Do you use these runtime types?
+
+713
+0:31:50,820 --> 0:31:51,820
+ Do you have reflection?
+
+714
+0:31:51,820 --> 0:31:52,820
+ And they say,
+
+715
+0:31:52,820 --> 0:31:53,820
+ no, no, no, no, no, no, no.
+
+716
+0:31:53,820 --> 0:31:54,820
+ We know from university
+
+717
+0:31:54,820 --> 0:31:55,820
+ that's bad.
+
+718
+0:31:55,820 --> 0:31:56,820
+ We're not gonna do it.
+
+719
+0:31:56,820 --> 0:31:57,820
+ I'm like,
+
+720
+0:31:57,820 --> 0:31:58,820
+ okay, that's good.
+
+721
+0:31:58,820 --> 0:31:59,820
+ So after a while of refactoring,
+
+722
+0:31:59,820 --> 0:32:00,820
+ we got to this nasty code
+
+723
+0:32:00,820 --> 0:32:01,820
+ deep in their code base
+
+724
+0:32:01,820 --> 0:32:02,820
+ where it had a bunch of declarations.
+
+725
+0:32:02,820 --> 0:32:03,820
+ I'm like,
+
+726
+0:32:03,820 --> 0:32:04,820
+ are these even used?
+
+727
+0:32:04,820 --> 0:32:05,820
+ And they're like,
+
+728
+0:32:05,820 --> 0:32:06,820
+ ah, we don't know.
+
+729
+0:32:06,820 --> 0:32:07,820
+ We don't remember this code.
+
+730
+0:32:07,820 --> 0:32:08,820
+ And I'm like,
+
+731
+0:32:08,820 --> 0:32:09,820
+ try deleting them
+
+732
+0:32:09,820 --> 0:32:10,820
+ and see if the compiler complains.
+
+733
+0:32:10,820 --> 0:32:11,820
+ And the compiler was fine,
+
+734
+0:32:11,820 --> 0:32:12,820
+ and we continued coding
+
+735
+0:32:12,820 --> 0:32:14,820
+ until we reached another part of the code
+
+736
+0:32:14,820 --> 0:32:15,820
+ where it turned out
+
+737
+0:32:15,820 --> 0:32:16,820
+ they were using a tool,
+
+738
+0:32:16,820 --> 0:32:18,820
+ something with automapper or something,
+
+739
+0:32:18,820 --> 0:32:19,820
+ where it would go
+
+740
+0:32:19,820 --> 0:32:21,820
+ and actually fetch from the declaration
+
+741
+0:32:21,820 --> 0:32:23,820
+ what the variables were.
+
+742
+0:32:23,820 --> 0:32:24,820
+ And that meant
+
+743
+0:32:24,820 --> 0:32:25,820
+ we couldn't rely on anything.
+
+744
+0:32:25,820 --> 0:32:26,820
+ We had to go back
+
+745
+0:32:26,820 --> 0:32:27,820
+ and undo all of the deletion
+
+746
+0:32:27,820 --> 0:32:28,820
+ we'd been doing
+
+747
+0:32:28,820 --> 0:32:30,820
+ because they use reflection in a library.
+
+748
+0:32:30,820 --> 0:32:32,820
+ So we get these things
+
+749
+0:32:32,820 --> 0:32:35,820
+ if we don't rely on the runtime types at all.
+
+750
+0:32:35,820 --> 0:32:36,820
+ And also,
+
+751
+0:32:36,820 --> 0:32:38,820
+ while we're talking about runtime types
+
+752
+0:32:38,820 --> 0:32:40,820
+ and static types,
+
+753
+0:32:40,820 --> 0:32:41,820
+ I also need to mention
+
+754
+0:32:41,820 --> 0:32:43,820
+ the broccoli of programming,
+
+755
+0:32:43,820 --> 0:32:44,820
+ exceptions.
+
+756
+0:32:44,820 --> 0:32:45,820
+ Everybody hates them.
+
+757
+0:32:45,820 --> 0:32:47,820
+ Everybody knows they're good for you.
+
+758
+0:32:47,820 --> 0:32:48,820
+ Yeah, what are we going to do?
+
+759
+0:32:48,820 --> 0:32:49,820
+ My advice is
+
+760
+0:32:49,820 --> 0:32:50,820
+ always use checked exceptions
+
+761
+0:32:50,820 --> 0:32:51,820
+ instead of unchecked exceptions,
+
+762
+0:32:51,820 --> 0:32:52,820
+ at least,
+
+763
+0:32:52,820 --> 0:32:53,820
+ of course,
+
+764
+0:32:53,820 --> 0:32:54,820
+ for the same reason that I'm saying
+
+765
+0:32:54,820 --> 0:32:56,820
+ that the types are important everywhere else.
+
+766
+0:32:56,820 --> 0:32:57,820
+ This is also a way that...
+
+767
+0:33:10,820 --> 0:33:11,820
+ Indeed.
+
+768
+0:33:11,820 --> 0:33:12,820
+ ...is highly safest.
+
+769
+0:33:12,820 --> 0:33:13,820
+ And I'd love to show that
+
+770
+0:33:13,820 --> 0:33:14,820
+ but basically,
+
+771
+0:33:14,820 --> 0:33:15,820
+ you would say
+
+772
+0:33:15,820 --> 0:33:23,960
+ that your typepsy
+
+773
+0:33:23,960 --> 0:33:25,820
+ may not have to be
+
+774
+0:33:25,820 --> 0:33:28,820
+ consistent.
+
+775
+0:33:28,820 --> 0:33:29,820
+ So,
+
+776
+0:33:29,820 --> 0:33:31,820
+ it's...
+
+777
+0:33:31,820 --> 0:33:32,820
+ Getting...
+
+778
+0:33:32,820 --> 0:33:33,820
+ Through the...
+
+779
+0:33:33,820 --> 0:33:34,820
+ streams
+
+780
+0:33:34,820 --> 0:33:35,820
+ you know.
+
+781
+0:33:35,820 --> 0:33:40,820
+ for stream language
+
+782
+0:33:40,820 --> 0:33:41,860
+ you
+
+783
+0:34:10,820 --> 0:34:11,860
+ you
+
+784
+0:34:40,820 --> 0:35:00,200
+ so now
+
+785
+0:35:10,820 --> 0:35:18,220
+ because we're using visitor pattern and the thing is in doing so uh we actually have this uh have
+
+786
+0:35:18,220 --> 0:35:22,820
+ this thing that this st down here actually pointed to this one which would have caused an infinite
+
+787
+0:35:22,820 --> 0:35:27,240
+ recursion in fact all of the implementations of map we've seen had infinite loops in them
+
+788
+0:35:27,240 --> 0:35:31,780
+ and i'm betting nobody noticed which is super super unfortunate that's also a very common
+
+789
+0:35:31,780 --> 0:35:37,660
+ problem in code in object-oriented code bases but this one over here shadows the outer st so it will
+
+790
+0:35:37,660 --> 0:35:40,800
+ actually work and so this is the first version that actually works
+
+791
+0:35:40,800 --> 0:35:48,120
+ of all of the code and the thing is uh we encountered a wild design pattern uh in fact
+
+792
+0:35:48,120 --> 0:35:52,720
+ and i'm talking about strategy pattern in fact it has a tendency to pop up in a lot of places
+
+793
+0:35:52,720 --> 0:35:57,800
+ and it's sort of been lurking all throughout this presentation uh in that uh in the in the
+
+794
+0:35:57,800 --> 0:36:01,460
+ introduction that i did when i introduced the example there was a there was like a strategy
+
+795
+0:36:01,460 --> 0:36:05,300
+ pattern hiding up there when we talked about piano numbers there was a strategy pattern there
+
+796
+0:36:05,300 --> 0:36:09,320
+ later binding had one over there with the algorithms we had one for null object pattern
+
+797
+0:36:09,320 --> 0:36:10,720
+ is literally a strategy
+
+798
+0:36:10,720 --> 0:36:10,780
+ pattern
+
+799
+0:36:10,800 --> 0:36:17,480
+ visitor pattern also has one oh this animated not good yeah but it's down there um and the reason
+
+800
+0:36:17,480 --> 0:36:21,180
+ that this strategy pattern emerges everywhere is because it's sort of fundamental for everything
+
+801
+0:36:21,180 --> 0:36:26,380
+ we've been talking about and i'd like to just show you how it emerges like because in the in
+
+802
+0:36:26,380 --> 0:36:32,540
+ the original blue book of uh handed to us by uh by the gang of four um it's sort of a here you
+
+803
+0:36:32,540 --> 0:36:37,320
+ write up draw your entire design as a uml diagram and then spot where all of the variation points
+
+804
+0:36:37,320 --> 0:36:40,720
+ are going to be and it's like that's not what happens in the real world
+
+805
+0:36:40,720 --> 0:36:44,980
+ at all instead i like to see strategy pattern as something that emerges when you actually
+
+806
+0:36:44,980 --> 0:36:49,840
+ unify two pieces of code that are similar in this case i have a method for finding the maximum
+
+807
+0:36:49,840 --> 0:36:54,520
+ number of a of an array and also to sum all of the numbers in an array and these are pretty
+
+808
+0:36:54,520 --> 0:36:59,520
+ similar so we might want to unify them the first step is to go and pick out all of the things that
+
+809
+0:36:59,520 --> 0:37:05,040
+ are different right we go Wait one step first first we make them a little bit more similar
+
+810
+0:37:05,040 --> 0:37:10,120
+ by instead of having the addition and the if we actually push it into just say have one equals and
+
+811
+0:37:10,120 --> 0:37:12,220
+ And then a something in there.
+
+812
+0:37:12,220 --> 0:37:15,360
+ So now we can go and pick out everything that's different.
+
+813
+0:37:15,360 --> 0:37:17,740
+ And so we'll end up with these pieces of code.
+
+814
+0:37:17,740 --> 0:37:20,760
+ All of that is the equal stuff and these two are also equal.
+
+815
+0:37:20,760 --> 0:37:22,740
+ So we only need to continue with one of them.
+
+816
+0:37:22,740 --> 0:37:23,960
+ We just pick whatever.
+
+817
+0:37:23,960 --> 0:37:26,820
+ Now we just need to fill all of these holes and then we have our implementation.
+
+818
+0:37:26,820 --> 0:37:29,860
+ The first thing is the variable and that's very easy to fill.
+
+819
+0:37:29,860 --> 0:37:33,300
+ We just put something like result or some variable name.
+
+820
+0:37:33,300 --> 0:37:36,400
+ The second thing is we need to know what the starting thing is so we just add that as a
+
+821
+0:37:36,400 --> 0:37:37,400
+ parameter.
+
+822
+0:37:37,400 --> 0:37:40,360
+ If we don't know what to add, we can just put it as a parameter.
+
+823
+0:37:40,360 --> 0:37:43,780
+ And then we have the big hole in the middle which is the hardest one to fill.
+
+824
+0:37:43,780 --> 0:37:47,640
+ So we can just go and add a new interface to say I don't know what's going to run here
+
+825
+0:37:47,640 --> 0:37:51,780
+ but you can just hand it to me and then add a new parameter as we did before.
+
+826
+0:37:51,780 --> 0:37:56,080
+ So here just something that takes two numbers that does something with it.
+
+827
+0:37:56,080 --> 0:38:00,500
+ Now the only thing we need to fill in is the name of the thing and in a lot of languages
+
+828
+0:38:00,500 --> 0:38:01,500
+ this is called reduce.
+
+829
+0:38:01,500 --> 0:38:04,740
+ It is also called fold or whatever, has a lot of names.
+
+830
+0:38:04,740 --> 0:38:07,380
+ Naming is of course notoriously difficult so I'm not going to spend a lot of time on
+
+831
+0:38:07,380 --> 0:38:09,600
+ it.
+
+832
+0:38:09,600 --> 0:38:13,260
+ Now we can go and we can actually take the maximum function that we had at the beginning
+
+833
+0:38:13,260 --> 0:38:15,960
+ and implement it using this new reduce thing.
+
+834
+0:38:15,960 --> 0:38:20,980
+ So we just call reduce with the red value from our input and then the function that
+
+835
+0:38:20,980 --> 0:38:23,940
+ we're using down there as the maximum operator.
+
+836
+0:38:23,940 --> 0:38:28,280
+ And the same we can do with the sum, we just call reduce but with zero and then the addition
+
+837
+0:38:28,280 --> 0:38:29,280
+ down there.
+
+838
+0:38:29,280 --> 0:38:30,280
+ And here we have it.
+
+839
+0:38:30,280 --> 0:38:34,340
+ The operator thing that we made where we didn't know what to put is a strategy pattern.
+
+840
+0:38:34,340 --> 0:38:37,140
+ It just appears from unifying similar code.
+
+841
+0:38:37,140 --> 0:38:41,460
+ And you can unify any code by just doing these same things.
+
+842
+0:38:41,460 --> 0:38:46,420
+ This one, as soon as you have that anywhere, it's a strategy pattern.
+
+843
+0:38:46,420 --> 0:38:47,420
+ And it's super powerful.
+
+844
+0:38:47,420 --> 0:38:51,960
+ It's like that's one of the things that make all of what we talked about possible.
+
+845
+0:38:51,960 --> 0:38:56,320
+ So if you take just one thing away, first of all, the talk has literally six things
+
+846
+0:38:56,320 --> 0:38:59,160
+ in the description so it's unfortunate if you can only remember one.
+
+847
+0:38:59,160 --> 0:39:03,360
+ But if you can, it should be how powerful a strategy pattern is because it is amazingly
+
+848
+0:39:03,360 --> 0:39:04,360
+ powerful.
+
+849
+0:39:04,360 --> 0:39:05,360
+ And if you can have an extra thing, it should be how powerful the compiler is.
+
+850
+0:39:05,360 --> 0:39:06,360
+ It should be how powerful the compiler is.
+
+851
+0:39:06,360 --> 0:39:13,920
+ Because when you have the strategy pattern managing the coupling and you have the compiler
+
+852
+0:39:13,920 --> 0:39:19,420
+ eliminating the invariants, these two together can save any code base.
+
+853
+0:39:19,420 --> 0:39:23,020
+ Like they can find almost all of the issues that are going to be in there even without
+
+854
+0:39:23,020 --> 0:39:25,260
+ any testing or running the code at all.
+
+855
+0:39:25,260 --> 0:39:29,820
+ At university when we were studying programming languages, we had sort of a joke where we
+
+856
+0:39:29,820 --> 0:39:33,400
+ said, well, exceptions are for people who actually run their code.
+
+857
+0:39:33,400 --> 0:39:34,400
+ We never do that.
+
+858
+0:39:34,400 --> 0:39:35,680
+ We just type it and then it's probably good.
+
+859
+0:39:35,680 --> 0:39:38,000
+ We just deploy it, ship it.
+
+860
+0:39:38,000 --> 0:39:43,240
+ These have been the six principles that we've been using to actually unlock the power of
+
+861
+0:39:43,240 --> 0:39:46,340
+ strategy pattern and of the compiler.
+
+862
+0:39:46,340 --> 0:39:50,200
+ It's been use immutability, feel should be final or read only.
+
+863
+0:39:50,200 --> 0:39:53,840
+ Use recursion to match the data, recursive data, recursive function.
+
+864
+0:39:53,840 --> 0:39:56,900
+ Prefer later binding, later decisions, give us more reusability.
+
+865
+0:39:56,900 --> 0:40:00,360
+ We have don't use null and instead use null object pattern.
+
+866
+0:40:00,360 --> 0:40:01,760
+ And don't use runtime types.
+
+867
+0:40:01,760 --> 0:40:04,800
+ So no cast, no instance of, no dynamic, no reflection.
+
+868
+0:40:04,800 --> 0:40:05,640
+ And use alternative.
+
+869
+0:40:05,640 --> 0:40:07,560
+ Use algebraic data types instead.
+
+870
+0:40:07,560 --> 0:40:08,800
+ Something like visitor pattern.
+
+871
+0:40:08,800 --> 0:40:11,240
+ And all of these have been compiler driven.
+
+872
+0:40:11,240 --> 0:40:14,420
+ We never have to make any of the decisions ourselves basically.
+
+873
+0:40:14,420 --> 0:40:18,380
+ Compiler tells us where the errors are, where we need to go and fix these things.
+
+874
+0:40:18,380 --> 0:40:21,800
+ And each of them have, literally you can look up the solution.
+
+875
+0:40:21,800 --> 0:40:26,840
+ So this is much more likely to succeed even for novices that are just following blind
+
+876
+0:40:26,840 --> 0:40:32,520
+ rules without much understanding this will work, whereas testing tend to not.
+
+877
+0:40:32,520 --> 0:40:34,020
+ Thank you very much for your time.
+
+878
+0:40:35,640 --> 0:40:37,220
+ Thank you for your time.
+
+879
+0:40:37,220 --> 0:40:38,220
+ Thank you.
+
+880
+0:40:38,220 --> 0:40:39,220
+ Thank you.
+
+881
+0:40:39,220 --> 0:40:40,220
+ Thank you.
+
+882
+0:40:40,220 --> 0:40:41,220
+ Thank you.
+
+883
+0:40:41,220 --> 0:40:42,220
+ Thank you.
+
+884
+0:40:42,220 --> 0:40:43,220
+ Thank you.
+
+885
+0:40:43,220 --> 0:40:44,220
+ Thank you.
+
+886
+0:40:44,220 --> 0:40:45,220
+ Thank you.
+
+887
+0:40:45,220 --> 0:40:46,220
+ Thank you.
+
+888
+0:40:46,220 --> 0:40:47,220
+ Is there anyone who got questions?
+
+889
+0:40:47,220 --> 0:40:47,600
+ We have two.
+
+890
+0:40:47,600 --> 0:40:59,420
+ So what's your take on the choice of the use of functional programming languages?
+
+891
+0:40:59,420 --> 0:41:00,460
+ Can you speak a little bit louder?
+
+892
+0:41:00,460 --> 0:41:04,680
+ Yeah but it seems that a lot of these principles are kind of like very much baked into a functional
+
+893
+0:41:04,680 --> 0:41:05,000
+ programming language.
+
+894
+0:41:05,000 --> 0:41:05,180
+ Thank you.
+
+895
+0:41:05,180 --> 0:41:05,500
+ Thank you.
+
+896
+0:41:05,500 --> 0:41:10,600
+ programming languages, so what's your take on that? And what's your take on
+
+897
+0:41:10,600 --> 0:41:14,560
+ discipline? Because I feel that if you can cheat, one will cheat
+
+898
+0:41:14,560 --> 0:41:19,060
+ eventually. If there's not a strong enforcement for following
+
+899
+0:41:19,060 --> 0:41:24,320
+ certain rules, you will cheat. I will cheat. Someone else will
+
+900
+0:41:24,320 --> 0:41:28,960
+ cheat. Someone else will not follow this. Whereas
+
+901
+0:41:28,960 --> 0:41:33,400
+ there's languages where these principles are very
+
+902
+0:41:33,400 --> 0:41:38,140
+ much baked into the language itself. And also kind of like
+
+903
+0:41:38,140 --> 0:41:43,640
+ would you consider it convenient to learn
+
+904
+0:41:43,640 --> 0:41:48,620
+ functional programming languages as an object-oriented? I feel also that the use
+
+905
+0:41:48,620 --> 0:41:52,780
+ of functional programming languages has changed the way I think about the state
+
+906
+0:41:52,780 --> 0:42:00,380
+ and mutability in object-oriented. So I'll just recap what I think
+
+907
+0:42:00,380 --> 0:42:03,380
+ the question is because it's a little bit hard to hear. So you're
+
+908
+0:42:03,380 --> 0:42:06,560
+ asking whether how this relates to functional languages and whether I
+
+909
+0:42:06,560 --> 0:42:10,140
+ would recommend getting into functional programming if you're already an OO.
+
+910
+0:42:10,140 --> 0:42:12,500
+ Is that correct?
+
+911
+0:42:12,500 --> 0:42:16,500
+ Yeah, and also discipline. How much discipline takes part in programming.
+
+912
+0:42:16,500 --> 0:42:21,640
+ Yeah, okay. So this is of course very closely related to functional programming and the
+
+913
+0:42:21,640 --> 0:42:24,560
+ principles are stolen directly from functional programming because
+
+914
+0:42:24,560 --> 0:42:27,980
+ functional programs tend to have fewer bugs. So that's sort of the
+
+915
+0:42:27,980 --> 0:42:33,320
+ secret to this whole thing. But the other thing that once you've been in
+
+916
+0:42:33,320 --> 0:42:35,960
+ the industry or you've met people and you've talked to a lot of developers
+
+917
+0:42:35,960 --> 0:42:38,660
+ you'll notice that the second you say functional programming they stop
+
+918
+0:42:38,660 --> 0:42:42,680
+ listening unless they already know everything you're gonna say. So it's very
+
+919
+0:42:42,680 --> 0:42:47,240
+ difficult to talk to other people like it's very segregated right now with the
+
+920
+0:42:47,240 --> 0:42:52,160
+ functional programmers and the OO. So my sort of life mission in a way has been
+
+921
+0:42:52,160 --> 0:42:57,700
+ to sort of help OO programmers get all of the same advantages that FP gives you
+
+922
+0:42:57,700 --> 0:43:02,640
+ but without ever scaring them off. And so all of these things apply equally to
+
+923
+0:43:02,640 --> 0:43:06,240
+ both paradigms. But as you say it's more natural to do some of these things in a
+
+924
+0:43:06,240 --> 0:43:12,060
+ functional setting but it is very hard to go from OO directly to FP. If you
+
+925
+0:43:12,060 --> 0:43:16,020
+ don't understand these principles you are going to have to learn both the new
+
+926
+0:43:16,020 --> 0:43:20,520
+ paradigm, the new syntax, the new standard library and like change your
+
+927
+0:43:20,520 --> 0:43:25,020
+ entire way of thinking and that just isn't how humans are built. So what I'm
+
+928
+0:43:25,020 --> 0:43:28,560
+ trying to do is bridge that gap by making smaller and smaller steps so you
+
+929
+0:43:28,560 --> 0:43:32,520
+ can choose the appropriate tool for the appropriate task. And being a
+
+930
+0:43:32,640 --> 0:43:37,560
+ former programming language researcher I'm too, I'm language agnostic. I just
+
+931
+0:43:37,560 --> 0:43:42,420
+ switch between them very fluently where something makes more sense. So I think
+
+932
+0:43:42,420 --> 0:43:47,680
+ if you are an object oriented programmer now, depending on how young you are, if
+
+933
+0:43:47,680 --> 0:43:50,880
+ you're in your early 20s I still think you should learn a functional programming
+
+934
+0:43:50,880 --> 0:43:54,540
+ language. In fact I think you should learn multiple different paradigms and
+
+935
+0:43:54,540 --> 0:43:59,100
+ in the olden days people like to say that you should learn one new language a
+
+936
+0:43:59,100 --> 0:44:02,620
+ year. I think it's a pragmatic program, it's one language a year. I think that's a good thing.
+
+937
+0:44:02,640 --> 0:44:06,120
+ It's not going to help a lot of people because there are so many frameworks now
+
+938
+0:44:06,120 --> 0:44:09,960
+ that we also need to learn that probably learning a new technology is a better
+
+939
+0:44:09,960 --> 0:44:14,760
+ piece of advice but also because a lot of languages are very closely related
+
+940
+0:44:14,760 --> 0:44:18,100
+ like if you're learning, if you know Java and then learn C sharp that will take
+
+941
+0:44:18,100 --> 0:44:21,420
+ you two hours and it's like you're done for the year it's sort of but it also
+
+942
+0:44:21,420 --> 0:44:24,240
+ hasn't contributed anything to the way that you think. So learning a new
+
+943
+0:44:24,240 --> 0:44:28,620
+ paradigm is much more helpful if you're young, if you're sort of in an
+
+944
+0:44:28,620 --> 0:44:32,300
+ established career. I think still sticking to the
+
+945
+0:44:32,640 --> 0:44:35,580
+ principles instead and learning, mastering your craft will probably be
+
+946
+0:44:35,580 --> 0:44:39,500
+ better effort better spent than learning a completely new paradigm just because
+
+947
+0:44:39,500 --> 0:44:44,460
+ of the effort it is to go up that steep learning curve.
+
+948
+0:44:44,460 --> 0:44:51,540
+ In the role of discipline, how would you tackle that? Like pull request reviews like
+
+949
+0:44:51,540 --> 0:44:56,220
+ reviews like you know like how do you deal with you know like this need of
+
+950
+0:44:56,220 --> 0:44:58,260
+ like enforcing a certain discipline?
+
+951
+0:44:58,260 --> 0:45:01,500
+ Yeah I don't like pull requests because they're
+
+952
+0:45:01,500 --> 0:45:02,600
+ unrecognizable.
+
+953
+0:45:02,640 --> 0:45:05,280
+ I think that's really recommended by all of the research we have on software
+
+954
+0:45:05,280 --> 0:45:09,960
+ practices because they tend to put in a blocker into your pipeline and you want
+
+955
+0:45:09,960 --> 0:45:13,920
+ code going as streamlined through your pipeline as possible so don't like pull
+
+956
+0:45:13,920 --> 0:45:17,580
+ requests at least not when they are asynchronous. I love synchronous pull
+
+957
+0:45:17,580 --> 0:45:20,160
+ requests when you have two people looking at the same code at the same
+
+958
+0:45:20,160 --> 0:45:23,800
+ time right or even the whole team. When you're working as a team and staying
+
+959
+0:45:23,800 --> 0:45:27,520
+ intact learning these things becomes possible. If you have one
+
+960
+0:45:27,520 --> 0:45:30,980
+ programmer and you teach him here are six new principles they're really cool
+
+961
+0:45:30,980 --> 0:45:32,600
+ they're gonna do it amazing for you.
+
+962
+0:45:32,640 --> 0:45:36,680
+ With no work at all then immediately when they see the first ticket of real
+
+963
+0:45:36,680 --> 0:45:40,820
+ work they're gonna work on they fill up their capacity with that ticket and then
+
+964
+0:45:40,820 --> 0:45:45,320
+ they continue so you can't build new habits when you have someone already
+
+965
+0:45:45,320 --> 0:45:50,460
+ doing work and so I always always when I work with team and force pair
+
+966
+0:45:50,460 --> 0:45:54,240
+ programming and mob programming at least one day a week because then they can
+
+967
+0:45:54,240 --> 0:45:57,900
+ actually build new habits and they can start doing things and something like
+
+968
+0:45:57,900 --> 0:46:01,800
+ teaching people to commit more often or smaller or new messages it's impossible.
+
+969
+0:46:01,800 --> 0:46:02,300
+ It's impossible.
+
+970
+0:46:02,640 --> 0:46:06,960
+ If you just tell them why it's impossible important they will agree with you for an
+
+971
+0:46:06,960 --> 0:46:10,380
+ hour and a half and then they'll go and do the same thing they did yesterday so
+
+972
+0:46:10,380 --> 0:46:13,140
+ it like it you're not going to change anything so pair programming and mob
+
+973
+0:46:13,140 --> 0:46:21,260
+ programming that's that's how you build new habits thanks for all the very nice
+
+974
+0:46:21,260 --> 0:46:29,880
+ talk so this was a lot of Java focused code and I was wondering do you also
+
+975
+0:46:29,880 --> 0:46:32,480
+ have criticisms for more recent languages?
+
+976
+0:46:32,640 --> 0:46:37,760
+ because especially languages like rust have addressed all of these concerns
+
+977
+0:46:37,760 --> 0:46:41,540
+ but there's probably something that maybe you say okay this is still not
+
+978
+0:46:41,540 --> 0:46:43,240
+ quite right.
+
+979
+0:46:43,240 --> 0:46:49,700
+ What do you mean not recent? Java's from like the 90s or something I could have
+
+980
+0:46:49,700 --> 0:46:56,400
+ done this in Fortran so so the question just recap it is whether newer languages
+
+981
+0:46:56,400 --> 0:47:00,660
+ are better on some of these things and certainly rust is like a prime example
+
+982
+0:47:00,660 --> 0:47:01,800
+ of that and typescript as well.
+
+983
+0:47:01,800 --> 0:47:02,220
+ They haven't gotten so far in the past.
+
+984
+0:47:02,640 --> 0:47:06,940
+ amazingly cool type systems that are new and revolutionary and can do things that no other
+
+985
+0:47:06,940 --> 0:47:12,600
+ language really can. They were both included, actually, in the... None of the new languages
+
+986
+0:47:12,600 --> 0:47:18,940
+ have it either. Unfortunately, they're neither sound nor decidable. I think Rust should be the
+
+987
+0:47:18,940 --> 0:47:24,620
+ de facto standard for embedded code because it is both faster and it has the borrowing type system
+
+988
+0:47:24,620 --> 0:47:28,720
+ which eliminates a whole bunch of especially multi-threading issues and stuff like that.
+
+989
+0:47:28,720 --> 0:47:33,360
+ I think Rust is really cool. I tried implementing my own Rust because I thought it was an interesting
+
+990
+0:47:33,360 --> 0:47:40,440
+ case study, but I didn't get very far. It's very complicated. I also think with TypeScript's union
+
+991
+0:47:40,440 --> 0:47:44,680
+ intersection types, you can also encode even more information into your compiler. The more you can
+
+992
+0:47:44,680 --> 0:47:50,200
+ teach the compiler about your code, the better it can help you. I think modern languages are
+
+993
+0:47:50,200 --> 0:47:55,920
+ getting better at that, especially also with the more rise of functional code embedded into it.
+
+994
+0:47:55,920 --> 0:47:57,800
+ You have arrow functions in a lot of languages.
+
+995
+0:47:57,800 --> 0:48:05,000
+ That's a prerequisite to do most of this stuff in some way. As long as we have... If you have legacy
+
+996
+0:48:05,000 --> 0:48:08,400
+ systems, they're going to have something like instance of or reflection and everything's going
+
+997
+0:48:08,400 --> 0:48:14,200
+ to be out the window. Newer languages, I think, are better at not making it so easy to break at
+
+998
+0:48:14,200 --> 0:48:21,200
+ least the compiler. I'm hoping we're moving to a better place. There's also a lot of rise in the
+
+999
+0:48:21,200 --> 0:48:26,840
+ new languages that come out that have functional either cores or entirely functional. I think it
+
+1000
+0:48:26,840 --> 0:48:27,480
+ is getting better.
+
+1001
+0:48:27,800 --> 0:48:33,040
+ But I still think we have probably 15, 20 years of OO, I'm guessing.
+
+1002
+0:48:33,040 --> 0:48:42,160
+ All right. Thank you to Christian for this talk. If you have more questions, he is probably
+
+1003
+0:48:42,160 --> 0:48:46,340
+ available for some time. Thank you for talking about code quality.
+
+1004
+0:48:57,800 --> 0:48:58,300
+ Thank you.

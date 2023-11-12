@@ -1,0 +1,963 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:33,460
+ Vi håber, at I havde en god tid.
+
+3
+0:00:35,280 --> 0:00:36,820
+ Vi havde absolut...
+
+4
+0:00:36,820 --> 0:00:41,000
+ Vi havde absolut...
+
+5
+0:00:41,000 --> 0:00:53,520
+ Vi havde meget søndag i at organisere det. Det gør vi altid.
+
+6
+0:00:54,300 --> 0:00:58,820
+ Det er selvfølgelig hårdt arbejde, og det kan være frustrerende,
+
+7
+0:00:58,820 --> 0:00:59,820
+ når forbrugerne...
+
+8
+0:01:00,000 --> 0:01:02,280
+ Når forbrugere falder, og når tingene ikke fungerer,
+
+9
+0:01:02,360 --> 0:01:04,080
+ eller når vejret er annerledes, eller hvad det er.
+
+10
+0:01:04,260 --> 0:01:07,100
+ Men det er mest søndag, og det er meget søndag at gøre.
+
+11
+0:01:09,220 --> 0:01:12,380
+ Organiseringerne og alle de valgteere, der har hjulpet,
+
+12
+0:01:12,740 --> 0:01:17,360
+ og alle de partiklærer, som har hjulpet at gøre det, hvad det er.
+
+13
+0:01:18,800 --> 0:01:22,600
+ Det er som alt andet, og vi ville ikke gerne være uden det.
+
+14
+0:01:22,920 --> 0:01:23,420
+ Så tak.
+
+15
+0:01:30,000 --> 0:01:33,000
+ Så...
+
+16
+0:01:33,000 --> 0:01:33,240
+ Så...
+
+17
+0:01:33,240 --> 0:01:39,980
+ Alle teamerne, tænder til at lide metrikker, fordi nerds vil lide numre, selvfølgelig.
+
+18
+0:01:40,280 --> 0:01:43,100
+ Og vi fik de forskellige teamer til at tilføje,
+
+19
+0:01:43,700 --> 0:01:47,700
+ bare det, de troede var nogle fungerende metrikker til at vise for denne...
+
+20
+0:01:47,700 --> 0:01:49,800
+ for denne godbye-verden-tale.
+
+21
+0:01:50,660 --> 0:01:53,880
+ Tidens end har vi nogle mere praktiske ting om tærdagning,
+
+22
+0:01:54,000 --> 0:01:57,480
+ og hjælpe med det, men før vi får til det,
+
+23
+0:01:57,480 --> 0:01:59,140
+ lad os se nogle numre.
+
+24
+0:02:00,000 --> 0:02:01,000
+ Øh...
+
+25
+0:02:01,640 --> 0:02:02,640
+ Tikkerne...
+
+26
+0:02:02,640 --> 0:02:03,140
+ Øhm...
+
+27
+0:02:03,140 --> 0:02:08,560
+ Denne år havde vi 215 full-week-adult-tikker, som vi havde købt i shoppen.
+
+28
+0:02:08,560 --> 0:02:12,800
+ I forhold til det havde vi sponsor-tikker, der gik ud til alle de sponsorer.
+
+29
+0:02:13,140 --> 0:02:19,540
+ Der var også 7 barn-tikker, og 47 adult-tikker, og 7 barn-tikker.
+
+30
+0:02:19,540 --> 0:02:25,500
+ Også 14 karavaner, som er et rekord, og vi skal tænke på at tænke på karavan-området igen,
+
+31
+0:02:25,500 --> 0:02:28,000
+ fordi vi er blevet ud af spadet denne år.
+
+32
+0:02:28,000 --> 0:02:30,000
+ Jeg bor i en karavan selv,
+
+33
+0:02:30,000 --> 0:02:33,040
+ så jeg kan ikke blande folk, for det er en fantastisk måde at kæmpe,
+
+34
+0:02:33,040 --> 0:02:35,040
+ men det tager selvfølgelig op i et sted,
+
+35
+0:02:35,040 --> 0:02:37,500
+ og de fire mennesker har nogle specifikke regler,
+
+36
+0:02:37,500 --> 0:02:40,440
+ fordi alle har gasbubler i karavanerne og sådan noget,
+
+37
+0:02:40,440 --> 0:02:42,940
+ så det er en lille smule flammende.
+
+38
+0:02:44,940 --> 0:02:47,860
+ Så... Øhm... Ja... Så... Øhm...
+
+39
+0:02:47,860 --> 0:02:50,860
+ Tænk på påløbningen til MCH,
+
+40
+0:02:50,860 --> 0:02:52,860
+ vi er glade med at have tilgivningen.
+
+41
+0:02:52,860 --> 0:02:55,660
+ Hvis MCH ikke havde været en uge før,
+
+42
+0:02:55,660 --> 0:02:57,660
+ så ville vi måske have fundet 100 mere mennesker,
+
+43
+0:02:57,660 --> 0:02:59,640
+ men mange mennesker kan kun gøre en uge,
+
+44
+0:02:59,640 --> 0:03:02,640
+ fordi de ikke har nok vakation,
+
+45
+0:03:02,640 --> 0:03:04,640
+ eller de simpelthen ikke har tid til at forhåndtere sig,
+
+46
+0:03:04,640 --> 0:03:06,640
+ og hvide alle deres klæder og sådan noget,
+
+47
+0:03:06,640 --> 0:03:08,640
+ mellem MCH og Bornhag.
+
+48
+0:03:08,640 --> 0:03:11,640
+ Men mange af jer var i MCH-villaget,
+
+49
+0:03:11,640 --> 0:03:13,640
+ sammen med alle organisatørerne på Bornhag,
+
+50
+0:03:13,640 --> 0:03:16,640
+ og gjorde hele rejsen fra MCH til Bornhag,
+
+51
+0:03:16,640 --> 0:03:19,640
+ og gjorde det hele, og gjorde hele eventet,
+
+52
+0:03:19,640 --> 0:03:21,640
+ og er sikkert blevet afsted for tænding,
+
+53
+0:03:21,640 --> 0:03:23,640
+ og det er bare fantastisk.
+
+54
+0:03:23,640 --> 0:03:25,640
+ Vi har haft en så god sommer.
+
+55
+0:03:29,640 --> 0:03:31,640
+ Tak.
+
+56
+0:03:59,640 --> 0:04:00,640
+ Tak.
+
+57
+0:04:29,640 --> 0:04:33,640
+ Vi har økende antallet af workshopper, og jeg synes, det er fantastisk.
+
+58
+0:04:33,640 --> 0:04:37,640
+ Jeg havde en workshop selv, som gjorde nogle dokumentationer for Uncensored DNS,
+
+59
+0:04:37,640 --> 0:04:41,640
+ og tak til alle, der var med i det.
+
+60
+0:04:41,640 --> 0:04:47,640
+ Så meget bliver gjort i de her workshopper, og folk lærer ting, og det er rigtig godt.
+
+61
+0:04:47,640 --> 0:04:54,640
+ Vi havde den søndag en fuld program med paneldebater, hvor vi havde to forskellige debater heroppe.
+
+62
+0:04:54,640 --> 0:05:00,640
+ Det var meget succesfuldt, og vi er meget glade for det, og alt det hårde arbejde, som Tobias har gjort i at organisere det.
+
+63
+0:05:00,640 --> 0:05:07,640
+ Vi havde en hel del meet-ups for alle typer af usergrupper og teknologier, 13 af dem.
+
+64
+0:05:07,640 --> 0:05:12,640
+ Nogle i barret, nogle i forskellige andre steder rundt om i området.
+
+65
+0:05:12,640 --> 0:05:21,640
+ Et par musikakt, og en masse rekreationer, som kan være noget fra en omvendt rejse til Data History Museum,
+
+66
+0:05:21,640 --> 0:05:23,640
+ eller...
+
+67
+0:05:23,640 --> 0:05:24,640
+ Hvad var det?
+
+68
+0:05:24,640 --> 0:05:27,640
+ Quinn Tatlan, eller noget sådan.
+
+69
+0:05:27,640 --> 0:05:30,640
+ Åh ja, Penta.
+
+70
+0:05:30,640 --> 0:05:32,640
+ Det er også rigtig fedt.
+
+71
+0:05:32,640 --> 0:05:34,640
+ Vi er her for at lære, selvfølgelig.
+
+72
+0:05:34,640 --> 0:05:38,640
+ Men også for at socialisere, og have fun i andre måder med vores forældre.
+
+73
+0:05:38,640 --> 0:05:43,640
+ Vi er virkelig glade for alle de afslutninger, og det hårde arbejde, som content-teamet gjorde i at skedulere det.
+
+74
+0:05:43,640 --> 0:05:46,640
+ Og tak til alle jer, der var med i de sidste numre.
+
+75
+0:05:46,640 --> 0:05:48,640
+ Tak.
+
+76
+0:05:54,640 --> 0:05:56,640
+ Tak.
+
+77
+0:05:56,640 --> 0:05:59,640
+ Så...
+
+78
+0:05:59,640 --> 0:06:02,640
+ Barret gik godt det her år igen.
+
+79
+0:06:02,640 --> 0:06:04,640
+ Vi er glade for, at I bruger det.
+
+80
+0:06:04,640 --> 0:06:12,640
+ Som jeg sagtede i den første tal, er vi på afstand ved barret, at lave noget penge for at få finansieringen til at arbejde.
+
+81
+0:06:12,640 --> 0:06:17,640
+ Vi har vendt for higher end 100.000 hakker i barret.
+
+82
+0:06:17,640 --> 0:06:19,640
+ Hvor så?
+
+83
+0:06:19,640 --> 0:06:21,640
+ Tak.
+
+84
+0:06:21,640 --> 0:06:22,640
+ Tak.
+
+85
+0:06:22,640 --> 0:06:36,420
+ Almost 2.000 transaktioner, 520 liters af bier, 285 liters af mate og 466 cocktails, 12 af hvilke var de største, tsunamierne.
+
+86
+0:06:38,820 --> 0:06:49,920
+ Det er fantastisk. Vi har stadig inventarer af de meste ting, og i morgen gør vi en pop-up-sale i infodesk,
+
+87
+0:06:49,920 --> 0:06:54,620
+ så du kan få en botle af Sæberbløder og en botle af vodka til at tage hjem,
+
+88
+0:06:54,620 --> 0:07:04,140
+ og vi vil reducere priserne en lille smule i forhold til barpriserne, så vær sikker på at gøre det, så vi ikke har at tage så meget inventarer rundt.
+
+89
+0:07:05,420 --> 0:07:14,900
+ Bar-teamet gjorde en fantastisk job. Lige igen, baren selv var fantastisk, og teamet er at gøre det som pros, så giv dem en stor runde af applaus.
+
+90
+0:07:19,920 --> 0:07:21,920
+ Tak.
+
+91
+0:07:49,920 --> 0:07:51,920
+ Tak.
+
+92
+0:08:19,920 --> 0:08:21,920
+ Tak.
+
+93
+0:08:49,920 --> 0:08:51,920
+ Tak.
+
+94
+0:09:19,920 --> 0:09:21,920
+ Tak.
+
+95
+0:09:49,920 --> 0:09:51,920
+ Tak.
+
+96
+0:10:19,920 --> 0:10:28,920
+ Det var en stor succes. Der var mennesker i hot-top, meget ofte, så ofte som det var færdigt.
+
+97
+0:10:29,480 --> 0:10:33,360
+ Næste år ønsker de at have en sauna også, som lyder meget godt.
+
+98
+0:10:33,540 --> 0:10:34,000
+ Og en pool.
+
+99
+0:10:34,540 --> 0:10:35,220
+ Og en pool.
+
+100
+0:10:37,820 --> 0:10:47,300
+ Okay, så wellness-teamet, efter nogle års hiatus af det spire-område, gjorde en stærk retur denne år. Giv dem en stor runde af applaus.
+
+101
+0:10:49,920 --> 0:10:51,920
+ Tak.
+
+102
+0:11:19,920 --> 0:11:21,920
+ Tak.
+
+103
+0:11:49,920 --> 0:11:51,920
+ Tak.
+
+104
+0:11:51,920 --> 0:11:53,920
+ Tak.
+
+105
+0:12:19,920 --> 0:12:21,920
+ Tak.
+
+106
+0:12:21,920 --> 0:12:23,920
+ Tak.
+
+107
+0:12:23,920 --> 0:12:25,920
+ Tak.
+
+108
+0:12:49,920 --> 0:12:51,920
+ Tak.
+
+109
+0:12:51,920 --> 0:12:53,920
+ Tak.
+
+110
+0:13:19,920 --> 0:13:21,920
+ Tak.
+
+111
+0:13:21,920 --> 0:13:23,920
+ Tak.
+
+112
+0:13:49,920 --> 0:13:55,920
+ Tak.
+
+113
+0:14:19,920 --> 0:14:29,920
+ Tak.
+
+114
+0:14:29,920 --> 0:14:31,920
+ Tak.
+
+115
+0:14:49,920 --> 0:14:51,920
+ Tak.
+
+116
+0:14:51,920 --> 0:14:53,920
+ Tak.
+
+117
+0:15:19,920 --> 0:15:21,920
+ Tak.
+
+118
+0:15:21,920 --> 0:15:23,920
+ Tak.
+
+119
+0:15:49,920 --> 0:15:51,920
+ Tak.
+
+120
+0:16:19,920 --> 0:16:23,920
+ Tak.
+
+121
+0:16:45,920 --> 0:16:46,920
+ Tak.
+
+122
+0:16:48,920 --> 0:16:49,200
+ Tak.
+
+123
+0:16:49,200 --> 0:16:49,680
+ Tak.
+
+124
+0:16:49,680 --> 0:16:49,700
+ Tak.
+
+125
+0:16:49,920 --> 0:16:51,920
+ Til klokken to, sagde du.
+
+126
+0:16:51,920 --> 0:16:55,920
+ Til klokken to i morgen. Tak for det. Godt punkt.
+
+127
+0:16:57,920 --> 0:16:59,920
+ Vi har altid glædet os til feedback.
+
+128
+0:16:59,920 --> 0:17:02,920
+ Det bedste er, når folk kommer og hugger dig i baren og siger tak.
+
+129
+0:17:02,920 --> 0:17:06,920
+ Men vi har også rigtig godt lyst til skrevet feedback,
+
+130
+0:17:06,920 --> 0:17:08,920
+ fordi når vi har vores evaluering i nogle måneder,
+
+131
+0:17:08,920 --> 0:17:12,920
+ har vi noget at evaluere på grund af.
+
+132
+0:17:12,920 --> 0:17:17,920
+ Der er både event-feedback, Bornhag 2022,
+
+133
+0:17:17,920 --> 0:17:20,920
+ og du kan tænke dig, hvad du vil.
+
+134
+0:17:20,920 --> 0:17:24,920
+ Det er meget tænkt, både positiv og negativ feedback.
+
+135
+0:17:24,920 --> 0:17:28,920
+ Der er også event-feedback, hvor du kan fortælle lytterne,
+
+136
+0:17:28,920 --> 0:17:30,920
+ eller organiseringen, kontent-teamet,
+
+137
+0:17:30,920 --> 0:17:34,920
+ hvad du har tænkt dig om lytterne eller deres tal.
+
+138
+0:17:34,920 --> 0:17:36,920
+ Vi er virkelig glade for, at du gør det,
+
+139
+0:17:36,920 --> 0:17:40,920
+ fordi det hjælper os at få programmet i endnu bedre form for næste år.
+
+140
+0:17:40,920 --> 0:17:43,920
+ Selvfølgelig er verbal feedback også tænkt,
+
+141
+0:17:43,920 --> 0:17:46,920
+ men skrevet er lettere for os at behandle.
+
+142
+0:17:47,920 --> 0:17:49,920
+ Hvis du har forstået noget,
+
+143
+0:17:49,920 --> 0:17:52,920
+ så kan du gå til infodesken og se, om de har det.
+
+144
+0:17:52,920 --> 0:17:53,920
+ Hvis du har fundet noget,
+
+145
+0:17:53,920 --> 0:17:55,920
+ så kan du gå til infodesken og forlade det,
+
+146
+0:17:55,920 --> 0:17:58,920
+ så nogen anden kan forstå det.
+
+147
+0:18:01,920 --> 0:18:04,920
+ Når hackercamps som de her er slut,
+
+148
+0:18:04,920 --> 0:18:09,920
+ kan det være lidt svært at komme tilbage til den virkelige verden,
+
+149
+0:18:09,920 --> 0:18:12,920
+ hvor du ikke er omvendt af flotte mennesker hele tiden.
+
+150
+0:18:12,920 --> 0:18:14,920
+ Men man kan bare lide det.
+
+151
+0:18:14,920 --> 0:18:17,920
+ Suggerer deres 의지 til hackablus,
+
+152
+0:18:17,920 --> 0:18:19,920
+ som kan være ret svært,
+
+153
+0:18:19,920 --> 0:18:21,920
+ så det betyder, at du kan se vores tal.
+
+154
+0:18:21,920 --> 0:18:23,920
+ De vil være tilgivende også så snart vi kan,
+
+155
+0:18:23,920 --> 0:18:25,920
+ når vi kan manuelt løse det.
+
+156
+0:18:25,920 --> 0:18:26,920
+ Spil med din tagg.
+
+157
+0:18:26,920 --> 0:18:27,920
+ Sige lidt ord for det.
+
+158
+0:18:27,920 --> 0:18:28,920
+ Bland det med os,
+
+159
+0:18:28,920 --> 0:18:30,920
+ hvis du gør noget fantastisk.
+
+160
+0:18:30,920 --> 0:18:32,920
+ Organisering af de billeder, du tog.
+
+161
+0:18:32,920 --> 0:18:33,920
+ Hvis du har næste,
+
+162
+0:18:33,920 --> 0:18:34,920
+ så send dem til os.
+
+163
+0:18:34,920 --> 0:18:36,920
+ Perfekt med Creative Commons-licens,
+
+164
+0:18:36,920 --> 0:18:39,920
+ så vi kan bruge dem på websiden og andre steder.
+
+165
+0:18:39,920 --> 0:18:41,920
+ Bliv i kontakt med ISC-kanalen,
+
+166
+0:18:41,920 --> 0:18:49,920
+ og andre online-kommuniteter er åbne hele året, og der er andre event, vi vil se hinanden på,
+
+167
+0:18:49,920 --> 0:18:55,920
+ og i stedet, så længe vi sidder i kontakt med hinanden, er det en god ting.
+
+168
+0:18:55,920 --> 0:19:01,920
+ Tickets til BornHackPund 2023 vil være på salg i et eller andet måned over de næste måneder eller to,
+
+169
+0:19:01,920 --> 0:19:05,920
+ og fortsæt hacke og bliv fantastisk.
+
+170
+0:19:11,920 --> 0:19:15,920
+ Danske tekster af Nicolai Winther
+
+171
+0:19:41,920 --> 0:19:45,920
+ Danske tekster af Nicolai Winther
+
+172
+0:20:11,920 --> 0:20:15,920
+ Danske tekster af Nicolai Winther
+
+173
+0:20:41,920 --> 0:20:43,920
+ Danske tekster af Nicolai Winther
+
+174
+0:20:51,920 --> 0:20:53,920
+ Danske tekster af Nicolai Winther
+
+175
+0:20:53,920 --> 0:20:55,920
+ Danske tekster af Nicolai Winther
+
+176
+0:20:55,920 --> 0:20:57,920
+ Danske tekster af Nicolai Winther
+
+177
+0:20:57,920 --> 0:20:59,920
+ Danske tekster af Nicolai Winther
+
+178
+0:20:59,920 --> 0:21:01,920
+ Danske tekster af Nicolai Winther
+
+179
+0:21:01,920 --> 0:21:03,920
+ Danske tekster af Nicolai Winther
+
+180
+0:21:03,920 --> 0:21:05,920
+ Danske tekster af Nicolai Winther
+
+181
+0:21:05,920 --> 0:21:07,920
+ Danske tekster af Nicolai Winther
+
+182
+0:21:07,920 --> 0:21:09,920
+ Danske tekster af Nicolai Winther
+
+183
+0:21:09,920 --> 0:21:11,920
+ De foldes sammen, og så er de stakket.
+
+184
+0:21:11,920 --> 0:21:15,920
+ Der vil være en person på skærmen, der ved, hvordan man skal stakke det,
+
+185
+0:21:15,920 --> 0:21:21,920
+ og der vil være en person i bilen, og der vil være mennesker på pallets, hvor stakkelserne skal være stakket.
+
+186
+0:21:21,920 --> 0:21:29,920
+ En af de mindst favoritjob, når det er tændt, er at have at restakke ting, fordi vi har stakket dem fejlt.
+
+187
+0:21:29,920 --> 0:21:33,920
+ Så i stedet for at have det gået snabt, lad os gøre det rigtigt.
+
+188
+0:21:33,920 --> 0:21:39,920
+ Så hvis du har spørgsmål, hvis du ikke er helt sikker på, hvordan man skal stakke en del skærm eller en skærm,
+
+189
+0:21:39,920 --> 0:21:41,920
+ så spørg nogen i vesten.
+
+190
+0:21:41,920 --> 0:21:46,920
+ Der skal være en på hver station, men hvis der sker noget, og der er ingen der, så vent.
+
+191
+0:21:46,920 --> 0:21:50,920
+ Lad os ikke bare stakke ting, for hvis vi har at udstakke 40 skærm og stakke dem igen,
+
+192
+0:21:50,920 --> 0:21:56,920
+ og alle har hånden hængende ned ved skærmen allerede, så er det virkelig et svært job at få igjort.
+
+193
+0:21:56,920 --> 0:22:02,920
+ Så vi tænker på hjælp, men lad os få vesten til at hjælpe dig med at stakke tingene rigtigt.
+
+194
+0:22:03,920 --> 0:22:06,920
+ Så skærm først, og så skærm.
+
+195
+0:22:06,920 --> 0:22:10,920
+ Mens vi gør det, vil power-teamet starte med at tænke på power-stuffer,
+
+196
+0:22:10,920 --> 0:22:14,920
+ netværks-teamet tænker på netværks-stuffer, video-teamet tænker på video-stuffer.
+
+197
+0:22:14,920 --> 0:22:19,920
+ Når alt det er gjort, kan vi starte fra højden ved at tænke på stedene.
+
+198
+0:22:19,920 --> 0:22:25,920
+ De går ud i disse oplængde stykker af ...
+
+199
+0:22:25,920 --> 0:22:30,920
+ Jeg tror, det er otte plader, og det er stykker af 2x1 meter.
+
+200
+0:22:30,920 --> 0:22:33,920
+ Og så går de ind i pallets.
+
+201
+0:22:33,920 --> 0:22:34,920
+ Herude.
+
+202
+0:22:34,920 --> 0:22:35,920
+ Nej, herude.
+
+203
+0:22:35,920 --> 0:22:36,920
+ Undskyld.
+
+204
+0:22:36,920 --> 0:22:41,920
+ Og der vil også være vest, som ved, hvordan stedet skal blive placeret.
+
+205
+0:22:41,920 --> 0:22:45,920
+ Når vi er færdige med at tænke på table, sæder og steder,
+
+206
+0:22:45,920 --> 0:22:47,920
+ skal stedet blive afkastet.
+
+207
+0:22:47,920 --> 0:22:48,920
+ Alt det her vil være væk.
+
+208
+0:22:48,920 --> 0:22:51,920
+ Og når alt det er væk, kan vi starte med at tænke på tentet.
+
+209
+0:22:51,920 --> 0:22:54,920
+ Siderne går ud og bliver foldet og placeret på pallets.
+
+210
+0:22:54,920 --> 0:22:57,920
+ Stedet bliver tænkt ned.
+
+211
+0:22:57,920 --> 0:22:59,920
+ Alle vestene ved, hvordan at gøre det.
+
+212
+0:22:59,920 --> 0:23:02,920
+ Og bliver stakket på pallets.
+
+213
+0:23:03,920 --> 0:23:07,920
+ Først og fremmest driver vi stedet ned og afløber dem, og så er vi klar.
+
+214
+0:23:07,920 --> 0:23:14,920
+ Det er ofte en fascinerende ting, at se så mange mennesker arbejde sammen.
+
+215
+0:23:14,920 --> 0:23:16,920
+ Og andet end det.
+
+216
+0:23:16,920 --> 0:23:19,920
+ Vær forskellige med netværkegivningen, og hørende.
+
+217
+0:23:19,920 --> 0:23:21,920
+ Video og alt det.
+
+218
+0:23:21,920 --> 0:23:23,920
+ Morten?
+
+219
+0:23:23,920 --> 0:23:28,920
+ Jeg vil gerne sige, at vi faktisk har mange 5-dollars netværkegivninger.
+
+220
+0:23:28,920 --> 0:23:31,920
+ Lange har vi brugt de her 10.
+
+221
+0:23:31,920 --> 0:23:35,920
+ Ja, jeg ved, at det skal være en afslutning i virksomhederne.
+
+222
+0:23:35,920 --> 0:23:37,920
+ Men vær forskellig med, hvor du sætter dine ben.
+
+223
+0:23:37,920 --> 0:23:41,920
+ Fordi vi faktisk har mange 5-dollars netværkegivninger rundt stedet i år.
+
+224
+0:23:41,920 --> 0:23:42,920
+ I forhold til sidste år.
+
+225
+0:23:42,920 --> 0:23:44,920
+ Bare på tre sider.
+
+226
+0:23:44,920 --> 0:23:46,920
+ Bare på tre sider.
+
+227
+0:23:46,920 --> 0:23:50,920
+ Lad os ikke have nogen netværkegivninger nu. Det ville være en skam.
+
+228
+0:23:50,920 --> 0:23:55,920
+ Okay, så for at summe det op. Lad os se.
+
+229
+0:23:55,920 --> 0:23:58,920
+ Sider ind i bilen.
+
+230
+0:23:58,920 --> 0:24:00,920
+ Tabler på metalframerne herude.
+
+231
+0:24:01,920 --> 0:24:02,920
+ Efter det.
+
+232
+0:24:02,920 --> 0:24:04,920
+ Flåplade på tingene herude.
+
+233
+0:24:04,920 --> 0:24:06,920
+ Og så spørg vesten.
+
+234
+0:24:06,920 --> 0:24:09,920
+ Hvis du hører vesten skrælle, så gør det, de siger.
+
+235
+0:24:09,920 --> 0:24:11,920
+ De ved sikkert bedre.
+
+236
+0:24:11,920 --> 0:24:14,920
+ Det var alt.
+
+237
+0:24:14,920 --> 0:24:15,920
+ Mange lykke fra Orga.
+
+238
+0:24:15,920 --> 0:24:17,920
+ Vi ses alle i 2023.
+
+239
+0:24:28,920 --> 0:24:30,920
+ Og vi bruger talerhånden i morgen.
+
+240
+0:24:30,920 --> 0:24:32,920
+ I morgen i 10 i aften.

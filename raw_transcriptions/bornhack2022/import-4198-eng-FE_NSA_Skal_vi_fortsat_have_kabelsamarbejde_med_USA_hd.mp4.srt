@@ -1,0 +1,2635 @@
+# Transcribed 2023-11-12T15 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:49,160
+ I sin siden er mit ord FENSA, som er det her samarbejde mellem Forsvars- og Efterretningstjeneste, kaldet FE, og den amerikanske Efterretningstjeneste, NSA, hvor man sætter det ord sammen, så får man ordet FENSA, og jeg kan så forstå på Poul Henning Kamm, at det også er navnet på et vinduesfirma, var det ikke korrekt?
+
+3
+0:00:49,220 --> 0:00:54,300
+ Nej, det er en brancheorganisation for termovinduer i England, som har en mærkningsordning, som er en ren skandale.
+
+4
+0:00:54,600 --> 0:00:55,720
+ Åh, ja, okay.
+
+5
+0:00:56,100 --> 0:00:59,000
+ Jeg ved ikke rigtig, hvorfor det er relevant her, men vi kan godt tage en diskussion.
+
+6
+0:00:59,000 --> 0:01:00,000
+ Nej, vi behøver ikke tage en diskussion.
+
+7
+0:01:00,000 --> 0:01:03,400
+ Vi behøver ikke tage en diskussion, men det er fint, jeg bare... Hvorfor nævner du det, at du synes, vi skal tage en diskussion?
+
+8
+0:01:03,860 --> 0:01:16,800
+ Men det, der er udgangspunkt for dagens diskussion, det er jo, at Danmark jo angiveligt, vi har et relativt direkte samarbejde mellem, og nu kommer jeg endda selv til at bruge sprogbruget angiveligt, og det er jeg sådan en lille smule med vilje, fordi det er den måde, politikerne normalt kommer til at tale om det på.
+
+9
+0:01:17,300 --> 0:01:19,740
+ Vi har ikke grund til at antage og den slags ting.
+
+10
+0:01:20,000 --> 0:01:24,220
+ Men der er et samarbejde mellem FE og NSA omkring aflysning af datakabler i Danmark.
+
+11
+0:01:24,220 --> 0:01:31,200
+ Det er en aftale, som Bo Elkjær var inde på, som blev indgået under og med den daværende statsminister, Poul Nyrup Rasmussen.
+
+12
+0:01:31,980 --> 0:01:38,580
+ Vi har haft en tidligere forsvarsminister her i landet, der har bekræftet den her aftale, og i hvert fald kommet til at sige det på live-fjernsyn.
+
+13
+0:01:38,660 --> 0:01:43,300
+ Han kom også til at sige, at han sikkert kom i fængsel for det nu, eller at der er nogen, der vil gøre noget.
+
+14
+0:01:43,400 --> 0:01:48,920
+ Og der er også sket det, at der i hvert fald er rejst en eller anden form for tiltale, at de har sigtet ham.
+
+15
+0:01:49,040 --> 0:01:52,680
+ Det har ikke rigtig formuleret i nogen anklage nu, som vi lige har forstået det helt åbent.
+
+16
+0:01:53,180 --> 0:01:54,200
+ Men det kan vi lige komme tilbage til.
+
+17
+0:01:54,220 --> 0:02:01,740
+ Og vi har så en hjemmesendt chef fra Forsvars- og Efterretningstjeneste, som har været fængslet under stor ballade,
+
+18
+0:02:02,280 --> 0:02:09,320
+ og trukket igennem en lufthavn af bevæbnet politifolk, og har siddet rigtig længe derinde.
+
+19
+0:02:09,600 --> 0:02:12,560
+ Og der var det stadigvæk lidt uklart, hvad de egentlig har tænkt sig at sigte ham for.
+
+20
+0:02:13,560 --> 0:02:18,100
+ Det sidste, jeg gerne vil tænke mig, at vi skal ind omkring på, det er, at vi skal prøve at finde ud af,
+
+21
+0:02:18,320 --> 0:02:22,620
+ om der er nogle gode bud på, hvad der egentlig foregår i det her, blandt det her glemrende panel.
+
+22
+0:02:23,100 --> 0:02:24,200
+ Det andet, vi skal snakke om...
+
+23
+0:02:24,200 --> 0:02:30,960
+ Det andet, vi skal snakke om, det er, hvordan kan det være, at den her debat i Danmark stort set kun handler om
+
+24
+0:02:30,960 --> 0:02:36,660
+ en hjemmesendt efterretningschef, og om en politiker, som måske får en eller anden dom.
+
+25
+0:02:36,900 --> 0:02:42,420
+ Og der er ikke rigtig nogen, der taler om, at det egentlig er utroligt skandaløst,
+
+26
+0:02:42,480 --> 0:02:47,200
+ at vi deler over data direkte med et land som USA, selvom det er vores gode venner.
+
+27
+0:02:47,580 --> 0:02:49,560
+ Og det kunne være, at vi skulle starte der på dig, Peter Kofod.
+
+28
+0:02:49,560 --> 0:02:53,480
+ Du har jo beskæftiget dig med det her forhold mellem USA og Danmark.
+
+29
+0:02:54,200 --> 0:02:54,880
+ Du har jo beskæftiget dig med det her forhold mellem USA og Danmark.
+
+30
+0:02:54,880 --> 0:02:55,500
+ Du har jo beskæftiget dig med det her forhold mellem USA og Danmark.
+
+31
+0:02:55,500 --> 0:02:57,180
+ Hvordan kan det være, at vi finder os i sådan noget?
+
+32
+0:02:58,960 --> 0:03:03,240
+ Jeg tror, det var Stedten Brandt fra TV2, der på et eller andet tidspunkt sagde,
+
+33
+0:03:03,320 --> 0:03:06,940
+ at det er i grunden utroligt, at der er så mange, der vil finde sig i så lang tid.
+
+34
+0:03:07,840 --> 0:03:09,380
+ Og det er sgu sådan, det er.
+
+35
+0:03:09,540 --> 0:03:12,040
+ Vi er blevet vant til, at det hele er noget fucking lort.
+
+36
+0:03:12,640 --> 0:03:14,340
+ Og det er bare... Det er helt omrindt.
+
+37
+0:03:15,260 --> 0:03:18,020
+ Og jeg tror faktisk, hvis jeg må hijacket afsår den vilde smule,
+
+38
+0:03:18,020 --> 0:03:20,340
+ jeg tror faktisk, det er svaret på det andet, du undrede over lige før.
+
+39
+0:03:20,340 --> 0:03:25,940
+ Hvorfor det her med hjemmesendelsen af Finsen & Co. og flængspingen af Finsen
+
+40
+0:03:25,940 --> 0:03:29,700
+ og sigtelsen mod Klaus Hjort, hvorfor det giver sådan et stort rabat?
+
+41
+0:03:30,460 --> 0:03:32,160
+ Og jeg må indrømme, jeg ved sgu ikke helt, hvad der foregår.
+
+42
+0:03:32,240 --> 0:03:33,000
+ Jeg synes, det er virkelig underligt.
+
+43
+0:03:33,540 --> 0:03:35,680
+ Men det plejer ikke at ske.
+
+44
+0:03:36,300 --> 0:03:39,020
+ Dem, der sidder på de positioner, de plejer at være home safe.
+
+45
+0:03:39,580 --> 0:03:43,920
+ Altså, man skal være Peter Brix-tøfte, indtager en de venstre, der bliver skide uvenner med ham,
+
+46
+0:03:43,920 --> 0:03:45,840
+ der rent faktisk har magten i venstre på det tidspunkt,
+
+47
+0:03:46,180 --> 0:03:47,940
+ før det får en eller anden form for konsekvens.
+
+48
+0:03:49,220 --> 0:03:50,300
+ Hvis man gør noget, man ikke må.
+
+49
+0:03:50,340 --> 0:03:55,680
+ Og som jeg sagde før, hvem der var, der i virkeligheden slog Kennedy ihjel.
+
+50
+0:03:59,400 --> 0:04:06,500
+ Så ud fra alle mulige nyhedskriterier, så er det eddermame bemærkelsesværdigt, det der er sket her.
+
+51
+0:04:07,680 --> 0:04:11,600
+ Hvis man var ekstremt conspiracy-minded, så vil jeg tro, at det hele var et cover-up
+
+52
+0:04:11,600 --> 0:04:15,080
+ for at dække over det, det egentlig handler om, nemlig alle det kabeltamarbejde.
+
+53
+0:04:15,900 --> 0:04:19,220
+ Men jeg må indrømme, hvis man ved en lille smule om medierne, så kan jeg godt forstå,
+
+54
+0:04:19,220 --> 0:04:22,080
+ at man fokuserer så meget på, at finten sidder i spjældet,
+
+55
+0:04:22,140 --> 0:04:25,020
+ fordi den slags, det sker aldrig i Danmark.
+
+56
+0:04:25,580 --> 0:04:28,220
+ Eller at Claus Hjort bliver sigtet for en...
+
+57
+0:04:28,960 --> 0:04:31,980
+ Jeg synes, vi skal ikke blive partipolitiske, jeg synes, der er alle mulige grunde til,
+
+58
+0:04:32,100 --> 0:04:36,780
+ at Claus Hjort skulle sidde i fængsel, men det her, det er ikke en af dem.
+
+59
+0:04:39,160 --> 0:04:42,840
+ Så det er det samme med Trine Bramsen, som jeg har brugt...
+
+60
+0:04:42,840 --> 0:04:45,720
+ Jeg tror, jeg er berømt, går så inden for to ting her i verden,
+
+61
+0:04:45,780 --> 0:04:47,720
+ og det ene er at have interviewet Snowden, og det er sådan 10%,
+
+62
+0:04:47,720 --> 0:04:49,200
+ og det andet er at være den, der er bedst.
+
+63
+0:04:49,220 --> 0:04:52,100
+ Det hele værd, det tager Svinen Trine Bramsen til, det er de sidste 90%.
+
+64
+0:04:52,100 --> 0:04:54,780
+ Og det gør jeg gerne, og glædeligt og sådan noget,
+
+65
+0:04:54,860 --> 0:04:57,160
+ men den ene ting, hun nogensinde har gjort rigtigt,
+
+66
+0:04:57,520 --> 0:05:00,740
+ nemlig responsen på tilsynet for efterretningstjenesternes kritik,
+
+67
+0:05:01,280 --> 0:05:03,400
+ det kraftedeme, det der bliver hendes fald,
+
+68
+0:05:03,540 --> 0:05:05,740
+ altså, fuck den her verden af hjernedød.
+
+69
+0:05:08,740 --> 0:05:11,220
+ Jeg ved ikke engang, hvad du spurgte om nu, men altså...
+
+70
+0:05:11,220 --> 0:05:14,920
+ Det er et meget godt svar på stort set alt, det du har givet der.
+
+71
+0:05:15,100 --> 0:05:15,420
+ 42!
+
+72
+0:05:15,420 --> 0:05:17,700
+ Ja, nu er det sit verden af hjernedød.
+
+73
+0:05:18,160 --> 0:05:18,960
+ Hvad hedder det?
+
+74
+0:05:19,220 --> 0:05:21,880
+ Vi har en repræsentant for medierne siden, vi har Peter Christian Bæk-Nielsen,
+
+75
+0:05:21,940 --> 0:05:23,580
+ og er chefredaktør for Radar.
+
+76
+0:05:24,200 --> 0:05:29,420
+ Hvis vi nu går tilbage til den her store sag, så kan jeg jo lige så godt bare kaste den helt store ting ud og sige,
+
+77
+0:05:29,500 --> 0:05:30,500
+ hvad tror du, der er sket?
+
+78
+0:05:31,720 --> 0:05:34,200
+ Oha, det er et meget stort spørgsmål.
+
+79
+0:05:34,440 --> 0:05:37,920
+ Altså, man kan sige...
+
+80
+0:05:37,920 --> 0:05:43,320
+ Jeg tror, hvis for de af jer, der var her lige før den her debat,
+
+81
+0:05:43,840 --> 0:05:46,780
+ hvor Bo, min kære kollega ved siden af mig,
+
+82
+0:05:47,120 --> 0:05:49,200
+ holdt et oplæg om,
+
+83
+0:05:49,220 --> 0:05:52,500
+ om det, der hedder Echelon, som nok i virkeligheden var den tidlige version,
+
+84
+0:05:53,400 --> 0:05:55,720
+ eller var den tidlige version af det her samarbejde,
+
+85
+0:05:56,420 --> 0:06:00,340
+ så tror jeg, at noget af det, som det her handler om meget centralt,
+
+86
+0:06:00,380 --> 0:06:03,020
+ det er, at vi blev en del af et rigtig godt selskab,
+
+87
+0:06:03,140 --> 0:06:04,120
+ det her Nine Eyes.
+
+88
+0:06:05,500 --> 0:06:07,440
+ Og når først man er kommet derind,
+
+89
+0:06:07,880 --> 0:06:09,060
+ og så skal I også...
+
+90
+0:06:09,060 --> 0:06:11,980
+ I skal hæfte jer rigtig meget, tror jeg, ved 11. september,
+
+91
+0:06:12,080 --> 0:06:13,460
+ fordi den...
+
+92
+0:06:13,460 --> 0:06:15,680
+ som den gode Shoshana Suboff,
+
+93
+0:06:15,800 --> 0:06:18,240
+ som nogle af jer måske ville have hørt om eller har læst,
+
+94
+0:06:18,340 --> 0:06:19,200
+ som hun har lavet,
+
+95
+0:06:19,220 --> 0:06:22,260
+ som hun også skriver i sin meget store bog,
+
+96
+0:06:22,340 --> 0:06:24,880
+ der handler om det her, man kalder overvågningskapitalisme,
+
+97
+0:06:25,980 --> 0:06:28,500
+ så sker der sådan et paradigmeskifte,
+
+98
+0:06:28,620 --> 0:06:30,440
+ altså et radikalt skifte i,
+
+99
+0:06:30,560 --> 0:06:34,980
+ hvordan man ser på privatliv og overvågning efter retningsvæsen,
+
+100
+0:06:35,140 --> 0:06:37,440
+ efter de her to tårne,
+
+101
+0:06:37,500 --> 0:06:40,440
+ de styrter sammen i New York 2001,
+
+102
+0:06:40,880 --> 0:06:43,020
+ hvor jeg selv går på højskole og er en ung mand,
+
+103
+0:06:43,280 --> 0:06:45,800
+ og står i tykken og vasker op, mens det sker.
+
+104
+0:06:45,800 --> 0:06:51,460
+ Der sker simpelthen et stort skifte i,
+
+105
+0:06:51,560 --> 0:06:55,200
+ hvordan man ser på, hvad vi egentlig har lyst til at vide om hinanden,
+
+106
+0:06:55,300 --> 0:06:57,800
+ og især hvad staten har lyst til at vide om borgerne.
+
+107
+0:06:57,900 --> 0:07:02,300
+ Og jeg tror, at da vi først kom ind i det her selskab,
+
+108
+0:07:02,400 --> 0:07:04,100
+ det ville vi ikke ud af igen.
+
+109
+0:07:04,200 --> 0:07:07,800
+ Vi ville faktisk måske endnu længere ind i hjertet af det her selskab.
+
+110
+0:07:07,900 --> 0:07:09,600
+ Og nu vil jeg gerne...
+
+111
+0:07:09,700 --> 0:07:13,000
+ Så kan jeg så et lille frø, og så kan jeg altid høste lidt senere,
+
+112
+0:07:13,100 --> 0:07:15,560
+ men I kan jo undre jer over, hvorfor det lige pludselig,
+
+113
+0:07:15,560 --> 0:07:19,060
+ er blevet meget vigtigt, at der ligger datacentre i Danmark,
+
+114
+0:07:19,160 --> 0:07:22,960
+ fra snart sagt alle af de allerstørste tech-giganter.
+
+115
+0:07:23,060 --> 0:07:27,860
+ Det synes jeg, at det ville være værd at inddrage i den her debat.
+
+116
+0:07:27,960 --> 0:07:30,760
+ Men jeg vil sige, at jeg tror i hvert fald, at det er ekstremt centralt,
+
+117
+0:07:30,860 --> 0:07:32,960
+ uagtet hvad fensen har gjort eller ikke har gjort,
+
+118
+0:07:33,060 --> 0:07:35,560
+ så tror jeg, at det er ekstremt centralt,
+
+119
+0:07:35,660 --> 0:07:40,160
+ at vi vil gerne blive in the know, som man siger på en ting.
+
+120
+0:07:40,260 --> 0:07:43,560
+ Du ansøger ret mange ting med det der, men det kan vi jo sådan komme tilbage til.
+
+121
+0:07:43,660 --> 0:07:44,760
+ Jeg elsker at ansøge ting,
+
+122
+0:07:44,860 --> 0:07:45,460
+ og jeg vil også rigtig gerne,
+
+123
+0:07:45,560 --> 0:07:49,260
+ bruge ordet angiveligt.
+
+124
+0:07:49,360 --> 0:07:54,160
+ Bo Elkjær, du har beskæftiget dig med den tidligere del af sagen,
+
+125
+0:07:54,260 --> 0:07:57,060
+ og langt tilbage og alt det her, og oplevede vel...
+
+126
+0:07:57,160 --> 0:07:58,560
+ Jeg synes faktisk, at vi har nødt til at dvæle lidt,
+
+127
+0:07:58,660 --> 0:07:59,960
+ ved det, der skete efter 9-11.
+
+128
+0:08:00,060 --> 0:08:01,560
+ Altså det må vel også have været...
+
+129
+0:08:01,660 --> 0:08:04,460
+ Da du sad med det i sin tid, havde du så forventet,
+
+130
+0:08:04,560 --> 0:08:06,760
+ at så ville al diskussion bare stå oppe omkring det der,
+
+131
+0:08:06,860 --> 0:08:07,860
+ for det gjorde det jo reelt.
+
+132
+0:08:07,960 --> 0:08:10,560
+ Altså den der fine rapport, der blev lavet om Echelon,
+
+133
+0:08:10,660 --> 0:08:12,760
+ der lå nede i EU, som jeg husker det,
+
+134
+0:08:12,860 --> 0:08:14,760
+ så var der alle mulige planer, der skulle indføre statskontrol,
+
+135
+0:08:14,760 --> 0:08:18,360
+ og der skulle laves, at børnene skulle undervises
+
+136
+0:08:18,460 --> 0:08:20,460
+ i bedre sikkerhed i skolerne, og jeg ved ikke hvad,
+
+137
+0:08:20,560 --> 0:08:22,460
+ der havde man gang i, og så kom 9-11,
+
+138
+0:08:22,560 --> 0:08:24,460
+ og så droppede vi det hele.
+
+139
+0:08:24,560 --> 0:08:27,460
+ Jamen altså, noget af det første, jeg tænkte,
+
+140
+0:08:27,560 --> 0:08:30,060
+ da det andet fly ramte, det var, at den her debat,
+
+141
+0:08:30,160 --> 0:08:33,460
+ den sang, som en stenlig møding, og det gjorde den jo.
+
+142
+0:08:33,560 --> 0:08:36,460
+ Altså, det...
+
+143
+0:08:36,560 --> 0:08:38,460
+ Er der lyd nu?
+
+144
+0:08:38,560 --> 0:08:40,460
+ Det skal jeg bare sidde lidt tættere på.
+
+145
+0:08:40,560 --> 0:08:42,460
+ Er der lyd?
+
+146
+0:08:42,560 --> 0:08:44,060
+ Jeg gentager.
+
+147
+0:08:44,060 --> 0:08:47,060
+ Altså, da det andet fly ramte 9. september 2001,
+
+148
+0:08:47,160 --> 0:08:49,860
+ der var det første, jeg tænkte, det var, at den debat om
+
+149
+0:08:49,960 --> 0:08:53,060
+ den her invasion af privatlivets fred, som den her form for overvågning er,
+
+150
+0:08:53,160 --> 0:08:55,760
+ jamen, den er jo så død nu, altså, den sang, som en stenlig møding,
+
+151
+0:08:55,860 --> 0:08:57,360
+ og det var jo også det, der skete.
+
+152
+0:08:57,460 --> 0:08:59,960
+ Altså, det var også derfor, at vores justitsminister
+
+153
+0:09:00,060 --> 0:09:03,960
+ og forsvarsminister kunne optræde på tv et få dage efter og sige,
+
+154
+0:09:04,060 --> 0:09:08,960
+ det stik modsatte af, hvad de havde sagt under et ret solidt politisk pres
+
+155
+0:09:09,060 --> 0:09:11,960
+ de fortløbende år op til terrorangreb.
+
+156
+0:09:12,060 --> 0:09:13,760
+ Ja.
+
+157
+0:09:13,760 --> 0:09:16,360
+ Og så er der så gået 20 år, og så kan vi jo så åbne ballen en gang til,
+
+158
+0:09:16,460 --> 0:09:18,260
+ og det er jo fint.
+
+159
+0:09:18,360 --> 0:09:21,260
+ Det her balle, det er jo sådan her, der er blevet åbnet en gang til i den her sammenhæng,
+
+160
+0:09:21,360 --> 0:09:24,160
+ og nu, jeg bliver nødt til at stille det samme dumme spørgsmål, som jeg har stillet til Peter,
+
+161
+0:09:24,260 --> 0:09:28,560
+ og sige, hvad tror du, der foregår lige nu?
+
+162
+0:09:28,660 --> 0:09:31,960
+ Altså, hvis jeg skal kombinere de få oplysninger, der er kommet frem,
+
+163
+0:09:32,060 --> 0:09:40,560
+ med et godt lag af spekulation, så kan man sige, i forhold til tilsynningsrapporten,
+
+164
+0:09:40,660 --> 0:09:43,560
+ og i forhold til alt det, som, altså, med træneren,
+
+165
+0:09:43,760 --> 0:09:46,460
+ der giver rigtighed og så videre, så kan man sige,
+
+166
+0:09:46,560 --> 0:09:54,160
+ vi har en aftale, som er indgået mellem Danmark og USA i 1997-98 ish,
+
+167
+0:09:54,260 --> 0:10:00,660
+ mellem den daværende regering og USA, om at få adgang til et kabel og lave et tap.
+
+168
+0:10:00,760 --> 0:10:02,560
+ Så meget det ved vi.
+
+169
+0:10:02,660 --> 0:10:07,560
+ Claus Hjort har så været på TV2 og fortælle, at det er et transitkabel,
+
+170
+0:10:07,660 --> 0:10:10,560
+ og hvis man tager den oplysning og årstallet og kombinerer det,
+
+171
+0:10:10,660 --> 0:10:13,660
+ jamen, så kan man jo sådan set identificere, hvad det er for et kabel, det drejer sig om.
+
+172
+0:10:13,760 --> 0:10:17,660
+ Og man kan også se, hvor lang levetid har det her kabel,
+
+173
+0:10:17,760 --> 0:10:21,660
+ og det kan man sammenholde med, hvor kalenderen den står i dag,
+
+174
+0:10:21,760 --> 0:10:25,660
+ og så kan man sige, jamen, hvis det ikke er det kabel, USA længere har adgang til,
+
+175
+0:10:25,760 --> 0:10:28,660
+ hvad er det så, de får? Det var så spekulationsdelen.
+
+176
+0:10:28,760 --> 0:10:33,660
+ Ja, det er jo så det. Og så har vi lidt galeriet.
+
+177
+0:10:33,760 --> 0:10:37,660
+ Poul Henning Kamp, du har garanteret også et eller andet, nogle spekulationer,
+
+178
+0:10:37,760 --> 0:10:39,660
+ hvilke delagtigheder folk giver.
+
+179
+0:10:39,760 --> 0:10:43,660
+ Jamen, jeg vil lige skrue tiden lidt tilbage, fordi det her, det er jo kun,
+
+180
+0:10:43,660 --> 0:10:47,560
+ syvendeagtig en langfølge ton.
+
+181
+0:10:47,660 --> 0:10:52,560
+ Efter 2. verdenskrig havde Danmark ikke så satans meget kredit på kontoen,
+
+182
+0:10:52,660 --> 0:10:55,560
+ på grund af samarbejdspolitik og sådan nogle ting.
+
+183
+0:10:55,660 --> 0:11:00,560
+ Hvis man ser på USA's militære engagement i Norge og Danmark,
+
+184
+0:11:00,660 --> 0:11:04,560
+ så var der meget stor forskel på, hvilke teknologier der blev brugt de to steder.
+
+185
+0:11:04,660 --> 0:11:07,560
+ Altså, Norge var på internettet tilbage fra 1900 og hvidkål,
+
+186
+0:11:07,660 --> 0:11:10,560
+ for eksempel på ARPANET og sådan nogle ting.
+
+187
+0:11:10,560 --> 0:11:22,460
+ Men der er en ubrudt stribe af talen udenom, startende med Thulebasen,
+
+188
+0:11:22,560 --> 0:11:29,460
+ meget omdiskuteret med hensyn til atomvåben på amerikanske både,
+
+189
+0:11:29,560 --> 0:11:35,460
+ der var anløb Danske Havne, hvor der var en decideret no ask, no tell politik,
+
+190
+0:11:35,560 --> 0:11:38,460
+ men hvor det efterfølgende er dokumenteret, at de alle sammen havde atomvåben ombord,
+
+191
+0:11:38,460 --> 0:11:43,360
+ de havde alle sammen atombevæbnede dybvandsbomber.
+
+192
+0:11:43,460 --> 0:11:45,360
+ At det senere kom frem, det havde alle de amerikanske skibe,
+
+193
+0:11:45,460 --> 0:11:48,360
+ og dermed også de skibe, der er lagt til Danmark.
+
+194
+0:11:48,460 --> 0:11:57,360
+ Så det første spørgsmål, man må stille, det er jo, hvor frivilligt Danmark har indgået de her aftaler.
+
+195
+0:11:57,460 --> 0:12:06,360
+ Har vores NATO-medlemskab hængt lidt i balancen, hvis vi sagde nej og sådan nogle ting?
+
+196
+0:12:06,460 --> 0:12:08,360
+ Jeg vil ikke afvise, at Danmark,
+
+197
+0:12:08,360 --> 0:12:12,260
+ at danske regeringer har fået nogle tilbud, de ikke kunne sige nej til,
+
+198
+0:12:12,360 --> 0:12:16,260
+ og derfor har været nødt til at lave de her spilfægterier,
+
+199
+0:12:16,360 --> 0:12:23,260
+ hvor der ikke er sket suverænitetsafgivelser, selvom dansk forsvar ikke har en skid at skulle have sagt på tulebasen og sådan nogle ting.
+
+200
+0:12:23,360 --> 0:12:32,260
+ Og tilsvarende, så er det jo tydeligvis derfor, vi har den tilsynsstruktur, vi har, hvor vi har kontroludvalget.
+
+201
+0:12:32,360 --> 0:12:37,260
+ Jeg ved ikke, om der er nogen af jer, der kan huske det, men der er blevet en frygtelig masse ballade om kontroludvalget,
+
+202
+0:12:37,260 --> 0:12:41,160
+ der pludselig skulle ind fra enhedslisten.
+
+203
+0:12:41,260 --> 0:12:45,160
+ Og den ligger jo hele vejen igennem, at hele den kontrolstruktur, der ligger i Folketinget,
+
+204
+0:12:45,260 --> 0:12:51,160
+ den skulle jo sikre, at kommunisterne ingenting fik at vide, for det ville jo bare slade til Moskva.
+
+205
+0:12:51,260 --> 0:12:59,160
+ Og det er derfor, man har den her right-only-struktur på kontroludvalget, hvor kontroludvalget ikke engang må sige noget til deres egne partifælder.
+
+206
+0:12:59,260 --> 0:13:05,160
+ Men de har fået en eller anden historie i kontroludvalget. De må ikke tale om den, så de har ingen chance for at finde ud af, om den er rigtig.
+
+207
+0:13:05,160 --> 0:13:10,060
+ De har ingen chance for at finde ud af, hvor stor en del af sandheden den er. Men de er orienterede.
+
+208
+0:13:10,160 --> 0:13:17,060
+ Og så laver man så tilsynet med efterretningsmyndighederne, som er helt ornamentalt. Det er ikke meningen, at de nogensinde skal finde noget.
+
+209
+0:13:17,160 --> 0:13:22,060
+ Men så kan man pege på det og sige, at der er et tilsyn. Der er ikke noget at komme efter her.
+
+210
+0:13:22,160 --> 0:13:33,060
+ Og så er det jo, som en del af det, vi kalder højrefløjen, har været ude med, at de ville godt gå efter forsvarsministeren,
+
+211
+0:13:33,060 --> 0:13:49,960
+ for at have lavet tilsynet tale ud. Så det er jo tydeligt, at der foregår et niveau af realpolitik under det her, som muligvis er uden for danske politikers kontrol.
+
+212
+0:13:50,060 --> 0:13:59,960
+ Sandsynligvis er uden for danske politikers kontrol. Jeg tror ikke, hvis man får en henvendelse fra den amerikanske forsvarsminister, at man bare kan sige, at det skal vi tænke over.
+
+213
+0:14:00,060 --> 0:14:02,960
+ Det vil vi godt lige forhandle nogle detaljer om.
+
+214
+0:14:03,060 --> 0:14:08,960
+ Jeg tror, at det er skrevet under på den stiblede linje, og lad os komme videre her.
+
+215
+0:14:09,060 --> 0:14:17,960
+ Og jeg tror også, at det er det lys, man skal se de her tre Microsoft-datacentre. Og det er ikke sikkert, at det er det danske forsvar, der har besluttet, at der skulle ske noget.
+
+216
+0:14:18,060 --> 0:14:21,960
+ Det kan være, at de har fået besked på det, og så må der udfejres nogle pladser og sådan nogle ting.
+
+217
+0:14:22,060 --> 0:14:31,960
+ Med hensyn til de aktuelle fiberkabler, så skal man ikke overse, at Store Nord havde monopol på telegrafkabler gennem Rusland til Asien.
+
+218
+0:14:31,960 --> 0:14:35,860
+ Det er en meget interessant historie, og jeg kan meget godt anbefale, at der er fået gode bøger om det allerede.
+
+219
+0:14:35,960 --> 0:14:46,860
+ Og derfor, at den her aflytning kommer op, det er fordi, de har de første fiberkabler til Rusland gennem Sankt Petersborg fra deres eksisterende kabletræsning.
+
+220
+0:14:46,960 --> 0:14:51,860
+ Og hvorvidt der er foregået aflytninger før den danske stat involverede, er et rigtig godt spørgsmål.
+
+221
+0:14:51,960 --> 0:15:01,860
+ Man kan sagtens forestille sig, at Store Nord har haft en særlig aftale om nogle read-only-fibre. Det skal de kunne tænke på.
+
+222
+0:15:02,060 --> 0:15:08,860
+ Men en af årsagen til, at Danmark er så interessant på det punkt, det er, at en meget stor del af den russiske internettrafik kommer ud igennem Danmark.
+
+223
+0:15:08,960 --> 0:15:14,860
+ Eller har i hvert fald historisk gjort det. Rusland har gjort noget for at mitigere det i mellemtiden.
+
+224
+0:15:14,960 --> 0:15:22,860
+ Men der havde man et meget stort hul inde i Varsjævetakten under den kolde krig.
+
+225
+0:15:22,960 --> 0:15:24,860
+ Peter Christen?
+
+226
+0:15:24,960 --> 0:15:31,860
+ Ja, altså jeg synes noget af det, man skal prøve... Noget af det, der udløser i hvert fald det seneste kapitel, som bliver til film,
+
+227
+0:15:31,960 --> 0:15:40,760
+ det er Finsens anholdelse og alt det her. Den her pressemeddelelse af den 20. august 2020, så vi det husker.
+
+228
+0:15:40,860 --> 0:15:49,760
+ Det er jo, at man skriver blandt andet, at der er blevet overvåget ansatte i tilsynet.
+
+229
+0:15:49,860 --> 0:15:56,760
+ Man har holdt øje med en ansat i tilsynet. Man har overvåget forsvarsministeriet.
+
+230
+0:15:56,860 --> 0:16:00,760
+ En anden ting, som jeg synes er lidt interessant også at hæfte sig ved...
+
+231
+0:16:00,760 --> 0:16:02,660
+ Der er rigtig mange ting, der er interessante at hæfte sig ved.
+
+232
+0:16:02,760 --> 0:16:07,660
+ Noget andet, som jeg synes også giver lidt... I virkeligheden, der hvor noget af diskussionen ligger.
+
+233
+0:16:07,760 --> 0:16:14,660
+ Fordi det, som nogen vil påstå, det er jo, at tilsynet måske i virkeligheden bevæger sig inde på et territorium, der ikke er deres.
+
+234
+0:16:14,760 --> 0:16:20,660
+ Og det skriver de faktisk også, mere eller mindre. De skriver områder, som er...
+
+235
+0:16:20,760 --> 0:16:29,660
+ Det er sådan, tror jeg, nogenlunde uret, men som er helt eller delvist en del af deres kontrol-paradigme-område.
+
+236
+0:16:29,660 --> 0:16:39,560
+ Og det er jo i virkeligheden... Måske er det den chance, som man tager, hvis man skal ansætte et risiko, man løber alt efter, hvordan man ser det.
+
+237
+0:16:39,660 --> 0:16:49,560
+ Det er at tæt bevæge sig inde på at fortælle om nogle ting, som måske ikke ligger indenfor eller uden for deres område.
+
+238
+0:16:49,660 --> 0:16:57,560
+ Og det er jo i forhold til, hvad Poul Henning siger, så kan man sige, det er jo lidt interessant, hvis man...
+
+239
+0:16:57,560 --> 0:17:05,460
+ Hvis en tilsyn, som måske ikke var tænkt til at være alt for potent, måske vælger at give sig selv en Viagra-pille.
+
+240
+0:17:05,560 --> 0:17:17,460
+ Måske har de taget Viagra den dag, ikke? Og måske er man... Ja. Måske har det givet en lidt mere mod, end man er udstyret med fra naturens hånd.
+
+241
+0:17:17,560 --> 0:17:23,460
+ Og det har de så ikke fået så meget ud af, kan man sige, i den her sammenhæng, fordi deres rapporter er jo stort set blevet lagt ned?
+
+242
+0:17:23,560 --> 0:17:27,460
+ Det må vi jo se. Jeg synes jo ikke, at det sidste... Hverken anden eller sidste...
+
+243
+0:17:27,460 --> 0:17:31,360
+ Det sidste akt er skrevet i det her, tror jeg.
+
+244
+0:17:31,460 --> 0:17:35,360
+ Peter Kofod, jeg ved, at du jo... Som sagt, du har fulgt med i de her ting igennem lang tid.
+
+245
+0:17:35,460 --> 0:17:41,360
+ Og startet med os i forbindelse med Snøåden og været på hele den her ballade fra begyndelsen af.
+
+246
+0:17:41,460 --> 0:17:45,360
+ Glemmer man ikke nogen gange i den her diskussion, at vi skal også huske, at USA er jo også vores venner?
+
+247
+0:17:45,460 --> 0:17:48,360
+ Altså er det ikke godt nok... Skal de ikke have lov til at kigge lidt indenfor?
+
+248
+0:17:48,460 --> 0:17:54,360
+ Altså netop nogle af de her aftaler, som Poul Henning også taler om, og siger, vi har lavet nogle aftaler, vi havde brug for dem.
+
+249
+0:17:54,460 --> 0:17:57,360
+ Og måske prøver de bare på at hjælpe os. Hvorfor går du rundt og er så sur?
+
+250
+0:17:57,460 --> 0:18:01,360
+ Det er jo faktisk et helt vildt godt spørgsmål, og det er jo faktisk et, som man...
+
+251
+0:18:01,460 --> 0:18:06,360
+ Hvis nu vi havde den her debat sådan nogenlunde ærligt, så kunne man jo sige, det er et politisk spørgsmål.
+
+252
+0:18:06,460 --> 0:18:10,360
+ Men det første politiske spørgsmål, når det er ude i det åbne...
+
+253
+0:18:10,460 --> 0:18:14,360
+ Når det er noget, der sker i det skjulte, uden at nogen af os ved...
+
+254
+0:18:14,460 --> 0:18:20,360
+ Uden, jeg tror helt ærligt, at de fleste politikere ikke vidste noget om det her, inden det blev blæst op i medierne.
+
+255
+0:18:20,460 --> 0:18:27,360
+ Og så er det jo pludselig ikke en ærlig politisk snak længere, og så er det bedrag og teknisk helt landsforrædret i at give...
+
+256
+0:18:27,460 --> 0:18:32,360
+ fremmede magt og adgang til alle mulige hemmeligheder, ikke?
+
+257
+0:18:32,460 --> 0:18:38,360
+ Jeg tror, der var nogen danskere, der syntes, det er cool, at det her, det sker. Fordi det er i USA.
+
+258
+0:18:38,460 --> 0:18:42,360
+ Og så er der nogen... En subgruppe af dem, der syntes, det er okay...
+
+259
+0:18:42,460 --> 0:18:48,360
+ Det er sådan pæne liberale centrum, højre- og venstrefolk, som syntes, at...
+
+260
+0:18:48,460 --> 0:18:53,360
+ Det er det samme, som syntes, at der var ikke noget problem med, at Obama, han pludselig fik lov til at lave droneangreb i hele verden,
+
+261
+0:18:53,460 --> 0:18:57,360
+ uden nogen som helst rettelig rettergang og sådan noget kunne...
+
+262
+0:18:57,460 --> 0:18:59,360
+ henrette folk uden for krigszonen og sådan noget. Det var cool, når...
+
+263
+0:18:59,460 --> 0:19:07,360
+ Fordi Obama, han er sød og rar og nobelfredsprisvindende forfatningsretsprofessor, præsident, som vi godt kan lide her i Europa, ikke?
+
+264
+0:19:07,460 --> 0:19:12,360
+ Men så kom der en ny præsident, der hed Donald Trump, og så var der pludselig en masse af de her pæne liberale mennesker, der...
+
+265
+0:19:12,460 --> 0:19:20,360
+ Og jeg mener ikke liberale, som højre- og venstrefolk, men pæne mønsterborgere, der pludselig syntes, det var en skandal, at Trump, han havde den her mulighed.
+
+266
+0:19:20,460 --> 0:19:26,360
+ Og det er lidt det samme. Altså, hvis vi synes grundlæggende, at USA, de er søde og rare, så er vi ligeglade med principperne,
+
+267
+0:19:26,360 --> 0:19:30,260
+ og så må de da godt få adgang til bedstemors nøgenbillede eller whatever, ikke?
+
+268
+0:19:30,360 --> 0:19:35,260
+ Men hvis USA ikke er søde og rare, så er det det farligste i hele verden, at de har adgang til det her.
+
+269
+0:19:35,360 --> 0:19:40,260
+ Og vi burde bare være bedre end det, og sige, vi er egentlig ligeglade med, hvem USA er.
+
+270
+0:19:40,360 --> 0:19:43,260
+ Vi er ligeglade med det præcise USA, der har adgang til alt det her.
+
+271
+0:19:43,360 --> 0:19:48,260
+ Pointen er, at det er der sgu ikke nogen, der skal have adgang til, medmindre vi har besluttet det.
+
+272
+0:19:48,360 --> 0:19:56,260
+ At vi synes, det er okay, uanset om det så er Putin eller Trump eller ham der 90-årige, der er præsident lige for tiden, ikke?
+
+273
+0:19:56,360 --> 0:20:04,260
+ Det duer bare ikke. Altså vi er nødt til at, og vi snakkede før om Google, det kan ikke, altså Google i folkeskole og sådan noget, ikke?
+
+274
+0:20:04,360 --> 0:20:11,260
+ Det er fuldstændig fucked up, uanset hvad man synes om Google, at vi er nået til et sted, hvor vi kan ikke lave folkeskole uden Google.
+
+275
+0:20:11,360 --> 0:20:19,260
+ Hvis vi virkelig ikke kan lave kommunikationsinfrastruktur i et land uden NSA, altså så er vi jo ikke et land.
+
+276
+0:20:19,360 --> 0:20:25,260
+ Så er vi en afdeling af et eller andet stort amerikansk selskab, skrostret eftervejsningstjeneste, og det er der ikke nogen, der kan være interesseret i.
+
+277
+0:20:25,260 --> 0:20:33,160
+ Boelka, hvad mener du? Kan vi lave, kan Danmark køre uden NSA? Altså kunne vi sige, vi gider ikke at være med i hele det der efterretningssamarbejde mere?
+
+278
+0:20:33,260 --> 0:20:36,160
+ Og derfor så, nu gør vi som det passer os.
+
+279
+0:20:36,260 --> 0:20:43,160
+ Altså i princippet kan man jo bare klippe ledningen over og sige, jamen det er jo tak for os arbejdere, det har været godt, men nu stopper vi her.
+
+280
+0:20:43,260 --> 0:20:53,160
+ Det er jo også en politisk beslutning. Så svaret på dit spørgsmål er, hvis man skal gøre det helt binært, ja, altså selvfølgelig kan vi afbryde det.
+
+281
+0:20:53,160 --> 0:21:03,060
+ Om det så i praksis vil kunne lade sig gøre, der er nok et langt vej, hvis vi når hen til sådan en situation.
+
+282
+0:21:03,160 --> 0:21:12,060
+ Den næste Trump hjælper jo nok tingene lidt på vej. Altså fordi vi har jo en tillid til USA grundlæggende i det her samfund, som jo skal krænkes så meget,
+
+283
+0:21:12,160 --> 0:21:21,060
+ så vi siger, så kan vi ikke længere samarbejde med dem. Og det hjælper en Trump måske mere med end, hvad hedder han næsten derovre?
+
+284
+0:21:21,160 --> 0:21:23,060
+ Biden.
+
+285
+0:21:23,160 --> 0:21:26,060
+ Så ja, med nuancer.
+
+286
+0:21:26,160 --> 0:21:31,060
+ Jeg kan ikke lade være med at spørge dig også om, fordi i dit foredrag tidligere, der snakkede du om det her med, at nu kigger du dig omkring,
+
+287
+0:21:31,160 --> 0:21:38,060
+ og så kan du jo konstatere, at vi er alle sammen på sociale medier, og vi vælter ud med information fra alle mulige steder,
+
+288
+0:21:38,160 --> 0:21:45,060
+ og det er meget nemt at finde frem til alt muligt om alle mennesker nu. Altså den her debat, kan man sige, er vi ikke ved at nærme os måske ligefrem?
+
+289
+0:21:45,160 --> 0:21:51,060
+ Altså hvis jeg skal være djævlen, så kan jeg sige, er vi så ikke ved at nærme os et punkt, hvor det kan være lige meget, hvem der spionerer på hvem?
+
+290
+0:21:51,060 --> 0:21:58,960
+ Altså jeg var ude til et debatarrangement med et folketingspolitiker og en tidligere chef fra Center for Cybersikkerhed for et kort tid siden,
+
+291
+0:21:59,060 --> 0:22:05,960
+ og så som forbindelse, altså bare for lige at være varmt lidt op på debatten, så undersøgte jeg, hvad jeg kunne finde ud af hemmeligheder om de her to.
+
+292
+0:22:06,060 --> 0:22:12,960
+ Og den ene, som har hemmelig adresse, altså adressebeskyttelse, jamen der fandt jeg hans adresse og fandt renten på hans lån på den bolig, han har.
+
+293
+0:22:13,060 --> 0:22:20,960
+ Og det tog ikke fem minutter. Og den anden, altså chefen for cybersikkerhed, jamen der kunne jeg se, hvor han havde været på sommerferie med sin hustru.
+
+294
+0:22:21,060 --> 0:22:30,960
+ Altså jeg kunne finde feriebillederne. Så på den måde er selv mennesker, som virkelig ikke vil være transparente, jo blevet ekstremt transparente i det her samfund.
+
+295
+0:22:31,060 --> 0:22:38,960
+ Og det så med eller uden efterretningstjeneste, fordi rigtig meget af det gør vi jo også frivilligt ved at lægge alt muligt lort på nettet og inddrage alle mulige apps,
+
+296
+0:22:39,060 --> 0:22:50,960
+ og hvad ved jeg, i vores daglige liv, som jo lukker op. Altså jeg er journalist, jeg researcher folk, det er det jeg gør. Jeg finder hemmelige numre, jeg finder kontakter,
+
+297
+0:22:51,160 --> 0:23:00,960
+ og fortrolige oplysninger, og det er ligesom at drikke af brandhængen, fordi der er så sindssygt mange oplysninger tilgængelige om allesammen.
+
+298
+0:23:01,060 --> 0:23:02,960
+ Ja, hvad tror du?
+
+299
+0:23:03,060 --> 0:23:18,960
+ Altså, man kan jo spørge om, hvad privatlivet er, når der er så store datamængder, der er ligget. Altså der ryger million helbredsoplysninger her, der ryger 10 millioner oplysninger der.
+
+300
+0:23:18,960 --> 0:23:28,860
+ Når man bliver med i det, så er vi jo oppe på et punkt, hvor hen ved halvdelen af jordens befolkning har haft informationer om sig lægget i et eller andet omfang.
+
+301
+0:23:28,960 --> 0:23:38,860
+ Og på et eller andet tidspunkt, så er der selvfølgelig et spørgsmål, hvor meget kan man bruge en kopi af det indiske sundhedsregister fra 10 år siden til?
+
+302
+0:23:38,960 --> 0:23:44,860
+ Altså værdien i de her data falder over tid, fordi nu er de jo ikke længere relevant eller præcistætte og sådan nogle ting.
+
+303
+0:23:44,960 --> 0:23:46,860
+ Men...
+
+304
+0:23:46,960 --> 0:23:48,860
+ Øhm...
+
+305
+0:23:48,960 --> 0:23:56,860
+ Jeg synes, det er et rigtig godt spørgsmål, hvor meget privatliv man i virkeligheden kan have på det her tidspunkt, som deltager i.
+
+306
+0:23:56,960 --> 0:24:00,860
+ Altså flytte ud på midt på en mark og dyrke gullerødder, ja.
+
+307
+0:24:00,960 --> 0:24:07,860
+ Men hvor lang tid går der før, der står en journalist fra et dameblad og skal lave en profilhistorie om ham her, der dyrker gullerødder uden midt på en mark?
+
+308
+0:24:07,960 --> 0:24:08,860
+ Øhm...
+
+309
+0:24:08,960 --> 0:24:13,860
+ Så der er bestemt et relevant spørgsmål om, hvor meget privatliv der er tilbage at beskytte.
+
+310
+0:24:13,960 --> 0:24:18,860
+ Og det er så ikke det samme, som vi ikke skal prøve på at øge det og sige, vi vil godt have noget af det tilbage.
+
+311
+0:24:18,960 --> 0:24:26,860
+ Men jeg vil til og med påstå, at på det her tidspunkt, så er der ikke nogen, der har privatliv for en...
+
+312
+0:24:26,960 --> 0:24:29,860
+ Bare en nogenlunde intelligent angriber.
+
+313
+0:24:29,960 --> 0:24:33,860
+ Altså adressebeskyttelsen er nærmest latterlig i den sammenhæng, ja.
+
+314
+0:24:33,960 --> 0:24:34,860
+ Øhm...
+
+315
+0:24:34,960 --> 0:24:35,860
+ Fuldstændigt.
+
+316
+0:24:35,960 --> 0:24:37,860
+ Nej, ikke fuldstændigt.
+
+317
+0:24:37,960 --> 0:24:38,860
+ Øhm...
+
+318
+0:24:38,960 --> 0:24:41,860
+ Der er en straf for folk, der misbruger dem.
+
+319
+0:24:41,960 --> 0:24:42,860
+ Misbruger dem.
+
+320
+0:24:42,960 --> 0:24:45,860
+ Altså, der er en konsekvens. Det er der ikke for noget af det andet.
+
+321
+0:24:45,960 --> 0:24:47,860
+ Så på den måde er den ikke helt ligegyldig.
+
+322
+0:24:47,860 --> 0:24:48,760
+ Men øhm...
+
+323
+0:24:48,860 --> 0:24:50,760
+ Altså med hensyn til det der med...
+
+324
+0:24:50,860 --> 0:24:53,760
+ Altså selvfølgelig kan vi så godt sige til USA, nej det gider vi ikke mere.
+
+325
+0:24:53,860 --> 0:24:57,760
+ Og hvis de får sådan en full blown fascist derovre næste gang.
+
+326
+0:24:57,860 --> 0:25:00,760
+ Tucker Carlson for president eller hvad ved jeg.
+
+327
+0:25:00,860 --> 0:25:01,760
+ Øhm...
+
+328
+0:25:01,860 --> 0:25:03,760
+ Så ville det da være forfristen, hvis man gjorde det.
+
+329
+0:25:03,860 --> 0:25:15,760
+ Men her skal vi så huske på, at da vi købte ny jagerfly, så havde flyvevåbnet siden 1998 haft den brochure klart, der skulle lægges ud på gymnasierne med
+
+330
+0:25:15,760 --> 0:25:20,660
+ Skal du være jagepilot i Danmarks næste jagerfly JSF?
+
+331
+0:25:20,760 --> 0:25:21,660
+ Øhm...
+
+332
+0:25:21,760 --> 0:25:27,660
+ Jeg har selv set dem. Jeg har selv set en palle med de her brochurer ligge i flyvevåbnets historiske samling.
+
+333
+0:25:27,760 --> 0:25:28,660
+ Øhm...
+
+334
+0:25:28,760 --> 0:25:30,660
+ De var trygte, de var klare, de var bundede.
+
+335
+0:25:30,760 --> 0:25:35,660
+ Og så fik vi at vide, at strengt taget har Folketinget jo altså ikke besluttet, hvad det er for et fly endnu.
+
+336
+0:25:35,760 --> 0:25:36,660
+ Øhm...
+
+337
+0:25:36,760 --> 0:25:38,660
+ Og derfor blev de ikke delt ud.
+
+338
+0:25:38,760 --> 0:25:41,660
+ Men det var i 98.
+
+339
+0:25:41,760 --> 0:25:43,660
+ De trygte dem.
+
+340
+0:25:43,660 --> 0:25:47,560
+ Og så er der kørt den her skueproces lige siden med, at man skulle vælge danske jagerfly.
+
+341
+0:25:47,660 --> 0:25:53,560
+ Alle har vist, at der var ikke noget valg, vi har fået at vide, at vi skal have dem der, for det er dem, vi skal have i NATO-Europa.
+
+342
+0:25:53,660 --> 0:26:01,560
+ Så spørgsmålet er, hvad konsekvensen ville være ved at sige nej til USA. Jeg har en misstank om, at det kunne godt koste et NATO-medlemskab.
+
+343
+0:26:01,660 --> 0:26:05,560
+ Tror du, det er det, der er på spil, Peter Christian Brink? Et NATO-medlemskab?
+
+344
+0:26:05,660 --> 0:26:11,560
+ Jeg tror, det er svært. Jeg tror, lige nu har man ikke lyst til, at der er nogen, der forlader NATO, for at være helt ærlig. Men...
+
+345
+0:26:11,660 --> 0:26:12,560
+ Men...
+
+346
+0:26:12,560 --> 0:26:14,460
+ Nu er det måske et godt tidspunkt.
+
+347
+0:26:14,560 --> 0:26:17,460
+ Nu er det måske et godt tidspunkt. Eller ind, eller hvad det er.
+
+348
+0:26:17,560 --> 0:26:25,460
+ Jeg tror, at man kan sige, vi er... Jeg tror også, det er meget svært at have et privat liv, hvis vi skal tage den del.
+
+349
+0:26:25,560 --> 0:26:32,460
+ Men jeg tror også, at vi... Altså, jeg er jo måske den sidste generation. Jeg er 41 år gammel.
+
+350
+0:26:32,560 --> 0:26:42,460
+ Jeg er nok den sidste generation, der er gammel nok til at kunne huske dengang, hvor man ikke fik tracket alt, hvad man foretager sig på den ene eller anden del af internettet.
+
+351
+0:26:42,560 --> 0:26:50,460
+ Men jeg tror, at vi... Man kan sige, det er jo spændende lige i øjeblikket.
+
+352
+0:26:50,560 --> 0:26:57,460
+ Man kan sige, det der er ved de fleste af vores apps, som er leveret af amerikanske selskaber, det er jo, at de er bygget med en bagindgang.
+
+353
+0:26:57,560 --> 0:27:11,460
+ Der er den her Passus, som SREMS 2 jo selvfølgelig har begivet sig i lag med, men som er det her med, at amerikanske efterretningstjenester kan forlange data udleveret om brugere, dit og dat.
+
+354
+0:27:11,460 --> 0:27:15,360
+ Fra amerikanske teknologiselskaber.
+
+355
+0:27:15,460 --> 0:27:25,360
+ Altså, der ligger faktisk en højesteretsdom fra USA fra sidste år på det punkt, som gør det klart, at hvis det er et amerikansk selskab, så er det ligegyldigt, hvor dataen er. Hvis de får en dommerkendelse, får de en dommerkendelse.
+
+356
+0:27:25,460 --> 0:27:36,360
+ Lige præcis. Lige præcis. Og der kan man sige, det der jo er interessant, det er jo, at det kæmper EU jo, i hvert fald datatilsynet rundt omkring EU, lidt imod lige i øjeblikket.
+
+357
+0:27:36,460 --> 0:27:41,360
+ Man kan godt sige, det er ikke sådan en... Det er ikke med et vikingeskjold og svær, at de gør det.
+
+358
+0:27:41,360 --> 0:27:55,260
+ Men de gør det med en byrokratsvåben, ikke? Og der kan man sige, der sker noget der. Jeg tror, vi skal nok... Altså, at få et privatliv tilbage, som man havde engang, det bliver nok svært.
+
+359
+0:27:55,360 --> 0:28:07,260
+ Men jeg tror, hvis vi skal have nogle afgrænsninger af, hvad man kan gøre med den data, fordi vi har jo på en eller anden måde uden den store folkelige debat bestemt os for i Vesten, at vi vil have datadrevet samfund.
+
+360
+0:28:07,360 --> 0:28:11,260
+ Det kan man også godt stille et meget stort spørgsmålstegn ved, hvis man spørger mig.
+
+361
+0:28:11,360 --> 0:28:15,260
+ Men ikke desto mindre, så er vi godt ned ad den vej allerede.
+
+362
+0:28:15,360 --> 0:28:23,260
+ Men jeg tror, vi skal have udkæmpet nogle ret store sværdslag for at finde ud af, hvor grænserne går for, hvad vi må med den data.
+
+363
+0:28:23,360 --> 0:28:34,260
+ Og hvem er det egentlig, der har magten over den data? Hvem... Altså... Og det er klart, EU spiller ud med nogle ting. Der er noget DSA, der er noget DMA.
+
+364
+0:28:34,360 --> 0:28:41,260
+ Der er alle mulige forskellige ting. Der er en AI-forordning. Der sker nogle spændende ting. Jeg tror ikke, den endelige løsning ligger der.
+
+365
+0:28:41,460 --> 0:28:47,260
+ Men vi er nødt til at starte med at tage den kamp, hvis vi skal drømme om at have noget, der ligner et privatliv.
+
+366
+0:28:47,360 --> 0:28:52,260
+ Det synes jeg heldigvis, der er nogen, der drømmer lidt om på vores andres vegne.
+
+367
+0:28:52,360 --> 0:28:55,260
+ Der er et spørgsmål hernede fra.
+
+368
+0:28:55,360 --> 0:29:01,260
+ Det er mest, når vi taler om, om man har et privatliv, så synes jeg, vi måske undervurderer nutidens generationer lidt.
+
+369
+0:29:01,360 --> 0:29:05,260
+ Jeg er ældre end dig, Peter, og jeg er måske også lidt gammeldags i mine tilgange.
+
+370
+0:29:05,360 --> 0:29:09,260
+ Der er mange i vores generation, som vil ikke lyve over for computeren.
+
+371
+0:29:09,260 --> 0:29:16,160
+ Hvor jeg har indtryk af, at de nye generationer, 20 og nedefter måske, lyver meget mere, garbler deres data meget mere.
+
+372
+0:29:16,260 --> 0:29:21,160
+ Og på den måde tænker jeg, at nogle af dem måske kan genvende deres anonymitet og deres privatliv.
+
+373
+0:29:21,260 --> 0:29:25,160
+ Jeg håber, de lyver, så det løber af dem, eller hvad det hedder.
+
+374
+0:29:25,260 --> 0:29:30,160
+ Lej. Please lej.
+
+375
+0:29:30,260 --> 0:29:37,160
+ Jeg tror, det er nok en af de her punkter, hvor jeg vil sige, det kan godt være, de tror, de lyver for computeren.
+
+376
+0:29:37,260 --> 0:29:39,160
+ Men det er jo ikke det samme som computeren tror på det.
+
+377
+0:29:39,260 --> 0:29:44,160
+ Nej.
+
+378
+0:29:44,260 --> 0:29:56,160
+ Den mængde data, der er opsamlet om folk, og den måde, det bliver korreleret på, gør, at det virker altså ikke.
+
+379
+0:29:56,260 --> 0:30:05,160
+ Så der skal meget mere fodarbejde til at oprette en separat identitet end det.
+
+380
+0:30:05,260 --> 0:30:09,160
+ Men her må man skilne imellem.
+
+381
+0:30:09,160 --> 0:30:14,060
+ Det er en offentlig facade af de informationer, som for eksempel blev præsenteret på Facebook.
+
+382
+0:30:14,160 --> 0:30:22,060
+ En af de flotteste kobindinger inde på privatlivet, jeg har set, det var mine børn som teenager, da de opdagede, deres bedstemor var på Facebook.
+
+383
+0:30:22,160 --> 0:30:26,060
+ Så flyttede en hel del content lige væk fra Facebook.
+
+384
+0:30:26,160 --> 0:30:36,060
+ Men hvis man følger med i de sjove historier, så dukker der jo ting op.
+
+385
+0:30:36,160 --> 0:30:39,060
+ For eksempel er der jo flere lande, der har indført biometrisk scanning.
+
+386
+0:30:39,060 --> 0:30:43,960
+ Og det betyder for eksempel, at man kun kan bruge sine hemmelige agenter én gang.
+
+387
+0:30:44,060 --> 0:30:51,960
+ Det nytter jo ikke, at det samme iPrint kommer med et nyt navn og et nyt pas et par år senere.
+
+388
+0:30:52,060 --> 0:30:57,960
+ Så det vil sige, at hvis man har brugt sin hemmelige agent i Israel én gang, så kan man ikke bruge vedkommende i Israel igen med en anden identitet.
+
+389
+0:30:58,060 --> 0:31:07,960
+ Og det synes jeg lige, at vi skal overveje, og lige prøve at tænke på, hvad den betyder for almindelige mennesker.
+
+390
+0:31:09,060 --> 0:31:12,960
+ Hvor hårdt er vores identiteter bundet op mellem de her forskellige firmaer?
+
+391
+0:31:13,060 --> 0:31:18,960
+ Vi ser og tænker meget på Facebook og Google og Amazon og sådan nogle.
+
+392
+0:31:19,060 --> 0:31:25,960
+ Men der er en hel underskov nedenunder, som får mere eller mindre åbenlyse formål.
+
+393
+0:31:26,060 --> 0:31:32,960
+ Det meste af det, det er market research, bygger profiler på folk.
+
+394
+0:31:33,060 --> 0:31:36,960
+ Altså i USA er credit ratings en stor ting.
+
+395
+0:31:36,960 --> 0:31:40,860
+ Og de sluger alle de data, de kan få fat i, og det har de altid gjort.
+
+396
+0:31:40,960 --> 0:31:46,860
+ Så der ligger en skov og snager på folk. Og hvis du lyver, jamen det tæller ikke godt i din credit rating.
+
+397
+0:31:46,960 --> 0:31:49,860
+ Så kan man jo ikke stole på dig.
+
+398
+0:31:49,960 --> 0:32:00,860
+ Så jeg tror ikke den der med at påstå, at man er 18 år, så man godt må købe øl. Jeg tror altså ikke, den er mere effektiv.
+
+399
+0:32:00,960 --> 0:32:04,860
+ Bare fordi du ikke tror på det, kan det godt være rigtigt.
+
+400
+0:32:04,860 --> 0:32:10,760
+ Jeg er absolut i faren for at blive gammel og kynisk, ikke også?
+
+401
+0:32:10,860 --> 0:32:20,760
+ Men desværre må jeg jo erkende, at meget af det kommer af at vide ting, som jeg kan ske enigt ville leve lykkeligere, hvis ikke jeg havde vidst.
+
+402
+0:32:20,860 --> 0:32:30,760
+ Men jeg tror ikke, vi skal foregørelse hverken os selv eller vores børn, at de bare kan bruge et andet navn, og så er problemet løst.
+
+403
+0:32:30,860 --> 0:32:34,760
+ Jeg ser jo det her som et fundamentalt menneskerettighedsproblem.
+
+404
+0:32:34,760 --> 0:32:44,660
+ Jeg mener jo, at man burde åbne FN's charter igen, og så burde man kanskje indføre, at indsamlede data om personer aldrig må bruges til de personers ulempe.
+
+405
+0:32:48,760 --> 0:32:51,660
+ Jeg skal lige høre Bo Elke her. Jeg tænkte på den her diskussion omkring...
+
+406
+0:32:51,760 --> 0:32:57,660
+ Altså da det her ligesom starter, den der ballade, du startede omkring Asialon, og den måde den har kørt videre på med Snowden,
+
+407
+0:32:57,760 --> 0:33:03,660
+ der har det hele tiden været en debat, der rigtig meget handler om efterretningstjenester, hver sus hinanden,
+
+408
+0:33:03,660 --> 0:33:10,560
+ og hvordan samler de oplysninger sammen på folk. Hvorimod det vi jo også sidder og snakker om nu, det er, at det måske virkelig er noget ligegyldigt,
+
+409
+0:33:10,660 --> 0:33:14,560
+ for nu kan de bare købe alle oplysningerne, f.eks. de der app-developers eller et eller andet andet.
+
+410
+0:33:14,660 --> 0:33:19,560
+ Altså er der overhovedet en tid for signalet til den til nu? Kan det betale sig?
+
+411
+0:33:19,660 --> 0:33:27,560
+ Jamen det er der jo, og der bliver jo også kastet rigtig mange ressourcer i det. Men man trækker jo data ind fra alle de platformer, som man kan finde det på,
+
+412
+0:33:27,660 --> 0:33:33,560
+ og det bliver jo nemmere, når vi så selv uploader data til alle mulige mærkelige platformer.
+
+413
+0:33:33,560 --> 0:33:44,460
+ Ja, signalet til tendenser er jo en god og stærk forretning, og en god og stærk forretningsmodel også for de private aktører, som leverer serviceydelser til det.
+
+414
+0:33:44,560 --> 0:33:50,460
+ Og der er nævnt et par store danske teknologivirksomheder, som har et stort eksportmarked, er præcis.
+
+415
+0:33:50,560 --> 0:33:56,460
+ Og en af de ting, som man gør, det er jo også at kombinere de data, som er open source, som man kan få adgang til alle steder fra,
+
+416
+0:33:56,560 --> 0:34:03,460
+ altså man kan købe med det, som er closed source, som man så kan opsnappe via sine forskellige aflytningssystemer.
+
+417
+0:34:03,560 --> 0:34:13,460
+ Der er du nok nu, du kommer ind, Peter Christian. Du var i gang med at tale i starten af den her debat, der var du i gang med at snakke om de her store tech-giganter og datacenter i Danmark,
+
+418
+0:34:13,560 --> 0:34:17,460
+ som du mener, måske havde en anden og lidt mere sådan shady rolle, end de ser ud til.
+
+419
+0:34:17,560 --> 0:34:20,460
+ Du vil gerne have mig til at levere på mit frø?
+
+420
+0:34:20,560 --> 0:34:21,460
+ Ja.
+
+421
+0:34:21,560 --> 0:34:30,460
+ Jamen, det er selvfølgelig også dernede. Altså, man kunne sige så fremt, at det ikke er så godt at opbevare sine data i et træde land.
+
+422
+0:34:30,560 --> 0:34:33,460
+ Lad os sige, at mine data hos Google, de leverer service.
+
+423
+0:34:33,560 --> 0:34:41,460
+ De ligger i USA på amerikanske serverer, så er det nok ret nemt at få fat i dem, hvis man gerne ville det, om man hedde NSA eller noget andet.
+
+424
+0:34:41,560 --> 0:34:48,460
+ Hvis man så gerne, i hvert fald, om ikke andet ville foregive, og nu siger jeg angiveligt mange gange,
+
+425
+0:34:48,560 --> 0:34:55,460
+ men hvis man gerne ville foregive, at man ikke længere opbevare danske brugeres data på amerikanske serverer, for eksempel,
+
+426
+0:34:55,560 --> 0:34:59,460
+ så kunne man jo få datacenter i Danmark.
+
+427
+0:34:59,560 --> 0:35:03,460
+ Og velvidende, som Paul.
+
+428
+0:35:03,560 --> 0:35:11,460
+ Selvfølgelig for, at man har alle mulige muligheder, som amerikanske myndigheder, at sige til amerikanske virksomheder,
+
+429
+0:35:11,560 --> 0:35:19,460
+ altså lige meget hvor noget ligger henne, om det så lå i Europa, så kunne det jo godt være, at vi stadig har en bagindgang.
+
+430
+0:35:19,560 --> 0:35:31,460
+ Nu ligger Microsofts datacenter så i kø eller udenfor kø. Lille Skensved, måske. Helt tilfældigt. Eller et andet sted. Eller i Viborg.
+
+431
+0:35:31,460 --> 0:35:33,360
+ You name it.
+
+432
+0:35:33,460 --> 0:35:41,360
+ Så kunne det jo godt være, at der stadig var de muligheder, og måske også de samarbejdsmuligheder med danske myndigheder, som havde været der hele tiden.
+
+433
+0:35:41,460 --> 0:35:52,360
+ Men det hele, i hvert fald teknisk set, ser ud til at leve op til nogle krav og noget jura, som er formuleret i noget GDPR og noget andet.
+
+434
+0:35:52,460 --> 0:35:57,360
+ Det kan være, at det er en del af en større plan.
+
+435
+0:35:57,460 --> 0:35:59,360
+ En slags lovliggørelse, kan man sige.
+
+436
+0:35:59,360 --> 0:36:05,260
+ Det er måske en slags lovliggørelse af noget, som alligevel sker. Angiveligt.
+
+437
+0:36:05,360 --> 0:36:18,260
+ Her skal man så lige overveje. Sådan en øvelse, jeg laver regelmæssigt. Hvis det var mig, der havde det job, og hvis det var mig, der var chef for den tyske efterretningstjeneste,
+
+438
+0:36:18,360 --> 0:36:27,260
+ så ville jeg da prøve på at få placeret en agent hos Facebook, så jeg fik adgang til deres data, hvis det var nødvendigt.
+
+439
+0:36:27,260 --> 0:36:33,160
+ Det var ikke the full take osv., men hvis nu man lige havde en enkelt person, man havde brug for at få slået op, så ville det være rart at have et telefonnummer i USA,
+
+440
+0:36:33,260 --> 0:36:37,160
+ man kunne ringe til en og sige, hvad kan du ikke lide?
+
+441
+0:36:37,260 --> 0:36:45,160
+ Og med den størrelse, som både, her kan vi starte fra en ende af, Google, Facebook, Amazon osv.
+
+442
+0:36:45,260 --> 0:36:56,160
+ Det er da fuldstændig sikkert, at der er efterretningstjenester, både dem vi er venner med, dem vi ikke er venner med, dem vi har været venner med, som har placeret folk i de virksomheder.
+
+443
+0:36:56,160 --> 0:37:04,060
+ For det ville da være åndssvagt andet, at der ligger så store mængder data, og man ikke har en mulighed for at slå op i dem.
+
+444
+0:37:04,160 --> 0:37:14,060
+ Og det synes jeg tilfører sådan en, igen, selv hvis man prøver at sætte et eller andet juridisk hegn omkring de her virksomheder,
+
+445
+0:37:14,160 --> 0:37:21,060
+ så skal man også gøre det rundt omkring 100.000 medarbejdere i hele verden. Dream on.
+
+446
+0:37:21,160 --> 0:37:26,060
+ Jeg har begyndt at se på personens hørenførbare data som helium.
+
+447
+0:37:26,060 --> 0:37:32,960
+ Når man laver fysikeksperimenter, så bruger man helium til at finde ud af, om det er lufttæt, når man skal vakuumteste noget.
+
+448
+0:37:33,060 --> 0:37:36,960
+ Fordi helium er små atomer, de er ikke elektrisk lavet, de er fiselige igennem alting.
+
+449
+0:37:37,060 --> 0:37:40,960
+ Og jeg har det ligesom med personhørenførbare data, det er på samme måde, det lægger ud alle steder.
+
+450
+0:37:41,060 --> 0:37:53,960
+ Så sender Danmarkstatistikkens idé til det kinesiske konsulat uden at kvotere den, og folk glemmer laptops og mobiltelefoner og alle sådan nogle ting.
+
+451
+0:37:53,960 --> 0:38:03,860
+ Og derfor synes jeg, det kan godt være, at der er sådan en juridisk fineblad omkring, at nu opretter Microsoft datacenter i Danmark,
+
+452
+0:38:03,960 --> 0:38:07,860
+ men det virker for mig som om, det vil være en meget stor investering i et meget lille fineblad.
+
+453
+0:38:07,960 --> 0:38:11,860
+ Jeg tror, at der er en konkret mening med det, at de skal bruge noget computerkarakter.
+
+454
+0:38:11,960 --> 0:38:19,860
+ De skal jo levere FE's cloud-kapaciteter helt konkret, så det er jo meget håndgribeligt, men det andet er måske meget praktisk.
+
+455
+0:38:19,960 --> 0:38:23,860
+ Jo jo, selvfølgelig kan man lige så godt bruge finebladet, hvis det er der.
+
+456
+0:38:23,960 --> 0:38:29,860
+ Men Peter Christian Bæk, bare lige for at vende tilbage til noget, vi var inde på lidt tidligere.
+
+457
+0:38:29,960 --> 0:38:37,860
+ Det her med, hvad vi skal gøre ved det. Altså skal vi klemme det her kabel, som Boelka foreslog, vi skal jo klemme et kabel over,
+
+458
+0:38:37,960 --> 0:38:43,860
+ og så er vi fri for at have med NSA at gøre. Kan Danmark leve, kan vi fungere uden efterretningssamarbejder med amerikanerne?
+
+459
+0:38:43,960 --> 0:38:51,860
+ Altså vi ved jo, at tyskerne, som jo kunne tillade sig at blive farvet, og at vi havde overvåget med vores NSA-samarbejde, havde overvåget nogle af deres ledere.
+
+460
+0:38:51,960 --> 0:38:53,860
+ De har jo gjort det samme.
+
+461
+0:38:53,960 --> 0:39:05,860
+ Ja, de har gjort det samme tidligere. Så man kan sige, amerikanerne er jo dem, der sidder på det store netværk, og så er vi dele af det netværk, hvis vi skal tale i lidt banale termer.
+
+462
+0:39:05,960 --> 0:39:23,860
+ Så de beskriver jo vilkårene for at kunne dele data, dele informationer, og kan jo også på mange måder spille mange andre ud mod hinanden, eller i hvert fald tappe i hver ende af kablerne.
+
+463
+0:39:23,960 --> 0:39:29,860
+ Jeg tror ikke, det er nemt at komme ud af. Jeg tror heller ikke, at der er nogen nem løsning på, hvad der skal træde i stedet for.
+
+464
+0:39:29,960 --> 0:39:43,860
+ Men jeg tror måske, at det er rigtig smart, at vi... Altså jeg forstår jo ikke... I princippet burde der jo være en uendelig mængde retssager hele tiden, fordi folk får overtrådt det ene og det andet og det tredje.
+
+465
+0:39:43,960 --> 0:39:51,860
+ Om ikke andet så Mark Schrems her, som jo efterhånden er blevet et household name, i hvert fald i sådan nogle data-bevidste miljøer.
+
+466
+0:39:51,860 --> 0:40:08,760
+ Han viser jo i hvert fald, at der er noget, der kan rejse den store debat. Jeg ved ikke, om jeg er optimist af natur, men jeg tror i hvert fald, at jo mere konkret det bliver for almindelige mennesker, at deres børn lige pludselig er blevet en vare på Googles hylder.
+
+467
+0:40:08,860 --> 0:40:19,760
+ I hvert fald i form af data og andre ting. Jo mere man forstår det, jo mere forstår man også, hvor langt inde i et meget digitalt samfund man er.
+
+468
+0:40:19,760 --> 0:40:27,660
+ Hvis det skal blive til noget andet i en form i et demokratisk samfund, så er man nødt til at have en folkelig debat.
+
+469
+0:40:27,760 --> 0:40:37,660
+ Uagtet at vi alle sammen herinde i det her telt er meget kloge og er sikre på, så det bliver formentlig ikke os, der kommer til at afgøre, hvordan det her falder ud.
+
+470
+0:40:37,760 --> 0:40:47,660
+ Men hvis vi kan rejse det på et meget konkret plan, og det er også noget rent journalistisk i det vi laver, det er noget af det, jeg tænker tit, det er, at vi skal gøre det her meget konkret, meget forståeligt.
+
+471
+0:40:47,660 --> 0:40:55,560
+ Meget i forbindelse med den enkeltes liv, hvis vi skal kunne rejse spændende debatter om, hvad det her betyder.
+
+472
+0:40:55,660 --> 0:41:04,560
+ Peter Kofod, hvad tror du, der kan, hvad skal der jo til, for at vi får det her, skal der klippes det kabel?
+
+473
+0:41:04,660 --> 0:41:15,560
+ Altså da jeg var en lille smule yngre, der havde jeg helt klart sagt ja. Og mest bare fordi man er sur. Hvis man klipper det skide kabel der, så kommer der ikke noget andet i stedet for, og så overvåger de jo også bare det.
+
+474
+0:41:15,660 --> 0:41:17,560
+ Altså så hvad...
+
+475
+0:41:17,660 --> 0:41:22,560
+ Vi vil også gerne kunne sende en e-mail til USA eller whatever, altså så er vi nok nødt til at have nogle kabler.
+
+476
+0:41:22,660 --> 0:41:31,560
+ Men jeg synes, det bliver mere og mere tydeligt, at lige hvad det her med kabeltarbejde angår, så noget af problemet har løst sig selv her efter Snowden.
+
+477
+0:41:31,660 --> 0:41:39,560
+ Fordi der, og vi er slet ikke i mål, men fordi der er så meget mere, der begynder at blive krypteret på ansvarlig vis. Der er så meget mere af trafikken, der egentlig er beskyttet.
+
+478
+0:41:39,660 --> 0:41:47,560
+ Altså så du ved, i min allerbedste fantasiverden, så kunne jeg da godt tænke mig, at vi havde nogle efterretningstjenester, der opførte sig ordentligt på i USA.
+
+479
+0:41:47,660 --> 0:41:54,560
+ Men altså jeg var også godt af 100 venner og besøger et svenske bikini-team og et blowjob eller et eller andet. Jeg er ikke sikker, at jeg får det af den grund.
+
+480
+0:41:54,660 --> 0:42:02,560
+ Så man må hellere begynde at planlægge, hvad man så gør, hvis nu man ikke får det. Og der synes jeg jo bare, at løsningen er, at okay fedt, så lad dem tage det lort.
+
+481
+0:42:02,660 --> 0:42:10,560
+ Men sørg for, at de ikke kan bruge det til en skid. Altså så kan de sidde og smøre sig ens hendebånder ned til strenge ettalere og nullere og sådan noget.
+
+482
+0:42:10,660 --> 0:42:17,560
+ Og det løser jo ikke alle problemer, men altså... Men det er jo en skandal, at bare fordi man har adgang til et kabel, så kan man høre, hvad folk siger til et eller andet.
+
+483
+0:42:17,660 --> 0:42:24,560
+ Fuck det. Der er noget galt. Der er noget galt med den måde, vi kører vores kommunikationsinfrastruktur på.
+
+484
+0:42:24,660 --> 0:42:30,560
+ Og i varierende grad, så er vi det samme med mail og app og sådan noget. Men det er blevet bedre. Og vi er slet ikke i mål, at det skal blive meget bedre.
+
+485
+0:42:30,660 --> 0:42:37,560
+ Men jeg tror, at vi skal indstille os på, at vi er nødt til at ændre teknikken, før efterretningstjenesterne pludselig får en samvittighed.
+
+486
+0:42:37,660 --> 0:42:47,560
+ Jamen det vil jeg godt opponere mod, fordi det meste af den kriterie, der er sket siden Snowden, den har handlet om at forhindre uafhængige forskere i at forske i, hvor meget
+
+487
+0:42:47,660 --> 0:42:50,560
+ Facebook og Google spionerer på folk.
+
+488
+0:42:50,660 --> 0:42:53,560
+ Ikke uenigt, men der er også en del andre ting, der er udtrykket, ikke?
+
+489
+0:42:53,660 --> 0:43:02,560
+ HTTP2-protokollen og HTTP3-protokollen handler primært om at gøre det umuligt at se, hvor meget Facebook og Google snager i folks personlige data.
+
+490
+0:43:02,660 --> 0:43:09,560
+ Og det, synes jeg, er en meget stor pris at betale. Og derfor er jeg nemlig overhovedet ikke enig i den her, at vi bare krypterer hele lortet.
+
+491
+0:43:09,660 --> 0:43:17,560
+ Jeg mener, at vi skal kryptere de vigtige ting. Men kræver de andre åbne, så vi kan se, hvad det er, Facebook og Google henter?
+
+492
+0:43:17,660 --> 0:43:24,560
+ Jeg synes, det er et stort problem, at de er i stand til med deres teknologiske magt at påvirke.
+
+493
+0:43:24,660 --> 0:43:32,560
+ De styrer effektivt set de browsers, vi har at vælge imellem, hvor der reelt set kun er tre tilbage.
+
+494
+0:43:32,660 --> 0:43:46,560
+ De vælger, hvilke protokoller vi kører. End of story. Jeg mener ikke, at de skal have den slags privilegier på over-nationelt niveau.
+
+495
+0:43:46,560 --> 0:43:50,460
+ Slet ikke, fordi de ikke engang fortæller skat.
+
+496
+0:43:50,560 --> 0:43:57,460
+ En anden ting, jeg så godt lige vil påpege i den her diskussion, og det er sådan en dirty secret, som politikerne alle sammen udmærket er klar over,
+
+497
+0:43:57,560 --> 0:44:09,460
+ det er, at efterretningstjenester virker forbandeligt dårligt. Bill Clinton gad stort set ikke høre på CIA, fordi de havde totalt afvist,
+
+498
+0:44:09,560 --> 0:44:13,460
+ at der var nogen far på, at muren på noget tidspunkt kunne vælge.
+
+499
+0:44:13,460 --> 0:44:28,360
+ Og det påvirkede lidt deres troværdighed i hans øjne. Vi så i Danmark i optagten til Irakkrigen, hvordan FE lavede et dokument, som vi så fik lov til at se.
+
+500
+0:44:28,460 --> 0:44:40,360
+ Der var dele, der var fjernet af det. Men det var mest klip fra åbne aviser. Der var intet i det, som havde nogen som helst form for substans, der tydede på, at de var enten første års journaliststuderende,
+
+501
+0:44:40,360 --> 0:44:48,260
+ og det ligger i efterretningstjenesters natur, at det er ulukket. Vi må ikke snakke om det, vi laver, for det er hemmeligt.
+
+502
+0:44:48,360 --> 0:44:59,260
+ Men det betyder, at man får et karriereforløb inde i den her lille eko-klokke. Man kan ikke få job andre steder. Hvad har du lavet de sidste syv år? Det må jeg ikke snakke om.
+
+503
+0:44:59,360 --> 0:45:09,260
+ Hvor salbart er det? Så efterretningstjenester er i virkeligheden en ufatteligt dårlig økonomi. Men alle de andre har en.
+
+504
+0:45:09,360 --> 0:45:10,260
+ Så ligesom med slagskibet.
+
+505
+0:45:10,360 --> 0:45:22,260
+ Så skal vi også have en. Jeg har snakket med en del politikere og sagt, at der findes håndgribelige beviser på, at F.E. har været bare i nærheden af at være pengene værd.
+
+506
+0:45:22,360 --> 0:45:31,260
+ Og der er mange, der siger, at de har ikke set noget. Og så er der nogen, der siger, at de har slet ikke set noget. Og så er der nogen, der siger, at de har set det modsatte.
+
+507
+0:45:31,360 --> 0:45:40,260
+ Uden at komme ind på detaljer om, hvor de har hørt eller set noget. Men der bliver hældt i øjeblikket vist nok et par minutter.
+
+508
+0:45:40,560 --> 0:45:46,260
+ Der bliver 100 milliarder i NSA om året. Dollars. Men det er faktisk ikke åbenlyst, at der kommer noget for pengene.
+
+509
+0:45:46,360 --> 0:45:53,260
+ Og det kan også skære sådan en vinkel og angribe det her problem frem. At sige, at de her penge faktisk gik godt ud.
+
+510
+0:45:53,360 --> 0:46:00,260
+ Vil det være en bedre idé for den danske stat at lære en aftale med Google og Facebook om de informationer de skal bruge.
+
+511
+0:46:00,360 --> 0:46:08,260
+ End at drive øen derude på Amager. Og det synes jeg er en diskussion, som er meget værd at tage med.
+
+512
+0:46:08,260 --> 0:46:13,780
+ Alene med det budget, FE har, er det indlydelsen, at de ikke kan løse den opgave, som politikerne gerne vil have dem til at løse.
+
+513
+0:46:16,240 --> 0:46:20,240
+ Hvad siger du, Bo Elger? Er du enig i den antagelse, at det er efterretningstjenester, der ikke kan finde ud af noget som helst?
+
+514
+0:46:20,880 --> 0:46:23,520
+ Jeg har ikke sagt, at de ikke kan finde ud af noget som helst. Jeg har sagt, at de ikke er pengene værd.
+
+515
+0:46:23,760 --> 0:46:24,640
+ Nå ja, det var altså...
+
+516
+0:46:24,640 --> 0:46:26,000
+ Jeg sagde så, at jeg er fuldstændig.
+
+517
+0:46:27,280 --> 0:46:32,940
+ Det kan man jo se på de sager, som er kommet frem, og det kan man jo se på FE's vurdering af Ukraine, for eksempel.
+
+518
+0:46:34,080 --> 0:46:34,880
+ Lige i lægebogen.
+
+519
+0:46:34,880 --> 0:46:39,140
+ De rammer ikke rigtigt i deres analyser.
+
+520
+0:46:40,320 --> 0:46:42,140
+ Ikke i de analyser, der kommer frem, i hvert fald.
+
+521
+0:46:43,240 --> 0:46:47,380
+ Og det er jo ikke noget, der taler godt. Det er jo ikke god publicity for dem, som jeg så med siden.
+
+522
+0:46:48,840 --> 0:46:50,360
+ Men altså, i forhold til det...
+
+523
+0:46:50,360 --> 0:46:52,280
+ Jeg vil gerne lige vende tilbage til det der med at klippe kabel.
+
+524
+0:46:52,340 --> 0:46:53,820
+ Nu sagde jeg så glad og kægt, ja.
+
+525
+0:46:54,300 --> 0:47:03,200
+ Men det indebærer jo også, at vi skal vinke farvel til al den infrastruktur, som jo er fuldstændig infiltreret med den adgang til oplysninger.
+
+526
+0:47:04,160 --> 0:47:04,860
+ Og det kan man jo se på de sager, som er kommet frem.
+
+527
+0:47:04,860 --> 0:47:09,660
+ Det kan jo blive svært. Så skal vi helt tilbage til et analogt samfund, og så bygge det op fra scratch.
+
+528
+0:47:10,900 --> 0:47:23,080
+ Og som jeg sagde i det der oplæg lige før, så fandt vi jo, og det er så 20 år siden, vi fandt jo efterretningstjenesternes fingeraftryk overalt, hvor vi kiggede i al digital infrastruktur.
+
+529
+0:47:23,180 --> 0:47:27,600
+ Altså fra GSM og hele vejen igennem.
+
+530
+0:47:28,240 --> 0:47:34,840
+ Og ikke bare sådan et indbrud i hver system, men en redundans hele tiden, så hvis et bliver opdaget, så er der altid nogen, der falder tilbage.
+
+531
+0:47:34,860 --> 0:47:40,260
+ Og tingene bliver jo svækket, og det er jo en svækkelse, som andre så kan udnytte, hvis de vil.
+
+532
+0:47:41,680 --> 0:47:43,320
+ Og de kan jo så komme fra Nord.
+
+533
+0:47:44,340 --> 0:47:53,580
+ Når TDC køber ruter af Huawei, så er balladen henledt sikkert om, at der ikke var backdoor til dem.
+
+534
+0:47:53,700 --> 0:47:54,080
+ Ja, formentlig.
+
+535
+0:47:56,900 --> 0:48:02,940
+ Men det er bare for at sige, at de er jo med os i alt, hvad vi gør potentielt.
+
+536
+0:48:02,940 --> 0:48:06,940
+ Og det gør altså, at noget af det normale skal rulle tilbage, ikke?
+
+537
+0:48:07,220 --> 0:48:14,560
+ Jeg synes, vi er endt et meget trist sted i den her diskussion, fordi vi har nogle efterretningstjenester, som ikke laver deres arbejde ordentligt,
+
+538
+0:48:14,700 --> 0:48:17,440
+ eller som ikke er effektive, og ikke er pengene værd.
+
+539
+0:48:18,080 --> 0:48:25,060
+ Og så har vi nogle tech-giganter, vi ikke kan slippe af med, og så har vi nogle aftaler med USA, som vi heller ikke kommer til at slippe af med.
+
+540
+0:48:25,060 --> 0:48:29,200
+ Jeg tror også, at vi godt kan slippe af med noget af tech-giganterne.
+
+541
+0:48:29,900 --> 0:48:32,920
+ Altså tech-giganterne kan man jo trods alt lovgive sig ret meget ud.
+
+542
+0:48:32,940 --> 0:48:39,720
+ Jeg er ret sikker på, at magthavere til evig tid vil ønske sig at have et efterretningsvæsen.
+
+543
+0:48:42,220 --> 0:48:49,500
+ Meget af det, de laver i dag, kan man jo købe af databrokers, eller finde igennem en eller anden form for open source intelligence.
+
+544
+0:48:50,380 --> 0:48:59,020
+ Men jeg tror, at efterretningstjenester vil vedblive at være en del af en stat, så længe vi har stater, som vi kender dem som nationalstater i dag.
+
+545
+0:48:59,020 --> 0:49:09,480
+ Men jeg tror, at vi godt kan sparke tech-giganterne noget længere ud af vores mest private liv, end de er nu.
+
+546
+0:49:09,740 --> 0:49:11,260
+ Det tror jeg sådan set på, at vi kan.
+
+547
+0:49:13,100 --> 0:49:18,980
+ Hvor vilde kapaciteter efterretningstjenester så stadig vil have i form af baghengang.
+
+548
+0:49:19,100 --> 0:49:26,580
+ Altså man kan sige, at vi kan jo også, lige i øjeblikket er det måske et valg mellem at have ting, der har en kinesisk baghengang eller en amerikansk baghengang.
+
+549
+0:49:27,260 --> 0:49:27,980
+ Det kan man sige.
+
+550
+0:49:28,220 --> 0:49:29,000
+ Og all of the above.
+
+551
+0:49:29,020 --> 0:49:30,600
+ Eller all of the above, ikke?
+
+552
+0:49:30,940 --> 0:49:34,220
+ Og det kan man sige, det er jo sådan lidt et pest-eller-kola-valg.
+
+553
+0:49:34,540 --> 0:49:38,380
+ Men jeg tror sådan set godt, at vi kan få sparket dem længere ud af vores privatliv.
+
+554
+0:49:38,780 --> 0:49:47,020
+ Men det kræver, at vi, altså jeg synes jo meget, at det her på mange måder lander banalt, fordi vi skal jo sådan set bare opretholde meget af det.
+
+555
+0:49:47,140 --> 0:49:55,140
+ Altså jeg kan ikke sætte mig ned og lave et arkiv over alle jer inde i det her lokale og tage billeder af jer, og så lave det fysiske arkiv og opbevare alle mulige private oplysninger.
+
+556
+0:49:55,220 --> 0:49:57,080
+ Det vil være bondelovligt selv for GDPR.
+
+557
+0:49:57,080 --> 0:50:00,900
+ Så hvorfor kan en stor virksomhed lave sådan nogle arkiver?
+
+558
+0:50:01,720 --> 0:50:07,520
+ Og tage mine meget sirlige citater om alt, hvad jeg foretager mig at klikke på, ikke?
+
+559
+0:50:08,240 --> 0:50:10,520
+ Altså det kunne vi jo have startet med i sin tid.
+
+560
+0:50:10,600 --> 0:50:11,420
+ Nu er det lidt sent, ikke?
+
+561
+0:50:11,720 --> 0:50:18,020
+ Men så kan vi jo om ikke andet begynde at håndhæve de regler, som findes i den fysiske verden.
+
+562
+0:50:19,080 --> 0:50:20,800
+ Ja, det tror jeg, det kunne man begynde at gøre.
+
+563
+0:50:21,100 --> 0:50:22,580
+ Selvfølgelig at overholde de fysiske regler.
+
+564
+0:50:22,580 --> 0:50:26,040
+ Jeg tror, vi er ved at løbe tør for tid, men jeg skal lige høre, er der nogen?
+
+565
+0:50:26,120 --> 0:50:27,060
+ Der må være nogle spørgsmål.
+
+566
+0:50:27,080 --> 0:50:29,260
+ Der er nogle spørgsmål derude. Der er Runker der, lige ved siden af dig.
+
+567
+0:50:31,500 --> 0:50:31,820
+ Hej.
+
+568
+0:50:32,660 --> 0:50:42,240
+ Jeg er måske lidt uenig i det der med, at efterretningstjenester ikke er super gode til deres arbejde.
+
+569
+0:50:42,300 --> 0:50:44,080
+ Jeg tror, de er gode til nogle ting. De er rigtig gode til at være reaktive.
+
+570
+0:50:45,420 --> 0:50:50,780
+ Men når de skal være i kristaldkuglen og kigge fremadrettet, det er der, vi gentagende gang har fejlet.
+
+571
+0:50:51,200 --> 0:50:54,320
+ Men når de er reaktive, det ser vi fx i en krig i Ukraine, så er det jo sådan, hvad kan jeg sige,
+
+572
+0:50:54,760 --> 0:50:56,500
+ det er dog bemærkelseværdigt.
+
+573
+0:50:57,080 --> 0:51:05,140
+ Ukraine er til at finde targets med deres bomber, i forhold til hvad de har for et forsvar.
+
+574
+0:51:05,560 --> 0:51:08,640
+ Der er helt klart nogle amerikanere, der fitter med en masse intelligence her.
+
+575
+0:51:09,160 --> 0:51:11,560
+ Jeg tror, det er måske også vigtigt at sige, hvad er de?
+
+576
+0:51:12,000 --> 0:51:16,540
+ Der er ligesom to dimensioner på det her. Der er den meget reaktive, og så er der den fremadrettede.
+
+577
+0:51:16,540 --> 0:51:26,460
+ Og vi har på en eller anden måde pålagt, fra politisk side også, vores efterretningstjenester at være ekstremt fremadrettet,
+
+578
+0:51:26,480 --> 0:51:27,060
+ fremadskuende.
+
+579
+0:51:27,080 --> 0:51:32,620
+ De kan kigge i kustaldkuglen, men de er ikke særlig dygtige til det, fordi når de ved, hvad de leder efter,
+
+580
+0:51:32,620 --> 0:51:34,620
+ så skal de sgu nok lave noget.
+
+581
+0:51:34,620 --> 0:51:38,620
+ Så sluk mikrofonen, nå.
+
+582
+0:51:38,620 --> 0:51:40,620
+ Så jeg ved ikke, om I har nogle kommentarer til det.
+
+583
+0:51:40,620 --> 0:51:46,620
+ Jeg synes i hvert fald, der er også set, når det ligesom er inden, så kan det noget helt andet.
+
+584
+0:51:48,620 --> 0:51:50,620
+ Nogle, der vil kommentere?
+
+585
+0:51:50,620 --> 0:51:56,620
+ Det ved jeg jo så ikke, om ikke jeg synes, sagen mod F.E.'s chef,
+
+586
+0:51:57,080 --> 0:51:59,080
+ vidner om nærmest det modsatte.
+
+587
+0:51:59,080 --> 0:52:01,080
+ De må ty til rumaflytning.
+
+588
+0:52:01,080 --> 0:52:03,080
+ Det er det, de gør.
+
+589
+0:52:03,080 --> 0:52:09,080
+ Jo, jo, men altså, det synes jeg ikke virker særlig imponerende, vel?
+
+590
+0:52:09,080 --> 0:52:15,080
+ Altså, det der er det sjove ved det, det er, at der er en parallel til en sag i USA,
+
+591
+0:52:15,080 --> 0:52:21,080
+ hvor FBI aflyttede e-mail-kommunikationen mellem CIA's chef og hans elsker inde.
+
+592
+0:52:21,080 --> 0:52:23,080
+ Og han havde ellers gjort sig visse forholdsregler for, at det ikke var en forholdsregel.
+
+593
+0:52:23,080 --> 0:52:25,080
+ Han havde ellers gjort sig visse forholdsregler for, at det ikke var en forholdsregel.
+
+594
+0:52:25,080 --> 0:52:27,080
+ Han havde ellers gjort sig visse forholdsregler for, at det ikke var en forholdsregel.
+
+595
+0:52:27,080 --> 0:52:29,080
+ Han havde ellers gjort sig visse forholdsregler for, at det ikke var en forholdsregel.
+
+596
+0:52:29,080 --> 0:52:31,080
+ Men det var sådan en af de her, hvor jeg satte kryds i kalenderen.
+
+597
+0:52:31,080 --> 0:52:33,080
+ Men det var sådan en af de her, hvor jeg satte kryds i kalenderen.
+
+598
+0:52:33,080 --> 0:52:35,080
+ Fordi det her, det er faktisk meget vigtigt.
+
+599
+0:52:35,080 --> 0:52:37,080
+ Når FBI kan aflytte chefen for CIA, uden han opdager det,
+
+600
+0:52:37,080 --> 0:52:39,080
+ så er CIA ikke skide dygtige, vel?
+
+601
+0:52:39,080 --> 0:52:41,080
+ Så er CIA ikke skide dygtige, vel?
+
+602
+0:52:41,080 --> 0:52:43,080
+ Brugte han ikke en hotmail-konto, så vi det husker?
+
+603
+0:52:43,080 --> 0:52:45,080
+ Skrev de klæder til hinanden?
+
+604
+0:52:45,080 --> 0:52:47,080
+ Det blev ikke opdaget.
+
+605
+0:52:47,080 --> 0:52:49,080
+ Nej, vi går bare ind og læser hinandens klæder. Det er super hemmeligt.
+
+606
+0:52:49,080 --> 0:52:51,080
+ Det blev ikke opdaget. Det er super hemmeligt.
+
+607
+0:52:51,080 --> 0:52:53,080
+ Det havde han nok læst i nogle efterretninger på et tidspunkt.
+
+608
+0:52:53,080 --> 0:52:55,080
+ Det havde han nok læst i nogle efterretninger på et tidspunkt.
+
+609
+0:52:55,080 --> 0:52:57,080
+ Der står det herovre for os.
+
+610
+0:52:57,080 --> 0:52:59,080
+ Der står det herovre for os.
+
+611
+0:53:01,080 --> 0:53:03,080
+ Der var sådan en historie i vinter,
+
+612
+0:53:03,080 --> 0:53:05,080
+ Der var sådan en historie i vinter,
+
+613
+0:53:05,080 --> 0:53:07,080
+ omkring at man gerne ville have amerikanske soldater
+
+614
+0:53:07,080 --> 0:53:09,080
+ på amerikanske lov til Danmark.
+
+615
+0:53:09,080 --> 0:53:11,080
+ på amerikanske lov til Danmark.
+
+616
+0:53:11,080 --> 0:53:13,080
+ Jeg synes historien fez lidt ud, men jeg tror den startede som...
+
+617
+0:53:13,080 --> 0:53:15,080
+ De er på vej.
+
+618
+0:53:15,080 --> 0:53:17,080
+ Jeg vil bare høre om der er nogle kommentarer til det,
+
+619
+0:53:17,080 --> 0:53:19,080
+ om de kunne bruges til noget i det her.
+
+620
+0:53:19,080 --> 0:53:21,080
+ Det er slet ikke af det.
+
+621
+0:53:21,080 --> 0:53:23,080
+ Det handler bare om at sende en besked til Putin.
+
+622
+0:53:23,080 --> 0:53:25,080
+ Det handler bare om at sende en besked til Putin.
+
+623
+0:53:29,080 --> 0:53:31,080
+ Jeg tør ikke at love,
+
+624
+0:53:31,080 --> 0:53:33,080
+ at der følger alverdens kapaciteter med,
+
+625
+0:53:33,080 --> 0:53:35,080
+ men det ville være mærkeligt,
+
+626
+0:53:35,080 --> 0:53:37,080
+ hvis ikke der var nogle mennesker,
+
+627
+0:53:37,080 --> 0:53:39,080
+ der var dygtige til at analysere data,
+
+628
+0:53:39,080 --> 0:53:41,080
+ som kunne udstationeres.
+
+629
+0:53:41,080 --> 0:53:43,080
+ Som en del af den aftale.
+
+630
+0:53:47,080 --> 0:53:49,080
+ Det er der vist i formand, er der ikke?
+
+631
+0:53:49,080 --> 0:53:51,080
+ Absolut.
+
+632
+0:53:51,080 --> 0:53:53,080
+ Må jeg sådan lidt anekdotisk nævne?
+
+633
+0:53:53,080 --> 0:53:55,080
+ Nu har vi jo snakket kompetence,
+
+634
+0:53:55,080 --> 0:53:57,080
+ og potentielt tilstedeværelse osv.
+
+635
+0:53:57,080 --> 0:53:59,080
+ Hvis man går en tur ned gennem
+
+636
+0:53:59,080 --> 0:54:01,080
+ forsvarets efterretningstjenestes hovedkvarter
+
+637
+0:54:01,080 --> 0:54:03,080
+ Hvis man går en tur ned gennem forsvarets efterretningstjenestes hovedkvarter
+
+638
+0:54:03,080 --> 0:54:05,080
+ på Kastel.
+
+639
+0:54:05,080 --> 0:54:07,080
+ Det er en meget sædværdig og fin tur.
+
+640
+0:54:07,080 --> 0:54:09,080
+ Det er nogle flotte bygninger og et lækkert område.
+
+641
+0:54:09,080 --> 0:54:11,080
+ Folk løber derude på volden osv.
+
+642
+0:54:11,080 --> 0:54:13,080
+ Der er fri adgang.
+
+643
+0:54:13,080 --> 0:54:15,080
+ Når man så går derned igennem,
+
+644
+0:54:15,080 --> 0:54:17,080
+ så kan man se, at der holder to biler med blå ambassadeplader.
+
+645
+0:54:17,080 --> 0:54:19,080
+ Og de her ambassadeplader,
+
+646
+0:54:19,080 --> 0:54:21,080
+ og de her ambassadeplader,
+
+647
+0:54:21,080 --> 0:54:23,080
+ dem kan man så tjekke op mod motorregisteret,
+
+648
+0:54:23,080 --> 0:54:25,080
+ og så kan man finde stændlummerne.
+
+649
+0:54:25,080 --> 0:54:27,080
+ Og så kan man se, at i hvert fald den ene af dem,
+
+650
+0:54:27,080 --> 0:54:29,080
+ en Ford Explorer, den er så købt i Texas.
+
+651
+0:54:31,080 --> 0:54:33,080
+ Så de er her, og de er ikke dygtige.
+
+652
+0:54:33,080 --> 0:54:35,080
+ Det var det, der var min pointe.
+
+653
+0:54:45,080 --> 0:54:47,080
+ Det blev de sidste ord.
+
+654
+0:54:47,080 --> 0:54:49,080
+ I dagens debat.
+
+655
+0:54:49,080 --> 0:54:51,080
+ Mange tak til Bo Elka, journalist,
+
+656
+0:54:51,080 --> 0:54:53,080
+ Poul Henning Kamp, debattør, Peter Godfod, aktivist,
+
+657
+0:54:53,080 --> 0:54:55,080
+ og Peter Christian Bengt Nielsen,
+
+658
+0:54:55,080 --> 0:54:57,080
+ chefredaktør, TechMedia Rater.

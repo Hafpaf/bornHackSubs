@@ -1,0 +1,1939 @@
+# Transcribed 2023-11-12T18 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:10,000
+ Tijana Mihajlović Reviewer Reviewer
+
+2
+0:00:14,840 --> 0:00:20,000
+ Hello everybody, welcome, and thank you for coming to my Pyjamas talk.
+
+3
+0:00:20,000 --> 0:00:25,720
+ We're going to start out with a short video about what the network team has been saying
+
+4
+0:00:25,720 --> 0:00:31,120
+ over the past many years about our bandwidth consumption.
+
+5
+0:00:31,120 --> 0:00:36,900
+ So a normal day usage on the Bonhack network has been pretty slow.
+
+6
+0:00:36,900 --> 0:00:39,100
+ You're not doing a lot on the network.
+
+7
+0:00:39,100 --> 0:00:43,680
+ So if you bring more devices next year and put them on the wired network, we can use
+
+8
+0:00:43,680 --> 0:00:47,240
+ more bandwidth.
+
+9
+0:00:47,240 --> 0:00:51,600
+ We also used a little bit of bandwidth, and when I say a little bit, it is a little bit.
+
+10
+0:00:51,600 --> 0:00:54,960
+ It's not a lot of bandwidth used in this camp.
+
+11
+0:00:54,960 --> 0:00:59,780
+ But, 400 megabit?
+
+12
+0:00:59,780 --> 0:01:02,400
+ Should you give yourself a round of applause for 400 megabit?
+
+13
+0:01:02,400 --> 0:01:07,660
+ Do you understand about hashtag use more bandwidth?
+
+14
+0:01:07,660 --> 0:01:16,600
+ We used 3.7 terabytes down and 400 gigabytes up last year, and it was kind of, you know,
+
+15
+0:01:16,600 --> 0:01:20,280
+ it wasn't embarrassing, but close.
+
+16
+0:01:20,280 --> 0:01:24,300
+ Still we have, as you saw, we have ample room for more usage.
+
+17
+0:01:24,300 --> 0:01:29,480
+ We have not seen saturation of the fiber.
+
+18
+0:01:29,480 --> 0:01:37,740
+ Last year I had this recurring thing saying use more bandwidth, and, hmm, well, I just
+
+19
+0:01:37,740 --> 0:01:41,160
+ skipped that hashtag because apparently it's not working to say it.
+
+20
+0:01:41,160 --> 0:01:46,260
+ But when I look at this slide, I'm thinking, I'm going to have a hard time convincing Orca
+
+21
+0:01:46,260 --> 0:01:50,160
+ to give us 3 gigabit next year, or 5, or 10.
+
+22
+0:01:50,160 --> 0:01:53,120
+ So we kind of need to do some design changes in order to use more bandwidth.
+
+23
+0:01:53,120 --> 0:01:54,120
+ I'm going to have a hard time convincing Orca to give us 3 gigabit next year, or 5, or 10. So we kind of need to do some design changes in order to use more bandwidth.
+
+24
+0:01:54,300 --> 0:01:56,000
+ I'm going to have a hard time convincing Orca to give us 3 gigabit next year, or 5, or 10. So we kind of need to do some design changes.
+
+25
+0:01:56,000 --> 0:01:56,500
+ I'm going to have a hard time convincing Orca to give us 3 gigabit next year, or 5, or 10. So we kind of need to do some design changes in order to use more bandwidth.
+
+26
+0:01:56,500 --> 0:01:58,180
+ I'm going to have a hard time convincing Orca to give us 3 gigabit next year, or 5, or 10. So we kind of need to do some design changes in order to use more bandwidth.
+
+27
+0:01:58,180 --> 0:02:11,400
+ I'm going to have a hard time convincing Orca to give us this
+
+28
+0:02:11,400 --> 0:02:18,240
+ Exactly one year ago after the last talk you saw in the bar, a member of the network team
+
+29
+0:02:18,240 --> 0:02:22,440
+ came over to us, and they said, I'll give you a challenge.
+
+30
+0:02:22,440 --> 0:02:22,980
+ If you use all the bandwidth, the amount you will use for all the changes you do in all 12 megabytes will be greater than my data.
+
+31
+0:02:22,980 --> 0:02:26,880
+ all the bandwidth, I will give Pyjamas a round of beer.
+
+32
+0:02:26,880 --> 0:02:30,060
+ But you have to do something useful.
+
+33
+0:02:30,060 --> 0:02:31,920
+ So we thought about it for three seconds,
+
+34
+0:02:31,920 --> 0:02:33,300
+ and we said, challenge accepted.
+
+35
+0:02:35,940 --> 0:02:38,400
+ Fast forward to four weeks ago, it
+
+36
+0:02:38,400 --> 0:02:39,900
+ was about time we started actually
+
+37
+0:02:39,900 --> 0:02:42,260
+ preparing for the challenge.
+
+38
+0:02:42,260 --> 0:02:45,740
+ So we sat down, and we were certain that there were
+
+39
+0:02:45,740 --> 0:02:48,660
+ two things that we need to achieve this.
+
+40
+0:02:48,660 --> 0:02:52,980
+ We need some hardware that can use at least this 3 gigabit
+
+41
+0:02:52,980 --> 0:02:56,620
+ uplink that Bonhack had in 2021.
+
+42
+0:02:56,620 --> 0:02:59,020
+ And we need a very bandwidth-heavy project that
+
+43
+0:02:59,020 --> 0:03:01,680
+ is also within this bounds of being useful.
+
+44
+0:03:04,440 --> 0:03:07,260
+ For the hardware, we quite quickly
+
+45
+0:03:07,260 --> 0:03:11,940
+ decided that this guy, the Raspberry Pi 4,
+
+46
+0:03:11,940 --> 0:03:13,020
+ was the right choice.
+
+47
+0:03:13,020 --> 0:03:15,480
+ Because here it says gigabit in ethernet.
+
+48
+0:03:15,480 --> 0:03:17,700
+ That's quite good.
+
+49
+0:03:17,700 --> 0:03:19,960
+ And it fits into the hacker mindset, I think,
+
+50
+0:03:19,960 --> 0:03:22,220
+ to have these Pis, because then we can have a cluster,
+
+51
+0:03:22,220 --> 0:03:22,960
+ and it's going to look cool.
+
+52
+0:03:22,960 --> 0:03:26,200
+ And they're low power consumption.
+
+53
+0:03:26,200 --> 0:03:28,620
+ So maybe the power team is happy that we
+
+54
+0:03:28,620 --> 0:03:32,520
+ didn't bring a huge rack server or something like that.
+
+55
+0:03:32,520 --> 0:03:36,140
+ So we quickly bought 10 of those.
+
+56
+0:03:36,140 --> 0:03:38,060
+ Thank you, Magenta Open Source IT,
+
+57
+0:03:38,060 --> 0:03:40,420
+ for sponsoring our Raspberry Pi.
+
+58
+0:03:45,800 --> 0:03:49,100
+ We also needed a project, something useful that
+
+59
+0:03:49,100 --> 0:03:51,660
+ can use a lot of bandwidth.
+
+60
+0:03:51,660 --> 0:03:52,420
+ One idea was creating a web server.
+
+61
+0:03:52,420 --> 0:03:52,920
+ And we thought, OK.
+
+62
+0:03:52,920 --> 0:03:54,680
+ Let's build a web scraper.
+
+63
+0:03:54,680 --> 0:03:55,840
+ The internet is quite big.
+
+64
+0:03:55,840 --> 0:03:58,040
+ And there's a lot of stuff to download.
+
+65
+0:03:58,040 --> 0:04:01,880
+ It is, however, important that we don't store a lot of data.
+
+66
+0:04:01,880 --> 0:04:05,020
+ Because we don't want to bring several terabytes of hard drives
+
+67
+0:04:05,020 --> 0:04:06,520
+ to store everything we download.
+
+68
+0:04:06,520 --> 0:04:08,020
+ But we could build a web scraper where
+
+69
+0:04:08,020 --> 0:04:09,760
+ we download all of the internet.
+
+70
+0:04:09,760 --> 0:04:14,060
+ And we just save how many times there's a Bonhack link,
+
+71
+0:04:14,060 --> 0:04:16,420
+ or something like that.
+
+72
+0:04:16,420 --> 0:04:20,340
+ We also had the idea to do 8K video streams.
+
+73
+0:04:20,340 --> 0:04:20,840
+ Video.
+
+74
+0:04:20,840 --> 0:04:21,880
+ You use a lot of data.
+
+75
+0:04:21,880 --> 0:04:22,380
+ You use a lot of data.
+
+76
+0:04:22,380 --> 0:04:28,900
+ Video uses a lot of bandwidth, as you might know from life.
+
+77
+0:04:28,900 --> 0:04:31,320
+ And we were thinking to put little displays around
+
+78
+0:04:31,320 --> 0:04:34,320
+ Bonhack, streaming like 8K campfires, or something
+
+79
+0:04:34,320 --> 0:04:36,560
+ like that.
+
+80
+0:04:36,560 --> 0:04:41,800
+ There's also a GitHub project called PingFS,
+
+81
+0:04:41,800 --> 0:04:42,980
+ which is data juggling.
+
+82
+0:04:42,980 --> 0:04:48,720
+ It's storing data in transit on the big internet
+
+83
+0:04:48,720 --> 0:04:51,840
+ by pinging servers very far away.
+
+84
+0:04:51,840 --> 0:04:55,380
+ And storing the data in the ICMP packets.
+
+85
+0:04:55,380 --> 0:04:56,400
+ And this is quite fun.
+
+86
+0:04:56,400 --> 0:04:58,640
+ And we were experimenting with it a little bit.
+
+87
+0:04:58,640 --> 0:05:00,180
+ But you can only store very little.
+
+88
+0:05:00,180 --> 0:05:01,800
+ You can only use very little data.
+
+89
+0:05:01,800 --> 0:05:06,020
+ Because the ICMP, you can't put a lot of data in them.
+
+90
+0:05:06,020 --> 0:05:10,100
+ And it seems that bottleneck is latency and not uplink.
+
+91
+0:05:10,100 --> 0:05:13,260
+ Then we had an idea to do a speed test speed
+
+92
+0:05:13,260 --> 0:05:16,720
+ test, which is speed testing speed tests.
+
+93
+0:05:16,720 --> 0:05:17,220
+ Whoa.
+
+94
+0:05:17,220 --> 0:05:18,840
+ It will help the general consumer.
+
+95
+0:05:18,840 --> 0:05:19,840
+ It will help the general consumer.
+
+96
+0:05:19,840 --> 0:05:20,700
+ It will help the general consumer.
+
+97
+0:05:20,700 --> 0:05:21,260
+ It will help the general consumer.
+
+98
+0:05:21,260 --> 0:05:24,080
+ It will help the general consumer make an educated choice
+
+99
+0:05:24,080 --> 0:05:28,980
+ in which speed test to use for their private network.
+
+100
+0:05:28,980 --> 0:05:32,820
+ It's a humble, humble thing to do, really.
+
+101
+0:05:32,820 --> 0:05:34,100
+ So we decided to do that.
+
+102
+0:05:34,100 --> 0:05:36,440
+ Also, speed tests are quite good at using bandwidth.
+
+103
+0:05:36,440 --> 0:05:37,560
+ I don't know if you know this.
+
+104
+0:05:40,020 --> 0:05:42,560
+ We also prepared some stickers for our pies.
+
+105
+0:05:42,560 --> 0:05:45,140
+ We got this low bandwidth application sticker
+
+106
+0:05:45,140 --> 0:05:47,240
+ we could put on the case of the pies.
+
+107
+0:05:47,240 --> 0:05:50,060
+ We were thinking it's nice that we can distribute them so that
+
+108
+0:05:50,060 --> 0:05:50,800
+ if we end up.
+
+109
+0:05:50,800 --> 0:05:53,900
+ If we end up in a battle with the Noc team, where they're
+
+110
+0:05:53,900 --> 0:05:56,680
+ trying to throttle us and we have to distribute those pies
+
+111
+0:05:56,680 --> 0:05:59,860
+ around and hide them under the little tarps with the network
+
+112
+0:05:59,860 --> 0:06:01,540
+ switches and stuff like that, they would find these.
+
+113
+0:06:01,540 --> 0:06:03,640
+ And they would go like, oh, it's probably not this one.
+
+114
+0:06:03,640 --> 0:06:04,620
+ It says low bandwidth.
+
+115
+0:06:09,420 --> 0:06:11,660
+ We also brought this forfeit button.
+
+116
+0:06:11,660 --> 0:06:14,420
+ I don't know if you can read it, but it says Noc forfeit button.
+
+117
+0:06:14,420 --> 0:06:16,980
+ Pressing the button costs a round of beer for pyjamas.
+
+118
+0:06:16,980 --> 0:06:18,920
+ And it has a big red button.
+
+119
+0:06:18,920 --> 0:06:20,680
+ Inside it, there's a Raspberry Pi.
+
+120
+0:06:20,800 --> 0:06:24,300
+ That was supposed to SSH and kill all the servers once they
+
+121
+0:06:24,300 --> 0:06:24,800
+ press it.
+
+122
+0:06:24,800 --> 0:06:27,760
+ It was a nice, like, it's hanging in the front of the camp
+
+123
+0:06:27,760 --> 0:06:29,580
+ so they can see it every time they walk by.
+
+124
+0:06:32,300 --> 0:06:35,300
+ Yeah, then a week ago, we finally arrived.
+
+125
+0:06:35,300 --> 0:06:37,120
+ And we were ready to execute this project.
+
+126
+0:06:37,120 --> 0:06:40,880
+ This is how it looked like when we arrived.
+
+127
+0:06:40,880 --> 0:06:43,080
+ And then we started getting a little bit worried,
+
+128
+0:06:43,080 --> 0:06:45,380
+ because we had been doing all these preparations.
+
+129
+0:06:45,380 --> 0:06:48,060
+ And we were thinking, well, what if the Noc team doesn't even
+
+130
+0:06:48,060 --> 0:06:48,720
+ remember us?
+
+131
+0:06:48,720 --> 0:06:50,200
+ What if they don't think this is fun?
+
+132
+0:06:50,200 --> 0:06:50,600
+ And then we were like, well, we're going to do this.
+
+133
+0:06:50,600 --> 0:06:50,700
+ We're going to do this.
+
+134
+0:06:50,700 --> 0:06:50,800
+ We're going to do this.
+
+135
+0:06:50,800 --> 0:06:52,340
+ We're going to do this.
+
+136
+0:06:52,340 --> 0:06:53,700
+ We got a little scared.
+
+137
+0:06:53,700 --> 0:06:56,020
+ But then we met one of the Noc guys.
+
+138
+0:06:56,020 --> 0:06:59,100
+ And they said, oh, we remember.
+
+139
+0:06:59,100 --> 0:07:01,880
+ We've upgraded the uplink to 10 gigabits.
+
+140
+0:07:10,680 --> 0:07:11,180
+ Fuck.
+
+141
+0:07:14,480 --> 0:07:15,880
+ But they were quite nice about it.
+
+142
+0:07:15,880 --> 0:07:17,640
+ They also came with a switch.
+
+143
+0:07:17,640 --> 0:07:20,700
+ And they set it up for us with a direct fiber uplink to the
+
+144
+0:07:20,700 --> 0:07:22,040
+ internet core here.
+
+145
+0:07:22,040 --> 0:07:25,320
+ So they really gave us the best conditions we could have,
+
+146
+0:07:25,320 --> 0:07:27,500
+ because they clearly had no faith in us actually achieving
+
+147
+0:07:27,500 --> 0:07:28,000
+ this.
+
+148
+0:07:31,160 --> 0:07:34,120
+ The first task was deploying this cluster.
+
+149
+0:07:34,120 --> 0:07:38,380
+ We need some operating systems and a lot of different stuff.
+
+150
+0:07:38,380 --> 0:07:40,680
+ Here we have our nicely stickered pies.
+
+151
+0:07:40,680 --> 0:07:43,980
+ And they're cool.
+
+152
+0:07:43,980 --> 0:07:46,440
+ We wanted to do a headless configuration,
+
+153
+0:07:46,440 --> 0:07:50,300
+ so no monitor for each pie and keyboard and typing and stuff
+
+154
+0:07:50,300 --> 0:07:50,700
+ like that.
+
+155
+0:07:50,700 --> 0:07:53,420
+ Because that's boring.
+
+156
+0:07:53,420 --> 0:07:57,380
+ And we wanted every pie to have a Raspbian and an SSH
+
+157
+0:07:57,380 --> 0:08:00,460
+ statement so that we can access them and do more config later
+
+158
+0:08:00,460 --> 0:08:01,060
+ on.
+
+159
+0:08:01,060 --> 0:08:03,320
+ We need a password for the Raspberry Pi user.
+
+160
+0:08:03,320 --> 0:08:06,740
+ I don't know if you know, but since half a year ago,
+
+161
+0:08:06,740 --> 0:08:10,280
+ there's no longer a default password for the Pi user
+
+162
+0:08:10,280 --> 0:08:11,260
+ on a Raspberry Pi.
+
+163
+0:08:11,260 --> 0:08:12,440
+ It used to be Raspbian.
+
+164
+0:08:12,440 --> 0:08:12,940
+ Wait.
+
+165
+0:08:12,940 --> 0:08:13,660
+ Yeah.
+
+166
+0:08:13,660 --> 0:08:17,820
+ And it made it quite easy to pwn poorly configured Raspberry
+
+167
+0:08:17,820 --> 0:08:19,180
+ Pies on the internet.
+
+168
+0:08:19,180 --> 0:08:20,060
+ So they removed that.
+
+169
+0:08:20,060 --> 0:08:20,560
+ Which is great.
+
+170
+0:08:20,560 --> 0:08:21,980
+ Which is great for security, but it's
+
+171
+0:08:21,980 --> 0:08:24,440
+ a little bit more inconvenient when setting them up.
+
+172
+0:08:24,440 --> 0:08:26,980
+ And then we need a stable method of connecting to the Pi,
+
+173
+0:08:26,980 --> 0:08:31,240
+ meaning we could just use the public IP and SSH to that.
+
+174
+0:08:31,240 --> 0:08:34,080
+ But we decided we want to be able to change the IP address
+
+175
+0:08:34,080 --> 0:08:36,240
+ in case a knock is trying to throttle us
+
+176
+0:08:36,240 --> 0:08:40,240
+ or we get rate limited by the speed tests.
+
+177
+0:08:40,240 --> 0:08:43,980
+ So what we came up with is DDing a Raspbian image onto the SD
+
+178
+0:08:43,980 --> 0:08:47,240
+ card, mounting it, touching this boot SSH file that
+
+179
+0:08:47,240 --> 0:08:49,920
+ enables the SSH statement.
+
+180
+0:08:49,920 --> 0:08:53,140
+ And then we can just put a username and a password.
+
+181
+0:08:53,140 --> 0:08:54,540
+ Or a password, sorry.
+
+182
+0:08:54,540 --> 0:08:58,300
+ And then we built this Pyjamas report IP service,
+
+183
+0:08:58,300 --> 0:09:02,640
+ which is when the Pi boots and internet comes up,
+
+184
+0:09:02,640 --> 0:09:04,600
+ this service will start.
+
+185
+0:09:04,600 --> 0:09:08,640
+ And it will just send the IPv6 link local address
+
+186
+0:09:08,640 --> 0:09:10,560
+ to a server we have.
+
+187
+0:09:10,560 --> 0:09:13,900
+ So that way we know an IP address for the Pi.
+
+188
+0:09:13,900 --> 0:09:17,440
+ And by using IPv6 link local address,
+
+189
+0:09:17,440 --> 0:09:19,260
+ we can send the IP address to the server.
+
+190
+0:09:19,260 --> 0:09:19,760
+ OK.
+
+191
+0:09:19,760 --> 0:09:24,360
+ So if we do this, we can just use DDing local.
+
+192
+0:09:24,360 --> 0:09:29,760
+ It won't change even though DHCP gives us a different public IP
+
+193
+0:09:29,760 --> 0:09:30,640
+ address later on.
+
+194
+0:09:34,140 --> 0:09:35,560
+ So we can do that.
+
+195
+0:09:35,560 --> 0:09:37,300
+ We can boot one of the Pis.
+
+196
+0:09:37,300 --> 0:09:38,640
+ And when we see that it's working,
+
+197
+0:09:38,640 --> 0:09:42,780
+ we can take the SD card, we can clone this big disk image,
+
+198
+0:09:42,780 --> 0:09:45,580
+ which is now like, yikes.
+
+199
+0:09:48,580 --> 0:09:49,340
+ We can clone.
+
+200
+0:09:49,340 --> 0:09:50,600
+ and you can shrink it.
+
+201
+0:09:50,600 --> 0:09:53,900
+ Apparently, you can just make a disk image smaller.
+
+202
+0:09:53,900 --> 0:09:56,760
+ I think I got lucky because there was no sparse data
+
+203
+0:09:56,760 --> 0:10:01,400
+ on the Raspbian image, but that made it very small
+
+204
+0:10:01,400 --> 0:10:02,900
+ and that meant it was very fast.
+
+205
+0:10:02,900 --> 0:10:05,080
+ It only took like 15 minutes flashing
+
+206
+0:10:05,080 --> 0:10:07,900
+ the remaining nine SD cards.
+
+207
+0:10:09,120 --> 0:10:12,140
+ This is what it looked like once all the Pis were configured
+
+208
+0:10:12,140 --> 0:10:15,980
+ and had Ethernet and power, and they booted on.
+
+209
+0:10:15,980 --> 0:10:19,740
+ And this is what it looked like in the server
+
+210
+0:10:19,740 --> 0:10:22,960
+ where the IPv6 link local addresses were reported to.
+
+211
+0:10:22,960 --> 0:10:27,060
+ So you can see it says new, weird, scary IPv6 address
+
+212
+0:10:27,060 --> 0:10:30,840
+ with colons in it announced themselves.
+
+213
+0:10:30,840 --> 0:10:33,800
+ And we used that to build just a list of all the addresses
+
+214
+0:10:33,800 --> 0:10:37,840
+ so we can then further configure them with Ansible later on.
+
+215
+0:10:38,720 --> 0:10:40,280
+ And then one of the camp members decided
+
+216
+0:10:40,280 --> 0:10:41,840
+ it was a good idea to tidy them up
+
+217
+0:10:41,840 --> 0:10:43,760
+ so it didn't take a lot of space on the table,
+
+218
+0:10:43,760 --> 0:10:45,380
+ which is a really good idea.
+
+219
+0:10:45,980 --> 0:10:49,240
+ And now the cluster is up and running,
+
+220
+0:10:49,240 --> 0:10:52,580
+ so we can see how much bandwidth it can draw.
+
+221
+0:10:52,580 --> 0:10:54,180
+ I wanted to start out just testing
+
+222
+0:10:54,180 --> 0:10:57,420
+ if we can actually pull the now 10 gigabit connection.
+
+223
+0:10:58,620 --> 0:11:01,120
+ So I just, for example, I tried one device.
+
+224
+0:11:01,120 --> 0:11:02,900
+ I tried just curling a big file.
+
+225
+0:11:02,900 --> 0:11:04,420
+ This is achban.nikev.
+
+226
+0:11:04,420 --> 0:11:06,060
+ It's one of the network teams.
+
+227
+0:11:06,060 --> 0:11:09,160
+ Let me know if this Dutch research institution,
+
+228
+0:11:09,160 --> 0:11:12,220
+ which has like a 40 gigabit uplink or something like that.
+
+229
+0:11:12,220 --> 0:11:14,600
+ So it's a good source for testing.
+
+230
+0:11:14,600 --> 0:11:15,800
+ And you can see we can pull
+
+231
+0:11:15,800 --> 0:11:18,880
+ 100 megabytes per second, bits per second.
+
+232
+0:11:18,880 --> 0:11:19,720
+ Oh, sorry.
+
+233
+0:11:21,100 --> 0:11:21,940
+ Oh, that's good.
+
+234
+0:11:21,940 --> 0:11:22,780
+ That's perfect.
+
+235
+0:11:22,780 --> 0:11:24,080
+ And I tried running a speed test
+
+236
+0:11:24,080 --> 0:11:28,080
+ on all 10 Raspberry Pis simultaneously.
+
+237
+0:11:29,360 --> 0:11:32,560
+ And this is what the network graph looked like after that.
+
+238
+0:11:32,560 --> 0:11:33,980
+ And all the way, yeah.
+
+239
+0:11:41,880 --> 0:11:43,600
+ You can see on the top of the graph,
+
+240
+0:11:43,600 --> 0:11:45,440
+ you have like nine, 10-ish gigabit.
+
+241
+0:11:45,800 --> 0:11:48,360
+ So we did actually manage to exhaust it.
+
+242
+0:11:48,360 --> 0:11:51,940
+ And you can see it's like 93.4%.
+
+243
+0:11:51,940 --> 0:11:54,120
+ And I let this run overnight
+
+244
+0:11:54,120 --> 0:11:56,380
+ because I decided that was a good idea.
+
+245
+0:11:56,380 --> 0:11:59,580
+ And then Espio, one of the network team members,
+
+246
+0:11:59,580 --> 0:12:00,420
+ came and he was like,
+
+247
+0:12:00,420 --> 0:12:02,060
+ hey, dude, you need to stop.
+
+248
+0:12:02,060 --> 0:12:04,360
+ This is not useful and I can't install Debian.
+
+249
+0:12:06,560 --> 0:12:07,900
+ So, and he was right.
+
+250
+0:12:07,900 --> 0:12:10,340
+ So I just stopped the program.
+
+251
+0:12:10,340 --> 0:12:12,560
+ And then it came to the more challenging part
+
+252
+0:12:12,560 --> 0:12:15,220
+ of the challenge, which is doing something useful.
+
+253
+0:12:15,220 --> 0:12:15,780
+ So I just stopped the program. And then it came to the more challenging part of the challenge, which is doing something useful.
+
+254
+0:12:15,800 --> 0:12:17,300
+ So I just stopped the program. And then it came to the more challenging part of the challenge, which is doing something useful.
+
+255
+0:12:17,300 --> 0:12:20,920
+ So we started to build our bandwidth project.
+
+256
+0:12:20,920 --> 0:12:24,120
+ And the infrastructure ended up looking something like this.
+
+257
+0:12:24,120 --> 0:12:26,540
+ There is three components.
+
+258
+0:12:26,540 --> 0:12:28,440
+ If we start in the lower right corner,
+
+259
+0:12:28,440 --> 0:12:31,620
+ the speed test service is running on the Raspberry Pis,
+
+260
+0:12:31,620 --> 0:12:33,520
+ and it's running the actual speed tests.
+
+261
+0:12:33,520 --> 0:12:36,620
+ It's spawning a headless Chromium browser,
+
+262
+0:12:36,620 --> 0:12:39,300
+ and then it's interfacing with Node.js
+
+263
+0:12:39,300 --> 0:12:42,600
+ to click the buttons on the speed test webpage
+
+264
+0:12:42,600 --> 0:12:45,080
+ to run the speed test, and it will report the,
+
+265
+0:12:45,800 --> 0:12:47,180
+ the result.
+
+266
+0:12:47,180 --> 0:12:49,320
+ The result is then sent to our backend,
+
+267
+0:12:49,320 --> 0:12:50,920
+ which is written in Python,
+
+268
+0:12:50,920 --> 0:12:52,900
+ and it's basically Prometheus.
+
+269
+0:12:54,900 --> 0:12:57,960
+ And then that talks to the frontend,
+
+270
+0:12:57,960 --> 0:13:00,340
+ which is written in Elm, and it makes graphs and stuff.
+
+271
+0:13:00,340 --> 0:13:01,820
+ It's basically Grafana.
+
+272
+0:13:03,380 --> 0:13:05,880
+ If you know those applications.
+
+273
+0:13:05,880 --> 0:13:07,620
+ But yeah, that's pretty cool.
+
+274
+0:13:10,000 --> 0:13:13,540
+ Then we can install this speed test service
+
+275
+0:13:13,540 --> 0:13:15,220
+ on all of the Raspberry Pis.
+
+276
+0:13:15,220 --> 0:13:16,660
+ This is an Ansible file.
+
+277
+0:13:16,660 --> 0:13:18,460
+ It says like install Chromium browser,
+
+278
+0:13:18,460 --> 0:13:21,000
+ clone the Git repo, install the dependencies,
+
+279
+0:13:21,000 --> 0:13:23,520
+ which is super cool, and you can see on the right image,
+
+280
+0:13:23,520 --> 0:13:28,160
+ it's deploying those changes to the Pis.
+
+281
+0:13:28,160 --> 0:13:32,800
+ So now I would like to present to you
+
+282
+0:13:32,800 --> 0:13:36,100
+ speedtest.speedtest.pijam.as.
+
+283
+0:13:36,100 --> 0:13:37,100
+ This is live.
+
+284
+0:13:37,100 --> 0:13:38,440
+ You can...
+
+285
+0:13:38,440 --> 0:13:40,640
+ .
+
+286
+0:13:40,640 --> 0:13:42,020
+ .
+
+287
+0:13:42,020 --> 0:13:44,680
+ .
+
+288
+0:13:44,680 --> 0:13:46,860
+ You can access this on your laptop right now
+
+289
+0:13:46,860 --> 0:13:48,900
+ if you would like to know which speed test is better.
+
+290
+0:13:49,740 --> 0:13:54,180
+ There are a few details about the data
+
+291
+0:13:54,180 --> 0:13:55,820
+ that we are going to get to now
+
+292
+0:13:55,820 --> 0:13:58,400
+ because we ran into a few issues.
+
+293
+0:14:00,940 --> 0:14:02,840
+ It's much, much slower when we're running
+
+294
+0:14:02,840 --> 0:14:03,900
+ in this Chromium web browser.
+
+295
+0:14:04,360 --> 0:14:05,360
+ I don't know if you can see,
+
+296
+0:14:05,460 --> 0:14:07,000
+ but most of these are only hovering
+
+297
+0:14:07,000 --> 0:14:09,640
+ around like 200, 400 megabits,
+
+298
+0:14:10,400 --> 0:14:13,940
+ which sucks.
+
+299
+0:14:14,680 --> 0:14:18,460
+ And if we do this test again where we HTTP,
+
+300
+0:14:18,700 --> 0:14:20,760
+ we get 1,000 megabits per second.
+
+301
+0:14:21,040 --> 0:14:24,580
+ But on HTTPS, we only get 250,
+
+302
+0:14:25,160 --> 0:14:26,260
+ which is nothing.
+
+303
+0:14:27,260 --> 0:14:30,280
+ And I found that the S in HTTPS,
+
+304
+0:14:30,400 --> 0:14:32,040
+ it actually stands for slow.
+
+305
+0:14:34,120 --> 0:14:34,260
+ Yeah.
+
+306
+0:14:36,740 --> 0:14:39,180
+ Then I ran HTOP on the device,
+
+307
+0:14:39,640 --> 0:14:41,880
+ and I could see that one of the CPUs
+
+308
+0:14:41,880 --> 0:14:43,040
+ were using 100%.
+
+309
+0:14:43,040 --> 0:14:44,660
+ And the CPUs were using 100%.
+
+310
+0:14:44,660 --> 0:14:44,680
+ And the CPUs were using 100%.
+
+311
+0:14:44,680 --> 0:14:46,000
+ And the bottleneck in this
+
+312
+0:14:46,000 --> 0:14:47,400
+ should be the network card.
+
+313
+0:14:47,820 --> 0:14:49,120
+ So that's not so good.
+
+314
+0:14:49,880 --> 0:14:50,920
+ And investigating it,
+
+315
+0:14:51,000 --> 0:14:53,680
+ we found that it's actually TLS,
+
+316
+0:14:54,420 --> 0:14:58,480
+ the encryption that is the bottleneck here.
+
+317
+0:14:59,080 --> 0:15:00,400
+ And further investigating,
+
+318
+0:15:00,640 --> 0:15:01,900
+ we found there's something called
+
+319
+0:15:01,900 --> 0:15:04,480
+ an AES instruction set,
+
+320
+0:15:04,620 --> 0:15:07,340
+ which is CPU instructions for doing AES.
+
+321
+0:15:08,040 --> 0:15:10,400
+ And according to Wikipedia,
+
+322
+0:15:10,980 --> 0:15:13,000
+ it can increase throughput
+
+323
+0:15:13,000 --> 0:15:14,480
+ from 28 cycles per byte
+
+324
+0:15:14,480 --> 0:15:14,660
+ to the next cycle per byte.
+
+325
+0:15:14,660 --> 0:15:14,900
+ to the next cycle per byte.
+
+326
+0:15:14,900 --> 0:15:14,920
+ to the next cycle per byte.
+
+327
+0:15:14,920 --> 0:15:16,060
+ So it's like three and a half cycles per byte,
+
+328
+0:15:16,140 --> 0:15:17,760
+ which is like almost 10 times faster.
+
+329
+0:15:18,620 --> 0:15:20,280
+ And this is not supported
+
+330
+0:15:20,280 --> 0:15:21,720
+ on the Raspberry Pi 4.
+
+331
+0:15:22,480 --> 0:15:25,540
+ It's like the processor
+
+332
+0:15:25,540 --> 0:15:26,720
+ in the Raspberry Pi 4
+
+333
+0:15:26,720 --> 0:15:28,980
+ has it as like an optional extension.
+
+334
+0:15:29,260 --> 0:15:30,760
+ So it's like Broadcom said,
+
+335
+0:15:31,020 --> 0:15:32,040
+ you have to pay more money
+
+336
+0:15:32,040 --> 0:15:33,820
+ for this proprietary thing.
+
+337
+0:15:34,780 --> 0:15:36,760
+ So hopefully, maybe RISC-V
+
+338
+0:15:36,760 --> 0:15:38,540
+ can solve this problem for us in the future.
+
+339
+0:15:38,880 --> 0:15:40,440
+ And we have to buy new small devices.
+
+340
+0:15:40,940 --> 0:15:42,280
+ But for now,
+
+341
+0:15:42,360 --> 0:15:44,580
+ we have to figure a way around it.
+
+342
+0:15:44,660 --> 0:15:46,520
+ So we can use more bandwidth.
+
+343
+0:15:47,860 --> 0:15:49,660
+ And one solution we spent
+
+344
+0:15:49,660 --> 0:15:50,860
+ a long time investigating
+
+345
+0:15:50,860 --> 0:15:52,440
+ is if we can downgrade
+
+346
+0:15:52,440 --> 0:15:54,100
+ the AES cipher.
+
+347
+0:15:54,540 --> 0:15:55,800
+ Basically, can we find
+
+348
+0:15:55,800 --> 0:15:58,060
+ an AES algorithm
+
+349
+0:15:58,060 --> 0:16:00,940
+ that is faster
+
+350
+0:16:00,940 --> 0:16:02,100
+ for the CPU to run?
+
+351
+0:16:03,020 --> 0:16:05,860
+ When you make HTTPS connection,
+
+352
+0:16:06,500 --> 0:16:08,000
+ you're negotiating
+
+353
+0:16:08,000 --> 0:16:08,960
+ with the server
+
+354
+0:16:08,960 --> 0:16:11,260
+ which AES cipher to use.
+
+355
+0:16:11,700 --> 0:16:12,840
+ And if your client can say,
+
+356
+0:16:12,960 --> 0:16:14,180
+ oh, I only support this one,
+
+357
+0:16:14,220 --> 0:16:14,620
+ that's very,
+
+358
+0:16:14,620 --> 0:16:15,160
+ very fast.
+
+359
+0:16:15,480 --> 0:16:16,580
+ And the server also supports it,
+
+360
+0:16:16,620 --> 0:16:17,640
+ then that's the one you're using.
+
+361
+0:16:18,380 --> 0:16:19,980
+ And we spent a really long time.
+
+362
+0:16:20,720 --> 0:16:21,540
+ But yeah,
+
+363
+0:16:21,600 --> 0:16:23,740
+ you can give flags to Chromium browser
+
+364
+0:16:23,740 --> 0:16:25,620
+ like I only want those ciphers.
+
+365
+0:16:25,880 --> 0:16:26,760
+ But it seems like
+
+366
+0:16:26,760 --> 0:16:27,740
+ when you try to disable
+
+367
+0:16:27,740 --> 0:16:29,360
+ the normal standard ones,
+
+368
+0:16:29,680 --> 0:16:30,300
+ it's like, no,
+
+369
+0:16:30,380 --> 0:16:31,300
+ I'm not going to do that.
+
+370
+0:16:32,380 --> 0:16:34,120
+ So we couldn't do it.
+
+371
+0:16:34,200 --> 0:16:35,660
+ We didn't get any proof it was faster
+
+372
+0:16:35,660 --> 0:16:37,940
+ and we didn't manage to achieve this.
+
+373
+0:16:38,200 --> 0:16:39,060
+ But we had another idea
+
+374
+0:16:39,060 --> 0:16:40,260
+ because we have four cores.
+
+375
+0:16:40,500 --> 0:16:41,660
+ So why don't we just run
+
+376
+0:16:41,660 --> 0:16:43,400
+ four speed tests at once
+
+377
+0:16:43,400 --> 0:16:44,480
+ and then we just add
+
+378
+0:16:44,480 --> 0:16:46,240
+ together the results.
+
+379
+0:16:46,440 --> 0:16:47,720
+ And that's the same thing, right?
+
+380
+0:16:47,920 --> 0:16:48,520
+ Almost.
+
+381
+0:16:50,360 --> 0:16:52,100
+ And it worked to a degree.
+
+382
+0:16:52,100 --> 0:16:53,360
+ We managed to get two running
+
+383
+0:16:53,360 --> 0:16:54,160
+ at the same time
+
+384
+0:16:54,160 --> 0:16:55,160
+ and it was faster.
+
+385
+0:16:56,060 --> 0:16:56,560
+ But four,
+
+386
+0:16:56,560 --> 0:16:58,240
+ we start just overloading the CPU
+
+387
+0:16:58,240 --> 0:16:59,380
+ and everything gets super slow.
+
+388
+0:16:59,660 --> 0:17:00,160
+ So,
+
+389
+0:17:01,740 --> 0:17:03,700
+ so we are actually doing that now.
+
+390
+0:17:05,540 --> 0:17:06,860
+ Then we started investigating
+
+391
+0:17:06,860 --> 0:17:09,020
+ if we can get them to run faster
+
+392
+0:17:09,020 --> 0:17:09,640
+ on single core,
+
+393
+0:17:10,980 --> 0:17:11,860
+ like overclocking
+
+394
+0:17:11,860 --> 0:17:12,760
+ or something like this.
+
+395
+0:17:13,660 --> 0:17:14,340
+ And do you remember
+
+396
+0:17:14,340 --> 0:17:15,600
+ I said it was a really good idea
+
+397
+0:17:15,600 --> 0:17:17,160
+ to tidy up the pies like this?
+
+398
+0:17:17,840 --> 0:17:19,500
+ It turns out they were really hot.
+
+399
+0:17:19,980 --> 0:17:21,280
+ They were like 82 degrees.
+
+400
+0:17:21,280 --> 0:17:22,380
+ They start throttling
+
+401
+0:17:24,300 --> 0:17:25,980
+ the CPU at 85.
+
+402
+0:17:25,980 --> 0:17:27,000
+ So it's like, right.
+
+403
+0:17:27,480 --> 0:17:28,920
+ It's definitely getting throttled.
+
+404
+0:17:30,340 --> 0:17:31,620
+ So, yeah, tidy,
+
+405
+0:17:31,920 --> 0:17:34,260
+ but not good for cooling purposes.
+
+406
+0:17:34,260 --> 0:17:35,880
+ So we opened up all the cases
+
+407
+0:17:37,040 --> 0:17:38,500
+ and almost like burned ourselves
+
+408
+0:17:38,500 --> 0:17:39,180
+ on the plastic.
+
+409
+0:17:40,560 --> 0:17:42,480
+ And then they were running around 68 degrees,
+
+410
+0:17:42,940 --> 0:17:44,220
+ which is much better.
+
+411
+0:17:44,340 --> 0:17:46,220
+ And if you look at the graph,
+
+412
+0:17:46,220 --> 0:17:48,760
+ this is where we took them out of their cases.
+
+413
+0:17:48,760 --> 0:17:51,900
+ And you can see that they were struggling.
+
+414
+0:17:51,900 --> 0:17:54,980
+ There's less variance and higher speeds.
+
+415
+0:17:54,980 --> 0:17:56,700
+ Both things that we like.
+
+416
+0:17:58,180 --> 0:17:59,960
+ Now we get to overclocking.
+
+417
+0:17:59,960 --> 0:18:02,740
+ The default clock rate on the Raspberry Pi
+
+418
+0:18:02,740 --> 0:18:04,120
+ is one and a half gigahertz.
+
+419
+0:18:04,120 --> 0:18:07,680
+ And I read online that two gigahertz is good.
+
+420
+0:18:07,680 --> 0:18:08,180
+ So I,
+
+421
+0:18:08,180 --> 0:18:12,100
+ I'm pretty sure this is the safe way
+
+422
+0:18:12,100 --> 0:18:13,220
+ to do overclocking, right?
+
+423
+0:18:13,220 --> 0:18:13,680
+ And you can see that, you know,
+
+424
+0:18:13,680 --> 0:18:16,340
+ and you can just write this in like a config file
+
+425
+0:18:16,340 --> 0:18:17,340
+ on the boot partition.
+
+426
+0:18:18,180 --> 0:18:19,300
+ I found it online.
+
+427
+0:18:19,300 --> 0:18:20,860
+ It's probably going to work, right?
+
+428
+0:18:22,240 --> 0:18:24,060
+ And then with Ansible,
+
+429
+0:18:24,060 --> 0:18:26,600
+ I overclocked 10 Pis simultaneously,
+
+430
+0:18:27,260 --> 0:18:28,640
+ which I think is really cool.
+
+431
+0:18:37,620 --> 0:18:38,440
+ Yeah.
+
+432
+0:18:38,440 --> 0:18:42,240
+ So this is where we overclocked them.
+
+433
+0:18:43,680 --> 0:18:46,140
+ And maybe it got slightly faster,
+
+434
+0:18:46,140 --> 0:18:48,200
+ but the variance got larger.
+
+435
+0:18:48,200 --> 0:18:50,220
+ Like, it also goes lower.
+
+436
+0:18:50,220 --> 0:18:52,520
+ So they're overclocked.
+
+437
+0:18:52,520 --> 0:18:53,020
+ It's cool.
+
+438
+0:18:53,020 --> 0:18:58,220
+ If you notice the small hole after the arrow,
+
+439
+0:18:58,220 --> 0:19:00,380
+ that was me deploying some code that didn't work.
+
+440
+0:19:03,840 --> 0:19:07,740
+ So how much bandwidth did we actually use?
+
+441
+0:19:07,740 --> 0:19:12,740
+ I think we should let state of the network,
+
+442
+0:19:13,680 --> 0:19:17,060
+ talk about that, and we can let this be a teaser.
+
+443
+0:19:17,060 --> 0:19:19,900
+ So that's in like one and a half, half an hour
+
+444
+0:19:19,900 --> 0:19:21,620
+ or something like that.
+
+445
+0:19:21,620 --> 0:19:23,800
+ So they're going to have the big graph
+
+446
+0:19:23,800 --> 0:19:27,800
+ and talk about what happened and how their efforts were.
+
+447
+0:19:27,800 --> 0:19:29,300
+ Yeah.
+
+448
+0:19:29,300 --> 0:19:31,000
+ I'd like to say thank you for Jabba Decks
+
+449
+0:19:31,000 --> 0:19:33,500
+ for sponsoring our coffee and our big party tent.
+
+450
+0:19:41,280 --> 0:19:42,720
+ Our coffee is free for everyone.
+
+451
+0:19:42,720 --> 0:19:43,520
+ It was last year.
+
+452
+0:19:43,520 --> 0:19:43,600
+ It's free.
+
+453
+0:19:43,600 --> 0:19:43,660
+ It's free.
+
+454
+0:19:43,680 --> 0:19:46,000
+ It is this year, and it will be next year.
+
+455
+0:19:46,000 --> 0:19:47,680
+ Come get coffee.
+
+456
+0:19:47,680 --> 0:19:49,440
+ And thank you for coming.
+
+457
+0:19:49,440 --> 0:19:53,000
+ You can find the source code at GitLab slash Pyjamas.
+
+458
+0:20:03,000 --> 0:20:04,600
+ Do we have any questions for Esbjorn?
+
+459
+0:20:10,680 --> 0:20:12,280
+ Would it have made any difference
+
+460
+0:20:12,280 --> 0:20:13,600
+ if you used the command line version
+
+461
+0:20:13,600 --> 0:20:15,920
+ of speed test instead of the browser version?
+
+462
+0:20:15,920 --> 0:20:16,420
+ Yes.
+
+463
+0:20:16,420 --> 0:20:20,880
+ So we actually forked, should I repeat the,
+
+464
+0:20:20,880 --> 0:20:22,220
+ no, you have a question.
+
+465
+0:20:22,220 --> 0:20:25,460
+ We actually forked one of these command line tools
+
+466
+0:20:25,460 --> 0:20:26,280
+ for a speed test.
+
+467
+0:20:26,280 --> 0:20:29,380
+ So we were running it from the command line
+
+468
+0:20:29,380 --> 0:20:31,960
+ with a headless browser.
+
+469
+0:20:31,960 --> 0:20:34,720
+ Of course, that means we're still running JavaScript,
+
+470
+0:20:34,720 --> 0:20:37,880
+ and we're still doing it through the web browser.
+
+471
+0:20:37,880 --> 0:20:43,440
+ And that is potentially problematic.
+
+472
+0:20:43,440 --> 0:20:46,800
+ We can see on, if we go back to the graph here,
+
+473
+0:20:46,800 --> 0:20:49,920
+ the orange bar, that is also run through the browser,
+
+474
+0:20:49,920 --> 0:20:52,600
+ but it's this , this Dutch website.
+
+475
+0:20:52,600 --> 0:20:53,940
+ And you can see that it's really fast.
+
+476
+0:20:53,940 --> 0:20:56,300
+ It's like 900 megabits.
+
+477
+0:20:56,300 --> 0:20:59,660
+ So it doesn't appear as if there is any bottleneck
+
+478
+0:20:59,660 --> 0:21:01,900
+ by running it in the browser.
+
+479
+0:21:01,900 --> 0:21:06,360
+ If we just download a big file without the browser over HTTPS,
+
+480
+0:21:06,360 --> 0:21:09,700
+ it's slow as well.
+
+481
+0:21:09,700 --> 0:21:10,760
+ So yeah.
+
+482
+0:21:10,760 --> 0:21:12,140
+ Does that answer your question?
+
+483
+0:21:13,440 --> 0:21:16,480
+ Any other questions?
+
+484
+0:21:16,480 --> 0:21:18,900
+ Then let's give a big round of applause for Ashkahn.

@@ -1,0 +1,3239 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:16,340
+ Hi, it's nice to be here.
+
+2
+0:00:17,000 --> 0:00:17,620
+ So my name is David.
+
+3
+0:00:17,900 --> 0:00:19,420
+ I am educated in STU.
+
+4
+0:00:19,720 --> 0:00:21,760
+ I have a master's in software engineering
+
+5
+0:00:21,760 --> 0:00:23,660
+ because I took a bachelor in robotics
+
+6
+0:00:23,660 --> 0:00:25,480
+ and then thought that it was way too much math
+
+7
+0:00:25,480 --> 0:00:28,180
+ to make robots, and I liked the coding part.
+
+8
+0:00:28,180 --> 0:00:30,800
+ Then I went on to do a couple of jobs
+
+9
+0:00:30,800 --> 0:00:31,820
+ and a couple of failed startups,
+
+10
+0:00:31,980 --> 0:00:32,860
+ and then I ended up at Universal.
+
+11
+0:00:33,100 --> 0:00:34,640
+ So I guess the joke's kind of on me.
+
+12
+0:00:39,320 --> 0:00:40,660
+ I'd like to tell you guys a little bit
+
+13
+0:00:40,660 --> 0:00:41,880
+ about Universal's journey
+
+14
+0:00:41,880 --> 0:00:43,500
+ through various shapes of DevOps
+
+15
+0:00:43,500 --> 0:00:46,860
+ and how we try to solve this problem
+
+16
+0:00:46,860 --> 0:00:48,360
+ of developers delivering software
+
+17
+0:00:48,360 --> 0:00:51,000
+ faster and of higher quality.
+
+18
+0:00:52,280 --> 0:00:54,360
+ I'll try to keep myself to the time limit
+
+19
+0:00:54,360 --> 0:00:55,160
+ and not go over.
+
+20
+0:00:56,940 --> 0:00:58,160
+ And one of the things
+
+21
+0:00:58,180 --> 0:01:00,180
+ that I like to do
+
+22
+0:01:00,180 --> 0:01:02,660
+ before I dive into the presentation,
+
+23
+0:01:02,840 --> 0:01:03,720
+ just to get a little bit of feel
+
+24
+0:01:03,720 --> 0:01:04,980
+ of what are you guys.
+
+25
+0:01:05,220 --> 0:01:06,600
+ We're a fairly small crowd now,
+
+26
+0:01:06,660 --> 0:01:08,240
+ so maybe I'll just divide us in developers,
+
+27
+0:01:09,660 --> 0:01:10,760
+ ops, and others.
+
+28
+0:01:11,220 --> 0:01:13,120
+ So those who feel like they're a developer,
+
+29
+0:01:13,240 --> 0:01:14,080
+ can you guys raise your hand?
+
+30
+0:01:15,560 --> 0:01:15,940
+ Cool.
+
+31
+0:01:16,400 --> 0:01:17,040
+ And ops?
+
+32
+0:01:18,940 --> 0:01:19,300
+ Sure.
+
+33
+0:01:19,540 --> 0:01:20,180
+ And the other?
+
+34
+0:01:20,620 --> 0:01:20,900
+ Anybody?
+
+35
+0:01:21,480 --> 0:01:21,880
+ All right.
+
+36
+0:01:22,440 --> 0:01:23,240
+ A little bit of everything.
+
+37
+0:01:27,060 --> 0:01:28,140
+ So a lot of...
+
+38
+0:01:28,180 --> 0:01:31,940
+ A lot of companies think that DevOps is a title.
+
+39
+0:01:31,940 --> 0:01:34,620
+ They think it's a type of person that you hire,
+
+40
+0:01:34,620 --> 0:01:35,420
+ and when you hire them,
+
+41
+0:01:35,420 --> 0:01:37,240
+ then similar to when we all convert to Agile,
+
+42
+0:01:37,240 --> 0:01:38,420
+ then magic happens.
+
+43
+0:01:39,300 --> 0:01:40,660
+ I'd like to just take a step back
+
+44
+0:01:40,660 --> 0:01:43,040
+ and sort of go through the original DevOps.
+
+45
+0:01:43,040 --> 0:01:47,100
+ So we have sort of in a traditional hierarchy organization,
+
+46
+0:01:47,100 --> 0:01:49,140
+ we have a development organization,
+
+47
+0:01:49,140 --> 0:01:51,340
+ and we have an ops organization.
+
+48
+0:01:51,340 --> 0:01:54,780
+ And this is based on Skelton Pye's Team's Apologies,
+
+49
+0:01:54,780 --> 0:01:56,580
+ by the way, highly recommended book.
+
+50
+0:01:56,580 --> 0:01:59,340
+ And DevOps, as it was originally pitched,
+
+51
+0:01:59,340 --> 0:02:00,740
+ looks something like this.
+
+52
+0:02:00,740 --> 0:02:03,120
+ You take people that do ops, people that do dev,
+
+53
+0:02:03,120 --> 0:02:04,020
+ people that do testing,
+
+54
+0:02:04,020 --> 0:02:06,680
+ whatever else is required for the life cycle of software,
+
+55
+0:02:06,680 --> 0:02:08,580
+ and you make them collaborate.
+
+56
+0:02:08,580 --> 0:02:13,020
+ However, what tends to happen in a lot of companies is this.
+
+57
+0:02:13,020 --> 0:02:14,420
+ We take a couple of people,
+
+58
+0:02:14,420 --> 0:02:15,820
+ we ask them if they know infrastructure,
+
+59
+0:02:15,820 --> 0:02:17,500
+ and then we put them in their own silo.
+
+60
+0:02:17,500 --> 0:02:19,260
+ And then we make them do pipelines for a living,
+
+61
+0:02:19,260 --> 0:02:21,120
+ all day long, all the time.
+
+62
+0:02:21,120 --> 0:02:23,100
+ And infrastructure, if they're a little bit lucky.
+
+63
+0:02:23,100 --> 0:02:26,020
+ And then we have handovers of the old school style,
+
+64
+0:02:26,020 --> 0:02:30,060
+ except we just have more links and more trouble with that.
+
+65
+0:02:30,060 --> 0:02:32,680
+ I think this is the most common model.
+
+66
+0:02:32,680 --> 0:02:35,320
+ Universal was sort of in this world,
+
+67
+0:02:35,320 --> 0:02:37,880
+ where we have a production, our ops,
+
+68
+0:02:37,880 --> 0:02:41,100
+ which exists way outside of our development.
+
+69
+0:02:41,100 --> 0:02:43,300
+ And then we have people doing DevOps within dev,
+
+70
+0:02:43,300 --> 0:02:45,360
+ just not really giving regards to what
+
+71
+0:02:45,360 --> 0:02:47,820
+ does the ops side of the world look like.
+
+72
+0:02:47,820 --> 0:02:50,940
+ For a lot of years, these robots had no monitoring, no tracing,
+
+73
+0:02:50,940 --> 0:02:51,640
+ no nothing.
+
+74
+0:02:51,640 --> 0:02:53,300
+ And you could just deploy stuff to them,
+
+75
+0:02:53,300 --> 0:02:54,980
+ and you wouldn't know what happened at all.
+
+76
+0:02:54,980 --> 0:02:55,940
+ Like, you just deploy stuff.
+
+77
+0:02:55,940 --> 0:02:57,940
+ You deploy software, you hope that it moved.
+
+78
+0:02:57,940 --> 0:03:00,560
+ And then, hopefully, it worked, right?
+
+79
+0:03:03,480 --> 0:03:04,980
+ Similarly, we have the other one.
+
+80
+0:03:04,980 --> 0:03:07,120
+ This is a rebranded sysadmin.
+
+81
+0:03:07,120 --> 0:03:09,300
+ So you take a sysadmin, and you call them DevOps.
+
+82
+0:03:09,300 --> 0:03:11,180
+ And then you hope that they sort of learn and acquire
+
+83
+0:03:11,180 --> 0:03:13,820
+ the skill sets that are required to deploy applications rapidly.
+
+84
+0:03:16,400 --> 0:03:17,560
+ And then finally, you have something
+
+85
+0:03:17,560 --> 0:03:19,700
+ that starts looking like a pattern that we recognize
+
+86
+0:03:19,700 --> 0:03:21,120
+ in the real world.
+
+87
+0:03:21,120 --> 0:03:23,700
+ Here on the right, we have how Google and GitHub
+
+88
+0:03:23,700 --> 0:03:24,040
+ do their DevOps.
+
+89
+0:03:24,040 --> 0:03:24,540
+ They have DevOps.
+
+90
+0:03:24,540 --> 0:03:25,040
+ They have DevOps.
+
+91
+0:03:25,040 --> 0:03:25,580
+ They have DevOps.
+
+92
+0:03:25,580 --> 0:03:25,900
+ They have DevOps.
+
+93
+0:03:25,900 --> 0:03:28,000
+ They have developers that hand over
+
+94
+0:03:28,000 --> 0:03:29,840
+ to some sort of set of rules.
+
+95
+0:03:29,840 --> 0:03:30,960
+ So you have an application.
+
+96
+0:03:30,960 --> 0:03:33,420
+ You'd like it to go into an op state.
+
+97
+0:03:33,420 --> 0:03:35,020
+ You then talk to your SRE team.
+
+98
+0:03:35,020 --> 0:03:36,280
+ You figure out what's required.
+
+99
+0:03:36,280 --> 0:03:37,000
+ You need some logging.
+
+100
+0:03:37,000 --> 0:03:37,620
+ You need monitoring.
+
+101
+0:03:37,620 --> 0:03:38,660
+ You need tracing.
+
+102
+0:03:38,660 --> 0:03:40,420
+ You need testing, whatever else.
+
+103
+0:03:40,420 --> 0:03:42,460
+ And then it sort of moves over to an SRE team
+
+104
+0:03:42,460 --> 0:03:43,840
+ that take care of your application
+
+105
+0:03:43,840 --> 0:03:47,280
+ and knows it for you in collaboration with your ops
+
+106
+0:03:47,280 --> 0:03:48,760
+ department.
+
+107
+0:03:48,760 --> 0:03:51,520
+ And for DevOps in Universal, this
+
+108
+0:03:51,520 --> 0:03:53,660
+ is definitely the model we're trying to move toward.
+
+109
+0:03:53,660 --> 0:03:55,020
+ Just for the sake of it, I'm going to show you a demo.
+
+110
+0:03:55,020 --> 0:03:55,520
+ I'm going to show you a demo.
+
+111
+0:03:55,520 --> 0:03:55,580
+ Just for the sake of it, I'm going to show you a demo.
+
+112
+0:03:55,580 --> 0:03:55,680
+ Just for the sake of it, I'm going to show you a demo.
+
+113
+0:03:55,680 --> 0:03:57,420
+ Just for fun, I tried to sketch
+
+114
+0:03:57,420 --> 0:03:59,520
+ how I think we run it now.
+
+115
+0:03:59,520 --> 0:04:01,180
+ We have a bunch of product teams that
+
+116
+0:04:01,180 --> 0:04:04,680
+ have a representative that tries to do
+
+117
+0:04:04,680 --> 0:04:07,200
+ DevOps-related activities.
+
+118
+0:04:07,200 --> 0:04:08,440
+ Infrastructure-related activities
+
+119
+0:04:08,440 --> 0:04:09,920
+ is probably more appropriate.
+
+120
+0:04:09,920 --> 0:04:11,460
+ They know a little bit of pipelines.
+
+121
+0:04:11,460 --> 0:04:15,240
+ They know a little bit of usually deeper bash,
+
+122
+0:04:15,240 --> 0:04:16,740
+ git, testing.
+
+123
+0:04:16,740 --> 0:04:18,920
+ They care a little bit more about various cloud
+
+124
+0:04:18,920 --> 0:04:20,700
+ native technologies, et cetera.
+
+125
+0:04:20,700 --> 0:04:23,800
+ And then we have a community of practice
+
+126
+0:04:23,800 --> 0:04:25,300
+ where we get together.
+
+127
+0:04:25,300 --> 0:04:26,800
+ We try to share this knowledge.
+
+128
+0:04:26,800 --> 0:04:30,720
+ We try to do this across all kinds of domain.
+
+129
+0:04:30,720 --> 0:04:33,100
+ It's a little bit different than most companies in the sense
+
+130
+0:04:33,100 --> 0:04:36,820
+ that the stack to make a robot goes everything from OS
+
+131
+0:04:36,820 --> 0:04:40,440
+ to embedded, through our application layer,
+
+132
+0:04:40,440 --> 0:04:43,000
+ and then finally an actual GUI.
+
+133
+0:04:43,000 --> 0:04:45,160
+ And those technologies are generally very different,
+
+134
+0:04:45,160 --> 0:04:46,380
+ very different cultures.
+
+135
+0:04:46,380 --> 0:04:48,600
+ If you talk to an OS developer and you put them
+
+136
+0:04:48,600 --> 0:04:49,760
+ in front of a JavaScript developer,
+
+137
+0:04:49,760 --> 0:04:52,260
+ you get very, very different types of development,
+
+138
+0:04:52,260 --> 0:04:54,020
+ very different types of priorities,
+
+139
+0:04:54,020 --> 0:04:55,140
+ very different types of things.
+
+140
+0:04:55,300 --> 0:04:58,300
+ We try to bridge that gap by having a community that then
+
+141
+0:04:58,300 --> 0:05:01,000
+ gets together and talk about similar flavored things,
+
+142
+0:05:01,000 --> 0:05:03,840
+ in this case, DevOps and infrastructure.
+
+143
+0:05:03,840 --> 0:05:06,680
+ And then I have a colleague with me here today.
+
+144
+0:05:06,680 --> 0:05:09,580
+ We're both in the DevOps team.
+
+145
+0:05:09,580 --> 0:05:13,660
+ Rather, it's a quality and infrastructure flow organ.
+
+146
+0:05:13,660 --> 0:05:15,580
+ And we interface a little bit with production.
+
+147
+0:05:19,120 --> 0:05:22,460
+ And we want to move toward that, as mentioned before.
+
+148
+0:05:22,460 --> 0:05:24,840
+ But we're probably closer to this in reality.
+
+149
+0:05:25,300 --> 0:05:30,460
+ A lot of things are a little bit siloed, a little bit hierarchical.
+
+150
+0:05:30,460 --> 0:05:32,680
+ But we're really trying to share knowledge.
+
+151
+0:05:32,680 --> 0:05:34,480
+ We're really trying to interface with the product teams.
+
+152
+0:05:34,480 --> 0:05:36,640
+ We're really trying to make this a little bit better.
+
+153
+0:05:36,640 --> 0:05:39,060
+ And I'm guessing that's where most people have
+
+154
+0:05:39,060 --> 0:05:42,580
+ seen their own companies, in this sort of space
+
+155
+0:05:42,580 --> 0:05:44,060
+ where things are not quite perfect,
+
+156
+0:05:44,060 --> 0:05:46,420
+ but you'd like them to get better over time.
+
+157
+0:05:46,420 --> 0:05:47,720
+ And that's where the journey starts.
+
+158
+0:05:50,680 --> 0:05:54,400
+ Because most companies also, when I was consulting and doing
+
+159
+0:05:54,400 --> 0:05:55,300
+ infrastructure as a company, were not really doing that.
+
+160
+0:05:55,300 --> 0:05:56,000
+ And I was a consultant.
+
+161
+0:05:56,000 --> 0:05:58,500
+ It was really how most companies did their thing.
+
+162
+0:05:58,500 --> 0:06:00,340
+ They came from old school waterfall.
+
+163
+0:06:00,340 --> 0:06:01,680
+ They had a department that did a thing,
+
+164
+0:06:01,680 --> 0:06:03,920
+ and then threw it over the wall and hoped for the best.
+
+165
+0:06:03,920 --> 0:06:07,840
+ And the less of that you had, the better things really worked out.
+
+166
+0:06:07,840 --> 0:06:11,080
+ Universal was the same as that when I started.
+
+167
+0:06:11,080 --> 0:06:16,660
+ And we decided we wanted to do a little bit better.
+
+168
+0:06:16,660 --> 0:06:19,680
+ So very similar to how many companies then go and say,
+
+169
+0:06:19,680 --> 0:06:22,600
+ OK, there's all these really nice technologies.
+
+170
+0:06:22,600 --> 0:06:23,580
+ Web is an inspiration.
+
+171
+0:06:23,580 --> 0:06:24,440
+ We have Kubernetes.
+
+172
+0:06:24,440 --> 0:06:25,280
+ We have Cloud Native.
+
+173
+0:06:25,300 --> 0:06:28,340
+ We have all of these really good technologies for free.
+
+174
+0:06:28,340 --> 0:06:31,300
+ But when you're a robot company, a lot of those technologies
+
+175
+0:06:31,300 --> 0:06:33,420
+ just don't work for you, because you
+
+176
+0:06:33,420 --> 0:06:36,740
+ have an embedded solution running somewhere in isolation.
+
+177
+0:06:36,740 --> 0:06:38,680
+ It's possibly not even connected to a network
+
+178
+0:06:38,680 --> 0:06:40,960
+ that you can reach from the company that develops it.
+
+179
+0:06:40,960 --> 0:06:43,360
+ We don't know necessarily where these robots go.
+
+180
+0:06:43,360 --> 0:06:45,160
+ We sell them to our distributors, who then
+
+181
+0:06:45,160 --> 0:06:46,000
+ sell them to companies.
+
+182
+0:06:46,000 --> 0:06:47,460
+ So a lot of the time, we just don't
+
+183
+0:06:47,460 --> 0:06:49,160
+ know where the robot ends up standing
+
+184
+0:06:49,160 --> 0:06:50,300
+ and what it ends up doing.
+
+185
+0:06:50,300 --> 0:06:51,160
+ We can't contact it.
+
+186
+0:06:51,160 --> 0:06:52,000
+ We can't deploy to it.
+
+187
+0:06:52,000 --> 0:06:53,380
+ We can't talk to it.
+
+188
+0:06:53,380 --> 0:06:55,180
+ And then a lot of these web technologies
+
+189
+0:06:55,300 --> 0:06:57,680
+ are a little bit difficult. That doesn't mean that you can't
+
+190
+0:06:57,680 --> 0:07:02,580
+ necessarily still be inspired by them and get something out of it.
+
+191
+0:07:02,580 --> 0:07:05,540
+ It just means you have to figure out the pieces that are,
+
+192
+0:07:05,540 --> 0:07:07,240
+ you know, this is just software.
+
+193
+0:07:07,240 --> 0:07:09,160
+ Software is done the way that software is always done.
+
+194
+0:07:09,160 --> 0:07:11,300
+ And then this piece is an embedded technology,
+
+195
+0:07:11,300 --> 0:07:13,840
+ which is then shared with every company in the world that
+
+196
+0:07:13,840 --> 0:07:15,760
+ does embedded.
+
+197
+0:07:15,760 --> 0:07:18,660
+ Vestas, where I was as a consultant for a short while,
+
+198
+0:07:18,660 --> 0:07:20,920
+ have this similar thing where they have a chunk of stuff
+
+199
+0:07:20,920 --> 0:07:23,180
+ that's software as software is, and then
+
+200
+0:07:23,180 --> 0:07:25,140
+ a chunk that's very specific windmill technology.
+
+201
+0:07:25,300 --> 0:07:28,300
+ And we use that as an inspiration.
+
+202
+0:07:28,300 --> 0:07:31,800
+ So we looked at that, and we said, OK, what can we do that's
+
+203
+0:07:31,800 --> 0:07:34,920
+ just, you know, software, right?
+
+204
+0:07:34,920 --> 0:07:36,000
+ We want some code scanning.
+
+205
+0:07:36,000 --> 0:07:37,840
+ We want to check unit tests.
+
+206
+0:07:37,840 --> 0:07:38,740
+ We want pipelines.
+
+207
+0:07:38,740 --> 0:07:41,500
+ We want, you know, all the usual things.
+
+208
+0:07:41,500 --> 0:07:43,500
+ And we want to do collaboration between teams,
+
+209
+0:07:43,500 --> 0:07:45,580
+ and we want to architect in a way so that the teams that
+
+210
+0:07:45,580 --> 0:07:48,940
+ have very different cultures don't necessarily clash a lot.
+
+211
+0:07:48,940 --> 0:07:51,480
+ We want to have embedded developers that collaborate
+
+212
+0:07:51,480 --> 0:07:52,780
+ with the people just to lay above,
+
+213
+0:07:52,780 --> 0:07:55,180
+ but maybe we don't necessarily mix and make
+
+214
+0:07:55,180 --> 0:07:57,940
+ these T-shaped teams where we take one of each person,
+
+215
+0:07:57,940 --> 0:07:59,680
+ and we have a JavaScript developer sit next to an OS
+
+216
+0:07:59,680 --> 0:08:01,800
+ developer.
+
+217
+0:08:01,800 --> 0:08:03,560
+ And then we have this embedded part
+
+218
+0:08:03,560 --> 0:08:06,120
+ where we try to see, like, what do we then do?
+
+219
+0:08:06,120 --> 0:08:10,520
+ I mean, embedded, in contrast to a lot of web software,
+
+220
+0:08:10,520 --> 0:08:13,460
+ if you make microservices, you shoot yourself in the foot.
+
+221
+0:08:13,460 --> 0:08:14,940
+ Like, almost all embedded software
+
+222
+0:08:14,940 --> 0:08:16,520
+ is one giant monolith when you deploy it.
+
+223
+0:08:16,520 --> 0:08:18,080
+ It doesn't mean that it's not modular.
+
+224
+0:08:18,080 --> 0:08:19,920
+ You can make modular components that then
+
+225
+0:08:19,920 --> 0:08:21,820
+ turn into one giant binary.
+
+226
+0:08:21,820 --> 0:08:24,820
+ But if you try to make microservices in an embedded
+
+227
+0:08:24,820 --> 0:08:28,060
+ installation, you run into a whole bunch of problems.
+
+228
+0:08:28,060 --> 0:08:30,020
+ For those of you who are not embedded developers,
+
+229
+0:08:30,020 --> 0:08:31,520
+ there's a lot of timing constraints
+
+230
+0:08:31,520 --> 0:08:34,080
+ where you can't necessarily exactly control the clock
+
+231
+0:08:34,080 --> 0:08:34,580
+ frequency.
+
+232
+0:08:34,580 --> 0:08:37,220
+ So you have one thing that happens with every two
+
+233
+0:08:37,220 --> 0:08:38,600
+ milliseconds, but then sometimes it
+
+234
+0:08:38,600 --> 0:08:40,640
+ happens in three milliseconds wait.
+
+235
+0:08:40,640 --> 0:08:42,560
+ And then you have to handle that sort of thing.
+
+236
+0:08:42,560 --> 0:08:44,220
+ And in a microservice thing, that's fine.
+
+237
+0:08:44,220 --> 0:08:45,340
+ You just wait.
+
+238
+0:08:45,340 --> 0:08:48,180
+ If you do that with a robot, then we run into safety.
+
+239
+0:08:48,180 --> 0:08:49,340
+ We're not allowed to do that.
+
+240
+0:08:49,340 --> 0:08:51,760
+ So the robot just clocks up and stops.
+
+241
+0:08:51,760 --> 0:08:54,580
+ It has a safety violation, and then it has to stop.
+
+242
+0:08:54,580 --> 0:08:57,080
+ Because that's the way that we get these robots certified
+
+243
+0:08:57,080 --> 0:09:01,080
+ so that they can stand next to people and not hurt them.
+
+244
+0:09:01,080 --> 0:09:03,340
+ I'll have to restart it, but if I go and just hold here,
+
+245
+0:09:03,340 --> 0:09:04,740
+ it'll stop.
+
+246
+0:09:04,740 --> 0:09:06,640
+ So I'm not going to do that right now.
+
+247
+0:09:06,640 --> 0:09:08,180
+ And that comes as the sort of result.
+
+248
+0:09:08,180 --> 0:09:10,140
+ And so if you have a microservice architecture
+
+249
+0:09:10,140 --> 0:09:12,240
+ with a little bit of delay and eventual consistency,
+
+250
+0:09:12,240 --> 0:09:14,440
+ you run into that's just not a good solution
+
+251
+0:09:14,440 --> 0:09:17,080
+ for this type of system.
+
+252
+0:09:17,080 --> 0:09:18,580
+ Similarly, we have this thing where
+
+253
+0:09:18,580 --> 0:09:21,520
+ testers in a lot of companies don't necessarily
+
+254
+0:09:21,520 --> 0:09:24,340
+ have deep ingrained technical expertise.
+
+255
+0:09:24,340 --> 0:09:24,580
+ Right?
+
+256
+0:09:24,580 --> 0:09:27,300
+ You can test some web application
+
+257
+0:09:27,300 --> 0:09:29,220
+ by just understanding what's the problem domain.
+
+258
+0:09:29,220 --> 0:09:31,580
+ You can learn banking industry.
+
+259
+0:09:31,580 --> 0:09:33,020
+ You can learn how to do banking.
+
+260
+0:09:33,020 --> 0:09:34,520
+ And then you can test the application
+
+261
+0:09:34,520 --> 0:09:37,140
+ knowing nothing about technical concepts at all.
+
+262
+0:09:37,140 --> 0:09:41,260
+ But when you have to test a system like this,
+
+263
+0:09:41,260 --> 0:09:43,180
+ if you're testing the embedded solution,
+
+264
+0:09:43,180 --> 0:09:45,780
+ if you're not an embedded developer, you have no chance.
+
+265
+0:09:45,780 --> 0:09:47,480
+ You can't even start the solution
+
+266
+0:09:47,480 --> 0:09:49,700
+ and understand what it is you're testing for.
+
+267
+0:09:49,700 --> 0:09:51,860
+ You can't look at what's the safety constraints mean
+
+268
+0:09:51,860 --> 0:09:52,800
+ and all this stuff.
+
+269
+0:09:52,800 --> 0:09:54,340
+ So a lot of our testing ends up being
+
+270
+0:09:54,340 --> 0:09:56,720
+ very technical in nature.
+
+271
+0:09:56,720 --> 0:09:59,240
+ Similar deployments are a bit of a pain.
+
+272
+0:09:59,240 --> 0:10:01,600
+ A lot of deploy patterns don't quite work for us.
+
+273
+0:10:01,600 --> 0:10:04,820
+ I would love if there was canary deployments for robots.
+
+274
+0:10:04,820 --> 0:10:06,940
+ You can do this thing where you deploy to the robot,
+
+275
+0:10:06,940 --> 0:10:08,820
+ you check if it works, and then you roll back.
+
+276
+0:10:08,820 --> 0:10:10,560
+ But because a lot of the embedded solutions
+
+277
+0:10:10,560 --> 0:10:12,460
+ are very constrained in how much space
+
+278
+0:10:12,460 --> 0:10:14,520
+ you can have on the robot at one time,
+
+279
+0:10:14,520 --> 0:10:17,600
+ you don't have a lot of space to throw around.
+
+280
+0:10:17,600 --> 0:10:20,400
+ And even just two deployments takes up almost all the space
+
+281
+0:10:20,400 --> 0:10:21,060
+ in the OS.
+
+282
+0:10:23,000 --> 0:10:24,180
+ And then finally, hardware.
+
+283
+0:10:24,180 --> 0:10:25,560
+ Hardware is a bitch.
+
+284
+0:10:25,560 --> 0:10:28,860
+ We have a testing center of maybe 50 or 60 robots
+
+285
+0:10:28,860 --> 0:10:30,960
+ that we use on a daily basis.
+
+286
+0:10:30,960 --> 0:10:33,340
+ And sometimes those robots just give out.
+
+287
+0:10:33,340 --> 0:10:34,760
+ The joint fails.
+
+288
+0:10:34,760 --> 0:10:36,780
+ Some wire is worn out.
+
+289
+0:10:36,780 --> 0:10:38,960
+ It's been moved too many times over the last years,
+
+290
+0:10:38,960 --> 0:10:39,840
+ and it just dies.
+
+291
+0:10:39,840 --> 0:10:41,800
+ And then you're sitting there pulling out your hair,
+
+292
+0:10:41,800 --> 0:10:44,040
+ wondering why your unit tests are failing, when really
+
+293
+0:10:44,040 --> 0:10:46,620
+ the hardware just set out.
+
+294
+0:10:46,620 --> 0:10:48,780
+ And it's with that in mind that we sort of set out
+
+295
+0:10:48,780 --> 0:10:53,440
+ to make some sort of tooling where we don't do too much
+
+296
+0:10:53,440 --> 0:10:54,180
+ invention of the day.
+
+297
+0:10:54,180 --> 0:10:56,120
+ And we're like, we're going to have to start
+
+298
+0:10:56,120 --> 0:10:57,000
+ working on the software.
+
+299
+0:10:57,000 --> 0:11:00,560
+ But the problem is, I don't think there is a solution to that.
+
+300
+0:11:00,560 --> 0:11:02,120
+ So we're going to take a little bit more time
+
+301
+0:11:02,120 --> 0:11:03,320
+ to get the data, and we're going to start
+
+302
+0:11:03,320 --> 0:11:06,340
+ getting the data out to the deep plate once more.
+
+303
+0:11:06,340 --> 0:11:09,180
+ We tried to take all of these fairly competent people who
+
+304
+0:11:09,180 --> 0:11:10,800
+ tinkered a little bit with pipelines,
+
+305
+0:11:10,800 --> 0:11:12,920
+ tinkered a little bit with infrastructure out
+
+306
+0:11:12,920 --> 0:11:13,680
+ in our teams.
+
+307
+0:11:13,680 --> 0:11:15,700
+ And then we tried to look at them and say, OK,
+
+308
+0:11:15,700 --> 0:11:17,720
+ as a community, how do we empower each other?
+
+309
+0:11:17,720 --> 0:11:20,740
+ How do we find solutions that solve the problems we're
+
+310
+0:11:20,740 --> 0:11:23,480
+ having, both for embedded, for web, for?
+
+311
+0:11:23,480 --> 0:11:29,080
+ Infrastructure as code so that we could spin up Jenkins pipelines in a similar fashion and have them tear down in a similar fashion.
+
+312
+0:11:29,860 --> 0:11:37,700
+ We tried to make a robot testing framework so that we could deploy to the robots and have the joints move in the way we wanted and mimic how the robot's supposed to be.
+
+313
+0:11:38,340 --> 0:11:39,720
+ A lot of these sort of things.
+
+314
+0:11:40,260 --> 0:11:40,700
+ Deployments.
+
+315
+0:11:40,900 --> 0:11:48,720
+ We have a custom deployment solution which takes care of all the safety constraints and gets the robot in the right state and wipes it clean and takes care of it.
+
+316
+0:11:48,720 --> 0:11:59,760
+ Also, we can swap out the OS on the fly now because one of the painful things about having to deal with hardware is if you want to burn an actual OS on a robot, that takes you half an hour.
+
+317
+0:12:00,140 --> 0:12:01,960
+ And if you're testing OS, then that really sucks.
+
+318
+0:12:03,220 --> 0:12:10,680
+ And then inspired by Kubernetes, we also invented robot fleet management because we had all these robots that have all of these names, but we really want to treat them like cattle.
+
+319
+0:12:10,800 --> 0:12:16,600
+ We want to have some robot you can deploy to with some constraint, then put tests on it, and then figure out if it worked.
+
+320
+0:12:18,000 --> 0:12:18,600
+ And while...
+
+321
+0:12:18,720 --> 0:12:22,920
+ While that's still something that's a little bit in progress, it's gotten significantly better over time.
+
+322
+0:12:24,380 --> 0:12:28,600
+ And on the flip side, we have our operations where we're all the way back to like early 90s.
+
+323
+0:12:28,900 --> 0:12:37,860
+ I don't think everybody in the room remembers, but like you used to have to do software right the first time because you've deployed it and then you probably never got the chance ever again to talk to your customer or do anything about it.
+
+324
+0:12:38,820 --> 0:12:42,060
+ You know, the early video games, et cetera, they came as they were.
+
+325
+0:12:42,180 --> 0:12:43,360
+ There was no bug fixes coming.
+
+326
+0:12:43,500 --> 0:12:45,120
+ There was no web deployment after.
+
+327
+0:12:45,220 --> 0:12:45,800
+ There was no patch.
+
+328
+0:12:46,580 --> 0:12:48,380
+ And we still have robots deployed.
+
+329
+0:12:48,580 --> 0:12:48,700
+ Like, only...
+
+330
+0:12:48,800 --> 0:12:52,160
+ Almost back from the beginning of time that have never gotten touched again.
+
+331
+0:12:52,620 --> 0:12:55,440
+ Like, customers in our industry are incredibly conservative.
+
+332
+0:12:55,940 --> 0:12:58,340
+ So once you deploy out, like, that's it.
+
+333
+0:12:58,500 --> 0:12:59,980
+ You probably never get that updated.
+
+334
+0:13:01,620 --> 0:13:05,920
+ Because for every minute that the robot's down, they're losing hundreds of thousands of dollars, if not more.
+
+335
+0:13:06,260 --> 0:13:08,300
+ Like, that's just the cost of the production line stopping.
+
+336
+0:13:09,760 --> 0:13:13,300
+ And that also means that we have this problem of recreating from the field.
+
+337
+0:13:13,460 --> 0:13:18,300
+ Like, so when a bug happens or a disaster happens of some kind, the customer...
+
+338
+0:13:18,700 --> 0:13:19,720
+ Calls in and say, hey, it broke.
+
+339
+0:13:20,640 --> 0:13:22,620
+ And then we have to figure out, okay, how did that break?
+
+340
+0:13:22,720 --> 0:13:24,260
+ Because we don't have access to the system.
+
+341
+0:13:24,360 --> 0:13:25,240
+ We don't exactly know.
+
+342
+0:13:25,320 --> 0:13:26,540
+ We have to replicate at home.
+
+343
+0:13:26,880 --> 0:13:28,140
+ Like, how do you break the robot?
+
+344
+0:13:28,580 --> 0:13:29,760
+ Like, what did you install on it?
+
+345
+0:13:29,780 --> 0:13:30,500
+ Where did you put it?
+
+346
+0:13:30,580 --> 0:13:31,360
+ What was it doing?
+
+347
+0:13:31,800 --> 0:13:33,080
+ You know, how long was it running for?
+
+348
+0:13:33,080 --> 0:13:34,340
+ All these things and then recreate.
+
+349
+0:13:35,200 --> 0:13:37,380
+ And it leads to a really, really long feedback flow.
+
+350
+0:13:38,880 --> 0:13:42,540
+ And then a lot of our tooling becomes business critical because, like, we need exactly that
+
+351
+0:13:42,540 --> 0:13:45,720
+ constellation and configuration that's on the robot to recreate what happened.
+
+352
+0:13:47,920 --> 0:13:48,320
+ So...
+
+353
+0:13:48,320 --> 0:13:48,660
+ Um...
+
+354
+0:13:48,660 --> 0:13:53,780
+ And I think if the demo gods are kind to me, I'm going to attempt to do a little bit of demo.
+
+355
+0:13:54,820 --> 0:13:56,460
+ This may or may not go horrible.
+
+356
+0:13:56,760 --> 0:13:58,280
+ So forgive me if that's the case.
+
+357
+0:14:00,160 --> 0:14:00,640
+ Um...
+
+358
+0:14:00,640 --> 0:14:03,280
+ I also need to move my...
+
+359
+0:14:03,280 --> 0:14:03,760
+ There we are.
+
+360
+0:14:04,500 --> 0:14:05,700
+ My Visual Studio code.
+
+361
+0:14:06,780 --> 0:14:07,300
+ Um...
+
+362
+0:14:07,300 --> 0:14:10,060
+ So coming back to, like, the way we organized our teams.
+
+363
+0:14:10,760 --> 0:14:18,140
+ We tried to do a lot of these empowerment of the developers that were just dangerous enough to understand infrastructure.
+
+364
+0:14:18,660 --> 0:14:20,420
+ But not necessarily masters of the craft.
+
+365
+0:14:20,660 --> 0:14:24,480
+ Like, a lot of them were educated embedded developers or JavaScript or whatever.
+
+366
+0:14:24,980 --> 0:14:26,960
+ And they weren't really used to infrastructure.
+
+367
+0:14:27,780 --> 0:14:31,680
+ And so one of the early models was that we had the most senior people doing infrastructure.
+
+368
+0:14:32,240 --> 0:14:36,220
+ Set up a lot of little niceties inside the repos.
+
+369
+0:14:36,480 --> 0:14:39,180
+ What you're seeing here is a code repo.
+
+370
+0:14:39,400 --> 0:14:41,640
+ This is our testing suite for the robots.
+
+371
+0:14:42,600 --> 0:14:45,740
+ And in every repository, we have a code folder.
+
+372
+0:14:46,380 --> 0:14:48,500
+ Which contains the description for how we want the game to work.
+
+373
+0:14:48,500 --> 0:14:49,540
+ The Jenkins pipeline to look.
+
+374
+0:14:50,040 --> 0:14:51,420
+ And how we want to set up SonarCube.
+
+375
+0:14:51,500 --> 0:14:53,600
+ How we want to configure various checks.
+
+376
+0:14:54,020 --> 0:14:56,620
+ And then custom stuff that applies to just this repository.
+
+377
+0:14:56,780 --> 0:14:58,880
+ In this case, we have a formatting check.
+
+378
+0:14:59,140 --> 0:15:00,640
+ Shell scripts and a documentation check.
+
+379
+0:15:02,160 --> 0:15:04,840
+ Which runs some custom pipeline behavior.
+
+380
+0:15:05,740 --> 0:15:11,840
+ And this made it really easy for us to spin up our infrastructure and our pipelines as code.
+
+381
+0:15:12,240 --> 0:15:14,740
+ Even in a very old functional Jenkins solution.
+
+382
+0:15:15,460 --> 0:15:17,740
+ So it's pretty common for our developers to...
+
+383
+0:15:18,500 --> 0:15:21,500
+ Define a pipeline on behalf of the team.
+
+384
+0:15:21,780 --> 0:15:23,780
+ And then have the other team mates just use it.
+
+385
+0:15:24,160 --> 0:15:26,160
+ And just spin it up through the repository.
+
+386
+0:15:26,160 --> 0:15:29,160
+ Without necessarily needing to go and figure out what's infrastructure.
+
+387
+0:15:29,160 --> 0:15:30,420
+ What do I do? Where do I deploy it?
+
+388
+0:15:30,420 --> 0:15:31,840
+ Where does it go? How do I deal with it?
+
+389
+0:15:32,200 --> 0:15:33,460
+ Because that's taken care of.
+
+390
+0:15:35,620 --> 0:15:39,300
+ And it takes care of a bunch of the custom behavior up front.
+
+391
+0:15:40,780 --> 0:15:42,460
+ We generally deal with this sort of...
+
+392
+0:15:43,800 --> 0:15:46,380
+ We have a check before you go into master.
+
+393
+0:15:46,580 --> 0:15:48,200
+ And a check after you go into master.
+
+394
+0:15:48,500 --> 0:15:51,260
+ So a lot of it is really this check before master.
+
+395
+0:15:51,960 --> 0:15:55,280
+ Where most of our teams opt to have a very long testing loop up front.
+
+396
+0:15:55,400 --> 0:15:58,720
+ So that once code gets in, we're fairly sure that it works.
+
+397
+0:15:59,080 --> 0:16:00,620
+ That comes out of the embedded nature.
+
+398
+0:16:00,860 --> 0:16:04,600
+ That it's easier to prevent mistakes than it is to then fix them afterwards.
+
+399
+0:16:06,420 --> 0:16:09,240
+ But it also leads to the longer running tests.
+
+400
+0:16:09,460 --> 0:16:11,580
+ Like performance testing this bad boy takes two weeks.
+
+401
+0:16:12,640 --> 0:16:15,480
+ And we like to run that after code has reached master.
+
+402
+0:16:15,580 --> 0:16:16,840
+ So people can tinker with it and share.
+
+403
+0:16:18,500 --> 0:16:20,500
+ So we've got a lot of things that we can do to make sure that it works.
+
+404
+0:16:20,500 --> 0:16:22,500
+ Moving on to our fleet management, which is also...
+
+405
+0:16:22,500 --> 0:16:24,500
+ If I can figure out my mouse.
+
+406
+0:16:24,500 --> 0:16:30,500
+ Which is inspired by web generally.
+
+407
+0:16:30,500 --> 0:16:32,500
+ That's not the right way.
+
+408
+0:16:32,500 --> 0:16:34,500
+ It's this way.
+
+409
+0:16:34,500 --> 0:16:36,500
+ We registered all of our robots.
+
+410
+0:16:36,500 --> 0:16:38,500
+ Although they're named.
+
+411
+0:16:38,500 --> 0:16:40,500
+ We registered them all in a system.
+
+412
+0:16:40,500 --> 0:16:42,500
+ And started building on that.
+
+413
+0:16:42,500 --> 0:16:46,500
+ So we have a little Raspberry Pi actually that we plug into the robot.
+
+414
+0:16:46,500 --> 0:16:47,800
+ That gives them a camera.
+
+415
+0:16:47,800 --> 0:16:50,800
+ And gives them an IP.
+
+416
+0:16:50,800 --> 0:16:54,800
+ And lets us access programmatically the robot in a way so that we can test it.
+
+417
+0:16:54,800 --> 0:16:58,800
+ All of that was inspired more or less by the way that Kubernetes does things.
+
+418
+0:16:58,800 --> 0:17:02,800
+ And tries to have a stateless approach to it.
+
+419
+0:17:02,800 --> 0:17:04,800
+ I should have probably checked.
+
+420
+0:17:04,800 --> 0:17:06,800
+ But this is one of ours.
+
+421
+0:17:06,800 --> 0:17:09,800
+ You can then go to the robot and you can get a lot of metadata information about it.
+
+422
+0:17:09,800 --> 0:17:12,800
+ You can see what sort of OS is it running.
+
+423
+0:17:12,800 --> 0:17:15,800
+ What's the architecture of the OS.
+
+424
+0:17:15,800 --> 0:17:17,800
+ What's deployed on it currently.
+
+425
+0:17:17,800 --> 0:17:19,800
+ Is anybody running tests on it.
+
+426
+0:17:19,800 --> 0:17:21,800
+ What's the memory load.
+
+427
+0:17:21,800 --> 0:17:23,800
+ If Grafana would load.
+
+428
+0:17:23,800 --> 0:17:25,800
+ And what's the CPU load.
+
+429
+0:17:25,800 --> 0:17:27,800
+ What's the joints like.
+
+430
+0:17:27,800 --> 0:17:29,800
+ A lot of the embedded information.
+
+431
+0:17:29,800 --> 0:17:31,800
+ And what are we currently testing on it.
+
+432
+0:17:31,800 --> 0:17:34,800
+ And it allows a lot of the developers to self-service.
+
+433
+0:17:34,800 --> 0:17:41,800
+ So rather than having to sort of go and figure out, okay, which robot can I borrow to deploy on and deal with.
+
+434
+0:17:41,800 --> 0:17:43,800
+ You just push it out.
+
+435
+0:17:43,800 --> 0:17:45,800
+ Jenkins figures out, okay, this robot is available.
+
+436
+0:17:45,800 --> 0:17:46,800
+ I'll deploy to it.
+
+437
+0:17:47,800 --> 0:17:50,800
+ And then they get the results that they require.
+
+438
+0:17:50,800 --> 0:17:53,800
+ And it also lets people afterwards figure out, okay, what went wrong.
+
+439
+0:17:53,800 --> 0:17:54,800
+ Like the thing exploded.
+
+440
+0:17:54,800 --> 0:17:55,800
+ The test blew up.
+
+441
+0:17:55,800 --> 0:17:57,800
+ We can then go and troubleshoot.
+
+442
+0:17:57,800 --> 0:18:00,800
+ And furthermore, it allows us to do checks on the hardware.
+
+443
+0:18:00,800 --> 0:18:03,800
+ So we have a little not quite chaos monkey like.
+
+444
+0:18:03,800 --> 0:18:07,800
+ But something that scans over the fleet and says, okay, well, this one has failed all of testing.
+
+445
+0:18:07,800 --> 0:18:09,800
+ It looks like it's failing in this one joint test every time.
+
+446
+0:18:09,800 --> 0:18:12,800
+ So when it tries to bend the elbow, it seems to crank out.
+
+447
+0:18:12,800 --> 0:18:13,800
+ That's probably a hardware failure.
+
+448
+0:18:13,800 --> 0:18:15,800
+ We can then send it for repair.
+
+449
+0:18:15,800 --> 0:18:28,800
+ And it's an attempt to constrain what's really, really difficult about embedded programming, which is the hardware itself.
+
+450
+0:18:28,800 --> 0:18:37,800
+ It's an attempt to like black box the system and allow people that otherwise would need really specialized knowledge, either OS, embedded, hardware, whatever.
+
+451
+0:18:37,800 --> 0:18:42,800
+ So then just have something that they can deploy to and try out if their code is working.
+
+452
+0:18:42,800 --> 0:18:43,800
+ Okay.
+
+453
+0:18:43,800 --> 0:18:44,800
+ So.
+
+454
+0:18:44,800 --> 0:18:49,800
+ And it's our best attempt so far at also automating a lot of the operations for our robots.
+
+455
+0:18:49,800 --> 0:18:56,800
+ I guess I'm not going to wait any longer for Grafana.
+
+456
+0:18:56,800 --> 0:18:59,800
+ Now, coming back.
+
+457
+0:18:59,800 --> 0:19:01,800
+ This is all nice and good.
+
+458
+0:19:01,800 --> 0:19:04,800
+ But what does this mean at company level?
+
+459
+0:19:04,800 --> 0:19:08,800
+ Because a lot of these teams have significant cultural differences.
+
+460
+0:19:08,800 --> 0:19:09,800
+ And they want to do things differently.
+
+461
+0:19:09,800 --> 0:19:13,800
+ They care very different things in the development flows.
+
+462
+0:19:13,800 --> 0:19:17,800
+ Like if I talk to my embedded developers, code readability is not the top concern.
+
+463
+0:19:17,800 --> 0:19:19,800
+ Performances.
+
+464
+0:19:19,800 --> 0:19:22,800
+ If I talk to my JavaScript people in space, I mean, so what, right?
+
+465
+0:19:22,800 --> 0:19:25,800
+ Let's just put, you know, all the files on the Internet on the robot.
+
+466
+0:19:25,800 --> 0:19:27,800
+ That should do, right?
+
+467
+0:19:27,800 --> 0:19:34,800
+ And so we started looking into how do we frame this in a way that's business-turned.
+
+468
+0:19:34,800 --> 0:19:41,800
+ For those of you who are not acquainted, DORA, DevOps Research Assessment, was a study conducted by Nicole Forsgren.
+
+469
+0:19:41,800 --> 0:19:42,800
+ And later they wrote a book.
+
+470
+0:19:42,800 --> 0:19:46,800
+ And later they wrote a book called Accelerate, which I also highly recommend.
+
+471
+0:19:46,800 --> 0:19:51,800
+ Which lays the foundation for I think it was about 200 companies they interviewed.
+
+472
+0:19:51,800 --> 0:19:55,800
+ Where they looked at what are the behaviors that high performers have that the others don't.
+
+473
+0:19:55,800 --> 0:20:01,800
+ And they basically arrived at four metrics that seemed to be consistent for high performers.
+
+474
+0:20:01,800 --> 0:20:05,800
+ On the development side, we had deployment frequency and deployment lead time.
+
+475
+0:20:05,800 --> 0:20:08,800
+ And on the ops side, we had meantime to recovery and change failure rate.
+
+476
+0:20:08,800 --> 0:20:10,800
+ Or change success rate in this case.
+
+477
+0:20:10,800 --> 0:20:11,800
+ Sorry.
+
+478
+0:20:11,800 --> 0:20:16,800
+ And the fascinating thing, and I'll get to it in a moment, what does this mean in actual terms?
+
+479
+0:20:16,800 --> 0:20:18,800
+ You know, 30X is one thing.
+
+480
+0:20:18,800 --> 0:20:20,800
+ But what does that mean in actual time?
+
+481
+0:20:20,800 --> 0:20:25,800
+ But the fascinating thing is that the good companies don't just develop faster.
+
+482
+0:20:25,800 --> 0:20:26,800
+ They also recover faster.
+
+483
+0:20:26,800 --> 0:20:27,800
+ So you get everything.
+
+484
+0:20:27,800 --> 0:20:30,800
+ You sort of have this expectation as an operator or a developer.
+
+485
+0:20:30,800 --> 0:20:33,800
+ Like you have to give up speed to get stability or vice versa.
+
+486
+0:20:33,800 --> 0:20:34,800
+ And that's not the case.
+
+487
+0:20:34,800 --> 0:20:35,800
+ You get both.
+
+488
+0:20:35,800 --> 0:20:39,800
+ So if you're a high performer, you just get everything.
+
+489
+0:20:39,800 --> 0:20:40,800
+ And we looked at this.
+
+490
+0:20:40,800 --> 0:20:41,800
+ I looked at this, actually.
+
+491
+0:20:41,800 --> 0:20:53,800
+ And thought, okay, can we somehow map this down to metrics that we can pull from our teams so that we can box in and figure out a way to talk about, okay, like which teams need help, which teams are struggling, which teams are doing well.
+
+492
+0:20:53,800 --> 0:20:55,800
+ What do we share?
+
+493
+0:20:55,800 --> 0:21:04,800
+ The way that it looks when you convert it to, you know, understandable terms is that an elite performer is someone who can deploy on demand multiple times a day.
+
+494
+0:21:04,800 --> 0:21:09,800
+ And somebody who is maybe not doing so well can deploy between once a month and every six months.
+
+495
+0:21:09,800 --> 0:21:10,800
+ If not worse.
+
+496
+0:21:10,800 --> 0:21:16,800
+ I've definitely been in places where it took, you know, a year to get a release out the door.
+
+497
+0:21:16,800 --> 0:21:23,800
+ And lead time, similarly, is, you know, how long does it take for you from you're done with your code until it's in the hands of a customer?
+
+498
+0:21:23,800 --> 0:21:24,800
+ Right?
+
+499
+0:21:24,800 --> 0:21:25,800
+ For the elite performers, it's less than a day.
+
+500
+0:21:25,800 --> 0:21:26,800
+ I'm done coding.
+
+501
+0:21:26,800 --> 0:21:27,800
+ It's out at the client at the end of the day.
+
+502
+0:21:27,800 --> 0:21:28,800
+ Perfect.
+
+503
+0:21:28,800 --> 0:21:33,800
+ But for a lot of companies, it's between one and six months.
+
+504
+0:21:33,800 --> 0:21:34,800
+ Time to restore service.
+
+505
+0:21:34,800 --> 0:21:38,800
+ Like if I make a bug or I blow up the service or I screw up the server, how long does it take?
+
+506
+0:21:38,800 --> 0:21:40,800
+ How long does it take for us to restore service?
+
+507
+0:21:40,800 --> 0:21:42,800
+ Like how long are our clients waiting at a broken product?
+
+508
+0:21:42,800 --> 0:21:44,800
+ I mean, the robot breaks down.
+
+509
+0:21:44,800 --> 0:21:47,800
+ How long do our customers wait for it to work again?
+
+510
+0:21:47,800 --> 0:21:50,800
+ We're at less than an hour or between a week and a month.
+
+511
+0:21:50,800 --> 0:21:52,800
+ I think some of these are very kind.
+
+512
+0:21:52,800 --> 0:21:55,800
+ Because I've definitely seen places where it's not so great.
+
+513
+0:21:55,800 --> 0:21:59,800
+ And change failure rate is how often do I do a change that then breaks something?
+
+514
+0:21:59,800 --> 0:22:02,800
+ Introduces a bug or destroys something that was working.
+
+515
+0:22:02,800 --> 0:22:07,800
+ And, you know, low performers hit all the way up to like 50% of changes that they do just flat.
+
+516
+0:22:08,800 --> 0:22:12,800
+ Imagine like half of the stuff that you do just doesn't work or destroys something else.
+
+517
+0:22:12,800 --> 0:22:17,800
+ And Universal is pretty firmly in the yellow category.
+
+518
+0:22:17,800 --> 0:22:19,800
+ Like we're not doing fantastically.
+
+519
+0:22:19,800 --> 0:22:24,800
+ It's worth noting that the entire study is conducted primarily in web companies.
+
+520
+0:22:24,800 --> 0:22:26,800
+ And I haven't been able to find anything for embedded.
+
+521
+0:22:26,800 --> 0:22:30,800
+ But some of these things are just harder when you have to deal with actual hardware.
+
+522
+0:22:30,800 --> 0:22:32,800
+ Like the movements take time.
+
+523
+0:22:32,800 --> 0:22:34,800
+ Like I can't run my test suite faster than we do.
+
+524
+0:22:34,800 --> 0:22:38,800
+ It just takes that time to move the robot from this angle to this angle in general.
+
+525
+0:22:38,800 --> 0:22:40,800
+ And check if the angle is right.
+
+526
+0:22:40,800 --> 0:22:43,800
+ But that doesn't mean that we should be resting and waiting.
+
+527
+0:22:43,800 --> 0:22:47,800
+ It's definitely something that we need to work with.
+
+528
+0:22:47,800 --> 0:22:52,800
+ And so we tried to sit down and go, okay, like how do we break this down into something that makes sense?
+
+529
+0:22:52,800 --> 0:22:58,800
+ And we sort of arrived at the fact that like business stakeholders and engineers have a very different onset of what does this mean?
+
+530
+0:22:58,800 --> 0:23:02,800
+ And we ran into the problem where we would try to explain like, hey, we want to deploy faster.
+
+531
+0:23:02,800 --> 0:23:04,800
+ And they'd be like, okay, and so what?
+
+532
+0:23:04,800 --> 0:23:05,800
+ Like what does that matter to me?
+
+533
+0:23:05,800 --> 0:23:07,800
+ I just want robots, right?
+
+534
+0:23:07,800 --> 0:23:10,800
+ And so for the business side, you're looking at lead time.
+
+535
+0:23:10,800 --> 0:23:14,800
+ Like how long does it take from a customer to ask me for a thing until I can deliver it?
+
+536
+0:23:14,800 --> 0:23:17,800
+ You're looking at service incidents and like how often does the robot break?
+
+537
+0:23:17,800 --> 0:23:19,800
+ When do I need to give them money and spare parts?
+
+538
+0:23:19,800 --> 0:23:22,800
+ You're looking at, you know, escape bugs, right?
+
+539
+0:23:22,800 --> 0:23:23,800
+ That's the failure rate.
+
+540
+0:23:23,800 --> 0:23:26,800
+ Like how often do we introduce some sort of thing that breaks their flow?
+
+541
+0:23:26,800 --> 0:23:28,800
+ And we're looking at perceived quality levels.
+
+542
+0:23:28,800 --> 0:23:35,800
+ If you ask a lot of our customers in the early days how good the robots are, they'll laugh at you because literally half of the robots we shipped didn't work.
+
+543
+0:23:35,800 --> 0:23:36,800
+ Like they didn't power on.
+
+544
+0:23:36,800 --> 0:23:37,800
+ Right?
+
+545
+0:23:37,800 --> 0:23:39,800
+ They just had to send them back to shop.
+
+546
+0:23:39,800 --> 0:23:42,800
+ Meanwhile, the engineering angle is a little bit different.
+
+547
+0:23:42,800 --> 0:23:45,800
+ We have a more fine-grained understanding of what we're trying to achieve.
+
+548
+0:23:45,800 --> 0:23:47,800
+ We look at the service uptime.
+
+549
+0:23:47,800 --> 0:23:48,800
+ We look at the time for recovery.
+
+550
+0:23:48,800 --> 0:23:51,800
+ We look at how long does it take for us to spin up a virtual machine, for example.
+
+551
+0:23:51,800 --> 0:23:53,800
+ You know, is it fully automated?
+
+552
+0:23:53,800 --> 0:23:54,800
+ Can we do this with our eyes closed?
+
+553
+0:23:54,800 --> 0:23:55,800
+ So do we need Tim?
+
+554
+0:23:55,800 --> 0:23:56,800
+ Like does he have to be here?
+
+555
+0:23:56,800 --> 0:23:57,800
+ Is he on holiday?
+
+556
+0:23:57,800 --> 0:23:58,800
+ We're screwed.
+
+557
+0:23:58,800 --> 0:24:02,800
+ We look at deployment frequency, pipeline cycle time and uptime.
+
+558
+0:24:02,800 --> 0:24:03,800
+ And we look at bug recovery.
+
+559
+0:24:03,800 --> 0:24:06,800
+ Like, you know, when a bug is introduced by a customer, do we need it?
+
+560
+0:24:06,800 --> 0:24:08,800
+ Or do we react to it?
+
+561
+0:24:08,800 --> 0:24:09,800
+ Is it high criticality?
+
+562
+0:24:09,800 --> 0:24:10,800
+ Do we take care of it first?
+
+563
+0:24:10,800 --> 0:24:13,800
+ Like all of these process flow things.
+
+564
+0:24:13,800 --> 0:24:22,800
+ And then, you know, my job was to do some sort of reporting that bridged that gap and basically explained to our most senior stakeholders, you know, what do we care about in engineering and why?
+
+565
+0:24:22,800 --> 0:24:24,800
+ Why should you care about it in business?
+
+566
+0:24:24,800 --> 0:24:25,800
+ Right?
+
+567
+0:24:25,800 --> 0:24:26,800
+ What does this mean for you?
+
+568
+0:24:26,800 --> 0:24:34,800
+ Because a lot of companies, ourselves included, run into this problem where things get funded because they make money at the customer.
+
+569
+0:24:34,800 --> 0:24:36,800
+ And then these are a little bit intangible.
+
+570
+0:24:36,800 --> 0:24:39,800
+ And when they, in theory, you can say, okay, but the team should just do it.
+
+571
+0:24:39,800 --> 0:24:40,800
+ Right?
+
+572
+0:24:40,800 --> 0:24:42,800
+ You'll just take the time and you'll take care of the stuff.
+
+573
+0:24:42,800 --> 0:24:49,800
+ But when it then becomes a cross-company problem, then you actually need to have stakeholders on board.
+
+574
+0:24:49,800 --> 0:24:51,800
+ And so we started trying to figure out something.
+
+575
+0:24:51,800 --> 0:24:54,800
+ I experimented a little bit with the data.
+
+576
+0:24:54,800 --> 0:24:55,800
+ That wasn't pretty.
+
+577
+0:24:55,800 --> 0:24:59,800
+ It turns out that when you have, you know, years and years of data, it's a lot of junk.
+
+578
+0:24:59,800 --> 0:25:03,800
+ A lot of stuff sneaks in that's not very clean that makes it very difficult to process.
+
+579
+0:25:03,800 --> 0:25:05,800
+ The data cleaning mess in Jira, for example, was amazing.
+
+580
+0:25:06,800 --> 0:25:16,800
+ I mean, you know, depending on what project it was, it was either completely reliable or not at all something you could count on, even though it was describing the exact same thing.
+
+581
+0:25:16,800 --> 0:25:17,800
+ I mean, how long did the bug last?
+
+582
+0:25:17,800 --> 0:25:21,800
+ Well, you know, if it was reported multiple times, then one of them was closed and the other was still open after years.
+
+583
+0:25:21,800 --> 0:25:24,800
+ This sort of problem was really difficult.
+
+584
+0:25:24,800 --> 0:25:32,800
+ We had Elk, Elasticsearch, Kibana, and Logstash where everybody was just throwing in data, tons and tons of data, and you could do anything.
+
+585
+0:25:32,800 --> 0:25:35,800
+ And so as a result, you know, it wasn't really any good.
+
+586
+0:25:35,800 --> 0:25:37,800
+ At the time.
+
+587
+0:25:37,800 --> 0:25:40,800
+ And we had, you know, this lack of consistency around our initiatives.
+
+588
+0:25:40,800 --> 0:25:45,800
+ We were trying to, in one corner, improve security and the same, like, different place where we're trying to do pipelines.
+
+589
+0:25:45,800 --> 0:25:52,800
+ But, like, those people had to communicate and figure out, you know, something together because it was impacting both services and you couldn't have both in the same loop.
+
+590
+0:25:52,800 --> 0:25:55,800
+ This sort of thing was really nasty.
+
+591
+0:25:55,800 --> 0:25:57,800
+ And then we had a culture of building everything.
+
+592
+0:25:57,800 --> 0:26:03,800
+ We had a couple of engineers who thought it was really nice and challenging to, like, make their own tools and, like, reinvent the wheel.
+
+593
+0:26:03,800 --> 0:26:05,800
+ And we started buying stuff.
+
+594
+0:26:05,800 --> 0:26:08,800
+ And that actually turned out to really leverage a lot of the things that we wanted to do.
+
+595
+0:26:08,800 --> 0:26:14,800
+ We very quickly got some tooling that took care of some of the really severe pains we'd had for a very long time.
+
+596
+0:26:14,800 --> 0:26:20,800
+ Just to mention a few, we had CodeScene come in and sort of look at our technical debt from a data-driven perspective.
+
+597
+0:26:20,800 --> 0:26:24,800
+ We had a little service called Accidental Quality that gave us a lot of the metrics up front.
+
+598
+0:26:24,800 --> 0:26:28,800
+ We had CVE detection in SonarCube and similar things.
+
+599
+0:26:28,800 --> 0:26:30,800
+ And we had some security stuff.
+
+600
+0:26:30,800 --> 0:26:34,800
+ And then we had Azure that allowed us to deliver solutions very rapidly out to customers as prototypes.
+
+601
+0:26:34,800 --> 0:26:38,800
+ Not necessarily as metal, but just, you know, like, how does the robot feel?
+
+602
+0:26:38,800 --> 0:26:39,800
+ How would it interact?
+
+603
+0:26:39,800 --> 0:26:42,800
+ Like, if I do this and this and that, can we simulate what happens?
+
+604
+0:26:42,800 --> 0:26:45,800
+ And a lot of things started speeding up.
+
+605
+0:26:45,800 --> 0:26:54,800
+ And then finally we also got around to, like, having our team specifically sit down and go through the data and say, okay, let's make some dashboards that people can rely on.
+
+606
+0:26:54,800 --> 0:26:57,800
+ I'm going to show you in a second.
+
+607
+0:26:57,800 --> 0:27:00,800
+ So that we can have our own numbers for the things that we care about.
+
+608
+0:27:00,800 --> 0:27:03,800
+ Sort of if we go and say to a team, hey, we want you to clean up your bugs.
+
+609
+0:27:03,800 --> 0:27:05,800
+ And then they can come back and say, okay, like, where are we with bugs?
+
+610
+0:27:05,800 --> 0:27:07,800
+ Like, where, you know, how long are we taking to solve them?
+
+611
+0:27:07,800 --> 0:27:09,800
+ Are we solving the right ones?
+
+612
+0:27:09,800 --> 0:27:12,800
+ This sort of data foundation so that people don't have to go searching for it.
+
+613
+0:27:12,800 --> 0:27:19,800
+ And then finally we had a couple of experiments trying to run chaos monkey type logic on the robot fleet.
+
+614
+0:27:19,800 --> 0:27:21,800
+ Trying to figure out our challenges.
+
+615
+0:27:21,800 --> 0:27:23,800
+ And we're just not ready for that type of thing.
+
+616
+0:27:23,800 --> 0:27:27,800
+ But it's mostly that we just don't exactly know how to recover from it.
+
+617
+0:27:27,800 --> 0:27:29,800
+ Like, the robot's a little bit fragile.
+
+618
+0:27:29,800 --> 0:27:31,800
+ And, like, the cleanup task is significant.
+
+619
+0:27:31,800 --> 0:27:33,800
+ So we were wasting more time than we were earning.
+
+620
+0:27:33,800 --> 0:27:35,800
+ Quality in turn.
+
+621
+0:27:35,800 --> 0:27:37,800
+ But I think that's something that will come later.
+
+622
+0:27:37,800 --> 0:27:42,800
+ To give you guys a taste of it, here we have a code scene.
+
+623
+0:27:42,800 --> 0:27:48,800
+ Which shows you the more red the bubble is, the more people meddle with this piece of code.
+
+624
+0:27:48,800 --> 0:27:50,800
+ And the more commits there is.
+
+625
+0:27:50,800 --> 0:27:54,800
+ So basically if it's very red, then everybody touches it.
+
+626
+0:27:54,800 --> 0:27:56,800
+ And it's very technically difficult to deal with.
+
+627
+0:27:56,800 --> 0:27:58,800
+ Gives you a really good understanding.
+
+628
+0:27:58,800 --> 0:28:02,800
+ Here we have the repository I showed before, which is our tests.
+
+629
+0:28:02,800 --> 0:28:05,800
+ So you find the same couple of bubbles that everybody has to touch.
+
+630
+0:28:05,800 --> 0:28:11,800
+ Is the configuration and sort of the, what's that called?
+
+631
+0:28:11,800 --> 0:28:13,800
+ I blanked.
+
+632
+0:28:13,800 --> 0:28:15,800
+ But it's the part that you set up before the test.
+
+633
+0:28:15,800 --> 0:28:17,800
+ So describing how the robot's supposed to look.
+
+634
+0:28:17,800 --> 0:28:23,800
+ And similarly you can look at, like, who owns that.
+
+635
+0:28:23,800 --> 0:28:25,800
+ Here's my team.
+
+636
+0:28:25,800 --> 0:28:26,800
+ Primarily.
+
+637
+0:28:26,800 --> 0:28:28,800
+ And who's coded what part.
+
+638
+0:28:28,800 --> 0:28:30,800
+ So you can go through and see, okay.
+
+639
+0:28:30,800 --> 0:28:31,800
+ If was to leave.
+
+640
+0:28:31,800 --> 0:28:33,800
+ Then what happens?
+
+641
+0:28:33,800 --> 0:28:34,800
+ Like, where does that knowledge go?
+
+642
+0:28:34,800 --> 0:28:36,800
+ It goes poof.
+
+643
+0:28:36,800 --> 0:28:39,800
+ Gives you a pretty good understanding of who's the owner of a code module.
+
+644
+0:28:39,800 --> 0:28:42,800
+ And then similarly for some of the metrics.
+
+645
+0:28:42,800 --> 0:28:47,800
+ We very quickly got an overview of, you know, the bottom shows the days that we had critical box open.
+
+646
+0:28:47,800 --> 0:28:49,800
+ For a given team.
+
+647
+0:28:49,800 --> 0:28:50,800
+ Which I won't share with team.
+
+648
+0:28:50,800 --> 0:28:52,800
+ But that wasn't very pretty.
+
+649
+0:28:52,800 --> 0:28:59,800
+ And then it showed us sort of how were we behaving with bug count and time to recovery for various teams.
+
+650
+0:28:59,800 --> 0:29:01,800
+ Um.
+
+651
+0:29:01,800 --> 0:29:03,800
+ And it also gave us lead times.
+
+652
+0:29:03,800 --> 0:29:06,800
+ For a lot of the code structure.
+
+653
+0:29:06,800 --> 0:29:10,800
+ This is our mathematical part of the code base.
+
+654
+0:29:10,800 --> 0:29:16,800
+ And sort of shows the path that the code has to take to get to the logic that figures out how those motions work.
+
+655
+0:29:16,800 --> 0:29:19,800
+ And we can then see, like, where does stuff get stuck?
+
+656
+0:29:19,800 --> 0:29:21,800
+ What's the lead time on the various things?
+
+657
+0:29:21,800 --> 0:29:29,800
+ If I make a commit in this repository, it would take me 40 minutes to travel through the chain and get into a finished binary that I can deploy to a robot.
+
+658
+0:29:29,800 --> 0:29:32,800
+ And it really just helps to figure out, okay, where are the various teams doing?
+
+659
+0:29:32,800 --> 0:29:34,800
+ Which ones of them are speeding through things?
+
+660
+0:29:34,800 --> 0:29:36,800
+ And which ones of them need help?
+
+661
+0:29:36,800 --> 0:29:40,800
+ And then finally, we made our own dashboard.
+
+662
+0:29:40,800 --> 0:29:46,800
+ Which then takes very specific operational stuff that's a current initiative that we're trying to do across company.
+
+663
+0:29:46,800 --> 0:29:49,800
+ And then boils down, in this case, customer impacts a custom thing.
+
+664
+0:29:49,800 --> 0:29:52,800
+ Where we try to look at, okay, how badly is this bug affecting our customers?
+
+665
+0:29:52,800 --> 0:29:54,800
+ How many are suffering from it?
+
+666
+0:29:54,800 --> 0:29:57,800
+ How much is it hurting our key customers hurting from it?
+
+667
+0:29:57,800 --> 0:29:58,800
+ That sort of thing.
+
+668
+0:29:58,800 --> 0:30:02,800
+ And then breaks it down into what sort of release is it going into?
+
+669
+0:30:02,800 --> 0:30:04,800
+ What team is dealing with it?
+
+670
+0:30:04,800 --> 0:30:06,800
+ Where do we need to go and put our help?
+
+671
+0:30:06,800 --> 0:30:08,800
+ Because we're a support organ, right?
+
+672
+0:30:08,800 --> 0:30:19,800
+ Like, as a quality thing, as you move a little bit closer to empowered teams, you have to sort of start going and helping different teams do different things because you have all the knowledge.
+
+673
+0:30:19,800 --> 0:30:23,800
+ And I think that about does it for my time.
+
+674
+0:30:23,800 --> 0:30:25,800
+ So, are there any questions?
+
+675
+0:30:25,800 --> 0:30:27,800
+ Do we have any questions for David?
+
+676
+0:30:27,800 --> 0:30:36,800
+ When you do testing, do you deploy the same code to just one robot or multiple?
+
+677
+0:30:36,800 --> 0:30:39,800
+ We tend to deploy to a handful of robots.
+
+678
+0:30:39,800 --> 0:30:41,800
+ Testing for different things.
+
+679
+0:30:41,800 --> 0:30:49,800
+ So, any given finished robot binary will go through a lot of joint tests where we see if all the arm can move in all the ways we want.
+
+680
+0:30:49,800 --> 0:30:51,800
+ It goes through a performance test.
+
+681
+0:30:51,800 --> 0:30:55,800
+ And then it goes through a random selection of robots that do different things.
+
+682
+0:30:55,800 --> 0:30:58,800
+ And then trying to catch errors.
+
+683
+0:30:58,800 --> 0:31:03,800
+ And trying to differentiate, you know, like one given feature might have to go through specific things.
+
+684
+0:31:03,800 --> 0:31:10,800
+ And we collect a lot of data on the pathing of the robot and the performance of the robot trying to sort of catch memory leaks and similar problems.
+
+685
+0:31:17,800 --> 0:31:23,800
+ So, changing the way people work is often something that's riddled with emotions.
+
+686
+0:31:23,800 --> 0:31:27,800
+ And preconceptions.
+
+687
+0:31:27,800 --> 0:31:29,800
+ And we used to do it this way.
+
+688
+0:31:29,800 --> 0:31:31,800
+ And it works.
+
+689
+0:31:31,800 --> 0:31:40,800
+ Can you share a little bit about what problems you've had and how you've solved those problems on the organizational interpersonal level?
+
+690
+0:31:40,800 --> 0:31:45,800
+ So, something that I found really powerful was to go and sit down with a team.
+
+691
+0:31:45,800 --> 0:31:49,800
+ And sort of be customer focused about it.
+
+692
+0:31:49,800 --> 0:31:51,800
+ And say, okay, you know, what's acceptable to your customers?
+
+693
+0:31:51,800 --> 0:31:52,800
+ Right?
+
+694
+0:31:52,800 --> 0:31:56,800
+ If we take the simplest example I can come with is probably embedded.
+
+695
+0:31:56,800 --> 0:31:57,800
+ Right?
+
+696
+0:31:57,800 --> 0:31:59,800
+ So, our embedded people care a lot about safety.
+
+697
+0:31:59,800 --> 0:32:05,800
+ So, what they care a lot about is criticality of bugs and very critical bugs being resolved quickly.
+
+698
+0:32:05,800 --> 0:32:10,800
+ So, we go in up front and we agree, okay, like how long should a critical bug be open?
+
+699
+0:32:10,800 --> 0:32:14,800
+ Like what's an acceptable, like, margin for that?
+
+700
+0:32:14,800 --> 0:32:15,800
+ You get them to agree up front.
+
+701
+0:32:15,800 --> 0:32:17,800
+ Then you go and deliver the data.
+
+702
+0:32:17,800 --> 0:32:20,800
+ And say, okay, well, you said that you can only take a week to have a critical bug open.
+
+703
+0:32:20,800 --> 0:32:22,800
+ But you're taking a month and a half.
+
+704
+0:32:22,800 --> 0:32:23,800
+ Right?
+
+705
+0:32:23,800 --> 0:32:24,800
+ Like that's just data.
+
+706
+0:32:24,800 --> 0:32:25,800
+ Like you've already committed to that result.
+
+707
+0:32:25,800 --> 0:32:26,800
+ Right?
+
+708
+0:32:26,800 --> 0:32:28,800
+ And I can show you that you're not meeting it.
+
+709
+0:32:28,800 --> 0:32:30,800
+ So, you have to allocate time.
+
+710
+0:32:30,800 --> 0:32:36,800
+ And it also makes a lot of the product people waver because, you know, it's hard for them now to argue that, like, this thing that they have is more important.
+
+711
+0:32:36,800 --> 0:32:40,800
+ Because you've already agreed with them that, like, you know, they shouldn't wait more than a week.
+
+712
+0:32:40,800 --> 0:32:43,800
+ So, we're not performing at the level of quality that we need.
+
+713
+0:32:43,800 --> 0:32:50,800
+ And it's a very powerful tool to get people to agree up front and then show them how the reality is really.
+
+714
+0:32:50,800 --> 0:32:51,800
+ And then the educational part.
+
+715
+0:32:51,800 --> 0:32:57,800
+ When you have a team that, like ours, that's hyper specialized and just educating people on what are the options.
+
+716
+0:32:57,800 --> 0:33:01,800
+ Because a lot of the time it's the fact that they haven't considered that they could do it differently.
+
+717
+0:33:01,800 --> 0:33:02,800
+ Right?
+
+718
+0:33:02,800 --> 0:33:04,800
+ They just sort of did that because it's how we did it, as you say.
+
+719
+0:33:04,800 --> 0:33:13,800
+ And so, proposing new solutions and just sitting with them and trying, you know, a little tag-a-thon type thing where we try some different things and see if some of it works, what sticks.
+
+720
+0:33:13,800 --> 0:33:18,800
+ Does wonders for team morale and for, like, pushing people in the right direction.
+
+721
+0:33:18,800 --> 0:33:19,800
+ Okay.
+
+722
+0:33:19,800 --> 0:33:20,800
+ Thank you.
+
+723
+0:33:20,800 --> 0:33:23,800
+ So, I've got a different type of question.
+
+724
+0:33:23,800 --> 0:33:31,800
+ As you said, the industry is really legacy, conservative, old-fashioned.
+
+725
+0:33:31,800 --> 0:33:36,800
+ And do you have pilot projects in some companies, you know, at clients?
+
+726
+0:33:36,800 --> 0:33:38,800
+ Do you collaborate with clients?
+
+727
+0:33:38,800 --> 0:33:41,800
+ Do you have, let's say, AB testing?
+
+728
+0:33:41,800 --> 0:33:48,800
+ We have a slew of companies that we do early feature releases to and where they give feedback earlier.
+
+729
+0:33:48,800 --> 0:33:49,800
+ Okay.
+
+730
+0:33:49,800 --> 0:33:57,800
+ They're generally doing it in a way to protect their own production rather than doing it because they want those features early.
+
+731
+0:33:57,800 --> 0:33:59,800
+ They're just making sure that their needs are met.
+
+732
+0:33:59,800 --> 0:34:03,800
+ So, you get this sort of reverse that is not because they want to access the features faster.
+
+733
+0:34:03,800 --> 0:34:07,800
+ It's because they want to make sure the features work for them when they come out because they rely on us.
+
+734
+0:34:07,800 --> 0:34:11,800
+ And we have a lot of our customers that are also our partners.
+
+735
+0:34:11,800 --> 0:34:16,800
+ The way the robot works is that the gripper at the end is not produced by us.
+
+736
+0:34:16,800 --> 0:34:18,800
+ It's produced by another company that then writes the software and makes the hardware.
+
+737
+0:34:18,800 --> 0:34:28,800
+ And so, we collaborate with those partners also to make sure that newer releases still work for their product, which they then ship on top of our robot.
+
+738
+0:34:28,800 --> 0:34:32,800
+ That helps a lot with quality assurance.
+
+739
+0:34:32,800 --> 0:34:37,800
+ What's the general industry perception of this company?
+
+740
+0:34:37,800 --> 0:34:39,800
+ Because it has a different approach.
+
+741
+0:34:39,800 --> 0:34:46,800
+ Like, all the companies that manufacture robots are really, really conservative as well, really slow.
+
+742
+0:34:46,800 --> 0:34:48,800
+ They don't have such eyes.
+
+743
+0:34:48,800 --> 0:34:49,800
+ They don't have updates.
+
+744
+0:34:49,800 --> 0:34:50,800
+ This is modern.
+
+745
+0:34:50,800 --> 0:34:51,800
+ You get the idea.
+
+746
+0:34:51,800 --> 0:34:55,800
+ How is it perceived by industry?
+
+747
+0:34:55,800 --> 0:35:00,800
+ So, when Universal came to, it carved out a niche that wasn't there before.
+
+748
+0:35:00,800 --> 0:35:05,800
+ Older industrial robots are kept in cages because they're dangerous.
+
+749
+0:35:05,800 --> 0:35:10,800
+ There's been a lot of cases where somebody gets their head chopped off because the arm goes quickly and then, you know, ciao.
+
+750
+0:35:10,800 --> 0:35:16,800
+ And collaborative robots, known as co-bots, this is the first on this market.
+
+751
+0:35:16,800 --> 0:35:18,800
+ Like, Universal came up with this.
+
+752
+0:35:18,800 --> 0:35:21,800
+ It's a robot that you can put next to people.
+
+753
+0:35:21,800 --> 0:35:28,800
+ And so, a lot of the customers are basically tapping into this and putting it next to people in the production lines.
+
+754
+0:35:28,800 --> 0:35:33,800
+ A very normal use case is that you still have a person working there, but they're not doing all the tasks that they used to do.
+
+755
+0:35:33,800 --> 0:35:35,800
+ They're only doing the interesting tasks now.
+
+756
+0:35:35,800 --> 0:35:41,800
+ So, it's pharmaceutical companies that take care of the vials and put them back in place and put them in the centrifuges.
+
+757
+0:35:41,800 --> 0:35:47,800
+ Or it's production companies where, you know, the same motion that you do where you put something on a conveyor belt, like, they don't have to deal with that anymore.
+
+758
+0:35:47,800 --> 0:35:51,800
+ And they get to do the interesting parts, you know, quality inspection and similar.
+
+759
+0:35:51,800 --> 0:35:56,800
+ So, the niche is sort of different from industrial robots that used to be.
+
+760
+0:35:56,800 --> 0:36:02,800
+ Which means that even though the robots weren't really working, the customers loved it because there was something where they couldn't put robots before.
+
+761
+0:36:02,800 --> 0:36:06,800
+ Like, it was just not an option.
+
+762
+0:36:06,800 --> 0:36:08,800
+ Do we have other questions for David?
+
+763
+0:36:08,800 --> 0:36:10,800
+ Then I have one.
+
+764
+0:36:10,800 --> 0:36:15,800
+ So, you said that this whole very impressive sort of framework that you have has, you know...
+
+765
+0:36:15,800 --> 0:36:16,800
+ Yeah.
+
+766
+0:36:16,800 --> 0:36:19,800
+ Has a boosted engineering morale.
+
+767
+0:36:19,800 --> 0:36:25,800
+ Do you correlate some of this data with things like stress level and, like, employment happiness and all these kind of things?
+
+768
+0:36:25,800 --> 0:36:27,800
+ We've been trying to.
+
+769
+0:36:27,800 --> 0:36:29,800
+ But the challenge...
+
+770
+0:36:29,800 --> 0:36:33,800
+ Like, we know the levels of engineering happiness throughout the various teams.
+
+771
+0:36:33,800 --> 0:36:37,800
+ The teams that suffer most tend to be the ones that have the most legacy code.
+
+772
+0:36:37,800 --> 0:36:41,800
+ And the framework doesn't necessarily help alleviate that as much as we'd like to.
+
+773
+0:36:41,800 --> 0:36:45,800
+ One of the challenges we have is that testing the whole robot.
+
+774
+0:36:46,800 --> 0:36:50,800
+ Doesn't necessarily tell you something as a specific team.
+
+775
+0:36:50,800 --> 0:36:52,800
+ And what we...
+
+776
+0:36:52,800 --> 0:36:57,800
+ We used to be sort of the testing department where they threw it over the wall to us.
+
+777
+0:36:57,800 --> 0:37:01,800
+ And so, the focus for us has a lot been on sort of testing the final product.
+
+778
+0:37:01,800 --> 0:37:07,800
+ And it's only in the last year and a half or so that we started trying to delve into the more deeper levels.
+
+779
+0:37:07,800 --> 0:37:11,800
+ And helping the teams do deeper testing closer to where they care.
+
+780
+0:37:11,800 --> 0:37:15,800
+ But we can definitely tell that the teams that start testing...
+
+781
+0:37:15,800 --> 0:37:18,800
+ That get a lot of the stuff out of the way, they feel better about their work.
+
+782
+0:37:18,800 --> 0:37:20,800
+ There's no doubt that higher quality levels work.
+
+783
+0:37:20,800 --> 0:37:22,800
+ Like, we can see that.
+
+784
+0:37:22,800 --> 0:37:23,800
+ Awesome.
+
+785
+0:37:23,800 --> 0:37:25,800
+ Thank you for a super interesting talk.
+
+786
+0:37:25,800 --> 0:37:27,800
+ Oh, you have a...
+
+787
+0:37:27,800 --> 0:37:28,800
+ Yeah.
+
+788
+0:37:28,800 --> 0:37:34,800
+ So, is there anywhere the developers on these teams can see what tests have failed in their suite?
+
+789
+0:37:34,800 --> 0:37:37,800
+ Like, something like a report portal?
+
+790
+0:37:37,800 --> 0:37:39,800
+ Yeah, that's the leading question.
+
+791
+0:37:39,800 --> 0:37:41,800
+ So, my colleague keeping me honest.
+
+792
+0:37:41,800 --> 0:37:44,800
+ We have another tool that we upload all of our testing data to.
+
+793
+0:37:45,800 --> 0:37:47,800
+ That does machine learning.
+
+794
+0:37:47,800 --> 0:37:52,800
+ And tries to figure out what sort of failure are we having based on how the tests are working.
+
+795
+0:37:52,800 --> 0:37:55,800
+ And it tries to delve into the levels.
+
+796
+0:37:55,800 --> 0:37:57,800
+ And like, it's gotten significantly better in Jeb's time.
+
+797
+0:37:57,800 --> 0:37:59,800
+ Which is why he pulls that out of the sleeve.
+
+798
+0:37:59,800 --> 0:38:03,800
+ Because before he came to, a lot of the testing was just like, oh, it broke.
+
+799
+0:38:03,800 --> 0:38:05,800
+ Okay, it could be any of 10 teams.
+
+800
+0:38:05,800 --> 0:38:08,800
+ Now, it's pretty specific what team is dealing with the problem.
+
+801
+0:38:08,800 --> 0:38:10,800
+ So, it's definitely getting better.
+
+802
+0:38:10,800 --> 0:38:13,800
+ And it's a free and open source tool?
+
+803
+0:38:13,800 --> 0:38:14,800
+ It's a pretty awesome tool.
+
+804
+0:38:14,800 --> 0:38:16,800
+ What's it called?
+
+805
+0:38:16,800 --> 0:38:17,800
+ Report portal.
+
+806
+0:38:17,800 --> 0:38:18,800
+ Report portal.
+
+807
+0:38:18,800 --> 0:38:20,800
+ Awesome.
+
+808
+0:38:20,800 --> 0:38:22,800
+ Thanks for a really nice and interesting talk.
+
+809
+0:38:22,800 --> 0:38:24,800
+ Let's give a round of applause for David.

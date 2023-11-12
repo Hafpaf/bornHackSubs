@@ -1,0 +1,2099 @@
+# Transcribed 2023-11-12T15 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:22,040
+ So, a little pre-part, if you saw my presentation from MCH, then this is exactly the same, minus
+
+2
+0:00:22,040 --> 0:00:22,600
+ one slide.
+
+3
+0:00:23,720 --> 0:00:27,980
+ So, the goal with this presentation is to talk a bit about some of the ongoing and upcoming
+
+4
+0:00:27,980 --> 0:00:33,140
+ efforts that we're doing, specifically to the network component of sort of the Tor ecosystem.
+
+5
+0:00:34,060 --> 0:00:38,740
+ Usually, when we go out and do presentations at different events, we talk about sort of
+
+6
+0:00:38,740 --> 0:00:43,400
+ a general overview of Tor, where we enter things like the network, the browser, the
+
+7
+0:00:43,400 --> 0:00:48,600
+ anti-censorship stuff, the community things, the, like, translations, and all the different
+
+8
+0:00:48,600 --> 0:00:49,740
+ kind of things that we're doing.
+
+9
+0:00:50,100 --> 0:00:54,500
+ But specifically in this talk, I'm going to zoom in a little bit more on the network side
+
+10
+0:00:54,500 --> 0:00:55,960
+ of things and what's happening on there.
+
+11
+0:00:55,960 --> 0:01:01,160
+ It's not going to be sort of a blue-sky presentation with all this stuff that we're hoping to do.
+
+12
+0:01:01,340 --> 0:01:03,580
+ It's more like this is stuff we have funding for.
+
+13
+0:01:03,660 --> 0:01:04,780
+ It's things that we're working on.
+
+14
+0:01:04,860 --> 0:01:07,220
+ It's things that are going to happen in the sort of near future.
+
+15
+0:01:09,020 --> 0:01:10,120
+ So, a little bit about me.
+
+16
+0:01:10,200 --> 0:01:15,500
+ I joined Tor in 2017, and I became the team lead of what we call the network team.
+
+17
+0:01:15,520 --> 0:01:19,180
+ That is the team responsible for writing the little piece of software called Tor, like
+
+18
+0:01:19,180 --> 0:01:24,860
+ the Unix binary that you run if you're a relay operator and so on, and also what is used
+
+19
+0:01:24,860 --> 0:01:25,940
+ in the browser to actually access the software.
+
+20
+0:01:25,960 --> 0:01:31,120
+ I've been involved with, like, the free software community since I was a teenager.
+
+21
+0:01:31,940 --> 0:01:37,320
+ I've been co-founding and co-organizing this BornHack festival that we are all at today,
+
+22
+0:01:37,540 --> 0:01:42,860
+ and I absolutely love going to these hacker camps, and I went to my first one in 2013
+
+23
+0:01:42,860 --> 0:01:43,940
+ in the Netherlands.
+
+24
+0:01:45,620 --> 0:01:50,060
+ So, before we dive too hard into sort of the network side of things, we're going to just
+
+25
+0:01:50,060 --> 0:01:51,020
+ have a general overview.
+
+26
+0:01:51,260 --> 0:01:53,080
+ How many people in here know about Tor?
+
+27
+0:01:54,660 --> 0:01:55,940
+ Is there anybody who don't know?
+
+28
+0:01:55,960 --> 0:01:56,680
+ I don't know anything about Tor.
+
+29
+0:01:57,900 --> 0:01:58,360
+ Okay, great.
+
+30
+0:01:58,880 --> 0:02:03,960
+ So, we are a sort of an online anonymity and censorship circumvention tool and organization.
+
+31
+0:02:04,440 --> 0:02:05,460
+ It's all free software.
+
+32
+0:02:05,600 --> 0:02:09,880
+ We don't believe that we can deliver sort of the guarantees that we want to do without
+
+33
+0:02:09,880 --> 0:02:13,360
+ everybody's ability to actually look at the source code.
+
+34
+0:02:13,980 --> 0:02:14,780
+ We're an open network.
+
+35
+0:02:14,920 --> 0:02:21,560
+ We had a lot of conversations about that during the relay operators meetup the other day,
+
+36
+0:02:22,080 --> 0:02:25,620
+ meaning that everybody can start up a node and participate and help other people who
+
+37
+0:02:25,620 --> 0:02:26,500
+ are using the network.
+
+38
+0:02:27,300 --> 0:02:32,640
+ We're also a big community of both researchers, developers, users, relay operators, all these
+
+39
+0:02:32,640 --> 0:02:38,080
+ different kind of groups that are working together on breaking and fixing Tor and making
+
+40
+0:02:38,080 --> 0:02:38,460
+ it better.
+
+41
+0:02:39,160 --> 0:02:43,260
+ We're also a non-profit in the U.S., and that mostly has something to do with when
+
+42
+0:02:43,260 --> 0:02:45,020
+ you donate to the organization.
+
+43
+0:02:46,600 --> 0:02:52,500
+ So, most of you who are working with the sort of software that you're developing will probably
+
+44
+0:02:52,500 --> 0:02:55,280
+ collect a lot of metrics on what you're doing, how many users.
+
+45
+0:02:55,280 --> 0:02:55,600
+ You have to be very careful.
+
+46
+0:02:55,600 --> 0:02:57,440
+ How many requests you have, how many requests you see every day.
+
+47
+0:02:58,240 --> 0:03:03,680
+ We cannot sort of measure how many Tor users we have, but we have some research indicators
+
+48
+0:03:03,680 --> 0:03:07,080
+ that we have between 2 million and 8 million data users.
+
+49
+0:03:08,920 --> 0:03:15,120
+ So, to give a quick sort of grand overview of how Tor works, in this case, we have Alice
+
+50
+0:03:15,120 --> 0:03:15,600
+ and Bob.
+
+51
+0:03:15,980 --> 0:03:18,840
+ Alice wants to make a TCP connection to Bob.
+
+52
+0:03:19,560 --> 0:03:23,540
+ So, Alice has full knowledge of the entire network, knows every node that exists in it.
+
+53
+0:03:23,540 --> 0:03:25,220
+ She has bootstrapped before.
+
+54
+0:03:25,600 --> 0:03:31,320
+ And she sort of has an idea about the composition of the network, and she knows all the relays
+
+55
+0:03:31,320 --> 0:03:32,320
+ that exist in it.
+
+56
+0:03:32,320 --> 0:03:35,420
+ Here, we have a very small Tor network.
+
+57
+0:03:35,420 --> 0:03:38,700
+ It consists of seven relays, I believe.
+
+58
+0:03:38,700 --> 0:03:44,360
+ And Alice decides that she wants to go through R1, R2, and R3 before finally reaching Bob.
+
+59
+0:03:44,360 --> 0:03:51,800
+ So, Alice establishes a secure session with R1, extends it further to R2, and extends
+
+60
+0:03:51,800 --> 0:03:55,280
+ it again to R3, and finally makes this sort of TCP connection.
+
+61
+0:03:55,280 --> 0:03:57,680
+ So, Alice has a secure connection to Bob.
+
+62
+0:03:57,680 --> 0:04:03,660
+ This kind of sort of telescope-style connectivity is very similar to like the flagpoles that
+
+63
+0:04:03,660 --> 0:04:07,160
+ you see here at the festival.
+
+64
+0:04:07,160 --> 0:04:13,060
+ When we talk sort of about Tor, we will frequently talk about the guard node, the middle node,
+
+65
+0:04:13,060 --> 0:04:14,060
+ and the exit node.
+
+66
+0:04:14,060 --> 0:04:17,220
+ This is what you're seeing here.
+
+67
+0:04:17,220 --> 0:04:22,120
+ For onion services, we have sort of the whole thing, again, mirrored where there's several
+
+68
+0:04:22,120 --> 0:04:23,120
+ hops as well.
+
+69
+0:04:23,120 --> 0:04:24,000
+ But an onion service should actually be seen more as something that's connected to the
+
+70
+0:04:24,000 --> 0:04:24,500
+ Tor network.
+
+71
+0:04:25,280 --> 0:04:31,160
+ It's a client rather than a server where we sort of duplicate this entire setup in
+
+72
+0:04:31,160 --> 0:04:34,420
+ the middle.
+
+73
+0:04:34,420 --> 0:04:41,340
+ A while ago, we did a survey to see what kind of things the Tor users were interested and
+
+74
+0:04:41,340 --> 0:04:44,180
+ sort of frustrated with using Tor.
+
+75
+0:04:44,180 --> 0:04:51,360
+ And we prioritized this ordering, and it turned out that speed was a great concern, blocking
+
+76
+0:04:51,360 --> 0:04:55,080
+ was secondary, privacy, then security, and finally sort of the UI.
+
+77
+0:04:55,280 --> 0:04:59,660
+ The UI was not something people were super frustrated with.
+
+78
+0:04:59,660 --> 0:05:02,320
+ The speed is, of course, the performance of the Tor network.
+
+79
+0:05:02,320 --> 0:05:06,660
+ That has to do with the throughput of the network and also its latency.
+
+80
+0:05:06,660 --> 0:05:12,000
+ Blocking is these capture portals that people who are using Tor will occasionally see, where
+
+81
+0:05:12,000 --> 0:05:15,660
+ you have to help an AI be trained and so on.
+
+82
+0:05:15,660 --> 0:05:19,720
+ The privacy is, of course, the privacy and anonymity guarantees that we give by Tor.
+
+83
+0:05:19,720 --> 0:05:24,320
+ The security is sort of that we don't have too many vulnerabilities and people don't
+
+84
+0:05:24,320 --> 0:05:25,280
+ get hacked.
+
+85
+0:05:25,280 --> 0:05:27,760
+ We don't know when using Tor because of the mistakes we make.
+
+86
+0:05:27,760 --> 0:05:31,600
+ And finally, we have sort of the user interface of our products, which people didn't seem
+
+87
+0:05:31,600 --> 0:05:35,180
+ to be too frustrated with.
+
+88
+0:05:35,180 --> 0:05:38,400
+ So as I mentioned earlier, Tor is an open network.
+
+89
+0:05:38,400 --> 0:05:40,620
+ That means everybody can join.
+
+90
+0:05:40,620 --> 0:05:44,160
+ We right now have between 6,000 and 7,000 nodes.
+
+91
+0:05:44,160 --> 0:05:48,400
+ And how many people in here have been or are running Tor relays?
+
+92
+0:05:48,400 --> 0:05:52,080
+ Oh, wow, that's very cool.
+
+93
+0:05:52,080 --> 0:05:54,580
+ Thank you for doing that.
+
+94
+0:05:55,280 --> 0:05:58,660
+ So Tor is kind of hosted by people similar to you, but there's also these umbrella organizations
+
+95
+0:05:58,660 --> 0:06:03,560
+ that go together and host them together where they also need some legal help for like exit
+
+96
+0:06:03,560 --> 0:06:06,520
+ node operators and so on.
+
+97
+0:06:06,520 --> 0:06:10,880
+ One thing that was very much up during the Relay Operators Meetup that was a surprise
+
+98
+0:06:10,880 --> 0:06:15,160
+ to some was that we have these nodes called the Directory Authority nodes, which is nine
+
+99
+0:06:15,160 --> 0:06:20,880
+ specific nodes that are sort of the sort of trust anchor in the network in that they can
+
+100
+0:06:20,880 --> 0:06:24,760
+ remove other nodes that seem to be behaving in malicious ways using a majority of the
+
+101
+0:06:24,760 --> 0:06:24,800
+ Tor network.
+
+102
+0:06:25,280 --> 0:06:25,900
+ So they can't just vote.
+
+103
+0:06:25,900 --> 0:06:31,740
+ There's nothing fancy sort of a distributed system, Paxos and so on in that.
+
+104
+0:06:31,740 --> 0:06:33,580
+ We also have a bridge authority.
+
+105
+0:06:33,580 --> 0:06:37,900
+ Bridges are entry points into the network which are hidden.
+
+106
+0:06:37,900 --> 0:06:43,020
+ So they are like distributed to people who are in censored areas.
+
+107
+0:06:43,020 --> 0:06:50,880
+ If we take a bit of a look at the relay count over time, we can see that we have sort of
+
+108
+0:06:50,880 --> 0:06:54,760
+ started to flatten the curve here since around 2015.
+
+109
+0:06:54,760 --> 0:07:00,660
+ The curve below is the number of bridges we have.
+
+110
+0:07:00,660 --> 0:07:04,980
+ An interesting thing is you can see around these node revelations in the summer of 2013,
+
+111
+0:07:04,980 --> 0:07:08,840
+ it starts increasing pretty rapidly, but we've ended up being somewhere between 6,000 and
+
+112
+0:07:08,840 --> 0:07:12,140
+ 8,000 nodes in total.
+
+113
+0:07:12,140 --> 0:07:17,200
+ On the other hand, the bandwidth has steadily increased in the network.
+
+114
+0:07:17,200 --> 0:07:19,760
+ The top one is the advertised bandwidth.
+
+115
+0:07:19,760 --> 0:07:23,760
+ That is how much bandwidth we believe there is in the network, like that the relays are
+
+116
+0:07:23,760 --> 0:07:24,760
+ seeing.
+
+117
+0:07:24,760 --> 0:07:29,440
+ And the orange one below is the historic bandwidth that relays reporting back to the
+
+118
+0:07:29,440 --> 0:07:34,260
+ directory authorities about how much bandwidth that has been passed through them.
+
+119
+0:07:34,260 --> 0:07:38,820
+ We're going to return to these a bit later and specifically going to zoom in on some
+
+120
+0:07:38,820 --> 0:07:45,120
+ of these spikes that we see here in 2021 and 2022.
+
+121
+0:07:45,120 --> 0:07:50,140
+ So some of the new things that we have to do is these are like sort of pretty small
+
+122
+0:07:50,140 --> 0:07:51,140
+ things.
+
+123
+0:07:51,140 --> 0:07:52,560
+ But we...
+
+124
+0:07:52,560 --> 0:07:54,660
+ When we are sending data around in the network, we pack everything.
+
+125
+0:07:54,660 --> 0:07:56,220
+ We put everything into something called cells.
+
+126
+0:07:56,220 --> 0:07:58,120
+ They can take payload.
+
+127
+0:07:58,120 --> 0:08:04,340
+ They have a specific size, but we have an interest now to both be able to send multiple
+
+128
+0:08:04,340 --> 0:08:11,060
+ cells grouped together to not have to waste a lot of bytes in the payload.
+
+129
+0:08:11,060 --> 0:08:14,540
+ And we also have the need to do something called fragmented cells.
+
+130
+0:08:14,540 --> 0:08:19,960
+ Fragmented cells is the ability to split a payload over several cells, because otherwise
+
+131
+0:08:19,960 --> 0:08:21,660
+ we only have the 498 bytes to do things with.
+
+132
+0:08:21,660 --> 0:08:22,660
+ So we're going to do that.
+
+133
+0:08:22,660 --> 0:08:23,660
+ We're going to do that.
+
+134
+0:08:23,660 --> 0:08:24,660
+ We're going to do that.
+
+135
+0:08:24,660 --> 0:08:25,660
+ We're going to do that.
+
+136
+0:08:25,660 --> 0:08:29,540
+ There is a proposal called 340 for people who are interested in sort of reading some
+
+137
+0:08:29,540 --> 0:08:30,540
+ of these things.
+
+138
+0:08:30,540 --> 0:08:35,160
+ They are a little bit like reading an RFC from IETF, but of course a little bit more
+
+139
+0:08:35,160 --> 0:08:39,160
+ simplified and very specific to Tor.
+
+140
+0:08:39,160 --> 0:08:44,000
+ The reason that we want to do fragmented cells is because we have this post-quantum cryptography
+
+141
+0:08:44,000 --> 0:08:46,820
+ that some of you might be familiar with.
+
+142
+0:08:46,820 --> 0:08:54,220
+ We have over the years with TLS and SSL started out with usually using like discrete lock,
+
+143
+0:08:54,220 --> 0:09:00,840
+ but with the move to, especially to mobile, we wanted to have smaller keys and like move
+
+144
+0:09:00,840 --> 0:09:05,840
+ to generally less wire traffic for the cryptographic material.
+
+145
+0:09:05,840 --> 0:09:10,920
+ But the post-quantum handshakes are frequently very, very large, and we need to be able to
+
+146
+0:09:10,920 --> 0:09:15,840
+ split those up over a number of cells.
+
+147
+0:09:15,840 --> 0:09:21,220
+ There are two parts that we need to protect against an adversary with a potential like,
+
+148
+0:09:21,220 --> 0:09:22,220
+ with the potential of having a cryptographic material.
+
+149
+0:09:22,220 --> 0:09:23,220
+ We need to be able to split those up over a number of cells.
+
+150
+0:09:23,220 --> 0:09:24,220
+ There are two parts that we need to protect against an adversary with a potential like,
+
+151
+0:09:24,220 --> 0:09:25,220
+ with the potential of having a cryptographic material.
+
+152
+0:09:25,220 --> 0:09:26,220
+ There are two parts that we need to protect against an adversary with a potential like,
+
+153
+0:09:26,220 --> 0:09:27,220
+ with the potential of having a cryptographic material.
+
+154
+0:09:27,220 --> 0:09:28,220
+ There are two parts that we need to protect against an adversary with a potential like,
+
+155
+0:09:28,220 --> 0:09:29,220
+ with the potential of having a cryptographic material.
+
+156
+0:09:29,220 --> 0:09:30,220
+ One is like a quantum computer.
+
+157
+0:09:30,220 --> 0:09:31,220
+ We do not believe today that they have them, but we are worried about that there might
+
+158
+0:09:31,220 --> 0:09:34,100
+ be people who are like sniffing all the traffic in and out of the Tor network and storing
+
+159
+0:09:34,100 --> 0:09:39,080
+ it, and later will then be able to decode it by, if we get it, a quantum computer that
+
+160
+0:09:39,080 --> 0:09:40,760
+ is big enough.
+
+161
+0:09:40,760 --> 0:09:42,020
+ So there are two components to this.
+
+162
+0:09:42,020 --> 0:09:45,820
+ There is the TLS layer that's the outer layer cryptography that we use when we are connecting
+
+163
+0:09:45,820 --> 0:09:51,600
+ into the Tor network and like when the relays are used between them that we need to protect.
+
+164
+0:09:51,600 --> 0:10:01,040
+ Then there is the circuit layer where we establish these circuits through the network, so a malicious
+
+165
+0:10:01,040 --> 0:10:06,640
+ relay cannot intercept traffic as well.
+
+166
+0:10:06,640 --> 0:10:11,260
+ One of the big things that we have recently released is the congestion control system.
+
+167
+0:10:11,260 --> 0:10:15,980
+ For people who have used Tor, you will probably have noticed that you sometimes hit a limit
+
+168
+0:10:15,980 --> 0:10:19,800
+ of around 500 kilobytes a second when you're downloading stuff.
+
+169
+0:10:19,800 --> 0:10:25,340
+ This is the speed component of the big survey we did a while ago that we're trying to approach
+
+170
+0:10:25,340 --> 0:10:26,340
+ here.
+
+171
+0:10:26,340 --> 0:10:33,040
+ The team implemented a number of classic congestion control algorithms, and while a number of
+
+172
+0:10:33,040 --> 0:10:39,560
+ them had some issues that made them unusable while we were experimenting, the Tor Vegas
+
+173
+0:10:39,560 --> 0:10:43,920
+ algorithm seemed to be doing exactly what we wanted.
+
+174
+0:10:43,920 --> 0:10:49,780
+ We can see here that the blue plots in the middle are the speed components.
+
+175
+0:10:49,780 --> 0:10:56,040
+ In both of them is the old Tor version, 046, and the orange-yellowish kind of thing is
+
+176
+0:10:56,040 --> 0:10:59,960
+ the 047 with congestion control enabled.
+
+177
+0:10:59,960 --> 0:11:03,960
+ What we see here is that we see a much larger distribution of clients in the simulation
+
+178
+0:11:03,960 --> 0:11:07,540
+ that seems to be getting much faster traffic through.
+
+179
+0:11:07,540 --> 0:11:14,560
+ The first plot on the left is from a simulation based on a German client, and the one on the
+
+180
+0:11:14,560 --> 0:11:18,280
+ right is a simulation of clients in Hong Kong.
+
+181
+0:11:18,280 --> 0:11:19,280
+ Which...
+
+182
+0:11:19,280 --> 0:11:22,780
+ If you want to know a little bit about the topology of Tor, you will know that a significant
+
+183
+0:11:22,780 --> 0:11:29,300
+ amount of the nodes is centralized in Germany because of some of the ISPs that exist there.
+
+184
+0:11:29,300 --> 0:11:32,940
+ Now we are back to the relay bandwidth plot that we looked at before.
+
+185
+0:11:32,940 --> 0:11:38,400
+ As you can see, there is these two top spikes here.
+
+186
+0:11:38,400 --> 0:11:43,140
+ This was an experiment that we did because we were suspecting that there was a lot more
+
+187
+0:11:43,140 --> 0:11:47,540
+ traffic in the network that we were not aware of, simply because the network was underutilized.
+
+188
+0:11:47,540 --> 0:11:48,540
+ So...
+
+189
+0:11:48,540 --> 0:11:54,780
+ Essentially, a team of researchers did this very simple experiment where they started
+
+190
+0:11:54,780 --> 0:12:00,040
+ sending a large amount of traffic over each Tor node in the network, simply so the relays
+
+191
+0:12:00,040 --> 0:12:05,820
+ would quickly discover that they had way more capacity than they used to think, and would
+
+192
+0:12:05,820 --> 0:12:07,860
+ report it back.
+
+193
+0:12:07,860 --> 0:12:11,100
+ That is what we are seeing in those two big spikes.
+
+194
+0:12:11,100 --> 0:12:14,540
+ We could, of course, continue to do that, but it doesn't really mean anything.
+
+195
+0:12:14,540 --> 0:12:18,540
+ We are going to instead be working with our bandwidth scanning techniques.
+
+196
+0:12:18,540 --> 0:12:25,600
+ The interesting part comes with what we see here.
+
+197
+0:12:25,600 --> 0:12:30,220
+ This part of the plot is where we finally start seeing that the traffic goes up a little
+
+198
+0:12:30,220 --> 0:12:32,860
+ bit in the historic bandwidth amount.
+
+199
+0:12:32,860 --> 0:12:38,420
+ This comes from the time where we finally got the Tor 047 in Tor Browser.
+
+200
+0:12:38,420 --> 0:12:44,800
+ So we are actually starting to see that the congestion control is out in many of the relays,
+
+201
+0:12:44,800 --> 0:12:47,980
+ and it's now also out in the browsers, and we finally start seeing that we are starting
+
+202
+0:12:47,980 --> 0:12:53,160
+ to utilize more of this traffic that we believe we have access to.
+
+203
+0:12:53,160 --> 0:13:00,440
+ Unfortunately, you can see that the graph also goes down again.
+
+204
+0:13:00,440 --> 0:13:04,080
+ For some of you who were at the relay operators' meetup, I was talking a lot about this DOS
+
+205
+0:13:04,080 --> 0:13:05,880
+ that's happening right now.
+
+206
+0:13:05,880 --> 0:13:11,440
+ We unfortunately have this denial of service attacks going on with some kind of adversary
+
+207
+0:13:11,440 --> 0:13:17,640
+ who is flooding through the network, and it's causing us to significantly impact the performance
+
+208
+0:13:17,640 --> 0:13:21,060
+ of Tor users.
+
+209
+0:13:21,060 --> 0:13:25,340
+ We are having some ongoing efforts right now to sort of do something about it, but for
+
+210
+0:13:25,340 --> 0:13:30,220
+ people who are familiar with sort of how networks work, sending traffic is a pretty easy way
+
+211
+0:13:30,220 --> 0:13:36,320
+ to significantly hurt performance, and it is a bit of a whack-a-mole game.
+
+212
+0:13:36,320 --> 0:13:43,060
+ I will return to some techniques that we are looking at using that is for sort of mitigating
+
+213
+0:13:43,060 --> 0:13:44,820
+ some of this denial of service.
+
+214
+0:13:44,820 --> 0:13:45,820
+ Slide 10.
+
+215
+0:13:45,820 --> 0:13:46,820
+ 1.
+
+216
+0:13:46,820 --> 0:13:51,660
+ One thing that is really nice is some outreach that has been happening over the time with
+
+217
+0:13:51,660 --> 0:13:56,580
+ regards to trying to get more Tor relay operators to upgrade quickly.
+
+218
+0:13:56,580 --> 0:14:02,760
+ We had Tor 047 was released around the end of April, and it is the curve we see beginning
+
+219
+0:14:02,760 --> 0:14:10,300
+ to go up in May, and the previous release, 046, is starting to be reduced in the network.
+
+220
+0:14:10,300 --> 0:14:16,240
+ This is really, really good when we have a network where a single individual cannot ever
+
+221
+0:14:16,240 --> 0:14:17,660
+ run all the nodes.
+
+222
+0:14:17,660 --> 0:14:22,460
+ That would be terrible for the anonymity and the privacy.
+
+223
+0:14:22,460 --> 0:14:26,200
+ We are very happy that people are upgrading so quickly because it means that we can more
+
+224
+0:14:26,200 --> 0:14:29,220
+ quickly start testing some of these things that we are doing and seeing whether they
+
+225
+0:14:29,220 --> 0:14:30,220
+ work.
+
+226
+0:14:30,220 --> 0:14:34,560
+ So, a massive thank you for upgrading to 047 so quickly.
+
+227
+0:14:34,560 --> 0:14:38,340
+ That has been really, really nice.
+
+228
+0:14:38,340 --> 0:14:42,040
+ We have a little bit more of some further tuning we need to do with this congestion
+
+229
+0:14:42,040 --> 0:14:43,040
+ control system.
+
+230
+0:14:43,040 --> 0:14:44,040
+ Slide 11.
+
+231
+0:14:44,040 --> 0:14:45,040
+ 1.
+
+232
+0:14:45,040 --> 0:14:49,700
+ We are planning on changing the cutoff values for this flag called fast.
+
+233
+0:14:49,700 --> 0:14:54,040
+ For people who go to metricstorproject.org every now and then and look at their relays,
+
+234
+0:14:54,040 --> 0:14:57,760
+ you will see that you have different flags that are allocated to you over time depending
+
+235
+0:14:57,760 --> 0:15:02,260
+ on how your relay is set up and how fast it is and these kinds of things.
+
+236
+0:15:02,260 --> 0:15:07,760
+ We unfortunately today give the fast flag to relays that we probably by today's internet
+
+237
+0:15:07,760 --> 0:15:11,880
+ standard would not consider to be fast, and we are planning on making that barrier sort
+
+238
+0:15:11,880 --> 0:15:13,060
+ of a little bit higher before you are getting the fast flag.
+
+239
+0:15:13,060 --> 0:15:14,060
+ Slide 12.
+
+240
+0:15:14,060 --> 0:15:15,040
+ 1.
+
+241
+0:15:15,040 --> 0:15:16,440
+ We are also planning on changing the cutoff values for the fast flag and the same thing
+
+242
+0:15:16,440 --> 0:15:20,280
+ for the guard flag because the guard flag is used for like the entry point into the
+
+243
+0:15:20,280 --> 0:15:24,560
+ network which means that if the guard flag, if the guard note that you have in your three
+
+244
+0:15:24,560 --> 0:15:30,280
+ hops is slow, it will significantly impact the performance of your use.
+
+245
+0:15:30,280 --> 0:15:31,280
+ Slide 13.
+
+246
+0:15:31,280 --> 0:15:32,280
+ 1.
+
+247
+0:15:32,280 --> 0:15:38,800
+ The good thing is Onion Service operators who will also benefit from these changes.
+
+248
+0:15:38,800 --> 0:15:42,700
+ Some of you may know that we are live streaming this event over on Onion Service as sort of
+
+249
+0:15:42,700 --> 0:15:43,700
+ an experiment to see whether it works.
+
+250
+0:15:43,700 --> 0:15:44,700
+ Slide 14.
+
+251
+0:15:44,700 --> 0:15:45,360
+ 2.
+
+252
+0:15:45,360 --> 0:16:03,140
+ Relay operators should in general probably be more prepared to set bandwidth limits as
+
+253
+0:16:03,140 --> 0:16:08,460
+ we start getting closer and closer to a larger fraction of the network running this version.
+
+254
+0:16:08,460 --> 0:16:09,460
+ Slide 15.
+
+255
+0:16:09,460 --> 0:16:12,940
+ If you are interested in more information about the congestion control subsystem, then
+
+256
+0:16:12,940 --> 0:16:14,260
+ Mike Perry has a really good blog post.
+
+257
+0:16:14,260 --> 0:16:15,260
+ Slide 16.
+
+258
+0:16:15,260 --> 0:16:19,080
+ We have a really good blog post on sort of the entire implementation, how the team was
+
+259
+0:16:19,080 --> 0:16:21,220
+ working together with simulation.
+
+260
+0:16:21,220 --> 0:16:25,340
+ We collaborated a lot with the people who developed the tool called Shadow which is
+
+261
+0:16:25,340 --> 0:16:32,160
+ a simulation tool for sort of simulating large runs of Tor activity with the Tor software
+
+262
+0:16:32,160 --> 0:16:33,160
+ built in.
+
+263
+0:16:33,160 --> 0:16:34,160
+ Slide 17.
+
+264
+0:16:34,160 --> 0:16:35,160
+ Slide 18.
+
+265
+0:16:35,160 --> 0:16:36,160
+ Slide 19.
+
+266
+0:16:36,160 --> 0:16:37,160
+ Slide 20.
+
+267
+0:16:37,160 --> 0:16:38,160
+ Slide 21.
+
+268
+0:16:38,160 --> 0:16:39,160
+ Slide 22.
+
+269
+0:16:39,160 --> 0:16:40,160
+ Slide 23.
+
+270
+0:16:40,160 --> 0:16:41,160
+ Slide 24.
+
+271
+0:16:41,160 --> 0:16:42,160
+ Slide 25.
+
+272
+0:16:42,160 --> 0:16:43,160
+ Slide 26.
+
+273
+0:16:43,160 --> 0:16:44,160
+ Slide 27.
+
+274
+0:16:44,160 --> 0:16:45,160
+ Slide 28.
+
+275
+0:16:45,160 --> 0:16:46,160
+ Slide 30.
+
+276
+0:16:46,160 --> 0:16:47,160
+ Slide 31.
+
+277
+0:16:47,160 --> 0:16:48,160
+ Slide 32.
+
+278
+0:16:48,160 --> 0:16:49,160
+ Slide 34.
+
+279
+0:16:49,160 --> 0:16:50,160
+ Slide 35.
+
+280
+0:16:50,160 --> 0:16:51,160
+ Slide 60.
+
+281
+0:16:51,160 --> 0:16:52,160
+ Slide 31.
+
+282
+0:16:52,160 --> 0:16:53,160
+ Slide 32.
+
+283
+0:16:53,160 --> 0:16:54,160
+ Slide 36.
+
+284
+0:16:54,160 --> 0:16:55,160
+ Slide 37.
+
+285
+0:16:55,160 --> 0:16:56,160
+ Slide $1.
+
+286
+0:16:56,160 --> 0:16:57,160
+ Slide 38.
+
+287
+0:16:57,160 --> 0:16:58,160
+ Slide 39.
+
+288
+0:16:58,160 --> 0:16:59,160
+ Slide 41.
+
+289
+0:16:59,160 --> 0:17:00,160
+ Slide 41.
+
+290
+0:17:00,160 --> 0:17:01,160
+ Slide 42.
+
+291
+0:17:01,160 --> 0:17:02,160
+ Slide 42.
+
+292
+0:17:02,160 --> 0:17:03,160
+ Slide 43.
+
+293
+0:17:03,160 --> 0:17:04,160
+ Slide 43.
+
+294
+0:17:04,160 --> 0:17:05,160
+ Slide 45.
+
+295
+0:17:05,160 --> 0:17:06,160
+ Slide 46.
+
+296
+0:17:06,160 --> 0:17:07,160
+ Slide 46.
+
+297
+0:17:07,160 --> 0:17:08,160
+ Slide 47.
+
+298
+0:17:08,160 --> 0:17:09,160
+ Slide 48.
+
+299
+0:17:09,160 --> 0:17:10,160
+ Slide 49.
+
+300
+0:17:10,160 --> 0:17:11,160
+ Slide 51.
+
+301
+0:17:11,160 --> 0:17:12,160
+ Slide 52.
+
+302
+0:17:12,160 --> 0:17:13,160
+ Slide 55.
+
+303
+0:17:13,160 --> 0:17:18,880
+ congestion control system like is the path that we are on right now currently congested.
+
+304
+0:17:18,880 --> 0:17:23,160
+ So what we will be able to do with ConfLux is that Alice establishes two paths into the
+
+305
+0:17:23,160 --> 0:17:31,980
+ network and sort of meet at the exit node and is able to then over time figure out which
+
+306
+0:17:31,980 --> 0:17:36,220
+ of the path is the least congested one and start transmitting and receiving on that one
+
+307
+0:17:36,220 --> 0:17:41,080
+ where we then rebuild like the packages at the exit node.
+
+308
+0:17:41,080 --> 0:17:44,860
+ This is likely also going to impact a little bit with the memory utilization that we're
+
+309
+0:17:44,860 --> 0:17:51,520
+ using at the exit node, but that should be fine.
+
+310
+0:17:51,520 --> 0:17:56,400
+ I mentioned before that we are looking a bit at these kind of denial of service techniques,
+
+311
+0:17:56,400 --> 0:17:58,700
+ like how we can mitigate this.
+
+312
+0:17:58,700 --> 0:18:02,760
+ One of the things that we're looking at right now is also using proof of work for onion
+
+313
+0:18:02,760 --> 0:18:04,300
+ services.
+
+314
+0:18:04,300 --> 0:18:08,520
+ People are usually in these communities, either some people are into cryptocurrencies and
+
+315
+0:18:08,520 --> 0:18:11,060
+ stuff like that and knows that proof of work is...
+
+316
+0:18:11,060 --> 0:18:16,860
+ Is probably harmful in that it's just standing and wasting energy.
+
+317
+0:18:16,860 --> 0:18:20,900
+ The proof of work system that we're looking at using for onion services is dynamically
+
+318
+0:18:20,900 --> 0:18:26,140
+ enabled and disabled whether there's sort of something that appears to be a pathological
+
+319
+0:18:26,140 --> 0:18:29,120
+ situation towards the onion service.
+
+320
+0:18:29,120 --> 0:18:34,900
+ So the onion service can enable it and the clients are then forced to solve a little
+
+321
+0:18:34,900 --> 0:18:39,820
+ puzzle in the connection to the onion service.
+
+322
+0:18:39,820 --> 0:18:40,880
+ There's no interactive part.
+
+323
+0:18:40,880 --> 0:18:43,200
+ It's just a part for the user, like you are not seeing anything.
+
+324
+0:18:43,200 --> 0:18:44,200
+ You won't be able to...
+
+325
+0:18:44,200 --> 0:18:45,200
+ You won't be prompted by anything.
+
+326
+0:18:45,200 --> 0:18:49,040
+ You won't have to solve any CAPTCHAs or anything like that.
+
+327
+0:18:49,040 --> 0:18:50,420
+ This is very new.
+
+328
+0:18:50,420 --> 0:18:56,060
+ This is something that the team was working on together with someone called Tivador who
+
+329
+0:18:56,060 --> 0:18:57,940
+ was helping out with these things.
+
+330
+0:18:57,940 --> 0:19:01,600
+ It's all specified in this proposal 327.
+
+331
+0:19:01,600 --> 0:19:05,480
+ We are considering a little bit now to...
+
+332
+0:19:05,480 --> 0:19:09,760
+ Originally the plan was that Tor 048 was going to include ConfLux.
+
+333
+0:19:09,760 --> 0:19:10,760
+ But we're considering...
+
+334
+0:19:10,760 --> 0:19:14,760
+ We're considering a little bit to have a proof of work go into 048 and then let ConfLux go
+
+335
+0:19:14,760 --> 0:19:20,860
+ in for 049 or the next release that comes.
+
+336
+0:19:20,860 --> 0:19:23,920
+ Very good.
+
+337
+0:19:23,920 --> 0:19:28,100
+ Another exciting thing that we're doing to the network right now is that we are rewriting
+
+338
+0:19:28,100 --> 0:19:31,240
+ Tor in the Rust programming language.
+
+339
+0:19:31,240 --> 0:19:33,320
+ We have...
+
+340
+0:19:33,320 --> 0:19:36,240
+ Tor is a pretty old piece of software, right?
+
+341
+0:19:36,240 --> 0:19:38,920
+ It's from around the beginning of the zeros.
+
+342
+0:19:38,920 --> 0:19:39,920
+ It's a single...
+
+343
+0:19:39,920 --> 0:19:40,120
+ It's a single...
+
+344
+0:19:40,120 --> 0:19:45,620
+ It's a single binary right now that is both working as a directory authority, it's a relay,
+
+345
+0:19:45,620 --> 0:19:51,780
+ it's an exit node, it's a client, it's an onion service sort of proxy.
+
+346
+0:19:51,780 --> 0:19:55,880
+ It's a lot of different tools in a single binary.
+
+347
+0:19:55,880 --> 0:20:00,240
+ It has been very complicated for us to take this binary and turn it into a library and
+
+348
+0:20:00,240 --> 0:20:08,120
+ make it usable for mobile developers, especially on the two large mobile platforms that exist
+
+349
+0:20:08,120 --> 0:20:09,120
+ today.
+
+350
+0:20:09,120 --> 0:20:10,120
+ This is the first time we've done this.
+
+351
+0:20:10,120 --> 0:20:11,120
+ We've had a lot of people who have been talking about executing binaries.
+
+352
+0:20:11,120 --> 0:20:13,540
+ They ideally want you to link things as a library.
+
+353
+0:20:13,540 --> 0:20:18,680
+ We've spent a lot of time working with partners and that, and trying to make that entire experience
+
+354
+0:20:18,680 --> 0:20:20,780
+ better.
+
+355
+0:20:20,780 --> 0:20:27,300
+ The goal with RD is to build a library that we can work with the entire Tor ecosystem
+
+356
+0:20:27,300 --> 0:20:28,800
+ in.
+
+357
+0:20:28,800 --> 0:20:35,120
+ For people who know things like metrics, toroproject.org, a website where you can see data about the
+
+358
+0:20:35,120 --> 0:20:37,160
+ network, we have a lot of different tools to parse the different kinds of metrics.
+
+359
+0:20:37,160 --> 0:20:38,080
+ That's the goal with RD.
+
+360
+0:20:38,080 --> 0:20:39,080
+ We have a lot of different tools to parse the different kinds of metrics.
+
+361
+0:20:39,120 --> 0:20:43,480
+ network objects, like the documents that exist with relay descriptors.
+
+362
+0:20:43,480 --> 0:20:47,780
+ All these different components is something we want already to sort of centralize so we
+
+363
+0:20:47,780 --> 0:20:51,340
+ can write small utilities that, for example, does analysis in the network and these kind
+
+364
+0:20:51,340 --> 0:20:52,620
+ of things.
+
+365
+0:20:52,620 --> 0:20:58,360
+ Additionally, we also want to have a library that you can use for onion services.
+
+366
+0:20:58,360 --> 0:21:01,880
+ So you can actually have onion services just existing inside of an application instead
+
+367
+0:21:01,880 --> 0:21:08,180
+ of having to be over a Unix domain socket or a TCP connection and so on.
+
+368
+0:21:08,180 --> 0:21:13,400
+ So, why on earth would we rewrite Tor?
+
+369
+0:21:13,400 --> 0:21:17,340
+ So one of the things is that writing save C is pretty hard.
+
+370
+0:21:17,340 --> 0:21:23,140
+ I think people who have experience working with that is aware that it's a really difficult
+
+371
+0:21:23,140 --> 0:21:26,840
+ task even for very experienced developers.
+
+372
+0:21:26,840 --> 0:21:33,340
+ We, Nick Mathewson, one of the co-founders of Tor, did a bit of analysis of our internal
+
+373
+0:21:33,340 --> 0:21:36,600
+ sort of security tracking mechanism called Trove.
+
+374
+0:21:36,600 --> 0:21:38,160
+ It's a bit similar to CVE.
+
+375
+0:21:38,160 --> 0:21:42,240
+ But we just use it to sort of keep track of what kind of classes of bugs have we seen
+
+376
+0:21:42,240 --> 0:21:43,540
+ in Tor.
+
+377
+0:21:43,540 --> 0:21:52,880
+ And 21 out of 34 of those was related to memory issues that appears more frequently in C-based
+
+378
+0:21:52,880 --> 0:21:53,880
+ applications.
+
+379
+0:21:53,880 --> 0:22:01,080
+ Additionally, this is also, of course, important, a lot of the network team at Tor was very
+
+380
+0:22:01,080 --> 0:22:07,080
+ interested in and excited about developing things in Rust, and we've, over the years,
+
+381
+0:22:07,080 --> 0:22:08,080
+ been playing around.
+
+382
+0:22:08,080 --> 0:22:10,540
+ We've been playing around with it for different reasons.
+
+383
+0:22:10,540 --> 0:22:17,640
+ We started initially with trying to rewrite parts of Tor in Rust and have sort of this
+
+384
+0:22:17,640 --> 0:22:21,980
+ hybrid binary where some of it was Rust and the other part was C. But it turned out that
+
+385
+0:22:21,980 --> 0:22:27,040
+ task was incredibly hard because all the different interfaces in and out between Rust and C had
+
+386
+0:22:27,040 --> 0:22:29,220
+ to be handled extremely carefully.
+
+387
+0:22:29,220 --> 0:22:35,560
+ So instead, we decided to focus on this from scratch implementation, and it seems to be
+
+388
+0:22:35,560 --> 0:22:37,560
+ going much better than the previous attempt.
+
+389
+0:22:37,560 --> 0:22:37,760
+ Thank you.
+
+390
+0:22:38,080 --> 0:22:46,300
+ If we look a little bit at the roadmap for Arty, the first version is mostly about API
+
+391
+0:22:46,300 --> 0:22:50,700
+ stability, trying to figure out how should these API looks when we are working with them.
+
+392
+0:22:50,700 --> 0:22:55,220
+ Usability, performance, and stability is, of course, also going to be an important part
+
+393
+0:22:55,220 --> 0:22:56,220
+ of it.
+
+394
+0:22:56,220 --> 0:23:00,080
+ Eventually, we will do anti-censorship, that is, being able to connect to bridges, use
+
+395
+0:23:00,080 --> 0:23:05,040
+ pluggable transport, all these different kinds of things that we need for people in censored
+
+396
+0:23:05,040 --> 0:23:06,040
+ areas.
+
+397
+0:23:06,040 --> 0:23:07,540
+ Onion services is targeted from one point of view.
+
+398
+0:23:07,540 --> 0:23:16,180
+ And finally, the 2.0 release is hopefully going to be ready to replace the C for client,
+
+399
+0:23:16,180 --> 0:23:21,780
+ like the C client, not for relay and bridges and these kinds of things, but only sort of
+
+400
+0:23:21,780 --> 0:23:26,240
+ what we have in, for example, a product like Tor Browser and so on.
+
+401
+0:23:26,240 --> 0:23:30,640
+ Once we are at that point, we are going to start looking into getting a relay support
+
+402
+0:23:30,640 --> 0:23:34,420
+ and bridge and directory authorities and so on.
+
+403
+0:23:34,420 --> 0:23:37,540
+ And at that point, it's going to be really interesting to get a lot of the, you know,
+
+404
+0:23:37,540 --> 0:23:42,900
+ the relay operators to help try to experiment with this new software also when we get to
+
+405
+0:23:42,900 --> 0:23:48,060
+ the point where we want to do it in production.
+
+406
+0:23:48,060 --> 0:23:53,160
+ So a lot of people ask us what's up with what we can now call sort of the legacy Tor or
+
+407
+0:23:53,160 --> 0:23:54,980
+ the Tor that exists today.
+
+408
+0:23:54,980 --> 0:23:59,000
+ So right now, we have three out of the seven members of the network team there working
+
+409
+0:23:59,000 --> 0:24:02,120
+ full time on our Rust deliverables.
+
+410
+0:24:02,120 --> 0:24:06,660
+ We hope that the entire team is sort of slowly moving over to it.
+
+411
+0:24:07,540 --> 0:24:12,640
+ We see that we're going to reduce sort of feature additions pretty drastically in C Tor,
+
+412
+0:24:12,640 --> 0:24:16,880
+ but we will continue, of course, to support it and like do security updates and all these
+
+413
+0:24:16,880 --> 0:24:19,320
+ different kinds of things.
+
+414
+0:24:19,320 --> 0:24:25,160
+ There is an interesting thing with many of these things that I have mentioned here with,
+
+415
+0:24:25,160 --> 0:24:28,200
+ for example, congestion control and also some of the stuff I'm going to talk about in a
+
+416
+0:24:28,200 --> 0:24:35,220
+ moment, which is that you only need to upgrade the exit nodes or onion services and the clients
+
+417
+0:24:35,220 --> 0:24:36,900
+ to benefit from, for example, something like Tor.
+
+418
+0:24:36,900 --> 0:24:37,540
+ Okay.
+
+419
+0:24:37,540 --> 0:24:40,140
+ So we're going to do a lot of things like the congestion control system.
+
+420
+0:24:40,140 --> 0:24:45,280
+ This is something that means that we will likely do feature additions, but they will
+
+421
+0:24:45,280 --> 0:24:53,300
+ be focused around things that we can do these very nice upgrades for adding new features.
+
+422
+0:24:53,300 --> 0:24:57,780
+ So one of the big things we want to do soon is UDP support.
+
+423
+0:24:57,780 --> 0:25:04,200
+ UDP support has been something that I believe many people have wanted in Tor for a very
+
+424
+0:25:04,200 --> 0:25:05,200
+ long time.
+
+425
+0:25:05,200 --> 0:25:06,900
+ There's a lot of modern applications that are using it.
+
+426
+0:25:06,900 --> 0:25:10,100
+ There's a lot of modern applications that are using UDP in various ways, especially
+
+427
+0:25:10,100 --> 0:25:15,720
+ things like WebRTC, like voice and video communication.
+
+428
+0:25:15,720 --> 0:25:19,980
+ And again, this is one of those features we can add by only having the client and the
+
+429
+0:25:19,980 --> 0:25:24,060
+ exit nodes upgrade for us to deploy.
+
+430
+0:25:24,060 --> 0:25:29,500
+ We will use the congestion control system to sort of decide when we need to drop packets
+
+431
+0:25:29,500 --> 0:25:35,660
+ if there's any buffers that are starting to be full and generally behave a lot like a
+
+432
+0:25:35,660 --> 0:25:36,780
+ NAT router at home.
+
+433
+0:25:36,780 --> 0:25:41,780
+ It just handles these tracking of UDP sessions.
+
+434
+0:25:41,780 --> 0:25:47,980
+ So the way it will work is that here we have Alice trying to reach Bob over a UDP packet
+
+435
+0:25:47,980 --> 0:25:49,580
+ stream, so to say.
+
+436
+0:25:49,580 --> 0:25:57,020
+ So what Alice does here is that she does the usual session to the exit node and then starts
+
+437
+0:25:57,020 --> 0:26:03,280
+ transmitting UDP, but it will all be wrapped in a TCP connection from Alice, and I'm going
+
+438
+0:26:03,280 --> 0:26:05,700
+ to return to how we're going to do this.
+
+439
+0:26:06,780 --> 0:26:11,020
+ So for example, we have a HTTP connection, and for HTTP, we have, for example, a SOX
+
+440
+0:26:11,020 --> 0:26:16,840
+ proxy and we have HTTP proxy and these different kind of techniques for proxying connections.
+
+441
+0:26:16,840 --> 0:26:22,260
+ But many UDP applications don't support something similar to that, so we have to do something
+
+442
+0:26:22,260 --> 0:26:24,080
+ different there.
+
+443
+0:26:24,080 --> 0:26:29,480
+ And the idea here is that we instead start focusing more on having Tor behave a lot like
+
+444
+0:26:29,480 --> 0:26:31,020
+ a VPN.
+
+445
+0:26:31,020 --> 0:26:35,780
+ So instead of working on these proxy connections, we instead start looking at taking packets and
+
+446
+0:26:35,780 --> 0:26:36,780
+ adding them to the server.
+
+447
+0:26:36,780 --> 0:26:41,880
+ gates and start transferring them around. People who have used operating systems such
+
+448
+0:26:41,880 --> 0:26:48,520
+ as Kube that has these kind of virtual machines where you can have a Tor VM where you send
+
+449
+0:26:48,520 --> 0:26:52,980
+ all your traffic through, it will be a very similar flow to that, but it will then also
+
+450
+0:26:52,980 --> 0:26:58,180
+ be possible for mobile platforms and different other kind of platforms.
+
+451
+0:26:58,180 --> 0:27:03,520
+ The goal here is to release something in 2023. The first target is Android, but we're of
+
+452
+0:27:03,520 --> 0:27:09,620
+ course also testing on the different kind of platforms that we eventually need to support,
+
+453
+0:27:09,620 --> 0:27:13,620
+ but Android is our first target here because it's a little bit harder to do these things
+
+454
+0:27:13,620 --> 0:27:18,580
+ on mobile, so we don't want to be surprised afterwards. Of course, desktop Linux will
+
+455
+0:27:18,580 --> 0:27:24,600
+ be a part of the first version as well because that's necessary to get Android working.
+
+456
+0:27:24,600 --> 0:27:29,520
+ The implementation of the VPN part, there's of course an app that needs to be done that
+
+457
+0:27:29,520 --> 0:27:33,400
+ will be the application team, but we have a little sort of the engine of this that we
+
+458
+0:27:33,400 --> 0:27:33,500
+ need to implement. We're going to have a little bit of a demo of the application team,
+
+459
+0:27:33,500 --> 0:27:35,300
+ but we're going to have a little bit of a demo of this that we need to build.
+
+460
+0:27:35,300 --> 0:27:40,100
+ This is one of our first projects that are using RD as sort of a library. We are writing
+
+461
+0:27:40,100 --> 0:27:45,380
+ this in parallel with that we're also doing RD. The goal here is for the Onion Mask application
+
+462
+0:27:45,380 --> 0:27:51,140
+ is to have sort of a layer three packet engine, which takes a ton interface and starts reading
+
+463
+0:27:51,140 --> 0:27:56,260
+ packets and working with packets, and generally handling this sort of multiplexing between
+
+464
+0:27:56,260 --> 0:28:03,380
+ incoming TCP and UDP flows and forwarding them using RD's TCP and UDP socket interfaces.
+
+465
+0:28:03,380 --> 0:28:10,380
+ Onion Services is going to work very similar to the way it's done on things like the Kube
+
+466
+0:28:10,380 --> 0:28:14,200
+ SoAs right now with the Tor service there, with that we are faking sort of a DNS server
+
+467
+0:28:14,200 --> 0:28:21,140
+ and responding with these kind of cookie responses that we are then able to map to an Onion Service.
+
+468
+0:28:21,140 --> 0:28:25,860
+ We will also need to have sort of basic, some filtering mechanisms so we can disallow certain
+
+469
+0:28:25,860 --> 0:28:32,300
+ flows that we don't want to see, particularly for the Android platform. We've identified
+
+470
+0:28:32,300 --> 0:28:33,260
+ some metadata that we can go and get the DTS, which is the network, and all of these things.
+
+471
+0:28:33,260 --> 0:28:36,800
+ can get out from the different connections that we are seeing.
+
+472
+0:28:37,500 --> 0:28:39,520
+ And this is the application UUID.
+
+473
+0:28:39,900 --> 0:28:44,740
+ This is the way when you install an app on Android, it gets its own UID.
+
+474
+0:28:45,540 --> 0:28:46,800
+ We have the host name, of course.
+
+475
+0:28:46,860 --> 0:28:50,600
+ If the client is making a connection to something that has a host name, you can also connect
+
+476
+0:28:50,600 --> 0:28:51,360
+ to just an IP.
+
+477
+0:28:51,980 --> 0:28:53,000
+ And the DNS cookie.
+
+478
+0:28:53,000 --> 0:28:56,640
+ And we, of course, still will continue to have the five tuple that you're used to seeing
+
+479
+0:28:56,640 --> 0:29:02,280
+ in NetStat, whether it's UDP, TCP, the source and destination address, and the source and
+
+480
+0:29:02,280 --> 0:29:03,100
+ destination port.
+
+481
+0:29:03,260 --> 0:29:06,860
+ How can you help?
+
+482
+0:29:07,640 --> 0:29:10,040
+ You can either run a Tor relay or a bridge.
+
+483
+0:29:10,160 --> 0:29:12,740
+ It sounds like a lot of you were already doing that.
+
+484
+0:29:13,480 --> 0:29:15,140
+ You can teach others about Tor.
+
+485
+0:29:15,600 --> 0:29:19,880
+ You can help us find some bugs and test some of this new software that we're working on.
+
+486
+0:29:19,880 --> 0:29:23,680
+ And especially if you're running some kind of platform that may not be something that
+
+487
+0:29:23,680 --> 0:29:24,600
+ we're dealing with usually.
+
+488
+0:29:25,500 --> 0:29:30,500
+ And you can also donate to the organization to help us build some of these things.
+
+489
+0:29:32,100 --> 0:29:33,180
+ Do we have any questions?
+
+490
+0:29:33,260 --> 0:29:33,400
+ Yes.
+
+491
+0:29:42,940 --> 0:29:46,800
+ Can you talk more about how the UDP thing is going to work?
+
+492
+0:29:47,020 --> 0:29:55,260
+ Like, if it's operating as a VPN, then your TCP traffic is also going to be sent as packets
+
+493
+0:29:55,260 --> 0:29:55,540
+ now?
+
+494
+0:29:55,640 --> 0:30:01,260
+ So Tor will suddenly have the TCP over TCP problem where...
+
+495
+0:30:01,260 --> 0:30:01,660
+ Yes.
+
+496
+0:30:03,260 --> 0:30:07,400
+ So I think the question is sort of how the engine will handle this right now.
+
+497
+0:30:07,860 --> 0:30:11,580
+ So the idea there is that when we receive a TCP package, we will extract the payload
+
+498
+0:30:11,580 --> 0:30:15,040
+ and have a normal, a completely normal connection.
+
+499
+0:30:15,400 --> 0:30:18,700
+ And you know the technical details of this, but it's called like a stream.
+
+500
+0:30:18,980 --> 0:30:23,900
+ And we will then also have a new kind of stream, which is for packets like datagram kinds of
+
+501
+0:30:23,900 --> 0:30:24,280
+ connections.
+
+502
+0:30:24,680 --> 0:30:25,500
+ A very good question.
+
+503
+0:30:27,940 --> 0:30:28,760
+ Other questions?
+
+504
+0:30:29,020 --> 0:30:29,280
+ Yes.
+
+505
+0:30:31,240 --> 0:30:31,720
+ Yes.
+
+506
+0:30:32,020 --> 0:30:33,100
+ So I have a...
+
+507
+0:30:33,100 --> 0:30:36,900
+ I have a card relay that keeps on crashing, and I would like to do some statistics why
+
+508
+0:30:36,900 --> 0:30:37,660
+ it is crashing.
+
+509
+0:30:38,360 --> 0:30:44,120
+ What is your stand on, you know, kind of like snooping or doing like statistics on traffic
+
+510
+0:30:44,120 --> 0:30:44,500
+ in and out?
+
+511
+0:30:45,240 --> 0:30:46,280
+ It's a very good question.
+
+512
+0:30:47,080 --> 0:30:52,160
+ So you should be able to debug, of course, what you're trying to figure out, and you
+
+513
+0:30:52,160 --> 0:30:53,100
+ should not save the data.
+
+514
+0:30:53,780 --> 0:30:57,040
+ But there is also a new feature in Tor called metrics port.
+
+515
+0:30:58,200 --> 0:31:02,560
+ It doesn't do a whole lot right now, but the next version is going to have things on which
+
+516
+0:31:03,100 --> 0:31:08,020
+ kind of buffers is it that is taking up a lot of memory allocations and where is it we're
+
+517
+0:31:08,020 --> 0:31:10,120
+ spending time and these kind of things.
+
+518
+0:31:10,120 --> 0:31:14,780
+ So having some kind of Prometheus-like setup pulling from this every now and then is a
+
+519
+0:31:14,780 --> 0:31:16,600
+ very good idea.
+
+520
+0:31:16,600 --> 0:31:22,620
+ And hopefully in the next version, you will get a lot more stats out.
+
+521
+0:31:22,620 --> 0:31:24,620
+ Any other questions?
+
+522
+0:31:24,620 --> 0:31:26,680
+ No?
+
+523
+0:31:26,680 --> 0:31:27,680
+ Thank you for the talk.
+
+524
+0:31:27,680 --> 0:31:28,680
+ Thank you.

@@ -1,0 +1,2867 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:21,360
+ Thank you very much and so we're going to be talking about EU digital laws and
+
+2
+0:00:21,360 --> 0:00:26,880
+ also perhaps talk about why what's going on in the EU is actually going to be
+
+3
+0:00:26,880 --> 0:00:32,400
+ helpful and that what has been going on recently and how they will affect you.
+
+4
+0:00:33,840 --> 0:00:43,840
+ I came to the first born hack in 2016 and I've been coming to Congress and to this camp
+
+5
+0:00:43,840 --> 0:00:48,460
+ a number of times to get inspiration about what's actually going on and what the concerns
+
+6
+0:00:48,460 --> 0:00:54,960
+ are about digital regulation because quite often politicians don't really understand
+
+7
+0:00:54,960 --> 0:00:56,540
+ how tech and the internet works.
+
+8
+0:00:56,880 --> 0:01:01,920
+ And that was also one of the reasons why I wanted to go into politics and do digital
+
+9
+0:01:01,920 --> 0:01:07,160
+ stuff was because I don't know a lot about tech but I at least know when I don't know
+
+10
+0:01:07,160 --> 0:01:12,300
+ stuff and I try to listen to what people that know things have to say.
+
+11
+0:01:13,080 --> 0:01:18,420
+ I've been in the European Parliament since 2019 and will be there until 2024.
+
+12
+0:01:18,880 --> 0:01:22,880
+ I'm in the liberal group and work on digital policy in a couple of committees.
+
+13
+0:01:26,880 --> 0:01:27,880
+ So why are we all here?
+
+14
+0:01:27,880 --> 0:01:30,100
+ Why are we discussing what the EU does?
+
+15
+0:01:30,100 --> 0:01:36,780
+ Well that's because EU loves to regulate and the EU regulations they have a tendency of
+
+16
+0:01:36,780 --> 0:01:46,280
+ becoming global standards because the European single market is the largest region that has
+
+17
+0:01:46,280 --> 0:01:48,000
+ a set of common rules.
+
+18
+0:01:48,000 --> 0:01:49,200
+ So it's the largest market.
+
+19
+0:01:49,200 --> 0:01:53,960
+ So if you have big tech companies or you have big companies in general that want to have
+
+20
+0:01:53,960 --> 0:01:54,960
+ one standard.
+
+21
+0:01:54,960 --> 0:01:56,840
+ Then it's the easiest to apply.
+
+22
+0:01:56,880 --> 0:02:01,500
+ The EU standard all over the world rather than having a number of different standards.
+
+23
+0:02:07,500 --> 0:02:12,100
+ The GDPR, face protection regulation is a good example of this.
+
+24
+0:02:12,100 --> 0:02:22,860
+ Other countries or even US states have adopted or adopting similar laws now.
+
+25
+0:02:22,860 --> 0:02:25,920
+ So not only is the EU standard being applied.
+
+26
+0:02:25,920 --> 0:02:26,840
+ But also.
+
+27
+0:02:26,880 --> 0:02:30,600
+ It serves it as an inspiration and sort of a golden standard.
+
+28
+0:02:30,600 --> 0:02:35,500
+ Right now the EU is in its digital decade of legislation.
+
+29
+0:02:35,500 --> 0:02:41,920
+ Digitalization, digital regulation was one of the two main issues that the Commission
+
+30
+0:02:41,920 --> 0:02:47,700
+ President announced when she took up her office in 2019.
+
+31
+0:02:47,700 --> 0:02:50,780
+ And we have a lot of digital laws in the pipeline.
+
+32
+0:02:50,780 --> 0:02:53,040
+ So with inspiration from Westerns.
+
+33
+0:02:53,040 --> 0:02:55,500
+ We will go through the good, the bad and the ugly.
+
+34
+0:02:55,500 --> 0:02:56,500
+ And we will go through the good, the bad and the ugly.
+
+35
+0:02:56,880 --> 0:02:58,500
+ And we will go through the good, the bad and the ugly.
+
+36
+0:02:58,500 --> 0:03:02,060
+ The ugly is worse than the bad here.
+
+37
+0:03:02,060 --> 0:03:06,980
+ The good stuff is that the European commission, they have a GIPH my page.
+
+38
+0:03:06,980 --> 0:03:11,020
+ So you can find treasures like the one on the screen at the moment.
+
+39
+0:03:11,020 --> 0:03:12,560
+ And we've used them.
+
+40
+0:03:12,560 --> 0:03:16,560
+ Jordan has used them for all of the gifts of this presentation.
+
+41
+0:03:16,560 --> 0:03:22,040
+ So I think we also at least thank the EU Commission KAMPS team.
+
+42
+0:03:22,040 --> 0:03:23,480
+ The digital services package is a collection of tools.
+
+43
+0:03:23,480 --> 0:03:24,480
+ Just to be honest.
+
+44
+0:03:24,480 --> 0:03:25,440
+ Love to share everything with you.
+
+45
+0:03:25,440 --> 0:03:26,140
+ If you have questions also.
+
+46
+0:03:26,140 --> 0:03:26,760
+ Thank you for your time.
+
+47
+0:03:26,760 --> 0:03:32,760
+ laws which could significantly change the how we use online platforms and also our devices.
+
+48
+0:03:34,760 --> 0:03:41,080
+ It's the Digital Services Act and it is also the Digital Markets Act that I'll come on to later.
+
+49
+0:03:41,880 --> 0:03:47,080
+ And the Digital Services Act is designed to address one problem that well the internet is
+
+50
+0:03:47,080 --> 0:03:53,400
+ broken or at least the way that the internet has developed in recent years has broken the internet
+
+51
+0:03:53,400 --> 0:03:59,240
+ because we are capsulated in walled gardens and on platforms that are not
+
+52
+0:03:59,240 --> 0:04:03,480
+ interoperable. And when we don't have access to the data and we can't really control what's going on.
+
+53
+0:04:04,520 --> 0:04:08,600
+ Also issues like abuse online have been snowballing recently
+
+54
+0:04:09,320 --> 0:04:13,400
+ where we see that women and non-binary people are particularly affected
+
+55
+0:04:14,040 --> 0:04:21,240
+ 74% of women report experiencing some kind of online violence in the EU in 2020.
+
+56
+0:04:21,800 --> 0:04:22,440
+ And also women from marginalised polices and guns from melhor phase identify as both the tenant lifes or the subsistence of their parents.
+
+57
+0:04:22,440 --> 0:04:23,240
+ And this is the August date that we can see the climate change where again the building of the climate changes and these European people are..
+
+58
+0:04:23,240 --> 0:04:23,380
+ So when you work with other social hexagonal platforms as they 기다� for the...
+
+59
+0:04:23,380 --> 0:04:28,060
+ communities, including LGBTI plus people, women of color, and black women in particular,
+
+60
+0:04:28,060 --> 0:04:35,940
+ are often disproportionately targeted with online abuse. This is in part because of toxic
+
+61
+0:04:35,940 --> 0:04:41,580
+ recommender algorithms that put engagement above everything else. So they don't care about what
+
+62
+0:04:41,580 --> 0:04:46,780
+ you're saying as long as you're there, and they don't care about why people are piling on to a
+
+63
+0:04:46,780 --> 0:04:51,640
+ particular comment thread, just as long as they stay there and they get as much interaction. So
+
+64
+0:04:51,640 --> 0:04:58,460
+ that's why abusive posts or comments often end up at the top, rather than being pushed
+
+65
+0:04:58,460 --> 0:05:05,760
+ down backwards. That's one of the things that one has sort of responsibility through design
+
+66
+0:05:05,760 --> 0:05:11,680
+ also of the platforms. And then also moderation. The moderation that's being done is really bad.
+
+67
+0:05:12,140 --> 0:05:20,500
+ There is an under-blocking or removal or downgrading of, for example, hate speech.
+
+68
+0:05:21,640 --> 0:05:28,380
+ But because it gives you eyeballs to have hate speech on your site. And then you have the other
+
+69
+0:05:28,380 --> 0:05:33,000
+ end, you have over-blocking, where legally content is blocked and the users have their account
+
+70
+0:05:33,000 --> 0:05:39,920
+ suspended for no reasons. Or you have content such as evidence of war crimes being taken off,
+
+71
+0:05:40,060 --> 0:05:47,060
+ for example, YouTube. So you have either the stuff that's not being removed enough,
+
+72
+0:05:47,060 --> 0:05:51,480
+ or you have stuff that is overused, also being using upload.
+
+73
+0:05:51,640 --> 0:05:59,720
+ So you have filters and algorithmic moderation. And then, of course, I mean, there is a crucial
+
+74
+0:05:59,720 --> 0:06:04,540
+ element that's really bad, is that there's lack of transparency. You get stuff removed, or you
+
+75
+0:06:04,540 --> 0:06:11,480
+ can't get stuff removed, and nobody can tell you why the decision is made as it was. And then we
+
+76
+0:06:11,480 --> 0:06:17,120
+ also have the surveillance economy, the advertisements, and also the promotion of
+
+77
+0:06:17,120 --> 0:06:21,620
+ specific content, where your personal data is being used to make sure that the content is
+
+78
+0:06:21,640 --> 0:06:29,200
+ used to figure out what kind of a person you would be, and serving up advertisements to you.
+
+79
+0:06:29,200 --> 0:06:33,940
+ The problems we're also seeing is that kids, for example, are being targeted with ads for
+
+80
+0:06:33,940 --> 0:06:39,360
+ pay-to-play games or loot boxes. You have people with anorexia being targeted with diet
+
+81
+0:06:39,360 --> 0:06:44,920
+ ads, and you can be targeted based on sexual orientation, religious beliefs, and all kinds
+
+82
+0:06:44,920 --> 0:06:51,600
+ of sort of very personal private information. So in general, surveillance ads are just creepy.
+
+83
+0:06:51,640 --> 0:06:59,440
+ Then you also have annoying consent forms, and what's also known as dark patterns, where you
+
+84
+0:06:59,440 --> 0:07:08,600
+ have no real influence on what's going on, and giving consent is easier than refusing to give
+
+85
+0:07:08,600 --> 0:07:15,160
+ consent. You have, for example, tick 20 checkboxes before you're able to refuse, and you don't really
+
+86
+0:07:15,160 --> 0:07:21,580
+ have a real choice. So fixing all of the stuff that has been broken in the internet for the last
+
+87
+0:07:21,640 --> 0:07:28,700
+ 10 or 15 years is difficult, because we want to protect the freedom of speech and basic
+
+88
+0:07:28,700 --> 0:07:36,620
+ fundamental rights online as well as offline. But we also want to make sure that we have some
+
+89
+0:07:36,620 --> 0:07:46,680
+ kind of regulation so that the balance of rights is being maintained. And that's why you need some
+
+90
+0:07:46,680 --> 0:07:51,440
+ moderation, and we need to get the platforms to do this in a good way so that they don't overblock
+
+91
+0:07:51,440 --> 0:07:56,800
+ and get us all into trouble with not actually having the freedom of speech that we need.
+
+92
+0:07:58,800 --> 0:08:07,280
+ So the DSA is looking to fix some of these things. We have actually come quite far very soon
+
+93
+0:08:07,840 --> 0:08:14,000
+ on the DSA. It was proposed two years ago, and we already have an agreement.
+
+94
+0:08:14,880 --> 0:08:19,600
+ You will get an explanation if your consent is removed, and you can appeal this decision.
+
+95
+0:08:19,600 --> 0:08:24,640
+ And online platforms are being made responsible for their algorithms and have to consider the
+
+96
+0:08:24,640 --> 0:08:31,120
+ negative effects. In the GDPR, we had a privacy by design, and hopefully with the Digital Services
+
+97
+0:08:31,120 --> 0:08:38,080
+ Act, we will have responsibility by design. You get an explanation for why you were recommended
+
+98
+0:08:38,080 --> 0:08:45,280
+ certain content, and you can turn off recommender systems and content duration systems. So you can
+
+99
+0:08:45,280 --> 0:08:48,960
+ have return back to a chronological timeline on your platforms.
+
+100
+0:08:50,400 --> 0:08:57,840
+ We did not get a complete ban on surveillance advertisement, but we have ensured that children
+
+101
+0:08:57,840 --> 0:09:03,200
+ are not exposed to data collection and targeted ads, and also that nobody is targeted based on
+
+102
+0:09:03,200 --> 0:09:10,320
+ ethnicity or sexuality. And finally, we will move towards ending annoying content banners,
+
+103
+0:09:10,320 --> 0:09:18,800
+ and being able to give content should be as easy as refusing it. Let me see. This might be some more.
+
+104
+0:09:19,600 --> 0:09:28,240
+ And then we have the Digital Markets Act, where we're trying to deal with the fact that if you have
+
+105
+0:09:29,040 --> 0:09:36,960
+ a digital service, if you have digital platform, you need to grow so that you have the majority
+
+106
+0:09:36,960 --> 0:09:41,280
+ of the market so that you have all of the users and your platform becomes more attractive.
+
+107
+0:09:42,160 --> 0:09:48,800
+ And that makes it more or less impossible for a new platform to come up and compete with
+
+108
+0:09:49,600 --> 0:09:55,220
+ larger platforms, and it also allows for platforms to steal ideas and innovations from the other
+
+109
+0:09:55,220 --> 0:10:01,860
+ platforms, and the innovation and creativity of the internet is breaking down there. It's a little
+
+110
+0:10:01,860 --> 0:10:09,040
+ bit like the gravitational pull of being big makes it nearly impossible to actually compete.
+
+111
+0:10:09,040 --> 0:10:19,800
+ So we're trying to also deal with the walled gardens and also targeting specifically the very
+
+112
+0:10:19,800 --> 0:10:27,620
+ large online platforms, ROPs, and the practices. In competition law, you normally look at a
+
+113
+0:10:27,620 --> 0:10:32,440
+ situation and see if you are doing something bad against the competition, otherwise you're allowed
+
+114
+0:10:32,440 --> 0:10:37,280
+ to run your business as you want, but here you say there are certain business practices that you're
+
+115
+0:10:37,280 --> 0:10:39,000
+ not allowed to do for competition. So it's a little bit like that. So it's a little bit like that.
+
+116
+0:10:39,000 --> 0:10:39,020
+ So it's a little bit like that. So it's a little bit like that. So it's a little bit like that.
+
+117
+0:10:39,020 --> 0:10:39,080
+ So it's a little bit like that. So it's a little bit like that. So it's a little bit like that.
+
+118
+0:10:39,080 --> 0:10:39,100
+ So it's a little bit like that. So it's a little bit like that.
+
+119
+0:10:39,100 --> 0:10:44,620
+ So it's a little bit like that. So if you're very large online platform, you can't avoid
+
+120
+0:10:44,620 --> 0:10:50,160
+ competition. You don't have to wait until you destroy competition to get you to stop.
+
+121
+0:10:52,380 --> 0:11:00,980
+ The Digital Markets Act also looks at the use of platforms to push their own products at the
+
+122
+0:11:00,980 --> 0:11:06,000
+ expense of smaller creators or vendors. Here on the slide you can see on Amazon that Amazon
+
+123
+0:11:06,000 --> 0:11:09,000
+ products are always placed first. So if you're very large online platform, you can't avoid
+
+124
+0:11:09,000 --> 0:11:12,460
+ a product is available from multiple sources,
+
+125
+0:11:12,460 --> 0:11:15,340
+ then Amazon tries to push theirs
+
+126
+0:11:15,340 --> 0:11:17,980
+ as the first and the default provider,
+
+127
+0:11:17,980 --> 0:11:20,620
+ even if other sources are cheaper.
+
+128
+0:11:21,520 --> 0:11:23,380
+ The DMA, Digital Markets Act,
+
+129
+0:11:23,380 --> 0:11:26,100
+ will ban gatekeepers from doing this,
+
+130
+0:11:26,100 --> 0:11:29,600
+ and then making sure that you are always presented
+
+131
+0:11:29,600 --> 0:11:31,500
+ with the best deals,
+
+132
+0:11:31,500 --> 0:11:33,760
+ no matter if the platform also has products.
+
+133
+0:11:34,920 --> 0:11:37,620
+ One of the other problems is that platforms own our devices
+
+134
+0:11:37,620 --> 0:11:41,180
+ and it makes it very difficult or nearly impossible
+
+135
+0:11:41,180 --> 0:11:44,260
+ to install, for example, alternative app stores.
+
+136
+0:11:44,260 --> 0:11:49,260
+ And also, they forbid alternative in-payment systems,
+
+137
+0:11:49,760 --> 0:11:51,380
+ as you're all aware of.
+
+138
+0:11:51,380 --> 0:11:55,040
+ And for example, Netflix is forced to send users
+
+139
+0:11:55,040 --> 0:11:56,460
+ to their website to sign up
+
+140
+0:11:56,460 --> 0:12:01,180
+ because Apple forces iOS apps to use their payment service
+
+141
+0:12:01,180 --> 0:12:03,700
+ and take a 20% cut.
+
+142
+0:12:03,700 --> 0:12:05,840
+ And there's also a big gaming platform
+
+143
+0:12:05,840 --> 0:12:07,280
+ that has had a little bit
+
+144
+0:12:07,280 --> 0:12:07,600
+ of a fire in the air.
+
+145
+0:12:07,600 --> 0:12:09,940
+ So, there's a huge fight with Apple on that.
+
+146
+0:12:09,940 --> 0:12:13,360
+ They also prevent the removal of their software.
+
+147
+0:12:13,360 --> 0:12:16,160
+ For example, you can't remove Chrome from Android,
+
+148
+0:12:16,160 --> 0:12:19,740
+ and the same is true for Edge on Windows.
+
+149
+0:12:19,740 --> 0:12:21,640
+ And these practices are practices
+
+150
+0:12:21,640 --> 0:12:24,740
+ that the Digital Markets Act will ban,
+
+151
+0:12:24,740 --> 0:12:27,180
+ and therefore allowing us to have control
+
+152
+0:12:27,180 --> 0:12:29,480
+ of the hardware that we're using,
+
+153
+0:12:29,480 --> 0:12:32,360
+ and allow us to install, for example, third-party app stores,
+
+154
+0:12:32,360 --> 0:12:34,320
+ use third-party payment devices,
+
+155
+0:12:34,320 --> 0:12:36,860
+ and control all of the software on our devices.
+
+156
+0:12:37,600 --> 0:12:42,180
+ So, how many of your messaging folders look like this?
+
+157
+0:12:42,180 --> 0:12:44,920
+ We have like a ton of different applications
+
+158
+0:12:44,920 --> 0:12:46,840
+ and messaging services.
+
+159
+0:12:46,840 --> 0:12:49,000
+ And it's not because you necessarily want
+
+160
+0:12:49,000 --> 0:12:51,860
+ to install WhatsApp, but you have to install it
+
+161
+0:12:51,860 --> 0:12:54,480
+ if you want to keep in touch with either certain friends
+
+162
+0:12:54,480 --> 0:12:56,460
+ or colleagues, family members,
+
+163
+0:12:56,460 --> 0:13:00,600
+ that are using that particular messaging service.
+
+164
+0:13:01,460 --> 0:13:03,760
+ And these are just a few of the apps
+
+165
+0:13:03,760 --> 0:13:06,940
+ that we have to install that came up on the screen.
+
+166
+0:13:07,600 --> 0:13:09,480
+ But there are so many more.
+
+167
+0:13:09,480 --> 0:13:13,320
+ The Digital Markets Act tries to simplify these things
+
+168
+0:13:13,320 --> 0:13:17,220
+ by forcing the biggest apps like WhatsApp and iMessage
+
+169
+0:13:17,220 --> 0:13:19,880
+ to be interoperable, meaning that you can choose
+
+170
+0:13:19,880 --> 0:13:22,620
+ your chat application based on your own preferences
+
+171
+0:13:22,620 --> 0:13:24,800
+ and still use it to chat to your friends,
+
+172
+0:13:24,800 --> 0:13:28,100
+ even if they're using iMessage or WhatsApp.
+
+173
+0:13:28,100 --> 0:13:31,060
+ So basically, returning back to previous times
+
+174
+0:13:31,060 --> 0:13:33,360
+ when you could use the same service to communicate
+
+175
+0:13:33,360 --> 0:13:37,060
+ with everybody, a little bit like, yeah.
+
+176
+0:13:37,600 --> 0:13:40,580
+ So that would be, that'd be good.
+
+177
+0:13:40,580 --> 0:13:43,620
+ An extension of this, when independent platforms do arise,
+
+178
+0:13:43,620 --> 0:13:46,100
+ they are often bought by bigger platforms,
+
+179
+0:13:46,100 --> 0:13:49,060
+ which force you to log in using their system.
+
+180
+0:13:49,060 --> 0:13:51,820
+ So when Microsoft bought Mojang, for example,
+
+181
+0:13:51,820 --> 0:13:53,640
+ all Minecraft users were forced to create
+
+182
+0:13:53,640 --> 0:13:56,220
+ a Microsoft account just to keep playing.
+
+183
+0:13:56,220 --> 0:13:59,220
+ And Google did the exact same thing with YouTube.
+
+184
+0:13:59,220 --> 0:14:02,080
+ And while Instagram still allows for individual signups,
+
+185
+0:14:02,080 --> 0:14:04,900
+ that doesn't mean that they don't combine the data
+
+186
+0:14:04,900 --> 0:14:07,060
+ from your Facebook and Instagram accounts.
+
+187
+0:14:07,600 --> 0:14:10,680
+ So the DMA bans these practices, preventing companies
+
+188
+0:14:10,680 --> 0:14:12,640
+ from forcing you into their ecosystem
+
+189
+0:14:12,640 --> 0:14:14,780
+ or aggregating your data without consent.
+
+190
+0:14:15,700 --> 0:14:19,420
+ So these were the stars of the show, the DMA and the DSA.
+
+191
+0:14:19,420 --> 0:14:22,420
+ Now we move on to the bad stuff.
+
+192
+0:14:22,420 --> 0:14:24,060
+ We'll be focusing on two laws,
+
+193
+0:14:24,060 --> 0:14:26,020
+ the European Digital Identity
+
+194
+0:14:27,620 --> 0:14:30,520
+ and the Artificial Intelligence Act.
+
+195
+0:14:30,520 --> 0:14:33,080
+ There is a question mark after the bad
+
+196
+0:14:33,080 --> 0:14:37,300
+ because the outcome of these laws is still undecided.
+
+197
+0:14:37,600 --> 0:14:40,120
+ I sit in the Legal Affairs Committee in the Parliament
+
+198
+0:14:40,120 --> 0:14:43,880
+ and I'm leading my political group, the liberal group,
+
+199
+0:14:43,880 --> 0:14:47,540
+ on these two files, and therefore will be representing us
+
+200
+0:14:47,540 --> 0:14:48,860
+ in the negotiations.
+
+201
+0:14:48,860 --> 0:14:52,280
+ And I'm fighting and have been and will continue to fight
+
+202
+0:14:52,280 --> 0:14:54,980
+ to make these laws better, even though at certain places
+
+203
+0:14:54,980 --> 0:14:56,220
+ it's an uphill battle.
+
+204
+0:14:57,560 --> 0:15:00,720
+ So let's start with the AI Act.
+
+205
+0:15:00,720 --> 0:15:03,120
+ This is the European Union's proposal
+
+206
+0:15:03,120 --> 0:15:05,440
+ to regulate artificial intelligence.
+
+207
+0:15:05,440 --> 0:15:07,600
+ And it's actually the first, the first, the first act
+
+208
+0:15:07,600 --> 0:15:12,600
+ to regulate artificial intelligence in the world.
+
+209
+0:15:13,540 --> 0:15:15,220
+ It's not all bad.
+
+210
+0:15:15,220 --> 0:15:19,360
+ The rules to make the use of AI more transparent,
+
+211
+0:15:19,360 --> 0:15:21,820
+ to ensure that the data used to train
+
+212
+0:15:21,820 --> 0:15:24,340
+ and teach the AI systems is sound.
+
+213
+0:15:24,340 --> 0:15:27,720
+ And there are some bans on the very worst AI practices,
+
+214
+0:15:27,720 --> 0:15:31,860
+ as well as a partial ban on biometric mass surveillance.
+
+215
+0:15:31,860 --> 0:15:34,680
+ But there are also many negative points.
+
+216
+0:15:34,680 --> 0:15:37,160
+ So far, the regulation applies to open source developers,
+
+217
+0:15:37,160 --> 0:15:41,340
+ which is an overburdening of unfair obligations
+
+218
+0:15:41,340 --> 0:15:43,160
+ to all open source developers,
+
+219
+0:15:43,160 --> 0:15:45,840
+ even if you are not selling your software.
+
+220
+0:15:45,840 --> 0:15:48,020
+ The ban on biometric mass surveillance
+
+221
+0:15:48,020 --> 0:15:51,980
+ doesn't include law enforcement and is also looked at
+
+222
+0:15:51,980 --> 0:15:55,900
+ using it at borders to the European Union.
+
+223
+0:15:55,900 --> 0:15:58,400
+ And finally, it explicitly allows a number
+
+224
+0:15:58,400 --> 0:16:00,840
+ of really dangerous AI uses.
+
+225
+0:16:02,840 --> 0:16:07,100
+ The AI Act allows the use of AI in deciding access to
+
+226
+0:16:07,100 --> 0:16:12,060
+ education, housing, work, benefits, asylum, or visas,
+
+227
+0:16:12,060 --> 0:16:15,860
+ as well as evaluating job performance, hiring, and firing,
+
+228
+0:16:15,860 --> 0:16:18,100
+ all while using AI systems
+
+229
+0:16:18,100 --> 0:16:20,000
+ whose decisions cannot be explained.
+
+230
+0:16:22,820 --> 0:16:25,200
+ The European Commission also seemed to have watched
+
+231
+0:16:25,200 --> 0:16:27,840
+ a minority report and enjoyed the idea.
+
+232
+0:16:29,540 --> 0:16:33,100
+ The proposal would also allow AI to predict crime,
+
+233
+0:16:33,100 --> 0:16:36,720
+ reoffending illegal migration, if a person is lying,
+
+234
+0:16:36,720 --> 0:16:39,540
+ and even the outcome of legal cases.
+
+235
+0:16:39,540 --> 0:16:42,560
+ So in short, you could be labeled as guilty
+
+236
+0:16:42,560 --> 0:16:44,160
+ just because the computer says so.
+
+237
+0:16:46,460 --> 0:16:48,120
+ So I've been working pretty hard
+
+238
+0:16:48,120 --> 0:16:49,500
+ to fix some of these issues,
+
+239
+0:16:49,500 --> 0:16:52,520
+ but my committee has limited power.
+
+240
+0:16:52,520 --> 0:16:55,760
+ The file is split between a number of committees
+
+241
+0:16:55,760 --> 0:16:57,780
+ in the European Parliament.
+
+242
+0:16:57,780 --> 0:17:02,100
+ But I have successfully lobbied for a right to an explanation
+
+243
+0:17:02,100 --> 0:17:06,720
+ of why the AI came up to that decision, complaint and recourse,
+
+244
+0:17:06,720 --> 0:17:09,740
+ and when an explanation isn't possible or adequate,
+
+245
+0:17:09,740 --> 0:17:12,140
+ the operator of the AI must tell you
+
+246
+0:17:12,140 --> 0:17:14,860
+ so that you can take the decision to a judge
+
+247
+0:17:14,860 --> 0:17:16,680
+ and get it overturned.
+
+248
+0:17:16,680 --> 0:17:18,760
+ I also fought and obtained an exception
+
+249
+0:17:18,760 --> 0:17:22,060
+ for open source developers who are not selling their product,
+
+250
+0:17:22,060 --> 0:17:25,680
+ meaning that the open source developers tinkering with AI
+
+251
+0:17:25,680 --> 0:17:29,140
+ don't find yourselves inundated with paperwork.
+
+252
+0:17:29,140 --> 0:17:33,520
+ And finally, AI could have incredible benefits
+
+253
+0:17:33,520 --> 0:17:36,720
+ for our society or, sorry, I am.
+
+254
+0:17:36,720 --> 0:17:39,020
+ I'm moving the wrong thing around.
+
+255
+0:17:39,020 --> 0:17:42,900
+ Could have incredible benefits for society,
+
+256
+0:17:42,900 --> 0:17:45,780
+ but it could also have terrible consequences.
+
+257
+0:17:45,780 --> 0:17:48,840
+ The deciding factor is the person operating the AI,
+
+258
+0:17:48,840 --> 0:17:52,860
+ which is why we've also introduced AI literacy obligations
+
+259
+0:17:52,860 --> 0:17:55,220
+ to make sure that the people operating the AI
+
+260
+0:17:55,220 --> 0:17:58,340
+ actually understand what it's doing, what they're doing.
+
+261
+0:18:02,420 --> 0:18:04,020
+ The other file that I'm working on
+
+262
+0:18:04,020 --> 0:18:06,400
+ is the European Digital Identity.
+
+263
+0:18:06,720 --> 0:18:10,220
+ We haven't started the negotiations
+
+264
+0:18:10,220 --> 0:18:12,620
+ on this file yet within the committee,
+
+265
+0:18:12,620 --> 0:18:15,060
+ so I would really love to get your feedback
+
+266
+0:18:15,060 --> 0:18:16,620
+ to expand on the ideas I have
+
+267
+0:18:16,620 --> 0:18:20,120
+ to fix the problematic bits on this proposal.
+
+268
+0:18:20,120 --> 0:18:22,400
+ It's made up of three parts.
+
+269
+0:18:22,400 --> 0:18:27,400
+ You have a cross-border electronic ID called EIDAS,
+
+270
+0:18:27,520 --> 0:18:30,820
+ and a wallet storing licenses, diplomas,
+
+271
+0:18:30,820 --> 0:18:33,980
+ identity attributes, and cross-border recognition
+
+272
+0:18:33,980 --> 0:18:35,760
+ of all of these things.
+
+273
+0:18:35,760 --> 0:18:36,700
+ Then it also has
+
+274
+0:18:36,720 --> 0:18:40,120
+ Q-WAX, which is the most controversial part
+
+275
+0:18:40,120 --> 0:18:41,280
+ of the proposal.
+
+276
+0:18:43,420 --> 0:18:47,400
+ The European Identity electronic ID cards,
+
+277
+0:18:47,400 --> 0:18:50,380
+ both physical with a chip or entirely digital on a phone,
+
+278
+0:18:50,380 --> 0:18:52,920
+ have already been a service within the European Union
+
+279
+0:18:52,920 --> 0:18:54,640
+ since 2014.
+
+280
+0:18:54,640 --> 0:18:56,520
+ However, there are very few member states
+
+281
+0:18:56,520 --> 0:18:58,120
+ that actually use them.
+
+282
+0:18:58,120 --> 0:19:01,320
+ As it currently stands, you can use an EU electronic ID card
+
+283
+0:19:01,320 --> 0:19:03,600
+ to prove your identity for public services
+
+284
+0:19:03,600 --> 0:19:04,660
+ in other countries.
+
+285
+0:19:06,720 --> 0:19:10,940
+ So here you can see that it redirects to a national portal,
+
+286
+0:19:10,940 --> 0:19:12,340
+ allowing you for login.
+
+287
+0:19:13,220 --> 0:19:16,420
+ And the new, let's just go through.
+
+288
+0:19:23,640 --> 0:19:28,640
+ And the new proposal will expand on this existing regulation
+
+289
+0:19:29,020 --> 0:19:31,800
+ allowing for private services that require identification,
+
+290
+0:19:31,800 --> 0:19:33,620
+ such as banks or insurance companies,
+
+291
+0:19:33,620 --> 0:19:36,560
+ to make limited use of the system a little bit,
+
+292
+0:19:36,560 --> 0:19:39,260
+ what we know in Denmark with an M-ID that can be used
+
+293
+0:19:39,260 --> 0:19:44,260
+ both in public and also in private platforms and services.
+
+294
+0:19:45,480 --> 0:19:49,320
+ The second part of the proposal is the wallet.
+
+295
+0:19:49,320 --> 0:19:51,340
+ It's a not-for-profit wallet system
+
+296
+0:19:51,340 --> 0:19:53,720
+ to store digital versions of official documents,
+
+297
+0:19:53,720 --> 0:19:56,060
+ like your ID, your driver's license, diplomas,
+
+298
+0:19:56,060 --> 0:19:58,100
+ prescriptions, or tax returns.
+
+299
+0:19:58,100 --> 0:20:01,040
+ It also allows you to share and display these documents
+
+300
+0:20:01,040 --> 0:20:03,420
+ and have them recognized and checked for authenticity
+
+301
+0:20:03,420 --> 0:20:05,980
+ across the EU, and allows third parties to request them.
+
+302
+0:20:05,980 --> 0:20:08,080
+ It also allows third parties to request information from you.
+
+303
+0:20:08,080 --> 0:20:10,320
+ And finally, it gives you the possibility
+
+304
+0:20:10,320 --> 0:20:13,100
+ to receive new documents automatically there.
+
+305
+0:20:15,000 --> 0:20:17,220
+ And the final and the most problematic part of it
+
+306
+0:20:17,220 --> 0:20:19,360
+ is the QACS, which is the
+
+307
+0:20:19,360 --> 0:20:22,860
+ Qualified Web Authentication Certificates,
+
+308
+0:20:22,860 --> 0:20:25,220
+ which is a Eurocrack for what we call
+
+309
+0:20:25,220 --> 0:20:28,220
+ the Extended Validation Certificates.
+
+310
+0:20:28,220 --> 0:20:31,220
+ They are SSL certificates designed to prove
+
+311
+0:20:31,220 --> 0:20:33,140
+ both the security of the connection
+
+312
+0:20:33,140 --> 0:20:35,940
+ and the identity of the organization running the site.
+
+313
+0:20:35,980 --> 0:20:38,740
+ The goal was to prevent phishing,
+
+314
+0:20:38,740 --> 0:20:41,080
+ and they were introduced in the previous EU law,
+
+315
+0:20:41,080 --> 0:20:43,260
+ but have been mostly unsuccessful.
+
+316
+0:20:43,260 --> 0:20:45,700
+ The problem is that the Commission,
+
+317
+0:20:45,700 --> 0:20:48,260
+ because they're already existing in previous law,
+
+318
+0:20:48,260 --> 0:20:50,780
+ they want to keep using them.
+
+319
+0:20:50,780 --> 0:20:54,060
+ And most browsers have found that they give the users
+
+320
+0:20:54,060 --> 0:20:57,740
+ a false sense of security and can be easily fortified.
+
+321
+0:20:57,740 --> 0:21:02,540
+ So since 2020, no major browsers prominently displays
+
+322
+0:21:02,540 --> 0:21:04,440
+ these certificates on their browser.
+
+323
+0:21:05,980 --> 0:21:09,300
+ The issue with these certificates were also underlined
+
+324
+0:21:09,300 --> 0:21:11,560
+ by a researcher called Ian Carroll when he was able
+
+325
+0:21:11,560 --> 0:21:14,600
+ to register an EV certificate under the name
+
+326
+0:21:14,600 --> 0:21:17,900
+ of the popular payment service Stripe Incorporated.
+
+327
+0:21:17,900 --> 0:21:22,380
+ Here it's totally clear that this makes it phishing easier
+
+328
+0:21:22,380 --> 0:21:27,180
+ and not harder, which the Commission is proposing
+
+329
+0:21:27,180 --> 0:21:29,860
+ that it will be helping to solve.
+
+330
+0:21:31,360 --> 0:21:34,040
+ Despite this, the Commission has been doubling down
+
+331
+0:21:34,040 --> 0:21:35,780
+ and forcing browsers to display
+
+332
+0:21:35,780 --> 0:21:38,540
+ more and more of these certificates on their websites.
+
+333
+0:21:38,540 --> 0:21:41,780
+ And they also want to place the browser root certificate stores
+
+334
+0:21:41,780 --> 0:21:44,540
+ under the control of the EU countries.
+
+335
+0:21:44,540 --> 0:21:47,640
+ This is a massive risk to privacy.
+
+336
+0:21:47,640 --> 0:21:52,120
+ And the EU countries could use this to spy on citizens.
+
+337
+0:21:52,120 --> 0:21:54,460
+ You have countries like Poland and Hungary
+
+338
+0:21:54,460 --> 0:21:55,300
+ where it could be a worry,
+
+339
+0:21:55,300 --> 0:21:58,100
+ but also it'll probably spread to other countries.
+
+340
+0:21:58,100 --> 0:22:00,740
+ And Kazakhstan and China have already done this.
+
+341
+0:22:02,400 --> 0:22:05,200
+ Going into negotiations, my goal is to strengthen
+
+342
+0:22:05,200 --> 0:22:09,560
+ the privacy protection of this e-wallet and ID
+
+343
+0:22:09,560 --> 0:22:13,480
+ is to make sure that the quacks use is completely optional
+
+344
+0:22:13,480 --> 0:22:17,220
+ for the browsers, for the e-wallet and the ID,
+
+345
+0:22:17,220 --> 0:22:20,980
+ to limit identification to services that actually need ID,
+
+346
+0:22:20,980 --> 0:22:24,240
+ and to make sure that companies can't capitalize
+
+347
+0:22:24,240 --> 0:22:27,220
+ the identification for data collection,
+
+348
+0:22:27,220 --> 0:22:29,980
+ and most importantly, to guarantee that browsers
+
+349
+0:22:29,980 --> 0:22:32,100
+ are not forced to display quacks
+
+350
+0:22:32,100 --> 0:22:34,960
+ and to keep the control of root certificate stores,
+
+351
+0:22:34,960 --> 0:22:37,020
+ out of the hands of governments.
+
+352
+0:22:37,020 --> 0:22:39,900
+ But I would really either hear or later hear your ideas
+
+353
+0:22:39,900 --> 0:22:42,380
+ about what else can be improved on this legislation.
+
+354
+0:22:42,380 --> 0:22:45,940
+ I know there is a campaign that Mozilla is also supporting
+
+355
+0:22:45,940 --> 0:22:47,860
+ against especially the quacks.
+
+356
+0:22:47,860 --> 0:22:50,280
+ So you can also join and support that.
+
+357
+0:22:52,220 --> 0:22:54,280
+ Finally, we have the ugly.
+
+358
+0:22:54,280 --> 0:22:58,320
+ And this is the most problematic legislative proposal
+
+359
+0:22:58,320 --> 0:23:00,200
+ as coming from the EU at the moment.
+
+360
+0:23:01,880 --> 0:23:03,760
+ And that issue is check control.
+
+361
+0:23:04,960 --> 0:23:07,780
+ There's always already been an excellent talk
+
+362
+0:23:07,780 --> 0:23:11,120
+ on the topic of check control here at BornHack on Thursday,
+
+363
+0:23:11,120 --> 0:23:12,220
+ but some of you may have missed it.
+
+364
+0:23:12,220 --> 0:23:14,320
+ It might have been recorded.
+
+365
+0:23:14,320 --> 0:23:17,900
+ So I won't go into too much depth on this proposal,
+
+366
+0:23:17,900 --> 0:23:19,580
+ but if you want to know more,
+
+367
+0:23:19,580 --> 0:23:22,280
+ you can watch it on the BornHack website.
+
+368
+0:23:22,280 --> 0:23:24,580
+ The check control resembles Apple's proposal
+
+369
+0:23:24,580 --> 0:23:27,560
+ for client-signed scanning for child abuse material,
+
+370
+0:23:27,560 --> 0:23:29,480
+ but for all check applications.
+
+371
+0:23:29,480 --> 0:23:31,900
+ Effectively, it would force check applications
+
+372
+0:23:31,900 --> 0:23:34,960
+ to scan photos that are sent through the check app,
+
+373
+0:23:34,960 --> 0:23:37,960
+ so that they can be used to scan the image of the child.
+
+374
+0:23:37,960 --> 0:23:41,080
+ And this is the initial proposal that we have on the table.
+
+375
+0:23:41,080 --> 0:23:45,260
+ We wanted to use perceptual hashes,
+
+376
+0:23:45,260 --> 0:23:46,640
+ which are hashes that change
+
+377
+0:23:46,640 --> 0:23:48,780
+ depending on the content of the image.
+
+378
+0:23:48,780 --> 0:23:50,100
+ However, some are now calling
+
+379
+0:23:50,100 --> 0:23:51,700
+ for the use of machine learning.
+
+380
+0:23:53,240 --> 0:23:55,940
+ The reality, of course, is that check control sucks.
+
+381
+0:23:55,940 --> 0:23:58,500
+ It creates enormous privacy risks for users
+
+382
+0:23:58,500 --> 0:24:01,920
+ with a risk of false positives and false negatives.
+
+383
+0:24:01,920 --> 0:24:04,120
+ If machine learning is used, then this risk,
+
+384
+0:24:04,960 --> 0:24:06,800
+ increases further.
+
+385
+0:24:06,800 --> 0:24:09,800
+ It is also trivial to generate collusions
+
+386
+0:24:09,800 --> 0:24:12,660
+ or obfuscate images, meaning that you effectively
+
+387
+0:24:12,660 --> 0:24:15,560
+ get a person's account flagged or avoid flagging
+
+388
+0:24:15,560 --> 0:24:17,960
+ with minor modifications to images.
+
+389
+0:24:17,960 --> 0:24:20,780
+ Finally, it doesn't actually solve child abuse.
+
+390
+0:24:20,780 --> 0:24:23,820
+ It can make things worse.
+
+391
+0:24:23,820 --> 0:24:28,820
+ When abusers make use of mainstream chat applications,
+
+392
+0:24:29,060 --> 0:24:30,880
+ it's quite trivial at the moment
+
+393
+0:24:30,880 --> 0:24:34,240
+ to catch them and their accomplices,
+
+394
+0:24:34,240 --> 0:24:37,740
+ because their phone numbers are just a click away.
+
+395
+0:24:40,640 --> 0:24:42,520
+ But if this legislation passes,
+
+396
+0:24:42,520 --> 0:24:47,520
+ then we would be forcing things onto the dark web
+
+397
+0:24:47,520 --> 0:24:50,400
+ and towards Tor, meaning that catching people
+
+398
+0:24:51,480 --> 0:24:56,480
+ sharing child abuse images would be more difficult to catch.
+
+399
+0:24:56,520 --> 0:24:59,460
+ And the real problem as well is you need to actually
+
+400
+0:24:59,460 --> 0:25:00,600
+ do something in the real world,
+
+401
+0:25:00,600 --> 0:25:02,440
+ not just throw tech at things.
+
+402
+0:25:02,440 --> 0:25:07,440
+ So there's also a major risk that if this law comes into place,
+
+403
+0:25:11,820 --> 0:25:14,480
+ that it puts us into a slippery slope.
+
+404
+0:25:14,480 --> 0:25:15,720
+ You always start out with saying,
+
+405
+0:25:15,720 --> 0:25:17,900
+ okay, we want to fight terrorists,
+
+406
+0:25:17,900 --> 0:25:20,620
+ and we want to fight a child abuse.
+
+407
+0:25:20,620 --> 0:25:24,160
+ But then once you have the technology in place,
+
+408
+0:25:24,160 --> 0:25:26,660
+ the surveillance in place, it will be used for other things.
+
+409
+0:25:26,660 --> 0:25:28,960
+ And some member states have already voiced
+
+410
+0:25:28,960 --> 0:25:31,400
+ the idea of expanding their scanning through terrorism,
+
+411
+0:25:31,400 --> 0:25:32,000
+ or other crimes, and they just don't want it.
+
+412
+0:25:32,000 --> 0:25:37,960
+ other criminal content and giving governments the tools to crack down on dissent easily.
+
+413
+0:25:37,960 --> 0:25:42,740
+ And if we start doing it in the EU as being the golden standard and inspiration for the
+
+414
+0:25:42,740 --> 0:25:48,020
+ rest of the world, it will be very difficult for us to say to countries like, for example,
+
+415
+0:25:48,020 --> 0:25:54,860
+ Egypt or Saudi Arabia, to not use the same technology that we have installed in the EU.
+
+416
+0:25:54,860 --> 0:25:59,040
+ So the proposal hasn't reached Parliament yet, and if you want to help to put a stop
+
+417
+0:25:59,040 --> 0:26:06,300
+ to it, I'll try and get in touch and we can collaborate on trying to get public awareness
+
+418
+0:26:06,300 --> 0:26:07,940
+ raised on this.
+
+419
+0:26:07,940 --> 0:26:12,940
+ There is a debate in Germany at the moment, but it hasn't really spread to a lot of the
+
+420
+0:26:12,940 --> 0:26:14,840
+ other member states yet.
+
+421
+0:26:14,840 --> 0:26:20,220
+ What we saw with the copyright directive was that once there was sort of public opinion
+
+422
+0:26:20,220 --> 0:26:24,540
+ about this, and especially young people were aware of the damage it would cause to the
+
+423
+0:26:24,540 --> 0:26:28,180
+ internet, then it actually changed.
+
+424
+0:26:28,180 --> 0:26:29,020
+ We've lost it.
+
+425
+0:26:29,020 --> 0:26:31,100
+ We've lost the views of the politicians.
+
+426
+0:26:31,100 --> 0:26:37,900
+ And hopefully with this proposal, we can make sure that the general population has become
+
+427
+0:26:37,900 --> 0:26:44,280
+ aware of it at an earlier stage so that we can stop the proposal before the final votes
+
+428
+0:26:44,280 --> 0:26:47,440
+ in Parliament.
+
+429
+0:26:47,440 --> 0:26:49,400
+ So thanks a lot for listening.
+
+430
+0:26:49,400 --> 0:26:54,260
+ It's been about European legislation, so I'm quite happy to see so many of you here.
+
+431
+0:26:54,260 --> 0:26:58,160
+ I am, yeah, Carmeliti on most platforms.
+
+432
+0:26:58,160 --> 0:27:02,160
+ And I'll be hanging around until at least Tuesday morning.
+
+433
+0:27:02,160 --> 0:27:03,160
+ Thanks a lot.
+
+434
+0:27:03,160 --> 0:27:16,580
+ Does someone have questions?
+
+435
+0:27:16,580 --> 0:27:21,440
+ I can see many hands.
+
+436
+0:27:21,440 --> 0:27:26,740
+ Thank you.
+
+437
+0:27:26,740 --> 0:27:27,580
+ So digital identities.
+
+438
+0:27:27,580 --> 0:27:31,580
+ And services that are getting more and more pervasive, we can't really avoid them anymore.
+
+439
+0:27:31,580 --> 0:27:36,580
+ Here in Denmark, we've had the pressure of an M-ID for quite a while.
+
+440
+0:27:36,580 --> 0:27:40,700
+ It works reasonably well, I think.
+
+441
+0:27:40,700 --> 0:27:45,700
+ And now it's being replaced by the clusterfuck that is a Meet-ID instead.
+
+442
+0:27:45,700 --> 0:27:51,580
+ And it seems like we are sometimes just charging ahead in the holy name of digitalization.
+
+443
+0:27:51,580 --> 0:27:54,340
+ A huge slew of problems here.
+
+444
+0:27:54,340 --> 0:27:55,580
+ It's private ownership, basically, of the solution.
+
+445
+0:27:55,580 --> 0:27:56,580
+ And it's a problem.
+
+446
+0:27:56,580 --> 0:27:57,580
+ It's a problem.
+
+447
+0:27:57,580 --> 0:28:01,580
+ And when we're doing this move to Meet-ID, we are changing the domain.
+
+448
+0:28:01,580 --> 0:28:06,580
+ We're changing the app, the way it's used, how it's used.
+
+449
+0:28:06,580 --> 0:28:07,580
+ Usability is horrible.
+
+450
+0:28:07,580 --> 0:28:11,580
+ The adaptation has been a complete clusterfuck.
+
+451
+0:28:11,580 --> 0:28:13,580
+ People are being left out.
+
+452
+0:28:13,580 --> 0:28:14,580
+ They can't access it.
+
+453
+0:28:14,580 --> 0:28:25,580
+ And they're basically cut off from interacting with public services and banks and everything else that needs to log in.
+
+454
+0:28:25,580 --> 0:28:26,580
+ So my question is basically.
+
+455
+0:28:26,580 --> 0:28:37,580
+ Would it be completely unreasonable to regulate central services like that when they are so integral into our lives moving forward?
+
+456
+0:28:37,580 --> 0:28:48,580
+ I'm thinking about public ownership, usability requirements, or maybe even requiring that central services like that are maybe multiple instances like we see in other countries.
+
+457
+0:28:48,580 --> 0:28:50,580
+ Multiple what?
+
+458
+0:28:50,580 --> 0:28:54,580
+ So basically, if it should stay as private.
+
+459
+0:28:54,580 --> 0:29:04,580
+ If it has private services that are used, you could have maybe two, three, or four companies that have solutions that are usable instead of one central repository.
+
+460
+0:29:04,580 --> 0:29:20,580
+ The balance here is also about making it easy enough to use and making sure that as many people actually figure out how to use it.
+
+461
+0:29:20,580 --> 0:29:22,580
+ With the change from NEM-ID to Meet-ID here.
+
+462
+0:29:22,580 --> 0:29:33,580
+ It shows how crucial it is to get the user experience and the accessibility right when you do services like this.
+
+463
+0:29:33,580 --> 0:29:46,580
+ I think Denmark is a special case in comparison with the other EU states in the fact that NEM-ID and Meet-ID is a sort of single service for identity protection.
+
+464
+0:29:46,580 --> 0:29:47,580
+ And it's a very important service.
+
+465
+0:29:47,580 --> 0:29:48,580
+ I think it's a very important service.
+
+466
+0:29:48,580 --> 0:29:49,580
+ I think it's a very important service.
+
+467
+0:29:49,580 --> 0:29:50,580
+ I think it's a very important service.
+
+468
+0:29:50,580 --> 0:29:51,580
+ I think it's a very important service.
+
+469
+0:29:51,580 --> 0:29:54,580
+ I think it's a very important service for identifying yourself towards everybody.
+
+470
+0:29:54,580 --> 0:30:01,580
+ Whereas a lot of the other countries have multiple services that you can use.
+
+471
+0:30:01,580 --> 0:30:10,580
+ I think we have a very high level of digitalization in Denmark and a lot of people are actually using e-governance services.
+
+472
+0:30:10,580 --> 0:30:14,580
+ So in that aspect, you could say that it's a success in Denmark.
+
+473
+0:30:14,580 --> 0:30:19,580
+ Whereas other countries are still requiring to use faxes or showing a copy of your electricity bill in Denmark.
+
+474
+0:30:19,580 --> 0:30:21,580
+ Whereas other countries are still requiring to use faxes or showing a copy of your electricity bill in Denmark.
+
+475
+0:30:21,580 --> 0:30:23,580
+ And it's also not necessarily rocket science.
+
+476
+0:30:23,580 --> 0:30:41,080
+ Just in terms of
+
+477
+0:30:41,080 --> 0:30:42,580
+ it, that's one aspect.
+
+478
+0:30:42,580 --> 0:30:45,580
+ And flock current, water, energy or air quality.
+
+479
+0:30:45,580 --> 0:30:47,580
+ They've been more and more concerned about that.
+
+480
+0:30:47,580 --> 0:30:48,580
+8
+
+481
+0:30:49,580 --> 0:30:54,500
+ says we need to have better regulation and awareness on a specific subject,
+
+482
+0:30:55,280 --> 0:31:00,540
+ and that will be on digitalization and administration and administrative law
+
+483
+0:31:00,540 --> 0:31:05,100
+ to try and see, okay, how can we make sure that when you meet administrations
+
+484
+0:31:05,100 --> 0:31:10,400
+ in a digitalized government or administrations,
+
+485
+0:31:10,680 --> 0:31:14,780
+ how your rights and services level is held up high.
+
+486
+0:31:14,780 --> 0:31:19,000
+ But if there are particular problems that need to be addressed,
+
+487
+0:31:19,000 --> 0:31:22,280
+ also in other countries from the experience from MediDate,
+
+488
+0:31:22,560 --> 0:31:24,020
+ I'd be happy to hear more about it.
+
+489
+0:31:28,700 --> 0:31:30,500
+ Thank you for being back here at BornHack.
+
+490
+0:31:30,540 --> 0:31:33,060
+ Very nice to have you, and it was a very interesting presentation.
+
+491
+0:31:33,500 --> 0:31:37,920
+ You talked a bit about the browsers and how they're sort of tied to the platforms.
+
+492
+0:31:38,480 --> 0:31:42,780
+ You didn't mention Apple's situation, which has an interesting paradox in it,
+
+493
+0:31:42,780 --> 0:31:45,920
+ in that Apple has this absolute bullshit argument
+
+494
+0:31:45,920 --> 0:31:48,260
+ that you should only be able to use their version of WebKit
+
+495
+0:31:48,260 --> 0:31:48,980
+ to do browser research.
+
+496
+0:31:49,000 --> 0:31:50,380
+ You're talking about the browser-related applications on iOS.
+
+497
+0:31:51,500 --> 0:31:54,040
+ Is that something this will also start approaching?
+
+498
+0:31:54,660 --> 0:31:58,400
+ And then the paradox comes, because this will definitely lead to Chrome
+
+499
+0:31:58,400 --> 0:32:00,380
+ probably moving closer towards their monopoly
+
+500
+0:32:00,380 --> 0:32:02,140
+ that they're getting on all other platforms.
+
+501
+0:32:02,860 --> 0:32:04,360
+ Is EU dealing with that as well,
+
+502
+0:32:04,420 --> 0:32:07,040
+ like they did with Windows Media Player a long time ago?
+
+503
+0:32:08,100 --> 0:32:15,880
+ I think Apple as a gatekeeper would be addressed in the Digital Markets Act
+
+504
+0:32:15,880 --> 0:32:18,980
+ on forcing you to use specific browsers.
+
+505
+0:32:19,000 --> 0:32:27,700
+ From the App Store, the Windows example was prior to this new legislation
+
+506
+0:32:27,700 --> 0:32:32,500
+ and under the existing competition laws.
+
+507
+0:32:33,320 --> 0:32:37,060
+ So I think this is something that would be addressed by the EU
+
+508
+0:32:37,460 --> 0:32:38,980
+ and the legislation that's put forward.
+
+509
+0:32:39,500 --> 0:32:43,100
+ The situation with Chrome would also be addressed,
+
+510
+0:32:43,100 --> 0:32:47,320
+ because they then become even more of a gatekeeper and have more of a monopoly.
+
+511
+0:32:49,000 --> 0:32:49,500
+ Thank you.
+
+512
+0:32:49,500 --> 0:32:50,280
+ You're welcome.
+
+513
+0:32:51,140 --> 0:32:54,700
+ Can I just raise your hands again so I can count a bit?
+
+514
+0:32:55,460 --> 0:32:56,740
+ Okay, yeah, thank you.
+
+515
+0:32:59,580 --> 0:33:03,840
+ So on the messaging app slide,
+
+516
+0:33:04,360 --> 0:33:05,940
+ you had a load of apps,
+
+517
+0:33:06,680 --> 0:33:12,060
+ and you said that you should be able to have all your messages in just one app
+
+518
+0:33:12,060 --> 0:33:13,220
+ or something like that.
+
+519
+0:33:13,720 --> 0:33:15,920
+ How would that work with encrypted messages
+
+520
+0:33:15,920 --> 0:33:18,840
+ and encryption not necessarily be shared?
+
+521
+0:33:19,000 --> 0:33:21,000
+ How would that work with cross apps?
+
+522
+0:33:22,380 --> 0:33:28,580
+ That is one of the technical aspects that is important to get solved.
+
+523
+0:33:28,580 --> 0:33:32,500
+ I'm not entirely sure on how technically it would work.
+
+524
+0:33:32,500 --> 0:33:34,500
+ I might have to ask a friend.
+
+525
+0:33:34,500 --> 0:33:41,680
+ And it's not for all of the messaging services that this would apply to,
+
+526
+0:33:41,680 --> 0:33:43,060
+ it would only be the largest.
+
+527
+0:33:43,060 --> 0:33:45,380
+ I have a friend sitting on the front row,
+
+528
+0:33:45,380 --> 0:33:48,620
+ so if I could call my friend,
+
+529
+0:33:48,620 --> 0:33:50,500
+ and get a little bit of technical support.
+
+530
+0:33:53,500 --> 0:33:54,500
+ Oh, there's a mic behind you.
+
+531
+0:33:54,500 --> 0:33:56,500
+ There's a mic behind me, lovely, yeah, sorry.
+
+532
+0:33:57,280 --> 0:33:59,800
+ And this is why legislation is teamwork,
+
+533
+0:33:59,800 --> 0:34:02,000
+ and not just a single person thing.
+
+534
+0:34:02,500 --> 0:34:06,880
+ So for this one, it's a particularly good point.
+
+535
+0:34:07,380 --> 0:34:09,080
+ The answer is we don't know yet.
+
+536
+0:34:09,740 --> 0:34:11,860
+ What we expect will happen,
+
+537
+0:34:11,860 --> 0:34:16,600
+ what the kind of underlying plan when they added this to the DMA was,
+
+538
+0:34:16,600 --> 0:34:17,840
+ is that these providers would have to go back to the DMA,
+
+539
+0:34:17,840 --> 0:34:18,000
+ is that these providers would have to go back to the DMA,
+
+540
+0:34:18,000 --> 0:34:18,840
+ is that these providers would have to go back to the DMA,
+
+541
+0:34:18,840 --> 0:34:22,240
+ is that these providers would have to provide an API and a specification,
+
+542
+0:34:22,240 --> 0:34:26,820
+ so the apps could implement basically interoperability with their platforms.
+
+543
+0:34:26,820 --> 0:34:29,680
+ My assumption would be that that would include encryption,
+
+544
+0:34:29,680 --> 0:34:31,880
+ but the legislation doesn't specify.
+
+545
+0:34:31,880 --> 0:34:35,980
+ So we'll have to see how big platforms are gonna react.
+
+546
+0:34:35,980 --> 0:34:38,300
+ I would like to hope they would react well.
+
+547
+0:34:41,760 --> 0:34:42,600
+ Thank you.
+
+548
+0:34:44,680 --> 0:34:45,800
+ Can you slap it up?
+
+549
+0:34:48,000 --> 0:34:50,920
+ Two-part question.
+
+550
+0:34:50,920 --> 0:34:55,360
+ First one is the term I've been seeing with DMA and DSA is gatekeeper.
+
+551
+0:34:55,360 --> 0:34:57,440
+ I heard you use the term VLOP.
+
+552
+0:34:57,440 --> 0:35:00,680
+ So the first question is what's the difference between a VLOP and a gatekeeper?
+
+553
+0:35:01,880 --> 0:35:08,320
+ The second question is what is the best thing to do as an enthusiastic citizen?
+
+554
+0:35:09,640 --> 0:35:11,880
+ I've been watching just from the sidelines, and I'm like,
+
+555
+0:35:11,880 --> 0:35:13,960
+ oh, this is great, telling all my friends about it,
+
+556
+0:35:13,960 --> 0:35:17,060
+ and then I'm like, what else can I do other than vote?
+
+557
+0:35:18,000 --> 0:35:23,000
+ VLOPs is what was mainly used in the DSA during the negotiations.
+
+558
+0:35:23,000 --> 0:35:25,960
+ Gatekeepers is what's been used in the Digital Markets Act.
+
+559
+0:35:25,960 --> 0:35:30,440
+ It's two words for more or less the same thing.
+
+560
+0:35:30,440 --> 0:35:34,560
+ You need to have specific turnover amount of users,
+
+561
+0:35:34,560 --> 0:35:39,160
+ and have market share, and then special rules apply to you
+
+562
+0:35:39,160 --> 0:35:44,160
+ so that it's not all platforms that have to adhere to specific high level of adherence.
+
+563
+0:35:48,000 --> 0:35:52,000
+ And then you need to have the right to vote under the legislation.
+
+564
+0:35:52,000 --> 0:35:56,000
+ So, VLOPs and gatekeepers are the same, but different legislations.
+
+565
+0:35:56,000 --> 0:36:01,000
+ What to do as a citizen who's interested in digital rights?
+
+566
+0:36:01,000 --> 0:36:06,000
+ I would continue coming to places like BornHack and support the people organizing it.
+
+567
+0:36:06,000 --> 0:36:13,000
+ There's also, if you're around in Copenhagen, there is Cryptohagen every first Sunday of the month, I think it is.
+
+568
+0:36:13,000 --> 0:36:15,000
+ Last Sunday of the month.
+
+569
+0:36:15,000 --> 0:36:17,000
+ It's in Nørrebro.
+
+570
+0:36:18,000 --> 0:36:22,000
+ There is IT-Politisk Vereniging in Denmark, which is part of IDRI,
+
+571
+0:36:22,000 --> 0:36:26,000
+ which is the European Digital Rights Organization.
+
+572
+0:36:26,000 --> 0:36:32,000
+ And I would support them, become a member, and also help them do some of the work,
+
+573
+0:36:32,000 --> 0:36:35,000
+ because they don't have a lot of hands and heads at the moment.
+
+574
+0:36:35,000 --> 0:36:44,000
+ And then, yeah, we'll try, and from the office, to try and set up a network of people that are interested
+
+575
+0:36:44,000 --> 0:36:47,000
+ so that we can work together on some of the legislation,
+
+576
+0:36:47,000 --> 0:36:52,000
+ and also get input from you and give you input on what's going on.
+
+577
+0:36:52,000 --> 0:36:53,000
+ Thank you.
+
+578
+0:36:53,000 --> 0:36:55,000
+ You're welcome.
+
+579
+0:36:58,000 --> 0:37:01,000
+ First of all, thanks for your work.
+
+580
+0:37:01,000 --> 0:37:06,000
+ And as a German, like, the government is working with, you know, can buy stamps online to send a letter.
+
+581
+0:37:06,000 --> 0:37:09,000
+ So that's our perspective of, like, NEM-ID.
+
+582
+0:37:09,000 --> 0:37:15,000
+ But my question is rather, you said, or you talked about the wallet which can hold certifications.
+
+583
+0:37:15,000 --> 0:37:16,000
+ Can you maybe...
+
+584
+0:37:16,000 --> 0:37:19,000
+ Can you maybe iterate on what, like, the idea is?
+
+585
+0:37:19,000 --> 0:37:27,000
+ And especially, is there then the idea that you also have, like, metadata on, like, the certification
+
+586
+0:37:27,000 --> 0:37:34,000
+ so that, like, an employment or a future employee can look up if you have, like, some, I don't know,
+
+587
+0:37:34,000 --> 0:37:36,000
+ bachelor, master degree, something like that.
+
+588
+0:37:36,000 --> 0:37:39,000
+ Will that be included?
+
+589
+0:37:39,000 --> 0:37:40,000
+ One part.
+
+590
+0:37:40,000 --> 0:37:45,000
+ And the second part is, like, how is it working if it's, like, a for-profit company holding this wallet?
+
+591
+0:37:46,000 --> 0:37:52,000
+ On the metadata, so whether you could look up if you have a master's degree?
+
+592
+0:37:52,000 --> 0:37:54,000
+ Can you expand on that?
+
+593
+0:37:54,000 --> 0:38:02,000
+ Will it be possible for, like, some institution or, like, for some company to specifically look up with, like, the metadata
+
+594
+0:38:02,000 --> 0:38:04,000
+ if you have, like, some certifications or not?
+
+595
+0:38:04,000 --> 0:38:09,000
+ Or would it be rather like a share where you can just look at PDF files?
+
+596
+0:38:09,000 --> 0:38:15,000
+ It would be more like a share, but where you would be able to have, like, a certified version of your...
+
+597
+0:38:15,000 --> 0:38:24,000
+ university diploma that you could then share and they would know that it was the diploma from the university
+
+598
+0:38:24,000 --> 0:38:26,000
+ and not something you'd done at home.
+
+599
+0:38:26,000 --> 0:38:32,000
+ So, but there wouldn't be, like, a metadata lookup service for others.
+
+600
+0:38:32,000 --> 0:38:41,000
+ And it would be something that you share with the companies or the administrations that are linked to the wallets.
+
+601
+0:38:41,000 --> 0:38:45,000
+ It's a continuation of an e-wallet.
+
+602
+0:38:45,000 --> 0:38:52,000
+ It's a continuation of an e-wallet system, the EIDs, that was already there but isn't used very much.
+
+603
+0:38:52,000 --> 0:39:02,000
+ And it would be great to be able to present who you are and important documents and certificates, diplomas, prescriptions
+
+604
+0:39:02,000 --> 0:39:07,000
+ in different European member states without having to jump through too many bureaucratic hoops.
+
+605
+0:39:07,000 --> 0:39:15,000
+ The idea is also that the identification systems are being created by a lot of the big tech companies.
+
+606
+0:39:15,000 --> 0:39:19,000
+ And we don't really know what is actually going on with the data that they are collecting
+
+607
+0:39:19,000 --> 0:39:24,000
+ and want to have a European alternative to that.
+
+608
+0:39:24,000 --> 0:39:28,000
+ But the devil will be in the details of this.
+
+609
+0:39:28,000 --> 0:39:36,000
+ And if we then create a state-run or state-governed system, then we need to make sure that it's actually properly good.
+
+610
+0:39:36,000 --> 0:39:40,000
+ Because otherwise it might be better to have commercial ones.
+
+611
+0:39:40,000 --> 0:39:42,000
+ Did I miss anything?
+
+612
+0:39:42,000 --> 0:39:44,000
+ Looking over at Jordan, but...
+
+613
+0:39:45,000 --> 0:39:49,000
+ Yeah, just one quick addition.
+
+614
+0:39:49,000 --> 0:39:54,000
+ So in the draft of the text, there is a provision that would prevent the host.
+
+615
+0:39:54,000 --> 0:40:01,000
+ So the commission is neutral on if it should be hosted by the government, by a company on behalf of the government,
+
+616
+0:40:01,000 --> 0:40:05,000
+ or by third parties, as it currently stands.
+
+617
+0:40:05,000 --> 0:40:07,000
+ And I say that because it's really changing.
+
+618
+0:40:07,000 --> 0:40:12,000
+ I briefed Karen on this topic about a couple of weeks ago.
+
+619
+0:40:12,000 --> 0:40:15,000
+ But in some committees, they've already made changes.
+
+620
+0:40:15,000 --> 0:40:18,000
+ And we're really not sure where it's going to land.
+
+621
+0:40:18,000 --> 0:40:25,000
+ The proposal would effectively prevent those parties, regardless if they're the government or anything else,
+
+622
+0:40:25,000 --> 0:40:28,000
+ from making use of the data in the wallet.
+
+623
+0:40:28,000 --> 0:40:33,000
+ So the wallet basically will allow you to share data, but also to retract sharing.
+
+624
+0:40:33,000 --> 0:40:42,000
+ So for instance, if you're sharing, I don't know, your tax returns with somebody who might be renting you a room or a company,
+
+625
+0:40:42,000 --> 0:40:43,000
+ you can then retract that.
+
+626
+0:40:43,000 --> 0:40:44,000
+ And they're...
+
+627
+0:40:45,000 --> 0:40:46,000
+ The share is canceled.
+
+628
+0:40:46,000 --> 0:40:48,000
+ So you kind of keep control of your data.
+
+629
+0:40:48,000 --> 0:40:50,000
+ And, yeah, Karen is right.
+
+630
+0:40:50,000 --> 0:40:54,000
+ The default would probably be that you can access this data in a PDF format.
+
+631
+0:40:54,000 --> 0:41:00,000
+ But there will also probably be some standardized formats for sending and receiving data.
+
+632
+0:41:00,000 --> 0:41:06,000
+ So one of the key benefits would be, like, if you go to study abroad, you want to sign up for a new university,
+
+633
+0:41:06,000 --> 0:41:11,000
+ you've got a bachelor's degree, you want to go for a master in another country,
+
+634
+0:41:11,000 --> 0:41:14,000
+ you can share all of that data with no need to translate anything.
+
+635
+0:41:14,000 --> 0:41:18,000
+ You can share proof of health insurance without having to get it translated.
+
+636
+0:41:18,000 --> 0:41:20,000
+ So it simplifies a lot of the processes.
+
+637
+0:41:20,000 --> 0:41:22,000
+ And it's good in that sense.
+
+638
+0:41:22,000 --> 0:41:32,000
+ Obviously, we have to be very careful, and we will be, to ensure that it remains private.
+
+639
+0:41:32,000 --> 0:41:38,000
+ Which is actually a pretty good line-up to my question, which is, I think there is...
+
+640
+0:41:38,000 --> 0:41:40,000
+ Oh, wait, this is dangerous.
+
+641
+0:41:40,000 --> 0:41:43,000
+ But general consensus that NemID was a good idea.
+
+642
+0:41:43,000 --> 0:41:48,000
+ MidID is equally a good idea.
+
+643
+0:41:48,000 --> 0:41:52,000
+ But the implementation is, in the latter case, horrible.
+
+644
+0:41:52,000 --> 0:41:58,000
+ So my question is, and this actually goes to this digital wallet as well,
+
+645
+0:41:58,000 --> 0:42:07,000
+ is that we, as citizens of the EU, we need to have common solutions to hard problems,
+
+646
+0:42:07,000 --> 0:42:11,000
+ because the population cannot handle X.509 certificates and crap.
+
+647
+0:42:11,000 --> 0:42:13,000
+ That is beyond our control.
+
+648
+0:42:13,000 --> 0:42:16,000
+ That is beyond Joe Sixpack.
+
+649
+0:42:16,000 --> 0:42:18,000
+ So we need to help them.
+
+650
+0:42:18,000 --> 0:42:21,000
+ But we need to help them in a proficient and professional way,
+
+651
+0:42:21,000 --> 0:42:27,000
+ and not give our identities to the banking sector, as is the case already,
+
+652
+0:42:27,000 --> 0:42:31,000
+ a dubious consultancy company.
+
+653
+0:42:31,000 --> 0:42:38,000
+ So how do we go about implementing the fairly simple statement saying,
+
+654
+0:42:38,000 --> 0:42:41,000
+ public money, public source?
+
+655
+0:42:41,000 --> 0:42:49,000
+ So to sort of leverage the quality or increase the transparency of these solutions,
+
+656
+0:42:49,000 --> 0:42:55,000
+ which are going to hold our very dearest information?
+
+657
+0:43:00,000 --> 0:43:08,000
+ I think it starts with making politicians and general public aware of the fact that you need...
+
+658
+0:43:08,000 --> 0:43:09,000
+ ...
+
+659
+0:43:09,000 --> 0:43:17,000
+ ...you need to have more of the digitalization within the hands of public administrations,
+
+660
+0:43:17,000 --> 0:43:23,000
+ including also the source code.
+
+661
+0:43:23,000 --> 0:43:30,000
+ Because I think there is a lot of outsourcing of the development of digital solutions.
+
+662
+0:43:30,000 --> 0:43:38,000
+ And the problem is, it's okay to outsource something,
+
+663
+0:43:38,000 --> 0:43:43,000
+ when it's not, like, integral to the way that you're running the administration
+
+664
+0:43:43,000 --> 0:43:47,000
+ and the way that you're servicing the citizens.
+
+665
+0:43:47,000 --> 0:43:49,000
+ The problem with having...
+
+666
+0:43:49,000 --> 0:43:54,000
+ ...outsourcing all of the digital solutions to consultants or companies
+
+667
+0:43:54,000 --> 0:43:58,000
+ is that you actually get tied up with one or two companies doing it,
+
+668
+0:43:58,000 --> 0:44:01,000
+ and you can't actually change over to something else.
+
+669
+0:44:01,000 --> 0:44:07,000
+ And therefore, the outsourcing basically means that you have given part of the administration
+
+670
+0:44:07,000 --> 0:44:10,000
+ to one or two companies, mostly one.
+
+671
+0:44:10,000 --> 0:44:16,000
+ And the problem is also the way that you have public tenders on digital solutions
+
+672
+0:44:16,000 --> 0:44:24,000
+ is into large packages, so that you can't actually have smaller companies or developers offering on it.
+
+673
+0:44:24,000 --> 0:44:28,000
+ And then, so you need to have a lot more awareness of this.
+
+674
+0:44:28,000 --> 0:44:34,000
+ And I think also, I mean, I would personally promote having more in-house development
+
+675
+0:44:34,000 --> 0:44:36,000
+ of digital solutions and public administrations,
+
+676
+0:44:36,000 --> 0:44:45,000
+ also because it's so integral to the ministry or the municipality that is providing a service
+
+677
+0:44:45,000 --> 0:44:51,000
+ that you can't really separate out the digital solution that you're using from the administration.
+
+678
+0:44:51,000 --> 0:44:57,000
+ But we need to make more people aware of this, rather than just saying,
+
+679
+0:44:57,000 --> 0:45:02,000
+ oh, there are yet another IT project that failed, and the implementation is crap.
+
+680
+0:45:02,000 --> 0:45:05,000
+ On the NEM-ID in Midas,
+
+681
+0:45:06,000 --> 0:45:13,000
+ I think it could be useful to collect some of the bad experiences from the Danish solutions
+
+682
+0:45:13,000 --> 0:45:17,000
+ and showcase them as this is what we're not supposed to be doing.
+
+683
+0:45:17,000 --> 0:45:23,000
+ Also on the wallet, it has to be open source,
+
+684
+0:45:23,000 --> 0:45:28,000
+ so at least that it's not public source, but at least it's known to the public.
+
+685
+0:45:28,000 --> 0:45:30,000
+ So that's at least a good thing.
+
+686
+0:45:33,000 --> 0:45:36,000
+ It's perfectly okay to outsource the work.
+
+687
+0:45:36,000 --> 0:45:38,000
+ But you cannot outsource the ownership.
+
+688
+0:45:38,000 --> 0:45:40,000
+ And that's the difference.
+
+689
+0:45:40,000 --> 0:45:42,000
+ Agree.
+
+690
+0:45:42,000 --> 0:45:45,000
+ But I'm also hesitant about outsourcing the work.
+
+691
+0:45:45,000 --> 0:45:51,000
+ Because I've seen, I worked with a big data bank
+
+692
+0:45:51,000 --> 0:45:57,000
+ where they had consultants that were working on maintaining that data,
+
+693
+0:45:57,000 --> 0:45:59,000
+ the digital solutions for that.
+
+694
+0:45:59,000 --> 0:46:05,000
+ And when they put it out for tender, that was the only company that then made an offer for that tender.
+
+695
+0:46:05,000 --> 0:46:09,000
+ So it's sort of like, well, if you're going to be working with the same handful of people
+
+696
+0:46:09,000 --> 0:46:13,000
+ maintaining the system for the 10 years,
+
+697
+0:46:13,000 --> 0:46:18,000
+ and they're going to be the same company being able to do it for the next 20 years, 30 years,
+
+698
+0:46:18,000 --> 0:46:24,000
+ then why actually outsource it and think that you're giving, opening it up for competition?
+
+699
+0:46:26,000 --> 0:46:28,000
+ I'll take this last question.
+
+700
+0:46:29,000 --> 0:46:30,000
+ Yeah, that's just a comment.
+
+701
+0:46:30,000 --> 0:46:33,000
+ You mentioned Kruptoheggen.
+
+702
+0:46:33,000 --> 0:46:35,000
+ We have a pendant in Jutland called,
+
+703
+0:46:35,000 --> 0:46:36,000
+ Krupto Aarhus.
+
+704
+0:46:36,000 --> 0:46:40,000
+ There's no fast, no recurring date.
+
+705
+0:46:40,000 --> 0:46:43,000
+ So you have to look up the website to know where and when it is.
+
+706
+0:46:43,000 --> 0:46:45,000
+ But I just wanted to mention that.
+
+707
+0:46:45,000 --> 0:46:48,000
+ The next one is on the 13th of August.
+
+708
+0:46:48,000 --> 0:46:50,000
+ And so just after this.
+
+709
+0:46:50,000 --> 0:46:53,000
+ And it's held in Færbar in Aarhus.
+
+710
+0:46:53,000 --> 0:46:58,000
+ And if you can't make it on the 13th, Saturday, 13th of August,
+
+711
+0:46:58,000 --> 0:47:02,000
+ then the one following that is on the 10th of September.
+
+712
+0:47:02,000 --> 0:47:05,000
+ And yeah, I'll get the website.
+
+713
+0:47:05,000 --> 0:47:08,000
+ So you can find the next ones yourselves.
+
+714
+0:47:08,000 --> 0:47:12,000
+ It's called Krupto Aarhus with two A's dot DK.
+
+715
+0:47:13,000 --> 0:47:14,000
+ All right.
+
+716
+0:47:14,000 --> 0:47:15,000
+ Thank you for the talk.

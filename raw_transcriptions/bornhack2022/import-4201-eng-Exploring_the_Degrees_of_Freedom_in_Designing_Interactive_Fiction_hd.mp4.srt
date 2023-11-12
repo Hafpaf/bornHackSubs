@@ -1,0 +1,4591 @@
+# Transcribed 2023-11-12T17 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:15,440
+ So let's get started.
+
+2
+0:00:16,000 --> 0:00:18,140
+ So interactive fiction is a kind of game.
+
+3
+0:00:18,540 --> 0:00:21,020
+ So before we get into that, we need to talk about what is a game.
+
+4
+0:00:21,760 --> 0:00:27,620
+ So I am not really a game developer, and probably many definitions of what a game is, but I
+
+5
+0:00:27,620 --> 0:00:28,660
+ have tried to define it here.
+
+6
+0:00:28,660 --> 0:00:33,980
+ So a game is like you have a state, and then from that state you have choices, which leads
+
+7
+0:00:33,980 --> 0:00:34,700
+ to other states.
+
+8
+0:00:35,360 --> 0:00:38,220
+ And that is a game, because it requires interaction.
+
+9
+0:00:39,600 --> 0:00:42,620
+ Then the next step is to define what is a good game.
+
+10
+0:00:43,200 --> 0:00:49,040
+ So that's a more difficult question, so we need to involve some more mathematics.
+
+11
+0:00:49,480 --> 0:00:54,940
+ So if we start by saying that the uppercase C is the set of all possible choices in a
+
+12
+0:00:54,940 --> 0:00:55,400
+ given game.
+
+13
+0:00:55,400 --> 0:01:01,120
+ And then we define if to be a function from this set of choices to the real numbers that
+
+14
+0:01:01,120 --> 0:01:06,560
+ calculates what we define as choice funness, such that the higher the number, the more
+
+15
+0:01:06,560 --> 0:01:08,280
+ fun the choice is.
+
+16
+0:01:08,280 --> 0:01:16,300
+ Then a good game is a game where f of C1 is equal to f of C2 for all C1 and all C2 in
+
+17
+0:01:16,300 --> 0:01:17,780
+ the set of choices.
+
+18
+0:01:17,780 --> 0:01:23,100
+ So as an example of this, we have this from before, but in this case, all if evaluates
+
+19
+0:01:23,100 --> 0:01:24,100
+ to 1.
+
+20
+0:01:24,100 --> 0:01:25,100
+ Such that all choices give us a set of choices.
+
+21
+0:01:25,400 --> 0:01:27,800
+ So we have a set of choices that give the same amount of fun.
+
+22
+0:01:27,800 --> 0:01:32,940
+ So for example, as an example of a game that does not have this property, you could think
+
+23
+0:01:32,940 --> 0:01:41,340
+ of a normal 3D game where, for example, you might have to try to enter into a nice quest
+
+24
+0:01:41,340 --> 0:01:46,720
+ that gives you lots of funness, or you could also choose to just walk around in a circle
+
+25
+0:01:46,720 --> 0:01:48,880
+ that gives you less funness.
+
+26
+0:01:48,880 --> 0:01:51,080
+ So that makes that a bad game.
+
+27
+0:01:51,080 --> 0:01:55,400
+ And of course, this definition immediately disqualifies almost all existing games.
+
+28
+0:01:55,400 --> 0:02:00,960
+ But I think it's like a useful thing to aim for.
+
+29
+0:02:00,960 --> 0:02:06,140
+ So the next thing is just to give you an overview of the games I play, to put this talk in context.
+
+30
+0:02:06,140 --> 0:02:11,440
+ So these are the 10 most recent played games on my Steam profile page.
+
+31
+0:02:11,440 --> 0:02:18,420
+ So I've just kind of different genres, but I can see multiple genres, multiple games
+
+32
+0:02:18,420 --> 0:02:23,400
+ that kind of are in the genre of text heavy and simulation heavy.
+
+33
+0:02:23,400 --> 0:02:24,400
+ And then there are some other ones.
+
+34
+0:02:24,400 --> 0:02:25,400
+ So I'm going to show you some of them.
+
+35
+0:02:25,400 --> 0:02:29,000
+ These are the ones that are kind of more just action.
+
+36
+0:02:29,000 --> 0:02:35,280
+ But for example, this one to the left, Cinemaware Anthology, that's games from the 90s where
+
+37
+0:02:35,280 --> 0:02:39,000
+ they kind of tried to make a movie and it kind of failed.
+
+38
+0:02:39,000 --> 0:02:42,100
+ It's called Cinemaware or Bookware.
+
+39
+0:02:42,100 --> 0:02:45,580
+ It's kind of from that full motion video period in time.
+
+40
+0:02:45,580 --> 0:02:46,740
+ Kind of didn't work out.
+
+41
+0:02:46,740 --> 0:02:47,740
+ Interesting ideas.
+
+42
+0:02:47,740 --> 0:02:52,980
+ And then right here down to the right, we have Heaven's Vault, which is a super nice game.
+
+43
+0:02:52,980 --> 0:02:54,400
+ It's extremely text heavy.
+
+44
+0:02:54,400 --> 0:03:01,220
+ Essentially a text game, but with some graphics added on to make it more editable for people.
+
+45
+0:03:01,220 --> 0:03:06,440
+ And the core gameplay loop in this game is to decode a human language, which I think
+
+46
+0:03:06,440 --> 0:03:08,760
+ is like a great gameplay loop.
+
+47
+0:03:08,760 --> 0:03:11,620
+ So that's kind of an overview to put things in context.
+
+48
+0:03:11,620 --> 0:03:16,560
+ So in this presentation, I would like to, so the background is I would like to create
+
+49
+0:03:16,560 --> 0:03:21,440
+ a piece of interactive fiction that is a game consisting only of text.
+
+50
+0:03:21,440 --> 0:03:22,520
+ I've never done so before.
+
+51
+0:03:22,520 --> 0:03:23,520
+ I have kind of done it before.
+
+52
+0:03:23,520 --> 0:03:24,280
+ I have kind of done it before.
+
+53
+0:03:24,280 --> 0:03:27,560
+ I have kind of done a little bit, but not like a full-fledged game.
+
+54
+0:03:27,560 --> 0:03:30,480
+ I haven't really done much game development in general.
+
+55
+0:03:30,480 --> 0:03:31,480
+ That could be a pro.
+
+56
+0:03:31,480 --> 0:03:33,480
+ It could also be a con.
+
+57
+0:03:33,480 --> 0:03:38,140
+ And I know of several approaches to get started, but I have never been able to decide which
+
+58
+0:03:38,140 --> 0:03:40,200
+ one to kind of go for.
+
+59
+0:03:40,200 --> 0:03:44,860
+ So I'm doing this presentation in order to force me to make a choice, which is funny
+
+60
+0:03:44,860 --> 0:03:48,720
+ because interactive games are also all about choices.
+
+61
+0:03:48,720 --> 0:03:53,400
+ So today I will cover single player games, multiplayer games.
+
+62
+0:03:53,400 --> 0:03:58,700
+ And then I will try to think of applications of the underlying technology in non-interactive
+
+63
+0:03:58,700 --> 0:04:05,740
+ fiction because maybe we can kind of spread out and use it in a general fashion.
+
+64
+0:04:05,740 --> 0:04:09,180
+ So about interactive fiction.
+
+65
+0:04:09,180 --> 0:04:15,560
+ It's kind of a very broad category, kind of at the top, at the most obvious level is text
+
+66
+0:04:15,560 --> 0:04:16,560
+ adventure games.
+
+67
+0:04:16,560 --> 0:04:19,160
+ Then we have choose your own adventure books.
+
+68
+0:04:19,160 --> 0:04:20,680
+ Some of you know these.
+
+69
+0:04:20,680 --> 0:04:21,520
+ We have visual novels.
+
+70
+0:04:21,520 --> 0:04:22,520
+ We have movie novels.
+
+71
+0:04:22,520 --> 0:04:23,240
+ We have books.
+
+72
+0:04:23,240 --> 0:04:27,560
+ We have multi-user dungeons that's multiplayer, but also mostly text-based.
+
+73
+0:04:27,560 --> 0:04:32,760
+ And then we also have mainstream games that have, for example, dialogue trees and essentially
+
+74
+0:04:32,760 --> 0:04:39,040
+ everything that is kind of text-centric in those, maybe some mini-games, maybe some other
+
+75
+0:04:39,040 --> 0:04:40,040
+ stuff.
+
+76
+0:04:40,040 --> 0:04:41,560
+ So it's kind of broad.
+
+77
+0:04:41,560 --> 0:04:45,780
+ I would like to maybe focus it a bit more today just in order to be able to finish this
+
+78
+0:04:45,780 --> 0:04:47,060
+ talk at all.
+
+79
+0:04:47,060 --> 0:04:49,700
+ So there are some prominent examples of interactive fiction.
+
+80
+0:04:49,700 --> 0:04:52,660
+ We have Sork from the 70s.
+
+81
+0:04:53,240 --> 0:04:55,360
+ Kind of re-released in the 80s as well.
+
+82
+0:04:55,360 --> 0:04:58,920
+ We have the Hitchhiker's Guide to the Galaxy, which was released as a text adventure game
+
+83
+0:04:58,920 --> 0:05:02,120
+ by Infocom in 1984.
+
+84
+0:05:02,120 --> 0:05:03,120
+ Super hard.
+
+85
+0:05:03,120 --> 0:05:04,120
+ I have never completed it.
+
+86
+0:05:04,120 --> 0:05:08,380
+ It's a good idea, but in practice it completely fails as a game, I think.
+
+87
+0:05:08,380 --> 0:05:12,740
+ Then we have Lambda Moo, which is one of these multiplayer games.
+
+88
+0:05:12,740 --> 0:05:20,560
+ And then I guess around 20 years ago, the commercial aspect of these games, 20, 30 years
+
+89
+0:05:20,560 --> 0:05:22,600
+ ago even, kind of declined.
+
+90
+0:05:22,600 --> 0:05:28,120
+ And since then, it has mostly been a hobbyist endeavor to create these text adventures,
+
+91
+0:05:28,120 --> 0:05:30,720
+ which is funny because that's also how it started.
+
+92
+0:05:30,720 --> 0:05:37,720
+ So it's kind of only around the 80s, but this was a proper commercial way of doing game
+
+93
+0:05:37,720 --> 0:05:38,720
+ development.
+
+94
+0:05:38,720 --> 0:05:42,460
+ And then kind of starting again a bit now, but not in its pure form.
+
+95
+0:05:42,460 --> 0:05:50,320
+ Kind of used as a side part to more mainstream kind of gameplays.
+
+96
+0:05:50,320 --> 0:05:52,480
+ In order to be able to focus in on something.
+
+97
+0:05:52,480 --> 0:05:56,840
+ You can say there are two broad categories of interactive fiction.
+
+98
+0:05:56,840 --> 0:06:01,940
+ There's the one to my left here, which is where you actually enter commands on your
+
+99
+0:06:01,940 --> 0:06:02,940
+ keyboard.
+
+100
+0:06:02,940 --> 0:06:09,460
+ For example, you enter drink beer and then the parser says not understood.
+
+101
+0:06:09,460 --> 0:06:13,680
+ Then you enter go on stage and then it says now you are standing on a stage.
+
+102
+0:06:13,680 --> 0:06:17,600
+ Then you can view your inventory and then it says you are currently carrying an older
+
+103
+0:06:17,600 --> 0:06:18,600
+ laptop.
+
+104
+0:06:18,600 --> 0:06:20,520
+ And then you can connect the laptop to the display cable.
+
+105
+0:06:20,520 --> 0:06:22,480
+ That can also be expressed.
+
+106
+0:06:22,480 --> 0:06:28,060
+ In a different format, to my right, where instead of manually typing these choices,
+
+107
+0:06:28,060 --> 0:06:32,940
+ you are presented with a list of valid choices and then you click on that.
+
+108
+0:06:32,940 --> 0:06:37,900
+ The good thing about this is that there are no invalid inputs.
+
+109
+0:06:37,900 --> 0:06:43,380
+ So for example, to my left I have this drink beer, which was not understood because the
+
+110
+0:06:43,380 --> 0:06:45,940
+ game developer didn't implement that feature.
+
+111
+0:06:45,940 --> 0:06:50,600
+ Whereas onto the right, that just doesn't exist because it's not implemented.
+
+112
+0:06:50,600 --> 0:06:51,940
+ So the right version, where you pick from a list of choices.
+
+113
+0:06:51,940 --> 0:06:57,560
+ It's kind of more limited, but it's also more precise, so you won't get into having
+
+114
+0:06:57,560 --> 0:06:59,480
+ to fight the parser.
+
+115
+0:06:59,480 --> 0:07:02,880
+ And for this talk, I will mostly focus on the format to the right, where you pick from
+
+116
+0:07:02,880 --> 0:07:06,160
+ a list, because I think that's much, much nicer.
+
+117
+0:07:06,160 --> 0:07:12,560
+ The old left version was kind of hip for most of interactive fiction's lifetime, but I think
+
+118
+0:07:12,560 --> 0:07:17,060
+ the right version is becoming more and more popular.
+
+119
+0:07:17,060 --> 0:07:20,060
+ So to start with, let's focus on single-player games.
+
+120
+0:07:20,060 --> 0:07:21,320
+ So let's start with single-player games.
+
+121
+0:07:21,940 --> 0:07:28,400
+ So I haven't, as I said, really been much active in this field of game development,
+
+122
+0:07:28,400 --> 0:07:32,000
+ but I was actually active once when I was a child.
+
+123
+0:07:32,000 --> 0:07:35,100
+ I used to do much of this interactive fiction.
+
+124
+0:07:35,100 --> 0:07:40,720
+ So I guess about 18 years ago, I was quite prolific.
+
+125
+0:07:40,720 --> 0:07:46,220
+ So to give you an example of what interactive fiction is, I will show you something I did
+
+126
+0:07:46,220 --> 0:07:47,220
+ back then.
+
+127
+0:07:47,220 --> 0:07:51,940
+ It's a horror story centered around kind of my greatest fear back then.
+
+128
+0:07:51,940 --> 0:07:55,300
+ Which was having to take a shower.
+
+129
+0:07:55,300 --> 0:07:58,760
+ So let's try to find it here.
+
+130
+0:07:58,760 --> 0:08:00,420
+ Yes.
+
+131
+0:08:00,420 --> 0:08:03,400
+ So we can try to run it.
+
+132
+0:08:03,400 --> 0:08:07,000
+ It doesn't work because it's a Microsoft Word file.
+
+133
+0:08:07,000 --> 0:08:11,640
+ So we have to open it instead, I guess.
+
+134
+0:08:11,640 --> 0:08:14,840
+ So this is kind of, you have some pages, right?
+
+135
+0:08:14,840 --> 0:08:20,620
+ And then the format is that, oh, sorry, the format is that you have this step one and
+
+136
+0:08:20,620 --> 0:08:21,780
+ then some choices.
+
+137
+0:08:21,780 --> 0:08:23,460
+ Which leads to other steps.
+
+138
+0:08:23,460 --> 0:08:28,020
+ But instead of doing this manually, what you can do is close this one, and then I entered
+
+139
+0:08:28,020 --> 0:08:33,880
+ it into a tool I made, a vital bag.
+
+140
+0:08:33,880 --> 0:08:35,360
+ Let's try this.
+
+141
+0:08:35,360 --> 0:08:37,660
+ It's in Danish, but I will translate it if you go along.
+
+142
+0:08:37,660 --> 0:08:41,900
+ We're not going to do the entire game because even though it's short, I have lots of other
+
+143
+0:08:41,900 --> 0:08:43,880
+ things I want to talk about.
+
+144
+0:08:43,880 --> 0:08:46,260
+ So okay, the starting page, right?
+
+145
+0:08:46,260 --> 0:08:50,260
+ When you start the game, we mentioned this, it says like, okay, you're going through your
+
+146
+0:08:50,260 --> 0:08:51,260
+ yearly shower.
+
+147
+0:08:51,260 --> 0:08:54,860
+ Of course you don't want to, and you're really fighting this.
+
+148
+0:08:54,860 --> 0:08:57,560
+ You close your eyes and think about what to do.
+
+149
+0:08:57,560 --> 0:09:03,360
+ And then choice one is to try to escape, but my adults are probably too strong.
+
+150
+0:09:03,360 --> 0:09:06,220
+ And choice two is try to be clever.
+
+151
+0:09:06,220 --> 0:09:10,760
+ So two fingers for two, one finger for one.
+
+152
+0:09:10,760 --> 0:09:13,980
+ Okay, I see, let's try to be clever.
+
+153
+0:09:13,980 --> 0:09:14,980
+ Then we click on this.
+
+154
+0:09:14,980 --> 0:09:15,980
+ Okay.
+
+155
+0:09:15,980 --> 0:09:16,980
+ What does it say?
+
+156
+0:09:16,980 --> 0:09:17,940
+ It says cleverness is fine.
+
+157
+0:09:17,940 --> 0:09:18,940
+ You are waiting till you are smart.
+
+158
+0:09:18,940 --> 0:09:19,940
+ Okay.
+
+159
+0:09:19,940 --> 0:09:20,940
+ Okay.
+
+160
+0:09:20,940 --> 0:09:23,080
+ You are waiting till you are in the bathroom.
+
+161
+0:09:23,080 --> 0:09:27,460
+ Then you hurry out and lock the door with the secret key, which hasn't been introduced
+
+162
+0:09:27,460 --> 0:09:28,460
+ yet.
+
+163
+0:09:28,460 --> 0:09:30,180
+ So that's kind of an interesting gameplay thing.
+
+164
+0:09:30,180 --> 0:09:38,200
+ Your dad yells at you and your mom says you are a lab thing went wrong.
+
+165
+0:09:38,200 --> 0:09:39,200
+ What are you going to do now?
+
+166
+0:09:39,200 --> 0:09:42,700
+ So this is actually kind of relatable because I haven't showered for a couple of days here
+
+167
+0:09:42,700 --> 0:09:43,700
+ at Bornhack.
+
+168
+0:09:43,700 --> 0:09:48,300
+ So it's kind of, kind of, I get kind of get in the zone by playing this, right?
+
+169
+0:09:48,300 --> 0:09:50,740
+ So let's take one more choice and then we can continue.
+
+170
+0:09:50,740 --> 0:09:58,260
+ So, uh, choice one is go outside in the air and play, choice two is go up and play PlayStation.
+
+171
+0:09:58,260 --> 0:10:00,260
+ One or two?
+
+172
+0:10:00,260 --> 0:10:02,620
+ I kind of see PlayStation trumping.
+
+173
+0:10:02,620 --> 0:10:03,980
+ Let's try a trick test.
+
+174
+0:10:03,980 --> 0:10:09,440
+ You are sitting peacefully up in your room and playing GTA Vice City, but suddenly you
+
+175
+0:10:09,440 --> 0:10:14,200
+ can hear your dad's feet on the way of the chairs, the stairs.
+
+176
+0:10:14,200 --> 0:10:15,620
+ What are you going to do now?
+
+177
+0:10:15,620 --> 0:10:16,620
+ Okay.
+
+178
+0:10:16,620 --> 0:10:18,260
+ Let's stop this for now because I think if we just continue, just picking some, oh, oh,
+
+179
+0:10:18,260 --> 0:10:28,280
+ uh, you jump out, but you forgot that you are on this, uh, really high up in an apartment.
+
+180
+0:10:28,280 --> 0:10:29,760
+ So you die at the end.
+
+181
+0:10:29,760 --> 0:10:30,760
+ Okay.
+
+182
+0:10:30,760 --> 0:10:31,760
+ So that was a quick game, right?
+
+183
+0:10:31,760 --> 0:10:33,540
+ That's good because then we can continue along.
+
+184
+0:10:33,540 --> 0:10:40,100
+ So the point of this was that this is a static graph of, uh, of choices.
+
+185
+0:10:40,100 --> 0:10:44,780
+ So even if you reset it, it's not going to be widely different, which tries some other
+
+186
+0:10:44,780 --> 0:10:45,780
+ choices.
+
+187
+0:10:45,780 --> 0:10:47,260
+ They are all statically defined.
+
+188
+0:10:47,260 --> 0:10:48,260
+ Uh.
+
+189
+0:10:48,260 --> 0:10:51,380
+ It's not a very interesting game if you try to replay it, or even if you just start to
+
+190
+0:10:51,380 --> 0:10:56,260
+ think about how it's, how it's created because there's no simulation underneath, it's kind
+
+191
+0:10:56,260 --> 0:10:57,260
+ of boring.
+
+192
+0:10:57,260 --> 0:11:09,020
+ Uh, so there is this trend, um, in, in games in general that you would like to do a remaster.
+
+193
+0:11:09,020 --> 0:11:12,800
+ I have noticed this and I am sure most other people have noticed this as well.
+
+194
+0:11:12,800 --> 0:11:16,280
+ So many remasters, so many special editions, uh, the graphics are improved.
+
+195
+0:11:16,280 --> 0:11:17,280
+ Uh.
+
+196
+0:11:17,280 --> 0:11:19,960
+ But it's the same game underneath.
+
+197
+0:11:19,960 --> 0:11:25,440
+ So what I wanted to do today was to make a remaster of my old game, but not just to recreate
+
+198
+0:11:25,440 --> 0:11:31,280
+ it, but to, instead of having this static graph of choices, make it into a full blown
+
+199
+0:11:31,280 --> 0:11:35,780
+ simulation, or at least start doing that.
+
+200
+0:11:35,780 --> 0:11:45,280
+ So, uh, what I mean by that is that let's go into my editor and then, uh, let's create
+
+201
+0:11:45,280 --> 0:11:46,280
+ a new file.
+
+202
+0:11:46,280 --> 0:11:47,280
+ Okay.
+
+203
+0:11:47,280 --> 0:11:53,620
+ Um, so there is this, uh, programming language called, uh, Prolog, which is really, really
+
+204
+0:11:53,620 --> 0:11:54,620
+ cool.
+
+205
+0:11:54,620 --> 0:11:55,620
+ Woo.
+
+206
+0:11:55,620 --> 0:11:58,620
+ Uh, and it's quite old.
+
+207
+0:11:58,620 --> 0:12:02,660
+ And the interesting part is when you say simulation, it's not really clear what you're going for.
+
+208
+0:12:02,660 --> 0:12:08,020
+ You're going for like old school eighties, uh, symbolic, uh, simulation of, of kind of
+
+209
+0:12:08,020 --> 0:12:09,020
+ objects.
+
+210
+0:12:09,020 --> 0:12:11,460
+ Are you gonna go full machine learning?
+
+211
+0:12:11,460 --> 0:12:14,720
+ And I am not going to go full machine learning because I don't really understand it.
+
+212
+0:12:14,720 --> 0:12:16,160
+ So I'm going back to the eighties.
+
+213
+0:12:16,160 --> 0:12:17,160
+ Okay.
+
+214
+0:12:17,160 --> 0:12:26,740
+ Uh, uh, implement a world of facts that kind of, uh, uh, correspond to the ideas in the
+
+215
+0:12:26,740 --> 0:12:30,580
+ original static graph of choices game.
+
+216
+0:12:30,580 --> 0:12:34,780
+ So let's start by defining the facts of this world.
+
+217
+0:12:34,780 --> 0:12:37,500
+ So we can say we have some parents, right?
+
+218
+0:12:37,500 --> 0:12:40,980
+ Oh, you can make some predicates.
+
+219
+0:12:40,980 --> 0:12:41,980
+ It's okay.
+
+220
+0:12:41,980 --> 0:12:43,500
+ If you don't know Prolog, most people don't.
+
+221
+0:12:43,500 --> 0:12:46,500
+ It can be hard to learn, but once you learn it, the great thing is, uh, that's not really
+
+222
+0:12:46,500 --> 0:12:47,860
+ much to it.
+
+223
+0:12:47,860 --> 0:12:50,580
+ Uh, what you see is pretty much what's there.
+
+224
+0:12:50,580 --> 0:12:52,100
+ There's no extra hidden features.
+
+225
+0:12:52,100 --> 0:12:54,140
+ Uh, it's kind of just what it is.
+
+226
+0:12:54,140 --> 0:12:55,440
+ That's great.
+
+227
+0:12:55,440 --> 0:12:58,800
+ So we have two parents, right?
+
+228
+0:12:58,800 --> 0:12:59,800
+ And what else?
+
+229
+0:12:59,800 --> 0:13:06,320
+ Uh, it can also be useful probably to define what a person is.
+
+230
+0:13:06,320 --> 0:13:08,120
+ So a person is a person.
+
+231
+0:13:08,120 --> 0:13:15,080
+ If that person is a parent and the person is also a person, if that person is you, that's
+
+232
+0:13:15,080 --> 0:13:16,380
+ what a person is.
+
+233
+0:13:16,380 --> 0:13:24,160
+ And now we can evaluate this so we can say what persons exists.
+
+234
+0:13:24,160 --> 0:13:27,240
+ So a person can be that or mom or you.
+
+235
+0:13:27,240 --> 0:13:30,400
+ So that's all the set of possible persons in this game.
+
+236
+0:13:30,400 --> 0:13:33,100
+ That's fine.
+
+237
+0:13:33,100 --> 0:13:38,900
+ The next thing is to try to define what possible actions do we have.
+
+238
+0:13:38,900 --> 0:13:42,740
+ So for this one, we will make a predicate called possible.
+
+239
+0:13:42,740 --> 0:13:45,560
+ So this for a given state.
+
+240
+0:13:45,560 --> 0:13:46,380
+ How can we progress?
+
+241
+0:13:46,380 --> 0:13:48,240
+ From that state to another state.
+
+242
+0:13:48,240 --> 0:13:50,880
+ That's what we want to define.
+
+243
+0:13:50,880 --> 0:13:52,880
+ So what do I have?
+
+244
+0:13:52,880 --> 0:13:54,300
+ Uh, yes.
+
+245
+0:13:54,300 --> 0:13:58,940
+ So the point of this game is to avoid taking a shower.
+
+246
+0:13:58,940 --> 0:14:06,620
+ So let's say that it's possible for a person to take a shower.
+
+247
+0:14:06,620 --> 0:14:16,160
+ Uh, if this is, if, if, uh, that person is in the bathroom.
+
+248
+0:14:16,380 --> 0:14:25,600
+ And the bathroom is locked, is locked because if the bathroom is not locked, uh, you will
+
+249
+0:14:25,600 --> 0:14:27,500
+ automatically escape from this.
+
+250
+0:14:27,500 --> 0:14:29,260
+ That's kind of the rules of this world.
+
+251
+0:14:29,260 --> 0:14:30,260
+ And okay.
+
+252
+0:14:30,260 --> 0:14:38,060
+ So a side note here, um, I think one of the things, uh, in many modern games is that you
+
+253
+0:14:38,060 --> 0:14:43,680
+ start playing it and then at some point you don't know what to do, and then you have to
+
+254
+0:14:43,680 --> 0:14:46,240
+ exit the game and go to some kind of weekend.
+
+255
+0:14:46,240 --> 0:14:47,080
+ I think that's pretty tricky.
+
+256
+0:14:47,080 --> 0:14:48,960
+ And then there are so many details on that.
+
+257
+0:14:48,960 --> 0:14:49,960
+ And I hate that.
+
+258
+0:14:49,960 --> 0:14:53,520
+ I want everything to be in the game and that's what we're doing right now.
+
+259
+0:14:53,520 --> 0:14:56,860
+ We're defining everything from scratch all of the game world.
+
+260
+0:14:56,860 --> 0:14:59,580
+ So that's I think, perfect.
+
+261
+0:14:59,580 --> 0:15:02,480
+ Um, so we can kind of continue this.
+
+262
+0:15:02,480 --> 0:15:06,860
+ Uh, so now we have said that it's possible to shower.
+
+263
+0:15:06,860 --> 0:15:14,000
+ Um, but apart from that, we also have to define these new predicates that we kind of just
+
+264
+0:15:14,000 --> 0:15:15,500
+ assumed were present.
+
+265
+0:15:15,500 --> 0:15:16,100
+ So we can say.
+
+266
+0:15:16,240 --> 0:15:31,240
+ say, a bathroom is locked if someone, if you have some person, and that person has performed
+
+267
+0:15:31,240 --> 0:15:38,560
+ the action of locking the bathroom. This might seem kind of obvious, but we have to define
+
+268
+0:15:38,560 --> 0:15:43,760
+ every single thing ourselves, so there will be some obvious things because humans don't
+
+269
+0:15:43,760 --> 0:15:53,420
+ think kind of in discrete steps all the time, but our simulation will have to do that. And
+
+270
+0:15:53,420 --> 0:15:59,880
+ you can continue with that, so we can also say that to be able to lock something, like
+
+271
+0:15:59,880 --> 0:16:05,860
+ to be able to do this thing that we claim we want to do, if it's possible, it's only
+
+272
+0:16:05,860 --> 0:16:10,880
+ possible for a person to lock the bathroom, or to lock any kind of location, let's try
+
+273
+0:16:10,880 --> 0:16:12,700
+ to generalize it.
+
+274
+0:16:12,700 --> 0:16:13,700
+ If
+
+275
+0:16:13,700 --> 0:16:28,140
+ you have, let's say, that person has some key, and let's say that key locks the location.
+
+276
+0:16:28,140 --> 0:16:39,460
+ Oh, I've made, this is too much, yes. Yes, all right. And you can kind of continue along
+
+277
+0:16:39,460 --> 0:16:42,640
+ with this, but I also want to cover other things today.
+
+278
+0:16:42,640 --> 0:16:52,140
+ So I cheated from home and made one like this, where it's similar but has more kind
+
+279
+0:16:52,140 --> 0:17:05,520
+ of content. So let's try to evaluate some of this, so imagine that we have these lines
+
+280
+0:17:05,520 --> 0:17:08,600
+ of the world defining what kind of simulation we're in, and then our first step is to..
+
+281
+0:17:08,600 --> 0:17:09,600
+ I've worse things to my computers. You can continue like this for 60 seconds, okay?
+
+282
+0:17:09,600 --> 0:17:09,640
+ One minute, then we collapse.
+
+283
+0:17:09,640 --> 0:17:09,800
+ One minute.
+
+284
+0:17:09,800 --> 0:17:09,940
+ That's it.
+
+285
+0:17:09,940 --> 0:17:09,980
+ Go ahead, and let's start moving.
+
+286
+0:17:09,980 --> 0:17:10,280
+ 0, I was coffee.
+
+287
+0:17:10,280 --> 0:17:10,420
+ There we go.
+
+288
+0:17:10,420 --> 0:17:10,460
+ There we go.
+
+289
+0:17:10,480 --> 0:17:10,800
+ No, where's b går end we end.
+
+290
+0:17:10,800 --> 0:17:10,840
+ There we go.
+
+291
+0:17:10,840 --> 0:17:11,080
+ There's a lot of colleagues.
+
+292
+0:17:11,080 --> 0:17:11,120
+ It adds them up.
+
+293
+0:17:11,120 --> 0:17:11,160
+ Yes.
+
+294
+0:17:11,160 --> 0:17:11,280
+ Yes, there are a lot of cases where you see that.
+
+295
+0:17:11,280 --> 0:17:11,360
+ Yes.
+
+296
+0:17:11,360 --> 0:17:22,980
+ first step is to, let's say, check where we are. So we can query the world and say,
+
+297
+0:17:22,980 --> 0:17:30,440
+ where am I right now? In you where? And then it says completely, it doesn't know that,
+
+298
+0:17:30,440 --> 0:17:37,400
+ and that's because we haven't really defined the concept of locations. We have kind of
+
+299
+0:17:37,400 --> 0:17:45,140
+ set like, okay, there's this bathroom location, but we haven't actually defined any location
+
+300
+0:17:45,140 --> 0:17:51,160
+ existing outside of the bathroom. So the beginning game state is just, you exist, but you're
+
+301
+0:17:51,160 --> 0:17:56,720
+ not actually anywhere at all, but you can go to the bathroom. So that's kind of something
+
+302
+0:17:56,720 --> 0:18:01,880
+ you could add on, make a better simulation by actually having the concept of locations.
+
+303
+0:18:01,880 --> 0:18:06,860
+ We don't need that for now, we are kind of ignorant. So, and more interesting query is
+
+304
+0:18:06,860 --> 0:18:07,360
+ probably...
+
+305
+0:18:07,400 --> 0:18:17,220
+ to say, like, what do the NPCs do? So we can say, given the starting state, what will
+
+306
+0:18:17,220 --> 0:18:20,280
+ the dad do?
+
+307
+0:18:20,280 --> 0:18:36,860
+ Uh, oh, did I do something wrong?
+
+308
+0:18:36,860 --> 0:18:50,620
+ No, that should work.
+
+309
+0:18:50,620 --> 0:18:54,520
+ Unknown procedure...
+
+310
+0:18:54,520 --> 0:19:01,740
+ So Prolog is quite fun, but it's also quite fun to debug it, right? So let's see...
+
+311
+0:19:01,740 --> 0:19:02,740
+ Uh...
+
+312
+0:19:02,740 --> 0:19:03,740
+ Uh...
+
+313
+0:19:03,740 --> 0:19:04,740
+ Uh...
+
+314
+0:19:04,740 --> 0:19:05,740
+ Uh...
+
+315
+0:19:05,740 --> 0:19:06,740
+ Uh...
+
+316
+0:19:06,740 --> 0:19:07,620
+ Uh...
+
+317
+0:19:07,620 --> 0:19:08,620
+ What if I just do...
+
+318
+0:19:08,620 --> 0:19:09,620
+ This?
+
+319
+0:19:09,620 --> 0:19:10,620
+ Okay.
+
+320
+0:19:10,620 --> 0:19:11,620
+ So we can see that...
+
+321
+0:19:11,620 --> 0:19:28,620
+ What it says that we are querying what possible acts does the dad have, and the dad has the
+
+322
+0:19:28,620 --> 0:19:34,980
+ action, it can carry himself to the bathroom, it can carry the mom to the bathroom, it can
+
+323
+0:19:34,980 --> 0:19:36,580
+ carry my... me to the bathroom.
+
+324
+0:19:36,580 --> 0:19:37,580
+ Okay.
+
+325
+0:19:37,580 --> 0:19:38,580
+ So it's likely that the NPC will take the final action, let's say that.
+
+326
+0:19:38,580 --> 0:19:39,580
+ Oh, he can also grab himself.
+
+327
+0:19:39,580 --> 0:19:40,580
+ That sounds weird.
+
+328
+0:19:40,580 --> 0:19:41,580
+ Okay.
+
+329
+0:19:41,580 --> 0:19:42,580
+ That's the four possible actions.
+
+330
+0:19:42,580 --> 0:19:43,580
+ So let's say that it's...
+
+331
+0:19:43,580 --> 0:19:44,580
+ This action, he wants to carry you to the bathroom, so let's try to...
+
+332
+0:19:44,580 --> 0:19:45,580
+ Uh...
+
+333
+0:19:45,580 --> 0:19:46,580
+ Introduce that as a fact in our program.
+
+334
+0:19:46,580 --> 0:19:47,580
+ So now that's kind of established.
+
+335
+0:19:47,580 --> 0:19:48,580
+ So let's try to...
+
+336
+0:19:48,580 --> 0:19:49,580
+ Uh...
+
+337
+0:19:49,580 --> 0:19:50,580
+ Uh...
+
+338
+0:19:50,580 --> 0:19:51,580
+ Uh...
+
+339
+0:19:51,580 --> 0:19:52,580
+ Uh...
+
+340
+0:19:52,580 --> 0:19:53,580
+ Uh...
+
+341
+0:19:53,580 --> 0:19:54,580
+ Uh...
+
+342
+0:19:54,580 --> 0:19:55,580
+ Uh...
+
+343
+0:19:55,580 --> 0:19:56,580
+ Uh...
+
+344
+0:19:56,580 --> 0:19:57,580
+ Uh...
+
+345
+0:19:57,580 --> 0:19:58,580
+ Uh...
+
+346
+0:19:58,580 --> 0:19:59,580
+ Uh...
+
+347
+0:19:59,580 --> 0:20:00,580
+ Uh...
+
+348
+0:20:00,580 --> 0:20:01,580
+ Uh...
+
+349
+0:20:01,580 --> 0:20:02,580
+ Uh...
+
+350
+0:20:02,580 --> 0:20:03,580
+ Uh...
+
+351
+0:20:03,580 --> 0:20:04,580
+ Uh...
+
+352
+0:20:04,580 --> 0:20:05,580
+ Uh...
+
+353
+0:20:05,580 --> 0:20:06,580
+ Uh...
+
+354
+0:20:06,580 --> 0:20:07,580
+ Uh...
+
+355
+0:20:07,580 --> 0:20:08,580
+ Uh...
+
+356
+0:20:08,580 --> 0:20:09,580
+ Uh...
+
+357
+0:20:09,580 --> 0:20:10,580
+ Uh...
+
+358
+0:20:10,580 --> 0:20:11,580
+ Uh...
+
+359
+0:20:11,580 --> 0:20:12,580
+ Uh...
+
+360
+0:20:12,580 --> 0:20:13,580
+ Uh...
+
+361
+0:20:13,580 --> 0:20:14,580
+ Uh...
+
+362
+0:20:14,580 --> 0:20:15,580
+ Uh...
+
+363
+0:20:15,580 --> 0:20:16,580
+ Uh...
+
+364
+0:20:16,580 --> 0:20:17,580
+ Uh...
+
+365
+0:20:17,580 --> 0:20:18,580
+ Uh...
+
+366
+0:20:18,580 --> 0:20:19,580
+ Uh...
+
+367
+0:20:19,580 --> 0:20:20,580
+ Uh...
+
+368
+0:20:20,580 --> 0:20:21,580
+ Uh...
+
+369
+0:20:21,580 --> 0:20:22,580
+ Uh...
+
+370
+0:20:22,580 --> 0:20:23,580
+ Uh...
+
+371
+0:20:23,580 --> 0:20:24,580
+ Uh...
+
+372
+0:20:24,580 --> 0:20:25,580
+ Uh...
+
+373
+0:20:25,580 --> 0:20:26,580
+ Uh...
+
+374
+0:20:27,580 --> 0:20:28,580
+ Uh...
+
+375
+0:20:28,580 --> 0:20:29,580
+ Uh...
+
+376
+0:20:29,580 --> 0:20:30,580
+ Uh...
+
+377
+0:20:30,580 --> 0:20:31,580
+ Uh...
+
+378
+0:20:31,580 --> 0:20:32,580
+ Uh...
+
+379
+0:20:32,580 --> 0:20:33,580
+ Uh...
+
+380
+0:20:33,580 --> 0:20:34,580
+ Uh...
+
+381
+0:20:34,580 --> 0:20:35,580
+ Uh...
+
+382
+0:20:35,580 --> 0:20:39,960
+ possible because we introduced this action up here of being carried to the
+
+383
+0:20:39,960 --> 0:20:44,740
+ bathroom so if you try to comment that out and again ask like what are my
+
+384
+0:20:44,740 --> 0:20:48,960
+ choices from the beginning state of the game it will just say oh there are no
+
+385
+0:20:48,960 --> 0:20:56,940
+ possible choices so it's important that we have this choice so if you want to do
+
+386
+0:20:56,940 --> 0:21:01,800
+ the same thing as we try to do in the playthrough just before in the old
+
+387
+0:21:01,800 --> 0:21:09,680
+ version of the game what we're going to do now is grab the bathroom key so I
+
+388
+0:21:09,680 --> 0:21:24,760
+ guess let's do that so we enter this you grab the bathroom key now that is done
+
+389
+0:21:26,380 --> 0:21:31,180
+ and then I think we may have to remove some facts now
+
+390
+0:21:31,180 --> 0:21:31,580
+ no
+
+391
+0:21:31,800 --> 0:21:33,480
+ Let's see if it says so.
+
+392
+0:21:36,280 --> 0:21:38,980
+ Yes, we used to have this fact that the bathroom key was
+
+393
+0:21:38,980 --> 0:21:40,660
+ reachable, but now that we have grabbed it,
+
+394
+0:21:40,660 --> 0:21:42,460
+ we need to remove this.
+
+395
+0:21:42,460 --> 0:21:44,560
+ This is a limitation of Prolog.
+
+396
+0:21:44,560 --> 0:21:48,920
+ You can retract some things, but it's also a bit limited,
+
+397
+0:21:48,920 --> 0:21:50,880
+ and we are kind of abusing it.
+
+398
+0:21:50,880 --> 0:21:55,680
+ So what you would want to do is make
+
+399
+0:21:55,680 --> 0:21:58,980
+ a nicer Prolog-based system that extends this
+
+400
+0:21:58,980 --> 0:22:02,220
+ with some nicer features.
+
+401
+0:22:02,220 --> 0:22:09,520
+ So now there's, did we fully retract this bathroom key?
+
+402
+0:22:12,040 --> 0:22:13,160
+ Yeah, that's fine.
+
+403
+0:22:13,160 --> 0:22:15,000
+ All right.
+
+404
+0:22:15,000 --> 0:22:22,940
+ So let's go on and then say, what possible actions
+
+405
+0:22:22,940 --> 0:22:25,380
+ do we have now that we have taken the bathroom key?
+
+406
+0:22:25,380 --> 0:22:27,700
+ So OK, now that we have the bathroom key,
+
+407
+0:22:27,700 --> 0:22:28,980
+ we have this new action possible.
+
+408
+0:22:28,980 --> 0:22:30,900
+ Which is to lock the bathroom.
+
+409
+0:22:30,900 --> 0:22:32,080
+ What else can we do?
+
+410
+0:22:32,080 --> 0:22:34,000
+ We can still grab ourselves.
+
+411
+0:22:34,000 --> 0:22:35,600
+ We can escape from bathroom.
+
+412
+0:22:35,600 --> 0:22:37,920
+ So we could escape from bathroom,
+
+413
+0:22:37,920 --> 0:22:40,620
+ but it makes more sense to lock it first and then escape.
+
+414
+0:22:40,620 --> 0:22:42,440
+ So let's try that.
+
+415
+0:22:42,440 --> 0:22:46,440
+ Still manually entering it into the program as a new fact.
+
+416
+0:22:46,440 --> 0:22:49,660
+ So we make the actions of locking the bathroom,
+
+417
+0:22:49,660 --> 0:22:58,040
+ and then we make the action of escaping from bathroom.
+
+418
+0:22:58,040 --> 0:22:58,540
+ OK.
+
+419
+0:22:58,980 --> 0:23:03,520
+ And now let's see.
+
+420
+0:23:03,520 --> 0:23:06,620
+ So we did a lot of actions, kind of unfair to the NPCs.
+
+421
+0:23:06,620 --> 0:23:10,940
+ So let's see what is the possible action for our dad.
+
+422
+0:23:13,880 --> 0:23:15,740
+ He can shower.
+
+423
+0:23:15,740 --> 0:23:18,740
+ He can carry himself to the bathroom.
+
+424
+0:23:18,740 --> 0:23:21,340
+ He can carry the mom to the bathroom.
+
+425
+0:23:21,340 --> 0:23:24,840
+ No, he shouldn't be able to do that.
+
+426
+0:23:24,840 --> 0:23:27,360
+ OK, so clearly there are some logic errors here.
+
+427
+0:23:27,360 --> 0:23:28,980
+ But it's quite fun to debug these things.
+
+428
+0:23:28,980 --> 0:23:33,440
+ Because you're not traversing a static graph of choices.
+
+429
+0:23:33,440 --> 0:23:36,820
+ You're traversing this simulation, which has state,
+
+430
+0:23:36,820 --> 0:23:38,120
+ that goes to another state.
+
+431
+0:23:38,120 --> 0:23:42,320
+ And then sometimes you get kind of emergent behavior.
+
+432
+0:23:42,320 --> 0:23:45,280
+ You don't really expect that, oh, yes, this action makes sense.
+
+433
+0:23:45,280 --> 0:23:48,920
+ Because it's entirely enforced by our system
+
+434
+0:23:48,920 --> 0:23:51,120
+ that this action is possible.
+
+435
+0:23:51,120 --> 0:23:53,040
+ And if you don't want that action to be possible,
+
+436
+0:23:53,040 --> 0:23:55,740
+ it's because we didn't manage to implement
+
+437
+0:23:55,740 --> 0:23:57,680
+ the simulation correctly.
+
+438
+0:23:57,680 --> 0:23:58,880
+ So it's kind of a combination.
+
+439
+0:23:58,880 --> 0:24:01,420
+ Of being able to do more things that you didn't kind of think
+
+440
+0:24:01,420 --> 0:24:03,340
+ were possible, but the system tells you,
+
+441
+0:24:03,340 --> 0:24:04,540
+ yes, this is indeed possible.
+
+442
+0:24:08,180 --> 0:24:11,840
+ So let's move on.
+
+443
+0:24:11,840 --> 0:24:15,040
+ This was 60 lines of prologue, kind of buggy,
+
+444
+0:24:15,040 --> 0:24:17,340
+ kind of showing what you could do.
+
+445
+0:24:17,340 --> 0:24:18,580
+ To do this better, you would want
+
+446
+0:24:18,580 --> 0:24:21,840
+ to have a more full simulation, where what you do
+
+447
+0:24:21,840 --> 0:24:26,140
+ is for each character you have, you give them a goal.
+
+448
+0:24:26,140 --> 0:24:28,880
+ And then they will try to achieve this goal.
+
+449
+0:24:28,880 --> 0:24:32,180
+ By taking the action that gives most utility to that.
+
+450
+0:24:32,180 --> 0:24:35,720
+ That's also a very old idea, not really new in any regard.
+
+451
+0:24:35,720 --> 0:24:40,020
+ But it's easy to implement in these prologue-like languages.
+
+452
+0:24:40,020 --> 0:24:44,280
+ And that's kind of the way to go.
+
+453
+0:24:44,280 --> 0:24:46,120
+ A couple of years back, eight years or so,
+
+454
+0:24:46,120 --> 0:24:50,520
+ there was this system called Versu, which unfortunately
+
+455
+0:24:50,520 --> 0:24:55,520
+ isn't available, because it was, there's a whole story about it.
+
+456
+0:24:55,520 --> 0:24:58,040
+ But they made a nice paper, which kind of put together, you know,
+
+457
+0:24:58,040 --> 0:24:58,180
+ a lot of things.
+
+458
+0:24:58,880 --> 0:25:03,380
+ And they put together these ideas of these emergent simulation-based
+
+459
+0:25:03,380 --> 0:25:04,420
+ game plays.
+
+460
+0:25:04,420 --> 0:25:07,580
+ So you have this concept of contexts.
+
+461
+0:25:07,580 --> 0:25:11,580
+ So in this, to my right here, we have the context pastry,
+
+462
+0:25:11,580 --> 0:25:14,720
+ which contains one interaction possibility.
+
+463
+0:25:14,720 --> 0:25:18,680
+ Then we have other contexts, which also contain
+
+464
+0:25:18,680 --> 0:25:21,040
+ interaction possibilities.
+
+465
+0:25:21,040 --> 0:25:24,120
+ And then these contexts can be added or removed
+
+466
+0:25:24,120 --> 0:25:25,940
+ based on what you do.
+
+467
+0:25:25,940 --> 0:25:27,940
+ And the game play is mostly centered
+
+468
+0:25:27,940 --> 0:25:32,540
+ around very small human actions, like blinking to someone
+
+469
+0:25:32,540 --> 0:25:35,800
+ or making an off-site remark.
+
+470
+0:25:35,800 --> 0:25:40,740
+ And then all the characters are fully simulated.
+
+471
+0:25:40,740 --> 0:25:42,400
+ And there are two levels to the simulation.
+
+472
+0:25:42,400 --> 0:25:47,140
+ One is kind of a background state of the world
+
+473
+0:25:47,140 --> 0:25:50,780
+ that they designed and reused across different games, which
+
+474
+0:25:50,780 --> 0:25:54,020
+ contains so many concepts of locations and emotions
+
+475
+0:25:54,020 --> 0:25:54,940
+ and so on.
+
+476
+0:25:54,940 --> 0:25:57,860
+ And then the top layer is then the game itself, which then,
+
+477
+0:25:57,860 --> 0:25:57,940
+ basically, is a game.
+
+478
+0:25:57,940 --> 0:26:04,020
+ It builds onto this bottom layer and enables these characters
+
+479
+0:26:04,020 --> 0:26:07,500
+ to really do lots of things, because they also
+
+480
+0:26:07,500 --> 0:26:08,900
+ have to react to each other.
+
+481
+0:26:08,900 --> 0:26:11,240
+ So you can have like a new reaction chain where
+
+482
+0:26:11,240 --> 0:26:13,880
+ you do something, and then a character reacts,
+
+483
+0:26:13,880 --> 0:26:15,560
+ and then another character reacts, and so on.
+
+484
+0:26:15,560 --> 0:26:17,140
+ And the great thing is you can actually
+
+485
+0:26:17,140 --> 0:26:20,900
+ play as any of the characters, because the system is
+
+486
+0:26:20,900 --> 0:26:23,240
+ built on a strong foundation.
+
+487
+0:26:23,240 --> 0:26:27,280
+ And it's kind of the same as I just did, but more time
+
+488
+0:26:27,280 --> 0:26:27,860
+ and more development.
+
+489
+0:26:27,860 --> 0:26:30,140
+ The budget and so on.
+
+490
+0:26:30,140 --> 0:26:32,480
+ For tree of choices, this old-school approach,
+
+491
+0:26:32,480 --> 0:26:35,340
+ there are some quite modern tools that extend it a little bit
+
+492
+0:26:35,340 --> 0:26:37,660
+ and also give a nice user experience.
+
+493
+0:26:37,660 --> 0:26:39,000
+ Trine is quite popular.
+
+494
+0:26:39,000 --> 0:26:41,040
+ There's this ink language.
+
+495
+0:26:41,040 --> 0:26:43,980
+ And there's also something called the yarn spinner,
+
+496
+0:26:43,980 --> 0:26:46,980
+ which seems nice.
+
+497
+0:26:46,980 --> 0:26:49,840
+ Then let's move on to multiplayer games.
+
+498
+0:26:49,840 --> 0:26:53,020
+ This is not something I play a lot.
+
+499
+0:26:53,020 --> 0:26:57,140
+ And when I do, I often find it quite hectic.
+
+500
+0:26:57,140 --> 0:27:00,080
+ So if at all possible, I would prefer something a bit
+
+501
+0:27:00,080 --> 0:27:04,260
+ like turn-based multiplayer games.
+
+502
+0:27:04,260 --> 0:27:07,900
+ The basic idea in regards to interactive fiction
+
+503
+0:27:07,900 --> 0:27:13,380
+ is to utilize the fact that humans
+
+504
+0:27:13,380 --> 0:27:16,960
+ are story-generating devices.
+
+505
+0:27:16,960 --> 0:27:20,040
+ So let's say you have two humans.
+
+506
+0:27:20,040 --> 0:27:23,260
+ Then one human is saying something,
+
+507
+0:27:23,260 --> 0:27:25,820
+ and the other is responding to that.
+
+508
+0:27:25,820 --> 0:27:26,480
+ So for example.
+
+509
+0:27:26,480 --> 0:27:26,980
+ This.
+
+510
+0:27:26,980 --> 0:27:27,120
+ This.
+
+511
+0:27:27,120 --> 0:27:29,820
+ This is my first attempt, where I'm just
+
+512
+0:27:29,820 --> 0:27:31,360
+ trying to keep it as simple as possible.
+
+513
+0:27:31,360 --> 0:27:34,520
+ We have a yellow guy and purple guy.
+
+514
+0:27:34,520 --> 0:27:37,780
+ And yellow guy is the game master.
+
+515
+0:27:37,780 --> 0:27:40,880
+ And he writes, you see a lamp that
+
+516
+0:27:40,880 --> 0:27:44,020
+ is transmitted over the internet to this other person who
+
+517
+0:27:44,020 --> 0:27:47,140
+ receives that and then has to act on it.
+
+518
+0:27:47,140 --> 0:27:49,340
+ Then that person says, get lamp, which
+
+519
+0:27:49,340 --> 0:27:53,500
+ is received by the game master, who then
+
+520
+0:27:53,500 --> 0:27:55,620
+ says that the lamp explodes, which is then
+
+521
+0:27:55,620 --> 0:27:56,960
+ received by the player.
+
+522
+0:27:56,960 --> 0:28:01,860
+ This is kind of the simplest possible text-based multiplayer
+
+523
+0:28:01,860 --> 0:28:03,040
+ experience.
+
+524
+0:28:03,040 --> 0:28:05,660
+ The problem is that it's just chatting.
+
+525
+0:28:05,660 --> 0:28:07,620
+ There's no system in place.
+
+526
+0:28:07,620 --> 0:28:09,760
+ You can just chat, and there's nothing
+
+527
+0:28:09,760 --> 0:28:14,320
+ enforced by a nice, complicated system, which we like.
+
+528
+0:28:14,320 --> 0:28:17,860
+ It's also a problem that is super lopsided.
+
+529
+0:28:17,860 --> 0:28:20,300
+ You have one person who is controlling the game
+
+530
+0:28:20,300 --> 0:28:23,200
+ and one person who is only responding to it.
+
+531
+0:28:23,200 --> 0:28:24,960
+ We would like something that is more balanced.
+
+532
+0:28:24,960 --> 0:28:26,800
+ And we would like something that is more balanced.
+
+533
+0:28:26,800 --> 0:28:31,980
+ And also, the game master has, it's not only lopsided,
+
+534
+0:28:31,980 --> 0:28:35,820
+ it's also the game master has too much power.
+
+535
+0:28:35,820 --> 0:28:40,080
+ So it's not fun, and it's not balanced.
+
+536
+0:28:40,080 --> 0:28:46,040
+ So what we want to do is think about how can we kind of
+
+537
+0:28:46,040 --> 0:28:51,300
+ zone in on a smaller area in these multiplayer text games
+
+538
+0:28:51,300 --> 0:28:53,700
+ that we can actually explore.
+
+539
+0:28:53,700 --> 0:28:56,600
+ And I thought about this, and I couldn't come up with anything.
+
+540
+0:28:56,600 --> 0:29:01,640
+ So there's this idea of trying to limit the surface area
+
+541
+0:29:01,640 --> 0:29:03,840
+ in order to get something done.
+
+542
+0:29:03,840 --> 0:29:06,700
+ So I was just kind of waiting around for something
+
+543
+0:29:06,700 --> 0:29:07,480
+ to happen to me.
+
+544
+0:29:07,480 --> 0:29:10,680
+ And then one day, my friend Simon sent me an email
+
+545
+0:29:10,680 --> 0:29:14,980
+ saying that these .Quest domain names are super cheap.
+
+546
+0:29:14,980 --> 0:29:16,340
+ You should buy one.
+
+547
+0:29:16,340 --> 0:29:18,380
+ And then I was like, oh yes, I'm going to buy one
+
+548
+0:29:18,380 --> 0:29:20,960
+ and use it for my project.
+
+549
+0:29:20,960 --> 0:29:25,360
+ And then I thought, OK, .Quest, what is .Quest?
+
+550
+0:29:25,360 --> 0:29:26,400
+ What can I do?
+
+551
+0:29:26,400 --> 0:29:31,680
+ And then I bought this domain.
+
+552
+0:29:31,680 --> 0:29:37,280
+ And it's just, I have this nice Emacs web browser.
+
+553
+0:29:37,280 --> 0:29:42,600
+ So you can just go to, I bought this domain.
+
+554
+0:29:42,600 --> 0:29:43,400
+ Can I load it?
+
+555
+0:29:43,400 --> 0:29:45,880
+ Do I have internet?
+
+556
+0:29:45,880 --> 0:29:50,040
+ If I don't have internet, you can go to Hest.Quest.
+
+557
+0:29:50,040 --> 0:29:53,260
+ This is funny because it's a pun.
+
+558
+0:29:53,260 --> 0:29:54,460
+ No, it's not a pun, actually.
+
+559
+0:29:54,460 --> 0:29:55,160
+ It rhymes.
+
+560
+0:29:55,160 --> 0:29:56,240
+ And Hest in Danish means.
+
+561
+0:29:56,240 --> 0:29:58,960
+ Horse.
+
+562
+0:29:58,960 --> 0:30:02,280
+ So apparently it doesn't load, but that doesn't matter.
+
+563
+0:30:02,280 --> 0:30:05,700
+ So I bought this horse website.
+
+564
+0:30:05,700 --> 0:30:07,540
+ And then I had to learn about horses
+
+565
+0:30:07,540 --> 0:30:09,060
+ in order to make games about horses.
+
+566
+0:30:09,060 --> 0:30:12,640
+ So the great thing is, I thought, OK, interactive fiction
+
+567
+0:30:12,640 --> 0:30:14,520
+ is such a big thing.
+
+568
+0:30:14,520 --> 0:30:16,480
+ And if you want to make a simulation of the world,
+
+569
+0:30:16,480 --> 0:30:18,640
+ that's such a big, big task.
+
+570
+0:30:18,640 --> 0:30:21,560
+ So I thought, now that I have this horse website,
+
+571
+0:30:21,560 --> 0:30:25,000
+ I can just make a very, very small simulation that only
+
+572
+0:30:25,000 --> 0:30:25,640
+ involves horses.
+
+573
+0:30:25,640 --> 0:30:29,980
+ Because I'm sure that they are less complicated than humans.
+
+574
+0:30:29,980 --> 0:30:31,880
+ But I didn't know anything about horses.
+
+575
+0:30:31,880 --> 0:30:36,720
+ So I went to the library in order to find out what's a horse.
+
+576
+0:30:36,720 --> 0:30:39,240
+ There is this nice library next to where I live.
+
+577
+0:30:39,240 --> 0:30:42,000
+ And I have kind of biked across it for 10 years,
+
+578
+0:30:42,000 --> 0:30:43,920
+ but never actually been inside.
+
+579
+0:30:43,920 --> 0:30:46,200
+ So I went inside and kind of looked for,
+
+580
+0:30:46,200 --> 0:30:48,720
+ I found this giraffe book that's not a horse.
+
+581
+0:30:48,720 --> 0:30:49,780
+ Then there's a zebra book.
+
+582
+0:30:49,780 --> 0:30:52,620
+ It's kind of close to a horse, but not really.
+
+583
+0:30:52,620 --> 0:30:55,400
+ And then I found some really nice books.
+
+584
+0:30:55,400 --> 0:30:57,020
+ Books and games.
+
+585
+0:30:57,020 --> 0:30:58,840
+ I kind of got distracted a bit.
+
+586
+0:30:58,840 --> 0:31:01,540
+ Oh, and then I found, oh, this is a nice plaque.
+
+587
+0:31:01,540 --> 0:31:04,940
+ So this one says, where is the book?
+
+588
+0:31:04,940 --> 0:31:07,700
+ So I kind of zoomed in a bit.
+
+589
+0:31:07,700 --> 0:31:12,860
+ And then you have some useful topics, starting with H.
+
+590
+0:31:12,860 --> 0:31:15,520
+ And then I thought, oh, HEST, that's horse.
+
+591
+0:31:15,520 --> 0:31:16,160
+ That's for me.
+
+592
+0:31:16,160 --> 0:31:18,580
+ Now I can learn about what's a horse.
+
+593
+0:31:18,580 --> 0:31:24,360
+ So a horse is 63.61, apparently, on this decimal system.
+
+594
+0:31:24,360 --> 0:31:25,280
+ So I went to this.
+
+595
+0:31:25,400 --> 0:31:29,160
+ And I thought, oh, that's one.
+
+596
+0:31:29,160 --> 0:31:31,500
+ But there were no books.
+
+597
+0:31:31,500 --> 0:31:36,400
+ Really, there were absolutely no books on horses.
+
+598
+0:31:36,400 --> 0:31:39,480
+ So I was kind of devastated.
+
+599
+0:31:39,480 --> 0:31:41,780
+ I don't know what to do.
+
+600
+0:31:41,780 --> 0:31:44,960
+ Then I looked to the comics section.
+
+601
+0:31:44,960 --> 0:31:46,440
+ And I found this nice comic.
+
+602
+0:31:46,440 --> 0:31:47,560
+ I read this as a child.
+
+603
+0:31:47,560 --> 0:31:49,820
+ And then I thought, well, I will borrow this.
+
+604
+0:31:49,820 --> 0:31:54,580
+ So it's called SOS from in Danish.
+
+605
+0:31:54,580 --> 0:31:55,280
+ So I bought it.
+
+606
+0:31:55,280 --> 0:31:56,220
+ I borrowed it.
+
+607
+0:31:56,220 --> 0:31:59,320
+ There's this nice self-service system on Danish libraries.
+
+608
+0:31:59,320 --> 0:31:59,980
+ It just works.
+
+609
+0:32:02,680 --> 0:32:07,280
+ So that comic I borrowed, I'm not
+
+610
+0:32:07,280 --> 0:32:09,400
+ going to say this original title.
+
+611
+0:32:09,400 --> 0:32:12,060
+ But it's by Greg and Franklin.
+
+612
+0:32:12,060 --> 0:32:13,860
+ And it's actually the first release
+
+613
+0:32:13,860 --> 0:32:14,920
+ of that series in Denmark.
+
+614
+0:32:14,920 --> 0:32:18,460
+ But it's not the first chronologically speaking
+
+615
+0:32:18,460 --> 0:32:20,900
+ from the origin country.
+
+616
+0:32:20,900 --> 0:32:21,780
+ It's about fascism.
+
+617
+0:32:21,780 --> 0:32:23,640
+ And the most important thing about it
+
+618
+0:32:23,640 --> 0:32:25,080
+ is that it has a twist at the end.
+
+619
+0:32:25,280 --> 0:32:28,740
+ And that kind of made me realize, OK, when I'm making a game,
+
+620
+0:32:28,740 --> 0:32:29,740
+ I need a twist as well.
+
+621
+0:32:32,960 --> 0:32:35,680
+ The day after, I went out to see some actual horses.
+
+622
+0:32:35,680 --> 0:32:37,020
+ They are kind of in the background,
+
+623
+0:32:37,020 --> 0:32:40,100
+ because I'm actually a little afraid of horses.
+
+624
+0:32:40,100 --> 0:32:42,060
+ So I didn't want to go too close to them.
+
+625
+0:32:42,060 --> 0:32:44,860
+ They're kind of strange animals.
+
+626
+0:32:44,860 --> 0:32:47,280
+ So I observed them from a distance.
+
+627
+0:32:47,280 --> 0:32:55,160
+ And what I realized is a horse eats, I guess, sleeps, walks,
+
+628
+0:32:55,160 --> 0:32:58,620
+ runs, bites.
+
+629
+0:32:58,620 --> 0:33:01,700
+ So the great thing is that without learning about horses,
+
+630
+0:33:01,700 --> 0:33:05,480
+ we actually managed to restrict ourselves even further.
+
+631
+0:33:05,480 --> 0:33:08,180
+ So that makes it possible to make a very contained game.
+
+632
+0:33:11,280 --> 0:33:14,160
+ So I'm going to go through an example now.
+
+633
+0:33:14,160 --> 0:33:16,880
+ So my game is called Hungry Horse.
+
+634
+0:33:16,880 --> 0:33:19,320
+ This is a mug up.
+
+635
+0:33:19,320 --> 0:33:22,840
+ The goal is that you are a horse, you are hungry,
+
+636
+0:33:22,840 --> 0:33:24,840
+ and you want to eat something.
+
+637
+0:33:24,840 --> 0:33:29,520
+ So in this game, it's similar to the example
+
+638
+0:33:29,520 --> 0:33:32,960
+ I showed earlier with yellow guy and purple guy.
+
+639
+0:33:32,960 --> 0:33:39,200
+ But now, we are using Prolog to enforce that nothing
+
+640
+0:33:39,200 --> 0:33:43,300
+ happens that cannot happen.
+
+641
+0:33:43,300 --> 0:33:47,060
+ So once you write down a fact, that fact is in the system,
+
+642
+0:33:47,060 --> 0:33:49,160
+ and you have to abide by it.
+
+643
+0:33:49,160 --> 0:33:52,880
+ So first, we say that you are a horse, and you are hungry.
+
+644
+0:33:52,880 --> 0:33:53,880
+ That's the game.
+
+645
+0:33:53,880 --> 0:33:54,380
+ OK.
+
+646
+0:33:54,380 --> 0:33:57,720
+ And that's what the game master says.
+
+647
+0:33:57,720 --> 0:34:01,580
+ And then the person who plays this game reads that,
+
+648
+0:34:01,580 --> 0:34:04,400
+ and then suggests some new facts.
+
+649
+0:34:04,400 --> 0:34:09,000
+ So the yellow facts are always final,
+
+650
+0:34:09,000 --> 0:34:12,200
+ but the facts on this purple side are suggestions.
+
+651
+0:34:12,200 --> 0:34:17,420
+ So the player says that, OK, in order to eat something,
+
+652
+0:34:17,420 --> 0:34:18,860
+ that something has to be reachable.
+
+653
+0:34:21,660 --> 0:34:24,260
+ And in order for that to be reachable,
+
+654
+0:34:24,260 --> 0:34:26,380
+ in order for me to not be hungry anymore,
+
+655
+0:34:26,380 --> 0:34:29,880
+ in order for me to, instead of be hungry, to be full,
+
+656
+0:34:29,880 --> 0:34:33,140
+ I have to eat something.
+
+657
+0:34:33,140 --> 0:34:39,240
+ This ad here is kind of an ad hoc extension of Prolog.
+
+658
+0:34:39,240 --> 0:34:40,900
+ It doesn't exist.
+
+659
+0:34:40,900 --> 0:34:43,060
+ It's to enforce that, normally, in Prolog,
+
+660
+0:34:43,060 --> 0:34:46,960
+ if you have both the fact that you are hungry and you are full,
+
+661
+0:34:46,960 --> 0:34:48,180
+ they can coexist.
+
+662
+0:34:48,180 --> 0:34:50,020
+ We would like them to be exclusive,
+
+663
+0:34:50,020 --> 0:34:52,900
+ such that when you enable this fact that you are full,
+
+664
+0:34:52,900 --> 0:34:54,140
+ you will automatically remove the fact that you are full.
+
+665
+0:34:54,140 --> 0:34:58,620
+ You can kind of implement that with some exclusive logic,
+
+666
+0:34:58,620 --> 0:35:02,380
+ but that doesn't exist in Prolog.
+
+667
+0:35:02,380 --> 0:35:05,540
+ So we are suggesting, the player is suggesting these facts,
+
+668
+0:35:05,540 --> 0:35:07,660
+ that, yeah, you just have to eat something,
+
+669
+0:35:07,660 --> 0:35:08,820
+ and then you're full.
+
+670
+0:35:08,820 --> 0:35:11,400
+ And then what's happened is that the game master says,
+
+671
+0:35:11,400 --> 0:35:15,360
+ fact not accepted, but here's a fact
+
+672
+0:35:15,360 --> 0:35:17,680
+ that I think is close to what you suggested,
+
+673
+0:35:17,680 --> 0:35:20,740
+ but something that I will accept.
+
+674
+0:35:20,740 --> 0:35:23,900
+ So the game master says that, yes, you'll
+
+675
+0:35:23,900 --> 0:35:26,140
+ become full if you eat something,
+
+676
+0:35:26,140 --> 0:35:30,340
+ but that thing you eat have to contain enough food.
+
+677
+0:35:30,340 --> 0:35:33,740
+ So we have this new enough food predicate,
+
+678
+0:35:33,740 --> 0:35:43,260
+ which is defined as that something can just
+
+679
+0:35:43,260 --> 0:35:45,180
+ be enough food, but it can also be enough food
+
+680
+0:35:45,180 --> 0:35:48,580
+ if it's similar to another thing which is also enough food.
+
+681
+0:35:48,580 --> 0:35:51,380
+ So that's kind of some more levels to this.
+
+682
+0:35:51,380 --> 0:35:52,600
+ So that is now a fact.
+
+683
+0:35:52,600 --> 0:35:53,740
+ You can work with it.
+
+684
+0:35:53,740 --> 0:35:56,820
+ You can become full if you eat something that has enough food
+
+685
+0:35:56,820 --> 0:35:57,980
+ for you.
+
+686
+0:35:57,980 --> 0:36:00,600
+ And then the game master continues, saying,
+
+687
+0:36:00,600 --> 0:36:01,960
+ you are standing in a barn.
+
+688
+0:36:01,960 --> 0:36:03,940
+ Next to you is a pile of hay.
+
+689
+0:36:03,940 --> 0:36:05,700
+ So the obvious step for the player
+
+690
+0:36:05,700 --> 0:36:10,960
+ is then to kind of state that, I think that this pile of hay
+
+691
+0:36:10,960 --> 0:36:12,940
+ is enough food for me.
+
+692
+0:36:12,940 --> 0:36:16,580
+ But then the game master can say, fact not accepted.
+
+693
+0:36:16,580 --> 0:36:18,620
+ And then the player has to think of another thing.
+
+694
+0:36:18,620 --> 0:36:21,260
+ OK, the player just looks around, like, what else do I see
+
+695
+0:36:21,260 --> 0:36:22,580
+ than this pile of hay?
+
+696
+0:36:22,580 --> 0:36:23,040
+ And the game master says, then, OK, I'm going to eat this.
+
+697
+0:36:23,040 --> 0:36:23,060
+ OK, I'm going to eat this.
+
+698
+0:36:23,060 --> 0:36:23,400
+ OK, I'm going to eat this.
+
+699
+0:36:23,400 --> 0:36:23,540
+ OK, I'm going to eat this.
+
+700
+0:36:23,540 --> 0:36:23,580
+ OK, I'm going to eat this.
+
+701
+0:36:23,580 --> 0:36:23,720
+ OK, I'm going to eat this.
+
+702
+0:36:23,740 --> 0:36:25,180
+ OK, you are standing in a barn.
+
+703
+0:36:25,180 --> 0:36:27,080
+ There's a small window behind you.
+
+704
+0:36:27,080 --> 0:36:29,860
+ You are surrounded by a short fence outside of which
+
+705
+0:36:29,860 --> 0:36:31,500
+ exists the barn building.
+
+706
+0:36:31,500 --> 0:36:34,920
+ So I'm not sure about the barn terminology.
+
+707
+0:36:34,920 --> 0:36:37,200
+ It's probably not called like a barn and a barn building,
+
+708
+0:36:37,200 --> 0:36:39,760
+ but let's accept that for now.
+
+709
+0:36:39,760 --> 0:36:42,640
+ So in addition, the game master provides some new facts
+
+710
+0:36:42,640 --> 0:36:46,320
+ that, OK, we have this new concept of a location,
+
+711
+0:36:46,320 --> 0:36:48,300
+ and you are apparently in the barn.
+
+712
+0:36:48,300 --> 0:36:50,860
+ And we say that there's a connection between the barn
+
+713
+0:36:50,860 --> 0:36:52,200
+ and the window.
+
+714
+0:36:52,200 --> 0:36:53,240
+ Oh.
+
+715
+0:36:53,240 --> 0:36:55,900
+ And the outside.
+
+716
+0:36:55,900 --> 0:36:58,200
+ And there's also a connection between the barn and the fence
+
+717
+0:36:58,200 --> 0:37:01,420
+ that has been mentioned and the general barn building, barn
+
+718
+0:37:01,420 --> 0:37:03,000
+ area.
+
+719
+0:37:03,000 --> 0:37:05,980
+ And then the game master also defines the concept
+
+720
+0:37:05,980 --> 0:37:12,060
+ of locations and how to be able to cross between locations,
+
+721
+0:37:12,060 --> 0:37:13,180
+ which we can kind of ignore.
+
+722
+0:37:13,180 --> 0:37:15,600
+ But the game master has to do this
+
+723
+0:37:15,600 --> 0:37:17,520
+ because the underlying system doesn't
+
+724
+0:37:17,520 --> 0:37:19,520
+ have a built-in concept of different locations,
+
+725
+0:37:19,520 --> 0:37:23,040
+ like in our first single-player example.
+
+726
+0:37:23,040 --> 0:37:26,420
+ Then the player tries to be clever.
+
+727
+0:37:26,420 --> 0:37:31,260
+ So the player has to define what is height.
+
+728
+0:37:31,260 --> 0:37:35,920
+ You can say that something can be low or something can be tall.
+
+729
+0:37:35,920 --> 0:37:42,100
+ So the player defines that low is lower than high
+
+730
+0:37:42,100 --> 0:37:47,820
+ and says that horses always jump high, and the fence is low.
+
+731
+0:37:47,820 --> 0:37:50,840
+ That's kind of the claim that the player then tries to make,
+
+732
+0:37:50,840 --> 0:37:52,240
+ and the game master has to approve.
+
+733
+0:37:52,240 --> 0:37:52,740
+ OK.
+
+734
+0:37:53,040 --> 0:37:57,280
+ And then the player tries to define the act
+
+735
+0:37:57,280 --> 0:38:01,040
+ of crossing something by saying that you can cross something
+
+736
+0:38:01,040 --> 0:38:06,680
+ if you can jump over it, and you are jumping higher
+
+737
+0:38:06,680 --> 0:38:10,060
+ than the object itself is.
+
+738
+0:38:10,060 --> 0:38:12,060
+ And the game master says, OK, that is fair.
+
+739
+0:38:12,060 --> 0:38:14,800
+ That sounds like how the world kind of works.
+
+740
+0:38:14,800 --> 0:38:16,460
+ And then the game master continues saying,
+
+741
+0:38:16,460 --> 0:38:18,000
+ you are in the barn building now.
+
+742
+0:38:18,000 --> 0:38:19,960
+ Around you are many barn cubicles.
+
+743
+0:38:19,960 --> 0:38:22,580
+ Again, not sure about the terminology, but many barn
+
+744
+0:38:22,580 --> 0:38:23,040
+ cubicles.
+
+745
+0:38:23,040 --> 0:38:25,480
+ Containing a variety of animals.
+
+746
+0:38:25,480 --> 0:38:28,600
+ And again, some new facts like, OK, this new location
+
+747
+0:38:28,600 --> 0:38:30,640
+ is connected to these other locations,
+
+748
+0:38:30,640 --> 0:38:33,660
+ and there's this tall barrier, which is high.
+
+749
+0:38:33,660 --> 0:38:35,980
+ So you cannot jump over it, because you
+
+750
+0:38:35,980 --> 0:38:39,740
+ have to jump higher than high, which is not defined currently.
+
+751
+0:38:39,740 --> 0:38:42,580
+ Then the player just kind of, this
+
+752
+0:38:42,580 --> 0:38:44,160
+ is something that horses do, apparently.
+
+753
+0:38:44,160 --> 0:38:47,200
+ They just kind of neigh.
+
+754
+0:38:47,200 --> 0:38:49,260
+ And then the game master says, many horses
+
+755
+0:38:49,260 --> 0:38:50,980
+ reply with a neigh of their own.
+
+756
+0:38:50,980 --> 0:38:53,040
+ The collective sound vibrations destroy the soul,
+
+757
+0:38:53,040 --> 0:38:56,520
+ the lamb that has been lighting up the barn.
+
+758
+0:38:56,520 --> 0:39:02,600
+ So now there's a new fact to our world that the light is off.
+
+759
+0:39:02,600 --> 0:39:09,760
+ Then the player has to use this fact and says that, OK, we
+
+760
+0:39:09,760 --> 0:39:13,140
+ say that the concept of jumping only
+
+761
+0:39:13,140 --> 0:39:18,000
+ exists because we can see how high something is.
+
+762
+0:39:18,000 --> 0:39:21,340
+ So the player tries to convince the game master that I
+
+763
+0:39:21,340 --> 0:39:22,900
+ can jump to any height.
+
+764
+0:39:22,900 --> 0:39:27,560
+ If I cannot see what I'm jumping across,
+
+765
+0:39:27,560 --> 0:39:31,260
+ which is a super silly idea, but we define this world.
+
+766
+0:39:31,260 --> 0:39:34,660
+ So if the game master accepts that fact,
+
+767
+0:39:34,660 --> 0:39:37,040
+ then we kind of accept it.
+
+768
+0:39:37,040 --> 0:39:40,120
+ And then the player also says that, since this is a fact now,
+
+769
+0:39:40,120 --> 0:39:42,660
+ I hope, I want to cross this tall barrier,
+
+770
+0:39:42,660 --> 0:39:44,220
+ because now I am blind.
+
+771
+0:39:44,220 --> 0:39:46,680
+ And then I will eat lots of food.
+
+772
+0:39:46,680 --> 0:39:48,540
+ And the game master says, OK.
+
+773
+0:39:48,540 --> 0:39:52,860
+ And then now at this point, we can use prologue or something,
+
+774
+0:39:52,900 --> 0:39:56,720
+ similar to verify that this goal that we had from the beginning,
+
+775
+0:39:56,720 --> 0:39:58,760
+ that we are no longer hungry, but now full,
+
+776
+0:39:58,760 --> 0:40:01,680
+ has been verified based on the facts that we have introduced
+
+777
+0:40:01,680 --> 0:40:04,000
+ during this gameplay.
+
+778
+0:40:04,000 --> 0:40:07,780
+ So our actions are completely enforced
+
+779
+0:40:07,780 --> 0:40:10,340
+ by the underlying system.
+
+780
+0:40:10,340 --> 0:40:11,900
+ I think that's great.
+
+781
+0:40:11,900 --> 0:40:15,480
+ It's not perfect, so you can think about some improvements.
+
+782
+0:40:15,480 --> 0:40:16,620
+ I haven't implemented this.
+
+783
+0:40:16,620 --> 0:40:18,740
+ That's a possible improvement to do that.
+
+784
+0:40:18,740 --> 0:40:22,680
+ And also, just to have a list of all currently
+
+785
+0:40:22,680 --> 0:40:27,000
+ active facts, like Babeson kind of to the right in the menu,
+
+786
+0:40:27,000 --> 0:40:29,700
+ such that you don't forget how the world currently works.
+
+787
+0:40:29,700 --> 0:40:32,400
+ That will fail if there are too many facts, but in most games,
+
+788
+0:40:32,400 --> 0:40:35,940
+ it should be mostly like some not too many.
+
+789
+0:40:38,600 --> 0:40:40,460
+ You want to have more than two players.
+
+790
+0:40:40,460 --> 0:40:42,360
+ Two players is technically multiplayer,
+
+791
+0:40:42,360 --> 0:40:46,560
+ but you should be able to handle any number of players.
+
+792
+0:40:46,560 --> 0:40:49,120
+ Maybe make a library of reusable facts.
+
+793
+0:40:49,120 --> 0:40:51,740
+ There are many concepts that I think should be common,
+
+794
+0:40:51,740 --> 0:40:52,300
+ like locations.
+
+795
+0:40:52,300 --> 0:40:58,120
+ And walking between them.
+
+796
+0:40:58,120 --> 0:40:59,760
+ You should have some dice rolls.
+
+797
+0:40:59,760 --> 0:41:01,080
+ That's a part of any game.
+
+798
+0:41:01,080 --> 0:41:03,120
+ Some randomness.
+
+799
+0:41:03,120 --> 0:41:08,460
+ And it could also be nice to encode the flavor text
+
+800
+0:41:08,460 --> 0:41:12,100
+ inside the facts that have been introduced.
+
+801
+0:41:12,100 --> 0:41:15,000
+ That requires more work, and it's probably not
+
+802
+0:41:15,000 --> 0:41:17,060
+ super straightforward.
+
+803
+0:41:17,060 --> 0:41:19,940
+ But it would make sure that whatever the game master
+
+804
+0:41:19,940 --> 0:41:21,840
+ writes also has to be enforced.
+
+805
+0:41:21,840 --> 0:41:22,220
+ Right?
+
+806
+0:41:22,220 --> 0:41:24,220
+ by the facts that the game master provides.
+
+807
+0:41:26,620 --> 0:41:28,100
+ I think to
+
+808
+0:41:28,100 --> 0:41:30,160
+ cannot get rid of this lopsidedness,
+
+809
+0:41:30,220 --> 0:41:32,040
+ you could also make it such that
+
+810
+0:41:32,040 --> 0:41:34,540
+ the player and the game master
+
+811
+0:41:34,540 --> 0:41:38,440
+ play two games at the same
+
+812
+0:41:38,440 --> 0:41:40,480
+ time, such that they exist
+
+813
+0:41:40,480 --> 0:41:42,360
+ in the same world and are affected by the
+
+814
+0:41:42,360 --> 0:41:44,280
+ same facts, so
+
+815
+0:41:44,280 --> 0:41:46,080
+ we reach some kind of balance. That would also
+
+816
+0:41:46,080 --> 0:41:48,320
+ be more difficult if you have more than
+
+817
+0:41:48,320 --> 0:41:50,200
+ two players, but you should be able to engineer
+
+818
+0:41:50,200 --> 0:41:50,620
+ something.
+
+819
+0:41:52,220 --> 0:41:54,180
+ Okay, so the next and final topic
+
+820
+0:41:54,180 --> 0:41:56,120
+ is applications of
+
+821
+0:41:56,120 --> 0:41:58,360
+ these simulation things that I have talked about
+
+822
+0:41:58,360 --> 0:42:00,220
+ in non-interactive fiction.
+
+823
+0:42:00,940 --> 0:42:02,300
+ So I'm thinking about books,
+
+824
+0:42:03,160 --> 0:42:03,660
+ films,
+
+825
+0:42:04,560 --> 0:42:06,400
+ theater, you name it.
+
+826
+0:42:06,820 --> 0:42:08,280
+ Anything that doesn't require
+
+827
+0:42:08,280 --> 0:42:10,620
+ interactive
+
+828
+0:42:10,620 --> 0:42:12,060
+ action from a user.
+
+829
+0:42:13,540 --> 0:42:14,700
+ So let's see.
+
+830
+0:42:15,680 --> 0:42:16,600
+ I want to talk
+
+831
+0:42:16,600 --> 0:42:17,200
+ about
+
+832
+0:42:17,200 --> 0:42:20,620
+ yes, the other day
+
+833
+0:42:20,620 --> 0:42:22,200
+ I was walking
+
+834
+0:42:22,200 --> 0:42:23,000
+ this nice dog.
+
+835
+0:42:24,380 --> 0:42:26,100
+ I couldn't decide which picture
+
+836
+0:42:26,100 --> 0:42:28,260
+ to show here, so that's a couple of
+
+837
+0:42:28,260 --> 0:42:34,060
+ Oh, yeah.
+
+838
+0:42:34,600 --> 0:42:36,220
+ So I was walking this dog, and
+
+839
+0:42:36,220 --> 0:42:37,740
+ I meet someone on the street
+
+840
+0:42:37,740 --> 0:42:40,180
+ who just starts talking to me.
+
+841
+0:42:41,000 --> 0:42:41,640
+ This happens,
+
+842
+0:42:42,260 --> 0:42:44,400
+ and he mentions
+
+843
+0:42:44,400 --> 0:42:44,940
+ that
+
+844
+0:42:44,940 --> 0:42:48,000
+ he also knew a dog like this,
+
+845
+0:42:48,700 --> 0:42:50,460
+ and the owners of that dog
+
+846
+0:42:50,460 --> 0:42:52,180
+ moved to New York.
+
+847
+0:42:52,200 --> 0:42:52,640
+ New Zealand,
+
+848
+0:42:53,640 --> 0:42:56,140
+ because they were producing hearing aids,
+
+849
+0:42:56,540 --> 0:42:58,600
+ and hearing aids are quite big in New Zealand,
+
+850
+0:42:58,740 --> 0:42:59,300
+ he told me.
+
+851
+0:43:00,360 --> 0:43:02,280
+ And that was like, okay, fair enough.
+
+852
+0:43:02,920 --> 0:43:04,340
+ Then he went on to tell me
+
+853
+0:43:04,340 --> 0:43:04,780
+ that
+
+854
+0:43:04,780 --> 0:43:07,800
+ he just got a girlfriend
+
+855
+0:43:07,800 --> 0:43:10,280
+ who is a model, and knows
+
+856
+0:43:10,280 --> 0:43:12,060
+ another model. And I thought,
+
+857
+0:43:12,260 --> 0:43:14,060
+ okay, interesting, but
+
+858
+0:43:14,060 --> 0:43:15,960
+ what does this have to do with anything,
+
+859
+0:43:16,080 --> 0:43:17,160
+ and why are you talking to me?
+
+860
+0:43:18,440 --> 0:43:20,260
+ So at this point, he had kind of provided
+
+861
+0:43:20,260 --> 0:43:21,980
+ me with different backstories,
+
+862
+0:43:22,200 --> 0:43:24,340
+ and I was very eager to get to
+
+863
+0:43:24,340 --> 0:43:26,340
+ the punchline, the conclusion
+
+864
+0:43:26,340 --> 0:43:27,060
+ of this story.
+
+865
+0:43:28,960 --> 0:43:30,440
+ And he just kept talking,
+
+866
+0:43:30,700 --> 0:43:31,440
+ and I was just like,
+
+867
+0:43:31,720 --> 0:43:33,680
+ what is the conclusion?
+
+868
+0:43:35,020 --> 0:43:36,160
+ It was also awkward,
+
+869
+0:43:36,240 --> 0:43:38,380
+ because I couldn't really participate in this conversation,
+
+870
+0:43:38,520 --> 0:43:40,080
+ because I didn't know
+
+871
+0:43:40,080 --> 0:43:42,020
+ New Zealand models really well.
+
+872
+0:43:43,760 --> 0:43:44,260
+ And then he
+
+873
+0:43:44,260 --> 0:43:46,200
+ says that I want to take my girlfriend
+
+874
+0:43:46,200 --> 0:43:48,100
+ to New Zealand. And I thought,
+
+875
+0:43:48,300 --> 0:43:50,220
+ well, technically, these
+
+876
+0:43:50,220 --> 0:43:51,920
+ facts are connected,
+
+877
+0:43:52,200 --> 0:43:54,420
+ but there's no immediate narrative
+
+878
+0:43:54,420 --> 0:43:56,360
+ link from
+
+879
+0:43:56,360 --> 0:43:58,360
+ the above facts to the
+
+880
+0:43:58,360 --> 0:44:00,600
+ final conclusion. It was so confusing
+
+881
+0:44:00,600 --> 0:44:02,040
+ for me, and I just went home,
+
+882
+0:44:02,340 --> 0:44:04,340
+ and I was just confused for the rest of the day,
+
+883
+0:44:04,500 --> 0:44:04,800
+ because
+
+884
+0:44:04,800 --> 0:44:07,480
+ let's try to make a diagram.
+
+885
+0:44:08,580 --> 0:44:10,320
+ So the facts are that he has a
+
+886
+0:44:10,320 --> 0:44:11,880
+ girlfriend who is a model,
+
+887
+0:44:12,340 --> 0:44:14,260
+ and has a friend who is also a model.
+
+888
+0:44:15,440 --> 0:44:16,140
+ New Zealand
+
+889
+0:44:16,140 --> 0:44:18,260
+ has at least one Siberian husky dog,
+
+890
+0:44:18,260 --> 0:44:19,200
+ which is
+
+891
+0:44:19,200 --> 0:44:21,940
+ okay,
+
+892
+0:44:22,360 --> 0:44:23,880
+ there's some error in the diagram.
+
+893
+0:44:23,880 --> 0:44:25,820
+ But New Zealand has many hearing aids.
+
+894
+0:44:26,200 --> 0:44:27,060
+ That's what we know, right?
+
+895
+0:44:29,460 --> 0:44:30,360
+ So the goal
+
+896
+0:44:30,360 --> 0:44:31,360
+ that he presented was,
+
+897
+0:44:31,800 --> 0:44:34,120
+ he wanted to take his girlfriend to New Zealand
+
+898
+0:44:34,120 --> 0:44:35,880
+ for some reason. And this
+
+899
+0:44:35,880 --> 0:44:37,920
+ is the narrative jump that
+
+900
+0:44:37,920 --> 0:44:39,520
+ he presented that I did not understand.
+
+901
+0:44:40,180 --> 0:44:40,760
+ And I thought,
+
+902
+0:44:41,780 --> 0:44:43,660
+ maybe if you try to
+
+903
+0:44:43,660 --> 0:44:45,640
+ generalize this, so why would you like
+
+904
+0:44:45,640 --> 0:44:47,640
+ to take a person to a location?
+
+905
+0:44:48,200 --> 0:44:49,620
+ That's because maybe
+
+906
+0:44:49,880 --> 0:44:51,920
+ person is from location, so it could be
+
+907
+0:44:51,920 --> 0:44:54,120
+ that his girlfriend was from New Zealand,
+
+908
+0:44:54,120 --> 0:44:56,720
+ but then why did he talk about dogs?
+
+909
+0:44:56,720 --> 0:44:59,060
+ Because I kind of imagined that, OK, you
+
+910
+0:44:59,060 --> 0:45:00,960
+ need to use all these background facts
+
+911
+0:45:00,960 --> 0:45:03,040
+ and tie them nicely together at the end.
+
+912
+0:45:03,040 --> 0:45:06,000
+ So the other option is that New Zealand has
+
+913
+0:45:06,000 --> 0:45:07,640
+ some kind of nice attribute.
+
+914
+0:45:07,640 --> 0:45:11,000
+ For example, it has a dog, or it has hearing aids,
+
+915
+0:45:11,000 --> 0:45:15,260
+ and you like hearing aids or dogs.
+
+916
+0:45:15,260 --> 0:45:16,640
+ So that's kind of what I thought,
+
+917
+0:45:16,640 --> 0:45:19,980
+ but none of it really made sense.
+
+918
+0:45:19,980 --> 0:45:25,140
+ So I thought that was a nice way to think about things,
+
+919
+0:45:25,140 --> 0:45:27,580
+ but it was also kind of a complicated story.
+
+920
+0:45:27,580 --> 0:45:35,620
+ So I'm trying to present instead a simpler story now
+
+921
+0:45:35,620 --> 0:45:37,160
+ to make it less complicated in order
+
+922
+0:45:37,160 --> 0:45:39,600
+ to talk about what we actually are going to talk about.
+
+923
+0:45:39,600 --> 0:45:45,220
+ So my simpler story is we have a human who discovered fire.
+
+924
+0:45:45,220 --> 0:45:49,500
+ The human learned that the fire improves the food.
+
+925
+0:45:49,500 --> 0:45:52,980
+ Then the human accidentally burned himself to a crisp.
+
+926
+0:45:52,980 --> 0:45:55,260
+ And the final step, which is the twist,
+
+927
+0:45:55,260 --> 0:45:59,560
+ is that the human was eaten by a hungry horse.
+
+928
+0:45:59,560 --> 0:46:01,920
+ So we have this four-step story.
+
+929
+0:46:01,920 --> 0:46:06,100
+ And as before, we can try to put it in a diagram.
+
+930
+0:46:06,100 --> 0:46:09,400
+ So we have at the top kind of the conclusion.
+
+931
+0:46:09,400 --> 0:46:10,940
+ The human was eaten by a hungry horse.
+
+932
+0:46:10,940 --> 0:46:14,880
+ And then there are several links to earlier facts from that.
+
+933
+0:46:14,880 --> 0:46:19,100
+ So he was eaten because he is food.
+
+934
+0:46:19,100 --> 0:46:23,960
+ And he was eaten by the horse because the human is good food.
+
+935
+0:46:23,960 --> 0:46:28,360
+ Because the fire improves the food, which is in this case
+
+936
+0:46:28,360 --> 0:46:29,080
+ the human.
+
+937
+0:46:29,080 --> 0:46:31,500
+ And this is known because the human discovered fire.
+
+938
+0:46:31,500 --> 0:46:34,640
+ And it's known specifically because we are kind
+
+939
+0:46:34,640 --> 0:46:36,380
+ of the all-knowing reader.
+
+940
+0:46:36,380 --> 0:46:39,300
+ So in the story, only the human technically knows this.
+
+941
+0:46:39,300 --> 0:46:43,660
+ But also, if you read the story, you also know that.
+
+942
+0:46:43,660 --> 0:46:48,160
+ So on the left side, we have that the human burned themselves
+
+943
+0:46:48,160 --> 0:46:48,900
+ to a crisp.
+
+944
+0:46:48,900 --> 0:46:50,900
+ And it's possible because the human discovered fire.
+
+945
+0:46:50,900 --> 0:46:53,020
+ So this is kind of a high-level diagram of the story
+
+946
+0:46:53,020 --> 0:46:55,660
+ containing the four points.
+
+947
+0:46:55,660 --> 0:46:59,820
+ But we have to make it more precise in order
+
+948
+0:46:59,820 --> 0:47:05,860
+ to kind of think about any underlying generalized things.
+
+949
+0:47:05,860 --> 0:47:09,780
+ So let's try to remove some of the weird English things
+
+950
+0:47:09,780 --> 0:47:13,760
+ about articles and past and present.
+
+951
+0:47:13,760 --> 0:47:16,800
+ Just make the sentence simpler.
+
+952
+0:47:16,800 --> 0:47:18,860
+ I have a nice diagram here where we've kind of, you know,
+
+953
+0:47:18,860 --> 0:47:22,060
+ kind of say that a horse eats the human.
+
+954
+0:47:22,060 --> 0:47:25,420
+ And the horse specifically eats because it's hungry.
+
+955
+0:47:25,420 --> 0:47:26,800
+ And it specifically eats the human
+
+956
+0:47:26,800 --> 0:47:28,100
+ because the human is good food.
+
+957
+0:47:28,100 --> 0:47:31,460
+ And the food is good because the fire improves the food, which
+
+958
+0:47:31,460 --> 0:47:33,620
+ is known because the human discovered the fire.
+
+959
+0:47:33,620 --> 0:47:37,620
+ And we can extend this diagram work in even more fine grains
+
+960
+0:47:37,620 --> 0:47:40,280
+ by having some more arrows around and saying
+
+961
+0:47:40,280 --> 0:47:42,840
+ that the human is dead because the human used the fire
+
+962
+0:47:42,840 --> 0:47:44,180
+ to burn the human to death.
+
+963
+0:47:44,180 --> 0:47:47,960
+ And we can also say that discovering fire is kind of
+
+964
+0:47:47,960 --> 0:47:50,300
+ similar to learning about something.
+
+965
+0:47:50,300 --> 0:47:53,620
+ So let's try to use fewer kind of verbs.
+
+966
+0:47:53,620 --> 0:47:59,540
+ So we just say that discover and learn is the same word.
+
+967
+0:47:59,540 --> 0:48:03,720
+ But this diagram is still kind of not super useful on its own.
+
+968
+0:48:03,720 --> 0:48:05,660
+ So we should go back to our prologue
+
+969
+0:48:05,660 --> 0:48:13,100
+ and try to make it nice and text-based as we like it.
+
+970
+0:48:13,100 --> 0:48:16,580
+ So we should have simple textual encodings of the background
+
+971
+0:48:16,580 --> 0:48:17,580
+ facts.
+
+972
+0:48:17,960 --> 0:48:30,920
+ of our story so I made something oh the website loaded that's nice so let's go
+
+973
+0:48:30,920 --> 0:48:39,980
+ to this one so I wrote some prolog and let's try to make some queries so I
+
+974
+0:48:39,980 --> 0:48:47,900
+ won't go into detail with this specific file but what we have here is again
+
+975
+0:48:47,900 --> 0:48:52,500
+ this possible thing which tells us what action is possible during according to
+
+976
+0:48:52,500 --> 0:48:58,040
+ what state we are currently in and some other background things that we need to
+
+977
+0:48:58,040 --> 0:49:05,540
+ know so the first step to replicate so we want to replicate the story that we
+
+978
+0:49:05,540 --> 0:49:10,680
+ provided so the first step that is to state that we have a human which is
+
+979
+0:49:10,680 --> 0:49:17,900
+ alive oh sorry so we have to actually do it in here
+
+980
+0:49:17,900 --> 0:49:24,820
+ and the next thing is the first sentence of the story was that we make
+
+981
+0:49:24,820 --> 0:49:34,920
+ this subject verb object where we say human learn file that's our simplified
+
+982
+0:49:34,920 --> 0:49:42,760
+ English version oh again I am entering it in the wrong place so now that is a
+
+983
+0:49:42,760 --> 0:49:47,900
+ fact and then what we want to do the next fact is
+
+984
+0:49:47,900 --> 0:49:56,480
+ this subject verb order of human learns and then the human this is the point
+
+985
+0:49:56,480 --> 0:50:00,560
+ where the human learns that the fire improves the food so to encode that in
+
+986
+0:50:00,560 --> 0:50:05,540
+ our product system we say that human learn that we make a new subject verb
+
+987
+0:50:05,540 --> 0:50:16,340
+ object that fire improve food but instead of just entering this we have to
+
+988
+0:50:16,340 --> 0:50:17,660
+ make sure that it's
+
+989
+0:50:17,900 --> 0:50:25,540
+ possible according to our system. So we query the system, say possible, and says that's
+
+990
+0:50:25,540 --> 0:50:33,420
+ true. Okay, so that's nice. So we can enter that again because it's okay. Then the next
+
+991
+0:50:33,420 --> 0:50:39,020
+ thing that happened in the story was that the human burned themselves to a crisp and
+
+992
+0:50:39,020 --> 0:50:42,780
+ there are so many details and flavors to that specific sentence, but we are simplifying
+
+993
+0:50:42,780 --> 0:50:52,460
+ it and saying that subject, verb, object, human, burn, human. So we want to say, is
+
+994
+0:50:52,460 --> 0:51:02,680
+ this possible? And it's it. But what if, so what if we hadn't introduced this fact before
+
+995
+0:51:02,680 --> 0:51:08,420
+ that the human learned that fire improves the food? No, specifically this first one,
+
+996
+0:51:08,420 --> 0:51:12,060
+ that the human learns the concept of fire. Let's try to comment that out.
+
+997
+0:51:12,780 --> 0:51:19,460
+ What is the comment? Status. So now we have commented out the first part of the story
+
+998
+0:51:19,460 --> 0:51:25,500
+ where the human learns the concept of fire. And then we try again to check if the third
+
+999
+0:51:25,500 --> 0:51:31,740
+ option, the third thing is doable, that the human burns themselves and it's false. So
+
+1000
+0:51:31,740 --> 0:51:38,240
+ we have enforced through our system of facts in Prolog that we cannot make any continuity
+
+1001
+0:51:38,240 --> 0:51:42,740
+ errors. So let's go back to this and then let's enter this new.
+
+1002
+0:51:42,780 --> 0:51:50,160
+ Fact to our system. And then the final thing that happened, no, the next to final. No,
+
+1003
+0:51:50,160 --> 0:51:59,440
+ the final thing was that. Uh, the human dies, right? You can say, is it possible that subject
+
+1004
+0:51:59,440 --> 0:52:08,860
+ verb human dies? That is possible because the human has burned themselves. So again,
+
+1005
+0:52:08,860 --> 0:52:09,780
+ if we try to comment this out and try to again, we have to say, is it possible that the subject
+
+1006
+0:52:09,780 --> 0:52:10,780
+ verb human dies?
+
+1007
+0:52:10,780 --> 0:52:11,780
+ No, the next to final. No, the final. The final thing was that the human dies. So again,
+
+1008
+0:52:11,780 --> 0:52:12,780
+ if we try to comment this out and try to again, we have enforced through our system of facts
+
+1009
+0:52:12,780 --> 0:52:13,780
+ in Prolog to the human dies. You can say, is it possible that subject verb human dies?
+
+1010
+0:52:13,780 --> 0:52:14,780
+ That is possible because the subject verb human dies. No, the next to final. No, the next
+
+1011
+0:52:14,780 --> 0:52:15,780
+ to final. No, the next to final. No, the next to the human dies. No, the next to final.
+
+1012
+0:52:15,780 --> 0:52:16,780
+ We have to do it again in the current scenario where you can query the human dies. That it's
+
+1013
+0:52:16,780 --> 0:52:19,780
+ not possible because the human can only die if the human has burned themselves or some
+
+1014
+0:52:19,780 --> 0:52:29,820
+ other underlying facts. So we have it up here that, uh, that there are many ways to die.
+
+1015
+0:52:29,820 --> 0:52:36,400
+ Uh, and you can say that you can die. If you're currently alive and you are now very old,
+
+1016
+0:52:36,400 --> 0:52:40,420
+ you can die if you are currently alive and you are sick, or you can die if you're currently
+
+1017
+0:52:40,420 --> 0:52:41,780
+ alive and someone burned you.
+
+1018
+0:52:41,780 --> 0:52:44,820
+ someone burned you, in this case, yourself.
+
+1019
+0:52:44,820 --> 0:52:49,000
+ So we are describing how to die in this world.
+
+1020
+0:52:49,000 --> 0:52:52,920
+ So let's have that as well as a fact now,
+
+1021
+0:52:52,920 --> 0:52:57,300
+ now that we know that this is okay, this is possible.
+
+1022
+0:52:57,300 --> 0:53:02,300
+ And then let's state that we have a horse also who is alive.
+
+1023
+0:53:03,400 --> 0:53:08,060
+ And then the final part of the story is to check
+
+1024
+0:53:08,060 --> 0:53:12,920
+ whether it is possible for subject, verb, object,
+
+1025
+0:53:12,920 --> 0:53:15,820
+ the horse, to eat the human.
+
+1026
+0:53:20,040 --> 0:53:22,500
+ Oh yeah, so this is not possible.
+
+1027
+0:53:22,500 --> 0:53:23,340
+ And why is that?
+
+1028
+0:53:23,340 --> 0:53:25,660
+ That's because we haven't introduced the fact
+
+1029
+0:53:25,660 --> 0:53:27,080
+ that the horse is hungry.
+
+1030
+0:53:27,080 --> 0:53:30,560
+ So the horse can only eat people if it's hungry.
+
+1031
+0:53:30,560 --> 0:53:31,720
+ So let's try again.
+
+1032
+0:53:31,720 --> 0:53:34,620
+ Is it possible to eat the human now that it's hungry?
+
+1033
+0:53:34,620 --> 0:53:36,300
+ And yes, it is.
+
+1034
+0:53:36,300 --> 0:53:38,020
+ So we can encode that fact as well.
+
+1035
+0:53:38,060 --> 0:53:40,220
+ And now we have completed our story.
+
+1036
+0:53:41,520 --> 0:53:44,740
+ And for each new sentence that we wanted to add
+
+1037
+0:53:44,740 --> 0:53:48,200
+ to this story, we made sure that it was not breaking
+
+1038
+0:53:48,200 --> 0:53:53,200
+ any continuity, not breaking any facts about our world.
+
+1039
+0:53:53,500 --> 0:53:56,360
+ And that's, I think, like a super great thing.
+
+1040
+0:53:56,360 --> 0:53:59,100
+ I think you could use this for movie scripts and so on.
+
+1041
+0:54:00,660 --> 0:54:02,060
+ You could support flashbacks.
+
+1042
+0:54:02,060 --> 0:54:04,000
+ So my story was quite simple, right?
+
+1043
+0:54:04,000 --> 0:54:06,140
+ Four steps, all in order.
+
+1044
+0:54:07,000 --> 0:54:07,840
+ In modern,
+
+1045
+0:54:08,060 --> 0:54:09,120
+ stories,
+
+1046
+0:54:09,120 --> 0:54:11,340
+ you want to have maybe some switching around
+
+1047
+0:54:11,340 --> 0:54:14,340
+ of time and place, flashbacks, flash-forwards.
+
+1048
+0:54:14,340 --> 0:54:16,320
+ You could support that by extending our system
+
+1049
+0:54:16,320 --> 0:54:19,580
+ to have like a predicate that says
+
+1050
+0:54:22,340 --> 0:54:24,380
+ you have this,
+
+1051
+0:54:24,380 --> 0:54:27,500
+ you have some kind of reverse where you take the order
+
+1052
+0:54:27,500 --> 0:54:29,180
+ in a different order,
+
+1053
+0:54:29,180 --> 0:54:31,180
+ and but you maintain the same facts
+
+1054
+0:54:31,180 --> 0:54:32,420
+ and the same relations with them
+
+1055
+0:54:32,420 --> 0:54:35,920
+ and make that equivalent with something in the original order.
+
+1056
+0:54:35,920 --> 0:54:37,020
+ I think that's doable.
+
+1057
+0:54:38,060 --> 0:54:43,060
+ So that's kind of what I thought about.
+
+1058
+0:54:43,060 --> 0:54:46,300
+ In the end here now, I want to talk about
+
+1059
+0:54:46,300 --> 0:54:48,340
+ some other applications for this.
+
+1060
+0:54:48,340 --> 0:54:50,620
+ Machine learning, I didn't take the statistics course
+
+1061
+0:54:50,620 --> 0:54:54,460
+ at my university because it seemed difficult,
+
+1062
+0:54:54,460 --> 0:54:57,740
+ but I think machine learning has gone quite a long way
+
+1063
+0:54:57,740 --> 0:55:01,200
+ and it's possible to use it quite easily,
+
+1064
+0:55:01,200 --> 0:55:02,220
+ I think, at this point.
+
+1065
+0:55:02,220 --> 0:55:04,740
+ So I wanted to do something that's this WordNet,
+
+1066
+0:55:04,740 --> 0:55:07,120
+ which has relations between words, and I wanted to,
+
+1067
+0:55:07,120 --> 0:55:11,640
+ I wanted to create a system that explores character attributes
+
+1068
+0:55:11,640 --> 0:55:13,460
+ and presents you, the creator,
+
+1069
+0:55:13,460 --> 0:55:18,460
+ with different kind of scenarios for your characters
+
+1070
+0:55:18,620 --> 0:55:20,360
+ and different choices based on those scenarios,
+
+1071
+0:55:20,360 --> 0:55:22,040
+ and then you have to pick the choice,
+
+1072
+0:55:22,040 --> 0:55:25,540
+ and then the system generates character traits
+
+1073
+0:55:25,540 --> 0:55:28,300
+ based on those automatically generated choices.
+
+1074
+0:55:28,300 --> 0:55:29,960
+ So you define the character,
+
+1075
+0:55:29,960 --> 0:55:32,240
+ but you are defining it by throwing the character
+
+1076
+0:55:32,240 --> 0:55:33,640
+ into unknown situations.
+
+1077
+0:55:34,660 --> 0:55:37,120
+ And I also would like to just experiment,
+
+1078
+0:55:37,120 --> 0:55:39,680
+ and I would like to try to use these applications
+
+1079
+0:55:39,680 --> 0:55:42,960
+ on real movie scripts, try to encode those properly.
+
+1080
+0:55:42,960 --> 0:55:44,960
+ That could be fun, but also lots of work.
+
+1081
+0:55:46,340 --> 0:55:49,600
+ Finally, some free ideas for game topics.
+
+1082
+0:55:50,600 --> 0:55:52,460
+ I went to the Baker once, and then they asked me
+
+1083
+0:55:52,460 --> 0:55:54,540
+ if I wanted a voucher, and I didn't really respond.
+
+1084
+0:55:54,540 --> 0:55:55,560
+ It was kind of confusing.
+
+1085
+0:55:55,560 --> 0:55:56,460
+ Maybe that's a game.
+
+1086
+0:55:56,460 --> 0:55:58,580
+ Also, I was at the cinema watching a movie,
+
+1087
+0:55:58,580 --> 0:56:00,060
+ and then this random dude talked to me,
+
+1088
+0:56:00,060 --> 0:56:01,300
+ and I didn't know how to respond.
+
+1089
+0:56:01,300 --> 0:56:02,340
+ Maybe that's a game.
+
+1090
+0:56:02,340 --> 0:56:05,140
+ And also, I have this concept of having too many
+
+1091
+0:56:05,140 --> 0:56:06,600
+ side projects and never finishing any of them.
+
+1092
+0:56:06,600 --> 0:56:06,620
+ And I thought, well, maybe I should do this.
+
+1093
+0:56:06,620 --> 0:56:07,380
+ And I thought, well, maybe I should do this.
+
+1094
+0:56:07,380 --> 0:56:09,540
+ So maybe the game, you would have,
+
+1095
+0:56:09,540 --> 0:56:12,880
+ the goal would be to finish just one side project,
+
+1096
+0:56:12,880 --> 0:56:17,000
+ and then you would have constant things coming in your way,
+
+1097
+0:56:17,000 --> 0:56:19,180
+ kind of stopping you, and that could be fun.
+
+1098
+0:56:19,440 --> 0:56:20,920
+ Also, what about an inverse game
+
+1099
+0:56:20,920 --> 0:56:25,440
+ where the game is presenting you with parser input,
+
+1100
+0:56:25,700 --> 0:56:26,840
+ and then you have to respond,
+
+1101
+0:56:27,320 --> 0:56:29,280
+ and then something else exciting happens.
+
+1102
+0:56:30,160 --> 0:56:32,540
+ In conclusion, I think the main degrees of freedom
+
+1103
+0:56:32,540 --> 0:56:34,220
+ that I'm interested in is this,
+
+1104
+0:56:34,640 --> 0:56:36,600
+ either it's parser-based or it's choice-based,
+
+1105
+0:56:36,620 --> 0:56:41,340
+ either it's a static graph of choices or it's a simulation,
+
+1106
+0:56:41,340 --> 0:56:42,860
+ or either it's single-player or multiplayer.
+
+1107
+0:56:42,860 --> 0:56:47,360
+ And I am probably picking a list of choices,
+
+1108
+0:56:47,360 --> 0:56:49,540
+ a simulation, and single-player.
+
+1109
+0:56:49,540 --> 0:56:52,340
+ I think that's what the game I'm making will be.
+
+1110
+0:56:53,700 --> 0:56:56,060
+ I think text-only development is great,
+
+1111
+0:56:56,060 --> 0:56:57,720
+ because game development should have
+
+1112
+0:56:57,720 --> 0:56:59,740
+ as few obstacles as possible,
+
+1113
+0:56:59,740 --> 0:57:01,860
+ and making graphics is time-consuming.
+
+1114
+0:57:01,860 --> 0:57:06,100
+ I think writing is fun, so it's fun to make the game.
+
+1115
+0:57:06,620 --> 0:57:11,340
+ And it's easy to really do effective,
+
+1116
+0:57:11,340 --> 0:57:14,780
+ iterative development, because you can just move text around,
+
+1117
+0:57:14,780 --> 0:57:17,100
+ and you can have systems in place that's guarantee
+
+1118
+0:57:17,100 --> 0:57:18,940
+ that you're not doing something that is invalid
+
+1119
+0:57:18,940 --> 0:57:21,820
+ within the game world that you're trying to define.
+
+1120
+0:57:24,340 --> 0:57:25,740
+ Yes, thank you.
+
+1121
+0:57:33,680 --> 0:57:34,420
+ Thank you very much.
+
+1122
+0:57:34,420 --> 0:57:36,060
+ Do we have any questions for Nils?
+
+1123
+0:57:36,620 --> 0:57:41,620
+ Oh, there's one all the way down there.
+
+1124
+0:57:47,620 --> 0:57:51,300
+ Could you have Prologue say that the horse needed to be hungry
+
+1125
+0:57:51,300 --> 0:57:56,300
+ to enable a solution at that point?
+
+1126
+0:57:56,940 --> 0:57:57,780
+ Yes.
+
+1127
+0:58:02,380 --> 0:58:03,220
+ Yes, indeed.
+
+1128
+0:58:03,220 --> 0:58:04,680
+ You can just say that
+
+1129
+0:58:06,620 --> 0:58:11,280
+ this particular state of horse is hungry,
+
+1130
+0:58:11,280 --> 0:58:13,460
+ that state can...
+
+1131
+0:58:13,460 --> 0:58:16,380
+ You can make it even more complicated.
+
+1132
+0:58:16,380 --> 0:58:19,380
+ You can say that state can only exist
+
+1133
+0:58:19,380 --> 0:58:22,480
+ if we introduce a concept of time,
+
+1134
+0:58:22,480 --> 0:58:25,720
+ and there has been so and so much time
+
+1135
+0:58:25,720 --> 0:58:28,020
+ since the horse last ate,
+
+1136
+0:58:28,020 --> 0:58:30,580
+ such that we don't have this explicit state,
+
+1137
+0:58:30,580 --> 0:58:33,820
+ but we have a set of actions describing
+
+1138
+0:58:33,820 --> 0:58:35,620
+ what actions the horse did in the last 24 hours, and if it didn't, then it's gone.
+
+1139
+0:58:35,620 --> 0:58:36,180
+ So, I think that's a good point. I think that's a good point.
+
+1140
+0:58:36,180 --> 0:58:40,300
+ And if it didn't eat as part of any of its actions,
+
+1141
+0:58:40,300 --> 0:58:42,980
+ that would constitute it being hungry.
+
+1142
+0:58:42,980 --> 0:58:44,540
+ I didn't respond to your question, I'm sorry.
+
+1143
+0:58:44,540 --> 0:58:45,620
+ I just thought of something else.
+
+1144
+0:58:45,620 --> 0:58:47,420
+ But yes, for sure you could do that,
+
+1145
+0:58:47,420 --> 0:58:49,220
+ and you could do so many more things.
+
+1146
+0:58:51,100 --> 0:58:53,940
+ Do we have any other questions?
+
+1147
+0:58:53,940 --> 0:58:56,060
+ Then let's give a big round of applause for Nils.

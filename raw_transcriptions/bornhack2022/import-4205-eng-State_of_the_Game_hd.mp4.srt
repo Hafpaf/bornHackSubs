@@ -1,0 +1,899 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:18,920
+ Good morning everybody, or good afternoon.
+
+2
+0:00:18,920 --> 0:00:24,080
+ So we are going to go through some stats for a token game and a little bit about what we
+
+3
+0:00:24,080 --> 0:00:28,800
+ did this year with HackerJBD and other game related stuff.
+
+4
+0:00:28,800 --> 0:00:34,560
+ So HackerJBD this year had 52 categories sent to the mailing list, but unfortunately only
+
+5
+0:00:34,560 --> 0:00:37,960
+ 12 of them run from outside the game team.
+
+6
+0:00:37,960 --> 0:00:43,920
+ We would like more diversity in the categories, so the more who send in categories, the better
+
+7
+0:00:43,920 --> 0:00:46,100
+ HackerJBD will become.
+
+8
+0:00:46,100 --> 0:00:49,080
+ We experimented this year with a lot of new kind of categories.
+
+9
+0:00:49,080 --> 0:00:57,380
+ We had a lot of constructive and positive feedback, so we are happy about that.
+
+10
+0:00:57,380 --> 0:00:58,380
+ But
+
+11
+0:00:58,380 --> 0:01:03,260
+ we think that we have gotten, both this year and earlier years, we need more network and
+
+12
+0:01:03,260 --> 0:01:06,020
+ cybersecurity related topics.
+
+13
+0:01:06,020 --> 0:01:11,880
+ So if anyone has any ideas, please contact us and give us some good categories with these
+
+14
+0:01:11,880 --> 0:01:14,880
+ subjects.
+
+15
+0:01:14,880 --> 0:01:21,140
+ So the token game this year, well, we had 17 tokens.
+
+16
+0:01:21,140 --> 0:01:26,380
+ When the token game kind of dies out and nobody finds the token, yeah, it's kind of hard to
+
+17
+0:01:26,380 --> 0:01:27,380
+ make new ones.
+
+18
+0:01:27,380 --> 0:01:31,400
+ If people can't find them, then the fun stops.
+
+19
+0:01:31,400 --> 0:01:39,700
+ We had almost the same participants as last year, but we didn't have as many registrations.
+
+20
+0:01:39,700 --> 0:01:46,900
+ And an average of two tokens per participant is somewhat different than last year.
+
+21
+0:01:46,900 --> 0:01:50,480
+ And only one participant found more than 10 tokens.
+
+22
+0:01:50,480 --> 0:01:54,200
+ And nobody found more than 14 tokens.
+
+23
+0:01:54,200 --> 0:01:55,880
+ And nobody found all tokens.
+
+24
+0:01:55,880 --> 0:01:56,880
+ That's a little sad.
+
+25
+0:01:56,880 --> 0:02:01,000
+ That's a little sad.
+
+26
+0:02:01,000 --> 0:02:04,100
+ We had some different tokens here this year.
+
+27
+0:02:04,100 --> 0:02:09,460
+ Hafnium made the handspring and it had a token hidden.
+
+28
+0:02:09,460 --> 0:02:12,360
+ It took a while for people to figure that out.
+
+29
+0:02:12,360 --> 0:02:20,720
+ We also had another, the movie of the day, there was some metadata hiding a token.
+
+30
+0:02:20,720 --> 0:02:21,720
+ And then there was this one.
+
+31
+0:02:21,720 --> 0:02:22,900
+ There were some token participants that called me evil for the first time.
+
+32
+0:02:22,900 --> 0:02:23,900
+ And then there was this one.
+
+33
+0:02:23,900 --> 0:02:24,900
+ There were some token participants that called me evil for the first time.
+
+34
+0:02:24,900 --> 0:02:25,900
+ And then there was this one.
+
+35
+0:02:25,900 --> 0:02:28,580
+ They called me evil for making this.
+
+36
+0:02:28,580 --> 0:02:32,620
+ But I was quite happy when 8dot one evening contacted me.
+
+37
+0:02:32,620 --> 0:02:37,760
+ He was like he walked by and he looked at it and then was like, huh, and he actually
+
+38
+0:02:37,760 --> 0:02:40,040
+ figured it out without finding all the hints.
+
+39
+0:02:40,040 --> 0:02:45,600
+ So this was part of a bigger token game thing.
+
+40
+0:02:45,600 --> 0:02:48,340
+ So the QR code was a token itself.
+
+41
+0:02:48,340 --> 0:02:52,580
+ But if your base64 coded it, it told you to follow the lights.
+
+42
+0:02:52,580 --> 0:02:55,740
+ The lights had two valid tokens.
+
+43
+0:02:55,740 --> 0:03:02,220
+ 25 invalid tokens unfortunately because we are missing input validation on the
+
+44
+0:03:02,220 --> 0:03:06,480
+ token system so I didn't catch that error. I'm sorry about that. The tokens
+
+45
+0:03:06,480 --> 0:03:11,700
+ have been removed from the system but if you followed those you would find a
+
+46
+0:03:11,700 --> 0:03:16,240
+ number, a color and something that looked like a token that also told you
+
+47
+0:03:16,240 --> 0:03:22,320
+ something about what the hell these number were. I'm not going to give it out
+
+48
+0:03:22,320 --> 0:03:29,280
+ because I think somebody want to play with it still but if you followed from
+
+49
+0:03:29,280 --> 0:03:36,360
+ the start of the main road to the end of main road you would have it if you took
+
+50
+0:03:36,360 --> 0:03:40,820
+ the number in sequence have a token but at the end of main road there was a QR
+
+51
+0:03:40,820 --> 0:03:47,220
+ code telling you the hint down below and that's actually also a token in
+
+52
+0:03:47,220 --> 0:03:52,320
+ itself but if you use that you could correlate the colors and then
+
+53
+0:03:52,320 --> 0:03:58,640
+ if the exchange them for the num numbers and you had a token. And if you
+
+54
+0:03:58,640 --> 0:04:07,020
+ also base64 decoded all other texts that look like tokens you would have
+
+55
+0:04:07,020 --> 0:04:16,260
+ had hints for how to decipher the wall of numbers at infoDesk. So yeah
+
+56
+0:04:16,260 --> 0:04:19,320
+ lessons learned we need input validation on the token system that's very
+
+57
+0:04:19,320 --> 0:04:22,280
+ important. There's a huge crossover between
+
+58
+0:04:22,320 --> 0:04:29,680
+ continuing the CTF and the token game players, and that seems to have removed some players
+
+59
+0:04:29,680 --> 0:04:33,480
+ from the token game this year because they focused on the CTF.
+
+60
+0:04:33,480 --> 0:04:37,680
+ That's what happens, but we need to figure out how to balance that more.
+
+61
+0:04:37,680 --> 0:04:44,860
+ Then we need not to hide tokens behind paywalls, so we had a Minecraft token and not everybody
+
+62
+0:04:44,860 --> 0:04:48,340
+ owns Minecraft, so that's an important lesson.
+
+63
+0:04:48,340 --> 0:04:55,020
+ Also, and I didn't know this, I posted a token on Twitter, and apparently it was marked
+
+64
+0:04:55,020 --> 0:05:00,720
+ sensitive content for some reason, so people couldn't find it without having a Twitter
+
+65
+0:05:00,720 --> 0:05:05,720
+ account and removing the filter for sensitive content, so that's not something we're going
+
+66
+0:05:05,720 --> 0:05:07,960
+ to do again.
+
+67
+0:05:07,960 --> 0:05:12,640
+ If possible, we need to prepare more tokens for next year, and we need to announce the
+
+68
+0:05:12,640 --> 0:05:16,740
+ token game more clearly so people know it's on and what it is about.
+
+69
+0:05:18,340 --> 0:05:24,980
+ Yeah, nobody found the cyber bunny, and I'm not going to go into details about the cyber
+
+70
+0:05:24,980 --> 0:05:25,980
+ bunny.
+
+71
+0:05:25,980 --> 0:05:28,780
+ Maybe he'll be back next year.
+
+72
+0:05:28,780 --> 0:05:30,860
+ Any question about the token game?
+
+73
+0:05:30,860 --> 0:05:37,340
+ There's a person here that has no video on that.
+
+74
+0:05:37,340 --> 0:05:38,340
+ Wait a minute.
+
+75
+0:05:38,340 --> 0:05:42,040
+ Look at the microphone.
+
+76
+0:05:42,040 --> 0:05:45,020
+ I did manage to find the cyber bunny in the end.
+
+77
+0:05:45,020 --> 0:05:46,960
+ But there's also...
+
+78
+0:05:46,960 --> 0:05:48,140
+ Okay.
+
+79
+0:05:48,140 --> 0:05:51,900
+ What other video token left I would like some hints on?
+
+80
+0:05:51,900 --> 0:05:53,580
+ Should I just reveal it?
+
+81
+0:05:53,580 --> 0:05:58,000
+ Well, if you look at the schedule for this talk, you will find it immediately.
+
+82
+0:05:58,000 --> 0:06:06,580
+ With a bit of work behind it, but yeah, you have to reverse some things.
+
+83
+0:06:06,580 --> 0:06:10,780
+ Any more questions about the token game?
+
+84
+0:06:10,780 --> 0:06:12,080
+ Excellent.
+
+85
+0:06:12,080 --> 0:06:13,080
+ Yeah.
+
+86
+0:06:13,080 --> 0:06:15,780
+ So, like last year.
+
+87
+0:06:15,780 --> 0:06:16,780
+ We...
+
+88
+0:06:16,780 --> 0:06:17,780
+ Okay.
+
+89
+0:06:17,780 --> 0:06:20,420
+ So, we have the same Pixabook machine.
+
+90
+0:06:20,420 --> 0:06:24,540
+ It can do 80 gigabit per second.
+
+91
+0:06:24,540 --> 0:06:25,540
+ This year, we...
+
+92
+0:06:25,540 --> 0:06:33,520
+ I have a graph of it in a second, but we peaked about 30% of utilization of it.
+
+93
+0:06:33,520 --> 0:06:42,660
+ This year, compared to last year, we had multiple 10 gigabit clients, which was nice.
+
+94
+0:06:42,660 --> 0:06:46,780
+ You were being punished this year as well if you used IPv4.
+
+95
+0:06:46,780 --> 0:06:47,780
+ Okay.
+
+96
+0:06:47,780 --> 0:06:48,780
+ And instead of IPv6.
+
+97
+0:06:48,780 --> 0:06:49,780
+ So, I fixed my clients, finally, and stuff worked.
+
+98
+0:06:49,780 --> 0:06:50,780
+ So, we had two interactive games that were created by J-Wolf.
+
+99
+0:06:50,780 --> 0:06:51,780
+ One was Pong, and one was Snake.
+
+100
+0:06:51,780 --> 0:06:52,780
+ You can still play them if you want to.
+
+101
+0:06:52,780 --> 0:06:53,780
+ Just go up and grab a controller and a friend to play Pong.
+
+102
+0:06:53,780 --> 0:06:54,780
+ Yeah.
+
+103
+0:06:54,780 --> 0:06:55,780
+ We made it so you could live stream.
+
+104
+0:06:55,780 --> 0:06:56,780
+ Did you have any questions?
+
+105
+0:06:56,780 --> 0:06:57,780
+ No.
+
+106
+0:06:57,780 --> 0:06:58,780
+ Okay.
+
+107
+0:06:58,780 --> 0:06:59,780
+ Okay.
+
+108
+0:06:59,780 --> 0:07:00,780
+ Thank you.
+
+109
+0:07:00,780 --> 0:07:01,780
+ Thank you.
+
+110
+0:07:01,780 --> 0:07:02,780
+ Thank you.
+
+111
+0:07:02,780 --> 0:07:03,780
+ Thank you.
+
+112
+0:07:03,780 --> 0:07:04,780
+ Thank you.
+
+113
+0:07:04,780 --> 0:07:05,780
+ Thank you.
+
+114
+0:07:05,780 --> 0:07:06,780
+ Thank you.
+
+115
+0:07:06,780 --> 0:07:07,780
+ Thank you.
+
+116
+0:07:07,780 --> 0:07:08,780
+ Thank you.
+
+117
+0:07:08,780 --> 0:07:09,780
+ Thank you.
+
+118
+0:07:09,780 --> 0:07:10,780
+ Thank you.
+
+119
+0:07:10,780 --> 0:07:11,780
+ Thank you.
+
+120
+0:07:11,780 --> 0:07:12,780
+ Thank you.
+
+121
+0:07:12,780 --> 0:07:13,780
+ Thank you.
+
+122
+0:07:13,780 --> 0:07:14,780
+ Thank you.
+
+123
+0:07:14,780 --> 0:07:15,780
+ Thank you.
+
+124
+0:07:15,780 --> 0:07:16,780
+ Thank you.
+
+125
+0:07:16,780 --> 0:07:17,780
+ Thank you.
+
+126
+0:07:17,780 --> 0:07:18,780
+ Thank you.
+
+127
+0:07:18,780 --> 0:07:19,780
+ Thank you.
+
+128
+0:07:19,780 --> 0:07:20,780
+ Okay.
+
+129
+0:07:20,780 --> 0:07:21,780
+ Okay.
+
+130
+0:07:21,780 --> 0:07:22,780
+ Thank you.
+
+131
+0:07:22,780 --> 0:07:23,780
+ So, it was really, really good.
+
+132
+0:07:23,780 --> 0:07:24,780
+ It's a great idea.
+
+133
+0:07:24,780 --> 0:07:25,780
+ It was great.
+
+134
+0:07:25,780 --> 0:07:26,780
+ So, we have this one last idea here.
+
+135
+0:07:26,780 --> 0:07:27,780
+ So, let's just go back.
+
+136
+0:07:27,780 --> 0:07:28,780
+ Let's start with the pixel flute.
+
+137
+0:07:28,780 --> 0:07:29,780
+ At live.bunhack.dk slash pixel flute.
+
+138
+0:07:29,780 --> 0:07:30,900
+ So, and you can also stream it on multicaster presses just because we can.
+
+139
+0:07:30,900 --> 0:07:43,020
+ So, we had one movie that were being displayed on the pixel flutes and later it was also
+
+140
+0:07:43,020 --> 0:07:46,780
+ converted into some streaming of the Jeopardy games.
+
+141
+0:07:46,780 --> 0:07:47,780
+ Okay.
+
+142
+0:07:47,780 --> 0:08:01,160
+ Most of the traffic was sent from a switch that was at the Pixelfluid server, but we
+
+143
+0:08:01,160 --> 0:08:10,500
+ also had a machine and regular camping that sent on average 7.1 gigabit per second.
+
+144
+0:08:10,500 --> 0:08:16,540
+ This image shows bits per second, if you can read it.
+
+145
+0:08:16,540 --> 0:08:21,540
+ This is around 26 gigabits.
+
+146
+0:08:21,540 --> 0:08:22,540
+ That's pretty nice.
+
+147
+0:08:22,540 --> 0:08:24,740
+ That's better than last year.
+
+148
+0:08:24,740 --> 0:08:28,380
+ We still need to use more bandwidth, though.
+
+149
+0:08:28,380 --> 0:08:33,460
+ You can do 80 gigabit on it, so bring some 10 gigabit machines with you next year.
+
+150
+0:08:33,460 --> 0:08:40,060
+ We may be able to help you create a client if you haven't done so already.
+
+151
+0:08:40,060 --> 0:08:40,440
+ Just give some...
+
+152
+0:08:40,500 --> 0:08:44,440
+ Some hints on what to do.
+
+153
+0:08:44,440 --> 0:08:48,180
+ And this is packets per second.
+
+154
+0:08:48,180 --> 0:08:51,980
+ It's around 2.6 million packets per second.
+
+155
+0:08:51,980 --> 0:08:54,820
+ That's pretty okay.
+
+156
+0:08:54,820 --> 0:09:01,680
+ Yeah, so this year we had a new gaming experience.
+
+157
+0:09:01,680 --> 0:09:06,220
+ It was 10 Cattles by Melinda.
+
+158
+0:09:06,220 --> 0:09:09,060
+ It was up in Kochi at night.
+
+159
+0:09:09,060 --> 0:09:10,060
+ There were two sessions.
+
+160
+0:09:10,060 --> 0:09:14,000
+ One last evening and the one the evening before.
+
+161
+0:09:14,000 --> 0:09:15,000
+ I participated in the first one.
+
+162
+0:09:15,000 --> 0:09:23,580
+ It was quite nice, and we're definitely going to try and make more of such events next year.
+
+163
+0:09:23,580 --> 0:09:24,580
+ So yeah, next year.
+
+164
+0:09:24,580 --> 0:09:29,140
+ And we're still doing Hackathopity, of course, and the token game.
+
+165
+0:09:29,140 --> 0:09:30,820
+ We want more games like 10 Cattles.
+
+166
+0:09:30,820 --> 0:09:36,660
+ So if anybody here knows something about some games that are easy to play and easy to set
+
+167
+0:09:36,660 --> 0:09:38,000
+ up and could be nice for an evening in the dark...
+
+168
+0:09:38,000 --> 0:09:39,000
+ Yeah.
+
+169
+0:09:39,000 --> 0:09:40,000
+ Yeah.
+
+170
+0:09:40,000 --> 0:09:42,300
+ Then let us know.
+
+171
+0:09:42,300 --> 0:09:47,940
+ We're going to try and meet before the camp next year to plan stuff beforehand.
+
+172
+0:09:47,940 --> 0:09:51,400
+ Especially with Hackathopity.
+
+173
+0:09:51,400 --> 0:09:55,560
+ So we don't have to make everything during the camp.
+
+174
+0:09:55,560 --> 0:09:57,160
+ And yeah, we want more game activities.
+
+175
+0:09:57,160 --> 0:10:00,720
+ So if anybody has any ideas, you don't have to join the game team.
+
+176
+0:10:00,720 --> 0:10:06,940
+ But if you want to join the game team and do anything, please do so.
+
+177
+0:10:06,940 --> 0:10:07,940
+ Yeah.
+
+178
+0:10:07,940 --> 0:10:08,940
+ Any questions?
+
+179
+0:10:08,940 --> 0:10:09,940
+ No.
+
+180
+0:10:09,940 --> 0:10:10,940
+ Do we have questions for the team?
+
+181
+0:10:10,940 --> 0:10:11,940
+ Okay.
+
+182
+0:10:11,940 --> 0:10:12,940
+ I see no hands.
+
+183
+0:10:12,940 --> 0:10:13,940
+ Let's give a round of applause for the game team.
+
+184
+0:10:13,940 --> 0:10:14,940
+ Do you have another slide?
+
+185
+0:10:14,940 --> 0:10:15,940
+ Would you?
+
+186
+0:10:15,940 --> 0:10:16,940
+ No.
+
+187
+0:10:16,940 --> 0:10:17,940
+ Well, we would also like to announce the winner of Token Hunt.
+
+188
+0:10:17,940 --> 0:10:18,940
+ Oh, yeah.
+
+189
+0:10:18,940 --> 0:10:19,940
+ Right.
+
+190
+0:10:19,940 --> 0:10:20,940
+ Sorry.
+
+191
+0:10:20,940 --> 0:10:21,940
+ Sorry.
+
+192
+0:10:21,940 --> 0:10:22,940
+ Sorry.
+
+193
+0:10:22,940 --> 0:10:23,940
+ Sorry.
+
+194
+0:10:23,940 --> 0:10:24,940
+ So there is a winner of the Token Hunt.
+
+195
+0:10:24,940 --> 0:10:25,940
+ And the winner is getting a ticket for next year's Spawn Hack.
+
+196
+0:10:25,940 --> 0:10:26,940
+ 8Dot is the winner of this year's Spawn Hack.
+
+197
+0:10:26,940 --> 0:10:27,940
+ 8Dot.
+
+198
+0:10:27,940 --> 0:10:28,940
+ 8Dot.
+
+199
+0:10:28,940 --> 0:10:29,940
+ 8Dot.
+
+200
+0:10:29,940 --> 0:10:30,940
+ 8Dot.
+
+201
+0:10:30,940 --> 0:10:31,940
+ 8Dot.
+
+202
+0:10:31,940 --> 0:10:32,940
+ 8Dot.
+
+203
+0:10:32,940 --> 0:10:33,940
+ 8Dot.
+
+204
+0:10:33,940 --> 0:10:34,940
+ 8Dot.
+
+205
+0:10:34,940 --> 0:10:35,940
+ 8Dot.
+
+206
+0:10:35,940 --> 0:10:36,940
+ 8Dot.
+
+207
+0:10:36,940 --> 0:10:37,940
+ 8Dot.
+
+208
+0:10:37,940 --> 0:10:38,940
+ 8Dot.
+
+209
+0:10:38,940 --> 0:10:39,940
+ 8Dot.
+
+210
+0:10:39,940 --> 0:10:40,940
+ 8Dot.
+
+211
+0:10:40,940 --> 0:10:41,940
+ 8Dot.
+
+212
+0:10:41,940 --> 0:10:42,940
+ 8Dot.
+
+213
+0:10:42,940 --> 0:10:43,940
+ 8Dot.
+
+214
+0:10:43,940 --> 0:10:44,940
+ 8Dot.
+
+215
+0:10:44,940 --> 0:10:45,940
+ Yes.
+
+216
+0:10:45,940 --> 0:10:46,940
+ It's the winner of this year's Spawn Hack.
+
+217
+0:10:46,940 --> 0:10:47,940
+ Absolutely the most tokens found.
+
+218
+0:10:47,940 --> 0:10:48,940
+ So if you found the cyber bunny, then you are now up to 15 tokens out of 17 tokens.
+
+219
+0:10:48,940 --> 0:10:49,940
+ So that's quite nice.
+
+220
+0:10:49,940 --> 0:10:50,940
+ Yes.
+
+221
+0:10:50,940 --> 0:10:51,940
+ Thank you.
+
+222
+0:10:51,940 --> 0:10:52,940
+ Thank you.
+
+223
+0:10:52,940 --> 0:10:53,940
+ Thank you.
+
+224
+0:10:53,940 --> 0:10:54,940
+ Thank you.

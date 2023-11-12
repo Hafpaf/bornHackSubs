@@ -1,0 +1,4003 @@
+# Transcribed 2023-11-12T14 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:59,980
+ Danske tekster af Nicolai Winther
+
+3
+0:01:00,000 --> 0:01:29,980
+ Danske tekster af Nicolai Winther
+
+4
+0:01:30,000 --> 0:01:59,980
+ Danske tekster af Nicolai Winther
+
+5
+0:02:00,000 --> 0:02:29,980
+ Danske tekster af Nicolai Winther
+
+6
+0:02:30,000 --> 0:02:59,980
+ Danske tekster af Nicolai Winther
+
+7
+0:03:00,000 --> 0:03:29,980
+ Danske tekster af Nicolai Winther
+
+8
+0:03:30,000 --> 0:03:59,980
+ Danske tekster af Nicolai Winther
+
+9
+0:04:00,000 --> 0:04:29,980
+ Danske tekster af Nicolai Winther
+
+10
+0:04:30,000 --> 0:04:59,980
+ Danske tekster af Nicolai Winther
+
+11
+0:05:00,000 --> 0:05:29,980
+ Danske tekster af Nicolai Winther
+
+12
+0:05:30,000 --> 0:05:59,980
+ Danske tekster af Nicolai Winther
+
+13
+0:06:00,000 --> 0:06:29,980
+ Danske tekster af Nicolai Winther
+
+14
+0:06:30,000 --> 0:06:36,000
+ Og på weekenden var det meget intensiveret, og på mandag og torsdag har vi finaliseret.
+
+15
+0:06:36,000 --> 0:06:40,000
+ Vi har haft et par ekstremt mennesker til at hjælpe med de store tænder, og som jeg sagde,
+
+16
+0:06:40,000 --> 0:06:44,000
+ nogle løsninger og nogle af de højre løsninger, men nærmest alt det her er ...
+
+17
+0:06:44,000 --> 0:06:46,000
+ Gå væk.
+
+18
+0:06:46,000 --> 0:06:48,000
+ Fuck det.
+
+19
+0:06:48,000 --> 0:06:54,000
+ Nærmest alt det her er volunteer arbejde, og som sådan udebent,
+
+20
+0:06:54,000 --> 0:06:58,000
+ og det er noget, folk gør, fordi de elsker eventet.
+
+21
+0:06:58,000 --> 0:07:02,000
+ Jeg vil gerne høre en stor runde applaus for alle de mennesker, der har brugt deres fri tid,
+
+22
+0:07:02,000 --> 0:07:04,000
+ til at komme her og bygge dette.
+
+23
+0:07:18,000 --> 0:07:22,000
+ BornHack er konstant udviklet.
+
+24
+0:07:22,000 --> 0:07:26,000
+ Det er en god måde at sige, at vi kan slutte alt i tid.
+
+25
+0:07:26,000 --> 0:07:28,000
+ Hvis I ser noget, der er semenligt,
+
+26
+0:07:28,000 --> 0:07:30,000
+ eller er semenligt uendeligt,
+
+27
+0:07:30,000 --> 0:07:32,000
+ så fortælle InfoDesk.
+
+28
+0:07:32,000 --> 0:07:34,000
+ Måske kender de allerede, og vi arbejder på det,
+
+29
+0:07:34,000 --> 0:07:36,000
+ eller vi venter på nogle volunteerer.
+
+30
+0:07:36,000 --> 0:07:38,000
+ Alle de udviklede mennesker er trætte nu.
+
+31
+0:07:38,000 --> 0:07:40,000
+ Vi har arbejdet i mange dage,
+
+32
+0:07:40,000 --> 0:07:42,000
+ og de af jer, der er kommet med fri energi,
+
+33
+0:07:42,000 --> 0:07:44,000
+ hvis I føler, at I vil gøre noget,
+
+34
+0:07:44,000 --> 0:07:46,000
+ så gå til InfoDesk,
+
+35
+0:07:46,000 --> 0:07:48,000
+ kigge på, hvad de har på skærmen,
+
+36
+0:07:48,000 --> 0:07:50,000
+ eller bare spørg.
+
+37
+0:07:50,000 --> 0:07:52,000
+ Har I noget lige nu?
+
+38
+0:07:52,000 --> 0:07:54,000
+ Måske kan I løse en træskan, eller gøre noget,
+
+39
+0:07:54,000 --> 0:07:56,000
+ eller hjælpe med noget, der tager 15 minutter.
+
+40
+0:07:56,000 --> 0:07:58,000
+ Men det kan hjælpe meget for personen.
+
+41
+0:07:58,000 --> 0:08:00,000
+ der har tre ting at gøre.
+
+42
+0:08:00,000 --> 0:08:02,000
+ Så
+
+43
+0:08:02,000 --> 0:08:04,000
+ hjælp en volunteer,
+
+44
+0:08:04,000 --> 0:08:06,000
+ hvis I ser en i distres,
+
+45
+0:08:06,000 --> 0:08:08,000
+ eller køb dem en bier,
+
+46
+0:08:08,000 --> 0:08:10,000
+ eller at mindst pat dem på hænderne.
+
+47
+0:08:10,000 --> 0:08:12,000
+ De har arbejdet meget hårdt.
+
+48
+0:08:12,000 --> 0:08:14,000
+ Okay, så
+
+49
+0:08:14,000 --> 0:08:16,000
+ finansieringen af det her event,
+
+50
+0:08:16,000 --> 0:08:18,000
+ ender ikke helt,
+
+51
+0:08:18,000 --> 0:08:20,000
+ ender ikke helt,
+
+52
+0:08:20,000 --> 0:08:22,000
+ uden sponsorer.
+
+53
+0:08:22,000 --> 0:08:24,000
+ Vi får både eksempler,
+
+54
+0:08:24,000 --> 0:08:26,000
+ som projektører og andre ting,
+
+55
+0:08:26,000 --> 0:08:28,000
+ men,
+
+56
+0:08:28,000 --> 0:08:30,000
+ finansieringer er mest,
+
+57
+0:08:30,000 --> 0:08:32,000
+ hvad vi bruger,
+
+58
+0:08:32,000 --> 0:08:34,000
+ og omkring en tredjedel af
+
+59
+0:08:34,000 --> 0:08:36,000
+ Bonhack-budgetet kommer fra sponsorer.
+
+60
+0:08:36,000 --> 0:08:38,000
+ Så uden dem,
+
+61
+0:08:38,000 --> 0:08:40,000
+ ville det være et meget forskelligt event.
+
+62
+0:08:40,000 --> 0:08:42,000
+ Det ville ikke være muligt at gøre det,
+
+63
+0:08:42,000 --> 0:08:44,000
+ som vi gør det.
+
+64
+0:08:44,000 --> 0:08:46,000
+ Lad os give dem en stor runde applaus,
+
+65
+0:08:46,000 --> 0:08:48,000
+ og husk at...
+
+66
+0:08:48,000 --> 0:08:50,000
+ alle de baggrunde,
+
+67
+0:08:50,000 --> 0:08:52,000
+ som sólo dér flyttes,
+
+68
+0:08:52,000 --> 0:08:54,000
+ har alle præcis
+
+69
+0:08:54,000 --> 0:08:56,000
+ fibet det samme,
+
+70
+0:08:56,000 --> 0:08:58,000
+ og kunne jo også
+
+71
+0:08:58,000 --> 0:09:00,000
+ er mere positioner,
+
+72
+0:09:00,000 --> 0:09:02,000
+ og mere det gamle,
+
+73
+0:09:02,000 --> 0:09:04,000
+ et forhold,
+
+74
+0:09:04,000 --> 0:09:06,000
+ forshiplsen,
+
+75
+0:09:06,000 --> 0:09:08,000
+ for en grad og et vidst
+
+76
+0:09:08,000 --> 0:09:10,000
+ slices liv for dem.
+
+77
+0:09:10,000 --> 0:09:12,000
+ Og jobbet er �beligt
+
+78
+0:09:12,000 --> 0:09:14,000
+ de fleste af dem.
+
+79
+0:09:14,000 --> 0:09:16,000
+ Hvis du ønsker stransk Project-device,
+
+80
+0:09:16,000 --> 0:09:28,000
+ Okay, så venueet har den samme form som altid, men vi har flyttet nogle ting rundt.
+
+81
+0:09:28,000 --> 0:09:37,000
+ Jeg vil bare flytte tilbage og frem mellem denne mappe og denne liste af ting, og prøve at forklare, hvor alt er.
+
+82
+0:09:37,000 --> 0:09:42,000
+ Vi er i midten af General Camping. Vi har denne store talk-tent her,
+
+83
+0:09:42,000 --> 0:09:46,000
+ som går hele vejen fra nord til syd af venueet.
+
+84
+0:09:46,000 --> 0:09:51,000
+ På den anden side har vi Caravan og Info, så der er, hvor vi er nu.
+
+85
+0:10:01,000 --> 0:10:07,000
+ Okay, så er det General Camping-området, hvor vi er nu.
+
+86
+0:10:09,000 --> 0:10:11,000
+ Hvad gør der?
+
+87
+0:10:12,000 --> 0:10:17,000
+ Jeg har for mange typer. Okay, det er det.
+
+88
+0:10:17,000 --> 0:10:22,000
+ Okay, så er General Camping den store blå triangel her.
+
+89
+0:10:22,000 --> 0:10:27,000
+ Det er i høj grad den største campingområde, og de fleste af jer har allerede lavet deres camping her.
+
+90
+0:10:27,000 --> 0:10:33,000
+ Det er også der, de fleste af de byer, der har store rente-tenter, er placeret.
+
+91
+0:10:33,000 --> 0:10:37,000
+ Selvom det ikke er det, har vi Cozy Camping, som er en ny edition.
+
+92
+0:10:37,000 --> 0:10:39,000
+ Vi har lavet det, hvor den gamle spekers-tent var.
+
+93
+0:10:39,000 --> 0:10:41,000
+ Det er en slags familie-camping, kombineret med...
+
+94
+0:10:42,000 --> 0:10:45,000
+ Det er en rigtig, rigtig smuk lille område deroppe.
+
+95
+0:10:45,000 --> 0:10:51,000
+ Vi har kun brugt det for spekers-tentet, og det ser ud som en smukke, fordi det kunne være en smuk lille camping-spot.
+
+96
+0:10:51,000 --> 0:10:54,000
+ Så vi har lavet en af de store, nye start-tenter deroppe.
+
+97
+0:10:54,000 --> 0:11:01,000
+ Vi håber, at mange mennesker vil lave en smuk camp med og uden familier.
+
+98
+0:11:04,000 --> 0:11:11,000
+ Den her område, der var kaldt Noisy-området, er nu kaldt Party Camping, for at underligne, at det ikke er et behov for at være noisivt.
+
+99
+0:11:12,000 --> 0:11:14,000
+ Det er en smuk kamp, der skal være deroppe.
+
+100
+0:11:24,000 --> 0:11:34,000
+ Så vi forventer, at partiet fortsætter, men vi vil stadigvæk være med på at underligne noislevelserne, og lave en smukke til de mennesker, der bryder nærmere.
+
+101
+0:11:34,000 --> 0:11:38,000
+ Fordi vi har nærmere, der ikke er for langt bag nogle træer.
+
+102
+0:11:38,000 --> 0:11:40,000
+ Og de har tidligere beklager.
+
+103
+0:11:40,000 --> 0:11:42,000
+ Lad os prøve at...
+
+104
+0:11:42,000 --> 0:11:47,000
+ at blive venner med de nærmeste, så vi kan fortsætte med at bruge denne smukke område.
+
+105
+0:11:49,000 --> 0:11:58,000
+ Smuk camping er til højre, når du går ind, lige efter den store indslag med den store gade.
+
+106
+0:11:58,000 --> 0:12:02,000
+ Du går ned ad en gade, og den her store område er kaldt Siding Camping.
+
+107
+0:12:02,000 --> 0:12:04,000
+ Og nærmere er det Nature Camping.
+
+108
+0:12:04,000 --> 0:12:11,000
+ Og hvis du går til Nature Camping, så må du forstå, at du skal dele spasen med nogle tikkere, fordi græsset ikke er skæret ned der.
+
+109
+0:12:12,000 --> 0:12:19,000
+ Men de fleste mennesker vil gerne have, at der er en utænket del af naturen, som de kan bo i.
+
+110
+0:12:19,000 --> 0:12:22,000
+ Og vi giver dem det.
+
+111
+0:12:22,000 --> 0:12:27,000
+ Og så er der Caravan Camping, som er den mørke blå område på den højre side af gaden.
+
+112
+0:12:27,000 --> 0:12:33,000
+ Og det er meget lignende i området, og caravans er store, og de har ekstra tændelser og sådan noget.
+
+113
+0:12:33,000 --> 0:12:37,000
+ Så det er det eneste campingområde, der kræver et separat ticket.
+
+114
+0:12:37,000 --> 0:12:40,000
+ Og jeg tror, der er måske en eller to tilbage i shoppen.
+
+115
+0:12:40,000 --> 0:12:41,000
+ Og så er det det.
+
+116
+0:12:41,000 --> 0:12:43,000
+ De fleste af dem er sælget allerede.
+
+117
+0:12:43,000 --> 0:12:45,000
+ Men at have en caravan er en god måde at...
+
+118
+0:12:45,000 --> 0:12:49,000
+ Jeg elsker personligt at leve i en caravan på de her eventer.
+
+119
+0:12:49,000 --> 0:12:51,000
+ Det er nærmest som at bringe en lille hjem med dig.
+
+120
+0:12:51,000 --> 0:12:53,000
+ Det er fantastisk.
+
+121
+0:12:53,000 --> 0:12:56,000
+ Okay, så andre områder.
+
+122
+0:12:56,000 --> 0:12:57,000
+ Speakers Tent.
+
+123
+0:12:57,000 --> 0:12:58,000
+ Du ved selvfølgelig, hvordan du kan finde det.
+
+124
+0:12:58,000 --> 0:13:01,000
+ Til sidst de mennesker, der er her.
+
+125
+0:13:01,000 --> 0:13:06,000
+ Fodområdet er til højre, når du går fra Speakers Tent til kabinerne.
+
+126
+0:13:06,000 --> 0:13:08,000
+ Du går til højre ved køkkenet.
+
+127
+0:13:08,000 --> 0:13:09,000
+ Og så er der en fodvendelse.
+
+128
+0:13:09,000 --> 0:13:10,000
+ Og der er også en meget god køkken.
+
+129
+0:13:10,000 --> 0:13:14,000
+ Der er også en meget god køkken og købeområde, hvor du kan købe dit eget mad.
+
+130
+0:13:14,000 --> 0:13:18,000
+ De af jer, der har rentet køkkenet, har et sted at købe dit mad.
+
+131
+0:13:18,000 --> 0:13:24,000
+ Og der er barbecuer, og der er køkkener, og spiser, og potter, og paner, og plader.
+
+132
+0:13:24,000 --> 0:13:26,000
+ Og alt det, du kunne bruge til at købe.
+
+133
+0:13:26,000 --> 0:13:29,000
+ Der er også en shuttle, der går ind i stedet.
+
+134
+0:13:29,000 --> 0:13:35,000
+ Jeg glemmer tiderne, men en gang i dagen, tror jeg, der er en shopperund.
+
+135
+0:13:35,000 --> 0:13:39,000
+ Så hvis du sender nogen fra din virksomhed, så kan du bringe tilbage mad.
+
+136
+0:13:39,000 --> 0:13:40,000
+ Og købe det.
+
+137
+0:13:40,000 --> 0:13:44,000
+ Og så kan du også købe mad fra fodvendelsen.
+
+138
+0:13:44,000 --> 0:13:46,000
+ Fodvendelsen er samme som sidste år.
+
+139
+0:13:46,000 --> 0:13:49,000
+ Den asianske... Hvad hedder den?
+
+140
+0:13:49,000 --> 0:13:51,000
+ Smag af...
+
+141
+0:13:51,000 --> 0:13:52,000
+ Orientalexpress.
+
+142
+0:13:52,000 --> 0:13:54,000
+ Orientalexpress. Tak.
+
+143
+0:13:54,000 --> 0:13:57,000
+ Det er absolut fantastisk mad.
+
+144
+0:13:57,000 --> 0:13:59,000
+ Jeg har været der en gang i år.
+
+145
+0:13:59,000 --> 0:14:02,000
+ Og jeg var der mange gange sidste år.
+
+146
+0:14:02,000 --> 0:14:05,000
+ Og jeg vil absolut også være der mange gange i år.
+
+147
+0:14:05,000 --> 0:14:07,000
+ Fordi de virkelig tjener meget mad.
+
+148
+0:14:07,000 --> 0:14:09,000
+ Og de er også smukke mennesker.
+
+149
+0:14:09,000 --> 0:14:12,000
+ Det er en god kombination.
+
+150
+0:14:12,000 --> 0:14:15,000
+ Toilettet og brysterne.
+
+151
+0:14:15,000 --> 0:14:20,000
+ Vi har her en toalettekontainer.
+
+152
+0:14:20,000 --> 0:14:23,000
+ Eftersom den ikke har højder udenfor barret.
+
+153
+0:14:23,000 --> 0:14:24,000
+ I den åbne område.
+
+154
+0:14:24,000 --> 0:14:28,000
+ Og nærmere på fodvendelsen er det permanente toalettet.
+
+155
+0:14:28,000 --> 0:14:30,000
+ Og så er der hele vejen ved kabinerne.
+
+156
+0:14:30,000 --> 0:14:32,000
+ Der er toalettet og brysterne.
+
+157
+0:14:32,000 --> 0:14:35,000
+ Og indenfor kabinerne er der også toaletter.
+
+158
+0:14:35,000 --> 0:14:37,000
+ Der er også bryster.
+
+159
+0:14:37,000 --> 0:14:40,000
+ Det er i toalettet og brysterne.
+
+160
+0:14:40,000 --> 0:14:43,000
+ Og der er også et par indenfor det hovedbund.
+
+161
+0:14:43,000 --> 0:14:46,000
+ Ved vejen ned, der er vandfosetter.
+
+162
+0:14:46,000 --> 0:14:49,000
+ Der er en nede i silent camping.
+
+163
+0:14:49,000 --> 0:14:51,000
+ Der er en i generelt camping.
+
+164
+0:14:51,000 --> 0:14:53,000
+ Eller to ved vejen ned.
+
+165
+0:14:53,000 --> 0:14:55,000
+ Der er en oppe i Cozy camping.
+
+166
+0:14:55,000 --> 0:14:57,000
+ Og der er en her ved vejen ned.
+
+167
+0:14:57,000 --> 0:14:59,000
+ Den har ikke højder.
+
+168
+0:14:59,000 --> 0:15:01,000
+ Men resten har højder og gode fosetter.
+
+169
+0:15:01,000 --> 0:15:05,000
+ Alle vandfosetter på Bornhage er drikkerfosetter.
+
+170
+0:15:05,000 --> 0:15:08,000
+ Alle vandfosetter på Bornhage er drikkerfosetter.
+
+171
+0:15:08,000 --> 0:15:12,000
+ Der er ingen trækker, hvor nogle af vandet ikke kan være drikket.
+
+172
+0:15:12,000 --> 0:15:14,000
+ Du kan drikke alt det.
+
+173
+0:15:14,000 --> 0:15:17,000
+ Ikke vandet i toalettet, men fra tablerne.
+
+174
+0:15:21,000 --> 0:15:23,000
+ Powerpubs og Networkpubs.
+
+175
+0:15:23,000 --> 0:15:26,000
+ Jeg ville faktisk få dem på denne mappe, men jeg kunne ikke.
+
+176
+0:15:26,000 --> 0:15:31,000
+ Men på websiden er der en udviklingssektion, hvor du kan tjekke ud.
+
+177
+0:15:31,000 --> 0:15:34,000
+ Hvis du vil se power- eller networkpubs, kan du se, hvor de er.
+
+178
+0:15:34,000 --> 0:15:40,000
+ Hvis du for en måde ønsker at finde ud af, hvor der er en power- eller networkpub,
+
+179
+0:15:40,000 --> 0:15:42,000
+ hvis du vil skrive en ny netværkabel eller noget,
+
+180
+0:15:42,000 --> 0:15:45,000
+ så er det dit sted at gå til, eller at snakke med power- eller networkteamet.
+
+181
+0:15:45,000 --> 0:15:49,000
+ Men det skal også være muligt at finde på websiden.
+
+182
+0:15:49,000 --> 0:15:51,000
+ Først og fremmest.
+
+183
+0:15:51,000 --> 0:15:54,000
+ På din højre side, når du gik ind i venueet,
+
+184
+0:15:54,000 --> 0:15:56,000
+ der er parkeringsområdet.
+
+185
+0:15:56,000 --> 0:15:58,000
+ Der er et parkeringsticket. Det er 100 kroner.
+
+186
+0:15:58,000 --> 0:16:00,000
+ For hele ugen.
+
+187
+0:16:00,000 --> 0:16:03,000
+ Og på very enden af vejen er der serviceparking,
+
+188
+0:16:03,000 --> 0:16:06,000
+ men det er kun for de, der kører.
+
+189
+0:16:06,000 --> 0:16:11,000
+ Vær så god, at du ikke parkerer der, hvis du ikke ved, hvad du skal.
+
+190
+0:16:11,000 --> 0:16:17,000
+ Det generelle parkering er tilgængeligt for alle.
+
+191
+0:16:17,000 --> 0:16:22,000
+ Vi har en masse firepladser på det her smukke venue.
+
+192
+0:16:22,000 --> 0:16:26,000
+ Der er en oppe her, bag wellness-området,
+
+193
+0:16:26,000 --> 0:16:28,000
+ som jeg vil komme tilbage til.
+
+194
+0:16:28,000 --> 0:16:31,000
+ Der er en stor område rundt her,
+
+195
+0:16:31,000 --> 0:16:34,000
+ bag partykampingen.
+
+196
+0:16:34,000 --> 0:16:36,000
+ Du kan tage en vej op fra partykampingen,
+
+197
+0:16:36,000 --> 0:16:39,000
+ eller en vej ned fra kabinen, for at komme til det.
+
+198
+0:16:39,000 --> 0:16:41,000
+ Der er også en område i partykampingen,
+
+199
+0:16:41,000 --> 0:16:44,000
+ og der er en stor område på det generelle camping.
+
+200
+0:16:44,000 --> 0:16:47,000
+ Vi havde også nogle pirate-kampere,
+
+201
+0:16:47,000 --> 0:16:50,000
+ som gik til det smukke campingområde,
+
+202
+0:16:50,000 --> 0:16:53,000
+ og løb en fjern i midten af vejen.
+
+203
+0:16:53,000 --> 0:16:56,000
+ Vi gik dem ud, men der er en mørk plads der.
+
+204
+0:16:56,000 --> 0:16:59,000
+ Det betyder ikke, at du skal løbe en fjern der.
+
+205
+0:16:59,000 --> 0:17:01,000
+ Jeg tror ikke, at nogen her ville gøre det,
+
+206
+0:17:01,000 --> 0:17:04,000
+ fordi det er i midten af vejen.
+
+207
+0:17:04,000 --> 0:17:07,000
+ Så vær så god med ikke at løbe en fjern,
+
+208
+0:17:07,000 --> 0:17:10,000
+ uanset om der er stjerner på vejen,
+
+209
+0:17:10,000 --> 0:17:12,000
+ og det er en fireplads.
+
+210
+0:17:12,000 --> 0:17:14,000
+ Ikke i midten af græsset,
+
+211
+0:17:14,000 --> 0:17:16,000
+ som en gal person.
+
+212
+0:17:18,000 --> 0:17:21,000
+ Så er workshop-områderne i kabinen.
+
+213
+0:17:21,000 --> 0:17:23,000
+ De, der var her for at lave det,
+
+214
+0:17:23,000 --> 0:17:25,000
+ kender kabinen meget godt,
+
+215
+0:17:25,000 --> 0:17:27,000
+ fordi vi har brugt det til at spise og andre ting,
+
+216
+0:17:27,000 --> 0:17:32,000
+ men det er nu blevet til workshop-områder.
+
+217
+0:17:32,000 --> 0:17:34,000
+ Så hvis du besøger en workshop,
+
+218
+0:17:34,000 --> 0:17:36,000
+ så sker det mest sikkert dernede.
+
+219
+0:17:36,000 --> 0:17:37,000
+ Det siger det i planen,
+
+220
+0:17:37,000 --> 0:17:40,000
+ men de fleste af dem er i workshop-områderne dernede.
+
+221
+0:17:40,000 --> 0:17:42,000
+ Der er en projektor og en sætning,
+
+222
+0:17:42,000 --> 0:17:45,000
+ og det er et rigtig godt sted.
+
+223
+0:17:45,000 --> 0:17:48,000
+ Vælgerne er tilbage,
+
+224
+0:17:48,000 --> 0:17:50,000
+ efter et par års uanset.
+
+225
+0:17:50,000 --> 0:17:55,000
+ Der er en hudfjernet hottop dernede.
+
+226
+0:17:55,000 --> 0:17:57,000
+ Der er metriker, der kommer op i barret,
+
+227
+0:17:57,000 --> 0:17:59,000
+ for at vise temperatur af hottopet.
+
+228
+0:17:59,000 --> 0:18:01,000
+ Der er en lille sætning dernede,
+
+229
+0:18:01,000 --> 0:18:03,000
+ så du kan rynge af.
+
+230
+0:18:03,000 --> 0:18:05,000
+ Der er en slide om det senere.
+
+231
+0:18:05,000 --> 0:18:07,000
+ Men det er efter kabinen,
+
+232
+0:18:07,000 --> 0:18:09,000
+ bag de store startcenter,
+
+233
+0:18:09,000 --> 0:18:11,000
+ og udenfor kabinen.
+
+234
+0:18:13,000 --> 0:18:16,000
+ Der er selvfølgelig en bar igen denne år.
+
+235
+0:18:16,000 --> 0:18:20,000
+ Det er, hvor det har været de forrige år.
+
+236
+0:18:20,000 --> 0:18:24,000
+ Hvor man bare går ud af døren,
+
+237
+0:18:24,000 --> 0:18:26,000
+ og bare går langt frem,
+
+238
+0:18:26,000 --> 0:18:28,000
+ indtil man kan købe bier.
+
+239
+0:18:30,000 --> 0:18:33,000
+ Det er igen en fantastisk bar,
+
+240
+0:18:33,000 --> 0:18:35,000
+ som teamet har bygget.
+
+241
+0:18:35,000 --> 0:18:37,000
+ Jeg vil komme tilbage til det.
+
+242
+0:18:37,000 --> 0:18:38,000
+ Denne infodesk,
+
+243
+0:18:38,000 --> 0:18:39,000
+ I har sikkert alle set den.
+
+244
+0:18:39,000 --> 0:18:41,000
+ Hvis I ikke allerede har fået en hudbånd,
+
+245
+0:18:41,000 --> 0:18:42,000
+ så gå i morgen,
+
+246
+0:18:42,000 --> 0:18:43,000
+ når denne infodesk er åbent igen,
+
+247
+0:18:43,000 --> 0:18:45,000
+ og blive ret tjekket ind.
+
+248
+0:18:45,000 --> 0:18:46,000
+ Det er langs vejen,
+
+249
+0:18:46,000 --> 0:18:48,000
+ den store hvide...
+
+250
+0:18:48,000 --> 0:18:50,000
+ ...sætning.
+
+251
+0:18:52,000 --> 0:18:54,000
+ Der er en hardware-hacking-tent.
+
+252
+0:18:54,000 --> 0:18:55,000
+ Den er ikke på mappen,
+
+253
+0:18:55,000 --> 0:18:56,000
+ men den er rundt her.
+
+254
+0:18:56,000 --> 0:18:57,000
+ Den er bag startenten,
+
+255
+0:18:57,000 --> 0:18:59,000
+ over vejen fra infodesk.
+
+256
+0:18:59,000 --> 0:19:00,000
+ Hardware-hacking er noget,
+
+257
+0:19:00,000 --> 0:19:01,000
+ vi begyndte i sidste år.
+
+258
+0:19:01,000 --> 0:19:02,000
+ Hardware-hacking-området.
+
+259
+0:19:02,000 --> 0:19:04,000
+ Den er brugt af Floma,
+
+260
+0:19:04,000 --> 0:19:07,000
+ som også har designet badge,
+
+261
+0:19:07,000 --> 0:19:10,000
+ og gør en stor del af hardware-hacking.
+
+262
+0:19:12,000 --> 0:19:14,000
+ Det er et godt sted at gå,
+
+263
+0:19:14,000 --> 0:19:15,000
+ at spille rundt med badge,
+
+264
+0:19:15,000 --> 0:19:16,000
+ eller hvis du har elektronik,
+
+265
+0:19:16,000 --> 0:19:17,000
+ som du vil spille rundt med,
+
+266
+0:19:17,000 --> 0:19:19,000
+ eller måske har du spørgsmål,
+
+267
+0:19:19,000 --> 0:19:20,000
+ og måske er der nogle andre,
+
+268
+0:19:20,000 --> 0:19:22,000
+ der hænger rundt og sætter ting.
+
+269
+0:19:22,000 --> 0:19:24,000
+ Det er et sted,
+
+270
+0:19:24,000 --> 0:19:26,000
+ for hardware-hackere at samle sammen.
+
+271
+0:19:29,000 --> 0:19:30,000
+ De startents,
+
+272
+0:19:30,000 --> 0:19:31,000
+ som du måske har set,
+
+273
+0:19:31,000 --> 0:19:33,000
+ er nye denne år.
+
+274
+0:19:33,000 --> 0:19:34,000
+ Der er en fra infodesk,
+
+275
+0:19:34,000 --> 0:19:36,000
+ der er en i cosy camping-området,
+
+276
+0:19:36,000 --> 0:19:38,000
+ der er en i køkkenområdet,
+
+277
+0:19:38,000 --> 0:19:40,000
+ og der er en udenfor kabinerne.
+
+278
+0:19:40,000 --> 0:19:41,000
+ Den i køkkenområdet
+
+279
+0:19:41,000 --> 0:19:42,000
+ er for at spise,
+
+280
+0:19:42,000 --> 0:19:44,000
+ men resten er for at hænge ud
+
+281
+0:19:44,000 --> 0:19:46,000
+ og hacke.
+
+282
+0:19:47,000 --> 0:19:48,000
+ Der er table og sæder,
+
+283
+0:19:48,000 --> 0:19:50,000
+ kraft og lyd der,
+
+284
+0:19:50,000 --> 0:19:51,000
+ og vi håber,
+
+285
+0:19:51,000 --> 0:19:52,000
+ at der vil være
+
+286
+0:19:52,000 --> 0:19:53,000
+ flotte steder
+
+287
+0:19:53,000 --> 0:19:54,000
+ for at sætte rundt
+
+288
+0:19:54,000 --> 0:19:55,000
+ og være uden for solen,
+
+289
+0:19:55,000 --> 0:19:57,000
+ uden for regnen,
+
+290
+0:19:57,000 --> 0:19:58,000
+ eller hvilket vejr,
+
+291
+0:19:58,000 --> 0:19:59,000
+ der bliver tænkt på os
+
+292
+0:19:59,000 --> 0:20:01,000
+ på denne tid.
+
+293
+0:20:03,000 --> 0:20:05,000
+ Først og fremmest er der
+
+294
+0:20:05,000 --> 0:20:07,000
+ bag infodesken
+
+295
+0:20:07,000 --> 0:20:09,000
+ en område,
+
+296
+0:20:09,000 --> 0:20:10,000
+ som vi kalder Orga Village,
+
+297
+0:20:10,000 --> 0:20:11,000
+ som er en del af
+
+298
+0:20:11,000 --> 0:20:13,000
+ storheden for
+
+299
+0:20:13,000 --> 0:20:15,000
+ paletter og brud
+
+300
+0:20:15,000 --> 0:20:17,000
+ og en million andre ting,
+
+301
+0:20:17,000 --> 0:20:18,000
+ som vi har brug for
+
+302
+0:20:18,000 --> 0:20:19,000
+ at bygge et event.
+
+303
+0:20:19,000 --> 0:20:20,000
+ Det er også der,
+
+304
+0:20:20,000 --> 0:20:21,000
+ hvor organiseringerne
+
+305
+0:20:21,000 --> 0:20:23,000
+ har vores personlige forsøg,
+
+306
+0:20:23,000 --> 0:20:25,000
+ og som de fleste mennesker,
+
+307
+0:20:25,000 --> 0:20:26,000
+ må vi ofte
+
+308
+0:20:26,000 --> 0:20:28,000
+ retræde lidt
+
+309
+0:20:28,000 --> 0:20:30,000
+ og være os selv,
+
+310
+0:20:30,000 --> 0:20:31,000
+ så vi vil takke det,
+
+311
+0:20:31,000 --> 0:20:32,000
+ hvis folk skal være udenfor
+
+312
+0:20:32,000 --> 0:20:33,000
+ Orga-området,
+
+313
+0:20:33,000 --> 0:20:34,000
+ uanset om
+
+314
+0:20:34,000 --> 0:20:35,000
+ du har business derinde,
+
+315
+0:20:35,000 --> 0:20:37,000
+ du køber noget op,
+
+316
+0:20:37,000 --> 0:20:38,000
+ eller du møder nogen
+
+317
+0:20:38,000 --> 0:20:39,000
+ eller gør noget,
+
+318
+0:20:39,000 --> 0:20:40,000
+ så er det selvfølgelig
+
+319
+0:20:40,000 --> 0:20:42,000
+ helt fint at gå ind
+
+320
+0:20:42,000 --> 0:20:43,000
+ og restokere bar,
+
+321
+0:20:43,000 --> 0:20:44,000
+ eller hvad der er nødvendigt,
+
+322
+0:20:44,000 --> 0:20:46,000
+ men tænk på,
+
+323
+0:20:46,000 --> 0:20:48,000
+ at det også er en by,
+
+324
+0:20:48,000 --> 0:20:49,000
+ hvor vi går til at relacere,
+
+325
+0:20:49,000 --> 0:20:51,000
+ og måske få lidt af det,
+
+326
+0:20:51,000 --> 0:20:52,000
+ fra alt,
+
+327
+0:20:52,000 --> 0:20:53,000
+ fra gang til gang.
+
+328
+0:20:53,000 --> 0:20:54,000
+ Det var det,
+
+329
+0:20:54,000 --> 0:20:55,000
+ hvad vi havde,
+
+330
+0:20:55,000 --> 0:20:56,000
+ vi havde tænkt os
+
+331
+0:20:56,000 --> 0:20:57,000
+ at tænke på,
+
+332
+0:20:57,000 --> 0:20:58,000
+ og vi tænker,
+
+333
+0:20:58,000 --> 0:20:59,000
+ at det vil være
+
+334
+0:20:59,000 --> 0:21:00,000
+ en forbedring,
+
+335
+0:21:00,000 --> 0:21:01,000
+ men vi tænker,
+
+336
+0:21:01,000 --> 0:21:02,000
+ at vi altid
+
+337
+0:21:02,000 --> 0:21:03,000
+ tænker på feedback,
+
+338
+0:21:03,000 --> 0:21:04,000
+ så lad os vide,
+
+339
+0:21:04,000 --> 0:21:05,000
+ hvad du tænker
+
+340
+0:21:05,000 --> 0:21:06,000
+ om forandringerne.
+
+341
+0:21:06,000 --> 0:21:07,000
+ Okay,
+
+342
+0:21:07,000 --> 0:21:08,000
+ en lille smule om
+
+343
+0:21:08,000 --> 0:21:09,000
+ alt,
+
+344
+0:21:09,000 --> 0:21:10,000
+ der kommer op.
+
+345
+0:21:10,000 --> 0:21:11,000
+ Infodesk
+
+346
+0:21:11,000 --> 0:21:12,000
+ er din
+
+347
+0:21:12,000 --> 0:21:13,000
+ go-to-plads
+
+348
+0:21:13,000 --> 0:21:14,000
+ for
+
+349
+0:21:14,000 --> 0:21:15,000
+ alt,
+
+350
+0:21:15,000 --> 0:21:16,000
+ hvad du tænker
+
+351
+0:21:16,000 --> 0:21:17,000
+ om
+
+352
+0:21:17,000 --> 0:21:18,000
+ for
+
+353
+0:21:18,000 --> 0:21:19,000
+ alt,
+
+354
+0:21:19,000 --> 0:21:20,000
+ hvad du tænker
+
+355
+0:21:20,000 --> 0:21:21,000
+ om
+
+356
+0:21:21,000 --> 0:21:22,000
+ forúh
+
+357
+0:21:22,000 --> 0:21:23,000
+ udvirkninger
+
+358
+0:21:23,000 --> 0:21:24,000
+ og
+
+359
+0:21:24,000 --> 0:21:25,000
+ øh
+
+360
+0:21:25,000 --> 0:21:26,000
+ is
+
+361
+0:21:26,000 --> 0:21:27,000
+ det
+
+362
+0:21:27,000 --> 0:21:28,000
+ mange
+
+363
+0:21:28,000 --> 0:21:28,800
+ ting
+
+364
+0:21:28,800 --> 0:21:29,800
+ øhh
+
+365
+0:21:29,800 --> 0:21:30,720
+,
+
+366
+0:21:44,620 --> 0:21:45,000
+ er det
+
+367
+0:21:45,000 --> 0:21:46,000
+ ikke
+
+368
+0:21:46,000 --> 0:21:47,000
+ nummer
+
+369
+0:21:47,000 --> 0:21:48,000
+ 1,
+
+370
+0:21:48,000 --> 0:21:50,000
+ 9.30, det er i morgen,
+
+371
+0:21:50,900 --> 0:21:52,300
+ og også
+
+372
+0:21:52,300 --> 0:21:54,240
+ igen fredag samtidig.
+
+373
+0:21:57,820 --> 0:21:58,640
+ Det rente
+
+374
+0:21:58,640 --> 0:21:59,940
+ village-stof, som
+
+375
+0:21:59,940 --> 0:22:02,060
+ tablerne, som du sidder på, og sæder,
+
+376
+0:22:02,160 --> 0:22:04,220
+ som du kan rente i webshop, kan
+
+377
+0:22:04,220 --> 0:22:05,920
+ også blive taget op i infodesk.
+
+378
+0:22:06,020 --> 0:22:08,320
+ Vær så god at koordinere med infodesk
+
+379
+0:22:08,320 --> 0:22:10,200
+ før du tager noget, selvom du har
+
+380
+0:22:10,200 --> 0:22:12,080
+ rentet det, og de må være klædt, og det er
+
+381
+0:22:12,080 --> 0:22:13,740
+ gældende. Vær så god at finde nogen at snakke med.
+
+382
+0:22:13,860 --> 0:22:16,100
+ Vær så god ikke at tage, for vi er ikke
+
+383
+0:22:16,100 --> 0:22:18,040
+ nødt til at holde kontakt med alt,
+
+384
+0:22:18,280 --> 0:22:20,160
+ hvis folk bare går og tager
+
+385
+0:22:20,160 --> 0:22:21,920
+ stof selv. Tak.
+
+386
+0:22:24,340 --> 0:22:25,620
+ Okay. Bicykler.
+
+387
+0:22:26,360 --> 0:22:27,000
+ Det er
+
+388
+0:22:27,000 --> 0:22:29,840
+ siden det første Bornhag, vi fik
+
+389
+0:22:29,840 --> 0:22:32,100
+ idéen, at vi ville rentere en hel del bicykler
+
+390
+0:22:32,100 --> 0:22:33,980
+ og bare gøre dem tilgældende for fri, fordi
+
+391
+0:22:33,980 --> 0:22:35,740
+ så kunne folk køre rundt og få lidt
+
+392
+0:22:35,740 --> 0:22:37,540
+ ud af venueet, og det har været
+
+393
+0:22:37,540 --> 0:22:39,900
+ vildt populært, og vi
+
+394
+0:22:39,900 --> 0:22:41,780
+ er selvfølgelig fortsat på at gøre det.
+
+395
+0:22:42,300 --> 0:22:43,900
+ Så på infodesk kan du komme,
+
+396
+0:22:44,040 --> 0:22:45,780
+ købe en biker, og du kan køre rundt og
+
+397
+0:22:45,780 --> 0:22:47,520
+ gå og købe, eller du kan bare
+
+398
+0:22:47,520 --> 0:22:48,700
+ køre rundt og se på
+
+399
+0:22:48,700 --> 0:22:51,660
+ terrænet, og se på naturen,
+
+400
+0:22:51,660 --> 0:22:53,540
+ eller gå og se, hvis du kan
+
+401
+0:22:53,540 --> 0:22:55,040
+ finde nogle sider til at se her.
+
+402
+0:22:57,180 --> 0:22:58,740
+ Der er en registration,
+
+403
+0:22:59,380 --> 0:23:01,120
+ du får din navn eller noget
+
+404
+0:23:01,120 --> 0:23:03,280
+ skrevet ned, så vi kan komme og
+
+405
+0:23:03,280 --> 0:23:04,620
+ finde dig, hvis du ikke vil rentere en biker.
+
+406
+0:23:04,860 --> 0:23:06,900
+ Der er en helmet, og der er løg og løg, og
+
+407
+0:23:06,900 --> 0:23:08,840
+ alt, og der er også en trailer, hvis du
+
+408
+0:23:08,840 --> 0:23:11,140
+ vil købe i en lidt mere
+
+409
+0:23:11,140 --> 0:23:11,860
+ seriøs måde.
+
+410
+0:23:15,420 --> 0:23:15,760
+ Elektrikitet.
+
+411
+0:23:15,760 --> 0:23:18,140
+ Elektrikitet er nødt til mest af
+
+412
+0:23:18,140 --> 0:23:20,280
+ de aktiviteter, som folk
+
+413
+0:23:20,280 --> 0:23:21,960
+ gerne vil gøre her, så vi er meget
+
+414
+0:23:21,960 --> 0:23:23,940
+ glade, at Power Team, igen, har
+
+415
+0:23:23,940 --> 0:23:25,620
+ forstået at
+
+416
+0:23:25,620 --> 0:23:27,320
+ dække hele området med
+
+417
+0:23:27,320 --> 0:23:30,140
+ power-optioner.
+
+418
+0:23:30,980 --> 0:23:32,420
+ 1,4 kilometer,
+
+419
+0:23:32,880 --> 0:23:33,600
+ 400 volts
+
+420
+0:23:33,600 --> 0:23:36,040
+ power grid har været rullet ud,
+
+421
+0:23:36,220 --> 0:23:37,680
+ og der er 28 forskellige
+
+422
+0:23:37,680 --> 0:23:39,720
+ steder, du kan
+
+423
+0:23:39,720 --> 0:23:41,860
+ tage power fra. Du er meget velkommen
+
+424
+0:23:41,860 --> 0:23:43,740
+ til at hjælpe dig selv, men
+
+425
+0:23:43,740 --> 0:23:45,740
+ vær velkommen at holde power-hubbet
+
+426
+0:23:45,760 --> 0:23:46,580
+ løst.
+
+427
+0:23:46,580 --> 0:23:49,340
+ De har plastikpakker over dem, og jeg
+
+428
+0:23:49,340 --> 0:23:51,580
+ tror, lille klæder til at holde dem på,
+
+429
+0:23:51,580 --> 0:23:53,520
+ men når folk går og hænger det op og
+
+430
+0:23:53,520 --> 0:23:54,860
+ sætter klokken i, måske de ikke
+
+431
+0:23:54,860 --> 0:23:56,960
+ helt får det på, og så blåser det en lille
+
+432
+0:23:56,960 --> 0:23:58,160
+ lille smule. Så hvis du går ved en
+
+433
+0:23:58,160 --> 0:24:00,640
+ power-ting, og pakken er ikke
+
+434
+0:24:00,640 --> 0:24:02,940
+ ret på, så vær velkommen til at hjælpe
+
+435
+0:24:02,940 --> 0:24:04,800
+ at sikre det, så bunden af
+
+436
+0:24:04,800 --> 0:24:06,200
+ bildet er lidt forfærdelig, men du
+
+437
+0:24:06,200 --> 0:24:07,520
+ får idéen, ikke? Det er nødt til at
+
+438
+0:24:07,520 --> 0:24:10,260
+ være en pakke over at dække
+
+439
+0:24:10,260 --> 0:24:12,320
+ de elektriske biter, de ikke
+
+440
+0:24:12,320 --> 0:24:14,720
+ mængder godt med vand. Det hjælper
+
+441
+0:24:14,720 --> 0:24:16,200
+ alle, fordi hvis en
+
+442
+0:24:16,200 --> 0:24:18,380
+ power-outlet går, så ved du aldrig, at det
+
+443
+0:24:18,380 --> 0:24:19,920
+ må være din egen by, der løser
+
+444
+0:24:19,920 --> 0:24:22,200
+ power. Så lad os hjælpe hinanden og
+
+445
+0:24:22,200 --> 0:24:24,620
+ holde power-hubbet i løsning, og
+
+446
+0:24:24,620 --> 0:24:26,280
+ power-teamet kan forholde sig til
+
+447
+0:24:26,280 --> 0:24:28,320
+ større ting, i stedet for at forrige vand
+
+448
+0:24:28,320 --> 0:24:31,960
+ i en distributør.
+
+449
+0:24:31,960 --> 0:24:35,180
+ Godt, og så når vi har power, kan vi
+
+450
+0:24:35,180 --> 0:24:37,680
+ få netværket op og i løsning. Vi har
+
+451
+0:24:37,680 --> 0:24:39,260
+ en udsigt fra NOG-teamet, at
+
+452
+0:24:39,260 --> 0:24:42,260
+ folk bruger mere bandværd.
+
+453
+0:24:44,720 --> 0:24:50,720
+ Vi har en wire-netværk, selvfølgelig. Hvis du har en
+
+454
+0:24:50,720 --> 0:24:52,380
+ netværkkabel, så ruller du den ud til
+
+455
+0:24:52,380 --> 0:24:54,080
+ den nærmeste pub, og nogen vil
+
+456
+0:24:54,080 --> 0:24:56,720
+ hænge dig op, og hvis de ikke, så spørger du
+
+457
+0:24:56,720 --> 0:24:58,160
+ en NOG-person, og de kan
+
+458
+0:24:58,160 --> 0:25:00,140
+ plukke dig ind. Der er også nogle
+
+459
+0:25:00,140 --> 0:25:03,680
+ wifi-SSID'er. Der er en, der hedder
+
+460
+0:25:03,680 --> 0:25:06,840
+ BornHack. Du får en global IPv4 og
+
+461
+0:25:06,840 --> 0:25:09,520
+ v6-adresse, altså der er ingen
+
+462
+0:25:09,520 --> 0:25:11,360
+ netværk, der er ingen løsning i forhold til det.
+
+463
+0:25:11,360 --> 0:25:14,000
+ Du har brug for en ret løsning på
+
+464
+0:25:14,000 --> 0:25:15,740
+ dine app'er. Det er bedt for
+
+465
+0:25:15,740 --> 0:25:17,700
+ virkelige computerer, laptop'er og
+
+466
+0:25:17,700 --> 0:25:19,280
+ ting. Jeg vil ikke anbefale at sætte
+
+467
+0:25:19,280 --> 0:25:20,780
+ tabletter og telefoner og ting på det.
+
+468
+0:25:20,780 --> 0:25:23,460
+ Du er udsat direkte til internettet
+
+469
+0:25:23,460 --> 0:25:27,860
+ med ingenting i mellem. BornHack 802.1x
+
+470
+0:25:27,860 --> 0:25:31,700
+ har individuel inkryption. .1x er
+
+471
+0:25:31,700 --> 0:25:35,120
+ en lidt mere fornøjende måde at
+
+472
+0:25:35,120 --> 0:25:38,160
+ tilkneppe sig til en netværk, men
+
+473
+0:25:38,160 --> 0:25:39,920
+ den tilføjer individuel
+
+474
+0:25:39,920 --> 0:25:42,320
+ inkryption for klienter, så i forhold til
+
+475
+0:25:42,320 --> 0:25:43,760
+ WPA er det en meget
+
+476
+0:25:43,760 --> 0:25:45,440
+ sikrere måde at tilkne, men det kan også
+
+477
+0:25:45,440 --> 0:25:47,540
+ være en smule af en fornøjelse at
+
+478
+0:25:47,540 --> 0:25:50,960
+ få det til at gå i gang. BornHack.net er
+
+479
+0:25:50,960 --> 0:25:53,580
+ mere som den netværk, som du kender fra
+
+480
+0:25:53,580 --> 0:25:55,820
+ vanlige residentielle internets
+
+481
+0:25:55,820 --> 0:25:58,160
+ tilknytninger. Der er en netværk i forhånd,
+
+482
+0:25:58,160 --> 0:26:00,500
+ der betyder, at ingen udsatte tilknytninger kan gå ind,
+
+483
+0:26:00,500 --> 0:26:04,940
+ det betyder, at en stor del af
+
+484
+0:26:04,940 --> 0:26:08,520
+ threaten til at gå på internettet er
+
+485
+0:26:08,520 --> 0:26:11,060
+ væk, fordi du ikke har en
+
+486
+0:26:11,060 --> 0:26:13,500
+ løsning, men der er noget, der blokerer i
+
+487
+0:26:13,500 --> 0:26:17,100
+ bundløse tilknytninger. BornHack.ipv6 er
+
+488
+0:26:17,100 --> 0:26:21,100
+ en slags nyfængelig internett. Der er
+
+489
+0:26:21,100 --> 0:26:23,160
+ knæ og kolonner i IP-adressen,
+
+490
+0:26:23,160 --> 0:26:26,820
+ og det forstyrrer mig, og jeg er bange for det.
+
+491
+0:26:26,820 --> 0:26:35,160
+ Okay, så Uplink er igen en
+
+492
+0:26:35,160 --> 0:26:37,560
+ fag af ingeniøring, uanset hvilket andet,
+
+493
+0:26:37,560 --> 0:26:41,160
+ med lampe på hver side af
+
+494
+0:26:41,160 --> 0:26:44,480
+ vejens kød, for at få en løsning op ad en
+
+495
+0:26:44,480 --> 0:26:49,200
+ træffig vej, en smuk træffig vej, og så
+
+496
+0:26:49,200 --> 0:26:53,380
+ gennem en mør, en forrest, og over nogle
+
+497
+0:26:53,380 --> 0:26:56,420
+ græs, og så endelig i en popboks
+
+498
+0:26:56,420 --> 0:26:58,780
+ nogenlunde, og så til den
+
+499
+0:26:58,780 --> 0:27:01,500
+ centrale pop-plats, og så har vi
+
+500
+0:27:01,500 --> 0:27:04,580
+ en Uplink, hele vejen til
+
+501
+0:27:04,580 --> 0:27:06,960
+ Større Københagen, Høje Torstrup, hvor vi har
+
+502
+0:27:06,960 --> 0:27:09,560
+ handlet det til Fiberby, der er en uddannelse til Fiberby, som er et sted, der er begge steder i Københagen.
+
+503
+0:27:09,560 --> 0:27:15,560
+ Fiberby, som er vores internet-provider, så Global Connect er Fiber-uplink-provideret,
+
+504
+0:27:15,560 --> 0:27:18,560
+ og Fiberby er sponsoreret af internet-konnektionen.
+
+505
+0:27:18,560 --> 0:27:25,560
+ Vi har en permanent IPv6-allokation og en temporært brugt IPv4-allokation fra VIBE.
+
+506
+0:27:25,560 --> 0:27:29,560
+ Den samme som vi havde i fjern, så du ikke har brug for at opdage dine aksesliste,
+
+507
+0:27:29,560 --> 0:27:31,560
+ hvis du ikke har lagt dem ud.
+
+508
+0:27:31,560 --> 0:27:35,560
+ Men hvis du har PEGs fra i fjern, så brug dem ikke.
+
+509
+0:27:35,560 --> 0:27:39,560
+ Hvis du har PEG-DHCP-PEGs, så er de invalide i fjern.
+
+510
+0:27:39,560 --> 0:27:42,560
+ De er årsspecifikke.
+
+511
+0:27:42,560 --> 0:27:44,560
+ Okay.
+
+512
+0:27:44,560 --> 0:27:47,560
+ Ja, en god job både af Power-teamet og Network-teamet.
+
+513
+0:27:47,560 --> 0:27:49,560
+ Lad os give dem en god hånd.
+
+514
+0:28:05,560 --> 0:28:07,560
+ Okay.
+
+515
+0:28:07,560 --> 0:28:09,560
+ Hax er den nødvendige hak.
+
+516
+0:28:09,560 --> 0:28:12,560
+ Kørense, så at sige.
+
+517
+0:28:12,560 --> 0:28:18,560
+ Det er et internt klassisk token-system, som vi bruger til at betale i bar,
+
+518
+0:28:18,560 --> 0:28:23,560
+ men det kan også bruges til at betale i fjernvendelser og på infodesk og sådan noget.
+
+519
+0:28:23,560 --> 0:28:29,560
+ Du kan købe dem på infodesk for almindelig kæs, dansk kæs, eller med kreditkarte eller mobilpenge.
+
+520
+0:28:29,560 --> 0:28:34,560
+ Og så får du, hvis du betaler 100 kroner, 100 Hax, og du kan betale dem på bier eller hvad der er.
+
+521
+0:28:34,560 --> 0:28:36,560
+ I bar.
+
+522
+0:28:36,560 --> 0:28:40,560
+ Du kan også bruge dem til at spise i fjernvendelsen eller på infodesk,
+
+523
+0:28:40,560 --> 0:28:44,560
+ for at betale for Amade eller hvad du vil.
+
+524
+0:28:44,560 --> 0:28:47,560
+ Du må bære en hækseband til at købe Hax.
+
+525
+0:28:47,560 --> 0:28:51,560
+ Jeg har ikke en endnu, men lykkeligvis havde jeg nogle Hax fra sidste år.
+
+526
+0:28:55,560 --> 0:29:01,560
+ Og når du har Hax, kan du gå til bar, og de kan tjene dig en bier.
+
+527
+0:29:01,560 --> 0:29:03,560
+ De kan ikke blive refundet.
+
+528
+0:29:03,560 --> 0:29:04,560
+ På slutningen af udvalget,
+
+529
+0:29:04,560 --> 0:29:06,560
+ så køb ikke for mange,
+
+530
+0:29:06,560 --> 0:29:08,560
+ uanset om du planer på at komme tilbage næste år,
+
+531
+0:29:08,560 --> 0:29:11,560
+ hvor det er meget sikkert, at vi vil bruge de samme Hax igen.
+
+532
+0:29:11,560 --> 0:29:13,560
+ Du kan også, hvis du har nogle,
+
+533
+0:29:13,560 --> 0:29:17,560
+ bare købe dem på infodesk, når du går bort.
+
+534
+0:29:17,560 --> 0:29:19,560
+ Det er altid værd.
+
+535
+0:29:21,560 --> 0:29:25,560
+ Så har Team Water, eller sanitærings-teamet,
+
+536
+0:29:25,560 --> 0:29:28,560
+ rullet ud en hel masse vandinfrastruktur,
+
+537
+0:29:28,560 --> 0:29:33,560
+ for at få toalettekontaineren, toalettekontaineren, barret,
+
+538
+0:29:33,560 --> 0:29:35,560
+ alle forsetterne og alt det, der går.
+
+539
+0:29:35,560 --> 0:29:39,560
+ Der er, som jeg sagde, sætninger omkring salen,
+
+540
+0:29:39,560 --> 0:29:41,560
+ og alt er drikket med ret vand,
+
+541
+0:29:41,560 --> 0:29:44,560
+ så du ikke har at se, hvor du tager vandet fra,
+
+542
+0:29:44,560 --> 0:29:46,560
+ så længe det er et tap.
+
+543
+0:29:51,560 --> 0:29:52,560
+ Parkingpladsen.
+
+544
+0:29:52,560 --> 0:29:54,560
+ Jeg tror, vi har lukket det.
+
+545
+0:29:54,560 --> 0:29:56,560
+ Du har brug for en bil fra webshoppen,
+
+546
+0:29:56,560 --> 0:29:58,560
+ og jeg behøver sikkert ikke sige det,
+
+547
+0:29:58,560 --> 0:29:59,560
+ men ikke double park.
+
+548
+0:29:59,560 --> 0:30:01,560
+ Brug kommandsens, når du parkerer.
+
+549
+0:30:01,560 --> 0:30:03,560
+ Folk rundt dig bør kunne få deres biler ud,
+
+550
+0:30:03,560 --> 0:30:05,560
+ efter at du har parkeret.
+
+551
+0:30:07,560 --> 0:30:11,560
+ Vi har stadig nogle vand, som er på salen i webshoppen.
+
+552
+0:30:11,560 --> 0:30:13,560
+ Hvis du ikke har fremordret det,
+
+553
+0:30:13,560 --> 0:30:15,560
+ så gør det nu,
+
+554
+0:30:15,560 --> 0:30:17,560
+ og så er du sikker på at få nogle,
+
+555
+0:30:17,560 --> 0:30:20,560
+ fordi vi ikke har unødvendige tilfælde.
+
+556
+0:30:21,560 --> 0:30:23,560
+ Det vil blive hentet ud fra infodesk,
+
+557
+0:30:23,560 --> 0:30:25,560
+ på et eller andet sted, når det er klar.
+
+558
+0:30:27,560 --> 0:30:29,560
+ Det eneste vand, der har været betalt,
+
+559
+0:30:29,560 --> 0:30:31,560
+ vil blive produceret og handlet ud.
+
+560
+0:30:31,560 --> 0:30:33,560
+ Hvis du har en ubetalt ordning,
+
+561
+0:30:33,560 --> 0:30:35,560
+ så kan vi ikke være sikre på, at du vil betale det,
+
+562
+0:30:35,560 --> 0:30:37,560
+ så vi vil ikke producere det.
+
+563
+0:30:37,560 --> 0:30:39,560
+ Hvis du vil have en kash-ordning,
+
+564
+0:30:39,560 --> 0:30:41,560
+ så gør det så, at du går til infodesk
+
+565
+0:30:41,560 --> 0:30:43,560
+ og betaler kashet,
+
+566
+0:30:43,560 --> 0:30:45,560
+ og får ordnemarkedets betalt,
+
+567
+0:30:45,560 --> 0:30:47,560
+ for andre steder,
+
+568
+0:30:47,560 --> 0:30:49,560
+ vil ikke vide, at din ordning er virkelig.
+
+569
+0:30:49,560 --> 0:30:52,560
+ Supplieren for bilerne har ikke fået
+
+570
+0:30:52,560 --> 0:30:54,560
+ mulighed for at tilføje nogle sæsninger.
+
+571
+0:30:54,560 --> 0:30:56,560
+ Jeg er sikker på det.
+
+572
+0:30:56,560 --> 0:30:58,560
+ Der er ingenting, vi kan gøre om det.
+
+573
+0:30:59,560 --> 0:31:01,560
+ Badge.
+
+574
+0:31:01,560 --> 0:31:03,560
+ Du skal have fået en badge,
+
+575
+0:31:03,560 --> 0:31:05,560
+ når du har tænkt dig ind.
+
+576
+0:31:05,560 --> 0:31:07,560
+ Badgen ser så god ud.
+
+577
+0:31:07,560 --> 0:31:11,560
+ Det er en lille gaming-kontroller,
+
+578
+0:31:11,560 --> 0:31:15,560
+ med en Raspberry Pi RP2040 chip på den,
+
+579
+0:31:15,560 --> 0:31:18,560
+ og lille kontroller-kontroller.
+
+580
+0:31:18,560 --> 0:31:20,560
+ Den bruger Circuit Python,
+
+581
+0:31:20,560 --> 0:31:22,560
+ og det skal være let at starte.
+
+582
+0:31:22,560 --> 0:31:24,560
+ Jeg håber sikkert, at jeg kan se
+
+583
+0:31:24,560 --> 0:31:26,560
+ nogle coole spil på den,
+
+584
+0:31:26,560 --> 0:31:28,560
+ i ugen.
+
+585
+0:31:28,560 --> 0:31:30,560
+ Gå til Badgetalk i morgen,
+
+586
+0:31:30,560 --> 0:31:32,560
+ eller se en stream af den.
+
+587
+0:31:32,560 --> 0:31:35,560
+ Det er i morgen fra 11-12,
+
+588
+0:31:35,560 --> 0:31:37,560
+ hvor Flummer vil fortælle om badgeet,
+
+589
+0:31:37,560 --> 0:31:39,560
+ og designprocessen,
+
+590
+0:31:39,560 --> 0:31:41,560
+ og hvad der er muligt med den.
+
+591
+0:31:41,560 --> 0:31:43,560
+ Den er ladet med en menu-system,
+
+592
+0:31:43,560 --> 0:31:46,560
+ og to enkelte app'er.
+
+593
+0:31:46,560 --> 0:31:48,560
+ En er en sponsor-app,
+
+594
+0:31:48,560 --> 0:31:50,560
+ som bare viser sponsor-logos,
+
+595
+0:31:50,560 --> 0:31:53,560
+ og den anden er bare en test-app.
+
+596
+0:31:53,560 --> 0:31:56,560
+ Tak til de valgteere,
+
+597
+0:31:56,560 --> 0:31:59,560
+ der hjælper med at sælge badgeerne.
+
+598
+0:31:59,560 --> 0:32:01,560
+ Når man gør sådan noget,
+
+599
+0:32:01,560 --> 0:32:02,560
+ når de kommer,
+
+600
+0:32:02,560 --> 0:32:04,560
+ så er badgeerne selv færdige,
+
+601
+0:32:04,560 --> 0:32:06,560
+ men man skal sælge på nogle ting,
+
+602
+0:32:06,560 --> 0:32:08,560
+ som display og batteriholdere,
+
+603
+0:32:08,560 --> 0:32:09,560
+ og nogle ting,
+
+604
+0:32:09,560 --> 0:32:11,560
+ det lyder ikke så dårligt,
+
+605
+0:32:11,560 --> 0:32:13,560
+ men når man har 400 badge til at sælge på,
+
+606
+0:32:13,560 --> 0:32:15,560
+ så bliver det en god job.
+
+607
+0:32:15,560 --> 0:32:17,560
+ Så Flummer har organiseret en lille sælgeshop,
+
+608
+0:32:17,560 --> 0:32:18,560
+ de sidste dage,
+
+609
+0:32:18,560 --> 0:32:20,560
+ og de fik alle badgeerne gjort,
+
+610
+0:32:20,560 --> 0:32:21,560
+ i rekordtid.
+
+611
+0:32:21,560 --> 0:32:23,560
+ Så, god job.
+
+612
+0:32:26,560 --> 0:32:32,560
+ Vi håber virkelig,
+
+613
+0:32:32,560 --> 0:32:35,560
+ at CircuitPython-platformen er tilgængelig
+
+614
+0:32:35,560 --> 0:32:38,560
+ og tilgængelig nok tilgængelig,
+
+615
+0:32:38,560 --> 0:32:40,560
+ at mange mennesker
+
+616
+0:32:40,560 --> 0:32:42,560
+ vil prøve at skrive noget sjovt
+
+617
+0:32:42,560 --> 0:32:43,560
+ for badgeerne.
+
+618
+0:32:43,560 --> 0:32:45,560
+ Jeg må sige,
+
+619
+0:32:45,560 --> 0:32:47,560
+ at før CircuitPython,
+
+620
+0:32:47,560 --> 0:32:49,560
+ så fik jeg ikke rigtig til at tænke på
+
+621
+0:32:49,560 --> 0:32:50,560
+ hardware selv,
+
+622
+0:32:50,560 --> 0:32:52,560
+ men det er så let at gøre,
+
+623
+0:32:52,560 --> 0:32:54,560
+ at det er svært
+
+624
+0:32:54,560 --> 0:32:56,560
+ ikke at falde ind
+
+625
+0:32:56,560 --> 0:32:58,560
+ i denne runde.
+
+626
+0:32:58,560 --> 0:33:00,560
+ Så jeg håber at se nogle rigtig gode ting
+
+627
+0:33:00,560 --> 0:33:02,560
+ på badge-retningerne.
+
+628
+0:33:02,560 --> 0:33:04,560
+ Okay,
+
+629
+0:33:04,560 --> 0:33:05,560
+ så,
+
+630
+0:33:05,560 --> 0:33:06,560
+ værktøj-området.
+
+631
+0:33:06,560 --> 0:33:08,560
+ Som jeg sagde,
+
+632
+0:33:08,560 --> 0:33:10,560
+ har det haft et par år af hiatus,
+
+633
+0:33:10,560 --> 0:33:12,560
+ men det er tilbage nu.
+
+634
+0:33:12,560 --> 0:33:13,560
+ Hot-top-området er tilsat
+
+635
+0:33:13,560 --> 0:33:14,560
+ af værktøj-området.
+
+636
+0:33:14,560 --> 0:33:16,560
+ Selvom det ser ud,
+
+637
+0:33:16,560 --> 0:33:17,560
+ som om det er nødt til det,
+
+638
+0:33:17,560 --> 0:33:19,560
+ så gør ikke det selv.
+
+639
+0:33:19,560 --> 0:33:20,560
+ Det er,
+
+640
+0:33:20,560 --> 0:33:21,560
+ ja,
+
+641
+0:33:21,560 --> 0:33:22,560
+ lad dem handle det.
+
+642
+0:33:22,560 --> 0:33:23,560
+ Der er en sove,
+
+643
+0:33:23,560 --> 0:33:24,560
+ nærmere,
+
+644
+0:33:24,560 --> 0:33:25,560
+ to meter fra det,
+
+645
+0:33:25,560 --> 0:33:26,560
+ som en udslagssovej.
+
+646
+0:33:26,560 --> 0:33:27,560
+ Det er koldt,
+
+647
+0:33:27,560 --> 0:33:28,560
+ men det fungerer.
+
+648
+0:33:28,560 --> 0:33:30,560
+ Ellers kan du gå ind i kabinen
+
+649
+0:33:30,560 --> 0:33:31,560
+ og have en rigtig varm sovej.
+
+650
+0:33:31,560 --> 0:33:32,560
+ Men vær så glad,
+
+651
+0:33:32,560 --> 0:33:33,560
+ at du rinser af,
+
+652
+0:33:33,560 --> 0:33:35,560
+ før du går ind i hot-top-området.
+
+653
+0:33:35,560 --> 0:33:37,560
+ Klædning er optional,
+
+654
+0:33:37,560 --> 0:33:39,560
+ og ofte uanset
+
+655
+0:33:39,560 --> 0:33:41,560
+ i denne område.
+
+656
+0:33:41,560 --> 0:33:43,560
+ Hvis du,
+
+657
+0:33:43,560 --> 0:33:44,560
+ hvis du,
+
+658
+0:33:44,560 --> 0:33:45,560
+ hvis du,
+
+659
+0:33:45,560 --> 0:33:46,560
+ hvis du ikke vil have nuditet,
+
+660
+0:33:46,560 --> 0:33:48,560
+ så stå væk fra hot-top-området.
+
+661
+0:33:48,560 --> 0:33:49,560
+ Der vil være
+
+662
+0:33:49,560 --> 0:33:51,560
+ nækede hackere,
+
+663
+0:33:51,560 --> 0:33:52,560
+ der kører rundt.
+
+664
+0:33:52,560 --> 0:33:53,560
+ Øh, ikke kører,
+
+665
+0:33:53,560 --> 0:33:54,560
+ men...
+
+666
+0:33:55,560 --> 0:33:56,560
+0
+
+667
+0:34:12,960 --> 0:34:14,160
+ Okay,
+
+668
+0:34:14,160 --> 0:34:16,560
+ vi har over de sidste få år
+
+669
+0:34:16,560 --> 0:34:17,560
+ startet en tradition.
+
+670
+0:34:17,560 --> 0:34:20,560
+ Den startede på med en opbygning og en opendelighed,
+
+671
+0:34:20,560 --> 0:34:22,460
+ fordi vi hælder rundt
+
+672
+0:34:22,460 --> 0:34:23,560
+ en masse v competitionsnæste.
+
+673
+0:34:23,560 --> 0:34:24,560
+ Vores klubeforsøgere
+
+674
+0:34:24,560 --> 0:34:30,520
+ at række vores hænder og hænder, og det hjælper virkelig at føle sig lidt bedre
+
+675
+0:34:30,520 --> 0:34:34,560
+ under build-up, og over de sidste flere år har det vokset til at være også
+
+676
+0:34:34,560 --> 0:34:38,800
+ under eventet, og massagesluttene er i webshoppen, og hvis du føler dig
+
+677
+0:34:38,800 --> 0:34:46,660
+ ligge på en bedning for en halv time, at blive rækket, så gå til webshoppen.
+
+678
+0:34:46,660 --> 0:34:50,980
+ Jeg kan højt rekommende det. Jeg fik en time i går, og jeg følte mig fantastisk.
+
+679
+0:34:50,980 --> 0:34:59,540
+ Så tak for at organisere det til vores virksomhedsteam, det er et stort hjælp
+
+680
+0:34:59,540 --> 0:35:03,060
+ for de dårlige børn, de dårlige build-up børn.
+
+681
+0:35:03,060 --> 0:35:06,940
+ Vær så glad til at bringe en tål, når du kommer op der, så vi ikke har brug for tål
+
+682
+0:35:06,940 --> 0:35:09,800
+ for alle, og have en god søvn først.
+
+683
+0:35:09,800 --> 0:35:15,940
+ Og når du er i søvnet, gå og tjek dig selv for tikkene, der er nogle
+
+684
+0:35:15,940 --> 0:35:20,800
+ uanvendte gæster på det her område, og vi har prøvet at udvikle dem for
+
+685
+0:35:20,800 --> 0:35:20,960
+ noget.
+
+686
+0:35:20,980 --> 0:35:23,800
+ Jeg har ikke brug for tål, men det fungerer ikke.
+
+687
+0:35:23,800 --> 0:35:31,760
+ Der er en smal risiko for tve, men der er en risiko, og andre gange, der er også
+
+688
+0:35:31,760 --> 0:35:37,480
+ en, jeg kan ikke huske, hvad den hedder, ja, lyme sygdom, tak.
+
+689
+0:35:37,480 --> 0:35:42,640
+ De er næste lille dårlige børn, vi har de hjælp til at gøre dem bort, CERT kan hjælpe,
+
+690
+0:35:42,640 --> 0:35:47,260
+ eller du kan finde en hacker buddy, og du kan tjekke hinanden i en tent, det er
+
+691
+0:35:47,260 --> 0:35:50,800
+ rigtig sjovt.
+
+692
+0:35:50,800 --> 0:35:56,760
+ Så vær sikker på at tjekke dig selv, det er ikke en joke, jeg har haft nogen nærmere, der har lyme
+
+693
+0:35:56,760 --> 0:36:02,240
+ sygdom, og det blev virkelig seriøst, fordi det ikke blev udviklet i tid, og han
+
+694
+0:36:02,240 --> 0:36:07,100
+ boede i et sted i en del af verden, efter han gik hjem fra Bornhag, han gik tilbage til, hvor
+
+695
+0:36:07,100 --> 0:36:09,940
+ han bor, i en del af verden, hvor de ikke har så meget lyme sygdom, så det
+
+696
+0:36:09,940 --> 0:36:15,920
+ tog doktorerne måneder at få det, og det blev meget dårligt, og vær sikker på at tage
+
+697
+0:36:15,920 --> 0:36:18,920
+ hånd om jer selv.
+
+698
+0:36:18,920 --> 0:36:19,920
+ Nu til noget meget mere fungerende.
+
+699
+0:36:19,920 --> 0:36:19,960
+ Barhælp.
+
+700
+0:36:19,960 --> 0:36:20,080
+ Barhælp.
+
+701
+0:36:20,080 --> 0:36:20,140
+ Barhælp.
+
+702
+0:36:20,140 --> 0:36:20,160
+ Barhælp.
+
+703
+0:36:20,160 --> 0:36:20,180
+ Barhælp.
+
+704
+0:36:20,180 --> 0:36:20,460
+ Barhælp.
+
+705
+0:36:20,480 --> 0:36:20,500
+ Barhælp.
+
+706
+0:36:20,500 --> 0:36:20,520
+ Barhælp.
+
+707
+0:36:20,520 --> 0:36:20,560
+ Barhælp.
+
+708
+0:36:20,560 --> 0:36:20,620
+ Barhælp.
+
+709
+0:36:20,620 --> 0:36:20,960
+ Barhælp.
+
+710
+0:36:21,780 --> 0:36:26,920
+ Så, the work in progress bar is, well I suppose they are working on it right now,
+
+711
+0:36:27,060 --> 0:36:31,640
+ I think, and for the remainder of the week, expect even on the last day new stuff to
+
+712
+0:36:31,640 --> 0:36:32,320
+ appear down there.
+
+713
+0:36:33,780 --> 0:36:38,160
+ Please use the bar, we need the profits, about one third of the profits, like I said,
+
+714
+0:36:38,240 --> 0:36:42,620
+ come from sponsors, one third comes from ticket sales, and the last third comes from
+
+715
+0:36:42,620 --> 0:36:43,400
+ profits from the bar.
+
+716
+0:36:44,080 --> 0:36:47,780
+ So if the bar isn't used, then again, there is no Bornhag.
+
+717
+0:36:47,780 --> 0:36:49,780
+ So it is.
+
+718
+0:36:50,180 --> 0:36:54,180
+ Det er et helt fantastisk sted, som bar-teamet har bygget.
+
+719
+0:36:54,180 --> 0:36:57,180
+ Jeg siger det næsten hver år, men de fortsætter at forbedre det.
+
+720
+0:36:57,180 --> 0:36:59,180
+ Det er det bedste endnu.
+
+721
+0:36:59,180 --> 0:37:01,180
+ Det er både lignende og...
+
+722
+0:37:01,180 --> 0:37:04,180
+ Vi har placeret denne tale meget godt, fordi du er gået ind her i daglig,
+
+723
+0:37:04,180 --> 0:37:06,180
+ og du skal gå ud i mørket,
+
+724
+0:37:06,180 --> 0:37:09,180
+ og du får at opleve det fantastiske arbejde, som lignende-teamet gjorde,
+
+725
+0:37:09,180 --> 0:37:12,180
+ både i baren og på resten af venueet.
+
+726
+0:37:12,180 --> 0:37:14,180
+ Baren har en opmærksom...
+
+727
+0:37:14,180 --> 0:37:16,180
+ Jeg er fortalt, at jeg ikke drikker bier,
+
+728
+0:37:16,180 --> 0:37:19,180
+ men en opmærksom selektion af draftbier eller kraftbier,
+
+729
+0:37:19,180 --> 0:37:22,180
+ og sommerfedt-draft,
+
+730
+0:37:22,180 --> 0:37:27,180
+ og også vores egen custom Bornhag-vodka og aquavit,
+
+731
+0:37:27,180 --> 0:37:30,180
+ og selvfølgelig har vi mange sæberblødder.
+
+732
+0:37:44,180 --> 0:37:48,180
+ Så vi kan tjene alkohol indtil 2.00 om morgenen,
+
+733
+0:37:48,180 --> 0:37:53,180
+ så tænk på, at sidste opmærksomhed skal være om 10 minutter eller sådan noget til 2.00.
+
+734
+0:37:57,180 --> 0:37:59,180
+ Og så kan vi teknisk starte op til 05.00,
+
+735
+0:37:59,180 --> 0:38:03,180
+ men jeg forventer ikke, at bartenderne skal være opmærksomme på det punkt.
+
+736
+0:38:03,180 --> 0:38:05,180
+ Måske om nogen eller noget.
+
+737
+0:38:05,180 --> 0:38:07,180
+ Åbningstiderne er ikke helt...
+
+738
+0:38:07,180 --> 0:38:11,180
+ De bærer på de slutte tider den dag før.
+
+739
+0:38:13,180 --> 0:38:14,180
+ Okay.
+
+740
+0:38:14,180 --> 0:38:17,180
+ Vi genererer selvfølgelig nogle skade,
+
+741
+0:38:17,180 --> 0:38:19,180
+ når vi er mange mennesker sammen.
+
+742
+0:38:19,180 --> 0:38:21,180
+ Vi genererer også skade, når vi er hjemme.
+
+743
+0:38:21,180 --> 0:38:26,180
+ Men når vi er her, så må vi styrke infrastrukturen helt ud af det.
+
+744
+0:38:26,180 --> 0:38:28,180
+ Prøv at minimere skade.
+
+745
+0:38:28,180 --> 0:38:29,180
+ Brug tingene hjem.
+
+746
+0:38:29,180 --> 0:38:32,180
+ Prøv ikke at forlade tæmper og sovepakker og sådan noget her.
+
+747
+0:38:32,180 --> 0:38:34,180
+ Og generelt, prøv at...
+
+748
+0:38:34,180 --> 0:38:37,180
+ Vi arbejder på at få de signaler på træskantene,
+
+749
+0:38:37,180 --> 0:38:39,180
+ men der vil være et system,
+
+750
+0:38:39,180 --> 0:38:40,180
+ det vil være fantastisk,
+
+751
+0:38:40,180 --> 0:38:44,180
+ og I alle vil bruge det og elsker det.
+
+752
+0:38:44,180 --> 0:38:46,180
+ De signaler bliver produceret, tror jeg,
+
+753
+0:38:46,180 --> 0:38:49,180
+ og de bliver sættet op så snart som muligt.
+
+754
+0:38:49,180 --> 0:38:51,180
+ Der er også køleskaber.
+
+755
+0:38:51,180 --> 0:38:55,180
+ De er også i det kommer snart-departement, tror jeg.
+
+756
+0:38:56,180 --> 0:38:58,180
+ Hvis I ser en fuld binde,
+
+757
+0:38:58,180 --> 0:39:01,180
+ informer infodesken eller nogen med en vest,
+
+758
+0:39:01,180 --> 0:39:04,180
+ og de vil vide, hvad man skal gøre.
+
+759
+0:39:05,180 --> 0:39:07,180
+ Bare et sekund.
+
+760
+0:39:08,180 --> 0:39:09,180
+ Godt.
+
+761
+0:39:09,180 --> 0:39:10,180
+ Okay.
+
+762
+0:39:10,180 --> 0:39:15,180
+ Facilities map er et godt sted for alt dette.
+
+763
+0:39:15,180 --> 0:39:17,180
+ Der er både, som jeg sagde,
+
+764
+0:39:17,180 --> 0:39:20,180
+ power-outlets, network-outlets,
+
+765
+0:39:20,180 --> 0:39:21,180
+ der er også træskanter,
+
+766
+0:39:21,180 --> 0:39:23,180
+ der er bryster, toaletter,
+
+767
+0:39:23,180 --> 0:39:25,180
+ og vi prøver at gøre, at alle teamene
+
+768
+0:39:25,180 --> 0:39:27,180
+ sætter relevante ting på der.
+
+769
+0:39:27,180 --> 0:39:29,180
+ Det er stadig en ny feature på websiden,
+
+770
+0:39:29,180 --> 0:39:31,180
+ så vi er ikke så gode til at bruge det endnu,
+
+771
+0:39:31,180 --> 0:39:33,180
+ men intentionen er at have alt,
+
+772
+0:39:33,180 --> 0:39:34,180
+ der er relevant på denne mappe.
+
+773
+0:39:34,180 --> 0:39:35,180
+ Så hvis I har et team,
+
+774
+0:39:35,180 --> 0:39:36,180
+ eller er en del af et team,
+
+775
+0:39:36,180 --> 0:39:42,180
+ der har noget af et niveau af interesse her på BornHack,
+
+776
+0:39:42,180 --> 0:39:43,180
+ en installation eller en del teknologi,
+
+777
+0:39:43,180 --> 0:39:45,180
+ eller noget andet,
+
+778
+0:39:45,180 --> 0:39:49,180
+ så husk selvfølgelig at tilføje det.
+
+779
+0:39:51,180 --> 0:39:52,180
+ Rigtigt.
+
+780
+0:39:55,180 --> 0:39:58,180
+ Mange teamer er stadig nødt til at bruge medlemmer.
+
+781
+0:39:58,180 --> 0:40:01,180
+ Nogle af dem er mere kritiske end andre.
+
+782
+0:40:01,180 --> 0:40:03,180
+ Jeg har tilføjet info-teamet, video-teamet,
+
+783
+0:40:03,180 --> 0:40:04,180
+ bar-teamet,
+
+784
+0:40:04,180 --> 0:40:05,180
+ fællesskabet,
+
+785
+0:40:05,180 --> 0:40:06,180
+ og sanitæring,
+
+786
+0:40:06,180 --> 0:40:09,180
+ samtidig med Team Shit.
+
+787
+0:40:09,180 --> 0:40:14,180
+ Og også SIRT, som jeg forstod.
+
+788
+0:40:19,180 --> 0:40:21,180
+ Gå på websiden og se på teams-pagen.
+
+789
+0:40:21,180 --> 0:40:23,180
+ Det er en god måde at møde nye mennesker,
+
+790
+0:40:23,180 --> 0:40:27,180
+ og en god måde at hjælpe ud.
+
+791
+0:40:27,180 --> 0:40:28,180
+ Bøj en team,
+
+792
+0:40:28,180 --> 0:40:29,180
+ mærk nogen,
+
+793
+0:40:29,180 --> 0:40:31,180
+ og hjælp med eventet.
+
+794
+0:40:31,180 --> 0:40:33,180
+ Vi tjener alle de hjælp, vi kan få.
+
+795
+0:40:35,180 --> 0:40:36,180
+ Her er vi.
+
+796
+0:40:36,180 --> 0:40:37,180
+ SIRT.
+
+797
+0:40:37,180 --> 0:40:39,180
+ De tager sig af os.
+
+798
+0:40:39,180 --> 0:40:41,180
+ De bærer orange vest.
+
+799
+0:40:41,180 --> 0:40:42,180
+ De er her 24-7.
+
+800
+0:40:42,180 --> 0:40:46,180
+ De kan handle alt fra splinters og tiks til mere seriøse ting.
+
+801
+0:40:46,180 --> 0:40:48,180
+ Lad os håbe, at vi ikke får nogen af dem.
+
+802
+0:40:50,180 --> 0:40:52,180
+ Vi har en hardstarter på infodesken.
+
+803
+0:40:52,180 --> 0:40:55,180
+ Lad os virkelig håbe, at vi ikke har brug for det.
+
+804
+0:40:55,180 --> 0:40:57,180
+ Vi har første-aid-kits, selvfølgelig.
+
+805
+0:40:57,180 --> 0:41:00,180
+ Der er en meet-and-greet for SIRT-teamet i morgen
+
+806
+0:41:00,180 --> 0:41:05,180
+ om 13.00 i start-tenten nede ved kabinerne ved Vælnerne.
+
+807
+0:41:06,180 --> 0:41:07,180
+ Så se for en orange vest,
+
+808
+0:41:07,180 --> 0:41:08,180
+ hvis du har brug for SIRT.
+
+809
+0:41:10,180 --> 0:41:11,180
+ Ja.
+
+810
+0:41:12,180 --> 0:41:15,180
+ Fototeamet bærer hvide vest.
+
+811
+0:41:15,180 --> 0:41:18,180
+ Vestene er også i kommende snart-departementet,
+
+812
+0:41:18,180 --> 0:41:22,180
+ men de kommer måske i morgen, håber vi.
+
+813
+0:41:23,180 --> 0:41:25,180
+ Fototeamet, som alle andre,
+
+814
+0:41:25,180 --> 0:41:27,180
+ skal følge koden af kontakt.
+
+815
+0:41:27,180 --> 0:41:31,180
+ Koden af kontakt siger, at alle bilder, alle fotografier,
+
+816
+0:41:31,180 --> 0:41:33,180
+ du skal have tilføjelse fra alle i bildet.
+
+817
+0:41:33,180 --> 0:41:35,180
+ Det ville være næsten umuligt for mig,
+
+818
+0:41:35,180 --> 0:41:37,180
+ at sætte en bild af klubben her,
+
+819
+0:41:37,180 --> 0:41:38,180
+ fordi jeg skulle have at spørge hver eneste af jer.
+
+820
+0:41:38,180 --> 0:41:41,180
+ Så bilder af små grupper af mennesker,
+
+821
+0:41:41,180 --> 0:41:43,180
+ hvor du kan gå og spørge hver eneste,
+
+822
+0:41:43,180 --> 0:41:44,180
+ hey, er det okay, at jeg tager en bild?
+
+823
+0:41:44,180 --> 0:41:46,180
+ Eller hvis du kender alle, og du kender, at det er okay med dem,
+
+824
+0:41:46,180 --> 0:41:48,180
+ det er fint, men andre steder,
+
+825
+0:41:48,180 --> 0:41:51,180
+ tage ikke bilder af mennesker, uden at spørge dem.
+
+826
+0:41:51,180 --> 0:41:54,180
+ Mennesker her vælger deres privacitet.
+
+827
+0:41:54,180 --> 0:41:56,180
+ De ønsker ikke, at de ender på en website.
+
+828
+0:41:56,180 --> 0:41:58,180
+ De ønsker ikke, at de ender på din telefon,
+
+829
+0:41:58,180 --> 0:42:01,180
+ selvom du ikke har ønsket at vise en bild til en anden person.
+
+830
+0:42:01,180 --> 0:42:03,180
+ Det er ikke, hvordan det fungerer.
+
+831
+0:42:03,180 --> 0:42:04,180
+ Du tager ikke en bild allerede.
+
+832
+0:42:04,180 --> 0:42:06,180
+ Hvis du nødvendigvis tager en, deler du den.
+
+833
+0:42:06,180 --> 0:42:09,180
+ Alle er velkomne til at spørge fototeamet,
+
+834
+0:42:09,180 --> 0:42:11,180
+ om de kan se deres bilder.
+
+835
+0:42:11,180 --> 0:42:15,180
+ Hvis de er forstået, at en bild er taget derinde,
+
+836
+0:42:15,180 --> 0:42:18,180
+ så spørg fototeamet.
+
+837
+0:42:18,180 --> 0:42:21,180
+ Hvis du ønsker at blive med i fototeamet,
+
+838
+0:42:21,180 --> 0:42:22,180
+ så kan de også bruge hjælp.
+
+839
+0:42:22,180 --> 0:42:23,180
+ Vi elsker bilder.
+
+840
+0:42:23,180 --> 0:42:25,180
+ Vi ønsker bare at forsvare menneskets privacitet,
+
+841
+0:42:25,180 --> 0:42:27,180
+ mens vi elsker bilderne.
+
+842
+0:42:27,180 --> 0:42:30,180
+ Vi mødes dødsdag kl. 2,
+
+843
+0:42:30,180 --> 0:42:32,180
+ også i starttentet,
+
+844
+0:42:32,180 --> 0:42:35,180
+ ved kabinerne i virksomheden.
+
+845
+0:42:36,180 --> 0:42:41,180
+ Fototeamet har været statisk i et par år,
+
+846
+0:42:41,180 --> 0:42:47,180
+ og mest af arbejdet mellem eventer,
+
+847
+0:42:47,180 --> 0:42:49,180
+ er gjort af fototeamet,
+
+848
+0:42:49,180 --> 0:42:51,180
+ og en del af koordinationen,
+
+849
+0:42:51,180 --> 0:42:53,180
+ og at sørge for, at teamene,
+
+850
+0:42:53,180 --> 0:42:56,180
+ som behandler alle de faktiske arbejder,
+
+851
+0:42:56,180 --> 0:42:59,180
+ fungerer som de skal,
+
+852
+0:42:59,180 --> 0:43:01,180
+ er gjort af fototeamet.
+
+853
+0:43:01,180 --> 0:43:03,180
+ Også økonomiske ting,
+
+854
+0:43:03,180 --> 0:43:05,180
+ og alle ting om tilføjelser,
+
+855
+0:43:05,180 --> 0:43:07,180
+ og at være med i venueet,
+
+856
+0:43:07,180 --> 0:43:08,180
+ og at snakke med alle forbrugerne,
+
+857
+0:43:08,180 --> 0:43:10,180
+ og alt det er gjort af fototeamet.
+
+858
+0:43:10,180 --> 0:43:11,180
+ Og fra gang til gang,
+
+859
+0:43:11,180 --> 0:43:14,180
+ bliver vi så indtrykket af nogle volunteerer,
+
+860
+0:43:14,180 --> 0:43:17,180
+ som er ansatte, hjælpelige,
+
+861
+0:43:17,180 --> 0:43:20,180
+ altid i en god mood,
+
+862
+0:43:20,180 --> 0:43:21,180
+ når de hjælper ud,
+
+863
+0:43:21,180 --> 0:43:22,180
+ altid konstruktive,
+
+864
+0:43:22,180 --> 0:43:23,180
+ har gode ideer,
+
+865
+0:43:23,180 --> 0:43:25,180
+ hjælper ud i så mange områder,
+
+866
+0:43:25,180 --> 0:43:28,180
+ at det bliver mere og mere vigtigt at undgå.
+
+867
+0:43:28,180 --> 0:43:30,180
+ Når det hælder,
+
+868
+0:43:30,180 --> 0:43:33,180
+ vil vi skade dem med en fototeamet,
+
+869
+0:43:33,180 --> 0:43:35,180
+ så velkommen til Jonathan,
+
+870
+0:43:35,180 --> 0:43:37,180
+ og BT til Orga.
+
+871
+0:43:49,180 --> 0:43:51,180
+ Jeg tror, at de fleste af jer har set dem,
+
+872
+0:43:51,180 --> 0:43:53,180
+ mange af jer kender dem,
+
+873
+0:43:53,180 --> 0:43:56,180
+ og de er de bedste mennesker.
+
+874
+0:43:56,180 --> 0:43:58,180
+ Så køb dem en bier,
+
+875
+0:43:58,180 --> 0:43:59,180
+ pak dem på bagen,
+
+876
+0:43:59,180 --> 0:44:01,180
+ vi har allerede fået så meget fra dem,
+
+877
+0:44:01,180 --> 0:44:02,180
+ og det er vigtigt,
+
+878
+0:44:02,180 --> 0:44:04,180
+ at vi har dem som en del af Orga,
+
+879
+0:44:04,180 --> 0:44:08,180
+ og vi ser frem til at arbejde endnu mere med dem.
+
+880
+0:44:12,180 --> 0:44:13,180
+ Og sidst,
+
+881
+0:44:13,180 --> 0:44:15,180
+ og jeg tror, at vi er nærmest til slut,
+
+882
+0:44:15,180 --> 0:44:17,180
+ er vores volunteerer,
+
+883
+0:44:17,180 --> 0:44:18,180
+ som jeg sagde,
+
+884
+0:44:18,180 --> 0:44:19,180
+ både under build-up,
+
+885
+0:44:19,180 --> 0:44:21,180
+ men også hele vejen under eventet,
+
+886
+0:44:21,180 --> 0:44:22,180
+ og håbentlig,
+
+887
+0:44:22,180 --> 0:44:25,180
+ at mange af jer også sidder for tærdown.
+
+888
+0:44:25,180 --> 0:44:27,180
+ Tak så meget.
+
+889
+0:44:27,180 --> 0:44:30,180
+ Vi, Orga,
+
+890
+0:44:30,180 --> 0:44:33,180
+ har faktisk bare en vision,
+
+891
+0:44:33,180 --> 0:44:35,180
+ nogle ideer,
+
+892
+0:44:35,180 --> 0:44:37,180
+ nogle er bedre end andre,
+
+893
+0:44:37,180 --> 0:44:38,180
+ men det er faktisk det.
+
+894
+0:44:38,180 --> 0:44:39,180
+ Resten er,
+
+895
+0:44:39,180 --> 0:44:40,180
+ alt det brød og smør,
+
+896
+0:44:40,180 --> 0:44:42,180
+ det er jer alle.
+
+897
+0:44:42,180 --> 0:44:45,180
+ Det er fantastisk at se år efter år,
+
+898
+0:44:45,180 --> 0:44:48,180
+ den energi og passion,
+
+899
+0:44:48,180 --> 0:44:51,180
+ som folk bringer til dette event.
+
+900
+0:44:51,180 --> 0:44:54,180
+ Vi må have givet det en start,
+
+901
+0:44:54,180 --> 0:44:56,180
+ men alle de volunteerer,
+
+902
+0:44:56,180 --> 0:44:58,180
+ har det i høj grad,
+
+903
+0:44:58,180 --> 0:44:59,180
+ frem til deres mål,
+
+904
+0:44:59,180 --> 0:45:01,180
+ at gå ud over den golde linje,
+
+905
+0:45:01,180 --> 0:45:02,180
+ hver gang.
+
+906
+0:45:02,180 --> 0:45:03,180
+ Tak.
+
+907
+0:45:15,180 --> 0:45:18,180
+ Okay, vi har en fejl i dag.
+
+908
+0:45:18,180 --> 0:45:20,180
+ To ting faktisk.
+
+909
+0:45:20,180 --> 0:45:22,180
+ To af vores volunteerer,
+
+910
+0:45:22,180 --> 0:45:24,180
+ Rudi og Josita,
+
+911
+0:45:24,180 --> 0:45:25,180
+ og Osho og Azaria,
+
+912
+0:45:25,180 --> 0:45:27,180
+ blev mødt denne sommer.
+
+913
+0:45:27,180 --> 0:45:28,180
+ De kører,
+
+914
+0:45:28,180 --> 0:45:30,180
+ og de kører bier for folk,
+
+915
+0:45:30,180 --> 0:45:31,180
+ i baren.
+
+916
+0:45:31,180 --> 0:45:32,180
+ De vil gerne,
+
+917
+0:45:32,180 --> 0:45:33,180
+ at I vil komme,
+
+918
+0:45:33,180 --> 0:45:35,180
+ og fejle denne store dag med dem.
+
+919
+0:45:35,180 --> 0:45:38,180
+ Og også en af vores Orga-mennesker,
+
+920
+0:45:38,180 --> 0:45:40,180
+ Jeremy Pander A. Anderson,
+
+921
+0:45:40,180 --> 0:45:42,180
+ den langeste knæ i verden,
+
+922
+0:45:42,180 --> 0:45:45,180
+ er 39 år gammel,
+
+923
+0:45:45,180 --> 0:45:47,180
+ og han kører også bier,
+
+924
+0:45:47,180 --> 0:45:49,180
+ for alle i baren i dag.
+
+925
+0:45:58,180 --> 0:46:01,180
+ Så jeg ville gerne nødvendigvis,
+
+926
+0:46:01,180 --> 0:46:02,180
+ at I ville gå til baren,
+
+927
+0:46:02,180 --> 0:46:03,180
+ og kører alle jeres hackere,
+
+928
+0:46:03,180 --> 0:46:06,180
+ men siden vi er fri i aften,
+
+929
+0:46:06,180 --> 0:46:10,180
+ kører I dem i morgen måske.
+
+930
+0:46:10,180 --> 0:46:11,180
+ Okay.
+
+931
+0:46:11,180 --> 0:46:12,180
+ Jeg vil altid lade slide ind,
+
+932
+0:46:12,180 --> 0:46:14,180
+ hvis jeg husker noget,
+
+933
+0:46:14,180 --> 0:46:16,180
+ men jeg har ikke,
+
+934
+0:46:16,180 --> 0:46:18,180
+ men er der nogen spørgsmål,
+
+935
+0:46:18,180 --> 0:46:19,180
+ vi skal tage,
+
+936
+0:46:19,180 --> 0:46:21,180
+ før vi siger tak,
+
+937
+0:46:21,180 --> 0:46:24,180
+ og have en god hack?
+
+938
+0:46:24,180 --> 0:46:26,180
+ Ja.
+
+939
+0:46:26,180 --> 0:46:27,180
+ Der er et mikrofon.
+
+940
+0:46:27,180 --> 0:46:29,180
+ Der er et mikrofon.
+
+941
+0:46:29,180 --> 0:46:31,180
+ Der er et mikrofon.
+
+942
+0:46:31,180 --> 0:46:32,180
+ Det er en meget vigtig spørgsmål.
+
+943
+0:46:32,180 --> 0:46:34,180
+ Hvor er det at høre mig?
+
+944
+0:46:34,180 --> 0:46:35,180
+ Nej.
+
+945
+0:46:35,180 --> 0:46:36,180
+ Nej.
+
+946
+0:46:36,180 --> 0:46:37,180
+ Det er ikke op.
+
+947
+0:46:37,180 --> 0:46:38,180
+ Ja, nu har du ikke noget at høre.
+
+948
+0:46:38,180 --> 0:46:40,180
+ Ja, bare tal.
+
+949
+0:46:40,180 --> 0:46:41,180
+ Hvad er åbningstiderne
+
+950
+0:46:41,180 --> 0:46:42,180
+ for køleskabet?
+
+951
+0:46:42,180 --> 0:46:44,180
+ Hvad er åbningstideren for køleskabet?
+
+952
+0:46:45,180 --> 0:46:46,180
+ Jeg vil gerne sige,
+
+953
+0:46:46,180 --> 0:46:49,180
+ jeg vil gerne sige,
+
+954
+0:46:49,180 --> 0:46:51,180
+ jeg vil gerne sige 11-20,
+
+955
+0:46:51,180 --> 0:46:52,180
+ men gør mig ikke mørk,
+
+956
+0:46:52,180 --> 0:46:53,180
+ hvis det er galt,
+
+957
+0:46:53,180 --> 0:46:55,180
+ men det er noget som det.
+
+958
+0:46:55,180 --> 0:46:56,180
+ Vi vil få det postet,
+
+959
+0:46:56,180 --> 0:46:57,180
+ jeg vil spørge dem,
+
+960
+0:46:57,180 --> 0:46:59,180
+ og få det postet derhjemme.
+
+961
+0:46:59,180 --> 0:47:00,180
+ Vi vil sætte op en signe
+
+962
+0:47:00,180 --> 0:47:01,180
+ ved køleskabet,
+
+963
+0:47:01,180 --> 0:47:02,180
+ det ser ud som et godt sted.
+
+964
+0:47:12,180 --> 0:47:13,180
+ Har I andre spørgsmål?
+
+965
+0:47:13,180 --> 0:47:14,180
+ Ellers mener jeg,
+
+966
+0:47:14,180 --> 0:47:16,180
+ åh ja, kom så.
+
+967
+0:47:16,180 --> 0:47:19,180
+ Er det muligt at få en bil indenfor?
+
+968
+0:47:23,180 --> 0:47:25,180
+ Ja, hvis du finder en hjælper,
+
+969
+0:47:25,180 --> 0:47:26,180
+ og ja,
+
+970
+0:47:26,180 --> 0:47:30,180
+ så kan du fortsat få en bil ind.
+
+971
+0:47:30,180 --> 0:47:31,180
+ Har I andre spørgsmål?
+
+972
+0:47:31,180 --> 0:47:32,180
+ Ja, dernede i BACK.
+
+973
+0:47:32,180 --> 0:47:33,180
+ Ja?
+
+974
+0:47:33,180 --> 0:47:34,180
+ Ja?
+
+975
+0:47:34,180 --> 0:47:35,180
+ Ja?
+
+976
+0:47:35,180 --> 0:47:36,180
+ Ja?
+
+977
+0:47:36,180 --> 0:47:37,180
+ Ja?
+
+978
+0:47:37,180 --> 0:47:38,180
+ Ja?
+
+979
+0:47:38,180 --> 0:47:39,180
+ Ja?
+
+980
+0:47:39,180 --> 0:47:40,180
+ Ja?
+
+981
+0:47:40,180 --> 0:47:41,180
+ Ja.
+
+982
+0:47:41,180 --> 0:47:42,180
+ Ja?
+
+983
+0:47:42,180 --> 0:47:43,180
+ Ja?
+
+984
+0:47:43,180 --> 0:47:44,180
+ Ja?
+
+985
+0:47:44,180 --> 0:47:45,180
+ Ja?
+
+986
+0:47:45,180 --> 0:47:46,180
+ Ja.
+
+987
+0:47:46,180 --> 0:47:47,180
+ Ja.
+
+988
+0:47:47,180 --> 0:47:48,180
+ Ja?
+
+989
+0:47:48,180 --> 0:47:49,180
+ Ja.
+
+990
+0:47:49,180 --> 0:47:50,180
+ Ja?
+
+991
+0:47:50,180 --> 0:47:51,180
+ Ja?
+
+992
+0:47:51,180 --> 0:47:52,180
+ Ja?
+
+993
+0:47:52,180 --> 0:47:53,180
+ Ja?
+
+994
+0:47:53,180 --> 0:47:54,180
+ Ja?
+
+995
+0:47:54,180 --> 0:48:08,520
+ All the organizers are going to be wearing vests, so you should be able to spot them in the terrain as well, if you want to ask questions.
+
+996
+0:48:08,520 --> 0:48:11,420
+ I can't really see because of the light, but is there any more hands?
+
+997
+0:48:11,420 --> 0:48:24,820
+ Okay, well, I think we should let you go and drink all the free beer now, then.
+
+998
+0:48:25,620 --> 0:48:26,880
+ Have a very nice...
+
+999
+0:48:26,880 --> 0:48:41,400
+ Have a great evening, and have an awesome fucking weekend.
+
+1000
+0:48:41,420 --> 0:48:44,060
+ Thank you very much, and it's so nice to see everybody. I love you!

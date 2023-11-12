@@ -1,0 +1,399 @@
+# Transcribed 2023-11-12T14 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:24,980
+ Oh, all right. Yes, welcome to this talk. I have created a piece of software that I want to talk to you about.
+
+2
+0:00:24,980 --> 0:00:40,460
+ So, I have this problem, or I had this problem, that I sometimes take photos and video, and then I have to store it somewhere, and not only do I have to access it, I have to share it with friends and family, and they have to access it.
+
+3
+0:00:40,720 --> 0:00:51,880
+ And there are multiple existing solutions, both free and open source, and proprietary and commercial, and I think all of them are bad for me, because most of them seem quite bloated.
+
+4
+0:00:51,880 --> 0:01:09,180
+ But it's always the case that I enter this kind of web interface, and then there are so many buttons, and I don't know which one to click, and there are too many options and too many possibilities, and the only thing I really want to be able to do is have a look at a page where the photos are, and then share that page.
+
+5
+0:01:11,580 --> 0:01:21,220
+ So, my goal is kind of to separate the different aspects of sharing photos and video, so I want a place to store the media.
+
+6
+0:01:21,880 --> 0:01:41,300
+ That is one place, then I want a place to store the code for showing this, for sharing this, and then I want a place to store the configuration, that is, what media is available for this group of people, and what media is available for this group of people, and what media is available just for me.
+
+7
+0:01:41,580 --> 0:01:50,640
+ And I want that to be stored in a nice and manageable configuration, so I don't have to click around on some kind of web page and configure things.
+
+8
+0:01:51,880 --> 0:02:14,880
+ So, to pick a storage thing, I wanted to do something that is stable and popular, and has many tools that enables me to just quickly make something work, and apparently that seems to be SSS, S3, it's an AWS technology, but there are many clones out there, so you're not kind of limited to one provider.
+
+9
+0:02:15,080 --> 0:02:18,540
+ I'm using some random provider that I found, which works fine.
+
+10
+0:02:19,340 --> 0:02:21,820
+ And then the next thing to pick.
+
+11
+0:02:22,080 --> 0:02:31,120
+ Was which technology is used for the configuration file, and I also tried to pick something that was ubiquitous and popular, and that was JSON.
+
+12
+0:02:32,020 --> 0:02:38,140
+ There's also this YAML, but I never got around to that, it seems very complicated, so JSON is much simpler.
+
+13
+0:02:39,440 --> 0:02:42,480
+ Alright, so I want to demo this a bit.
+
+14
+0:02:43,220 --> 0:02:44,040
+ I took some screenshots.
+
+15
+0:02:44,580 --> 0:02:51,800
+ So, I set up an example server on my laptop.
+
+16
+0:02:52,080 --> 0:03:05,120
+ So, this is a bit small, but the point is that up here I have written the address, and then what happens when you try to enter this, and imagine this is like a public website, you just get this not found.
+
+17
+0:03:05,320 --> 0:03:12,660
+ And that's because I want, by default, all media to be hidden from you.
+
+18
+0:03:12,840 --> 0:03:20,400
+ I mean, if I want to explicitly do something in my configuration file, if I am to share this with other people.
+
+19
+0:03:20,900 --> 0:03:21,120
+ So, by default, this just...
+
+20
+0:03:21,880 --> 0:03:36,360
+ But then I have this command, roundworm, get share URL, and then I pass the JSON file, the configuration file, and then this empty string, which designates the root of the website.
+
+21
+0:03:36,920 --> 0:03:47,260
+ And then I get this URL back up here, which is the same, but now there's a digest, and it also asks for a username and a password, which I then enter.
+
+22
+0:03:47,660 --> 0:03:50,660
+ And then I get this nice listing.
+
+23
+0:03:51,360 --> 0:03:51,420
+ Nice.
+
+24
+0:03:51,420 --> 0:03:51,440
+ Nice.
+
+25
+0:03:51,440 --> 0:03:51,460
+ Nice.
+
+26
+0:03:51,460 --> 0:03:51,480
+ Nice.
+
+27
+0:03:51,480 --> 0:03:51,580
+ Nice.
+
+28
+0:03:51,580 --> 0:03:51,600
+ Nice.
+
+29
+0:03:51,600 --> 0:03:51,620
+ Nice.
+
+30
+0:03:51,620 --> 0:03:51,860
+ Nice.
+
+31
+0:03:51,880 --> 0:03:53,160
+ Now, there are two directories here.
+
+32
+0:03:53,260 --> 0:04:00,880
+ There's public and unlisted, and those are directories that I have configured and also made sure to exist on my S3 storage.
+
+33
+0:04:01,460 --> 0:04:07,720
+ It's not super important, but we can try to click on unlisted, and then we get into this secondary view.
+
+34
+0:04:07,940 --> 0:04:15,380
+ So, now we have this nested view, and this is still kind of uninteresting, but I have a feature made whereby you can view the thumbnails.
+
+35
+0:04:16,360 --> 0:04:21,380
+ So, now you click on thumbnails, and now we are looking at the directory for boneheaders.
+
+36
+0:04:21,880 --> 0:04:23,140
+ In fact, we're still at 12.
+
+37
+0:04:23,520 --> 0:04:25,600
+ And we can see the URL in the URL and
+
+38
+0:04:25,600 --> 0:04:27,580
+ we're going to let it forward now.
+
+39
+0:04:28,180 --> 0:04:29,440
+ So, there's a key there.
+
+40
+0:04:29,440 --> 0:04:29,900
+ And there's my last item.
+
+41
+0:04:30,320 --> 0:04:32,880
+ And then, once I've hit this button here, it says腕 case.
+
+42
+0:04:33,160 --> 0:04:34,640
+ That's my shortcut to go to my wall.
+
+43
+0:04:34,640 --> 0:04:34,860
+ Yeah.
+
+44
+0:04:35,180 --> 0:04:38,540
+ And then Mike's added staying local address for this CC.
+
+45
+0:04:38,720 --> 0:04:43,460
+ And next, I'm going to after green and right-click again on SSU.
+
+46
+0:04:44,580 --> 0:04:48,300
+ On the left, I have myaczk本当 cool, and 11151 Digest Active.
+
+47
+0:04:48,300 --> 0:04:48,680
+ That's theumizen.
+
+48
+0:04:48,680 --> 0:04:50,160
+ One next very cool thing, but I don't want to out짖 transformative, so let me interesting,
+
+49
+0:04:50,160 --> 0:04:53,320
+ You can see there's still a link here to go back.
+
+50
+0:04:54,620 --> 0:04:57,620
+ And that's because the digest still allows one to go back.
+
+51
+0:04:58,040 --> 0:05:02,500
+ So the use case right now is that I would like to share only this page.
+
+52
+0:05:03,560 --> 0:05:08,540
+ And I can share this directory down here,
+
+53
+0:05:08,540 --> 0:05:15,740
+ which will create a new digest that only allows access to unlisted slash BornHack 2020.
+
+54
+0:05:15,740 --> 0:05:23,060
+ So if I paste that and copy it up into the address bar,
+
+55
+0:05:23,400 --> 0:05:28,340
+ then we get the same view, but now there's not anymore a link back to up the directory,
+
+56
+0:05:28,740 --> 0:05:33,600
+ because now we have this specific URL with this specific digest
+
+57
+0:05:33,600 --> 0:05:36,000
+ that only allows access to this specific prefix.
+
+58
+0:05:37,120 --> 0:05:38,820
+ And that's pretty simple, I think.
+
+59
+0:05:40,200 --> 0:05:44,460
+ We can also, I also made, oh yeah, you can click on the pictures and then they will show up.
+
+60
+0:05:45,740 --> 0:05:50,720
+ So I also made this public directory, which has different semantics, you can say.
+
+61
+0:05:51,160 --> 0:05:53,880
+ And I used this get share URL once more.
+
+62
+0:05:54,420 --> 0:06:00,140
+ And now I pass this public at the end of the command line as the final option.
+
+63
+0:06:00,140 --> 0:06:03,740
+ And that gives me this URL.
+
+64
+0:06:03,960 --> 0:06:07,460
+ So up here now it's this host and then it's slash public.
+
+65
+0:06:07,800 --> 0:06:13,160
+ And then I have a digest specifically for accessing only this slash public prefix.
+
+66
+0:06:14,020 --> 0:06:15,700
+ I have configured slash.
+
+67
+0:06:15,740 --> 0:06:19,000
+ Public differently from slash unlisted.
+
+68
+0:06:20,320 --> 0:06:26,420
+ Such that in this view, you can, if you have the path to a file,
+
+69
+0:06:26,840 --> 0:06:30,500
+ you can just use that path directly without having to specify a digest.
+
+70
+0:06:31,080 --> 0:06:35,560
+ But if you have a directory beneath this public prefix,
+
+71
+0:06:35,560 --> 0:06:39,840
+ you still have to specify a digest.
+
+72
+0:06:41,500 --> 0:06:44,880
+ So if I just try to access this public without a digest,
+
+73
+0:06:45,040 --> 0:06:45,720
+ I will get a not found.
+
+74
+0:06:45,980 --> 0:06:50,740
+ But if I try to access public slash and then a file name, it will show the file.
+
+75
+0:06:51,880 --> 0:06:56,500
+ So what I just demoed was configured in this single configuration file in JSON.
+
+76
+0:06:57,140 --> 0:06:58,600
+ And I can just split it up.
+
+77
+0:06:58,780 --> 0:07:03,200
+ So first we have some S3 specific access tokens and such.
+
+78
+0:07:03,740 --> 0:07:05,960
+ And where I'm storing the media.
+
+79
+0:07:06,760 --> 0:07:11,140
+ And then we have some specifics about where this is hosted on my server.
+
+80
+0:07:12,280 --> 0:07:15,520
+ And then we have these prefixes, which detail,
+
+81
+0:07:15,740 --> 0:07:19,320
+ what and how I'm sharing.
+
+82
+0:07:19,820 --> 0:07:22,740
+ So specifically, I have three levels of authentication.
+
+83
+0:07:23,060 --> 0:07:26,300
+ There's none, which is just readily available for anyone with the URL.
+
+84
+0:07:26,720 --> 0:07:30,080
+ And then we have sign, which requires this digest to be provided.
+
+85
+0:07:30,580 --> 0:07:35,360
+ And then we have HTTP, which requires the digest and an HTTP login as well.
+
+86
+0:07:37,700 --> 0:07:40,700
+ So the full feature is really just, you can view it and you can view thumbnails
+
+87
+0:07:40,700 --> 0:07:42,080
+ and you can share the URLs and that's it.
+
+88
+0:07:43,040 --> 0:07:44,060
+ So in conclusion,
+
+89
+0:07:44,140 --> 0:07:45,100
+ I have been using this for, you know, a couple of years now.
+
+90
+0:07:45,100 --> 0:07:45,300
+ I have been using this for, you know, a couple of years now.
+
+91
+0:07:45,300 --> 0:07:45,400
+ I have been using this for, you know, a couple of years now.
+
+92
+0:07:45,400 --> 0:07:45,520
+ I have been using this for, you know, a couple of years now.
+
+93
+0:07:45,520 --> 0:07:47,440
+ I have been using this for a year or so, and it works.
+
+94
+0:07:48,240 --> 0:07:50,620
+ But it's really just one large Python script,
+
+95
+0:07:50,760 --> 0:07:52,460
+ and I'm not too happy about the code,
+
+96
+0:07:52,560 --> 0:07:54,100
+ so I wouldn't recommend using it.
+
+97
+0:07:54,640 --> 0:07:56,500
+ But the base functionality is quite nice.
+
+98
+0:07:57,960 --> 0:07:58,840
+ Yeah, thank you.
+
+99
+0:08:00,840 --> 0:08:01,240
+ Applause

@@ -1,0 +1,263 @@
+# Transcribed 2023-11-12T14 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:23,080
+ I arrived about two hours ago and I didn't know I was making a talk so I made these slides very fast.
+
+2
+0:00:30,000 --> 0:00:52,380
+ Yeah, so I'm here to talk about Data Co-op and so briefly Data Co-op is an association
+
+3
+0:00:52,380 --> 0:00:59,360
+ and formally we are based in Copenhagen but in reality we live on the internet.
+
+4
+0:01:00,000 --> 0:01:18,540
+ So collectively we own two physical servers that we run together and we deliver services
+
+5
+0:01:18,540 --> 0:01:27,760
+ to our members with a focus on privacy protection, encryption, zero knowledge and decentralization.
+
+6
+0:01:27,760 --> 0:01:28,760
+ Okay.
+
+7
+0:01:28,760 --> 0:01:29,760
+ Thank you.
+
+8
+0:01:29,760 --> 0:01:39,880
+ This is really difficult.
+
+9
+0:01:39,880 --> 0:01:45,720
+ So we offer email hosting.
+
+10
+0:01:45,720 --> 0:01:49,080
+ Here's my email if you would like to get in touch.
+
+11
+0:01:49,080 --> 0:01:57,320
+ We have a Git hosting using Gitia and Matrix chat.
+
+12
+0:01:57,320 --> 0:01:58,760
+ And we have our main channel.
+
+13
+0:01:58,760 --> 0:01:59,760
+ Okay.
+
+14
+0:01:59,760 --> 0:02:03,640
+ So we are based in Copenhagen and we have a data Co-op on data.coop which is bridged
+
+15
+0:02:03,640 --> 0:02:09,880
+ with Data Co-op on libera.chat, the IRC network.
+
+16
+0:02:09,880 --> 0:02:16,880
+ Then we also recently got Mastodon at the domain social.data.coop.
+
+17
+0:02:16,880 --> 0:02:27,880
+ And something new that I'm experimenting with is Mirasroas unikernels.
+
+18
+0:02:27,880 --> 0:02:28,880
+ Small virtual machines for data.coop.
+
+19
+0:02:28,880 --> 0:02:28,960
+ Okay.
+
+20
+0:02:28,960 --> 0:02:29,080
+ Thank you.
+
+21
+0:02:29,080 --> 0:02:29,120
+ Bye.
+
+22
+0:02:29,120 --> 0:02:29,160
+ Bye.
+
+23
+0:02:29,160 --> 0:02:29,200
+ Bye.
+
+24
+0:02:29,200 --> 0:02:29,220
+ Bye.
+
+25
+0:02:29,220 --> 0:02:29,260
+ Bye.
+
+26
+0:02:29,760 --> 0:02:30,420
+ Bye.
+
+27
+0:02:30,420 --> 0:02:30,440
+ Bye.
+
+28
+0:02:30,440 --> 0:02:30,480
+ Bye.
+
+29
+0:02:30,480 --> 0:02:30,500
+ Bye.
+
+30
+0:02:30,500 --> 0:02:30,520
+ Bye.
+
+31
+0:02:30,520 --> 0:02:30,560
+ Bye.
+
+32
+0:02:30,560 --> 0:02:30,600
+ Bye.
+
+33
+0:02:30,600 --> 0:02:30,620
+ Bye.
+
+34
+0:02:30,620 --> 0:02:31,060
+ Bye.
+
+35
+0:02:31,060 --> 0:02:31,140
+ Bye.
+
+36
+0:02:31,140 --> 0:02:31,160
+ Bye.
+
+37
+0:02:31,160 --> 0:02:31,180
+ Bye.
+
+38
+0:02:31,180 --> 0:02:31,200
+ Bye.
+
+39
+0:02:31,200 --> 0:02:31,220
+ Bye.
+
+40
+0:02:31,220 --> 0:02:31,260
+ Bye.
+
+41
+0:02:31,260 --> 0:02:31,300
+ Bye.
+
+42
+0:02:31,300 --> 0:02:31,320
+ Bye.
+
+43
+0:02:31,320 --> 0:02:39,440
+ And this website is also using that.
+
+44
+0:02:39,440 --> 0:02:44,400
+ And we keep adding more services as we go.
+
+45
+0:02:50,400 --> 0:02:56,000
+ So we have a membership of 300 kroners a year.
+
+46
+0:02:56,400 --> 0:02:59,120
+ It seems I forgot to add that it's per year.
+
+47
+0:02:59,120 --> 0:02:59,460
+ So we have a membership of 300 kroners a year.
+
+48
+0:02:59,460 --> 0:03:06,860
+ And if you are students or unraged, we have a greatly reduced membership fee.
+
+49
+0:03:09,380 --> 0:03:14,960
+ So the best place to check for how to become a member is on the website,
+
+50
+0:03:15,240 --> 0:03:22,460
+ but the idea is you send us money and an email, and then you're a member.
+
+51
+0:03:24,860 --> 0:03:28,620
+ Oh, and our website is data.coop.
+
+52
+0:03:29,460 --> 0:03:41,700
+ So we have a meetup tonight at 11 o'clock in the bar,
+
+53
+0:03:42,160 --> 0:03:50,140
+ so you can come and meet more of us and talk about Data Coop if you like.
+
+54
+0:03:59,460 --> 0:04:06,760
+ Ah, I messed up the HTML.
+
+55
+0:04:16,600 --> 0:04:20,380
+ Yeah, so it's hosted on a unikernel.
+
+56
+0:04:21,960 --> 0:04:25,580
+ There's a Git repository with the slides.
+
+57
+0:04:26,300 --> 0:04:27,280
+ It's horrible.
+
+58
+0:04:29,460 --> 0:04:31,300
+ More or less valid HTML.
+
+59
+0:04:33,540 --> 0:04:43,880
+ And we have our infrastructure set up using Ansible,
+
+60
+0:04:44,480 --> 0:04:51,620
+ so you can check out how I made this website.
+
+61
+0:04:54,040 --> 0:04:55,920
+ So some darker stuff.
+
+62
+0:04:56,520 --> 0:04:58,040
+ Yeah, I think that's it.
+
+63
+0:04:58,460 --> 0:04:59,000
+ Thank you.
+
+64
+0:04:59,460 --> 0:04:59,620
+ Thank you.
+
+65
+0:04:59,620 --> 0:04:59,660
+ Thank you.

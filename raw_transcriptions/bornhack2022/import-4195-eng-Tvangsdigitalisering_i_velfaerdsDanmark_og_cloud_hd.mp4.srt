@@ -1,0 +1,1143 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:34,660
+ Tusind tak for invitationen til at komme og tale.
+
+3
+0:00:35,180 --> 0:00:42,540
+ Jeg tænker ikke, at ambitionen er, at jeg skal fortælle jer noget teknisk eller fagligt på jeres områder.
+
+4
+0:00:44,160 --> 0:00:49,820
+ Men jeg kan fortælle lidt om, hvad der foregår inde på Christiansborg, inden for det her felt,
+
+5
+0:00:50,020 --> 0:00:52,480
+ eller måske nærmere, hvad der ikke foregår.
+
+6
+0:00:53,580 --> 0:00:59,960
+ Jeg plejer at sige, at det at være IT-ordfører, det står lige over det at være kirkeordfører.
+
+7
+0:01:00,000 --> 0:01:02,400
+ Rent statusmæssigt.
+
+8
+0:01:03,080 --> 0:01:07,900
+ Og det synes jeg for det første er rigtig ærgerligt, men det er jo også et kæmpestort demokratisk problem.
+
+9
+0:01:08,120 --> 0:01:15,260
+ Fordi det betyder, at mange politikere ser det her felt som noget, der er politisk.
+
+10
+0:01:15,400 --> 0:01:17,000
+ Noget teknikeren tager sig af.
+
+11
+0:01:17,400 --> 0:01:22,500
+ Det er noget, man kan blive forarvet over i medierne, når man har store, dyre, fejlslagende IT-projekter.
+
+12
+0:01:22,900 --> 0:01:25,320
+ Men det er ikke rigtig noget, man kobler til politik.
+
+13
+0:01:25,460 --> 0:01:29,420
+ Og jeg har også mange kolleger, som kobler til mig.
+
+14
+0:01:29,420 --> 0:01:35,780
+ Hvis der er noget, der handler om IT, eller digitalisering, eller privacy, eller noget på deres områder,
+
+15
+0:01:35,860 --> 0:01:41,620
+ og siger, at det er sundhedsdata, så siger jeg, at jeg ikke er sundhedsordfører.
+
+16
+0:01:41,700 --> 0:01:43,900
+ Jeg ved ikke rigtig noget om sundhedsvæsenet.
+
+17
+0:01:44,520 --> 0:01:49,280
+ Så den der kobling med at se det ind i sit eget felt, den mangler fuldstændig.
+
+18
+0:01:49,380 --> 0:01:56,100
+ Og for rigtig mange, jeg vil sige 95% af mine kolleger, der er det her stadigvæk noget.
+
+19
+0:01:56,200 --> 0:01:58,500
+ Det er teknik, det er ikke politik.
+
+20
+0:01:58,500 --> 0:01:58,540
+ Det er ikke politik.
+
+21
+0:01:59,420 --> 0:02:02,760
+ Og jeg synes også, at det er meget svært at stille politikere til ansvar,
+
+22
+0:02:02,880 --> 0:02:06,220
+ eller at politikerne i hvert fald vil tage ansvar for de ting, der sker.
+
+23
+0:02:06,420 --> 0:02:09,240
+ For eksempel hele digitaliseringen i vores velfærdssektor.
+
+24
+0:02:09,920 --> 0:02:14,560
+ Fordi det er jo noget, nogen engang har anbefalt i en styrelse,
+
+25
+0:02:14,640 --> 0:02:17,060
+ og så ruller man det bare ud, og så bevilger man bare pengene.
+
+26
+0:02:17,160 --> 0:02:21,080
+ Man har aldrig rigtig sat sig ned og taget en politisk beslutning om,
+
+27
+0:02:21,800 --> 0:02:26,280
+ at nu er det næsten umuligt at være borger i Danmark, hvis man ikke har en smartphone.
+
+28
+0:02:27,500 --> 0:02:28,380
+ Eller at...
+
+29
+0:02:28,380 --> 0:02:34,660
+ Det er umuligt at undslå sig mit idé,
+
+30
+0:02:34,760 --> 0:02:37,320
+ medmindre du umyndiggør dig selv.
+
+31
+0:02:37,420 --> 0:02:44,000
+ Altså nogle af de store spørgsmål og store diskussioner har jo været fuldstændig fraværende,
+
+32
+0:02:44,100 --> 0:02:48,940
+ og det er også derfor, at det er rigtig vigtigt, at politikken har haft den her serie kørende
+
+33
+0:02:49,040 --> 0:02:53,180
+ igennem de seneste par uger, fordi vi har brug for at få den diskussion.
+
+34
+0:02:53,280 --> 0:02:56,080
+ Og jeg tror, at...
+
+35
+0:02:56,180 --> 0:02:56,880
+ Øh...
+
+36
+0:02:56,980 --> 0:02:57,780
+ Øh...
+
+37
+0:02:57,780 --> 0:03:00,220
+ En af anledningerne til, at vi måske kan få den nu,
+
+38
+0:03:00,320 --> 0:03:04,720
+ det er, at den opfylder to kriterier for at få en politisk debat.
+
+39
+0:03:04,820 --> 0:03:08,160
+ Det ene er, at det skal handle om nogle konkrete problemer,
+
+40
+0:03:08,260 --> 0:03:12,060
+ og det, at mange har oplevet, hvor svært det er at integrere med mit idé,
+
+41
+0:03:12,160 --> 0:03:13,660
+ eller gå over til mit idé,
+
+42
+0:03:13,760 --> 0:03:17,000
+ at mange ældre, mange har en gammel mor eller far, som har haft svært ved det,
+
+43
+0:03:17,100 --> 0:03:18,140
+ eller nogle andre, der har haft svært ved det.
+
+44
+0:03:18,240 --> 0:03:20,140
+ Det er sådan et konkret problem.
+
+45
+0:03:20,240 --> 0:03:20,600
+ Øh...
+
+46
+0:03:20,700 --> 0:03:23,800
+ Og så berører det hele befolkningen stort set.
+
+47
+0:03:23,900 --> 0:03:25,400
+ Så er det lige pludselig et problem.
+
+48
+0:03:25,500 --> 0:03:27,240
+ Men det, at vi har...
+
+49
+0:03:27,340 --> 0:03:27,780
+ Øh...
+
+50
+0:03:27,880 --> 0:03:31,080
+ At, hvad skal man sige, den ulighed, der i forvejen var i samfundet,
+
+51
+0:03:31,180 --> 0:03:33,980
+ at den er eskaleret i sådan en digital tidsalder,
+
+52
+0:03:34,080 --> 0:03:35,380
+ og det går ud over de svageste.
+
+53
+0:03:35,480 --> 0:03:39,220
+ Dem, der har mest brug for velfærdsydelse, mest brug for hjælp.
+
+54
+0:03:39,320 --> 0:03:42,420
+ Dem, der oftest optræder i det sociale system,
+
+55
+0:03:42,520 --> 0:03:44,540
+ fordi måske deres børn bliver tvangsfjernet,
+
+56
+0:03:44,640 --> 0:03:47,140
+ eller fordi de har nogle problemer.
+
+57
+0:03:47,240 --> 0:03:49,840
+ Jamen, det er dem, der har de dårligste forudsætninger
+
+58
+0:03:49,940 --> 0:03:52,700
+ for også at kræve deres ret og banke i bordet og sige,
+
+59
+0:03:52,800 --> 0:03:53,540
+ jeg vil...
+
+60
+0:03:53,640 --> 0:03:54,140
+ Øh...
+
+61
+0:03:54,240 --> 0:03:57,240
+ Jeg vil have det og det, eller det og det er mine rettigheder.
+
+62
+0:03:57,240 --> 0:04:03,440
+ Så man har nogle uligheder i forvejen og nogle klasseinddelinger i forvejen,
+
+63
+0:04:03,540 --> 0:04:07,580
+ som bare bliver voldsomt eskaleret af digitaliseringen.
+
+64
+0:04:07,680 --> 0:04:09,460
+ Og det er der ikke rigtigt nogen, der har råbt op om.
+
+65
+0:04:09,560 --> 0:04:12,860
+ Jo, I har sikkert nok og nogle få interesseorganisationer,
+
+66
+0:04:12,960 --> 0:04:17,220
+ men i det store og hele, så har det bare været sådan en usynlig revolution,
+
+67
+0:04:17,320 --> 0:04:20,420
+ der er sket af vores velfærdssamfund, hvor det er gået fra,
+
+68
+0:04:20,520 --> 0:04:23,160
+ at man i hvert fald havde sådan en idealistisk forestilling om,
+
+69
+0:04:23,260 --> 0:04:24,900
+ at staten var til for borgerne.
+
+70
+0:04:25,000 --> 0:04:27,240
+ Det har den selvfølgelig aldrig været 100 procent.
+
+71
+0:04:27,340 --> 0:04:30,380
+ Men det var i hvert fald et ideal, man havde til nu,
+
+72
+0:04:30,480 --> 0:04:33,420
+ at så er der byttet fuldstændig rundt på forholdet mellem borger og stat.
+
+73
+0:04:33,520 --> 0:04:36,420
+ Nu skal vi være til for staten, for at staten eller det offentlige,
+
+74
+0:04:36,520 --> 0:04:39,560
+ offentlige myndigheder, kommuner, hvad det er,
+
+75
+0:04:39,660 --> 0:04:43,420
+ kan fungere mest gnidningsfrit, friktionsløst.
+
+76
+0:04:43,520 --> 0:04:47,160
+ Der skal også helst være så få mennesker involveret som muligt,
+
+77
+0:04:47,260 --> 0:04:51,060
+ fordi at mennesker er jo besværlige, og det er IT-systemer jo ikke.
+
+78
+0:04:51,160 --> 0:04:52,500
+ Specielt ikke i den offentlige sektor.
+
+79
+0:04:52,600 --> 0:04:54,860
+ Det ved vi allesammen.
+
+80
+0:04:54,960 --> 0:04:56,940
+ Så der har også været sådan nogle...
+
+81
+0:04:56,940 --> 0:05:01,240
+ Silicon Valley-fantasier, vil jeg sige, inden for mange i det offentlige.
+
+82
+0:05:01,340 --> 0:05:05,720
+ Altså, der har været et hav af embedsfolk, der har været sendt afsted
+
+83
+0:05:05,820 --> 0:05:10,780
+ til netop Silicon Valley og besøgt alt fra Singularity U til Google
+
+84
+0:05:10,880 --> 0:05:15,860
+ for at finde ud af eller for at vide, hvordan man kan revolutionere
+
+85
+0:05:15,960 --> 0:05:20,960
+ sådan en dyr, besværlig, tung offentlig sektor som den danske.
+
+86
+0:05:22,200 --> 0:05:26,140
+ Og det har jo lydt vældig appellerende, og man har sagt,
+
+87
+0:05:26,240 --> 0:05:26,940
+ jamen...
+
+88
+0:05:27,040 --> 0:05:29,040
+ Der bliver flere og flere ældre.
+
+89
+0:05:29,140 --> 0:05:31,040
+ Vores offentlige sektor bliver dyrere og dyrere.
+
+90
+0:05:31,140 --> 0:05:34,740
+ Folk har flere og flere forventninger til dyre sundhedstilbud,
+
+91
+0:05:34,840 --> 0:05:39,040
+ og derfor så løber det løbsk, hvis vi ikke holder udgifterne nede et andet sted.
+
+92
+0:05:39,140 --> 0:05:42,640
+ Og derfor bliver vi nødt til at indføre nogle systemer, hvor vi kan skære
+
+93
+0:05:42,740 --> 0:05:45,840
+ de der dyre mellemlede af, altså mennesker.
+
+94
+0:05:45,940 --> 0:05:47,340
+ Og det så vi jo.
+
+95
+0:05:47,440 --> 0:05:52,340
+ Altså, det mest oplagte eksempel er selvfølgelig Skat og EFI,
+
+96
+0:05:52,440 --> 0:05:56,840
+ hvor at det slog jo fuldstændig grusomt fejl.
+
+97
+0:05:56,940 --> 0:05:59,740
+ Og jeg sidder i Finansudvalget og som finansordfører,
+
+98
+0:05:59,840 --> 0:06:04,640
+ og vi skal jo stadigvæk sidde og udskrive checks til at rette op på det system,
+
+99
+0:06:04,740 --> 0:06:10,940
+ og efterhånden har vi jo brugt milliarder på bare at prøve at rette op på det.
+
+100
+0:06:11,040 --> 0:06:16,840
+ Vi kunne have ansat tusindvis af mennesker for de penge.
+
+101
+0:06:16,940 --> 0:06:18,540
+ Og det bliver egentlig spejlet.
+
+102
+0:06:18,640 --> 0:06:21,740
+ Jeg vil ikke gøre mig klog på, hvorfor, i hvert fald ikke her,
+
+103
+0:06:21,840 --> 0:06:25,040
+ helst heller generelt, hvorfor IT-projekter inde for det offentlige fejler.
+
+104
+0:06:25,140 --> 0:06:26,840
+ Det ved I jo meget mere om.
+
+105
+0:06:26,840 --> 0:06:28,740
+ Det taler I jo også tit om.
+
+106
+0:06:28,840 --> 0:06:30,740
+ Og det prøver jeg også at lytte til.
+
+107
+0:06:30,840 --> 0:06:36,740
+ Men det synes jeg egentlig heller ikke skal være adgangsbillet til at blande sig i debatten,
+
+108
+0:06:36,840 --> 0:06:39,740
+ at man fuldt ud forstår de tekniske specialiteter.
+
+109
+0:06:39,840 --> 0:06:42,740
+ For ellers så skulle I jo alle sidde i Folketinget.
+
+110
+0:06:42,840 --> 0:06:44,740
+ Og jeg håber, at nogen af jer vil.
+
+111
+0:06:44,840 --> 0:06:49,740
+ Men det skal jo ikke være sådan, at man kun kan være sundhedsordfører,
+
+112
+0:06:49,840 --> 0:06:51,740
+ også hvis man er sygeplejerske eller læge eller lignende.
+
+113
+0:06:51,840 --> 0:06:54,740
+ Og det prøver jeg også at sige til mine kolleger nogle gange,
+
+114
+0:06:54,840 --> 0:06:55,740
+ hvis de siger,
+
+115
+0:06:55,740 --> 0:07:00,640
+ at det her IT-område, det er så specifikt, det er så teknisk, jeg forstår det ikke.
+
+116
+0:07:00,740 --> 0:07:02,640
+ Jeg kan nok ikke blande mig i det.
+
+117
+0:07:02,740 --> 0:07:05,640
+ Så siger jeg, du er ikke læge, du er ikke sygeplejerske, du er ikke fysiker.
+
+118
+0:07:05,740 --> 0:07:09,640
+ Du ved ikke, hvordan den her MRI-scanner fungerer rent teknisk.
+
+119
+0:07:09,740 --> 0:07:14,640
+ Du ved ikke, hvad de kemiske komponenter i en eller anden medicin er.
+
+120
+0:07:14,740 --> 0:07:17,640
+ Eller helt præcis, hvordan coronavaccinen fungerer.
+
+121
+0:07:17,740 --> 0:07:21,640
+ Og alligevel har du masser af holdninger til, hvordan sundhedsvæsenet skal være og fungere,
+
+122
+0:07:21,740 --> 0:07:24,640
+ og hvordan vi skal bruge det osv. osv.
+
+123
+0:07:24,640 --> 0:07:28,540
+ Hvad forholdet mellem sundhedsvæsenet og patienterne skal være.
+
+124
+0:07:28,640 --> 0:07:31,540
+ Og sådan er det jo på alle politiske områder, at man kan jo godt,
+
+125
+0:07:31,640 --> 0:07:35,540
+ altså man skal jo selvfølgelig helst have en eller anden base af viden,
+
+126
+0:07:35,640 --> 0:07:38,540
+ men man kan jo godt have masser af politiske holdninger til det.
+
+127
+0:07:38,640 --> 0:07:42,540
+ Og heldigvis for det, fordi ellers så havde vi jo ikke et demokrati, så havde vi et teknokrati.
+
+128
+0:07:42,640 --> 0:07:48,540
+ Og jeg tror med alle de store fejl, der er i vores demokrati, så tror jeg stadigvæk, at det er det bedste.
+
+129
+0:07:48,640 --> 0:07:54,540
+ Men det har bare afsløret nogle store mangler de senere år.
+
+130
+0:07:54,640 --> 0:08:02,540
+ Vi skal senere i dag også have en debat omkring datacentre i Danmark, omkring cloud,
+
+131
+0:08:02,640 --> 0:08:11,540
+ omkring den mangel på viden, der er omkring, hvor ender vores data hen, hvor ender vores børns data hen.
+
+132
+0:08:11,640 --> 0:08:17,540
+ Der har også været skrevet en masse omkring brugen af Chromebooks osv. og det her med,
+
+133
+0:08:17,640 --> 0:08:24,540
+ og nærmest at bruge vores børn som sådan nogle forsøgskaniner derude og se, hvor ender deres data.
+
+134
+0:08:24,640 --> 0:08:30,540
+ Og jeg har længe efterspurgt, og vi fik et lidt mere aktivistisk datatilsyn.
+
+135
+0:08:30,640 --> 0:08:34,540
+ Og de har haft en kultur, hvor de har været tilbageholdende.
+
+136
+0:08:34,640 --> 0:08:40,540
+ Og jeg har egentlig håbet, at nogle af vores nabolander, de egentlig blev sådan lidt mere...
+
+137
+0:08:40,640 --> 0:08:44,540
+ Jeg synes, man begynder at se nogle tegn på det faktisk.
+
+138
+0:08:44,640 --> 0:08:50,540
+ Men jeg synes, det er ret sigende, at for det første, så giver de nogle advarsler i god tid.
+
+139
+0:08:50,640 --> 0:08:52,540
+ Der har været en EU-dom.
+
+140
+0:08:52,540 --> 0:09:00,440
+ Og stadigvæk, så Helsingør Kommune siger sådan, ej, vi har altså ikke tid til at rette os efter den der advarsel fra datatilsynet omkring Chromebooks,
+
+141
+0:09:00,540 --> 0:09:04,440
+ fordi skoleåret begynder jo lige om lidt, og I er lige kommet med det her.
+
+142
+0:09:04,540 --> 0:09:10,440
+ Og det er så symptomatisk for, hvordan mange myndigheder også agerer.
+
+143
+0:09:10,540 --> 0:09:17,440
+ Jeg kan også huske, at Rigspolitiet for en del år siden, kan I huske, de lavede det her gigantiske tjusk med vores data,
+
+144
+0:09:17,540 --> 0:09:20,440
+ og der endte en masse sensitive persondata.
+
+145
+0:09:20,440 --> 0:09:27,340
+ Og da de fik en advarsel fra datatilsynet, så trak de også på skuldrene, så vi ikke kommer til at ændre praksis.
+
+146
+0:09:27,440 --> 0:09:31,340
+ Og det er derfor, vi har brug for et datatilsyn, der er så meget mere slagkræftigt.
+
+147
+0:09:31,440 --> 0:09:37,340
+ Og det er også derfor, jeg havde et beslutningsforslag i Folketingssalen i foråret, der indeholdt nogle forskellige ting.
+
+148
+0:09:37,440 --> 0:09:41,340
+ Men et af elementerne var, at vi blev nødt til at have et fuldstændig uafhængigt datatilsyn.
+
+149
+0:09:41,440 --> 0:09:48,340
+ Vi kan ikke vide med sikkerhed, hvad det betyder for kulturen i datatilsynet, at de ligger under justitsministeriet.
+
+150
+0:09:48,340 --> 0:09:53,240
+ Og der er sikkert ikke nogen formelle ordre, eller bliver sandt noget formelt af sted.
+
+151
+0:09:53,340 --> 0:10:00,240
+ Men bare det med at skulle ligge et bestemt sted under et ministerium, under en bestemt regering,
+
+152
+0:10:00,340 --> 0:10:03,240
+ det kan altså være frygtingydende for mange.
+
+153
+0:10:03,340 --> 0:10:08,240
+ Og derfor skal vi selvfølgelig have det til at ligge et andet sted.
+
+154
+0:10:08,340 --> 0:10:11,240
+ Og det kunne ligge under Folketinget, ligesom ombudsmanden gør.
+
+155
+0:10:11,340 --> 0:10:14,240
+ Altså, Folketinget har jo heller ikke nogen instruktionsbeføjelse overfor ombudsmanden.
+
+156
+0:10:14,340 --> 0:10:17,240
+ Ombudsmanden er ligeglad med, hvad Folketinget siger.
+
+157
+0:10:17,240 --> 0:10:19,140
+ Så det kunne være et sted. Det kunne også være et andet sted.
+
+158
+0:10:19,240 --> 0:10:25,140
+ Det skal bare være uafhængigt af en hvertidssiddende gældende regering.
+
+159
+0:10:25,240 --> 0:10:29,140
+ Det var der ikke flertal for.
+
+160
+0:10:29,240 --> 0:10:37,140
+ Jeg kunne heller ikke få et flertal til, at når der bliver lavet lovgivning, og Folketinget skal behandle det,
+
+161
+0:10:37,240 --> 0:10:46,140
+ så er der på en af de sidste sider et schema, hvor ombudsmændene har skrevet, hvad det her lovforslag har af betydning for dansk økonomi,
+
+162
+0:10:46,140 --> 0:10:50,040
+ hvad det har af betydning i forhold til EU-ret og sådan nogle ting.
+
+163
+0:10:50,140 --> 0:10:56,040
+ Så man nemt og hurtigt kan se, hvad det her har af betydning på nogle områder.
+
+164
+0:10:56,140 --> 0:11:00,040
+ Vi bevægede os også over i, hvad det har af betydning i forhold til miljø og klima.
+
+165
+0:11:00,140 --> 0:11:07,040
+ Og der foreslår jeg, hvad det har af betydning i forhold til borgernes digitale rettighed og retssikkerhed på det her område.
+
+166
+0:11:07,140 --> 0:11:12,040
+ Og klart, alt det lovgivning, som overhovedet ikke har noget at gøre med det område, der skal man bare ikke skrive noget.
+
+167
+0:11:12,140 --> 0:11:16,040
+ Men selvfølgelig, der hvor det har betydning, der skal man selvfølgelig skrive.
+
+168
+0:11:16,040 --> 0:11:20,940
+ Og hvis det er sandfærdigt og efter bedste evne, skal man selvfølgelig skrive, hvad det har af betydning,
+
+169
+0:11:21,040 --> 0:11:24,940
+ eller hvad man forestiller sig, at det kunne have af betydning.
+
+170
+0:11:25,040 --> 0:11:32,940
+ Den lille ting kunne man ikke få flertal for, fordi der var et flertal af partierne, der sagde, at det var et kæmpe byråkrati.
+
+171
+0:11:33,040 --> 0:11:38,940
+ Så sagde de, at det kan det jo kun være, hvis jeres forestilling er, at der skal gøres ingen tanker overhovedet fra embedsmændene,
+
+172
+0:11:39,040 --> 0:11:43,940
+ eller politikerne eller ministeriens side om, hvad det her har af konsekvenser overhovedet.
+
+173
+0:11:44,040 --> 0:11:45,940
+ Fordi hvis man ikke tænker de tanker, så er det jo ikke sådan.
+
+174
+0:11:46,040 --> 0:11:48,940
+ Hvis man ikke tænker de tanker i forvejen, så er det selvfølgelig lidt ekstra arbejde.
+
+175
+0:11:49,040 --> 0:11:54,940
+ Men jeg håber da, at man i det mindste gør sig nogen tanker, men det kan godt være, at det er en naiv forestilling.
+
+176
+0:11:55,040 --> 0:12:00,940
+ Og så det at skrive, at det har ingen betydning, eller det har måske nogen betydning under nogle bestemte forudsætninger osv.,
+
+177
+0:12:01,040 --> 0:12:06,940
+ at de tanker, at dem får man altså proppet ind der alligevel. Det kunne jeg heller ikke.
+
+178
+0:12:07,040 --> 0:12:14,940
+ Vi har heller ikke en ressortminister, der er ansvarlig. Det betyder, at ting bliver kastet rundt lidt efter for godt befindende.
+
+179
+0:12:14,940 --> 0:12:22,840
+ Noget ender på Justitsministeriets område, noget på Sundhedsministeriets område, noget på Erhvervsministeriets område.
+
+180
+0:12:22,940 --> 0:12:33,840
+ Og det betyder også bare, at når ting så bliver behandlet i de udvalg, der spejler ministeriets ressort,
+
+181
+0:12:33,940 --> 0:12:43,840
+ altså Retsudvalget, Sundhedsudvalget og Erhvervsudvalget, så sidder der en masse udvalgsmedlemmer, som måske hverken rigtigt har gjort så mange tanker
+
+182
+0:12:43,840 --> 0:12:49,740
+ om, hvad der kan være af fare osv., og som heller ikke interesserer sig for det.
+
+183
+0:12:49,840 --> 0:12:57,740
+ Og så får man noget virkelig, virkelig dårligt lovgivende ud af det. Et helt konkret eksempel var, at omkring årsskiftet, jeg tror det var lige før jul,
+
+184
+0:12:57,840 --> 0:13:11,740
+ der var der et forslag fra den daværende skatteminister Bødskovs side om, at man skulle kunne skrabe nettet og hente en masse data fra åbne kilder,
+
+185
+0:13:11,740 --> 0:13:15,640
+ for at kunne sammenkøre dem og finde folk, der lavede hvidvasker og alt muligt andet.
+
+186
+0:13:15,740 --> 0:13:22,640
+ Og for skatteudvalgsmedlemmer, der lød det jo meget lækkert, at man kunne gøre noget, der i forvejen var for åbne kilder.
+
+187
+0:13:22,740 --> 0:13:29,640
+ Så kunne man få en masse data. Det kunne pege i retning af nogle bad guys og sådan noget. Og hvem vil ikke gerne det?
+
+188
+0:13:29,740 --> 0:13:39,640
+ Det lyder jo rigtig, rigtig fint at være mere orienteret om, hvor man skal rette lommelygten hen, når man skal lede efter økonomisk kriminalitet.
+
+189
+0:13:39,640 --> 0:13:48,540
+ Så det gik ligesom igennem. Og så er der jo mange, der har spurgt mig, hvordan kan det gå igennem, hvor samtlige partier i Folketinget stemmer for det her forslag?
+
+190
+0:13:48,640 --> 0:13:55,540
+ Og det er jo fordi, at vi har jo også et vist arbejdspres, der gør, at vi blander os ikke vildt meget i hinandens områder,
+
+191
+0:13:55,640 --> 0:14:03,540
+ fordi vi må formode, at dem, der er skatteordfører, ved nok om skatteområdet til, at når de siger til deres respektive parti,
+
+192
+0:14:03,640 --> 0:14:09,540
+ det her er et godt forslag, jeg synes, vi skal stemme for det, så har man ikke tid til at sidde og grave sig ned i måske 150 siders lovbehandling,
+
+193
+0:14:09,540 --> 0:14:15,440
+ på et område, der ikke er ens regning. Så den arbejdsdeling har vi selvfølgelig.
+
+194
+0:14:15,540 --> 0:14:22,440
+ Og man kan sige, specielt de partier, der ikke er de allerstørste partier, der har hver person adskillige ordførerskaber.
+
+195
+0:14:22,540 --> 0:14:26,440
+ Altså jeg er IT-ordfører, jeg er finansordfører, jeg er erhvervsordfører. Og sådan er det meget i SF.
+
+196
+0:14:26,540 --> 0:14:30,440
+ Der tror jeg, at det er sådan 3-4, hvad skal man sige, større områder, hver person har.
+
+197
+0:14:30,540 --> 0:14:39,440
+ Og det betød jo så, at fordi det også var kommet igennem med hast, og f.eks. dataetiskrådet ikke havde været høringspart og andre kloge folk,
+
+198
+0:14:39,540 --> 0:14:48,440
+ så blev det kørt igennem. Og det var efterfølgende, at der kom en masse debat om, hvor uetisk det her var,
+
+199
+0:14:48,540 --> 0:14:57,440
+ og kunne man overhovedet gøre det, og hvad får man ellers i sit net, hvis man bare skraber som sådan et bundtroll på internets havbund.
+
+200
+0:14:57,540 --> 0:15:04,440
+ Hvad får man ellers med i nettet, og hvad kan man bruge det til? Og kan man overhovedet stole på de data, man får fra et internet,
+
+201
+0:15:04,540 --> 0:15:09,440
+ der jo også er oversvømmet af deepfake, både video, men også tekst.
+
+202
+0:15:09,640 --> 0:15:18,440
+ Hvad er det, man får ind i nettet der? Og jeg synes, det var ekstremt pinligt faktisk, og jeg har følelsen, at jeg burde have opdaget det,
+
+203
+0:15:18,540 --> 0:15:24,440
+ men samtidig så er det jo også bare en lavpraktisk hverdag, hvor man koncentrerer sig om sine egne områder,
+
+204
+0:15:24,540 --> 0:15:30,440
+ og hvor skatteoverførere havde ikke tænkt de tanker om, hvad der kunne være sket osv.
+
+205
+0:15:30,540 --> 0:15:38,440
+ Og det var bare sådan et eksempel på noget, hvor vi så ikke kunne rulle det tilbage bagefter, fordi partierne havde jo stemt for det.
+
+206
+0:15:38,440 --> 0:15:50,340
+ Der var et skatteministerium med skiftende skatteministre, som sagde, ja, I skal ikke være urolig, vi skal nok tænke over nogle af de her ting og sådan noget,
+
+207
+0:15:50,440 --> 0:15:57,340
+ og man får ikke ligesom second chance og sådan noget. Så det er jo virkelig alvorligt, når der bliver begået sådan nogle bummer,
+
+208
+0:15:57,440 --> 0:16:08,340
+ fordi der ikke er den viden der. Og så oplever jeg også bare, at der er, altså, at ministrene vil kun tale om den del af IT,
+
+209
+0:16:08,540 --> 0:16:17,340
+ digitalisering osv., som de synes er sådan lidt lækkert eller hot eller oppe i tiden. Så hvis man gerne vil være bombastisk omkring,
+
+210
+0:16:17,440 --> 0:16:27,340
+ at man tager hate speech ned fra nettet inden for 24 timer, fordi man synes, at det er sådan en dagsorden, man vil gerne vise,
+
+211
+0:16:27,440 --> 0:16:37,340
+ at man beskytter mod hadefuld tale eller mod, man beskytter børnene for ting, der kan ligge og sådan noget, så vil man gerne svare på spørgsmål.
+
+212
+0:16:37,340 --> 0:16:44,240
+ Så vil man gerne gå ind i den diskussion osv. Men når det kommer til nogle af de her ting, hvis I har fulgt med i Politikens serie,
+
+213
+0:16:44,340 --> 0:16:50,240
+ over fem og en halv uge har man ikke kunne få en kommentar fra Nikolaj Vammen, og som finansminister, så er han ressortansvarlig.
+
+214
+0:16:50,340 --> 0:16:59,240
+ Det er på hans ressort, det er. Og det er derfor, det er så vigtigt, synes jeg, at gøre nogen politisk ansvarlig for de ting, der kommer ud.
+
+215
+0:16:59,340 --> 0:17:07,240
+ Og selvom han formelt er politisk ansvarlig, så er der ligesom heller ikke et eller andet kæmpe krav om, at han går ind i de her ting.
+
+216
+0:17:07,340 --> 0:17:18,240
+ For at lave en bro til noget af det også, vi skal tale om, så vil jeg sige, når der er hele den her både tvangsdigitalisering,
+
+217
+0:17:18,340 --> 0:17:28,240
+ men også ekstremt omfattende digitalisering af vores samfund, som genererer så ekstremt mange data, så bliver de jo også opbevaret et sted.
+
+218
+0:17:28,340 --> 0:17:36,240
+ Og der er jo en kæmpe gråzone lige nu omkring, hvor ender vores data henne. Altså, ender de i USA under amerikansk lovgivning,
+
+219
+0:17:36,340 --> 0:17:37,240
+ hvor man bare går ind i det, der kommer ud.
+
+220
+0:17:37,340 --> 0:17:45,240
+ Man kan bare gå ind og kigge, hvad skal man sige, lovligt. Man behøver ikke engang nogle kabler og tappe nogle kabler,
+
+221
+0:17:45,340 --> 0:17:55,240
+ eller have sådan særlige samarbejder med den danske stat for det. Man kan simpelthen bare lovligt gå ind og kigge på det. Hvad betyder det?
+
+222
+0:17:55,340 --> 0:18:04,240
+ Så hele diskussionen omkring de datacentre, vi allerede har i Danmark, men også den gråzone i forhold til, hvor bliver vores data opbevaret henne,
+
+223
+0:18:04,340 --> 0:18:06,240
+ er jo et kæmpe problem.
+
+224
+0:18:06,240 --> 0:18:20,140
+ Både i forhold til vores suverænitet og nationale selvbestemmelse, men også i forhold til, hvordan vi kan blive profileret nu og i fremtiden.
+
+225
+0:18:20,240 --> 0:18:35,140
+ Jeg prøvede at gå ind på, det er min afsluttende kommentar, jeg prøvede at gå ind på Folketingets IT og spurgte, og nu synes I måske er dumt, men jeg vidste ikke, er der et problem i at bruge OneDrive som fildelingssystem?
+
+226
+0:18:35,140 --> 0:18:45,040
+ Og så var de sådan lidt, måske, vi må ikke rigtig sige ja, fordi vi ikke har en aftale i stand endnu omkring, hvor deres server er henne osv.
+
+227
+0:18:45,140 --> 0:18:58,040
+ Så der bliver tænkt nogle tanker om det, men samtidig har vi så Google, som er massivt til stede i vores danske undervisningsuddannelsesystem,
+
+228
+0:18:58,140 --> 0:19:05,040
+ uden at der er måske de store diskussioner ude i kommunerne om, hvad der rent faktisk sker.
+
+229
+0:19:05,140 --> 0:19:08,040
+ Og så er det sådan, at der er en stor forskel med børnenes data.
+
+230
+0:19:08,140 --> 0:19:15,040
+ Vi har også lagt noget tid ind, Tobias, til at der kan være spørgsmål eller kommentar, så det ikke kun er mig, der står og snakker.
+
+231
+0:19:15,140 --> 0:19:27,040
+ Præcis, der er sådan 5-10 minutter, hvis der er nogen, der har spørgsmål. Til Lisbeth.
+
+232
+0:19:27,140 --> 0:19:30,040
+ Er der slet ikke andre, der vil spørge om noget, så vil jeg gerne.
+
+233
+0:19:30,140 --> 0:19:34,040
+ Med hensyn til datatilsynet, og hvis det er så tandløst, som vi alle sammen oplever det som,
+
+234
+0:19:34,040 --> 0:19:39,940
+ er der så på et eller andet tidspunkt, hvor vi simpelthen kan gå til EU og sige, at vores datatilsyn er ikke effektivt på en eller anden måde,
+
+235
+0:19:40,040 --> 0:19:46,940
+ så vi måske kunne presse dem til at presse Danmark til at gøre det mere groft stærkt?
+
+236
+0:19:50,040 --> 0:20:01,940
+ Ja, altså det tror jeg egentlig nok. Jeg ville egentlig selv prøve ombudsmanden først faktisk, fordi vi har jo et virkelig stærkt ombudsmandssystem i Danmark,
+
+237
+0:20:01,940 --> 0:20:07,840
+ som også kan gå ind og overrule andre myndigheder, hvis man synes, at man ikke har levet op.
+
+238
+0:20:07,940 --> 0:20:14,840
+ Altså ombudsmandsinstitutionen kan godt gå ind og sige, at andre myndigheder har ikke gjort det, de egentlig burde gøre osv.
+
+239
+0:20:14,940 --> 0:20:20,840
+ Så ja, vi har en sindssygt stærk ombudsmandsinstitution i Danmark, og det tror jeg faktisk, vi bruger først.
+
+240
+0:20:20,940 --> 0:20:29,840
+ Også fordi, hvis man skulle gå fra det danske datatilsyn til det irske for eksempel, der er jo også nogle gode takter der og sådan noget,
+
+241
+0:20:29,840 --> 0:20:41,740
+ men det har eddermame også været sløvt. Så ja, altså jeg prøver sådan at mobbe datatilsynet til at blive lidt mere aktivistisk.
+
+242
+0:20:41,840 --> 0:20:47,740
+ Jeg ved ikke, om det er den rigtige strategi, men nogle gange kommer der nogen til mig, der arbejder i datatilsynet og må selvfølgelig ikke sige, hvem det er og sådan noget,
+
+243
+0:20:47,840 --> 0:20:53,740
+ og som siger, det er godt, du sparker lidt til os og sådan noget. Vi er også mange, der snakker om, at vi skulle være sådan lidt mere.
+
+244
+0:20:53,840 --> 0:20:59,740
+ Og det tror jeg også. Altså der er i nogle sådan statslige eller semistatslige instruktioner,
+
+245
+0:20:59,840 --> 0:21:11,740
+ så er der sådan lidt den, der lever stille, lever godt, er sådan en kultur. Men jeg tror godt, de kan se, hvilket kolossalt ansvar de egentlig har i sådan en digitaliseret tidsalder.
+
+246
+0:21:16,840 --> 0:21:26,740
+ Ja, hej. Jeg vil gerne spørge til Politiforliet, som SF stemte for. Der var sådan noget med, at man ikke skulle have dommerkendelser, hvis man skulle se bankdata.
+
+247
+0:21:26,840 --> 0:21:29,740
+ Tror du, det er noget, vi kommer til at se mere af fra SF?
+
+248
+0:21:29,840 --> 0:21:41,740
+ Altså personligt, så håber jeg det ikke, fordi jeg bliver også nødt til at være lojal overfor mine kollegaer, der er retsordfører,
+
+249
+0:21:41,840 --> 0:21:50,740
+ at i sådan et forlig, der er der jo rigtig mange forskellige elementer. Og nogle gange, der kan selvfølgelig godt være et element, der er så slemt,
+
+250
+0:21:50,840 --> 0:21:56,740
+ eller man skal sige, at det overruler alt det andet, man gerne vil.
+
+251
+0:21:56,740 --> 0:22:04,640
+ Men jeg tror, at hendes samlede vurdering var, og jeg ved, at Carina Lorentzen går også meget op i retssikkerhed,
+
+252
+0:22:04,740 --> 0:22:11,640
+ at hun følte, hun havde gjort, hvad hun kunne, da de forhandlede der, for at gøre det bedst muligt osv.
+
+253
+0:22:11,740 --> 0:22:21,640
+ Men personligt, så synes jeg jo, at det er totalt uskik, og i så mange forskellige situationer, ikke at have en dommerkendelse.
+
+254
+0:22:21,740 --> 0:22:24,640
+ Så jeg håber det ikke, hvis det er svar på det her spørgsmål.
+
+255
+0:22:26,740 --> 0:22:33,640
+ Er der flere spørgsmål fra salen?
+
+256
+0:22:33,740 --> 0:22:36,640
+ Heller ikke?
+
+257
+0:22:36,740 --> 0:22:43,640
+ Jamen nu har vi der jo lige. Vi har nogle gange nogle sager og nogle love, som vi måske som nørder kan synes er rigtig vigtige,
+
+258
+0:22:43,740 --> 0:22:49,640
+ men som I ikke overhovedet har lyst til at kigge på. Hvordan kan vi nemmest, er der nogle tips og tricks til, hvordan vi kan få kørt sådan nogle,
+
+259
+0:22:49,740 --> 0:22:55,640
+ måske ikke så kontroversielle ændringer igennem, men altså sådan lov om tidens bestemmelser, hvis nok nu ved at blive ændret,
+
+260
+0:22:55,640 --> 0:22:57,540
+ men den skulle have været ændret for mindst 20 år siden?
+
+261
+0:22:57,640 --> 0:23:06,540
+ Altså er der nogle tips til at få kørt småsager igennem, bestemte tidspunkter på året, eller?
+
+262
+0:23:06,640 --> 0:23:13,540
+ Altså det er jo altid rigtig godt at lobby i de ministerier, hvor det hører hjemme under, ikke?
+
+263
+0:23:13,640 --> 0:23:18,540
+ Og hvis I ligesom siger, at det her det er ikke sådan big politics, der er ikke nogen, der bliver sure over det,
+
+264
+0:23:18,640 --> 0:23:25,540
+ men det vil faktisk være nogle gode forbedringer, og så specielt erhvervsministeriet, de laver sådan nogle bunke-logger,
+
+265
+0:23:25,640 --> 0:23:31,540
+ og det er både irriterende, men det er også nødvendigt, fordi ellers så ville vi sidde der 24 timer i døgnet hver eneste dag,
+
+266
+0:23:31,640 --> 0:23:36,540
+ og så er der sådan måske 27 elementer i ét, og nogle gange er det godt, og nogle gange er det skidt og sådan noget,
+
+267
+0:23:36,640 --> 0:23:43,540
+ der kunne vi måske godt få det ind med der. Når folketingsåret starter, så kommer der jo sådan et helt lovkatalog om,
+
+268
+0:23:43,640 --> 0:23:48,540
+ hvad ministerierne selv har tænkt sig at lave af lovforslag, og hvis man så kigger det igennem,
+
+269
+0:23:48,640 --> 0:23:54,540
+ så kan man måske se, at der er et eller andet sted, hvor det ville passe ind under, og så kan man enten lobby dem,
+
+270
+0:23:54,540 --> 0:23:59,440
+ eller mig, eller nogle af mine kolleger, og sige, at I kan ikke prøve at få det ind igennem.
+
+271
+0:23:59,540 --> 0:24:06,440
+ I forhold til det, der er sådan noget mere high politics, eller hvad man skal sige, der nævnte jeg i starten de her to ting,
+
+272
+0:24:06,540 --> 0:24:13,440
+ der lidt skal være opfyldt for at få nogle, måske i bedste fald nogle positive forandringer igennem,
+
+273
+0:24:13,540 --> 0:24:19,440
+ og det er, at det skal være konkrete problemer. Meget af det, vi tit taler om i den her kreds, hvor vi er,
+
+274
+0:24:19,540 --> 0:24:24,440
+ det er jo sådan med, hvordan forandrer samfundet sig, hvilke strukturelle forandringer,
+
+275
+0:24:24,540 --> 0:24:31,440
+ hvad er de store spørgsmål omkring vores demokrati, og sådan noget, og det er jo faktisk sindssygt vigtigt,
+
+276
+0:24:31,540 --> 0:24:37,440
+ men det er rigtig svært at operationalisere, eller hvad skal man sige, for medierne, eller for at få den brede befolkning med.
+
+277
+0:24:37,540 --> 0:24:43,440
+ Så jo mere konkrete problemer, for eksempel hvor irriterende mit idé har været for rigtig mange mennesker,
+
+278
+0:24:43,540 --> 0:24:47,440
+ og så noget, det der med, at det skal være et problem for den brede befolkning.
+
+279
+0:24:47,540 --> 0:24:53,440
+ Fordi det er bare tit, at jo smallere en befolkningsgruppe, det er jo mindre, og specielt hvis de ikke har så mange ressourcer,
+
+280
+0:24:53,440 --> 0:24:57,340
+ så er det ikke dem, der banker i bordet, eller siger, hey, hvad med os, osv.
+
+281
+0:24:57,440 --> 0:25:05,340
+ Så hvis man ligesom kan koble de to ting, og sige, at det har nogle virkelig store negative konsekvenser for den brede befolkning,
+
+282
+0:25:05,440 --> 0:25:14,340
+ og specielt også tit, hvis det går ud over ældre, så har vi jo Danmarks mest magtfulde lobbyorganisation, ældresagen, som er rigtig dygtig i det.
+
+283
+0:25:17,440 --> 0:25:21,340
+ Super tak, jeg tænker, at det var det, og mange tak til dig, Lisbeth.
+
+284
+0:25:21,440 --> 0:25:23,340
+ Det var slimt.
+
+285
+0:25:23,440 --> 0:25:24,340
+ Tak.

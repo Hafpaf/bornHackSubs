@@ -1,0 +1,1139 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:19,140
+ So, yeah, welcome to the batch talk of 2022.
+
+2
+0:00:22,500 --> 0:00:25,760
+ Most of you probably got your batch at the check-in.
+
+3
+0:00:25,760 --> 0:00:33,780
+ And in this little presentation, we'll go through some of the specs of the batch
+
+4
+0:00:33,780 --> 0:00:39,300
+ and sort of little ideas on what sort of why stuff has been made as this.
+
+5
+0:00:39,620 --> 0:00:48,120
+ And also, at the end, answer questions if you have sort of what's what.
+
+6
+0:00:50,140 --> 0:00:52,980
+ This year's batch is based on the RP2040.
+
+7
+0:00:52,980 --> 0:00:54,440
+ It's a dual-core ARM processor.
+
+8
+0:00:54,440 --> 0:00:58,260
+ It's the one made by Raspberry Pi like a year and a half ago.
+
+9
+0:00:58,260 --> 0:01:05,240
+ It has 16 megabytes of spy flash and a color screen so that sort of the software side is
+
+10
+0:01:05,240 --> 0:01:07,820
+ very easy to sort of get going with.
+
+11
+0:01:07,820 --> 0:01:14,320
+ There are four buttons sort of to make easy sort of game navigation.
+
+12
+0:01:14,320 --> 0:01:21,300
+ And it also has a quick connector for adding other stuff to it in addition to the shitty
+
+13
+0:01:21,300 --> 0:01:23,300
+ add-on.
+
+14
+0:01:23,300 --> 0:01:24,300
+ And then a bunch of...
+
+15
+0:01:24,300 --> 0:01:24,400
+ Oh, sorry.
+
+16
+0:01:24,440 --> 0:01:31,500
+ There are extra IOs on the edges and little prototyping areas.
+
+17
+0:01:31,500 --> 0:01:35,680
+ So the main processor is the RP2040.
+
+18
+0:01:35,680 --> 0:01:36,680
+ It's the Cortex M0+.
+
+19
+0:01:36,680 --> 0:01:39,040
+ It's actually dual-core.
+
+20
+0:01:39,040 --> 0:01:41,880
+ It runs on 133 megahertz.
+
+21
+0:01:41,880 --> 0:01:49,020
+ It has quite a lot of SRAM actually compared to this smaller processor, which makes them
+
+22
+0:01:49,020 --> 0:01:54,300
+ nice to use with stuff like CircuitPython or MicroPython to have the little extra RAM.
+
+23
+0:01:54,300 --> 0:01:59,300
+ The chip itself doesn't have any built-in flash, so we have that little extra chip next
+
+24
+0:01:59,300 --> 0:02:00,920
+ to it.
+
+25
+0:02:00,920 --> 0:02:04,140
+ And we've added 16 megabytes.
+
+26
+0:02:04,140 --> 0:02:09,580
+ Sixteen megabytes is a lot of space for microprocessors in general.
+
+27
+0:02:09,580 --> 0:02:16,620
+ But as we're using the same flash for media files, images, and so on, having extra space
+
+28
+0:02:16,620 --> 0:02:20,440
+ for extra things is pretty nice.
+
+29
+0:02:20,440 --> 0:02:21,340
+ This chip from Raspberry Pi is a little bit bigger.
+
+30
+0:02:21,340 --> 0:02:22,340
+ It's a little bit bigger.
+
+31
+0:02:22,340 --> 0:02:23,340
+ It's a little bit bigger.
+
+32
+0:02:23,340 --> 0:02:24,140
+ It's a little bit bigger.
+
+33
+0:02:24,140 --> 0:02:25,140
+ It's a little special.
+
+34
+0:02:25,140 --> 0:02:31,580
+ It is a dual-core ARM Cortex M0, but it has these programmable IOs.
+
+35
+0:02:31,580 --> 0:02:38,480
+ So it's like normally you have serial UARTs, and we have I2C.
+
+36
+0:02:38,480 --> 0:02:40,080
+ You have SPI.
+
+37
+0:02:40,080 --> 0:02:47,380
+ These programmable IOs are little extra registers, and you can sort of program them to do sort
+
+38
+0:02:47,380 --> 0:02:52,760
+ of similar things to these regular peripherals.
+
+39
+0:02:52,760 --> 0:02:53,760
+ .
+
+40
+0:02:53,760 --> 0:02:59,260
+ That way you can actually achieve sort of some speeds in some areas where writing regular
+
+41
+0:02:59,260 --> 0:03:04,860
+ code is not really, and you can sort of offload tasks to these program BIOS.
+
+42
+0:03:04,860 --> 0:03:09,520
+ The badge comes with CircuitPython, and CircuitPython itself in some of these libraries utilize
+
+43
+0:03:09,520 --> 0:03:15,640
+ those so you don't need to directly interface with them, but CircuitPython will use some
+
+44
+0:03:15,640 --> 0:03:18,480
+ of these features.
+
+45
+0:03:18,480 --> 0:03:23,420
+ The chip comes with a hard-coded bootloader.
+
+46
+0:03:23,420 --> 0:03:29,320
+ So if you don't want to use the CircuitPython that comes with it, it's very easy to go into
+
+47
+0:03:29,320 --> 0:03:34,640
+ this bootloader that you can't remove, you can't delete it by accident or anything, and
+
+48
+0:03:34,640 --> 0:03:41,580
+ then you can put whatever you want on it, either a MicroPython or C or whatever.
+
+49
+0:03:41,580 --> 0:03:49,920
+ We have the QUIC or StemaQt, QUIC is the SparkFun name for these little connector.
+
+50
+0:03:49,920 --> 0:03:53,400
+ StemaQt is the name that Adafruit uses for a connector.
+
+51
+0:03:53,400 --> 0:03:58,080
+ It's a connector that is identical, both electrically and sort of spec-wise.
+
+52
+0:03:58,080 --> 0:04:06,060
+ So it's VCC and ground in the connector, four pins, and then there's SDA and SCL.
+
+53
+0:04:06,060 --> 0:04:08,140
+ It works with many modules.
+
+54
+0:04:08,140 --> 0:04:13,260
+ Many companies make these compatible modules to one of these systems, and you can mix them
+
+55
+0:04:13,260 --> 0:04:15,460
+ as you see fit.
+
+56
+0:04:15,460 --> 0:04:22,300
+ It also has the shitty add-on, or it's the six-pin version, so it has the key on the
+
+57
+0:04:22,300 --> 0:04:23,300
+ top.
+
+58
+0:04:23,300 --> 0:04:28,420
+ So if you use the correct connector on your shitty add-on, you can sort of put it on incorrectly,
+
+59
+0:04:28,420 --> 0:04:35,020
+ and also has the mechanical strength of the slightly larger connector.
+
+60
+0:04:35,020 --> 0:04:37,980
+ This connector also uses I2C.
+
+61
+0:04:37,980 --> 0:04:40,400
+ It's a very simple protocol.
+
+62
+0:04:40,400 --> 0:04:45,700
+ It's easy to add it to your add-ons.
+
+63
+0:04:45,700 --> 0:04:50,840
+ In the hardware hacking sense, SparkFun has sponsored a bunch of these QUIC modules, so
+
+64
+0:04:50,840 --> 0:04:51,980
+ if you want to play with reading the code, you can do that.
+
+65
+0:04:51,980 --> 0:04:52,980
+ So if you want to play with reading the code, you can do that.
+
+66
+0:04:52,980 --> 0:04:53,180
+ So if you want to play with reading the code, you can do that.
+
+67
+0:04:53,180 --> 0:04:53,500
+ If you want to play with reading the code, you can do that.
+
+68
+0:04:53,500 --> 0:04:58,560
+ If you want to play with reading from a sensor or changing a relay or something, there are
+
+69
+0:04:58,560 --> 0:05:00,100
+ some modules there you can play with.
+
+70
+0:05:01,280 --> 0:05:03,740
+ If you make something awesome, you're welcome to keep the module.
+
+71
+0:05:04,020 --> 0:05:06,480
+ If you're just playing with it, you can just put it back in the box again, and then others
+
+72
+0:05:06,480 --> 0:05:07,360
+ can play with that afterwards.
+
+73
+0:05:08,060 --> 0:05:12,500
+ They aren't enough for everybody, but to play with, that should be okay.
+
+74
+0:05:13,980 --> 0:05:20,020
+ Kamsa also brought a large box of various other bits and bobs, and you're welcome to
+
+75
+0:05:20,020 --> 0:05:23,040
+ just play with those and integrate them into your projects and make awesome things.
+
+76
+0:05:23,180 --> 0:05:29,620
+ The batch has four holes in it.
+
+77
+0:05:29,620 --> 0:05:32,040
+ Those can be used as a lot of mechanical mounting.
+
+78
+0:05:32,040 --> 0:05:37,860
+ You can, if you make a case or if you want to add these proto boards, there's a whole
+
+79
+0:05:37,860 --> 0:05:41,780
+ bunch of proto boards up in the hardware hacking also, you're welcome to take those and add
+
+80
+0:05:41,780 --> 0:05:44,240
+ stuff to them, solder through them.
+
+81
+0:05:44,240 --> 0:05:52,000
+ The screw mounting is actually used to carry VCC and ground from the batch up onto the
+
+82
+0:05:52,000 --> 0:05:53,000
+ board.
+
+83
+0:05:53,000 --> 0:05:56,860
+ There are little spacers in the box down there, these little brass spacers and screws that
+
+84
+0:05:56,860 --> 0:06:01,080
+ are, the shorter screw you find down there will actually work from both, like one set
+
+85
+0:06:01,080 --> 0:06:06,680
+ from the front and one set from the back, and they will hold on the board nicely.
+
+86
+0:06:06,680 --> 0:06:12,180
+ You can solder on the little quick connector and then you can break I2C up to this VLL
+
+87
+0:06:12,180 --> 0:06:17,720
+ cable if you want to.
+
+88
+0:06:17,720 --> 0:06:22,000
+ If you sort of think, ah, maybe these four buttons are a little too little for me, I
+
+89
+0:06:22,000 --> 0:06:28,200
+ don't know, for my game, then there are extra add-ons, extra sort of IOs for the chip.
+
+90
+0:06:28,200 --> 0:06:33,040
+ They're put on the edges of the board with these little, round in one end and flat on
+
+91
+0:06:33,040 --> 0:06:34,680
+ the other.
+
+92
+0:06:34,680 --> 0:06:41,500
+ You can either use these alligator clips to grab onto these, or you can wrap some like
+
+93
+0:06:41,500 --> 0:06:46,300
+ a conductive thread around them and tie a little knot, because they're plated in there,
+
+94
+0:06:46,300 --> 0:06:51,000
+ in the hole, so the connection should be fairly okay, otherwise you can of course also solder
+
+95
+0:06:51,000 --> 0:06:52,000
+ a wire to it.
+
+96
+0:06:52,000 --> 0:07:00,400
+ I think maybe one of these PIOs can maybe be used to do some capacitive touch sensing
+
+97
+0:07:00,400 --> 0:07:01,400
+ on these.
+
+98
+0:07:01,400 --> 0:07:06,600
+ I haven't tried it, but I think it's, if somebody wants to play with that, it should be possible
+
+99
+0:07:06,600 --> 0:07:09,760
+ I think.
+
+100
+0:07:09,760 --> 0:07:16,800
+ On the inside of the badge, so if you had the badge here, these two are analog inputs.
+
+101
+0:07:16,800 --> 0:07:20,760
+ They could for instance be used for a little analog joystick on this side.
+
+102
+0:07:20,760 --> 0:07:21,920
+ Kuro has a little bit of a...
+
+103
+0:07:21,920 --> 0:07:26,640
+ Kuro has made a little add-on, and so if you're interested in something like that,
+
+104
+0:07:26,640 --> 0:07:31,280
+ go find him, and I'm sure he can sort of assist them in there.
+
+105
+0:07:31,280 --> 0:07:36,860
+ I've heard something about a game that may be used that could run on the badge.
+
+106
+0:07:36,860 --> 0:07:42,000
+ The other ones are just regular IOs, the 10 and 11, they're called D10 and D11 inside
+
+107
+0:07:42,000 --> 0:07:43,920
+ the code.
+
+108
+0:07:43,920 --> 0:07:49,320
+ And then there's a TX2 and RX2, those are just serial UARTs, you can also use them as
+
+109
+0:07:49,320 --> 0:07:50,320
+ just regular pins.
+
+110
+0:07:50,320 --> 0:07:51,160
+ But they can be used as UARTs also.
+
+111
+0:07:51,160 --> 0:07:51,680
+ Okay.
+
+112
+0:07:51,920 --> 0:07:56,460
+ For serial communication, maybe you can connect two badges together with the wires.
+
+113
+0:07:56,460 --> 0:08:02,500
+ You might need the ground wire also to have it fully working.
+
+114
+0:08:02,500 --> 0:08:07,800
+ The badge comes with CircuitPython preloaded.
+
+115
+0:08:07,800 --> 0:08:09,100
+ It's very easy to get going.
+
+116
+0:08:09,100 --> 0:08:11,840
+ There's a code.py file in the root.
+
+117
+0:08:11,840 --> 0:08:18,320
+ That one includes the menu that Isaac has made in recent days.
+
+118
+0:08:18,320 --> 0:08:21,760
+ It lists all the apps that are inside the application.
+
+119
+0:08:21,760 --> 0:08:23,220
+ There's an apps folder.
+
+120
+0:08:23,220 --> 0:08:27,940
+ So if you copy one of these, there's a little about app that just sort of shows some text.
+
+121
+0:08:27,940 --> 0:08:34,380
+ But if you copy that one, name it mycoolgame.py, it will be listed in the menu.
+
+122
+0:08:34,380 --> 0:08:40,520
+ And then when you click it in the menu, either X or Y button, it goes into that py file,
+
+123
+0:08:40,520 --> 0:08:43,100
+ loads it, and it will run your app.
+
+124
+0:08:43,100 --> 0:08:45,640
+ And when it's done, it will return to the menu.
+
+125
+0:08:45,640 --> 0:08:49,160
+ The lib folder is for CircuitPython libraries.
+
+126
+0:08:49,160 --> 0:08:51,600
+ You can just copy in libraries.
+
+127
+0:08:51,600 --> 0:08:57,280
+ And share them for your code on the badge.
+
+128
+0:08:57,280 --> 0:08:58,880
+ There are also some other folders right now.
+
+129
+0:08:58,880 --> 0:09:03,020
+ There's an image folder that shows the splash image when the badge starts up.
+
+130
+0:09:03,020 --> 0:09:09,660
+ And there's a sponsors folder that holds all the sponsors logo that the sponsors app use.
+
+131
+0:09:09,660 --> 0:09:11,620
+ It mounts as a mesh storage device.
+
+132
+0:09:11,620 --> 0:09:17,580
+ But at the same time, it also presents a USB serial port on your computer.
+
+133
+0:09:17,580 --> 0:09:21,380
+ So if you want to have like debug output while you're sort of coding,
+
+134
+0:09:21,600 --> 0:09:27,140
+ or changing the files, you can actually connect to that serial port and you will get the output
+
+135
+0:09:27,140 --> 0:09:28,140
+ when it reboots.
+
+136
+0:09:28,140 --> 0:09:35,280
+ You can also go into rebel and run the Python commands directly on the badge.
+
+137
+0:09:35,280 --> 0:09:40,180
+ For inspiration on doing all sorts of things, maybe making your badge into a keyboard where
+
+138
+0:09:40,180 --> 0:09:46,980
+ you can use the buttons for up, down, right, left, or other things, macro pad style things,
+
+139
+0:09:46,980 --> 0:09:48,600
+ learn.adafruit.com is a giant source of a lot of examples.
+
+140
+0:09:48,600 --> 0:09:49,600
+ And I think it's a great tool.
+
+141
+0:09:49,600 --> 0:09:50,600
+ I think it's a great tool.
+
+142
+0:09:50,600 --> 0:09:51,600
+ I think it's a great tool.
+
+143
+0:09:51,600 --> 0:09:52,600
+ I think it's a great tool.
+
+144
+0:09:52,600 --> 0:09:57,240
+ You can also make it into a midi device that sort of presents, you can send midi commands
+
+145
+0:09:57,240 --> 0:10:05,120
+ to your computer and have synthesizer software in the computer, maybe do audio and so on.
+
+146
+0:10:05,120 --> 0:10:09,740
+ If CircuitPython is maybe a little too slow for you, it is not the fastest, but if you
+
+147
+0:10:09,740 --> 0:10:14,400
+ want to have more performance, it's very easy to get into this UF2 bootloader.
+
+148
+0:10:14,400 --> 0:10:18,600
+ Just hold down the boot button while you click the reset, or you can hold down when you power
+
+149
+0:10:18,600 --> 0:10:20,500
+ it up.
+
+150
+0:10:20,500 --> 0:10:28,320
+ When it goes into the UF2 bootloader, it'll show up as a RP2 UF2 device.
+
+151
+0:10:28,320 --> 0:10:33,380
+ When you just copy over a firmware UF2 file, or whatever it's named, it will reprogram
+
+152
+0:10:33,380 --> 0:10:35,120
+ the badge with that firmware.
+
+153
+0:10:35,120 --> 0:10:41,260
+ So whatever tool chain you're using, it could be C or Rust or MicroPython or whatever, copy
+
+154
+0:10:41,260 --> 0:10:45,540
+ it over that way and you'll be up and running.
+
+155
+0:10:45,540 --> 0:10:48,500
+ Many examples that you can use for Raspberry Pi Pico will run more or less unchanged.
+
+156
+0:10:48,500 --> 0:10:49,500
+ I think it's a great tool.
+
+157
+0:10:49,500 --> 0:10:56,140
+ You might have to change pin assignments and so on, but otherwise it'll be pretty much
+
+158
+0:10:56,140 --> 0:10:58,140
+ exactly the same code.
+
+159
+0:10:58,140 --> 0:11:01,920
+ So if you find an example that's, okay, I can use my Pico for this, you can probably
+
+160
+0:11:01,920 --> 0:11:04,300
+ also use the badge here.
+
+161
+0:11:04,300 --> 0:11:08,180
+ If you want to use the screen and so on, you have to load libraries for that.
+
+162
+0:11:08,180 --> 0:11:14,620
+ The screen is connected via SPI.
+
+163
+0:11:14,620 --> 0:11:17,320
+ This is actually the same as for previous badges.
+
+164
+0:11:17,320 --> 0:11:18,320
+ This is actually the same as for previous badges.
+
+165
+0:11:18,320 --> 0:11:19,320
+ This is actually the same as for previous badges.
+
+166
+0:11:19,320 --> 0:11:22,220
+ You don't have to put batteries in the badge.
+
+167
+0:11:22,220 --> 0:11:26,760
+ You can simply just plug a USB cable in and it will be powered via USB.
+
+168
+0:11:26,760 --> 0:11:28,400
+ You can also put two AA batteries in.
+
+169
+0:11:28,400 --> 0:11:32,560
+ They have to be sort of with the plus going up in both sides.
+
+170
+0:11:32,560 --> 0:11:37,040
+ I know many times it's sort of one of them the other way, but this here is a plus up
+
+171
+0:11:37,040 --> 0:11:40,260
+ in both of them.
+
+172
+0:11:40,260 --> 0:11:44,960
+ If you have USB power on the badge and the batteries in, it will always prioritize USB
+
+173
+0:11:44,960 --> 0:11:45,960
+ power.
+
+174
+0:11:45,960 --> 0:11:47,120
+ And even the power switch only affects the battery.
+
+175
+0:11:47,120 --> 0:11:48,120
+ If you plug a USB cable in, it will always prioritize USB power.
+
+176
+0:11:48,120 --> 0:11:49,120
+ And even the power switch only affects the battery.
+
+177
+0:11:49,120 --> 0:12:05,140
+ And even the power switch only affects the battery.
+
+178
+0:12:05,140 --> 0:12:13,480
+ You have to plug a USB cable in, saddle the key, plug the battery in, then cosas.
+
+179
+0:12:13,480 --> 0:12:14,640
+ This has to be been done quite seriously as well.
+
+180
+0:12:14,640 --> 0:12:15,080
+ It will offer it's full protection, very secure defined as smallinars.
+
+181
+0:12:15,080 --> 0:12:16,080
+ Remember, it'll change your battery power softer or smallerhan, and these are the options
+
+182
+0:12:16,080 --> 0:12:17,080
+ for any backup También us shaped or others and sort it hair.
+
+183
+0:12:17,080 --> 0:12:18,080
+ You can plug a USB in, it'll turn on the badge.
+
+184
+0:12:18,080 --> 0:12:19,080
+ You plug a USB in, it'll turn on the badge.
+
+185
+0:12:19,120 --> 0:12:22,960
+ the RP2040 to those pins.
+
+186
+0:12:22,960 --> 0:12:28,160
+ The idea is that you could connect two batches together with the USB-C cable, though this
+
+187
+0:12:28,160 --> 0:12:34,060
+ USB-C cable has to be some of the slightly more fancy ones as these wires need to be
+
+188
+0:12:34,060 --> 0:12:39,980
+ inside the cable and normal cheap cables might not have these.
+
+189
+0:12:39,980 --> 0:12:44,780
+ But it could be super fun to have a little two player game, maybe shooting on one batch
+
+190
+0:12:44,780 --> 0:12:50,040
+ and shooting out of the top of the screen, shots from the other player can come down
+
+191
+0:12:50,040 --> 0:12:53,120
+ on top or something like that.
+
+192
+0:12:53,120 --> 0:12:59,720
+ The other thing is that RP2040 can do host mode, so you can also set one of the batches
+
+193
+0:12:59,720 --> 0:13:04,380
+ up for host and the other one for device and that way actually communicate via USB, but
+
+194
+0:13:04,380 --> 0:13:09,660
+ that's a little more advanced on the communication side, but there might be libraries that can
+
+195
+0:13:09,660 --> 0:13:13,660
+ be found and used.
+
+196
+0:13:13,660 --> 0:13:14,660
+ Okay.
+
+197
+0:13:14,660 --> 0:13:21,000
+ All the details are available on our GitHub repo.
+
+198
+0:13:21,000 --> 0:13:24,840
+ The default branch that is shown on GitHub is the hardware branch that has all the design
+
+199
+0:13:24,840 --> 0:13:30,420
+ schematics, hardware designs, there should be a PDF file with a schematic to find sort
+
+200
+0:13:30,420 --> 0:13:35,380
+ of if you want to do Rust programming or C, you can find the pinouts for each of the buttons
+
+201
+0:13:35,380 --> 0:13:37,660
+ and screens and so on.
+
+202
+0:13:37,660 --> 0:13:43,440
+ There are also other branches, it might be a slightly unorthodox way of doing it, but
+
+203
+0:13:43,440 --> 0:13:44,540
+ the other branches are not so important.
+
+204
+0:13:44,540 --> 0:13:48,240
+ They are sort of variants of the hardware, they are like the software, the firmware that
+
+205
+0:13:48,240 --> 0:13:49,300
+ goes on there.
+
+206
+0:13:49,300 --> 0:13:55,760
+ So these branches are just, could be, have been other repos, but having one URL, we've
+
+207
+0:13:55,760 --> 0:14:00,940
+ decided that it's easier just to have that single URL to find everything and then switch
+
+208
+0:14:00,940 --> 0:14:01,940
+ between branches.
+
+209
+0:14:01,940 --> 0:14:04,760
+ You can check out multiple branches if you want in different folders if you want to have
+
+210
+0:14:04,760 --> 0:14:07,980
+ access to all of it at the same time.
+
+211
+0:14:07,980 --> 0:14:13,040
+ Some of them include, yeah, example code, the menu is there, the little test apps and
+
+212
+0:14:13,040 --> 0:14:14,040
+ so on.
+
+213
+0:14:14,540 --> 0:14:20,160
+ If you guys make other little games or whatever, you're very welcome to just do pull requests
+
+214
+0:14:20,160 --> 0:14:25,340
+ to that repo and we'll do our best to sort of get them in there.
+
+215
+0:14:25,340 --> 0:14:32,140
+ We dream of having like a whole collection of little games or apps or name tags or whatever.
+
+216
+0:14:32,140 --> 0:14:39,220
+ There are also brands with the add-on, the white add-on balls that I showed earlier.
+
+217
+0:14:39,220 --> 0:14:41,540
+ PCBWay has sponsored the PCBs on the batch and also the add-ons.
+
+218
+0:14:41,540 --> 0:14:42,540
+ So if you have a PCB, you can get the PCBs on the batch and also the add-ons.
+
+219
+0:14:42,540 --> 0:14:43,540
+ So if you have a PCB, you can get the PCBs on the batch and also the add-ons.
+
+220
+0:14:43,540 --> 0:14:44,540
+ So if you have a PCB, you can get the PCBs on the batch and also the add-ons.
+
+221
+0:14:44,540 --> 0:14:45,540
+ So if you have a PCB, you can get the PCBs on the batch and also the add-ons.
+
+222
+0:14:45,540 --> 0:14:46,540
+ So if you have a PCB, you can get the PCBs on the batch and also the add-ons.
+
+223
+0:14:46,540 --> 0:14:51,180
+ And they also assemble these boards, I would say some modern record time.
+
+224
+0:14:51,180 --> 0:14:54,340
+ I submitted the files in June 20th and July 20th.
+
+225
+0:14:54,340 --> 0:14:57,300
+ I had them in my hand.
+
+226
+0:14:57,300 --> 0:15:02,820
+ Normally it takes five weeks and that's a normal year.
+
+227
+0:15:02,820 --> 0:15:05,720
+ Right now getting parts is somewhat tricky.
+
+228
+0:15:05,720 --> 0:15:09,920
+ And that is one of the reasons we are using this RP2040, because that's actually one of
+
+229
+0:15:09,920 --> 0:15:13,540
+ the chips that currently in the world are available.
+
+230
+0:15:13,540 --> 0:15:14,540
+ My guess is because this is a very new chip.
+
+231
+0:15:14,540 --> 0:15:18,260
+ the car industry doesn't use it and other sort of that type of companies.
+
+232
+0:15:20,460 --> 0:15:26,420
+ So most of the other parts except for the RP2040 are actually Chinese branded parts
+
+233
+0:15:26,420 --> 0:15:32,680
+ sort of in an attempt to have it easier to source the part and not sort of run out and say,
+
+234
+0:15:32,680 --> 0:15:34,840
+ oh, we need this part, we have to wait four weeks for that.
+
+235
+0:15:35,380 --> 0:15:41,080
+ With the timelines we use for these batches, waiting four weeks is sadly not an option.
+
+236
+0:15:41,080 --> 0:15:45,700
+ So, but it actually worked out very well.
+
+237
+0:15:46,120 --> 0:15:47,520
+ SparkFun has sponsored these modules.
+
+238
+0:15:47,640 --> 0:15:48,860
+ They're in a box in the hardware hacking.
+
+239
+0:15:48,980 --> 0:15:50,040
+ You just go have fun.
+
+240
+0:15:50,560 --> 0:15:53,300
+ There's also a coupon code if you want to make your own little add-ons.
+
+241
+0:15:53,940 --> 0:15:54,900
+ It's not a lot.
+
+242
+0:15:55,040 --> 0:15:59,620
+ It just, it pays for 10 boards of this size roughly.
+
+243
+0:16:00,180 --> 0:16:01,700
+ But you have to pay shipping yourself.
+
+244
+0:16:02,700 --> 0:16:06,940
+ They also do other things like metal cutting and bending and 3D printing.
+
+245
+0:16:10,300 --> 0:16:10,940
+ On software.
+
+246
+0:16:11,080 --> 0:16:18,760
+ On Sunday from 15 to 16-ish, there'll be a batch live meetup in the hardware hacking
+
+247
+0:16:18,760 --> 0:16:20,200
+ and in the start and outsides.
+
+248
+0:16:22,080 --> 0:16:23,120
+ Come hang out.
+
+249
+0:16:23,540 --> 0:16:25,600
+ Bring your best hacks or whatever.
+
+250
+0:16:26,760 --> 0:16:31,980
+ The idea is to just do the informal hanging around, chatting about batches, electronics,
+
+251
+0:16:32,560 --> 0:16:34,400
+ hacking, that sort of things.
+
+252
+0:16:34,520 --> 0:16:37,120
+ But of course also use the hardware hacking until then.
+
+253
+0:16:37,800 --> 0:16:39,080
+ It's open 24-7.
+
+254
+0:16:39,240 --> 0:16:40,060
+ There are soaring irons.
+
+255
+0:16:40,160 --> 0:16:41,060
+ There are a bunch of parts.
+
+256
+0:16:41,280 --> 0:16:44,780
+ All the parts that we had last year are also there and a bunch more.
+
+257
+0:16:45,560 --> 0:16:49,880
+ So it should be a nice place to hang out if you're sort of interested in electronics.
+
+258
+0:16:49,960 --> 0:16:50,900
+ You can also do other stuff.
+
+259
+0:16:51,000 --> 0:16:52,140
+ It doesn't have to be batch related.
+
+260
+0:16:52,440 --> 0:16:54,960
+ So very welcome to just use the tools there.
+
+261
+0:16:59,200 --> 0:17:00,080
+ Any questions?
+
+262
+0:17:06,560 --> 0:17:06,920
+ Yes.
+
+263
+0:17:06,920 --> 0:17:07,120
+ Yes.
+
+264
+0:17:11,080 --> 0:17:11,720
+ It's a pleasure.
+
+265
+0:17:11,720 --> 0:17:12,020
+ Hello.
+
+266
+0:17:12,680 --> 0:17:21,840
+ When you decided the names for the buttons on the side, how come you didn't go for either
+
+267
+0:17:21,840 --> 0:17:25,980
+ Nintendo or any of the known ones?
+
+268
+0:17:28,540 --> 0:17:34,620
+ So the buttons are actually the same naming as has been on all the previous BornHack batches.
+
+269
+0:17:35,160 --> 0:17:41,040
+ So all the way back to I think 17, which was the first year we had four buttons in that
+
+270
+0:17:41,040 --> 0:17:41,060
+ batch.
+
+271
+0:17:41,080 --> 0:17:43,280
+ So I went with that.
+
+272
+0:17:44,020 --> 0:17:48,940
+ And I'm maybe not enough of a gamer to know all these standard patterns.
+
+273
+0:17:49,600 --> 0:17:51,220
+ So that's why they are like this.
+
+274
+0:17:51,620 --> 0:17:55,840
+ One of the ideas is that some of the previous batches, you could rotate them and use them
+
+275
+0:17:55,840 --> 0:17:57,720
+ in both in this way or in this way.
+
+276
+0:17:58,280 --> 0:18:03,360
+ So having X and having them sort of, you could flip them is one of the ideas.
+
+277
+0:18:05,040 --> 0:18:07,140
+ But yeah, that's the reason they're nameless there.
+
+278
+0:18:09,600 --> 0:18:10,360
+ Other questions?
+
+279
+0:18:11,080 --> 0:18:11,440
+ No?
+
+280
+0:18:15,120 --> 0:18:15,480
+ No?
+
+281
+0:18:17,060 --> 0:18:18,800
+ Well, thank you, Floma.
+
+282
+0:18:19,640 --> 0:18:20,180
+ Thank you.
+
+283
+0:18:20,180 --> 0:18:20,200
+ Thank you.
+
+284
+0:18:20,480 --> 0:18:22,180
+ Thank you.

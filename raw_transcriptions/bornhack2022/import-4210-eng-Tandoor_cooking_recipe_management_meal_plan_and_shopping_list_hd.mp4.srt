@@ -1,0 +1,415 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:18,580
+ If you are anything like me, when you want to cook something at home,
+
+2
+0:00:19,180 --> 0:00:28,080
+ you visit your favorite search engine and just type in something like chili con carne.
+
+3
+0:00:28,080 --> 0:00:30,620
+ If that's what you want.
+
+4
+0:00:31,100 --> 0:00:39,380
+ And then you typically end up on the same food blog where you have the recipe
+
+5
+0:00:39,380 --> 0:00:43,940
+ that someone who made the blog think is good.
+
+6
+0:00:45,220 --> 0:00:50,440
+ And if you have made it a couple of times, then you might have some changes to the recipe yourself.
+
+7
+0:00:50,440 --> 0:00:57,120
+ Maybe you always add in a smidge of something or change some ingredient up
+
+8
+0:00:57,120 --> 0:00:57,440
+ with something.
+
+9
+0:00:58,080 --> 0:00:58,700
+ Or something else.
+
+10
+0:01:00,800 --> 0:01:04,860
+ And, of course, that's something that you can just remember.
+
+11
+0:01:05,300 --> 0:01:07,780
+ But there are other ways to do it.
+
+12
+0:01:08,080 --> 0:01:13,700
+ There is this tander or tandoor or what it's called.
+
+13
+0:01:13,700 --> 0:01:23,580
+ And that's an open source application for cooking recipe management.
+
+14
+0:01:24,980 --> 0:01:27,700
+ And, yeah, it's open source.
+
+15
+0:01:28,080 --> 0:01:29,720
+ And you can host it yourself.
+
+16
+0:01:30,620 --> 0:01:35,920
+ And you can also use a paid version if you live in Germany.
+
+17
+0:01:37,040 --> 0:01:45,940
+ Something that it's the same product, but the guys that wrote tandoor just hosted the application for you.
+
+18
+0:01:47,420 --> 0:01:54,380
+ And, yeah, I'm just going to show you the hosted version.
+
+19
+0:01:56,080 --> 0:01:56,520
+ Okay.
+
+20
+0:01:57,280 --> 0:01:57,680
+ Okay.
+
+21
+0:01:57,680 --> 0:01:57,720
+ Okay.
+
+22
+0:01:57,720 --> 0:01:57,740
+ Okay.
+
+23
+0:01:57,740 --> 0:01:57,760
+ Okay.
+
+24
+0:01:57,760 --> 0:01:57,780
+ Okay.
+
+25
+0:01:57,780 --> 0:01:57,800
+ Okay.
+
+26
+0:01:57,800 --> 0:01:57,820
+ Okay.
+
+27
+0:01:57,820 --> 0:01:57,840
+ Okay.
+
+28
+0:01:57,840 --> 0:01:57,880
+ Okay.
+
+29
+0:01:57,880 --> 0:01:57,900
+ Okay.
+
+30
+0:01:57,900 --> 0:01:57,920
+ Okay.
+
+31
+0:01:57,920 --> 0:01:57,940
+ Okay.
+
+32
+0:01:58,080 --> 0:01:58,100
+ Okay.
+
+33
+0:02:03,100 --> 0:02:03,980
+ Okay.
+
+34
+0:02:08,300 --> 0:02:08,900
+ Okay.
+
+35
+0:02:11,320 --> 0:02:11,360
+ Okay.
+
+36
+0:02:11,360 --> 0:02:11,760
+ Okay.
+
+37
+0:02:12,680 --> 0:02:12,900
+ Okay.
+
+38
+0:02:13,260 --> 0:02:13,340
+ Okay.
+
+39
+0:02:13,340 --> 0:02:13,680
+ Okay.
+
+40
+0:02:27,680 --> 0:02:27,960
+ Okay.
+
+41
+0:02:27,960 --> 0:02:28,040
+ All right.
+
+42
+0:02:28,040 --> 0:02:45,080
+ And, as you can see, you have all the ingredients, and it is already formatted like this one
+
+43
+0:02:45,080 --> 0:02:53,420
+ tablespoon of something I don't know the name of in English, because this is a Danish recipe.
+
+44
+0:02:53,420 --> 0:03:01,120
+ But, yeah, this makes it very easy to, oh, yeah, and the steps, that is markdown format,
+
+45
+0:03:01,300 --> 0:03:07,020
+ if you know markdown, it's pretty easy to change that.
+
+46
+0:03:08,760 --> 0:03:09,440
+ Yeah.
+
+47
+0:03:10,560 --> 0:03:20,900
+ But when you have the ingredients like this in a nice data format, then you can start
+
+48
+0:03:20,900 --> 0:03:23,400
+ using it for stuff like shearing.
+
+49
+0:03:23,420 --> 0:03:31,660
+ You can add it to a shopping list, and you can just edit how many people that you have
+
+50
+0:03:31,660 --> 0:03:33,740
+ invited for dinner or something like that.
+
+51
+0:03:36,080 --> 0:03:38,420
+ And you can also create the meal plans.
+
+52
+0:03:39,500 --> 0:03:49,820
+ For example, if I want to cook chili con carne on Tuesday, and we will be four persons, then
+
+53
+0:03:49,820 --> 0:03:53,360
+ you can just put it in like this, and you can add it to a shopping list.
+
+54
+0:03:53,420 --> 0:04:04,140
+ And this is nice, because if you have a lot of the same ingredients for different meals,
+
+55
+0:04:04,140 --> 0:04:08,920
+ then it will just aggregate the amount of what you need.
+
+56
+0:04:08,920 --> 0:04:20,460
+ But of course, you would want to use the same units, like if one recipe says that you need
+
+57
+0:04:20,460 --> 0:04:22,160
+ 100 ounces of something.
+
+58
+0:04:22,160 --> 0:04:23,160
+ Yeah.
+
+59
+0:04:23,160 --> 0:04:34,680
+ And if another recipe says that you need kilograms, then it won't get aggregated correctly.
+
+60
+0:04:34,680 --> 0:04:41,360
+ So yeah, and of course, you would want to use the same language as well, because otherwise
+
+61
+0:04:41,360 --> 0:04:44,780
+ it will not get aggregated.
+
+62
+0:04:44,780 --> 0:04:51,900
+ So yeah, and this works on many different websites.
+
+63
+0:04:51,900 --> 0:05:03,420
+ You can just look for lasagna as well, and all, yeah, just all recipes.
+
+64
+0:05:03,420 --> 0:05:09,300
+ One looks like this.
+
+65
+0:05:09,300 --> 0:05:14,420
+ Just take that as well, and plop it in here.
+
+66
+0:05:14,420 --> 0:05:15,420
+ Yeah.
+
+67
+0:05:15,420 --> 0:05:17,420
+ Oh, it goes up there.
+
+68
+0:05:17,420 --> 0:05:18,420
+ Yeah.
+
+69
+0:05:18,420 --> 0:05:19,420
+ Yeah.
+
+70
+0:05:19,420 --> 0:05:20,420
+ Yeah.
+
+71
+0:05:20,420 --> 0:05:21,420
+ Yeah.
+
+72
+0:05:21,420 --> 0:05:28,520
+ We'll leave that there.
+
+73
+0:05:28,520 --> 0:05:37,540
+ And you can see that it works with this one as well just fine.
+
+74
+0:05:37,540 --> 0:05:48,140
+ And there might be some issues with some of the recipes, as you can see this one, too,
+
+75
+0:05:48,140 --> 0:05:48,940
+ and then the...
+
+76
+0:05:48,940 --> 0:05:49,940
+ There we go.
+
+77
+0:05:49,940 --> 0:06:03,320
+ the unit is six and then ounce and cans over here so that doesn't really make sense so sometimes
+
+78
+0:06:03,320 --> 0:06:11,180
+ there can be some passing errors that you have to correct like this is actually six cans and
+
+79
+0:06:11,180 --> 0:06:23,360
+ then just remove what was that tomato paste and then that's fixed right okay and this works on
+
+80
+0:06:23,360 --> 0:06:30,020
+ a lot of websites I haven't really come by any sites that doesn't work on and I was surprised
+
+81
+0:06:30,020 --> 0:06:40,500
+ as how this worked and it turns out that there is a schema on schema dot org
+
+82
+0:06:41,180 --> 0:06:51,800
+ I think this recipe and actually there's this standard structure for recipes cooking recipes
+
+83
+0:06:51,800 --> 0:07:00,120
+ and that's not something that you see on the website but it is there in the HTML last
+
+84
+0:07:00,820 --> 0:07:10,480
+ sides uses RDF H format and you can see why we had the error before because the recipe ingredient
+
+85
+0:07:10,480 --> 0:07:10,980
+ is eight- rallied and it doesn't have to be all the way to the hamsaver again we hook it up to some
+
+86
+0:07:10,980 --> 0:07:11,060
+ in RLDV anymore and there's the error here also one of theoten so we really want to clarify
+
+87
+0:07:11,060 --> 0:07:11,100
+ what does this mean um I don't know any way that we can just show it and show it in the end so everything
+
+88
+0:07:11,100 --> 0:07:11,160
+ here some Hannah marine ones showing on the other side you be all right and we've got to start maybe
+
+89
+0:07:11,160 --> 0:07:11,180
+ we can actually let's have the same behavior one see here we've got a little delete and see here we go okay and motions
+
+90
+0:07:11,180 --> 0:07:19,060
+ just a string it's not how many of some item it's just a string that has to be
+
+91
+0:07:19,060 --> 0:07:31,860
+ passed yeah and I think that we can see for example what this website is using
+
+92
+0:07:31,860 --> 0:07:50,640
+ and maybe recipe oh well it is these item props recipe ingredient that are parts of the schema
+
+93
+0:07:50,640 --> 0:07:59,940
+ and you can see that they use the RDF age based on that format so that's basically how it works
+
+94
+0:07:59,940 --> 0:08:01,800
+ yeah
+
+95
+0:08:01,860 --> 0:08:12,320
+ it would be nice if there were some integration with if you use online shopping or something like
+
+96
+0:08:12,320 --> 0:08:19,980
+ that where you could just copy the shopping list to some supermarket that you use but I haven't
+
+97
+0:08:19,980 --> 0:08:24,660
+ found any integrations like that so you have to copy all the stuff over but at least it gets
+
+98
+0:08:24,660 --> 0:08:30,980
+ aggregated for you so it makes it quite easy if you cook for like a week or two at a time
+
+99
+0:08:30,980 --> 0:08:31,820
+ um
+
+100
+0:08:31,860 --> 0:08:32,600
+ yeah
+
+101
+0:08:32,600 --> 0:08:33,700
+ so
+
+102
+0:08:33,700 --> 0:08:35,200
+ I think that's it
+
+103
+0:08:35,200 --> 0:08:37,920
+ applause

@@ -1,0 +1,4399 @@
+# Transcribed 2023-11-12T15 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,020 --> 0:00:33,480
+ Og hvad for nogen, der er bygget, og hvad for nogen, der ikke er rigtig blevet bygget.
+
+3
+0:00:33,540 --> 0:00:39,860
+ Det kan være, at der er nogle af paneldeltagerne her i løbet af snakken her, som kan hjælpe os lidt på vej med det.
+
+4
+0:00:40,160 --> 0:00:48,140
+ Men sådan som jeg har kunnet finde ud af, hvordan det hænger sammen, så har vi et i Viborg, som Apple har lavet.
+
+5
+0:00:48,260 --> 0:00:53,340
+ Der er et på Fyn i Odense fra Facebook, og så er der et Google-datacenter et eller andet sted.
+
+6
+0:00:53,400 --> 0:00:54,660
+ Jeg ved ikke, om det er blevet færdigt endnu.
+
+7
+0:00:54,660 --> 0:00:59,920
+ Og så er der to, der er blevet droppet, og så er der nogen på vej fra Microsoft, som jeg er ret sikker på, at vi kommer til at komme ind på.
+
+8
+0:01:00,000 --> 0:01:05,500
+ Og senere vil jeg hjælpe nogle af dem fra det her meget fine panel, som jo blandt andet består af Paul Henning Kamp,
+
+9
+0:01:05,580 --> 0:01:12,200
+ der er også debattør og alfavister, som jeg ved netop ved noget om Microsoft-datacenteret, som jeg har tænkt mig at plage ham om undervejs.
+
+10
+0:01:12,260 --> 0:01:15,640
+ Så sidder Lisbeth Bæk-Nielsen, der er medlem af Folketinget for SF.
+
+11
+0:01:16,480 --> 0:01:23,000
+ Og vi har Tobias Fonsmark fra Semafor, som har nogle meninger omkring, hvad man eventuelt kunne gøre med datacenter
+
+12
+0:01:23,000 --> 0:01:29,040
+ i forhold til de her cloud-løsninger, som vores børn lider under i øjeblikket, som der er tæmmelig meget ballade med.
+
+13
+0:01:29,040 --> 0:01:33,820
+ Og så sidder Henning Mortensen her, som er fra Rådet for Digital Sikkerhed.
+
+14
+0:01:34,520 --> 0:01:37,780
+ Og så sidder Peter Kofurter herude i øjeblikket.
+
+15
+0:01:37,820 --> 0:01:41,520
+ Du bor jo faktisk lige op og ned i nærheden af datacenteret i Odense.
+
+16
+0:01:42,260 --> 0:01:44,740
+ Hvordan har du det med det? Jeg tænkte bare lige for at starte i den ende og sige,
+
+17
+0:01:44,800 --> 0:01:47,540
+ er det noget, du lægger mandmærke til, at der er datacenter i Odense?
+
+18
+0:01:48,160 --> 0:01:50,440
+ Overhovedet ikke. Jeg vidste ikke engang. Jeg ved ikke, hvor det ligger.
+
+19
+0:01:50,900 --> 0:01:51,860
+ Du ved simpelthen ikke, hvor det er?
+
+20
+0:01:51,880 --> 0:01:54,780
+ Det ligger et eller andet sted i kommunen, men mere end det ved jeg ikke.
+
+21
+0:01:55,380 --> 0:01:59,020
+ Så hvis det har givet en masse arbejdspladser, så er der ikke nogen, jeg kender, der ved noget om det.
+
+22
+0:01:59,040 --> 0:02:02,860
+ Jeg forestiller mig, at den runde, vi snakker rundt om det her,
+
+23
+0:02:02,900 --> 0:02:06,000
+ det er netop, at jeg synes, det kunne være spændende at starte med at snakke om det her med arbejdspladser,
+
+24
+0:02:06,060 --> 0:02:08,940
+ fordi det er jo den måde, det ligesom blev solgt på i sin tid.
+
+25
+0:02:09,240 --> 0:02:14,620
+ Og da jeg tænkte på med dig, Lisbeth, da du hørte, at der skulle etableres datacenter i Danmark,
+
+26
+0:02:14,700 --> 0:02:17,060
+ og det gav en utrolig mange arbejdspladser, hvad tænkte du så som politiker?
+
+27
+0:02:18,620 --> 0:02:24,560
+ Jeg tænkte bare, at det lød meget mærkeligt, at det skulle generere en masse arbejdspladser.
+
+28
+0:02:24,560 --> 0:02:28,560
+ Men altså, nu er jeg også erhvervsforfører, og min udgangspunkt,
+
+29
+0:02:29,040 --> 0:02:33,520
+ det er normalt, at der kan være mange gode grunde til at starte et eller andet op.
+
+30
+0:02:33,600 --> 0:02:35,780
+ Det kan være mange arbejdspladser, det kan være få arbejdspladser,
+
+31
+0:02:35,840 --> 0:02:39,580
+ det kan være noget, der sådan er groundbreaking grund til grøn omstilling.
+
+32
+0:02:39,640 --> 0:02:41,260
+ Der kan være mange gode grunde til det og sådan noget.
+
+33
+0:02:42,120 --> 0:02:48,320
+ Men lige præcis her, der synes jeg, at man også dansede rundt omkring nogle af de andre diskussioner omkring det.
+
+34
+0:02:48,460 --> 0:02:53,400
+ Altså selvfølgelig både i forhold til den energimængde, det vil kræve,
+
+35
+0:02:54,680 --> 0:02:56,440
+ og også, altså,
+
+36
+0:02:56,440 --> 0:03:01,440
+ det forhold til nogle af de her tech-giganter og så videre.
+
+37
+0:03:01,440 --> 0:03:04,440
+ Og den diskussion var ret fraværende.
+
+38
+0:03:04,440 --> 0:03:07,440
+ Ja, det kan man vist roligt sige. Det var der ikke meget af.
+
+39
+0:03:07,440 --> 0:03:09,440
+ Jeg tænker, at den kommer vi til at tage i nogle andre runder.
+
+40
+0:03:09,440 --> 0:03:11,440
+ Jeg tænker, at vi skal snakke lidt omkring arbejdspladserne.
+
+41
+0:03:11,440 --> 0:03:13,440
+ Hvad kunne vi få ud af de her centre?
+
+42
+0:03:13,440 --> 0:03:15,440
+ Hvor grønne er de egentlig?
+
+43
+0:03:15,440 --> 0:03:17,440
+ Og hvor ligger de henne?
+
+44
+0:03:17,440 --> 0:03:20,440
+ Og så er der noget omkring datasikkerhed, og ikke mindst også GDPR.
+
+45
+0:03:20,440 --> 0:03:22,440
+ Den her sammenhæng, som vi måske lige kommer til at gå omkring.
+
+46
+0:03:22,440 --> 0:03:24,440
+ Og nationalsikkerhed, måske til sidst.
+
+47
+0:03:24,440 --> 0:03:25,440
+ Og sige, er det egentlig smart?
+
+48
+0:03:25,440 --> 0:03:27,440
+ Vi har alle de her store datacenters,
+
+49
+0:03:27,440 --> 0:03:29,440
+ randende rundt her i Danmark.
+
+50
+0:03:29,440 --> 0:03:31,440
+ Og jeg skal lige sige, at hvis der er nogen, der har nogle spørgsmål undervejs,
+
+51
+0:03:31,440 --> 0:03:34,440
+ eller noget, de vil have opklaret, så må de vifte meget længere endnu lidt med armene.
+
+52
+0:03:34,440 --> 0:03:36,440
+ Og så kan vi prøve at tage dem,
+
+53
+0:03:36,440 --> 0:03:38,440
+ mens vi kører forløbet her igennem.
+
+54
+0:03:38,440 --> 0:03:40,440
+ Altså, altid tager vi en lille...
+
+55
+0:03:40,440 --> 0:03:43,440
+ Er der et lille hul til sidst, hvor vi også tager nogle spørgsmål?
+
+56
+0:03:43,440 --> 0:03:46,440
+ Men allerførst, så er jeg jo nødt til at starte med dig, Paul Henning Kamp.
+
+57
+0:03:46,440 --> 0:03:49,440
+ Altså, dengang de startede det her første datacenter i Danmark,
+
+58
+0:03:49,440 --> 0:03:52,440
+ det var så det der år i Viborg, som man snakkede meget om,
+
+59
+0:03:52,440 --> 0:03:54,440
+ der var en ekstremt optimistisk borgmester.
+
+60
+0:03:54,440 --> 0:03:57,440
+ Jeg fandt nogle citater frem fra nogle af det, han havde sagt.
+
+61
+0:03:57,440 --> 0:04:00,440
+ Han hedder Torsten Nielsen fra Konservativ,
+
+62
+0:04:00,440 --> 0:04:04,440
+ og han siger, at Viborg Kommune er med til at skrive Danmarks historie i dag.
+
+63
+0:04:04,440 --> 0:04:07,440
+ Så det er klart, at vi er super stolte og glade lige nu, som han siger.
+
+64
+0:04:07,440 --> 0:04:11,440
+ Projektet her viser, hvor langt vi kan nå, når vi vedholdner og står sammen.
+
+65
+0:04:11,440 --> 0:04:14,440
+ Her tænker jeg særligt på Aarhus Universitet og Energi Viborg,
+
+66
+0:04:14,440 --> 0:04:17,440
+ der har blevet arbejdet målrettet gennem tre år,
+
+67
+0:04:17,440 --> 0:04:18,440
+ og under stor fortrolighed,
+
+68
+0:04:18,440 --> 0:04:20,440
+ inden den endelige investeringsbeslutning blev truffet,
+
+69
+0:04:20,440 --> 0:04:22,440
+ det er sådan noget, han siger det der.
+
+70
+0:04:22,440 --> 0:04:27,440
+ Og han forudså på det tidspunkt, at der ville komme 10.000 arbejdspladser.
+
+71
+0:04:27,440 --> 0:04:31,440
+ Senere så stod der en minister ved siden af ham, som sagde noget med,
+
+72
+0:04:31,440 --> 0:04:33,440
+ at det nok nærmere var 2.000.
+
+73
+0:04:33,440 --> 0:04:35,440
+ Men det var de tal, der ligesom var i luften.
+
+74
+0:04:35,440 --> 0:04:40,440
+ Og der ved jeg, at du, Poul Henning, du skrev i hvert fald en række kommentarer
+
+75
+0:04:40,440 --> 0:04:42,440
+ i vers 2 omkring det her.
+
+76
+0:04:42,440 --> 0:04:46,440
+ Hvad var din reaktion, da de begyndte at snakke om de her enorme mængder arbejdspladser,
+
+77
+0:04:46,440 --> 0:04:47,440
+ der ville vælte ind i Viborg?
+
+78
+0:04:47,440 --> 0:04:48,440
+ Ikke noget.
+
+79
+0:04:48,440 --> 0:04:50,440
+ Fordi de ikke anede, hvad de talte om.
+
+80
+0:04:50,440 --> 0:04:56,440
+ Altså, datacenter indeholder det mindste antal arbejdspladser, man kan slippe af sted med.
+
+81
+0:04:56,440 --> 0:05:00,440
+ For det første er det et rejselsfuldt arbejdsmiljø til at begynde med at rende rundt blandt søvere.
+
+82
+0:05:00,440 --> 0:05:02,440
+ Men det er jo ikke det, der er meningen.
+
+83
+0:05:02,440 --> 0:05:05,440
+ Det er jo ikke meningen, at det skal koste en masse arbejdspladser.
+
+84
+0:05:05,440 --> 0:05:09,440
+ Og til synvandet, så vidt jeg har været i stand til at gennemskue, så det der er sket,
+
+85
+0:05:09,440 --> 0:05:14,440
+ det var jo, at nogen havde haft borgmesteren på studierejse til en svensk universitetsby,
+
+86
+0:05:14,440 --> 0:05:16,440
+ og ikke nævnt, at det var en universitetsby.
+
+87
+0:05:16,440 --> 0:05:18,440
+ Og det kan sgu have noget med jobskabelsen at gøre.
+
+88
+0:05:18,440 --> 0:05:23,440
+ Hvis man er i tvivl om det, så skal man undersøge, hvordan Lyngby så ud, inden DTU flyttede derop.
+
+89
+0:05:23,440 --> 0:05:29,440
+ Men altså, jeg ved ikke, om det egentlig er specielt en datacenterhistorie.
+
+90
+0:05:29,440 --> 0:05:36,440
+ Det er vel bare en historie om banditter i habiter og billig tjerie og godtroende borgmestre.
+
+91
+0:05:36,440 --> 0:05:41,440
+ Det er selvfølgelig tragisk, at de har så lidt dømmekraft.
+
+92
+0:05:41,440 --> 0:05:46,440
+ Men så vidt jeg ved, kun 9.920 jobs bagud.
+
+93
+0:05:46,440 --> 0:05:48,440
+ Ja, jeg tror også, at det er det.
+
+94
+0:05:48,440 --> 0:05:55,440
+ Han formulerede sig selv på den måde. Han siger, vi har ikke fået det ud af det, som vi havde forventet.
+
+95
+0:05:55,440 --> 0:05:57,440
+ Det kan jeg lige så godt være ærlig at sige, siger vi.
+
+96
+0:05:57,440 --> 0:06:01,440
+ Vores tidligere borgmester er han nu, Thorsten Wilson, her for nylig.
+
+97
+0:06:01,440 --> 0:06:04,440
+ Så det er i hvert fald ærlig snak i den her sammenhæng.
+
+98
+0:06:04,440 --> 0:06:09,440
+ Men han har jo ellers været... Måns Jensen var jo også ude af det politiske hold.
+
+99
+0:06:09,440 --> 0:06:11,440
+ Han var ude, da den her deal blev indgået.
+
+100
+0:06:11,440 --> 0:06:16,440
+ Der sagde han, det må være årets bedste erhvervsnyhed for Danmark og ikke mindst Midtjylland.
+
+101
+0:06:16,440 --> 0:06:21,440
+ Investeringen vil give kæmpe skub til økonomien og skabe mange hundrede arbejdspladser i hele lokalområdet.
+
+102
+0:06:21,440 --> 0:06:25,440
+ Både i anlægsfasen og i adriftsfasen. Og det blev så, som bekendt, heller ikke til så meget.
+
+103
+0:06:25,440 --> 0:06:31,440
+ Bare lige dig igen, Lisbeth. Når politikere melder sådan noget ud, er det fordi, de ikke ved nok?
+
+104
+0:06:31,440 --> 0:06:37,440
+ Og hvad kan man gøre for at løfte det niveau i fremtiden, tror du?
+
+105
+0:06:37,440 --> 0:06:45,440
+ Jeg tror tit, fordi man ikke ved nok, og så er man jo også blevet fortalt en masse eventyr om,
+
+106
+0:06:45,440 --> 0:06:51,440
+ hvad der kan ske. Nu bliver Viborg sikkert det nye Silicon Valley eller et eller andet.
+
+107
+0:06:51,440 --> 0:06:57,440
+ Alting skal være det nye Silicon Valley. Og så er det bare for at puske lort ind.
+
+108
+0:06:57,440 --> 0:07:03,440
+ Hvis man har været med til at trække et eller andet til sin by, så vil man gerne fortælle sine borgere,
+
+109
+0:07:03,440 --> 0:07:08,440
+ at det her skaber en nyt erhvervseventyr eller skaber en masse arbejdspladser.
+
+110
+0:07:08,440 --> 0:07:14,440
+ Jeg tror lige her, der er der bare så stor forskel på det, han var ude og sige.
+
+111
+0:07:14,440 --> 0:07:23,440
+ Og det der er realiteten, at jeg tror som han også, at det er den grundlæggende viden om, hvordan det fungerer.
+
+112
+0:07:23,440 --> 0:07:28,440
+ Og selv hvis man ikke ved, hvordan data fungerer, så må man måske bare bruge sin sund fornuft og tænke,
+
+113
+0:07:28,440 --> 0:07:30,440
+ det er måske ikke 10.000 mennesker.
+
+114
+0:07:30,440 --> 0:07:37,440
+ 10.000 jobs er mange nu om dagen. Arla byggede en fabrik et sted ude i Vestjylland på 3,25 milliarder,
+
+115
+0:07:37,440 --> 0:07:42,440
+ som endte med at skabe 35 heltidsjob. Og konsekvensen er automatiseringen.
+
+116
+0:07:42,440 --> 0:07:48,440
+ Vi får jo ikke igen en arbejdsplads i Danmark, der skal bruge 1.000 medarbejdere.
+
+117
+0:07:48,440 --> 0:07:56,440
+ Det ville jo være en fuldstændig håbløs businessplan, hvis man skulle ansætte 1.000 mennesker til en virksomhed.
+
+118
+0:07:56,440 --> 0:07:58,440
+ Det kommer ikke til at ske.
+
+119
+0:07:58,440 --> 0:08:02,440
+ Jeg er faktisk villig til at vædre ret meget på, at det kommer ikke til at ske.
+
+120
+0:08:02,440 --> 0:08:08,440
+ Det andet, vi belogede i den her sammenhæng, ud over en masse arbejdspladser, det var, at det her ville være super grønt.
+
+121
+0:08:08,440 --> 0:08:10,440
+ Altså det er ikke bare grønt, men utroligt grønt.
+
+122
+0:08:10,440 --> 0:08:12,440
+ Altså I ved ikke, hvilken farve de har malet det?
+
+123
+0:08:12,440 --> 0:08:14,440
+ Nej.
+
+124
+0:08:14,440 --> 0:08:16,440
+ Men det er sådan cirka det. Hvis den er malet grønt, så er den grøn.
+
+125
+0:08:16,440 --> 0:08:19,440
+ Men på de andre parametre, er der fejlet lidt?
+
+126
+0:08:22,440 --> 0:08:27,440
+ Altså det er en ufatteligt komplekst problematik.
+
+127
+0:08:27,440 --> 0:08:33,440
+ Vi har jo alle sammen her i Danmark fået et travme under oliekrisen i 1973.
+
+128
+0:08:33,440 --> 0:08:36,440
+ Vi kan jo ikke tåle at se energi gå til spil.
+
+129
+0:08:36,440 --> 0:08:39,440
+ Og derfor brænder de så og så mange megawatt i datacenter.
+
+130
+0:08:39,440 --> 0:08:42,440
+ Men det de laver, det er jo lunken luft.
+
+131
+0:08:42,440 --> 0:08:47,440
+ Og det kan man ikke bruge til ret meget vel.
+
+132
+0:08:47,440 --> 0:08:53,440
+ Men så vil de jo gerne have det fyret ind i fjernvarmen.
+
+133
+0:08:53,440 --> 0:08:58,440
+ Og når man så regner på ledningstaten osv., så ender det med at være endnu mere lunken vand, når det når frem.
+
+134
+0:08:58,440 --> 0:09:08,440
+ Så hele den der idé med, at de skal tvinges til at genbruge afkastvarmen, er problematisk fra begyndelsen.
+
+135
+0:09:08,440 --> 0:09:15,440
+ Hvis man lægger det ind midt i en by, så er der en chance for, at man kan få det ført ind i et fjernvarme, men det er ikke en for store tab.
+
+136
+0:09:15,440 --> 0:09:22,440
+ Men når man lægger det ind for landslov og ret, som man jo faktisk gjorde i Viborg, så er ledningstaten for store til, at man kan lave en genvendelse.
+
+137
+0:09:22,440 --> 0:09:27,440
+ Derfor er det, at man skal kigge på deres elregning og sige, hvor grøn er den strøm, som er der.
+
+138
+0:09:27,440 --> 0:09:34,440
+ Og så kommer vi så til, at de repræsenterer en type grundlast, som vi faktisk ikke tidligere har haft i vores elnet.
+
+139
+0:09:34,440 --> 0:09:36,440
+ Vi har jo aldrig haft...
+
+140
+0:09:38,440 --> 0:09:42,440
+ Jo, et enkelt turiststålværelseværk har vi haft.
+
+141
+0:09:42,440 --> 0:09:53,440
+ Men vi har jo aldrig haft papirmøller og andre store, træholdsskibs, konstant kørende energitunge fabrikationsvirksomheder.
+
+142
+0:09:53,440 --> 0:09:55,440
+ Det får vi så pludselig nu.
+
+143
+0:09:55,440 --> 0:10:00,440
+ Og det gør sådan en udfordring i forhold til elnettet og elproduktionen.
+
+144
+0:10:00,440 --> 0:10:06,440
+ Og der kommer så en masse det her med, at hvis de køber den grønne strøm, kan vi andre jo ikke købe den.
+
+145
+0:10:06,440 --> 0:10:08,440
+ Og så bliver den grønne strøm dyrere.
+
+146
+0:10:08,440 --> 0:10:10,440
+ Og sådan nogle ting.
+
+147
+0:10:10,440 --> 0:10:12,440
+ Men det er sådan noget meget regneark, sådan noget.
+
+148
+0:10:12,440 --> 0:10:14,440
+ Det har egentlig meget lidt med virkeligheden at gøre.
+
+149
+0:10:14,440 --> 0:10:20,440
+ Det man burde kigge på reelt set, hvis man skal være en lille skrue i verdensbrug, det er at sige, hvor kunne de ellers have fundet på at placere dem?
+
+150
+0:10:20,440 --> 0:10:22,440
+ Og ville det have været mere eller mindre grønt?
+
+151
+0:10:22,440 --> 0:10:36,440
+ Så jeg synes, det er et ufatteligt komplekst område med en masse underlige agendaer, som egentlig ikke har noget med fakta på jorden at gøre.
+
+152
+0:10:36,440 --> 0:10:41,440
+ Men det er da problematisk at placere en så energiforbrugende virksomhed under alle omstændigheder.
+
+153
+0:10:41,440 --> 0:10:44,440
+ Men vi er nødt til at holde det op imod, hvad er alternativet?
+
+154
+0:10:44,440 --> 0:10:50,440
+ Altså folk kunne risikere her, hvad ved jeg, 10 millisekunder dårligere svartid til Facebook.
+
+155
+0:10:50,440 --> 0:10:53,440
+ Det ville jo være alvorligt.
+
+156
+0:10:56,440 --> 0:10:59,440
+ Der ligger nogle af de kedelige tal, der ligger på det her, man snakker om.
+
+157
+0:10:59,440 --> 0:11:05,440
+ Altså et tidligere tal, jeg lige kunne finde i den her sammenhæng, det var, at man siger, at det samlede energiforbrug anslåede på det her datacenter.
+
+158
+0:11:05,440 --> 0:11:13,440
+ Det ligger mellem 876 og 2.190 gigawattimer om året.
+
+159
+0:11:13,440 --> 0:11:21,440
+ Hvis man sammenligner med hele Region Midtjylland, så bruger de 6.600 gigawattimer.
+
+160
+0:11:21,440 --> 0:11:27,440
+ Det vil sige, at de bruger en tredjedel af al den strøm, der bruges i hele Region Midtjylland på nuværende tidspunkt.
+
+161
+0:11:27,440 --> 0:11:34,440
+ Ligesom med Bæk Poulsen, politisk set bliver de her datacenter også meget solgt netop på at være grønne.
+
+162
+0:11:34,440 --> 0:11:45,440
+ Jeg ved, at Facebook har et hjørne på deres eget datacenter, som tilhører Odense fjernvarme.
+
+163
+0:11:45,440 --> 0:11:49,440
+ Hvor idéen er, at der skal pumpe noget varme ud til dem.
+
+164
+0:11:49,440 --> 0:11:53,440
+ Hvordan synes du, det går med de her grønne idéer til de her ting?
+
+165
+0:11:53,440 --> 0:11:59,440
+ Jeg er ikke ekspert i, hvordan det går, men det hører jeg, at det ikke går så godt.
+
+166
+0:11:59,440 --> 0:12:02,440
+ Jeg har også brugt mange timer over i Skanden et sted, hvor man har prøvet.
+
+167
+0:12:02,440 --> 0:12:03,440
+ Jeg har også brugt mange timer over i Skanden et sted, hvor man har prøvet.
+
+168
+0:12:04,440 --> 0:12:10,440
+ og set, hvordan man skulle ændre på nogle tariffer og nogle afgifter og sådan noget.
+
+169
+0:12:10,440 --> 0:12:16,440
+ for at få det helt rigtige design i forhold til at opfordre virksomheder, der er meget energitunge
+
+170
+0:12:16,440 --> 0:12:24,440
+ også for eksempel store supermarkeder og sådan noget, til at levere overskudsvarme, som ikke er det, der hedder falsk overskudsvarme.
+
+171
+0:12:24,440 --> 0:12:32,440
+ Og det er bare, som Poul Inge siger, meget kompliceret med de her datacenter.
+
+172
+0:12:32,440 --> 0:12:41,580
+ Så det, de kunne have leveret ind i nettet, vil de jo hellere bruge selv, altså på at holde deres egne ting kørende, og det er måske ikke så mærkeligt endda.
+
+173
+0:12:42,080 --> 0:12:54,120
+ Men altså, det blev det helt klart, altså det var både det her med, at det blev ridset op, det her datacenter kan give strøm til den her, hele den her mindre by, for eksempel.
+
+174
+0:12:54,120 --> 0:13:07,220
+ Det var de billeder, der blev tegnet op, og så var der også noget af det her med sådan noget solidaritet i, jamen hvad hvis det ligger i Polen og bliver fyret med kul i stedet for i Danmark, og så kan vi ligesom sikre, at der bliver, altså ja.
+
+175
+0:13:07,700 --> 0:13:21,940
+ Men det giver jo så kun mening, hvis man skulle have de briller på, hvis der så blev produceret endnu mere grøn strøm, og det er ikke bare den strøm, der nu alligevel bliver produceret, som så bare går fra nogle forbrugere, for eksempel.
+
+176
+0:13:21,940 --> 0:13:24,100
+ Men noget, som jeg ikke synes fylder så meget.
+
+177
+0:13:24,120 --> 0:13:37,080
+ I debatten om datacenterne, det er, at, altså vi ved det ikke 100%, fordi det er mørklagt, men højst sandsynligt, så var der noget lovgivninger omkring nogle afgifter, der blev ændret for at få Apple til Danmark.
+
+178
+0:13:37,740 --> 0:13:53,900
+ Altså argumentet for at ændre nogle af de her afgifter, det var, at EU sagde, at vi måtte ikke, men tyskerne gjorde det alligevel, og dengang var jeg skatteordfører, jeg sagde, altså så skal vi gøre noget andet end bare at skrubbe dem.
+
+179
+0:13:53,900 --> 0:14:07,520
+ Og så videre, men der var et stort politisk pres for, at det skulle skrottes, og det var ligesom sådan, at det var EU's skyld, men meget tyder på, at det var for at imødekomme Apple, som ellers var blevet ramt af de her afgifter.
+
+180
+0:14:07,520 --> 0:14:27,460
+ Og det er jo en gigantisk ændring af sådan en policy, eller af politikken for at tiltrække en virksomhed, og specielt når det foregår fordækt, altså det skulle bare have været åbent og sagt, vi gider ikke engang tage slåskampen omkring den her afgift, og det gør vi simpelthen for at tiltrække det her, det er vigtigt for os.
+
+181
+0:14:27,600 --> 0:14:30,380
+ Altså det kunne man have været uenige i, men det er jo ikke ulovligt, altså.
+
+182
+0:14:31,580 --> 0:14:35,200
+ Jeg tror, det er nok det, jeg synes er det mest spændende ved hele den her diskussion i virkeligheden.
+
+183
+0:14:35,740 --> 0:14:37,500
+ Altså fordi det er jo rigtigt, som Poul Henning siger, de her data.
+
+184
+0:14:37,520 --> 0:14:40,760
+ Det skal bygges et eller andet sted, og så må man veje alternativen op og sådan noget.
+
+185
+0:14:41,160 --> 0:14:51,180
+ Men når det nu er sådan, at alle de her politikere, borgmester og whatever, de har rendt rundt og måske helt ærligt troet, at det skaber 10.000 arbejdspladser, og vi kan varme hele Jylland op gratis, og hvad ved jeg, ikke?
+
+186
+0:14:51,840 --> 0:14:53,500
+ Hvad kunne de så finde på at gøre?
+
+187
+0:14:53,980 --> 0:14:56,500
+ Altså hvad vil de gøre for at få sådan en kæmpe gevinst, ikke?
+
+188
+0:14:56,900 --> 0:15:04,800
+ Og de vil måske fippe nogle afgifter, som får nogle uheldige konsekvenser, både i det her konkrete tilfælde med Apple, men det er jo nogle regler, der så kommer til at gælde fremover.
+
+189
+0:15:04,800 --> 0:15:07,500
+ Så alle mulige virksomheder får jo nogle underlig.
+
+190
+0:15:07,520 --> 0:15:10,660
+ Det er jo nogle af de vilkår nu, fordi man har fikset det her for Apples skyld.
+
+191
+0:15:11,200 --> 0:15:19,600
+ Og jeg kender ikke detaljerne i Danmark, men i USA, der er der nogle mega fede historier med, hvad delstater har gjort for at lukke Amazon til at lægge et datacenter.
+
+192
+0:15:20,220 --> 0:15:25,940
+ Altså det er jo lige fra at forbyde fagforeninger til at I får lov til ikke at betale skat til næste 20 år og sådan noget, ikke?
+
+193
+0:15:26,980 --> 0:15:29,160
+ Der må være sådan nogle fede historier, man kan grave frem i Danmark også.
+
+194
+0:15:29,220 --> 0:15:32,360
+ Jeg vil gerne vide noget mere om det, så hvis du ved noget, så ses vi lige bagefter.
+
+195
+0:15:32,560 --> 0:15:33,180
+ Ikke mere det.
+
+196
+0:15:33,180 --> 0:15:36,840
+ Men du siger, at det hele er mørklagt, eller det er fortroligt.
+
+197
+0:15:37,000 --> 0:15:37,180
+ De her, hvad de...
+
+198
+0:15:37,520 --> 0:15:40,640
+ De her aftaler går ud på, så ikke engang et folketingsmedlem kan få noget at vide, eller hvordan?
+
+199
+0:15:42,540 --> 0:15:51,260
+ Jamen, altså der var jo sådan et sammenfald af nogle begivenheder, hvor at Apple ville gerne til Danmark,
+
+200
+0:15:51,640 --> 0:15:56,000
+ men der har måske været nogle meget uformelle snakker, i hvert fald ikke skrevet noget ned, man kan søge agtens,
+
+201
+0:15:56,060 --> 0:16:00,680
+ fordi det er jeg helt sikker på, hvor man måske har sagt, men den der afgift, den er altså ret generende.
+
+202
+0:16:00,680 --> 0:16:05,760
+ Og så er der et sammenfald af begivenheder, hvor at EU også siger nogle ting og sådan noget,
+
+203
+0:16:05,860 --> 0:16:06,680
+ men hvor at man i Tyskland...
+
+204
+0:16:07,520 --> 0:16:11,220
+ Man har indbredt sin afgift, som man levede op til nogle EU-regler,
+
+205
+0:16:11,760 --> 0:16:17,780
+ og i Danmark, der sagde regeringen, at vi gider ikke engang gå ind og prøve at ændre på den,
+
+206
+0:16:17,920 --> 0:16:20,160
+ vi afskaffer den bare.
+
+207
+0:16:20,660 --> 0:16:28,640
+ Og de to ting skete samtidig, men der er alligevel noget omkring det tidsmæssige sammenfald,
+
+208
+0:16:28,640 --> 0:16:36,860
+ som jeg synes er ret interessant, og også et demokratisk problem, hvis man giver indtrykket af,
+
+209
+0:16:36,860 --> 0:16:40,940
+ at det her, det bliver vi bare nødt til at lave helt om eller skråt, fordi det siger EU.
+
+210
+0:16:41,140 --> 0:16:43,840
+ EU får skyld for rigtig meget. Jeg er ikke den største EU-fan i verden,
+
+211
+0:16:43,940 --> 0:16:48,920
+ men det er ekstremt belejligt bare at sige til folk, at det må vi ikke for EU eller sådan noget,
+
+212
+0:16:48,960 --> 0:16:52,640
+ så stopper en hver diskussion, og det er ikke altid rigtigt.
+
+213
+0:16:52,980 --> 0:16:57,880
+ Og det er i hvert fald ikke rigtigt her, fordi at tyskerne, de lavede bare et eller andet,
+
+214
+0:16:57,980 --> 0:16:59,380
+ så de stadigvæk kunne have den afgift.
+
+215
+0:16:59,920 --> 0:17:05,860
+ Det er værd lige at føre ind her, at Danmark egentlig altid har haft en underlig holdning til computers energiforbrug,
+
+216
+0:17:05,860 --> 0:17:06,840
+ og det er en af de ting, der er vigtigt, og det er en af de ting, der er vigtigt,
+
+217
+0:17:06,860 --> 0:17:13,100
+ fordi normalt som virksomhed, der kan du fredrage processenergi, men ikke til computer.
+
+218
+0:17:16,260 --> 0:17:18,460
+ Jeg ved ikke, hvorfor det historisk endte sådan,
+
+219
+0:17:18,980 --> 0:17:23,300
+ men det har været lidt af en underlig ting for virksomheder, som primært beskæftigede sig med computer.
+
+220
+0:17:25,940 --> 0:17:29,880
+ Vi havde den, da FLS-data blev udskilt fra FLS-MIT,
+
+221
+0:17:30,940 --> 0:17:33,620
+ medført det, at man pludselig ikke længere kunne trække elregningen fra.
+
+222
+0:17:35,540 --> 0:17:36,620
+ Så i virkeligheden er det måske...
+
+223
+0:17:36,860 --> 0:17:37,720
+ Det er så meget færre, det, de har fået.
+
+224
+0:17:37,720 --> 0:17:45,440
+ Altså, jeg vil ikke sige, at det var fordi, de tidligere regler var fornuftige, i hvert fald.
+
+225
+0:17:45,600 --> 0:17:51,140
+ De var lidt bagvendte, som om, at man ikke kunne have en virksomhed, som kun lavede computerbehandling.
+
+226
+0:17:51,300 --> 0:17:54,500
+ Altså, der var et eller andet historisk hang-up der, ikke?
+
+227
+0:17:54,780 --> 0:17:59,640
+ Men om den ændring, man så lavede med bakhyldet over skulderen, var den rigtige, det kan bestemt diskuteres.
+
+228
+0:18:00,300 --> 0:18:01,620
+ Jeg skal lige høre dig, Henning Mortensen.
+
+229
+0:18:01,820 --> 0:18:05,680
+ Noget af det, du falder godt ind i, det er jo hele det der GDPR-matik og så videre,
+
+230
+0:18:05,680 --> 0:18:07,440
+ og Aarhus Grås EU-sorgning til de her ting.
+
+231
+0:18:07,820 --> 0:18:11,960
+ Hvordan kan det være, at de her tech-giganter synes, det er så utroligt vigtigt at have datacenter liggende i Europa?
+
+232
+0:18:12,680 --> 0:18:13,640
+ Og især i Danmark, måske?
+
+233
+0:18:14,800 --> 0:18:20,080
+ Det er jo fordi, flere af dem giver indtryk af, at hvis de bare ligger inden for en eller anden geografisk lokation,
+
+234
+0:18:20,140 --> 0:18:26,740
+ for eksempel placeret datacenter i Danmark, at så er de good to go i forhold til de her tredjelandsordførsler,
+
+235
+0:18:26,800 --> 0:18:29,540
+ som jeg lige nævnte ved tidligere forhold.
+
+236
+0:18:30,020 --> 0:18:34,380
+ Men det gør sig på ingen måde gældende, fordi det, der er det afgørende, det er,
+
+237
+0:18:34,380 --> 0:18:35,600
+ hvor står der den databehandler?
+
+238
+0:18:35,680 --> 0:18:38,840
+ Hvor står der den kontrakt, man har med leverandøren?
+
+239
+0:18:38,940 --> 0:18:41,860
+ Og der er det sådan set fuldstændig ligegyldigt, hvor de her datacenter ligger henne.
+
+240
+0:18:41,980 --> 0:18:47,720
+ Hvis det er sådan, at leverandøren fortsat betjener sig ret til at behandle personoplysningerne til formål,
+
+241
+0:18:47,780 --> 0:18:52,200
+ de selv fastsætter, supporterer dem fra moderskibet i USA,
+
+242
+0:18:52,660 --> 0:18:56,420
+ har underdatabehandlere i alle mulige obskure lande rundt omkring i verden,
+
+243
+0:18:56,520 --> 0:19:02,960
+ uden for EU og så videre, så det har intet som helst på sig at lægge dem i Danmark,
+
+244
+0:19:02,960 --> 0:19:05,380
+ at give det pæremæssige årsager. Det giver ingen fordel.
+
+245
+0:19:05,680 --> 0:19:08,880
+ Men det tror jeg da, at de troede, mange af dem, da de fødder ind.
+
+246
+0:19:08,880 --> 0:19:13,680
+ Jeg synes ikke, at de kender reglerne ordentligt, og jeg er sikker på, at de her store klagleverandører,
+
+247
+0:19:13,680 --> 0:19:17,440
+ de er udmærket godt klar over det her, for de har nogle af de bedste advokater, der findes på det her område.
+
+248
+0:19:17,440 --> 0:19:21,640
+ Jeg tror mere, at det er et spørgsmål, de prøver at give indtryk ydertil,
+
+249
+0:19:21,640 --> 0:19:24,680
+ i forhold til at så den heldige grav er velfærdig.
+
+250
+0:19:24,680 --> 0:19:28,280
+ Og lige nu, der kører vi jo faktisk, der er jo en del ballade omkring,
+
+251
+0:19:28,280 --> 0:19:32,080
+ i hvert fald en bestemt del af GDPR, det foregår oppe i Helsingør Kommune.
+
+252
+0:19:32,080 --> 0:19:34,280
+ Det kan du ikke snakke så meget om lige nu, og det er helt okay.
+
+253
+0:19:34,280 --> 0:19:38,480
+ Men jeg tænker på, i denne sammenhæng, der har vi jo haft, til dem, der ikke kender den historie,
+
+254
+0:19:38,480 --> 0:19:45,380
+ så går det jo ud på, at Helsingør Kommune har fået et forbud fra datatilsyn mod at bruge de her famøse Chromebooks,
+
+255
+0:19:45,380 --> 0:19:47,780
+ de bruger til at undervise børnene med.
+
+256
+0:19:47,780 --> 0:19:52,780
+ Og de må heller ikke bruge noget, der hedder Google WorkSuite, som er et system, som de igen bruger til den her undervisning,
+
+257
+0:19:52,780 --> 0:19:56,780
+ og det betyder principielt, at de ikke kan få lov at starte her efter sommerferien, de stakken små børn,
+
+258
+0:19:56,780 --> 0:20:00,980
+ og derfor har Helsingør Kommune sagt, at de ikke har tænkt sig at rette sig efter en afkørelse.
+
+259
+0:20:00,980 --> 0:20:03,480
+ Det er sådan der, hvor den står lige nu, i hvert fald.
+
+260
+0:20:03,480 --> 0:20:07,680
+ Men der tænker jeg bare på, Tobias von Schmach, du har været ude og slå til lyd for,
+
+261
+0:20:07,680 --> 0:20:11,280
+ at måske er det nu, vi begynder at gøre noget andet med de her ting.
+
+262
+0:20:11,280 --> 0:20:18,780
+ Hvorfor mener du, det er et problem, at man for eksempel bruger sådan et center som Google til de her ting?
+
+263
+0:20:18,780 --> 0:20:30,380
+ Altså, ja, det har jeg været ked af længe, og jeg synes, det er superfint, at vi gør alt, hvad vi kan på jura- og politikfronten for at styre,
+
+264
+0:20:30,380 --> 0:20:30,880
+ øh...
+
+265
+0:20:30,880 --> 0:20:37,580
+ hvad det er for nogle aftaler, vi har med de her virksomheder, men i praksis tror jeg ikke, det gør nogen rigtig forskel.
+
+266
+0:20:37,580 --> 0:20:44,280
+ Jeg synes, vi skal bare totalt droppe det, og der vil være så mange fordele ved at kunne drive det selv,
+
+267
+0:20:44,280 --> 0:20:50,780
+ udover at vi kan spare penge, vi kan spare vores børns datasikkerhed selvfølgelig,
+
+268
+0:20:50,780 --> 0:21:00,280
+ vi kan holde en IT-industri, vi har haft, og til del stadig har, kørende, og vi kan...
+
+269
+0:21:00,280 --> 0:21:09,780
+ Altså, der er kun... der vil kun være fordele ved at gøre det, selvom vi ikke kan hamle op med dem på kort sigt selvfølgelig.
+
+270
+0:21:09,780 --> 0:21:14,980
+ Altså, bare lige sådan for at forstå det rigtigt, så det du foreslår, det er i virkeligheden, at vi bygger vores egne datacenter?
+
+271
+0:21:14,980 --> 0:21:21,980
+ Ja, altså, det er jo præcis... så meget datacenter vil det jo heller ikke kræve at drive, øh...
+
+272
+0:21:21,980 --> 0:21:29,680
+ jeg ved ikke, hvor mange 100.000 skolebørn, vi har, men altså, ja, det foreslår jeg helt sikkert, og det vil være noget, som...
+
+273
+0:21:29,680 --> 0:21:36,380
+ Øh, forskellige danske virksomheder, hvis de slår sig sammen og... og laver en plan for det her i fællesskab,
+
+274
+0:21:36,380 --> 0:21:40,380
+ så vil det ikke være urealistisk. Vi kunne i hvert fald på ganske... altså på...
+
+275
+0:21:40,380 --> 0:21:46,380
+ Inden for et år kunne vi jo lave hele bundløsningen til almindelig fildeling og videomøder og...
+
+276
+0:21:46,380 --> 0:21:52,380
+ øh... øh... altså deling af information inden for en klasse og så videre, chat og den slags.
+
+277
+0:21:52,380 --> 0:21:57,680
+ Det ville vi meget hurtigt kunne få op at køre, og så de der undervisningsløsninger, der skal ovenpå,
+
+278
+0:21:57,680 --> 0:22:03,680
+ det må vi jo så tage hen ad vejen. Øh... vi har ikke råd til ikke at gøre det i hvert fald, hvis du spørger mig.
+
+279
+0:22:03,680 --> 0:22:08,680
+ Tobias siger, at vi har ikke råd til at begynde at køre og sådan noget. Altså, vi er simpelthen nødt til at køre det hjem til os selv.
+
+280
+0:22:08,680 --> 0:22:13,680
+ Hvad siger du til det, Lisbeth? Har vi råd til... tror du, vi har råd til at skråtte det andet?
+
+281
+0:22:13,680 --> 0:22:15,680
+ De store?
+
+282
+0:22:15,680 --> 0:22:23,680
+ Det ved jeg ikke, om... altså, det har man jo... altså, det har man i hvert fald i Helsingør lidt brugt som argument, ikke?
+
+283
+0:22:23,680 --> 0:22:27,680
+ At et, de under et tidspres, de børnene skal starte på mandag, og to, de...
+
+284
+0:22:27,680 --> 0:22:34,680
+ det kan også blive rigtig, rigtig dyrt. Men... men det er jo ikke skortet på advarsler om at blive sådan både leverandørafhængige,
+
+285
+0:22:34,680 --> 0:22:39,680
+ og også hvad der sker med børnenes... børnenes data. Så det synes jeg ikke er rimeligt.
+
+286
+0:22:39,680 --> 0:22:47,680
+ Og så Helsingør Kommune, de siger jo også, at det er ikke rimeligt, at de får et par ugers varsel, men de har jo fået adskillige års varsel.
+
+287
+0:22:47,680 --> 0:22:52,680
+ Altså, der er jo både kommet en EU-dom, og datatilsynet har også været ude tidligere.
+
+288
+0:22:52,680 --> 0:22:57,680
+ Øhm... men... men jeg synes også, altså, der er ikke... jeg synes ikke kun det tekniske.
+
+289
+0:22:57,680 --> 0:23:03,680
+ Det er simpelthen også... altså, vi bør have en større diskussion af, hvor mange gadgets, der skal være i vores skoler.
+
+290
+0:23:03,680 --> 0:23:13,680
+ Altså, der er masser af forskning, der viser, at børnene kan kognitivt ikke... altså, håndtere alle de der skærme altid, fordi at deres opmærksomhed flakker rundt.
+
+291
+0:23:13,680 --> 0:23:20,680
+ Og derfor synes jeg også, der er en selvstændig diskussion i, at noget af det der, det skal simpelthen... altså, ud af vores skoler.
+
+292
+0:23:20,680 --> 0:23:25,680
+ Og det er jo ikke fordi, at de ikke skal lære at arbejde med computerne og sådan noget, men der er simpelthen for meget i det.
+
+293
+0:23:25,680 --> 0:23:26,680
+ Og det er igen, tror jeg, at... Øhm...
+
+294
+0:23:27,680 --> 0:23:31,680
+ At i mange år har det været sådan, at man var... Øhm...
+
+295
+0:23:31,680 --> 0:23:38,680
+ Man var maskinestormer eller imod fremskridtet og sådan noget, hvis man ikke syntes, at alle børn skulle have deres egen computer.
+
+296
+0:23:38,680 --> 0:23:44,680
+ Og... og det at skrive på en tavle, det var totalt gammeldags og så videre.
+
+297
+0:23:44,680 --> 0:23:49,680
+ Så... så der har også været et underlæggende pres for at få så meget ind som muligt.
+
+298
+0:23:49,680 --> 0:23:55,680
+ Og selvfølgelig så har nogle af de her virksomheder også været ekstremt optaget af at komme ind på det marked.
+
+299
+0:23:55,680 --> 0:23:57,680
+ Altså, også bare hele området omkring...
+
+300
+0:23:57,680 --> 0:24:05,680
+ Net tech, altså educational tech, er jo et af de områder inden for tech, som vokser mest, og hvor man er mest interesseret i.
+
+301
+0:24:05,680 --> 0:24:07,680
+ Også høste data.
+
+302
+0:24:07,680 --> 0:24:09,680
+ Øhm...
+
+303
+0:24:09,680 --> 0:24:12,680
+ Så jeg synes, altså jeg synes, det er et... altså...
+
+304
+0:24:12,680 --> 0:24:16,680
+ Det er et kæmpe problem, og jeg er... Øhm...
+
+305
+0:24:16,680 --> 0:24:17,680
+ Altså...
+
+306
+0:24:17,680 --> 0:24:19,680
+ Jeg kan simpelthen ikke forstå...
+
+307
+0:24:19,680 --> 0:24:25,680
+ Man behøver ikke at være inde i de her tekniske ting eller vide præcis, hvor de data ender henne for at bruge sin sunde fornuft nogle gange.
+
+308
+0:24:25,680 --> 0:24:34,680
+ Også at sige, hvad er det, man gør sig selv afhængig af også, for at få et skolesystem til at fungere, for eksempel.
+
+309
+0:24:34,680 --> 0:24:47,680
+ Jeg har jo godt nogle gange tænkt mig, at vi fik sådan lidt en oprørskultur også, som man har set nogle andre steder i verden, hvor man har implementeret sådan nogle systemer.
+
+310
+0:24:47,680 --> 0:24:48,680
+ Altså i...
+
+311
+0:24:48,680 --> 0:24:53,680
+ Jeg tror, det var i Toronto, hvor man havde idéer om at påbegynde at smotte sådan nogle smart city teknologier med Google.
+
+312
+0:24:53,680 --> 0:24:59,680
+ Og hvor der var så meget oprør, at man sådan skrindelagde det.
+
+313
+0:24:59,680 --> 0:25:01,680
+ Fordi jo flere af de...
+
+314
+0:25:01,680 --> 0:25:02,680
+ Altså...
+
+315
+0:25:02,680 --> 0:25:16,680
+ Jo flere af de virksomheder, der kommer ind på nogle af de mest grundlæggende elementer i vores samfund, jo mere afhængige og sårbare bliver vi jo også for overhovedet at få nogle af de her grundlæggende ting som et skolesystem til at fungere.
+
+316
+0:25:16,680 --> 0:25:20,680
+ Annie Mortensen, bare lige for at vende tilbage til noget af det, du faktisk lige har talt om tidligere i et fordrag.
+
+317
+0:25:20,680 --> 0:25:21,680
+ Det er hvorfor...
+
+318
+0:25:21,680 --> 0:25:22,680
+ Altså det her med, at vi har amerikaner...
+
+319
+0:25:22,680 --> 0:25:29,680
+ Amerikanske server stående i Danmark med en masse danske data på, som ligger og kører ind og ud af det her.
+
+320
+0:25:29,680 --> 0:25:31,680
+ Hvor er det, det bliver problematisk?
+
+321
+0:25:31,680 --> 0:25:33,680
+ Hvad er det, vi kan risikere, at de her data bliver brugt til?
+
+322
+0:25:33,680 --> 0:25:37,680
+ Og hvorfor er det skidt, at de ligger på en amerikansk server?
+
+323
+0:25:37,680 --> 0:25:50,680
+ Jamen altså, det helt grundlæggende problem er jo, at så længe det ligger på en amerikansk server, uanset hvor den står, så vil der være nogle muligheder for, at den amerikanske jurisdiktion kan komme ind og få hånds og halsgræt over de her data.
+
+324
+0:25:50,680 --> 0:25:51,680
+ Så vil der være nogle muligheder for, at den amerikanske jurisdiktion kan komme ind og få hånds og halsgræt over de her data.
+
+325
+0:25:51,680 --> 0:25:52,680
+ Så vil der være nogle muligheder for, at den amerikanske jurisdiktion kan komme ind og få hånds og halsgræt over de her data.
+
+326
+0:25:52,680 --> 0:25:58,680
+ Ved at pålægge Microsoft, Google, Amazon, hvem det nu er, i USA, og udlevere de her data.
+
+327
+0:25:58,680 --> 0:26:06,680
+ Så på den baggrund kan man sige, at amerikanske myndigheder vil kunne få adgang til de her data, så vil Google osv. udlevere dem til de her myndigheder.
+
+328
+0:26:06,680 --> 0:26:13,680
+ Og så er der de andre problemer, som jeg nævnte, hvor de automatisk selv får egen regning som selvstændig dataansvarlig overført data.
+
+329
+0:26:13,680 --> 0:26:18,680
+ Og også det forhold, at de bruger underdatabehandlere i alle mulige mærkelige steder i verden.
+
+330
+0:26:18,680 --> 0:26:19,680
+ Så det er den gruppe af problemer, der er omkring det her.
+
+331
+0:26:19,680 --> 0:26:28,680
+ Det, man skulle gøre i stedet for, hvis de ville ud over det her, det var at lege deres software ud til nogle provider inden for EU.
+
+332
+0:26:28,680 --> 0:26:33,680
+ Så ville man formodentlig rent juridisk kunne komme ud af den her problemstilling.
+
+333
+0:26:33,680 --> 0:26:44,680
+ Og så i forhold til det, som du nævner, altså i rådet, der kunne vi godt tænke os, at der var lidt mere fokus på generelt digital dannelse af unge mennesker i folkeskolen.
+
+334
+0:26:44,680 --> 0:26:48,680
+ Om det skal være med den ene eller den anden type software, det skal jeg ikke gøre mig klog på.
+
+335
+0:26:48,680 --> 0:26:49,680
+ Men det skal i hvert fald være med den ene eller den anden type software, det skal jeg ikke gøre mig klog på.
+
+336
+0:26:49,680 --> 0:26:51,680
+ Men det skal i hvert fald være med den ene eller den anden type software, det skal jeg ikke gøre mig klog på.
+
+337
+0:26:51,680 --> 0:26:57,680
+ En standard software, som vi er fuldstændig sikre på, er lovligt, og hvor vi har fuldstændig styr på, hvordan børnenes data ender henne.
+
+338
+0:26:57,680 --> 0:27:06,680
+ Så der ikke sker en profilering af, at bare fordi man går i skole, så skal man profilere sig af en eller anden amerikansk provider på den ene eller den anden måde.
+
+339
+0:27:06,680 --> 0:27:13,680
+ Og det vil jo være umuligt at sikre sig, hvad der foregår med ens data, hvis det ikke er open source.
+
+340
+0:27:13,680 --> 0:27:18,680
+ Hvis ikke nogen får lov at kigge i kildekoden i hvert fald, så er det svært at vide, hvad der egentlig i praksis foregår.
+
+341
+0:27:18,680 --> 0:27:19,100
+ foregår.
+
+342
+0:27:21,880 --> 0:27:22,820
+ Og jeg er også meget
+
+343
+0:27:22,820 --> 0:27:24,700
+ enig med dig, Lisbeth,
+
+344
+0:27:24,840 --> 0:27:26,760
+ og en ting,
+
+345
+0:27:26,820 --> 0:27:28,220
+ vi ikke har gjort med i de her sager,
+
+346
+0:27:28,400 --> 0:27:30,520
+ altså i mange sager, men også med de her skolebørn,
+
+347
+0:27:30,580 --> 0:27:32,640
+ det er, at vi ikke har startet med at sige, hvad er det for nogle behov,
+
+348
+0:27:32,760 --> 0:27:35,000
+ vi har, og hvad er det så for nogle løsninger,
+
+349
+0:27:35,040 --> 0:27:36,580
+ vi godt kunne tænke os til at dække
+
+350
+0:27:36,580 --> 0:27:38,540
+ de behov. Nej, vi har startet omvendt.
+
+351
+0:27:38,600 --> 0:27:40,700
+ Vi har været enormt benovet og imponeret
+
+352
+0:27:40,700 --> 0:27:42,700
+ over nogle smarte løsninger,
+
+353
+0:27:42,740 --> 0:27:44,160
+ og så siger vi, hold da op, det er smart.
+
+354
+0:27:44,620 --> 0:27:45,800
+ De der fyre, de ved nok,
+
+355
+0:27:45,800 --> 0:27:46,980
+ hvad der
+
+356
+0:27:46,980 --> 0:27:49,460
+ er, hvad sandheden er,
+
+357
+0:27:49,560 --> 0:27:51,920
+ og dem vil vi gerne købe en løsning af.
+
+358
+0:27:52,100 --> 0:27:53,360
+ Men det er jo helt bagvendt.
+
+359
+0:27:53,740 --> 0:27:55,680
+ Vi har jo, ligesom alle mine andre
+
+360
+0:27:55,680 --> 0:27:57,200
+ sammenhængende, så har vi jo,
+
+361
+0:27:57,860 --> 0:27:59,620
+ vi burde se
+
+362
+0:27:59,620 --> 0:28:01,600
+ en eller anden udfordring, og så
+
+363
+0:28:01,600 --> 0:28:03,760
+ leder vi efter en løsning, og så finder vi
+
+364
+0:28:03,760 --> 0:28:05,280
+ måske en løsning, og så er vi glade.
+
+365
+0:28:05,780 --> 0:28:07,640
+ Men det er slet ikke sådan, vi har taget de her
+
+366
+0:28:07,640 --> 0:28:09,840
+ valg,
+
+367
+0:28:09,860 --> 0:28:10,960
+ har vi gjort helt
+
+368
+0:28:10,960 --> 0:28:13,640
+ bagvendt. Ja, altså vi har
+
+369
+0:28:13,640 --> 0:28:15,320
+ været os vilde over ende af de her
+
+370
+0:28:15,320 --> 0:28:16,340
+ ting, de gælder. Ja.
+
+371
+0:28:16,980 --> 0:28:18,020
+ Så er du lige i gang.
+
+372
+0:28:18,320 --> 0:28:20,040
+ Jeg har lige et antal
+
+373
+0:28:20,040 --> 0:28:22,000
+ ting. Først med hensyn til placeringen af
+
+374
+0:28:22,000 --> 0:28:24,080
+ datacenterne, det handler stort set udelukkende
+
+375
+0:28:24,080 --> 0:28:24,880
+ om lyshastighed.
+
+376
+0:28:25,980 --> 0:28:27,840
+ Det handler, som jeg snakkede om i går,
+
+377
+0:28:27,940 --> 0:28:29,980
+ det handler om mindst mulig latency, inden man skal vise
+
+378
+0:28:29,980 --> 0:28:32,000
+ reklamerne. Det er derfor, at Facebook
+
+379
+0:28:32,000 --> 0:28:34,280
+ har brug for et datacenter i Nordeuropa.
+
+380
+0:28:35,560 --> 0:28:36,320
+ For så vidt
+
+381
+0:28:36,320 --> 0:28:37,940
+ digital undervisning
+
+382
+0:28:37,940 --> 0:28:39,780
+ og alt det her, indtil
+
+383
+0:28:39,780 --> 0:28:41,900
+ covid-19, vil jeg godt lige starte med
+
+384
+0:28:41,900 --> 0:28:43,840
+ at sige, er der ikke kommet
+
+385
+0:28:43,840 --> 0:28:45,940
+ et eneste akademisk
+
+386
+0:28:45,940 --> 0:28:46,940
+ gennemført
+
+387
+0:28:46,980 --> 0:28:47,860
+ studie, der har vist
+
+388
+0:28:47,860 --> 0:28:49,840
+ en positiv effekt på
+
+389
+0:28:49,840 --> 0:28:51,420
+ indlæringen hos normale børn
+
+390
+0:28:51,420 --> 0:28:53,660
+ ved at sætte computerer i det klasselokale.
+
+391
+0:28:54,020 --> 0:28:55,820
+ Ikke et eneste.
+
+392
+0:28:57,460 --> 0:28:58,040
+ Der er
+
+393
+0:28:58,040 --> 0:28:59,800
+ derimod masser af studier, der har vist, at
+
+394
+0:28:59,800 --> 0:29:01,900
+ den tid, læreren bruger på at genstarte
+
+395
+0:29:01,900 --> 0:29:04,100
+ computerer og antivirus og så videre
+
+396
+0:29:04,100 --> 0:29:05,700
+ og så videre og så videre, den går fra
+
+397
+0:29:05,700 --> 0:29:08,000
+ den ene undervisning. Og at
+
+398
+0:29:08,000 --> 0:29:09,840
+ ungerne generelt
+
+399
+0:29:09,840 --> 0:29:11,960
+ bliver dårligere til at være
+
+400
+0:29:11,960 --> 0:29:14,040
+ opmærksomme gennem længere tid på, hvad en person
+
+401
+0:29:14,040 --> 0:29:16,080
+ siger. Så kan man så diskutere, om det er noget,
+
+402
+0:29:16,080 --> 0:29:18,080
+ ungerne skal lære, men
+
+403
+0:29:18,080 --> 0:29:20,080
+ det er de ting, der er dokumenteret, som effekter er.
+
+404
+0:29:22,080 --> 0:29:23,080
+ Det, jeg synes, der er interessant ved
+
+405
+0:29:23,080 --> 0:29:25,080
+ Hensynør Kommune og
+
+406
+0:29:25,080 --> 0:29:27,080
+ Google, er jo, at det fundamentalt set
+
+407
+0:29:27,080 --> 0:29:29,080
+ handler om penge.
+
+408
+0:29:29,080 --> 0:29:31,080
+ Hensynør Kommune er sådan en
+
+409
+0:29:31,080 --> 0:29:33,080
+ grænseudkendt Danmark.
+
+410
+0:29:33,080 --> 0:29:35,080
+ Så det er jo en billig måde
+
+411
+0:29:35,080 --> 0:29:37,080
+ at få computerer ind i undervisningen
+
+412
+0:29:37,080 --> 0:29:39,080
+ ved at benytte sig af
+
+413
+0:29:39,080 --> 0:29:41,080
+ et rigtig godt tilbud, man ikke kan sige nej til.
+
+414
+0:29:41,080 --> 0:29:43,080
+ Men Maggie,
+
+415
+0:29:43,080 --> 0:29:45,080
+ hvis vi lige regner på det her stykke i går,
+
+416
+0:29:45,080 --> 0:29:47,080
+ det kan godt være, at Hensynør Kommune
+
+417
+0:29:47,080 --> 0:29:49,080
+ sparer nogle penge, men det får jo ikke Google
+
+418
+0:29:49,080 --> 0:29:51,080
+ til at betale skat i Danmark.
+
+419
+0:29:51,080 --> 0:29:53,080
+ Så i virkeligheden er det
+
+420
+0:29:53,080 --> 0:29:55,080
+ en meget falsk økonomi,
+
+421
+0:29:55,080 --> 0:29:57,080
+ hvor hvis man i stedet for havde henvendt sig
+
+422
+0:29:57,080 --> 0:29:59,080
+ til nogle danske hardware-
+
+423
+0:29:59,080 --> 0:30:01,080
+ softwareleverandører, så ville det
+
+424
+0:30:01,080 --> 0:30:03,080
+ kanskje have medført en smule
+
+425
+0:30:03,080 --> 0:30:05,080
+ bruttonationalprodukt i Danmark.
+
+426
+0:30:05,080 --> 0:30:07,080
+ Det gør det ikke, når det går til Google
+
+427
+0:30:07,080 --> 0:30:09,080
+ eller Facebook eller andre. Altså, en af
+
+428
+0:30:09,080 --> 0:30:11,080
+ årsagen til, at vi alle sammen går og slår os
+
+429
+0:30:11,080 --> 0:30:13,080
+ om pengene nu om dagen, det er jo for eksempel, at hele det danske
+
+430
+0:30:13,080 --> 0:30:15,080
+ reklamebudget,
+
+431
+0:30:15,080 --> 0:30:17,080
+ alle de penge, der i gamle dage gik til
+
+432
+0:30:17,080 --> 0:30:19,080
+ reklamebyråer, til aviser,
+
+433
+0:30:19,080 --> 0:30:21,080
+ hussidereklame
+
+434
+0:30:21,080 --> 0:30:23,080
+ og alle de ting, de går jo ikke til Danmark
+
+435
+0:30:23,080 --> 0:30:25,080
+ mere.
+
+436
+0:30:25,080 --> 0:30:27,080
+ Hele verdens reklamebudget,
+
+437
+0:30:27,080 --> 0:30:29,080
+ det ligger i dag hos Google og Facebook.
+
+438
+0:30:31,080 --> 0:30:33,080
+ Der er en lille smule, der stadigvæk
+
+439
+0:30:33,080 --> 0:30:35,080
+ bliver trykket på papir,
+
+440
+0:30:35,080 --> 0:30:37,080
+ men det, der bliver vist i fjernsynet,
+
+441
+0:30:37,080 --> 0:30:39,080
+ det har faktisk reelt set været den vej rundt,
+
+442
+0:30:39,080 --> 0:30:41,080
+ før det blev vist i fjernsynet.
+
+443
+0:30:41,080 --> 0:30:43,080
+ Det er penge, der ikke bliver betalt skat af,
+
+444
+0:30:43,080 --> 0:30:45,080
+ det er arbejdspladser, der ikke bliver betalt
+
+445
+0:30:45,080 --> 0:30:47,080
+ indkomstskat af i Danmark.
+
+446
+0:30:47,080 --> 0:30:49,080
+ Og det ændrer fundamentalt ved mange
+
+447
+0:30:49,080 --> 0:30:51,080
+ af de her økonomiske kalkyler, at når man
+
+448
+0:30:51,080 --> 0:30:53,080
+ bruger en cloud-teknologi, så er det det samme som at
+
+449
+0:30:53,080 --> 0:30:55,080
+ sige, vi flytter nogle job ud af
+
+450
+0:30:55,080 --> 0:30:57,080
+ landet.
+
+451
+0:30:57,080 --> 0:30:59,080
+ Så det
+
+452
+0:30:59,080 --> 0:31:01,080
+ økonomiske argument fra
+
+453
+0:31:01,080 --> 0:31:03,080
+ Helsingør Kommune er grundlæggende at sige, vi har ikke råd til
+
+454
+0:31:03,080 --> 0:31:05,080
+ at gøre andet, end
+
+455
+0:31:05,080 --> 0:31:07,080
+ at gøre nationaløkonomien ringet,
+
+456
+0:31:07,080 --> 0:31:09,080
+ fordi vi mangler penge i udkants-
+
+457
+0:31:09,080 --> 0:31:11,080
+ Danmark. Og det synes jeg
+
+458
+0:31:11,080 --> 0:31:13,080
+ er en diskussion, der er værd til med, fordi
+
+459
+0:31:13,080 --> 0:31:15,080
+ vi ser det. Jeg bor selv i udkants-
+
+460
+0:31:15,080 --> 0:31:17,080
+ Danmark. Jeg bor i Slagelse. Det er i den grad udkants-
+
+461
+0:31:17,080 --> 0:31:19,080
+ Danmark.
+
+462
+0:31:19,080 --> 0:31:21,080
+ Der ser man mange
+
+463
+0:31:21,080 --> 0:31:23,080
+ løsninger på kommunalt niveau,
+
+464
+0:31:23,080 --> 0:31:25,080
+ som handler om, at der ikke er penge i kassen.
+
+465
+0:31:25,080 --> 0:31:27,080
+ Så vi finder en eller anden ting.
+
+466
+0:31:27,080 --> 0:31:29,080
+ Hvis vi kan få en eller anden kunstig intelligens
+
+467
+0:31:29,080 --> 0:31:31,080
+ løsning, som kan
+
+468
+0:31:31,080 --> 0:31:33,080
+ sige nej til, at folk skal have kontanthjælp,
+
+469
+0:31:33,080 --> 0:31:35,080
+ jamen så er det en gevinst for kassen.
+
+470
+0:31:35,080 --> 0:31:37,080
+ Og der
+
+471
+0:31:37,080 --> 0:31:39,080
+ synes jeg egentlig, at diskussionen burde starte på økonomisk
+
+472
+0:31:39,080 --> 0:31:41,080
+ niveau og sige,
+
+473
+0:31:41,080 --> 0:31:43,080
+ hvis man indfører det her alene,
+
+474
+0:31:43,080 --> 0:31:45,080
+ at der er økonomiske årsager,
+
+475
+0:31:45,080 --> 0:31:47,080
+ så skal der meget stærkere argumenter for, at kvaliteten
+
+476
+0:31:47,080 --> 0:31:49,080
+ i det er død.
+
+477
+0:31:49,080 --> 0:31:51,080
+ Og det er der ikke.
+
+478
+0:31:51,080 --> 0:31:53,080
+ Peter Kofod, du har en kommentar.
+
+479
+0:31:53,080 --> 0:31:55,080
+ Bare helt kort. Det slår mig, når vi sidder og snakker om det her.
+
+480
+0:31:55,080 --> 0:31:57,080
+ Det er jo kun i tech-kredset, man kan slippe af sted med
+
+481
+0:31:57,080 --> 0:31:59,080
+ at sige de her ting, og folk ikke synes, man er idiot.
+
+482
+0:31:59,080 --> 0:32:01,080
+ Og det burde jo sige et eller andet,
+
+483
+0:32:01,080 --> 0:32:03,080
+ at dem, der ved allermest om teknik, de kan godt se,
+
+484
+0:32:03,080 --> 0:32:05,080
+ at det her er fandme noget lort. Hvad får dig til at tro, at folk
+
+485
+0:32:05,080 --> 0:32:07,080
+ ikke tror, du er idiot i tech-kredset?
+
+486
+0:32:07,080 --> 0:32:09,080
+ Det er andre årsager.
+
+487
+0:32:09,080 --> 0:32:11,080
+ Og de har tit ret jo.
+
+488
+0:32:11,080 --> 0:32:13,080
+ Men prøv lige, vi sidder faktisk her i
+
+489
+0:32:13,080 --> 0:32:15,080
+ år 722, eller hvad fuck det er,
+
+490
+0:32:15,080 --> 0:32:17,080
+ og snakker om, at det er et problem, at vores folkeskole,
+
+491
+0:32:17,080 --> 0:32:19,080
+ det er jo ikke bare Helsingør, det er jo bare fordi,
+
+492
+0:32:19,080 --> 0:32:21,080
+ dem, der har haft en sag, men det er jo det samme,
+
+493
+0:32:21,080 --> 0:32:23,080
+ mine børn går i skole i Odense Kommune,
+
+494
+0:32:23,080 --> 0:32:25,080
+ det er jo det samme. Det er det jo helt andet.
+
+495
+0:32:25,080 --> 0:32:27,080
+ Vi sidder og snakker om, at vi kan ikke lave folkeskolen
+
+496
+0:32:27,080 --> 0:32:29,080
+ uden Google. Hvad fuck er det for noget?
+
+497
+0:32:29,080 --> 0:32:31,080
+ Det har vi da gjort i 100 år, altså.
+
+498
+0:32:31,080 --> 0:32:33,080
+ 400 år.
+
+499
+0:32:33,080 --> 0:32:35,080
+ Ja, folkeskole, det ved jeg ikke.
+
+500
+0:32:35,080 --> 0:32:37,080
+ Jo, 400. Du er bedre som Atlantik,
+
+501
+0:32:37,080 --> 0:32:39,080
+ hvor jeg lige vil sige mig.
+
+502
+0:32:39,080 --> 0:32:41,080
+ Det er sgu da fucked up, mand.
+
+503
+0:32:41,080 --> 0:32:43,080
+ Hvad fanden er vi i gang med?
+
+504
+0:32:43,080 --> 0:32:45,080
+ Tak i hvert fald.
+
+505
+0:32:45,080 --> 0:32:47,080
+ Det ved jeg, du er enig i.
+
+506
+0:32:47,080 --> 0:32:49,080
+ Det er jeg helt sikkert enig i, ja.
+
+507
+0:32:49,080 --> 0:32:51,080
+ Og du,
+
+508
+0:32:51,080 --> 0:32:53,080
+ det er ikke også mig. Ja, det er ikke også os.
+
+509
+0:32:53,080 --> 0:32:55,080
+ Også bare lige i forlængelse af, altså,
+
+510
+0:32:55,080 --> 0:32:57,080
+ det har jo været en kendt strategi for mange softwareprovidere,
+
+511
+0:32:57,080 --> 0:32:59,080
+ at sælge deres software ret billigt,
+
+512
+0:32:59,080 --> 0:33:01,080
+ eller give på hverden vægt,
+
+513
+0:33:01,080 --> 0:33:03,080
+ til uddannelsesinstitutioner, udefra en forventning om,
+
+514
+0:33:03,080 --> 0:33:05,080
+ at når så børnene bliver store,
+
+515
+0:33:05,080 --> 0:33:07,080
+ eller de unge bliver større, så køber de også
+
+516
+0:33:07,080 --> 0:33:09,080
+ den software, de har været vant til at bruge.
+
+517
+0:33:09,080 --> 0:33:11,080
+ Og så SAS Institut har jo gjort det,
+
+518
+0:33:11,080 --> 0:33:13,080
+ at overvise for eksempel i forhold til deres statistikprogrammer.
+
+519
+0:33:13,080 --> 0:33:15,080
+ Så der er jo ikke noget overraskende i,
+
+520
+0:33:15,080 --> 0:33:17,080
+ at Google kommer med deres Chromebook og siger,
+
+521
+0:33:17,080 --> 0:33:19,080
+ vi får en forventning om, at så kan de måske
+
+522
+0:33:19,080 --> 0:33:21,080
+ valgte Microsoft Depends, som betyder sådan nogle ting der.
+
+523
+0:33:21,080 --> 0:33:23,080
+ Nå. Lisbeth Bæk-Poulsen,
+
+524
+0:33:23,080 --> 0:33:25,080
+ er det den situation,
+
+525
+0:33:25,080 --> 0:33:27,080
+ vi er i, at det er simpelthen, vi kan ikke engang
+
+526
+0:33:27,080 --> 0:33:29,080
+ finde ud af at sige, at det her, det er skørt.
+
+527
+0:33:29,080 --> 0:33:31,080
+ Og det kan I heller ikke finde ud af inde i Folketinget.
+
+528
+0:33:31,080 --> 0:33:33,080
+ Det tror jeg,
+
+529
+0:33:33,080 --> 0:33:35,080
+ helt ærligt, kommer an på, hvem man spørger.
+
+530
+0:33:35,080 --> 0:33:37,080
+ Øh,
+
+531
+0:33:37,080 --> 0:33:39,080
+ jeg synes,
+
+532
+0:33:39,080 --> 0:33:41,080
+ men det er faktisk,
+
+533
+0:33:41,080 --> 0:33:43,080
+ ikke for sådan at gøre det politisk
+
+534
+0:33:43,080 --> 0:33:45,080
+ polemisk, men jeg har tit
+
+535
+0:33:45,080 --> 0:33:47,080
+ undret mig over,
+
+536
+0:33:47,080 --> 0:33:49,080
+ at meget af den her kritik,
+
+537
+0:33:49,080 --> 0:33:51,080
+ der kom, at der ikke var flere borgerlige
+
+538
+0:33:51,080 --> 0:33:53,080
+ ombord, fordi at meget af det handler
+
+539
+0:33:53,080 --> 0:33:55,080
+ om individets
+
+540
+0:33:55,080 --> 0:33:57,080
+ rettigheder overfor staten,
+
+541
+0:33:57,080 --> 0:33:59,080
+ og forhold med individet.
+
+542
+0:33:59,080 --> 0:34:01,080
+ Og det burde da altså om noget være
+
+543
+0:34:01,080 --> 0:34:03,080
+ også en liberal tilgang til det.
+
+544
+0:34:03,080 --> 0:34:05,080
+ Det prøver jeg ligesom at fiske de liberale
+
+545
+0:34:05,080 --> 0:34:07,080
+ og sige, helt ærligt, og det
+
+546
+0:34:07,080 --> 0:34:09,080
+ synes jeg faktisk, at vi på venstrefløjen
+
+547
+0:34:09,080 --> 0:34:11,080
+ vi har sikkert ikke været gode nok,
+
+548
+0:34:11,080 --> 0:34:13,080
+ overhovedet, men jeg synes trods alt,
+
+549
+0:34:13,080 --> 0:34:15,080
+ at vi i en del år i SF og
+
+550
+0:34:15,080 --> 0:34:17,080
+ Enhedslisten har talt omkring nogle
+
+551
+0:34:17,080 --> 0:34:19,080
+ af de her ting, og sagt, at
+
+552
+0:34:19,080 --> 0:34:21,080
+ det handler om værdighed og integritet,
+
+553
+0:34:21,080 --> 0:34:23,080
+ og børnenes integritet,
+
+554
+0:34:23,080 --> 0:34:25,080
+ og det handler om, at
+
+555
+0:34:25,080 --> 0:34:27,080
+ det kan ikke bare være, hvad
+
+556
+0:34:27,080 --> 0:34:29,080
+ staten eller systemet synes kunne være
+
+557
+0:34:29,080 --> 0:34:31,080
+ bedst, altså der må være,
+
+558
+0:34:31,080 --> 0:34:33,080
+ der må man have borgeren i centrum, og det undrer
+
+559
+0:34:33,080 --> 0:34:35,080
+ jeg mig virkelig, derfor er jeg også rigtig glad for, at
+
+560
+0:34:35,080 --> 0:34:37,080
+ Kerstin Møller, han skrev
+
+561
+0:34:37,080 --> 0:34:39,080
+ det her indlæg omkring
+
+562
+0:34:39,080 --> 0:34:41,080
+ midt i det, og jo også egentlig selv
+
+563
+0:34:41,080 --> 0:34:43,080
+ efterlyst, at der var flere borgerne, der
+
+564
+0:34:43,080 --> 0:34:45,080
+ blandede sig i den her diskussion,
+
+565
+0:34:45,080 --> 0:34:47,080
+ det har været meget påfaldende,
+
+566
+0:34:47,080 --> 0:34:49,080
+ synes jeg, hvor stille der har været,
+
+567
+0:34:51,080 --> 0:34:53,080
+ så det er det ene ting, jeg tog lige ordet
+
+568
+0:34:53,080 --> 0:34:55,080
+ før også for at sige, at
+
+569
+0:34:55,080 --> 0:34:57,080
+ der har også været det her eksempel med, at Google
+
+570
+0:34:57,080 --> 0:34:59,080
+ sådan tilbød at lave
+
+571
+0:34:59,080 --> 0:35:01,080
+ rådgivning over for langtidsledige,
+
+572
+0:35:01,080 --> 0:35:03,080
+ hvor at
+
+573
+0:35:03,080 --> 0:35:05,080
+ de skulle nok afholde nogle kurser,
+
+574
+0:35:05,080 --> 0:35:07,080
+ og de havde nogle helt særlige måder at kunne hjælpe
+
+575
+0:35:07,080 --> 0:35:09,080
+ langtidsledige, og det var sådan
+
+576
+0:35:09,080 --> 0:35:11,080
+ endnu et område af vores velfærdssamfund,
+
+577
+0:35:11,080 --> 0:35:13,080
+ hvor man så kan sige, så kan I gøre
+
+578
+0:35:13,080 --> 0:35:15,080
+ det, og lad det så også få nogle data i
+
+579
+0:35:15,080 --> 0:35:17,080
+ høster, og så igen er der også noget
+
+580
+0:35:17,080 --> 0:35:19,080
+ afhængighed,
+
+581
+0:35:19,080 --> 0:35:21,080
+ og det hele kører
+
+582
+0:35:21,080 --> 0:35:23,080
+ også hen imod sådan en drøm om at få sådan en
+
+583
+0:35:23,080 --> 0:35:25,080
+ en hel by, altså helt
+
+584
+0:35:25,080 --> 0:35:27,080
+ smart city, hvor at alle elementer
+
+585
+0:35:27,080 --> 0:35:29,080
+ af sådan et samfundsliv
+
+586
+0:35:29,080 --> 0:35:31,080
+ er afhængige af det,
+
+587
+0:35:31,080 --> 0:35:33,080
+ og det er jo ikke for meget
+
+588
+0:35:33,080 --> 0:35:35,080
+ at sige, at folkeskolen nu er blevet
+
+589
+0:35:35,080 --> 0:35:37,080
+ altså er blevet hooked
+
+590
+0:35:37,080 --> 0:35:39,080
+ på Google,
+
+591
+0:35:39,080 --> 0:35:41,080
+ og
+
+592
+0:35:41,080 --> 0:35:43,080
+ hvis man kan få alle de andre systemer ind,
+
+593
+0:35:43,080 --> 0:35:45,080
+ hvor man også er afhængig af det, for at
+
+594
+0:35:45,080 --> 0:35:47,080
+ få det til at køre,
+
+595
+0:35:47,080 --> 0:35:49,080
+ så altså
+
+596
+0:35:49,080 --> 0:35:51,080
+ jeg synes, det er skræmmende.
+
+597
+0:35:51,080 --> 0:35:53,080
+ Poul Henning Kamp, vi vil sætte en anden
+
+598
+0:35:53,080 --> 0:35:55,080
+ ting, som også er en lille smule skræmmende, det handler jo
+
+599
+0:35:55,080 --> 0:35:57,080
+ om, du har nogle teorier omkring national
+
+600
+0:35:57,080 --> 0:35:59,080
+ sikkerhed, og som blandt andet også handler om
+
+601
+0:35:59,080 --> 0:36:01,080
+ to nye, i hvert fald en raket
+
+602
+0:36:01,080 --> 0:36:03,080
+ datacenter, som Microsoft laver, nu har vi talt rigtig meget
+
+603
+0:36:03,080 --> 0:36:05,080
+ om Google. Skulle det ikke være tre, havde de
+
+604
+0:36:05,080 --> 0:36:07,080
+ opgivet et eller andet? Jeg ved det ikke, jeg har hørt om det,
+
+605
+0:36:07,080 --> 0:36:09,080
+ i hvert fald der var to af dem, som jeg kunne
+
+606
+0:36:09,080 --> 0:36:11,080
+ google mig frem til,
+
+607
+0:36:11,080 --> 0:36:13,080
+ befandt sig i Fax og Slagelse,
+
+608
+0:36:13,080 --> 0:36:15,080
+ som er der to af dem, man siger, det er der, de skal være,
+
+609
+0:36:15,080 --> 0:36:17,080
+ måske. Det der i Slagelse har jagtet
+
+610
+0:36:17,080 --> 0:36:19,080
+ meget, men jeg kan ikke finde spor af det.
+
+611
+0:36:19,080 --> 0:36:21,080
+ Jeg tror ikke, det holder.
+
+612
+0:36:21,080 --> 0:36:23,080
+ Men den første melding fra dem, det var,
+
+613
+0:36:23,080 --> 0:36:25,080
+ der skulle opføres tre, og det skal hedde et eller andet
+
+614
+0:36:25,080 --> 0:36:27,080
+ datacenterregion, eller det skal hedde,
+
+615
+0:36:27,080 --> 0:36:29,080
+ jo, datacenterregionen
+
+616
+0:36:29,080 --> 0:36:31,080
+ Danmark East, tror jeg,
+
+617
+0:36:31,080 --> 0:36:33,080
+ de kalder det. Men det ved jeg, der
+
+618
+0:36:33,080 --> 0:36:35,080
+ kiggede du på, og skrev en længere
+
+619
+0:36:35,080 --> 0:36:37,080
+ artikel i version 2 omkring
+
+620
+0:36:37,080 --> 0:36:39,080
+ de her ting, og mener du, der var
+
+621
+0:36:39,080 --> 0:36:41,080
+ en plan bag det her? Altså, jeg undrede mig
+
+622
+0:36:41,080 --> 0:36:43,080
+ bare meget over, hvorfor der pludselig stod en finansminister
+
+623
+0:36:43,080 --> 0:36:45,080
+ og annoncerede
+
+624
+0:36:45,080 --> 0:36:47,080
+ datacenter sammen med
+
+625
+0:36:47,080 --> 0:36:49,080
+ en eller anden privat virksomhed.
+
+626
+0:36:49,080 --> 0:36:51,080
+ Og
+
+627
+0:36:51,080 --> 0:36:53,080
+ ydermere, så var der sådan forskellige
+
+628
+0:36:53,080 --> 0:36:55,080
+ underlige elementer i det. For eksempel skulle de tilbyde
+
+629
+0:36:55,080 --> 0:36:57,080
+ efteruddannelse
+
+630
+0:36:57,080 --> 0:36:59,080
+ til 120.000 til
+
+631
+0:36:59,080 --> 0:37:01,080
+ 150.000 danskere.
+
+632
+0:37:01,080 --> 0:37:03,080
+ Ikke nærmere specificeret,
+
+633
+0:37:03,080 --> 0:37:05,080
+ hvilke danskere og hvilken efteruddannelse.
+
+634
+0:37:05,080 --> 0:37:07,080
+ Og endelig, så var
+
+635
+0:37:07,080 --> 0:37:09,080
+ der en
+
+636
+0:37:09,080 --> 0:37:11,080
+ press release fra
+
+637
+0:37:11,080 --> 0:37:13,080
+ forsvarsstaten, tror jeg det var,
+
+638
+0:37:13,080 --> 0:37:15,080
+ om, hvor meget de glædede sig til at bruge
+
+639
+0:37:15,080 --> 0:37:17,080
+ de her nye datacentre.
+
+640
+0:37:17,080 --> 0:37:19,080
+ Så det er ligesom om,
+
+641
+0:37:19,080 --> 0:37:21,080
+ det lyder som om, der er noget
+
+642
+0:37:21,080 --> 0:37:23,080
+ mere i det her.
+
+643
+0:37:23,080 --> 0:37:25,080
+ Og når man så
+
+644
+0:37:25,080 --> 0:37:27,080
+ gravede ned i de detaljer, der blev sagt,
+
+645
+0:37:27,080 --> 0:37:29,080
+ så var der sådan noget med, at de skulle bygges så hurtigt,
+
+646
+0:37:29,080 --> 0:37:31,080
+ at de ikke kunne nå at få nye computer, men så ville de hente nogen
+
+647
+0:37:31,080 --> 0:37:33,080
+ i Sverige, de ikke brugte mere der.
+
+648
+0:37:33,080 --> 0:37:35,080
+ Og sådan nogle ting. Det ville også være grønnere
+
+649
+0:37:35,080 --> 0:37:37,080
+ at genbruge dem, end at smide dem ud.
+
+650
+0:37:37,080 --> 0:37:39,080
+ Øhm...
+
+651
+0:37:39,080 --> 0:37:41,080
+ Jamen det triggede min
+
+652
+0:37:41,080 --> 0:37:43,080
+ bullshit-detektor på alle måder.
+
+653
+0:37:43,080 --> 0:37:45,080
+ Altså, start med
+
+654
+0:37:45,080 --> 0:37:47,080
+ finansministeren. Hvad har finansministeren
+
+655
+0:37:47,080 --> 0:37:49,080
+ med en privat virkeligheds
+
+656
+0:37:49,080 --> 0:37:51,080
+ ejendoms
+
+657
+0:37:51,080 --> 0:37:53,080
+ disposition at gøre?
+
+658
+0:37:53,080 --> 0:37:55,080
+ Øhm...
+
+659
+0:37:55,080 --> 0:37:57,080
+ Og det kommer lige oven på en masse
+
+660
+0:37:57,080 --> 0:37:59,080
+ ballade omkring
+
+661
+0:37:59,080 --> 0:38:01,080
+ FE's
+
+662
+0:38:01,080 --> 0:38:03,080
+ håndtering af danskerets persondata.
+
+663
+0:38:03,080 --> 0:38:05,080
+ Og FE's
+
+664
+0:38:05,080 --> 0:38:07,080
+ samhandelsaftaler med NSA.
+
+665
+0:38:07,080 --> 0:38:09,080
+ Og sådan nogle ting.
+
+666
+0:38:09,080 --> 0:38:11,080
+ Så min umiddelbare teori,
+
+667
+0:38:11,080 --> 0:38:13,080
+ det er, at det handler om, at der kører nogle
+
+668
+0:38:13,080 --> 0:38:15,080
+ computer hos FE i dag,
+
+669
+0:38:15,080 --> 0:38:17,080
+ som ikke må behøre der,
+
+670
+0:38:17,080 --> 0:38:19,080
+ hvis nu man virkelig skal overholde reglerne,
+
+671
+0:38:19,080 --> 0:38:21,080
+ og derfor skal de flyttes andet sted hen.
+
+672
+0:38:21,080 --> 0:38:23,080
+ Og så har man hyret Microsoft, som er en af
+
+673
+0:38:23,080 --> 0:38:25,080
+ det amerikanske sportsvæsenministeriums
+
+674
+0:38:25,080 --> 0:38:27,080
+ standardproblemløsere, til at flytte nogle
+
+675
+0:38:27,080 --> 0:38:29,080
+ datacenter, hvor man kan flytte de opgaver hen.
+
+676
+0:38:29,080 --> 0:38:31,080
+ Sådan, at når man næste gang bliver spurgt, kan man sige,
+
+677
+0:38:31,080 --> 0:38:33,080
+ at den slags laver FE sandelig ikke.
+
+678
+0:38:33,080 --> 0:38:35,080
+ Øhm... Fordi nu er det
+
+679
+0:38:35,080 --> 0:38:37,080
+ outsourced, nu ligger det ude hos Microsoft.
+
+680
+0:38:37,080 --> 0:38:39,080
+ Øhm... Og yderligere
+
+681
+0:38:39,080 --> 0:38:41,080
+ med det her med at skulle bygge tre datacenter på
+
+682
+0:38:41,080 --> 0:38:43,080
+ Sjælland, det giver ikke mening ud fra nogen
+
+683
+0:38:43,080 --> 0:38:45,080
+ form for kapacitetsmæssig
+
+684
+0:38:45,080 --> 0:38:47,080
+ øhm... Noget
+
+685
+0:38:47,080 --> 0:38:49,080
+ kapacitetsmæssigt synspunkt.
+
+686
+0:38:49,080 --> 0:38:51,080
+ Hvis Microsoft skulle bygge centre i Danmark,
+
+687
+0:38:51,080 --> 0:38:53,080
+ så kunne de bygge et på Sjælland, et på Fyn og et i
+
+688
+0:38:53,080 --> 0:38:55,080
+ Jylland, ikke? Øhm... Nu skal der
+
+689
+0:38:55,080 --> 0:38:57,080
+ pludselig ligge tre på Sjælland, og de vidste ikke, hvor
+
+690
+0:38:57,080 --> 0:38:59,080
+ henne på Sjælland.
+
+691
+0:38:59,080 --> 0:39:01,080
+ De skulle bare ligge på Sjælland, der skulle være
+
+692
+0:39:01,080 --> 0:39:03,080
+ tre af dem, ikke? Så det stinker langt væk
+
+693
+0:39:03,080 --> 0:39:05,080
+ af en eller anden bestemt applikation, som sikkert
+
+694
+0:39:05,080 --> 0:39:07,080
+ har noget at gøre med at sortere igennem
+
+695
+0:39:07,080 --> 0:39:09,080
+ rå tekst på
+
+696
+0:39:09,080 --> 0:39:11,080
+ datafi... eller på fiberkabler.
+
+697
+0:39:11,080 --> 0:39:13,080
+ Øhm... Som skal flyttes ud
+
+698
+0:39:13,080 --> 0:39:15,080
+ fra FE's datacenter ude på Amager.
+
+699
+0:39:15,080 --> 0:39:17,080
+ Det er mit gæt.
+
+700
+0:39:17,080 --> 0:39:19,080
+ Øhm... Men der
+
+701
+0:39:19,080 --> 0:39:21,080
+ kan man tale om, synes
+
+702
+0:39:21,080 --> 0:39:23,080
+ jeg, egentlig tydelig
+
+703
+0:39:23,080 --> 0:39:25,080
+ time to go politik i Danmark, ikke?
+
+704
+0:39:25,080 --> 0:39:27,080
+ Altså, hvad
+
+705
+0:39:27,080 --> 0:39:29,080
+ koster det at få finansministeren med i sit
+
+706
+0:39:29,080 --> 0:39:31,080
+ press release?
+
+707
+0:39:33,080 --> 0:39:35,080
+ Så din teori er, at her kommer der
+
+708
+0:39:35,080 --> 0:39:37,080
+ så datacenter, som
+
+709
+0:39:37,080 --> 0:39:39,080
+ i virkeligheden taler ind i en debat. Vi skal have lidt senere
+
+710
+0:39:39,080 --> 0:39:41,080
+ også, som handler om forholdet mellem FE
+
+711
+0:39:41,080 --> 0:39:43,080
+ og NSA i de her sammenhænge.
+
+712
+0:39:43,080 --> 0:39:45,080
+ Men der har man simpelthen nogen, de flytter simpelthen ind,
+
+713
+0:39:45,080 --> 0:39:47,080
+ og så får vi en nøglefærdig løsning direkte
+
+714
+0:39:47,080 --> 0:39:49,080
+ fra USA. Jamen, det er jo...
+
+715
+0:39:49,080 --> 0:39:51,080
+ Man kan jo sådan gætte på omrigs af,
+
+716
+0:39:51,080 --> 0:39:53,080
+ hvad fanden det er for en studieaftale, ikke?
+
+717
+0:39:53,080 --> 0:39:55,080
+ Øhm... Men...
+
+718
+0:39:57,080 --> 0:39:59,080
+ De præciste detaljer er den jo ikke til at gætte
+
+719
+0:39:59,080 --> 0:40:01,080
+ sig frem til, hvad fanden det handler om.
+
+720
+0:40:01,080 --> 0:40:03,080
+ Altså, det kan jo være den næste kunstige generationens
+
+721
+0:40:03,080 --> 0:40:05,080
+ version af afnybningsnetværket,
+
+722
+0:40:05,080 --> 0:40:07,080
+ eller hvad fanden ved vi, ikke? Altså, de oplysninger,
+
+723
+0:40:07,080 --> 0:40:09,080
+ vi har fra Edward Snowden, de er jo efterhånden ved at være
+
+724
+0:40:09,080 --> 0:40:11,080
+ 15 år gamle, ikke?
+
+725
+0:40:11,080 --> 0:40:13,080
+ Øhm... Så guderne
+
+726
+0:40:13,080 --> 0:40:15,080
+ hvidebanende sag, de kører med i dag.
+
+727
+0:40:17,080 --> 0:40:19,080
+ Lisbeth Bæk-Poulsen, er du tryg ved, hvad
+
+728
+0:40:19,080 --> 0:40:21,080
+ datacenter... Jeg hedder altså Nielsen.
+
+729
+0:40:21,080 --> 0:40:23,080
+ Nå ja, det må have jeg glemt.
+
+730
+0:40:23,080 --> 0:40:25,080
+ Det hænger jo til gamle vaner, det hænger ved.
+
+731
+0:40:25,080 --> 0:40:27,080
+ Men, Lisbeth Bæk-Nielsen,
+
+732
+0:40:27,080 --> 0:40:29,080
+ Øhm... Er du tryg ved, at de her
+
+733
+0:40:29,080 --> 0:40:31,080
+ datacenter, at de...
+
+734
+0:40:31,080 --> 0:40:33,080
+ Det kan være, i virkeligheden være sådan
+
+735
+0:40:33,080 --> 0:40:35,080
+ noget, som er et amerikansk-dansk
+
+736
+0:40:35,080 --> 0:40:37,080
+ samarbejde, og hen over de her ting.
+
+737
+0:40:37,080 --> 0:40:39,080
+ Tror du, der er styr på det?
+
+738
+0:40:43,080 --> 0:40:45,080
+ Når jeg tøver, så er det ikke fordi, jeg ved
+
+739
+0:40:45,080 --> 0:40:47,080
+ et eller andet hemmeligt... Du prøver ikke at komme i tanke om, hvad
+
+740
+0:40:47,080 --> 0:40:49,080
+ chefen på F.E. hider for tiden, gør du ikke?
+
+741
+0:40:49,080 --> 0:40:51,080
+ Når jeg tøver, så er det ikke fordi,
+
+742
+0:40:51,080 --> 0:40:53,080
+ jeg ved et eller andet sådan hemmeligt, som jeg
+
+743
+0:40:53,080 --> 0:40:55,080
+ ikke vil sige. Altså, jeg tror...
+
+744
+0:40:55,080 --> 0:40:57,080
+ Jeg ved ikke... Jeg ved ikke mere, end
+
+745
+0:40:57,080 --> 0:40:59,080
+ I gør, rent politisk.
+
+746
+0:40:59,080 --> 0:41:01,080
+ Men det her er jo selvfølgelig sådan
+
+747
+0:41:01,080 --> 0:41:03,080
+ super... Øhm...
+
+748
+0:41:03,080 --> 0:41:05,080
+ Positivt, og derfor prøver vi faktisk
+
+749
+0:41:05,080 --> 0:41:07,080
+ også at sige så lidt om det som muligt,
+
+750
+0:41:07,080 --> 0:41:09,080
+ fordi vi jo har en
+
+751
+0:41:09,080 --> 0:41:11,080
+ retsordfører, som også sidder i
+
+752
+0:41:11,080 --> 0:41:13,080
+ kontroludvalget, og
+
+753
+0:41:13,080 --> 0:41:15,080
+ selvom de heller ikke får alt at vide i kontroludvalget,
+
+754
+0:41:15,080 --> 0:41:17,080
+ så får de trods alt mere at vide,
+
+755
+0:41:17,080 --> 0:41:19,080
+ end os, der er almindelige ordfører.
+
+756
+0:41:19,080 --> 0:41:21,080
+ Så jeg har det faktisk ikke godt med
+
+757
+0:41:21,080 --> 0:41:23,080
+ at spekulere. Altså, hvis jeg havde
+
+758
+0:41:23,080 --> 0:41:25,080
+ et eller andet, som jeg
+
+759
+0:41:25,080 --> 0:41:27,080
+ vidste med sikkerhed,
+
+760
+0:41:27,080 --> 0:41:29,080
+ så tror jeg godt, jeg ville sige det. Men
+
+761
+0:41:29,080 --> 0:41:31,080
+ altså, lige her, der
+
+762
+0:41:31,080 --> 0:41:33,080
+ vil jeg helst ikke spekulere.
+
+763
+0:41:33,080 --> 0:41:35,080
+ Jeg er helt sikker på, at Peter Kofod,
+
+764
+0:41:35,080 --> 0:41:37,080
+ du vil gerne spekulere. Ja!
+
+765
+0:41:37,080 --> 0:41:39,080
+ Jamen, det er jeg da helt sikker på, at
+
+766
+0:41:39,080 --> 0:41:41,080
+ Poul Henning har ret. Altså,
+
+767
+0:41:41,080 --> 0:41:43,080
+ igen, detaljerne kan man da ikke vide en skid om,
+
+768
+0:41:43,080 --> 0:41:45,080
+ men selvfølgelig er det det, de gør. Vi ved jo fra
+
+769
+0:41:45,080 --> 0:41:47,080
+ Snowden-dokumenterne, som jo er, altså,
+
+770
+0:41:47,080 --> 0:41:49,080
+ han er 10 år gammel, vil jeg sige. Det er 10 år siden.
+
+771
+0:41:49,080 --> 0:41:51,080
+ 9 år siden. Så dokumenterne
+
+772
+0:41:51,080 --> 0:41:53,080
+ var ældre end det. Men dengang
+
+773
+0:41:53,080 --> 0:41:55,080
+ gjorde de jo det her.
+
+774
+0:41:55,080 --> 0:41:57,080
+ Det er jo ikke sådan et eller andet med, at så
+
+775
+0:41:57,080 --> 0:41:59,080
+ skal de rende rundt og få en dommerkendelse. De havde bare blivet dem
+
+776
+0:41:59,080 --> 0:42:01,080
+ direkte ned i alle de firmaer, vi snakker om.
+
+777
+0:42:01,080 --> 0:42:03,080
+ Og der var selvfølgelig et eller andet
+
+778
+0:42:05,080 --> 0:42:07,080
+ backlash, lige da de der dokumenter kom ud.
+
+779
+0:42:07,080 --> 0:42:09,080
+ Men, altså, det meste af det, det er jo nok mest til pynt.
+
+780
+0:42:09,080 --> 0:42:11,080
+ Så det vil overraske mig meget,
+
+781
+0:42:11,080 --> 0:42:13,080
+ hvis de ikke stadigvæk har den direkte
+
+782
+0:42:13,080 --> 0:42:15,080
+ adgang til alt, hvad Google ved,
+
+783
+0:42:15,080 --> 0:42:17,080
+ og alt, hvad Microsoft ved, og alt, hvad Facebook ved.
+
+784
+0:42:17,080 --> 0:42:19,080
+ Og
+
+785
+0:42:19,080 --> 0:42:21,080
+ det vi også ved fra nogle af Snowden-dokumenterne, det kommer vi nok ind på
+
+786
+0:42:21,080 --> 0:42:23,080
+ senere, det er jo også, at i det omfang,
+
+787
+0:42:23,080 --> 0:42:25,080
+ hvor de her firmaer ikke har været så tilbøjelige
+
+788
+0:42:25,080 --> 0:42:27,080
+ til at udlevere det hele, så har de jo bare taget det
+
+789
+0:42:27,080 --> 0:42:29,080
+ alligevel. Så er det gået bagvejen.
+
+790
+0:42:29,080 --> 0:42:31,080
+ Og det gør de da selvfølgelig
+
+791
+0:42:31,080 --> 0:42:33,080
+ også stadigvæk, uanset at nogle gange
+
+792
+0:42:33,080 --> 0:42:35,080
+ så bliver der fundet et hul, der bliver lappet.
+
+793
+0:42:35,080 --> 0:42:37,080
+ Så jeg synes bestemt, at
+
+794
+0:42:37,080 --> 0:42:39,080
+ Paul Hennings-teorien lyder
+
+795
+0:42:39,080 --> 0:42:41,080
+ fuldstændig rigtigt, og jeg kan næsten ikke
+
+796
+0:42:41,080 --> 0:42:43,080
+ se, hvad der skulle kunne forklare det bedre.
+
+797
+0:42:43,080 --> 0:42:45,080
+ Altså, fordi den officielle historie,
+
+798
+0:42:45,080 --> 0:42:47,080
+ det er jo åbenlyst bullshit, det kan alle jo se.
+
+799
+0:42:47,080 --> 0:42:49,080
+ Altså, der kan selvfølgelig være en endnu
+
+800
+0:42:49,080 --> 0:42:51,080
+ mere sindssyg... Jamen, det er i virkeligheden for at dække over
+
+801
+0:42:51,080 --> 0:42:53,080
+ børneporn, eller sådan et eller andet, men jeg er ikke sikker på,
+
+802
+0:42:53,080 --> 0:42:55,080
+ at det er det fedeste forsvar at gå med, vel?
+
+803
+0:42:55,080 --> 0:42:57,080
+ Så jeg tror, at Paul Henning har nok
+
+804
+0:42:57,080 --> 0:42:59,080
+ fladt i den lange el, som såvældig.
+
+805
+0:42:59,080 --> 0:43:01,080
+ Henning Mortensen, du sidder og rynker lidt på panden.
+
+806
+0:43:01,080 --> 0:43:03,080
+ Jeg gidsner ikke. Nej.
+
+807
+0:43:03,080 --> 0:43:05,080
+ Men...
+
+808
+0:43:05,080 --> 0:43:07,080
+ I forhold til kontrolleudvalget, så vil jeg
+
+809
+0:43:07,080 --> 0:43:09,080
+ sige, at noget af det,
+
+810
+0:43:09,080 --> 0:43:11,080
+ som jeg synes, at hele den her SE-sag har
+
+811
+0:43:11,080 --> 0:43:13,080
+ ramlet, det er jo grænne
+
+812
+0:43:13,080 --> 0:43:15,080
+ gennemsigtighed. Og jeg kan ikke forstå,
+
+813
+0:43:15,080 --> 0:43:17,080
+ at... Jeg kan grundlæggende
+
+814
+0:43:17,080 --> 0:43:19,080
+ set ikke forstå, at Folketinget ikke vedtager
+
+815
+0:43:19,080 --> 0:43:21,080
+ nogle mere vidtgående regler
+
+816
+0:43:21,080 --> 0:43:23,080
+ i forhold til det tilsyn, der er
+
+817
+0:43:23,080 --> 0:43:25,080
+ med efterretningstjenesterne... Der har vi også
+
+818
+0:43:25,080 --> 0:43:27,080
+ stået. Ja.
+
+819
+0:43:27,080 --> 0:43:29,080
+ Og i forhold til, hvad hedder det,
+
+820
+0:43:29,080 --> 0:43:31,080
+ selve kontrolleudvalget, hvad I får
+
+821
+0:43:31,080 --> 0:43:33,080
+ at vide, og hvad I må sige.
+
+822
+0:43:33,080 --> 0:43:35,080
+ Altså, det er jo helt til grin af en tidligere
+
+823
+0:43:35,080 --> 0:43:37,080
+ forsvarsminister, der siger så lidt, som
+
+824
+0:43:37,080 --> 0:43:39,080
+ han faktisk har sagt, lige pludselig skal
+
+825
+0:43:39,080 --> 0:43:41,080
+ stå og blive anklaget
+
+826
+0:43:41,080 --> 0:43:43,080
+ for landsforræderi.
+
+827
+0:43:43,080 --> 0:43:45,080
+ Og det er jeg glad for at høre i at foreslå det.
+
+828
+0:43:45,080 --> 0:43:47,080
+ Men jeg kan ikke forstå, at der ikke
+
+829
+0:43:47,080 --> 0:43:49,080
+ er et større, altså et flertal
+
+830
+0:43:49,080 --> 0:43:51,080
+ i Folketinget i virkeligheden for at skabe
+
+831
+0:43:51,080 --> 0:43:53,080
+ ja, noget mere
+
+832
+0:43:53,080 --> 0:43:55,080
+ gennemsigtighed. Om ikke andet så i hvert fald
+
+833
+0:43:55,080 --> 0:43:57,080
+ gennemsigtighed til Folketinget,
+
+834
+0:43:57,080 --> 0:43:59,080
+ sådan at vi kunne være sikre på, at
+
+835
+0:43:59,080 --> 0:44:01,080
+ FE og de andre efterretninger, den anden
+
+836
+0:44:01,080 --> 0:44:03,080
+ efterretningstjeneste, faktisk bør underlagt en
+
+837
+0:44:03,080 --> 0:44:05,080
+ tilstrækkelig grad demokratisk kontrol. Det føler jeg mig
+
+838
+0:44:05,080 --> 0:44:07,080
+ ikke ganske sikker på i dag.
+
+839
+0:44:07,080 --> 0:44:09,080
+ Jeg nødvendigvis lige spørger dig der igen, Lisbeth Bækning.
+
+840
+0:44:09,080 --> 0:44:11,080
+ Vi er meget langt fra datacenteret nu.
+
+841
+0:44:11,080 --> 0:44:13,080
+ Nej, vi kommer nærmest ind i
+
+842
+0:44:13,080 --> 0:44:15,080
+ debatnummeret, der kommer om en time
+
+843
+0:44:15,080 --> 0:44:17,080
+ allerede nu. Men indtil videre, så vil jeg virkelig
+
+844
+0:44:17,080 --> 0:44:19,080
+ bare gerne høre, altså en af måderne, man kunne
+
+845
+0:44:19,080 --> 0:44:21,080
+ løse det her på, det var jo netop, hvis man byggede
+
+846
+0:44:21,080 --> 0:44:23,080
+ danske datacenter.
+
+847
+0:44:23,080 --> 0:44:25,080
+ Har det nogen gang på jord, eller hænger vi
+
+848
+0:44:25,080 --> 0:44:27,080
+ på de her store amerikanere her i landet?
+
+849
+0:44:29,080 --> 0:44:31,080
+ Altså jeg oplever egentlig stadigvæk, på trods af,
+
+850
+0:44:31,080 --> 0:44:33,080
+ at der jo er sket noget i debatten de senere
+
+851
+0:44:33,080 --> 0:44:35,080
+ år med, at
+
+852
+0:44:35,080 --> 0:44:37,080
+ Mark Zuckerberg
+
+853
+0:44:37,080 --> 0:44:39,080
+ har været i de her
+
+854
+0:44:39,080 --> 0:44:41,080
+ amerikanske høringer, og at
+
+855
+0:44:41,080 --> 0:44:43,080
+ der er meget mere kritik af
+
+856
+0:44:43,080 --> 0:44:45,080
+ tech-giganterne. Og den regering,
+
+857
+0:44:45,080 --> 0:44:47,080
+ vi har lige nu, er jo også på mange måder
+
+858
+0:44:47,080 --> 0:44:49,080
+ ret kritisk over for dem. Og når jeg sådan nogle gange
+
+859
+0:44:49,080 --> 0:44:51,080
+ påpeger, at det offentlige
+
+860
+0:44:51,080 --> 0:44:53,080
+ i Danmark har
+
+861
+0:44:53,080 --> 0:44:55,080
+ adopteret eller kopieret mange af
+
+862
+0:44:55,080 --> 0:44:57,080
+ de der unødder, og så man burde også kalde sit
+
+863
+0:44:57,080 --> 0:44:59,080
+ blik ind ad på sig selv, i forhold
+
+864
+0:44:59,080 --> 0:45:01,080
+ til, hvad man agerer,
+
+865
+0:45:01,080 --> 0:45:03,080
+ så er der jo, altså der er sket
+
+866
+0:45:03,080 --> 0:45:05,080
+ et skifte i den måde, som mange
+
+867
+0:45:05,080 --> 0:45:07,080
+ ser de her tech-giganter.
+
+868
+0:45:07,080 --> 0:45:09,080
+ Og samtidig, altså sideløbende
+
+869
+0:45:09,080 --> 0:45:11,080
+ med det, så er der jo også den her benovelse
+
+870
+0:45:11,080 --> 0:45:13,080
+ over, hvad de kan, og
+
+871
+0:45:13,080 --> 0:45:15,080
+ hvor store de er, og sådan noget. Det er sådan lidt en
+
+872
+0:45:15,080 --> 0:45:17,080
+ skizofren tilgang til dem.
+
+873
+0:45:17,080 --> 0:45:19,080
+ Og jeg i hvert fald,
+
+874
+0:45:19,080 --> 0:45:21,080
+ altså jeg synes jo, at det her, det er
+
+875
+0:45:21,080 --> 0:45:23,080
+ fuldstændig kritisk infrastruktur,
+
+876
+0:45:23,080 --> 0:45:25,080
+ og det er helt vildt, at der ikke er en
+
+877
+0:45:25,080 --> 0:45:27,080
+ diskussion omkring det.
+
+878
+0:45:27,080 --> 0:45:29,080
+ Altså vi har jo trods alt diskussioner omkring
+
+879
+0:45:29,080 --> 0:45:31,080
+ vores elforsyning,
+
+880
+0:45:31,080 --> 0:45:33,080
+ og vores strømforsyning,
+
+881
+0:45:33,080 --> 0:45:35,080
+ og vores sygehus,
+
+882
+0:45:35,080 --> 0:45:37,080
+ og altså alt muligt, ikke?
+
+883
+0:45:37,080 --> 0:45:39,080
+ Der har vi jo diskussioner om, når vi taler om
+
+884
+0:45:39,080 --> 0:45:41,080
+ kritisk infrastruktur og sådan noget.
+
+885
+0:45:41,080 --> 0:45:43,080
+ Lige det her, det er bare totalt undtaget,
+
+886
+0:45:43,080 --> 0:45:45,080
+ den diskussion.
+
+887
+0:45:45,080 --> 0:45:47,080
+ Tobias, er det kritisk infrastruktur, der er på spil?
+
+888
+0:45:47,080 --> 0:45:49,080
+ Det er det jo i høj grad.
+
+889
+0:45:49,080 --> 0:45:51,080
+ Altså det er da efterhånden endnu mere
+
+890
+0:45:51,080 --> 0:45:53,080
+ kritisk end, nu er det også meget rart
+
+891
+0:45:53,080 --> 0:45:55,080
+ at have vand at drikke og strøm i
+
+892
+0:45:55,080 --> 0:45:57,080
+ stikkontakten og sådan noget, men det er jo på mange
+
+893
+0:45:57,080 --> 0:45:59,080
+ måder endnu mere kritisk, fordi
+
+894
+0:45:59,080 --> 0:46:01,080
+ det er jo mange år, altså de data, vi
+
+895
+0:46:01,080 --> 0:46:03,080
+ mister her, det ved vi jo ikke, hvordan det kommer
+
+896
+0:46:03,080 --> 0:46:05,080
+ til at ramme os i årevis fremover.
+
+897
+0:46:05,080 --> 0:46:07,080
+ En ting er, hvis man ikke kunne drikke
+
+898
+0:46:07,080 --> 0:46:09,080
+ vand i en uge eller et eller andet, så
+
+899
+0:46:09,080 --> 0:46:11,080
+ gør man et eller andet og løser det, men det her,
+
+900
+0:46:11,080 --> 0:46:13,080
+ det har jo nogle helt andre konsekvenser.
+
+901
+0:46:13,080 --> 0:46:15,080
+ Godt løgn selv.
+
+902
+0:46:15,080 --> 0:46:17,080
+ Jeg synes jo lige, vi skal
+
+903
+0:46:17,080 --> 0:46:19,080
+ prøve på at holde ørerne lige i munden, fordi vi er jo
+
+904
+0:46:19,080 --> 0:46:21,080
+ et teknisk kompetent forum her,
+
+905
+0:46:21,080 --> 0:46:23,080
+ altså selve datacenteret er jo
+
+906
+0:46:23,080 --> 0:46:25,080
+ bare en ladefyldt
+
+907
+0:46:25,080 --> 0:46:27,080
+ med computere,
+
+908
+0:46:27,080 --> 0:46:29,080
+ og det er jo sådan set
+
+909
+0:46:29,080 --> 0:46:31,080
+ inderligt ligegyldigt. Spørgsmålet er, hvad fanden
+
+910
+0:46:31,080 --> 0:46:33,080
+ de computere bliver brugt til?
+
+911
+0:46:33,080 --> 0:46:35,080
+ Og det er på det her med, om vi skal bygge danske datacenter,
+
+912
+0:46:35,080 --> 0:46:37,080
+ ja, hvis vi har behov for at køre programmer, der
+
+913
+0:46:37,080 --> 0:46:39,080
+ har brug for computere, så skal vi selvfølgelig have de computere
+
+914
+0:46:39,080 --> 0:46:41,080
+ stående et sted. Men jeg synes faktisk, det er meget
+
+915
+0:46:41,080 --> 0:46:43,080
+ mere relevant at spørge om, hvad det er,
+
+916
+0:46:43,080 --> 0:46:45,080
+ de computere laver, hvad de skal
+
+917
+0:46:45,080 --> 0:46:47,080
+ lave, og hvem der har tilsynet med dem,
+
+918
+0:46:47,080 --> 0:46:49,080
+ og hvem der har ansvaret for det.
+
+919
+0:46:49,080 --> 0:46:51,080
+ Og der synes jeg,
+
+920
+0:46:51,080 --> 0:46:55,080
+ jeg har jo en aktie i noget, der hedder data,
+
+921
+0:46:55,080 --> 0:46:57,080
+ eller aktie, det har jeg ikke, jeg er aktiv
+
+922
+0:46:57,080 --> 0:46:59,080
+ i datamuseum, ikke?
+
+923
+0:46:59,080 --> 0:47:01,080
+ Og der synes jeg jo, der er sket et meget dramatisk
+
+924
+0:47:01,080 --> 0:47:03,080
+ skifte i den offentlige holdning
+
+925
+0:47:03,080 --> 0:47:05,080
+ til EDB.
+
+926
+0:47:05,080 --> 0:47:07,080
+ Hvor man tidligere
+
+927
+0:47:07,080 --> 0:47:09,080
+ helt klart, det var noget, det offentlige
+
+928
+0:47:09,080 --> 0:47:11,080
+ tog sig af, fordi det var så følelser
+
+929
+0:47:11,080 --> 0:47:13,080
+ med oplysning, at de skulle sætte mig ingen steder,
+
+930
+0:47:13,080 --> 0:47:15,080
+ og så videre, ikke? Så er vi nu nærmest nået
+
+931
+0:47:15,080 --> 0:47:17,080
+ til et punkt, hvor selve ideen om, at det
+
+932
+0:47:17,080 --> 0:47:19,080
+ offentlige kan gøre noget selv, er nærmest
+
+933
+0:47:19,080 --> 0:47:21,080
+ øh...
+
+934
+0:47:21,080 --> 0:47:23,080
+ helibrydes.
+
+935
+0:47:23,080 --> 0:47:25,080
+ Altså, det er utænkeligt, at det offentlige selv skal udvikle
+
+936
+0:47:25,080 --> 0:47:27,080
+ EDB.
+
+937
+0:47:27,080 --> 0:47:29,080
+ Det skal selvfølgelig udlicitere sig, SKI og
+
+938
+0:47:29,080 --> 0:47:31,080
+ jeg skal komme efter dig, ikke?
+
+939
+0:47:31,080 --> 0:47:33,080
+ Med det resultat, at vi får det eneste, en katastrofe
+
+940
+0:47:33,080 --> 0:47:35,080
+ efter den anden,
+
+941
+0:47:35,080 --> 0:47:37,080
+ på mere og mere
+
+942
+0:47:37,080 --> 0:47:39,080
+ pinlige måder, vil jeg sige, som
+
+943
+0:47:39,080 --> 0:47:41,080
+ som medlem af IT-branchen,
+
+944
+0:47:41,080 --> 0:47:43,080
+ ikke?
+
+945
+0:47:43,080 --> 0:47:45,080
+ Altså, den seneste midt-idee, hvor de har
+
+946
+0:47:45,080 --> 0:47:47,080
+ sendt mig, ja, nu har vi sendt din dims til dig,
+
+947
+0:47:47,080 --> 0:47:49,080
+ selvom deres system udmærkeligt vidst, de ikke har
+
+948
+0:47:49,080 --> 0:47:51,080
+ dem på lager, de ikke har sendt noget, så sender de alligevel
+
+949
+0:47:51,080 --> 0:47:53,080
+ en e-mail og siger, nu har vi sendt en til dig, ikke?
+
+950
+0:47:53,080 --> 0:47:55,080
+ Og jeg mener, her er vi nede i noget meget
+
+951
+0:47:55,080 --> 0:47:57,080
+ basalt IT, som
+
+952
+0:47:57,080 --> 0:47:59,080
+ som, hvordan fanden kan man gøre det galt, ikke?
+
+953
+0:47:59,080 --> 0:48:01,080
+ Øh, så jeg synes egentlig ikke,
+
+954
+0:48:01,080 --> 0:48:03,080
+ at den diskussion skal handle om, at vi skal bygge danske
+
+955
+0:48:03,080 --> 0:48:05,080
+ datacenter, fordi det kan nemt blive nogle potentien,
+
+956
+0:48:05,080 --> 0:48:07,080
+ vi lærer, hvis ikke vi har nogle programmer at køre på dem.
+
+957
+0:48:07,080 --> 0:48:09,080
+ Men, jeg synes
+
+958
+0:48:09,080 --> 0:48:11,080
+ bestemt, vi skal snakke om, hvad det er for opgaver,
+
+959
+0:48:11,080 --> 0:48:13,080
+ der bliver lagt i hvilke clouds,
+
+960
+0:48:13,080 --> 0:48:15,080
+ om der skal, burde være en egentlig dansk
+
+961
+0:48:15,080 --> 0:48:17,080
+ GovCloud,
+
+962
+0:48:17,080 --> 0:48:19,080
+ som den slags opgaver bliver kørt i.
+
+963
+0:48:19,080 --> 0:48:21,080
+ Og der har vi jo fået statens IT, som
+
+964
+0:48:21,080 --> 0:48:23,080
+ er sådan en
+
+965
+0:48:23,080 --> 0:48:25,080
+ begyndelse til en slags GovCloud, ikke?
+
+966
+0:48:25,080 --> 0:48:27,080
+ Hvor de
+
+967
+0:48:27,080 --> 0:48:29,080
+ sikrer den fysiske sikkerhed og
+
+968
+0:48:29,080 --> 0:48:31,080
+ cybersikkerhed, som det hedder,
+
+969
+0:48:31,080 --> 0:48:33,080
+ omkring de serverer, som
+
+970
+0:48:33,080 --> 0:48:35,080
+ statslige myndigheder så kan leje sig ind på.
+
+971
+0:48:35,080 --> 0:48:37,080
+ Det store problem er, at kommunerne
+
+972
+0:48:37,080 --> 0:48:39,080
+ jo er sejlet helt ud af den del, ikke?
+
+973
+0:48:39,080 --> 0:48:41,080
+ Fordi de solger jo kommunedata.
+
+974
+0:48:41,080 --> 0:48:43,080
+ Så de har ikke en tilsvarende mulighed.
+
+975
+0:48:43,080 --> 0:48:45,080
+ Øh, men jeg synes den der,
+
+976
+0:48:45,080 --> 0:48:47,080
+ den skal drives fra, hvad er det
+
+977
+0:48:47,080 --> 0:48:49,080
+ computerne gør, og så må vi finde ud af, hvor de står
+
+978
+0:48:49,080 --> 0:48:51,080
+ henne bagefter, ikke?
+
+979
+0:48:51,080 --> 0:48:53,080
+ Men danske computer under danske
+
+980
+0:48:53,080 --> 0:48:55,080
+ negler er jo ikke noget dårligt udgangspunkt.
+
+981
+0:48:55,080 --> 0:48:57,080
+ Der var et enkelt spørgsmål herovre fra
+
+982
+0:48:57,080 --> 0:48:59,080
+ Rasmussen Valder herovre, skal vi lige
+
+983
+0:48:59,080 --> 0:49:01,080
+ så kommer en mikrofon ned.
+
+984
+0:49:01,080 --> 0:49:03,080
+ Ja, det er måske
+
+985
+0:49:03,080 --> 0:49:05,080
+ ikke så relevant længere,
+
+986
+0:49:05,080 --> 0:49:07,080
+ men nu blev der spurgt til det her med
+
+987
+0:49:07,080 --> 0:49:09,080
+ et effektivt tilsyn
+
+988
+0:49:09,080 --> 0:49:11,080
+ med efterretningstjenesterne. Og der kan jeg
+
+989
+0:49:11,080 --> 0:49:13,080
+ bidrage med en anekdote
+
+990
+0:49:13,080 --> 0:49:15,080
+ fra en forsvarsordfører fra
+
+991
+0:49:15,080 --> 0:49:17,080
+ Venstrefløjen, uden at nævne navne,
+
+992
+0:49:17,080 --> 0:49:19,080
+ men som siger, jamen de ville gerne have
+
+993
+0:49:19,080 --> 0:49:21,080
+ fyret en forsvarsminister fra Socialdemokratiet
+
+994
+0:49:21,080 --> 0:49:23,080
+ for det. Men de borgerlige
+
+995
+0:49:23,080 --> 0:49:25,080
+ partier sagde, nej, vi vil ikke
+
+996
+0:49:25,080 --> 0:49:27,080
+ stemme for en mistillidsvotum til en
+
+997
+0:49:27,080 --> 0:49:29,080
+ socialdemokratisk minister på baggrund af det.
+
+998
+0:49:29,080 --> 0:49:31,080
+ Vi vil i stedet for sige, at
+
+999
+0:49:31,080 --> 0:49:33,080
+ det overhovedet var et problem, at tilsynet
+
+1000
+0:49:33,080 --> 0:49:35,080
+ har ytringsfrihed til at gå ud og sige, at der er problemer.
+
+1001
+0:49:37,080 --> 0:49:39,080
+ Så
+
+1002
+0:49:39,080 --> 0:49:41,080
+ det er lidt der, vi ligger, at vi kan godt
+
+1003
+0:49:41,080 --> 0:49:43,080
+ prøve at få de borgerlige med på nogle ting,
+
+1004
+0:49:43,080 --> 0:49:45,080
+ men gør da ikke bare Christiansborg
+
+1005
+0:49:45,080 --> 0:49:47,080
+ fneder i den, Lisbeth? Hvorfor er det, at vi ikke ser
+
+1006
+0:49:47,080 --> 0:49:49,080
+ det, som man ser i andre lande med, at så går I ud,
+
+1007
+0:49:49,080 --> 0:49:51,080
+ så stiller I et mistillidsvotum og taber,
+
+1008
+0:49:51,080 --> 0:49:53,080
+ men så har vi hørt, at det er sket.
+
+1009
+0:49:53,080 --> 0:49:55,080
+ Hvorfor skal det hele handles af internt
+
+1010
+0:49:55,080 --> 0:49:57,080
+ først? Kan I vise nogle tænder
+
+1011
+0:49:57,080 --> 0:49:59,080
+ lidt oftere?
+
+1012
+0:49:59,080 --> 0:50:01,080
+ Jeg ved da om et mere aktivistisk folketing
+
+1013
+0:50:01,080 --> 0:50:03,080
+ i virkeligheden, hvor du godt kunne tænke dig
+
+1014
+0:50:03,080 --> 0:50:05,080
+ et mere aktivistisk statisk tilsyn, så kunne
+
+1015
+0:50:05,080 --> 0:50:07,080
+ Malve godt tænke sig et mere aktivistisk
+
+1016
+0:50:07,080 --> 0:50:09,080
+ folketing. Men jeg skal lige sige her,
+
+1017
+0:50:09,080 --> 0:50:11,080
+ der er ikke så lang tid tilbage. Jeg kan høre,
+
+1018
+0:50:11,080 --> 0:50:13,080
+ at der er garanteret nogle flere, der vil spørge om noget.
+
+1019
+0:50:13,080 --> 0:50:15,080
+ Eller sidder en derovre?
+
+1020
+0:50:17,080 --> 0:50:19,080
+ En ting er det der med afspørgelser
+
+1021
+0:50:19,080 --> 0:50:21,080
+ og sådan noget. En anden ting er også det med
+
+1022
+0:50:21,080 --> 0:50:23,080
+ hvilken vej altså faktisk,
+
+1023
+0:50:23,080 --> 0:50:25,080
+ at dataene går.
+
+1024
+0:50:25,080 --> 0:50:27,080
+ Fordi det kan godt være, at Google har et datacenter
+
+1025
+0:50:27,080 --> 0:50:29,080
+ i Danmark, men de har ikke
+
+1026
+0:50:29,080 --> 0:50:31,080
+ nogle data,
+
+1027
+0:50:31,080 --> 0:50:33,080
+ der går direkte fra
+
+1028
+0:50:33,080 --> 0:50:35,080
+ dansk internetforbrugere til deres datacenter i Danmark.
+
+1029
+0:50:35,080 --> 0:50:37,080
+ Det går ned over Amsterdam,
+
+1030
+0:50:37,080 --> 0:50:39,080
+ eller Hamburg, eller andre steder.
+
+1031
+0:50:41,080 --> 0:50:43,080
+ Det er, hvad der sker,
+
+1032
+0:50:43,080 --> 0:50:45,080
+ når man siger noget grimt om luft.
+
+1033
+0:50:45,080 --> 0:50:47,080
+ Jeg tror, der er noget
+
+1034
+0:50:47,080 --> 0:50:49,080
+ F-35 i gang der, eller noget F-16.
+
+1035
+0:50:49,080 --> 0:50:51,080
+ Kan vi få... Jeg kan jo ikke lige sige, det er
+
+1036
+0:50:51,080 --> 0:50:53,080
+ en... Ja, vi kunne dårligt høre det her.
+
+1037
+0:50:53,080 --> 0:50:55,080
+ Du må også sige det lidt højere.
+
+1038
+0:50:55,080 --> 0:50:57,080
+ Ja, men det var mere det med, at
+
+1039
+0:50:57,080 --> 0:50:59,080
+ en ting er de arbejdspladser,
+
+1040
+0:50:59,080 --> 0:51:01,080
+ der er og sådan noget, men ideen om, at
+
+1041
+0:51:01,080 --> 0:51:03,080
+ bare fordi der er datacenter i Danmark,
+
+1042
+0:51:03,080 --> 0:51:05,080
+ så er det også det, der bliver brugt af danskere i Danmark.
+
+1043
+0:51:05,080 --> 0:51:07,080
+ Sådan er det ikke nødvendigvis.
+
+1044
+0:51:09,080 --> 0:51:11,080
+ Facebook og Apple
+
+1045
+0:51:11,080 --> 0:51:13,080
+ har godt nok
+
+1046
+0:51:13,080 --> 0:51:15,080
+ udvekslinger med danske internetudbydere
+
+1047
+0:51:15,080 --> 0:51:17,080
+ i Danmark, men
+
+1048
+0:51:17,080 --> 0:51:19,080
+ Google for eksempel, der er her tæt på
+
+1049
+0:51:19,080 --> 0:51:21,080
+ i Fredericia,
+
+1050
+0:51:21,080 --> 0:51:23,080
+ de har godt nok indvidet deres datacenter,
+
+1051
+0:51:23,080 --> 0:51:25,080
+ men de er ikke til stede i Danmark
+
+1052
+0:51:25,080 --> 0:51:27,080
+ til at lave udvekslinger med
+
+1053
+0:51:27,080 --> 0:51:29,080
+ internetudbyderne. Så al trafik
+
+1054
+0:51:29,080 --> 0:51:31,080
+ går ned over Hamburg som den nærmeste,
+
+1055
+0:51:31,080 --> 0:51:33,080
+ men ellers Stockholm
+
+1056
+0:51:33,080 --> 0:51:35,080
+ eller Amsterdam.
+
+1057
+0:51:35,080 --> 0:51:37,080
+ Så dataerne
+
+1058
+0:51:37,080 --> 0:51:39,080
+ er ikke tættere på,
+
+1059
+0:51:39,080 --> 0:51:41,080
+ reklamerne låter ikke hurtigere,
+
+1060
+0:51:41,080 --> 0:51:43,080
+ det har man ikke valgt at gøre endnu.
+
+1061
+0:51:43,080 --> 0:51:45,080
+ Så det er jo sådan en ting,
+
+1062
+0:51:45,080 --> 0:51:47,080
+ som man også, udover at forhandle
+
+1063
+0:51:47,080 --> 0:51:49,080
+ om arbejdspladser, så kan man jo også stille sig nogle
+
+1064
+0:51:49,080 --> 0:51:51,080
+ krav om, at de faktisk
+
+1065
+0:51:51,080 --> 0:51:53,080
+ prøver på at holde tingene lokalt.
+
+1066
+0:51:53,080 --> 0:51:55,080
+ Altså det
+
+1067
+0:51:55,080 --> 0:51:57,080
+ ligner aktuelt den der, der hænger det altså sammen,
+
+1068
+0:51:57,080 --> 0:51:59,080
+ men hvis du kigger på størrelsen af det datacenter
+
+1069
+0:51:59,080 --> 0:52:01,080
+ i Fredericia, så kan det jo godt være,
+
+1070
+0:52:01,080 --> 0:52:03,080
+ at Danmark fylder et eller to rak i et hjørne
+
+1071
+0:52:03,080 --> 0:52:05,080
+ af det. Men det
+
+1072
+0:52:05,080 --> 0:52:07,080
+ servicerer jo altså reelt set hele Nordeuropa
+
+1073
+0:52:07,080 --> 0:52:09,080
+ og Skandinavien.
+
+1074
+0:52:09,080 --> 0:52:11,080
+ Så
+
+1075
+0:52:11,080 --> 0:52:13,080
+ så kan man jo så
+
+1076
+0:52:13,080 --> 0:52:15,080
+ vente, når man siger, hvorfor skal tyskerne være tilfredse med,
+
+1077
+0:52:15,080 --> 0:52:17,080
+ at Google har tyske data liggende i Danmark
+
+1078
+0:52:17,080 --> 0:52:19,080
+ i stedet for,
+
+1079
+0:52:19,080 --> 0:52:21,080
+ ikke?
+
+1080
+0:52:21,080 --> 0:52:23,080
+ Men grundlæggende set handler det om
+
+1081
+0:52:23,080 --> 0:52:25,080
+ igen speed of light
+
+1082
+0:52:25,080 --> 0:52:27,080
+ for at kunne levere
+
+1083
+0:52:27,080 --> 0:52:29,080
+ reklamer hurtigere i Nordeuropa. Det er derfor,
+
+1084
+0:52:29,080 --> 0:52:31,080
+ de ligger i foradvendelse.
+
+1085
+0:52:31,080 --> 0:52:33,080
+ Er der flere spørgsmål?
+
+1086
+0:52:37,080 --> 0:52:39,080
+ Der var stille.
+
+1087
+0:52:39,080 --> 0:52:41,080
+ Så vil jeg gerne sige rigtig mange tak til
+
+1088
+0:52:41,080 --> 0:52:43,080
+ panelen her, som bestrød af Lisbeth Bæk-Nielsen,
+
+1089
+0:52:43,080 --> 0:52:45,080
+ som er medlem af Folketinget for SF
+
+1090
+0:52:45,080 --> 0:52:47,080
+ og du er også IT-ordfører,
+
+1091
+0:52:47,080 --> 0:52:49,080
+ hvis jeg ikke husker helt forkert.
+
+1092
+0:52:49,080 --> 0:52:51,080
+ Og Jesper Kamm, som er debattør,
+
+1093
+0:52:51,080 --> 0:52:53,080
+ Peter Kofod som aktivist
+
+1094
+0:52:53,080 --> 0:52:55,080
+ og Tobias Volksmark fra CB4
+
+1095
+0:52:55,080 --> 0:52:57,080
+ og Henning Mortensen, som er formanden for
+
+1096
+0:52:57,080 --> 0:52:59,080
+ Råd for Digital Sikkerhed.
+
+1097
+0:52:59,080 --> 0:53:01,080
+ Applaus
+
+1098
+0:53:01,080 --> 0:53:03,080
+ Og Anders Kjøl.
+
+1099
+0:53:03,080 --> 0:53:05,080
+ Applaus

@@ -1,0 +1,2543 @@
+# Transcribed 2023-11-12T18 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:02,000
+ I
+
+2
+0:00:14,320 --> 0:00:16,880
+ Would like to welcome our next speaker
+
+3
+0:00:17,700 --> 0:00:21,900
+ This is Paul Henning camp who is going to give us a talk about
+
+4
+0:00:22,640 --> 0:00:27,180
+ Surveillance too cheap to meter. Please give Paul Henning a big hand
+
+5
+0:00:30,000 --> 0:00:32,000
+ Thank you
+
+6
+0:00:33,120 --> 0:00:35,560
+ So how many here do not understand Danish
+
+7
+0:00:37,620 --> 0:00:39,620
+ Okay, we'll do it in English
+
+8
+0:00:40,080 --> 0:00:43,100
+ Some of the illustrations will be in Danish, but I'll explain what the show
+
+9
+0:00:44,580 --> 0:00:45,980
+ so
+
+10
+0:00:45,980 --> 0:00:49,520
+ Many years ago. We had a lot of fun about this t-shirt
+
+11
+0:00:52,360 --> 0:00:57,080
+ And since then we realized that this may actually be correct
+
+12
+0:01:00,000 --> 0:01:05,920
+ And we talked a lot about the political layer, but this year I want to look at their financial layer
+
+13
+0:01:06,720 --> 0:01:12,620
+ Because we generally tend to ignore that and I think it's incredibly important for the surveillance
+
+14
+0:01:13,440 --> 0:01:14,820
+ situation
+
+15
+0:01:14,820 --> 0:01:18,340
+ So I'm going to rewind very very far back
+
+16
+0:01:19,560 --> 0:01:20,880
+ in
+
+17
+0:01:20,880 --> 0:01:24,680
+ 1954 the chairman for the US Atomic Energy Commission
+
+18
+0:01:25,760 --> 0:01:29,620
+ gives a speech for the National Association of Science writers
+
+19
+0:01:30,000 --> 0:01:31,620
+ and
+
+20
+0:01:31,620 --> 0:01:33,620
+ one of the things he says is that
+
+21
+0:01:34,940 --> 0:01:39,780
+ We will probably soon have electrical energy too cheap to meter
+
+22
+0:01:43,820 --> 0:01:46,240
+ That has become a problem for the atomic energy
+
+23
+0:01:49,460 --> 0:01:51,460
+ Business ever since
+
+24
+0:01:51,920 --> 0:01:57,960
+ People have been rubbing their nose in this statement. This is from the US Nuclear Regulation Agency
+
+25
+0:01:58,240 --> 0:01:59,840
+ they have a
+
+26
+0:01:59,840 --> 0:02:03,900
+ Frequently asked question to try to explain this thing
+
+27
+0:02:05,700 --> 0:02:09,420
+ But he actually has a very precise and very good point
+
+28
+0:02:10,980 --> 0:02:15,080
+ This is a cut from the Danish newspaper The Engineer from 1959
+
+29
+0:02:15,960 --> 0:02:19,380
+ containing statistics about the Danish grid in
+
+30
+0:02:20,900 --> 0:02:22,900
+ 1958-59
+
+31
+0:02:25,320 --> 0:02:28,420
+ They're seeing growth of 7% per year
+
+32
+0:02:29,840 --> 0:02:38,620
+ But only a doubling over the last 10 year though, but if you take those numbers and you look out and say what will a
+
+33
+0:02:39,120 --> 0:02:43,800
+ normal house use of electricity in 2020 you get a number between
+
+34
+0:02:44,440 --> 0:02:45,740
+ 45
+
+35
+0:02:45,740 --> 0:02:51,900
+ Megawatt hours and 2.6. Megawatt hours. The reality is only 1.5
+
+36
+0:02:54,760 --> 0:02:59,320
+ But if you were in the business of producing and selling electricity at that point
+
+37
+0:03:00,440 --> 0:03:02,440
+ This scared the shit out of you
+
+38
+0:03:04,500 --> 0:03:06,620
+ They looked at growth curves like this
+
+39
+0:03:07,620 --> 0:03:14,700
+ This is a semi-locked scale. The y-axis is logarithmic. This is like, you know, COVID-19
+
+40
+0:03:16,280 --> 0:03:18,280
+ Exponential functions
+
+41
+0:03:20,960 --> 0:03:24,400
+ They also knew that the oil reserves were finite
+
+42
+0:03:25,400 --> 0:03:29,540
+ There might be oil we haven't found yet, but at some point we'll have used all the oil
+
+43
+0:03:29,840 --> 0:03:34,780
+ And if you look at a finite resource and exponential growth, it runs out really fast
+
+44
+0:03:36,520 --> 0:03:42,040
+ So at this point the only technology available to them that would be able
+
+45
+0:03:44,240 --> 0:03:48,100
+ To follow that curve, however far it would go would be nuclear power
+
+46
+0:03:49,280 --> 0:03:51,700
+ It was the only energy that had sufficient density
+
+47
+0:03:52,600 --> 0:03:57,520
+ That we wouldn't have to put down a coal-fired plant in every town throughout the West
+
+48
+0:03:58,460 --> 0:04:00,460
+ So it was more or less
+
+49
+0:04:01,740 --> 0:04:10,400
+ Totally assumed, given, beyond dispute that we will be building nuclear power plants because it's the only way to continue the curve
+
+50
+0:04:10,860 --> 0:04:12,800
+ this is a
+
+51
+0:04:12,800 --> 0:04:15,520
+ big spread from same engineers newspaper from
+
+52
+0:04:15,860 --> 0:04:20,140
+ 1966 where they say that they're starting to save up the money now to build the first plant in
+
+53
+0:04:20,480 --> 0:04:22,480
+ 1975 and it's not
+
+54
+0:04:22,740 --> 0:04:27,440
+ It's not if they will it's when they will with an option of building it
+
+55
+0:04:27,440 --> 0:04:29,440
+ A little bit earlier, maybe
+
+56
+0:04:30,040 --> 0:04:35,400
+ There's no I mean yeah, there's some problems we need to deal with but there's absolutely no
+
+57
+0:04:35,980 --> 0:04:41,440
+ Public debate at this point nuclear power is going to happen and that's going to happen and that's just going to happen
+
+58
+0:04:41,620 --> 0:04:43,620
+ There's no choice
+
+59
+0:04:45,360 --> 0:04:48,740
+ But nuclear power has a big problem you can't regulate it
+
+60
+0:04:50,080 --> 0:04:56,920
+ The curve you have on your left side here is the Danish electricity use over a day in December in
+
+61
+0:04:57,640 --> 0:04:59,640
+ 1961 and
+
+62
+0:04:59,640 --> 0:05:05,400
+ We have a very big peak in the morning and in the afternoon and it during lunch everybody
+
+63
+0:05:06,640 --> 0:05:08,640
+ cools down or something
+
+64
+0:05:09,220 --> 0:05:11,100
+ at this point
+
+65
+0:05:11,100 --> 0:05:13,940
+ moving major users of electricity was
+
+66
+0:05:14,420 --> 0:05:19,360
+ Unthinkable, we're back in thehsts everybody go on summer vacation in the same three weeks
+
+67
+0:05:22,020 --> 0:05:25,020
+ The problem is you can't regulate a nuclear reactor
+
+68
+0:05:25,700 --> 0:05:26,800
+ its physics
+
+69
+0:05:26,800 --> 0:05:28,920
+ It's not something you get to debate.
+
+70
+0:05:28,920 --> 0:05:34,440
+ The top curve shows the regulatory domain in Belgium today.
+
+71
+0:05:34,440 --> 0:05:41,580
+ You can regulate a nuclear reactor 25% down for less than six hours, but then it has to
+
+72
+0:05:41,580 --> 0:05:46,420
+ run continuously for three days at full power again before you're allowed to regulate it
+
+73
+0:05:46,420 --> 0:05:48,000
+ down again.
+
+74
+0:05:48,000 --> 0:05:52,220
+ And this is simply a matter of neutronics in the kernel.
+
+75
+0:05:52,220 --> 0:05:57,740
+ The fundamental problem is that a nuclear reactor is a cylindrical device.
+
+76
+0:05:57,740 --> 0:06:03,840
+ You have fuel rods going vertically down through it, but the nuclear reaction is a spherical
+
+77
+0:06:03,840 --> 0:06:11,040
+ phenomena and the more power you have, you generate, the larger the sphere.
+
+78
+0:06:11,040 --> 0:06:15,700
+ And that means if you, when you cut it, when you reduce the power production, you reduce
+
+79
+0:06:15,700 --> 0:06:21,320
+ the radius of the square in the middle where you have sufficient neutronic density and
+
+80
+0:06:21,320 --> 0:06:22,200
+ it gives all sorts of problems.
+
+81
+0:06:22,200 --> 0:06:31,440
+ Both in terms of fusion results that eat neutrons, but also in terms of burning up spent fuel
+
+82
+0:06:31,440 --> 0:06:32,440
+ and so on.
+
+83
+0:06:32,440 --> 0:06:37,440
+ The bottom one, I'm not going to try to explain it, but it's basically regulating a nuclear
+
+84
+0:06:37,440 --> 0:06:42,080
+ reactor is like sailing a supertanker in a very narrow strait.
+
+85
+0:06:42,080 --> 0:06:46,880
+ Or maybe I should say containers, Shiva and Suez Canal.
+
+86
+0:06:46,880 --> 0:06:48,940
+ You really don't want to try to wiggle around.
+
+87
+0:06:48,940 --> 0:06:51,720
+ The small gray area here at the top is the normal fuel.
+
+88
+0:06:51,720 --> 0:06:54,160
+ It's a normal frequency control area.
+
+89
+0:06:54,160 --> 0:07:00,640
+ That's where you can run your nuclear reactor without any questions under normal circumstances.
+
+90
+0:07:00,640 --> 0:07:03,540
+ So the question is, what do we do about all this electricity?
+
+91
+0:07:03,540 --> 0:07:07,000
+ We'll have the nuclear reactors running up here and then we'll have a couple of peak
+
+92
+0:07:07,000 --> 0:07:09,040
+ plants we'll use for the peaks.
+
+93
+0:07:09,040 --> 0:07:13,180
+ But then we have all this electricity, what are we going to do with it?
+
+94
+0:07:13,180 --> 0:07:19,960
+ I mean, we can stop the turbine and just have the heat go out into the air, into the water,
+
+95
+0:07:19,960 --> 0:07:20,960
+ whatever.
+
+96
+0:07:20,960 --> 0:07:24,580
+ If we let the turbine run, that's actually better for it, running constantly also.
+
+97
+0:07:24,580 --> 0:07:29,140
+ So we have all this electricity.
+
+98
+0:07:29,140 --> 0:07:35,620
+ So we have a situation, an economic outlook, where we will have power production that way
+
+99
+0:07:35,620 --> 0:07:44,440
+ overshoots the average demand.
+
+100
+0:07:44,440 --> 0:07:50,040
+ Too cheap to meter comes in because power meters are actually expensive.
+
+101
+0:07:50,040 --> 0:07:50,440
+ You have to buy them.
+
+102
+0:07:50,960 --> 0:07:53,460
+ You have to install them.
+
+103
+0:07:53,460 --> 0:07:55,280
+ You have to read them.
+
+104
+0:07:55,280 --> 0:07:56,980
+ You have to do the bookkeeping.
+
+105
+0:07:56,980 --> 0:07:59,960
+ You have to handle the people who don't pay their bills.
+
+106
+0:07:59,960 --> 0:08:03,340
+ You have to do statistical tests that they're still precise.
+
+107
+0:08:03,340 --> 0:08:06,080
+ You have to calibrate them and so on.
+
+108
+0:08:06,080 --> 0:08:08,780
+ It's actually a big business.
+
+109
+0:08:08,780 --> 0:08:15,480
+ This is what bookkeeping looked like in the 1960s when we were looking at this.
+
+110
+0:08:15,480 --> 0:08:20,440
+ Remember this is, computers are starting to get into it.
+
+111
+0:08:20,440 --> 0:08:25,440
+ But it's very attractive to think things like, maybe if we remove the variable element
+
+112
+0:08:25,440 --> 0:08:30,020
+ of people's electrical bill.
+
+113
+0:08:30,020 --> 0:08:34,800
+ We don't have to do, we'll have four different kinds of electricity bills.
+
+114
+0:08:34,800 --> 0:08:38,440
+ If you have one phase, if you have three phases, if you have a big fuse, if you have an even
+
+115
+0:08:38,440 --> 0:08:39,440
+ bigger fuse.
+
+116
+0:08:39,440 --> 0:08:40,440
+ Right?
+
+117
+0:08:40,440 --> 0:08:41,440
+ We can have them pre-printed.
+
+118
+0:08:41,440 --> 0:08:45,320
+ We just need to stamp the name and address and send them out.
+
+119
+0:08:45,320 --> 0:08:47,100
+ It's much simpler.
+
+120
+0:08:47,100 --> 0:08:49,440
+ We don't have to have people go out and read the meters.
+
+121
+0:08:49,440 --> 0:08:50,440
+ Right?
+
+122
+0:08:50,440 --> 0:08:56,720
+ We don't need to care about the calibration because there's no meter.
+
+123
+0:08:56,720 --> 0:09:07,780
+ You'll be limited by the fuse, the top fuse going into your house, end of story.
+
+124
+0:09:07,780 --> 0:09:17,600
+ So the place where this comes from is that we'll have these enormous fixed costs and
+
+125
+0:09:17,600 --> 0:09:19,440
+ the variable cost will be marginal.
+
+126
+0:09:19,440 --> 0:09:25,720
+ So there's no point in spending money metering the variable part.
+
+127
+0:09:25,720 --> 0:09:29,380
+ Transpires, things didn't go that bad.
+
+128
+0:09:29,380 --> 0:09:36,200
+ The curve kind of leveled off and we got taught an idea about oil back in 1973 and we've never
+
+129
+0:09:36,200 --> 0:09:37,900
+ forgotten that again.
+
+130
+0:09:37,900 --> 0:09:44,360
+ We never made ourselves dependent on fossil fuels from unstable regimes ever since.
+
+131
+0:09:44,360 --> 0:09:46,440
+ Not a problem.
+
+132
+0:09:46,440 --> 0:09:47,560
+ Solved.
+
+133
+0:09:47,560 --> 0:09:48,680
+ Um.
+
+134
+0:09:48,680 --> 0:09:53,440
+ And the idea that we could ditch the electricity meter was not something he was alone about.
+
+135
+0:09:53,440 --> 0:09:58,000
+ This is an editorial from the same paper again.
+
+136
+0:09:58,000 --> 0:10:07,620
+ Throw out these, just waste of money and administrative overhead, right?
+
+137
+0:10:07,620 --> 0:10:12,280
+ This was literally how the electricity business thought at this time.
+
+138
+0:10:12,280 --> 0:10:15,960
+ So back to the future.
+
+139
+0:10:15,960 --> 0:10:16,960
+ So today the major fight on the Internet.
+
+140
+0:10:16,960 --> 0:10:17,960
+ The major fight on the Internet.
+
+141
+0:10:17,960 --> 0:10:23,780
+ The major fight on the Internet is for lower latency.
+
+142
+0:10:23,780 --> 0:10:27,320
+ The first thing that happens whenever you go anywhere with a mobile phone is a DNS look
+
+143
+0:10:27,320 --> 0:10:29,960
+ up.
+
+144
+0:10:29,960 --> 0:10:35,340
+ And since DNS is very useful in tracking people, all the DNS records have very low TTLs.
+
+145
+0:10:35,340 --> 0:10:38,100
+ They're not cacheable for very long.
+
+146
+0:10:38,100 --> 0:10:44,560
+ In the ultimate case, you have one big company that basically has no TTL on the DNS records.
+
+147
+0:10:44,560 --> 0:10:47,840
+ And then they fuck up the DNS server so nobody can reach them.
+
+148
+0:10:47,840 --> 0:10:51,820
+ And it transpires their own systems cannot reach the DNS server either.
+
+149
+0:10:51,820 --> 0:10:57,440
+ And since they have everything probably done on computers, they end up having to drive
+
+150
+0:10:57,440 --> 0:11:02,960
+ three high-level managers down to a data center in the South Bay so that one of them can say
+
+151
+0:11:02,960 --> 0:11:06,720
+ to the guard, which is his responsibility, that the next one is okay, and the next one
+
+152
+0:11:06,720 --> 0:11:10,220
+ can say the third one is okay, and he can say this guy is allowed to go in and muck
+
+153
+0:11:10,220 --> 0:11:12,220
+ with that router.
+
+154
+0:11:12,220 --> 0:11:15,840
+ And I'm told it was not going any faster because somebody called, I don't know, Mark or something.
+
+155
+0:11:15,840 --> 0:11:16,840
+ I don't know.
+
+156
+0:11:16,840 --> 0:11:17,840
+ I don't know.
+
+157
+0:11:17,840 --> 0:11:18,840
+ I don't know, Mark or something.
+
+158
+0:11:18,840 --> 0:11:22,400
+ Kept calling everybody on the phone and yelling at them something about owning the company
+
+159
+0:11:22,400 --> 0:11:24,680
+ and stuff, but nobody knew the phone number.
+
+160
+0:11:24,680 --> 0:11:29,920
+ So, and I mean anybody can say that, right?
+
+161
+0:11:29,920 --> 0:11:37,460
+ But, they have larger TTLs now, by the way.
+
+162
+0:11:37,460 --> 0:11:44,400
+ The primary argument for HTTP 2 is to reuse the TCP connection we already have open so
+
+163
+0:11:44,400 --> 0:11:47,840
+ that we don't have to have the three-way handshake before we get the first contact.
+
+164
+0:11:47,840 --> 0:11:55,060
+ The primary argument for HTTP3 is we have a persistent session, so that even if our
+
+165
+0:11:55,060 --> 0:11:59,820
+ mobile phone moves somewhere else, get a new IP number, we can get the first request with
+
+166
+0:11:59,820 --> 0:12:03,000
+ a single packet to reduce the latency.
+
+167
+0:12:03,000 --> 0:12:07,420
+ It's all about getting the latency down.
+
+168
+0:12:07,420 --> 0:12:10,060
+ So why is that priority number one?
+
+169
+0:12:10,060 --> 0:12:16,720
+ Because when you go into any well-monetized website, it throws around 50 to 100 HTTP requests
+
+170
+0:12:16,720 --> 0:12:19,180
+ out.
+
+171
+0:12:19,180 --> 0:12:26,060
+ Targeted advertising, the actual content may come at some point, third-party content, social
+
+172
+0:12:26,060 --> 0:12:31,220
+ media tie-ins, analytics engagement, all this crap.
+
+173
+0:12:31,220 --> 0:12:32,460
+ This is an example of it.
+
+174
+0:12:32,460 --> 0:12:38,160
+ Some of it is in red because I run no script on my browser, so they don't get to start
+
+175
+0:12:38,160 --> 0:12:42,160
+ the entire cascade.
+
+176
+0:12:42,160 --> 0:12:46,720
+ Targeted advertising is a major part of this because to do targeted advertising, you have
+
+177
+0:12:46,720 --> 0:12:49,560
+ to ask who wants to advertise here.
+
+178
+0:12:49,560 --> 0:12:57,140
+ When you go into websites, there's an online, real-time auction going on about your attention.
+
+179
+0:12:57,140 --> 0:13:09,100
+ It's run by Google and Facebook, but below them is an ecosystem of a couple of hundred
+
+180
+0:13:09,100 --> 0:13:16,220
+ brokers who will bid in these real-time, very rapid auctions and say, oh, I have an advertisement,
+
+181
+0:13:16,220 --> 0:13:20,620
+ I want to show this user, and so on.
+
+182
+0:13:20,620 --> 0:13:25,840
+ Some of these brokers never win to show any advertising, which is kind of a funny thing.
+
+183
+0:13:25,840 --> 0:13:33,480
+ They're just, you know, listening in on the traffic.
+
+184
+0:13:33,480 --> 0:13:38,220
+ And this is basically why the mobile experience sucks.
+
+185
+0:13:38,220 --> 0:13:42,800
+ All the crap they have to do to do the advertising on top of it.
+
+186
+0:13:42,800 --> 0:13:45,440
+ But everybody blames their telco.
+
+187
+0:13:45,440 --> 0:13:53,260
+ Not entirely unfairly, I would say, but the soggy experience is mainly blamed on telcos.
+
+188
+0:13:53,260 --> 0:13:57,880
+ So telcos roll out a new network, 5G network, to improve things.
+
+189
+0:13:57,880 --> 0:14:01,320
+ And this is their number one priority.
+
+190
+0:14:01,320 --> 0:14:06,620
+ The fight for 5G, shorter response time, bigger bandwidth.
+
+191
+0:14:06,620 --> 0:14:08,320
+ But the shorter response time is the big one.
+
+192
+0:14:08,320 --> 0:14:14,840
+ The bandwidth is sort of a secondary thing, really.
+
+193
+0:14:14,840 --> 0:14:17,740
+ And it's not been a secret.
+
+194
+0:14:17,740 --> 0:14:22,900
+ 5G were ready as far as everybody thought, until somebody came and said, we have to get
+
+195
+0:14:22,900 --> 0:14:25,480
+ these latencies down.
+
+196
+0:14:25,480 --> 0:14:30,120
+ That delayed 5G for about three years, the standardization process.
+
+197
+0:14:30,120 --> 0:14:36,320
+ Getting latency down, getting latency down, getting latency down.
+
+198
+0:14:36,320 --> 0:14:39,920
+ When you want a higher bandwidth, you need to use a higher radio frequency.
+
+199
+0:14:39,920 --> 0:14:42,300
+ That means you have a shorter reach.
+
+200
+0:14:42,300 --> 0:14:44,660
+ When we had the NMT, the first mobile telephone network.
+
+201
+0:14:44,660 --> 0:14:47,980
+ Well, the second mobile telephone network in Denmark.
+
+202
+0:14:47,980 --> 0:14:51,680
+ We had 28 base stations for all of Denmark.
+
+203
+0:14:51,680 --> 0:14:53,260
+ That was all it took.
+
+204
+0:14:53,260 --> 0:14:56,640
+ And you recovered sailing all the way to Sweden, too.
+
+205
+0:14:56,640 --> 0:15:02,760
+ Then we got GSM, which under normal circumstances is limited to 35 kilometers.
+
+206
+0:15:02,760 --> 0:15:06,860
+ You can do a trick with dual time slots, so you can double that, but then only have half
+
+207
+0:15:06,860 --> 0:15:09,600
+ as many handsets and stuff.
+
+208
+0:15:09,600 --> 0:15:12,760
+ LTE reduced it to 10 kilometers.
+
+209
+0:15:12,760 --> 0:15:14,080
+ 5G.
+
+210
+0:15:14,080 --> 0:15:22,680
+ In many instances, reduces it to 100 meters in high population areas.
+
+211
+0:15:22,680 --> 0:15:28,500
+ This also means now they know where you are equally precisely.
+
+212
+0:15:28,500 --> 0:15:34,260
+ With GSM and LTE, they're new within 100 meters, a radius of 100 meters on certainty, circular
+
+213
+0:15:34,260 --> 0:15:35,940
+ error probability.
+
+214
+0:15:35,940 --> 0:15:41,540
+ With 5G, they will know where you are within a few meters.
+
+215
+0:15:41,540 --> 0:15:44,080
+ This means they will know what ice cream shop you are.
+
+216
+0:15:44,080 --> 0:15:46,640
+ They will know where you went into, if there are two.
+
+217
+0:15:46,640 --> 0:15:55,120
+ They can tell whether you went to Burger King or McDonald's, even when they're next door.
+
+218
+0:15:55,120 --> 0:15:56,600
+ But this is purely a side effect.
+
+219
+0:15:56,600 --> 0:15:58,420
+ That's not why they built the network.
+
+220
+0:15:58,420 --> 0:16:03,780
+ But it comes out of building the network.
+
+221
+0:16:03,780 --> 0:16:10,520
+ And these data pours out of the network constantly, because the network needs these informations
+
+222
+0:16:10,520 --> 0:16:11,520
+ to work.
+
+223
+0:16:11,520 --> 0:16:12,680
+ You cannot get the 5G network to move.
+
+224
+0:16:12,680 --> 0:16:13,680
+ You cannot get the 5G network to move.
+
+225
+0:16:13,680 --> 0:16:13,920
+ You cannot get the 5G network to move.
+
+226
+0:16:13,920 --> 0:16:14,040
+ You cannot get the 5G network to move.
+
+227
+0:16:14,040 --> 0:16:19,320
+ You cannot move the data if it doesn't know where you are, which antennas and so on.
+
+228
+0:16:19,320 --> 0:16:30,200
+ And historically, telcos have been data dependent.
+
+229
+0:16:30,200 --> 0:16:35,880
+ They were almost paranoid about call data records, because they would have to go to
+
+230
+0:16:35,880 --> 0:16:41,700
+ court with customers who said, I never called this number of this sex line you claim I called.
+
+231
+0:16:41,700 --> 0:16:43,880
+ They'd have to drag them into court, show here's the call data.
+
+232
+0:16:43,880 --> 0:16:45,120
+ They'd have to drag them into court, show here's the call data record from this switch,
+
+233
+0:16:45,120 --> 0:16:46,120
+ this switch, this switch.
+
+234
+0:16:46,120 --> 0:16:50,560
+ We can show you made this telcom call.
+
+235
+0:16:50,560 --> 0:16:51,560
+ It's valuable data.
+
+236
+0:16:51,560 --> 0:16:54,500
+ It used to be valuable data.
+
+237
+0:16:54,500 --> 0:16:59,660
+ And there's this little build over, you know, how many people called their grandmother on
+
+238
+0:16:59,660 --> 0:17:01,760
+ Christmas Eve to say Merry Christmas.
+
+239
+0:17:01,760 --> 0:17:03,700
+ That was a very big thing in the US.
+
+240
+0:17:03,700 --> 0:17:09,880
+ And how many people went to the Justin Bieber concert or Roskilde Festival or Black Friday
+
+241
+0:17:09,880 --> 0:17:13,720
+ and City 2 and so on.
+
+242
+0:17:13,720 --> 0:17:19,720
+ Customers don't complain about phone bills anymore because they're flat rate.
+
+243
+0:17:19,720 --> 0:17:28,600
+ It transpired that the volume of traffic made teletraffic too cheap to meter.
+
+244
+0:17:28,600 --> 0:17:31,240
+ All this paperwork was too expensive.
+
+245
+0:17:31,240 --> 0:17:38,420
+ And I can semi-happily, unhappily say that I was there when it happened in Denmark, when
+
+246
+0:17:38,420 --> 0:17:43,640
+ Cyber City introduced flat rate internet access.
+
+247
+0:17:43,640 --> 0:17:48,020
+ Because it was simply cheaper for us to give people a fixed price than to do all the paperwork
+
+248
+0:17:48,020 --> 0:17:53,020
+ and print all the lines about what they had used and when they had used it.
+
+249
+0:17:53,020 --> 0:17:56,880
+ So today telecommunications is flat rate.
+
+250
+0:17:56,880 --> 0:18:02,140
+ When people complain it's because they've been sucked up by some cruise ship or other
+
+251
+0:18:02,140 --> 0:18:08,640
+ predatory network, which is now illegally used so that shouldn't happen anymore.
+
+252
+0:18:08,640 --> 0:18:11,640
+ So the entire go to court thing with the data is gone.
+
+253
+0:18:11,640 --> 0:18:12,640
+ It's gone.
+
+254
+0:18:12,640 --> 0:18:13,640
+ It's gone.
+
+255
+0:18:13,640 --> 0:18:14,640
+ It's gone.
+
+256
+0:18:14,640 --> 0:18:15,640
+ It's gone.
+
+257
+0:18:15,640 --> 0:18:16,640
+ It's gone.
+
+258
+0:18:16,640 --> 0:18:21,140
+ So why don't the telcos stop?
+
+259
+0:18:21,140 --> 0:18:25,220
+ Well they need to change the equipment to stop it.
+
+260
+0:18:25,220 --> 0:18:27,140
+ They can't change it from the operational network.
+
+261
+0:18:27,140 --> 0:18:30,440
+ It will pour out of the operational network whatever happens.
+
+262
+0:18:30,440 --> 0:18:33,120
+ But they could stop collecting it, couldn't they?
+
+263
+0:18:33,120 --> 0:18:37,120
+ Yes, except there may be a court order on some of it.
+
+264
+0:18:37,120 --> 0:18:40,300
+ So they still have to record that.
+
+265
+0:18:40,300 --> 0:18:43,020
+ And they may be doing technical experiments.
+
+266
+0:18:43,020 --> 0:18:46,520
+ Experiments of their own to find out where to put up new base stations.
+
+267
+0:18:46,520 --> 0:18:48,720
+ So they also have to keep that data.
+
+268
+0:18:48,720 --> 0:18:53,060
+ And there's probably more special cases than that that I don't know about.
+
+269
+0:18:53,060 --> 0:18:54,120
+ And then there's politics.
+
+270
+0:18:54,120 --> 0:18:55,880
+ But we're at layer eight.
+
+271
+0:18:55,880 --> 0:18:58,840
+ We're not doing the politics so we'll skip that one today.
+
+272
+0:18:58,840 --> 0:19:06,820
+ And recently there was a bit of news about the New Day which is basically TDC, the incumbent
+
+273
+0:19:06,820 --> 0:19:08,300
+ telco in Denmark.
+
+274
+0:19:08,300 --> 0:19:12,020
+ They're going to spend a billion kroner on a new back office system.
+
+275
+0:19:12,020 --> 0:19:15,600
+ They had the same news about ten years ago.
+
+276
+0:19:15,600 --> 0:19:19,180
+ They gave it up back then.
+
+277
+0:19:19,180 --> 0:19:20,840
+ This is expensive stuff.
+
+278
+0:19:20,840 --> 0:19:26,380
+ They will have to pay money to stop the collection of the data.
+
+279
+0:19:26,380 --> 0:19:30,780
+ Nobody pays them to say stop, please stop monitoring everybody in Denmark.
+
+280
+0:19:30,780 --> 0:19:33,440
+ There would be money out of the telcos pocket to stop it.
+
+281
+0:19:33,440 --> 0:19:36,140
+ It's cheaper for them to continue because they have it in place.
+
+282
+0:19:36,140 --> 0:19:40,140
+ It's running.
+
+283
+0:19:42,020 --> 0:19:46,780
+ I seem to have moved the slide around now.
+
+284
+0:19:46,780 --> 0:19:47,780
+ Oh, yeah.
+
+285
+0:19:47,780 --> 0:19:50,340
+ No, that's the second part.
+
+286
+0:19:50,340 --> 0:19:58,520
+ The other part of the 5G network is the communication with big numbers of Internet of Things units.
+
+287
+0:19:58,520 --> 0:20:00,780
+ This is also a big one.
+
+288
+0:20:00,780 --> 0:20:06,020
+ So we're seeing more and more consumer items getting over the air upgrades.
+
+289
+0:20:06,020 --> 0:20:10,800
+ There was an interesting case recently where the AEG.
+
+290
+0:20:10,800 --> 0:20:11,800
+ AEG.
+
+291
+0:20:12,020 --> 0:20:18,900
+ Did a software update on an Internet-connected microwave oven and gave it the wrong file.
+
+292
+0:20:18,900 --> 0:20:21,940
+ So it thought it was a steam oven.
+
+293
+0:20:21,940 --> 0:20:27,660
+ And the steam oven or the microwave oven doesn't have the keys you use on the steam oven to
+
+294
+0:20:27,660 --> 0:20:31,060
+ get into the software updates menu.
+
+295
+0:20:31,060 --> 0:20:34,300
+ So they have to send a technician out and do the...
+
+296
+0:20:34,300 --> 0:20:37,260
+ And turn it back.
+
+297
+0:20:37,260 --> 0:20:38,780
+ But we're seeing increasingly that...
+
+298
+0:20:38,780 --> 0:20:39,780
+ I'm sorry.
+
+299
+0:20:39,780 --> 0:20:40,780
+ Sorry.
+
+300
+0:20:40,780 --> 0:20:41,780
+ Sorry.
+
+301
+0:20:41,780 --> 0:20:42,540
+ Sorry.
+
+302
+0:20:42,540 --> 0:20:44,540
+ I mean, there is a built-in SIM card.
+
+303
+0:20:44,540 --> 0:20:50,340
+ There is a built-in Internet connection to download all the air updates without the consumer
+
+304
+0:20:50,340 --> 0:20:53,220
+ being involved.
+
+305
+0:20:53,220 --> 0:20:56,960
+ The vendor gets a volume agreement with a Telco.
+
+306
+0:20:56,960 --> 0:21:00,680
+ We need a hell of a lot of SIM cards.
+
+307
+0:21:00,680 --> 0:21:04,240
+ They will be in one place, they will never move.
+
+308
+0:21:04,240 --> 0:21:08,840
+ Well, maybe once or twice in ten years.
+
+309
+0:21:08,840 --> 0:21:11,660
+ But they're not going to run around, never going to run to big events.
+
+310
+0:21:11,660 --> 0:21:19,500
+ events, they're not going to bother you. There will normally be no traffic on them. And we
+
+311
+0:21:19,500 --> 0:21:23,940
+ can schedule burst traffic. When we do a software update, we can call you and say, when is a
+
+312
+0:21:23,940 --> 0:21:32,300
+ good time for you? So, the telco can give very good rates on this. You would be amazed
+
+313
+0:21:32,300 --> 0:21:39,220
+ how cheaply you can get a SIM card when you call up with conditions like this. My lawnmower
+
+314
+0:21:39,220 --> 0:21:50,340
+ robots come with a SIM card. I've never paid a thing for it. Because, volume, high-end
+
+315
+0:21:50,340 --> 0:22:02,100
+ cars, high-end white goods, built-in SIM cards these days. The legal business case for this
+
+316
+0:22:02,100 --> 0:22:06,920
+ or the moral business case for this is that you won't have any trouble with customers
+
+317
+0:22:06,920 --> 0:22:08,920
+ who cannot figure out to attach their...
+
+318
+0:22:09,220 --> 0:22:14,760
+ dishwasher to their Wi-Fi. You also won't have troubles with the ones who don't want
+
+319
+0:22:14,760 --> 0:22:21,520
+ to attach it to their Wi-Fi. You can tell very precisely when the warranty period starts.
+
+320
+0:22:21,520 --> 0:22:29,660
+ You can tell exactly when it was used first time. You can know if it has been misused,
+
+321
+0:22:29,660 --> 0:22:34,840
+ if it's been overloaded, if it was not installed level, if it was not... all these things.
+
+322
+0:22:34,840 --> 0:22:39,180
+ If it was outside temperature limits, lower voltage, higher voltage, all these things.
+
+323
+0:22:39,180 --> 0:22:51,320
+ You know that now. So, you can reduce fraud from almost nothing to nothing, right? Whether
+
+324
+0:22:51,320 --> 0:22:56,560
+ that's a good investment of money, well, that's the interesting thing, right? You also get
+
+325
+0:22:56,560 --> 0:23:01,600
+ telemetry for optimizing your product, so that the next model will last exactly the
+
+326
+0:23:01,600 --> 0:23:06,140
+ warranty period plus two weeks. That's legal.
+
+327
+0:23:09,180 --> 0:23:15,660
+ The shady business case is that once you have the new model on the market, you can
+
+328
+0:23:15,660 --> 0:23:24,560
+ handicap the old one. Nobody would ever do that with a mobile phone, I'm sure, right?
+
+329
+0:23:24,560 --> 0:23:32,840
+ I have credible information that something happens to high-end cars of certain brand
+
+330
+0:23:32,840 --> 0:23:38,840
+ when the new model is out. From somebody who's pretty upset about something happening to
+
+331
+0:23:38,840 --> 0:23:50,520
+ his car. Whether that's legal is a very good question. You can also brick the product
+
+332
+0:23:50,520 --> 0:23:57,840
+ if somebody attempts to do third-party unauthorized service on it, or tries to drive the tractor
+
+333
+0:23:57,840 --> 0:24:08,840
+ from Ukraine to Russia. And then there's the outside business case. The data is not going
+
+334
+0:24:08,840 --> 0:24:14,180
+ anywhere. The data you collected, whether they are GDPR or not, we can discuss that,
+
+335
+0:24:14,180 --> 0:24:26,460
+ unauthorized access. I will argue that certainly GDPR data, but most data should be, we should
+
+336
+0:24:26,460 --> 0:24:33,300
+ think about it as helium. Whenever you have some physics experiment that need to be vacuum
+
+337
+0:24:33,300 --> 0:24:38,320
+ tight, you try with helium, because helium will get through anywhere. It's a very tiny
+
+338
+0:24:38,320 --> 0:24:38,820
+ atom. It's a very tiny atom. It's a very tiny atom. It's a very tiny atom. It's a very
+
+339
+0:24:38,820 --> 0:24:39,820
+ tiny atom. It's a very tiny atom. It's a very tiny atom. It's a very tiny atom. It's
+
+340
+0:24:39,820 --> 0:24:44,920
+ not electrical charged. If there's any kind of hole, it will leak. And it seems that
+
+341
+0:24:44,920 --> 0:24:51,560
+ personal data is the same kind of thing. Nobody seems to be able to keep a lid on them.
+
+342
+0:24:51,560 --> 0:24:57,960
+ They leak out, one way or another. We have police officers looking up potential girlfriends
+
+343
+0:24:57,960 --> 0:25:06,340
+ still, after I think four or five of them have been fined for it. It still happens.
+
+344
+0:25:06,340 --> 0:25:08,300
+ It's just impossible to keep it tight.
+
+345
+0:25:08,300 --> 0:25:13,280
+ And that means if you're a vendor of something and you collected all this information, if
+
+346
+0:25:13,280 --> 0:25:18,120
+ there's any way to exploit it, it probably will be. If nothing else, when your company
+
+347
+0:25:18,120 --> 0:25:29,420
+ gets ransomwared, we'll break all your customers' dishwashers. Christmas morning. If you don't
+
+348
+0:25:29,420 --> 0:25:38,040
+ pay us. Right? And then we have the downright trivial with baby monitors being connected
+
+349
+0:25:38,040 --> 0:25:46,720
+ to pedophile networks because apparently a lot of scantily clad women appear on baby
+
+350
+0:25:46,720 --> 0:25:58,320
+ monitor cameras. Who saw that one coming? But the general problem is all this surveillance
+
+351
+0:25:58,320 --> 0:26:07,000
+ is too cheap to meter now. The benefits of putting a SIM card in your high-end product,
+
+352
+0:26:08,040 --> 0:26:20,440
+ the fact that you can't do anything about it remotely, outweighs the disadvantages of
+
+353
+0:26:20,440 --> 0:26:26,140
+ all the shit data you collect on the cars as a result of it.
+
+354
+0:26:26,140 --> 0:26:29,960
+ The telcos probably don't want to be in the surveillance business, but it would be more
+
+355
+0:26:29,960 --> 0:26:37,320
+ expensive for them not to be. But we're seeing this go into more and more products. Televisions
+
+356
+0:26:37,320 --> 0:26:44,920
+ with cameras, so they can sell audience data back to advertising networks. How many people
+
+357
+0:26:44,920 --> 0:26:55,540
+ watch this ad? How many people watch this show? This is not a problem we can solve technically.
+
+358
+0:26:55,540 --> 0:26:59,680
+ I know some people are very enthusiastic about slapping encryption on everywhere, but this
+
+359
+0:26:59,680 --> 0:27:05,660
+ is not going to do shit for it. Problems at layer N can only be solved at layer N plus
+
+360
+0:27:05,660 --> 0:27:06,780
+ one and higher.
+
+361
+0:27:07,320 --> 0:27:08,900
+ all those fucking layers to begin with.
+
+362
+0:27:09,300 --> 0:27:11,240
+ So these problems are something that will have
+
+363
+0:27:11,240 --> 0:27:12,300
+ to be solved politically.
+
+364
+0:27:14,300 --> 0:27:15,320
+ We cannot solve
+
+365
+0:27:15,320 --> 0:27:17,280
+ them economically. They are economic problems.
+
+366
+0:27:17,400 --> 0:27:18,540
+ They have to be solved politically.
+
+367
+0:27:21,480 --> 0:27:23,240
+ What we'll probably see is
+
+368
+0:27:23,240 --> 0:27:25,420
+ that you can get high-end models and you can pay
+
+369
+0:27:25,420 --> 0:27:27,200
+ a surcharge for privacy.
+
+370
+0:27:28,260 --> 0:27:29,200
+ Privacy has always
+
+371
+0:27:29,200 --> 0:27:30,480
+ been a luxury good.
+
+372
+0:27:33,560 --> 0:27:34,900
+ The way you avoid
+
+373
+0:27:34,900 --> 0:27:37,060
+ having your credit card transactions
+
+374
+0:27:37,060 --> 0:27:39,180
+ tracked is you don't
+
+375
+0:27:39,180 --> 0:27:41,240
+ have a credit card. You have people
+
+376
+0:27:41,240 --> 0:27:42,960
+ to have credit cards for you.
+
+377
+0:27:48,220 --> 0:27:49,160
+ When some
+
+378
+0:27:49,160 --> 0:27:51,400
+ crazy expensive yacht
+
+379
+0:27:51,400 --> 0:27:52,920
+ lands in a harbour,
+
+380
+0:27:54,340 --> 0:27:55,000
+ it is not
+
+381
+0:27:55,000 --> 0:27:57,160
+ some Russian rich
+
+382
+0:27:57,160 --> 0:27:59,140
+ asshole who goes down to show his
+
+383
+0:27:59,140 --> 0:28:01,120
+ passport. It's the first
+
+384
+0:28:01,120 --> 0:28:03,200
+ mate who comes down with a bunch of passports,
+
+385
+0:28:03,680 --> 0:28:05,060
+ shows them to customs and then
+
+386
+0:28:05,060 --> 0:28:06,740
+ clears everybody on the ship.
+
+387
+0:28:06,740 --> 0:28:07,020
+ Customs.
+
+388
+0:28:07,060 --> 0:28:09,060
+ Customs don't go aboard the ship to see if those
+
+389
+0:28:09,060 --> 0:28:10,060
+ are the people on the ship.
+
+390
+0:28:10,620 --> 0:28:12,800
+ They just see a pile of passports, stamp them
+
+391
+0:28:12,800 --> 0:28:13,640
+ and everything's okay.
+
+392
+0:28:15,000 --> 0:28:16,100
+ Privacy is a money thing.
+
+393
+0:28:16,640 --> 0:28:19,000
+ I think we'll see that. I think we'll see
+
+394
+0:28:19,000 --> 0:28:20,800
+ that you can buy your new
+
+395
+0:28:20,800 --> 0:28:22,940
+ sports car and then do you
+
+396
+0:28:22,940 --> 0:28:24,620
+ want the privacy option or do you want the
+
+397
+0:28:24,620 --> 0:28:26,140
+ real-time service option?
+
+398
+0:28:28,980 --> 0:28:30,820
+ We can probably also get to cases
+
+399
+0:28:30,820 --> 0:28:32,880
+ where you buy a new television and
+
+400
+0:28:32,880 --> 0:28:35,000
+ then you'll either have to sign up
+
+401
+0:28:35,000 --> 0:28:36,760
+ for all the advertising and log in
+
+402
+0:28:37,060 --> 0:28:39,460
+ to get the account and the network and all that crap.
+
+403
+0:28:39,460 --> 0:28:42,460
+ Or you'll have to buy a subscription so you don't have to.
+
+404
+0:28:45,720 --> 0:28:49,300
+ Or you'll have to do like people like us,
+
+405
+0:28:49,300 --> 0:28:50,560
+ spend the time and money to
+
+406
+0:28:50,560 --> 0:28:54,160
+ lobotomise the surveillance to get rid of it.
+
+407
+0:28:57,920 --> 0:29:00,820
+ If we look at the possible political solutions,
+
+408
+0:29:00,820 --> 0:29:04,480
+ one would simply be to tax transmission
+
+409
+0:29:04,480 --> 0:29:05,620
+ of surveillance data.
+
+410
+0:29:07,060 --> 0:29:08,380
+ Tax telemetry.
+
+411
+0:29:09,500 --> 0:29:11,280
+ We can tax everything else
+
+412
+0:29:11,280 --> 0:29:12,800
+ so we can also tax telemetry.
+
+413
+0:29:13,980 --> 0:29:14,800
+ So that
+
+414
+0:29:14,800 --> 0:29:16,580
+ it becomes a more
+
+415
+0:29:16,580 --> 0:29:19,140
+ balanced business case.
+
+416
+0:29:19,620 --> 0:29:20,580
+ So it's not for free.
+
+417
+0:29:21,360 --> 0:29:23,160
+ So that maybe you shouldn't meter it
+
+418
+0:29:23,160 --> 0:29:24,920
+ because you'll be paying tax on it.
+
+419
+0:29:26,640 --> 0:29:27,940
+ We could tax
+
+420
+0:29:27,940 --> 0:29:29,700
+ person data.
+
+421
+0:29:31,080 --> 0:29:33,760
+ I think that's a very good idea.
+
+422
+0:29:33,760 --> 0:29:35,760
+ Have an exponential
+
+423
+0:29:35,760 --> 0:29:38,200
+ exponential scale that says
+
+424
+0:29:38,200 --> 0:29:40,740
+ if you have data about 10 people
+
+425
+0:29:40,740 --> 0:29:43,040
+ because you have an association of whatever,
+
+426
+0:29:44,620 --> 0:29:46,660
+ you pay one crown a year.
+
+427
+0:29:46,660 --> 0:29:48,620
+ If you have 100 people,
+
+428
+0:29:48,620 --> 0:29:50,300
+ you pay 100 crown a year.
+
+429
+0:29:50,300 --> 0:29:53,020
+ If 1,000 people, you pay 10,000 crown a year.
+
+430
+0:29:54,280 --> 0:29:57,800
+ Let it go up with a square of the number of persons involved.
+
+431
+0:29:59,700 --> 0:30:02,220
+ To make people think about there being a cost
+
+432
+0:30:02,220 --> 0:30:04,200
+ to collecting all these data in the same place.
+
+433
+0:30:04,200 --> 0:30:05,240
+ The same way where there's a cost of collecting data,
+
+434
+0:30:05,240 --> 0:30:07,780
+ there's a cost of collecting dangerous chemicals
+
+435
+0:30:07,780 --> 0:30:10,500
+ or explosives or anything else in big piles, right?
+
+436
+0:30:12,540 --> 0:30:13,920
+ Or we could ban things.
+
+437
+0:30:15,640 --> 0:30:17,220
+ A lot of things are banned.
+
+438
+0:30:17,220 --> 0:30:18,720
+ A lot of things could be banned.
+
+439
+0:30:19,900 --> 0:30:23,260
+ We could simply ban collecting any data
+
+440
+0:30:24,180 --> 0:30:26,800
+ that can be used for tracking purposes.
+
+441
+0:30:28,180 --> 0:30:30,940
+ Unless there is a approved application
+
+442
+0:30:30,940 --> 0:30:33,380
+ with the Ministry of Privacy or whatever.
+
+443
+0:30:34,300 --> 0:30:34,980
+ There's many ways that could be banned.
+
+444
+0:30:34,980 --> 0:30:36,640
+ There's many ways that could be structured.
+
+445
+0:30:36,640 --> 0:30:39,140
+ But there are political things that could be done
+
+446
+0:30:40,780 --> 0:30:43,240
+ to turn this economic situation around.
+
+447
+0:30:44,420 --> 0:30:47,600
+ And they will have to be done if we want to turn it around.
+
+448
+0:30:47,600 --> 0:30:49,660
+ As long as this is purely an economic issue
+
+449
+0:30:49,660 --> 0:30:51,280
+ for the people in layer eight,
+
+450
+0:30:52,240 --> 0:30:54,820
+ surveillance is too cheap to meet it.
+
+451
+0:30:54,820 --> 0:30:56,360
+ Of course, the problem is that
+
+452
+0:30:56,360 --> 0:30:58,600
+ the politically possible solutions,
+
+453
+0:30:58,600 --> 0:31:00,640
+ that's basically an empty sheet.
+
+454
+0:31:00,640 --> 0:31:02,140
+ Nobody at the political layer
+
+455
+0:31:02,140 --> 0:31:04,540
+ are willing to even talk about this at this point.
+
+456
+0:31:04,980 --> 0:31:07,420
+ There are things coming out of EU,
+
+457
+0:31:07,420 --> 0:31:10,840
+ but they're not addressing the economics of the situation.
+
+458
+0:31:10,840 --> 0:31:12,540
+ They're addressing it on the,
+
+459
+0:31:12,540 --> 0:31:15,400
+ should we say, ideal level of privacy.
+
+460
+0:31:15,400 --> 0:31:18,440
+ But never looked into saying whether the economics
+
+461
+0:31:18,440 --> 0:31:20,640
+ of the situation should actually be addressed.
+
+462
+0:31:23,420 --> 0:31:26,380
+ That's a way we as nerds are not used to think.
+
+463
+0:31:26,380 --> 0:31:28,060
+ And it was a bit of an eye opener for me
+
+464
+0:31:28,060 --> 0:31:29,980
+ when I started to think about it in these terms.
+
+465
+0:31:29,980 --> 0:31:32,740
+ So I hope I've shared my problem with users,
+
+466
+0:31:32,740 --> 0:31:34,340
+ not just my worry anymore.
+
+467
+0:31:34,980 --> 0:31:36,580
+ Okay, thank you.
+
+468
+0:31:39,020 --> 0:31:39,840
+ Questions?
+
+469
+0:31:44,380 --> 0:31:45,220
+ If there are any.
+
+470
+0:31:48,280 --> 0:31:49,320
+ Any questions?
+
+471
+0:31:51,600 --> 0:31:53,100
+ You won't have to pay for them.
+
+472
+0:31:55,360 --> 0:31:56,840
+ No, no questions?
+
+473
+0:31:56,840 --> 0:31:57,680
+ Really?
+
+474
+0:31:57,680 --> 0:31:58,520
+ Then, really?
+
+475
+0:31:58,520 --> 0:31:59,340
+ No questions?
+
+476
+0:31:59,340 --> 0:32:00,940
+ Oh, that was a question, good.
+
+477
+0:32:04,980 --> 0:32:13,220
+ so you mentioned data retention basically earlier so the the system of billing uh on sim cards on
+
+478
+0:32:13,220 --> 0:32:18,700
+ mobile phone data and the fact that yeah up until now we've been we've basically been keeping track
+
+479
+0:32:18,700 --> 0:32:23,760
+ of the calls of the use of data etc and that because of flat rates that's no longer necessary
+
+480
+0:32:23,760 --> 0:32:29,700
+ um how does this so i i'm if i remember correctly there was a ruling by the european court of
+
+481
+0:32:29,700 --> 0:32:35,460
+ justice precisely on the question of of retention of telephone records saying that telephone
+
+482
+0:32:35,460 --> 0:32:42,780
+ companies were only allowed to retain them for the purposes of uh billing so what does that say now
+
+483
+0:32:42,780 --> 0:32:48,880
+ should it really be the case today that uh the danish telecoms operators are still retaining
+
+484
+0:32:48,880 --> 0:32:52,640
+ that information if it's no longer necessary for billing that's kind of my question but maybe i
+
+485
+0:32:52,640 --> 0:32:58,480
+ missed it so so so that's basically a political question right
+
+486
+0:32:58,480 --> 0:32:59,680
+ um
+
+487
+0:33:00,480 --> 0:33:06,680
+ and i've skipped that in this talk but but basically there's an economic thing about making
+
+488
+0:33:06,680 --> 0:33:12,820
+ criminal investigations cheaper also right if you can just look up where the potential
+
+489
+0:33:12,820 --> 0:33:21,100
+ criminals were that's a lot cheaper in police work so there's a political pressure also on some of
+
+490
+0:33:21,100 --> 0:33:28,160
+ this surveillance but so far we have not had the danish parliament try to get data from
+
+491
+0:33:28,160 --> 0:33:29,680
+ dishwasher many times
+
+492
+0:33:29,700 --> 0:33:31,680
+ CDаешь
+
+493
+0:33:31,680 --> 0:33:32,920
+ um
+
+494
+0:33:34,720 --> 0:33:40,040
+ we want a criminal justice system to be able to work and there's some checks and
+
+495
+0:33:40,040 --> 0:33:47,680
+ balances that need to work and and that's the political uh struggle to get that right but um
+
+496
+0:33:50,320 --> 0:33:56,080
+ without that there's no doubt that the eu justices basically said you have to leave
+
+497
+0:33:56,080 --> 0:33:59,480
+ your data once you've done the statistics i mean the telco is still here when the telco is being used
+
+498
+0:33:59,480 --> 0:34:02,600
+ still has a right to do, say, how much traffic
+
+499
+0:34:02,600 --> 0:34:04,480
+ do we have Monday, Tuesday, Wednesday, and so on
+
+500
+0:34:04,480 --> 0:34:06,800
+ at a statistical level.
+
+501
+0:34:06,900 --> 0:34:09,960
+ But tracking at the individual level, no.
+
+502
+0:34:10,460 --> 0:34:12,180
+ That's clearly out without one.
+
+503
+0:34:12,360 --> 0:34:15,420
+ But in that case, the politics have trumped it
+
+504
+0:34:15,420 --> 0:34:20,700
+ on interesting and pretty rocky ground in Denmark.
+
+505
+0:34:22,620 --> 0:34:26,100
+ But that's a battle on the layer one level up, right?
+
+506
+0:34:29,480 --> 0:34:36,260
+ It's a little bit difficult to come with questions
+
+507
+0:34:36,260 --> 0:34:38,280
+ after such an excellent talk, so I think that's why
+
+508
+0:34:38,280 --> 0:34:39,660
+ the audience is a little bit silent.
+
+509
+0:34:40,260 --> 0:34:42,080
+ And I'm going to start with some stupid questions.
+
+510
+0:34:43,920 --> 0:34:46,380
+ A lot of the surveillance that you're talking about
+
+511
+0:34:46,380 --> 0:34:47,640
+ is at the individual level.
+
+512
+0:34:48,060 --> 0:34:50,900
+ But a lot of the data that the Internet of Things
+
+513
+0:34:50,900 --> 0:34:53,560
+ and the companies will say that they're looking for
+
+514
+0:34:53,560 --> 0:34:55,180
+ is on the non-personal level.
+
+515
+0:34:55,840 --> 0:34:58,560
+ When we're looking at the proposals on, for example,
+
+516
+0:34:58,680 --> 0:34:59,380
+ a data rack,
+
+517
+0:34:59,480 --> 0:35:04,540
+ and sort of sharing data also across companies
+
+518
+0:35:04,540 --> 0:35:07,800
+ and countries within the EU, having these data lakes,
+
+519
+0:35:08,200 --> 0:35:10,600
+ how do we, at the political level,
+
+520
+0:35:11,240 --> 0:35:15,880
+ make sure that we protect against having surveillance
+
+521
+0:35:15,880 --> 0:35:20,320
+ built into our washing machines and our cars and our phones
+
+522
+0:35:20,320 --> 0:35:23,240
+ while at the same time making sure that we can have
+
+523
+0:35:23,240 --> 0:35:24,860
+ the best use of them possible?
+
+524
+0:35:26,120 --> 0:35:27,580
+ Tax the shit out of it.
+
+525
+0:35:29,000 --> 0:35:29,440
+ No.
+
+526
+0:35:29,480 --> 0:35:31,060
+ I mean it literally.
+
+527
+0:35:31,060 --> 0:35:33,320
+ Taxing can be used to raise revenue,
+
+528
+0:35:33,320 --> 0:35:35,020
+ and it can be used to regulate behavior.
+
+529
+0:35:36,640 --> 0:35:42,900
+ And tax SIM cards with no other purpose
+
+530
+0:35:42,900 --> 0:35:45,120
+ than spying on people and things.
+
+531
+0:35:45,900 --> 0:35:51,240
+ Why shouldn't it cost, I don't know, 100 euros a year?
+
+532
+0:35:52,780 --> 0:35:56,900
+ I mean, the numbers of a discussion and calculations
+
+533
+0:35:56,900 --> 0:35:59,440
+ and spreadsheets and so on, but there's
+
+534
+0:35:59,440 --> 0:36:03,720
+ been a total unwillingness to tax anything related
+
+535
+0:36:03,720 --> 0:36:06,500
+ to the internet so far because, oh, we shouldn't stop
+
+536
+0:36:06,500 --> 0:36:07,640
+ the next Bill Gates, right?
+
+537
+0:36:08,460 --> 0:36:09,880
+ I happen to disagree on that one.
+
+538
+0:36:11,680 --> 0:36:16,580
+ But it's time for politicians to realize that this is now
+
+539
+0:36:16,580 --> 0:36:20,520
+ not something adjunct to society.
+
+540
+0:36:20,700 --> 0:36:22,860
+ This is an integral part of society.
+
+541
+0:36:23,500 --> 0:36:26,320
+ And it needs to work with and in society.
+
+542
+0:36:26,820 --> 0:36:29,420
+ And it needs to be regulated to work in society.
+
+543
+0:36:29,440 --> 0:36:33,860
+ And I think, I don't understand why collections
+
+544
+0:36:33,860 --> 0:36:37,120
+ of personal identifiable information is not taxed
+
+545
+0:36:37,120 --> 0:36:41,680
+ at this point, simply as a way to reduce the accumulation
+
+546
+0:36:41,680 --> 0:36:43,140
+ of it in larger and larger piles.
+
+547
+0:36:43,140 --> 0:36:47,460
+ And the fact that it would bankrupt Google and Facebook,
+
+548
+0:36:47,460 --> 0:36:48,820
+ I don't see that as a negative.
+
+549
+0:36:48,820 --> 0:36:49,860
+ There's a question?
+
+550
+0:36:49,860 --> 0:36:50,320
+ Yes.
+
+551
+0:36:50,320 --> 0:36:50,820
+ Yes.
+
+552
+0:36:50,820 --> 0:36:51,320
+ Yes.
+
+553
+0:36:51,320 --> 0:36:51,820
+ Yes.
+
+554
+0:36:51,820 --> 0:36:52,320
+ Yes.
+
+555
+0:36:52,320 --> 0:36:52,820
+ Yes.
+
+556
+0:36:52,820 --> 0:36:53,320
+ Yes.
+
+557
+0:36:53,320 --> 0:36:53,820
+ Yes.
+
+558
+0:36:53,820 --> 0:36:54,320
+ Yes.
+
+559
+0:36:54,320 --> 0:36:54,820
+ Yes.
+
+560
+0:36:54,820 --> 0:36:55,320
+ Yes.
+
+561
+0:36:55,320 --> 0:36:55,820
+ Yes.
+
+562
+0:36:55,820 --> 0:36:56,320
+ Yes.
+
+563
+0:36:56,320 --> 0:36:56,820
+ Yes.
+
+564
+0:36:56,820 --> 0:36:57,320
+ Yes.
+
+565
+0:36:57,320 --> 0:36:57,820
+ Yes.
+
+566
+0:36:57,820 --> 0:36:58,320
+ Yes.
+
+567
+0:36:58,320 --> 0:36:58,820
+ Yes.
+
+568
+0:36:58,820 --> 0:36:59,320
+ Yes.
+
+569
+0:36:59,320 --> 0:36:59,400
+ Yes.
+
+570
+0:36:59,400 --> 0:36:59,420
+ Yes.
+
+571
+0:36:59,420 --> 0:37:00,080
+ Oh there's another person behind you.
+
+572
+0:37:03,300 --> 0:37:06,400
+ Hey, I wanted to mention that start them brief,
+
+573
+0:37:06,400 --> 0:37:10,680
+ the data letter, that's kind of an idea from the
+
+574
+0:37:10,680 --> 0:37:13,780
+ key computer club that's been around for awhile.
+
+575
+0:37:13,780 --> 0:37:17,120
+ And that was
+
+576
+0:37:17,120 --> 0:37:22,260
+ to make a law that requires every company to sent
+
+577
+0:37:22,260 --> 0:37:26,180
+ each and every person that they've got data on a
+
+578
+0:37:26,180 --> 0:37:29,260
+ letter once a year detailing what exactly
+
+579
+0:37:29,420 --> 0:37:36,340
+ they have on them and if they don't have a physical address they have to use some
+
+580
+0:37:36,340 --> 0:37:41,980
+ like whatever means of contact they have but essentially the idea was similar to
+
+581
+0:37:41,980 --> 0:37:50,040
+ your taxation idea that that increases the cost and in this case also the
+
+582
+0:37:50,040 --> 0:37:57,460
+ awareness of the users or the people that whose personal data is stored yeah
+
+583
+0:37:57,460 --> 0:38:04,420
+ it increases the costs for the companies I mean yeah and that of course well yeah
+
+584
+0:38:04,420 --> 0:38:07,860
+ I don't know that much about it but I wanted to mention it yeah it's a
+
+585
+0:38:07,860 --> 0:38:11,140
+ there's certainly an argument about making it more obvious for people how
+
+586
+0:38:11,140 --> 0:38:17,140
+ much they're being spied on but on the other hand I don't think postal services
+
+587
+0:38:17,140 --> 0:38:25,960
+ are good as tax collectors it would basically be a stamp tax right postage
+
+588
+0:38:25,960 --> 0:38:26,620
+ stamp tax
+
+589
+0:38:27,460 --> 0:38:32,360
+ but but yeah I mean anything anything that will will shift the balance in the
+
+590
+0:38:32,360 --> 0:38:38,200
+ right direction is fine with me but I think I would prefer to use it to raise
+
+591
+0:38:38,200 --> 0:38:43,120
+ revenue that could then be used beneficially rather than just to boost
+
+592
+0:38:43,120 --> 0:38:50,340
+ up the postal companies of the different countries I know very little about
+
+593
+0:38:50,340 --> 0:38:56,940
+ politics and how to implement laws and taxation so could you talk a little bit
+
+594
+0:38:56,940 --> 0:38:57,180
+ about
+
+595
+0:38:57,460 --> 0:39:02,640
+ how how it would be implemented practically would it require some
+
+596
+0:39:02,640 --> 0:39:07,840
+ technical solutions or is it basically just asking every company to report how
+
+597
+0:39:07,840 --> 0:39:15,400
+ much data they've been collecting I can imagine many ways of doing it but I
+
+598
+0:39:15,400 --> 0:39:21,120
+ would prefer to leave it to people who are good at writing that kind of stuff
+
+599
+0:39:21,120 --> 0:39:25,640
+ how to implement I mean companies are supposed to report a lot of stuff these
+
+600
+0:39:25,640 --> 0:39:27,260
+ days and that seems to work mostly
+
+601
+0:39:27,460 --> 0:39:33,220
+ so I think having them reported on the penalty of you know we're going to
+
+602
+0:39:33,220 --> 0:39:38,640
+ nationalize your company if you lie that is ultimately what happens in I mean if
+
+603
+0:39:38,640 --> 0:39:44,360
+ you lie about the the yearly accounts or whatever basically the company can be
+
+604
+0:39:44,360 --> 0:39:50,020
+ dissolved that's pretty much the law of any land if it's badly bad enough they
+
+605
+0:39:50,020 --> 0:39:54,260
+ can just hold a company right and I think it should just be handled the same
+
+606
+0:39:54,260 --> 0:39:54,400
+ way and and similarly if you travel across the feelings which I that sometimes
+
+607
+0:39:54,400 --> 0:39:54,460
+ can go sit in your car and having the company suit and popular on its own so
+
+608
+0:39:54,460 --> 0:39:54,500
+ yeah and and similarly if if turbulence is okay in most countries the only improvement
+
+609
+0:39:54,500 --> 0:39:56,620
+ there is no model you could live in that situation versus proportionally Кстати
+
+610
+0:39:56,620 --> 0:39:56,700
+ that means three erstatement good rooms where villa managers can live Bob's all right so
+
+611
+0:39:56,700 --> 0:39:57,440
+ you can have time and you can have different people and businesses so it's a good way to
+
+612
+0:39:57,460 --> 0:40:04,400
+ If you have a company that's permitted to use dangerous chemicals and an inspection
+
+613
+0:40:04,400 --> 0:40:11,260
+ shows that you have not lived up to the conditions of that, your company will be shut down.
+
+614
+0:40:11,260 --> 0:40:18,440
+ This is perfectly normal regulatory business, I think, it's just it's cyber so we shouldn't
+
+615
+0:40:18,440 --> 0:40:23,980
+ touch it because we need to get the politicians over that hump and tell them to actually get
+
+616
+0:40:23,980 --> 0:40:30,240
+ on with their job.
+
+617
+0:40:30,240 --> 0:40:34,920
+ Thank you for the very nice talk, very depressing talk.
+
+618
+0:40:34,920 --> 0:40:40,580
+ I just wanted to add one thing which was you said many cars or expensive cars have this
+
+619
+0:40:40,580 --> 0:40:47,880
+ and in fact it's all cars sold in the European Union after April of 2018 are required to
+
+620
+0:40:47,880 --> 0:40:49,880
+ have cellular connectivity now.
+
+621
+0:40:49,880 --> 0:40:52,820
+ Yeah, but that's for the emergency thing.
+
+622
+0:40:52,820 --> 0:40:53,960
+ They're not required to use it.
+
+623
+0:40:53,960 --> 0:40:57,740
+ They're not required to use it for telemetry, but since they paid to install it.
+
+624
+0:40:57,740 --> 0:41:01,980
+ So I think if they have it, then it's usually it's going to associate with every tower.
+
+625
+0:41:01,980 --> 0:41:06,540
+ It's online all the time in practice.
+
+626
+0:41:06,540 --> 0:41:10,520
+ Yes.
+
+627
+0:41:10,520 --> 0:41:12,520
+ Any more questions?
+
+628
+0:41:12,520 --> 0:41:13,520
+ No.
+
+629
+0:41:13,520 --> 0:41:14,520
+ Good.
+
+630
+0:41:14,520 --> 0:41:16,520
+ We got it opened up a bit.
+
+631
+0:41:16,520 --> 0:41:17,520
+ Yeah.
+
+632
+0:41:17,520 --> 0:41:19,920
+ Well, thank you very much, Paul Henning.
+
+633
+0:41:19,920 --> 0:41:22,220
+ That was an excellent and interesting talk.
+
+634
+0:41:22,220 --> 0:41:23,220
+ Thanks.
+
+635
+0:41:23,960 --> 0:41:24,780
+ Thank you.

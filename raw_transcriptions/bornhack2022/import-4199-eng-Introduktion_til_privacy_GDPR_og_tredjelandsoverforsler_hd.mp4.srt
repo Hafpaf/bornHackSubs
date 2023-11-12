@@ -1,0 +1,3467 @@
+# Transcribed 2023-11-12T17 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:59,980
+ Tak for at du så med.
+
+3
+0:01:00,020 --> 0:01:01,300
+ Og det er det, der er på denne her slide.
+
+4
+0:01:01,740 --> 0:01:05,200
+ Rådet for digital sikkerhed er en uafhængig organisation,
+
+5
+0:01:05,660 --> 0:01:08,820
+ som består af medlemmer og organisationsmedlemmer,
+
+6
+0:01:09,080 --> 0:01:11,880
+ der er typer som virksomheder, som for eksempel Microsoft,
+
+7
+0:01:12,320 --> 0:01:16,160
+ og organisationer som for eksempel Prosa og Dansk Industri,
+
+8
+0:01:16,660 --> 0:01:19,760
+ Institut for Menneskerettighed, Rigspolitiet, Forbrugerrådet osv.
+
+9
+0:01:20,240 --> 0:01:25,300
+ Så det er et råd, som prøver at bygge bro på sikkerheds- og privacy-dagsordnen,
+
+10
+0:01:25,620 --> 0:01:27,440
+ sådan over en meget, meget bred kamp.
+
+11
+0:01:27,440 --> 0:01:32,180
+ Og det er klart, at det ikke altid er nemt på denne her dagsorden,
+
+12
+0:01:32,300 --> 0:01:36,400
+ som er forholdsvis kontroversiel, at bygge bro mellem så forskellige synspunkter.
+
+13
+0:01:36,820 --> 0:01:38,360
+ Men det er ikke vist du mindre det, vi gør.
+
+14
+0:01:38,580 --> 0:01:42,100
+ Så det er altid meget sådan, hvad skal vi sige, velovervejet,
+
+15
+0:01:42,440 --> 0:01:45,380
+ og har været igennem en meget lang demokratisk beslutningsproces,
+
+16
+0:01:45,600 --> 0:01:47,660
+ når vi kommer ud med et eller andet.
+
+17
+0:01:48,240 --> 0:01:52,260
+ Og det, vi kommer ud med, det er typisk forskellige former for vejledninger
+
+18
+0:01:52,260 --> 0:01:56,200
+ inden for lovgivning eller inden for teknik eller et eller andet.
+
+19
+0:01:56,200 --> 0:01:56,600
+ Det er et eller andet.
+
+20
+0:01:57,440 --> 0:02:00,460
+ Det er et eller andet mod især mindre mellemstore virksomheder eller borgerne.
+
+21
+0:02:00,940 --> 0:02:05,580
+ Og så er det desuden også forskellige former for politiske udspil, høringssvar osv.
+
+22
+0:02:06,520 --> 0:02:10,640
+ Så vi er vældig aktive i den politiske debat som sådan.
+
+23
+0:02:11,520 --> 0:02:14,900
+ Vi er de eneste af de mange råd, der eksisterer på området, som er uafhængige
+
+24
+0:02:14,900 --> 0:02:16,480
+ af den betydning, at vi ikke er på finanslov.
+
+25
+0:02:16,920 --> 0:02:21,280
+ Og der er altså dermed ikke nogen minister eller andre, for den sags skyld,
+
+26
+0:02:21,360 --> 0:02:24,880
+ enkeltstående organisationer, der kan bestemme, hvad vi skal mine og beskæftige os med.
+
+27
+0:02:25,640 --> 0:02:27,420
+ Jeg plejer at sige, at jeg arbejder for rådet her.
+
+28
+0:02:27,440 --> 0:02:33,060
+ Jeg arbejder sådan mellem 12 og 1 om natten, fordi det er ren fritidsbeskæftigelse.
+
+29
+0:02:33,940 --> 0:02:36,580
+ Noget af det, jeg vil prøve at sige en lille smule om her i dag, det er,
+
+30
+0:02:36,800 --> 0:02:38,720
+ hvad er privacy for en størrelse?
+
+31
+0:02:39,760 --> 0:02:43,080
+ Og hvorfor er det faktisk vigtigt, at vi kærer os om privacy?
+
+32
+0:02:44,300 --> 0:02:47,400
+ Og for at starte et sted, så kan man sige, hvad er privacy egentlig for noget?
+
+33
+0:02:47,860 --> 0:02:51,200
+ Hvis man slår op i ordbogen, så findes der nogle få forblommede definitioner,
+
+34
+0:02:51,240 --> 0:02:53,160
+ men ikke noget er særlig præcist.
+
+35
+0:02:53,160 --> 0:02:57,420
+ Og det vil sige, at vi har egentlig ikke en sådan kanoniseret definition af,
+
+36
+0:02:57,440 --> 0:02:59,900
+ hvad det her begreb egentlig omfatter.
+
+37
+0:03:00,440 --> 0:03:04,180
+ Men den amerikanske organisation EPIC, der er beskæftiget sig med området i en hel del år,
+
+38
+0:03:04,600 --> 0:03:10,360
+ har sagt, at det består af de her fire elementer taget under et.
+
+39
+0:03:11,020 --> 0:03:18,920
+ Og man har først retten til den kropselige privacy, som vil sige mit hud, hår, væv, DNA osv.
+
+40
+0:03:19,660 --> 0:03:21,760
+ Det er mig selv, der skal have lov til at bestemme over det.
+
+41
+0:03:22,040 --> 0:03:26,640
+ Ikke alle mulige andre, der skal have lov til at samle det op og behandle det til forskellige ting.
+
+42
+0:03:27,440 --> 0:03:30,480
+ Og så har man som det næste den territoriale privacy.
+
+43
+0:03:30,480 --> 0:03:34,280
+ Og det er selvfølgelig den privacy, vi har hjemme bag ligusterhækken,
+
+44
+0:03:34,280 --> 0:03:37,980
+ hvor vi forventer, at det der sker inde på vores grund eller inde i vores hus eller lejlighed,
+
+45
+0:03:37,980 --> 0:03:44,220
+ at det er noget, vi ligesom kan bestemme, hvor mange som kan få indtryk af, hvad der sker der.
+
+46
+0:03:44,220 --> 0:03:47,720
+ Men det er videre end det, for selv når vi er i det offentlige rum, som vi er her,
+
+47
+0:03:47,720 --> 0:03:53,560
+ så har vi en eller anden form for privacy omkring os, et eller andet filter.
+
+48
+0:03:53,560 --> 0:03:56,440
+ Og det kan man mærke, fordi hvis jeg nu går rigtig, rigtig, rigtig tæt på dig lige pludselig,
+
+49
+0:03:56,440 --> 0:04:01,940
+ så på et eller andet tidspunkt, så kan du sige, uh, det er ubehageligt det her ikke, jeg føler mig krænket.
+
+50
+0:04:01,940 --> 0:04:08,060
+ Så selv i det offentlige rum, må vi altså regne med, at vi har sådan en eller anden territorie omkring os,
+
+51
+0:04:08,060 --> 0:04:11,420
+ som andre helst ikke må overskudde.
+
+52
+0:04:11,420 --> 0:04:13,420
+ Så har vi kommunikationsprivacyen.
+
+53
+0:04:13,420 --> 0:04:19,320
+ Det er sådan den gammeldags brevhemmelighed, som vi kender fra forskellige former for, hvad hedder det, konventioner.
+
+54
+0:04:19,320 --> 0:04:26,360
+ Altså det her med, at vi selv bestemmer, hvem det er, der faktisk har adgang til at læse den kommunikation, som vi foretager.
+
+55
+0:04:26,360 --> 0:04:30,460
+ Og så endelig informationsprivacyen, som er den klassiske databeskyttelse.
+
+56
+0:04:30,460 --> 0:04:34,800
+ Når vi kigger på forordningen, når vi kommer til den om lidt, så ligger den især hernede.
+
+57
+0:04:34,800 --> 0:04:37,240
+ Det er især databeskyttelsen, den adresserer.
+
+58
+0:04:37,240 --> 0:04:43,380
+ Der er nogle enkelte elementer på de andre områder, men det er det hernede, der er det centrale på den slags lovgivning.
+
+59
+0:04:43,380 --> 0:04:47,780
+ Så privacy under et indeholder i hvert fald de her fire elementer.
+
+60
+0:04:47,780 --> 0:04:53,120
+ Det er det, vi kan komme tættest på i forhold til en definition.
+
+61
+0:04:53,120 --> 0:04:55,800
+ Og hvorfor har man kæret sig om det?
+
+62
+0:04:55,800 --> 0:05:05,180
+ Ja, hvis vi skal kigge en lille smule på det, som hen over tiden, så kan man sige, at i gamle dage, der kærede man sig især om privacy i forhold til magthaverne.
+
+63
+0:05:05,180 --> 0:05:13,680
+ Altså i hvilket omfang måtte magthaverne ligesom gribe ind i forhold til det enkelte individ og gå ind og kontrollere, hvad det var, det her individ lavede.
+
+64
+0:05:13,680 --> 0:05:23,480
+ Og det er selvfølgelig særlig interessant, hvis der er en eller anden despot, en enevældig konge eller enevældig regent, så er han jo interesseret i at bevare magten for sig selv og sin familie.
+
+65
+0:05:23,480 --> 0:05:29,620
+ Så han går ind og kigger på, jamen er der nogen af borgerne i mit samfund her, som forsøger at omstyrte mig.
+
+66
+0:05:30,040 --> 0:05:34,580
+ Og så med mere eller mindre vilkårlige voldsmidler, kan jeg så sætte vedkommende ud at spille.
+
+67
+0:05:35,700 --> 0:05:41,880
+ Hvis det er sådan, der ikke er en eller anden form for lovgivning, en eller anden form for regulering, som beskytter de her individer.
+
+68
+0:05:42,380 --> 0:05:48,160
+ Og et af de ældste eksempler, vi har på noget, som det steder sådan er nedskrevet som lovgivning, er det her britiske eksempel.
+
+69
+0:05:48,160 --> 0:05:51,420
+ Jeg vil ikke læse det op, men jeg har det med, fordi jeg egentlig synes, det er meget dækkende.
+
+70
+0:05:51,780 --> 0:05:53,200
+ Og så er det også sprogligt sådan.
+
+71
+0:05:53,480 --> 0:05:56,680
+ Vældig smuldstigt og fint formuleret, synes jeg egentlig.
+
+72
+0:05:57,440 --> 0:06:04,060
+ Så historisk set har det især handlet om at beskytte borgerne mod staten, det her privacy-begreb.
+
+73
+0:06:05,160 --> 0:06:09,500
+ Men så omkring, eller i slutningen af 1800-tallet, der sker der noget nyt.
+
+74
+0:06:09,940 --> 0:06:12,980
+ Vi får en teknologisk udvikling, vi får massemedier.
+
+75
+0:06:13,320 --> 0:06:19,120
+ Og der er en amerikansk advokat nu i Brande, hvis datter skal giftes.
+
+76
+0:06:19,560 --> 0:06:23,380
+ Og han konstaterer så, at de her frygtelige massemedier i form af trygte aviser,
+
+77
+0:06:23,480 --> 0:06:29,940
+ er til stede ved datterens bryllup og fotograferer det her bryllup og hvem der er med som gæster og sådan nogle forskellige ting.
+
+78
+0:06:30,360 --> 0:06:33,580
+ Og det bliver trygt i avisen og bragt.
+
+79
+0:06:34,060 --> 0:06:39,840
+ Og dermed føler han faktisk, at massemedierne går ind og krænker hans privacy ganske, ganske betydeligt.
+
+80
+0:06:39,940 --> 0:06:43,560
+ Altså en teknologisk udvikling, som krænker hans privacy ganske betydeligt.
+
+81
+0:06:43,880 --> 0:06:49,200
+ Og han skriver så den her artikel, The Right to be Let Alone.
+
+82
+0:06:51,440 --> 0:06:53,140
+ Og den artikel har været sådan.
+
+83
+0:06:53,480 --> 0:06:56,440
+ Det har været definerende for privacy i mange år.
+
+84
+0:06:56,860 --> 0:07:02,080
+ Men retten til at ligesom være overladt til sig selv, fanger ikke helt begrebet,
+
+85
+0:07:02,220 --> 0:07:08,320
+ jævnfør den her definition, vi havde fra Epic tidligere med de fire elementer.
+
+86
+0:07:09,520 --> 0:07:12,520
+ Ikke hvis du mindre har den betydet ganske meget,
+
+87
+0:07:12,620 --> 0:07:20,360
+ også fordi den jo afspejler, kan man sige, en teknologisk udvikling, som han gerne ville reagere på.
+
+88
+0:07:20,780 --> 0:07:22,680
+ Og vi kærer jo rigtig meget med teknologi.
+
+89
+0:07:22,680 --> 0:07:27,580
+ Det er det, der er sket meget siden de trygte aviser så dagens lys i stort tal.
+
+90
+0:07:27,680 --> 0:07:30,880
+ Vi kan gå ind og profilere folk på alle mulige mærkelige måder.
+
+91
+0:07:30,980 --> 0:07:35,880
+ Vi har alle sammen noget elektronisk udstyr med, der gør, at nogen vil være i stand til at finde ud af,
+
+92
+0:07:35,980 --> 0:07:37,980
+ hvor er vi på et givet tidspunkt.
+
+93
+0:07:38,080 --> 0:07:48,380
+ Er vi et eller andet odiøst sted ved en psykolog, eller i en kirke, en fagforening, her på det her sted på Bornhag?
+
+94
+0:07:48,480 --> 0:07:49,880
+ Eller hvor er vi henne?
+
+95
+0:07:49,980 --> 0:07:51,860
+ Og hvem er i nærheden?
+
+96
+0:07:51,860 --> 0:07:56,860
+ Nogen af dem, som er i nærheden af mig, med jævne mellemrum, som er odiøse på en eller anden måde,
+
+97
+0:07:56,960 --> 0:08:01,060
+ jamen så kan der være en anledning til os at forfølge mig yderligere.
+
+98
+0:08:01,160 --> 0:08:04,560
+ Vi kan også sige en masse om, med forskellige former for teknologi,
+
+99
+0:08:04,660 --> 0:08:10,260
+ med hvilken følelse den enkelte person har på et eller andet givet tidspunkt.
+
+100
+0:08:10,360 --> 0:08:12,660
+ Hvis han sidder foran skærmen, og der er nogen, der sidder og kigger med,
+
+101
+0:08:12,760 --> 0:08:20,460
+ så kan man se, er han sur, er han glad, er han disponeret for at købe, er han deprimeret, skal vi sende reklamer for?
+
+102
+0:08:20,560 --> 0:08:21,560
+ Hvad ved jeg?
+
+103
+0:08:21,560 --> 0:08:26,560
+ Det kan være aktiv medicin, eller ferieophold, eller sådan et eller andet.
+
+104
+0:08:26,660 --> 0:08:32,960
+ Vi kan også sige en masse om tekster, og det er faktisk veldig interessant,
+
+105
+0:08:33,060 --> 0:08:36,860
+ fordi selv hvis man gør alt, hvad man kan for at være fuldstændig anonym,
+
+106
+0:08:36,960 --> 0:08:41,360
+ og har, sætter sig ned og skriver, hvad ved jeg, en sides læserbrev, et eller andet,
+
+107
+0:08:41,460 --> 0:08:45,260
+ og siger, det er rigtigt det her, men jeg vil måske ikke stå på mål for det,
+
+108
+0:08:45,360 --> 0:08:51,260
+ så jeg prøver at udgive det, og det faktisk er helt anonymt, uden metatags og uden nogen referencer i,
+
+109
+0:08:51,560 --> 0:08:53,560
+ og så skriver jeg det tilbage, det er rigtigt til mig.
+
+110
+0:08:53,660 --> 0:08:58,560
+ Så kan man altså tage den her sides penge, og lave en tekstanalyse, og sammenligne den med en tekst,
+
+111
+0:08:58,660 --> 0:09:02,560
+ man ved, jeg har skrevet, og så kan man med en eller anden grad af sandsynlighed slå fast,
+
+112
+0:09:02,660 --> 0:09:08,060
+ hvem er det, der faktisk har skrevet den her tekst, på baggrund af de typiske sproglige quirks, der er,
+
+113
+0:09:08,160 --> 0:09:10,360
+ og på baggrund af de kommafejl osv.
+
+114
+0:09:10,460 --> 0:09:16,360
+ Jeg skriver f.eks. altid 3. t-a-e-d-i-e, men hvis man slår op i retskædningsordbogen, så er det jo t-a-e-d-j-e.
+
+115
+0:09:16,460 --> 0:09:18,360
+ Så det var en måde at genkende mig på.
+
+116
+0:09:18,360 --> 0:09:22,160
+ Det var faktisk sådan, at man genkendte Harry Potters mor, Rowling, der,
+
+117
+0:09:22,260 --> 0:09:27,160
+ for at have skrevet The Cuckoo's Nest under pseudonym. Det var sådan en tekstanalyse.
+
+118
+0:09:27,260 --> 0:09:30,160
+ Og faktisk da resultaten af den her tekstanalyse forelå,
+
+119
+0:09:30,260 --> 0:09:33,160
+ måtte man altså krydre til korset og sige, ja, det var hende, der havde udgivet den.
+
+120
+0:09:33,260 --> 0:09:36,160
+ Så selvom vi gør alt, hvad vi kan for at beskytte vores privacy,
+
+121
+0:09:36,260 --> 0:09:39,160
+ jamen så vil man altså være i stand til at afsløre os.
+
+122
+0:09:39,260 --> 0:09:44,160
+ Vi kan bruge teknologi til at klæde hinanden af, uploade et billede til en eller anden tjeneste,
+
+123
+0:09:44,260 --> 0:09:48,160
+ og vupdi, så kan man se, hvordan den her teknologi ville tro,
+
+124
+0:09:48,160 --> 0:09:51,960
+ jeg så ud uden tøj på, og det er ikke nødvendigvis et rart syn, så lad være med at prøve på det.
+
+125
+0:09:52,060 --> 0:09:55,960
+ Men ikke desto mindre det, man ville kunne gøre med hinanden og f.eks. os eks-kærester.
+
+126
+0:09:56,060 --> 0:10:01,960
+ Vi kan fastslå etnicitet, vi kan lave en psykologisk profilering,
+
+127
+0:10:02,060 --> 0:10:04,960
+ og kigge på, hvad det er for en personlighed, vi har osv.
+
+128
+0:10:05,060 --> 0:10:12,960
+ Så vi kan lave alle mulige former for profileringer af hver eneste individ,
+
+129
+0:10:13,060 --> 0:10:17,960
+ og på den baggrund kan vi i den grad krænke privacy med teknologi.
+
+130
+0:10:17,960 --> 0:10:26,760
+ Så den teknologiske udvikling har rigtig stor betydning for, hvordan det er, vi opfatter privacy,
+
+131
+0:10:26,860 --> 0:10:29,760
+ og hvad det er for nogle rammer, der skal stilles op.
+
+132
+0:10:29,860 --> 0:10:36,760
+ Så man kan sige, med de teknologier, vi har nu, er det svært at skjule sig rent historisk.
+
+133
+0:10:36,860 --> 0:10:39,760
+ Har man været til et eller andet sted, hvor der er taget et billede,
+
+134
+0:10:39,860 --> 0:10:44,760
+ eller har man været til at skrive en eller anden tekst tilbage omkring år 2000,
+
+135
+0:10:44,860 --> 0:10:47,760
+ hvor der er nogen, der analyserer den, så kan man roligt regne med,
+
+136
+0:10:47,760 --> 0:10:52,560
+ at de her tekster, de her billeder osv., og måske også nogle lokationsoplysninger,
+
+137
+0:10:52,660 --> 0:10:54,560
+ at de kan vende tilbage til en.
+
+138
+0:10:54,660 --> 0:10:59,560
+ Og på den måde kan vi blive fuldt hele vejen igennem livet,
+
+139
+0:10:59,660 --> 0:11:02,560
+ og de ting, vi har gjort tidligere, kan vende tilbage til os på en måde,
+
+140
+0:11:02,660 --> 0:11:07,560
+ og tage det ud af en kontekst, som vi ikke havde forventet, at det ville ske.
+
+141
+0:11:07,660 --> 0:11:13,560
+ Når vi kan lave den her profilering af folk, så kan vi også lave en masse forudsigelser om,
+
+142
+0:11:13,660 --> 0:11:17,560
+ hvordan vil de her forskellige personer reagere i forskellige situationer,
+
+143
+0:11:17,560 --> 0:11:20,360
+ fordi det helt simple er, hvad vil de købe?
+
+144
+0:11:20,460 --> 0:11:25,360
+ Og når vi ved, hvad de vil købe, kan vi så manipulere med det her køb.
+
+145
+0:11:25,460 --> 0:11:29,360
+ For eksempel vil der sikkert være en eller anden algoritme, der hurtigt kunne fastslå,
+
+146
+0:11:29,460 --> 0:11:36,360
+ hvornår jeg har lyst til en kop te, og så tilbyde den til mig, baseret på de preferencer, jeg har,
+
+147
+0:11:36,460 --> 0:11:41,360
+ som var blevet afsløret af algoritmen, allerede inden jeg decideret selv har erkendt,
+
+148
+0:11:41,460 --> 0:11:45,360
+ at ja, det er ved at være tiden til, at jeg skal have den her kop te.
+
+149
+0:11:45,460 --> 0:11:47,360
+ Så man kan altså manipulere sådan rent meget.
+
+150
+0:11:47,560 --> 0:11:52,360
+ Det kan være markedsmæssigt, men man kan også manipulere mere sådan rent politisk,
+
+151
+0:11:52,460 --> 0:11:57,360
+ kan man sige på den måde her, fordi når først man har den her profil af ens preferencer,
+
+152
+0:11:57,460 --> 0:12:02,360
+ og måske også kan se, hvilket humør man er i, og flere af de faktorer, jeg nævnte på den foregående slide,
+
+153
+0:12:02,460 --> 0:12:08,360
+ jamen så bliver det meget nemmere at komme tæt på folk og prøve at påvirke dem sådan følelsesmæssigt.
+
+154
+0:12:08,460 --> 0:12:12,360
+ Og på den måde bliver det i virkeligheden sværere, end det har været tidligere,
+
+155
+0:12:12,460 --> 0:12:17,360
+ at få den her ro omkring sig til at sidde og udvikle synspunkter.
+
+156
+0:12:17,560 --> 0:12:22,360
+ Så kernen i privacy er sådan set det her.
+
+157
+0:12:22,460 --> 0:12:25,360
+ Altså hvor tæt er det meningen, vi egentlig må gå på individet?
+
+158
+0:12:25,460 --> 0:12:31,360
+ Hvem må gå tæt på de her individer og påvirke de her forudsigelser?
+
+159
+0:12:31,460 --> 0:12:37,360
+ Og hvad er det for nogle formål, som vi faktisk må bruge den her profilering til?
+
+160
+0:12:37,460 --> 0:12:40,360
+ Det er grundlæggende set det, som privacy handler om.
+
+161
+0:12:40,460 --> 0:12:44,360
+ Det handler om individernes ret til liv, ære og velfærd.
+
+162
+0:12:44,460 --> 0:12:47,360
+ Hvad er så rigtigt og hvad er forkert?
+
+163
+0:12:47,360 --> 0:12:51,160
+ Er det rigtigt, at man skal have sådan den her fundamentale ret til privacy,
+
+164
+0:12:51,260 --> 0:12:54,160
+ hvor den enkelte kan bestemme over sine egne data?
+
+165
+0:12:54,260 --> 0:12:57,160
+ Eller er det forkert, om man så må sige?
+
+166
+0:12:57,260 --> 0:13:01,160
+ Kunne man forestille sig, at der er situationer, hvor man ikke har den her ret?
+
+167
+0:13:01,260 --> 0:13:05,160
+ Det er grundlæggende set et politisk valg.
+
+168
+0:13:05,260 --> 0:13:10,160
+ I hvert fald i den vestlige verdens demokrati, og der er jo også det, det sputter rundt omkring.
+
+169
+0:13:10,260 --> 0:13:12,160
+ Men grundlæggende set er det et politisk valg.
+
+170
+0:13:12,260 --> 0:13:17,160
+ Og hvis vi nu kunne lave sådan en eller anden detaljeret undersøgelse her blandt de tilstedeværende,
+
+171
+0:13:17,160 --> 0:13:23,960
+ så ville det gerne til at vise sig rigtig mange forskellige synspunkter på den her problemstilling.
+
+172
+0:13:24,060 --> 0:13:28,960
+ Noget af det, der har været udfordringen, når man kigger på det rent juridisk over tid,
+
+173
+0:13:29,060 --> 0:13:32,960
+ jamen det er, at vi har faktisk haft regler på det her område i rigtig mange år.
+
+174
+0:13:33,060 --> 0:13:37,960
+ I Danmark har vi haft registerlovene for henholdsvis offentlige og privat sektor.
+
+175
+0:13:38,060 --> 0:13:40,960
+ Helt tilbage, tror jeg, fra 70'erne.
+
+176
+0:13:41,060 --> 0:13:43,960
+ Eller også er det starten af 80'erne, det kan jeg ikke huske, hvad hedder det.
+
+177
+0:13:44,060 --> 0:13:44,960
+ Men ikke til stu mindre.
+
+178
+0:13:44,960 --> 0:13:52,760
+ Vi har haft nogle registerlove i mange år, og i 92'erne fik vi så et europæisk databeskyttelsesdirektiv,
+
+179
+0:13:52,860 --> 0:13:54,760
+ som regulerede det her meget fint.
+
+180
+0:13:54,860 --> 0:13:58,760
+ Problemet er, at der står altså ikke nogen, der har efterlevet de her regler.
+
+181
+0:13:58,860 --> 0:14:02,760
+ Og derfor har vi haft en teknologisk udvikling, som har boostet derudad ved siden af,
+
+182
+0:14:02,860 --> 0:14:08,760
+ at vi har haft en regulering, som ikke har haft tilstrækkeligt mange klodser, kan man sige,
+
+183
+0:14:08,860 --> 0:14:14,760
+ til at stå imod den her teknologiske udvikling, og folk har et stykke hen ad vejen kunne gøre, hvad de ville.
+
+184
+0:14:14,760 --> 0:14:20,560
+ Men først i 2018, da vi får forordningen, og hvor Datatilsyn får nogle flere redskaber i værktøjskassen
+
+185
+0:14:20,660 --> 0:14:25,560
+ til at kræve efterlevelse af den her forordning, er det noget, der er kommet højt op på agendaen.
+
+186
+0:14:25,660 --> 0:14:31,560
+ Desuden kan man sige, dem der lovgiver for os, de vil også hele tiden være fristet til at forfølge et eller andet formål,
+
+187
+0:14:31,660 --> 0:14:37,560
+ som de synes er veldedigt relevant i en eller anden given situation.
+
+188
+0:14:37,660 --> 0:14:41,560
+ Og for at forfølge det her formål, så kan vi lige offre privacy.
+
+189
+0:14:41,660 --> 0:14:44,560
+ Så hele tiden kan der blive smidt.
+
+190
+0:14:44,560 --> 0:14:49,360
+ Det er nogle chunks af vores privacy ud fra den lovgivning, som bliver lavet i Folketinget.
+
+191
+0:14:49,460 --> 0:14:51,360
+ Og det er jo ikke nødvendigvis fordi, de er onde derinde.
+
+192
+0:14:51,460 --> 0:14:57,360
+ Det er mere måske et spørgsmål om, at de ikke har blik for, at når de forfølger et eller andet formål,
+
+193
+0:14:57,460 --> 0:15:03,360
+ som de synes er klogværdigt, så bruger de faktisk, de offrer en lille smule af vores menneskerettigheder,
+
+194
+0:15:03,460 --> 0:15:08,360
+ hver gang, at de laver sådan nogle forslag.
+
+195
+0:15:08,460 --> 0:15:14,360
+ Man kan prøve at kigge på det fra charteret. Jeg kommer lige tilbage til, hvad charteret er.
+
+196
+0:15:14,360 --> 0:15:17,160
+ Hvor vi har sådan en række forskellige rettigheder.
+
+197
+0:15:17,260 --> 0:15:22,160
+ I charteret, der har vi også retten til databeskyttelse, som er helt unikt i EU.
+
+198
+0:15:22,260 --> 0:15:25,160
+ Men vi har også en række andre rettigheder.
+
+199
+0:15:25,260 --> 0:15:30,160
+ Og helt oppe i helikopteren, der kan man sige, at nogle af de her rettigheder, de clasher engang imellem.
+
+200
+0:15:30,260 --> 0:15:33,160
+ Og så er vi nødt til at gå ind og lave en afvejning.
+
+201
+0:15:33,260 --> 0:15:38,160
+ Og det betyder, at den her ret til privacy, som måske er god, den er ikke fundamental,
+
+202
+0:15:38,260 --> 0:15:41,160
+ på den måde, at den altid skal være til stede.
+
+203
+0:15:41,260 --> 0:15:44,160
+ For eksempel har vi retten til ytringsfrihed. Det er en klassiker.
+
+204
+0:15:44,360 --> 0:15:51,160
+ Retten til ytringsfrihed clasher jævnligt med retten til privacy.
+
+205
+0:15:51,260 --> 0:15:55,160
+ Hvor man er nødt til at gå ind og sige, hvad er så vigtigst, at Henning Mortensen kan ytre sig.
+
+206
+0:15:55,260 --> 0:15:59,160
+ Og sige, at det kunne være, at jeg synes, at statsministeren har en klap her.
+
+207
+0:15:59,260 --> 0:16:01,160
+ Må jeg have lov til at ytre det?
+
+208
+0:16:01,260 --> 0:16:03,160
+ Når jeg ytrer det, så behandler jeg nogle personoplysninger om hende.
+
+209
+0:16:03,260 --> 0:16:07,160
+ Og det betyder, at hendes privacy i virkeligheden bliver udfordret.
+
+210
+0:16:07,260 --> 0:16:13,160
+ Men der går man typisk persondatretteligt ind og siger, at ytringsfriheden trumper retten til privatlivsfred.
+
+211
+0:16:13,260 --> 0:16:14,160
+ Så jeg må gerne ytre det.
+
+212
+0:16:14,160 --> 0:16:16,060
+ Det her om Mette Frederiksen.
+
+213
+0:16:16,160 --> 0:16:18,060
+ Og jeg må også ytre det om alle mulige andre.
+
+214
+0:16:18,160 --> 0:16:21,060
+ Så længe det fremgår tydeligt, er det et fald om en ytring.
+
+215
+0:16:21,160 --> 0:16:33,060
+ Vi havde i dag taget råd på et tidspunkt i en sag, hvor en borger ytrerede sig i et meget livligt sprog.
+
+216
+0:16:33,160 --> 0:16:38,060
+ Om forskellige magthavere rundt omkring i det danske samfund.
+
+217
+0:16:38,160 --> 0:16:43,060
+ Det kunne være både advokater, politimestre og politikere selvfølgelig.
+
+218
+0:16:43,160 --> 0:16:44,060
+ Og flere andre parter.
+
+219
+0:16:44,160 --> 0:16:47,060
+ Vi tror faktisk også, at GIFOs bestyrelse var en del af dem.
+
+220
+0:16:47,160 --> 0:16:52,060
+ Men ikke desto mindre, at han ytrerede sig meget nedladende om nogle af de her personer.
+
+221
+0:16:52,160 --> 0:16:54,060
+ Og der gik vi i dag til rådene og sagde, at det må han gerne.
+
+222
+0:16:54,160 --> 0:16:57,060
+ Selvom de egentlig har en ret til beskyttelse af deres privatliv.
+
+223
+0:16:57,160 --> 0:17:00,060
+ Og han havde en masse filer med med sager, de er involveret i.
+
+224
+0:17:00,160 --> 0:17:04,060
+ Selvom de egentlig har en ret til beskyttelse af deres privatliv.
+
+225
+0:17:04,160 --> 0:17:07,060
+ Så er de her mennesker i så høj grad offentlige personer.
+
+226
+0:17:07,160 --> 0:17:12,060
+ Plus han har retten til at ytre sig, at det må de ligesom tåle.
+
+227
+0:17:12,060 --> 0:17:18,960
+ Så ud fra persondateretten kunne man ikke forhindre, at han krænkede deres privacy ganske betydeligt.
+
+228
+0:17:19,060 --> 0:17:21,960
+ Så har man nogle andre former for lovgivninger i Danmark, kan man sige.
+
+229
+0:17:22,060 --> 0:17:27,960
+ Hvor de kan føre en retssag, og så få lukket hans hjemmeside på grund af bagvaskelse og sådan nogle forskellige ting.
+
+230
+0:17:28,060 --> 0:17:28,960
+ Men det er en anden sag.
+
+231
+0:17:29,060 --> 0:17:33,960
+ Persondateretten måtte vige for retten til ytringsfrihed.
+
+232
+0:17:34,060 --> 0:17:40,960
+ Så kan man også tage sådan noget som lokningssagen, som jo har været vældig meget fremme i den danske debat.
+
+233
+0:17:40,960 --> 0:17:46,860
+ Hvor man kan sige, hvor Folketinget, i hvert fald et folketingsflertal, de vil gerne give den gas på det her område.
+
+234
+0:17:46,960 --> 0:17:51,860
+ Og sige, vi har jo de her tildata, det er super nemt, at vi bare giver politiet adgang til dem.
+
+235
+0:17:51,960 --> 0:17:53,860
+ Fordi så ved vi altid, hvor folk de har været hen.
+
+236
+0:17:53,960 --> 0:17:57,860
+ Og har de været nærheden af en forbrydelse, så kan vi i hvert fald se, om de var der eller ej.
+
+237
+0:17:57,960 --> 0:18:03,860
+ Og vi kan eventuelt også fastslå, hvem kommunikerede de med, så hvem kunne eventuelt være medskyldige.
+
+238
+0:18:03,960 --> 0:18:06,860
+ Meget convenient, i hvert fald når man sidder inde i Folketinget.
+
+239
+0:18:06,960 --> 0:18:10,860
+ Men det er et godt eksempel på, hvor der bliver klippet en del af vores fundamentale forhold.
+
+240
+0:18:10,960 --> 0:18:17,860
+ Vores fundamentale ret til privacy, med hensyn til at forfølge det her formål at bekæmpe kriminalitet.
+
+241
+0:18:17,960 --> 0:18:24,860
+ Rådet har prøvet at beskæftige sig med det her område, og prøve at opstille nogle principper for,
+
+242
+0:18:24,960 --> 0:18:30,860
+ hvad er det så, der skal til for, at man kan gå ind og klippe en lille smule i den her ret til privacy.
+
+243
+0:18:30,960 --> 0:18:34,860
+ Og der går vi ind og siger, jamen det skal i hvert fald være noget, hvor der er en klar og præcis lovhjemmel.
+
+244
+0:18:34,960 --> 0:18:38,860
+ Så det skal være fastslået ved lov. Folketinget skal være ind eksplicit og sige,
+
+245
+0:18:38,960 --> 0:18:40,860
+ nu tager vi noget af jeres privacy for forhold.
+
+246
+0:18:40,960 --> 0:18:44,860
+ Så skal det også være et legitimt formål.
+
+247
+0:18:44,960 --> 0:18:50,860
+ Og et legitimt formål, det vil det typisk være, hvis det er sådan, at Folketinget fastslår et formål.
+
+248
+0:18:50,960 --> 0:18:53,860
+ Fordi de er jo demokratisk valgt, så man kan være enig eller uenig.
+
+249
+0:18:53,960 --> 0:18:56,860
+ Men ikke til mindre, at de er demokratisk valgt, så derfor vil det typisk være legitimt.
+
+250
+0:18:56,960 --> 0:19:00,860
+ I modsætning til hvis Google for eksempel fastsætter et formål, så kan det godt være illegitimt,
+
+251
+0:19:00,960 --> 0:19:03,860
+ set ud fra en demokratisk beslutningsproces.
+
+252
+0:19:03,960 --> 0:19:05,860
+ Og så endelig til sidst, skal det være proportional.
+
+253
+0:19:05,960 --> 0:19:09,860
+ Og der kan man sige, at den her proportionalitetsafvejning, den er igen meget, meget subjektiv.
+
+254
+0:19:09,860 --> 0:19:14,760
+ Fordi folketingsflertaget, de siger, jamen lokning til bekæmpelse af kriminalitet,
+
+255
+0:19:14,860 --> 0:19:18,760
+ det synes vi er veldig, veldig proportional, at vi tager noget privacy.
+
+256
+0:19:18,860 --> 0:19:20,760
+ Men det synes EU-domstolen ved Gud ikke.
+
+257
+0:19:20,860 --> 0:19:27,760
+ De har været ude og kigge på den her type af lovgivning, lokningslovgivning i mange forskellige EU-lande,
+
+258
+0:19:27,860 --> 0:19:31,760
+ og har gentagende gange sagt, hallo, det må I ikke gøre.
+
+259
+0:19:31,860 --> 0:19:36,760
+ I må ikke klippe den her ret til privatlivets fred, bare for at bekæmpe kriminalitet.
+
+260
+0:19:36,860 --> 0:19:39,760
+ Det eneste, i vores proportionalitetsarbejde,
+
+261
+0:19:39,760 --> 0:19:43,660
+ som kan tillade, at vi går ind og klipper lidt i privacy,
+
+262
+0:19:43,760 --> 0:19:47,660
+ det er, hvis der er en decideret trussel mod den nationale sikkerhed.
+
+263
+0:19:47,760 --> 0:19:54,660
+ Så Folketinget og EU-domstolen har altså to forskellige opfattelser af den her proportionalitetsafvejning, der kan opstilles.
+
+264
+0:19:54,760 --> 0:19:57,660
+ Så de her tre punkter fra rådet, det er sådan nogle, man altid kan bruge til,
+
+265
+0:19:57,760 --> 0:20:00,660
+ i hvert fald en ramme til at gå ind og vurdere, hvad er det, der skal til,
+
+266
+0:20:00,760 --> 0:20:05,660
+ for at vi overhovedet kan tale om, at man kunne overveje at klippe i den her fundamentale ret.
+
+267
+0:20:05,760 --> 0:20:07,660
+ Og så kommer vi tilbage til igen,
+
+268
+0:20:07,660 --> 0:20:14,560
+ det er et subjektivt og et politisk valg, hvornår vi må klippe i den her ret.
+
+269
+0:20:14,660 --> 0:20:23,560
+ Så det var en lille smule om privacy, sådan rent definitorisk, kan man sige.
+
+270
+0:20:23,660 --> 0:20:27,560
+ Jeg ved ikke, om det giver anledning til nogle spørgsmål.
+
+271
+0:20:27,660 --> 0:20:32,560
+ Der er ikke høje snorkelydetalte, i hvert fald, men det kunne jo være, der var et enkelt spørgsmål.
+
+272
+0:20:32,660 --> 0:20:35,560
+ I skal bare afbryde mig, hvis I har lyst.
+
+273
+0:20:35,560 --> 0:20:40,460
+ Så kan vi prøve at kigge lidt på nogle af de gode argumenter for, hvorfor er det så,
+
+274
+0:20:40,560 --> 0:20:45,460
+ at jeg overhovedet står her, hvorfor er det den her ret til privatlivets fred, den er vigtig.
+
+275
+0:20:45,560 --> 0:20:50,460
+ Og det er sådan et helt overordnet spørgsmål på den front, det er jo, hvem er det egentlig,
+
+276
+0:20:50,560 --> 0:20:52,460
+ der skal bestemme over mine personoplysninger.
+
+277
+0:20:52,560 --> 0:20:59,460
+ I min optik, subjektiv vurdering igen, handler det i høj grad om, at den enkelte person skal have lov
+
+278
+0:20:59,560 --> 0:21:05,460
+ til at bestemme over sine egne oplysninger, herunder bestemme, hvem han vil dele hvad med,
+
+279
+0:21:05,460 --> 0:21:10,360
+ hvornår. Jeg deler jo en lille smule med jer, når jeg står her. I kan se på mig, at der er måske
+
+280
+0:21:10,460 --> 0:21:15,360
+ nogen, der har kigget på min LinkedIn-profil osv. imens, men det er jo meget, meget lidt, jeg deler med jer
+
+281
+0:21:15,460 --> 0:21:20,360
+ i den her sammenhæng, hvor jeg står. Jeg deler selvfølgelig meget mere med mine arbejdskolleger,
+
+282
+0:21:20,460 --> 0:21:25,360
+ der kan konstatere, hvornår jeg er i godt humør eller i dårligt humør, og nogle gange, hvis jeg vælger
+
+283
+0:21:25,460 --> 0:21:30,360
+ at ytre, det er også, hvorfor. Jeg deler endnu mere med min kone og mine børn faktisk, næsten alt.
+
+284
+0:21:30,460 --> 0:21:35,360
+ Så på den måde, der kan man sige, der vælger jeg selv, hvor mange lag vil jeg skralde af,
+
+285
+0:21:35,460 --> 0:21:41,360
+ i forskellige situationer. Hvor godt skal folk have lov til at komme til at kende mig?
+
+286
+0:21:41,460 --> 0:21:46,360
+ Så hvis det er sådan, at vi ikke har den her ret, hvis det er sådan, at vi kan blive profileret af alle mulige
+
+287
+0:21:46,460 --> 0:21:53,360
+ forskellige parter og være helt og aldeles gennemsigtige, jamen så mister vi en ganske betydelig del
+
+288
+0:21:53,460 --> 0:21:59,360
+ af vores individuelle autonomi. Det konstituerer simpelthen som mennesker, at vi har den her ret til selv
+
+289
+0:21:59,460 --> 0:22:05,360
+ at bestemme. Det er faktisk den ret, der gør, at vi bliver autonome individer. Hvis det er sådan,
+
+290
+0:22:05,460 --> 0:22:12,360
+ at vi er helt gennemsigtige og profileret, så bliver det også meget svært at tale om, at vi har et frit valg,
+
+291
+0:22:12,460 --> 0:22:18,360
+ fordi det bliver vanvittigt nemt at manipulere med os, fordi man kan spille på vores præferencer,
+
+292
+0:22:18,460 --> 0:22:25,360
+ vores følelser osv., hele vores personlighed i virkelighed under et, og på den måde manipulere os.
+
+293
+0:22:25,460 --> 0:22:30,360
+ Og vi kan konstatere, at når folk bliver overvåget, når de bliver profileret i et vist omfang,
+
+294
+0:22:30,460 --> 0:22:35,360
+ jamen så ændrer de faktisk adfærd. Sådan, at når man adfærd til det, som man tror,
+
+295
+0:22:35,360 --> 0:22:41,260
+ at dem, der overvåger en, gerne vil se. Som andre ord. Der er f.eks. et berømt eksempel, hvor der er nogen,
+
+296
+0:22:41,360 --> 0:22:47,260
+ der optager folk i en elevator. Halvdelen af dem får at vide, at I bliver optaget, når I stiger ind i den her elevator.
+
+297
+0:22:47,360 --> 0:22:51,260
+ Den anden halvdel får at vide, at I får ingenting at vide. De går bare ind. Og dem, der ikke får noget at vide,
+
+298
+0:22:51,360 --> 0:22:58,260
+ de står selvfølgelig og klør sig i skridtet og piller sig i næsen og ryger og hvad ved jeg ind i den her elevator.
+
+299
+0:22:58,360 --> 0:23:05,260
+ Og dem, der får at vide, at du er overvåget hele vejen op, de står mere eller mindre sådan her med at skimmer op en pænt i højre hånd.
+
+300
+0:23:05,360 --> 0:23:11,260
+ Så på den måde kan man sige, at vi kommer til at ændre vores personlighed, hvis det er sådan, at vi er overvåget.
+
+301
+0:23:11,360 --> 0:23:20,260
+ Og bliver i virkeligheden en meget mere humogen, harmoniseret, grå masse af ens mennesker.
+
+302
+0:23:20,360 --> 0:23:27,260
+ Vi mister også et stykke hen ad vejen tillid til de tjenester, der profilerer os eventuelt.
+
+303
+0:23:27,360 --> 0:23:34,260
+ I hvert fald, hvis det er sådan, at dem, der overvåger os, gør et eller andet, som kommer til at udfordre vores tillid.
+
+304
+0:23:34,360 --> 0:23:35,260
+ Det kunne være et eller andet.
+
+305
+0:23:35,360 --> 0:23:38,260
+ Det kan være, at vi bliver profileret onlinemennesker, vi handlede i.
+
+306
+0:23:38,360 --> 0:23:42,260
+ Og at vi bliver forfulgt af et eller andet par sko, vi har været inde og kigge på.
+
+307
+0:23:42,360 --> 0:23:51,260
+ Jamen så kan det faktisk godt bidrage ganske meget til, at vi mister tilliden til den pågældende skobutik, hvis de er tilstrækkeligt aggressiv.
+
+308
+0:23:51,360 --> 0:23:55,260
+ Både historisk og geografisk har det her jo også en betydning.
+
+309
+0:23:55,360 --> 0:24:04,260
+ Fordi her i fredelig og demokratisk og pragmatisk Danmark, der betyder det måske ikke så meget lige umiddelbart, om politiet sidder og kigger med i vores teleoplysninger.
+
+310
+0:24:04,260 --> 0:24:12,160
+ Men det vil det gøre alle mulige andre steder i verden, fordi der vil en eller anden givende dispot jo kunne se, hvem der er tilstede ved en eller anden givende demonstration.
+
+311
+0:24:12,260 --> 0:24:16,160
+ Og så kan man få følge dem efterfølgende på den ene eller den anden måde.
+
+312
+0:24:16,260 --> 0:24:22,160
+ For eksempel, jeg husker faktisk i Kiev lang tid før krigen, der var en eller anden demonstration.
+
+313
+0:24:22,260 --> 0:24:29,160
+ Så kørte politiet lige en sendemast i, overtog alle mobilsignalerne og sendte en besked ud om, at vi ved, at du har været tilstede her.
+
+314
+0:24:29,260 --> 0:24:34,160
+ Det er nok en god idé, at du går hjem nu. Og i øvrigt har vi registreret, at du har været tilstede her.
+
+315
+0:24:34,160 --> 0:24:39,060
+ Og at du vil være til brug for en anden god gang. Så det er sådan noget af det, man kan gøre.
+
+316
+0:24:39,160 --> 0:24:44,060
+ Og det betyder meget rent geografisk. Rent historisk har det også betydet rigtig meget.
+
+317
+0:24:44,160 --> 0:24:51,060
+ Fordi i tidligere tider har vi jo ikke haft den her lovfæstede ret til privatlivsfred.
+
+318
+0:24:51,160 --> 0:24:59,060
+ Men der er nogen, der har tiltaget sig retten ved at udgive tekster anonymt. Og det er før tekstanalysens tid.
+
+319
+0:24:59,160 --> 0:25:04,060
+ Så nogle af de her anonyme tekster, der er blevet udgivet, har faktisk været med til at udgive tekster anonymt.
+
+320
+0:25:04,160 --> 0:25:09,060
+ Og det har været en del af innovationen. Altså man kan næsten sige, at hvis man skal sige det lidt polemisk,
+
+321
+0:25:09,160 --> 0:25:16,060
+ at jorden ville stadigvæk have været flad, hvis det var sådan, at nogle af de her tænkere ikke havde tiltaget sig retten til at udgive deres tekster.
+
+322
+0:25:16,160 --> 0:25:23,060
+ Og det er jo fordi, at despoterne, det er den sindssygt værdtidssidende magtshæver, har haft en ubendig trang til at gøre dem et hoved kortere,
+
+323
+0:25:23,160 --> 0:25:30,060
+ hvis det er sådan, at de har sagt et eller andet, der udfordrede den herskende opfattelse blandt lederne i samfundet.
+
+324
+0:25:30,160 --> 0:25:33,060
+ For kvinder har det faktisk også betydet rigtig meget.
+
+325
+0:25:33,060 --> 0:25:42,960
+ Hvem søren ville udgive en bog af en kvinde tilbage i historien, og de har så måske udgivet nogle af deres bøger under mandlige pseudonymer.
+
+326
+0:25:43,060 --> 0:25:50,960
+ Og på den måde har de ligesom kunne bidrage med alle mulige bidrag til litteraturen, der f.eks. er dernede i bunden.
+
+327
+0:25:54,060 --> 0:26:02,960
+ Og så også i forhold til det der med at tiltage sig retten til, det tror jeg også er vigtigt, det her med at tiltage sig retten til at konstruere sig selv.
+
+328
+0:26:03,060 --> 0:26:09,960
+ Men igen, hvis det er sådan, at vi er fuldstændig gennemsigtige overfor algoritmerne, så er det så haft sus med svært at prøve forskellige ting af.
+
+329
+0:26:10,060 --> 0:26:17,960
+ Og især mens man er ung, vil man jo naturligt, de fleste vil i hvert fald have sådan en eller anden tilbøjelighed til at prøve forskellige ting af.
+
+330
+0:26:18,060 --> 0:26:29,960
+ Det kunne være noget at lege med kønsidentitet osv. De ser ud for at være en pige online for at se, hvad sker der egentlig, hvis man laver sådan en kvindelig kontaktannonce på dating.
+
+331
+0:26:30,060 --> 0:26:31,960
+ Hvordan reagerer fyrene? Vi synes, at man selv det er fint osv.
+
+332
+0:26:31,960 --> 0:26:40,860
+ Sådan nogle ting kan man prøve af, men det er så haft sus med svært ved den computer, man gør det på og allerede har gennemskuddet, at man er en mand.
+
+333
+0:26:40,960 --> 0:26:53,860
+ Så på den måde kan man sige, at det her igen, muligheden for at vi kan tiltage os retten til privacy, også overfor teknologierne, er rigtig vigtigt for alle mulige former for udvikling.
+
+334
+0:26:53,960 --> 0:27:01,860
+ Vi skal også have ro, kan man sige. Hvis det er sådan, at vi er transparente hele tiden, så allerede der, hvor vi får den første tanke om,
+
+335
+0:27:01,960 --> 0:27:06,860
+ om et eller andet, jamen så begynder algoritmerne at gribe ind og begynder at prøve at påvirke os.
+
+336
+0:27:06,960 --> 0:27:15,860
+ Mange af de vejledninger, jeg har skrevet, dem har jeg jo skrevet selv i computerens og sterillisets skær næsten, hvor jeg sidder og tænker nogle tanker.
+
+337
+0:27:15,960 --> 0:27:22,860
+ Og så har jeg prøvet dem af på forskellige parter i mit netværk og sagt, hvad synes du egentlig om det her? Er det rigtigt?
+
+338
+0:27:22,960 --> 0:27:30,860
+ Og så får man nogle argumenter, fordi at, Henning, det kan du godt glemme, fordi at, som man så kan inadoptere og på den måde i virkeligheden kvalificere sine synspunkter,
+
+339
+0:27:30,860 --> 0:27:37,760
+ og enten siger, okay, det var sgu også dumt det her. Jeg snyder sylten, og det her, det glitslætter jeg bare ikke.
+
+340
+0:27:37,860 --> 0:27:46,760
+ Eller det kan være, at jeg får et eller andet modspil, som jeg tænker, det var en interessant tanke, og så bliver det output, jeg får i virkeligheden meget mere kvalitativt.
+
+341
+0:27:46,860 --> 0:27:55,760
+ Hvis det er sådan, at algoritmerne de kan blande sig i hele den her proces, så jeg ikke får fred og ro til at lave mine egne intellektuelle refleksioner,
+
+342
+0:27:55,860 --> 0:28:00,760
+ jamen så bliver jeg heller ikke en lige så god demokratisk borger, fordi jeg måske så bare skyder på mig selv.
+
+343
+0:28:00,860 --> 0:28:07,760
+ Første gang. Det er det, man ser på Facebook, sagt lidt polemisk, at folk de bare skyder uden at tænke først.
+
+344
+0:28:07,860 --> 0:28:15,760
+ Så der er brug for, at vi har den her ro omkring os og det her lukkede rum, hvor vi ikke er gennemsigtige. Det har også betydning for demokratiet.
+
+345
+0:28:15,860 --> 0:28:29,760
+ Og i gamle dage, der gik man bare nede på det lokale værtshus og sad og snakkede med sine venner, indtil man blev socialiseret ind i nogle forskellige synspunkter og hørte på, hvad de andre sagde.
+
+346
+0:28:29,760 --> 0:28:39,660
+ Og på den måde kunne man teste sine synspunkter her. Men det kan man jo ikke på internettet, fordi algoritmerne jo er der med det samme, kan man sige.
+
+347
+0:28:39,760 --> 0:28:49,660
+ Så er der også selve risikovurderingen i det her, fordi hvis vi er transparente hele tiden, så bliver det, som jeg har sagt flere gange, meget lettere at manipulere med os,
+
+348
+0:28:49,760 --> 0:28:58,660
+ både i forhold til vores præferencer og i forhold til vores personlighed, vores psykologi. Og dermed, når det bliver lettere at manipulere med os,
+
+349
+0:28:58,660 --> 0:29:05,560
+ så bliver det også lettere at stigmatisere os. Så hvis det er sådan, at man kan se, at Henning Mortensen er helt gennemsnitlig på 90 procent,
+
+350
+0:29:05,660 --> 0:29:14,560
+ så er der 10 procent, hvor han stikker af med nogle synspunkter eller nogle holdninger eller ting, han gerne vil prøve eller et eller andet.
+
+351
+0:29:14,660 --> 0:29:27,560
+ Så kan man i virkeligheden, og det er gennemsigtigt, det er jo ikke et lag, jeg skralder af over for jer nødvendigvis, men hvis det nu er gennemsigtigt for nogle af de her algoritmer, så kan man stigmatisere mig på den her måde.
+
+352
+0:29:27,560 --> 0:29:36,460
+ Når man er transparent, er det jo også meget nemmere at stjæle ens identitet, hvis det er sådan, at der er nogen, der har adgang til tilstrækkeligt mange data.
+
+353
+0:29:36,560 --> 0:29:44,460
+ Og så endelig, alle de her steder, hvor der bliver opsamlet store mængder af data, jamen det vil selvfølgelig være honeypots for forskellige former for kriminelle,
+
+354
+0:29:44,560 --> 0:29:56,460
+ der gerne vil udnytte de her data, enten til at sælge dem eller decideret imod nogle af individerne, for eksempel for at afpresse dem og tjene penge på dem. Det ser vi for eksempel i forbindelse med phishing-kampagner,
+
+355
+0:29:56,560 --> 0:29:57,460
+ hvor...
+
+356
+0:29:57,460 --> 0:30:04,360
+ I snor var det jo ransomware-kampagner, hvor der går en phishing-mail ind, så spreder ransomware'en sig, og så afpresser man virksomheden.
+
+357
+0:30:04,460 --> 0:30:15,360
+ Men bagefter forsøger man så også at afpresse virksomhedens kunder, både direkte med deres data, men også med henblik på, at de skal bede den originale virksomhed om at aflevere data.
+
+358
+0:30:15,460 --> 0:30:26,360
+ Og så endelig i forhold til slutbrugerne, hvis det nu for eksempel var en finsk kæde af psykologer, der har været et eksempel på, hvor man har ligget der på briksen og tænkt, der er et totalt privatliv her, nu fortæller jeg psykologen, hvad jeg virkelig mener,
+
+359
+0:30:26,360 --> 0:30:39,260
+ min kone, mit arbejdsgiver osv. Hvis det er sådan, at man kan få fat i de der psykologipatienter, så kan man jo også afpresse dem et stykke hen ad vejen for, at man ikke lægger deres livshistorie ud på internettet.
+
+360
+0:30:39,360 --> 0:30:46,260
+ Så der er faktisk tre kanaler i ransomware direkte ind til de her forskellige grupper.
+
+361
+0:30:49,360 --> 0:30:54,260
+ Der er nogle andre forhold, de kan ikke løbe fra historien, som jeg også har nævnt tidligere.
+
+362
+0:30:54,360 --> 0:30:56,260
+ Altså de data, der ligger ude.
+
+363
+0:30:56,260 --> 0:31:05,160
+ Som indgår i nogle af de her algoritmer, de bliver gemt for evigt, og på den måde kommer man til at blive dømt af sin egen fortid uden for en kulturel kontekst osv.
+
+364
+0:31:05,260 --> 0:31:13,160
+ Der er også et spørgsmål om, har vi de rette muligheder for at kontrollere alle de her, der opsamler data om os.
+
+365
+0:31:13,260 --> 0:31:24,160
+ Der har jo lige været en lille drøftelse i Danmark over de senere år, om i hvilken grad efterretningstjenesterne er tilstrækkeligt kontrolleret, og det har jo skabt sin egen polemik.
+
+366
+0:31:24,160 --> 0:31:32,060
+ Men prøv at tænke på, hvem kontrollerer egentlig Google i forhold til, hvad de samler op om os. Hvem kontrollerer Microsoft, hvem kontrollerer nogle af alle de her store cloud-provider.
+
+367
+0:31:32,160 --> 0:31:41,060
+ Der er meget, meget lidt kontrol med dem i forhold til de her ting. Så hvem vogter vogterne? Og alt kan også tages fra en sammenhæng.
+
+368
+0:31:41,160 --> 0:31:52,060
+ Så det er sådan set de gode grunde til, at privacy er rigtig vigtigt. Så nu ved vi, hvad privacy er. Vi ved, hvorfor det er vigtigt.
+
+369
+0:31:52,060 --> 0:32:01,960
+ Og så er der alligevel været nogen, på trods af alle de her pæne ord, som vil sige, Henning, du er en sølvpapirshat. Der er ikke nogen grund til, at vi har den her privatlivet fred. Det har jeg hørt ganske mange gange.
+
+370
+0:32:02,060 --> 0:32:10,960
+ Og den første sætning af det, som man hører allermest, det må være, fordi du har et eller andet at skjule. Du må have nogen lig lasten. Du må være mærkelig på en eller anden måde.
+
+371
+0:32:11,060 --> 0:32:19,960
+ Siden at du kan advokere så stærkt for privacy. Jeg vil ikke afvise, at jeg er mærkelig på en eller anden måde. Men jeg vil til gengæld sige, det er jo ikke det, det handler om.
+
+372
+0:32:19,960 --> 0:32:33,860
+ Det handler jo ikke om, at jeg skal skjule et eller andet bestemt. Privacy handler om, at jeg skal have retten til selv at bestemme, hvad I skal vide om mig. Og hvad Google og Facebook og Rigspolitiet osv. de ene skal vide om mig.
+
+373
+0:32:33,960 --> 0:32:44,860
+ Det er det, der er det helt centrale element. Så får man også nogle gange skudt i skoene af, at man er reaktionær og modstander af enhver form for teknologisk udvikling.
+
+374
+0:32:44,960 --> 0:32:49,860
+ Der kan jeg kun sige, at de fleste af dem, der interesserer sig for privacy, som jeg i hvert fald kender, har faktisk en rigtig, rigtig god ide.
+
+375
+0:32:49,960 --> 0:32:56,860
+ De har en rigtig betydelig teknologisk indsats og interesse og har interesseret sig for det i mange år.
+
+376
+0:32:56,960 --> 0:33:02,860
+ Og det er først derefter, at man så begynder at interessere sig for privatlivsfred, når man finder ud af, hvad man egentlig kan med de her teknologier.
+
+377
+0:33:02,960 --> 0:33:07,860
+ Så på den måde har jeg svært ved at se dem som modstandere af teknologisk udvikling.
+
+378
+0:33:07,960 --> 0:33:17,860
+ Så er der også mange, der siger, at det er besværligt og byråkratisk, det her privacy. Jeg tænker, at måske Helsingør Kommune kunne være en af dem, der sidder med den opfattelse lige for tiden.
+
+379
+0:33:17,960 --> 0:33:19,860
+ Og til det er der kun at sige, at ja, det er ikke det.
+
+380
+0:33:19,960 --> 0:33:23,860
+ Det kan være en smule mere besværligt, at I ikke bare må profilere løs, som I har gjort gennem de sidste 25 år.
+
+381
+0:33:23,960 --> 0:33:31,860
+ Nu er I nødt til at tænke det på en ny måde. I er nødt til at designe noget sikkerhed og databeskyttelse ind i de løsninger, som I bruger.
+
+382
+0:33:31,960 --> 0:33:37,860
+ Og så endelig, at det er dyrt, og der ikke findes teknologiske løsninger. Det er jo et argument, som et stykke han og mig holder.
+
+383
+0:33:37,960 --> 0:33:47,860
+ Ja, det koster lidt mere. Men i takt med, at der udvikler sig nye teknologier, som har det her design, som har bygget databeskyttelse og privacy by design ind i deres løsninger,
+
+384
+0:33:47,860 --> 0:33:54,760
+ så tænker jeg, at på den længere bane, der ser jeg ikke det værende væltedyre. Det er det nok her på den korte bane.
+
+385
+0:33:54,860 --> 0:34:00,760
+ Og stadigvæk her, selvom vi skriver 2022, og det er fire år siden, at vi fik databeskyttelsesforordningen, så er det nok dyrere.
+
+386
+0:34:00,860 --> 0:34:09,760
+ Men differencen bliver mindre og mindre. Og det betaler sig at gøre noget på den her front.
+
+387
+0:34:09,860 --> 0:34:17,760
+ Rådet var ude, sponsoreret af Industriens Fond, og i samarbejde med Dansk Industri og Dansk Kanal,
+
+388
+0:34:17,760 --> 0:34:24,660
+ tror jeg det var, jeg håber jeg fik nævnt dem alle, vi var ude og lave en undersøgelse her blandt mindre og mellemstore virksomheder,
+
+389
+0:34:24,760 --> 0:34:35,660
+ hvor vi prøvede at kigge på, hvordan har I det med sådan noget ansvarlig dataanvendelse, defineret som informationssikkerhed, privacy og dataetik samlet set.
+
+390
+0:34:35,760 --> 0:34:45,660
+ Og som I kan se på tallene dernede, jeg vil ikke læse dem op igen, det kan I læse selv, som I kan se, så helt overvejende, så siger dem, der faktisk har beskæftiget sig med det,
+
+391
+0:34:45,760 --> 0:34:47,660
+ jamen, det giver os noget på bunden.
+
+392
+0:34:47,760 --> 0:34:55,660
+ Det giver os nogle fordele, at vi har arbejdet struktureret med det her og får styr på, hvad er det egentlig for nogle data, vi har, hvordan organiserer vi det her,
+
+393
+0:34:55,760 --> 0:35:01,660
+ hvad er det for nogle foranstaltninger, vi skal have bygget op omkring det, og hvad er det for nogle overvejelser, vi skal gøre os.
+
+394
+0:35:01,760 --> 0:35:09,660
+ Så helt overvejende har de en positiv oplevelse af det her, og oplever, at det styrker deres virksomhed at gøre det.
+
+395
+0:35:09,760 --> 0:35:15,660
+ 8% siger decideret, at det kan ses positivt i form af en øget omsætning.
+
+396
+0:35:15,760 --> 0:35:17,660
+ Og nu skal man ikke stole på statistikken.
+
+397
+0:35:17,760 --> 0:35:19,660
+ Man kan ikke forfalske det.
+
+398
+0:35:19,760 --> 0:35:23,660
+ Så de her 8% kan man også læse, som der er 92%, der ikke siger, at det giver en gevinst på bundlinjen.
+
+399
+0:35:23,760 --> 0:35:25,660
+ Det skal man selvfølgelig være opmærksom på.
+
+400
+0:35:25,760 --> 0:35:27,660
+ Vi framer det jo positivt i rådet.
+
+401
+0:35:27,760 --> 0:35:33,660
+ Men de her tal, i hvert fald, synes jeg er meget sigende for, at det faktisk godt kan betale sig at gøre noget ved det her.
+
+402
+0:35:33,760 --> 0:35:41,660
+ Jeg tror også, at det her tal, i takt med at forbrugerne bliver mere modne og opmærksomme på det her, så tror jeg også, at det her tal kommer til at blive større.
+
+403
+0:35:41,660 --> 0:35:57,560
+ Noget af det, som er rigtig vigtigt på det her område, det er, at dem, der sidder og har en eller anden form for indflydelse på det her med privacy og informationssikkerhed også for den sags skyld,
+
+404
+0:35:57,660 --> 0:36:02,560
+ at de ligesom får taletiden til at forsvare deres sag.
+
+405
+0:36:02,660 --> 0:36:10,560
+ Og der er rigtig mange af os, der er super nørdede. Det er jeg også selv i forbindelse med det persondateretlige.
+
+406
+0:36:10,560 --> 0:36:18,460
+ Og vi bruger jo rigtig meget vores faglige viden, vores logos, til at argumentere for, hvorfor ting skal være på den ene eller den anden måde.
+
+407
+0:36:18,560 --> 0:36:26,460
+ Altså for statistikker fra logfilerne på Firewallen og den slags ting, som vi sådan kan bruge i vores daglige kommunikation.
+
+408
+0:36:26,560 --> 0:36:35,460
+ Og der er jo ikke at bruge henvisninger til alle mulige paragrafer og bemærkninger til paragrafer og hvad ved jeg, alle mulige retskilder.
+
+409
+0:36:35,560 --> 0:36:39,460
+ Og så kan vi sidde og nørde super meget det. Og det skal vi selvfølgelig også have lov til.
+
+410
+0:36:39,560 --> 0:36:40,460
+ Vi skal bruge vores faglige viden.
+
+411
+0:36:40,560 --> 0:36:44,460
+ Vi skal bruge vores faglighed, og vi skal styrke og opdyrke vores faglighed.
+
+412
+0:36:44,560 --> 0:36:47,460
+ Men i forhold til vores kommunikation, så skal vi prøve at bruge lidt mindre af den.
+
+413
+0:36:47,560 --> 0:36:55,460
+ Fordi det er super godt, at vi kan bruge det her logos, som det hedder. Altså det rationelle, statistikker, lovgivning osv.
+
+414
+0:36:55,560 --> 0:37:01,460
+ Men vi skal prøve også at blive bedre til at bruge de to andre retoriske værktøjer, som vi klassisk set har.
+
+415
+0:37:01,560 --> 0:37:09,460
+ Altså det her, hvor vi går ud og med ethos peger på nogle autoriteter. Bruce Schneier mener at, for eksempel.
+
+416
+0:37:09,460 --> 0:37:17,360
+ Det vil sige sikkerhedsfolk en hel masse. Datatilsynet siger at, Center for Cybersikkerhed siger at,
+
+417
+0:37:17,460 --> 0:37:25,360
+ hvis vi kan læne os op af nogle af dem, som vi tror, vores beslutningstager i de organisationer, vi sidder og lytter til, så er det rigtig, rigtig fint.
+
+418
+0:37:25,460 --> 0:37:31,360
+ Og i virkeligheden så, at hvis man sidder i en mindre mellemstore dansk virksomhed, så er der rigtig stor sandsynlighed for,
+
+419
+0:37:31,460 --> 0:37:38,360
+ at de især vil lytte til den nærmeste konkurrent. Så hvis vi kan sige, konkurrenten gør bla bla bla, jamen så kan vi også bruge det.
+
+420
+0:37:38,360 --> 0:37:48,260
+ I forhold til det her ethos. Og så skal vi også blive meget bedre til at bruge pathos, som er at give en, simpelthen lave noget god storytelling.
+
+421
+0:37:48,360 --> 0:37:58,260
+ Og hvis man nu er lidt nørd, så siger jeg, hold kæft, det er varm luft, det der. Men prøv at tænke over det. Hvordan er det, I selv reagerer, når I får en god historie?
+
+422
+0:37:58,360 --> 0:38:08,260
+ Jamen så reagerer I følelsesmæssigt. Og hvis jeg kommer med en eller anden sindssygt god historie her, så er det meget mere sandsynligt, at I kan huske den historie, end noget af alt det her faglige, som jeg egentlig har stået og sagt.
+
+423
+0:38:08,360 --> 0:38:21,260
+ Da Cambridge Analytica-sagen, den rullede. Det var den her sag, hvor, jeg skal lige se om jeg kan rekapitulere den, hvor man via Facebook kunne installere sådan en app til personlighedstest.
+
+424
+0:38:21,360 --> 0:38:35,260
+ Og det var der 300.000, der gjorde. Og de fik også deres personlighedstestresultat. Men problemet var, at den her app, den gik ind og snablede alle deres venner og kolleger og, hvad hedder de, kontakter på Facebook.
+
+425
+0:38:35,360 --> 0:38:38,260
+ Og så lavede den en profilering af 86 millioner.
+
+426
+0:38:38,360 --> 0:38:55,260
+ Og det var en psykologisk profilering, hvor man så kunne manipulere med de her 86 millioner. Og Cambridge Analytica brugte det blandt andet til Brexit-afstemningen i England og til den amerikanske valgkamp osv. osv.
+
+427
+0:38:55,360 --> 0:39:08,260
+ Det er jo en sindssygt god historie. Og der var en amerikansk mangemiljardær involveret. Der var Trumps højre hånd involveret i det her selskab. Der var en russisk forbindelse, som man jo i den periode tænkte, Trump var mere eller mindre i lommen på russerne.
+
+428
+0:39:08,360 --> 0:39:37,260
+ Der var sindssygt mange elementer. Og ham, direktøren, hvad hedder han, Rix eller Nix eller sådan et eller andet der, han var sådan en CEO-ekspert, renowned i hele verden. Og der var sådan en fransk tv-station, kan jeg huske, som lavede et skjult kamera-interview med ham, hvor han ud over de tjenester, som man kunne købe gennem Cambridge Analytica, også tilbød, at man kunne købe den tjeneste, at man fik folk stillet op ved siden af den, man gerne ville inkriminere.
+
+429
+0:39:38,360 --> 0:39:48,760
+ Sagen gik på, at de gav sig ud for at være politiske dissidenter på Sri Lanka, ja, og de ville gerne vælge den sri-lankanske regering.
+
+430
+0:39:49,000 --> 0:40:03,020
+ Så tilbød ham her, fætteren, at de kunne stille nogle russiske ludere op ved det stående ved siden af det der siddende landspolitiker, og så kunne de dobbe nogle stemmer ind over bagefter, og så skyde den her falske film ud i nyhedsstrømmen.
+
+431
+0:40:03,100 --> 0:40:08,260
+ Og på tilsvarende vis kunne de stille nogle amerikanske forretningsfolk op i nærheden af de her sri-lankanske politikere.
+
+432
+0:40:08,360 --> 0:40:20,120
+ Og ændre lydbilledet og igen skyde det ud, og så skulle de give indtryk af, at de tilbød nogle penge til deres valgkamp imod til gengæld efter valget at kunne købe nogle grunde forholdsvis billigt.
+
+433
+0:40:21,820 --> 0:40:33,160
+ Sindssygt spændende sag. Sindssygt mange ser- og høragtige elementer i den her sag, udover at den jo er dødsindsat, hvor det rent privacy-mæssigt, det er sådan noget, man kan fortælle sin ledelse.
+
+434
+0:40:33,160 --> 0:40:35,940
+ Det gjorde jeg jo ude på min daglige arbejdsplads A.O.
+
+435
+0:40:35,940 --> 0:40:43,240
+ Vi flytter toiletter fra A til B for 4 milliarder om året. Det er fuldstændig irrelevant for os, den her Cambridge Analytica sag.
+
+436
+0:40:43,240 --> 0:40:54,240
+ Men det er en supergod historie. Det er sådan noget ledelsen, de lytter til. Og så kan man i øvrigt lige på den sidste slide sige, at jeg gerne vil bede om en million til et eller andet nyt antivirus-system.
+
+437
+0:40:54,240 --> 0:41:05,280
+ Og så har man allerede fået tændt dem. Så prøv at bruge, tænk over i hvert fald, og prøv at bruge noget af det her pathos, den tryllebindende fortælling, storytelling,
+
+438
+0:41:05,280 --> 0:41:17,060
+ når I skal prøve at advokere for informationssikkerhed og privacy derude, i stedet for at komme med firewall-loggen på det sjette møde i træk.
+
+439
+0:41:17,060 --> 0:41:18,820
+ Det tænder de typisk ikke på.
+
+440
+0:41:21,300 --> 0:41:32,980
+ Så nu ved vi, hvad privacy er, og vi ved, hvorfor det er vigtigt, og hvis vi så prøver at kigge på selve lovgivningen, så kommer der nu et seks timers foredrag om GDPR.
+
+441
+0:41:34,040 --> 0:41:34,880
+ Det havde vi aftalt, ikke?
+
+442
+0:41:35,280 --> 0:41:45,760
+ Nej. Hvis vi holder os helt overordnet til det, så kan man sige, at den her ret til privatlivets fred, den er nedsat i en række forskellige internationale konventioner,
+
+443
+0:41:46,140 --> 0:41:50,920
+ verdenserklæringen om menneskerettigheder, men hvor vi har den mest, som det er kaldt brevhemmeligheden tidligere,
+
+444
+0:41:50,920 --> 0:41:57,900
+ no one shall be subjected to arbitrary interference with the privacy of family, home or correspondence, nor to attack upon his honor and reputation.
+
+445
+0:41:58,300 --> 0:42:04,920
+ Og det går sådan set lidt igen i Europarådet, og også i nogle af OECD's...
+
+446
+0:42:05,280 --> 0:42:20,840
+ ...konventioner, og det er faktisk først, da vi kommer helt op i år 2000, at vi får det europæiske charter, og det charter, det får vi, fordi menneskerettighederne ikke hører under EU-domstolen, men under menneskerettighedsdomstolen.
+
+447
+0:42:20,840 --> 0:42:34,040
+ Så EU ville gerne have, at de kunne have nogle menneskerettigheder, som de kunne komme ind under EU-domstolen og få forvaltet i en europæisk kontekst, og derfor lavede man så det her charter, hvor man tog alle de gode ting fra alle de andre internationale konventioner og skrev,
+
+448
+0:42:34,040 --> 0:42:39,760
+ og så lavede man nogle justeringer, blandt andet den her justering, hvor vi fik artikel 8,
+
+449
+0:42:40,540 --> 0:42:46,160
+ Everyone has the right to the protection of personal data concerning him or her, osv.
+
+450
+0:42:47,500 --> 0:42:55,820
+ Og den her artikel 8, det er faktisk helt unikt, det er det eneste sted i verden, hvor vi har privacy som en helt fundamental rettighed,
+
+451
+0:42:55,820 --> 0:43:03,820
+ og det er også derfor, vi ser i EU-domstolen kunne reagere så kraftigt i forhold til f.eks. noget som de afgørelser, de har været inde på i forhold til...
+
+452
+0:43:04,040 --> 0:43:06,040
+ lokning.
+
+453
+0:43:06,040 --> 0:43:14,540
+ Så det skal vi være glade for, det er ikke Folketinget, vi skal takke for det, det er Europa, det er EU, vi skal takke for, at vi har den her fundamentale ret.
+
+454
+0:43:18,040 --> 0:43:25,540
+ Det er jo stadigvæk en ret flyvstrat, altså jeg mener, everyone has the right to respect for his or her private...
+
+455
+0:43:25,540 --> 0:43:31,540
+ nej, everyone has the right to the protection of personal data concerning him or her, det er ikke særlig operationelt vel.
+
+456
+0:43:31,540 --> 0:43:33,540
+ Det er ret højtflyvende.
+
+457
+0:43:33,540 --> 0:43:35,540
+ Så vi er nødt til at have et eller andet, der operationaliserer det.
+
+458
+0:43:35,540 --> 0:43:43,540
+ Og grundlæggende set, så kan man sige, jamen det er faktisk det, som GDPR gør, Databeskyttelsesforordningen, den går ind og operationaliserer denne her,
+
+459
+0:43:43,540 --> 0:43:52,540
+ hvad hedder det, forholdsvis abstrakte ret til noget sådan meget mere operationelt og lavpraktisk.
+
+460
+0:43:52,540 --> 0:43:54,540
+ Og GDPR, på én slide, den har vi her.
+
+461
+0:43:54,540 --> 0:44:01,540
+ Den er bygget op sådan, altså for at understøtte denne her fundamentale rettige charter, den er bygget op sådan, at...
+
+462
+0:44:01,540 --> 0:44:05,640
+ Vi har nogle principper for databeskyttelse, som altid skal efterleves.
+
+463
+0:44:06,580 --> 0:44:10,920
+ Uanset hvilken behandling, som vi har med at gøre, uanset hvilke personoplysninger, vi har med at gøre,
+
+464
+0:44:11,300 --> 0:44:15,780
+ så skal de her principper, der er nævnt i den første bullet her, de skal altid efterleves.
+
+465
+0:44:15,860 --> 0:44:16,660
+ De kan ikke fravises.
+
+466
+0:44:17,440 --> 0:44:19,940
+ Udover det har de registreret nogle rettigheder.
+
+467
+0:44:20,460 --> 0:44:24,620
+ Typisk skal de oplyses, så inden vi går i gang med at behandle personoplysninger,
+
+468
+0:44:24,860 --> 0:44:27,860
+ så skal vi fortælle, at nu behandler jeg dine personoplysninger,
+
+469
+0:44:27,860 --> 0:44:32,160
+ og jeg behandler dem til det her formål, og også oplyses om en lang række andre ting,
+
+470
+0:44:32,240 --> 0:44:33,940
+ blandt andet om jeg er tredje landsordfører dem osv.
+
+471
+0:44:34,460 --> 0:44:37,860
+ Og udover det har jeg en række andre rettigheder, som i virkeligheden spiller op til den her oplysningspligt,
+
+472
+0:44:38,840 --> 0:44:40,860
+ som jeg grundlæggende set kan udnytte.
+
+473
+0:44:41,900 --> 0:44:45,940
+ Dem, der behandler oplysningerne, om de er registreret, de har så en række pligter.
+
+474
+0:44:46,380 --> 0:44:50,460
+ De skal sørge for, at de her personoplysninger bliver behandlet på en ordentlig måde.
+
+475
+0:44:50,600 --> 0:44:54,060
+ Der skal være en god informationssikkerhed omkring de her oplysninger.
+
+476
+0:44:54,060 --> 0:44:57,560
+ De skal vide, hvad det er for nogle oplysninger, der behandles, til hvilket formål,
+
+477
+0:44:57,860 --> 0:45:00,180
+ hvorhenne oplysningerne ligger.
+
+478
+0:45:01,340 --> 0:45:05,580
+ Hvis det udgør en risiko for de registrerede, så skal der laves en konsekvensanalyse,
+
+479
+0:45:05,860 --> 0:45:08,220
+ og der skal jo designes en fornuftig understøttelse.
+
+480
+0:45:08,360 --> 0:45:12,040
+ Faktisk en understøttelse af alle principperne, og fra den første bullet,
+
+481
+0:45:12,400 --> 0:45:16,120
+ ind i de behandlingssystemer, som behandler personoplysningerne.
+
+482
+0:45:17,220 --> 0:45:22,560
+ Og så er det så også til for, at hvis man ikke gør sådan, som der står i de her tre første bullet,
+
+483
+0:45:22,700 --> 0:45:25,560
+ så har data til synes en række muligheder for at...
+
+484
+0:45:25,560 --> 0:45:31,200
+ for at uddele sanktioner mod folk, blandt andet deciderede bøder.
+
+485
+0:45:31,200 --> 0:45:36,660
+ Det, der står med sort, det har været gældende siden databeskyttelsesdirektivet i 92.
+
+486
+0:45:36,660 --> 0:45:40,040
+ Det, der står med grønt, det er det nye, der er blevet tilføjet med Giliperre.
+
+487
+0:45:40,040 --> 0:45:43,000
+ Det er derfor, jeg siger, vi har i virkeligheden haft de her regler,
+
+488
+0:45:43,000 --> 0:45:45,300
+ vi har haft den her databeskyttelse i ganske mange år,
+
+489
+0:45:45,300 --> 0:45:47,580
+ men vi har bare ikke rigtig fået gjort noget ved det,
+
+490
+0:45:47,580 --> 0:45:54,540
+ og ved siden af har teknologien bare kørt derudad og profileret os i stadig højere grad.
+
+491
+0:45:54,540 --> 0:45:55,540
+ Selvom det er en række muligheder, så er det en række muligheder, der er blevet tilføjet.
+
+492
+0:45:55,540 --> 0:46:00,540
+ Hvis det er en forordning, det her, og det er en retssagt, der er gældende decideret, som den er skrevet,
+
+493
+0:46:00,540 --> 0:46:05,540
+ så har den faktisk virkning som et direktiv, fordi inden for forordningsrammer er der en masse steder,
+
+494
+0:46:05,540 --> 0:46:08,940
+ jeg kan ikke huske, hvor mange mere, er det 48 eller noget i den retning,
+
+495
+0:46:08,940 --> 0:46:10,940
+ hvor man kan lave nationale præciseringer,
+
+496
+0:46:10,940 --> 0:46:14,940
+ og de nationale præciseringer har man så lavet i Danmark i Dansk Beskyttelseslov
+
+497
+0:46:14,940 --> 0:46:18,940
+ og i forskellige former for sektorlov, lovgivning blandt andet Sundhedslovens kapitel 9,
+
+498
+0:46:18,940 --> 0:46:22,440
+ i forhold til, hvordan vores helbredsoplysninger må blive behandlet.
+
+499
+0:46:22,440 --> 0:46:25,440
+ Så det her, det er grundlæggende set det, som vi har,
+
+500
+0:46:25,440 --> 0:46:30,940
+ at arbejde med, når vi kigger på GDPR, og det der er rammerne for vores arbejde.
+
+501
+0:46:30,940 --> 0:46:34,940
+ Et af punkterne, som I kan se her, det er 3. landsordførerhedspligt til dem,
+
+502
+0:46:34,940 --> 0:46:40,940
+ der gerne vil behandle vores personoplysninger, som vi skal efterleve på forskellig vis.
+
+503
+0:46:40,940 --> 0:46:44,940
+ Og eftersom det er det, der er genstand for debatten her lidt senere i dag,
+
+504
+0:46:44,940 --> 0:46:50,940
+ så graver jeg en lille smule ned i det. Nogle vil nok sige en stor smule, men nu prøver vi.
+
+505
+0:46:50,940 --> 0:46:54,940
+ Det, der har været tanken,
+
+506
+0:46:54,940 --> 0:47:00,940
+ bag kapitel 5, som er reglerne for 3. landsordførerslag i forordningen,
+
+507
+0:47:00,940 --> 0:47:04,940
+ er grundlæggende set, at politikerne har sagt, jamen den her beskyttelse,
+
+508
+0:47:04,940 --> 0:47:08,940
+ de her garantier, vi nu har i charteren, den fundamental ret, vi har i charteren,
+
+509
+0:47:08,940 --> 0:47:12,940
+ den skal også gælde, selv når personoplysningerne kommer uden for EU.
+
+510
+0:47:12,940 --> 0:47:18,940
+ Så derfor så laver vi nogle regler for, hvordan må man 3. landsordføre,
+
+511
+0:47:18,940 --> 0:47:23,940
+ og hvad gør sig så gældende, når man 3. landsordfører. Og det er det, der sker i kapitel 5.
+
+512
+0:47:23,940 --> 0:47:31,940
+ Så på den måde kan man sige, at kapitel 5 sikrer os, at vi har den her samme rettighed, som i charteren altid.
+
+513
+0:47:31,940 --> 0:47:37,940
+ Hvorfor har man gjort det? Ja, det har man blandt andet gjort, fordi Snowden-afsløringerne tilbage i,
+
+514
+0:47:37,940 --> 0:47:43,940
+ var det 13, eller var det 12, det kan jeg ikke huske, men tilbage deromkring, tak,
+
+515
+0:47:43,940 --> 0:47:51,940
+ de viste, at amerikanerne, de masseår vågede ganske betydeligt både i USA, men også alle mulige steder i Europa, hvor de havde anledning til det.
+
+516
+0:47:51,940 --> 0:48:01,940
+ Og man så også samtidig en teknologisk udvikling i Kina, hvor den kinesiske regering adopterede alle mulige teknologier med henblik på at profilere deres befolkning.
+
+517
+0:48:01,940 --> 0:48:08,940
+ Så det ville man i hvert fald ikke have, skulle ske for EU's befolkning, hvis det var sådan, at data de forlod i EU.
+
+518
+0:48:08,940 --> 0:48:15,940
+ Vi har som sagt den her charters artikel 8, at enhver har ret til beskyttelse af personoplysninger, der vedrører ham eller hende.
+
+519
+0:48:15,940 --> 0:48:19,940
+ Og så skal man også lige som et kuriosum nævne, at vi har også en artikel 47, der siger, at vi har ret til beskyttelse af personoplysninger, der vedrører ham eller hende.
+
+520
+0:48:19,940 --> 0:48:25,940
+ Vi har også en artikel 47, der giver adgang til effektive retsmidler. Det er en lige så fundamental ret.
+
+521
+0:48:25,940 --> 0:48:32,940
+ Så det vil jeg nævne, og det vil jeg nævne på grund af Trumps domme, som jeg kommer til lige om lidt.
+
+522
+0:48:32,940 --> 0:48:40,940
+ Når man går ind i kapitel 5, så er der grundlæggende set de her tre muligheder for at tredjelandsoverføre personoplysninger.
+
+523
+0:48:40,940 --> 0:48:42,940
+ Man gør det efter artikel 45.
+
+524
+0:48:42,940 --> 0:48:49,940
+ Og artikel 45 er et overførelsegrundlag, hvor EU-kommissionen har været inde og kigge på lovgivningen i tredje.
+
+525
+0:48:49,940 --> 0:48:56,940
+ Og vurderet, om den her lovgivning er proportionalt svarende til, hvad man oplever inden for EU.
+
+526
+0:48:56,940 --> 0:49:05,940
+ Og de har så lavet en liste over lande, hvor de siger, at der er en lige så essentiel beskyttelse af personoplysninger, som vi kender fra EU af.
+
+527
+0:49:05,940 --> 0:49:12,940
+ Og den liste, den kan man til enhver tid udfordre ved EU-domstolen, hvis det er sådan, at man ikke er tilfreds.
+
+528
+0:49:12,940 --> 0:49:18,940
+ Et af de lande, der ligger på, for eksempel Japan, de skulle have en privacy-lovgivning, der altså beskytter os på samme måde som charter.
+
+529
+0:49:18,940 --> 0:49:23,940
+ Et andet land er Israel, som også skulle have det. Det er også sikkert et tredje land.
+
+530
+0:49:23,940 --> 0:49:32,940
+ Det er altså noget, man kan udfordre ved EU-domstolen, hvis det er, at man ikke er enige i, at Israel giver den samme beskyttelse af deres borgere, som vi kender fra EU.
+
+531
+0:49:32,940 --> 0:49:35,940
+ Så der ligger en 12-14 lande på den her liste.
+
+532
+0:49:35,940 --> 0:49:43,940
+ Det, kommissionen også kan gøre her, det er, at de kan gå ind og lave forskellige form for aftaler med forskellige lande om overførelse af de her lande.
+
+533
+0:49:43,940 --> 0:49:47,940
+ Og når der er lavet sådan en aftale, jamen, så kan den gældes som overførelsesgrundlag.
+
+534
+0:49:48,940 --> 0:49:54,940
+ Og det har EU-kommissionen gjort med amerikanerne, hvor de har lavet de såkaldte Safe Harbor-regler.
+
+535
+0:49:54,940 --> 0:49:59,940
+ Og efterfølgende er faktisk Privacy Shield-reglerne også. De ligger heroppe i artikel 45.
+
+536
+0:49:59,940 --> 0:50:05,940
+ Og når de så er etableret som artikel 45, jamen, så kan man bruge dem som overførelsesgrundlag.
+
+537
+0:50:05,940 --> 0:50:14,940
+ Når noget er et artikel 45-grundlag, altså vedtaget af kommissionen, jamen, så skal datatilsynet sådan set følge de her beslutninger, der ligger her.
+
+538
+0:50:14,940 --> 0:50:18,940
+ Og det vil sige, datatilsynet kan ikke vælte en data.
+
+539
+0:50:18,940 --> 0:50:20,940
+ Det er ikke ansvarlige, der bruger det her overførelsesgrundlag.
+
+540
+0:50:20,940 --> 0:50:27,940
+ Men det datatilsynet kan, det er, at de kan tage sagen fra en domstol, og så får domstolen til at tage stilling til, om overførelsesgrundlaget er korrekt.
+
+541
+0:50:27,940 --> 0:50:32,940
+ Og det er det, som det irske datatilsyn gjorde i den her Schrems-sang.
+
+542
+0:50:32,940 --> 0:50:39,940
+ Så er der artikel 46. Der er mulighed for at overføre lande ifølge kommissionens standardkontrakter.
+
+543
+0:50:39,940 --> 0:50:46,940
+ Dem har vi lige fået nogle nye af her i sommeren 2021. Ad hoc-kontrakter, binding corporate rules, det vil jeg ikke komme så meget ind på.
+
+544
+0:50:46,940 --> 0:50:49,940
+ Men her er der mulighed for at få dem overført som helt undtagelsesvist.
+
+545
+0:50:49,940 --> 0:50:54,940
+ Blandt andet bepændt om lov, det vi kalder samtykke, efter artikel 49.
+
+546
+0:50:54,940 --> 0:50:59,940
+ Men det er altså undtagelsesvise overførsler.
+
+547
+0:50:59,940 --> 0:51:04,940
+ I 2013, der klagede Mark Schrems... Det er okay, at jeg går lidt over tid, ikke?
+
+548
+0:51:04,940 --> 0:51:06,940
+ For hensyn til, at Ole ikke kommer.
+
+549
+0:51:06,940 --> 0:51:11,940
+ Du kan gå 5 minutter i løbet, og så tror du, at 5-10 minutter på spørgsmålet.
+
+550
+0:51:11,940 --> 0:51:13,940
+ Ja, fint.
+
+551
+0:51:13,940 --> 0:51:26,940
+ I 2013, der klagede Schrems over overførsel fra Facebook i Europa til Facebook Inc. i USA.
+
+552
+0:51:26,940 --> 0:51:35,940
+ Og han fik medhold i den her sag, hvor EU-domstolen sagde, at der ikke er en proportional beskyttelse af dine personoplysninger i USA.
+
+553
+0:51:35,940 --> 0:51:41,940
+ Så derfor giver vi dig medhold, og det her Safe Harbor-overførselsgrunden falder.
+
+554
+0:51:41,940 --> 0:51:46,940
+ Så etablerede man bare et nyt overførselsgrundlag, som hed Privacy Shield.
+
+555
+0:51:46,940 --> 0:51:50,940
+ Og det ankede han så også til EU-domstolen, hvorefter det faldt.
+
+556
+0:51:50,940 --> 0:51:52,940
+ Han ankede så også samtidig...
+
+557
+0:51:52,940 --> 0:51:54,940
+ Nu har jeg været retsteknisk, men lad os slet ikke...
+
+558
+0:51:54,940 --> 0:51:58,940
+ Han ankede så også samtidig kommissionens standardkontrakter til EU-domstolen.
+
+559
+0:51:58,940 --> 0:52:02,940
+ Og der sagde domstolen, at de her standardkontrakter, de er ikke som udgangspunkt ulovlige.
+
+560
+0:52:02,940 --> 0:52:04,940
+ Det afhænger af, hvordan de er udformet.
+
+561
+0:52:04,940 --> 0:52:10,940
+ Om de sikrer et tilstrækkeligt beskyttelsesniveau, svarende til, hvad man kan forvente inden for EUA.
+
+562
+0:52:10,940 --> 0:52:19,940
+ Så efter de her to domme, der havde vi som set kun kommissionens standardkontrakter tilbage, som overførselsgrundlag til USA.
+
+563
+0:52:19,940 --> 0:52:25,940
+ Efter dom 2 var faldet, der gik EDPB ind og sagde, vi skriver en vejledning.
+
+564
+0:52:25,940 --> 0:52:28,940
+ EDPB, det er alle de europæiske datatilsyn sammen.
+
+565
+0:52:28,940 --> 0:52:31,940
+ Vi skriver en vejledning i, hvordan skal I så gøre det her i praksis.
+
+566
+0:52:31,940 --> 0:52:34,940
+ Den hedder Rekommendation 01-2020.
+
+567
+0:52:34,940 --> 0:52:38,940
+ Og i den vejledning, der var der seks punkter, som man som datahandsvarende skulle efterleve,
+
+568
+0:52:38,940 --> 0:52:40,940
+ hvis det var sådan, man skulle kunne dokumentere det.
+
+569
+0:52:40,940 --> 0:52:43,940
+ Hvad det siger om overførelsen, den var legitim eller ej.
+
+570
+0:52:43,940 --> 0:52:45,940
+ Man skulle kortlægge tredjelandsoverførslerne.
+
+571
+0:52:45,940 --> 0:52:50,940
+ Så skulle man redegøre for, hvad det var for et retligt grundlag, altså artikel 45 og 46, eller hvad det nu måtte være.
+
+572
+0:52:50,940 --> 0:52:53,940
+ Man havde brugt kommissionens standardkontrakter.
+
+573
+0:52:53,940 --> 0:52:57,940
+ Og så skulle man kortlægge lovgivningen i det tredjeland, der skulle modtage oplysningerne.
+
+574
+0:52:57,940 --> 0:53:00,940
+ Og det var så det, EU-omstånden allerede havde gjort for USA.
+
+575
+0:53:00,940 --> 0:53:05,940
+ Og sagt, der er problematisk lovgivning i det her tredjeland.
+
+576
+0:53:05,940 --> 0:53:10,940
+ Når man går ind og vurderer det her tredjeland, så skal man bl.a. kigge på, er der en uprofessionel masseoverførelse.
+
+577
+0:53:10,940 --> 0:53:14,940
+ Og er der mulighed for at få prøvet sin sag ved domstolene i det her land.
+
+578
+0:53:14,940 --> 0:53:17,940
+ Så går EDPB så også ind og siger i forhold til punkt 3 her.
+
+579
+0:53:17,940 --> 0:53:20,940
+ Når man laver vurderingen af tredjelandet, så kan man være i de her scenarier.
+
+580
+0:53:20,940 --> 0:53:23,940
+ Man kan være i det scenarie, at lovgivningen er compliant.
+
+581
+0:53:23,940 --> 0:53:28,940
+ Altså, det er en essentielt ekvivalent beskyttelse, svarende til, hvad vi har i EU.
+
+582
+0:53:28,940 --> 0:53:31,940
+ Men at praksis ikke er compliant.
+
+583
+0:53:31,940 --> 0:53:36,940
+ Så det vil sige, der vil være myndigheder i det her tredjeland, der ikke gør, som der står i den her lovgivning.
+
+584
+0:53:36,940 --> 0:53:39,940
+ Så har der også været den mulighed, at lovgivningen er mangelfuld.
+
+585
+0:53:39,940 --> 0:53:40,940
+ Og at praksis ikke er compliant.
+
+586
+0:53:40,940 --> 0:53:46,940
+ Og så kan der endelig være den mulighed, hvor lovgivningen deciderer problematisk, ligesom i USA.
+
+587
+0:53:46,940 --> 0:53:51,940
+ Der er lovgivning, der tillader masseovervågning hos NSA.
+
+588
+0:53:51,940 --> 0:53:54,940
+ Hvis man er nu i det tredje scenarie.
+
+589
+0:53:54,940 --> 0:53:57,940
+ Så skal man ophøre med overførselen.
+
+590
+0:53:57,940 --> 0:53:59,940
+ Implementere nogle foranstaltninger.
+
+591
+0:53:59,940 --> 0:54:03,940
+ Eller dokumentere, at den problematiske lovgivning ikke er relevant.
+
+592
+0:54:03,940 --> 0:54:06,940
+ For lige netop den konkrete overførsel, man foretager.
+
+593
+0:54:06,940 --> 0:54:09,940
+ Så, hvis vi overfører til USA.
+
+594
+0:54:09,940 --> 0:54:11,940
+ F.eks. i en cloud-tjeneste.
+
+595
+0:54:11,940 --> 0:54:17,940
+ Så går man ind og kigger på de tre nederste punkter i den her bullet.
+
+596
+0:54:17,940 --> 0:54:19,940
+ Og de foranstaltninger, som kan implementeres.
+
+597
+0:54:19,940 --> 0:54:20,940
+ Der er tre muligheder.
+
+598
+0:54:20,940 --> 0:54:23,940
+ Tekniske, organisatoriske og kontraktuelle.
+
+599
+0:54:23,940 --> 0:54:25,940
+ Når man så har gjort det.
+
+600
+0:54:25,940 --> 0:54:26,940
+ Så går man ind og skaber en formel sammenhæng.
+
+601
+0:54:26,940 --> 0:54:28,940
+ Og så laver man en løbende evaluering.
+
+602
+0:54:28,940 --> 0:54:32,940
+ Men lad os zoome en lille smule ind på de der foranstaltninger.
+
+603
+0:54:32,940 --> 0:54:37,940
+ Fordi i 01.2020 siger EDPB til samtidig.
+
+604
+0:54:37,940 --> 0:54:41,940
+ Det er kun de tekniske foranstaltninger, der kan betragtes som værende tilstrækkelige.
+
+605
+0:54:41,940 --> 0:54:44,940
+ Og de uddyber så yderligere.
+
+606
+0:54:44,940 --> 0:54:46,940
+ At af de tekniske foranstaltninger, der er.
+
+607
+0:54:46,940 --> 0:54:49,940
+ Der vil der kun være tale om fuldstændig kryptering.
+
+608
+0:54:49,940 --> 0:54:54,940
+ Sådan at databehandleren aldrig nogensinde er i stand til at se dataeksportøren.
+
+609
+0:54:54,940 --> 0:54:57,940
+ Den dataansvarlige personoplysninger i klartekst.
+
+610
+0:54:57,940 --> 0:55:01,940
+ Så det vil sige, data skal være krypteret in transit, in motion og at rest.
+
+611
+0:55:01,940 --> 0:55:05,940
+ Det er der stort set ingen cloudløsninger, som i praksis kan efterleve.
+
+612
+0:55:05,940 --> 0:55:07,940
+ Så på den baggrund kan man sige.
+
+613
+0:55:07,940 --> 0:55:09,940
+ Der ser det faktisk rigtig sort ud.
+
+614
+0:55:09,940 --> 0:55:11,940
+ I forhold til at bruge cloud.
+
+615
+0:55:11,940 --> 0:55:14,940
+ Og så tager man de her .43 og .53 og K6 sammen.
+
+616
+0:55:14,940 --> 0:55:18,940
+ Så ser det meget sort ud i forhold til at bruge cloudløsninger.
+
+617
+0:55:18,940 --> 0:55:21,940
+ Alternativt kan man nogen gange måske dokumentere.
+
+618
+0:55:21,940 --> 0:55:25,940
+ At den problematiske lovgivning ikke er relevant for den konkrete overførelse.
+
+619
+0:55:25,940 --> 0:55:26,940
+ Men det er meget meget svært.
+
+620
+0:55:26,940 --> 0:55:29,940
+ Og kravene til det er rigtig rigtig høje.
+
+621
+0:55:29,940 --> 0:55:32,940
+ Den springer vi over hensigt til siden.
+
+622
+0:55:32,940 --> 0:55:34,940
+ Når vi så zoomer en lille smule ind på.
+
+623
+0:55:34,940 --> 0:55:39,940
+ Hvad er det så de her forskellige cloudprovidere de så faktisk gør i praktisk?
+
+624
+0:55:39,940 --> 0:55:41,940
+ Jamen så kan man gå ind og kigge i databehandlereaftaler.
+
+625
+0:55:41,940 --> 0:55:43,940
+ Jeg siger allerede her undskyld til Microsoft.
+
+626
+0:55:43,940 --> 0:55:45,940
+ De gør faktisk ganske meget for at være compliant.
+
+627
+0:55:45,940 --> 0:55:46,940
+ Men ikke desto mindre.
+
+628
+0:55:46,940 --> 0:55:48,940
+ De har den her databehandlereaftale.
+
+629
+0:55:48,940 --> 0:55:51,940
+ Hvor de tiltager sig retten til at behandle de personoplysninger.
+
+630
+0:55:51,940 --> 0:55:53,940
+ Jeg lå deroppe i deres tjeneste.
+
+631
+0:55:53,940 --> 0:55:56,940
+ Det er seks formål som de selv fastsætter.
+
+632
+0:55:56,940 --> 0:56:00,940
+ Det kan jeg meget sjældent finde hjemme til at videregive til at de må gøre.
+
+633
+0:56:00,940 --> 0:56:03,940
+ Men det står sort på hvidt i deres databehandlereaftale.
+
+634
+0:56:03,940 --> 0:56:05,940
+ Man kan også gå ind og kigge lidt på.
+
+635
+0:56:05,940 --> 0:56:08,940
+ Hvad har de egentlig af under databehandlere?
+
+636
+0:56:08,940 --> 0:56:11,940
+ Og så kan vi se at der dukker alle mulige eksotiske lande op.
+
+637
+0:56:11,940 --> 0:56:15,940
+ Som Kina og Indien og USA.
+
+638
+0:56:15,940 --> 0:56:19,940
+ Som i hvert fald ikke er artikel 45 lande.
+
+639
+0:56:19,940 --> 0:56:22,940
+ På tilsvarende vis kan man gå ind og kigge på.
+
+640
+0:56:22,940 --> 0:56:24,940
+ Hvordan Google behandler vores personoplysninger.
+
+641
+0:56:24,940 --> 0:56:26,940
+ For eksempel i Google Analytics.
+
+642
+0:56:26,940 --> 0:56:28,940
+ Og der er allerede faldet afskillige afgørelser.
+
+643
+0:56:28,940 --> 0:56:31,940
+ Først i Østrig, så i Frankrig, så i DPS.
+
+644
+0:56:31,940 --> 0:56:33,940
+ Og efterfølgende i Italien.
+
+645
+0:56:33,940 --> 0:56:35,940
+ Som går ind og siger.
+
+646
+0:56:35,940 --> 0:56:37,940
+ Jamen der er tale om personoplysninger når man bruger Google Analytics.
+
+647
+0:56:37,940 --> 0:56:39,940
+ Også selvom man har maskeret sine IP-adresser.
+
+648
+0:56:39,940 --> 0:56:43,940
+ Der er også samtidig tale om en tredjelandsoverførsel af personoplysninger i klartekst.
+
+649
+0:56:43,940 --> 0:56:48,940
+ Så derfor er det no-go at bruge Google Analytics.
+
+650
+0:56:48,940 --> 0:56:51,940
+ I de muligheder for setup.
+
+651
+0:56:51,940 --> 0:56:54,940
+ Som der er lige her nu.
+
+652
+0:56:54,940 --> 0:56:57,940
+ Så med andre ord. Det ser vældig sort ud.
+
+653
+0:56:57,940 --> 0:57:01,940
+ Vi bliver klogere på hvordan det her kommer til at udvikle sig i praksis.
+
+654
+0:57:01,940 --> 0:57:03,940
+ Hen imod slutningen af året.
+
+655
+0:57:03,940 --> 0:57:06,940
+ Hvis der nu er nogen der synes der er behov for at blive klogere end det jeg allerede har sagt.
+
+656
+0:57:06,940 --> 0:57:08,940
+ Nemlig fordi EDPB.
+
+657
+0:57:08,940 --> 0:57:10,940
+ Altså alle de europæiske datatilsyn til sammen.
+
+658
+0:57:10,940 --> 0:57:13,940
+ Har lovet at gå ud og kigge på.
+
+659
+0:57:13,940 --> 0:57:16,940
+ 80 forskellige offentlige myndigheder.
+
+660
+0:57:16,940 --> 0:57:18,940
+ Spredt ud over EU.
+
+661
+0:57:18,940 --> 0:57:20,940
+ Deres brug af cloud computing.
+
+662
+0:57:20,940 --> 0:57:22,940
+ Og så vil de lave nogle offentlige rapporter.
+
+663
+0:57:22,940 --> 0:57:24,940
+ Hvor de går ind og siger.
+
+664
+0:57:24,940 --> 0:57:26,940
+ Kun de irske fængselsvæsen.
+
+665
+0:57:26,940 --> 0:57:30,940
+ Kan de bruge Microsoft Office i deres løsninger.
+
+666
+0:57:30,940 --> 0:57:32,940
+ Kan de italienske nummerkladerregister.
+
+667
+0:57:32,940 --> 0:57:35,940
+ Bruge Amazon Web Services i deres tjenester.
+
+668
+0:57:35,940 --> 0:57:37,940
+ Og så videre.
+
+669
+0:57:37,940 --> 0:57:39,940
+ Så på den måde der får vi faktisk en evaluering.
+
+670
+0:57:39,940 --> 0:57:41,940
+ Hen imod slutningen af året.
+
+671
+0:57:41,940 --> 0:57:44,940
+ Af rigtig mange forskellige af de her cloud tjenester.
+
+672
+0:57:44,940 --> 0:57:46,940
+ Fra de nationale datatilsyn.
+
+673
+0:57:46,940 --> 0:57:48,940
+ Koordineret i EDPB.
+
+674
+0:57:48,940 --> 0:57:50,940
+ I Danmark der er vi gået i engang.
+
+675
+0:57:50,940 --> 0:57:52,940
+ Fordi vi har tænkt det her det kan vi gøre bedre selv.
+
+676
+0:57:52,940 --> 0:57:54,940
+ Så de har i Danmark.
+
+677
+0:57:54,940 --> 0:57:56,940
+ Det danske datatilsyn har udtaget.
+
+678
+0:57:56,940 --> 0:57:58,940
+ Fire forskellige dataansvarlige.
+
+679
+0:57:58,940 --> 0:58:00,940
+ Som de vil bedrive tilsyn med.
+
+680
+0:58:00,940 --> 0:58:02,940
+ Og det er økonomistyrelsen, Region H, Top Danmark og Falk.
+
+681
+0:58:02,940 --> 0:58:07,940
+ Og de har så fået helt konkret 47 spørgsmål.
+
+682
+0:58:07,940 --> 0:58:09,940
+ Som de skal redegøre for at få en cloud tjeneste.
+
+683
+0:58:09,940 --> 0:58:13,940
+ Og de vil også komme med en rapport inden årets udgang.
+
+684
+0:58:13,940 --> 0:58:16,940
+ Der er nogle forskellige løsningsmuligheder.
+
+685
+0:58:16,940 --> 0:58:19,940
+ En sidste ting som jeg lige vil komme ind på det er.
+
+686
+0:58:19,940 --> 0:58:21,940
+ Hvad så med sikkerhedsforanstaltningerne?
+
+687
+0:58:21,940 --> 0:58:23,940
+ Fordi rigtig mange af jer der sidder her.
+
+688
+0:58:23,940 --> 0:58:27,940
+ Beskæftiger jer jo givetvis med sikkerhed til dagligt.
+
+689
+0:58:27,940 --> 0:58:28,940
+ Og I vil også kunne konstatere.
+
+690
+0:58:28,940 --> 0:58:30,940
+ At der er rigtig mange af de her sikkerhedsforanstaltninger.
+
+691
+0:58:30,940 --> 0:58:32,940
+ Som enten er cloud baseret.
+
+692
+0:58:32,940 --> 0:58:34,940
+ Eller også kører hos nogle tjenesteprovidere.
+
+693
+0:58:34,940 --> 0:58:36,940
+ Som kører i clouden.
+
+694
+0:58:36,940 --> 0:58:37,940
+ Og hvad så?
+
+695
+0:58:37,940 --> 0:58:39,940
+ Ja i henhold til artikel 32.
+
+696
+0:58:39,940 --> 0:58:42,940
+ Så skal vi jo lave en risikovurdering for hver behandling.
+
+697
+0:58:42,940 --> 0:58:46,940
+ Og vi skal efterfølgende implementere passende tekniske og organisatoriske foranstaltninger.
+
+698
+0:58:46,940 --> 0:58:48,940
+ Så vi nedbringer risikoen.
+
+699
+0:58:48,940 --> 0:58:50,940
+ For de registreres fundamentale rettigheder.
+
+700
+0:58:50,940 --> 0:58:52,940
+ Til noget der minder om nul.
+
+701
+0:58:52,940 --> 0:58:55,940
+ Så det er vi altså pålagt af forordningen.
+
+702
+0:58:55,940 --> 0:58:57,940
+ Men samtidig i artikel 32.
+
+703
+0:58:57,940 --> 0:58:59,940
+ Samtidig har vi jo de her regler i kapitel 5.
+
+704
+0:58:59,940 --> 0:59:02,940
+ Som forhindrer os i at bruge de her cloud tjenester.
+
+705
+0:59:02,940 --> 0:59:07,940
+ Så på den måde afskærer forordningen os faktisk fra at bruge rigtig mange sikkerhedsløsninger.
+
+706
+0:59:07,940 --> 0:59:09,940
+ Og det giver os rigtig store problemer.
+
+707
+0:59:09,940 --> 0:59:10,940
+ På nogle områder.
+
+708
+0:59:10,940 --> 0:59:13,940
+ I forhold til f.eks. anti-DDoS tjenester.
+
+709
+0:59:13,940 --> 0:59:16,940
+ Hvor nogle af de aller største tjenester der findes.
+
+710
+0:59:16,940 --> 0:59:18,940
+ Akamai og Cloudflare osv.
+
+711
+0:59:18,940 --> 0:59:20,940
+ De er faktisk amerikanske.
+
+712
+0:59:20,940 --> 0:59:22,940
+ Og det må vi jo ikke benytte os af.
+
+713
+0:59:22,940 --> 0:59:24,940
+ Fordi der bliver overført personoplysninger i USA.
+
+714
+0:59:24,940 --> 0:59:26,940
+ Skal vi så skære dem væk?
+
+715
+0:59:26,940 --> 0:59:27,940
+ Hvis vi skærer dem væk.
+
+716
+0:59:27,940 --> 0:59:30,940
+ Så kommer vi til at krænke de registrerets rettigheder efter artikel 32.
+
+717
+0:59:30,940 --> 0:59:32,940
+ Altså en ordentlig databeskyttelse.
+
+718
+0:59:32,940 --> 0:59:34,940
+ Samme gør så gældende med IDR.
+
+719
+0:59:34,940 --> 0:59:36,940
+ Hvis der er nogen af jer der bruger det.
+
+720
+0:59:36,940 --> 0:59:40,940
+ Så ender de her IDR løsninger stort set også alle sammen i cloud.
+
+721
+0:59:40,940 --> 0:59:45,940
+ Jeg har efter tre kvartalers eftersøgning fundet én tjeneste der ikke gør.
+
+722
+0:59:45,940 --> 0:59:50,940
+ Og den koster så fem gange så meget som den on-premise løsning vi har i forvejen.
+
+723
+0:59:50,940 --> 0:59:52,940
+ Det har vi simpelthen ikke råd til.
+
+724
+0:59:52,940 --> 0:59:54,940
+ Altså det må jeg konstatere.
+
+725
+0:59:54,940 --> 0:59:56,940
+ Vi har råd til meget men ikke til det.
+
+726
+0:59:56,940 --> 1:00:00,940
+ Og den sidste type jeg har beskæftiget mig med det er anti-phishing.
+
+727
+1:00:00,940 --> 1:00:04,940
+ Så anti-phishing, anti-DDoS og IDR.
+
+728
+1:00:04,940 --> 1:00:07,940
+ Der står vi simpelthen med nogle udfordringer hvor man kan sige.
+
+729
+1:00:07,940 --> 1:00:10,940
+ Forordningen siger vi skal implementere det hvis risikovurderingen tilsiger det.
+
+730
+1:00:10,940 --> 1:00:14,940
+ Og forordningen siger også at I må ikke bruge de tjenester der faktisk er på markedet.
+
+731
+1:00:14,940 --> 1:00:17,940
+ Det er noget rigtig rigtig møg.
+
+732
+1:00:20,940 --> 1:00:22,940
+ De konstitutioner der altså er.
+
+733
+1:00:22,940 --> 1:00:25,940
+ Det er i løbet af året der bliver vi klogere.
+
+734
+1:00:26,940 --> 1:00:31,940
+ Det kan være der kommer en politisk løsning på problemstillingen.
+
+735
+1:00:31,940 --> 1:00:35,940
+ Vi skal sørge for at have kortlagt til og med step 3.
+
+736
+1:00:35,940 --> 1:00:38,940
+ Og have en plan for at tilbagerulle vores cloud tjenester.
+
+737
+1:00:38,940 --> 1:00:42,940
+ Hvis vi lytter til hvad det er datatilsynet siger.
+
+738
+1:00:45,940 --> 1:00:50,940
+ Og så har vi endelig til sidst en anden mulighed for løsning.
+
+739
+1:00:50,940 --> 1:00:52,940
+ Vi har to andre muligheder for løsninger.
+
+740
+1:00:52,940 --> 1:00:54,940
+ Det ene er at der udvikles nogle europæiske tjenester.
+
+741
+1:00:54,940 --> 1:00:57,940
+ Som er compliant med de her regler.
+
+742
+1:00:57,940 --> 1:01:00,940
+ Og den anden mulighed det er at nogle af de her cloud provider.
+
+743
+1:01:00,940 --> 1:01:03,940
+ De etableres i Europa på en sådan måde at de er compliant med de her regler.
+
+744
+1:01:03,940 --> 1:01:06,940
+ Det kunne for eksempel være ved at lege deres software ud.
+
+745
+1:01:06,940 --> 1:01:08,940
+ Til danske hosting providers.
+
+746
+1:01:08,940 --> 1:01:10,940
+ Og så køre det hele på deres vegne.
+
+747
+1:01:10,940 --> 1:01:12,940
+ Det ville formodentlig være compliant.
+
+748
+1:01:12,940 --> 1:01:14,940
+ Så det er lidt om udviklerne.
+
+749
+1:01:14,940 --> 1:01:16,940
+ Så må jeg hellere have 10 stillelser.
+
+750
+1:01:16,940 --> 1:01:18,940
+ Om jeg lige fik lov til at gå lidt over tid.
+
+751
+1:01:18,940 --> 1:01:20,940
+ Er der en enkelt spørgsmål?
+
+752
+1:01:20,940 --> 1:01:21,940
+ Det er super tak.
+
+753
+1:01:21,940 --> 1:01:23,940
+ Men jeg tror der er nogle spørgsmål kunne jeg forestille mig.
+
+754
+1:01:23,940 --> 1:01:25,940
+ Vi er på over tid.
+
+755
+1:01:25,940 --> 1:01:27,940
+ Hvad vi har?
+
+756
+1:01:27,940 --> 1:01:28,940
+ Vi er på over tid ja.
+
+757
+1:01:28,940 --> 1:01:30,940
+ Men jeg kender programmet bedre end du.
+
+758
+1:01:30,940 --> 1:01:32,940
+ Er der nogen der har nogle spørgsmål?
+
+759
+1:01:38,940 --> 1:01:40,940
+ Hej.
+
+760
+1:01:40,940 --> 1:01:48,940
+ Nu siger du GDPR er en slags måde at binde de lidt mere flyvske høje regler.
+
+761
+1:01:48,940 --> 1:01:52,940
+ Til konkrete regler man kan blive straffet efter.
+
+762
+1:01:52,940 --> 1:01:54,940
+ Og jeg er på ingen måde ekspert.
+
+763
+1:01:54,940 --> 1:01:57,940
+ Men jeg har engang siddet i et arbejde med en masse jurister.
+
+764
+1:01:57,940 --> 1:02:05,940
+ Der blev vi med at sige at mange af de her artikler og rettigheder.
+
+765
+1:02:05,940 --> 1:02:07,940
+ Og ting man skal opfylde.
+
+766
+1:02:07,940 --> 1:02:10,940
+ I mange tilfælde er en vurderingssag.
+
+767
+1:02:10,940 --> 1:02:13,940
+ En individuel vurderingssag.
+
+768
+1:02:13,940 --> 1:02:16,940
+ Og jeg har sådan et hobby hvor jeg skriver rundt til firmaer.
+
+769
+1:02:16,940 --> 1:02:19,940
+ Og beder dem fortælle hvad de har om mig.
+
+770
+1:02:19,940 --> 1:02:21,940
+ Og hvorfor de har det.
+
+771
+1:02:21,940 --> 1:02:23,940
+ Og få det udleveret osv.
+
+772
+1:02:23,940 --> 1:02:25,940
+ Og tit så ser jeg formuleringen i mails.
+
+773
+1:02:25,940 --> 1:02:31,940
+ At vi vurderer at vi opfylder GDPR artiklet bla bla bla.
+
+774
+1:02:31,940 --> 1:02:33,940
+ Fordi at vi osv.
+
+775
+1:02:33,940 --> 1:02:38,940
+ Og det er jo ikke sikkert at jeg har samme opfattelse af f.eks. sikker opbevaring som de har.
+
+776
+1:02:38,940 --> 1:02:40,940
+ Hvem er det egentlig der?
+
+777
+1:02:40,940 --> 1:02:46,940
+ Og hvad kan man gøre hvis man er i en situation hvor man er uenig i om de opfylder GDPR?
+
+778
+1:02:48,940 --> 1:02:50,940
+ Jeg vil høre det som to spørgsmål.
+
+779
+1:02:51,940 --> 1:02:56,940
+ Og svaret på det du egentlig spørger siger at det eneste du kan gøre det er at klage til datatilsyn.
+
+780
+1:02:56,940 --> 1:02:59,940
+ Hvis du står for en datansvalg der siger vi gør det rigtigt og du mener de ikke gør det rigtigt.
+
+781
+1:02:59,940 --> 1:03:01,940
+ Så er der kun at klage til datatilsyn.
+
+782
+1:03:01,940 --> 1:03:03,940
+ Og så kan du også tage sagen til en domstol.
+
+783
+1:03:03,940 --> 1:03:05,940
+ Så det er det konkrete svar.
+
+784
+1:03:05,940 --> 1:03:07,940
+ Men i forhold til det der ligger bag.
+
+785
+1:03:07,940 --> 1:03:12,940
+ Ja de her regler de operationaliserer en fundamental rettighed til noget der er meget mere konkret.
+
+786
+1:03:12,940 --> 1:03:14,940
+ Men er det konkret nok?
+
+787
+1:03:14,940 --> 1:03:15,940
+ Nej det er det ikke.
+
+788
+1:03:15,940 --> 1:03:19,940
+ Altså man kan ikke blive klog på persondansvaret ved bare at sætte sig ned og læse forordningen.
+
+789
+1:03:19,940 --> 1:03:22,940
+ Fordi der er enorme mængder af praksis.
+
+790
+1:03:22,940 --> 1:03:27,940
+ Og det er også derfor folk der tager sådan et fire dages DPO kursus og siger nu er vi verdensmester og det her det er de ikke.
+
+791
+1:03:27,940 --> 1:03:32,940
+ Altså man skal kende den der praksis der har udviklet sig over en lang lang lang lang årrække.
+
+792
+1:03:32,940 --> 1:03:36,940
+ Før man kan sige man er ekspert på det her område.
+
+793
+1:03:36,940 --> 1:03:43,940
+ Og derfor er det også svært for dig som borger at udfordre en datansvalg der siger vi gør det rigtigt.
+
+794
+1:03:43,940 --> 1:03:48,940
+ Fordi har de baseret sig på den praksis som ligger på rigtig mange punkter?
+
+795
+1:03:48,940 --> 1:03:50,940
+ Eller skynder de bare?
+
+796
+1:03:50,940 --> 1:03:52,940
+ Ja.
+
+797
+1:03:52,940 --> 1:03:54,940
+ Og har de teknisk viden til det?
+
+798
+1:03:54,940 --> 1:03:55,940
+ Har de teknisk viden?
+
+799
+1:03:55,940 --> 1:03:56,940
+ Ja.
+
+800
+1:03:56,940 --> 1:03:59,940
+ Og hvis det kommer til sikkerhedsforanstaltningerne så er det jo typisk en jurist der svarer dig.
+
+801
+1:03:59,940 --> 1:04:03,940
+ Og han har bare spurgt ned i sikkerhedsafdelingen har vi styr på sikkerheden omkring de her data?
+
+802
+1:04:03,940 --> 1:04:05,940
+ Og så har han fået ja.
+
+803
+1:04:05,940 --> 1:04:06,940
+ Fordi det er det nemmeste.
+
+804
+1:04:06,940 --> 1:04:08,940
+ Det er sjældent det stikker meget dybere.
+
+805
+1:04:08,940 --> 1:04:14,940
+ Andre spørgsmål?
+
+806
+1:04:14,940 --> 1:04:15,940
+ Det sidste måske?
+
+807
+1:04:15,940 --> 1:04:17,940
+ Noget af det man i øvrigt så også kan gøre.
+
+808
+1:04:17,940 --> 1:04:19,940
+ Som borger vil jeg sige.
+
+809
+1:04:19,940 --> 1:04:22,940
+ Især hvis man har interessen i det som du har.
+
+810
+1:04:22,940 --> 1:04:25,940
+ Det er at prøve at se er der nogen der har været inde og lave en uafhængig revisionsrapport.
+
+811
+1:04:25,940 --> 1:04:30,940
+ Og netop de steder hvor du bliver behandlet og har stillet nogle af de her kritiske spørgsmål.
+
+812
+1:04:30,940 --> 1:04:34,940
+ Har de en ISO 27001 certificering?
+
+813
+1:04:34,940 --> 1:04:35,940
+ Det er der ikke ret mange der har.
+
+814
+1:04:35,940 --> 1:04:41,940
+ Men det er sådan en persondagforrettelse certificering der svarer til ISO 27001 serien.
+
+815
+1:04:41,940 --> 1:04:43,940
+ Ja.
+
+816
+1:04:43,940 --> 1:04:44,940
+ Det er noget af det du kan kigge efter.
+
+817
+1:04:44,940 --> 1:04:46,940
+ Cloud provideren det er en ISO 27001.
+
+818
+1:04:46,940 --> 1:04:49,940
+ Problemet med de store cloud provider er.
+
+819
+1:04:49,940 --> 1:04:51,940
+ Det har de alle sammen.
+
+820
+1:04:51,940 --> 1:04:53,940
+ De har alle de her certificeringer.
+
+821
+1:04:53,940 --> 1:04:54,940
+ Alle sammen.
+
+822
+1:04:54,940 --> 1:04:57,940
+ Og det gør ikke nødvendigvis at deres behandling er lovlig.
+
+823
+1:04:57,940 --> 1:04:59,940
+ Jeg har et lille spørgsmål.
+
+824
+1:04:59,940 --> 1:05:00,940
+ Det er bare i forbindelse med.
+
+825
+1:05:00,940 --> 1:05:02,940
+ Jeg hedder Anders.
+
+826
+1:05:02,940 --> 1:05:04,940
+ Du nævner her med GDPR.
+
+827
+1:05:04,940 --> 1:05:09,940
+ Det er jo en god ting fordi det på den anden måde beskytter os imod at staten ligesom går amok for alle mulige ting.
+
+828
+1:05:09,940 --> 1:05:11,940
+ Ting skal være proportionale.
+
+829
+1:05:11,940 --> 1:05:14,940
+ For eksempel når vi snakker overvågning og der står alle mulige andet forskelligt.
+
+830
+1:05:14,940 --> 1:05:15,940
+ Nu har vi lige den her logning.
+
+831
+1:05:15,940 --> 1:05:18,940
+ Det har vi kørt igennem rigtig lang tid.
+
+832
+1:05:18,940 --> 1:05:20,940
+ Nu er vi jo lige startet.
+
+833
+1:05:20,940 --> 1:05:26,940
+ Nu er vi inde i en tid nu hvor vi har fået et såkaldt målrettet geografisk logning som et resultat af det her.
+
+834
+1:05:26,940 --> 1:05:33,940
+ Men i bunden af presmeddelelsen fra Justitsministeriet der står der jo meget tydeligt at nu har vi startet den her målrettet geografiske logning.
+
+835
+1:05:33,940 --> 1:05:41,940
+ Men teleudbyderne er fortsat forpligtede til at logge trafikdata generelt og udifferencieret for at beskytte den nationale sikkerhed.
+
+836
+1:05:41,940 --> 1:05:43,940
+ Det her nationale sikkerhed hvor meget kan man.
+
+837
+1:05:43,940 --> 1:05:44,940
+ Altså så vidt jeg har forstået.
+
+838
+1:05:44,940 --> 1:05:45,940
+ Har man jo trukket det kort.
+
+839
+1:05:45,940 --> 1:05:47,940
+ Nonstop siden ca. 2008.
+
+840
+1:05:47,940 --> 1:05:48,940
+ Og det vil sige.
+
+841
+1:05:48,940 --> 1:05:52,940
+ Altså har GDPR overhovedet nogen indflydelse på de her ting.
+
+842
+1:05:52,940 --> 1:05:57,940
+ Fordi når der ligger national sikkerhed som krav nede i bunden alligevel så betyder det jo ikke noget som helst.
+
+843
+1:05:57,940 --> 1:06:02,940
+ Nej altså.
+
+844
+1:06:02,940 --> 1:06:05,940
+ Det betyder noget i forhold til de formål hvor det anvendes.
+
+845
+1:06:05,940 --> 1:06:09,940
+ Vi kommer aldrig til at slippe af med den her logning Anders.
+
+846
+1:06:09,940 --> 1:06:14,940
+ Altså det gør vi ikke fordi der vil være behov for at logge det af national sikkerhed.
+
+847
+1:06:14,940 --> 1:06:17,940
+ Fra nu af og til du og jeg ikke er mere.
+
+848
+1:06:17,940 --> 1:06:20,940
+ Så de her data de vil blive logget hele vejen igennem.
+
+849
+1:06:20,940 --> 1:06:27,940
+ Det der bliver præciseret med den lovændring der så er kommet 20 minutter efter de vedtog den sidste lov.
+
+850
+1:06:27,940 --> 1:06:33,940
+ Det er at i forhold til brug til andre formål end national sikkerhed.
+
+851
+1:06:33,940 --> 1:06:35,940
+ De data der allerede ligger.
+
+852
+1:06:35,940 --> 1:06:37,940
+ Det så blev indsnævret.
+
+853
+1:06:37,940 --> 1:06:39,940
+ Du må ikke bruge dem til.
+
+854
+1:06:39,940 --> 1:06:42,940
+ Ned til en straframme på tre år.
+
+855
+1:06:42,940 --> 1:06:45,940
+ I den brede uddifferentieret.
+
+856
+1:06:45,940 --> 1:06:47,940
+ Det må du kun gøre med de geografiske.
+
+857
+1:06:47,940 --> 1:06:49,940
+ Men data bliver opsamlet alligevel.
+
+858
+1:06:49,940 --> 1:06:54,940
+ Der bliver ikke opsamlet et datafelt mindre samlet set af den her lovændring.
+
+859
+1:06:54,940 --> 1:06:58,940
+ Var det svar på dit spørgsmål?
+
+860
+1:06:58,940 --> 1:07:00,940
+ Ja det er det.
+
+861
+1:07:00,940 --> 1:07:02,940
+ Det er ikke mulig at løse det med dit svar.
+
+862
+1:07:02,940 --> 1:07:04,940
+ Ja det svarer det på hvordan tingene er.
+
+863
+1:07:04,940 --> 1:07:06,940
+ Så kan vi diskutere om vi er enige eller ej.
+
+864
+1:07:06,940 --> 1:07:09,940
+ Men tager vi tilbage i det subjektive.
+
+865
+1:07:09,940 --> 1:07:11,940
+ Vi bliver nødt til at sige tak.
+
+866
+1:07:11,940 --> 1:07:14,940
+ Men også mange tak til Henning Mortensen.

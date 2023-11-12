@@ -1,0 +1,371 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:16,560
+ Thanks for all the organizing and all the volunteers.
+
+2
+0:00:17,280 --> 0:00:20,680
+ I'm here to speak about a German co-op.
+
+3
+0:00:21,260 --> 0:00:24,480
+ I hear it's also like a Danish co-op next to the list.
+
+4
+0:00:25,440 --> 0:00:26,540
+ That's really interesting.
+
+5
+0:00:26,540 --> 0:00:33,420
+ Yeah, the co-op is called WTF, or like in German, Werkkooperative der Technikfreundinnen.
+
+6
+0:00:34,620 --> 0:00:37,980
+ But we also had like really nice messages from a banker who was like,
+
+7
+0:00:38,080 --> 0:00:42,780
+ you know the abbreviation of your cooperative is WTF, and I looked it up on Google.
+
+8
+0:00:43,100 --> 0:00:44,060
+ It's not a good word.
+
+9
+0:00:45,400 --> 0:00:47,420
+ So yeah, that is what it is.
+
+10
+0:00:48,600 --> 0:00:49,800
+ And yes, my name is Gamo.
+
+11
+0:00:49,980 --> 0:00:51,360
+ I'm like on the board of directors.
+
+12
+0:00:52,080 --> 0:00:54,840
+ And yeah, but first of all, what is a co-op?
+
+13
+0:00:55,220 --> 0:00:56,340
+ A co-op is...
+
+14
+0:00:56,540 --> 0:00:58,380
+ It's basically a company.
+
+15
+0:00:58,760 --> 0:01:04,720
+ It's an entity which is owned by all of the members.
+
+16
+0:01:05,120 --> 0:01:07,160
+ And it doesn't matter how many shares you have.
+
+17
+0:01:07,340 --> 0:01:10,820
+ Unlike in a stock company, every member has like one vote.
+
+18
+0:01:11,040 --> 0:01:13,380
+ And we are voting like every year for the board of directors.
+
+19
+0:01:13,940 --> 0:01:17,320
+ And they are deciding like the direction of the company and what things we are doing.
+
+20
+0:01:17,700 --> 0:01:21,440
+ So it's a really democratic organization and a democratic company.
+
+21
+0:01:24,500 --> 0:01:26,160
+ Yeah, why use a co-op?
+
+22
+0:01:26,540 --> 0:01:31,420
+ So in our case, we want to facilitate business for our members.
+
+23
+0:01:31,920 --> 0:01:40,020
+ So we have like a lot of hackers in our co-op who can use the co-op as like an operating system
+
+24
+0:01:40,120 --> 0:01:44,320
+ for doing side hustles or other projects.
+
+25
+0:01:44,420 --> 0:01:45,620
+ And that was like the idea.
+
+26
+0:01:46,580 --> 0:01:50,300
+ One reason is that because in Germany, there's like a lot of bureaucracy.
+
+27
+0:01:50,780 --> 0:01:56,360
+ If you are like having a job, it's not like in Denmark where you have like one health insurance.
+
+28
+0:01:56,540 --> 0:02:04,180
+ But we have rather 100 different companies or non-profit organizations who are facilitating health insurance.
+
+29
+0:02:04,440 --> 0:02:06,920
+ And we are all quite complicated to work with.
+
+30
+0:02:07,480 --> 0:02:13,520
+ So it's always easier to have like a salary and have like an employee employment.
+
+31
+0:02:14,040 --> 0:02:17,060
+ And that is what like the VTF is doing for our members.
+
+32
+0:02:17,780 --> 0:02:24,640
+ So you can be like a freelancer or you can act or take like all the good things of being a freelancer
+
+33
+0:02:24,640 --> 0:02:26,520
+ and combining it with all the other things.
+
+34
+0:02:26,520 --> 0:02:30,640
+ All the easy things about having like an employee and being employed.
+
+35
+0:02:31,400 --> 0:02:32,200
+ It's also really nice.
+
+36
+0:02:32,200 --> 0:02:38,000
+ We have like a network of people who are doing things together and we can like do cool stuff.
+
+37
+0:02:38,100 --> 0:02:45,640
+ And yeah, also trade this information about few things.
+
+38
+0:02:45,640 --> 0:02:50,500
+ It doesn't matter if you want to like import some electronics or other stuff from China.
+
+39
+0:02:50,500 --> 0:02:55,120
+ We probably already have someone who has done that and can tell you if it's like a good idea or not.
+
+40
+0:02:56,520 --> 0:02:57,020
+ Often not.
+
+41
+0:02:58,760 --> 0:02:59,260
+ Okay.
+
+42
+0:03:00,560 --> 0:03:01,620
+ That's like one thing.
+
+43
+0:03:01,620 --> 0:03:05,200
+ I think we already talked about like the frustration about like the German bureaucracy.
+
+44
+0:03:05,580 --> 0:03:11,380
+ Also like one of our members who was like founder of it, Ayubu, has already worked with like other cooperatives.
+
+45
+0:03:12,580 --> 0:03:16,800
+ But mostly we are like in really old school things like for example banking or agriculture.
+
+46
+0:03:17,200 --> 0:03:22,620
+ And as hackers we wanted to have like a cooperative that is really working for like the hacker things.
+
+47
+0:03:23,100 --> 0:03:24,820
+ And yeah.
+
+48
+0:03:26,520 --> 0:03:33,560
+ Talking about stats, the VTF-EG was founded in 2020.
+
+49
+0:03:33,560 --> 0:03:36,960
+ That was like the official start where we did start doing all the work.
+
+50
+0:03:36,960 --> 0:03:42,200
+ We currently have around 190 members in like different capacities.
+
+51
+0:03:42,200 --> 0:03:48,960
+ Some of them are just having a membership and supporting it more because of an ideological reason.
+
+52
+0:03:48,960 --> 0:03:53,220
+ And a few of them are already like really participating with that.
+
+53
+0:03:53,220 --> 0:03:54,580
+ In the time we had like two different generalists.
+
+54
+0:03:54,580 --> 0:03:55,820
+ And then we had like a couple of other members.
+
+55
+0:03:55,820 --> 0:03:55,840
+ And then we had like a couple of other members.
+
+56
+0:03:55,840 --> 0:03:56,160
+ And then we had like a couple of other members.
+
+57
+0:03:56,160 --> 0:03:56,460
+ And then we had like a couple of other members.
+
+58
+0:03:56,520 --> 0:04:00,640
+ So we also voted two times for like our board of directors.
+
+59
+0:04:01,540 --> 0:04:03,800
+ And having that in mind.
+
+60
+0:04:04,220 --> 0:04:08,680
+ We also did already collect 94,000 euros for like the members.
+
+61
+0:04:09,260 --> 0:04:18,060
+ And so that's like the full amount like members had the project or yeah another income.
+
+62
+0:04:18,220 --> 0:04:20,140
+ And they did invoice it over the VTF.
+
+63
+0:04:21,820 --> 0:04:25,460
+ One other thing is that you maybe ask okay now I've like done this work.
+
+64
+0:04:25,460 --> 0:04:26,500
+ I can invoice this thing.
+
+65
+0:04:26,520 --> 0:04:28,620
+ I can invoice this thing like to the VTF but how do I get it out.
+
+66
+0:04:28,620 --> 0:04:41,620
+ And that's also like I think maybe some German thing where like some interesting aspects how you can like have like a second job or third job and maybe get like taxation benefits.
+
+67
+0:04:41,620 --> 0:04:44,220
+ And you also can do that with like the VTF.
+
+68
+0:04:44,220 --> 0:04:48,840
+ But you also can like use this money for like another project or another ideas.
+
+69
+0:04:48,840 --> 0:04:53,260
+ So you can be really creative about that and yeah.
+
+70
+0:04:53,260 --> 0:04:54,460
+ So what can we do?
+
+71
+0:04:54,460 --> 0:04:55,180
+ So what can we do?
+
+72
+0:04:55,180 --> 0:04:55,720
+ So what can we do?
+
+73
+0:04:55,720 --> 0:04:56,220
+ So what can we do?
+
+74
+0:04:56,220 --> 0:04:57,060
+ What can I do?
+
+75
+0:04:59,320 --> 0:05:13,020
+ Yeah, I think mostly it's interesting for like probably people wanting to do like projects in Germany and also speaking German because we're not really good at translating and like having all our conversations and discussions also like in another language.
+
+76
+0:05:14,520 --> 0:05:25,320
+ I think what's also really cool is like to think like how you can use like this corporate co-op structure for like other businesses or ideas, especially if we think about open source.
+
+77
+0:05:25,320 --> 0:05:25,920
+ And
+
+78
+0:05:26,220 --> 0:05:30,360
+ And
+
+79
+0:05:30,360 --> 0:05:45,360
+ like really
+
+80
+0:05:45,360 --> 0:05:50,000
+ like more of the VTF teams and businesses that who does not have like only the thing at mind to like optimize the earning and profits for like the owners and yeah maybe start some VTF in other countries.
+
+81
+0:05:50,000 --> 0:05:50,820
+ What's next for the VTF.
+
+82
+0:05:50,820 --> 0:05:51,420
+ What's next for the VTF.
+
+83
+0:05:51,420 --> 0:05:52,600
+ One thing we really need to work on which we're really working on is like automation.
+
+84
+0:05:52,600 --> 0:05:53,140
+ What's next for the VTF.
+
+85
+0:05:53,140 --> 0:05:55,120
+ What's next for the VTF.
+
+86
+0:05:55,120 --> 0:05:56,220
+ Currently we have like people who are doing like all the borrowing things like creating invoicing.
+
+87
+0:05:56,220 --> 0:06:02,000
+ paid and all the other things so we're working to optimize this to really have it with like
+
+88
+0:06:02,000 --> 0:06:11,120
+ little hassle as possible we're also creating new services for example collecting money if you have
+
+89
+0:06:11,120 --> 0:06:17,440
+ like a podcast or something like that like having like a cool patreon service and the big thing for
+
+90
+0:06:17,440 --> 0:06:22,640
+ us also reaching like financial long-term sustainability so making sure that enough
+
+91
+0:06:22,640 --> 0:06:28,900
+ money is getting in so we can provide like all the development okay thanks for the fish and we
+
+92
+0:06:28,900 --> 0:06:33,540
+ are contact information and this presentation is also on the archive.org thank you

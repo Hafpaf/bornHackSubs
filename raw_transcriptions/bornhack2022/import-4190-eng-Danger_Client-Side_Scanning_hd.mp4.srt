@@ -1,0 +1,4215 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:16,760
+ The next presentation we have is Arma Rohn,
+
+2
+0:00:16,880 --> 0:00:20,260
+ who's going to talk a bit about the danger of client-side scanning.
+
+3
+0:00:20,260 --> 0:00:22,640
+ Let's give a round of applause for Arma Rohn.
+
+4
+0:00:26,860 --> 0:00:27,700
+ Thank you.
+
+5
+0:00:27,700 --> 0:00:32,840
+ The European Union is proposing something very bad,
+
+6
+0:00:33,420 --> 0:00:36,340
+ and I'm going to tell you about it and why it's bad.
+
+7
+0:00:37,300 --> 0:00:39,240
+ I am the one person presenting this,
+
+8
+0:00:39,320 --> 0:00:41,180
+ but we've actually been talking about it in CryptoHagan,
+
+9
+0:00:41,500 --> 0:00:43,900
+ so it's not just... I don't deserve all the credit.
+
+10
+0:00:45,560 --> 0:00:47,940
+ So I don't really have slides,
+
+11
+0:00:48,080 --> 0:00:49,780
+ but I will put the outline over here.
+
+12
+0:00:50,340 --> 0:00:51,260
+ Oh, that didn't work so well.
+
+13
+0:00:52,260 --> 0:00:53,160
+ Let's try it.
+
+14
+0:00:54,260 --> 0:00:55,880
+ First is, I'm going to say,
+
+15
+0:00:56,620 --> 0:00:57,060
+ proposal.
+
+16
+0:00:57,700 --> 0:00:59,040
+ Second, why.
+
+17
+0:00:59,400 --> 0:01:03,840
+ And third, like, things you could do.
+
+18
+0:01:05,180 --> 0:01:08,060
+ So in the last, like, three years,
+
+19
+0:01:08,320 --> 0:01:10,820
+ there have been proposals that are effectively, like,
+
+20
+0:01:11,180 --> 0:01:14,260
+ we're going to surveil everyone more
+
+21
+0:01:14,260 --> 0:01:18,860
+ in order to do something about child sexual abuse material
+
+22
+0:01:18,860 --> 0:01:21,160
+ and the solicitation of children on the Internet
+
+23
+0:01:21,160 --> 0:01:23,720
+ for sexual abuse.
+
+24
+0:01:24,720 --> 0:01:27,100
+ And the first one is abbreviated,
+
+25
+0:01:27,340 --> 0:01:27,680
+ CSA,
+
+26
+0:01:27,700 --> 0:01:29,620
+ and the latter is abbreviated, grooming.
+
+27
+0:01:30,800 --> 0:01:32,660
+ So these are, like, bad things,
+
+28
+0:01:33,000 --> 0:01:34,680
+ and the proposal is we're going to surveil people more
+
+29
+0:01:34,680 --> 0:01:37,260
+ so we can find these things and stop these things
+
+30
+0:01:37,260 --> 0:01:40,900
+ and bring the perpetrators to justice.
+
+31
+0:01:41,940 --> 0:01:44,800
+ There have been proposals in 2020 and 2021,
+
+32
+0:01:45,820 --> 0:01:49,240
+ and they were both, like, people said they were bad,
+
+33
+0:01:49,380 --> 0:01:50,180
+ and they didn't go anywhere.
+
+34
+0:01:51,080 --> 0:01:54,560
+ And then 2022, in May, there was another proposal.
+
+35
+0:01:55,520 --> 0:01:56,560
+ This proposal is number...
+
+36
+0:01:57,700 --> 0:02:05,980
+ I'll have notes on the page for this presentation
+
+37
+0:02:05,980 --> 0:02:08,020
+ so you can see everything that I'm saying
+
+38
+0:02:08,020 --> 0:02:11,160
+ with all these references and links to papers and stuff.
+
+39
+0:02:11,860 --> 0:02:12,940
+ But I'll put the key stuff here.
+
+40
+0:02:13,500 --> 0:02:17,620
+ So this number proposal, it hasn't been passed,
+
+41
+0:02:18,120 --> 0:02:20,440
+ would require that tech companies screen their platforms
+
+42
+0:02:20,440 --> 0:02:21,940
+ for child sexual abuse material
+
+43
+0:02:21,940 --> 0:02:25,760
+ and establish the EU Center on Child Sexual Abuse
+
+44
+0:02:25,760 --> 0:02:26,880
+ to coordinate the screening.
+
+45
+0:02:27,700 --> 0:02:31,400
+ And supposedly, these rules are supposed to rescue children
+
+46
+0:02:31,400 --> 0:02:34,340
+ from abuse, prevent CSAM from reappearing online,
+
+47
+0:02:34,460 --> 0:02:35,660
+ and to bring offenders to justice.
+
+48
+0:02:37,460 --> 0:02:42,420
+ The proposal is quite vague about how it would be implemented.
+
+49
+0:02:43,340 --> 0:02:47,520
+ So I'll tell you some things that could be related
+
+50
+0:02:47,520 --> 0:02:48,740
+ that already exist.
+
+51
+0:02:52,820 --> 0:02:53,460
+ There's...
+
+52
+0:02:53,460 --> 0:02:56,620
+ So one technique that I suspect would be used,
+
+53
+0:02:56,620 --> 0:02:57,620
+ but...
+
+54
+0:02:57,700 --> 0:02:59,040
+ might not be adequate,
+
+55
+0:02:59,560 --> 0:03:01,820
+ would be to effectively...
+
+56
+0:03:01,820 --> 0:03:04,700
+ We create a database of sexual abuse material,
+
+57
+0:03:05,000 --> 0:03:09,600
+ and we compare every message on, like, Facebook or Signal
+
+58
+0:03:09,600 --> 0:03:13,240
+ or whatever to this database.
+
+59
+0:03:13,240 --> 0:03:16,980
+ And it would probably only work for images, so simply.
+
+60
+0:03:17,560 --> 0:03:20,160
+ So a very simple way is you hash every known...
+
+61
+0:03:20,160 --> 0:03:22,860
+ You have some, like, central party
+
+62
+0:03:22,860 --> 0:03:25,280
+ that collects all the child sexual abuse material
+
+63
+0:03:25,280 --> 0:03:25,940
+ that's been reported,
+
+64
+0:03:26,380 --> 0:03:27,700
+ and it takes a hash,
+
+65
+0:03:27,700 --> 0:03:28,700
+ and you take a hash of each image.
+
+66
+0:03:28,700 --> 0:03:29,700
+ It could be, like, an MD5 hash.
+
+67
+0:03:29,700 --> 0:03:33,700
+ And then on every client service,
+
+68
+0:03:33,700 --> 0:03:35,700
+ you take an MD5 hash of every image that's ever shared,
+
+69
+0:03:35,700 --> 0:03:37,700
+ as it's shared,
+
+70
+0:03:37,700 --> 0:03:38,700
+ and you compare them,
+
+71
+0:03:38,700 --> 0:03:40,700
+ and if there's a match,
+
+72
+0:03:40,700 --> 0:03:42,700
+ you send it to Big Brother.
+
+73
+0:03:42,700 --> 0:03:44,700
+ Um...
+
+74
+0:03:44,700 --> 0:03:45,700
+ There...
+
+75
+0:03:45,700 --> 0:03:46,700
+ There are...
+
+76
+0:03:46,700 --> 0:03:47,700
+ I found...
+
+77
+0:03:47,700 --> 0:03:48,700
+ I know two systems...
+
+78
+0:03:48,700 --> 0:03:51,700
+ I found papers saying that two systems like this exist,
+
+79
+0:03:51,700 --> 0:03:52,700
+ and I'm sure there are many more.
+
+80
+0:03:52,700 --> 0:03:56,460
+ One I found is from the Canadian Center for Child Protection,
+
+81
+0:03:56,460 --> 0:03:57,560
+ and another is from Apple.
+
+82
+0:03:57,560 --> 0:03:58,560
+ And I'm sure there are others,
+
+83
+0:03:58,560 --> 0:04:02,560
+ but these two I have linked to the...
+
+84
+0:04:02,560 --> 0:04:05,560
+ some papers about them in case you want to read about them.
+
+85
+0:04:05,560 --> 0:04:09,560
+ So one way you could do this is with, like, an MD5 hash.
+
+86
+0:04:09,560 --> 0:04:12,560
+ You can also use what is called a perceptual hash function
+
+87
+0:04:12,560 --> 0:04:15,560
+ so that if you have two images that are similar,
+
+88
+0:04:15,560 --> 0:04:17,560
+ they will have similar hash values.
+
+89
+0:04:17,560 --> 0:04:19,560
+ And that way, I guess, like,
+
+90
+0:04:19,560 --> 0:04:21,560
+ if the image is resized or something,
+
+91
+0:04:21,560 --> 0:04:22,560
+ you can, um...
+
+92
+0:04:22,560 --> 0:04:24,560
+ I mean, the simple version, if it's resized,
+
+93
+0:04:24,560 --> 0:04:26,560
+ you can match it, but also...
+
+94
+0:04:27,560 --> 0:04:29,560
+ it can be a much more distant match.
+
+95
+0:04:29,560 --> 0:04:31,560
+ And later I'll mention
+
+96
+0:04:31,560 --> 0:04:34,560
+ you can have really bad false positives.
+
+97
+0:04:34,560 --> 0:04:36,560
+ So, uh...
+
+98
+0:04:36,560 --> 0:04:37,560
+ Still...
+
+99
+0:04:37,560 --> 0:04:39,560
+ So, uh...
+
+100
+0:04:39,560 --> 0:04:40,560
+ Like...
+
+101
+0:04:40,560 --> 0:04:43,560
+ Probably, like, hacker people don't like this already,
+
+102
+0:04:43,560 --> 0:04:46,560
+ but, you know, the people who like this say that this is good,
+
+103
+0:04:46,560 --> 0:04:47,560
+ but we need more
+
+104
+0:04:47,560 --> 0:04:50,560
+ because we're having more child sexual abuse material,
+
+105
+0:04:50,560 --> 0:04:53,560
+ and we need more advanced methods than even perceptual hashing.
+
+106
+0:04:53,560 --> 0:04:56,560
+ And this is where, like, artificial intelligence,
+
+107
+0:04:56,560 --> 0:04:59,560
+ whatever that is, will come about.
+
+108
+0:04:59,560 --> 0:05:01,560
+ But still, a system, an image-based system,
+
+109
+0:05:01,560 --> 0:05:05,560
+ only works for detection of known...
+
+110
+0:05:05,560 --> 0:05:09,560
+ probably known child sexual abuse material.
+
+111
+0:05:09,560 --> 0:05:11,560
+ Maybe with some more advanced system,
+
+112
+0:05:11,560 --> 0:05:14,560
+ we could detect, like, child sexual abuse material
+
+113
+0:05:14,560 --> 0:05:17,560
+ that we didn't know about before.
+
+114
+0:05:17,560 --> 0:05:21,560
+ Or maybe we could detect stuff that's happening by text,
+
+115
+0:05:21,560 --> 0:05:25,560
+ such as solicitation for sexual activities, grooming.
+
+116
+0:05:26,560 --> 0:05:28,560
+ Um...
+
+117
+0:05:28,560 --> 0:05:31,560
+ And...
+
+118
+0:05:31,560 --> 0:05:33,560
+ In practice,
+
+119
+0:05:33,560 --> 0:05:35,560
+ like, the...
+
+120
+0:05:35,560 --> 0:05:38,560
+ I don't think the regulation says
+
+121
+0:05:38,560 --> 0:05:40,560
+ you need to have a human review this.
+
+122
+0:05:40,560 --> 0:05:42,560
+ I guess it would be really scary to me
+
+123
+0:05:42,560 --> 0:05:44,560
+ if they implemented this and there was no human review.
+
+124
+0:05:44,560 --> 0:05:46,560
+ But because there's human review,
+
+125
+0:05:46,560 --> 0:05:47,560
+ at some point,
+
+126
+0:05:47,560 --> 0:05:50,560
+ someone's going to read your private communications
+
+127
+0:05:50,560 --> 0:05:52,560
+ if there's a false positive.
+
+128
+0:05:52,560 --> 0:05:54,560
+ So if, like, you have an image of your dog
+
+129
+0:05:54,560 --> 0:05:56,560
+ that's marked as child sexual abuse,
+
+130
+0:05:56,560 --> 0:05:58,560
+ or child sexual abuse material,
+
+131
+0:05:58,560 --> 0:06:00,560
+ someone will...
+
+132
+0:06:00,560 --> 0:06:02,560
+ Someone will have to review this image
+
+133
+0:06:02,560 --> 0:06:04,560
+ and see that you took a picture of your dog.
+
+134
+0:06:04,560 --> 0:06:07,560
+ And, um...
+
+135
+0:06:07,560 --> 0:06:08,560
+ That's...
+
+136
+0:06:08,560 --> 0:06:12,560
+ I think even if we have, like, MD5 as the hash function,
+
+137
+0:06:12,560 --> 0:06:14,560
+ we will have false positives
+
+138
+0:06:14,560 --> 0:06:16,560
+ because you can have legitimate purposes.
+
+139
+0:06:16,560 --> 0:06:19,560
+ Like, if you're two organizations that, um...
+
+140
+0:06:19,560 --> 0:06:22,560
+ are stop... trying to detect and stop
+
+141
+0:06:22,560 --> 0:06:24,560
+ child sexual abuse material,
+
+142
+0:06:24,560 --> 0:06:26,560
+ they might share images between each other.
+
+143
+0:06:26,560 --> 0:06:28,560
+ So, um...
+
+144
+0:06:28,560 --> 0:06:30,560
+ Even in that case, you're going to have false positives.
+
+145
+0:06:30,560 --> 0:06:32,560
+ But if we use some complex artificial intelligence,
+
+146
+0:06:32,560 --> 0:06:34,560
+ surely there's going to be a lot of false positives.
+
+147
+0:06:34,560 --> 0:06:36,560
+ Um...
+
+148
+0:06:36,560 --> 0:06:38,560
+ And...
+
+149
+0:06:38,560 --> 0:06:40,560
+ One more point before...
+
+150
+0:06:40,560 --> 0:06:42,560
+ Actually, no, I have a fun story on this last point.
+
+151
+0:06:42,560 --> 0:06:44,560
+ I, um...
+
+152
+0:06:44,560 --> 0:06:46,560
+ Years ago, I introduced two people
+
+153
+0:06:46,560 --> 0:06:48,560
+ who happened to work on, um...
+
+154
+0:06:48,560 --> 0:06:50,560
+ Like, stopping...
+
+155
+0:06:50,560 --> 0:06:52,560
+ Like, detecting...
+
+156
+0:06:52,560 --> 0:06:54,560
+ Uh...
+
+157
+0:06:54,560 --> 0:06:56,560
+ Child sexual abuse material and other bad stuff.
+
+158
+0:06:56,560 --> 0:06:58,560
+ And they were, like...
+
+159
+0:06:58,560 --> 0:07:00,560
+ One of them had some really cool idea that the other one
+
+160
+0:07:00,560 --> 0:07:02,560
+ really liked, and they wanted to share the information.
+
+161
+0:07:02,560 --> 0:07:04,560
+ So the one sent an email to the other.
+
+162
+0:07:04,560 --> 0:07:06,560
+ And I was standing right...
+
+163
+0:07:06,560 --> 0:07:08,560
+ Like, I was sitting right with them.
+
+164
+0:07:08,560 --> 0:07:10,560
+ And he said, okay, I'll send you the email,
+
+165
+0:07:10,560 --> 0:07:12,560
+ but I'm not going to say what we were talking about.
+
+166
+0:07:12,560 --> 0:07:14,560
+ So, like, even two people who are employed
+
+167
+0:07:14,560 --> 0:07:16,560
+ in the business of, um...
+
+168
+0:07:16,560 --> 0:07:18,560
+ Like, stopping child sexual abuse
+
+169
+0:07:18,560 --> 0:07:20,560
+ can't say in their email
+
+170
+0:07:20,560 --> 0:07:22,560
+ that that's what they're doing.
+
+171
+0:07:22,560 --> 0:07:24,560
+ Um...
+
+172
+0:07:24,560 --> 0:07:26,560
+ Anyway, uh... So...
+
+173
+0:07:26,560 --> 0:07:28,560
+ Before I... So I'm still on the topic of
+
+174
+0:07:28,560 --> 0:07:30,560
+ what is generally being proposed
+
+175
+0:07:30,560 --> 0:07:32,560
+ and how it might be implemented.
+
+176
+0:07:32,560 --> 0:07:34,560
+ Um... One more point on this.
+
+177
+0:07:34,560 --> 0:07:36,560
+ I called the talk
+
+178
+0:07:36,560 --> 0:07:38,560
+ Clydeside Scanning, and, um...
+
+179
+0:07:38,560 --> 0:07:40,560
+ I don't really like the name.
+
+180
+0:07:40,560 --> 0:07:42,560
+ Clydeside Scanning, um...
+
+181
+0:07:42,560 --> 0:07:44,560
+ Means...
+
+182
+0:07:44,560 --> 0:07:46,560
+ I'm going to scan...
+
+183
+0:07:46,560 --> 0:07:48,560
+ Before you send...
+
+184
+0:07:48,560 --> 0:07:50,560
+ I send you a message,
+
+185
+0:07:50,560 --> 0:07:52,560
+ and before you receive the message,
+
+186
+0:07:52,560 --> 0:07:54,560
+ some third party is going to scan it.
+
+187
+0:07:54,560 --> 0:07:56,560
+ Uh...
+
+188
+0:07:56,560 --> 0:07:58,560
+ Against... Like, compare it against the known
+
+189
+0:07:58,560 --> 0:08:00,560
+ bad images. And...
+
+190
+0:08:00,560 --> 0:08:02,560
+ That is one thing that would probably be part of this.
+
+191
+0:08:02,560 --> 0:08:04,560
+ But there are many
+
+192
+0:08:04,560 --> 0:08:06,560
+ other things that would be...
+
+193
+0:08:06,560 --> 0:08:08,560
+ Um...
+
+194
+0:08:08,560 --> 0:08:10,560
+ That could maybe accomplish this.
+
+195
+0:08:10,560 --> 0:08:12,560
+ I think the Clydeside Scanning is particularly relevant
+
+196
+0:08:12,560 --> 0:08:14,560
+ if we have end-to-end encryption, because...
+
+197
+0:08:14,560 --> 0:08:16,560
+ If there's end-to-end encryption,
+
+198
+0:08:16,560 --> 0:08:18,560
+ we need some way to...
+
+199
+0:08:18,560 --> 0:08:20,560
+ Um...
+
+200
+0:08:20,560 --> 0:08:22,560
+ Like...
+
+201
+0:08:22,560 --> 0:08:24,560
+ Do the scanning while pretending to still maintain
+
+202
+0:08:24,560 --> 0:08:26,560
+ the end-to-end encryption.
+
+203
+0:08:26,560 --> 0:08:28,560
+ Um...
+
+204
+0:08:28,560 --> 0:08:30,560
+ I wonder, did I, like, lose everyone?
+
+205
+0:08:30,560 --> 0:08:32,560
+ Because I don't have slides and pretty pictures,
+
+206
+0:08:32,560 --> 0:08:34,560
+ and maybe that helps.
+
+207
+0:08:34,560 --> 0:08:36,560
+ Okay. Great. Thank you.
+
+208
+0:08:36,560 --> 0:08:38,560
+ So I said I would do, uh...
+
+209
+0:08:38,560 --> 0:08:40,560
+ Let's do this again.
+
+210
+0:08:40,560 --> 0:08:42,560
+ I said I would do the...
+
+211
+0:08:42,560 --> 0:08:44,560
+ What the proposal is.
+
+212
+0:08:44,560 --> 0:08:46,560
+ Now I'm going into the Y...
+
+213
+0:08:46,560 --> 0:08:48,560
+ The Y section of, like, uh...
+
+214
+0:08:48,560 --> 0:08:50,560
+ Actually...
+
+215
+0:08:50,560 --> 0:08:52,560
+ Oh, I actually have two Y sections.
+
+216
+0:08:52,560 --> 0:08:54,560
+ I have why it's bad, and then why
+
+217
+0:08:54,560 --> 0:08:56,560
+ people might have proposed such a bad thing.
+
+218
+0:08:56,560 --> 0:08:58,560
+ And I'm going to start with why it's bad.
+
+219
+0:08:58,560 --> 0:09:00,560
+ And I learned once that if you want to
+
+220
+0:09:00,560 --> 0:09:02,560
+ convince people of something, you should do three things.
+
+221
+0:09:02,560 --> 0:09:04,560
+ You should say... They're called in Greek...
+
+222
+0:09:04,560 --> 0:09:06,560
+ I mean, I'm going to say it wrong.
+
+223
+0:09:06,560 --> 0:09:08,560
+ Like, pathos...
+
+224
+0:09:08,560 --> 0:09:10,560
+ Uh...
+
+225
+0:09:10,560 --> 0:09:12,560
+ Logos and ethos, maybe?
+
+226
+0:09:12,560 --> 0:09:14,560
+ One of them is logical arguments.
+
+227
+0:09:14,560 --> 0:09:16,560
+ One of them is
+
+228
+0:09:16,560 --> 0:09:18,560
+ some very emotional example.
+
+229
+0:09:18,560 --> 0:09:20,560
+ And the other is some authority.
+
+230
+0:09:20,560 --> 0:09:22,560
+ And I think people here care most about the first one,
+
+231
+0:09:22,560 --> 0:09:24,560
+ but I hope the...
+
+232
+0:09:24,560 --> 0:09:26,560
+ I won't bore you too much with the other two.
+
+233
+0:09:26,560 --> 0:09:28,560
+ The logical reasons.
+
+234
+0:09:28,560 --> 0:09:30,560
+ I think the privacy risk
+
+235
+0:09:30,560 --> 0:09:32,560
+ is kind of clear.
+
+236
+0:09:32,560 --> 0:09:34,560
+ And, uh...
+
+237
+0:09:34,560 --> 0:09:36,560
+ Yes.
+
+238
+0:09:36,560 --> 0:09:38,560
+ And at some point, like...
+
+239
+0:09:38,560 --> 0:09:40,560
+ Well, yeah.
+
+240
+0:09:40,560 --> 0:09:42,560
+ I pretty much already said that.
+
+241
+0:09:42,560 --> 0:09:44,560
+ There's going to be false positives.
+
+242
+0:09:44,560 --> 0:09:46,560
+ Someone's going to have to review it.
+
+243
+0:09:46,560 --> 0:09:48,560
+ And, like, do you actually trust everyone in the...
+
+244
+0:09:48,560 --> 0:09:50,560
+ Whoever, like...
+
+245
+0:09:50,560 --> 0:09:52,560
+ It could be the EU center for whatever they're calling it.
+
+246
+0:09:52,560 --> 0:09:54,560
+ Or it could be, like, any of these companies
+
+247
+0:09:54,560 --> 0:09:56,560
+ that have to implement this.
+
+248
+0:09:56,560 --> 0:09:58,560
+ They're reviewing it, and it's probably
+
+249
+0:09:58,560 --> 0:10:00,560
+ not someone who, like...
+
+250
+0:10:00,560 --> 0:10:02,560
+ It's probably not a very, uh...
+
+251
+0:10:02,560 --> 0:10:04,560
+ You're going to need a lot of people reviewing it.
+
+252
+0:10:04,560 --> 0:10:06,560
+ So I don't really trust that they're going to
+
+253
+0:10:06,560 --> 0:10:08,560
+ do everything properly.
+
+254
+0:10:08,560 --> 0:10:10,560
+ Um...
+
+255
+0:10:12,560 --> 0:10:14,560
+ And...
+
+256
+0:10:14,560 --> 0:10:16,560
+ Like...
+
+257
+0:10:16,560 --> 0:10:18,560
+ If we have to scan...
+
+258
+0:10:18,560 --> 0:10:20,560
+ If we have a communication between me and you,
+
+259
+0:10:20,560 --> 0:10:22,560
+ and we're doing end-to-end encryption,
+
+260
+0:10:22,560 --> 0:10:24,560
+ we can't do this.
+
+261
+0:10:24,560 --> 0:10:26,560
+ There's a method of breaking the end-to-end encryption.
+
+262
+0:10:26,560 --> 0:10:28,560
+ Like, one way to do it is we scan the image
+
+263
+0:10:28,560 --> 0:10:30,560
+ on your laptop
+
+264
+0:10:30,560 --> 0:10:32,560
+ before you encrypt it.
+
+265
+0:10:32,560 --> 0:10:34,560
+ Another is there's some
+
+266
+0:10:34,560 --> 0:10:36,560
+ master key that can decrypt your encryption.
+
+267
+0:10:36,560 --> 0:10:38,560
+ Either way,
+
+268
+0:10:38,560 --> 0:10:40,560
+ uh...
+
+269
+0:10:40,560 --> 0:10:42,560
+ If you're going to follow the rule,
+
+270
+0:10:42,560 --> 0:10:44,560
+ your end-to-end encryption is broken because
+
+271
+0:10:44,560 --> 0:10:46,560
+ maybe there's a false positive.
+
+272
+0:10:46,560 --> 0:10:48,560
+ I mean, if you're actually...
+
+273
+0:10:48,560 --> 0:10:50,560
+ Of course, if you're actually, like, sharing child sexual abuse material,
+
+274
+0:10:50,560 --> 0:10:52,560
+ the end-to-end encryption will be broken.
+
+275
+0:10:52,560 --> 0:10:54,560
+ But if you're doing a false positive,
+
+276
+0:10:54,560 --> 0:10:56,560
+ it's supposed to be broken.
+
+277
+0:10:56,560 --> 0:10:58,560
+ So, um...
+
+278
+0:10:58,560 --> 0:11:00,560
+ That's the, like,
+
+279
+0:11:00,560 --> 0:11:02,560
+ freedom reasons.
+
+280
+0:11:02,560 --> 0:11:04,560
+ But there are other reasons why it's bad.
+
+281
+0:11:04,560 --> 0:11:06,560
+ First is, um...
+
+282
+0:11:08,560 --> 0:11:10,560
+ It's not known
+
+283
+0:11:10,560 --> 0:11:12,560
+ to be helpful for stopping
+
+284
+0:11:12,560 --> 0:11:14,560
+ child sexual abuse.
+
+285
+0:11:16,560 --> 0:11:18,560
+ Yes. So, um...
+
+286
+0:11:18,560 --> 0:11:20,560
+ I... Two points
+
+287
+0:11:20,560 --> 0:11:22,560
+ related to this. One is
+
+288
+0:11:22,560 --> 0:11:24,560
+ this new fangled technique
+
+289
+0:11:24,560 --> 0:11:26,560
+ is not shown to be effective.
+
+290
+0:11:26,560 --> 0:11:28,560
+ Um...
+
+291
+0:11:28,560 --> 0:11:30,560
+ And a specific reason why it's not...
+
+292
+0:11:30,560 --> 0:11:32,560
+ Why, uh...
+
+293
+0:11:32,560 --> 0:11:34,560
+ Okay, and then there's...
+
+294
+0:11:34,560 --> 0:11:36,560
+ First, it's not known to be effective.
+
+295
+0:11:36,560 --> 0:11:38,560
+ Now we can speculate why it won't be effective.
+
+296
+0:11:38,560 --> 0:11:40,560
+ One reason it might not be effective
+
+297
+0:11:40,560 --> 0:11:42,560
+ is that, according to
+
+298
+0:11:42,560 --> 0:11:44,560
+ a board member at the
+
+299
+0:11:44,560 --> 0:11:46,560
+ Child Protection Association of Germany,
+
+300
+0:11:46,560 --> 0:11:48,560
+ Joachim Tschurk,
+
+301
+0:11:48,560 --> 0:11:50,560
+ most illegal online activities
+
+302
+0:11:50,560 --> 0:11:52,560
+ already occur via forums and the dark web.
+
+303
+0:11:52,560 --> 0:11:54,560
+ And I do not think that the dark web
+
+304
+0:11:54,560 --> 0:11:56,560
+ will implement this.
+
+305
+0:12:00,560 --> 0:12:02,560
+ And then even if you implement it,
+
+306
+0:12:02,560 --> 0:12:04,560
+ um... I mean, even if, like,
+
+307
+0:12:04,560 --> 0:12:06,560
+ I'm a criminal and I'm gonna keep communicating
+
+308
+0:12:06,560 --> 0:12:08,560
+ by some place that's gonna
+
+309
+0:12:08,560 --> 0:12:10,560
+ implement it, maybe I can find a way
+
+310
+0:12:10,560 --> 0:12:12,560
+ to work around it. Especially if it's...
+
+311
+0:12:12,560 --> 0:12:14,560
+ If it's, like, implemented in something like
+
+312
+0:12:14,560 --> 0:12:16,560
+ on the client application,
+
+313
+0:12:16,560 --> 0:12:18,560
+ I can find a way around it, you know?
+
+314
+0:12:18,560 --> 0:12:20,560
+ Um... So...
+
+315
+0:12:20,560 --> 0:12:22,560
+ Yes. Not shown to be
+
+316
+0:12:22,560 --> 0:12:24,560
+ effective. Good reason to think it won't be effective.
+
+317
+0:12:24,560 --> 0:12:26,560
+ Also, there are already
+
+318
+0:12:26,560 --> 0:12:28,560
+ effective methods.
+
+319
+0:12:28,560 --> 0:12:30,560
+ And maybe we should just use them more.
+
+320
+0:12:30,560 --> 0:12:32,560
+ So, like...
+
+321
+0:12:32,560 --> 0:12:34,560
+ I found some, um...
+
+322
+0:12:34,560 --> 0:12:36,560
+ articles about, like,
+
+323
+0:12:36,560 --> 0:12:38,560
+ police say that they can't get
+
+324
+0:12:38,560 --> 0:12:40,560
+ content like child sexual abuse material
+
+325
+0:12:40,560 --> 0:12:42,560
+ removed, but if just some random
+
+326
+0:12:42,560 --> 0:12:44,560
+ guy emails the service provider
+
+327
+0:12:44,560 --> 0:12:46,560
+ and says, this is illegal,
+
+328
+0:12:46,560 --> 0:12:48,560
+ remove it, the, um...
+
+329
+0:12:48,560 --> 0:12:50,560
+ provider will remove it right away.
+
+330
+0:12:50,560 --> 0:12:52,560
+ So... I don't...
+
+331
+0:12:52,560 --> 0:12:54,560
+ Like, I didn't really look that much
+
+332
+0:12:54,560 --> 0:12:56,560
+ into, um...
+
+333
+0:12:56,560 --> 0:12:58,560
+ So I saw what the
+
+334
+0:12:58,560 --> 0:13:00,560
+ guy wrote, but I didn't
+
+335
+0:13:00,560 --> 0:13:02,560
+ check how correct it was. But there's
+
+336
+0:13:02,560 --> 0:13:04,560
+ something about that.
+
+337
+0:13:04,560 --> 0:13:06,560
+ Um... But also general...
+
+338
+0:13:06,560 --> 0:13:08,560
+ Some other guy was writing,
+
+339
+0:13:08,560 --> 0:13:10,560
+ like, just normal police work
+
+340
+0:13:10,560 --> 0:13:12,560
+ works. You don't need this
+
+341
+0:13:12,560 --> 0:13:14,560
+ mass surveillance.
+
+342
+0:13:14,560 --> 0:13:16,560
+ Um...
+
+343
+0:13:16,560 --> 0:13:18,560
+ Then...
+
+344
+0:13:18,560 --> 0:13:20,560
+ So I said, the reasons
+
+345
+0:13:20,560 --> 0:13:22,560
+ it's bad, it's bad for freedom,
+
+346
+0:13:22,560 --> 0:13:24,560
+ it doesn't work,
+
+347
+0:13:24,560 --> 0:13:26,560
+ it's also, um...
+
+348
+0:13:26,560 --> 0:13:28,560
+ I said it breaks into
+
+349
+0:13:28,560 --> 0:13:30,560
+ an encryption. It also creates a bunch of
+
+350
+0:13:30,560 --> 0:13:32,560
+ new attacks.
+
+351
+0:13:32,560 --> 0:13:34,560
+ Because, um...
+
+352
+0:13:34,560 --> 0:13:36,560
+ I found a paper
+
+353
+0:13:36,560 --> 0:13:38,560
+ that does this. You can read it in more detail.
+
+354
+0:13:38,560 --> 0:13:40,560
+ And he went to, like...
+
+355
+0:13:40,560 --> 0:13:42,560
+ Depending on how you implement it, there could be
+
+356
+0:13:42,560 --> 0:13:44,560
+ different new attacks.
+
+357
+0:13:44,560 --> 0:13:46,560
+ I, uh... You can imagine, like,
+
+358
+0:13:46,560 --> 0:13:48,560
+ if you have some...
+
+359
+0:13:48,560 --> 0:13:50,560
+ some master decryption key,
+
+360
+0:13:50,560 --> 0:13:52,560
+ or if we have something running on the
+
+361
+0:13:52,560 --> 0:13:54,560
+ clients,
+
+362
+0:13:54,560 --> 0:13:56,560
+ there could be new attacks.
+
+363
+0:13:56,560 --> 0:13:58,560
+ Well, the thing is
+
+364
+0:13:58,560 --> 0:14:00,560
+ the proposal is vague
+
+365
+0:14:00,560 --> 0:14:02,560
+ about what would be implemented, so you need
+
+366
+0:14:02,560 --> 0:14:04,560
+ to have a bunch of different
+
+367
+0:14:04,560 --> 0:14:06,560
+ um... possibilities
+
+368
+0:14:06,560 --> 0:14:08,560
+ of what might be implemented, so that you can say
+
+369
+0:14:08,560 --> 0:14:10,560
+ why they're all bad.
+
+370
+0:14:10,560 --> 0:14:12,560
+ Okay, and then the last reason
+
+371
+0:14:12,560 --> 0:14:14,560
+ why it's bad
+
+372
+0:14:14,560 --> 0:14:16,560
+ is that children also need
+
+373
+0:14:16,560 --> 0:14:18,560
+ privacy. So...
+
+374
+0:14:18,560 --> 0:14:20,560
+ You're monitoring...
+
+375
+0:14:20,560 --> 0:14:22,560
+ Like, the main thing is you're monitoring
+
+376
+0:14:22,560 --> 0:14:24,560
+ if, like, a child is having a...
+
+377
+0:14:24,560 --> 0:14:26,560
+ is being
+
+378
+0:14:26,560 --> 0:14:28,560
+ solicited for sex or something.
+
+379
+0:14:28,560 --> 0:14:30,560
+ Um...
+
+380
+0:14:30,560 --> 0:14:32,560
+ And so you're scanning...
+
+381
+0:14:32,560 --> 0:14:34,560
+ You're scanning everyone's message, but you're also scanning
+
+382
+0:14:34,560 --> 0:14:36,560
+ the child's message to protect the child, but in doing this
+
+383
+0:14:36,560 --> 0:14:38,560
+ you're reducing the privacy of the child.
+
+384
+0:14:40,560 --> 0:14:42,560
+ So...
+
+385
+0:14:42,560 --> 0:14:44,560
+ Those are some reasons
+
+386
+0:14:44,560 --> 0:14:46,560
+ why it's bad. Now I'll give you
+
+387
+0:14:46,560 --> 0:14:48,560
+ a practical example that will make you feel so emotional
+
+388
+0:14:48,560 --> 0:14:50,560
+ to see why it's bad.
+
+389
+0:14:50,560 --> 0:14:52,560
+ Uh, does anyone here use NN encryption?
+
+390
+0:14:54,560 --> 0:14:56,560
+ Uh...
+
+391
+0:14:56,560 --> 0:14:58,560
+ I think a lot of you use NN encryption, yeah.
+
+392
+0:14:58,560 --> 0:15:00,560
+ Um, like...
+
+393
+0:15:00,560 --> 0:15:02,560
+ I'll count Signal, or CryptPad,
+
+394
+0:15:02,560 --> 0:15:04,560
+ for example. Um...
+
+395
+0:15:04,560 --> 0:15:06,560
+ So...
+
+396
+0:15:06,560 --> 0:15:08,560
+ These...
+
+397
+0:15:08,560 --> 0:15:10,560
+ Like, if you use Signal or
+
+398
+0:15:10,560 --> 0:15:12,560
+ CryptPad or email with GPG,
+
+399
+0:15:12,560 --> 0:15:14,560
+ I guess
+
+400
+0:15:14,560 --> 0:15:16,560
+ the encryption would have to be broken in order for this to
+
+401
+0:15:16,560 --> 0:15:18,560
+ comply. So suppose,
+
+402
+0:15:18,560 --> 0:15:20,560
+ like, you're using
+
+403
+0:15:20,560 --> 0:15:22,560
+ something like this to communicate
+
+404
+0:15:22,560 --> 0:15:24,560
+ with your spouse, and one day
+
+405
+0:15:24,560 --> 0:15:26,560
+ you share a picture of your dog, and that's marked
+
+406
+0:15:26,560 --> 0:15:28,560
+ as a known... that matches...
+
+407
+0:15:28,560 --> 0:15:30,560
+ That's a false positive match with an image,
+
+408
+0:15:30,560 --> 0:15:32,560
+ and there's a...
+
+409
+0:15:32,560 --> 0:15:34,560
+ I found a paper that they, like,
+
+410
+0:15:34,560 --> 0:15:36,560
+ they were able to contrive a...
+
+411
+0:15:36,560 --> 0:15:38,560
+ There were some, like, examples they found that were
+
+412
+0:15:38,560 --> 0:15:40,560
+ like, in the wild,
+
+413
+0:15:40,560 --> 0:15:42,560
+ collisions that didn't look anything
+
+414
+0:15:42,560 --> 0:15:44,560
+ like each other, but then they also were able to find one that
+
+415
+0:15:44,560 --> 0:15:46,560
+ like, a child looked
+
+416
+0:15:46,560 --> 0:15:48,560
+ like... a child looked like a dog.
+
+417
+0:15:48,560 --> 0:15:50,560
+ So, it's totally
+
+418
+0:15:50,560 --> 0:15:52,560
+ conceivable that a picture of a
+
+419
+0:15:52,560 --> 0:15:54,560
+ dog could match some known child's
+
+420
+0:15:54,560 --> 0:15:56,560
+ sexual abuse material.
+
+421
+0:15:56,560 --> 0:15:58,560
+ And...
+
+422
+0:15:58,560 --> 0:16:00,560
+ So, if you
+
+423
+0:16:00,560 --> 0:16:02,560
+ share that, and then also
+
+424
+0:16:02,560 --> 0:16:04,560
+ maybe you say something
+
+425
+0:16:04,560 --> 0:16:06,560
+ about meeting somewhere,
+
+426
+0:16:06,560 --> 0:16:08,560
+ and maybe all
+
+427
+0:16:08,560 --> 0:16:10,560
+ together this is gonna be a false positive
+
+428
+0:16:10,560 --> 0:16:12,560
+ for child sexual abuse
+
+429
+0:16:12,560 --> 0:16:14,560
+ material and grooming, then
+
+430
+0:16:14,560 --> 0:16:16,560
+ probably a lot of your correspondence
+
+431
+0:16:16,560 --> 0:16:18,560
+ gets shared, and if you had
+
+432
+0:16:18,560 --> 0:16:20,560
+ like, passwords in your correspondence,
+
+433
+0:16:20,560 --> 0:16:22,560
+ that's bad. If you mention
+
+434
+0:16:22,560 --> 0:16:24,560
+ something that's... like the normal things.
+
+435
+0:16:24,560 --> 0:16:26,560
+ If you mention something that's legal
+
+436
+0:16:26,560 --> 0:16:28,560
+ where you are, but not somewhere else,
+
+437
+0:16:28,560 --> 0:16:30,560
+ or it's
+
+438
+0:16:30,560 --> 0:16:32,560
+ illegal in the future or something,
+
+439
+0:16:32,560 --> 0:16:34,560
+ so everyone has something to hide, so
+
+440
+0:16:34,560 --> 0:16:36,560
+ you are, uh,
+
+441
+0:16:36,560 --> 0:16:38,560
+ now your privacy is gone
+
+442
+0:16:38,560 --> 0:16:40,560
+ and you didn't do anything wrong. Meanwhile,
+
+443
+0:16:40,560 --> 0:16:42,560
+ the people who are abusing the children
+
+444
+0:16:42,560 --> 0:16:44,560
+ know to use illegal stuff that
+
+445
+0:16:44,560 --> 0:16:46,560
+ doesn't have this surveillance implemented.
+
+446
+0:16:48,560 --> 0:16:50,560
+ And then, so that was the
+
+447
+0:16:50,560 --> 0:16:52,560
+ sad feeling example of why this
+
+448
+0:16:52,560 --> 0:16:54,560
+ is bad, and now the last thing
+
+449
+0:16:54,560 --> 0:16:56,560
+ is bad is what some authorities say,
+
+450
+0:16:56,560 --> 0:16:58,560
+ and I think usually
+
+451
+0:16:58,560 --> 0:17:00,560
+ hackers aren't so into this, but I hope
+
+452
+0:17:00,560 --> 0:17:02,560
+ these are okay. There was a similar
+
+453
+0:17:02,560 --> 0:17:04,560
+ uh, there, so these
+
+454
+0:17:04,560 --> 0:17:06,560
+ examples are not directly
+
+455
+0:17:06,560 --> 0:17:08,560
+ on the proposal, but
+
+456
+0:17:08,560 --> 0:17:10,560
+ they're related enough, I think. There was
+
+457
+0:17:10,560 --> 0:17:12,560
+ an issue where German police
+
+458
+0:17:12,560 --> 0:17:14,560
+ was doing some general
+
+459
+0:17:14,560 --> 0:17:16,560
+ scanning for terrorists,
+
+460
+0:17:16,560 --> 0:17:18,560
+ and this
+
+461
+0:17:18,560 --> 0:17:20,560
+ went to court in Germany, and it
+
+462
+0:17:20,560 --> 0:17:22,560
+ was determined that data screening is legal
+
+463
+0:17:22,560 --> 0:17:24,560
+ only in the presence of concrete danger.
+
+464
+0:17:24,560 --> 0:17:26,560
+ So a general threat of terrorism
+
+465
+0:17:26,560 --> 0:17:28,560
+ does not suffice, and that was determined to be
+
+466
+0:17:28,560 --> 0:17:30,560
+ bad.
+
+467
+0:17:30,560 --> 0:17:32,560
+ There was also
+
+468
+0:17:32,560 --> 0:17:34,560
+ from the 2020 proposal that
+
+469
+0:17:34,560 --> 0:17:36,560
+ was similar to the 2022 proposal to
+
+470
+0:17:36,560 --> 0:17:38,560
+ to surveil everyone
+
+471
+0:17:38,560 --> 0:17:40,560
+ in order to stop child
+
+472
+0:17:40,560 --> 0:17:42,560
+ sexual abuse. Um,
+
+473
+0:17:42,560 --> 0:17:44,560
+ the European Data Protection
+
+474
+0:17:44,560 --> 0:17:46,560
+ Supervisor had some report on this,
+
+475
+0:17:46,560 --> 0:17:48,560
+ and it said a lot of great
+
+476
+0:17:48,560 --> 0:17:50,560
+ things, and one of the things it said is that
+
+477
+0:17:50,560 --> 0:17:52,560
+ confidentiality of communications is a cornerstone
+
+478
+0:17:52,560 --> 0:17:54,560
+ of the fundamental rights to respect for private
+
+479
+0:17:54,560 --> 0:17:56,560
+ and family life. Even voluntary
+
+480
+0:17:56,560 --> 0:17:58,560
+ measures by private companies, and the
+
+481
+0:17:58,560 --> 0:18:00,560
+ proposal is a requirement,
+
+482
+0:18:00,560 --> 0:18:02,560
+ not a voluntary measure, but even voluntary measures
+
+483
+0:18:02,560 --> 0:18:04,560
+ would constitute an interference with these rights
+
+484
+0:18:04,560 --> 0:18:06,560
+ when the measures involve monitoring and analysis
+
+485
+0:18:06,560 --> 0:18:08,560
+ of the content of communications
+
+486
+0:18:08,560 --> 0:18:10,560
+ and processing of personal data.
+
+487
+0:18:10,560 --> 0:18:12,560
+ And then the last
+
+488
+0:18:12,560 --> 0:18:14,560
+ big authority is the UN
+
+489
+0:18:14,560 --> 0:18:16,560
+ Human Rights Council, which did not have, I didn't
+
+490
+0:18:16,560 --> 0:18:18,560
+ find some report specifically on this,
+
+491
+0:18:18,560 --> 0:18:20,560
+ but they had some report on
+
+492
+0:18:20,560 --> 0:18:22,560
+ freedom on maybe the internet or something,
+
+493
+0:18:22,560 --> 0:18:24,560
+ and, uh,
+
+494
+0:18:24,560 --> 0:18:26,560
+ I think, like, the German
+
+495
+0:18:26,560 --> 0:18:28,560
+ Constitutional Court is, like, kind of a
+
+496
+0:18:28,560 --> 0:18:30,560
+ maybe
+
+497
+0:18:30,560 --> 0:18:32,560
+ a
+
+498
+0:18:32,560 --> 0:18:34,560
+ normal, normal, kind of mainstream
+
+499
+0:18:34,560 --> 0:18:36,560
+ opinion that, like, we shouldn't,
+
+500
+0:18:36,560 --> 0:18:38,560
+ we can't, it's illegal to scan for terrorists,
+
+501
+0:18:38,560 --> 0:18:40,560
+ um, just
+
+502
+0:18:40,560 --> 0:18:42,560
+ general scanning. The, um,
+
+503
+0:18:42,560 --> 0:18:44,560
+ European Data Super,
+
+504
+0:18:44,560 --> 0:18:46,560
+ Protection Supervisor I got, who is a little bit closer
+
+505
+0:18:46,560 --> 0:18:48,560
+ to the hacker one, but the UN Human Rights
+
+506
+0:18:48,560 --> 0:18:50,560
+ Council report, I think, is
+
+507
+0:18:50,560 --> 0:18:52,560
+ like, crazy hacker
+
+508
+0:18:52,560 --> 0:18:54,560
+ level. Because they say that encryption
+
+509
+0:18:54,560 --> 0:18:56,560
+ and anonymity play a critical role in securing
+
+510
+0:18:56,560 --> 0:18:58,560
+ the rights of freedom and expression,
+
+511
+0:18:58,560 --> 0:19:00,560
+ and they specifically mention TOR,
+
+512
+0:19:00,560 --> 0:19:02,560
+ that TOR should be protected
+
+513
+0:19:02,560 --> 0:19:04,560
+ and promoted. Like,
+
+514
+0:19:04,560 --> 0:19:06,560
+ instead of saying we need to,
+
+515
+0:19:06,560 --> 0:19:08,560
+ um,
+
+516
+0:19:08,560 --> 0:19:10,560
+ scan all the children's
+
+517
+0:19:10,560 --> 0:19:12,560
+ communications to protect them from
+
+518
+0:19:12,560 --> 0:19:14,560
+ sexual abuse, we say
+
+519
+0:19:14,560 --> 0:19:16,560
+ we need to give children TOR.
+
+520
+0:19:16,560 --> 0:19:18,560
+ So,
+
+521
+0:19:18,560 --> 0:19:20,560
+ I think the Human Rights Council
+
+522
+0:19:20,560 --> 0:19:22,560
+ would also say this is a bad
+
+523
+0:19:22,560 --> 0:19:24,560
+ regulation.
+
+524
+0:19:24,560 --> 0:19:26,560
+ And this, of course, begs the question,
+
+525
+0:19:26,560 --> 0:19:28,560
+ why would people propose
+
+526
+0:19:28,560 --> 0:19:30,560
+ something so bad?
+
+527
+0:19:30,560 --> 0:19:32,560
+ And I have two, um,
+
+528
+0:19:32,560 --> 0:19:34,560
+ ideas.
+
+529
+0:19:36,560 --> 0:19:38,560
+ One is that people don't realize
+
+530
+0:19:38,560 --> 0:19:40,560
+ it's impossible to do what they want.
+
+531
+0:19:40,560 --> 0:19:42,560
+ Because all these proposals say that
+
+532
+0:19:42,560 --> 0:19:44,560
+ we are going to protect the children and
+
+533
+0:19:44,560 --> 0:19:46,560
+ at the same time we need to preserve everyone's privacy.
+
+534
+0:19:46,560 --> 0:19:48,560
+ Including the privacy of the children.
+
+535
+0:19:50,560 --> 0:19:52,560
+ I found one report by
+
+536
+0:19:52,560 --> 0:19:54,560
+ one civil society group that
+
+537
+0:19:54,560 --> 0:19:56,560
+ I thought demonstrated
+
+538
+0:19:56,560 --> 0:19:58,560
+ this, uh,
+
+539
+0:19:58,560 --> 0:20:00,560
+ if there's a lack of understanding,
+
+540
+0:20:00,560 --> 0:20:02,560
+ it demonstrated it well.
+
+541
+0:20:02,560 --> 0:20:04,560
+ I, um,
+
+542
+0:20:04,560 --> 0:20:06,560
+ I don't want to
+
+543
+0:20:06,560 --> 0:20:08,560
+ call out this particular group because I imagine
+
+544
+0:20:08,560 --> 0:20:10,560
+ it's just the report that I happened to find.
+
+545
+0:20:10,560 --> 0:20:12,560
+ I suspect there are others that have the same, um,
+
+546
+0:20:12,560 --> 0:20:14,560
+ view, but I did
+
+547
+0:20:14,560 --> 0:20:16,560
+ reference the report.
+
+548
+0:20:16,560 --> 0:20:18,560
+ So it's some group that does
+
+549
+0:20:18,560 --> 0:20:20,560
+ some, um, it's called Five Rights.
+
+550
+0:20:20,560 --> 0:20:22,560
+ I guess I'll call it out, but I said it.
+
+551
+0:20:22,560 --> 0:20:24,560
+ It's probably not just
+
+552
+0:20:24,560 --> 0:20:26,560
+ about them, uh, that do something
+
+553
+0:20:26,560 --> 0:20:28,560
+ related to protecting children. And they had this
+
+554
+0:20:28,560 --> 0:20:30,560
+ very long report about very wonderful
+
+555
+0:20:30,560 --> 0:20:32,560
+ things about all the rights that children have
+
+556
+0:20:32,560 --> 0:20:34,560
+ and I think all humans should have these rights,
+
+557
+0:20:34,560 --> 0:20:36,560
+ not just children, but all these wonderful
+
+558
+0:20:36,560 --> 0:20:38,560
+ rights that, uh, they need.
+
+559
+0:20:38,560 --> 0:20:40,560
+ And then there was just one paragraph in this
+
+560
+0:20:40,560 --> 0:20:42,560
+ very long report
+
+561
+0:20:42,560 --> 0:20:44,560
+ saying that, um,
+
+562
+0:20:44,560 --> 0:20:46,560
+ the children need privacy, but the privacy should not
+
+563
+0:20:46,560 --> 0:20:48,560
+ protect the child sex abusers
+
+564
+0:20:48,560 --> 0:20:50,560
+ nor interfere
+
+565
+0:20:50,560 --> 0:20:52,560
+ with child sexual abuse detection systems.
+
+566
+0:20:52,560 --> 0:20:54,560
+ But that's all they said on it.
+
+567
+0:20:54,560 --> 0:20:56,560
+ Like, one or two sentences.
+
+568
+0:20:56,560 --> 0:20:58,560
+ So they didn't say how you're supposed to
+
+569
+0:21:00,560 --> 0:21:02,560
+ protect the privacy, but
+
+570
+0:21:02,560 --> 0:21:04,560
+ not interfere with the child sexual abuse detection
+
+571
+0:21:04,560 --> 0:21:06,560
+ systems.
+
+572
+0:21:06,560 --> 0:21:08,560
+ And
+
+573
+0:21:08,560 --> 0:21:10,560
+ like, maybe they
+
+574
+0:21:10,560 --> 0:21:12,560
+ maybe they were hiding that they didn't know
+
+575
+0:21:12,560 --> 0:21:14,560
+ or maybe they truly didn't know, but
+
+576
+0:21:14,560 --> 0:21:16,560
+ the point here is one theory is that people actually
+
+577
+0:21:16,560 --> 0:21:18,560
+ think it's possible to
+
+578
+0:21:18,560 --> 0:21:20,560
+ um, scan
+
+579
+0:21:20,560 --> 0:21:22,560
+ all the messages for child sexual abuse while
+
+580
+0:21:22,560 --> 0:21:24,560
+ not destroying
+
+581
+0:21:24,560 --> 0:21:26,560
+ freedom.
+
+582
+0:21:26,560 --> 0:21:28,560
+ But, uh, the other
+
+583
+0:21:28,560 --> 0:21:30,560
+ theory is maybe more fun. It's a conspiracy
+
+584
+0:21:30,560 --> 0:21:32,560
+ theory. There is this group called
+
+585
+0:21:32,560 --> 0:21:34,560
+ THORN that is, like, started by
+
+586
+0:21:34,560 --> 0:21:36,560
+ this famous guy, Ashton Kutcher, who
+
+587
+0:21:36,560 --> 0:21:38,560
+ uh, it's, they're like
+
+588
+0:21:38,560 --> 0:21:40,560
+ stop child sexual abuse
+
+589
+0:21:40,560 --> 0:21:42,560
+ on the internet thing.
+
+590
+0:21:42,560 --> 0:21:44,560
+ And, so
+
+591
+0:21:44,560 --> 0:21:46,560
+ Ashton Kutcher
+
+592
+0:21:46,560 --> 0:21:48,560
+ and other people from THORN have been
+
+593
+0:21:48,560 --> 0:21:50,560
+ lobbying the EU to
+
+594
+0:21:50,560 --> 0:21:52,560
+ have proposals like this.
+
+595
+0:21:52,560 --> 0:21:54,560
+ ...
+
+596
+0:21:54,560 --> 0:21:56,560
+ Um, so
+
+597
+0:21:56,560 --> 0:21:58,560
+ you could say, like,
+
+598
+0:21:58,560 --> 0:22:00,560
+ they're just another people who
+
+599
+0:22:00,560 --> 0:22:02,560
+ don't know better, like, they think it's possible.
+
+600
+0:22:02,560 --> 0:22:04,560
+ Um, but actually they also have a
+
+601
+0:22:04,560 --> 0:22:06,560
+ proprietary screening service that
+
+602
+0:22:06,560 --> 0:22:08,560
+ I, it seems to me like they sell it, actually.
+
+603
+0:22:08,560 --> 0:22:10,560
+ Even though they're, THORN is a foundation.
+
+604
+0:22:10,560 --> 0:22:12,560
+ They have this proprietary scanning service
+
+605
+0:22:12,560 --> 0:22:14,560
+ called SAFER
+
+606
+0:22:14,560 --> 0:22:16,560
+ that I think they sell.
+
+607
+0:22:16,560 --> 0:22:18,560
+ Um,
+
+608
+0:22:18,560 --> 0:22:20,560
+ and
+
+609
+0:22:20,560 --> 0:22:22,560
+ it could be that
+
+610
+0:22:22,560 --> 0:22:24,560
+ SAFER requires the client side
+
+611
+0:22:24,560 --> 0:22:26,560
+ it requires
+
+612
+0:22:26,560 --> 0:22:28,560
+ I mean, they already have customers
+
+613
+0:22:28,560 --> 0:22:30,560
+ maybe if it were required that we
+
+614
+0:22:30,560 --> 0:22:32,560
+ surveil everyone, they would have more
+
+615
+0:22:32,560 --> 0:22:34,560
+ customers.
+
+616
+0:22:34,560 --> 0:22:36,560
+ Um, so they've been lobbying
+
+617
+0:22:36,560 --> 0:22:38,560
+ the EU government
+
+618
+0:22:38,560 --> 0:22:40,560
+ and the person
+
+619
+0:22:40,560 --> 0:22:42,560
+ um
+
+620
+0:22:42,560 --> 0:22:44,560
+ someone who's been involved in this
+
+621
+0:22:44,560 --> 0:22:46,560
+ uh, I don't really
+
+622
+0:22:46,560 --> 0:22:48,560
+ know anything about government, so I don't
+
+623
+0:22:48,560 --> 0:22:50,560
+ I'm not gonna say, like, a big word
+
+624
+0:22:50,560 --> 0:22:52,560
+ like a proposed, cause I don't actually know
+
+625
+0:22:52,560 --> 0:22:54,560
+ what that means, but um
+
+626
+0:22:54,560 --> 0:22:56,560
+ uh, Ursula von der Leyen
+
+627
+0:22:56,560 --> 0:22:58,560
+ has been involved in
+
+628
+0:22:58,560 --> 0:23:00,560
+ quite involved in this particular
+
+629
+0:23:00,560 --> 0:23:02,560
+ um, proposal
+
+630
+0:23:02,560 --> 0:23:04,560
+ so it could be, like
+
+631
+0:23:04,560 --> 0:23:06,560
+ they talked to her because
+
+632
+0:23:06,560 --> 0:23:08,560
+ the lobbyist talked to her because she's actually
+
+633
+0:23:08,560 --> 0:23:10,560
+ proposed similarly
+
+634
+0:23:10,560 --> 0:23:12,560
+ similar style of thing, like surveil people
+
+635
+0:23:12,560 --> 0:23:14,560
+ to protect the children before
+
+636
+0:23:14,560 --> 0:23:16,560
+ which gave her the nickname
+
+637
+0:23:16,560 --> 0:23:18,560
+ Sensusula in Germany
+
+638
+0:23:18,560 --> 0:23:20,560
+ apparently
+
+639
+0:23:20,560 --> 0:23:22,560
+ when, like, ten years ago
+
+640
+0:23:22,560 --> 0:23:24,560
+ so, uh
+
+641
+0:23:24,560 --> 0:23:26,560
+ yes, so we got to the
+
+642
+0:23:26,560 --> 0:23:28,560
+ like
+
+643
+0:23:28,560 --> 0:23:30,560
+ that was why
+
+644
+0:23:30,560 --> 0:23:32,560
+ uh, it's bad and why people might
+
+645
+0:23:32,560 --> 0:23:34,560
+ want to do it anyway
+
+646
+0:23:34,560 --> 0:23:36,560
+ now the last point
+
+647
+0:23:36,560 --> 0:23:38,560
+ maybe there's something we can do about it
+
+648
+0:23:38,560 --> 0:23:40,560
+ there's already, like, a bunch of groups
+
+649
+0:23:40,560 --> 0:23:42,560
+ writing about how bad it is
+
+650
+0:23:42,560 --> 0:23:44,560
+ which made it easy for me to tell you how bad it is
+
+651
+0:23:44,560 --> 0:23:46,560
+ um, and
+
+652
+0:23:46,560 --> 0:23:48,560
+ I linked to some of those in these notes
+
+653
+0:23:48,560 --> 0:23:50,560
+ that you will be able to find in the program
+
+654
+0:23:50,560 --> 0:23:52,560
+ but also
+
+655
+0:23:52,560 --> 0:23:54,560
+ this was proposed in May
+
+656
+0:23:54,560 --> 0:23:56,560
+ so, there hasn't been a big
+
+657
+0:23:56,560 --> 0:23:58,560
+ European election since
+
+658
+0:23:58,560 --> 0:24:00,560
+ it's been proposed, and it's possible
+
+659
+0:24:00,560 --> 0:24:02,560
+ that this, like, whenever
+
+660
+0:24:02,560 --> 0:24:04,560
+ the Danish election comes up
+
+661
+0:24:04,560 --> 0:24:06,560
+ it will be the first big election that
+
+662
+0:24:06,560 --> 0:24:08,560
+ since this has been proposed, so it might be
+
+663
+0:24:08,560 --> 0:24:10,560
+ something we should keep in mind
+
+664
+0:24:10,560 --> 0:24:12,560
+ and, like
+
+665
+0:24:12,560 --> 0:24:14,560
+ yeah
+
+666
+0:24:14,560 --> 0:24:16,560
+ so, that's all
+
+667
+0:24:16,560 --> 0:24:18,560
+ thank you
+
+668
+0:24:24,560 --> 0:24:26,560
+ any questions?
+
+669
+0:24:32,560 --> 0:24:34,560
+ hello, I'm Henrik
+
+670
+0:24:34,560 --> 0:24:36,560
+ there's at least two problems with these
+
+671
+0:24:36,560 --> 0:24:38,560
+ things in general
+
+672
+0:24:38,560 --> 0:24:40,560
+ one is about the very emotional
+
+673
+0:24:40,560 --> 0:24:42,560
+ that we talk about child sex abuse
+
+674
+0:24:42,560 --> 0:24:44,560
+ and everybody wants to protect against that
+
+675
+0:24:44,560 --> 0:24:46,560
+ but they spend a lot of time
+
+676
+0:24:46,560 --> 0:24:48,560
+ arguing about that
+
+677
+0:24:48,560 --> 0:24:50,560
+ before they get to the second part
+
+678
+0:24:50,560 --> 0:24:52,560
+ where they say we must protect the children
+
+679
+0:24:52,560 --> 0:24:54,560
+ is something that you really can't do
+
+680
+0:24:54,560 --> 0:24:56,560
+ these systems that detect it reliably
+
+681
+0:24:56,560 --> 0:24:58,560
+ and we've seen it with
+
+682
+0:24:58,560 --> 0:25:00,560
+ anti-virus systems, and we also have the same
+
+683
+0:25:00,560 --> 0:25:02,560
+ similar parallels with terrorism
+
+684
+0:25:02,560 --> 0:25:04,560
+ where you cannot detect terrorism
+
+685
+0:25:04,560 --> 0:25:06,560
+ because we have like 200 definitions of what
+
+686
+0:25:06,560 --> 0:25:08,560
+ terror is
+
+687
+0:25:08,560 --> 0:25:10,560
+ so, they skip the part of
+
+688
+0:25:10,560 --> 0:25:12,560
+ what is possible, and then they use a lot of time
+
+689
+0:25:12,560 --> 0:25:14,560
+ on the emotional part, and I'm not sure how we could
+
+690
+0:25:14,560 --> 0:25:16,560
+ combat that, or how we can argue against that
+
+691
+0:25:16,560 --> 0:25:18,560
+ I typically try to shut down
+
+692
+0:25:18,560 --> 0:25:20,560
+ the first part, saying that we all
+
+693
+0:25:20,560 --> 0:25:22,560
+ want that, so you don't have to talk about it
+
+694
+0:25:22,560 --> 0:25:24,560
+ but any ideas about
+
+695
+0:25:24,560 --> 0:25:26,560
+ how we can fight it would be nice
+
+696
+0:25:28,560 --> 0:25:30,560
+ Well, I've given you my ideas so far
+
+697
+0:25:30,560 --> 0:25:32,560
+ one is to say it doesn't work
+
+698
+0:25:32,560 --> 0:25:34,560
+ and the other is to
+
+699
+0:25:34,560 --> 0:25:36,560
+ oh, I said it doesn't work
+
+700
+0:25:36,560 --> 0:25:38,560
+ I did all three
+
+701
+0:25:38,560 --> 0:25:40,560
+ I gave the emotional argument
+
+702
+0:25:40,560 --> 0:25:42,560
+ and I gave the authorities what they're saying
+
+703
+0:25:42,560 --> 0:25:44,560
+ another point is
+
+704
+0:25:44,560 --> 0:25:46,560
+ this is one of the reasons I like the conspiracy theory
+
+705
+0:25:46,560 --> 0:25:48,560
+ because I think it makes more sense
+
+706
+0:25:48,560 --> 0:25:50,560
+ than
+
+707
+0:25:50,560 --> 0:25:52,560
+ people really don't know
+
+708
+0:25:52,560 --> 0:25:54,560
+ I mean, it could be combined
+
+709
+0:25:54,560 --> 0:25:56,560
+ you hire people who
+
+710
+0:25:56,560 --> 0:25:58,560
+ don't know better to lobby
+
+711
+0:25:58,560 --> 0:26:00,560
+ maybe that helps
+
+712
+0:26:00,560 --> 0:26:02,560
+ but anyone else have ideas?
+
+713
+0:26:06,560 --> 0:26:08,560
+ Not an idea, but another question
+
+714
+0:26:08,560 --> 0:26:10,560
+ Which legislation is
+
+715
+0:26:10,560 --> 0:26:12,560
+ superior if I have an iPhone?
+
+716
+0:26:12,560 --> 0:26:14,560
+ Is it the American
+
+717
+0:26:14,560 --> 0:26:16,560
+ legislation that needs to scan
+
+718
+0:26:16,560 --> 0:26:18,560
+ my phone, or is it the European that has to
+
+719
+0:26:18,560 --> 0:26:20,560
+ scan my phone, or is it the Australian that I
+
+720
+0:26:20,560 --> 0:26:22,560
+ communicate with?
+
+721
+0:26:22,560 --> 0:26:24,560
+ I don't know
+
+722
+0:26:24,560 --> 0:26:26,560
+ No, that's also a problem
+
+723
+0:26:26,560 --> 0:26:28,560
+ Wait, which is
+
+724
+0:26:28,560 --> 0:26:30,560
+ do you say which is better or which applies?
+
+725
+0:26:30,560 --> 0:26:32,560
+ Which applies, which is superior
+
+726
+0:26:32,560 --> 0:26:34,560
+ Oh, I see
+
+727
+0:26:34,560 --> 0:26:36,560
+ Or should they all?
+
+728
+0:26:36,560 --> 0:26:38,560
+ Probably they all
+
+729
+0:26:38,560 --> 0:26:40,560
+ I mean, it's also not defined
+
+730
+0:26:40,560 --> 0:26:42,560
+ the internet is, yeah
+
+731
+0:26:44,560 --> 0:26:46,560
+ Any more questions?
+
+732
+0:26:48,560 --> 0:26:50,560
+ But yeah, that's a good point, that's the problem
+
+733
+0:26:50,560 --> 0:26:52,560
+ Oh wait, actually no, I do have some
+
+734
+0:26:52,560 --> 0:26:54,560
+ I can say something vaguely related to that
+
+735
+0:26:54,560 --> 0:26:56,560
+ So this article
+
+736
+0:26:56,560 --> 0:26:58,560
+ that I read about, like it was some journalist
+
+737
+0:26:58,560 --> 0:27:00,560
+ who was trying to
+
+738
+0:27:00,560 --> 0:27:02,560
+ who was questioning this idea that the police can't
+
+739
+0:27:02,560 --> 0:27:04,560
+ take down stuff
+
+740
+0:27:04,560 --> 0:27:06,560
+ He was saying
+
+741
+0:27:06,560 --> 0:27:08,560
+ the police say there's like
+
+742
+0:27:08,560 --> 0:27:10,560
+ the abuse material
+
+743
+0:27:10,560 --> 0:27:12,560
+ is in offshore servers
+
+744
+0:27:12,560 --> 0:27:14,560
+ so we can't do anything about it
+
+745
+0:27:14,560 --> 0:27:16,560
+ Well, first thing is, if you just email them, they'll take it down
+
+746
+0:27:16,560 --> 0:27:18,560
+ regardless of where it is, but usually
+
+747
+0:27:18,560 --> 0:27:20,560
+ it's like
+
+748
+0:27:20,560 --> 0:27:22,560
+ in some place with good internet, like Europe
+
+749
+0:27:22,560 --> 0:27:24,560
+ you know, so
+
+750
+0:27:26,560 --> 0:27:28,560
+ it might not even matter
+
+751
+0:27:28,560 --> 0:27:30,560
+ which one's superior, like
+
+752
+0:27:30,560 --> 0:27:32,560
+ it might all just already be covered
+
+753
+0:27:34,560 --> 0:27:36,560
+ Hi, I'm Karen
+
+754
+0:27:36,560 --> 0:27:38,560
+ Thanks very much for the presentation
+
+755
+0:27:38,560 --> 0:27:40,560
+ There has been
+
+756
+0:27:40,560 --> 0:27:42,560
+ some debate about the proposal from the commission
+
+757
+0:27:42,560 --> 0:27:44,560
+ already, but mainly from
+
+758
+0:27:44,560 --> 0:27:46,560
+ I'm in the European Parliament
+
+759
+0:27:46,560 --> 0:27:48,560
+ and mainly from colleagues from Germany
+
+760
+0:27:48,560 --> 0:27:50,560
+ that have been aware of this chat control
+
+761
+0:27:50,560 --> 0:27:52,560
+ proposal
+
+762
+0:27:52,560 --> 0:27:54,560
+ How will we be able to
+
+763
+0:27:54,560 --> 0:27:56,560
+ unify sort of
+
+764
+0:27:56,560 --> 0:27:58,560
+ the populations
+
+765
+0:27:58,560 --> 0:28:00,560
+ and the opinions in other countries
+
+766
+0:28:00,560 --> 0:28:02,560
+ because I can do some stuff in the European Parliament
+
+767
+0:28:02,560 --> 0:28:04,560
+ as a Danish MEP, but
+
+768
+0:28:04,560 --> 0:28:06,560
+ unless we put pressure on the Danish
+
+769
+0:28:06,560 --> 0:28:08,560
+ government to stop it at the European
+
+770
+0:28:08,560 --> 0:28:10,560
+ Council and in other
+
+771
+0:28:10,560 --> 0:28:12,560
+ European countries do the same
+
+772
+0:28:12,560 --> 0:28:14,560
+ then how, is there
+
+773
+0:28:14,560 --> 0:28:16,560
+ a debate about this in
+
+774
+0:28:16,560 --> 0:28:18,560
+ other countries than Germany
+
+775
+0:28:18,560 --> 0:28:20,560
+ and for the audience, how do we actually
+
+776
+0:28:20,560 --> 0:28:22,560
+ make this a debate that's going to
+
+777
+0:28:22,560 --> 0:28:24,560
+ be going on in Denmark
+
+778
+0:28:24,560 --> 0:28:26,560
+ and some suggestions for that
+
+779
+0:28:26,560 --> 0:28:28,560
+ and then also you were mentioning the lobbying
+
+780
+0:28:28,560 --> 0:28:30,560
+ towards the EU institutions
+
+781
+0:28:30,560 --> 0:28:32,560
+ has there been any proof of
+
+782
+0:28:32,560 --> 0:28:34,560
+ that, has there been any questions asked
+
+783
+0:28:34,560 --> 0:28:36,560
+ because otherwise that is something that we
+
+784
+0:28:36,560 --> 0:28:38,560
+ perhaps should look at, asking questions on
+
+785
+0:28:38,560 --> 0:28:40,560
+ Yes, so to the
+
+786
+0:28:40,560 --> 0:28:42,560
+ first point, how to unify
+
+787
+0:28:42,560 --> 0:28:44,560
+ people, I don't know
+
+788
+0:28:44,560 --> 0:28:46,560
+ maybe you can tell me, if I knew better
+
+789
+0:28:46,560 --> 0:28:48,560
+ maybe I would go into politics
+
+790
+0:28:50,560 --> 0:28:52,560
+ To the second point, yes
+
+791
+0:28:52,560 --> 0:28:54,560
+ a bunch of people have made freedom of
+
+792
+0:28:54,560 --> 0:28:56,560
+ information requests to competent
+
+793
+0:28:56,560 --> 0:28:58,560
+ authorities to get these
+
+794
+0:28:58,560 --> 0:29:00,560
+ meetings with Thorn
+
+795
+0:29:00,560 --> 0:29:02,560
+ and I
+
+796
+0:29:02,560 --> 0:29:04,560
+ in the link
+
+797
+0:29:04,560 --> 0:29:06,560
+ that you will see in the
+
+798
+0:29:06,560 --> 0:29:08,560
+ program, you can see all these
+
+799
+0:29:10,560 --> 0:29:12,560
+ actually I can even open them right now
+
+800
+0:29:22,560 --> 0:29:28,560
+ Okay
+
+801
+0:29:28,560 --> 0:29:30,560
+ So
+
+802
+0:29:30,560 --> 0:29:32,560
+ Yes
+
+803
+0:29:32,560 --> 0:29:34,560
+ so like, there are so many
+
+804
+0:29:34,560 --> 0:29:36,560
+ but here we go
+
+805
+0:29:36,560 --> 0:29:38,560
+ like someone requested
+
+806
+0:29:38,560 --> 0:29:40,560
+ a list
+
+807
+0:29:40,560 --> 0:29:42,560
+ of all the meetings with Thorn
+
+808
+0:29:42,560 --> 0:29:44,560
+ from a Swedish government
+
+809
+0:29:44,560 --> 0:29:46,560
+ and this has
+
+810
+0:29:46,560 --> 0:29:48,560
+ like, here are all the meetings
+
+811
+0:29:50,560 --> 0:29:52,560
+ there are a bunch
+
+812
+0:29:52,560 --> 0:29:54,560
+ So I guess
+
+813
+0:29:54,560 --> 0:29:56,560
+ actually the list of meetings itself
+
+814
+0:29:56,560 --> 0:29:58,560
+ isn't all that interesting but the person who
+
+815
+0:29:58,560 --> 0:30:00,560
+ requested maybe is quite interesting
+
+816
+0:30:02,560 --> 0:30:04,560
+ Does that help?
+
+817
+0:30:04,560 --> 0:30:06,560
+ Okay
+
+818
+0:30:14,560 --> 0:30:16,560
+ Then we go on to the next question
+
+819
+0:30:18,560 --> 0:30:20,560
+ Yeah, maybe it's also a comment
+
+820
+0:30:20,560 --> 0:30:22,560
+ I think the last success we had was
+
+821
+0:30:22,560 --> 0:30:24,560
+ 11 years ago with
+
+822
+0:30:24,560 --> 0:30:26,560
+ Akta and here it
+
+823
+0:30:26,560 --> 0:30:28,560
+ actually managed to go into the
+
+824
+0:30:28,560 --> 0:30:30,560
+ public media and we went to the
+
+825
+0:30:30,560 --> 0:30:32,560
+ streets and we did everything
+
+826
+0:30:32,560 --> 0:30:34,560
+ I just don't know why it happened
+
+827
+0:30:34,560 --> 0:30:36,560
+ but at some point we
+
+828
+0:30:36,560 --> 0:30:38,560
+ made it to a critical mass
+
+829
+0:30:38,560 --> 0:30:40,560
+ and then it was actually
+
+830
+0:30:40,560 --> 0:30:42,560
+ easier at least so
+
+831
+0:30:42,560 --> 0:30:44,560
+ we mass mailed politicians and we
+
+832
+0:30:44,560 --> 0:30:46,560
+ did a lot of things so
+
+833
+0:30:46,560 --> 0:30:48,560
+ I think that could
+
+834
+0:30:48,560 --> 0:30:50,560
+ at least teach us a little bit about
+
+835
+0:30:50,560 --> 0:30:52,560
+ what is possible instead of
+
+836
+0:30:52,560 --> 0:30:54,560
+ us saying, okay, nothing is possible
+
+837
+0:30:56,560 --> 0:30:58,560
+ Do you agree?
+
+838
+0:30:58,560 --> 0:31:00,560
+ I don't really understand
+
+839
+0:31:00,560 --> 0:31:02,560
+ how normal people work. I mean
+
+840
+0:31:02,560 --> 0:31:04,560
+ sometimes in very special contexts
+
+841
+0:31:04,560 --> 0:31:06,560
+ with many years of study I can learn
+
+842
+0:31:06,560 --> 0:31:08,560
+ I do happen to have
+
+843
+0:31:08,560 --> 0:31:10,560
+ like a
+
+844
+0:31:10,560 --> 0:31:12,560
+ like a
+
+845
+0:31:12,560 --> 0:31:14,560
+ qualified source
+
+846
+0:31:14,560 --> 0:31:16,560
+ had a theory on the Akta thing
+
+847
+0:31:18,560 --> 0:31:20,560
+ maybe I'll tell you later but her theory
+
+848
+0:31:20,560 --> 0:31:22,560
+ was that
+
+849
+0:31:22,560 --> 0:31:24,560
+ it was because of Polish
+
+850
+0:31:24,560 --> 0:31:26,560
+ soccer fans who couldn't watch their
+
+851
+0:31:26,560 --> 0:31:28,560
+ soccer
+
+852
+0:31:28,560 --> 0:31:30,560
+ I think
+
+853
+0:31:30,560 --> 0:31:32,560
+ that's
+
+854
+0:31:32,560 --> 0:31:34,560
+ why it
+
+855
+0:31:34,560 --> 0:31:36,560
+ I might be remembering it correctly
+
+856
+0:31:36,560 --> 0:31:38,560
+ whether it was Akta or something else
+
+857
+0:31:38,560 --> 0:31:40,560
+ but I definitely remember
+
+858
+0:31:40,560 --> 0:31:42,560
+ there was Polish soccer fans
+
+859
+0:31:42,560 --> 0:31:44,560
+ that couldn't watch their soccer
+
+860
+0:31:48,560 --> 0:31:50,560
+ Any more questions?
+
+861
+0:31:50,560 --> 0:31:52,560
+ Here?
+
+862
+0:31:52,560 --> 0:31:58,560
+ You mentioned
+
+863
+0:31:58,560 --> 0:32:00,560
+ that already but
+
+864
+0:32:00,560 --> 0:32:02,560
+ there is definitely
+
+865
+0:32:02,560 --> 0:32:04,560
+ also an unwillingness
+
+866
+0:32:04,560 --> 0:32:06,560
+ of the police to do
+
+867
+0:32:06,560 --> 0:32:08,560
+ what is necessary to
+
+868
+0:32:08,560 --> 0:32:10,560
+ get these materials
+
+869
+0:32:10,560 --> 0:32:12,560
+ offline. There has been
+
+870
+0:32:12,560 --> 0:32:14,560
+ a report on public German television
+
+871
+0:32:14,560 --> 0:32:16,560
+ where the reporter
+
+872
+0:32:16,560 --> 0:32:18,560
+ sneaked himself into several
+
+873
+0:32:18,560 --> 0:32:20,560
+ child porn forums
+
+874
+0:32:20,560 --> 0:32:22,560
+ where there were sharehoster links
+
+875
+0:32:22,560 --> 0:32:24,560
+ to such material
+
+876
+0:32:24,560 --> 0:32:26,560
+ and he just
+
+877
+0:32:26,560 --> 0:32:28,560
+ reported that
+
+878
+0:32:28,560 --> 0:32:30,560
+ to the admin
+
+879
+0:32:30,560 --> 0:32:32,560
+ of the machines where
+
+880
+0:32:32,560 --> 0:32:34,560
+ the stuff was
+
+881
+0:32:34,560 --> 0:32:36,560
+ and it disappeared within hours
+
+882
+0:32:36,560 --> 0:32:38,560
+ or
+
+883
+0:32:38,560 --> 0:32:40,560
+ in the worst cases days
+
+884
+0:32:40,560 --> 0:32:42,560
+ and like 80% were hosted in the
+
+885
+0:32:42,560 --> 0:32:44,560
+ US and Germany
+
+886
+0:32:44,560 --> 0:32:46,560
+ so it really works
+
+887
+0:32:46,560 --> 0:32:48,560
+ and that begs the question
+
+888
+0:32:48,560 --> 0:32:50,560
+ if that was
+
+889
+0:32:50,560 --> 0:32:52,560
+ really the thing
+
+890
+0:32:52,560 --> 0:32:54,560
+ it's all about
+
+891
+0:32:54,560 --> 0:32:56,560
+ why don't they just do it
+
+892
+0:32:56,560 --> 0:32:58,560
+ because it's proven
+
+893
+0:32:58,560 --> 0:33:00,560
+ that it works
+
+894
+0:33:00,560 --> 0:33:02,560
+ so there might be other
+
+895
+0:33:02,560 --> 0:33:04,560
+ other ideas
+
+896
+0:33:04,560 --> 0:33:06,560
+ behind constructing such
+
+897
+0:33:06,560 --> 0:33:08,560
+ an infrastructure
+
+898
+0:33:08,560 --> 0:33:10,560
+ to do
+
+899
+0:33:10,560 --> 0:33:12,560
+ other things than going against
+
+900
+0:33:12,560 --> 0:33:14,560
+ child porn
+
+901
+0:33:14,560 --> 0:33:16,560
+ Yes, I suspect that's the exact
+
+902
+0:33:16,560 --> 0:33:18,560
+ same article that I read
+
+903
+0:33:18,560 --> 0:33:20,560
+ It's a TV report
+
+904
+0:33:20,560 --> 0:33:22,560
+ Well
+
+905
+0:33:22,560 --> 0:33:24,560
+ I messed with something
+
+906
+0:33:24,560 --> 0:33:26,560
+ um
+
+907
+0:33:26,560 --> 0:33:28,560
+ the uh
+
+908
+0:33:28,560 --> 0:33:30,560
+ the person
+
+909
+0:33:30,560 --> 0:33:32,560
+ uh
+
+910
+0:33:32,560 --> 0:33:34,560
+ it was either
+
+911
+0:33:34,560 --> 0:33:36,560
+ no it was
+
+912
+0:33:36,560 --> 0:33:38,560
+ Robert
+
+913
+0:33:38,560 --> 0:33:40,560
+ and Daniel
+
+914
+0:33:40,560 --> 0:33:42,560
+ Mosbuecker
+
+915
+0:33:42,560 --> 0:33:44,560
+ was what I have
+
+916
+0:33:44,560 --> 0:33:46,560
+ but you know since
+
+917
+0:33:46,560 --> 0:33:48,560
+ I just want to point out
+
+918
+0:33:48,560 --> 0:33:50,560
+ because you bring up the topic
+
+919
+0:33:50,560 --> 0:33:52,560
+ of reporting
+
+920
+0:33:52,560 --> 0:33:54,560
+ when you see the child sexual abuse
+
+921
+0:33:54,560 --> 0:33:56,560
+ material on the website and reporting it
+
+922
+0:33:56,560 --> 0:33:58,560
+ that is just part of this
+
+923
+0:33:58,560 --> 0:34:00,560
+ and that's like
+
+924
+0:34:00,560 --> 0:34:02,560
+ that's kind of like the easy thing
+
+925
+0:34:02,560 --> 0:34:04,560
+ because if it's
+
+926
+0:34:04,560 --> 0:34:06,560
+ if it's known to
+
+927
+0:34:06,560 --> 0:34:08,560
+ if you've already established
+
+928
+0:34:08,560 --> 0:34:10,560
+ if it's already in the database
+
+929
+0:34:10,560 --> 0:34:12,560
+ it's pretty easy to do this
+
+930
+0:34:12,560 --> 0:34:14,560
+ and this regulation would
+
+931
+0:34:14,560 --> 0:34:16,560
+ the proposal would do much more than that
+
+932
+0:34:16,560 --> 0:34:18,560
+ I mean maybe it wouldn't actually
+
+933
+0:34:18,560 --> 0:34:20,560
+ but like the way it's written
+
+934
+0:34:20,560 --> 0:34:22,560
+ in order to comply you would have to do much more than that
+
+935
+0:34:22,560 --> 0:34:24,560
+ than
+
+936
+0:34:24,560 --> 0:34:26,560
+ than just taking down the material
+
+937
+0:34:36,560 --> 0:34:38,560
+ I think 11 years ago
+
+938
+0:34:38,560 --> 0:34:40,560
+ with ACTA there was
+
+939
+0:34:40,560 --> 0:34:42,560
+ the luck that the digital rights
+
+940
+0:34:42,560 --> 0:34:44,560
+ community and the sort of
+
+941
+0:34:44,560 --> 0:34:46,560
+ anti-globalization and
+
+942
+0:34:46,560 --> 0:34:48,560
+ anti-capitalist movements
+
+943
+0:34:48,560 --> 0:34:50,560
+ came together in a common cause
+
+944
+0:34:50,560 --> 0:34:52,560
+ and therefore managed to
+
+945
+0:34:52,560 --> 0:34:54,560
+ stop a trade deal with the US
+
+946
+0:34:54,560 --> 0:34:56,560
+ and I think that was perhaps why
+
+947
+0:34:56,560 --> 0:34:58,560
+ it succeeded 11 years ago
+
+948
+0:34:58,560 --> 0:35:00,560
+ I think
+
+949
+0:35:00,560 --> 0:35:02,560
+ in order to stop the proposal on
+
+950
+0:35:02,560 --> 0:35:04,560
+ chat control I think we need to
+
+951
+0:35:04,560 --> 0:35:06,560
+ emphasize on the fact that it doesn't work
+
+952
+0:35:06,560 --> 0:35:08,560
+ that it will not make
+
+953
+0:35:08,560 --> 0:35:10,560
+ lives safer
+
+954
+0:35:10,560 --> 0:35:12,560
+ for children because if we just say
+
+955
+0:35:12,560 --> 0:35:14,560
+ it's bad for all of our
+
+956
+0:35:14,560 --> 0:35:16,560
+ privacy even though that we feel that this is
+
+957
+0:35:16,560 --> 0:35:18,560
+ an important enough argument
+
+958
+0:35:18,560 --> 0:35:20,560
+ others will say well if the balance
+
+959
+0:35:20,560 --> 0:35:22,560
+ is saving children
+
+960
+0:35:22,560 --> 0:35:24,560
+ on the internet and
+
+961
+0:35:24,560 --> 0:35:26,560
+ giving up a little bit of our privacy
+
+962
+0:35:26,560 --> 0:35:28,560
+ then we will prefer saving the children
+
+963
+0:35:28,560 --> 0:35:30,560
+ on the internet so we'll have to say
+
+964
+0:35:30,560 --> 0:35:32,560
+ that this is not something that is
+
+965
+0:35:32,560 --> 0:35:34,560
+ going to work and it
+
+966
+0:35:34,560 --> 0:35:36,560
+ is going to be cost
+
+967
+0:35:36,560 --> 0:35:38,560
+ too much where the
+
+968
+0:35:38,560 --> 0:35:40,560
+ lobbying from the company that wants to perhaps
+
+969
+0:35:40,560 --> 0:35:42,560
+ sell their
+
+970
+0:35:42,560 --> 0:35:44,560
+ filtering mechanism
+
+971
+0:35:44,560 --> 0:35:46,560
+ might come in handy
+
+972
+0:35:46,560 --> 0:35:48,560
+ and then also saying well I mean we need to use
+
+973
+0:35:48,560 --> 0:35:50,560
+ police resources in an effective
+
+974
+0:35:50,560 --> 0:35:52,560
+ manner to actually help
+
+975
+0:35:52,560 --> 0:35:54,560
+ children that are being
+
+976
+0:35:54,560 --> 0:35:56,560
+ groomed or abused
+
+977
+0:35:56,560 --> 0:35:58,560
+ and I think those are sort of the arguments that we
+
+978
+0:35:58,560 --> 0:36:00,560
+ need to play on because if we just say it's
+
+979
+0:36:00,560 --> 0:36:02,560
+ bad for our privacy and it's
+
+980
+0:36:02,560 --> 0:36:04,560
+ not in order
+
+981
+0:36:04,560 --> 0:36:06,560
+ to save children then I don't think we'll
+
+982
+0:36:06,560 --> 0:36:08,560
+ mobilize that many people so I think we
+
+983
+0:36:08,560 --> 0:36:10,560
+ really need to emphasize on what would
+
+984
+0:36:10,560 --> 0:36:12,560
+ work rather than
+
+985
+0:36:12,560 --> 0:36:14,560
+ and then we might be able
+
+986
+0:36:14,560 --> 0:36:16,560
+ to stop this throwing tech at
+
+987
+0:36:16,560 --> 0:36:18,560
+ a societal problem which
+
+988
+0:36:18,560 --> 0:36:20,560
+ I think this is they
+
+989
+0:36:20,560 --> 0:36:22,560
+ had the original proposal from
+
+990
+0:36:22,560 --> 0:36:24,560
+ 2020 that didn't
+
+991
+0:36:24,560 --> 0:36:26,560
+ come forward and then now trying
+
+992
+0:36:26,560 --> 0:36:28,560
+ again saying okay we have this problem
+
+993
+0:36:28,560 --> 0:36:30,560
+ that we don't know how to deal with and therefore
+
+994
+0:36:30,560 --> 0:36:32,560
+ let's just throw some technology
+
+995
+0:36:32,560 --> 0:36:34,560
+ at it and see if it sticks
+
+996
+0:36:36,560 --> 0:36:38,560
+ Thank you
+
+997
+0:36:38,560 --> 0:36:40,560
+ Actually if I may just also
+
+998
+0:36:40,560 --> 0:36:42,560
+ bounce off of that point there's another aspect
+
+999
+0:36:42,560 --> 0:36:44,560
+ to it which I think is really important it's not
+
+1000
+0:36:44,560 --> 0:36:46,560
+ necessarily that it doesn't help it can actually
+
+1001
+0:36:46,560 --> 0:36:48,560
+ make the situation much worse
+
+1002
+0:36:48,560 --> 0:36:50,560
+ because as it currently
+
+1003
+0:36:50,560 --> 0:36:52,560
+ stands the people
+
+1004
+0:36:52,560 --> 0:36:54,560
+ who are distributing this material feel comfortable
+
+1005
+0:36:54,560 --> 0:36:56,560
+ distributing it over WhatsApp catch
+
+1006
+0:36:56,560 --> 0:36:58,560
+ one of them and you've got the phone numbers of all the others
+
+1007
+0:36:58,560 --> 0:37:00,560
+ if we pass
+
+1008
+0:37:00,560 --> 0:37:02,560
+ this law we will push them
+
+1009
+0:37:02,560 --> 0:37:04,560
+ onto the dark web or other
+
+1010
+0:37:04,560 --> 0:37:06,560
+ distribution means which
+
+1011
+0:37:06,560 --> 0:37:08,560
+ are more difficult to trace so
+
+1012
+0:37:08,560 --> 0:37:10,560
+ as a result basically it will actually make the
+
+1013
+0:37:10,560 --> 0:37:12,560
+ lives of these people easier
+
+1014
+0:37:12,560 --> 0:37:14,560
+ and it will make it much harder to catch them
+
+1015
+0:37:14,560 --> 0:37:16,560
+ so I think that's also something that we should push
+
+1016
+0:37:16,560 --> 0:37:18,560
+ that not only will it not work it might
+
+1017
+0:37:18,560 --> 0:37:20,560
+ actually make the situation worse
+
+1018
+0:37:20,560 --> 0:37:22,560
+ It gives me two
+
+1019
+0:37:22,560 --> 0:37:24,560
+ actually both of the last two comments
+
+1020
+0:37:24,560 --> 0:37:26,560
+ give me
+
+1021
+0:37:26,560 --> 0:37:28,560
+ one of the thoughts is
+
+1022
+0:37:28,560 --> 0:37:30,560
+ we don't have any
+
+1023
+0:37:30,560 --> 0:37:32,560
+ evidence to say it will work
+
+1024
+0:37:32,560 --> 0:37:34,560
+ which is a reason not to do this
+
+1025
+0:37:34,560 --> 0:37:36,560
+ but unfortunately we don't have any
+
+1026
+0:37:36,560 --> 0:37:38,560
+ evidence like where someone
+
+1027
+0:37:38,560 --> 0:37:40,560
+ implemented it and it didn't work so that we
+
+1028
+0:37:40,560 --> 0:37:42,560
+ can point to
+
+1029
+0:37:42,560 --> 0:37:44,560
+ it would kind of be nice if we did
+
+1030
+0:37:44,560 --> 0:37:46,560
+ it would be a very easy argument
+
+1031
+0:37:46,560 --> 0:37:48,560
+ and then
+
+1032
+0:37:48,560 --> 0:37:50,560
+ to your theory that
+
+1033
+0:37:50,560 --> 0:37:52,560
+ they are already comfortable using WhatsApp
+
+1034
+0:37:52,560 --> 0:37:54,560
+ so they would be pushed onto another
+
+1035
+0:37:54,560 --> 0:37:56,560
+ service
+
+1036
+0:37:56,560 --> 0:37:58,560
+ there is a competing theory
+
+1037
+0:37:58,560 --> 0:38:00,560
+ that because you can
+
+1038
+0:38:00,560 --> 0:38:02,560
+ share it on
+
+1039
+0:38:02,560 --> 0:38:04,560
+ like normal
+
+1040
+0:38:06,560 --> 0:38:08,560
+ protocols
+
+1041
+0:38:08,560 --> 0:38:10,560
+ then it becomes normalized to
+
+1042
+0:38:10,560 --> 0:38:12,560
+ distribute child sexual abuse material
+
+1043
+0:38:12,560 --> 0:38:14,560
+ and so more people will do it
+
+1044
+0:38:14,560 --> 0:38:16,560
+ so I think that argument itself
+
+1045
+0:38:16,560 --> 0:38:18,560
+ like
+
+1046
+0:38:18,560 --> 0:38:20,560
+ with an experiment
+
+1047
+0:38:20,560 --> 0:38:22,560
+ or something that would work
+
+1048
+0:38:22,560 --> 0:38:24,560
+ but on its own I don't think it works
+
+1049
+0:38:26,560 --> 0:38:28,560
+ Any more questions?
+
+1050
+0:38:28,560 --> 0:38:30,560
+ No?
+
+1051
+0:38:30,560 --> 0:38:32,560
+ Thank you very much
+
+1052
+0:38:32,560 --> 0:38:34,560
+ for a very interesting talk
+
+1053
+0:38:34,560 --> 0:38:36,560
+ Thank you

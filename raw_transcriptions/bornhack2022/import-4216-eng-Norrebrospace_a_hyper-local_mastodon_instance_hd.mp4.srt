@@ -1,0 +1,519 @@
+# Transcribed 2023-11-12T18 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tanya Cushman Reviewer's name
+
+2
+0:00:15,000 --> 0:00:19,000
+ Hello, welcome everybody to the lightning talks.
+
+3
+0:00:19,000 --> 0:00:22,500
+ We have seven talks now because one was canceled.
+
+4
+0:00:22,500 --> 0:00:24,500
+ So if you spontaneously want to do a talk,
+
+5
+0:00:24,500 --> 0:00:29,000
+ you can come up here towards the end and we will have time for you.
+
+6
+0:00:29,000 --> 0:00:34,000
+ And we are starting with this talk by Asbjorn.
+
+7
+0:00:34,000 --> 0:00:36,000
+ Thank you.
+
+8
+0:00:36,000 --> 0:00:39,000
+ Oh, is there a timer I should be keeping track of?
+
+9
+0:00:39,000 --> 0:00:42,000
+ Yes, perfect. All right, good.
+
+10
+0:00:42,000 --> 0:00:47,000
+ Neopro Space is a Mastodon instance that I've run for a year and a half,
+
+11
+0:00:47,000 --> 0:00:49,000
+ something like that, almost two years now.
+
+12
+0:00:49,000 --> 0:00:51,000
+ This talk is just about my experience running a small,
+
+13
+0:00:51,000 --> 0:00:54,000
+ geographically centered, hyperlocal Mastodon instance.
+
+14
+0:00:54,000 --> 0:00:57,000
+ What is Mastodon? Half of you probably are thinking.
+
+15
+0:00:57,000 --> 0:00:59,000
+ What is this? What's ActivityPub?
+
+16
+0:00:59,000 --> 0:01:01,000
+ Well, I'll let you know.
+
+17
+0:01:01,000 --> 0:01:04,000
+ Mastodon is microblogging. You're probably familiar with Twitter.
+
+18
+0:01:04,000 --> 0:01:06,000
+ It's essentially that.
+
+19
+0:01:06,000 --> 0:01:09,000
+ Short posts instead of tweets, they're called toots
+
+20
+0:01:09,000 --> 0:01:13,000
+ because the logo is a Mastodon.
+
+21
+0:01:13,000 --> 0:01:15,000
+ Yeah, it looks like this.
+
+22
+0:01:15,000 --> 0:01:18,000
+ This is sort of the default UI.
+
+23
+0:01:18,000 --> 0:01:22,000
+ It's by default 500 characters instead of 240 or whatever it is on Twitter.
+
+24
+0:01:22,000 --> 0:01:25,000
+ The cool thing about Mastodon is that it's federated.
+
+25
+0:01:25,000 --> 0:01:28,000
+ So I can run my own server or I can join somebody else's server,
+
+26
+0:01:28,000 --> 0:01:31,000
+ and then we can talk to each other even though we're not on the same server.
+
+27
+0:01:31,000 --> 0:01:35,000
+ It works sort of like email or matrix or other federated standards in these ways.
+
+28
+0:01:35,000 --> 0:01:38,000
+ So Novel Space is one of these.
+
+29
+0:01:38,000 --> 0:01:40,000
+ Another cool thing is that Mastodon is based on ActivityPub,
+
+30
+0:01:40,000 --> 0:01:44,000
+ which is a worldwide web consortium standard for federating social media.
+
+31
+0:01:44,000 --> 0:01:47,000
+ So Mastodon is the microblogging tool,
+
+32
+0:01:47,000 --> 0:01:50,000
+ but the Fediverse consists of lots of different stuff.
+
+33
+0:01:50,000 --> 0:01:53,000
+ FunkWhale is like SoundCloud, and PixelFed is like Instagram,
+
+34
+0:01:53,000 --> 0:01:56,000
+ and even WordPress is federated with ActivityPub.
+
+35
+0:01:56,000 --> 0:01:57,000
+ So you can talk.
+
+36
+0:01:57,000 --> 0:01:59,000
+ You can talk across different social media.
+
+37
+0:01:59,000 --> 0:02:02,000
+ It's very open and interoperable.
+
+38
+0:02:02,000 --> 0:02:03,000
+ So why did I make this thing?
+
+39
+0:02:03,000 --> 0:02:05,000
+ It's very silly, like a neighborhood thing.
+
+40
+0:02:05,000 --> 0:02:06,000
+ Why did I do it?
+
+41
+0:02:06,000 --> 0:02:09,000
+ I think we were biking home from CryptoHagen at one point,
+
+42
+0:02:09,000 --> 0:02:11,000
+ and I had probably had one too many beers,
+
+43
+0:02:11,000 --> 0:02:13,000
+ when we were looking at the TLDs,
+
+44
+0:02:13,000 --> 0:02:15,000
+ and I was like, .space, that sounds super cool.
+
+45
+0:02:15,000 --> 0:02:17,000
+ What can I do with this?
+
+46
+0:02:17,000 --> 0:02:19,000
+ And I went home and designed a sticker,
+
+47
+0:02:19,000 --> 0:02:21,000
+ and then I bought the domain,
+
+48
+0:02:21,000 --> 0:02:23,000
+ and then I set up the website.
+
+49
+0:02:23,000 --> 0:02:25,000
+ So it was really an experiment in itself.
+
+50
+0:02:25,000 --> 0:02:27,000
+ So it was really an experiment in itself.
+
+51
+0:02:27,000 --> 0:02:29,000
+ It was a sticker-driven development.
+
+52
+0:02:29,000 --> 0:02:31,000
+ The hypothesis I had was,
+
+53
+0:02:31,000 --> 0:02:33,000
+ if I just put up enough stickers around Napro,
+
+54
+0:02:33,000 --> 0:02:35,000
+ can I sort of decentralize,
+
+55
+0:02:35,000 --> 0:02:37,000
+ move people from Twitter to Mastodon?
+
+56
+0:02:37,000 --> 0:02:39,000
+ It's an ambitious thought, but I tried it out.
+
+57
+0:02:39,000 --> 0:02:42,000
+ And it sort of kind of worked, right?
+
+58
+0:02:42,000 --> 0:02:44,000
+ So are people using it?
+
+59
+0:02:44,000 --> 0:02:45,000
+ Yeah.
+
+60
+0:02:45,000 --> 0:02:46,000
+ Kind of, right?
+
+61
+0:02:46,000 --> 0:02:48,000
+ We're 75 users.
+
+62
+0:02:48,000 --> 0:02:51,000
+ 30-ish of them are monthly active users.
+
+63
+0:02:51,000 --> 0:02:54,000
+ But this is actually exactly what I want.
+
+64
+0:02:54,000 --> 0:02:55,000
+ Mastodon is federated,
+
+65
+0:02:55,000 --> 0:02:57,000
+ so it's nice to have a lot of small communities
+
+66
+0:02:57,000 --> 0:02:59,000
+ that then talk to each other.
+
+67
+0:02:59,000 --> 0:03:02,000
+ So we have 30-ish users here,
+
+68
+0:03:02,000 --> 0:03:04,000
+ and that's a good size.
+
+69
+0:03:04,000 --> 0:03:06,000
+ Then Elon bought Twitter.
+
+70
+0:03:06,000 --> 0:03:08,000
+ Mass exodus.
+
+71
+0:03:08,000 --> 0:03:10,000
+ And then...
+
+72
+0:03:10,000 --> 0:03:12,000
+ I don't have that slide.
+
+73
+0:03:12,000 --> 0:03:14,000
+ That's fine.
+
+74
+0:03:14,000 --> 0:03:16,000
+ Three or four other Danish servers showed up.
+
+75
+0:03:16,000 --> 0:03:19,000
+ Napro.space was the first Danish-language server.
+
+76
+0:03:19,000 --> 0:03:22,000
+ After Napro.space, there's now Helvet.net,
+
+77
+0:03:22,000 --> 0:03:24,000
+ Turing, Fest & Deco, Data Co-op,
+
+78
+0:03:24,000 --> 0:03:27,000
+ which somebody will talk about is there.
+
+79
+0:03:27,000 --> 0:03:31,000
+ So there's five or six small community servers
+
+80
+0:03:31,000 --> 0:03:33,000
+ with all tens of users.
+
+81
+0:03:33,000 --> 0:03:35,000
+ And they, of course, can talk to each other.
+
+82
+0:03:35,000 --> 0:03:36,000
+ And then, you know,
+
+83
+0:03:36,000 --> 0:03:39,000
+ Chaos Communication Congress and stuff also have a server.
+
+84
+0:03:39,000 --> 0:03:42,000
+ Here's a question that some of you are thinking about,
+
+85
+0:03:42,000 --> 0:03:45,000
+ which I've bothered with a lot.
+
+86
+0:03:45,000 --> 0:03:47,000
+ Napro has an ö in it,
+
+87
+0:03:47,000 --> 0:03:50,000
+ and you can't really have ös in domain names.
+
+88
+0:03:50,000 --> 0:03:52,000
+ Some of you might be familiar with puny coding.
+
+89
+0:03:52,000 --> 0:03:53,000
+ That's the bottom representation
+
+90
+0:03:53,000 --> 0:03:57,000
+ of a URL where you do xn, dash, dash,
+
+91
+0:03:57,000 --> 0:03:59,000
+ and then weird stuff.
+
+92
+0:03:59,000 --> 0:04:01,000
+ I tried in the beginning to run Mastodon
+
+93
+0:04:01,000 --> 0:04:03,000
+ with a puny-coded domain name.
+
+94
+0:04:03,000 --> 0:04:05,000
+ It is not fun.
+
+95
+0:04:05,000 --> 0:04:07,000
+ The main problem really was
+
+96
+0:04:07,000 --> 0:04:11,000
+ that I ended up stopping using the puny code for
+
+97
+0:04:11,000 --> 0:04:14,000
+ was that registration emails, right?
+
+98
+0:04:14,000 --> 0:04:16,000
+ You'd sign up for Mastodon,
+
+99
+0:04:16,000 --> 0:04:18,000
+ then you'd get an email back that was like,
+
+100
+0:04:18,000 --> 0:04:20,000
+ oh, do you want to confirm that I just signed up
+
+101
+0:04:20,000 --> 0:04:22,000
+ for xn, dash, dash, garbage, garbage, garbage?
+
+102
+0:04:22,000 --> 0:04:25,000
+ And like, nobody wants to see,
+
+103
+0:04:25,000 --> 0:04:27,000
+ confirm that they just signed up for something
+
+104
+0:04:27,000 --> 0:04:30,000
+ that doesn't look at all what they just signed up for.
+
+105
+0:04:30,000 --> 0:04:32,000
+ So we ended up falling back
+
+106
+0:04:32,000 --> 0:04:34,000
+ and just using Napro with an ö,
+
+107
+0:04:34,000 --> 0:04:37,000
+ which bothers me a little bit,
+
+108
+0:04:37,000 --> 0:04:38,000
+ but I tried.
+
+109
+0:04:38,000 --> 0:04:40,000
+ I've heard that puny coding has gotten better
+
+110
+0:04:40,000 --> 0:04:42,000
+ in Mastodon since then,
+
+111
+0:04:42,000 --> 0:04:44,000
+ but still when it's an interoperable standard like this,
+
+112
+0:04:44,000 --> 0:04:46,000
+ you need to talk to other servers as well.
+
+113
+0:04:46,000 --> 0:04:47,000
+ So how is it in PixelFed?
+
+114
+0:04:47,000 --> 0:04:49,000
+ How is it in Preruma?
+
+115
+0:04:49,000 --> 0:04:50,000
+ So I ended up just,
+
+116
+0:04:50,000 --> 0:04:51,000
+ I have all those domains,
+
+117
+0:04:51,000 --> 0:04:53,000
+ but they just point to napro.space
+
+118
+0:04:53,000 --> 0:04:55,000
+ because then stuff works.
+
+119
+0:04:57,000 --> 0:04:59,000
+ Yeah, that's about it.
+
+120
+0:04:59,000 --> 0:05:00,000
+ Come say hi on Mastodon.
+
+121
+0:05:00,000 --> 0:05:01,000
+ It's good fun.
+
+122
+0:05:01,000 --> 0:05:02,000
+ There's lots of servers.
+
+123
+0:05:02,000 --> 0:05:03,000
+ Napro.space is not the only one.
+
+124
+0:05:03,000 --> 0:05:05,000
+ You're also allowed on Napro.space
+
+125
+0:05:05,000 --> 0:05:07,000
+ if you don't live on or near Napro.
+
+126
+0:05:07,000 --> 0:05:09,000
+ And the hashtag BornHack,
+
+127
+0:05:09,000 --> 0:05:11,000
+ hashtag on ActivityPub is comfy,
+
+128
+0:05:11,000 --> 0:05:13,000
+ and your toots will show up on the slideshow.
+
+129
+0:05:13,000 --> 0:05:15,000
+ Yeah, that's it.

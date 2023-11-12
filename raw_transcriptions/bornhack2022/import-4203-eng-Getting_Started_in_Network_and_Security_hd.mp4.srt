@@ -1,0 +1,5447 @@
+# Transcribed 2023-11-12T16 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:15,300
+ Good afternoon, everyone.
+
+2
+0:00:15,940 --> 0:00:17,560
+ Yes, welcome to this talk.
+
+3
+0:00:17,700 --> 0:00:19,940
+ My name is Henrik Kramselund, or Kramse for short.
+
+4
+0:00:20,460 --> 0:00:21,960
+ My pronouns are he, him.
+
+5
+0:00:22,440 --> 0:00:26,120
+ And all of my slideshows and educational materials are on GitHub.
+
+6
+0:00:26,620 --> 0:00:27,920
+ My user, Kramse, at GitHub.
+
+7
+0:00:27,920 --> 0:00:30,900
+ And this one is called Getting Started in InfoSec.
+
+8
+0:00:31,400 --> 0:00:33,240
+ It's in the repository of security courses,
+
+9
+0:00:33,600 --> 0:00:36,300
+ which have all my educational materials for everything I do.
+
+10
+0:00:36,780 --> 0:00:40,120
+ So please share and use and get inspired if you like.
+
+11
+0:00:41,340 --> 0:00:42,760
+ There's some contact information.
+
+12
+0:00:43,360 --> 0:00:47,860
+ And just to sum it up, I've been using internet for many, many years.
+
+13
+0:00:47,940 --> 0:00:51,960
+ I've been a network and security consultant for about 25 years plus.
+
+14
+0:00:52,280 --> 0:00:55,800
+ I have gone through, of course, a lot of education myself.
+
+15
+0:00:56,120 --> 0:00:57,660
+ And what I'm trying to do today
+
+16
+0:00:57,660 --> 0:01:01,120
+ is try to get you started in a more nice way
+
+17
+0:01:01,120 --> 0:01:05,200
+ because it can really be overwhelming getting to know security.
+
+18
+0:01:05,560 --> 0:01:08,100
+ So I'm trying to get all of my experience
+
+19
+0:01:08,100 --> 0:01:12,020
+ from the learning network and security myself, being a consultant,
+
+20
+0:01:12,360 --> 0:01:14,040
+ but also when I teach at KEA,
+
+21
+0:01:14,120 --> 0:01:17,480
+ which is the Copenhagen School of Design and Technology,
+
+22
+0:01:17,580 --> 0:01:18,980
+ I think is the English name.
+
+23
+0:01:19,340 --> 0:01:20,960
+ And I'm also a little bit of an activist,
+
+24
+0:01:21,120 --> 0:01:22,680
+ but we can take that over a beer in the bar.
+
+25
+0:01:24,040 --> 0:01:26,680
+ The goals for today is to inspire you,
+
+26
+0:01:27,660 --> 0:01:30,420
+ to create a goal for your education.
+
+27
+0:01:31,240 --> 0:01:33,100
+ We have this quote, the old one,
+
+28
+0:01:33,180 --> 0:01:34,740
+ a goal without a plan is just a wish.
+
+29
+0:01:35,380 --> 0:01:40,420
+ And trying to learn something as big as networking or security
+
+30
+0:01:40,420 --> 0:01:45,460
+ or even the two together can be completely overwhelming.
+
+31
+0:01:45,900 --> 0:01:49,680
+ So many resources are available, so many places to look,
+
+32
+0:01:49,780 --> 0:01:51,540
+ so many people to listen to.
+
+33
+0:01:51,900 --> 0:01:55,040
+ And everybody that has gone through this education by themselves
+
+34
+0:01:55,040 --> 0:01:56,500
+ have, of course, experience.
+
+35
+0:01:57,660 --> 0:02:00,340
+ And maybe it has not been the best way they learned it.
+
+36
+0:02:00,580 --> 0:02:02,580
+ I learned it from some old obscure papers
+
+37
+0:02:02,580 --> 0:02:04,520
+ that were not very easy to follow or read.
+
+38
+0:02:05,020 --> 0:02:07,420
+ And there are much better resources today.
+
+39
+0:02:07,820 --> 0:02:10,720
+ So I'm trying to point you to some of the resources that I'm using.
+
+40
+0:02:11,160 --> 0:02:13,780
+ So mostly this will be inspired by things
+
+41
+0:02:13,780 --> 0:02:15,680
+ that I actually do in my day-to-day work.
+
+42
+0:02:16,260 --> 0:02:19,740
+ I'm also going to point you to a few core concepts
+
+43
+0:02:19,740 --> 0:02:21,880
+ that I think you should know and learn.
+
+44
+0:02:22,480 --> 0:02:25,520
+ And I'm quite stubborn in this regard.
+
+45
+0:02:25,520 --> 0:02:27,460
+ I can be an old grumpy man sometimes,
+
+46
+0:02:27,660 --> 0:02:31,040
+ but I really, really feel that there are some key points
+
+47
+0:02:31,040 --> 0:02:32,540
+ that you need to learn
+
+48
+0:02:32,540 --> 0:02:35,000
+ if you want to work in networking and security.
+
+49
+0:02:35,420 --> 0:02:37,340
+ Some of them are just a need to know.
+
+50
+0:02:37,920 --> 0:02:39,720
+ And if you don't know these things beforehand,
+
+51
+0:02:40,080 --> 0:02:43,520
+ it will be much harder to go further in networking and security.
+
+52
+0:02:44,300 --> 0:02:46,160
+ But if you, on the other hand,
+
+53
+0:02:46,540 --> 0:02:47,940
+ acknowledge that this is needed,
+
+54
+0:02:48,180 --> 0:02:50,480
+ a prerequisite for learning networking and security,
+
+55
+0:02:50,920 --> 0:02:55,260
+ I think you will have a better experience
+
+56
+0:02:55,260 --> 0:02:57,640
+ and will easily learn some of the more advanced,
+
+57
+0:02:57,660 --> 0:03:01,000
+ and of course, we all want to learn the latest concepts,
+
+58
+0:03:01,180 --> 0:03:02,880
+ but it can be really hard.
+
+59
+0:03:03,180 --> 0:03:06,600
+ And even though I have been working in the industry for 25 years,
+
+60
+0:03:06,940 --> 0:03:09,360
+ I have a master's from the University of Copenhagen.
+
+61
+0:03:09,760 --> 0:03:12,400
+ There's definitely papers that I just browse.
+
+62
+0:03:12,800 --> 0:03:15,180
+ There's definitely things I don't understand about security.
+
+63
+0:03:15,520 --> 0:03:19,180
+ And there have been large parts of security that I never look at.
+
+64
+0:03:19,560 --> 0:03:21,300
+ I'm never looking at Bluetooth security.
+
+65
+0:03:21,600 --> 0:03:23,260
+ I'm not looking at infrared security.
+
+66
+0:03:23,260 --> 0:03:26,600
+ I have just decided these big areas are not something
+
+67
+0:03:26,600 --> 0:03:27,640
+ that I want to understand.
+
+68
+0:03:27,960 --> 0:03:28,960
+ I don't want to invest the time.
+
+69
+0:03:28,960 --> 0:03:30,460
+ I don't have the time available.
+
+70
+0:03:30,460 --> 0:03:35,460
+ So I'm trying to inspire you to make a plan for your own wishes,
+
+71
+0:03:35,460 --> 0:03:36,960
+ what you want to learn.
+
+72
+0:03:36,960 --> 0:03:38,660
+ And as an inspiration,
+
+73
+0:03:38,660 --> 0:03:41,860
+ I have taken a security engineering as a job role,
+
+74
+0:03:41,860 --> 0:03:48,360
+ which is one of the things that you could use to guide your adventure into this,
+
+75
+0:03:48,360 --> 0:03:52,160
+ depending on what kind of job role you currently find interesting.
+
+76
+0:03:52,160 --> 0:03:53,960
+ They will have a list of wishes.
+
+77
+0:03:53,960 --> 0:03:57,180
+ Again, they have a wish from the employer who they want to hire,
+
+78
+0:03:57,180 --> 0:04:00,280
+ should have everything, and the kitchen sink,
+
+79
+0:04:00,280 --> 0:04:04,580
+ and should be unicorns, and have these 50 years of experience.
+
+80
+0:04:04,580 --> 0:04:07,380
+ And if they are young and agile without a family,
+
+81
+0:04:07,380 --> 0:04:10,680
+ so they can work 100 hours a week, that would be great.
+
+82
+0:04:10,680 --> 0:04:15,780
+ So sometimes getting to these job role and jobs that you can apply
+
+83
+0:04:15,780 --> 0:04:19,580
+ for will have a list of things that you may want to learn.
+
+84
+0:04:20,080 --> 0:04:23,480
+ And this is actually quite a large list, and it's a list
+
+85
+0:04:23,480 --> 0:04:26,580
+ that actually includes many different fields within security.
+
+86
+0:04:26,580 --> 0:04:26,880
+ Okay.
+
+87
+0:04:26,880 --> 0:04:29,980
+ So having a person that can do all of this,
+
+88
+0:04:29,980 --> 0:04:33,080
+ that's like really, really difficult to find.
+
+89
+0:04:33,080 --> 0:04:36,380
+ And especially in Denmark, we have a shortage of security people.
+
+90
+0:04:36,380 --> 0:04:38,880
+ So they are going to hire.
+
+91
+0:04:38,880 --> 0:04:41,780
+ They are hiring people that don't have all of these skills.
+
+92
+0:04:41,780 --> 0:04:44,880
+ So don't be discouraged from applying for a job,
+
+93
+0:04:44,880 --> 0:04:52,080
+ even if you don't have all of these subjects as ready knowledge right now.
+
+94
+0:04:52,080 --> 0:04:56,280
+ We can also go to some of the core concepts.
+
+95
+0:04:56,280 --> 0:05:00,780
+ And go to some people that have done various categorization
+
+96
+0:05:00,780 --> 0:05:04,480
+ of these fields of network security, network and security.
+
+97
+0:05:04,980 --> 0:05:09,380
+ And one of the categorizations that I really love is the one
+
+98
+0:05:09,380 --> 0:05:12,080
+ from the IC squared, the common body of knowledge.
+
+99
+0:05:12,280 --> 0:05:14,580
+ It has been developed over lots of years.
+
+100
+0:05:14,880 --> 0:05:19,680
+ So it's kind of a nice categorization of the fields
+
+101
+0:05:19,680 --> 0:05:23,080
+ of network and security into more manageable,
+
+102
+0:05:23,280 --> 0:05:26,280
+ they call them domains, other models will call it something,
+
+103
+0:05:26,280 --> 0:05:27,280
+ something else.
+
+104
+0:05:27,280 --> 0:05:31,780
+ But just by looking at categorizations and not trying to learn all of it
+
+105
+0:05:31,780 --> 0:05:34,280
+ at the same time may help you.
+
+106
+0:05:34,280 --> 0:05:37,080
+ So you can decide, I would start with this one,
+
+107
+0:05:37,080 --> 0:05:39,280
+ which is the one that I know most about,
+
+108
+0:05:39,280 --> 0:05:41,980
+ which will be easiest for me to get started in.
+
+109
+0:05:41,980 --> 0:05:45,080
+ And some of these will be quite technical,
+
+110
+0:05:45,080 --> 0:05:47,780
+ but actually some of them are not as technical.
+
+111
+0:05:47,780 --> 0:05:50,980
+ So network and security is a technical field.
+
+112
+0:05:50,980 --> 0:05:53,780
+ But in many ways, it's not a technical field.
+
+113
+0:05:53,780 --> 0:05:55,880
+ There's a lot going on with security.
+
+114
+0:05:56,280 --> 0:06:00,280
+ And I think this one, the eight domains of the CISSP,
+
+115
+0:06:00,280 --> 0:06:03,780
+ common body of knowledge, is a nice way of structuring this.
+
+116
+0:06:03,780 --> 0:06:09,280
+ So I came from a network, communications and network area
+
+117
+0:06:09,280 --> 0:06:10,280
+ and loved networking.
+
+118
+0:06:10,280 --> 0:06:13,280
+ So I went into communication and network security
+
+119
+0:06:13,280 --> 0:06:16,780
+ and found it very easy to read some of these resources.
+
+120
+0:06:16,780 --> 0:06:19,280
+ But when we get to like risk management,
+
+121
+0:06:19,280 --> 0:06:21,280
+ that's not a preferred area for me.
+
+122
+0:06:21,280 --> 0:06:22,280
+ So that's quite hard.
+
+123
+0:06:22,280 --> 0:06:25,280
+ But I know some people in the audience are experts in that.
+
+124
+0:06:25,280 --> 0:06:27,280
+ I'm looking at one in particular,
+
+125
+0:06:27,280 --> 0:06:29,780
+ who's probably more of an expert in risk management,
+
+126
+0:06:29,780 --> 0:06:32,280
+ talking to C-level executives.
+
+127
+0:06:32,280 --> 0:06:35,280
+ And I don't like to talk to C-level executives.
+
+128
+0:06:35,280 --> 0:06:38,280
+ I would rather talk to nerdy people about packets,
+
+129
+0:06:38,280 --> 0:06:40,280
+ which is already in the program in my village.
+
+130
+0:06:40,280 --> 0:06:42,280
+ Later today, we're going to be talking about packets
+
+131
+0:06:42,280 --> 0:06:45,280
+ and protocols, 10G, playing with packets.
+
+132
+0:06:45,280 --> 0:06:47,280
+ So I love that more.
+
+133
+0:06:47,280 --> 0:06:52,280
+ But using these various taxonomies or models,
+
+134
+0:06:52,280 --> 0:06:55,280
+ you can decide which subjects to look at first.
+
+135
+0:06:55,280 --> 0:07:00,280
+ As an example, I have also taken this one,
+
+136
+0:07:00,280 --> 0:07:02,280
+ which is called the Juniper Network Certifications.
+
+137
+0:07:02,280 --> 0:07:05,280
+ Juniper Networks is a large provider of network equipment
+
+138
+0:07:05,280 --> 0:07:07,280
+ being used across the world.
+
+139
+0:07:07,280 --> 0:07:08,280
+ Cisco is another one.
+
+140
+0:07:08,280 --> 0:07:10,280
+ All of these big companies,
+
+141
+0:07:10,280 --> 0:07:15,280
+ they have a very advanced and big programs
+
+142
+0:07:15,280 --> 0:07:17,280
+ for getting certifications in their products.
+
+143
+0:07:17,280 --> 0:07:20,280
+ And I love certifications.
+
+144
+0:07:20,280 --> 0:07:23,280
+ I enjoy certifications because they make you look
+
+145
+0:07:23,280 --> 0:07:24,280
+ at some of the areas
+
+146
+0:07:24,280 --> 0:07:26,280
+ that are not very common in the industry.
+
+147
+0:07:26,280 --> 0:07:28,280
+ Whereas if you're working in the industry,
+
+148
+0:07:28,280 --> 0:07:30,280
+ you will meet these three out of five things
+
+149
+0:07:30,280 --> 0:07:32,280
+ that you always do in the network.
+
+150
+0:07:32,280 --> 0:07:34,280
+ And then there will be four and five,
+
+151
+0:07:34,280 --> 0:07:36,280
+ which you very rarely use.
+
+152
+0:07:36,280 --> 0:07:39,280
+ But getting a certification sometimes helps me,
+
+153
+0:07:39,280 --> 0:07:41,280
+ at least, to read up on some of the parts
+
+154
+0:07:41,280 --> 0:07:43,280
+ that I don't use regularly.
+
+155
+0:07:43,280 --> 0:07:46,280
+ But when they are useful, I will know about them enough
+
+156
+0:07:46,280 --> 0:07:50,280
+ to be able to research them and apply them in real life.
+
+157
+0:07:50,280 --> 0:07:52,280
+ So I enjoy certifications.
+
+158
+0:07:52,280 --> 0:07:54,280
+ I'm not saying that you should take them
+
+159
+0:07:54,280 --> 0:07:57,280
+ or take certifications or invest the money in that.
+
+160
+0:07:57,280 --> 0:07:59,280
+ Some of them can be found freely.
+
+161
+0:07:59,280 --> 0:08:00,280
+ Some of them are more easily.
+
+162
+0:08:00,280 --> 0:08:01,280
+ You can find vouchers
+
+163
+0:08:01,280 --> 0:08:04,280
+ for at least some of the entry-level ones.
+
+164
+0:08:04,280 --> 0:08:06,280
+ And I know that definitely employers
+
+165
+0:08:06,280 --> 0:08:07,280
+ will use certifications.
+
+166
+0:08:07,280 --> 0:08:08,280
+ I love certifications
+
+167
+0:08:08,280 --> 0:08:12,280
+ because it's easy to search for the recruiters.
+
+168
+0:08:12,280 --> 0:08:14,280
+ We're talking about getting into security
+
+169
+0:08:14,280 --> 0:08:16,280
+ probably because you want to get paid
+
+170
+0:08:16,280 --> 0:08:18,280
+ doing what you love, network and security.
+
+171
+0:08:18,280 --> 0:08:20,280
+ So certifications is one of the ways
+
+172
+0:08:20,280 --> 0:08:22,280
+ to also get to know an area.
+
+173
+0:08:22,280 --> 0:08:24,280
+ And as you can see in this one,
+
+174
+0:08:24,280 --> 0:08:27,280
+ it's also divided into cloud and non-cloud stuff
+
+175
+0:08:27,280 --> 0:08:29,280
+ and enterprise routing and switching
+
+176
+0:08:29,280 --> 0:08:33,280
+ and service provider, ISP, routing and switching.
+
+177
+0:08:33,280 --> 0:08:36,280
+ So depending on what area you want to work in,
+
+178
+0:08:36,280 --> 0:08:39,280
+ it may be applicable to other certifications.
+
+179
+0:08:39,280 --> 0:08:43,280
+ You can decide which track to follow.
+
+180
+0:08:43,280 --> 0:08:49,280
+ Then I would like to go back a bit
+
+181
+0:08:49,280 --> 0:08:53,280
+ and restart how to learn network and security.
+
+182
+0:08:53,280 --> 0:08:55,280
+ And I think some of this applies
+
+183
+0:08:55,280 --> 0:08:57,280
+ to probably other technical skills
+
+184
+0:08:57,280 --> 0:09:01,280
+ that you want to get to know.
+
+185
+0:09:01,280 --> 0:09:04,280
+ I call it learning at different levels.
+
+186
+0:09:04,280 --> 0:09:06,280
+ And as an example,
+
+187
+0:09:06,280 --> 0:09:10,280
+ I will use the tool called the Nmap port scanner.
+
+188
+0:09:10,280 --> 0:09:13,280
+ It's included in the movie, the Matrix movie,
+
+189
+0:09:13,280 --> 0:09:15,280
+ which is one of the famous hacker movies.
+
+190
+0:09:15,280 --> 0:09:17,280
+ There's been a bit of hacking in that.
+
+191
+0:09:17,280 --> 0:09:19,280
+ They are running a tool called Nmap.
+
+192
+0:09:19,280 --> 0:09:20,280
+ It's actually a real tool.
+
+193
+0:09:20,280 --> 0:09:21,280
+ So it's one of the hacker movies
+
+194
+0:09:21,280 --> 0:09:22,280
+ that include a real tool.
+
+195
+0:09:22,280 --> 0:09:24,280
+ They are typing quickly
+
+196
+0:09:24,280 --> 0:09:27,280
+ with gloves on and fancy clothes,
+
+197
+0:09:27,280 --> 0:09:30,280
+ but it is actually a very useful tool.
+
+198
+0:09:30,280 --> 0:09:32,280
+ It's also one of the tools
+
+199
+0:09:32,280 --> 0:09:36,280
+ that I think is a need to know tool
+
+200
+0:09:36,280 --> 0:09:39,280
+ because everybody is using Nmap.
+
+201
+0:09:39,280 --> 0:09:42,280
+ You will not have a pen test in the world
+
+202
+0:09:42,280 --> 0:09:44,280
+ that doesn't use Nmap,
+
+203
+0:09:44,280 --> 0:09:46,280
+ or at least I would not consider that a pen test.
+
+204
+0:09:46,280 --> 0:09:49,280
+ I would not consider that a good pen test.
+
+205
+0:09:49,280 --> 0:09:50,280
+ Everybody will use Nmap
+
+206
+0:09:50,280 --> 0:09:52,280
+ and they may use other tools,
+
+207
+0:09:52,280 --> 0:09:54,280
+ but Nmap is a port scanner
+
+208
+0:09:54,280 --> 0:09:56,280
+ that can check for open ports on the internet.
+
+209
+0:09:56,280 --> 0:09:58,280
+ And you can perhaps scan a little bit here.
+
+210
+0:09:58,280 --> 0:10:01,280
+ I'm pretty sure that we will get abuse messages
+
+211
+0:10:01,280 --> 0:10:04,280
+ if you try to scan the whole internet from here.
+
+212
+0:10:04,280 --> 0:10:06,280
+ And since I don't know who you are,
+
+213
+0:10:06,280 --> 0:10:08,280
+ I cannot really forward those abuse messages,
+
+214
+0:10:08,280 --> 0:10:11,280
+ but you can do some light scanning from here.
+
+215
+0:10:11,280 --> 0:10:13,280
+ And all of you in the tent here,
+
+216
+0:10:13,280 --> 0:10:15,280
+ at least you're very welcome
+
+217
+0:10:15,280 --> 0:10:18,280
+ to practice Nmap scanning on my infrastructure.
+
+218
+0:10:18,280 --> 0:10:21,280
+ I have the AS number 57860.
+
+219
+0:10:22,280 --> 0:10:24,280
+ You can scan all my devices using Nmap from here
+
+220
+0:10:24,280 --> 0:10:26,280
+ if you like to and want to play with this.
+
+221
+0:10:26,280 --> 0:10:29,280
+ So this is an example of a must-have tool,
+
+222
+0:10:29,280 --> 0:10:30,280
+ must-learn tool,
+
+223
+0:10:30,280 --> 0:10:32,280
+ must be able to talk about this tool
+
+224
+0:10:32,280 --> 0:10:35,280
+ and understand the output from this tool.
+
+225
+0:10:35,280 --> 0:10:36,280
+ Because in this screenshot,
+
+226
+0:10:36,280 --> 0:10:39,280
+ we are seeing them run the tool with some options.
+
+227
+0:10:39,280 --> 0:10:42,280
+ We are seeing some output from this.
+
+228
+0:10:42,280 --> 0:10:43,280
+ And at the very bottom,
+
+229
+0:10:43,280 --> 0:10:45,280
+ I'm not sure you can read it at the back,
+
+230
+0:10:45,280 --> 0:10:47,280
+ there's actually an exploit being used.
+
+231
+0:10:47,280 --> 0:10:48,280
+ And in the movie,
+
+232
+0:10:48,280 --> 0:10:50,280
+ they gain access to controlling the power
+
+233
+0:10:50,280 --> 0:10:52,280
+ and can shut the whole thing down.
+
+234
+0:10:52,280 --> 0:10:55,280
+ But understanding the output
+
+235
+0:10:55,280 --> 0:10:57,280
+ can be just as difficult
+
+236
+0:10:57,280 --> 0:10:59,280
+ as actually running the tool.
+
+237
+0:10:59,280 --> 0:11:00,280
+ And in this case,
+
+238
+0:11:00,280 --> 0:11:02,280
+ using Nmap as an example,
+
+239
+0:11:02,280 --> 0:11:05,280
+ this tool has about 100 options.
+
+240
+0:11:05,280 --> 0:11:07,280
+ And if you don't even know Linux,
+
+241
+0:11:07,280 --> 0:11:09,280
+ you don't even know command line tools,
+
+242
+0:11:09,280 --> 0:11:11,280
+ then it will be even an obstacle
+
+243
+0:11:11,280 --> 0:11:13,280
+ to getting to run this tool.
+
+244
+0:11:13,280 --> 0:11:15,280
+ It has 100 options.
+
+245
+0:11:15,280 --> 0:11:16,280
+ But then you can look at the man page
+
+246
+0:11:16,280 --> 0:11:17,280
+ because the man page
+
+247
+0:11:17,280 --> 0:11:19,280
+ for all of these Unix, Linux tools,
+
+248
+0:11:19,280 --> 0:11:20,280
+ command line tools
+
+249
+0:11:20,280 --> 0:11:21,280
+ will of course explain
+
+250
+0:11:21,280 --> 0:11:23,280
+ how to use the tool.
+
+251
+0:11:23,280 --> 0:11:26,280
+ And then you can read these 3,100 lines
+
+252
+0:11:26,280 --> 0:11:28,280
+ about how to use these options.
+
+253
+0:11:28,280 --> 0:11:31,280
+ And this tool is actually so complex
+
+254
+0:11:31,280 --> 0:11:32,280
+ that multiple books
+
+255
+0:11:32,280 --> 0:11:34,280
+ have been written about the tool.
+
+256
+0:11:34,280 --> 0:11:35,280
+ Some of them are outdated,
+
+257
+0:11:35,280 --> 0:11:37,280
+ but some of the basic stuff
+
+258
+0:11:37,280 --> 0:11:39,280
+ is still available and useful
+
+259
+0:11:39,280 --> 0:11:40,280
+ and in the tool still.
+
+260
+0:11:40,280 --> 0:11:41,280
+ And of course,
+
+261
+0:11:41,280 --> 0:11:42,280
+ it has also been expanded
+
+262
+0:11:42,280 --> 0:11:44,280
+ with IP version 6.
+
+263
+0:11:44,280 --> 0:11:46,280
+ So that adds another dimension.
+
+264
+0:11:46,280 --> 0:11:48,280
+ But which of the 100 options
+
+265
+0:11:48,280 --> 0:11:49,280
+ should you use?
+
+266
+0:11:49,280 --> 0:11:51,280
+ How do you interpret it?
+
+267
+0:11:51,280 --> 0:11:52,280
+ How do you interpret the results
+
+268
+0:11:52,280 --> 0:11:53,280
+ from this tool?
+
+269
+0:11:55,280 --> 0:11:57,280
+ Looking at this specific tool,
+
+270
+0:11:57,280 --> 0:11:59,280
+ using this as an example,
+
+271
+0:11:59,280 --> 0:12:01,280
+ there are some prerequisite knowledge
+
+272
+0:12:01,280 --> 0:12:02,280
+ to using it.
+
+273
+0:12:02,280 --> 0:12:05,280
+ And to actually use it effectively
+
+274
+0:12:05,280 --> 0:12:07,280
+ in a job role,
+
+275
+0:12:07,280 --> 0:12:08,280
+ in an enterprise,
+
+276
+0:12:08,280 --> 0:12:10,280
+ in an organization,
+
+277
+0:12:10,280 --> 0:12:12,280
+ you will need to combine some knowledge.
+
+278
+0:12:12,280 --> 0:12:15,280
+ So to get started using this Nmap,
+
+279
+0:12:15,280 --> 0:12:17,280
+ you need to have some
+
+280
+0:12:17,280 --> 0:12:19,280
+ prerequisite knowledge.
+
+281
+0:12:19,280 --> 0:12:21,280
+ And the prerequisite knowledge is
+
+282
+0:12:21,280 --> 0:12:23,280
+ what is a port scanner?
+
+283
+0:12:23,280 --> 0:12:24,280
+ And what is a port scanner?
+
+284
+0:12:24,280 --> 0:12:27,280
+ It's something to do with TCP IP.
+
+285
+0:12:27,280 --> 0:12:29,280
+ But what is TCP IP?
+
+286
+0:12:29,280 --> 0:12:31,280
+ Transmission Control Protocol
+
+287
+0:12:31,280 --> 0:12:33,280
+ slash IP Internet Protocol.
+
+288
+0:12:33,280 --> 0:12:35,280
+ It's part of the Internet Protocol Suite.
+
+289
+0:12:35,280 --> 0:12:36,280
+ And actually,
+
+290
+0:12:36,280 --> 0:12:37,280
+ that whole suite includes
+
+291
+0:12:37,280 --> 0:12:38,280
+ a lot of functionality.
+
+292
+0:12:38,280 --> 0:12:39,280
+ It's being used
+
+293
+0:12:39,280 --> 0:12:40,280
+ across the whole Internet.
+
+294
+0:12:40,280 --> 0:12:41,280
+ It's being used
+
+295
+0:12:41,280 --> 0:12:42,280
+ for multiple purposes.
+
+296
+0:12:42,280 --> 0:12:43,280
+ It's being used
+
+297
+0:12:43,280 --> 0:12:45,280
+ for HTTP port 80.
+
+298
+0:12:45,280 --> 0:12:46,280
+ How many in here know
+
+299
+0:12:46,280 --> 0:12:49,280
+ HTTP and web service browsers?
+
+300
+0:12:49,280 --> 0:12:50,280
+ How many has run a browser?
+
+301
+0:12:50,280 --> 0:12:51,280
+ Yeah.
+
+302
+0:12:51,280 --> 0:12:53,280
+ Trying to activate you a bit.
+
+303
+0:12:53,280 --> 0:12:54,280
+ So getting to know a browser,
+
+304
+0:12:54,280 --> 0:12:55,280
+ having a little bit to know
+
+305
+0:12:55,280 --> 0:12:57,280
+ with web technologies,
+
+306
+0:12:57,280 --> 0:12:59,280
+ some of the people moving into security
+
+307
+0:12:59,280 --> 0:13:01,280
+ may come from a web developer background.
+
+308
+0:13:01,280 --> 0:13:02,280
+ So you will know
+
+309
+0:13:02,280 --> 0:13:04,280
+ HTTP port 80.
+
+310
+0:13:04,280 --> 0:13:05,280
+ And some of you may know
+
+311
+0:13:05,280 --> 0:13:06,280
+ that it runs on TCP.
+
+312
+0:13:06,280 --> 0:13:07,280
+ And now we already know
+
+313
+0:13:07,280 --> 0:13:09,280
+ a little bit more about
+
+314
+0:13:09,280 --> 0:13:10,280
+ what to expect
+
+315
+0:13:10,280 --> 0:13:11,280
+ when we do the scanning
+
+316
+0:13:11,280 --> 0:13:12,280
+ because of course
+
+317
+0:13:12,280 --> 0:13:14,280
+ we will see web servers.
+
+318
+0:13:14,280 --> 0:13:15,280
+ But we need to know
+
+319
+0:13:15,280 --> 0:13:17,280
+ some basic stuff
+
+320
+0:13:17,280 --> 0:13:18,280
+ before we can use
+
+321
+0:13:18,280 --> 0:13:19,280
+ a port scanner effectively.
+
+322
+0:13:19,280 --> 0:13:22,280
+ We also need to know
+
+323
+0:13:22,280 --> 0:13:24,280
+ a bit of the inside
+
+324
+0:13:24,280 --> 0:13:25,280
+ and internals
+
+325
+0:13:25,280 --> 0:13:26,280
+ of the Internet protocol suite.
+
+326
+0:13:26,280 --> 0:13:27,280
+ There's something called
+
+327
+0:13:27,280 --> 0:13:29,280
+ a TCP session setup.
+
+328
+0:13:29,280 --> 0:13:31,280
+ So you need to research
+
+329
+0:13:31,280 --> 0:13:33,280
+ how does TCP actually work.
+
+330
+0:13:33,280 --> 0:13:35,280
+ It works by sending a packet
+
+331
+0:13:35,280 --> 0:13:36,280
+ called a SYN packet
+
+332
+0:13:36,280 --> 0:13:37,280
+ and then it gets
+
+333
+0:13:37,280 --> 0:13:38,280
+ a SYN ACK packet back
+
+334
+0:13:38,280 --> 0:13:39,280
+ and then it sends an ACK.
+
+335
+0:13:39,280 --> 0:13:41,280
+ And then you can actually
+
+336
+0:13:41,280 --> 0:13:43,280
+ start sending a GET request
+
+337
+0:13:43,280 --> 0:13:44,280
+ and get a web page back
+
+338
+0:13:44,280 --> 0:13:45,280
+ from a web server.
+
+339
+0:13:45,280 --> 0:13:46,280
+ And that happens
+
+340
+0:13:46,280 --> 0:13:47,280
+ every time we use TCP.
+
+341
+0:13:47,280 --> 0:13:48,280
+ And that is some of the things
+
+342
+0:13:48,280 --> 0:13:49,280
+ that you need to know
+
+343
+0:13:49,280 --> 0:13:50,280
+ before you can run NMAP
+
+344
+0:13:50,280 --> 0:13:51,280
+ and understand the output.
+
+345
+0:13:51,280 --> 0:13:52,280
+ Then you want to run the tool
+
+346
+0:13:52,280 --> 0:13:53,280
+ and running tools like NMAP
+
+347
+0:13:53,280 --> 0:13:54,280
+ requires some kind of platform
+
+348
+0:13:54,280 --> 0:13:55,280
+ operating system.
+
+349
+0:13:55,280 --> 0:13:56,280
+ It's usually not built
+
+350
+0:13:56,280 --> 0:13:57,280
+ into your operating system
+
+351
+0:13:57,280 --> 0:13:58,280
+ when you download it.
+
+352
+0:13:58,280 --> 0:13:59,280
+ You buy it by a laptop.
+
+353
+0:13:59,280 --> 0:14:00,280
+ I don't think there's ever
+
+354
+0:14:00,280 --> 0:14:01,280
+ a laptop that has NMAP
+
+355
+0:14:01,280 --> 0:14:02,280
+ by default.
+
+356
+0:14:02,280 --> 0:14:03,280
+ They should have.
+
+357
+0:14:03,280 --> 0:14:04,280
+ They should have
+
+358
+0:14:04,280 --> 0:14:05,280
+ in my opinion.
+
+359
+0:14:05,280 --> 0:14:06,280
+ It's one of the first tools
+
+360
+0:14:06,280 --> 0:14:07,280
+ that I always install.
+
+361
+0:14:07,280 --> 0:14:08,280
+ But luckily
+
+362
+0:14:08,280 --> 0:14:09,280
+ this tool
+
+363
+0:14:09,280 --> 0:14:10,280
+ that I always use
+
+364
+0:14:10,280 --> 0:14:11,280
+ is actually
+
+365
+0:14:11,280 --> 0:14:12,280
+ one of the first
+
+366
+0:14:12,280 --> 0:14:13,280
+ tools that I use
+
+367
+0:14:13,280 --> 0:14:14,280
+ to run NMAP.
+
+368
+0:14:14,280 --> 0:14:15,280
+ It's actually
+
+369
+0:14:15,280 --> 0:14:16,280
+ one of the first
+
+370
+0:14:16,280 --> 0:14:17,280
+ tools that I use
+
+371
+0:14:17,280 --> 0:14:18,280
+ to run NMAP.
+
+372
+0:14:18,280 --> 0:14:19,280
+ This tool
+
+373
+0:14:19,280 --> 0:14:20,280
+ which is one of the reasons
+
+374
+0:14:20,280 --> 0:14:21,280
+ I also really,
+
+375
+0:14:21,280 --> 0:14:22,280
+ really love this tool.
+
+376
+0:14:22,280 --> 0:14:23,280
+ It is that
+
+377
+0:14:23,280 --> 0:14:24,280
+ it supports Mac,
+
+378
+0:14:24,280 --> 0:14:25,280
+ Windows,
+
+379
+0:14:25,280 --> 0:14:26,280
+ Linux.
+
+380
+0:14:26,280 --> 0:14:27,280
+ It's open source.
+
+381
+0:14:27,280 --> 0:14:28,280
+ You can compile it
+
+382
+0:14:28,280 --> 0:14:29,280
+ and run it on a mobile phone
+
+383
+0:14:29,280 --> 0:14:30,280
+ if you like.
+
+384
+0:14:30,280 --> 0:14:31,280
+ It's available
+
+385
+0:14:31,280 --> 0:14:32,280
+ for all of us.
+
+386
+0:14:32,280 --> 0:14:33,280
+ So that sorts out
+
+387
+0:14:33,280 --> 0:14:34,280
+ one of the prerequisites
+
+388
+0:14:34,280 --> 0:14:35,280
+ for the hardware
+
+389
+0:14:35,280 --> 0:14:36,280
+ that you need.
+
+390
+0:14:36,280 --> 0:14:37,280
+ But then also
+
+391
+0:14:37,280 --> 0:14:38,280
+ NMAP
+
+392
+0:14:38,280 --> 0:14:39,280
+ we are very lucky
+
+393
+0:14:39,280 --> 0:14:40,280
+ because it has a
+
+394
+0:14:40,280 --> 0:14:41,280
+ GUI front end
+
+395
+0:14:41,280 --> 0:14:42,280
+ which is called
+
+396
+0:14:42,280 --> 0:14:43,280
+ send map
+
+397
+0:14:43,280 --> 0:14:44,280
+ which is the screenshot
+
+398
+0:14:44,280 --> 0:14:45,280
+ shown here.
+
+399
+0:14:45,280 --> 0:14:46,280
+ So if you're
+
+400
+0:14:46,280 --> 0:14:47,280
+ a bit afraid
+
+401
+0:14:47,280 --> 0:14:48,280
+ of command line
+
+402
+0:14:48,280 --> 0:14:49,280
+ options,
+
+403
+0:14:49,280 --> 0:14:50,280
+ that's great.
+
+404
+0:14:50,280 --> 0:14:51,280
+ You can still run NMAP
+
+405
+0:14:51,280 --> 0:14:52,280
+ and I recommend
+
+406
+0:14:52,280 --> 0:14:53,280
+ people new to NMAP
+
+407
+0:14:53,280 --> 0:14:54,280
+ to run this GUI tool.
+
+408
+0:14:54,280 --> 0:14:55,280
+ And it's also
+
+409
+0:14:55,280 --> 0:14:56,280
+ a very,
+
+410
+0:14:56,280 --> 0:14:57,280
+ very nice
+
+411
+0:14:57,280 --> 0:14:58,280
+ GUI tool
+
+412
+0:14:58,280 --> 0:14:59,280
+ for learning NMAP
+
+413
+0:14:59,280 --> 0:15:00,280
+ because it has profiles.
+
+414
+0:15:00,280 --> 0:15:01,280
+ It has a way
+
+415
+0:15:01,280 --> 0:15:02,280
+ to use the GUI
+
+416
+0:15:02,280 --> 0:15:03,280
+ to select options.
+
+417
+0:15:03,280 --> 0:15:04,280
+ There's a bit of explanation
+
+418
+0:15:04,280 --> 0:15:05,280
+ for all of these options.
+
+419
+0:15:05,280 --> 0:15:06,280
+ But also
+
+420
+0:15:06,280 --> 0:15:07,280
+ this tool
+
+421
+0:15:07,280 --> 0:15:08,280
+ actually
+
+422
+0:15:08,280 --> 0:15:09,280
+ includes
+
+423
+0:15:09,280 --> 0:15:10,280
+ the full command
+
+424
+0:15:10,280 --> 0:15:11,280
+ that is running.
+
+425
+0:15:11,280 --> 0:15:12,280
+ It's a bit
+
+426
+0:15:12,280 --> 0:15:13,280
+ mangled
+
+427
+0:15:13,280 --> 0:15:14,280
+ but you can see
+
+428
+0:15:14,280 --> 0:15:15,280
+ NMAP
+
+429
+0:15:15,280 --> 0:15:16,280
+ minus T4
+
+430
+0:15:16,280 --> 0:15:17,280
+ minus A
+
+431
+0:15:17,280 --> 0:15:18,280
+ minus V
+
+432
+0:15:18,280 --> 0:15:19,280
+ and so on.
+
+433
+0:15:19,280 --> 0:15:20,280
+ So it's actually
+
+434
+0:15:20,280 --> 0:15:21,280
+ a nice tool
+
+435
+0:15:21,280 --> 0:15:22,280
+ for learning.
+
+436
+0:15:22,280 --> 0:15:23,280
+ But if you
+
+437
+0:15:23,280 --> 0:15:24,280
+ start out
+
+438
+0:15:24,280 --> 0:15:25,280
+ by watching
+
+439
+0:15:25,280 --> 0:15:26,280
+ a movie
+
+440
+0:15:26,280 --> 0:15:27,280
+ with techno music
+
+441
+0:15:27,280 --> 0:15:28,280
+ and they're just
+
+442
+0:15:28,280 --> 0:15:29,280
+ switching back and forth
+
+443
+0:15:29,280 --> 0:15:30,280
+ between command lines
+
+444
+0:15:30,280 --> 0:15:31,280
+ and running a lot
+
+445
+0:15:31,280 --> 0:15:32,280
+ of options
+
+446
+0:15:32,280 --> 0:15:33,280
+ it can be really hard
+
+447
+0:15:33,280 --> 0:15:34,280
+ to learn this tool.
+
+448
+0:15:34,280 --> 0:15:35,280
+ So running a port scanner
+
+449
+0:15:35,280 --> 0:15:36,280
+ you need to have
+
+450
+0:15:36,280 --> 0:15:37,280
+ a platform.
+
+451
+0:15:37,280 --> 0:15:38,280
+ My recommendation
+
+452
+0:15:38,280 --> 0:15:39,280
+ is to create
+
+453
+0:15:39,280 --> 0:15:40,280
+ a virtual machine
+
+454
+0:15:40,280 --> 0:15:41,280
+ with Kali Linux.
+
+455
+0:15:41,280 --> 0:15:42,280
+ We can discuss
+
+456
+0:15:42,280 --> 0:15:43,280
+ in another
+
+457
+0:15:43,280 --> 0:15:44,280
+ area
+
+458
+0:15:44,280 --> 0:15:45,280
+ which offensive
+
+459
+0:15:45,280 --> 0:15:46,280
+ Linux distribution
+
+460
+0:15:46,280 --> 0:15:47,280
+ to use
+
+461
+0:15:47,280 --> 0:15:48,280
+ and there are some
+
+462
+0:15:48,280 --> 0:15:53,160
+ do Bluetooth hacking, wireless hacking, SDR hacking, maybe some other Linux distribution
+
+463
+0:15:53,160 --> 0:15:55,700
+ may be better for that purpose.
+
+464
+0:15:55,860 --> 0:16:01,160
+ But the Kali Linux has been downloaded millions and millions and millions of copies and installed
+
+465
+0:16:01,160 --> 0:16:02,000
+ around the world.
+
+466
+0:16:02,580 --> 0:16:09,320
+ There are YouTube videos, more than 100,000 YouTube videos in different languages, with
+
+467
+0:16:09,320 --> 0:16:10,100
+ different accents.
+
+468
+0:16:10,540 --> 0:16:11,960
+ There are some in Danish even.
+
+469
+0:16:12,300 --> 0:16:14,060
+ Some of them will be short, five minutes.
+
+470
+0:16:14,360 --> 0:16:15,660
+ Some of them will be 15 minutes.
+
+471
+0:16:15,660 --> 0:16:18,520
+ Some of them will be hour-long videos about Nmap.
+
+472
+0:16:19,060 --> 0:16:24,640
+ So use the right resources, and Kali Linux makes it very easy, because then this tool
+
+473
+0:16:24,640 --> 0:16:25,580
+ is actually installed.
+
+474
+0:16:26,100 --> 0:16:30,500
+ So if you can follow the guide to install Kali Linux, which is also documented by YouTube
+
+475
+0:16:30,500 --> 0:16:33,220
+ videos, then you have a platform to run the tool.
+
+476
+0:16:34,560 --> 0:16:41,600
+ Then later on, when we have the basic stuff, we know how to run the tool, we need to apply
+
+477
+0:16:41,600 --> 0:16:43,020
+ it in a job role.
+
+478
+0:16:43,020 --> 0:16:45,640
+ And that is where it starts to become useful.
+
+479
+0:16:45,660 --> 0:16:49,060
+ And you can actually start to use it in different scenarios.
+
+480
+0:16:49,980 --> 0:16:55,580
+ Using scenarios is a way of, for me at least, and my students, to say we want to perform
+
+481
+0:16:55,580 --> 0:16:56,540
+ some task.
+
+482
+0:16:57,080 --> 0:17:04,080
+ And I have included a list of tasks that I have used in real penetration testing scenarios.
+
+483
+0:17:04,460 --> 0:17:08,060
+ So I may want to do a full TCP scan, which is the first line.
+
+484
+0:17:08,520 --> 0:17:14,320
+ So this is actually a specific invocation of this tool with specific options that will
+
+485
+0:17:14,320 --> 0:17:15,380
+ produce an output file.
+
+486
+0:17:15,380 --> 0:17:23,080
+ And then later on, in some of these, there will be all sorts of magical constants around
+
+487
+0:17:23,080 --> 0:17:28,900
+ these commands that you may not know now, but splitting it up into different scenarios
+
+488
+0:17:28,900 --> 0:17:33,380
+ and trying to work through each of these scenarios will start to make it useful.
+
+489
+0:17:34,340 --> 0:17:40,600
+ And the first one with Nmap for all ports with the TCP, that's actually one of the commands
+
+490
+0:17:40,600 --> 0:17:44,200
+ that some of my students have used in their home networks.
+
+491
+0:17:44,200 --> 0:17:45,200
+ They have applied this.
+
+492
+0:17:45,380 --> 0:17:48,860
+ They have applied this knowledge of scanning all the ports, just getting an output of the
+
+493
+0:17:48,860 --> 0:17:49,860
+ open ports.
+
+494
+0:17:49,860 --> 0:17:54,500
+ And in one case, one of them came back and there was a MariaDB, which was a SQL database
+
+495
+0:17:54,500 --> 0:17:57,000
+ just connected directly to the internet.
+
+496
+0:17:57,000 --> 0:18:02,460
+ Found out it was a consultant that needed access a year ago, and nobody removed the
+
+497
+0:18:02,460 --> 0:18:04,460
+ access afterwards.
+
+498
+0:18:04,460 --> 0:18:10,540
+ And that is things that you can start to use pretty easily and pretty quickly after learning
+
+499
+0:18:10,540 --> 0:18:11,900
+ the basic stuff.
+
+500
+0:18:11,900 --> 0:18:15,220
+ So I hope that describes the process of getting to know a synchro.
+
+501
+0:18:15,220 --> 0:18:16,900
+ So I hope that describes the process of getting to know a single tool, getting started with
+
+502
+0:18:16,900 --> 0:18:21,460
+ a single tool, and then you can expand on that knowledge.
+
+503
+0:18:21,460 --> 0:18:26,240
+ So there's no reason to go and read all the options for Nmap because you don't need all
+
+504
+0:18:26,240 --> 0:18:32,340
+ the options, especially there's a large part of Nmap options that has to do with being
+
+505
+0:18:32,340 --> 0:18:37,620
+ a bit, what you call it, hiding who you are, spoofing addresses and stuff.
+
+506
+0:18:37,620 --> 0:18:42,700
+ And if you are allowed to do Nmap, which is quite easy to get access to if you have a
+
+507
+0:18:42,700 --> 0:18:43,700
+ network.
+
+508
+0:18:43,700 --> 0:18:46,380
+ If you're running in a lab network, you can run it.
+
+509
+0:18:46,380 --> 0:18:49,020
+ So we don't need these options immediately.
+
+510
+0:18:49,020 --> 0:18:52,080
+ And some of them actually don't work really well anymore.
+
+511
+0:18:52,080 --> 0:18:57,440
+ So I just recommend getting permission to run Nmap, and that's actually quite useful.
+
+512
+0:18:57,440 --> 0:19:02,700
+ And try it out in a lab environment or some camp that you make with your friends in a
+
+513
+0:19:02,700 --> 0:19:03,800
+ forest.
+
+514
+0:19:03,800 --> 0:19:07,680
+ You can try out Nmap on a network.
+
+515
+0:19:07,680 --> 0:19:13,140
+ So this is actually what I would recommend as a quality scan of an enterprise if you
+
+516
+0:19:13,140 --> 0:19:18,200
+ did these scans, took all the output, focused on the output for the different parts.
+
+517
+0:19:18,200 --> 0:19:21,600
+ That would actually be quite useful in many circumstances.
+
+518
+0:19:21,600 --> 0:19:24,760
+ There's one called SSH scan, which scans for port 22.
+
+519
+0:19:24,760 --> 0:19:30,740
+ 22 is of course an administration port for Linux machines and other Unix-like systems.
+
+520
+0:19:30,740 --> 0:19:34,600
+ And that is actually by itself very important and interesting.
+
+521
+0:19:34,600 --> 0:19:36,920
+ Who can SSH to our machines?
+
+522
+0:19:36,920 --> 0:19:41,440
+ And then you can ask people to say, hmm, maybe the whole internet does not need access to
+
+523
+0:19:41,440 --> 0:19:43,140
+ SSH on our ports.
+
+524
+0:19:43,140 --> 0:19:46,020
+ Or machines, because then they can try logging in.
+
+525
+0:19:46,020 --> 0:19:50,160
+ And actually when you put something on the internet, people will try to log into SSH
+
+526
+0:19:50,160 --> 0:19:52,100
+ immediately within minutes.
+
+527
+0:19:52,100 --> 0:19:53,580
+ You can try it here on camp.
+
+528
+0:19:53,580 --> 0:19:58,160
+ Put a machine on an IP that has not been active for a week, and immediately within minutes
+
+529
+0:19:58,160 --> 0:20:03,040
+ you will see attacks on these ports.
+
+530
+0:20:03,040 --> 0:20:09,680
+ Going back to some of the categorization, I also try to structure my learning, my teaching
+
+531
+0:20:09,680 --> 0:20:13,100
+ into kind of following the OSI model.
+
+532
+0:20:13,140 --> 0:20:17,840
+ Because the OSI model and the Internet Protocol Suite model goes from some physical layers
+
+533
+0:20:17,840 --> 0:20:19,800
+ and up through the protocols.
+
+534
+0:20:19,800 --> 0:20:24,600
+ And in many cases, I think it makes sense to secure the lower layers before the upper
+
+535
+0:20:24,600 --> 0:20:25,600
+ layers.
+
+536
+0:20:25,600 --> 0:20:32,540
+ So, for instance, removing the possibility of accessing port 22 makes it, it doesn't
+
+537
+0:20:32,540 --> 0:20:37,060
+ care, we don't care if there's a bad password if you cannot get access to that port.
+
+538
+0:20:37,060 --> 0:20:42,820
+ So securing the internet and the network from below is my recommended way, and you can also
+
+539
+0:20:42,820 --> 0:20:45,780
+ use that in your learning if you want to get started.
+
+540
+0:20:45,780 --> 0:20:49,660
+ Start from some of the lower levels, understand what's going on, and then of course you get
+
+541
+0:20:49,660 --> 0:20:53,900
+ to some of the higher levels and different applications where it splits out.
+
+542
+0:20:53,900 --> 0:20:58,480
+ And I can tell you there are hacking tools for all applications, all protocols, so even
+
+543
+0:20:58,480 --> 0:21:07,700
+ if it's a niche technology, there will be some kind of hacking tool for that niche.
+
+544
+0:21:07,700 --> 0:21:12,440
+ Already I have asked you to do a lot of different things, and it is difficult to get to know
+
+545
+0:21:12,440 --> 0:21:17,860
+ all of these things without drowning, and one of the bad things is if you try to bite
+
+546
+0:21:17,860 --> 0:21:23,700
+ over too much immediately, but there are some things that you need to know at a certain
+
+547
+0:21:23,700 --> 0:21:29,880
+ point to be able to run security and network and scanning and doing all sorts of other
+
+548
+0:21:29,880 --> 0:21:30,880
+ stuff.
+
+549
+0:21:30,880 --> 0:21:34,820
+ And I actually believe some of these things should also be taught to some of our bosses,
+
+550
+0:21:34,820 --> 0:21:38,800
+ some of our management should at least know some of these things, because then they would
+
+551
+0:21:38,800 --> 0:21:41,400
+ be better at enforcing security.
+
+552
+0:21:41,400 --> 0:21:42,400
+ So.
+
+553
+0:21:42,440 --> 0:21:47,340
+ You need to know a little bit of basic protocols, and it may not be that interesting to read
+
+554
+0:21:47,340 --> 0:21:52,460
+ about that, but that will make it much easier to understand NMAP output, but it will also
+
+555
+0:21:52,460 --> 0:21:58,680
+ make it much easier to understand the output of a $5,000 tool, because it runs NMAP at
+
+556
+0:21:58,680 --> 0:22:03,960
+ the bottom, it will report the same information as the NMAP tool in many cases.
+
+557
+0:22:03,960 --> 0:22:08,080
+ And without this knowledge about the basic protocols, then you won't be able to understand
+
+558
+0:22:08,080 --> 0:22:11,100
+ what's going on in these $5,000 tools.
+
+559
+0:22:11,100 --> 0:22:12,100
+ And it's not a joke.
+
+560
+0:22:12,100 --> 0:22:17,760
+ Some of these commercial pen testing tools actually cost $5,000, which is why a lot of
+
+561
+0:22:17,760 --> 0:22:21,380
+ people in Denmark at least are not allowed to buy them.
+
+562
+0:22:21,380 --> 0:22:23,660
+ So you need to know a little bit about Ethernet.
+
+563
+0:22:23,660 --> 0:22:26,100
+ You can practice Ethernet on a camp like this.
+
+564
+0:22:26,100 --> 0:22:28,980
+ You can connect to the network and can put up a Raspberry Pi.
+
+565
+0:22:28,980 --> 0:22:32,920
+ You can see the Raspberry Pi getting hacked, and then you can turn it off and that was
+
+566
+0:22:32,920 --> 0:22:35,080
+ fun and you can drink a beer at the bar.
+
+567
+0:22:35,080 --> 0:22:40,100
+ And then you can reset the flash card and put in something different with a better password,
+
+568
+0:22:40,100 --> 0:22:41,900
+ and then probably it won't get hacked.
+
+569
+0:22:42,100 --> 0:22:46,960
+ You need to know a little bit about IPv4 and ICMP, which are some of the lower level
+
+570
+0:22:46,960 --> 0:22:50,700
+ protocols, but you can later add Wi-Fi.
+
+571
+0:22:50,700 --> 0:22:53,080
+ So you don't have to learn Wi-Fi immediately.
+
+572
+0:22:53,080 --> 0:22:56,220
+ So some things are also okay to push to a later time.
+
+573
+0:22:56,220 --> 0:23:02,580
+ And IPv6, even though I wrote my thesis about IPv6 20 years ago, and I love IPv6, you don't
+
+574
+0:23:02,580 --> 0:23:08,760
+ have to learn it as the first thing to get started with hacking and network and security.
+
+575
+0:23:08,760 --> 0:23:09,760
+ Transport layer.
+
+576
+0:23:09,760 --> 0:23:11,100
+ Transmission control protocol.
+
+577
+0:23:11,100 --> 0:23:12,100
+ TCP UDP.
+
+578
+0:23:12,100 --> 0:23:16,240
+ You need to know a little bit about that because that's some of the core protocols.
+
+579
+0:23:16,240 --> 0:23:20,040
+ Like HTTP using TCP, DNS uses UDP.
+
+580
+0:23:20,040 --> 0:23:23,200
+ So you need to know at least a little bit about TCP and UDP.
+
+581
+0:23:23,200 --> 0:23:28,980
+ And then there's a common upper layer protocols like dynamic host configuration protocol DHCP.
+
+582
+0:23:28,980 --> 0:23:32,600
+ You need to know how to set up a small lab network so you can test out things.
+
+583
+0:23:32,600 --> 0:23:35,320
+ DNS, of course, with the domain names.
+
+584
+0:23:35,320 --> 0:23:40,860
+ But you also need HTTP and HTTPS because everything is running HTTPS today.
+
+585
+0:23:40,860 --> 0:23:41,860
+ And many people in Denmark.
+
+586
+0:23:41,860 --> 0:23:45,140
+ They are actually configuring HTTPS in a bad way.
+
+587
+0:23:45,140 --> 0:23:48,140
+ So that's one of the most common findings in our reports.
+
+588
+0:23:48,140 --> 0:23:53,540
+ People are using bad and insecure protocols.
+
+589
+0:23:53,540 --> 0:23:55,820
+ Just using DNS as an example.
+
+590
+0:23:55,820 --> 0:24:00,360
+ If you just look into that protocol, you can actually make an impact for your organization.
+
+591
+0:24:00,360 --> 0:24:07,760
+ So that's just a single area of this where you can actually start to get useful quickly.
+
+592
+0:24:07,760 --> 0:24:11,000
+ I like to learn new concepts from books.
+
+593
+0:24:11,000 --> 0:24:13,020
+ There's lots of resources.
+
+594
+0:24:13,020 --> 0:24:18,060
+ You can probably mention podcasts, YouTube videos, profiles on the internet, blog posts.
+
+595
+0:24:18,060 --> 0:24:22,960
+ Blog posts are not as common anymore, but there's lots of resources on the internet.
+
+596
+0:24:22,960 --> 0:24:27,680
+ They are great for a single subject if you know the area already.
+
+597
+0:24:27,680 --> 0:24:32,260
+ But if you want to learn a new area, I highly recommend books.
+
+598
+0:24:32,260 --> 0:24:37,280
+ And books can be found often freely, legally also.
+
+599
+0:24:37,280 --> 0:24:38,280
+ The book at the bottom is a web application security book by Andrew Hoffman.
+
+600
+0:24:38,280 --> 0:24:39,280
+ It's very useful.
+
+601
+0:24:39,280 --> 0:24:40,280
+ It's a very useful book.
+
+602
+0:24:40,280 --> 0:24:40,320
+ It's a very useful book.
+
+603
+0:24:40,320 --> 0:24:40,360
+ It's a very useful book.
+
+604
+0:24:40,360 --> 0:24:40,800
+ It's a very useful book.
+
+605
+0:24:40,800 --> 0:24:40,820
+ It's a very useful book.
+
+606
+0:24:40,820 --> 0:24:40,880
+ It's a very useful book.
+
+607
+0:24:40,880 --> 0:24:40,980
+ It's a very useful book.
+
+608
+0:24:40,980 --> 0:24:44,040
+ It's available for free from nginx.com.
+
+609
+0:24:44,040 --> 0:24:49,020
+ If you give them an email address and a few items of information, and you can unsubscribe
+
+610
+0:24:49,020 --> 0:24:53,260
+ to the newsletter, and they actually do unsubscribe you from the newsletter and don't think they
+
+611
+0:24:53,260 --> 0:24:58,060
+ sell off the information, but you can get a book for free about web application security.
+
+612
+0:24:58,700 --> 0:25:02,520
+ And the thing I like about books is that they typically have some kind of clear structure.
+
+613
+0:25:02,660 --> 0:25:03,380
+ They have an editor.
+
+614
+0:25:03,880 --> 0:25:07,180
+ They probably go from some level onto some other level.
+
+615
+0:25:07,300 --> 0:25:10,780
+ So they go from kind of a basic level to some kind of complete level.
+
+616
+0:25:10,780 --> 0:25:11,460
+ So they go from kind of a basic level to some kind of complete goal.
+
+617
+0:25:12,180 --> 0:25:14,280
+ And often they will have exercises available.
+
+618
+0:25:14,740 --> 0:25:21,380
+ Some of the books that I recommend also have things you can download, lab content, packet
+
+619
+0:25:21,380 --> 0:25:23,160
+ dumps for networking and so on.
+
+620
+0:25:23,400 --> 0:25:28,100
+ So it's quite easy to get like an introduction into an area at least.
+
+621
+0:25:28,560 --> 0:25:34,480
+ And in the old days, books were like 400 plus, but I'm seeing lots of books that are only
+
+622
+0:25:34,480 --> 0:25:38,400
+ like 200, 250, 300 pages now.
+
+623
+0:25:38,400 --> 0:25:40,720
+ And it actually gives me a lot of satisfaction.
+
+624
+0:25:40,780 --> 0:25:45,460
+ And some of my students have told me it gives them satisfaction to actually read a book
+
+625
+0:25:45,460 --> 0:25:46,360
+ from cover to cover.
+
+626
+0:25:46,820 --> 0:25:53,320
+ So we use this web application security in a web security for web developers course in
+
+627
+0:25:53,320 --> 0:25:56,080
+ Copenhagen, and we read the whole book.
+
+628
+0:25:56,660 --> 0:25:59,020
+ It was short enough that we could read the whole book.
+
+629
+0:25:59,660 --> 0:26:02,720
+ You can also go to my courses and exercise booklets.
+
+630
+0:26:02,800 --> 0:26:06,320
+ I don't have an editor, so they won't be as great as some of these books.
+
+631
+0:26:06,320 --> 0:26:10,100
+ So getting a book is my recommendation for learning some of these things.
+
+632
+0:26:10,780 --> 0:26:17,660
+ Then when you know these basic protocols, you have perhaps read one of these books,
+
+633
+0:26:17,660 --> 0:26:23,400
+ you can then dive into a part of the area, you can start to go in different directions,
+
+634
+0:26:23,580 --> 0:26:28,020
+ you will have the basic level that will enable you to explore on your own.
+
+635
+0:26:28,380 --> 0:26:33,840
+ And that's actually what you want to do at a later stage because you want to learn something
+
+636
+0:26:33,840 --> 0:26:38,660
+ specific, you probably got interested in some specific attack, some specific area.
+
+637
+0:26:38,940 --> 0:26:40,740
+ And I think now you are ready.
+
+638
+0:26:40,780 --> 0:26:43,080
+ You are ready to dig deeper into those parts.
+
+639
+0:26:43,540 --> 0:26:49,940
+ For me, it's typically packets and packet analysis, capturing packets, port mirroring,
+
+640
+0:26:50,200 --> 0:26:52,200
+ trying to work with network traffic.
+
+641
+0:26:52,400 --> 0:26:55,100
+ And that's some of the things that we can do on camps like this.
+
+642
+0:26:55,380 --> 0:26:58,580
+ We can just set up a machine, see that we're getting scanned.
+
+643
+0:26:58,620 --> 0:27:02,460
+ And immediately after we got online, we actually got scanned in this network.
+
+644
+0:27:02,720 --> 0:27:07,700
+ So your machine on this network, if you're running a public IP address on the Bornhack SSID,
+
+645
+0:27:07,880 --> 0:27:09,820
+ you will get network attacks.
+
+646
+0:27:10,260 --> 0:27:10,740
+ And that's something that we can do.
+
+647
+0:27:10,940 --> 0:27:13,080
+ That's something you can work on in this network.
+
+648
+0:27:13,280 --> 0:27:15,440
+ And you can actually also do that at home.
+
+649
+0:27:15,640 --> 0:27:20,940
+ Maybe a little bit difficult if you have a very bad small CPE router from an internet provider.
+
+650
+0:27:26,940 --> 0:27:35,260
+ Also, you should, in your learning materials, make sure that you cover different formats.
+
+651
+0:27:35,460 --> 0:27:40,340
+ Because when I grew up, it was very common to have these ASCII text files, and it was
+
+652
+0:27:40,340 --> 0:27:45,140
+ very common to have these academic papers, which are kind of in two columns and a big
+
+653
+0:27:45,140 --> 0:27:47,100
+ abstract at the start.
+
+654
+0:27:47,500 --> 0:27:51,840
+ And you should force yourself to be able to read these different formats.
+
+655
+0:27:51,840 --> 0:27:55,820
+ So make sure that you include different formats, different resources.
+
+656
+0:27:56,180 --> 0:28:02,120
+ And as you get to know different sources, you will recognize names, programs, peoples,
+
+657
+0:28:02,120 --> 0:28:06,920
+ authors, sites, and some sites will be specialized in different areas.
+
+658
+0:28:07,100 --> 0:28:09,060
+ So I kind of make a mental note.
+
+659
+0:28:09,260 --> 0:28:09,860
+ So if this site is a good place to start, then you can do it.
+
+660
+0:28:09,860 --> 0:28:10,000
+ So if you're looking for a good site, then you can do it.
+
+661
+0:28:10,000 --> 0:28:10,100
+ So if you're looking for a good site, then you can do it.
+
+662
+0:28:10,100 --> 0:28:10,320
+ So if you're looking for a good site, then you can do it.
+
+663
+0:28:10,340 --> 0:28:16,580
+ If a spaffled person writes something new, I put it on a to-read list, and it's a professor
+
+664
+0:28:16,580 --> 0:28:19,480
+ who wrote some of the old internet security text.
+
+665
+0:28:19,780 --> 0:28:24,760
+ So if he writes something, I will definitely try to read it, because it's typically something
+
+666
+0:28:24,760 --> 0:28:26,260
+ that has good content.
+
+667
+0:28:26,780 --> 0:28:31,900
+ So I force my students to read old hacker text files, computer science papers, but there's
+
+668
+0:28:31,900 --> 0:28:37,280
+ web articles, blog posts, books, chapters, standout documents, internet requests for
+
+669
+0:28:37,280 --> 0:28:40,280
+ comments are the defining documents.
+
+670
+0:28:40,280 --> 0:28:42,060
+ about the protocols that we use.
+
+671
+0:28:42,480 --> 0:28:45,300
+ So you should at least be able to read the table of contents.
+
+672
+0:28:45,580 --> 0:28:46,720
+ You should know it exists.
+
+673
+0:28:47,080 --> 0:28:49,200
+ There is one that documents TLS 1.2.
+
+674
+0:28:49,480 --> 0:28:50,860
+ It's horrible to read.
+
+675
+0:28:51,160 --> 0:28:52,960
+ I don't force my students to read all of it,
+
+676
+0:28:53,180 --> 0:28:55,940
+ but they should at least know that this is where it originates.
+
+677
+0:28:56,160 --> 0:28:57,300
+ This is where it comes from.
+
+678
+0:29:00,300 --> 0:29:06,900
+ I have a little bit of very, very stubborn, what do you call it,
+
+679
+0:29:06,900 --> 0:29:10,480
+ focus on some things that I force my students to use.
+
+680
+0:29:11,120 --> 0:29:16,480
+ I guess most people are getting exposed to Windows along their childhood,
+
+681
+0:29:17,160 --> 0:29:21,180
+ forcing people and children to run Windows or Mac.
+
+682
+0:29:21,540 --> 0:29:24,400
+ Some of these things are getting used by people, tablets and so on.
+
+683
+0:29:24,400 --> 0:29:27,300
+ But I also really love open source.
+
+684
+0:29:27,760 --> 0:29:30,260
+ So I force my students to learn open source
+
+685
+0:29:30,260 --> 0:29:32,960
+ because there's just so much great open source
+
+686
+0:29:32,960 --> 0:29:36,280
+ that ignoring it will make your life,
+
+687
+0:29:36,280 --> 0:29:37,580
+ worse.
+
+688
+0:29:38,240 --> 0:29:40,100
+ You can actually make your life so much better
+
+689
+0:29:40,100 --> 0:29:42,600
+ by using open source, knowing it exists,
+
+690
+0:29:42,940 --> 0:29:46,380
+ and you can probably solve 90 plus percent of your task
+
+691
+0:29:46,380 --> 0:29:48,440
+ by using existing open source.
+
+692
+0:29:48,760 --> 0:29:51,920
+ So I force people to use open source.
+
+693
+0:29:52,220 --> 0:29:54,080
+ And then the next point is Linux Unix.
+
+694
+0:29:54,360 --> 0:29:57,320
+ And I find that Unix Linux knowledge is necessary.
+
+695
+0:29:58,040 --> 0:30:00,020
+ It is something that I force my students to do.
+
+696
+0:30:00,360 --> 0:30:04,380
+ They cannot really pass my courses without having a virtual machine.
+
+697
+0:30:04,380 --> 0:30:06,200
+ We don't have to do complex.
+
+698
+0:30:06,280 --> 0:30:08,280
+ We don't have to do complex stuff with this Linux.
+
+699
+0:30:08,280 --> 0:30:10,280
+ But we need to be able to boot it up, shut it down,
+
+700
+0:30:10,280 --> 0:30:12,280
+ boot it up, run Nmap, shut it down.
+
+701
+0:30:12,280 --> 0:30:14,280
+ That is something that you must be able to do
+
+702
+0:30:14,280 --> 0:30:20,280
+ because a lot of the newest tools are written for Linux, Unix, and BSD.
+
+703
+0:30:20,280 --> 0:30:24,280
+ So without having this knowledge, at least a little bit of knowledge,
+
+704
+0:30:24,280 --> 0:30:28,280
+ you will be restricted in what you can actually do.
+
+705
+0:30:28,280 --> 0:30:32,280
+ Talking about open source, I also point people to Git and GitHub.
+
+706
+0:30:32,280 --> 0:30:36,280
+ Again, we can discuss if those are the best resources where you can find everything.
+
+707
+0:30:36,280 --> 0:30:38,280
+ It is not.
+
+708
+0:30:38,280 --> 0:30:42,280
+ But it is one of the easiest ways to find a lot of popular products.
+
+709
+0:30:42,280 --> 0:30:46,280
+ So you can actually go to GitHub, search for something like port scanning, Nmap.
+
+710
+0:30:46,280 --> 0:30:48,280
+ You can find analyzers.
+
+711
+0:30:48,280 --> 0:30:50,280
+ You can find report writing tools for Nmap.
+
+712
+0:30:50,280 --> 0:30:52,280
+ You can find lots of things with a few keywords.
+
+713
+0:30:52,280 --> 0:30:54,280
+ So tools and libraries and applications.
+
+714
+0:30:54,280 --> 0:30:58,280
+ You can find complete applications that often do what you want to do.
+
+715
+0:30:58,280 --> 0:31:02,280
+ Then you need a little bit of what I call programming experience.
+
+716
+0:31:02,280 --> 0:31:04,280
+ It is typically for automating stuff.
+
+717
+0:31:04,280 --> 0:31:06,280
+ I am not a great programmer.
+
+718
+0:31:06,280 --> 0:31:08,280
+ At all.
+
+719
+0:31:08,280 --> 0:31:10,280
+ But I know how to connect a few things.
+
+720
+0:31:10,280 --> 0:31:14,280
+ I know that there is something called XML that can be outputted from a tool.
+
+721
+0:31:14,280 --> 0:31:16,280
+ And then you can convert it into something called JSON.
+
+722
+0:31:16,280 --> 0:31:20,280
+ And then you can convert something like JSON into something called SVG,
+
+723
+0:31:20,280 --> 0:31:22,280
+ which can be displayed in a browser.
+
+724
+0:31:22,280 --> 0:31:24,280
+ There is a lot of things going on.
+
+725
+0:31:24,280 --> 0:31:28,280
+ And if you know that there is a tool that can do SVG,
+
+726
+0:31:28,280 --> 0:31:30,280
+ and there is a tool that can do XML,
+
+727
+0:31:30,280 --> 0:31:34,280
+ you can actually perhaps go directly to SVG from XML.
+
+728
+0:31:34,280 --> 0:31:36,280
+ And Nmap can output in XML.
+
+729
+0:31:36,280 --> 0:31:38,280
+ Process that into HTML.
+
+730
+0:31:38,280 --> 0:31:40,280
+ And there is actually already,
+
+731
+0:31:40,280 --> 0:31:42,280
+ what is that called?
+
+732
+0:31:42,280 --> 0:31:44,280
+ Not CSS, but the other one.
+
+733
+0:31:44,280 --> 0:31:46,280
+ XSSLT.
+
+734
+0:31:46,280 --> 0:31:48,280
+ Yeah, I cannot say it even.
+
+735
+0:31:48,280 --> 0:31:50,280
+ XSLT.
+
+736
+0:31:50,280 --> 0:31:52,280
+ So you can actually convert XML files from Nmap into HTML files,
+
+737
+0:31:52,280 --> 0:31:54,280
+ which you can more or less copy into a Word document.
+
+738
+0:31:54,280 --> 0:31:58,280
+ And then you are halfway to writing a small report for your organization.
+
+739
+0:31:58,280 --> 0:32:02,280
+ Also, there are a few things that I really love.
+
+740
+0:32:02,280 --> 0:32:04,280
+ Ansible provisioning for installing and configuring software.
+
+741
+0:32:04,280 --> 0:32:06,280
+ Because as security people,
+
+742
+0:32:06,280 --> 0:32:08,280
+ we also need to run servers,
+
+743
+0:32:08,280 --> 0:32:10,280
+ a little bit of servers.
+
+744
+0:32:10,280 --> 0:32:12,280
+ We need to be able to do it by ourselves.
+
+745
+0:32:12,280 --> 0:32:14,280
+ If we have to ask server people to provide a server,
+
+746
+0:32:14,280 --> 0:32:16,280
+ set it up for us,
+
+747
+0:32:16,280 --> 0:32:18,280
+ install a small tool from GitHub,
+
+748
+0:32:18,280 --> 0:32:20,280
+ it is just easier if we can do it by ourselves.
+
+749
+0:32:20,280 --> 0:32:22,280
+ One of the tools that I also recommend a lot,
+
+750
+0:32:22,280 --> 0:32:24,280
+ and I am not affiliated with Elasticsearch,
+
+751
+0:32:24,280 --> 0:32:26,280
+ and I find the licensing is very much too expensive,
+
+752
+0:32:26,280 --> 0:32:28,280
+ at least for Danish companies.
+
+753
+0:32:28,280 --> 0:32:30,280
+ I think the API is a little bit too expensive.
+
+754
+0:32:30,280 --> 0:32:32,280
+ I think the API is a little bit too expensive,
+
+755
+0:32:32,280 --> 0:32:34,280
+ at least for Danish companies.
+
+756
+0:32:34,280 --> 0:32:36,280
+ The entry level is something like 15,000 euros
+
+757
+0:32:36,280 --> 0:32:38,280
+ The entry level is something like 15,000 euros
+
+758
+0:32:38,280 --> 0:32:40,280
+ for a smallest production cluster.
+
+759
+0:32:40,280 --> 0:32:42,280
+ But you can use Elasticsearch for free,
+
+760
+0:32:42,280 --> 0:32:44,280
+ and it is kind of a nice service,
+
+761
+0:32:44,280 --> 0:32:46,280
+ because you can cover a lot of ground with Elasticsearch.
+
+762
+0:32:46,280 --> 0:32:48,280
+ because you can cover a lot of ground with Elasticsearch.
+
+763
+0:32:48,280 --> 0:32:50,280
+ They have a lot of focus on security,
+
+764
+0:32:50,280 --> 0:32:52,280
+ so by using this tool,
+
+765
+0:32:52,280 --> 0:32:54,280
+ I can actually, from a lot of my tools,
+
+766
+0:32:54,280 --> 0:32:56,280
+ integrate a lot of sources into this.
+
+767
+0:32:56,280 --> 0:32:58,280
+ Which is also some of the tools that I recommend and use,
+
+768
+0:32:58,280 --> 0:33:00,280
+ are tools that can be used for multiple purposes.
+
+769
+0:33:00,280 --> 0:33:02,280
+ are tools that can be used for multiple purposes.
+
+770
+0:33:02,280 --> 0:33:04,280
+ And that's very nice,
+
+771
+0:33:04,280 --> 0:33:06,280
+ that you can use Elasticsearch as the backend
+
+772
+0:33:06,280 --> 0:33:08,280
+ for receiving a lot of data,
+
+773
+0:33:08,280 --> 0:33:10,280
+ and then you can actually work with that
+
+774
+0:33:10,280 --> 0:33:12,280
+ using a GUI called Kibana on top of Elasticsearch,
+
+775
+0:33:12,280 --> 0:33:14,280
+ running in a browser,
+
+776
+0:33:14,280 --> 0:33:16,280
+ and they have a lot of sample data also.
+
+777
+0:33:18,280 --> 0:33:20,280
+ One of the things that I highly recommend
+
+778
+0:33:20,280 --> 0:33:22,280
+ is doing a hacker lab,
+
+779
+0:33:22,280 --> 0:33:24,280
+ and you can start creating that on your laptop today,
+
+780
+0:33:24,280 --> 0:33:26,280
+ because most of you will have a laptop
+
+781
+0:33:26,280 --> 0:33:28,280
+ that can run virtualization,
+
+782
+0:33:28,280 --> 0:33:30,280
+ you can run Docker,
+
+783
+0:33:30,280 --> 0:33:32,280
+ you can run a virtualized tool,
+
+784
+0:33:32,280 --> 0:33:34,280
+ VMware Player,
+
+785
+0:33:34,280 --> 0:33:36,280
+ Sen, Hypervisor,
+
+786
+0:33:36,280 --> 0:33:38,280
+ KVM on Linux,
+
+787
+0:33:38,280 --> 0:33:40,280
+ you can run...
+
+788
+0:33:40,280 --> 0:33:42,280
+ I'm missing one...
+
+789
+0:33:42,280 --> 0:33:44,280
+ Hyper-V on Windows, thank you for that,
+
+790
+0:33:44,280 --> 0:33:46,280
+ because that's definitely a nice way
+
+791
+0:33:46,280 --> 0:33:48,280
+ of doing that,
+
+792
+0:33:48,280 --> 0:33:50,280
+ and so most of you will have the opportunity
+
+793
+0:33:50,280 --> 0:33:52,280
+ to run some kind of virtualized machine,
+
+794
+0:33:52,280 --> 0:33:54,280
+ and you can get actual
+
+795
+0:33:54,280 --> 0:33:56,280
+ experience using the tools.
+
+796
+0:33:56,280 --> 0:33:58,280
+ And that will make it much easier to apply
+
+797
+0:33:58,280 --> 0:34:00,280
+ in a real-life situation, of course,
+
+798
+0:34:00,280 --> 0:34:02,280
+ you have tried it before.
+
+799
+0:34:02,280 --> 0:34:04,280
+ Looking at especially Debian and Kali Linux
+
+800
+0:34:04,280 --> 0:34:06,280
+ are the ones that I propose
+
+801
+0:34:06,280 --> 0:34:08,280
+ that you look into,
+
+802
+0:34:08,280 --> 0:34:10,280
+ and that's because they have a lot of good documentation,
+
+803
+0:34:10,280 --> 0:34:12,280
+ they have existed for so many years.
+
+804
+0:34:12,280 --> 0:34:14,280
+ There's a Debian handbook,
+
+805
+0:34:14,280 --> 0:34:16,280
+ and the Kali Linux Revealed,
+
+806
+0:34:16,280 --> 0:34:18,280
+ which are free PDFs that will walk you through
+
+807
+0:34:18,280 --> 0:34:20,280
+ any part of the installing
+
+808
+0:34:20,280 --> 0:34:22,280
+ and running a Debian server,
+
+809
+0:34:22,280 --> 0:34:24,280
+ which is a virtual machine,
+
+810
+0:34:24,280 --> 0:34:26,280
+ and then a Debian, which is a Kali Linux,
+
+811
+0:34:26,280 --> 0:34:28,280
+ because it's built on top of Debian,
+
+812
+0:34:28,280 --> 0:34:30,280
+ so they will be very similar, again,
+
+813
+0:34:30,280 --> 0:34:32,280
+ to update both of them,
+
+814
+0:34:32,280 --> 0:34:34,280
+ but it's coming from different repositories.
+
+815
+0:34:34,280 --> 0:34:36,280
+ They will be described in these complete books
+
+816
+0:34:36,280 --> 0:34:38,280
+ about the operating systems.
+
+817
+0:34:38,280 --> 0:34:40,280
+ So they are different operating systems,
+
+818
+0:34:40,280 --> 0:34:42,280
+ both based on Debian,
+
+819
+0:34:42,280 --> 0:34:44,280
+ and the Kali Linux actually has more than
+
+820
+0:34:44,280 --> 0:34:46,280
+ 300 tools pre-installed,
+
+821
+0:34:46,280 --> 0:34:48,280
+ so that's quite nice.
+
+822
+0:34:48,280 --> 0:34:50,280
+ You don't need to learn how to install a tool
+
+823
+0:34:50,280 --> 0:34:52,280
+ before you can start using it.
+
+824
+0:34:52,280 --> 0:34:54,280
+ I think it's a must for working
+
+825
+0:34:54,280 --> 0:34:56,280
+ in network and security,
+
+826
+0:34:56,280 --> 0:34:58,280
+ and I'm luckily not the only one saying that,
+
+827
+0:34:58,280 --> 0:35:00,280
+ so you will find lots of
+
+828
+0:35:00,280 --> 0:35:02,280
+ more important people than me
+
+829
+0:35:02,280 --> 0:35:04,280
+ saying that this is a requirement
+
+830
+0:35:04,280 --> 0:35:06,280
+ for running network and security things.
+
+831
+0:35:06,280 --> 0:35:08,280
+ Or you can go the other way
+
+832
+0:35:08,280 --> 0:35:10,280
+ and be an expert in Excel,
+
+833
+0:35:10,280 --> 0:35:12,280
+ and then you can take on a lot of these tasks
+
+834
+0:35:12,280 --> 0:35:14,280
+ for people working in network and security.
+
+835
+0:35:14,280 --> 0:35:16,280
+ That's also fine.
+
+836
+0:35:16,280 --> 0:35:18,280
+ I just want to point you
+
+837
+0:35:18,280 --> 0:35:20,280
+ to some of the resources that I have used.
+
+838
+0:35:20,280 --> 0:35:22,280
+ So in this presentation,
+
+839
+0:35:22,280 --> 0:35:24,280
+ there will be resources that I have used
+
+840
+0:35:24,280 --> 0:35:26,280
+ and are using.
+
+841
+0:35:26,280 --> 0:35:28,280
+ Open source Python is one of the languages
+
+842
+0:35:28,280 --> 0:35:30,280
+ that I recommend, because most of the tools
+
+843
+0:35:30,280 --> 0:35:32,280
+ are Python version,
+
+844
+0:35:32,280 --> 0:35:34,280
+ and it may exist in other tools,
+
+845
+0:35:34,280 --> 0:35:36,280
+ also including C-Sharp and PowerScript.
+
+846
+0:35:36,280 --> 0:35:38,280
+ Is that the name?
+
+847
+0:35:38,280 --> 0:35:40,280
+ PowerShell, sorry.
+
+848
+0:35:40,280 --> 0:35:42,280
+ I could hear that it was wrong.
+
+849
+0:35:42,280 --> 0:35:44,280
+ PowerShell and other languages.
+
+850
+0:35:44,280 --> 0:35:46,280
+ But there's always a Python version.
+
+851
+0:35:46,280 --> 0:35:48,280
+ There's always a Python library.
+
+852
+0:35:48,280 --> 0:35:50,280
+ So Python is one of the tools
+
+853
+0:35:50,280 --> 0:35:52,280
+ that I would recommend
+
+854
+0:35:52,280 --> 0:35:54,280
+ that you look into.
+
+855
+0:35:54,280 --> 0:35:56,280
+ And then you can find tools like Maltrail,
+
+856
+0:35:56,280 --> 0:35:58,280
+ which can actually look at bad traffic
+
+857
+0:35:58,280 --> 0:36:00,280
+ and immediately start creating data
+
+858
+0:36:00,280 --> 0:36:02,280
+ from dashboards and stuff.
+
+859
+0:36:02,280 --> 0:36:04,280
+ So that's, again, one of the tools
+
+860
+0:36:04,280 --> 0:36:06,280
+ that I have used.
+
+861
+0:36:06,280 --> 0:36:08,280
+ And just by turning it on,
+
+862
+0:36:08,280 --> 0:36:10,280
+ I'm getting nice knowledge from the network
+
+863
+0:36:10,280 --> 0:36:12,280
+ about people that were infected with macrovirus
+
+864
+0:36:12,280 --> 0:36:14,280
+ and contacting bad servers on the internet.
+
+865
+0:36:14,280 --> 0:36:16,280
+ Also, this tool Ansible,
+
+866
+0:36:16,280 --> 0:36:18,280
+ I'm just going to point to Ansible
+
+867
+0:36:18,280 --> 0:36:20,280
+ because I think it's quite easy
+
+868
+0:36:20,280 --> 0:36:22,280
+ to get started in Ansible.
+
+869
+0:36:22,280 --> 0:36:24,280
+ But also Ansible has a very broad target.
+
+870
+0:36:24,280 --> 0:36:26,280
+ You can target platforms
+
+871
+0:36:26,280 --> 0:36:28,280
+ such as network devices.
+
+872
+0:36:28,280 --> 0:36:30,280
+ So this is a long list
+
+873
+0:36:30,280 --> 0:36:32,280
+ of network devices
+
+874
+0:36:32,280 --> 0:36:34,280
+ which are probably among the ones
+
+875
+0:36:34,280 --> 0:36:36,280
+ that are being used in Denmark
+
+876
+0:36:36,280 --> 0:36:38,280
+ and other places.
+
+877
+0:36:38,280 --> 0:36:40,280
+ So it can be used for network equipment
+
+878
+0:36:40,280 --> 0:36:42,280
+ and it can also be used for hosts and servers,
+
+879
+0:36:42,280 --> 0:36:44,280
+ application servers,
+
+880
+0:36:44,280 --> 0:36:46,280
+ running Linux, OpenBSD, FreeBSD and so on.
+
+881
+0:36:46,280 --> 0:36:48,280
+ There is Ansible support in Windows
+
+882
+0:36:48,280 --> 0:36:50,280
+ but it's not complete
+
+883
+0:36:50,280 --> 0:36:52,280
+ and probably you would rather use
+
+884
+0:36:52,280 --> 0:36:54,280
+ other tools for Windows.
+
+885
+0:36:54,280 --> 0:36:56,280
+ But for anything else, basically,
+
+886
+0:36:56,280 --> 0:36:58,280
+ you can use Ansible.
+
+887
+0:36:58,280 --> 0:37:00,280
+ So it's very generic.
+
+888
+0:37:00,280 --> 0:37:02,280
+ It can quickly lead you into Git.
+
+889
+0:37:02,280 --> 0:37:04,280
+ So again, Git is a prerequisite
+
+890
+0:37:04,280 --> 0:37:06,280
+ for working in network and security.
+
+891
+0:37:06,280 --> 0:37:08,280
+ Elasticsearch
+
+892
+0:37:08,280 --> 0:37:10,280
+ is the one that I talked about
+
+893
+0:37:10,280 --> 0:37:12,280
+ which has different,
+
+894
+0:37:12,280 --> 0:37:14,280
+ you could call them sub-applications,
+
+895
+0:37:14,280 --> 0:37:16,280
+ applications that feed Elasticsearch with data.
+
+896
+0:37:16,280 --> 0:37:18,280
+ So there's different parts
+
+897
+0:37:18,280 --> 0:37:20,280
+ of this ecosystem
+
+898
+0:37:20,280 --> 0:37:22,280
+ and they typically don't call it
+
+899
+0:37:22,280 --> 0:37:24,280
+ the ELK stack anymore.
+
+900
+0:37:24,280 --> 0:37:26,280
+ It used to be the ELK stack for Elasticsearch,
+
+901
+0:37:26,280 --> 0:37:28,280
+ Logstash and Kibana.
+
+902
+0:37:28,280 --> 0:37:30,280
+ But there's so many tools and components
+
+903
+0:37:30,280 --> 0:37:32,280
+ in this stack of tools
+
+904
+0:37:32,280 --> 0:37:34,280
+ so they typically call it
+
+905
+0:37:34,280 --> 0:37:36,280
+ the Elastic stack today.
+
+906
+0:37:36,280 --> 0:37:38,280
+ And I enjoy this
+
+907
+0:37:40,280 --> 0:37:42,280
+ technology because they have done
+
+908
+0:37:42,280 --> 0:37:44,280
+ what is called an elastic common schema
+
+909
+0:37:44,280 --> 0:37:46,280
+ which are field definitions
+
+910
+0:37:46,280 --> 0:37:48,280
+ for stuff like an IP address.
+
+911
+0:37:48,280 --> 0:37:50,280
+ So if you're using and adhering to this
+
+912
+0:37:50,280 --> 0:37:52,280
+ standard in a tool,
+
+913
+0:37:52,280 --> 0:37:54,280
+ you can mix and match with other tools.
+
+914
+0:37:54,280 --> 0:37:56,280
+ So like the dream would be that you could take
+
+915
+0:37:56,280 --> 0:37:58,280
+ firewall locks from a Juniper device
+
+916
+0:37:58,280 --> 0:38:00,280
+ or a Cisco device,
+
+917
+0:38:00,280 --> 0:38:02,280
+ they end up in the same field in the database,
+
+918
+0:38:02,280 --> 0:38:04,280
+ the document store that they call it.
+
+919
+0:38:04,280 --> 0:38:06,280
+ Then you can actually do a dashboard
+
+920
+0:38:06,280 --> 0:38:08,280
+ that will cover two different
+
+921
+0:38:08,280 --> 0:38:10,280
+ network technologies in your network.
+
+922
+0:38:10,280 --> 0:38:12,280
+ So this is one of the things
+
+923
+0:38:12,280 --> 0:38:14,280
+ that I enjoy by using Elastic.
+
+924
+0:38:14,280 --> 0:38:16,280
+ So this is hereby
+
+925
+0:38:16,280 --> 0:38:18,280
+ passed on to you.
+
+926
+0:38:18,280 --> 0:38:20,280
+ And there's also complete applications
+
+927
+0:38:20,280 --> 0:38:22,280
+ available. The one called ElastiFlow
+
+928
+0:38:22,280 --> 0:38:24,280
+ is just a single line in this.
+
+929
+0:38:24,280 --> 0:38:26,280
+ But if you know how to boot a Linux
+
+930
+0:38:26,280 --> 0:38:28,280
+ machine, git clone
+
+931
+0:38:28,280 --> 0:38:30,280
+ a repository,
+
+932
+0:38:30,280 --> 0:38:32,280
+ you actually get a complete
+
+933
+0:38:32,280 --> 0:38:34,280
+ dashboard with network flows
+
+934
+0:38:34,280 --> 0:38:36,280
+ in your whole network.
+
+935
+0:38:36,280 --> 0:38:38,280
+ So if we were
+
+936
+0:38:38,280 --> 0:38:40,280
+ monitoring the network using NetFlow
+
+937
+0:38:40,280 --> 0:38:42,280
+ in this network, which we are definitely
+
+938
+0:38:42,280 --> 0:38:44,280
+ not, we would actually be able to see
+
+939
+0:38:44,280 --> 0:38:46,280
+ every IP inside the network
+
+940
+0:38:46,280 --> 0:38:48,280
+ contacting servers on the internet,
+
+941
+0:38:48,280 --> 0:38:50,280
+ servers on the internet connecting to us,
+
+942
+0:38:50,280 --> 0:38:52,280
+ seeing who uses the most bandwidth,
+
+943
+0:38:52,280 --> 0:38:54,280
+ what protocols and stuff. And that's a complete
+
+944
+0:38:54,280 --> 0:38:56,280
+ application you could install
+
+945
+0:38:56,280 --> 0:38:58,280
+ by just knowing a little bit of
+
+946
+0:38:58,280 --> 0:39:00,280
+ Linux and command line
+
+947
+0:39:00,280 --> 0:39:02,280
+ git.
+
+948
+0:39:04,280 --> 0:39:06,280
+ I will just keep on talking
+
+949
+0:39:06,280 --> 0:39:08,280
+ until they pull me down from this stage.
+
+950
+0:39:08,280 --> 0:39:10,280
+ So I will now again
+
+951
+0:39:10,280 --> 0:39:12,280
+ drop back a little bit
+
+952
+0:39:12,280 --> 0:39:14,280
+ and try to make it more structured
+
+953
+0:39:14,280 --> 0:39:16,280
+ so when you get back and read this slideshow perhaps
+
+954
+0:39:16,280 --> 0:39:18,280
+ you can decide
+
+955
+0:39:18,280 --> 0:39:20,280
+ what to do and where to start.
+
+956
+0:39:20,280 --> 0:39:22,280
+ I'm going to take
+
+957
+0:39:24,280 --> 0:39:26,280
+ as an initial starting
+
+958
+0:39:26,280 --> 0:39:28,280
+ point, we have this called the
+
+959
+0:39:28,280 --> 0:39:30,280
+ diploma in IT security in Denmark.
+
+960
+0:39:30,280 --> 0:39:32,280
+ Which is a
+
+961
+0:39:32,280 --> 0:39:34,280
+ government certified
+
+962
+0:39:34,280 --> 0:39:36,280
+ acknowledged
+
+963
+0:39:36,280 --> 0:39:38,280
+ education diploma in IT security
+
+964
+0:39:38,280 --> 0:39:40,280
+ which is based on
+
+965
+0:39:40,280 --> 0:39:42,280
+ different courses.
+
+966
+0:39:42,280 --> 0:39:44,280
+ So this is a list of the courses
+
+967
+0:39:44,280 --> 0:39:46,280
+ that are needed to get this diploma.
+
+968
+0:39:46,280 --> 0:39:48,280
+ It's not to say that all of you should
+
+969
+0:39:48,280 --> 0:39:50,280
+ take this, but you can use it
+
+970
+0:39:50,280 --> 0:39:52,280
+ again for guiding your
+
+971
+0:39:52,280 --> 0:39:54,280
+ path into network
+
+972
+0:39:54,280 --> 0:39:56,280
+ and security.
+
+973
+0:39:56,280 --> 0:39:58,280
+ So it will have something, sorry this is
+
+974
+0:39:58,280 --> 0:40:00,280
+ in Danish, but this one says
+
+975
+0:40:00,280 --> 0:40:02,280
+ governance. So governance is a large
+
+976
+0:40:02,280 --> 0:40:04,280
+ part of security. There's something about
+
+977
+0:40:04,280 --> 0:40:06,280
+ system security, servers
+
+978
+0:40:06,280 --> 0:40:08,280
+ and all of that. Authentication
+
+979
+0:40:08,280 --> 0:40:10,280
+ is a large part of security.
+
+980
+0:40:10,280 --> 0:40:12,280
+ There's also software security because
+
+981
+0:40:12,280 --> 0:40:14,280
+ software is quite important for security.
+
+982
+0:40:14,280 --> 0:40:16,280
+ There's also network and
+
+983
+0:40:16,280 --> 0:40:18,280
+ communication security which
+
+984
+0:40:18,280 --> 0:40:20,280
+ is about IDS and packets and so on.
+
+985
+0:40:20,280 --> 0:40:22,280
+ These courses
+
+986
+0:40:22,280 --> 0:40:24,280
+ some of them are mandatory, some
+
+987
+0:40:24,280 --> 0:40:26,280
+ of them are electives that you can take after
+
+988
+0:40:26,280 --> 0:40:28,280
+ but you need to have at least 60
+
+989
+0:40:28,280 --> 0:40:30,280
+ of these ECTS points.
+
+990
+0:40:30,280 --> 0:40:32,280
+ And all of my educational
+
+991
+0:40:32,280 --> 0:40:34,280
+ materials for all of the courses that I
+
+992
+0:40:34,280 --> 0:40:36,280
+ teach is available on GitHub.
+
+993
+0:40:36,280 --> 0:40:38,280
+ So you can just start out reading some of these
+
+994
+0:40:38,280 --> 0:40:40,280
+ and the lecture plans
+
+995
+0:40:40,280 --> 0:40:42,280
+ could be used at home
+
+996
+0:40:42,280 --> 0:40:44,280
+ to decide that you want to read this
+
+997
+0:40:44,280 --> 0:40:46,280
+ chapter and try to do these exercises,
+
+998
+0:40:46,280 --> 0:40:48,280
+ read the next chapters and do the
+
+999
+0:40:48,280 --> 0:40:50,280
+ next exercises. My
+
+1000
+0:40:50,280 --> 0:40:52,280
+ exercise booklets are quite easy
+
+1001
+0:40:52,280 --> 0:40:54,280
+ to follow I think and use some of
+
+1002
+0:40:54,280 --> 0:40:56,280
+ these tools that I have mentioned already.
+
+1003
+0:40:56,280 --> 0:40:58,280
+ One of them is the
+
+1004
+0:40:58,280 --> 0:41:00,280
+ communications and network security course.
+
+1005
+0:41:00,280 --> 0:41:02,280
+ Where I have selected some of the
+
+1006
+0:41:02,280 --> 0:41:04,280
+ books that I prefer for this area.
+
+1007
+0:41:06,280 --> 0:41:08,280
+ I know that I jump a little bit around
+
+1008
+0:41:08,280 --> 0:41:10,280
+ in these slides but this one called
+
+1009
+0:41:10,280 --> 0:41:12,280
+ Linux basics for hackers getting started
+
+1010
+0:41:12,280 --> 0:41:14,280
+ with networking scripting and security in Kali.
+
+1011
+0:41:14,280 --> 0:41:16,280
+ It sounds almost
+
+1012
+0:41:16,280 --> 0:41:18,280
+ as the title of this slideshow
+
+1013
+0:41:18,280 --> 0:41:20,280
+ and it is actually a book
+
+1014
+0:41:20,280 --> 0:41:22,280
+ 248 pages
+
+1015
+0:41:22,280 --> 0:41:24,280
+ describes how to get started on
+
+1016
+0:41:24,280 --> 0:41:26,280
+ Linux. It's actually not a
+
+1017
+0:41:26,280 --> 0:41:28,280
+ security book or a hacking book
+
+1018
+0:41:28,280 --> 0:41:30,280
+ it's a book about Kali Linux and it
+
+1019
+0:41:30,280 --> 0:41:32,280
+ will explain stuff like the file
+
+1020
+0:41:32,280 --> 0:41:34,280
+ system. Something like
+
+1021
+0:41:34,280 --> 0:41:36,280
+ running on the command line using
+
+1022
+0:41:36,280 --> 0:41:38,280
+ grep for searching through text files
+
+1023
+0:41:38,280 --> 0:41:40,280
+ doing some basic
+
+1024
+0:41:40,280 --> 0:41:42,280
+ scripting. How do you
+
+1025
+0:41:42,280 --> 0:41:44,280
+ make a small script that can be run on
+
+1026
+0:41:44,280 --> 0:41:46,280
+ a Linux. So it's 248
+
+1027
+0:41:46,280 --> 0:41:48,280
+ pages and it's one that I
+
+1028
+0:41:48,280 --> 0:41:50,280
+ again force my students to read
+
+1029
+0:41:50,280 --> 0:41:52,280
+ and by using that resource along
+
+1030
+0:41:52,280 --> 0:41:54,280
+ with the virtual machine they get confident
+
+1031
+0:41:54,280 --> 0:41:56,280
+ enough that they can run the tools
+
+1032
+0:41:56,280 --> 0:41:58,280
+ when they get home in their own organizations.
+
+1033
+0:41:58,280 --> 0:42:00,280
+ So that's actually a proven
+
+1034
+0:42:00,280 --> 0:42:02,280
+ they can use this tool with
+
+1035
+0:42:02,280 --> 0:42:04,280
+ Linux. We also
+
+1036
+0:42:04,280 --> 0:42:06,280
+ have practical packet analysis which is from
+
+1037
+0:42:06,280 --> 0:42:08,280
+ NoStarch. I really enjoy that publisher
+
+1038
+0:42:08,280 --> 0:42:10,280
+ because it's very practical books
+
+1039
+0:42:10,280 --> 0:42:12,280
+ this is a dedicated
+
+1040
+0:42:12,280 --> 0:42:14,280
+ book about packet analysis
+
+1041
+0:42:14,280 --> 0:42:16,280
+ but it actually works through different scenarios
+
+1042
+0:42:16,280 --> 0:42:18,280
+ you can download packet dumps
+
+1043
+0:42:18,280 --> 0:42:20,280
+ you can start working on
+
+1044
+0:42:20,280 --> 0:42:22,280
+ using an actual tool. In this
+
+1045
+0:42:22,280 --> 0:42:24,280
+ case it's Wireshark which is one of the most
+
+1046
+0:42:24,280 --> 0:42:26,280
+ common tools which is also something
+
+1047
+0:42:26,280 --> 0:42:28,280
+ that I
+
+1048
+0:42:28,280 --> 0:42:30,280
+ recommend that you look into
+
+1049
+0:42:30,280 --> 0:42:32,280
+ just by starting Wireshark
+
+1050
+0:42:32,280 --> 0:42:34,280
+ listening to an Ethernet on his camp
+
+1051
+0:42:34,280 --> 0:42:36,280
+ you will see a lot of traffic and that can be fun
+
+1052
+0:42:36,280 --> 0:42:38,280
+ in just looking at what happens in a network
+
+1053
+0:42:38,280 --> 0:42:40,280
+ and a lot of
+
+1054
+0:42:40,280 --> 0:42:42,280
+ devices will just broadcast their names
+
+1055
+0:42:42,280 --> 0:42:44,280
+ and who they are and what
+
+1056
+0:42:44,280 --> 0:42:46,280
+ versions and actually the switches
+
+1057
+0:42:46,280 --> 0:42:48,280
+ on this side they will tell you what
+
+1058
+0:42:48,280 --> 0:42:50,280
+ Junos version they're running
+
+1059
+0:42:50,280 --> 0:42:52,280
+ we're not running the latest but you will
+
+1060
+0:42:52,280 --> 0:42:54,280
+ see some security problems immediately
+
+1061
+0:42:54,280 --> 0:42:56,280
+ by looking at traffic.
+
+1062
+0:42:56,280 --> 0:42:58,280
+ Then there's a link to a
+
+1063
+0:42:58,280 --> 0:43:00,280
+ lecture plan for this course this
+
+1064
+0:43:00,280 --> 0:43:02,280
+ specific course and there
+
+1065
+0:43:02,280 --> 0:43:04,280
+ are also the presentations so this
+
+1066
+0:43:04,280 --> 0:43:06,280
+ is kind of a package that you could use
+
+1067
+0:43:06,280 --> 0:43:08,280
+ and go through communication and
+
+1068
+0:43:08,280 --> 0:43:10,280
+ network security and I think
+
+1069
+0:43:10,280 --> 0:43:12,280
+ after reading these resources
+
+1070
+0:43:12,280 --> 0:43:14,280
+ or at least the chapters that I recommend
+
+1071
+0:43:14,280 --> 0:43:16,280
+ would make it possible
+
+1072
+0:43:16,280 --> 0:43:18,280
+ for you to do some actual work
+
+1073
+0:43:18,280 --> 0:43:20,280
+ within network and security
+
+1074
+0:43:20,280 --> 0:43:22,280
+ the books if you want to buy
+
+1075
+0:43:22,280 --> 0:43:24,280
+ them in hard copy it's about
+
+1076
+0:43:24,280 --> 0:43:26,280
+ a thousand Danish kroner it may
+
+1077
+0:43:26,280 --> 0:43:28,280
+ be outside the budget that
+
+1078
+0:43:28,280 --> 0:43:30,280
+ you may be interested in just
+
+1079
+0:43:30,280 --> 0:43:32,280
+ browsing some of this some of
+
+1080
+0:43:32,280 --> 0:43:34,280
+ the books can be found as
+
+1081
+0:43:34,280 --> 0:43:36,280
+ you can find what you call them
+
+1082
+0:43:36,280 --> 0:43:38,280
+ example chapters for downloads
+
+1083
+0:43:38,280 --> 0:43:40,280
+ you can check before buying it
+
+1084
+0:43:40,280 --> 0:43:42,280
+ but also going to some of these humble
+
+1085
+0:43:42,280 --> 0:43:44,280
+ bundles which I highly recommend
+
+1086
+0:43:44,280 --> 0:43:46,280
+ you can get some of these books for
+
+1087
+0:43:46,280 --> 0:43:48,280
+ as low as $25 for
+
+1088
+0:43:48,280 --> 0:43:50,280
+ 15 books and just by
+
+1089
+0:43:50,280 --> 0:43:52,280
+ subscribing to the humble bundle
+
+1090
+0:43:52,280 --> 0:43:54,280
+ I have bought
+
+1091
+0:43:54,280 --> 0:43:56,280
+ I think 30 bundles by now because
+
+1092
+0:43:56,280 --> 0:43:58,280
+ I almost always buy the bundles
+
+1093
+0:43:58,280 --> 0:44:00,280
+ because then later I can go back and see
+
+1094
+0:44:00,280 --> 0:44:02,280
+ oh was there something about data science
+
+1095
+0:44:02,280 --> 0:44:04,280
+ yes there was and was there something
+
+1096
+0:44:04,280 --> 0:44:06,280
+ about network security and hacking yes
+
+1097
+0:44:06,280 --> 0:44:08,280
+ there was do I need to learn python yes
+
+1098
+0:44:08,280 --> 0:44:10,280
+ there was a python book there was
+
+1099
+0:44:10,280 --> 0:44:12,280
+ actually a python bundle with 15 books
+
+1100
+0:44:12,280 --> 0:44:14,280
+ so humble bundle is one of the places
+
+1101
+0:44:14,280 --> 0:44:16,280
+ where you can get it for cheaper
+
+1102
+0:44:16,280 --> 0:44:18,280
+ some of the other books that I recommend
+
+1103
+0:44:18,280 --> 0:44:20,280
+ like the debian administrators handbook
+
+1104
+0:44:20,280 --> 0:44:22,280
+ the Kali Linux revealed they will
+
+1105
+0:44:22,280 --> 0:44:24,280
+ describe everything about running a
+
+1106
+0:44:24,280 --> 0:44:26,280
+ server installing packages configuring
+
+1107
+0:44:26,280 --> 0:44:28,280
+ the network what to expect when you
+
+1108
+0:44:28,280 --> 0:44:30,280
+ boot up your
+
+1109
+0:44:30,280 --> 0:44:32,280
+ there's also this book that I have
+
+1110
+0:44:32,280 --> 0:44:34,280
+ recommended already the web application security
+
+1111
+0:44:34,280 --> 0:44:36,280
+ and then there's one called gray hat hacking
+
+1112
+0:44:36,280 --> 0:44:38,280
+ which is recommended because it has
+
+1113
+0:44:38,280 --> 0:44:40,280
+ bite-sized chapters
+
+1114
+0:44:40,280 --> 0:44:42,280
+ so if you want to work in different areas
+
+1115
+0:44:42,280 --> 0:44:44,280
+ of security this gray hat
+
+1116
+0:44:44,280 --> 0:44:46,280
+ hacking book has enough of an
+
+1117
+0:44:46,280 --> 0:44:48,280
+ introduction into various areas
+
+1118
+0:44:48,280 --> 0:44:50,280
+ that is a very highly
+
+1119
+0:44:50,280 --> 0:44:52,280
+ recommended book and it's also in the fifth edition
+
+1120
+0:44:52,280 --> 0:44:54,280
+ which probably speaks
+
+1121
+0:44:54,280 --> 0:44:56,280
+ to its value they decided to
+
+1122
+0:44:56,280 --> 0:44:58,280
+ upgrade it and release it upgrade it
+
+1123
+0:44:58,280 --> 0:45:00,280
+ and release it upgrade and upgrade
+
+1124
+0:45:00,280 --> 0:45:02,280
+ and release it so it's one of the books
+
+1125
+0:45:02,280 --> 0:45:04,280
+ that I am very fond of during
+
+1126
+0:45:04,280 --> 0:45:06,280
+ my work and my
+
+1127
+0:45:06,280 --> 0:45:08,280
+ teaching
+
+1128
+0:45:08,280 --> 0:45:10,280
+ you
+
+1129
+0:45:10,280 --> 0:45:12,280
+ also probably want to invest a little
+
+1130
+0:45:12,280 --> 0:45:14,280
+ bit in network equipment
+
+1131
+0:45:14,280 --> 0:45:16,280
+ I use openbsd I use
+
+1132
+0:45:16,280 --> 0:45:18,280
+ switches from juniper there's
+
+1133
+0:45:18,280 --> 0:45:20,280
+ actually a small pile of switches
+
+1134
+0:45:20,280 --> 0:45:22,280
+ at the end of camp near
+
+1135
+0:45:22,280 --> 0:45:24,280
+ the garbage because we have some
+
+1136
+0:45:24,280 --> 0:45:26,280
+ surplus switches that we're going to
+
+1137
+0:45:26,280 --> 0:45:28,280
+ throw out and they are actually
+
+1138
+0:45:28,280 --> 0:45:30,280
+ excellent for learning VLANs and
+
+1139
+0:45:30,280 --> 0:45:32,280
+ stuff they can do some of this basic
+
+1140
+0:45:32,280 --> 0:45:34,280
+ stuff they can run SNMP
+
+1141
+0:45:34,280 --> 0:45:36,280
+ for management so
+
+1142
+0:45:36,280 --> 0:45:38,280
+ probably get some switches some ethernet
+
+1143
+0:45:38,280 --> 0:45:40,280
+ equipment and running in a
+
+1144
+0:45:40,280 --> 0:45:42,280
+ small isolated network
+
+1145
+0:45:42,280 --> 0:45:44,280
+ running these tools is probably recommended
+
+1146
+0:45:44,280 --> 0:45:46,280
+ to avoid
+
+1147
+0:45:46,280 --> 0:45:48,280
+ attacking people on the internet
+
+1148
+0:45:48,280 --> 0:45:50,280
+ if you mistype an IP address
+
+1149
+0:45:50,280 --> 0:45:52,280
+ you might be attacking the NSA so
+
+1150
+0:45:52,280 --> 0:45:54,280
+ make sure that you do not
+
+1151
+0:45:54,280 --> 0:45:56,280
+ mistype addresses
+
+1152
+0:45:56,280 --> 0:45:58,280
+ and as I said at the bottom
+
+1153
+0:45:58,280 --> 0:46:00,280
+ above or similar can often be found like
+
+1154
+0:46:00,280 --> 0:46:02,280
+ this
+
+1155
+0:46:02,280 --> 0:46:04,280
+ I have taken home a lot of equipment
+
+1156
+0:46:04,280 --> 0:46:06,280
+ over the years and played with it at
+
+1157
+0:46:06,280 --> 0:46:08,280
+ home to get better in these
+
+1158
+0:46:08,280 --> 0:46:10,280
+ and being able to actually do stuff
+
+1159
+0:46:10,280 --> 0:46:12,280
+ with equipment is important
+
+1160
+0:46:12,280 --> 0:46:14,280
+ I also recommend getting
+
+1161
+0:46:14,280 --> 0:46:16,280
+ wireless cards and
+
+1162
+0:46:16,280 --> 0:46:18,280
+ it's always a problem recommending
+
+1163
+0:46:18,280 --> 0:46:20,280
+ wireless cards because they go through
+
+1164
+0:46:20,280 --> 0:46:22,280
+ a revision and changes all the time
+
+1165
+0:46:22,280 --> 0:46:24,280
+ but to learn a lot of these
+
+1166
+0:46:24,280 --> 0:46:26,280
+ methods and technologies for
+
+1167
+0:46:26,280 --> 0:46:28,280
+ hacking Wi-Fi you probably can get
+
+1168
+0:46:28,280 --> 0:46:30,280
+ away with it
+
+1169
+0:46:30,280 --> 0:46:32,280
+ but to learn a lot of these
+
+1170
+0:46:32,280 --> 0:46:34,280
+ methods and technologies for
+
+1171
+0:46:34,280 --> 0:46:36,280
+ hacking Wi-Fi you probably can get away with
+
+1172
+0:46:36,280 --> 0:46:38,280
+ a cheap one it may be that you have
+
+1173
+0:46:38,280 --> 0:46:40,280
+ one lying around already it may be
+
+1174
+0:46:40,280 --> 0:46:42,280
+ that it only supports 2.4 GHz
+
+1175
+0:46:42,280 --> 0:46:44,280
+ but if you're looking at the security
+
+1176
+0:46:44,280 --> 0:46:46,280
+ protocols you don't really care if it's
+
+1177
+0:46:46,280 --> 0:46:48,280
+ 5 GHz or 2.4 because the security
+
+1178
+0:46:48,280 --> 0:46:50,280
+ protocols are the same
+
+1179
+0:46:50,280 --> 0:46:52,280
+ and the one that I have used a lot of
+
+1180
+0:46:52,280 --> 0:46:54,280
+ time the TP-Link TL-VN722N
+
+1181
+0:46:54,280 --> 0:46:56,280
+ that was about 80 Kroner
+
+1182
+0:46:56,280 --> 0:46:58,280
+ so it's less than a small
+
+1183
+0:46:58,280 --> 0:47:00,280
+ snack box at the food vendor
+
+1184
+0:47:00,280 --> 0:47:02,280
+ but if you skip one of these and
+
+1185
+0:47:02,280 --> 0:47:04,280
+ order a cheap card you can actually
+
+1186
+0:47:04,280 --> 0:47:06,280
+ start doing Wi-Fi hacking and then
+
+1187
+0:47:06,280 --> 0:47:08,280
+ later on you may want to buy one that
+
+1188
+0:47:08,280 --> 0:47:10,280
+ I think the one I have below here
+
+1189
+0:47:10,280 --> 0:47:12,280
+ that was about 300 or 500
+
+1190
+0:47:12,280 --> 0:47:14,280
+ Danish Kroner
+
+1191
+0:47:14,280 --> 0:47:16,280
+ but you don't need the latest and
+
+1192
+0:47:16,280 --> 0:47:18,280
+ greatest to get started and you can
+
+1193
+0:47:18,280 --> 0:47:20,280
+ typically find it in discarded piles
+
+1194
+0:47:20,280 --> 0:47:22,280
+ at work sometimes
+
+1195
+0:47:26,280 --> 0:47:28,280
+ also if you have money
+
+1196
+0:47:28,280 --> 0:47:30,280
+ for it buying a USB Ethernet
+
+1197
+0:47:30,280 --> 0:47:32,280
+ card is a card
+
+1198
+0:47:32,280 --> 0:47:34,280
+ just a dongle is recommended
+
+1199
+0:47:34,280 --> 0:47:36,280
+ because then you can actually do
+
+1200
+0:47:36,280 --> 0:47:38,280
+ very low level looking into
+
+1201
+0:47:38,280 --> 0:47:40,280
+ packets which is what I really love
+
+1202
+0:47:40,280 --> 0:47:42,280
+ doing and that will again
+
+1203
+0:47:42,280 --> 0:47:44,280
+ immediately start to
+
+1204
+0:47:44,280 --> 0:47:46,280
+ bring up something interesting to
+
+1205
+0:47:46,280 --> 0:47:48,280
+ look at
+
+1206
+0:47:50,280 --> 0:47:52,280
+ it's 47 minutes now and I would
+
+1207
+0:47:52,280 --> 0:47:54,280
+ love to have some questions
+
+1208
+0:47:54,280 --> 0:47:56,280
+ you can find me at CAM I will be
+
+1209
+0:47:56,280 --> 0:47:58,280
+ here until Friday you can send me
+
+1210
+0:47:58,280 --> 0:48:00,280
+ questions via email you can
+
+1211
+0:48:00,280 --> 0:48:02,280
+ find me on Twitter you can see my
+
+1212
+0:48:02,280 --> 0:48:04,280
+ mobile number it's signal enabled so
+
+1213
+0:48:04,280 --> 0:48:06,280
+ you're welcome to ask me questions
+
+1214
+0:48:08,280 --> 0:48:10,280
+ let's give a round of applause
+
+1215
+0:48:20,280 --> 0:48:22,280
+ nice talk Kramse
+
+1216
+0:48:22,280 --> 0:48:24,280
+ I completely agree with
+
+1217
+0:48:24,280 --> 0:48:26,280
+ basically everything
+
+1218
+0:48:26,280 --> 0:48:28,280
+ what is your take on the difference
+
+1219
+0:48:28,280 --> 0:48:30,280
+ between having a formal
+
+1220
+0:48:30,280 --> 0:48:32,280
+ education and taking certificates
+
+1221
+0:48:32,280 --> 0:48:34,280
+ and then learning the stuff yourself
+
+1222
+0:48:34,280 --> 0:48:36,280
+ I see that as three distinct
+
+1223
+0:48:36,280 --> 0:48:38,280
+ categories how do you see them
+
+1224
+0:48:38,280 --> 0:48:40,280
+ play together and what should you go for
+
+1225
+0:48:40,280 --> 0:48:42,280
+ it's a great
+
+1226
+0:48:42,280 --> 0:48:44,280
+ question and
+
+1227
+0:48:44,280 --> 0:48:46,280
+ beware when I
+
+1228
+0:48:46,280 --> 0:48:48,280
+ answer this question now I
+
+1229
+0:48:48,280 --> 0:48:50,280
+ am definitely
+
+1230
+0:48:50,280 --> 0:48:52,280
+ not trying to offend anyone
+
+1231
+0:48:52,280 --> 0:48:54,280
+ I may I'm not a native English speaker
+
+1232
+0:48:54,280 --> 0:48:56,280
+ so I may use the wrong words and
+
+1233
+0:48:56,280 --> 0:48:58,280
+ in my family we say it's okay to use
+
+1234
+0:48:58,280 --> 0:49:00,280
+ the wrong words and then people can ask and
+
+1235
+0:49:00,280 --> 0:49:02,280
+ we can do a more detailed answer
+
+1236
+0:49:02,280 --> 0:49:04,280
+ probably explaining more what I
+
+1237
+0:49:04,280 --> 0:49:06,280
+ mean and think about this so
+
+1238
+0:49:06,280 --> 0:49:08,280
+ I have a formal education
+
+1239
+0:49:08,280 --> 0:49:10,280
+ and I'm not using much of my formal
+
+1240
+0:49:10,280 --> 0:49:12,280
+ education I think some of the most
+
+1241
+0:49:12,280 --> 0:49:14,280
+ important parts that I learned from
+
+1242
+0:49:14,280 --> 0:49:16,280
+ computer science at
+
+1243
+0:49:16,280 --> 0:49:18,280
+ university was to read
+
+1244
+0:49:18,280 --> 0:49:20,280
+ to write big reports
+
+1245
+0:49:20,280 --> 0:49:22,280
+ which is a very useful skill in network
+
+1246
+0:49:22,280 --> 0:49:24,280
+ security but a lot of the network
+
+1247
+0:49:24,280 --> 0:49:26,280
+ security I have learned
+
+1248
+0:49:26,280 --> 0:49:28,280
+ informally over the years
+
+1249
+0:49:28,280 --> 0:49:30,280
+ by things that I have researched
+
+1250
+0:49:30,280 --> 0:49:32,280
+ myself today you can go to a lot of
+
+1251
+0:49:32,280 --> 0:49:34,280
+ security conferences but I have learned
+
+1252
+0:49:34,280 --> 0:49:36,280
+ a lot by investigating myself
+
+1253
+0:49:36,280 --> 0:49:38,280
+ so if you investigate by yourself
+
+1254
+0:49:38,280 --> 0:49:40,280
+ read some of these books that I have
+
+1255
+0:49:40,280 --> 0:49:42,280
+ recommended never take an exam
+
+1256
+0:49:42,280 --> 0:49:44,280
+ never take a certification
+
+1257
+0:49:44,280 --> 0:49:46,280
+ you can be an excellent resource
+
+1258
+0:49:46,280 --> 0:49:48,280
+ but I do think
+
+1259
+0:49:48,280 --> 0:49:50,280
+ that formal education has its place
+
+1260
+0:49:50,280 --> 0:49:52,280
+ because you are required
+
+1261
+0:49:52,280 --> 0:49:54,280
+ to go through some parts and
+
+1262
+0:49:54,280 --> 0:49:56,280
+ also the parts that you don't really like
+
+1263
+0:49:56,280 --> 0:49:58,280
+ so you are forced to do
+
+1264
+0:49:58,280 --> 0:50:00,280
+ some investigation into for instance
+
+1265
+0:50:00,280 --> 0:50:02,280
+ some of the juniper certifications
+
+1266
+0:50:02,280 --> 0:50:04,280
+ I had to read pages and pages of OSPF
+
+1267
+0:50:04,280 --> 0:50:06,280
+ which is a protocol for routing
+
+1268
+0:50:06,280 --> 0:50:08,280
+ and I had to learn all sorts of different
+
+1269
+0:50:08,280 --> 0:50:10,280
+ configurations that I
+
+1270
+0:50:10,280 --> 0:50:12,280
+ have never used
+
+1271
+0:50:12,280 --> 0:50:14,280
+ but it still required me to learn a little
+
+1272
+0:50:14,280 --> 0:50:16,280
+ bit about this OSPF
+
+1273
+0:50:16,280 --> 0:50:18,280
+ so you can definitely work
+
+1274
+0:50:18,280 --> 0:50:20,280
+ in security without having a formal education
+
+1275
+0:50:20,280 --> 0:50:22,280
+ but I think your job situation
+
+1276
+0:50:22,280 --> 0:50:24,280
+ will also be a little bit more
+
+1277
+0:50:24,280 --> 0:50:26,280
+ risky because if you get fired
+
+1278
+0:50:26,280 --> 0:50:28,280
+ you don't get a job for a year
+
+1279
+0:50:28,280 --> 0:50:30,280
+ people might not value the things that you did
+
+1280
+0:50:30,280 --> 0:50:32,280
+ in your previous job
+
+1281
+0:50:32,280 --> 0:50:34,280
+ so I hope I didn't offend anyone
+
+1282
+0:50:34,280 --> 0:50:36,280
+ and you understood what I meant
+
+1283
+0:50:36,280 --> 0:50:38,280
+ but I really do think
+
+1284
+0:50:38,280 --> 0:50:40,280
+ that both formal education
+
+1285
+0:50:40,280 --> 0:50:42,280
+ and certifications has its place
+
+1286
+0:50:42,280 --> 0:50:44,280
+ and that said
+
+1287
+0:50:44,280 --> 0:50:46,280
+ I think it's horrible the way
+
+1288
+0:50:46,280 --> 0:50:48,280
+ that we do these certifications today
+
+1289
+0:50:48,280 --> 0:50:50,280
+ because I have tried to take one
+
+1290
+0:50:50,280 --> 0:50:52,280
+ with a proctor that wanted to
+
+1291
+0:50:52,280 --> 0:50:54,280
+ investigate my underwear more or less
+
+1292
+0:50:54,280 --> 0:50:56,280
+ I had to put the camera under the table
+
+1293
+0:50:56,280 --> 0:50:58,280
+ and it does prevent some people
+
+1294
+0:50:58,280 --> 0:51:00,280
+ from taking these and I think we should
+
+1295
+0:51:00,280 --> 0:51:02,280
+ try to eliminate that burden
+
+1296
+0:51:02,280 --> 0:51:04,280
+ I don't know how we would do that
+
+1297
+0:51:04,280 --> 0:51:06,280
+ open source certifications is not really
+
+1298
+0:51:06,280 --> 0:51:08,280
+ taking off. I answered that very long
+
+1299
+0:51:08,280 --> 0:51:10,280
+ We have one more question
+
+1300
+0:51:10,280 --> 0:51:12,280
+ Thank you
+
+1301
+0:51:12,280 --> 0:51:14,280
+ You talked a lot about how to
+
+1302
+0:51:14,280 --> 0:51:16,280
+ increase your confidence with network security
+
+1303
+0:51:16,280 --> 0:51:18,280
+ a situation I've had for a while
+
+1304
+0:51:18,280 --> 0:51:20,280
+ that I think is quite common among hackers
+
+1305
+0:51:20,280 --> 0:51:22,280
+ is I know something about
+
+1306
+0:51:22,280 --> 0:51:24,280
+ computers
+
+1307
+0:51:24,280 --> 0:51:26,280
+ and I have no idea how to get a job
+
+1308
+0:51:26,280 --> 0:51:28,280
+ in computers
+
+1309
+0:51:28,280 --> 0:51:30,280
+ because that's like a completely different
+
+1310
+0:51:30,280 --> 0:51:32,280
+ world from actually knowing computers
+
+1311
+0:51:32,280 --> 0:51:34,280
+ Do you have any
+
+1312
+0:51:34,280 --> 0:51:36,280
+ advice on this?
+
+1313
+0:51:38,280 --> 0:51:40,280
+ I do because
+
+1314
+0:51:40,280 --> 0:51:42,280
+ since we have this extreme
+
+1315
+0:51:42,280 --> 0:51:44,280
+ shortage we have a very
+
+1316
+0:51:44,280 --> 0:51:46,280
+ unhealthy environment for
+
+1317
+0:51:46,280 --> 0:51:48,280
+ computer security people in Denmark
+
+1318
+0:51:48,280 --> 0:51:50,280
+ because they cannot fulfill the positions
+
+1319
+0:51:50,280 --> 0:51:52,280
+ so the ones that are working
+
+1320
+0:51:52,280 --> 0:51:54,280
+ are overworked and so on
+
+1321
+0:51:54,280 --> 0:51:56,280
+ and I have been
+
+1322
+0:51:56,280 --> 0:51:58,280
+ discussing how we could bring in people
+
+1323
+0:51:58,280 --> 0:52:00,280
+ into these areas
+
+1324
+0:52:00,280 --> 0:52:02,280
+ I think about computers in general
+
+1325
+0:52:02,280 --> 0:52:04,280
+ but also computer security
+
+1326
+0:52:04,280 --> 0:52:06,280
+ might actually be easier to get into
+
+1327
+0:52:06,280 --> 0:52:08,280
+ than the technical parts
+
+1328
+0:52:08,280 --> 0:52:10,280
+ because in many cases you want to do
+
+1329
+0:52:10,280 --> 0:52:12,280
+ like reviewing output from tools
+
+1330
+0:52:12,280 --> 0:52:14,280
+ you want to do like this excel
+
+1331
+0:52:14,280 --> 0:52:16,280
+ working with risk
+
+1332
+0:52:16,280 --> 0:52:18,280
+ and stuff like that
+
+1333
+0:52:18,280 --> 0:52:20,280
+ so my advice would probably
+
+1334
+0:52:20,280 --> 0:52:22,280
+ try to find some scenarios
+
+1335
+0:52:22,280 --> 0:52:24,280
+ where you can actually perform
+
+1336
+0:52:24,280 --> 0:52:26,280
+ some basic tasks
+
+1337
+0:52:26,280 --> 0:52:28,280
+ and then you will have to go to
+
+1338
+0:52:28,280 --> 0:52:30,280
+ one of these companies that cannot fulfill
+
+1339
+0:52:30,280 --> 0:52:32,280
+ the positions
+
+1340
+0:52:32,280 --> 0:52:34,280
+ and say that you are eager to learn
+
+1341
+0:52:34,280 --> 0:52:36,280
+ and you may agree
+
+1342
+0:52:36,280 --> 0:52:38,280
+ again I think it's a little bit
+
+1343
+0:52:38,280 --> 0:52:40,280
+ because some of the employers will
+
+1344
+0:52:40,280 --> 0:52:42,280
+ take advantage of this
+
+1345
+0:52:42,280 --> 0:52:44,280
+ but you can say that you want to
+
+1346
+0:52:44,280 --> 0:52:46,280
+ start working at a low salary
+
+1347
+0:52:46,280 --> 0:52:48,280
+ perhaps lower than your colleagues
+
+1348
+0:52:48,280 --> 0:52:50,280
+ because you do not have the same experience
+
+1349
+0:52:50,280 --> 0:52:52,280
+ and then you can make an agreement
+
+1350
+0:52:52,280 --> 0:52:54,280
+ like three months, six months from now
+
+1351
+0:52:54,280 --> 0:52:56,280
+ we are going to evaluate how much you can fulfill now
+
+1352
+0:52:56,280 --> 0:52:58,280
+ and you will get the same pay
+
+1353
+0:52:58,280 --> 0:53:00,280
+ so trying to get an initial low
+
+1354
+0:53:00,280 --> 0:53:02,280
+ pay and be able to do
+
+1355
+0:53:02,280 --> 0:53:04,280
+ some basic scenarios
+
+1356
+0:53:04,280 --> 0:53:06,280
+ from end to end
+
+1357
+0:53:06,280 --> 0:53:08,280
+ that's actually the important part
+
+1358
+0:53:08,280 --> 0:53:10,280
+ Do we have a final question?
+
+1359
+0:53:10,280 --> 0:53:12,280
+ I hope that helps
+
+1360
+0:53:12,280 --> 0:53:14,280
+ Nope, let's give a round of applause
+
+1361
+0:53:14,280 --> 0:53:16,280
+ for Kamsi

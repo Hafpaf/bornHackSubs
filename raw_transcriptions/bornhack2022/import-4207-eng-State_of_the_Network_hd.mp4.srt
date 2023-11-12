@@ -1,0 +1,2959 @@
+# Transcribed 2023-11-12T18 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:07,000
+ Tanya Cushman Reviewer:"Presenter":
+
+2
+0:00:14,520 --> 0:00:18,000
+ Yes, I, of course, don't feel any pressure
+
+3
+0:00:18,000 --> 0:00:21,120
+ since I just saw the pyjamas presentation,
+
+4
+0:00:21,120 --> 0:00:24,000
+ so, okay, I'll try to live up to it.
+
+5
+0:00:24,000 --> 0:00:31,000
+ Anyway, I have, this is Hypnotoad, he appeared last year,
+
+6
+0:00:31,000 --> 0:00:34,000
+ he will appear next year also.
+
+7
+0:00:34,000 --> 0:00:36,000
+ You will thank your NOC team.
+
+8
+0:00:36,000 --> 0:00:39,000
+ Thank you, NOC team.
+
+9
+0:00:43,000 --> 0:00:47,000
+ Okay, so, as some of you may have heard,
+
+10
+0:00:47,000 --> 0:00:52,000
+ we, in the recent years, have been saying something about use more bandwidth.
+
+11
+0:00:52,000 --> 0:00:53,000
+ And,
+
+12
+0:00:54,000 --> 0:00:59,000
+ and we have for years and years and years and years
+
+13
+0:00:59,000 --> 0:01:01,000
+ been saying use more bandwidth.
+
+14
+0:01:01,000 --> 0:01:03,000
+ I'm not going to say that this year.
+
+15
+0:01:05,000 --> 0:01:09,000
+ Because we actually hit more than 9 gigabits, you know.
+
+16
+0:01:09,000 --> 0:01:11,000
+ You can see over here.
+
+17
+0:01:13,000 --> 0:01:17,000
+ We have a maximum outbound of 7 point,
+
+18
+0:01:17,000 --> 0:01:19,000
+ sorry, 9.76 gigabits.
+
+19
+0:01:20,000 --> 0:01:21,000
+ I think...
+
+20
+0:01:24,000 --> 0:01:27,000
+ So,
+
+21
+0:01:27,000 --> 0:01:29,000
+ So,
+
+22
+0:01:29,000 --> 0:01:35,000
+ there's another thing that is actually super impressive about this.
+
+23
+0:01:35,000 --> 0:01:39,000
+ That is that we got a 3 gigabit connection from Global Connect.
+
+24
+0:01:41,000 --> 0:01:46,000
+ We're just happy that somewhere in the system there's a misconfiguration,
+
+25
+0:01:46,000 --> 0:01:48,000
+ and we won't tell anyone.
+
+26
+0:01:49,000 --> 0:01:53,000
+ So, apparently, some people have heard our call for use more bandwidth,
+
+27
+0:01:53,000 --> 0:01:55,000
+ and apparently, it succeeded.
+
+28
+0:01:55,000 --> 0:01:57,000
+ I think this is very, very cool.
+
+29
+0:01:57,000 --> 0:01:59,000
+ We'll, of course, get a bit back to that.
+
+30
+0:01:59,000 --> 0:02:01,000
+ But, first, let me show you what we did last year.
+
+31
+0:02:07,000 --> 0:02:08,000
+ Anyway.
+
+32
+0:02:08,000 --> 0:02:12,000
+ So, yes, there was some spike at, I don't know what happened,
+
+33
+0:02:12,000 --> 0:02:16,000
+ but the rest of the camp, this is 0.2G, right?
+
+34
+0:02:16,000 --> 0:02:18,000
+ 0.2.
+
+35
+0:02:18,000 --> 0:02:20,000
+ So, let's compare it to what we've done this year.
+
+36
+0:02:20,000 --> 0:02:26,000
+ Oh, 0.2 would be here-ish, right?
+
+37
+0:02:26,000 --> 0:02:31,000
+ I think you heard our call, and you came through,
+
+38
+0:02:31,000 --> 0:02:33,000
+ and that's very, very cool.
+
+39
+0:02:34,000 --> 0:02:37,000
+ And when we see a graph like this,
+
+40
+0:02:37,000 --> 0:02:40,000
+ you see that apparently some people have been playing and doing weird shit,
+
+41
+0:02:40,000 --> 0:02:41,000
+ and that's super nice.
+
+42
+0:02:41,000 --> 0:02:42,000
+ That's why we're here.
+
+43
+0:02:42,000 --> 0:02:48,000
+ But also, this background thing is actually noticeable, right?
+
+44
+0:02:48,000 --> 0:02:50,000
+ So, if we look at the blue one,
+
+45
+0:02:50,000 --> 0:02:51,000
+ that is the uplink.
+
+46
+0:02:51,000 --> 0:02:54,000
+ That is just something running all the time.
+
+47
+0:02:54,000 --> 0:02:57,000
+ And that's basically...
+
+48
+0:02:57,000 --> 0:02:58,000
+ I know what it is.
+
+49
+0:02:58,000 --> 0:02:59,000
+ We'll get to that later.
+
+50
+0:02:59,000 --> 0:03:00,000
+ But it's very cool.
+
+51
+0:03:00,000 --> 0:03:01,000
+ That's why we're here.
+
+52
+0:03:01,000 --> 0:03:04,000
+ So, we have a couple of hundred megabits that is just used all the time,
+
+53
+0:03:04,000 --> 0:03:07,000
+ and then all the jitter is people doing weird shit, right?
+
+54
+0:03:07,000 --> 0:03:09,000
+ And then we have something like this.
+
+55
+0:03:09,000 --> 0:03:11,000
+ This would be in the middle of the night, for example.
+
+56
+0:03:11,000 --> 0:03:14,000
+ We don't have people using the network much.
+
+57
+0:03:14,000 --> 0:03:16,000
+ People are probably sleeping.
+
+58
+0:03:16,000 --> 0:03:18,000
+ But still, there is some service running.
+
+59
+0:03:18,000 --> 0:03:19,000
+ And that's...
+
+60
+0:03:19,000 --> 0:03:20,000
+ Noticeable.
+
+61
+0:03:20,000 --> 0:03:23,000
+ And it uses more bandwidth than we did last year.
+
+62
+0:03:23,000 --> 0:03:25,000
+ Than everybody did last year.
+
+63
+0:03:25,000 --> 0:03:26,000
+ So, it's just...
+
+64
+0:03:26,000 --> 0:03:27,000
+ Yes!
+
+65
+0:03:27,000 --> 0:03:28,000
+ Thank you!
+
+66
+0:03:35,000 --> 0:03:36,000
+ Okay.
+
+67
+0:03:36,000 --> 0:03:37,000
+ And then...
+
+68
+0:03:37,000 --> 0:03:40,000
+ Back to our regular scheduled program.
+
+69
+0:03:40,000 --> 0:03:43,000
+ We, of course, here at BornHack, have a NOC team.
+
+70
+0:03:43,000 --> 0:03:46,000
+ That was a thing that I would very much like to mention,
+
+71
+0:03:46,000 --> 0:03:48,000
+ because I find it to be really cool.
+
+72
+0:03:48,000 --> 0:03:50,000
+ And it really worked for me this year.
+
+73
+0:03:50,000 --> 0:03:55,000
+ So, what we basically did was that we had close to three teams that did some work.
+
+74
+0:03:55,000 --> 0:03:59,000
+ We had the AP people who set up these access points.
+
+75
+0:03:59,000 --> 0:04:02,000
+ You guys must have been walking so many kilometers.
+
+76
+0:04:02,000 --> 0:04:03,000
+ It's so cool.
+
+77
+0:04:03,000 --> 0:04:05,000
+ And then we had...
+
+78
+0:04:05,000 --> 0:04:08,000
+ We had a couple of people setting up the...
+
+79
+0:04:08,000 --> 0:04:09,000
+ Setting up switches and...
+
+80
+0:04:09,000 --> 0:04:10,000
+ What's it called?
+
+81
+0:04:10,000 --> 0:04:12,000
+ The turtles, we call them.
+
+82
+0:04:12,000 --> 0:04:13,000
+ The outside access point...
+
+83
+0:04:13,000 --> 0:04:14,000
+ Not access points.
+
+84
+0:04:14,000 --> 0:04:15,000
+ Points of presence.
+
+85
+0:04:15,000 --> 0:04:18,000
+ And then we have the people sitting down,
+
+86
+0:04:18,000 --> 0:04:23,000
+ sitting comfortably in their tents or in the bar or wherever they sit comfortably,
+
+87
+0:04:23,000 --> 0:04:26,000
+ and doing the server and the configuration.
+
+88
+0:04:26,000 --> 0:04:28,000
+ And then there was also me.
+
+89
+0:04:28,000 --> 0:04:30,000
+ I was, you know...
+
+90
+0:04:30,000 --> 0:04:31,000
+ I'm here today.
+
+91
+0:04:31,000 --> 0:04:33,000
+ This is what I do at BornHack.
+
+92
+0:04:33,000 --> 0:04:34,000
+ I just...
+
+93
+0:04:34,000 --> 0:04:37,000
+ I just say all the nice things and show you all the cool graphs.
+
+94
+0:04:37,000 --> 0:04:40,000
+ And basically, it's everybody else doing all the work.
+
+95
+0:04:40,000 --> 0:04:43,000
+ And I think you guys have done a kick-ass job this year.
+
+96
+0:04:43,000 --> 0:04:46,000
+ And I really want to hear a loud applaud for the network team.
+
+97
+0:04:48,000 --> 0:04:54,000
+ You guys have done a good job.
+
+98
+0:04:54,000 --> 0:04:56,000
+ Here we go.
+
+99
+0:04:56,000 --> 0:04:57,000
+ Thank you, guys.
+
+100
+0:04:57,000 --> 0:04:58,000
+ Thank you.
+
+101
+0:04:58,000 --> 0:04:59,000
+ Thank you, guys.
+
+102
+0:04:59,000 --> 0:05:00,000
+ Okay.
+
+103
+0:05:00,000 --> 0:05:02,000
+ So this talk is going to be structured completely like last year where we start with all the
+
+104
+0:05:02,000 --> 0:05:03,000
+ core stuff.
+
+105
+0:05:03,000 --> 0:05:10,000
+ And so, what I did is that I think, you know, when we arrive on camp, we have no internet
+
+106
+0:05:10,000 --> 0:05:11,000
+ and all that.
+
+107
+0:05:11,000 --> 0:05:16,000
+ And we need to spend some time getting the uplink up and running and yada, yada, yada.
+
+108
+0:05:16,000 --> 0:05:17,000
+ So, I brought my 4G modem.
+
+109
+0:05:17,000 --> 0:05:23,860
+ modem and hook the server up, and this is the numbers I got, 12 megabit up and one and
+
+110
+0:05:23,860 --> 0:05:29,700
+ a half megabit down, oh sorry, the other way around, and that's okay for installing, you
+
+111
+0:05:29,700 --> 0:05:35,060
+ know, a server or two or something, but we're so not going to run the entire camp on this.
+
+112
+0:05:35,060 --> 0:05:39,380
+ But it is one of these things we have so that we actually have internet connection for the
+
+113
+0:05:39,380 --> 0:05:43,580
+ server, so we can install the virtual machines, while people are in the field pulling cables
+
+114
+0:05:43,580 --> 0:05:47,700
+ and such, we can do our server stuff also, and that was very, very cool, and I think
+
+115
+0:05:47,700 --> 0:05:49,400
+ that was a good idea, and I'm going to do it again next year.
+
+116
+0:05:49,980 --> 0:05:54,800
+ And it was very nice, but, oh, yeah, I forgot this one, leave it.
+
+117
+0:05:56,420 --> 0:06:03,340
+ But the thing that happened was that we actually had first light on Sunday at four past one,
+
+118
+0:06:03,520 --> 0:06:08,640
+ which is two hours earlier or three hours earlier than we did last year.
+
+119
+0:06:09,140 --> 0:06:13,380
+ So we are kind of competing with ourselves on how fast we can get first light, so we
+
+120
+0:06:13,380 --> 0:06:13,540
+ know.
+
+121
+0:06:13,580 --> 0:06:19,920
+ We know that everything is working, and that is nice, and the thing was that at that time,
+
+122
+0:06:20,020 --> 0:06:23,100
+ we kind of, we have this MX connector issue.
+
+123
+0:06:23,320 --> 0:06:25,780
+ If you're regular, you have heard of MX connectors.
+
+124
+0:06:26,480 --> 0:06:27,900
+ We all know what it is now.
+
+125
+0:06:27,900 --> 0:06:34,440
+ It's wonderful for, I don't know, not us, but the thing is that these connectors, we
+
+126
+0:06:34,440 --> 0:06:38,560
+ actually bought a MX to LC connector, and we had that.
+
+127
+0:06:39,060 --> 0:06:39,840
+ That was last year.
+
+128
+0:06:39,960 --> 0:06:43,400
+ It was super nice, except it was a flange coupling.
+
+129
+0:06:43,580 --> 0:06:46,100
+ Flange coupling, which kind of, you know, clunk, clunk.
+
+130
+0:06:47,580 --> 0:06:53,340
+ So we needed to get an extra cable, and luckily, people save phone numbers for technicians
+
+131
+0:06:53,340 --> 0:06:58,420
+ in their phone book, so we basically called the same technician as last year and asked
+
+132
+0:06:58,420 --> 0:07:03,680
+ if we could borrow the same cable as last year, and that arrived later in the afternoon.
+
+133
+0:07:04,300 --> 0:07:05,040
+ And that's fine.
+
+134
+0:07:05,200 --> 0:07:09,540
+ So this first light we have here is, you know, fibers is something with light, right?
+
+135
+0:07:09,820 --> 0:07:12,540
+ So if you just align two fibers correctly...
+
+136
+0:07:13,580 --> 0:07:16,000
+ And use a lot of duct tape, it works!
+
+137
+0:07:22,840 --> 0:07:23,280
+ Yes.
+
+138
+0:07:23,540 --> 0:07:29,280
+ And I think it's very cool, and apparently, Rudy was very happy with the attenuation and
+
+139
+0:07:29,280 --> 0:07:35,460
+ such, but we kind of decided not to, you know, we kind of fixed it with the proper cable
+
+140
+0:07:35,460 --> 0:07:38,380
+ later when it arrived, because, you know, that's how we work.
+
+141
+0:07:39,140 --> 0:07:42,820
+ But this thing about...
+
+142
+0:07:42,820 --> 0:07:46,600
+ So we got first light at 1 o'clock in the afternoon on Sunday.
+
+143
+0:07:46,920 --> 0:07:51,880
+ It actually turned out that we had internet at 1 o'clock on Sunday.
+
+144
+0:07:52,480 --> 0:07:57,520
+ So I think that's a massive record compared to what we had done before.
+
+145
+0:07:58,040 --> 0:08:01,760
+ So basically, we had internet access in the middle of Sunday, so all my hard work with
+
+146
+0:08:01,760 --> 0:08:06,220
+ setting up a 4G modem, you know, my work, kind of not that applicable.
+
+147
+0:08:06,640 --> 0:08:08,040
+ But anyway, we're going to bring it next year anyway.
+
+148
+0:08:08,260 --> 0:08:12,620
+ But it appears that Global Connect has just left the circuit open for us.
+
+149
+0:08:12,820 --> 0:08:17,100
+ But the connections, not connections, what's called configuration, BGP, and such, they
+
+150
+0:08:17,100 --> 0:08:19,000
+ were configured correctly, and they just worked.
+
+151
+0:08:19,660 --> 0:08:20,580
+ And that's very cool.
+
+152
+0:08:20,720 --> 0:08:23,220
+ So we have had the internet for a very long time on this camp.
+
+153
+0:08:27,700 --> 0:08:32,720
+ And then we, of course, have, just to go through the equipment we have and such, we have R31,
+
+154
+0:08:33,040 --> 0:08:34,160
+ which is our server room.
+
+155
+0:08:35,400 --> 0:08:39,820
+ I still think it's super fun to call it R31, because that was the first year we're here,
+
+156
+0:08:39,880 --> 0:08:41,380
+ we're using a grid system, right?
+
+157
+0:08:41,720 --> 0:08:42,220
+ And that was R31.
+
+158
+0:08:42,820 --> 0:08:46,660
+ R31, which was the toilet building with a built-in server room.
+
+159
+0:08:48,460 --> 0:08:52,140
+ And I like our way of doing physical security.
+
+160
+0:08:53,120 --> 0:08:58,580
+ One of the days on camp, I kind of couldn't find anyone and, you know, needed a cable.
+
+161
+0:08:59,140 --> 0:09:03,300
+ So I can just, I'm not that small, right?
+
+162
+0:09:04,120 --> 0:09:07,600
+ But I could just easily fit through the door even though it was locked.
+
+163
+0:09:09,500 --> 0:09:11,340
+ Physical security, we love it.
+
+164
+0:09:11,340 --> 0:09:12,640
+ It might be applicable.
+
+165
+0:09:12,820 --> 0:09:16,140
+ It might be applicable somewhere, but, yeah, we, it's kind of just, we put in a chain to
+
+166
+0:09:16,140 --> 0:09:17,200
+ tell people, don't go here.
+
+167
+0:09:17,880 --> 0:09:21,060
+ I'm pretty sure that some of you will be able to find a way in anyway.
+
+168
+0:09:22,500 --> 0:09:28,480
+ But as always, we have, it's actually a nice room we have there in R31 where we keep the
+
+169
+0:09:28,480 --> 0:09:31,100
+ door open because we actually have a lot of the computer equipment in there.
+
+170
+0:09:31,500 --> 0:09:33,680
+ And as you can see in the picture, we have a lot of crap.
+
+171
+0:09:33,680 --> 0:09:41,220
+ We have a server, a couple of servers, actually, and switches, and the thing on the floor would
+
+172
+0:09:41,220 --> 0:09:42,640
+ be a large MX.
+
+173
+0:09:42,820 --> 0:09:47,520
+ We also got some UPSs, which we kind of did not get to installing.
+
+174
+0:09:47,520 --> 0:09:50,660
+ Might be something we need to look into.
+
+175
+0:09:50,660 --> 0:09:55,580
+ But basically, this looks like it did last year, except we have more fiber this year.
+
+176
+0:09:55,580 --> 0:09:57,580
+ Okay.
+
+177
+0:09:57,580 --> 0:10:01,080
+ One of the things we got that was new is we got a new MX.
+
+178
+0:10:01,080 --> 0:10:03,560
+ That's a Juniper routing device.
+
+179
+0:10:03,560 --> 0:10:10,740
+ This is, as you can see, this is the thing, it's, don't carry it alone, you know?
+
+180
+0:10:10,740 --> 0:10:12,780
+ And this is a very big routing.
+
+181
+0:10:12,780 --> 0:10:13,780
+ And this is a box.
+
+182
+0:10:13,780 --> 0:10:17,920
+ And what we have done this year is that we, of course, have a lot of 10-gig things going
+
+183
+0:10:17,920 --> 0:10:20,280
+ on, and this one can just handle it.
+
+184
+0:10:20,280 --> 0:10:23,340
+ And that's very cool, so we like this one.
+
+185
+0:10:23,340 --> 0:10:28,920
+ And this is something that Rudi has gotten his hand on and got some parts from Falco
+
+186
+0:10:28,920 --> 0:10:33,780
+ Networks, so that's very nice to, you know, know people who want to contribute and help
+
+187
+0:10:33,780 --> 0:10:34,780
+ us.
+
+188
+0:10:34,780 --> 0:10:35,780
+ Should we give them a hand?
+
+189
+0:10:42,780 --> 0:10:43,780
+ Okay.
+
+190
+0:10:43,780 --> 0:10:51,040
+ There's another thing that we got this year, because most of, when you, as the user of
+
+191
+0:10:51,040 --> 0:10:57,160
+ this network, you, most of you have seen close to zero difference between this year and last
+
+192
+0:10:57,160 --> 0:10:58,160
+ year.
+
+193
+0:10:58,160 --> 0:11:02,780
+ But we have had, I would call it, a massive upgrade of our core infrastructure.
+
+194
+0:11:02,780 --> 0:11:08,080
+ So one of the things that happened was that we got some QFXs.
+
+195
+0:11:08,080 --> 0:11:10,780
+ Just like the MXs are big-ass routing box.
+
+196
+0:11:10,780 --> 0:11:11,780
+ Okay.
+
+197
+0:11:11,780 --> 0:11:12,780
+ Cool.
+
+198
+0:11:12,780 --> 0:11:15,840
+ And then the QFXs are fiber switches.
+
+199
+0:11:15,840 --> 0:11:22,440
+ And so last year, people were saying, oh, we want 10-gigs in the tents.
+
+200
+0:11:22,440 --> 0:11:28,700
+ And I was thinking, yeah, about that, because the switches we use kind of don't have that
+
+201
+0:11:28,700 --> 0:11:30,380
+ many 10-gig ports.
+
+202
+0:11:30,380 --> 0:11:35,040
+ I was just counting all the people saying they wanted 10-gig and thinking this might
+
+203
+0:11:35,040 --> 0:11:36,780
+ become an issue.
+
+204
+0:11:36,780 --> 0:11:41,780
+ But then Juni Palase called from Roskilde Festival and said, we have two QFXs in spare.
+
+205
+0:11:41,780 --> 0:11:42,780
+ Okay.
+
+206
+0:11:42,780 --> 0:11:43,780
+ Do you want them?
+
+207
+0:11:43,780 --> 0:11:44,780
+ Yes.
+
+208
+0:11:44,780 --> 0:11:45,780
+ Thank you.
+
+209
+0:11:45,780 --> 0:11:50,780
+ Yeah, we need to pick them up before we do inventory.
+
+210
+0:11:50,780 --> 0:11:55,560
+ I don't ask why that was the case, but fine.
+
+211
+0:11:55,560 --> 0:11:56,880
+ So we got that organized.
+
+212
+0:11:56,880 --> 0:12:02,400
+ And I think this solved the issue I had with the 10-gig, number of 10-gig uplinks.
+
+213
+0:12:02,400 --> 0:12:07,780
+ So should we give them a hand also?
+
+214
+0:12:07,780 --> 0:12:09,780
+ Okay.
+
+215
+0:12:09,780 --> 0:12:10,780
+ Cool.
+
+216
+0:12:10,780 --> 0:12:11,780
+ Cool.
+
+217
+0:12:11,780 --> 0:12:12,780
+ Thank you.
+
+218
+0:12:12,780 --> 0:12:15,640
+ It is actually some interesting equipment.
+
+219
+0:12:15,640 --> 0:12:18,320
+ I'm wondering how we're going to use it.
+
+220
+0:12:18,320 --> 0:12:23,080
+ But you see, this is massive amounts.
+
+221
+0:12:23,080 --> 0:12:28,780
+ It's that 48 ports for SPFs and SFPs.
+
+222
+0:12:28,780 --> 0:12:29,780
+ SFPs.
+
+223
+0:12:29,780 --> 0:12:30,780
+ SFP+.
+
+224
+0:12:30,780 --> 0:12:31,780
+ Yes.
+
+225
+0:12:31,780 --> 0:12:32,780
+ That's all mighty nice.
+
+226
+0:12:32,780 --> 0:12:35,540
+ They can do 10-gig or perhaps 20, I don't know.
+
+227
+0:12:35,540 --> 0:12:38,780
+ And this one over here are 40-gig optics ports.
+
+228
+0:12:38,780 --> 0:12:39,780
+ Yeah.
+
+229
+0:12:39,780 --> 0:12:40,780
+ Okay.
+
+230
+0:12:40,780 --> 0:12:41,780
+ Fine.
+
+231
+0:12:41,780 --> 0:12:46,780
+ I think they might suit our need for, you know, a year or so, I don't know.
+
+232
+0:12:46,780 --> 0:12:51,320
+ If we compare the amount of bandwidth we used this year to last year, we are actually probably
+
+233
+0:12:51,320 --> 0:12:54,280
+ going to have an issue next year also.
+
+234
+0:12:54,280 --> 0:13:00,780
+ Anyway, this is very cool equipment.
+
+235
+0:13:00,780 --> 0:13:04,580
+ So let's do this one again.
+
+236
+0:13:04,580 --> 0:13:09,740
+ So what we did was that we actually put in one of these QFXs in the Labitat tent in order
+
+237
+0:13:09,740 --> 0:13:15,500
+ to have, we had two QFXs and it was not enough to have it in the tent, in the R31.
+
+238
+0:13:15,500 --> 0:13:16,600
+ So we needed somewhere to put it.
+
+239
+0:13:16,600 --> 0:13:20,740
+ So we put it in the Labitat tent in order for, to give access to these ports to more
+
+240
+0:13:20,740 --> 0:13:21,740
+ people.
+
+241
+0:13:21,740 --> 0:13:27,640
+ And apparently Labitat, they, I think they at least have hooked up two things to that
+
+242
+0:13:27,640 --> 0:13:28,640
+ one.
+
+243
+0:13:28,640 --> 0:13:32,740
+ So I wonder what they are doing with 10-gig uplink.
+
+244
+0:13:32,740 --> 0:13:35,180
+ Okay.
+
+245
+0:13:35,180 --> 0:13:36,340
+ So fibers.
+
+246
+0:13:36,340 --> 0:13:39,740
+ This layout is very close to what we did last year.
+
+247
+0:13:39,740 --> 0:13:47,740
+ Except that the, we had torque down here last time, but this one moved up here.
+
+248
+0:13:47,740 --> 0:13:56,740
+ So the, well, the distribution point was the camp last time, general camping, sorry.
+
+249
+0:13:56,740 --> 0:13:58,740
+ And this year it was the torque tent.
+
+250
+0:13:58,740 --> 0:14:01,740
+ And that just, it was basically the same for us.
+
+251
+0:14:01,740 --> 0:14:07,740
+ There are some things about torque tent about bandwidth and such, so they should have their
+
+252
+0:14:07,740 --> 0:14:08,740
+ own fiber content.
+
+253
+0:14:08,740 --> 0:14:09,740
+ Okay.
+
+254
+0:14:09,740 --> 0:14:10,740
+ So that's the power connection.
+
+255
+0:14:10,740 --> 0:14:16,400
+ But since we, as I mentioned, have insane amounts of fiber ports available, all of these
+
+256
+0:14:16,400 --> 0:14:26,080
+ pops and a couple of people down here, they have their own fiber directly going to R31.
+
+257
+0:14:26,080 --> 0:14:30,880
+ You know, because we of course not doing overkill here.
+
+258
+0:14:30,880 --> 0:14:36,740
+ But it's interesting that this give us this start topology that we have been discussing.
+
+259
+0:14:36,740 --> 0:14:38,740
+ And so it means that.
+
+260
+0:14:38,740 --> 0:14:44,740
+ If we lose power somewhere along the way, it doesn't affect the rest of the network.
+
+261
+0:14:44,740 --> 0:14:54,640
+ So if the pop at general camping dies, silent would still be functioning.
+
+262
+0:14:54,640 --> 0:14:59,700
+ Because it's just a passive connection going through, you know, this light thing with.
+
+263
+0:14:59,700 --> 0:15:02,040
+ And that's a really nice design.
+
+264
+0:15:02,040 --> 0:15:04,740
+ Of course provided that we don't break any cables.
+
+265
+0:15:04,740 --> 0:15:07,740
+ This is something that I'm getting more and more on my list.
+
+266
+0:15:07,740 --> 0:15:16,740
+ Because we've had zero cable related incidents in as long as I know, past years and years.
+
+267
+0:15:16,740 --> 0:15:17,740
+ It's just.
+
+268
+0:15:17,740 --> 0:15:25,740
+ So are we lucky or is fiber is just that robust or this is my favorite.
+
+269
+0:15:25,740 --> 0:15:31,740
+ I think we have super nice people showing up at bone hack that likes this and take care of our equipment.
+
+270
+0:15:31,740 --> 0:15:33,740
+ I think that is super cool.
+
+271
+0:15:33,740 --> 0:15:36,740
+ And I think you should give yourself a round of applause for being so nice to our equipment.
+
+272
+0:15:37,740 --> 0:15:52,740
+ So I just pulled the stats and we have rolled out two point seven kilometers of fiber.
+
+273
+0:15:52,740 --> 0:15:55,740
+ Actually, that is the fiber that we've used.
+
+274
+0:15:55,740 --> 0:16:02,740
+ And it is from the two dimensional up of you, which is the number I can get from my program.
+
+275
+0:16:02,740 --> 0:16:05,740
+ We are doing one point seven kilometers.
+
+276
+0:16:05,740 --> 0:16:11,740
+ But again, if they're in regulars, the first year was here, we had this hashtag called too short.
+
+277
+0:16:11,740 --> 0:16:17,740
+ And that's because me looking at the maps, I'm always looking, you know, two dimensional and around here.
+
+278
+0:16:17,740 --> 0:16:19,740
+ The ground actually looks like this.
+
+279
+0:16:19,740 --> 0:16:25,740
+ So all my planning about which cables and fibers we needed for the first year was just so off that we kind of ditched it.
+
+280
+0:16:25,740 --> 0:16:29,740
+ And so this one point seven kilometers is not true.
+
+281
+0:16:29,740 --> 0:16:31,740
+ It is way more than that.
+
+282
+0:16:31,740 --> 0:16:34,740
+ But the cable length combined would be two point seven.
+
+283
+0:16:34,740 --> 0:16:36,740
+ So that's nice.
+
+284
+0:16:36,740 --> 0:16:39,740
+ And it's good with some exercise when you go for a walk.
+
+285
+0:16:39,740 --> 0:16:46,740
+ And this is, of course, not including all the access points because, yeah, you need to walk a lot for that.
+
+286
+0:16:46,740 --> 0:16:48,740
+ Anyway, lots of fibers.
+
+287
+0:16:48,740 --> 0:16:49,740
+ We like fibers.
+
+288
+0:16:49,740 --> 0:16:52,740
+ We do star topology.
+
+289
+0:16:52,740 --> 0:16:55,740
+ I'm a, what's it called?
+
+290
+0:16:55,740 --> 0:16:57,740
+ I'm a ring guy myself.
+
+291
+0:16:57,740 --> 0:17:04,740
+ But I kind of was convinced or vetoed or whatever it was that we are doing star topology.
+
+292
+0:17:04,740 --> 0:17:06,740
+ That's fine.
+
+293
+0:17:06,740 --> 0:17:08,740
+ You know, I'm just here to look pretty.
+
+294
+0:17:08,740 --> 0:17:15,740
+ And if they say, Morten, you're going to look pretty if we do star topology, I'm going to say, okay, fine.
+
+295
+0:17:15,740 --> 0:17:16,740
+ Okay.
+
+296
+0:17:16,740 --> 0:17:19,740
+ This is an abbreviation that we all know.
+
+297
+0:17:19,740 --> 0:17:26,740
+ It means fiber to the tent.
+
+298
+0:17:26,740 --> 0:17:31,740
+ And so we had, of course, we had this pixel flood and so on.
+
+299
+0:17:31,740 --> 0:17:32,740
+ And just.
+
+300
+0:17:32,740 --> 0:17:44,740
+ We are in a position where we have a core infrastructure that is big enough to allow us to give whoever wanted it basically 10 gigs to their tents.
+
+301
+0:17:44,740 --> 0:17:49,740
+ Not that most people will actually, you know, kind of maybe need it.
+
+302
+0:17:49,740 --> 0:17:53,740
+ But, hey, I'm lying here in my tent on my 10 gig connection.
+
+303
+0:17:53,740 --> 0:17:57,740
+ That's apparently something people like to say to people when they're on Twitter or whatever.
+
+304
+0:17:57,740 --> 0:17:58,740
+ That's fine.
+
+305
+0:17:58,740 --> 0:17:59,740
+ That's fine.
+
+306
+0:17:59,740 --> 0:18:00,740
+ Let's do that.
+
+307
+0:18:00,740 --> 0:18:01,740
+ And I think it's cool also.
+
+308
+0:18:01,740 --> 0:18:09,740
+ It also means that when we have a camp like pajamas or something that likes to experiment with weird shit, they can just get a 10 gig fiber.
+
+309
+0:18:09,740 --> 0:18:15,740
+ And the thing we could do this year was that it was a passive 10 gig fiber directly to R31.
+
+310
+0:18:15,740 --> 0:18:19,740
+ So it means that if they screwed up, not touching that.
+
+311
+0:18:19,740 --> 0:18:20,740
+ And that's fine.
+
+312
+0:18:20,740 --> 0:18:23,740
+ Especially if they screw up with power.
+
+313
+0:18:23,740 --> 0:18:29,740
+ If they screw up with other things, which we might see in a couple of slides, it might affect everybody.
+
+314
+0:18:29,740 --> 0:18:30,740
+ It's an interesting thing.
+
+315
+0:18:30,740 --> 0:18:36,740
+ It's an interesting thing to give so many people so much bandwidth.
+
+316
+0:18:36,740 --> 0:18:40,740
+ Because we at the NOC team, we just say, yeah, you're nice people.
+
+317
+0:18:40,740 --> 0:18:43,740
+ We're, of course, not going to get any issues when you give people 10 gig.
+
+318
+0:18:43,740 --> 0:18:48,740
+ Of course we're not because you behave, right?
+
+319
+0:18:48,740 --> 0:18:54,740
+ But it also is so we have this structure where we have the fibers with the Q of X that talks to the MX.
+
+320
+0:18:54,740 --> 0:18:58,740
+ And to get it up and running, we have set in one 10 gig connection.
+
+321
+0:18:58,740 --> 0:19:05,740
+ And when you look at such a fiber switch and you see, oh, there's 10-ish, 10 gig fiber connection coming in,
+
+322
+0:19:05,740 --> 0:19:12,740
+ perhaps a 10 gig connection between the switch to the router might be just a tad optimistic.
+
+323
+0:19:12,740 --> 0:19:16,740
+ So we are doing, I think we end up in dual 10 gig between these two.
+
+324
+0:19:16,740 --> 0:19:21,740
+ And I'm pretty sure we want more next year because now you know we have it.
+
+325
+0:19:21,740 --> 0:19:26,740
+ And apparently people have stuff that uses it.
+
+326
+0:19:26,740 --> 0:19:33,740
+ We're also routing Pixel Flute, which is, well, why not-ish.
+
+327
+0:19:33,740 --> 0:19:36,740
+ Okay.
+
+328
+0:19:36,740 --> 0:19:43,740
+ As always, we have got a huge pile of stuff from EventInfo.
+
+329
+0:19:43,740 --> 0:19:52,740
+ It has been an interesting thing this year, I think, for Rudy because all this equipment we have, it was used on MCH.
+
+330
+0:19:52,740 --> 0:19:55,740
+ So when they were packing MCH, Rudy was there saying,
+
+331
+0:19:55,740 --> 0:19:59,740
+ I want that one, I want that one, I want that one.
+
+332
+0:19:59,740 --> 0:20:04,740
+ And then suddenly we have insane amounts of cable and fibers and switches and, you know,
+
+333
+0:20:04,740 --> 0:20:06,740
+ all the usual stuff we get from EventInfo.
+
+334
+0:20:06,740 --> 0:20:09,740
+ And that is very cool that we have this option.
+
+335
+0:20:09,740 --> 0:20:11,740
+ So thank you to EventInfo.
+
+336
+0:20:19,740 --> 0:20:20,740
+ Yes.
+
+337
+0:20:20,740 --> 0:20:24,740
+ So when I look at our network and I look at our uplink fiber,
+
+338
+0:20:24,740 --> 0:20:31,740
+ it's 666 meters of well-armored fiber.
+
+339
+0:20:31,740 --> 0:20:34,740
+ And it's just, why would I go get that?
+
+340
+0:20:34,740 --> 0:20:36,740
+ It's not something you go buy.
+
+341
+0:20:36,740 --> 0:20:40,740
+ We can get that from EventInfo and if we don't get it for some reason,
+
+342
+0:20:40,740 --> 0:20:45,740
+ then suddenly I have to, you know, earn my pay and figure out where to get shit.
+
+343
+0:20:45,740 --> 0:20:47,740
+ So let's hope we can keep getting that.
+
+344
+0:20:47,740 --> 0:20:48,740
+ We like EventInfo.
+
+345
+0:20:48,740 --> 0:20:51,740
+ They're also the ones with the torches and stuff.
+
+346
+0:20:51,740 --> 0:20:52,740
+ Okay.
+
+347
+0:20:52,740 --> 0:20:53,740
+ What else do we have?
+
+348
+0:20:53,740 --> 0:20:54,740
+ Non-core stuff.
+
+349
+0:20:54,740 --> 0:20:57,740
+ We have installed 32 access points.
+
+350
+0:20:57,740 --> 0:21:00,740
+ And that is nice.
+
+351
+0:21:00,740 --> 0:21:05,740
+ We had the access point guys walking around camp setting stuff up left and right.
+
+352
+0:21:05,740 --> 0:21:09,740
+ And as always, I don't know if the last one was set up two days ago, but it's not.
+
+353
+0:21:09,740 --> 0:21:14,740
+ When you set up an access point in a place like this, we have an idea where to set them up.
+
+354
+0:21:14,740 --> 0:21:16,740
+ And then suddenly reality hits.
+
+355
+0:21:16,740 --> 0:21:21,740
+ There's suddenly a lot of people there or bad coverage there due to I don't know what.
+
+356
+0:21:21,740 --> 0:21:27,740
+ So we will update where the access points are located during camp.
+
+357
+0:21:27,740 --> 0:21:32,740
+ Actually, we just add extra ones because we kind of have a lot this year.
+
+358
+0:21:32,740 --> 0:21:37,740
+ And then when I was, you know, I'm doing statistics and all these things,
+
+359
+0:21:37,740 --> 0:21:40,740
+ and I'm just looking at these 32 access points.
+
+360
+0:21:40,740 --> 0:21:43,740
+ This is the names of the access points.
+
+361
+0:21:47,740 --> 0:21:51,740
+ I think that it's on my list for next year that we should have a naming convention.
+
+362
+0:21:51,740 --> 0:21:53,740
+ For access points.
+
+363
+0:21:53,740 --> 0:21:58,740
+ So that we kind of know that access point whatever is residing over there and so on.
+
+364
+0:21:58,740 --> 0:22:01,740
+ Right now, it's just, yeah.
+
+365
+0:22:01,740 --> 0:22:06,740
+ Let's hope we can get where it is.
+
+366
+0:22:06,740 --> 0:22:09,740
+ Yes.
+
+367
+0:22:09,740 --> 0:22:12,740
+ We also, one of the reasons that we have access points.
+
+368
+0:22:12,740 --> 0:22:16,740
+ Well, first of all, we brought something like 30 from EventInfo.
+
+369
+0:22:16,740 --> 0:22:20,740
+ But SignOut, he found 20 Aruba access points.
+
+370
+0:22:20,740 --> 0:22:24,740
+ In the which is, you know, used.
+
+371
+0:22:24,740 --> 0:22:28,740
+ And it's just, so, do you want that?
+
+372
+0:22:28,740 --> 0:22:30,740
+ Yeah.
+
+373
+0:22:30,740 --> 0:22:33,740
+ So we suddenly got 20 extra Aruba access points.
+
+374
+0:22:33,740 --> 0:22:39,740
+ So besides the 30 that Rudy brought, we are suddenly at 50.
+
+375
+0:22:39,740 --> 0:22:44,740
+ I think that's way enough, I'm trying to say.
+
+376
+0:22:44,740 --> 0:22:47,740
+ So thank you to SignOut for organizing this.
+
+377
+0:22:47,740 --> 0:22:48,740
+ This is very nice.
+
+378
+0:22:48,740 --> 0:22:49,740
+ Thanks.
+
+379
+0:22:50,740 --> 0:22:51,740
+ Thank you.
+
+380
+0:22:51,740 --> 0:23:03,740
+ And, as always, we have Ikdot, who is somewhere in the back.
+
+381
+0:23:03,740 --> 0:23:05,740
+ Setting up home lights.
+
+382
+0:23:05,740 --> 0:23:06,740
+ I like home lights.
+
+383
+0:23:06,740 --> 0:23:07,740
+ It's just, it's way cool.
+
+384
+0:23:07,740 --> 0:23:15,740
+ And for some reason, we're using publicly accessible Internet accessible IP address
+
+385
+0:23:15,740 --> 0:23:18,740
+ for the controller of the home lights.
+
+386
+0:23:18,740 --> 0:23:19,740
+ What can go wrong?
+
+387
+0:23:19,740 --> 0:23:30,400
+ I think that's interesting in so many ways, but the point is that this is equipment that shows us the switches of work and they give a good atmosphere to the field and such.
+
+388
+0:23:30,500 --> 0:23:34,720
+ I think it's just, we want that and we want more, more of these.
+
+389
+0:23:35,420 --> 0:23:36,160
+ Thank you, 8Dot.
+
+390
+0:23:43,380 --> 0:23:48,280
+ And this is, oh, there's just some random things happening when you're at Bonehack.
+
+391
+0:23:48,280 --> 0:23:52,260
+ So, on the POC channel for the, what's POC?
+
+392
+0:23:52,400 --> 0:23:54,600
+ That would be phone operation center.
+
+393
+0:23:55,320 --> 0:23:57,300
+ Anyway, the one that also do decked phones.
+
+394
+0:23:58,280 --> 0:24:06,600
+ There was a question, I think it was Rudy who asked it, if we should get a 4G connection or an LTE network on CAMP.
+
+395
+0:24:06,920 --> 0:24:08,760
+ And I think that's a super nice idea.
+
+396
+0:24:09,320 --> 0:24:16,820
+ So, as I was walking over there somewhere, some random dude asked, do you have a GPS antenna for an NTP server?
+
+397
+0:24:18,280 --> 0:24:18,520
+ What?
+
+398
+0:24:20,180 --> 0:24:21,380
+ And of course I do.
+
+399
+0:24:23,280 --> 0:24:25,920
+ So, it's one of my pet projects that I have in my box.
+
+400
+0:24:26,200 --> 0:24:32,300
+ So, it turned out that apparently you need a super precise NTP system in order to have LTE working.
+
+401
+0:24:33,420 --> 0:24:37,980
+ And so, we have LTE working in that part of the CAMP over there.
+
+402
+0:24:38,060 --> 0:24:39,120
+ I have no idea how it works.
+
+403
+0:24:39,580 --> 0:24:44,880
+ But it basically, to me, it's a proof of concept that maybe next year we want LTE all over the place.
+
+404
+0:24:45,740 --> 0:24:48,240
+ Am I getting eye contact with anyone who is nodding?
+
+405
+0:24:48,340 --> 0:24:48,900
+ Okay, fine.
+
+406
+0:24:50,300 --> 0:24:53,460
+ No, it's one of these things I've been looking at these decked phones and I'm thinking,
+
+407
+0:24:53,760 --> 0:24:59,680
+ it's much easier for me to find a good normal mobile phone than it is for me to find a good decked phone.
+
+408
+0:25:00,360 --> 0:25:02,260
+ And if it's all local, that could be really nice.
+
+409
+0:25:03,640 --> 0:25:12,180
+ So, and of course I took a picture of the LTE device because isn't it obviously an LTE antenna we have there?
+
+410
+0:25:14,180 --> 0:25:15,340
+ Hmm, yeah.
+
+411
+0:25:15,840 --> 0:25:18,180
+ I think less proficient people...
+
+412
+0:25:18,280 --> 0:25:25,960
+ I think people might just see it as a white box and not just as not an LTE thing, but yeah, but we're pros here, right?
+
+413
+0:25:27,660 --> 0:25:28,500
+ But it's very interesting.
+
+414
+0:25:28,500 --> 0:25:38,240
+ It's a, so this Raspberry Pi just has a shield on it and then you can hook in the GPS thing and then some software can do extremely precise clocks for this.
+
+415
+0:25:38,660 --> 0:25:39,160
+ Very nice.
+
+416
+0:25:41,080 --> 0:25:41,580
+ Okay.
+
+417
+0:25:42,540 --> 0:25:46,880
+ And then we have a little thing that I found to be super interesting.
+
+418
+0:25:46,880 --> 0:25:47,380
+ That was...
+
+419
+0:25:48,280 --> 0:25:52,820
+ Again, a sign out. He had heard our call about use more bandwidth.
+
+420
+0:25:53,560 --> 0:25:57,660
+ So he basically brought his Synology box and hooked up...
+
+421
+0:25:58,360 --> 0:26:03,200
+ hooked it up to the network and that is the thing that is doing this 250...
+
+422
+0:26:03,880 --> 0:26:09,080
+ 250, 300 megabit upload steady state in the past week.
+
+423
+0:26:09,500 --> 0:26:16,100
+ So this box is using more bandwidth than we did last year, all of us.
+
+424
+0:26:18,280 --> 0:26:19,100
+ I think...
+
+425
+0:26:19,760 --> 0:26:20,700
+ Nice going, sign out.
+
+426
+0:26:26,400 --> 0:26:27,740
+ Yes, I think that is super cool.
+
+427
+0:26:27,740 --> 0:26:28,240
+ It's just...
+
+428
+0:26:28,840 --> 0:26:29,740
+ And, and it's simple.
+
+429
+0:26:30,840 --> 0:26:31,520
+ Yeah, no mind.
+
+430
+0:26:31,980 --> 0:26:32,920
+ Okay, what else do we have?
+
+431
+0:26:33,420 --> 0:26:37,560
+ Yes, as always I have my own way of spelling Pixiflute because...
+
+432
+0:26:39,300 --> 0:26:39,900
+ I don't know.
+
+433
+0:26:39,900 --> 0:26:41,020
+ It's just a weird word.
+
+434
+0:26:42,300 --> 0:26:48,120
+ So, when I was doing this slide because we have Pixiflute and actually there was a mention of this in the...
+
+435
+0:26:48,120 --> 0:26:59,680
+ in the talk by the game team and there are some really nice things that happened this year that we could actually see the talks from the stream.
+
+436
+0:26:59,680 --> 0:27:04,620
+ It got piped into Pixiflute full screen.
+
+437
+0:27:04,620 --> 0:27:07,880
+ I'm thinking, someone is probably using bandwidth for that.
+
+438
+0:27:08,880 --> 0:27:13,600
+ As you can see, this is something that it's taking a while.
+
+439
+0:27:13,600 --> 0:27:16,640
+ It's a picture I took while there was Hacker Jeopardy.
+
+440
+0:27:16,640 --> 0:27:17,140
+ And then...
+
+441
+0:27:17,140 --> 0:27:17,640
+ And then...
+
+442
+0:27:17,640 --> 0:27:26,200
+ And then, of course, because it's Pixiflute, we have this apparently background thingy and then another person wanted to put in a picture of a tent and...
+
+443
+0:27:27,420 --> 0:27:27,920
+ What's that?
+
+444
+0:27:29,800 --> 0:27:30,300
+ I don't know.
+
+445
+0:27:31,300 --> 0:27:35,720
+ Okay, but it's moving over the screen and it's pretty or something.
+
+446
+0:27:36,720 --> 0:27:41,320
+ But that's Pixiflute for you and, of course, the mandatory NEM ID login screen.
+
+447
+0:27:43,360 --> 0:27:43,860
+ I just...
+
+448
+0:27:43,860 --> 0:27:44,360
+ Yeah, fine.
+
+449
+0:27:45,320 --> 0:27:46,660
+ So, Pixiflute.
+
+450
+0:27:46,660 --> 0:27:48,040
+ It's apparently a thing.
+
+451
+0:27:48,240 --> 0:27:48,520
+ That's fine.
+
+452
+0:27:48,900 --> 0:27:50,420
+ So, what I did when I wanted to...
+
+453
+0:27:50,420 --> 0:27:52,780
+ Let's get some, what's it called, metrics for this.
+
+454
+0:27:53,260 --> 0:27:54,400
+ So, I went to the...
+
+455
+0:27:54,400 --> 0:27:56,300
+ It's a brocade switch that's up there in the bar.
+
+456
+0:27:56,860 --> 0:27:59,940
+ And I found that it was using...
+
+457
+0:27:59,940 --> 0:28:01,200
+ So, this is inverted.
+
+458
+0:28:02,800 --> 0:28:06,060
+ So, here you have that it's using a steady state.
+
+459
+0:28:06,980 --> 0:28:11,620
+ It's receiving these 7.4 gigabits, right?
+
+460
+0:28:12,340 --> 0:28:13,840
+ And that was the first...
+
+461
+0:28:13,840 --> 0:28:15,540
+ So, when I made these slides, I found that one.
+
+462
+0:28:15,540 --> 0:28:15,780
+ And I thought...
+
+463
+0:28:15,780 --> 0:28:15,800
+ I found that one.
+
+464
+0:28:15,800 --> 0:28:15,860
+ I found that one.
+
+465
+0:28:15,860 --> 0:28:15,900
+ I found that one.
+
+466
+0:28:15,900 --> 0:28:15,960
+ I found that one.
+
+467
+0:28:16,200 --> 0:28:16,640
+ 7.4 gigabits.
+
+468
+0:28:16,660 --> 0:28:17,020
+ 7.4?
+
+469
+0:28:17,240 --> 0:28:17,920
+ Yeah, okay.
+
+470
+0:28:18,900 --> 0:28:19,340
+ Fine.
+
+471
+0:28:19,600 --> 0:28:23,160
+ But it looked like more, but, you know, 7.4, it's fine.
+
+472
+0:28:23,820 --> 0:28:25,660
+ And then there was this talk by the game people.
+
+473
+0:28:26,240 --> 0:28:28,080
+ And they said, 25 gigs.
+
+474
+0:28:28,180 --> 0:28:31,160
+ And I said, yeah, I probably need to go check my graphs again then.
+
+475
+0:28:31,700 --> 0:28:35,660
+ And it was just silly me because I just found this one.
+
+476
+0:28:36,220 --> 0:28:38,320
+ This is a 40 gig interface.
+
+477
+0:28:38,780 --> 0:28:43,080
+ And I thought that they only used one 40 gig interface for Pixiflute.
+
+478
+0:28:44,180 --> 0:28:46,200
+ It's just apparently you use...
+
+479
+0:28:46,200 --> 0:28:50,440
+ You use dual 40 gig for Pixiflute because...
+
+480
+0:28:50,440 --> 0:28:50,760
+ Yeah, okay.
+
+481
+0:28:51,320 --> 0:28:52,380
+ That surprised me.
+
+482
+0:28:52,480 --> 0:28:53,480
+ I know this for next time.
+
+483
+0:28:54,360 --> 0:28:54,880
+ That was funny.
+
+484
+0:28:55,120 --> 0:28:57,100
+ It was just dual 40 gig.
+
+485
+0:28:58,100 --> 0:28:58,500
+ Yeah.
+
+486
+0:28:58,720 --> 0:29:01,380
+ As I said, we have access to a certain amount of bandwidth.
+
+487
+0:29:01,660 --> 0:29:03,400
+ And that is apparently being used a lot.
+
+488
+0:29:03,500 --> 0:29:04,020
+ That's very cool.
+
+489
+0:29:04,880 --> 0:29:05,080
+ Okay.
+
+490
+0:29:05,400 --> 0:29:15,000
+ So, you might remember last year where Kramse had a very successful denial of service workshop.
+
+491
+0:29:16,200 --> 0:29:19,180
+ It was a very cool thing that kind of took down the entire network.
+
+492
+0:29:20,000 --> 0:29:21,420
+ And that was...
+
+493
+0:29:21,420 --> 0:29:22,240
+ Yeah, yeah.
+
+494
+0:29:22,460 --> 0:29:24,060
+ We decided not to do that this year.
+
+495
+0:29:25,560 --> 0:29:30,100
+ So, how can we take down the network if we are not using a denial of service workshop?
+
+496
+0:29:31,120 --> 0:29:32,280
+ I'm looking at you, Labitat.
+
+497
+0:29:34,000 --> 0:29:41,500
+ So, one thing you could do is to, you know, multicast video all over the place.
+
+498
+0:29:42,760 --> 0:29:44,860
+ And it's just, yeah, yeah, yeah.
+
+499
+0:29:44,860 --> 0:29:46,920
+ Multicast is evil.
+
+500
+0:29:47,920 --> 0:29:49,500
+ So, it broke a lot of things.
+
+501
+0:29:49,760 --> 0:29:51,680
+ And some people called someone.
+
+502
+0:29:51,840 --> 0:29:55,340
+ And then it suddenly stopped when some people had a chat with someone.
+
+503
+0:29:56,920 --> 0:29:59,260
+ And then we have Pixiflute.
+
+504
+0:29:59,640 --> 0:30:04,480
+ This is actually the picture is from the second incident.
+
+505
+0:30:05,220 --> 0:30:06,920
+ Red means fool.
+
+506
+0:30:07,340 --> 0:30:08,640
+ Just saying if you had doubts.
+
+507
+0:30:09,380 --> 0:30:11,880
+ So, let's just do a quick analysis of this drawing.
+
+508
+0:30:14,080 --> 0:30:14,560
+ Okay.
+
+509
+0:30:14,860 --> 0:30:26,520
+ So, let's start a random place that is actually pumping 97% of its capacity.
+
+510
+0:30:26,700 --> 0:30:28,920
+ It's a 10-gig connection into the network.
+
+511
+0:30:29,360 --> 0:30:33,000
+ And then a similar number appears on all the other ones.
+
+512
+0:30:34,460 --> 0:30:34,840
+ Hmm.
+
+513
+0:30:35,160 --> 0:30:36,880
+ Makes you wonder what's going on, right?
+
+514
+0:30:39,660 --> 0:30:40,820
+ Yeah, yeah.
+
+515
+0:30:42,420 --> 0:30:44,840
+ It was an interesting problem that I have.
+
+516
+0:30:44,920 --> 0:30:45,700
+ I haven't encountered before.
+
+517
+0:30:46,300 --> 0:30:52,300
+ The thing is that when you have a normal switch, right, it monitors the traffic.
+
+518
+0:30:52,520 --> 0:30:54,800
+ And it knows which MAC addresses are on which port.
+
+519
+0:30:54,960 --> 0:30:57,380
+ And that way, it knows to route stuff left and right.
+
+520
+0:30:57,440 --> 0:30:58,980
+ So, it doesn't ship everything everywhere.
+
+521
+0:30:59,460 --> 0:31:02,840
+ But the first time it sees a MAC address, it doesn't know where to ship it.
+
+522
+0:31:02,860 --> 0:31:04,260
+ So, it ships it on all ports.
+
+523
+0:31:04,260 --> 0:31:08,160
+ It falls back to, let's call it, hop mode, which is mighty nice.
+
+524
+0:31:10,540 --> 0:31:14,220
+ Pixiflute, where you pump out insane amounts of gigabits of traffic.
+
+525
+0:31:14,860 --> 0:31:17,560
+ It's a one-way thing where you're just sending UDP packages.
+
+526
+0:31:18,520 --> 0:31:24,980
+ So, what if the server that is sending has a higher timeout than the switch?
+
+527
+0:31:24,980 --> 0:31:32,600
+ It means that the server knows the MAC address of the IP it's trying to send to, but the switch forgets it.
+
+528
+0:31:33,020 --> 0:31:33,860
+ What happens then?
+
+529
+0:31:34,760 --> 0:31:35,920
+ Then you get this.
+
+530
+0:31:37,040 --> 0:31:40,680
+ Because there's no traffic going back from the Pixiflute server.
+
+531
+0:31:40,980 --> 0:31:42,080
+ It's not talking to anyone.
+
+532
+0:31:42,640 --> 0:31:43,980
+ So, the switch doesn't...
+
+533
+0:31:44,860 --> 0:31:46,200
+ It does not learn where the MAC address is.
+
+534
+0:31:47,480 --> 0:31:47,920
+ Okay.
+
+535
+0:31:48,560 --> 0:31:53,540
+ So, if we set up our thing that pings every, I don't know, minute, we would not have this.
+
+536
+0:31:54,100 --> 0:31:55,140
+ It was a weird issue.
+
+537
+0:31:55,300 --> 0:31:58,520
+ And I think we need to analyze it a bit to ensure that it doesn't happen again.
+
+538
+0:31:58,620 --> 0:32:01,520
+ Because Pixiflute is, in my opinion, an evil protocol.
+
+539
+0:32:01,520 --> 0:32:05,720
+ It's just, think of all the CO2 you're burning off while sending all the...
+
+540
+0:32:05,720 --> 0:32:06,200
+ Never mind.
+
+541
+0:32:06,500 --> 0:32:07,260
+ I don't care, actually.
+
+542
+0:32:07,780 --> 0:32:13,520
+ But it's a weird protocol that you are just pumping so much data in one way and never getting anything back.
+
+543
+0:32:14,340 --> 0:32:14,420
+ It's...
+
+544
+0:32:14,860 --> 0:32:19,240
+ It's worse than streaming services and such.
+
+545
+0:32:19,720 --> 0:32:21,160
+ They are shipping a lot back.
+
+546
+0:32:23,160 --> 0:32:23,400
+ Anyway.
+
+547
+0:32:24,400 --> 0:32:24,620
+ Cool.
+
+548
+0:32:24,620 --> 0:32:35,080
+ So, as I mentioned, we have our 3G connection from Global Connect, right?
+
+549
+0:32:39,900 --> 0:32:44,200
+ It's just, I'm pretty sure that we don't have a 3G connection.
+
+550
+0:32:44,860 --> 0:32:45,720
+ I'm pretty sure.
+
+551
+0:32:46,940 --> 0:32:48,800
+ And that's some...
+
+552
+0:32:48,800 --> 0:32:55,260
+ It's an interesting thing because when you order a 3G connection, the hardware is actually 10 gig.
+
+553
+0:32:55,360 --> 0:33:00,620
+ And then normally, or not normally, I don't know, they write somewhere in a switch or something
+
+554
+0:33:00,620 --> 0:33:02,840
+ that we should cap this at 3 gigabit.
+
+555
+0:33:03,640 --> 0:33:06,220
+ But apparently, misconfiguration and such.
+
+556
+0:33:08,580 --> 0:33:08,840
+ Yes.
+
+557
+0:33:08,940 --> 0:33:10,220
+ I was looking at this graph.
+
+558
+0:33:12,720 --> 0:33:14,700
+ When we got to this part here.
+
+559
+0:33:14,860 --> 0:33:17,300
+ I was looking at that.
+
+560
+0:33:17,560 --> 0:33:18,640
+ Nothing, nothing, nothing.
+
+561
+0:33:18,960 --> 0:33:20,220
+ Oh, something's happening.
+
+562
+0:33:21,340 --> 0:33:21,500
+ Hmm.
+
+563
+0:33:22,280 --> 0:33:24,540
+ Have pyjamas started their system now?
+
+564
+0:33:26,260 --> 0:33:29,400
+ And it turned out it would be some benchmarking in the habitat tent.
+
+565
+0:33:29,520 --> 0:33:29,980
+ Okay, fine.
+
+566
+0:33:30,240 --> 0:33:31,120
+ And I thought, okay.
+
+567
+0:33:31,600 --> 0:33:32,380
+ That's okay.
+
+568
+0:33:32,680 --> 0:33:35,240
+ They're using 1 gig here, 2 gig...
+
+569
+0:33:35,240 --> 0:33:36,720
+ 1 gig down, 2 gig up.
+
+570
+0:33:37,140 --> 0:33:38,700
+ That's okay, right?
+
+571
+0:33:39,380 --> 0:33:41,340
+ And then a bit later...
+
+572
+0:33:41,340 --> 0:33:44,180
+ Oh, okay, fine.
+
+573
+0:33:44,260 --> 0:33:44,840
+ They turned on something.
+
+574
+0:33:44,840 --> 0:33:45,440
+ Something extra.
+
+575
+0:33:46,000 --> 0:33:46,780
+ And that's very cool.
+
+576
+0:33:47,220 --> 0:33:49,120
+ This was Labitat playing with...
+
+577
+0:33:49,120 --> 0:33:52,480
+ I actually don't know, but it's probably benchmarking because...
+
+578
+0:33:52,480 --> 0:33:52,960
+ iPerf.
+
+579
+0:33:53,440 --> 0:33:54,380
+ iPerf, yes.
+
+580
+0:33:55,000 --> 0:34:01,820
+ The good thing about speed testing big connections is that you move a lot of data and it's basically useless.
+
+581
+0:34:03,280 --> 0:34:05,660
+ Unless, of course, you speed test speed tests.
+
+582
+0:34:08,820 --> 0:34:10,720
+ Which looks like this.
+
+583
+0:34:11,060 --> 0:34:12,540
+ No, this is not speed test, speed test.
+
+584
+0:34:12,540 --> 0:34:13,540
+ This is apparently...
+
+585
+0:34:14,840 --> 0:34:18,120
+ 10 Raspberry Pis doing iPerf or speed test or something.
+
+586
+0:34:19,120 --> 0:34:21,600
+ So, I'm thinking...
+
+587
+0:34:21,600 --> 0:34:22,460
+ Do you remember before?
+
+588
+0:34:22,600 --> 0:34:24,160
+ Let's just go back before.
+
+589
+0:34:25,920 --> 0:34:27,680
+ This is Labitat playing, right?
+
+590
+0:34:30,380 --> 0:34:32,480
+ And this is pyjamas playing.
+
+591
+0:34:33,900 --> 0:34:35,720
+ You don't have a competition, do you?
+
+592
+0:34:38,280 --> 0:34:39,840
+ So, basically...
+
+593
+0:34:40,460 --> 0:34:42,840
+ And if you look at the number down here...
+
+594
+0:34:42,840 --> 0:34:46,900
+ 9.76 gigabits.
+
+595
+0:34:47,600 --> 0:34:50,300
+ I think it's going to be very hard to get...
+
+596
+0:34:50,300 --> 0:34:51,480
+ This is five minutes averages.
+
+597
+0:34:52,260 --> 0:34:53,400
+ This is not peaks.
+
+598
+0:34:53,480 --> 0:34:55,340
+ This is not maximum values for a second or something.
+
+599
+0:34:55,560 --> 0:34:56,680
+ This is five minutes averages.
+
+600
+0:34:58,000 --> 0:35:00,660
+ I'm pretty sure we're never going to see 10 on this one.
+
+601
+0:35:00,740 --> 0:35:02,840
+ I think this is so close to max that it's...
+
+602
+0:35:04,000 --> 0:35:04,520
+ Yeah.
+
+603
+0:35:04,520 --> 0:35:12,440
+ I think we can conclude that we actually did fill all the upload capabilities on this camp.
+
+604
+0:35:12,840 --> 0:35:13,640
+ All 10 gigs.
+
+605
+0:35:14,000 --> 0:35:20,980
+ The 20 second averages is peaked out at 9.961.
+
+606
+0:35:21,240 --> 0:35:21,480
+ Okay.
+
+607
+0:35:28,960 --> 0:35:31,660
+ I think that's close enough to 10 gigs for me.
+
+608
+0:35:33,120 --> 0:35:36,500
+ So, now I can go to Tykling and say...
+
+609
+0:35:36,500 --> 0:35:37,320
+ Look, Tykling.
+
+610
+0:35:37,700 --> 0:35:39,640
+ We obviously need 10 gig.
+
+611
+0:35:41,440 --> 0:35:41,840
+ Yeah.
+
+612
+0:35:42,300 --> 0:35:42,560
+ Yeah.
+
+613
+0:35:42,840 --> 0:35:43,800
+ Maybe not.
+
+614
+0:35:43,900 --> 0:35:44,180
+ But anyway.
+
+615
+0:35:44,840 --> 0:35:51,240
+ So, this is what happened over there at the end.
+
+616
+0:35:51,480 --> 0:35:55,540
+ Was that apparently someone could not install our Linux server.
+
+617
+0:35:55,720 --> 0:35:59,600
+ So, somebody talked to Pyjamas about stopping something.
+
+618
+0:36:00,060 --> 0:36:02,960
+ And then suddenly we had a drop of 8 gigabits per second.
+
+619
+0:36:03,420 --> 0:36:05,920
+ So, it might have been Pyjamas doing these things.
+
+620
+0:36:06,780 --> 0:36:07,340
+ Anyway.
+
+621
+0:36:07,340 --> 0:36:07,420
+ Thank you.
+
+622
+0:36:12,840 --> 0:36:14,120
+ Sorry.
+
+623
+0:36:14,520 --> 0:36:15,920
+ What about the fear that was promised?
+
+624
+0:36:17,840 --> 0:36:19,160
+ Let me get back to that one.
+
+625
+0:36:19,260 --> 0:36:21,000
+ That's actually what I'm going to close off by.
+
+626
+0:36:24,220 --> 0:36:24,640
+ Fine.
+
+627
+0:36:25,520 --> 0:36:27,340
+ This is actually the last slide apparently.
+
+628
+0:36:29,540 --> 0:36:29,940
+ Okay.
+
+629
+0:36:29,940 --> 0:36:40,780
+ So, we had this agreement with Pyjamas about filling the bandwidth with bandwidth usage
+
+630
+0:36:40,780 --> 0:36:42,660
+ for the common good we agreed on.
+
+631
+0:36:42,840 --> 0:36:48,520
+ And very intentionally it was just super vague because I saw what they were doing last year
+
+632
+0:36:48,520 --> 0:36:50,860
+ and just let them do their thing.
+
+633
+0:36:50,960 --> 0:36:51,700
+ See what happens.
+
+634
+0:36:52,320 --> 0:36:53,320
+ But apparently...
+
+635
+0:36:53,320 --> 0:36:58,620
+ Because I actually know that using a lot of bandwidth just for single services is actually
+
+636
+0:36:58,620 --> 0:37:02,320
+ not that simple unless you do speed tests.
+
+637
+0:37:03,500 --> 0:37:07,720
+ That's just a sure way of using insane amounts of bandwidth and it's just...
+
+638
+0:37:07,720 --> 0:37:07,980
+ Yeah.
+
+639
+0:37:09,400 --> 0:37:10,220
+ It's not...
+
+640
+0:37:10,220 --> 0:37:11,900
+ In my opinion, it's just a waste.
+
+641
+0:37:11,900 --> 0:37:12,300
+ And it's just...
+
+642
+0:37:12,300 --> 0:37:15,300
+ It's close to how I feel about pixel flood.
+
+643
+0:37:15,300 --> 0:37:16,300
+ It's just...
+
+644
+0:37:16,300 --> 0:37:17,300
+ Oh, it's just so stupid.
+
+645
+0:37:17,300 --> 0:37:18,300
+ Come on.
+
+646
+0:37:19,300 --> 0:37:21,720
+ But it's on the internal network and nice.
+
+647
+0:37:21,720 --> 0:37:22,720
+ It's okay.
+
+648
+0:37:22,720 --> 0:37:26,440
+ We can test if the equipment can actually handle all this line and nothing leaks out
+
+649
+0:37:26,440 --> 0:37:27,960
+ or blinds people or something.
+
+650
+0:37:27,960 --> 0:37:29,480
+ So let's send a lot of packages that way.
+
+651
+0:37:29,480 --> 0:37:31,140
+ And as long as it's internal, I don't care.
+
+652
+0:37:31,140 --> 0:37:33,960
+ I just think people really like it.
+
+653
+0:37:33,960 --> 0:37:38,940
+ So that I think it's lame is just me not understanding what all the young people want in this world
+
+654
+0:37:38,940 --> 0:37:39,940
+ or something.
+
+655
+0:37:40,940 --> 0:37:41,940
+ So.
+
+656
+0:37:41,940 --> 0:37:42,680
+ It's just...
+
+657
+0:37:42,680 --> 0:37:43,680
+ I think we need to do a little juices for the common good.
+
+658
+0:37:43,680 --> 0:37:47,460
+ When we see what the torrent did, I think that would be common good.
+
+659
+0:37:47,460 --> 0:37:52,300
+ But if you set something up, a torrent that pulls 10 gigs, which is...
+
+660
+0:37:52,300 --> 0:37:53,640
+ Yeah, about that.
+
+661
+0:37:53,640 --> 0:37:57,580
+ So we have not been throttling anyone this year.
+
+662
+0:37:57,580 --> 0:38:03,620
+ We need to do a bit of the core switch to QFX is need a firmware upgrade that we're
+
+663
+0:38:03,620 --> 0:38:09,680
+ going to do after camp so that next year we can have some solid quality of service so
+
+664
+0:38:09,680 --> 0:38:10,940
+ that we can just say, this is for us.
+
+665
+0:38:10,940 --> 0:38:11,940
+ I don't know.
+
+666
+0:38:11,940 --> 0:38:18,500
+ normal people. This is for the talk tent. This is for the knock team. Prioritize them,
+
+667
+0:38:18,500 --> 0:38:23,700
+ all the important parts. And then everybody with 10 gigs to their tents, hey, go do your
+
+668
+0:38:23,700 --> 0:38:28,520
+ thing. And that's something we're going to set up next year.
+
+669
+0:38:28,520 --> 0:38:34,420
+ But looking at what the pyjamas did, I was looking at the graphs thinking, now they turned
+
+670
+0:38:34,420 --> 0:38:39,860
+ it on. Now they turned it on. I was just so sad that you didn't succeed in your little
+
+671
+0:38:39,860 --> 0:38:43,840
+ pet project. I was just so sad that it didn't happen.
+
+672
+0:38:43,840 --> 0:38:51,640
+ But it's just fine. We can call it competition, so we won by having a misconfiguration at
+
+673
+0:38:51,640 --> 0:38:58,180
+ Global Connect. Yeah, OK, fine. If we did not have that misconfiguration, you guys were
+
+674
+0:38:58,180 --> 0:39:04,780
+ able to use your Raspberry Pi system to actually saturate the system. I think that would be
+
+675
+0:39:04,780 --> 0:39:08,780
+ interesting to see. So next year, I really want you guys to try again.
+
+676
+0:39:08,780 --> 0:39:09,780
+ I do not.
+
+677
+0:39:09,780 --> 0:39:13,560
+ And I think I perhaps need to discuss this a bit with Orca or the other NOC team,
+
+678
+0:39:13,700 --> 0:39:17,020
+ but this could actually be a recurring competition.
+
+679
+0:39:17,300 --> 0:39:19,180
+ I would have no issues with that.
+
+680
+0:39:19,180 --> 0:39:24,120
+ So we could use all these bandwidths for something good that benefits the world and go for it, right?
+
+681
+0:39:24,900 --> 0:39:34,980
+ So actually, the last question here is, so most of you have also saw the talk by Aspian about what Pyjamas did.
+
+682
+0:39:35,400 --> 0:39:38,440
+ So should they get a consolation prize?
+
+683
+0:39:38,540 --> 0:39:38,960
+ What do you think?
+
+684
+0:39:39,780 --> 0:39:40,020
+ Yeah!
+
+685
+0:39:52,160 --> 0:39:58,800
+ As opposed to popular belief, I actually organized this a week ago because I truly believed in you guys,
+
+686
+0:39:58,980 --> 0:40:03,220
+ but this is a prize that you can get anyway.
+
+687
+0:40:09,780 --> 0:40:11,940
+ Thank you.
+
+688
+0:40:11,940 --> 0:40:12,000
+ Thank you.
+
+689
+0:40:18,540 --> 0:40:19,100
+ Yes.
+
+690
+0:40:19,640 --> 0:40:24,840
+ So let's see if we have this recurring competition.
+
+691
+0:40:25,400 --> 0:40:31,960
+ And if it becomes a recurring competition, I think that there might actually be configuration stuff for the NOC team to do,
+
+692
+0:40:32,320 --> 0:40:33,700
+ also known as work.
+
+693
+0:40:34,840 --> 0:40:35,920
+ Sorry, guys.
+
+694
+0:40:36,800 --> 0:40:38,020
+ Yeah, silly me.
+
+695
+0:40:38,020 --> 0:40:39,540
+ Oh, that's poor management.
+
+696
+0:40:39,780 --> 0:40:40,920
+ Yeah, okay, fine.
+
+697
+0:40:42,100 --> 0:40:46,880
+ Anyway, that was what I wanted to talk about in this presentation.
+
+698
+0:40:47,620 --> 0:40:49,300
+ Do you guys have any questions?
+
+699
+0:40:51,400 --> 0:40:56,280
+ Glad to see the network team declaring war against one village and then bribing them with Zewa Pluto,
+
+700
+0:40:56,420 --> 0:40:57,720
+ but let's take some questions here.
+
+701
+0:40:57,800 --> 0:40:58,840
+ This is BornHack.
+
+702
+0:41:00,940 --> 0:41:07,280
+ I didn't see the numbers, but how much did we download in total over the duration of BornHack?
+
+703
+0:41:08,280 --> 0:41:08,760
+ Yes.
+
+704
+0:41:09,780 --> 0:41:11,840
+ I actually found that graph, two seconds.
+
+705
+0:41:11,960 --> 0:41:13,420
+ It's actually on the very first slide.
+
+706
+0:41:19,420 --> 0:41:24,460
+ So it's here.
+
+707
+0:41:24,820 --> 0:41:27,020
+ Total of, well, 92 terabytes.
+
+708
+0:41:27,160 --> 0:41:28,260
+ This was last evening.
+
+709
+0:41:29,480 --> 0:41:34,200
+ So we have 60 terabytes inbound and 30 terabytes outbound.
+
+710
+0:41:35,960 --> 0:41:37,560
+ It's a bit more than I use at home.
+
+711
+0:41:39,780 --> 0:41:42,020
+ Repeat, please.
+
+712
+0:41:45,940 --> 0:41:46,420
+ Yes.
+
+713
+0:41:50,420 --> 0:41:53,040
+ The NOC team told Pyjamas to stop.
+
+714
+0:41:53,800 --> 0:41:54,980
+ How is that not winning?
+
+715
+0:41:55,720 --> 0:41:59,940
+ It's because, actually, we had a discussion about this.
+
+716
+0:42:00,420 --> 0:42:05,160
+ It had to be bandwidth usage for the common good, not just bandwidth usage.
+
+717
+0:42:06,840 --> 0:42:09,520
+ And this thing about running speed tests to see,
+
+718
+0:42:09,520 --> 0:42:12,620
+ if you could reach 10 gig, is not for the common good.
+
+719
+0:42:13,820 --> 0:42:16,720
+ So I'm pretty sure that we are aligned on this one.
+
+720
+0:42:17,060 --> 0:42:22,580
+ So there was nobody complaining when we told them to stop it because they knew that, yeah.
+
+721
+0:42:25,840 --> 0:42:29,080
+ Just we expect to have these QFXs next year,
+
+722
+0:42:29,160 --> 0:42:33,660
+ and we will probably have 10 gig ports enough for just about everyone that needs it.
+
+723
+0:42:33,720 --> 0:42:35,760
+ So bring 10 gig switches next year.
+
+724
+0:42:36,100 --> 0:42:38,580
+ You should expect that it's a single mode fiber,
+
+725
+0:42:38,580 --> 0:42:39,500
+ and you should bring.
+
+726
+0:42:39,580 --> 0:42:40,580
+ Bring that yourself.
+
+727
+0:42:40,580 --> 0:42:43,980
+ And then if you can bring two optics, then you are insured a port,
+
+728
+0:42:43,980 --> 0:42:45,780
+ because then we have the ports available.
+
+729
+0:42:46,120 --> 0:42:50,760
+ But at least bring 10 gig switches with two optics, one single mode fiber.
+
+730
+0:42:50,980 --> 0:42:53,180
+ And if you have a 100 meter cable, that should be enough.
+
+731
+0:42:53,660 --> 0:42:58,720
+ And I will make sure to bring at least 20 10 gig ports for the party area.
+
+732
+0:42:59,020 --> 0:43:02,320
+ So if you want to be insured to have 10 gig, come to the party area.
+
+733
+0:43:04,420 --> 0:43:04,920
+ Yes.
+
+734
+0:43:05,320 --> 0:43:06,220
+ Any other questions?
+
+735
+0:43:06,680 --> 0:43:08,160
+ Fiber to the tent for the win.
+
+736
+0:43:08,260 --> 0:43:08,760
+ Yes.
+
+737
+0:43:08,760 --> 0:43:09,260
+ Yes.
+
+738
+0:43:09,980 --> 0:43:10,480
+ Yes.
+
+739
+0:43:10,900 --> 0:43:12,760
+ Let's give a huge round of applause to the network team.
