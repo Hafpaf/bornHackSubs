@@ -42,8 +42,16 @@ Setup and use the [ASR subtitles](https://github.com/Hafpaf/ASR_subtitles) tool 
 
 ### Numbers
 
-For future reference, it took an Nvidia RTX A4000 GPU with the medium Whisper model 118 minutes to transcribe the following videos (2023-11-10):
+Computational numbers for future references
 
+
+**BornHack 2023**
+
+It took an Nvidia RTX A4000 GPU following amount of time:
+- Medium model time: 1 hour and 58 minutes (2023-11-10)
+- Large model time: 2 hours and 50 minutes (2023-11-12)
+
+Following videos where transcribed
 - import-56116-eng-Chat_Control_-_the_next_months_will_be_critical_hd.mp4
 - import-56117-eng-Surely_FOSS_has_no_technical_debt_Right_Right_hd.mp4
 - import-56118-eng-An_introduction_to_digital_consent_Why_a_new_definition_with_new_tools_and_specifications_are_needed_hd.mp4
@@ -60,3 +68,9 @@ For future reference, it took an Nvidia RTX A4000 GPU with the medium Whisper mo
 - import-56143-eng-SimpleX_Chat_-_Simple_Messaging_With_Unusually_Good_Privacy_hd.mp4
 - import-56144-eng-All_APIs_suck_can_we_build_one_that_sucks_less_hd.mp4
 - import-56145-eng-How_to_create_better_content_videos_faster_with_OBS_hd.mp4
+
+**BornHack 2022**
+
+Transcription of all recorded BornHack 2022 talks with the large Whipser model, took 4 hours and 2 minutes (2023-11-12).
+
+- GPU: Nvidia GTX A4000
