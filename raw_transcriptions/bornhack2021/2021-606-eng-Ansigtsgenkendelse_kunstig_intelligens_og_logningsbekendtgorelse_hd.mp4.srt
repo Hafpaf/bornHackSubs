@@ -1,0 +1,6683 @@
+# Transcribed 2023-11-14T22 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:29,980
+ Danske tekster af Nicolai Winther
+
+2
+0:00:30,000 --> 0:00:59,980
+ Nicolai Winther
+
+3
+0:01:00,660 --> 0:01:05,960
+ Vi har tre emler, vi gerne vil berøre i den her diskussion omkring det her.
+
+4
+0:01:06,060 --> 0:01:13,120
+ Den ene handler om ansigtsgenkendelse, som det første, som er et begreb, som er kommet ud i den her verden lige i øjeblikket.
+
+5
+0:01:13,720 --> 0:01:19,120
+ Et af de steder, hvor det er blevet meget præsent, det har været hos Kvickly i Næstved.
+
+6
+0:01:19,980 --> 0:01:27,960
+ Der er en del af kunderne med i et forsøg, som ligner et uangående skridt ind i fremtiden for den danske supermarkedsbranche, som BT har skrevet.
+
+7
+0:01:27,960 --> 0:01:35,660
+ Den første del af det her forsøg, det er en nedkølet pakkeboks, hvor man kan afhente de varer, man har bestilt på kubemad.dk.
+
+8
+0:01:36,240 --> 0:01:40,140
+ Den anden del af det her forsøg, det er et kamera, der sidder inde i den her boks.
+
+9
+0:01:40,900 --> 0:01:47,480
+ Den her kamera vurderer dit ansigt, når du står og taster din pakkekode for at åbne lågen til de varer, som du er kommet ned for at hente.
+
+10
+0:01:47,700 --> 0:01:57,000
+ Hvis du har købt alkohol, så vil det, som BT kalder for det højt intelligente kamera, det vil vurdere, om du er gammel nok til at få dine varer udleveret.
+
+11
+0:01:57,000 --> 0:01:57,760
+ Det har man så lavet.
+
+12
+0:01:57,760 --> 0:02:03,680
+ De har lavet en eller anden frygtelig masse ansigtsscanninger, hvor de så påstår, at den kan vurdere, hvor gammel man er i de her sammenhænge.
+
+13
+0:02:04,020 --> 0:02:07,280
+ Jeg vil egentlig gerne starte med dig, Pia Testerhoff. Du er databeskyttelsesrådgiver.
+
+14
+0:02:07,380 --> 0:02:10,640
+ Er det fremtiden, som man siger?
+
+15
+0:02:11,440 --> 0:02:12,700
+ Det håber jeg sandelig ikke.
+
+16
+0:02:15,920 --> 0:02:23,380
+ Det giver ikke rigtig nogen mening, at det skulle være et fremskridt i forhold til kundens behov.
+
+17
+0:02:23,380 --> 0:02:27,160
+ Altså en kode på en sms fungerer fint.
+
+18
+0:02:27,760 --> 0:02:29,760
+ Man kan ikke rigtig se berettigelsen for det.
+
+19
+0:02:29,760 --> 0:02:41,440
+ Men først og fremmest, hvis vi begynder at scanne ansigter, hvis vi taler om sensitive personoplysninger som biometriske data, så er det virkelig problematisk.
+
+20
+0:02:41,440 --> 0:02:57,520
+ Det, som jeg har læst mig til, og jeg kan ikke udtale mig om det, hvordan det fungerer i virkeligheden, men det jeg har læst mig til, hvis det er en algoritme, der skal gætte, hvor gammel vi er, som vi har set også i salgingruppen ved selvscanningskassen.
+
+21
+0:02:57,760 --> 0:03:02,780
+ Så er det jo en algoritme, og så er det en aflæsning af vores ansigt.
+
+22
+0:03:03,880 --> 0:03:07,940
+ Og det skal vi selvfølgelig selv indvilde i, før vi bliver stillet over for det.
+
+23
+0:03:08,940 --> 0:03:14,340
+ Så det er helt klart, at man afprøver grænserne, og de bliver hårdt afprøvet i øjeblikket.
+
+24
+0:03:14,560 --> 0:03:17,440
+ Ikke kun i supermarkeder, men også i fitnesscenter.
+
+25
+0:03:18,500 --> 0:03:22,240
+ Og jeg vil sige, at det kan jeg slet ikke bedømme, hvordan det fungerer i praksis.
+
+26
+0:03:22,240 --> 0:03:27,240
+ Jeg kan analysere på det, og så må vi på et tidspunkt, jeg er helt sikker på, at datatilsynet...
+
+27
+0:03:27,760 --> 0:03:28,960
+ ...kommer ind over min afgørelse.
+
+28
+0:03:29,540 --> 0:03:32,920
+ Et af de eksempler, du nævner med fitnesscenter, det er for eksempel det, der hedder JustFace.
+
+29
+0:03:33,280 --> 0:03:38,940
+ De har fortalt børsen, at de har kameraer i 30 danske fitnesscenter, som scanner kundernes ansigter...
+
+30
+0:03:38,940 --> 0:03:42,680
+ ...og som sagt hjælper med at holde øje med, om kunden har betalt.
+
+31
+0:03:43,420 --> 0:03:47,240
+ Det må man vel betyde, at man identificerer folk, når de kommer ind?
+
+32
+0:03:47,520 --> 0:03:52,540
+ Jamen det gør det jo. Og det gør det jo også, før man overhovedet når at tegne sig op til det.
+
+33
+0:03:52,540 --> 0:03:56,540
+ Det skal jeg ikke kunne sige, men altså igen, det er sådan en...
+
+34
+0:03:57,760 --> 0:04:03,280
+ Altså det er jo nogle principper, det er jo ikke kun et spørgsmål om lovgivning, det er jo også et spørgsmål om dataetik.
+
+35
+0:04:03,500 --> 0:04:04,320
+ Altså hvorfor gør man det?
+
+36
+0:04:04,420 --> 0:04:08,920
+ Altså JustFace siger for eksempel, at det er for at gøre administrationen nemmere for medarbejderne.
+
+37
+0:04:08,980 --> 0:04:12,040
+ De bedre kan overskue, om dem, der kommer ind, at de snyder, eller at de ikke snyder, osv.
+
+38
+0:04:12,240 --> 0:04:17,880
+ Altså igen, hvis de havde noget mere personal, ligesådan i supermarkedet, så ville der slet ikke være behov for det.
+
+39
+0:04:17,880 --> 0:04:27,720
+ Så den der lignekultur, det er jo uanset, om det er online købmænd, eller det er et supermarked, man går ned i, eller et fitnesscenter.
+
+40
+0:04:27,840 --> 0:04:33,900
+ Så prøver de virkelig grænserne hårdt, og jeg mener, at de træder langt over grænserne for, hvad lovgivningen kan tillade.
+
+41
+0:04:34,300 --> 0:04:42,020
+ Med samtidig, at du sidder der som næstformand i HK Kommunal, så er der jo en del af de mennesker af dit forbrug, som bliver berørt af det her.
+
+42
+0:04:42,020 --> 0:04:48,960
+ Altså hvis det for eksempel ender med at være den mest ekstreme model, det er Amazons, hvor man simpelthen betjener sig selv ved at bare gå ind i butikken,
+
+43
+0:04:49,020 --> 0:04:53,280
+ og så tager man de ting, man skal bruge, og så går man igen uden overhovedet at møde nogen mennesker.
+
+44
+0:04:53,660 --> 0:04:56,020
+ Så ryger en stor del af administrationen, og vel også kassemedarbejderne.
+
+45
+0:04:56,080 --> 0:04:57,700
+ Hvordan ser I på teknologier?
+
+46
+0:04:57,760 --> 0:05:01,040
+ Jamen, det er jo rigtigt.
+
+47
+0:05:02,260 --> 0:05:13,120
+ Automatisering bliver jo i høj grad brugt til at sige, hvordan kan vi gøre noget så effektivt og uden at bruge så få medarbejdere som overhovedet muligt.
+
+48
+0:05:13,220 --> 0:05:16,600
+ Det gør vi både i supermarkeder og i fitnesscenter.
+
+49
+0:05:16,800 --> 0:05:23,100
+ Vi gør det i den offentlige forvaltning, som vi også kommer til at diskutere mere under det næste tema, hvor vi har noget mere politik.
+
+50
+0:05:23,100 --> 0:05:27,500
+ En lille disclaimer her er, at der er jo rigtig meget af det her, vi ikke har.
+
+51
+0:05:27,760 --> 0:05:33,220
+ Der er jo ikke noget decideret politik på i HK, men jeg tør godt at mene noget om det alligevel.
+
+52
+0:05:33,220 --> 0:05:46,720
+ Og det er jo i allerhøjeste grad et spørgsmål om, hvordan kan vi effektivisere det her, hvordan kan vi undgå at sætte medarbejdere til at være med til at vurdere det her, som Pia også er inde på.
+
+53
+0:05:46,720 --> 0:05:54,060
+ Og der synes jeg sådan set, ud fra en servicetilgang, kunne man jo netop også vælge at sige, jamen vi skal rent faktisk have nogle medarbejdere.
+
+54
+0:05:54,060 --> 0:05:56,260
+ Og så kunne vi jo undgå nogle af alle de medarbejdere, der er uden at bruge det her.
+
+55
+0:05:56,260 --> 0:05:57,220
+ Og så kunne vi jo undgå nogle af alle de medarbejdere, der er uden at bruge det her.
+
+56
+0:05:57,220 --> 0:06:04,100
+ Og så kunne vi jo undgå nogle af alle de medarbejdere, der er uden at bruge det her.
+
+57
+0:06:04,100 --> 0:06:16,400
+ Og så kunne vi jo undgå nogle af alle de medarbejdere, der er uden at bruge det her.
+
+58
+0:06:16,400 --> 0:06:23,020
+ Altså jeg synes det er dybt, dybt problematisk, og jeg synes der er nogle meget meget væsentlige etiske problemstillinger ved det her.
+
+59
+0:06:23,020 --> 0:06:26,100
+ Som vi er nødt til at være sat deles opmærksomhed på.
+
+60
+0:06:26,100 --> 0:06:27,100
+ Som er problematiske selv.
+
+61
+0:06:27,100 --> 0:06:33,560
+ som forbund, både i forhold til, hvad er det for en butik, man går ind i,
+
+62
+0:06:33,640 --> 0:06:37,700
+ hvordan er man stillet som kunde, men i allerhøjeste grad også for os som faglig organisation,
+
+63
+0:06:38,120 --> 0:06:39,720
+ hvordan er man stillet der som medarbejder.
+
+64
+0:06:39,820 --> 0:06:42,000
+ Og der kan jeg sagtens se nogle problemer på det her,
+
+65
+0:06:42,400 --> 0:06:48,020
+ fordi der kan du jo også gå ind og sige, jamen så laver vi ansigtsgenkendelse af kassemedarbejderen,
+
+66
+0:06:48,020 --> 0:06:50,960
+ i stedet for at de biber sig ind med et kort eller alt muligt.
+
+67
+0:06:51,100 --> 0:06:53,700
+ Og lige pludselig så begynder du altså at indsamle rigtig, rigtig mange data,
+
+68
+0:06:53,700 --> 0:06:57,120
+ som du kan bruge til rigtig, rigtig mange ting, hvis man gerne vil det.
+
+69
+0:06:58,080 --> 0:07:02,800
+ Og der er klart risiko for blidebaner, jeg synes allerede,
+
+70
+0:07:03,100 --> 0:07:06,200
+ at altså som Pia siger, jamen man prøver jo også nogle ting af,
+
+71
+0:07:06,240 --> 0:07:09,740
+ og man prøver nogle ting af til en ekstrem, og hvor går grænsen?
+
+72
+0:07:09,820 --> 0:07:12,660
+ Og hver gang du prøver en grænse af, så flytter du en grænse,
+
+73
+0:07:12,960 --> 0:07:15,520
+ og så kan du tage en næste skridt, og det synes jeg er dybt problematisk.
+
+74
+0:07:15,620 --> 0:07:20,040
+ Hvis jeg bare lige kort følger op på det, kan du se noget positivt ved den her teknologi,
+
+75
+0:07:20,100 --> 0:07:21,500
+ som man måske kan bruge det til i fremtiden?
+
+76
+0:07:23,700 --> 0:07:29,080
+ Måske. Altså det er, hvad den skal træde i stedet for, og det er det, jeg synes, der er uklart.
+
+77
+0:07:29,500 --> 0:07:35,240
+ Altså jeg synes, man skal bruge teknologi i det omfang, det giver mening,
+
+78
+0:07:36,020 --> 0:07:40,000
+ og man skal være meget klar på, hvad er det, vi skal bruge den her teknologi til,
+
+79
+0:07:40,000 --> 0:07:42,520
+ og jeg synes faktisk i øjeblikket, at det er lidt uklart.
+
+80
+0:07:43,260 --> 0:07:48,300
+ Jeg vil ikke afvise, at det her godt kan give mening i visse sammenhænge,
+
+81
+0:07:48,800 --> 0:07:52,500
+ men lige nu har jeg altså ret svært ved at se det.
+
+82
+0:07:53,700 --> 0:07:54,600
+ Søstof, du havde en kommentar.
+
+83
+0:07:55,440 --> 0:08:00,880
+ Ja, men det er fordi, altså når vi taler om de her emner, så ser vi ofte meget isoleret på det,
+
+84
+0:08:01,200 --> 0:08:05,140
+ altså nu taler vi lige om, er det i orden, og er det ansigtsgenkendelse,
+
+85
+0:08:05,260 --> 0:08:07,060
+ eller er det billedgenkendelse, eller hvad er det for noget.
+
+86
+0:08:09,020 --> 0:08:14,400
+ Men når jeg analyserer på supermarkedet, så analyserer jeg på apps og på websider,
+
+87
+0:08:15,220 --> 0:08:19,380
+ og det vil sige, at det her, det er kun i forlængelse af, hvad der foregår i supermarkedet i forvejen.
+
+88
+0:08:20,080 --> 0:08:23,680
+ Altså når supermarkedet har en app, som tager en hel del data,
+
+89
+0:08:23,700 --> 0:08:25,420
+ fra vores mobiltelefon.
+
+90
+0:08:26,360 --> 0:08:29,220
+ Problemet, jeg må lige sige i parenthes, problemet er jo sådan lidt,
+
+91
+0:08:29,420 --> 0:08:37,720
+ at den måde vores apps fungerer på, der fungerer de ved, at vi kan sige nej tak til nogle tilladelser.
+
+92
+0:08:38,460 --> 0:08:43,000
+ Men det er jo ganske begrænset, hvad vi kan sige nej tak til, fordi det er tilladelserne,
+
+93
+0:08:43,260 --> 0:08:47,500
+ men vi kan ikke, vi kan end ikke se, altså almindelige mennesker på deres mobiltelefon,
+
+94
+0:08:47,820 --> 0:08:52,340
+ kan ikke se, de er ikke designet til, at vi kan se third party trackers, som jeg kalder det.
+
+95
+0:08:53,700 --> 0:09:03,900
+ Som, som griber ind i, hvad skal man sige, ind i, ikke kun ind i vores app brug i forhold til et supermarked,
+
+96
+0:09:03,900 --> 0:09:06,900
+ men også til vores lokation og alt muligt andet.
+
+97
+0:09:06,900 --> 0:09:11,540
+ Og der har jeg lavet en analyse af otte supermarkeder her i foråret, i maj måned,
+
+98
+0:09:11,540 --> 0:09:16,740
+ hvor jeg har skrevet, hvilke trackers der er til hvilke store big tech firmaer.
+
+99
+0:09:16,740 --> 0:09:22,360
+ Fordi problemet er jo, at de her apps bliver bundet op på nogle platforme, f.eks. Firebase fra Google.
+
+100
+0:09:22,360 --> 0:09:26,260
+ Men de kan også have til Facebook, og de kan have til alle mulige.
+
+101
+0:09:26,260 --> 0:09:34,460
+ Og det er derfor, jeg prøver at analysere third party trackers, fordi det er meget godt, at vi får lov til at sige nej tak til tre eller fem tilladelser,
+
+102
+0:09:34,460 --> 0:09:41,560
+ f.eks. specifik lokation. Det kan godt være, at vi får lov til det, men vi får end ikke lov til at se third party trackers.
+
+103
+0:09:41,560 --> 0:09:48,860
+ Og det synes jeg er ret væsentligt. Og det er også ret væsentligt, f.eks. at vi alle sammen render rundt med Bluetooth eller Wi-Fi åben,
+
+104
+0:09:48,860 --> 0:09:59,160
+ og at supermarkedet så kan sige, aha, det er det Mac-nummer, eller det er det, altså registreres på vores device-ID'er.
+
+105
+0:09:59,160 --> 0:10:05,560
+ Så når vi taler om det her med, om ansigtsgenkendelse er i orden i supermarkedet, så er det ikke det eneste.
+
+106
+0:10:05,560 --> 0:10:11,760
+ Vi er nødt til at se, at vi som kunder, når vi går ind på en webside, at lovgivningen ikke bliver overholdt.
+
+107
+0:10:11,760 --> 0:10:17,760
+ Og vi er nødt til at se, at når vi bruger deres apps, så er de heller ikke indrettelige i forhold til lovgivningen.
+
+108
+0:10:17,760 --> 0:10:20,960
+ Og det kan jeg sige helt klart og uden tvivl.
+
+109
+0:10:20,960 --> 0:10:30,160
+ Så for mig at se, at det her er en forlængelse af en teknologi, som Google og Apple stiller til rådighed, og som vi ikke kan gennemskue,
+
+110
+0:10:30,160 --> 0:10:33,760
+ men supermarkederne, som laver markedsføring på os, kan godt gennemskue det.
+
+111
+0:10:33,760 --> 0:10:43,460
+ Og det var derfor, jeg skrev sidste år, at med den her nye U1-chip Ultra Wideband, som er kommet de nyeste telefoner i forskellige mærker,
+
+112
+0:10:43,460 --> 0:10:49,660
+ der vil supermarkederne kunne se, hvilken hylde vi står foran, hvis de har beacons i butikkerne.
+
+113
+0:10:49,660 --> 0:10:54,660
+ Og vi får jo ikke at vide, når vi går ind i et supermarked, om der er beacons på de forskellige hylder.
+
+114
+0:10:54,660 --> 0:10:57,660
+ Hvor lang tid vi står det ene sted, og det andet sted, og det tredje sted.
+
+115
+0:10:57,660 --> 0:11:03,860
+ Det er jo ikke den slags gennemsigtighed, vi skal have, når vi taler om rettigheder.
+
+116
+0:11:03,860 --> 0:11:10,860
+ Ikke kun som kunder, men i forhold til HK-medarbejdere, der vil jeg sige det sådan, at i mange år har der været CCTV'er.
+
+117
+0:11:10,860 --> 0:11:11,460
+ Og vi så jo med, var det højt? Ja.
+
+118
+0:11:11,460 --> 0:11:11,560
+ Og vi så jo med, var det højt? Ja.
+
+119
+0:11:11,560 --> 0:11:11,660
+ Og vi så jo med, var det højt? Ja.
+
+120
+0:11:11,660 --> 0:11:20,660
+ Og vi så jo med, var det hollændere eller belgier, som satte op, de streamede fra, jeg tror, det hollandske parlaments.
+
+121
+0:11:20,660 --> 0:11:27,360
+ Og så kørte de simpelthen en AI ind over den streaming, som kom fra parlamentet.
+
+122
+0:11:27,360 --> 0:11:32,260
+ Og så kunne de jo lave ansigtsgenkendelser og adfærdsgenkendelser og alt muligt på den her.
+
+123
+0:11:32,260 --> 0:11:34,160
+ Altså efterfølgende.
+
+124
+0:11:34,160 --> 0:11:41,560
+ Så det er også noget, jeg har gjort opmærksom på, det er, at det her med, at vi diskuterer,
+
+125
+0:11:41,560 --> 0:11:50,560
+ som om, at et billede af os ikke er en sensitiv oplysning, ligesom vores øjenscanning eller vores ansigtsscanning.
+
+126
+0:11:50,560 --> 0:11:53,060
+ Jamen, det bliver det jo i og med, at teknologien kan gøre det.
+
+127
+0:11:53,060 --> 0:11:55,660
+ Ligeså snart man har billedet, så kan man faktisk gøre det.
+
+128
+0:11:55,660 --> 0:12:00,560
+ Jeg skal lige bare lige den der, du fortæller om der, det er jo en hollandsk kunstner, som jeg husker, der hedder Dries Deporter,
+
+129
+0:12:00,560 --> 0:12:03,960
+ som har lavet et fantastisk projekt, man kan gå ind og finde på Twitter.
+
+130
+0:12:03,960 --> 0:12:11,260
+ Fordi det, han har gjort, det må siges at være modekultur i forhold til det, vi taler om nu, fordi han har gjort det, at han har sat en algoritme op,
+
+131
+0:12:11,560 --> 0:12:19,560
+ som genkender, når en politiker sidder med en telefon med en smartphone under parlamentariske debatter.
+
+132
+0:12:19,560 --> 0:12:25,560
+ Og så laver han en automatisk optagelse af de her 10 sekunder, hvor de sidder med den her telefon,
+
+133
+0:12:25,560 --> 0:12:33,060
+ og så har han lavet et program, som auto-tweeter den video ud på nettet og siger, at nu sidder den og den politiker med det og det navn igen,
+
+134
+0:12:33,060 --> 0:12:36,060
+ og ikke er koncentreret om sit arbejde i parlamentet.
+
+135
+0:12:36,060 --> 0:12:39,060
+ Og det tror jeg nok giver en vis mængde af billedet.
+
+136
+0:12:39,060 --> 0:12:41,060
+ Vi livestreamer desværre ikke i Danmark,
+
+137
+0:12:41,060 --> 0:12:43,060
+ så vi kan ikke rigtig lave noget af tilsvarende herhjemme.
+
+138
+0:12:43,060 --> 0:12:47,060
+ Jeg skal lige høre dig, Henrik Kramshøj, har du nogle supermarkeds-apps i din telefon?
+
+139
+0:12:47,060 --> 0:12:55,060
+ Jeg har faktisk Coop-appen. Jeg var ansat 3,5 måneder i Coop og har stadigvæk appen, men jeg har holdt op med at bruge den simpelthen,
+
+140
+0:12:55,060 --> 0:13:01,060
+ fordi jeg netop heller ikke bryder mig om, at der bliver tracket, hvad jeg køber, hvad jeg bruger mine penge på, hvad jeg spiser af slik,
+
+141
+0:13:01,060 --> 0:13:03,060
+ hvor mange øl jeg drikker, hvor meget sukker jeg drikker.
+
+142
+0:13:03,060 --> 0:13:07,060
+ Vi har et kæmpestort problem med de data, som nu Pia var inde på.
+
+143
+0:13:07,060 --> 0:13:11,060
+ En af de ting, der også er vigtigt, synes jeg, ikke fordi det har noget at gøre med Coop,
+
+144
+0:13:11,060 --> 0:13:19,060
+ men det er, at de her firmaer har jo ikke selv ekspertise til at lave hverken video genkendelse eller bilkons eller det ene og det andet.
+
+145
+0:13:19,060 --> 0:13:27,060
+ Så det betyder, at der altid er en eller anden tredjepart indover, som jo altid er en eller anden startup, der har en fantastisk idé om at lave et eller andet indgribende.
+
+146
+0:13:27,060 --> 0:13:31,060
+ Og de vil jo tjene penge, hvad de nu kan tjene penge på, så de vil gerne sælge de her data.
+
+147
+0:13:31,060 --> 0:13:37,060
+ Så det, at vi har noget ansigtsgenkendelse til identifikation i et fitnesscenter, ender med en database, der så kan blive solgt til nogen.
+
+148
+0:13:37,060 --> 0:13:41,060
+ Om den så bliver solgt til et forsikringsselskab i fremtiden,
+
+149
+0:13:41,060 --> 0:13:44,060
+ eller den bliver brugt til at træne en anden AI til noget andet.
+
+150
+0:13:44,060 --> 0:13:46,060
+ Det synes jeg er problematisk ved det.
+
+151
+0:13:46,060 --> 0:13:47,060
+ Ja.
+
+152
+0:13:47,060 --> 0:13:51,060
+ Sådan noget, som hvis man har en ansigtsscanner i et fitnesscenter.
+
+153
+0:13:51,060 --> 0:13:54,060
+ Det kan vel egentlig være relativt, hvad hedder det, er det ikke relativt uskyldigt?
+
+154
+0:13:54,060 --> 0:14:01,060
+ Der ligger nogle data inde hos dem, og de siger, at de gemmer kun dit ansigt i et ganske lille øjeblik,
+
+155
+0:14:01,060 --> 0:14:05,060
+ og så bliver det slettet igen, lige snart de har verificeret, hvem du er.
+
+156
+0:14:05,060 --> 0:14:07,060
+ Er det ikke fint nok?
+
+157
+0:14:07,060 --> 0:14:09,060
+ Åh, vi har kun en time.
+
+158
+0:14:09,060 --> 0:14:11,060
+ Så det er jo lidt problematisk.
+
+159
+0:14:11,060 --> 0:14:16,060
+ Fordi vi har jo identifikation og autentifikation.
+
+160
+0:14:16,060 --> 0:14:19,060
+ Altså vi skal måske kunne identificere nogen ud fra et ansigt,
+
+161
+0:14:19,060 --> 0:14:24,060
+ eller vi skal bekræfte, at det er den person, der nu står der, der har lov til at gå ind og træne i det fitnesscenter.
+
+162
+0:14:24,060 --> 0:14:29,060
+ Og det er nogle helt forskellige brugssituationer, og nogle af dem kan være OK,
+
+163
+0:14:29,060 --> 0:14:32,060
+ og nogle af dem kan teknologien være rigtig, rigtig god til.
+
+164
+0:14:32,060 --> 0:14:37,060
+ Hvis man f.eks. kommer med sit fitnesskort, og den sådan skal verificere, at det er mig, der står der,
+
+165
+0:14:37,060 --> 0:14:41,060
+ at det ikke er en anden person med en helt anden form på ansigtet,
+
+166
+0:14:41,060 --> 0:14:43,060
+ så er det måske fint nok.
+
+167
+0:14:43,060 --> 0:14:49,060
+ Men generelt så har vi en tendens til, at vi tror, at vores teknologier kan alt muligt mere, end de faktisk kan.
+
+168
+0:14:49,060 --> 0:14:54,060
+ Så man tror lige pludselig, at fordi man har brugt den her teknologi til den her ting,
+
+169
+0:14:54,060 --> 0:14:58,060
+ så kender man den, og så kan man bruge den til alt muligt andet, som den faktisk ikke kan.
+
+170
+0:14:58,060 --> 0:15:03,060
+ Og specielt med ansigtsgenkendelse, så er der jo store problemer med, at det er trænet på forkerte,
+
+171
+0:15:03,060 --> 0:15:06,060
+ eller ikke forkerte, det er forkert sagt, men på grupper af mennesker,
+
+172
+0:15:06,060 --> 0:15:10,060
+ som måske ikke er repræsentative for dem, der skal tjekkes og bruges teknologien.
+
+173
+0:15:11,060 --> 0:15:13,060
+ Pia Tessoff?
+
+174
+0:15:13,060 --> 0:15:15,060
+ Jamen altså det her med, om det er nødvendigt.
+
+175
+0:15:15,060 --> 0:15:18,060
+ Vi er nødt til at tale om, om det er nødvendigt, fordi toget kører derudad.
+
+176
+0:15:18,060 --> 0:15:22,060
+ Altså jeg har gået i skole og taget bussen med et buskort med et billede på i mange år.
+
+177
+0:15:22,060 --> 0:15:26,060
+ Jeg har haft et kørekort i snart 40 år med et billede på.
+
+178
+0:15:26,060 --> 0:15:28,060
+ Det fungerer stadigvæk.
+
+179
+0:15:28,060 --> 0:15:33,060
+ Jeg ved ikke, hvorfor jeg ikke skulle kunne gå ind i et fitnesscenter med et lille billede klippet ind på et papkort.
+
+180
+0:15:33,060 --> 0:15:37,060
+ De kan godt se, at det er mig, hvis der bare står en, der gider og tjekker, at det er mig.
+
+181
+0:15:37,060 --> 0:15:39,060
+ Men det kræver jo, at der er nogle ansatte.
+
+182
+0:15:39,060 --> 0:15:41,060
+ Og altså det er lidt ligesom om,
+
+183
+0:15:41,060 --> 0:15:44,060
+ at selv vores fitnesscenter skal være en fabrik, ikke også?
+
+184
+0:15:44,060 --> 0:15:47,060
+ Jeg vil da gerne ind i et sted, hvor folk kan genkende mig.
+
+185
+0:15:47,060 --> 0:15:49,060
+ Det tror jeg da, at vi alle sammen kan.
+
+186
+0:15:49,060 --> 0:15:52,060
+ Og jeg synes, det er sådan et underligt fænomen, det der med,
+
+187
+0:15:52,060 --> 0:15:55,060
+ at vi skal have tillid til digitaliseringen,
+
+188
+0:15:55,060 --> 0:16:00,060
+ men forretningerne for eksempel, eller fitnesscentrene, eller hvem det nu er,
+
+189
+0:16:00,060 --> 0:16:04,060
+ har ikke tillid til os, at vores adfærd er i orden.
+
+190
+0:16:04,060 --> 0:16:08,060
+ Altså det er da en underlig mistænkegørelse, at vi skulle snyde.
+
+191
+0:16:08,060 --> 0:16:10,060
+ Hvad er det for et problem, vi taler om?
+
+192
+0:16:10,060 --> 0:16:13,060
+ At vi ikke kan vise et papkort med et lille billede på?
+
+193
+0:16:13,060 --> 0:16:14,060
+ Nå, det er dig.
+
+194
+0:16:14,060 --> 0:16:15,060
+ Henrik?
+
+195
+0:16:15,060 --> 0:16:18,060
+ Jamen, der er rigtig, rigtig mange aspekter i den del.
+
+196
+0:16:18,060 --> 0:16:23,060
+ Både med den menneskelige kontakt, som i hvert fald er rigtig, rigtig rar i mange, mange sammenhænge.
+
+197
+0:16:23,060 --> 0:16:27,060
+ At der er noget personale i et fitnesscenter, hvis man er nede og træne klokken fem om morgenen.
+
+198
+0:16:27,060 --> 0:16:32,060
+ Det er måske meget rart, så man ikke lige pludselig ligger under en eller anden 100 kilos vægt stanger ved at blive mast.
+
+199
+0:16:32,060 --> 0:16:34,060
+ Ikke fordi jeg har prøvet det.
+
+200
+0:16:34,060 --> 0:16:39,060
+ Men der er også en utrolig stor problem med præcision på de her modeller,
+
+201
+0:16:39,060 --> 0:16:41,060
+ og på det her ansigtsgenkendelse.
+
+202
+0:16:41,060 --> 0:16:44,060
+ Og vi taler ikke så tit om, hvor stor fejlmagen der er.
+
+203
+0:16:44,060 --> 0:16:48,060
+ Men der er jo altså kæmpe fejlmagen på sådan en, i forhold til hvis du viser dit kort,
+
+204
+0:16:48,060 --> 0:16:51,060
+ eller jeg viser mit kørekort, som jeg har haft i 32 år.
+
+205
+0:16:51,060 --> 0:16:53,060
+ Så jeg har også stadig papkortet.
+
+206
+0:16:53,060 --> 0:16:57,060
+ Og der kan man altså meget, meget nemt verificere, selvom det er et billede fra gymnasietiden,
+
+207
+0:16:57,060 --> 0:17:00,060
+ at det er mig med meget, meget lille usikkerhed.
+
+208
+0:17:00,060 --> 0:17:05,060
+ Men hvis det er en maskine, der skulle verificere et billede fra 32 år siden af mig, og så til i dag.
+
+209
+0:17:05,060 --> 0:17:07,060
+ Det tror jeg ville være sværere at gøre præcist.
+
+210
+0:17:07,060 --> 0:17:08,060
+ Mads Somsing?
+
+211
+0:17:08,060 --> 0:17:09,060
+ Nå, jamen.
+
+212
+0:17:09,060 --> 0:17:14,060
+ Jeg har faktisk også fat i det eksempel, du kom med før, som jeg egentlig også synes er lidt interessant.
+
+213
+0:17:14,060 --> 0:17:20,060
+ Du nævnte med sådan en modekultur, fordi der var en, der med livestreaming af parlamentet,
+
+214
+0:17:20,060 --> 0:17:26,060
+ og så zoomer ind og siger, jamen nu kigger de igen ned, han, hun igen ned i sin telefon.
+
+215
+0:17:26,060 --> 0:17:30,060
+ Og så bliver det, og i stedet for at passe sit parlamentariske arbejde.
+
+216
+0:17:30,060 --> 0:17:32,060
+ Det er jo ikke nødvendigvis sandt.
+
+217
+0:17:32,060 --> 0:17:37,060
+ Altså, en meget væsentlig del af politisk arbejde, det er sådan set også at være i deltag i debatter,
+
+218
+0:17:37,060 --> 0:17:38,060
+ og være i kontakterholdelser.
+
+219
+0:17:38,060 --> 0:17:45,060
+ Og hele tiden svare på rigtig, rigtig, rigtig, rigtig, rigtig mange henvendelser.
+
+220
+0:17:45,060 --> 0:17:49,060
+ Og hvis de ikke svarer på alle de henvendelser, så får de også hug for det.
+
+221
+0:17:49,060 --> 0:17:51,060
+ Så det er jo ikke nødvendigvis sandt.
+
+222
+0:17:51,060 --> 0:17:58,060
+ Så min pointe er sådan set, at igen, hvad du vil med videoovervågning og ansigtsgenhændelse,
+
+223
+0:17:58,060 --> 0:18:01,060
+ det giver jo ikke nødvendigvis et sandt billede af, hvad det egentlig er, der foregår.
+
+224
+0:18:01,060 --> 0:18:06,060
+ Det, der kan give et sandt billede af, hvad der foregår, det er, hvis du i dialoger har en relation til nogle mennesker,
+
+225
+0:18:06,060 --> 0:18:07,060
+ der rent faktisk er inde.
+
+226
+0:18:07,060 --> 0:18:09,060
+ Og vurderer på et eller andet.
+
+227
+0:18:09,060 --> 0:18:13,060
+ Og der vurderer du jo hele tiden i øjeblikket, når du er sammen med nogle andre.
+
+228
+0:18:13,060 --> 0:18:18,060
+ Og derfor er det så væsentligt, at der er medarbejdere, for eksempel i butikkerne, eller i fitnesscentrene,
+
+229
+0:18:18,060 --> 0:18:21,060
+ eller andre steder, til rent faktisk at vurdere.
+
+230
+0:18:21,060 --> 0:18:27,060
+ Og at du ikke overlader det til teknologi, som du har programmeret, og til et eller andet,
+
+231
+0:18:27,060 --> 0:18:31,060
+ fordi så får du vurderet det, du har programmeret den til, og alene det.
+
+232
+0:18:31,060 --> 0:18:33,060
+ Jeg tror, vi skal hoppe videre til det næste emne.
+
+233
+0:18:33,060 --> 0:18:36,060
+ Det kommer sikkert til at være lidt sammenblanding i tingene undervejs alligevel,
+
+234
+0:18:36,060 --> 0:18:40,060
+ hvor vi får sådan, at tingene kommer til at bløde over hinanden, om man så må sige.
+
+235
+0:18:40,060 --> 0:18:42,060
+ Vi snakkede lidt om kunstig intelligens.
+
+236
+0:18:42,060 --> 0:18:48,060
+ Det er på mange måder det, alle er vel herinde i hvert fald enige om, at kunstig intelligens som bekendt ikke findes.
+
+237
+0:18:48,060 --> 0:18:50,060
+ Der findes noget af machine learning, og der findes nogle andre ting.
+
+238
+0:18:50,060 --> 0:18:56,060
+ Men i sådan folkemulne, der regnes det, at der er kunstig intelligens ligesom det, vi taler om.
+
+239
+0:18:56,060 --> 0:19:03,060
+ En gang i Siri-kommissionen, der snakkede man om Danmark som en form for testland for nye teknologier.
+
+240
+0:19:03,060 --> 0:19:06,060
+ Der kan man nogle gange godt få tanken, at det er sådan, vi lever på nuværende tid.
+
+241
+0:19:06,060 --> 0:19:09,060
+ Men mange af de ting, der kommer ind over os lige for tiden.
+
+242
+0:19:09,060 --> 0:19:14,060
+ Og noget af det, som man har gjort igennem nogle af de steder, hvor det konkret foregår med kunstig intelligens,
+
+243
+0:19:14,060 --> 0:19:19,060
+ det er, at man er i gang med at for eksempel at sige, at man kan lave og vurdere folks jobparathed
+
+244
+0:19:19,060 --> 0:19:23,060
+ nede på, hvad hedder det, på arbejdsudvidningen, via de skal udfylde nogle små skemaer,
+
+245
+0:19:23,060 --> 0:19:29,060
+ og så kommer der noget op, og hvor villige de er til det, og om de kan komme det rigtige sted hen.
+
+246
+0:19:29,060 --> 0:19:34,060
+ Man ser det også brugt, man har ønsket også at køre nogle systemer i sin tid på den der berømte gladsaksmodel,
+
+247
+0:19:34,060 --> 0:19:36,060
+ og der er flere andre steder, hvor man gør det.
+
+248
+0:19:36,060 --> 0:19:38,060
+ Jeg har ikke sagt noget af det her.
+
+249
+0:19:38,060 --> 0:19:40,060
+ Jeg ved ikke, hvilken ende jeg skal starte i omkring det her,
+
+250
+0:19:40,060 --> 0:19:42,060
+ men jeg vil starte med med et samtale måske,
+
+251
+0:19:42,060 --> 0:19:46,060
+ og høre, hvordan ser I på det her brug, altså den måde, man bruger,
+
+252
+0:19:46,060 --> 0:19:51,060
+ nu siger vi så kunstig intelligens, fordi det er nemmere at gøre det her i anførelse-stegn resten af tiden,
+
+253
+0:19:51,060 --> 0:19:55,060
+ men den måde, man bruger kunstig intelligens på i det offentlige øjeblik.
+
+254
+0:19:55,060 --> 0:20:00,060
+ Ja, og der er netop nogle af de områder, du her nævner, jobcenter og socialforvaltning,
+
+255
+0:20:00,060 --> 0:20:04,060
+ det er jo der, vi har sådan set den største organisation herhjemme.
+
+256
+0:20:04,060 --> 0:20:06,060
+ Vi organiserer 6.000 jobcenter.
+
+257
+0:20:06,060 --> 0:20:08,060
+ Vi organiserer 6.000 medarbejdere ude i landets jobcenter.
+
+258
+0:20:08,060 --> 0:20:15,060
+ Vi organiserer også kontrolgrupperne, som jeg ved sikkert også har en vis interesse mange steder.
+
+259
+0:20:15,060 --> 0:20:21,060
+ Vi har også i socialforvaltningen, på ydelsesområdet osv. osv. osv.
+
+260
+0:20:21,060 --> 0:20:28,060
+ Så vores medlemmer, de sidder jo lige præcis i den storm, der er ved at gøre sit indtog med brug af kunstig intelligens og data,
+
+261
+0:20:28,060 --> 0:20:31,060
+ hvordan vi nu vil betale om det.
+
+262
+0:20:31,060 --> 0:20:36,060
+ Og her er det jo også med, jamen, hvad er formålet med at gøre det her?
+
+263
+0:20:36,060 --> 0:20:41,060
+ Er formålet, at vi bruger, altså hvad er det for nogle systemer, man indfører?
+
+264
+0:20:41,060 --> 0:20:43,060
+ Fordi der er to modeller.
+
+265
+0:20:43,060 --> 0:20:51,060
+ Det ene, det går på fuld automatisering, altså at der kommer en masse data, og så træffes systemet en afgørelse, og så er det så sådan, det er.
+
+266
+0:20:51,060 --> 0:20:53,060
+ Det er én model.
+
+267
+0:20:53,060 --> 0:20:58,060
+ En anden model, det er jo at gøre brug af en masse data for at understøtte sagsbehandlingen.
+
+268
+0:20:58,060 --> 0:21:05,060
+ Og også der er man nødt til faktisk at gå ind og skælne, om det at understøtte sagsbehandlingen er, at systemet kommer med en forslag til en afgørelse,
+
+269
+0:21:05,060 --> 0:21:07,060
+ eller at den bare tegner nogle billeder op.
+
+270
+0:21:07,060 --> 0:21:18,060
+ Fordi hvis det, man gør med data, det sådan set bare er at tegne de billeder op, som sagsbehandleren ellers kan sidde og klikke sig frem til i 7-8 forskellige systemer, der ikke taler sammen,
+
+271
+0:21:18,060 --> 0:21:20,060
+ så synes jeg, det er positivt.
+
+272
+0:21:20,060 --> 0:21:29,060
+ Men i det, at systemet kommer med et forslag til en afgørelse, så synes jeg, som dataetisk råd også siger, at så skal man betragte det som en automatisering af afgørelsen.
+
+273
+0:21:29,060 --> 0:21:35,060
+ Og det skal man, fordi selv hvis der der er en jobcentermedarbejder, der skal ind og vurdere,
+
+274
+0:21:35,060 --> 0:21:40,060
+ jamen hvad er det, der skal tættes i værk her, hvad er det for en afgørelse, vi skal træffe,
+
+275
+0:21:40,060 --> 0:21:47,060
+ så vil vedkommende skulle stå over for sine ledere og sige, jamen jeg synes faktisk noget andet end systemet foreslår.
+
+276
+0:21:47,060 --> 0:21:52,060
+ Og hvem vil lederen så tro på? Systemet eller medarbejderen?
+
+277
+0:21:52,060 --> 0:21:55,060
+ Og derfor er man nødt til at betragte det som egentlig at være en fuld automatisering.
+
+278
+0:21:55,060 --> 0:22:02,060
+ Og den form for fuld automatisering af afgørelser i den offentlige forvaltning, synes jeg vil være dybt, dybt, dybt problematisk.
+
+279
+0:22:02,060 --> 0:22:04,060
+ Så brug gerne data til at finde det.
+
+280
+0:22:05,060 --> 0:22:09,060
+ Finde de ting frem, som i øvrigt ligger, så medarbejderen ikke skal bruge tid på det.
+
+281
+0:22:09,060 --> 0:22:13,060
+ Man bruger tiden på relationen, man bruger det endeligt til at gå ind og træffe afgørelser.
+
+282
+0:22:13,060 --> 0:22:19,060
+ Fordi der i ligger jo igen, hvad er det den er programmeret til, hvad er det for en algoritme, der ligger.
+
+283
+0:22:19,060 --> 0:22:27,060
+ Og hvis man f.eks. tager, vil jeg godt sige, på hele beskæftigelsesområdet,
+
+284
+0:22:27,060 --> 0:22:34,060
+ der har vi jo konstant og kontinuerligt en diskussion om f.eks. virker uddannelse?
+
+285
+0:22:34,060 --> 0:22:45,060
+ Altså uddannelse, der er evidens for, siger man, at uddannelse som led i beskæftigelsesindsatsen, det forlænger ledigheden, så det skal vi ikke bruge.
+
+286
+0:22:45,060 --> 0:22:52,060
+ Og det er jo rigtigt nok, fordi hvis de er under uddannelse, så bruger de ikke tiden på at søge et job, og så går der længere tid, før de kommer i beskæftigelse.
+
+287
+0:22:52,060 --> 0:22:59,060
+ Så hvis hele beskæftigelsesparadigmet, det er hurtigst muligt et job, så er der evidens for, at uddannelse, det forlænger ledighedsperioden.
+
+288
+0:22:59,060 --> 0:23:02,060
+ Er det så det, vi programmerer den til, algoritmen?
+
+289
+0:23:02,060 --> 0:23:04,060
+ Jamen så er det jo selvfølgelig den, vi kommer til.
+
+290
+0:23:04,060 --> 0:23:09,060
+ Det er jo ikke at hugge i granit, at så bruger vi ikke uddannelse i beskæftigelsesindsatsen.
+
+291
+0:23:09,060 --> 0:23:13,060
+ Selvom vi sådan set ved på den anden side, at hvis du får uddannelse, så kan du komme i vej i beskæftigelse.
+
+292
+0:23:13,060 --> 0:23:15,060
+ Så kan det godt være, at det tager lidt længere tid.
+
+293
+0:23:15,060 --> 0:23:19,060
+ Men hvis du så får et vej i job, så er det jo sådan set også bedre, både for den enkelte og for samfundsøkonomien.
+
+294
+0:23:19,060 --> 0:23:22,060
+ Så det her, der skal man virkelig, virkelig, virkelig tænke sig om.
+
+295
+0:23:22,060 --> 0:23:26,060
+ Hvad er det, vi kommer til at programmere os til?
+
+296
+0:23:26,060 --> 0:23:30,060
+ Fordi det er jo egentlig det, vi gør, når vi bruger, som kalder det, hvad I vil.
+
+297
+0:23:30,060 --> 0:23:34,060
+ Men lad os bare sige kunstig intelligens her, fordi det er folkemunden lige øjeblikket.
+
+298
+0:23:34,060 --> 0:23:35,060
+ Det er vel også det, vi vil sige.
+
+299
+0:23:35,060 --> 0:23:41,060
+ Det, du i virkeligheden skitserer her, det er i virkeligheden sådan en helt maskinel udgave af den der serie,
+
+300
+0:23:41,060 --> 0:23:44,060
+ jeg tror, den hedder Little Britain, hvor computer says no-agtig.
+
+301
+0:23:44,060 --> 0:23:49,060
+ Altså hvor man får en afgørelse baseret på et eller andet, man ikke rigtig forstår.
+
+302
+0:23:49,060 --> 0:23:53,060
+ Er det der, hvor du frygter, vi er på vej hen?
+
+303
+0:23:53,060 --> 0:23:58,060
+ Jamen, der er jo sådan set nogle forsøg i gang.
+
+304
+0:23:58,060 --> 0:24:00,060
+ Og jeg tror, at vi med...
+
+305
+0:24:00,060 --> 0:24:09,060
+ Vi skal være meget opmærksomme på de signaturprojekter, der nu kommer til at køre på en række forskellige...
+
+306
+0:24:09,060 --> 0:24:14,060
+ Jeg tror, det er 12 signaturprojekter med brug af kunstig intelligens i den offentlige sektor,
+
+307
+0:24:14,060 --> 0:24:19,060
+ hvor vi skal se, jamen, hvad gør det her egentlig verden, det bliver brugt til?
+
+308
+0:24:19,060 --> 0:24:24,060
+ Og igen, der kommer signaturprojekter jo til at skubbe ved nogle grænser.
+
+309
+0:24:24,060 --> 0:24:28,060
+ Og når man piller ved en grænse, så skubber man ved den grænse.
+
+310
+0:24:28,060 --> 0:24:30,060
+ Det tror jeg også, vi skal være meget opmærksomme på.
+
+311
+0:24:30,060 --> 0:24:34,060
+ Og så skal vi også være opmærksomme på, ligesom det her med...
+
+312
+0:24:34,060 --> 0:24:38,060
+ Vi har lige talt med for eksempel supermarkederne, der bruger ansigtsgenkendelse,
+
+313
+0:24:38,060 --> 0:24:40,060
+ fordi så kan de spare nogle medarbejdere væk.
+
+314
+0:24:40,060 --> 0:24:48,060
+ Altså, vi skal jo ikke være blinde for, at når vi diskuterer digitaliseringen og digital omstilling af den offentlige forvaltning,
+
+315
+0:24:48,060 --> 0:24:51,060
+ så handler det i høj grad om at spare nogle penge.
+
+316
+0:24:51,060 --> 0:24:58,060
+ Altså, det er jo lagt direkte ind i økonomiaftaler mellem KOL og regeringen og danske regioner,
+
+317
+0:24:58,060 --> 0:25:02,060
+ og regeringen år efter år efter år, at nu skal vi spare ekstra antal milliarder,
+
+318
+0:25:02,060 --> 0:25:06,060
+ blandt andet ved at digitalisere, fordi så kan vi bruge det på noget andet.
+
+319
+0:25:06,060 --> 0:25:10,060
+ Og fair nok at vi vil bruge nogle penge på noget andet,
+
+320
+0:25:10,060 --> 0:25:19,060
+ men jeg vil våge den påstand, at hvis vi gør den offentlige forvaltning til mere maskine end menneske,
+
+321
+0:25:19,060 --> 0:25:23,060
+ så piller vi ved noget helt grundlæggende, og det er relationen mellem borger og myndighed.
+
+322
+0:25:23,060 --> 0:25:27,060
+ Og det skal man altså være enormt barsom med, fordi det er det, vi bygger hele tilliden.
+
+323
+0:25:28,060 --> 0:25:33,060
+ Det er sådan set ikke minimumsnormering og alle mulige andre rigtig, rigtig gode formål,
+
+324
+0:25:33,060 --> 0:25:37,060
+ men det er en helt grundlæggende relation mellem borger og myndighed.
+
+325
+0:25:37,060 --> 0:25:40,060
+ Det er det, der er hele fundamentet for det samfund, som vi har.
+
+326
+0:25:40,060 --> 0:25:42,060
+ Pia Tøstrup.
+
+327
+0:25:42,060 --> 0:25:46,060
+ Jeg kommer i tanke om et eksempel, og det er det der med sagsbehandling.
+
+328
+0:25:46,060 --> 0:25:52,060
+ En af mine rigtig gode venner har haft en seriøs karriere.
+
+329
+0:25:52,060 --> 0:25:57,060
+ Mange topstillinger og udlandet og kommet hjem og mistet sit job,
+
+330
+0:25:57,060 --> 0:26:04,060
+ og kommer så ned til jobformidlingen og bliver taget imod af en ung kvinde,
+
+331
+0:26:04,060 --> 0:26:12,060
+ som er temmelig skræmt over at skulle hjælpe det her menneske i en høj alder og med en stor karriere bag sig.
+
+332
+0:26:12,060 --> 0:26:17,060
+ Og hendes forudsætninger var, at hun var kontoruddannet i FONA.
+
+333
+0:26:17,060 --> 0:26:25,060
+ Det er lidt ligesom selv en automatafgørelse.
+
+334
+0:26:25,060 --> 0:26:27,060
+ Hvad havde det hjulpet hende?
+
+335
+0:26:27,060 --> 0:26:32,060
+ Der er nødt til at være noget viden bag, og noget kultur bag, og noget menneskeforståelse,
+
+336
+0:26:32,060 --> 0:26:36,060
+ og nogle relationer, hvis man skal hjælpe nogle borgere.
+
+337
+0:26:36,060 --> 0:26:41,060
+ Vi er nødt til at snakke om kompetencer, og ikke kun algoritmer.
+
+338
+0:26:41,060 --> 0:26:44,060
+ Det var bare en lille sidebemærkelse.
+
+339
+0:26:44,060 --> 0:26:47,060
+ Nu sidder jeg ved siden af en HK.
+
+340
+0:26:47,060 --> 0:26:52,060
+ Så har jeg lyst til at sige, at vi skal snakke om den offentlige forvaltning,
+
+341
+0:26:52,060 --> 0:26:54,060
+ men HK må ikke glemme at tale om det.
+
+342
+0:26:54,060 --> 0:26:59,060
+ Vi må ikke glemme at tale om alle de ansattes vilkår på arbejdspladserne.
+
+343
+0:26:59,060 --> 0:27:07,060
+ Og det jeg vil sige, det er, at alt den software, som de ansatte arbejder med til daglig,
+
+344
+0:27:07,060 --> 0:27:10,060
+ der er en stor monitorering.
+
+345
+0:27:10,060 --> 0:27:15,060
+ Der kan i hvert fald være det, og der er lovgrundlag for, at der er en stor monitorering.
+
+346
+0:27:15,060 --> 0:27:17,060
+ Jeg vil ikke nævne nogle navne med software.
+
+347
+0:27:17,060 --> 0:27:22,060
+ Jeg vil bare sige, at det foregår, og jeg kunne godt tænke mig, at det blev begrænset.
+
+348
+0:27:22,060 --> 0:27:29,060
+ Ligesåvel som medarbejderapps hos store virksomheder, at man skal deltage i sociale leje osv. osv.
+
+349
+0:27:29,060 --> 0:27:35,060
+ Sådan en ting som bare søgejob, som man vil gerne have et arbejde.
+
+350
+0:27:35,060 --> 0:27:41,060
+ Der går man igennem nogle forskellige platforme, hvor man skal give en hel masse svar omkring sig selv.
+
+351
+0:27:41,060 --> 0:27:46,060
+ Og der igen, så er det lidt, altså det er den der sorteringsmekanisme, som man kommer ud fra.
+
+352
+0:27:46,060 --> 0:27:49,060
+ Og sådan en ting som at lave en personlighedsprofil.
+
+353
+0:27:49,060 --> 0:27:53,060
+ Det er noget, man køber af et firma af en tredje part.
+
+354
+0:27:53,060 --> 0:27:59,060
+ Som så får alle resultaterne af alle de her mennesker, der er gået igennem de her personlighedsprofiler.
+
+355
+0:27:59,060 --> 0:28:04,060
+ Det er jo ikke sådan, at de bliver slettet en time efter, at man har sagt nej, der kan vi ikke bruge.
+
+356
+0:28:04,060 --> 0:28:06,060
+ De ligger i de her systemer.
+
+357
+0:28:06,060 --> 0:28:14,060
+ Jeg har skrevet et dokument om det, hvordan det foregår med surveys og personlighedsprofiler.
+
+358
+0:28:14,060 --> 0:28:18,060
+ Og der er det jo sådan, at som regel, så er det store amerikanske firmaer, der leverer dem.
+
+359
+0:28:18,060 --> 0:28:23,060
+ Og der taler vi altså ikke, hvor GDPR er henne der.
+
+360
+0:28:23,060 --> 0:28:28,060
+ Vi er nødt til at tale om medarbejdernes data også.
+
+361
+0:28:28,060 --> 0:28:30,060
+ Det er vi altså nødt til.
+
+362
+0:28:30,060 --> 0:28:34,060
+ Og hvad er det for vilkår, som medarbejderne har på arbejdspladserne.
+
+363
+0:28:34,060 --> 0:28:36,060
+ Og det er selvfølgelig ikke kun et HK spørgsmål.
+
+364
+0:28:36,060 --> 0:28:38,060
+ Det er et generelt spørgsmål.
+
+365
+0:28:38,060 --> 0:28:40,060
+ Det var bare en lille opportun.
+
+366
+0:28:40,060 --> 0:28:46,060
+ Det skal man samtidig have en mulighed for at svare på, om I fuldstændig har glemt jeres egne medlemmer.
+
+367
+0:28:46,060 --> 0:28:47,060
+ Det har vi.
+
+368
+0:28:47,060 --> 0:28:52,060
+ Det har vi ikke, men jeg synes, det er enormt vigtigt, det du rejser der.
+
+369
+0:28:52,060 --> 0:28:57,060
+ Og det er egentlig noget, der har optaget mig rigtig, rigtig, rigtig meget.
+
+370
+0:28:57,060 --> 0:29:03,060
+ Først lige i forhold til alt det her med digital omstilling.
+
+371
+0:29:03,060 --> 0:29:07,060
+ Så kommer jeg til det med monitorering og medarbejderdata efterfølgende.
+
+372
+0:29:07,060 --> 0:29:10,060
+ Men når vi taler digital omstilling.
+
+373
+0:29:10,060 --> 0:29:15,060
+ Og nu ved jeg godt, nu sidder jeg jo på en lejercamp.
+
+374
+0:29:15,060 --> 0:29:19,060
+ Med IT-folk.
+
+375
+0:29:19,060 --> 0:29:28,060
+ Men jeg mener sådan set, at det handler 10% om teknik og 90% om alt muligt andet end den digitale omstilling, der foregår i den offentlige forvaltning.
+
+376
+0:29:28,060 --> 0:29:38,060
+ Og det er jo også, altså det har jo enorm betydning for arbejdsmiljøet, fordi det ændrer relationen mellem borgere og myndigheder.
+
+377
+0:29:38,060 --> 0:29:43,060
+ Når du ændrer ved den, så ændrer det jo også på relationen mellem borgere og medarbejdere.
+
+378
+0:29:43,060 --> 0:29:49,060
+ Så ændrer du på rolle og jobindhold, og det er en af de væsentligste stressfaktorer, der overhovedet er.
+
+379
+0:29:49,060 --> 0:29:57,060
+ Så er der hele uddannelsestemet, som er enormt vigtigt, at i takt med den digitale omstilling, med de opgaver, der så bliver tilbage.
+
+380
+0:29:57,060 --> 0:30:02,060
+ Det er altså også en driver, der på en række punkter siger, jamen så skal vi have mere kompetencer.
+
+381
+0:30:02,060 --> 0:30:09,060
+ Og andre, hvor du siger, jamen så skal man faktisk standardisere arbejdet i meget, meget, meget høj grad.
+
+382
+0:30:09,060 --> 0:30:12,060
+ Så der har du også i høj grad et kompetencespørgsmål.
+
+383
+0:30:12,060 --> 0:30:22,060
+ Og så er der det med medarbejderdata, fordi det ene er jo medarbejderdata i forbindelse med jobsøgningsprocesser med personlighedsprofiler og andet.
+
+384
+0:30:22,060 --> 0:30:26,060
+ Den anerkender jeg fuldt ud. Den anden er jo, når medarbejderen er på job.
+
+385
+0:30:26,060 --> 0:30:34,060
+ Altså hvad er det? Et adgangskort, når du ligesom kommer ind på din arbejdsplads.
+
+386
+0:30:34,060 --> 0:30:36,060
+ Allerede der har du noget lok.
+
+387
+0:30:36,060 --> 0:30:42,060
+ Der er jo rigtig mange printerer, hvor når du trykker print, så sorterer, altså så gemmer det,
+
+388
+0:30:42,060 --> 0:30:47,060
+ jo sådan set det eneste x-antal 100 eller 1000 udskrifter, der ligger.
+
+389
+0:30:47,060 --> 0:30:56,060
+ Altså vi jo, vi har jo fået udviklet intelligente kontormøbler, som man kan gå ind og se på, hvor ofte står medarbejderne op, og hvor ofte sidder de ned.
+
+390
+0:30:56,060 --> 0:31:04,060
+ Vi har rigtig, rigtig meget af sådan noget rundt omkring, og de data, de bliver indsamlet, og hvad bliver de brugt til?
+
+391
+0:31:04,060 --> 0:31:10,060
+ Og der er faktisk lige præcis det her med indsamling af medarbejderdata, og hvordan bliver de brugt?
+
+392
+0:31:10,060 --> 0:31:13,060
+ Hvem har overhovedet adgang til dem? Hvornår bliver de slettet?
+
+393
+0:31:13,060 --> 0:31:15,060
+ Altså hele sådan GDPR-delen.
+
+394
+0:31:15,060 --> 0:31:20,060
+ Der har det ligget mig meget på sinde, da vi lavede GDPR, og da vi havde diskussionen om det.
+
+395
+0:31:20,060 --> 0:31:31,060
+ Der har vi jo faktisk fået en bestemt artikel ind i GDPR, hvor at parterne, altså arbejdsmarkedets parter eller lovgiver,
+
+396
+0:31:31,060 --> 0:31:38,060
+ kan lave et tillæg i forhold til aftalen, eller i forhold til GDPR-forordningen.
+
+397
+0:31:38,060 --> 0:31:47,060
+ Og så har vi faktisk så sent som sidste sommer indgået en stor europæisk aftale mellem arbejdsmarkedets parter på europæisk plan
+
+398
+0:31:47,060 --> 0:31:51,060
+ omkring de her ting, som nu skal implementeres nationalt.
+
+399
+0:31:51,060 --> 0:31:57,060
+ Og det betyder, at arbejdsmarkedets parter i Danmark, såvel som i resten af Europa, skal sætte sig ned og diskutere de her ting,
+
+400
+0:31:57,060 --> 0:32:02,060
+ og sige, hvad betyder det så konkret, og hvordan skal jeg regulere det ude på arbejdspladserne?
+
+401
+0:32:02,060 --> 0:32:06,060
+ Og det er noget af det, jeg har gået meget op i.
+
+402
+0:32:06,060 --> 0:32:13,060
+ Jeg har også nogle påstået europæiske fagbevægelser, og derfor har været en del af den diskussion.
+
+403
+0:32:13,060 --> 0:32:20,060
+ Og det er også en del af de overenskomster, der er blevet aftalt her på det offentlige arbejdsmarked,
+
+404
+0:32:20,060 --> 0:32:23,060
+ hvor vi lige mangler, at den sidste kommer i hus jo mellem sygeplejerskerne også.
+
+405
+0:32:23,060 --> 0:32:27,060
+ Men at vi faktisk skal lave det herovre i den kommende overenskomstperiode.
+
+406
+0:32:27,060 --> 0:32:31,060
+ Så det her, det bliver et tema, det er et stort tema, og det er et afsindeligt vigtigt tema,
+
+407
+0:32:31,060 --> 0:32:35,060
+ fordi mængden af data, der indsamles, når vi går på arbejde, er altså meget, meget voldsomt.
+
+408
+0:32:36,060 --> 0:32:43,060
+ Henrik Kramselund, jeg skal lige høre dig, fordi du er jo den seriøse IT-baggrundsmand.
+
+409
+0:32:43,060 --> 0:32:52,060
+ Med alt det her kunstig intelligens, kommer det til at få nogen betydning på arbejdsmarkedet i fremtiden?
+
+410
+0:32:52,060 --> 0:32:57,060
+ Eller er det bare sådan luftkasteller og ikke fremtiden? Hvor ser du det gå henad?
+
+411
+0:32:57,060 --> 0:33:02,060
+ Det er nok ikke mig, der skal svare på det spørgsmål, fordi relationen til arbejdsmarkedet er måske ikke der,
+
+412
+0:33:02,060 --> 0:33:05,060
+ hvor jeg har min styrke, så jeg tror, jeg vil lige gå en lidt anden retning.
+
+413
+0:33:05,060 --> 0:33:11,060
+ Fordi når vi snakker om AI, og vi snakker om machine learning og statistik og store modeller,
+
+414
+0:33:11,060 --> 0:33:16,060
+ og indsamling af data, som I også er inde på, og der kommer rigtig, rigtig mange kilder fra kort og alle mulige andre steder,
+
+415
+0:33:16,060 --> 0:33:22,060
+ og møbler, hvad ved jeg, jamen bare fordi en model bliver stor og har 10.000 flere input,
+
+416
+0:33:22,060 --> 0:33:24,060
+ så bliver den ikke nødvendigvis bedre.
+
+417
+0:33:24,060 --> 0:33:29,060
+ Vi har jo set det for mange, mange år siden, da man begyndte at lave data warehousing,
+
+418
+0:33:29,060 --> 0:33:34,060
+ hvor alle firmaer skulle indsamle alle deres data, og så kunne de jo svare på hvad som helst i organisationen.
+
+419
+0:33:35,060 --> 0:33:39,060
+ Men det viste sig bare, at man havde en stor mudderpøl af data.
+
+420
+0:33:39,060 --> 0:33:46,060
+ Og det skal man passe på med, tror jeg, inden for AI, at man tror, at man kan lave modellerne til at svare på alt.
+
+421
+0:33:46,060 --> 0:33:49,060
+ Altså, man skal nok måske mere gå i den anden retning og lave mere simple modeller,
+
+422
+0:33:49,060 --> 0:33:54,060
+ hvor man netop kan svare på, hvorfor kom den frem til den afgørelse, eller i hvert fald det råd om afgørelsen.
+
+423
+0:33:54,060 --> 0:33:58,060
+ Og jeg er helt enig om, at vi skal i hvert fald ikke lade AI lave afgørelserne.
+
+424
+0:33:58,060 --> 0:34:03,060
+ Så vi skal simpelthen lave nogle mindre modeller, færre data i de modeller.
+
+425
+0:34:03,060 --> 0:34:04,060
+ Og altså, vi skal i hvert fald ikke lade AI lave afgørelserne.
+
+426
+0:34:04,060 --> 0:34:10,060
+ Og når vi har IT-projekter, som ikke engang kan estimere, hvor lang tid de er om at blive udviklet.
+
+427
+0:34:10,060 --> 0:34:14,060
+ Vi har IT-modeller med ejendomsvurdering, som går helt skævt.
+
+428
+0:34:14,060 --> 0:34:19,060
+ Og der er formentlig også, der var en lidt sjov teori om, at den måske var for god, den model, så den forrykkede nogle ting.
+
+429
+0:34:19,060 --> 0:34:21,060
+ Det skal man også være klar til.
+
+430
+0:34:21,060 --> 0:34:24,060
+ Der er nogle politiske konsekvenser.
+
+431
+0:34:24,060 --> 0:34:28,060
+ Og der skal man nogle gange måske være så transparent, så man kan se, at hvis vi gør det på den her måde,
+
+432
+0:34:28,060 --> 0:34:31,060
+ så giver det den her konsekvens i samfundet.
+
+433
+0:34:31,060 --> 0:34:34,060
+ At der f.eks. er nogen, der skal betale meget, meget mere for deres hus.
+
+434
+0:34:34,060 --> 0:34:39,060
+ Men der er man så bange for, at det lige pludselig påvirker samfundsøkonomien.
+
+435
+0:34:39,060 --> 0:34:43,060
+ Og der er nogle af de her AI-løsninger, der kommer jo til at påvirke vores samfundsøkonomi.
+
+436
+0:34:43,060 --> 0:34:46,060
+ Og sikkert derigennem arbejdsmarkedet.
+
+437
+0:34:46,060 --> 0:34:49,060
+ Jeg synes, det er spændende ved det der. Nu nævner du nævnt det der med ejendomsmarkedet.
+
+438
+0:34:49,060 --> 0:34:53,060
+ Altså hvor vi har den her ejendomsvurdering, som er baseret på noget, de kalder kunstintelligent,
+
+439
+0:34:53,060 --> 0:34:55,060
+ som i virkeligheden også igen er machine learning.
+
+440
+0:34:55,060 --> 0:34:59,060
+ Men hvor det nu er blevet udsat, jeg tror, det er på anden år, hvor man ikke får de ejendomsvurderinger ud,
+
+441
+0:34:59,060 --> 0:35:03,060
+ fordi det er netop, at man får et resultat, som man ikke bryder sig om efter al sandsynlighed.
+
+442
+0:35:03,060 --> 0:35:08,060
+ Fordi der er en ret stor omfordeling af penge i de her sammenhænge, hvis folks hus er mere eller mindre værd.
+
+443
+0:35:08,060 --> 0:35:14,060
+ Men bare lige for, at vi skal faktisk lige nå forbi det sidste emne, og der er det igen Henrik Kramsellund, der skal have lov til at starte på den.
+
+444
+0:35:14,060 --> 0:35:17,060
+ Det er den her lovgivningsbekendtgørelse.
+
+445
+0:35:17,060 --> 0:35:20,060
+ Du har været meget aktiv i foreningen mod lovlig lovgivning, ved jeg.
+
+446
+0:35:20,060 --> 0:35:28,060
+ Og det ser jo ud som om, at det vi taler her om, et lovgivningskompleks, som er fuldstændig umuligt at komme af med.
+
+447
+0:35:28,060 --> 0:35:29,060
+ Nu har man været slåsset imod det.
+
+448
+0:35:29,060 --> 0:35:34,060
+ I stort set al den tid, i hvert fald jeg har beskæftiget mig med IT og sådan noget, der har man prøvet på at gøre noget ved det her.
+
+449
+0:35:34,060 --> 0:35:37,060
+ Men den er blevet kendt ulovlig den ene gang efter den anden.
+
+450
+0:35:37,060 --> 0:35:46,060
+ Og her for nylig var der så også en sag i Københavns Rat, hvor man så fik at vide, at det var muligvis rigtigt nok, men vi kunne ikke rigtigt gøre noget ved det alligevel.
+
+451
+0:35:46,060 --> 0:35:49,060
+ Og nu er den altså blevet anket.
+
+452
+0:35:49,060 --> 0:35:54,060
+ Og så imens det her foregår, så er der også en ny lovgivningsbekendtgørelse på vej.
+
+453
+0:35:54,060 --> 0:35:56,060
+ Kan du fortælle lidt om den?
+
+454
+0:35:56,060 --> 0:35:58,060
+ Ja, jeg kan da prøve.
+
+455
+0:35:58,060 --> 0:36:06,060
+ Det passer jo meget godt ind i det, vi snakker om her også, fordi der har vi jo nogle konkrete sager over mange år med mange typer data og fejlbehandling af data.
+
+456
+0:36:06,060 --> 0:36:13,060
+ Så der er rigtig, rigtig mange elementer i hele logningsdirektivet og revisionen af logningen, der er blevet udskudt år efter år.
+
+457
+0:36:13,060 --> 0:36:20,060
+ Og det nye, som de så forsøger at implementere, som på nogle punkter er mere vidtgående end det, vi faktisk har haft.
+
+458
+0:36:20,060 --> 0:36:27,060
+ Og så er der også mange tråde ud i retning af, at den eksisterende lovgivning har ikke været god nok.
+
+459
+0:36:27,060 --> 0:36:31,060
+ Selvom den er blevet udskudt, revisionen, så har man også haft et ønske om at få den revideret.
+
+460
+0:36:31,060 --> 0:36:33,060
+ Det siger politiet og Rigspolitiet selv.
+
+461
+0:36:33,060 --> 0:36:35,060
+ Så man står virkelig i en dårlig situation.
+
+462
+0:36:35,060 --> 0:36:37,060
+ Og den er blevet erkendt ulovlig.
+
+463
+0:36:37,060 --> 0:36:40,060
+ Jeg har været med til at starte en retssag.
+
+464
+0:36:40,060 --> 0:36:43,060
+ Foreningen imod ulovlig lokning.
+
+465
+0:36:43,060 --> 0:36:45,060
+ Jeg kan ikke huske mobile-pælnummeret lige nu.
+
+466
+0:36:45,060 --> 0:36:50,060
+ Men der har vi jo indsamlet mange, mange penge og brændt rigtig, rigtig mange penge af på at sagsøge staten.
+
+467
+0:36:50,060 --> 0:36:53,060
+ Og endte så i landsretten, hvor de ikke rigtig ville tage stilling til det.
+
+468
+0:36:53,060 --> 0:36:55,060
+ Hvilket er ret skuffende.
+
+469
+0:36:55,060 --> 0:36:56,060
+ Fordi det er klare ulovligheder.
+
+470
+0:36:56,060 --> 0:36:59,060
+ Som Nick Hækkerup, den kriminelle justitsminister, vi har.
+
+471
+0:36:59,060 --> 0:37:02,060
+ Som for øvrigt er Ph.D. og kan jord fra Københavns Universitet.
+
+472
+0:37:02,060 --> 0:37:04,060
+ Han står bagved.
+
+473
+0:37:04,060 --> 0:37:08,060
+ Den nye lokningskindgørelse er jo stadigvæk på tegnebrættet.
+
+474
+0:37:08,060 --> 0:37:11,060
+ Men det ligner, at de vil fortsætte med at lokke.
+
+475
+0:37:11,060 --> 0:37:13,060
+ Selvom man ikke kan se, at det virker.
+
+476
+0:37:13,060 --> 0:37:15,060
+ Selvom man kan se, at det koster mange penge.
+
+477
+0:37:15,060 --> 0:37:18,060
+ Og det har en stor indgribning i vores privatliv.
+
+478
+0:37:18,060 --> 0:37:24,060
+ En af detaljerne, som jeg har forstået det, er, at man ønsker at lokke telefonet, som ikke engang har ringet op.
+
+479
+0:37:24,060 --> 0:37:26,060
+ Altså en telefon ligger jo op penge.
+
+480
+0:37:26,060 --> 0:37:28,060
+ Man har netværket hele tiden.
+
+481
+0:37:28,060 --> 0:37:32,060
+ Og hver gang den gør det, så skal der så skrives en lok ned et eller andet sted.
+
+482
+0:37:32,060 --> 0:37:34,060
+ Som en del af det.
+
+483
+0:37:34,060 --> 0:37:37,060
+ Men som sagt, I har prøvet at kæmpe med det, du kalder vores justitsminister kriminel.
+
+484
+0:37:37,060 --> 0:37:39,060
+ Ja.
+
+485
+0:37:39,060 --> 0:37:40,060
+ Det gør jeg.
+
+486
+0:37:40,060 --> 0:37:42,060
+ Og jeg håber, at han en dag tager mig i retten.
+
+487
+0:37:42,060 --> 0:37:45,060
+ Fordi det kunne være spændende at få den afgjort.
+
+488
+0:37:45,060 --> 0:37:47,060
+ Jeg skal lige høre, hvad med dig Pia.
+
+489
+0:37:47,060 --> 0:37:51,060
+ Har du nogle bud på, hvad den her lokningskindgørelse har af betydning?
+
+490
+0:37:51,060 --> 0:37:54,060
+ Nej, jeg har skrevet om den også på LinkedIn.
+
+491
+0:37:54,060 --> 0:37:56,060
+ Og jeg har fulgt lidt.
+
+492
+0:37:56,060 --> 0:37:58,060
+ Det her er jo ret nyt for mig.
+
+493
+0:37:58,060 --> 0:38:01,060
+ Jeg er først begyndt at beskæftige mig med det her privacy for 5 år siden.
+
+494
+0:38:01,060 --> 0:38:03,060
+ Så det har været noget af en eye-opener.
+
+495
+0:38:03,060 --> 0:38:05,060
+ Altså hvordan det fungerer det hele.
+
+496
+0:38:05,060 --> 0:38:16,060
+ Udover at det jo er imod EU's politik, så har vi jo set nogle andre problemer også.
+
+497
+0:38:16,060 --> 0:38:25,060
+ Ud fra dataetisk synspunkt, så er det som jeg synes i flest tilfælde, at man skal ikke overvåge en hel befolkning.
+
+498
+0:38:25,060 --> 0:38:28,060
+ Altså mistænkeliggøre på den måde.
+
+499
+0:38:28,060 --> 0:38:30,060
+ Samle data ind.
+
+500
+0:38:30,060 --> 0:38:32,060
+ Man skal ligesom sige, hvem er under mistanke.
+
+501
+0:38:32,060 --> 0:38:34,060
+ Og så skal man have en begrundet mistanke.
+
+502
+0:38:34,060 --> 0:38:36,060
+ Og så kan man sige, dem sætter vi hårdt ind for.
+
+503
+0:38:36,060 --> 0:38:41,060
+ Men det der bare med at høste det hele på en gang, det giver ikke rigtig nogen mening.
+
+504
+0:38:41,060 --> 0:38:53,060
+ Det andet synes jeg, som viser hvor ubrugeligt det er, det er jo i oversættelsen af alle de her telemasterdata, som har været faktisk forkerte i tre omgange.
+
+505
+0:38:53,060 --> 0:38:55,060
+ Politiet har slet ikke kunne bruge dem.
+
+506
+0:38:55,060 --> 0:39:00,060
+ Og nu er jeg i min fritid, der er jeg domsmand i ny og næ.
+
+507
+0:39:00,060 --> 0:39:06,060
+ Og jeg ved godt, med alle de retssager, der skal gå om, fordi teledata var forkerte.
+
+508
+0:39:06,060 --> 0:39:09,060
+ Man har simpelthen oversat dem forkert.
+
+509
+0:39:09,060 --> 0:39:16,060
+ Det er en katastrofe, fordi vi i forvejen i retssystemet er bagud med en masse retssager.
+
+510
+0:39:16,060 --> 0:39:20,060
+ Så med alle de retssager, der skal gå om, så giver det overhovedet ikke nogen mening.
+
+511
+0:39:20,060 --> 0:39:23,060
+ Og det fører mig til en...
+
+512
+0:39:23,060 --> 0:39:32,060
+ Der er et antal, der er seks hoved-privacy-risk, og den sidste af dem, det er jo altså ubrugelige data.
+
+513
+0:39:32,060 --> 0:39:34,060
+ Og det har vi utrolig mange sammenhænge.
+
+514
+0:39:34,060 --> 0:39:36,060
+ Henrik har nævnt det et par gange.
+
+515
+0:39:36,060 --> 0:39:41,060
+ Og vi underkender altså, at vi har simpelthen et problem med, at...
+
+516
+0:39:41,060 --> 0:39:44,060
+ Ja, jeg skal ikke komme ind på andre emner, lad os bare tale om teledata.
+
+517
+0:39:44,060 --> 0:39:51,060
+ Men vi har et problem, og det er, at hvis data ikke er gode, hvis de er forkerte, eller hvis de er oversat forkerte, eller...
+
+518
+0:39:51,060 --> 0:39:56,060
+ Altså, der er så mange muligheder for, at tingene kunne gå galt, så man...
+
+519
+0:39:56,060 --> 0:40:01,060
+ Jeg kan godt tænke mig en større ydmyghed, det er det ene over for data, at man ikke bare siger, at det fungerer,
+
+520
+0:40:01,060 --> 0:40:04,060
+ og vi kan bare bruge det, og de er til rådighed, og derfor tager vi dem.
+
+521
+0:40:04,060 --> 0:40:07,060
+ Og det andet, det er det der med, altså...
+
+522
+0:40:07,060 --> 0:40:10,060
+ Vi har et retssystem, der siger, at vi skal have en begrundet mistanke.
+
+523
+0:40:10,060 --> 0:40:14,060
+ Og det synes jeg er et rigtig godt princip, vi skal holde fast i.
+
+524
+0:40:14,060 --> 0:40:19,060
+ Og jeg er selv hardcore med at følge regler, også på motorvejen og andre steder.
+
+525
+0:40:19,060 --> 0:40:20,060
+ Men altså...
+
+526
+0:40:20,060 --> 0:40:24,060
+ Hvis jeg sad i politiet og i efterretningstjenesten og i forsvaret,
+
+527
+0:40:24,060 --> 0:40:26,060
+ så ville jeg også være en hård nød at gå efter banditterne.
+
+528
+0:40:26,060 --> 0:40:28,060
+ Der er overhovedet ikke nogen tvivl om det.
+
+529
+0:40:28,060 --> 0:40:31,060
+ Men man overvåger altså ikke en hel befolkning, bare fordi man kan.
+
+530
+0:40:31,060 --> 0:40:35,060
+ Så jeg synes, at der er noget, der er kørt skævt der, altså.
+
+531
+0:40:35,060 --> 0:40:40,060
+ Og jeg tror faktisk, at det har noget med vores samarbejdspartnere at gøre.
+
+532
+0:40:40,060 --> 0:40:42,060
+ Det er vi nok nødt til at tale om på et tidspunkt også.
+
+533
+0:40:42,060 --> 0:40:47,060
+ Det hører lige med det samme. Hvad mener du der, når du siger samarbejdspartnere?
+
+534
+0:40:47,060 --> 0:40:48,060
+ Ja, vi er en del af et internationalt næst.
+
+535
+0:40:48,060 --> 0:40:49,060
+ Ja, vi er en del af et internationalt næst.
+
+536
+0:40:49,060 --> 0:40:50,060
+ Ja, vi er en del af et internationalt næst.
+
+537
+0:40:50,060 --> 0:40:54,060
+ Ikke kun Europol, men altså 5Eyes og 9Eyes og 11Eyes.
+
+538
+0:40:54,060 --> 0:40:59,060
+ Det kan godt være, at vi har lovet at levere nogle data der, som vi ikke ved, at vi faktisk leverer.
+
+539
+0:40:59,060 --> 0:41:09,060
+ Der kunne jeg godt tænke, at lad os få noget mere samtale, noget mere demokratisk debat.
+
+540
+0:41:09,060 --> 0:41:12,060
+ Lad os få noget mere åbenhed om, hvordan tingene foregår.
+
+541
+0:41:12,060 --> 0:41:17,060
+ Jeg taler jo ikke om, hvordan teknikken foregår, men der er noget værdidebat,
+
+542
+0:41:17,060 --> 0:41:18,060
+ som vi fuldstændig åbner.
+
+543
+0:41:18,060 --> 0:41:19,060
+ som vi fuldstændig åbner.
+
+544
+0:41:19,060 --> 0:41:23,060
+ Den er jo set som en grundladere her, i forhold til den digitale transformation,
+
+545
+0:41:23,060 --> 0:41:27,060
+ i forhold til monitorering og overvågning.
+
+546
+0:41:27,060 --> 0:41:31,060
+ Vi kan ikke blive ved med at tale så meget om tillid og frihed og alt det det giver os,
+
+547
+0:41:31,060 --> 0:41:36,060
+ uden også at tale om værdier og dataitik og hvad det er for et samfund, vi vil have.
+
+548
+0:41:36,060 --> 0:41:40,060
+ Det er vi nødt til at få en del debat på et tidspunkt.
+
+549
+0:41:40,060 --> 0:41:41,060
+ Henrik Gramshulmer.
+
+550
+0:41:41,060 --> 0:41:46,060
+ Ja, det er jo klart en omkostning for samfundet, at have hele det der overvågningsapparat.
+
+551
+0:41:46,060 --> 0:41:48,060
+ Jeg er helt enig, at der nok bliver solgt videre vores data,
+
+552
+0:41:48,060 --> 0:41:51,140
+ med nogle andre goder, vi måske får fra den anden vej.
+
+553
+0:41:51,900 --> 0:41:56,060
+ Men igen så er det et eksempel på, at vi har noget computermodel her,
+
+554
+0:41:56,140 --> 0:41:58,580
+ vi har noget rådata, som så er blevet fejlbehandlet,
+
+555
+0:41:58,580 --> 0:42:02,940
+ og det rådata har så vist sig, at du var jo på Bornhag,
+
+556
+0:42:03,440 --> 0:42:06,460
+ men det kan jo være, at det er en maske, der bare har markeret forkert,
+
+557
+0:42:06,580 --> 0:42:08,900
+ fordi man var i Nyborg, og det var indstillet forkert,
+
+558
+0:42:08,940 --> 0:42:10,240
+ eller havde været her på Bornhag.
+
+559
+0:42:10,580 --> 0:42:13,020
+ Vi kan se det med vores IP-adresser, vi kommer ud med her.
+
+560
+0:42:13,420 --> 0:42:15,140
+ De første par dage, når man har en camp her,
+
+561
+0:42:15,140 --> 0:42:18,120
+ der ser det ud som om, man er i Sverige, eller Norge, eller Prag.
+
+562
+0:42:19,280 --> 0:42:22,400
+ Og den slags data betyder jo lige pludselig, at computeren siger,
+
+563
+0:42:22,460 --> 0:42:24,240
+ at man er der og der, og man har gjort det og det.
+
+564
+0:42:24,700 --> 0:42:27,180
+ Og så har vi alle de sager, som du kender meget mere til, end jeg gør.
+
+565
+0:42:27,900 --> 0:42:30,740
+ Og der er det jo endnu værre, fordi i Danmark, som jeg forstår det,
+
+566
+0:42:30,800 --> 0:42:33,660
+ der har man jo bedt alle forsvarsadvokaterne om at slette deres data,
+
+567
+0:42:33,760 --> 0:42:34,680
+ når sagen er afgjort.
+
+568
+0:42:35,060 --> 0:42:37,800
+ Så det der med at lade sagerne gå om, kan heller ikke altid lade sig gøre.
+
+569
+0:42:38,180 --> 0:42:41,500
+ Så det er jo i hvert fald en advarsel til alle de der AI-systemer,
+
+570
+0:42:41,820 --> 0:42:44,160
+ at når de træffer en beslutning, så skal det være meget transparent,
+
+571
+0:42:44,160 --> 0:42:45,860
+ hvordan de er kommet frem til den beslutning,
+
+572
+0:42:46,200 --> 0:42:47,940
+ så man netop kan fejlsøge på det.
+
+573
+0:42:48,340 --> 0:42:50,920
+ Og man skulle sige, at teledata og geolokationer,
+
+574
+0:42:51,220 --> 0:42:53,200
+ det burde jo være noget kendt materiale,
+
+575
+0:42:53,240 --> 0:42:54,480
+ det burde da være noget, vi kunne regne med,
+
+576
+0:42:55,020 --> 0:42:58,940
+ men det er bare lidt sværere end som så at få opsamlet og markeret,
+
+577
+0:42:59,040 --> 0:42:59,820
+ hvor tingene foregår.
+
+578
+0:43:00,280 --> 0:43:03,040
+ Og så forværer man det ved at implementere noget ny lovgivning,
+
+579
+0:43:03,100 --> 0:43:04,820
+ eller i hvert fald foreslå noget ny lovgivning,
+
+580
+0:43:05,160 --> 0:43:08,320
+ hvor vi skal trackes hele tiden, fordi der er trafik på vores telefon hele tiden.
+
+581
+0:43:09,380 --> 0:43:11,240
+ Med samtidig, du markerede lige før.
+
+582
+0:43:11,440 --> 0:43:14,060
+ Ja, altså, bare sådan lige.
+
+583
+0:43:14,160 --> 0:43:16,840
+ To ting.
+
+584
+0:43:17,480 --> 0:43:20,920
+ Først i forhold til det med lokningsbekendt, gør det sådan som sådan.
+
+585
+0:43:21,440 --> 0:43:24,860
+ Det er ikke noget, jeg har beskæftet mig rigtig meget med,
+
+586
+0:43:25,260 --> 0:43:27,060
+ ud over at jeg har sådan fuldt sagen.
+
+587
+0:43:27,200 --> 0:43:32,400
+ Og jeg kan jo også bare konstatere, at skiftende regeringer har nu selv erkendt,
+
+588
+0:43:32,440 --> 0:43:34,140
+ jamen det er ulovligt, det der foregår.
+
+589
+0:43:35,400 --> 0:43:37,580
+ Så det eneste, jeg sådan set rigtig derudover har gjort,
+
+590
+0:43:37,740 --> 0:43:41,500
+ er at smide penge til jeres forening, så I kunne køre den retssager.
+
+591
+0:43:42,080 --> 0:43:44,060
+ For jeg synes sådan set, det er ret væsentligt,
+
+592
+0:43:44,160 --> 0:43:46,160
+ men noget af det, jeg så har interesseret mig for,
+
+593
+0:43:46,160 --> 0:43:49,540
+ det er jo netop nogle af alle de her afledende diskussioner, der sådan set har været af dem.
+
+594
+0:43:49,540 --> 0:43:54,480
+ Vi diskuterer jo ind imellem kommunernes kontrolindsats,
+
+595
+0:43:54,480 --> 0:43:56,480
+ og også udbetalingen Danmarks kontrolindsats.
+
+596
+0:43:56,480 --> 0:43:59,120
+ Der er væsentlig forskel på det.
+
+597
+0:43:59,120 --> 0:44:01,820
+ Udbetalingen Danmark, det er jo så langt væk fra borgerne, som noget kan komme,
+
+598
+0:44:01,820 --> 0:44:05,400
+ og så sammenkører de ellers data for flere millioner borgere.
+
+599
+0:44:05,400 --> 0:44:13,480
+ Kommunerne har jo så deres kontrolindsats, som foregår meget forskelligt fra kommune til kommune,
+
+600
+0:44:13,480 --> 0:44:16,980
+ men jeg er blevet mærke i, senest vi havde den større diskussion af det her,
+
+601
+0:44:16,980 --> 0:44:20,980
+ der var det nærmest næsten en tredjedel af kommunerne, der gik ud og efterspurgte,
+
+602
+0:44:20,980 --> 0:44:23,980
+ at de også vil have adgang til f.eks. teledata.
+
+603
+0:44:23,980 --> 0:44:31,980
+ Altså at kommuner vil have adgang til data, som politiet kun kan få adgang til efter en dommerkendelse,
+
+604
+0:44:31,980 --> 0:44:36,980
+ og i helt særlige, vanskelige, svære, tumme kriminalsager.
+
+605
+0:44:36,980 --> 0:44:42,980
+ Bare det, at vi overhovedet er der, hvor en tredjedel af landets kommuner kan tænke, det er en skidegod idé,
+
+606
+0:44:42,980 --> 0:44:44,980
+ altså det er da en redselsfuld idé.
+
+607
+0:44:44,980 --> 0:44:49,980
+ Og selvfølgelig skal vi under ingen omstændigheder derhen, men det var altså også nogle af de diskussioner,
+
+608
+0:44:49,980 --> 0:44:51,980
+ vi engang imellem har omkring noget af det her.
+
+609
+0:44:51,980 --> 0:44:56,980
+ Og jeg synes faktisk, at noget af det, der så var yderligere bekymringer, bekymrede mig,
+
+610
+0:44:56,980 --> 0:45:01,980
+ det var, at der ikke var nogen politikere på Christiansborg, der gik ud og sagde, under ingen omstændigheder.
+
+611
+0:45:01,980 --> 0:45:07,980
+ Altså, det var som ind det mindste, de kunne have gjort derfra, men det bringer mig over i det her med rettighedssporet,
+
+612
+0:45:07,980 --> 0:45:12,980
+ som både er i forhold til det med lokning, men som også er i forhold til det, vi lige har,
+
+613
+0:45:12,980 --> 0:45:19,980
+ som vi har talt om, omkring brug af data og kunstig intelligens i den offentlige forvaltning.
+
+614
+0:45:19,980 --> 0:45:24,980
+ Der synes jeg godt, at vi kunne netop diskutere i højere grad rettigheder,
+
+615
+0:45:24,980 --> 0:45:26,980
+ og diskutere nogle borgerrettigheder.
+
+616
+0:45:26,980 --> 0:45:33,980
+ Jeg synes, altså et af de forslag, som vi konkret er kommet med, også nu, hvor der er et digitaliseringspartnerskab,
+
+617
+0:45:33,980 --> 0:45:38,980
+ og der er, vi er på vej til at få en ny fælles offentlig digitaliseringsstrategi,
+
+618
+0:45:38,980 --> 0:45:42,980
+ det er at lave to tilføjelser til,
+
+619
+0:45:42,980 --> 0:45:44,980
+ for eksempel forvaltningsloven.
+
+620
+0:45:44,980 --> 0:45:52,980
+ En tilføjelse omkring transparens, så der er transparens i forhold til, hvilke data ligger vi egentlig inde med,
+
+621
+0:45:52,980 --> 0:45:54,980
+ i forhold til algoritmer.
+
+622
+0:45:54,980 --> 0:46:01,980
+ Hvis din sag indgår i en eller anden algoritmesagsbehandling, hvad er det så, den algoritme gør?
+
+623
+0:46:01,980 --> 0:46:05,980
+ Så det er det ene spor, og det andet, det skal være en forklarelighedsrettighed,
+
+624
+0:46:05,980 --> 0:46:11,980
+ sådan at du også har en ret til at få forklaret, hvad er det egentlig, der foregår.
+
+625
+0:46:11,980 --> 0:46:16,980
+ Og det synes jeg som minimum, er nogle af de rettigheder, vi er nødt til at diskutere,
+
+626
+0:46:16,980 --> 0:46:19,980
+ i forhold til den fortsatte digitale omstilling af det her land.
+
+627
+0:46:19,980 --> 0:46:25,980
+ Og den kunne også bruges i forhold til andre dele end rent det, der ligger under forvaltningsloven,
+
+628
+0:46:25,980 --> 0:46:29,980
+ men også noget af det, der ligger i andre dele af lovgivningen.
+
+629
+0:46:29,980 --> 0:46:33,980
+ Og det synes jeg ville være relevant at diskutere fortsat det spor.
+
+630
+0:46:33,980 --> 0:46:37,980
+ Jeg vil så lige spørge udover publikum, der må være nogle spørgsmål derude.
+
+631
+0:46:37,980 --> 0:46:40,980
+ Der må være eller nogle kommentarer, som et eller andet.
+
+632
+0:46:40,980 --> 0:46:43,980
+ For ellers bliver vi jo nødt til at blive ved med at stå og snakke heroppe.
+
+633
+0:46:43,980 --> 0:46:46,980
+ Altså jeg kan udføre, at I også har et eller andet, I gerne vil byde ind med.
+
+634
+0:46:46,980 --> 0:46:50,980
+ Men mens I sidder og tænker over det, overvej hvad for en arm, I skal vifte med,
+
+635
+0:46:50,980 --> 0:46:54,980
+ eller om I tør komme op til den der farlige mikrofon, som mest står der,
+
+636
+0:46:54,980 --> 0:46:57,980
+ fordi at på grund af corona, altså det er nemmere at afsprite og sådan nogle ting.
+
+637
+0:46:57,980 --> 0:47:00,980
+ Det er ikke fordi, vi ikke gerne vil komme ned til det, men I kan godt komme op til den,
+
+638
+0:47:00,980 --> 0:47:02,980
+ hvis I har et eller andet, I gerne vil spørge om.
+
+639
+0:47:02,980 --> 0:47:04,980
+ Jeg synes måske, at noget af det, der kunne være spændende at gå videre med at snakke om,
+
+640
+0:47:04,980 --> 0:47:07,980
+ det er rettigheder i det hele taget.
+
+641
+0:47:07,980 --> 0:47:11,980
+ Har vi nogle digitale rettigheder tilbage i virkeligheden?
+
+642
+0:47:11,980 --> 0:47:15,980
+ Fordi sådan som jeg har oplevet med de tre emner, vi har gennemgået på nuværende tidspunkt,
+
+643
+0:47:15,980 --> 0:47:18,980
+ jamen så sidder vi jo og kigger på ting, der hele tiden forsvinder ud af døren,
+
+644
+0:47:18,980 --> 0:47:20,980
+ om man så må sige, i den her sammenhæng.
+
+645
+0:47:20,980 --> 0:47:23,980
+ Du markerede lige på den med det samme.
+
+646
+0:47:23,980 --> 0:47:25,980
+ Ja, fordi de rige, de har privatliv.
+
+647
+0:47:25,980 --> 0:47:29,980
+ Så dem, der har råd til det, og dem, der er ressourcestærke, de har privatliv.
+
+648
+0:47:29,980 --> 0:47:31,980
+ Hvad betyder det? Giv et eksempel.
+
+649
+0:47:31,980 --> 0:47:33,980
+ Jeg skal prøve at fortsætte.
+
+650
+0:47:34,980 --> 0:47:39,980
+ At man har simpelthen mulighed for selv at bestemme, hvad man gør.
+
+651
+0:47:39,980 --> 0:47:43,980
+ Jeg er freelance sikkerhedskonsulent, netværkskonsulent, underviser.
+
+652
+0:47:43,980 --> 0:47:45,980
+ Jeg tjener penge. Jeg har penge.
+
+653
+0:47:45,980 --> 0:47:50,980
+ Jeg kan vælge ikke at have et rejsekort, fordi jeg kan betale dobbelt billetpris for at tage ind til København.
+
+654
+0:47:50,980 --> 0:47:54,980
+ Det koster mig 108 kroner, at jeg kunne gøre det for den halve pris, hvis jeg havde et rejsekort.
+
+655
+0:47:54,980 --> 0:47:56,980
+ Men et rejsekort ville overvåge mig mere.
+
+656
+0:47:56,980 --> 0:48:00,980
+ Poul Henning Kamp har haft nogle gode foredrag, hvor han har talt om de super rige,
+
+657
+0:48:00,980 --> 0:48:02,980
+ der kan sejle rundt i deres jagt.
+
+658
+0:48:02,980 --> 0:48:04,980
+ Og når man sejler rundt i en jagt, så kommer man op med en bunke piger,
+
+659
+0:48:04,980 --> 0:48:06,980
+ som man kan passe på et havnekontor.
+
+660
+0:48:06,980 --> 0:48:09,980
+ Der er ikke rigtig nogen garanti for, at det er den rigtige bunke pas, man kommer med.
+
+661
+0:48:09,980 --> 0:48:12,980
+ Man kan måske også lade være med at vise nogle bestemte pas.
+
+662
+0:48:12,980 --> 0:48:16,980
+ Og hvis man er VIP, kan man måske sige, at man gerne vil holde det hemmeligt, at man er et bestemt sted.
+
+663
+0:48:16,980 --> 0:48:20,980
+ Hvorimod, hvis man er i den anden ende, og man får penge for det offentlige,
+
+664
+0:48:20,980 --> 0:48:22,980
+ så skal man simpelthen aflevere alle de der profiler.
+
+665
+0:48:22,980 --> 0:48:24,980
+ Man skal måske til at gøre klar til noget uddannelse.
+
+666
+0:48:24,980 --> 0:48:26,980
+ Man skal undersøges i alle ender og kanter.
+
+667
+0:48:26,980 --> 0:48:31,980
+ De vil gerne have de der tildata, så de kan overvåge en, om man nu er hjemme hos sin kæreste,
+
+668
+0:48:31,980 --> 0:48:35,980
+ mere end, jeg ved ikke, to gange om ugen, hvad ved jeg, så er man lige pludselig samboende,
+
+669
+0:48:35,980 --> 0:48:40,980
+ fordi man har været hjemme at passe huden tre timer på en onsdag, fordi den kastede op, eller hvad ved jeg.
+
+670
+0:48:40,980 --> 0:48:44,980
+ Så dem der er ressourcedærke, de har privatliv.
+
+671
+0:48:44,980 --> 0:48:46,980
+ Desværre kun.
+
+672
+0:48:46,980 --> 0:48:48,980
+ Pia?
+
+673
+0:48:48,980 --> 0:48:52,980
+ Jeg er enig i de eksempler, du har givet.
+
+674
+0:48:52,980 --> 0:48:58,980
+ De rige ved bare ikke, at deres telefon har de samme problemer som min telefon.
+
+675
+0:48:58,980 --> 0:49:01,980
+ Og måske skulle folk beskæftige sig lidt mere med,
+
+676
+0:49:01,980 --> 0:49:05,980
+ hvordan deres telefon fungerer både på arbejdspladsen og privat.
+
+677
+0:49:05,980 --> 0:49:08,980
+ Og måske også beskæftige sig med alle de data, der kører fra deres biler,
+
+678
+0:49:08,980 --> 0:49:10,980
+ selvom de er rige.
+
+679
+0:49:10,980 --> 0:49:15,980
+ Måske jo dyre biler, jo flere data osv. osv.
+
+680
+0:49:15,980 --> 0:49:19,980
+ Det er sådan med lovgivning med GDPR og offentlig forvaltning,
+
+681
+0:49:19,980 --> 0:49:22,980
+ at der er jo hvide rammer i databeskyttelsesloven,
+
+682
+0:49:22,980 --> 0:49:28,980
+ som er faktisk jo en pang-dang, men over GDPR.
+
+683
+0:49:28,980 --> 0:49:32,980
+ Og der kan man, synes jeg, jeg har bemærket,
+
+684
+0:49:32,980 --> 0:49:39,980
+ oftest skal finde et formål, som legaliserer statens behov for data.
+
+685
+0:49:39,980 --> 0:49:42,980
+ Og der må man altså også...
+
+686
+0:49:42,980 --> 0:49:46,980
+ Nogle gange bliver jeg en lille smule træt af GDPR og e-primacy,
+
+687
+0:49:46,980 --> 0:49:50,980
+ fordi der er altid nogle jurister, som lige kan forklare, hvorfor man godt kan det alligevel.
+
+688
+0:49:50,980 --> 0:49:53,980
+ Og hvis man ikke kan, så kan man altid ændre loven.
+
+689
+0:49:53,980 --> 0:49:56,980
+ Så igen er vi tilbage til det der med, jamen hvad synes vi er en god idé?
+
+690
+0:49:56,980 --> 0:50:00,980
+ Vi er nødt til at få den samfundsdebatte om, hvad er dataetisk og hvad er rimeligt?
+
+691
+0:50:00,980 --> 0:50:02,980
+ Og er der en grænse for...
+
+692
+0:50:02,980 --> 0:50:07,980
+ Fordi du siger, at der er ingen partier, som rigtig europavagtige kan være.
+
+693
+0:50:07,980 --> 0:50:12,980
+ Det har da undret mig, at vi vil have liberal økonomi, men ikke liberal politik f.eks.
+
+694
+0:50:12,980 --> 0:50:14,980
+ Hvor er de liberale partier henne i det her?
+
+695
+0:50:14,980 --> 0:50:19,980
+ Eller hvor er den, hvad hedder det, enhedslisten og SF i det her?
+
+696
+0:50:19,980 --> 0:50:22,980
+ Altså der er ikke nogen, der stiller krav til, at det kunne være anderledes,
+
+697
+0:50:22,980 --> 0:50:24,980
+ eller foreslå, at det er anderledes.
+
+698
+0:50:24,980 --> 0:50:28,980
+ Og har staten nogen rettigheder overfor borgerne, eller har de kun klikter?
+
+699
+0:50:28,980 --> 0:50:30,980
+ Det er sådan nogle debatter.
+
+700
+0:50:30,980 --> 0:50:34,980
+ Det er ikke en samfundsdebatte, der kører, men hvis man skal have et levende demokrati,
+
+701
+0:50:34,980 --> 0:50:38,980
+ så er vi nok nødt til at have dem i fremtiden, tænker jeg.
+
+702
+0:50:38,980 --> 0:50:40,980
+ Henrik Romslund.
+
+703
+0:50:40,980 --> 0:50:44,980
+ Jeg sidder jo og tænker, fordi vi siger rettigheder, vi siger menneskerettigheder og EMRK,
+
+704
+0:50:44,980 --> 0:50:47,980
+ og det binder også ind i vores ulovlige lokningssag.
+
+705
+0:50:47,980 --> 0:50:52,980
+ Og jeg er vokset op med at stole på både politiet og til retten og staten osv.,
+
+706
+0:50:52,980 --> 0:50:54,980
+ men jeg stoler jo mindre og mindre på dem,
+
+707
+0:50:54,980 --> 0:50:58,980
+ også fordi vi i praksis måske ikke har de rettigheder, som alle de fine dokumenter beskriver.
+
+708
+0:50:58,980 --> 0:51:02,980
+ Fordi at hvis man gør noget ulovligt som stat,
+
+709
+0:51:02,980 --> 0:51:05,980
+ jamen så skal man indsamle mindst en million for overhovedet at komme i landsretten,
+
+710
+0:51:05,980 --> 0:51:08,980
+ og man skal indsamle en million mere for at køre sagen videre.
+
+711
+0:51:08,980 --> 0:51:10,980
+ Det er altså rigtig, rigtig mange penge, og vi har set nu med Amagerfællet,
+
+712
+0:51:10,980 --> 0:51:12,980
+ jeg har ikke selv fulgt sagen som nøje,
+
+713
+0:51:12,980 --> 0:51:18,980
+ men der skal lige pludselig stilles sikkerhed for 2 millioner for at stoppe noget andet ulovligt.
+
+714
+0:51:18,980 --> 0:51:20,980
+ Altså så har vi jo i praksis ikke nogen rettigheder.
+
+715
+0:51:20,980 --> 0:51:24,980
+ Og så begynder vi at komme over i et begreb, som jeg synes er ret interessant,
+
+716
+0:51:24,980 --> 0:51:28,980
+ etik og moral, og jeg underviser også i etisk hacking.
+
+717
+0:51:28,980 --> 0:51:33,980
+ Og jeg sidder sådan lidt og tænker, nu kan vi sådan tænke over det og snakke om det i baren måske,
+
+718
+0:51:33,980 --> 0:51:38,980
+ fordi hvornår bliver det etisk forsvarligt at hacke staten for at stjæle de data,
+
+719
+0:51:38,980 --> 0:51:41,980
+ eller udstille det, eller stoppe deres ulovligheder?
+
+720
+0:51:41,980 --> 0:51:44,980
+ Altså hvornår er det etisk forsvarligt at hacke staten?
+
+721
+0:51:44,980 --> 0:51:49,980
+ Hvornår er det etisk forsvarligt at hacke en betonproducent i et unavngivet land
+
+722
+0:51:49,980 --> 0:51:50,980
+ og stoppe det?
+
+723
+0:51:50,980 --> 0:51:52,980
+ Hvor er deres klimaaftryk?
+
+724
+0:51:52,980 --> 0:51:55,980
+ Der har været eksempler på hacking tidligere i f.eks. Tyskland.
+
+725
+0:51:55,980 --> 0:52:00,980
+ Jeg husker en sag, hvor en stor smelteovn blev hacket og faktisk blev stoppet på et uheldigt tidspunkt.
+
+726
+0:52:00,980 --> 0:52:05,980
+ Så den smelteovn simpelthen, ja, det smeltede ikke mere, men den størknede simpelthen i ovnen,
+
+727
+0:52:05,980 --> 0:52:08,980
+ så den blev ukampdygtig og ikke kunne bruges.
+
+728
+0:52:08,980 --> 0:52:13,980
+ Når vi ikke har rettighederne, så er der nogle gange, vi måske bliver nødt til at tage rettighederne.
+
+729
+0:52:13,980 --> 0:52:19,980
+ Så hvis staten laver ulovligheder, er det så fornuftigt at lave ulovligheder den anden retning?
+
+730
+0:52:19,980 --> 0:52:22,980
+ Hvis jeg kunne stoppe noget lokning, så ville jeg da gerne gøre det.
+
+731
+0:52:22,980 --> 0:52:24,980
+ Også selvom det potentielt var ulovligt.
+
+732
+0:52:24,980 --> 0:52:28,980
+ Så civil ulydighed skal vi måske til at tænke lidt mere på, også i rettighedssammenhæng.
+
+733
+0:52:28,980 --> 0:52:33,980
+ Det skal du ikke sige så højt nu det her, efter vi lige har haft en helikopter hen over hele huset.
+
+734
+0:52:33,980 --> 0:52:35,980
+ Det er fordi, du sagde ordet hacking for lidt siden.
+
+735
+0:52:35,980 --> 0:52:39,980
+ Jamen, de har været over. Vi bliver overfløjet, og det kan være, det er tilfældigt,
+
+736
+0:52:39,980 --> 0:52:44,980
+ men på Bornholm har vi i hvert fald vældig mange gange set nogle sjove fly flyve hen over Bornhag,
+
+737
+0:52:44,980 --> 0:52:46,980
+ og det er altid festligt.
+
+738
+0:52:46,980 --> 0:52:48,980
+ Med samtidig rettigheder, har vi nogle af dem?
+
+739
+0:52:49,980 --> 0:52:54,980
+ Ja, om jeg har nogle af dem. Jeg har da heldigvis nogle, nej.
+
+740
+0:52:54,980 --> 0:53:00,980
+ Bare sådan lige en overflyvning. Nu vil jeg aldrig gå ind og opfordre til,
+
+741
+0:53:00,980 --> 0:53:04,980
+ at man skal begå ulovligheder for at flytte noget,
+
+742
+0:53:04,980 --> 0:53:06,980
+ medmindre man er i en helt særlig situation.
+
+743
+0:53:06,980 --> 0:53:09,980
+ Og det er der jo i nogle lande i hvert fald.
+
+744
+0:53:09,980 --> 0:53:11,980
+ Der kan man så diskutere det.
+
+745
+0:53:11,980 --> 0:53:14,980
+ Nej, det jeg synes er interessant, der er sket i de senere år,
+
+746
+0:53:14,980 --> 0:53:16,980
+ det er jo, at der er sket i høj grad et etisk skridt.
+
+747
+0:53:16,980 --> 0:53:18,980
+ Altså, der er sket et etisk skridt,
+
+748
+0:53:18,980 --> 0:53:19,980
+ hvor at,
+
+749
+0:53:19,980 --> 0:53:23,980
+ der var nogle ting, som vi aldrig, aldrig nogensinde ville gøre.
+
+750
+0:53:23,980 --> 0:53:25,980
+ Men nu kan vi.
+
+751
+0:53:25,980 --> 0:53:27,980
+ Og så gør vi det.
+
+752
+0:53:27,980 --> 0:53:35,980
+ Altså, noget af det vi har gjort med at virkelig ville beskytte privatlivets fred,
+
+753
+0:53:35,980 --> 0:53:39,980
+ det har vi jo værnet om i det her land.
+
+754
+0:53:39,980 --> 0:53:41,980
+ Men nu kan vi nogle ting digitalt,
+
+755
+0:53:41,980 --> 0:53:44,980
+ og så synes vi, så må vi gerne.
+
+756
+0:53:44,980 --> 0:53:46,980
+ Og nogle af dem,
+
+757
+0:53:46,980 --> 0:53:48,980
+ faktisk løgn, der er jo nogle partier,
+
+758
+0:53:48,980 --> 0:53:50,980
+ og det, jeg havde egentlig også regnet med,
+
+759
+0:53:50,980 --> 0:53:51,980
+ de ville sikkert være her i dag.
+
+760
+0:53:51,980 --> 0:53:54,980
+ Men de har garanteret en rigtig god grund til ikke at være her.
+
+761
+0:53:54,980 --> 0:53:55,980
+ Som ofte råber vagt i gevær.
+
+762
+0:53:55,980 --> 0:53:57,980
+ Det er SF-foreningslisten.
+
+763
+0:53:57,980 --> 0:54:00,980
+ Og hvad er sjovt at se ved SF-foreningslisten i øjeblikket?
+
+764
+0:54:00,980 --> 0:54:04,980
+ Jo, det er alt imens, at der er en del borgerlige partier,
+
+765
+0:54:04,980 --> 0:54:08,980
+ også Socialdemokratiet, der så kalder dem for gamle sovjetkommunister og andet.
+
+766
+0:54:08,980 --> 0:54:12,980
+ Så er det altså SF-foreningslisten, der forsvarer helt grundlæggende borgerlige frihedsrettigheder.
+
+767
+0:54:12,980 --> 0:54:16,980
+ Altså, der er jo virkelig også sket noget interessant i det politiske spektre herhjemme.
+
+768
+0:54:16,980 --> 0:54:20,980
+ Den måde, vi diskuterer etik på,
+
+769
+0:54:20,980 --> 0:54:22,980
+ nu er vi også begyndt at diskutere dataetik,
+
+770
+0:54:22,980 --> 0:54:24,980
+ det er jeg egentlig ved at lave valg om.
+
+771
+0:54:24,980 --> 0:54:26,980
+ Altså sådan prøve at komme væk fra.
+
+772
+0:54:26,980 --> 0:54:28,980
+ Jeg synes, det er et spøjst begreb,
+
+773
+0:54:28,980 --> 0:54:30,980
+ fordi det kommer til at lyde som om,
+
+774
+0:54:30,980 --> 0:54:32,980
+ at der er en generel etik,
+
+775
+0:54:32,980 --> 0:54:34,980
+ og så er der en helt særlig etik, når det lige handler om data.
+
+776
+0:54:34,980 --> 0:54:36,980
+ Det er der ikke i min optik.
+
+777
+0:54:36,980 --> 0:54:40,980
+ Der er en etik, uanset om der er data indblandet eller ej.
+
+778
+0:54:40,980 --> 0:54:42,980
+ Og vi må aldrig nogensinde komme væk fra det,
+
+779
+0:54:42,980 --> 0:54:44,980
+ fordi etik er noget universelt,
+
+780
+0:54:44,980 --> 0:54:45,980
+ at der så er nogle nye muligheder.
+
+781
+0:54:45,980 --> 0:54:46,980
+ Gør ikke noget nyt.
+
+782
+0:54:46,980 --> 0:54:48,980
+ Det er nødvendigvis, at vi skal udnytte de muligheder
+
+783
+0:54:48,980 --> 0:54:50,980
+ af nogle etiske hensyn.
+
+784
+0:54:50,980 --> 0:54:52,980
+ Og derfor skal der ikke være en særlig etik,
+
+785
+0:54:52,980 --> 0:54:54,980
+ der lige præcis er omkring data.
+
+786
+0:54:54,980 --> 0:54:56,980
+ Og så vil jeg sige det her omkring rettigheder,
+
+787
+0:54:56,980 --> 0:54:58,980
+ hvor at, hvis ikke vi gør noget,
+
+788
+0:54:58,980 --> 0:55:00,980
+ så mister vi reelt rettigheder.
+
+789
+0:55:00,980 --> 0:55:04,980
+ Og det gør vi også i forhold til hele det her,
+
+790
+0:55:04,980 --> 0:55:06,980
+ som optager meget så meget relationen
+
+791
+0:55:06,980 --> 0:55:08,980
+ mellem borgere og myndigheder.
+
+792
+0:55:08,980 --> 0:55:10,980
+ Fordi, hvis vi bevæger os i en retning af,
+
+793
+0:55:10,980 --> 0:55:12,980
+ at sager i højere grad afgøres på baggrund af
+
+794
+0:55:12,980 --> 0:55:15,980
+ objektive kriterier og automatisering,
+
+795
+0:55:15,980 --> 0:55:18,980
+ så flyttes det for eksempel til udbetaling i Danmark.
+
+796
+0:55:18,980 --> 0:55:19,980
+ Og udbetaling i Danmark,
+
+797
+0:55:19,980 --> 0:55:21,980
+ de er undtaget fra pligten til at yde
+
+798
+0:55:21,980 --> 0:55:23,980
+ helhedsorienteret rådgivning og vejledning
+
+799
+0:55:23,980 --> 0:55:24,980
+ og sagsbehandling.
+
+800
+0:55:24,980 --> 0:55:26,980
+ De skal kun gøre det inden for de ydelser,
+
+801
+0:55:26,980 --> 0:55:27,980
+ de jo ikke har,
+
+802
+0:55:27,980 --> 0:55:29,980
+ hvor kommunen har en anden forpligtigelse.
+
+803
+0:55:29,980 --> 0:55:31,980
+ Og det betyder, at i takt med,
+
+804
+0:55:31,980 --> 0:55:33,980
+ at vi objektiviserer kriterierne,
+
+805
+0:55:33,980 --> 0:55:36,980
+ så mister vi reelt rettigheder,
+
+806
+0:55:36,980 --> 0:55:38,980
+ som er noget af det helt grundlæggende
+
+807
+0:55:38,980 --> 0:55:40,980
+ i vores retssikkerhedslov den dag i dag.
+
+808
+0:55:40,980 --> 0:55:43,980
+ Så medmindre vi gør noget med forvaltningsloven,
+
+809
+0:55:43,980 --> 0:55:44,980
+ som jeg foreslog lige før,
+
+810
+0:55:44,980 --> 0:55:48,980
+ medmindre vi går ind og sætter en ære
+
+811
+0:55:48,980 --> 0:55:49,980
+ i det, vi altid har gjort,
+
+812
+0:55:49,980 --> 0:55:51,980
+ netop helhedsorienteret rådgivning og vejledning,
+
+813
+0:55:51,980 --> 0:55:53,980
+ så mister vi rettigheder.
+
+814
+0:55:53,980 --> 0:55:55,980
+ Og det er uanset om vi er rig eller fattig.
+
+815
+0:55:55,980 --> 0:55:57,980
+ Dem, der kommer til at mærke det mest,
+
+816
+0:55:57,980 --> 0:55:58,980
+ det er de fattigste.
+
+817
+0:55:58,980 --> 0:55:59,980
+ Og så er det selvfølgelig de riges forældre,
+
+818
+0:55:59,980 --> 0:56:00,980
+ fordi på et eller andet tidspunkt,
+
+819
+0:56:00,980 --> 0:56:02,980
+ så kommer alle deres udbetalinger
+
+820
+0:56:02,980 --> 0:56:03,980
+ fra udbetaling i Danmark.
+
+821
+0:56:03,980 --> 0:56:05,980
+ Der var et spørgsmål, der neddrager.
+
+822
+0:56:10,980 --> 0:56:12,980
+ Så kan jeg måske lige skynde mig at indskyde,
+
+823
+0:56:12,980 --> 0:56:13,980
+ at når jeg siger ressourcestærk,
+
+824
+0:56:13,980 --> 0:56:14,980
+ så er det jo ikke det,
+
+825
+0:56:14,980 --> 0:56:15,980
+ det er jo ikke altid økonomi,
+
+826
+0:56:15,980 --> 0:56:16,980
+ det kun hænger sammen med,
+
+827
+0:56:16,980 --> 0:56:17,980
+ det er jo også en forståelse af,
+
+828
+0:56:17,980 --> 0:56:18,980
+ hvem der kan forstå noget lovgivning,
+
+829
+0:56:18,980 --> 0:56:19,980
+ forstå nogle rettigheder,
+
+830
+0:56:19,980 --> 0:56:20,980
+ forstå nogle systemer.
+
+831
+0:56:22,980 --> 0:56:24,980
+ Hej, jeg vil gerne høre jeres mening
+
+832
+0:56:24,980 --> 0:56:25,980
+ om to ting.
+
+833
+0:56:25,980 --> 0:56:28,980
+ Jeg er fra ITU og hedder Britt Ventreik,
+
+834
+0:56:28,980 --> 0:56:30,980
+ og jeg er forsker i offentlig digitalisering.
+
+835
+0:56:30,980 --> 0:56:32,980
+ Og i forbindelse med min forskning,
+
+836
+0:56:32,980 --> 0:56:34,980
+ der falder jeg over den her formulering,
+
+837
+0:56:34,980 --> 0:56:38,980
+ som jeg synes siger noget omkring rettigheder,
+
+838
+0:56:38,980 --> 0:56:39,980
+ som ikke er der,
+
+839
+0:56:39,980 --> 0:56:41,980
+ men de bliver ligesom udtalt,
+
+840
+0:56:41,980 --> 0:56:42,980
+ som om de var der.
+
+841
+0:56:42,980 --> 0:56:43,980
+ Men jeg vil gerne høre jeres mening om,
+
+842
+0:56:43,980 --> 0:56:45,980
+ hvordan I tolker den her formulering,
+
+843
+0:56:45,980 --> 0:56:47,980
+ fordi det er i forbindelse med dataindsamling,
+
+844
+0:56:47,980 --> 0:56:49,980
+ hvor der står til en borger,
+
+845
+0:56:49,980 --> 0:56:52,980
+ du har ret til ikke at blive gjort til genstand
+
+846
+0:56:52,980 --> 0:56:55,980
+ for automatiseret beslutningsstøtte
+
+847
+0:56:55,980 --> 0:56:58,980
+ herunder algoritmisk afgørelse.
+
+848
+0:56:58,980 --> 0:57:00,980
+ Det har du ret til,
+
+849
+0:57:00,980 --> 0:57:01,980
+ men der står ikke noget om,
+
+850
+0:57:01,980 --> 0:57:02,980
+ om det bliver gjort,
+
+851
+0:57:02,980 --> 0:57:05,980
+ så man har ret til at gøre indsigelser,
+
+852
+0:57:05,980 --> 0:57:06,980
+ eller om det er noget,
+
+853
+0:57:06,980 --> 0:57:09,980
+ der kunne tænkes at ske i fremtiden.
+
+854
+0:57:09,980 --> 0:57:11,980
+ Altså, hvad tænker I i forhold til rettighed
+
+855
+0:57:11,980 --> 0:57:12,980
+ i den her sammenhæng?
+
+856
+0:57:12,980 --> 0:57:14,980
+ Så det var det ene.
+
+857
+0:57:14,980 --> 0:57:15,980
+ Og det andet,
+
+858
+0:57:15,980 --> 0:57:18,980
+ det er det der med noget af det første,
+
+859
+0:57:18,980 --> 0:57:19,980
+ I diskuterede,
+
+860
+0:57:19,980 --> 0:57:23,980
+ altså virksomheder,
+
+861
+0:57:23,980 --> 0:57:25,980
+ som den offentlige sektor jo er i dag.
+
+862
+0:57:25,980 --> 0:57:27,980
+ Altså i gamle dage,
+
+863
+0:57:27,980 --> 0:57:28,980
+ altså hvornår det så end var,
+
+864
+0:57:28,980 --> 0:57:29,980
+ der var det jo noget med,
+
+865
+0:57:29,980 --> 0:57:31,980
+ at det var ledelsen og bestyrelsen,
+
+866
+0:57:31,980 --> 0:57:34,980
+ der besluttede omkring ressourcerne.
+
+867
+0:57:34,980 --> 0:57:35,980
+ Var der penge nok?
+
+868
+0:57:35,980 --> 0:57:36,980
+ Var der ikke penge nok?
+
+869
+0:57:36,980 --> 0:57:38,980
+ Hvad skulle de bruges til?
+
+870
+0:57:38,980 --> 0:57:39,980
+ Det er som om i dag,
+
+871
+0:57:39,980 --> 0:57:41,980
+ at det er ligesom borgerens ansvar,
+
+872
+0:57:41,980 --> 0:57:43,980
+ at staten har penge nok,
+
+873
+0:57:43,980 --> 0:57:45,980
+ altså at borgeren skal prøve,
+
+874
+0:57:45,980 --> 0:57:47,980
+ og jeg ved ikke om det også gælder
+
+875
+0:57:47,980 --> 0:57:49,980
+ de der tredjeparty aktører,
+
+876
+0:57:49,980 --> 0:57:50,980
+ I snakker om.
+
+877
+0:57:50,980 --> 0:57:52,980
+ Det er ligesom ansvaret for,
+
+878
+0:57:52,980 --> 0:57:54,980
+ at der er økonomi,
+
+879
+0:57:54,980 --> 0:57:56,980
+ der er lagt ud til borgeren.
+
+880
+0:57:56,980 --> 0:57:58,980
+ Og hvordan skal man forholde sig til det,
+
+881
+0:57:58,980 --> 0:57:59,980
+ tænker I?
+
+882
+0:57:59,980 --> 0:58:00,980
+ Og er det rigtigt?
+
+883
+0:58:00,980 --> 0:58:01,980
+ Altså er det simpelthen,
+
+884
+0:58:01,980 --> 0:58:02,980
+ og det er for at sige,
+
+885
+0:58:02,980 --> 0:58:03,980
+ at det er et helt,
+
+886
+0:58:03,980 --> 0:58:06,980
+ altså er det nykapitalismen,
+
+887
+0:58:06,980 --> 0:58:08,980
+ der faktisk skinner igennem her,
+
+888
+0:58:08,980 --> 0:58:10,980
+ at alle har ansvar for,
+
+889
+0:58:10,980 --> 0:58:12,980
+ at der er penge nok i systemet,
+
+890
+0:58:12,980 --> 0:58:14,980
+ men dem der egentlig har brug for
+
+891
+0:58:14,980 --> 0:58:16,980
+ at få de ressourcer,
+
+892
+0:58:16,980 --> 0:58:18,980
+ ændrer egentlig ikke med at få dem,
+
+893
+0:58:18,980 --> 0:58:19,980
+ fordi der er ikke nogen,
+
+894
+0:58:19,980 --> 0:58:20,980
+ der kan gennemskue noget som helst,
+
+895
+0:58:20,980 --> 0:58:21,980
+ og der er heller ikke nogen,
+
+896
+0:58:21,980 --> 0:58:22,980
+ der tager ansvar.
+
+897
+0:58:24,980 --> 0:58:25,980
+ Der var to spørgsmål,
+
+898
+0:58:25,980 --> 0:58:26,980
+ et om automatiserede afgørelser,
+
+899
+0:58:26,980 --> 0:58:27,980
+ om man skulle have ret til
+
+900
+0:58:27,980 --> 0:58:29,980
+ at slippe af med dem,
+
+901
+0:58:29,980 --> 0:58:30,980
+ og den sidste omkring,
+
+902
+0:58:30,980 --> 0:58:31,980
+ hvordan, hvad hedder det,
+
+903
+0:58:31,980 --> 0:58:33,980
+ vores samfund er ved at være organiseret,
+
+904
+0:58:33,980 --> 0:58:35,980
+ mere som en virksomhed i virkeligheden.
+
+905
+0:58:35,980 --> 0:58:37,980
+ Er der nogen, der har lyst til at byde ind på den første,
+
+906
+0:58:37,980 --> 0:58:39,980
+ omkring det her med automatiserede afgørelser,
+
+907
+0:58:39,980 --> 0:58:41,980
+ om man har en ret til at sige nej?
+
+908
+0:58:44,980 --> 0:58:45,980
+ Jamen det vil jeg gerne,
+
+909
+0:58:45,980 --> 0:58:47,980
+ altså jeg synes lige præcis den formulering
+
+910
+0:58:47,980 --> 0:58:49,980
+ er enormt vigtig,
+
+911
+0:58:49,980 --> 0:58:51,980
+ sådan at man har retten til at sige nej,
+
+912
+0:58:51,980 --> 0:58:53,980
+ og at man har retten til at stille krav
+
+913
+0:58:53,980 --> 0:58:55,980
+ om personlig og individuel sagsbehandling.
+
+914
+0:58:55,980 --> 0:58:57,980
+ Forudsætningen er jo, at du ved det,
+
+915
+0:58:57,980 --> 0:58:58,980
+ og det er derfor,
+
+916
+0:58:58,980 --> 0:59:02,980
+ at sådan en transparensrettighed,
+
+917
+0:59:02,980 --> 0:59:04,980
+ synes jeg også er væsentlig,
+
+918
+0:59:04,980 --> 0:59:05,980
+ sådan at du reelt ved,
+
+919
+0:59:05,980 --> 0:59:07,980
+ er jeg udsat for det her eller ej,
+
+920
+0:59:07,980 --> 0:59:08,980
+ fordi,
+
+921
+0:59:08,980 --> 0:59:11,980
+ hvis du har krav på ikke at blive det,
+
+922
+0:59:11,980 --> 0:59:13,980
+ men ikke ved, om du bliver det,
+
+923
+0:59:13,980 --> 0:59:15,980
+ hvordan kan du så gøre din ret gældende?
+
+924
+0:59:15,980 --> 0:59:17,980
+ Så derfor synes jeg,
+
+925
+0:59:17,980 --> 0:59:19,980
+ det er vigtigt med afsæt i den bestemmelse,
+
+926
+0:59:19,980 --> 0:59:21,980
+ som jo er i GDPR,
+
+927
+0:59:21,980 --> 0:59:27,980
+ faktisk også får de yderligere rettigheder,
+
+928
+0:59:27,980 --> 0:59:29,980
+ som gør, at du også kan gøre det gældende.
+
+929
+0:59:29,980 --> 0:59:31,980
+ Og så er vi jo faktisk i en situation,
+
+930
+0:59:31,980 --> 0:59:36,980
+ hvor at jeg i hvert fald,
+
+931
+0:59:36,980 --> 0:59:37,980
+ og det er ikke sådan,
+
+932
+0:59:37,980 --> 0:59:41,980
+ nu tager jeg afsæt i en af de analyser,
+
+933
+0:59:41,980 --> 0:59:43,980
+ som Tænketanken Justitia har lavet,
+
+934
+0:59:43,980 --> 0:59:45,980
+ af hele udbetalingen Danmark.
+
+935
+0:59:45,980 --> 0:59:50,980
+ Hele deres model er jo objektive kriterier,
+
+936
+0:59:50,980 --> 0:59:55,980
+ og så vidt muligt automatiske afgørelser.
+
+937
+0:59:55,980 --> 0:59:57,980
+ Og derfor så er jeg ikke sikker på,
+
+938
+0:59:57,980 --> 0:59:59,980
+ at det fuldt ud finder sted den dag i dag,
+
+939
+0:59:59,980 --> 1:00:02,980
+ men derfor så skal vi altså have rettigheden,
+
+940
+1:00:02,980 --> 1:00:04,980
+ altså transparensrettigheder,
+
+941
+1:00:04,980 --> 1:00:05,980
+ og forklarelighedsrettigheder,
+
+942
+1:00:05,980 --> 1:00:06,980
+ som så også gør,
+
+943
+1:00:06,980 --> 1:00:08,980
+ at du vil kunne stille krav og sige,
+
+944
+1:00:08,980 --> 1:00:13,980
+ jamen jeg vil have en personlig og individualitetsbehandling,
+
+945
+1:00:13,980 --> 1:00:15,980
+ fordi det her er krav på.
+
+946
+1:00:15,980 --> 1:00:19,980
+ Så det er jo noget med at gøre det muligt reelt,
+
+947
+1:00:19,980 --> 1:00:22,980
+ at efterleve den bestemmelse, som ligger,
+
+948
+1:00:22,980 --> 1:00:24,980
+ fordi bestemmelsen som sådan er god nok,
+
+949
+1:00:24,980 --> 1:00:26,980
+ men det handler jo om efterlevelsen af den.
+
+950
+1:00:26,980 --> 1:00:28,980
+ Og det andet spørgsmål,
+
+951
+1:00:28,980 --> 1:00:30,980
+ det synes jeg jo er det her med,
+
+952
+1:00:30,980 --> 1:00:32,980
+ altså som jo er en svær størrelse,
+
+953
+1:00:32,980 --> 1:00:34,980
+ fordi det jo også,
+
+954
+1:00:34,980 --> 1:00:41,980
+ vi har jo alle sammen et ansvar i den forstand,
+
+955
+1:00:41,980 --> 1:00:44,980
+ at vi gudske takker lov lever i et demokrati,
+
+956
+1:00:44,980 --> 1:00:48,980
+ og derfor også skal have en demokratisk samtale.
+
+957
+1:00:48,980 --> 1:00:50,980
+ Problemet er den demokratiske samtale,
+
+958
+1:00:50,980 --> 1:00:52,980
+ for eksempel om det her den her fraværende.
+
+959
+1:00:52,980 --> 1:00:54,980
+ Problemet er,
+
+960
+1:00:54,980 --> 1:00:57,980
+ at der er mange sådan nogle naturligheder,
+
+961
+1:00:57,980 --> 1:01:02,980
+ i den måde, som vi udvikler samfundet på den dag i dag,
+
+962
+1:01:02,980 --> 1:01:04,980
+ som er problematiske i forhold til,
+
+963
+1:01:04,980 --> 1:01:06,980
+ den demokratiske samtale,
+
+964
+1:01:06,980 --> 1:01:08,980
+ og så bliver det sådan op til den enkelte,
+
+965
+1:01:08,980 --> 1:01:10,980
+ at føle et ansvar for,
+
+966
+1:01:10,980 --> 1:01:12,980
+ som de ikke har mulighed for at udføre.
+
+967
+1:01:12,980 --> 1:01:14,980
+ Så der er en skævhed,
+
+968
+1:01:14,980 --> 1:01:16,980
+ der hvor vi er,
+
+969
+1:01:16,980 --> 1:01:18,980
+ men jeg synes, at det er vigtigt,
+
+970
+1:01:18,980 --> 1:01:20,980
+ at vi allesammen har en mulighed for,
+
+971
+1:01:20,980 --> 1:01:22,980
+ at få indblik i, hvordan hænger det sammen.
+
+972
+1:01:22,980 --> 1:01:24,980
+ Jeg synes, det er dybt problematisk,
+
+973
+1:01:24,980 --> 1:01:26,980
+ at vi i øjeblikket har nogle diskussioner om,
+
+974
+1:01:26,980 --> 1:01:28,980
+ at spare milliarder rundt omkring,
+
+975
+1:01:28,980 --> 1:01:30,980
+ hvor vi helt ærligt ikke ved, hvordan pengene bliver brugt.
+
+976
+1:01:30,980 --> 1:01:32,980
+ Så derfor er det jo også noget med,
+
+977
+1:01:32,980 --> 1:01:33,980
+ at gøre sig bekendt med dem.
+
+978
+1:01:33,980 --> 1:01:35,980
+ Så kunne du også have en mulighed for,
+
+979
+1:01:35,980 --> 1:01:37,980
+ at kunne deltage i den demokratiske samtale.
+
+980
+1:01:37,980 --> 1:01:39,980
+ Og når du så har valgt nogle politikere,
+
+981
+1:01:39,980 --> 1:01:41,980
+ så er det altså også dem, der har ansvar for,
+
+982
+1:01:41,980 --> 1:01:43,980
+ at tingene de hænger sammen,
+
+983
+1:01:43,980 --> 1:01:45,980
+ og ikke at de kommer med en eller anden søgforklaring,
+
+984
+1:01:45,980 --> 1:01:47,980
+ i en eller anden retning.
+
+985
+1:01:47,980 --> 1:01:49,980
+ Jeg synes, det er et svært spørgsmål,
+
+986
+1:01:49,980 --> 1:01:51,980
+ jeg synes, det er et stort størst spørgsmål,
+
+987
+1:01:51,980 --> 1:01:53,980
+ men jeg synes, der hvor vi er i dag,
+
+988
+1:01:53,980 --> 1:01:55,980
+ så har vi meget forskellige forudsætninger,
+
+989
+1:01:55,980 --> 1:01:57,980
+ i forhold til at gå ind i den debat,
+
+990
+1:01:57,980 --> 1:01:59,980
+ fordi vi simpelthen ikke har den åbne samtale,
+
+991
+1:01:59,980 --> 1:02:01,980
+ som vi bør have om det.
+
+992
+1:02:03,980 --> 1:02:05,980
+ Pia Testdorf, du markerede også lige.
+
+993
+1:02:05,980 --> 1:02:07,980
+ Ja, bare lige indledende kort.
+
+994
+1:02:07,980 --> 1:02:11,980
+ Når vi taler om privilegier og ressourcestærk,
+
+995
+1:02:11,980 --> 1:02:13,980
+ så er jeg fuldstændig enig.
+
+996
+1:02:13,980 --> 1:02:18,980
+ Jeg kender mennesker, som er privilegerede og ressourcestærke,
+
+997
+1:02:18,980 --> 1:02:21,980
+ men overhovedet intet forstand har på digitalisering.
+
+998
+1:02:21,980 --> 1:02:24,980
+ Og det gør samtalen utrolig svær.
+
+999
+1:02:24,980 --> 1:02:28,980
+ Og jeg vil sige, 90% af dem, jeg kender privat,
+
+1000
+1:02:28,980 --> 1:02:30,980
+ de har overhovedet ikke interesse for digitalisering,
+
+1001
+1:02:30,980 --> 1:02:32,980
+ og det synes jeg er et problem.
+
+1002
+1:02:32,980 --> 1:02:37,980
+ Og det har intet med uddannelsesniveau eller indkomst at gøre.
+
+1003
+1:02:37,980 --> 1:02:41,980
+ Det med en automatisk afgørelse.
+
+1004
+1:02:41,980 --> 1:02:45,980
+ Der får jeg den association, at det er,
+
+1005
+1:02:45,980 --> 1:02:48,980
+ altså der står jo i lovgivningen, at man har ret til,
+
+1006
+1:02:48,980 --> 1:02:50,980
+ at det ikke kun er en automatisk afgørelse.
+
+1007
+1:02:50,980 --> 1:02:54,980
+ Men det kommer jo an på, hvordan vi designer og indretter systemerne.
+
+1008
+1:02:54,980 --> 1:02:56,980
+ Og hvordan ordlyden er.
+
+1009
+1:02:56,980 --> 1:02:59,980
+ Jeg synes jo, at det må være på den måde.
+
+1010
+1:02:59,980 --> 1:03:02,980
+ Ligesom med cookies og trackers og alt det andet.
+
+1011
+1:03:02,980 --> 1:03:05,980
+ At det er noget, vi skal vælge til, hvis vi giver lov til det.
+
+1012
+1:03:05,980 --> 1:03:07,980
+ Vi skal ikke vælge det fra.
+
+1013
+1:03:07,980 --> 1:03:09,980
+ Sådan er det jo i dag.
+
+1014
+1:03:09,980 --> 1:03:15,980
+ Alt andet end funktionelle cookies, helt strengt nødvendige cookies,
+
+1015
+1:03:15,980 --> 1:03:18,980
+ må ikke sættes, medmindre at vi giver lov til det.
+
+1016
+1:03:18,980 --> 1:03:21,980
+ Lovgivning er ikke sådan, at vi skal sige fra over for det.
+
+1017
+1:03:21,980 --> 1:03:23,980
+ Vi skal tilvælge dem. Det er lovgivningen.
+
+1018
+1:03:23,980 --> 1:03:25,980
+ Det bliver bare ikke praktiseret.
+
+1019
+1:03:25,980 --> 1:03:26,980
+ På samme måde kunne jeg godt forestille mig,
+
+1020
+1:03:26,980 --> 1:03:28,980
+ at det er sådan med en automatisk afgørelse.
+
+1021
+1:03:28,980 --> 1:03:30,980
+ Og det er i hvert fald sådan, det jeg har forstået indtil nu,
+
+1022
+1:03:30,980 --> 1:03:33,980
+ det er i de tilfælde, også hvor Anne-Marie Motsfeldt,
+
+1023
+1:03:33,980 --> 1:03:36,980
+ uden jeg selvfølgelig skal drage hende ind i det,
+
+1024
+1:03:36,980 --> 1:03:39,980
+ men jeg var til en debat omkring det.
+
+1025
+1:03:39,980 --> 1:03:43,980
+ Ja, man har ret til det, men det betyder,
+
+1026
+1:03:43,980 --> 1:03:48,980
+ at man aktivt skal gøre noget ekstra for at få den i tillæg.
+
+1027
+1:03:48,980 --> 1:03:51,980
+ Og der er vi jo allerede ude på et skråplan.
+
+1028
+1:03:51,980 --> 1:03:55,980
+ Altså, det svarer jo lidt til, at man skal yde noget ekstra,
+
+1029
+1:03:55,980 --> 1:03:59,980
+ og man skal igennem noget administration for at slippe for det.
+
+1030
+1:03:59,980 --> 1:04:02,980
+ Og det svarer lidt til, at jeg skriver til Erhvervsstyrelsen
+
+1031
+1:04:02,980 --> 1:04:04,980
+ eller Datatilsynet for at slippe for noget.
+
+1032
+1:04:04,980 --> 1:04:09,980
+ Det er en utrolig ekstra, hvad skal man sige,
+
+1033
+1:04:09,980 --> 1:04:12,980
+ indsats, man skal gøre som borger i det tilfælde.
+
+1034
+1:04:12,980 --> 1:04:16,980
+ Og altså, jeg vil sige, hvis man har brug for hjælp af det offentlige,
+
+1035
+1:04:16,980 --> 1:04:19,980
+ så er det måske ikke lige det, man har brug for.
+
+1036
+1:04:19,980 --> 1:04:22,980
+ Og måske slet ikke det, man har kræfter til eller lyst til.
+
+1037
+1:04:22,980 --> 1:04:24,980
+ Og så siger man, nå ja, whatever.
+
+1038
+1:04:24,980 --> 1:04:28,980
+ Og det, det, det, altså,
+
+1039
+1:04:28,980 --> 1:04:31,980
+ det skal være et tilvalg, det skal ikke være et fravalg.
+
+1040
+1:04:31,980 --> 1:04:35,980
+ Ja, nu ved jeg ikke, hvor den der formulering er fra,
+
+1041
+1:04:35,980 --> 1:04:38,980
+ fordi det kan godt være en, der står på side 25 i et arkivsskab
+
+1042
+1:04:38,980 --> 1:04:41,980
+ under en leopard et eller andet sted,
+
+1043
+1:04:41,980 --> 1:04:44,980
+ bruger så printet på et tidspunkt noget lovgivning
+
+1044
+1:04:44,980 --> 1:04:47,980
+ og gik hele vejen fra deres kontor til fælleparken med en rulle,
+
+1045
+1:04:47,980 --> 1:04:50,980
+ hvor det var printet, og det var, jeg kan ikke huske, om det var 10.000 sider.
+
+1046
+1:04:50,980 --> 1:04:53,980
+ Og sådan nogle formuleringer gemmer sig jo et eller andet sted,
+
+1047
+1:04:53,980 --> 1:04:56,980
+ og på et tidspunkt bliver det jo normalen måske, at det bliver automatisk behandlet,
+
+1048
+1:04:56,980 --> 1:05:00,980
+ og derfor skal du selv vide, at der er en mulighed for at sige nej til det.
+
+1049
+1:05:00,980 --> 1:05:04,980
+ Og så kommer spørgsmålet igen, om det er en ret, vi så i praksis kan gøre brug af,
+
+1050
+1:05:04,980 --> 1:05:06,980
+ fordi man så netop bliver forsinket.
+
+1051
+1:05:06,980 --> 1:05:08,980
+ Der er behandlingstid.
+
+1052
+1:05:08,980 --> 1:05:11,980
+ Så det vil sige for borgeren, der skal de måske, hvis de går den manuelle vej,
+
+1053
+1:05:11,980 --> 1:05:16,980
+ indrette sig på, at det tager tre uger eller tre måneder, før man får penge udbetalt,
+
+1054
+1:05:16,980 --> 1:05:18,980
+ som er til husleje, som falder her den første.
+
+1055
+1:05:18,980 --> 1:05:20,980
+ Så der kan det være et problem i praksis.
+
+1056
+1:05:20,980 --> 1:05:22,980
+ Men også den anden vej fra stat, offentlig,
+
+1057
+1:05:22,980 --> 1:05:26,980
+ der er der jo noget med behandlingstiderne og mange ressourcetider,
+
+1058
+1:05:26,980 --> 1:05:29,980
+ som de bruger på at behandle, og det vil være måske dyrere,
+
+1059
+1:05:29,980 --> 1:05:32,980
+ og skal have folk til at behandle de der sager.
+
+1060
+1:05:32,980 --> 1:05:37,980
+ Så de kan ikke holde deres mål om at spare x millioner.
+
+1061
+1:05:37,980 --> 1:05:39,980
+ Så de er heller ikke interesseret i det.
+
+1062
+1:05:39,980 --> 1:05:44,980
+ Så der er også pres fra begge sider om, at det skal foregå på den der automatiske måde.
+
+1063
+1:05:44,980 --> 1:05:48,980
+ Så jeg er bange for, at det er noget, der står som en god hensigt,
+
+1064
+1:05:48,980 --> 1:05:51,980
+ og på et tidspunkt er der nogen fra KL, der får sagt, at det er for dyrt,
+
+1065
+1:05:51,980 --> 1:05:54,980
+ ligesom kontanterne er for dyre, og så fik vi sat Anders i gang, tror jeg.
+
+1066
+1:05:54,980 --> 1:05:56,980
+ Men altså, det er bare for dyrt,
+
+1067
+1:05:56,980 --> 1:05:58,980
+ så gør det manuelt, så nu kan du ikke sige det mere.
+
+1068
+1:05:58,980 --> 1:06:00,980
+ Og det er bare noget lovgivning, der bliver presset ned en dag,
+
+1069
+1:06:00,980 --> 1:06:03,980
+ hvor man mener, det er godt nok på den automatiske måde.
+
+1070
+1:06:03,980 --> 1:06:06,980
+ Men er det grundlæggende et problem i virkeligheden, ikke?
+
+1071
+1:06:06,980 --> 1:06:08,980
+ Det rammer jo meget præcis noget af det her,
+
+1072
+1:06:08,980 --> 1:06:13,980
+ at man sælger, staten sælger digitalisering til borgerne som en virkelig god ting.
+
+1073
+1:06:13,980 --> 1:06:17,980
+ Og så må det jo logisk set derfor være skidt at vælge det fra.
+
+1074
+1:06:17,980 --> 1:06:20,980
+ Og derfor er det noget, man kan gøre langt nede i situationen.
+
+1075
+1:06:20,980 --> 1:06:25,980
+ Men det har aldrig, i Danmark bruger vi jo ikke digitalisering som et tilvalg ret meget.
+
+1076
+1:06:25,980 --> 1:06:27,980
+ Det er jo ikke noget med, at man siger,
+
+1077
+1:06:27,980 --> 1:06:29,980
+ det kunne jeg egentlig godt tænke mig, at vi digitaliserer.
+
+1078
+1:06:29,980 --> 1:06:31,980
+ Det er noget, der sådan sker hele tiden.
+
+1079
+1:06:31,980 --> 1:06:33,980
+ Og så bliver det utrolig vanskeligt at vælge det fra,
+
+1080
+1:06:33,980 --> 1:06:35,980
+ når det første er begyndt at køre.
+
+1081
+1:06:35,980 --> 1:06:37,980
+ Har vi noget reelt valg?
+
+1082
+1:06:37,980 --> 1:06:40,980
+ Altså, med netop den formulering, der er her.
+
+1083
+1:06:42,980 --> 1:06:48,980
+ Vi har ikke noget valg, hvis politikerne ikke begynder at interessere sig mere
+
+1084
+1:06:48,980 --> 1:06:52,980
+ for digitaliseringen ud fra borgernes synspunkt.
+
+1085
+1:06:52,980 --> 1:06:53,980
+ Det har vi ikke.
+
+1086
+1:06:53,980 --> 1:06:55,980
+ Fordi vi har nogle meget, meget, meget
+
+1087
+1:06:55,980 --> 1:06:58,980
+ stærke erhvervsinteresser og erhvervsorganisationer,
+
+1088
+1:06:58,980 --> 1:07:02,980
+ som er meget enige med både kommunens landsforening
+
+1089
+1:07:02,980 --> 1:07:04,980
+ og danske regioner.
+
+1090
+1:07:04,980 --> 1:07:08,980
+ Og en hel masse store virksomheder, som faciliterer det.
+
+1091
+1:07:08,980 --> 1:07:12,980
+ Så vi står i en brydningstid, et paradigmskift lige nu,
+
+1092
+1:07:12,980 --> 1:07:18,980
+ hvor jeg synes, det er...
+
+1093
+1:07:18,980 --> 1:07:20,980
+ Altså, ud fra et GDPR-synspunkt,
+
+1094
+1:07:20,980 --> 1:07:25,980
+ ud fra et data protection information security synspunkt,
+
+1095
+1:07:25,980 --> 1:07:27,980
+ og et politisk synspunkt,
+
+1096
+1:07:27,980 --> 1:07:30,980
+ der kan man jo godt tage nogle andre holdninger, som andre har i Europa.
+
+1097
+1:07:30,980 --> 1:07:34,980
+ For eksempel med, at vi skal være mere europæisk orienteret
+
+1098
+1:07:34,980 --> 1:07:39,980
+ i forhold til, hvordan EU skal have glæde af data.
+
+1099
+1:07:39,980 --> 1:07:41,980
+ Men der er jo også stor pres fra EU, der siger,
+
+1100
+1:07:41,980 --> 1:07:43,980
+ jamen, vi vil gerne have en hel masse data,
+
+1101
+1:07:43,980 --> 1:07:46,980
+ og så skal vi have dem i fælles data hop, osv.
+
+1102
+1:07:46,980 --> 1:07:50,980
+ Altså, der er jo sådan set pres på fra alle kanter om,
+
+1103
+1:07:50,980 --> 1:07:52,980
+ at ja, lad os endelig få nogle data.
+
+1104
+1:07:52,980 --> 1:07:53,980
+ Og der er altså kun...
+
+1105
+1:07:53,980 --> 1:07:55,980
+ Det er jo ligesom med mining, ikke?
+
+1106
+1:07:55,980 --> 1:07:57,980
+ Altså, nu er det datamining på mennesker,
+
+1107
+1:07:57,980 --> 1:07:59,980
+ og før var det ressourcer nede i jorden,
+
+1108
+1:07:59,980 --> 1:08:01,980
+ og så var det dyrene, osv.
+
+1109
+1:08:01,980 --> 1:08:03,980
+ Og hvad har vi tilbage nu?
+
+1110
+1:08:03,980 --> 1:08:05,980
+ Det er, at vi har life science, ikke?
+
+1111
+1:08:05,980 --> 1:08:09,980
+ Og det er der stor, hvad skal man sige, opbakning til.
+
+1112
+1:08:09,980 --> 1:08:14,980
+ Så jeg ved ikke rigtigt, hvem der skulle sige ifra, ærlig talt.
+
+1113
+1:08:14,980 --> 1:08:17,980
+ Siger I ifra Mads Sommensen?
+
+1114
+1:08:17,980 --> 1:08:21,980
+ Ja, altså, igen forstået på den måde.
+
+1115
+1:08:21,980 --> 1:08:27,980
+ Vi er jo ikke imod den digitale omstilling af den offentlige sektor.
+
+1116
+1:08:27,980 --> 1:08:30,980
+ Vi ser gerne, at den fortsætter.
+
+1117
+1:08:30,980 --> 1:08:31,980
+ Vi ser gerne, at man bruger data.
+
+1118
+1:08:31,980 --> 1:08:33,980
+ Vi ser gerne understøttet sagsbehandling.
+
+1119
+1:08:33,980 --> 1:08:36,980
+ Netop det her med, at i stedet for, at sagsbehandleren skal sidde og bruge,
+
+1120
+1:08:36,980 --> 1:08:38,980
+ jeg ved ikke hvor lang tid på, at klikke,
+
+1121
+1:08:38,980 --> 1:08:42,980
+ få nogle åbne vinduer, få syv programmer, der i øvrigt ikke taler sammen.
+
+1122
+1:08:42,980 --> 1:08:44,980
+ Altså, forlettet den del af det,
+
+1123
+1:08:44,980 --> 1:08:46,980
+ og det er jo også en del af digitaliseringen,
+
+1124
+1:08:46,980 --> 1:08:47,980
+ det synes jeg er enormt positivt,
+
+1125
+1:08:47,980 --> 1:08:50,980
+ men vi skal give nogle rettigheder, som jeg har været inde på et par gange.
+
+1126
+1:08:50,980 --> 1:08:51,980
+ Det er sådan det ene element.
+
+1127
+1:08:51,980 --> 1:08:53,980
+ Det andet, det er jo det her med tvangsdigitaliseringen,
+
+1128
+1:08:53,980 --> 1:08:56,980
+ hvor vi jo er gået en anden vej end nogle andre lande.
+
+1129
+1:08:56,980 --> 1:08:58,980
+ Det har også bragt os rigtig, rigtig langt,
+
+1130
+1:08:58,980 --> 1:09:01,980
+ og stillet os et rigtig, rigtig godt sted.
+
+1131
+1:09:01,980 --> 1:09:08,980
+ Så jeg anerkender fuldt ud, at der er problemer med det for nogen,
+
+1132
+1:09:08,980 --> 1:09:10,980
+ men jeg synes godt nok også, at der er meget af det,
+
+1133
+1:09:10,980 --> 1:09:16,980
+ der har gjort dagligdagen meget, meget nemmere på en række punkter.
+
+1134
+1:09:16,980 --> 1:09:18,980
+ Altså, det synes jeg heller ikke.
+
+1135
+1:09:18,980 --> 1:09:20,980
+ Altså, vi skal også passe på,
+
+1136
+1:09:20,980 --> 1:09:23,980
+ med at tale om det her kun som noget skidt.
+
+1137
+1:09:23,980 --> 1:09:26,980
+ Altså, for langt hovedparten af det her,
+
+1138
+1:09:26,980 --> 1:09:28,980
+ så synes jeg faktisk, det er enormt positivt,
+
+1139
+1:09:28,980 --> 1:09:30,980
+ men der er også sket nogle,
+
+1140
+1:09:30,980 --> 1:09:34,980
+ der er klart noget, der giver anledning til bekymring.
+
+1141
+1:09:34,980 --> 1:09:40,980
+ Jeg vil sige, nu har vi jo her det seneste halvandet års tid diskuteret,
+
+1142
+1:09:40,980 --> 1:09:42,980
+ eller det sidste par år,
+
+1143
+1:09:42,980 --> 1:09:46,980
+ og så var der lige en corona, som gjorde, at vi diskuterede noget andet,
+
+1144
+1:09:46,980 --> 1:09:47,980
+ men nu kommer vi i gang igen.
+
+1145
+1:09:47,980 --> 1:09:50,980
+ Men det hele det her med den fælles og offentlige digitaliseringsstrategi,
+
+1146
+1:09:50,980 --> 1:09:55,980
+ den nuværende udløb er jo faktisk i 2020.
+
+1147
+1:09:55,980 --> 1:09:57,980
+ Den næste den kommer så,
+
+1148
+1:09:57,980 --> 1:09:59,980
+ nu var det meningen, den skulle være kommet her til sommer,
+
+1149
+1:09:59,980 --> 1:10:01,980
+ men den er jo så blevet udskudt yderligere,
+
+1150
+1:10:01,980 --> 1:10:03,980
+ fordi der er nedsat det her digitaliseringspartnerskab,
+
+1151
+1:10:03,980 --> 1:10:06,980
+ og det vil jeg godt lige give en bemærkning med på vejen.
+
+1152
+1:10:06,980 --> 1:10:10,980
+ Men i forhold til diskussionerne omkring den fælles og offentlige digitaliseringsstrategi,
+
+1153
+1:10:10,980 --> 1:10:13,980
+ der er et af hovedtemaerne digital inklusion.
+
+1154
+1:10:13,980 --> 1:10:17,980
+ Og det er fordi, der er en meget, meget stor opmærksomhed og bevidsthed om,
+
+1155
+1:10:17,980 --> 1:10:19,980
+ at noget af den tvangsdigitalisering,
+
+1156
+1:10:19,980 --> 1:10:21,980
+ den har altså også gjort,
+
+1157
+1:10:21,980 --> 1:10:23,980
+ at der er nogen, der er blevet hægtet af.
+
+1158
+1:10:23,980 --> 1:10:24,980
+ Og det er et problem.
+
+1159
+1:10:24,980 --> 1:10:25,980
+ Og det er fuldt ud anerkendt,
+
+1160
+1:10:25,980 --> 1:10:28,980
+ både Digitaliseringsstyrelsen, Danske Regioner og KL.
+
+1161
+1:10:28,980 --> 1:10:31,980
+ Så de snakke, vi har med dem i forhold til,
+
+1162
+1:10:31,980 --> 1:10:33,980
+ altså både når vi har diskuteret,
+
+1163
+1:10:33,980 --> 1:10:36,980
+ hvad bør en ny fælles og offentlig digitaliseringsstrategi indeholde,
+
+1164
+1:10:36,980 --> 1:10:40,980
+ men også de drøftelser, vi har i forskellige projekter og alt muligt andet,
+
+1165
+1:10:40,980 --> 1:10:42,980
+ som vi sådan løbende arbejder i.
+
+1166
+1:10:42,980 --> 1:10:44,980
+ Der er det her tema.
+
+1167
+1:10:44,980 --> 1:10:46,980
+ Det er blevet stort,
+
+1168
+1:10:46,980 --> 1:10:48,980
+ og det bliver kun større nu.
+
+1169
+1:10:48,980 --> 1:10:49,980
+ Og det synes jeg er positivt,
+
+1170
+1:10:49,980 --> 1:10:51,980
+ fordi det gør, at vi kan tage hånd om de,
+
+1171
+1:10:51,980 --> 1:10:53,980
+ altså vi snakker jo ikke 5-10%,
+
+1172
+1:10:53,980 --> 1:10:55,980
+ vi snakker jo 20-25% af den danske befolkning,
+
+1173
+1:10:55,980 --> 1:10:57,980
+ der synes, der er problemer med det her.
+
+1174
+1:10:57,980 --> 1:11:00,980
+ Men at faktisk folk har gjort noget ved det.
+
+1175
+1:11:00,980 --> 1:11:03,980
+ Og så er der det, jeg gerne vil sige omkring digitaliseringspartnerskabet.
+
+1176
+1:11:03,980 --> 1:11:06,980
+ Det var regeringen, der nedsatte det her digitaliseringspartnerskab.
+
+1177
+1:11:06,980 --> 1:11:09,980
+ Jeg ved ikke, om I har set på sammensætningen af det.
+
+1178
+1:11:09,980 --> 1:11:11,980
+ Der er jo rigtig mange forskellige aktører med,
+
+1179
+1:11:11,980 --> 1:11:12,980
+ og det synes jeg er meget positivt,
+
+1180
+1:11:12,980 --> 1:11:14,980
+ fordi det kommer bredt rundt.
+
+1181
+1:11:14,980 --> 1:11:15,980
+ Men jeg synes, det der er problemet,
+
+1182
+1:11:15,980 --> 1:11:18,980
+ det er, at dem, der sidder som formænd for de fem arbejdsgrupper,
+
+1183
+1:11:18,980 --> 1:11:23,980
+ det er Microsoft, det er NNIT, det er KMD,
+
+1184
+1:11:23,980 --> 1:11:25,980
+ og jeg kan så ikke huske, hvem de sidste to er,
+
+1185
+1:11:25,980 --> 1:11:28,980
+ men det er to andre store IT-virksomheder.
+
+1186
+1:11:28,980 --> 1:11:32,980
+ Det er leverandørerne, man har sat som formænd for arbejdsgrupperne,
+
+1187
+1:11:32,980 --> 1:11:36,980
+ og leverandørerne, der så indgår i den samlede styregruppe
+
+1188
+1:11:36,980 --> 1:11:38,980
+ i digitaliseringspartnerskabet.
+
+1189
+1:11:38,980 --> 1:11:39,980
+ Så det, man i praksis har gjort,
+
+1190
+1:11:39,980 --> 1:11:42,980
+ det er, at man har givet leverandørerne sådan en platform,
+
+1191
+1:11:42,980 --> 1:11:44,980
+ og så har de nogle legekammerater fra aktørerne.
+
+1192
+1:11:44,980 --> 1:11:46,980
+ De sætter så i øvrigt en ramme,
+
+1193
+1:11:46,980 --> 1:11:48,980
+ at hvis det ikke kan formuleres,
+
+1194
+1:11:48,980 --> 1:11:52,980
+ ind i et meget, meget specifikt schema,
+
+1195
+1:11:52,980 --> 1:11:54,980
+ så kommer det slet ikke med.
+
+1196
+1:11:54,980 --> 1:11:57,980
+ Altså, det der, det bekymrer mig.
+
+1197
+1:11:57,980 --> 1:11:59,980
+ Og det bekymrer mig rigtig, rigtig meget.
+
+1198
+1:11:59,980 --> 1:12:01,980
+ Og jeg kan slet, slet ikke forstå,
+
+1199
+1:12:01,980 --> 1:12:06,980
+ at en socialdemokratisk regering vil køre det på den måde.
+
+1200
+1:12:06,980 --> 1:12:08,980
+ Jeg synes, det er dybt forkasteligt.
+
+1201
+1:12:08,980 --> 1:12:12,980
+ Og jeg kan også høre, at der er mange af de aktører, der sidder med,
+
+1202
+1:12:12,980 --> 1:12:14,980
+ ingen nævnt, ingen glemt,
+
+1203
+1:12:14,980 --> 1:12:16,980
+ men de synes, det er lige så forkasteligt.
+
+1204
+1:12:16,980 --> 1:12:17,980
+ Henrik, kom så.
+
+1205
+1:12:17,980 --> 1:12:19,980
+ Det lyder meget spændende.
+
+1206
+1:12:19,980 --> 1:12:21,980
+ Tak for at fortælle om det i hvert fald.
+
+1207
+1:12:21,980 --> 1:12:23,980
+ Det tror jeg, der er også mange andre her, der ikke vidste.
+
+1208
+1:12:23,980 --> 1:12:25,980
+ Det er problematisk, at vores politikere
+
+1209
+1:12:25,980 --> 1:12:28,980
+ ser IT som sådan en helt magisk boks,
+
+1210
+1:12:28,980 --> 1:12:30,980
+ hvor man lige så snart, man hælder i den der IT-sås ud over,
+
+1211
+1:12:30,980 --> 1:12:32,980
+ så kan man spare penge.
+
+1212
+1:12:32,980 --> 1:12:34,980
+ Og det er jo også derfor, man har tvangsdigitaliseret,
+
+1213
+1:12:34,980 --> 1:12:37,980
+ fordi man skal have alle over i den her platform,
+
+1214
+1:12:37,980 --> 1:12:39,980
+ som sparer pengene.
+
+1215
+1:12:39,980 --> 1:12:41,980
+ Ellers får man ikke gevinsten.
+
+1216
+1:12:41,980 --> 1:12:43,980
+ Og når man så opdager, at der netop er nogen, der ikke er kommet med,
+
+1217
+1:12:43,980 --> 1:12:45,980
+ jamen, så er der bare en kæmpe udgift ved at måske understøtte dem,
+
+1218
+1:12:45,980 --> 1:12:48,980
+ eller ved at have de gamle systemer kørende.
+
+1219
+1:12:48,980 --> 1:12:50,980
+ Nu nævnte du syv vinduer,
+
+1220
+1:12:50,980 --> 1:12:52,980
+ og de syv vinduer skal jo slet ikke være der.
+
+1221
+1:12:52,980 --> 1:12:55,980
+ Altså, for det første er der jo gamle, gamle systemer,
+
+1222
+1:12:55,980 --> 1:12:57,980
+ der ikke kan udfases, ikke bliver udfasede.
+
+1223
+1:12:57,980 --> 1:13:00,980
+ Jeg har en i familien, der arbejder i en kommune,
+
+1224
+1:13:00,980 --> 1:13:02,980
+ som fortæller om, var det noget,
+
+1225
+1:13:02,980 --> 1:13:05,980
+ hvad hedder det, gamle BBR'er og nye BBR'er,
+
+1226
+1:13:05,980 --> 1:13:07,980
+ og så lige pludselig, så sidder de bare med tre systemer,
+
+1227
+1:13:07,980 --> 1:13:09,980
+ som er det samme.
+
+1228
+1:13:09,980 --> 1:13:11,980
+ Men så er det jo ikke løsningen at lave et fjerdesystem,
+
+1229
+1:13:11,980 --> 1:13:13,980
+ der samler de tre systemer.
+
+1230
+1:13:13,980 --> 1:13:15,980
+ Det er simpelthen at få aflevet det gamle system,
+
+1231
+1:13:15,980 --> 1:13:17,980
+ få smidt det ud, få erstattet det med noget,
+
+1232
+1:13:17,980 --> 1:13:20,980
+ der har et bedre transparent digital design,
+
+1233
+1:13:20,980 --> 1:13:22,980
+ og nogle gode protokoller og formater,
+
+1234
+1:13:22,980 --> 1:13:24,980
+ man kan arbejde videre på.
+
+1235
+1:13:24,980 --> 1:13:26,980
+ Det der med, at man ikke fra politisk side
+
+1236
+1:13:26,980 --> 1:13:30,980
+ interesserer sig for IT, IT-ordførerskabet,
+
+1237
+1:13:30,980 --> 1:13:32,980
+ det er sådan et, der går på omgang,
+
+1238
+1:13:32,980 --> 1:13:34,980
+ på hvem der lige ikke har sagt nej til det,
+
+1239
+1:13:34,980 --> 1:13:37,980
+ eller ikke var med til et møde, får det bare smidt i nakken,
+
+1240
+1:13:37,980 --> 1:13:39,980
+ som sådan en våd bærlinger.
+
+1241
+1:13:39,980 --> 1:13:41,980
+ Vi snakkede med Stinus Lindgren tidligere i dag,
+
+1242
+1:13:41,980 --> 1:13:43,980
+ der kunne bekræfte det, og vi prøvede at få ham til at sige,
+
+1243
+1:13:43,980 --> 1:13:45,980
+ hvordan vi kunne interessere,
+
+1244
+1:13:45,980 --> 1:13:47,980
+ andre for IT og de problemer, der er.
+
+1245
+1:13:47,980 --> 1:13:49,980
+ Men det gør de bare ikke.
+
+1246
+1:13:49,980 --> 1:13:51,980
+ Og så kan der være masser af os IT-folk,
+
+1247
+1:13:51,980 --> 1:13:53,980
+ som ikke interesseres for politik,
+
+1248
+1:13:53,980 --> 1:13:55,980
+ og derfor bliver det en svær sammenblanding.
+
+1249
+1:13:59,980 --> 1:14:01,980
+ Jeg fik ikke rigtig svaret på det der med om,
+
+1250
+1:14:01,980 --> 1:14:04,980
+ jeg er fuldstændig enig med de to herre, tak for det,
+
+1251
+1:14:04,980 --> 1:14:07,980
+ det der med, om ansvaret bliver lagt på borgeren,
+
+1252
+1:14:07,980 --> 1:14:10,980
+ der har jeg lige en point, som jeg synes er ret vigtig,
+
+1253
+1:14:10,980 --> 1:14:13,980
+ fordi det er fordi, at jeg i mange mange omgange,
+
+1254
+1:14:13,980 --> 1:14:15,980
+ i flere år nu, har analyseret,
+
+1255
+1:14:15,980 --> 1:14:17,980
+ vores devices og applikationer,
+
+1256
+1:14:17,980 --> 1:14:19,980
+ hvad de giver fra sig af data.
+
+1257
+1:14:19,980 --> 1:14:21,980
+ Og jeg bliver ved med at skrive om det,
+
+1258
+1:14:21,980 --> 1:14:23,980
+ fordi folk skal vide det.
+
+1259
+1:14:23,980 --> 1:14:25,980
+ Men der synes jeg, en af de ting, som man kunne gøre fra offentligt,
+
+1260
+1:14:25,980 --> 1:14:27,980
+ altså fra regeringsholdet,
+
+1261
+1:14:27,980 --> 1:14:29,980
+ en politisk indsats,
+
+1262
+1:14:29,980 --> 1:14:31,980
+ det er, at man ikke kun sidder og venter på,
+
+1263
+1:14:31,980 --> 1:14:35,980
+ at EU gør noget i forhold til det der Big Tech,
+
+1264
+1:14:35,980 --> 1:14:37,980
+ men at regeringen går ind som holdninger og siger,
+
+1265
+1:14:37,980 --> 1:14:39,980
+ nu skal vi have data protection by design
+
+1266
+1:14:39,980 --> 1:14:41,980
+ på vores devices og på vores applikationer.
+
+1267
+1:14:41,980 --> 1:14:43,980
+ Det er et krav,
+
+1268
+1:14:43,980 --> 1:14:45,980
+ nærmest, hvis de skal sælges i Danmark.
+
+1269
+1:14:45,980 --> 1:14:47,980
+ Det her med, at data,
+
+1270
+1:14:47,980 --> 1:14:49,980
+ de fosser ud af vores devices.
+
+1271
+1:14:49,980 --> 1:14:53,980
+ Ikke kun jeg, som har 5-6 apps,
+
+1272
+1:14:53,980 --> 1:14:55,980
+ som jeg har installeret,
+
+1273
+1:14:55,980 --> 1:14:57,980
+ og resten har jeg slettet,
+
+1274
+1:14:57,980 --> 1:14:59,980
+ men jeg har stadigvæk 350 systemapps,
+
+1275
+1:14:59,980 --> 1:15:01,980
+ hvoraf 5-10 af dem,
+
+1276
+1:15:01,980 --> 1:15:03,980
+ kan jeg slet ikke kontrollere.
+
+1277
+1:15:03,980 --> 1:15:07,980
+ Vi er nødt til at få et andet design paradigme,
+
+1278
+1:15:07,980 --> 1:15:09,980
+ hvis vi skal have så meget digitalisering.
+
+1279
+1:15:09,980 --> 1:15:11,980
+ For jeg går bestemt også ind for digitalisering,
+
+1280
+1:15:11,980 --> 1:15:13,980
+ og jeg går også ind for at
+
+1281
+1:15:13,980 --> 1:15:15,980
+ lade mig teste til hospitalet.
+
+1282
+1:15:15,980 --> 1:15:17,980
+ Jeg bruger mine prøver,
+
+1283
+1:15:17,980 --> 1:15:19,980
+ jeg gør endelig det brug til noget forskning.
+
+1284
+1:15:19,980 --> 1:15:21,980
+ Det er ikke på den måde, at jeg er imod brug af data,
+
+1285
+1:15:21,980 --> 1:15:23,980
+ men jeg er imod, at vi er i Big Techs vold.
+
+1286
+1:15:23,980 --> 1:15:25,980
+ Det behøves vi ikke være.
+
+1287
+1:15:25,980 --> 1:15:27,980
+ Jeg kan ikke forstå, at der ikke er nogen politikere,
+
+1288
+1:15:27,980 --> 1:15:29,980
+ som aktivt siger,
+
+1289
+1:15:29,980 --> 1:15:31,980
+ vi skal kunne vælge nogle devices,
+
+1290
+1:15:31,980 --> 1:15:33,980
+ nogle mobildevices og nogle computer,
+
+1291
+1:15:33,980 --> 1:15:35,980
+ som er fuldstændig privacy by design.
+
+1292
+1:15:35,980 --> 1:15:37,980
+ Det har vi ikke.
+
+1293
+1:15:37,980 --> 1:15:39,980
+ Og det nærmeste, jeg kan købe,
+
+1294
+1:15:39,980 --> 1:15:41,980
+ det er noget, der hedder
+
+1295
+1:15:41,980 --> 1:15:43,980
+ en pure edition,
+
+1296
+1:15:43,980 --> 1:15:45,980
+ som jeg lige har skrevet om her.
+
+1297
+1:15:45,980 --> 1:15:47,980
+ Jeg har stadigvæk brugt fire timer på at afinstallere
+
+1298
+1:15:47,980 --> 1:15:49,980
+ og installere,
+
+1299
+1:15:49,980 --> 1:15:51,980
+ og det tog mig 27 minutter at læse
+
+1300
+1:15:51,980 --> 1:15:53,980
+ Microsofts privacy politik
+
+1301
+1:15:53,980 --> 1:15:55,980
+ og terms and conditions.
+
+1302
+1:15:55,980 --> 1:15:57,980
+ Og video optog det hele.
+
+1303
+1:15:57,980 --> 1:15:59,980
+ Det tog 27 minutter.
+
+1304
+1:15:59,980 --> 1:16:01,980
+ Det kan ikke være rigtigt.
+
+1305
+1:16:01,980 --> 1:16:03,980
+ Jeg vil slet ikke have det.
+
+1306
+1:16:03,980 --> 1:16:05,980
+ Men altså, vi har ikke noget valg.
+
+1307
+1:16:05,980 --> 1:16:07,980
+ Vi har ikke noget valg.
+
+1308
+1:16:07,980 --> 1:16:09,980
+ Jeg kan ikke købe tv,
+
+1309
+1:16:09,980 --> 1:16:11,980
+ jeg kan ikke købe en forstærker i dag,
+
+1310
+1:16:11,980 --> 1:16:13,980
+ uden at der er Apple Play,
+
+1311
+1:16:13,980 --> 1:16:15,980
+ og der er Netflix og der er Google.
+
+1312
+1:16:15,980 --> 1:16:17,980
+ Jeg vil ikke have det. Vi får ikke det valg.
+
+1313
+1:16:17,980 --> 1:16:19,980
+ Og der mener jeg altså,
+
+1314
+1:16:19,980 --> 1:16:21,980
+ vi får et billigt tv til 3.000 kroner
+
+1315
+1:16:21,980 --> 1:16:23,980
+ og 48 tommer,
+
+1316
+1:16:23,980 --> 1:16:25,980
+ men vi får ikke det valg, at vi kan gå hen i år om morgen
+
+1317
+1:16:25,980 --> 1:16:27,980
+ og købe det uden.
+
+1318
+1:16:27,980 --> 1:16:29,980
+ Og det er et problem.
+
+1319
+1:16:29,980 --> 1:16:31,980
+ Henrik?
+
+1320
+1:16:31,980 --> 1:16:33,980
+ Jamen lige præcis.
+
+1321
+1:16:33,980 --> 1:16:35,980
+ Vi har også købt et fjernsyn her på,
+
+1322
+1:16:35,980 --> 1:16:37,980
+ det var i nærheden af Black Friday, min kone og jeg
+
+1323
+1:16:37,980 --> 1:16:39,980
+ købte et fjernsyn, og der er alle de der apps med,
+
+1324
+1:16:39,980 --> 1:16:41,980
+ fordi de betaler for at få dem med.
+
+1325
+1:16:41,980 --> 1:16:43,980
+ Det er klart, at det bliver et billigere produkt for mig som forbruger.
+
+1326
+1:16:43,980 --> 1:16:47,980
+ Og det er altså 100% parallelt over til,
+
+1327
+1:16:47,980 --> 1:16:49,980
+ hvad kommuner og offentlige og stat,
+
+1328
+1:16:49,980 --> 1:16:51,980
+ de får tilbudt nogle services,
+
+1329
+1:16:51,980 --> 1:16:53,980
+ de får tilbudt noget, de skal gøre.
+
+1330
+1:16:53,980 --> 1:16:55,980
+ Som leverandør kan du designe et system,
+
+1331
+1:16:55,980 --> 1:16:59,980
+ der løser kommunens, statens problem på et eller andet område.
+
+1332
+1:16:59,980 --> 1:17:01,980
+ Og så kan du forære det til dem,
+
+1333
+1:17:01,980 --> 1:17:03,980
+ mod at du så måske får data tilbage,
+
+1334
+1:17:03,980 --> 1:17:05,980
+ som du så kan bruge på en anden vis.
+
+1335
+1:17:05,980 --> 1:17:07,980
+ Og det er jo svært at sige nej til,
+
+1336
+1:17:07,980 --> 1:17:09,980
+ hvis man står med en slunken kasse,
+
+1337
+1:17:09,980 --> 1:17:11,980
+ og man skal spare 10 millioner på det og det budget.
+
+1338
+1:17:11,980 --> 1:17:13,980
+ Så igen, de har måske heller ikke noget valg.
+
+1339
+1:17:13,980 --> 1:17:15,980
+ Og der kan vi måske godt fra politisk side,
+
+1340
+1:17:15,980 --> 1:17:17,980
+ begynde at kræve, at de kigger lidt mere på det.
+
+1341
+1:17:17,980 --> 1:17:19,980
+ Så skal man altså måske nok som kommune,
+
+1342
+1:17:19,980 --> 1:17:21,980
+ udvikle det system selv.
+
+1343
+1:17:21,980 --> 1:17:25,980
+ Eller købe det uden datadeling af borgernes data.
+
+1344
+1:17:25,980 --> 1:17:27,980
+ Med samtid kan vi undgå,
+
+1345
+1:17:27,980 --> 1:17:29,980
+ at borgerne bliver datakvæg for kommunerne og Big Tech?
+
+1346
+1:17:29,980 --> 1:17:31,980
+ Ja, det kan vi godt,
+
+1347
+1:17:31,980 --> 1:17:33,980
+ hvis vi beslutter os for det jo.
+
+1348
+1:17:33,980 --> 1:17:35,980
+ Det kan vi sådan set godt,
+
+1349
+1:17:35,980 --> 1:17:37,980
+ det kan vi også,
+
+1350
+1:17:37,980 --> 1:17:39,980
+ hvis vi investerer i det,
+
+1351
+1:17:39,980 --> 1:17:41,980
+ og det er ikke nødvendigvis, fordi det er meget dyrere.
+
+1352
+1:17:41,980 --> 1:17:43,980
+ Tag det her med Google på skolerne.
+
+1353
+1:17:43,980 --> 1:17:45,980
+ Det har jo meget været Aarhus Kommune,
+
+1354
+1:17:45,980 --> 1:17:47,980
+ der er også andre kommuner, der har gjort det.
+
+1355
+1:17:47,980 --> 1:17:49,980
+ Der er så udleveret de her Chromebooks,
+
+1356
+1:17:49,980 --> 1:17:51,980
+ til børn i familier,
+
+1357
+1:17:51,980 --> 1:17:53,980
+ der ikke har selv.
+
+1358
+1:17:53,980 --> 1:17:55,980
+ Og så har du jo simpelthen det her med,
+
+1359
+1:17:55,980 --> 1:17:57,980
+ at du faktisk giver data til Google.
+
+1360
+1:17:57,980 --> 1:17:59,980
+ Jeg mener sådan set et eller andet sted,
+
+1361
+1:17:59,980 --> 1:18:01,980
+ at det er rent dogenskab,
+
+1362
+1:18:01,980 --> 1:18:03,980
+ at man ikke vælger at bruge Debian Edu,
+
+1363
+1:18:03,980 --> 1:18:05,980
+ eller et eller andet.
+
+1364
+1:18:05,980 --> 1:18:07,980
+ Altså der er alternativer,
+
+1365
+1:18:07,980 --> 1:18:09,980
+ de ligger frit tilgængelige,
+
+1366
+1:18:09,980 --> 1:18:11,980
+ du kan jo bare hente dem, og så har du et helt system,
+
+1367
+1:18:11,980 --> 1:18:13,980
+ men man vælger altså nogle andre løsninger,
+
+1368
+1:18:13,980 --> 1:18:15,980
+ og det gør man af økonomiske hensyn,
+
+1369
+1:18:15,980 --> 1:18:17,980
+ så det er jo altså også noget med,
+
+1370
+1:18:17,980 --> 1:18:19,980
+ at beslutte sig for nogle ting.
+
+1371
+1:18:19,980 --> 1:18:21,980
+ Og jeg synes godt,
+
+1372
+1:18:21,980 --> 1:18:23,980
+ at vi i dette land,
+
+1373
+1:18:23,980 --> 1:18:25,980
+ kunne beslutte os for,
+
+1374
+1:18:25,980 --> 1:18:27,980
+ at vi ikke skal have Google inde,
+
+1375
+1:18:27,980 --> 1:18:29,980
+ på den måde,
+
+1376
+1:18:29,980 --> 1:18:31,980
+ i vores skoler.
+
+1377
+1:18:31,980 --> 1:18:33,980
+ Jeg synes et andet interessant eksempel,
+
+1378
+1:18:33,980 --> 1:18:35,980
+ det er jo Aula.
+
+1379
+1:18:35,980 --> 1:18:37,980
+ Ja, nu er jeg også kommet fra Aula.
+
+1380
+1:18:37,980 --> 1:18:39,980
+ Det gør man det,
+
+1381
+1:18:39,980 --> 1:18:41,980
+ det er jo,
+
+1382
+1:18:41,980 --> 1:18:43,980
+ det kommer man nu,
+
+1383
+1:18:43,980 --> 1:18:45,980
+ bare man har et barn jo,
+
+1384
+1:18:45,980 --> 1:18:47,980
+ der går i institution.
+
+1385
+1:18:47,980 --> 1:18:49,980
+ Men Aula,
+
+1386
+1:18:49,980 --> 1:18:51,980
+ på skoledelen,
+
+1387
+1:18:51,980 --> 1:18:53,980
+ det kan jo integrere med Google Docs.
+
+1388
+1:18:53,980 --> 1:18:55,980
+ Hvem beslutter det?
+
+1389
+1:18:55,980 --> 1:18:57,980
+ Det gør man ud lokalt.
+
+1390
+1:18:57,980 --> 1:18:59,980
+ Så det ligger jo faktisk ude,
+
+1391
+1:18:59,980 --> 1:19:01,980
+ og det kan jo så være i den ene kommune,
+
+1392
+1:19:01,980 --> 1:19:03,980
+ at man har en beslutning et sted,
+
+1393
+1:19:03,980 --> 1:19:05,980
+ men det kan også være der,
+
+1394
+1:19:05,980 --> 1:19:07,980
+ man vælger at sige,
+
+1395
+1:19:07,980 --> 1:19:09,980
+ uha, det ved vi sørme ikke,
+
+1396
+1:19:09,980 --> 1:19:11,980
+ hvor har de forhold til at træffe nogle af de her beslutninger,
+
+1397
+1:19:11,980 --> 1:19:13,980
+ og hvor,
+
+1398
+1:19:13,980 --> 1:19:15,980
+ i hvilket led i kæden,
+
+1399
+1:19:15,980 --> 1:19:17,980
+ træffer nogle af de her beslutninger.
+
+1400
+1:19:17,980 --> 1:19:19,980
+ Jeg synes simpelthen,
+
+1401
+1:19:19,980 --> 1:19:21,980
+ det handler om,
+
+1402
+1:19:21,980 --> 1:19:23,980
+ i allerhøjeste grad,
+
+1403
+1:19:23,980 --> 1:19:25,980
+ digitalisering handler ikke,
+
+1404
+1:19:25,980 --> 1:19:27,980
+ først og fremmest om IT,
+
+1405
+1:19:27,980 --> 1:19:29,980
+ digitalisering og digital omstilling handler i den grad om,
+
+1406
+1:19:29,980 --> 1:19:31,980
+ hvad er det for et samfund, vi vil have.
+
+1407
+1:19:31,980 --> 1:19:33,980
+ Og det er den debat, vi er nødt til at have,
+
+1408
+1:19:33,980 --> 1:19:35,980
+ og så skal vi selvfølgelig
+
+1409
+1:19:35,980 --> 1:19:37,980
+ bruge teknologi og IT
+
+1410
+1:19:37,980 --> 1:19:39,980
+ til at understøtte lige præcis det.
+
+1411
+1:19:39,980 --> 1:19:41,980
+ Men det skal jo ikke være sådan,
+
+1412
+1:19:41,980 --> 1:19:43,980
+ at digitalisering og IT,
+
+1413
+1:19:43,980 --> 1:19:45,980
+ det er fordi vi kan.
+
+1414
+1:19:45,980 --> 1:19:47,980
+ Vi skal gøre det fordi vi vil,
+
+1415
+1:19:47,980 --> 1:19:49,980
+ og det vi gerne vil,
+
+1416
+1:19:49,980 --> 1:19:51,980
+ det er at have et samfund,
+
+1417
+1:19:51,980 --> 1:19:53,980
+ der bygger på de og de værdier,
+
+1418
+1:19:53,980 --> 1:19:55,980
+ fordi det er det vi kan have en demokratisk samtale om,
+
+1419
+1:19:55,980 --> 1:19:57,980
+ også på det vi lige var inde omkring før.
+
+1420
+1:19:57,980 --> 1:19:59,980
+ Og der synes jeg også helt grundlæggende,
+
+1421
+1:19:59,980 --> 1:20:01,980
+ vi burde lave nogle principper,
+
+1422
+1:20:01,980 --> 1:20:03,980
+ det ene er privacy by design,
+
+1423
+1:20:03,980 --> 1:20:05,980
+ det andet er sådan noget som,
+
+1424
+1:20:05,980 --> 1:20:07,980
+ er det offentlige penge, er det offentlig kode,
+
+1425
+1:20:07,980 --> 1:20:09,980
+ altså der er mange ting, man kunne lægge ind i det der,
+
+1426
+1:20:09,980 --> 1:20:11,980
+ hvordan er det egentlig,
+
+1427
+1:20:11,980 --> 1:20:13,980
+ vi vil udvikle det her?
+
+1428
+1:20:13,980 --> 1:20:15,980
+ Noget af,
+
+1429
+1:20:15,980 --> 1:20:17,980
+ meget af det her vi også har snakket om,
+
+1430
+1:20:17,980 --> 1:20:19,980
+ det er også convenience,
+
+1431
+1:20:19,980 --> 1:20:21,980
+ det er nemt med et rejsekort,
+
+1432
+1:20:21,980 --> 1:20:23,980
+ selvom det koster på noget lokning,
+
+1433
+1:20:23,980 --> 1:20:25,980
+ det er nemt at bruge gubidox,
+
+1434
+1:20:25,980 --> 1:20:27,980
+ fordi det er bare nemmere end,
+
+1435
+1:20:27,980 --> 1:20:29,980
+ man skulle kunne flere ting frem og tilbage.
+
+1436
+1:20:29,980 --> 1:20:31,980
+ Mange af de her ting,
+
+1437
+1:20:31,980 --> 1:20:33,980
+ hvor vi kan vælge som samfund,
+
+1438
+1:20:33,980 --> 1:20:35,980
+ vælge som borgere,
+
+1439
+1:20:35,980 --> 1:20:37,980
+ risikerer vi ikke bare det hele,
+
+1440
+1:20:37,980 --> 1:20:39,980
+ det drukner i alle mulige andet,
+
+1441
+1:20:39,980 --> 1:20:41,980
+ fordi når vi har politiske diskussioner op til,
+
+1442
+1:20:41,980 --> 1:20:43,980
+ både kommunal og folketingsvalg,
+
+1443
+1:20:43,980 --> 1:20:45,980
+ så er det jo ikke de her ting vi diskuterer,
+
+1444
+1:20:45,980 --> 1:20:47,980
+ altså det er på ingen måder,
+
+1445
+1:20:47,980 --> 1:20:49,980
+ det her vi diskuterer.
+
+1446
+1:20:49,980 --> 1:20:51,980
+ Det er slet ikke på listen over ting,
+
+1447
+1:20:51,980 --> 1:20:53,980
+ som vi kunne tænke os at diskutere.
+
+1448
+1:20:53,980 --> 1:20:55,980
+ Så vi har jo reelt set ikke noget valg,
+
+1449
+1:20:55,980 --> 1:20:57,980
+ før det kommer op som noget,
+
+1450
+1:20:57,980 --> 1:20:59,980
+ der bliver tv-transmitteret i en partilederdebat.
+
+1451
+1:21:01,980 --> 1:21:03,980
+ Har I nogle bud på,
+
+1452
+1:21:03,980 --> 1:21:05,980
+ hvad kan vi gøre for at hæve det,
+
+1453
+1:21:05,980 --> 1:21:07,980
+ så det kommer op som noget,
+
+1454
+1:21:07,980 --> 1:21:09,980
+ vi gerne vil diskutere som samfund?
+
+1455
+1:21:09,980 --> 1:21:11,980
+ Det er jo min mor,
+
+1456
+1:21:11,980 --> 1:21:13,980
+ hun også kan holde den til.
+
+1457
+1:21:17,980 --> 1:21:19,980
+ Nu siger jeg jo ikke,
+
+1458
+1:21:19,980 --> 1:21:21,980
+ at vi skal opfordres til kriminalitet,
+
+1459
+1:21:21,980 --> 1:21:23,980
+ selvom Søren Pape jo er opfordret til kriminalitet.
+
+1460
+1:21:23,980 --> 1:21:25,980
+ Det er jo noget han har gjort for nogle år siden,
+
+1461
+1:21:25,980 --> 1:21:27,980
+ med lokning.
+
+1462
+1:21:27,980 --> 1:21:29,980
+ Men jeg er da sikker på,
+
+1463
+1:21:29,980 --> 1:21:31,980
+ at hvis man oplever det på egen krop,
+
+1464
+1:21:31,980 --> 1:21:33,980
+ det ser vi i hvert fald i rigtig mange sammenhænge,
+
+1465
+1:21:33,980 --> 1:21:35,980
+ at hvis folk oplever, at de taber data,
+
+1466
+1:21:35,980 --> 1:21:37,980
+ så får de lige pludselig forståelse for,
+
+1467
+1:21:37,980 --> 1:21:39,980
+ hvad der sker.
+
+1468
+1:21:39,980 --> 1:21:41,980
+ Jeg kunne da godt tænke mig en whistleblower,
+
+1469
+1:21:41,980 --> 1:21:43,980
+ der kom med 10 års backup
+
+1470
+1:21:43,980 --> 1:21:45,980
+ af Exchange fra Folketinget.
+
+1471
+1:21:45,980 --> 1:21:47,980
+ Jeg kunne godt tænke mig en whistleblower,
+
+1472
+1:21:47,980 --> 1:21:49,980
+ der lige pludselig havde fat i alle
+
+1473
+1:21:49,980 --> 1:21:51,980
+ de store partiers mailløsning,
+
+1474
+1:21:51,980 --> 1:21:53,980
+ hvor de har lavet alle deres revkager,
+
+1475
+1:21:53,980 --> 1:21:55,980
+ så vi havde det, som vi kunne dykke igennem,
+
+1476
+1:21:55,980 --> 1:21:57,980
+ som Snowden-dokumenter.
+
+1477
+1:21:57,980 --> 1:21:59,980
+ Jeg skal ikke opfordre til ulovligheder,
+
+1478
+1:21:59,980 --> 1:22:01,980
+ men vi skal have nogle flere whistleblower,
+
+1479
+1:22:01,980 --> 1:22:03,980
+ vi skal have noget, der rammer politikerne selv,
+
+1480
+1:22:03,980 --> 1:22:05,980
+ så det er noget, der kommer på deres radar.
+
+1481
+1:22:05,980 --> 1:22:09,980
+ Jeg efterlyser en kritisk masse hos medierne.
+
+1482
+1:22:09,980 --> 1:22:13,980
+ Jeg har købt tech-magasiner i mange, mange år,
+
+1483
+1:22:13,980 --> 1:22:15,980
+ og jeg har aldrig læst om noget af det her.
+
+1484
+1:22:15,980 --> 1:22:17,980
+ Det er først på det seneste,
+
+1485
+1:22:17,980 --> 1:22:19,980
+ og nu er det sådan lidt version 2,
+
+1486
+1:22:19,980 --> 1:22:21,980
+ skriver om lidt det ene og det andet.
+
+1487
+1:22:21,980 --> 1:22:23,980
+ Jeg efterlyser en kritisk presse.
+
+1488
+1:22:23,980 --> 1:22:25,980
+ Jeg har lige skrevet en artikel omkring
+
+1489
+1:22:25,980 --> 1:22:27,980
+ indsamling af data i forhold til,
+
+1490
+1:22:27,980 --> 1:22:31,980
+ hvem der var covid-smittet sidste år.
+
+1491
+1:22:31,980 --> 1:22:33,980
+ Der var fire forskellige aktører,
+
+1492
+1:22:33,980 --> 1:22:35,980
+ private aktører, som pludselig blev
+
+1493
+1:22:35,980 --> 1:22:37,980
+ begyndt at indsamle data på Facebook,
+
+1494
+1:22:37,980 --> 1:22:39,980
+ og danskerne, de sagde,
+
+1495
+1:22:39,980 --> 1:22:41,980
+ ja, vi vil gerne besvare.
+
+1496
+1:22:41,980 --> 1:22:43,980
+ Men der var ikke rigtig nogen myndigheder,
+
+1497
+1:22:43,980 --> 1:22:45,980
+ som greb fat i det, fordi igen,
+
+1498
+1:22:45,980 --> 1:22:47,980
+ det var op til borgeren at være klog nok til
+
+1499
+1:22:47,980 --> 1:22:49,980
+ ikke at besvare på Facebook,
+
+1500
+1:22:49,980 --> 1:22:51,980
+ eller ikke at besvare på en non-compliance webside.
+
+1501
+1:22:51,980 --> 1:22:53,980
+ Og det, som jeg oplevede sidste år,
+
+1502
+1:22:53,980 --> 1:22:55,980
+ det var jo så,
+
+1503
+1:22:55,980 --> 1:22:57,980
+ at de medier, som fortalte om,
+
+1504
+1:22:57,980 --> 1:22:59,980
+ at man kunne gøre det,
+
+1505
+1:22:59,980 --> 1:23:01,980
+ de sagde, ja, men det er den og den,
+
+1506
+1:23:01,980 --> 1:23:03,980
+ der står bag, og det er altså et godt formål,
+
+1507
+1:23:03,980 --> 1:23:05,980
+ og vi har brug for det,
+
+1508
+1:23:05,980 --> 1:23:07,980
+ men der var ikke én, som gik ind
+
+1509
+1:23:07,980 --> 1:23:09,980
+ og sagde, giver det mening?
+
+1510
+1:23:09,980 --> 1:23:11,980
+ Og hvor bliver data af?
+
+1511
+1:23:11,980 --> 1:23:13,980
+ Og altså,
+
+1512
+1:23:13,980 --> 1:23:15,980
+ i forhold til GDPR, så er vi jo nødt til
+
+1513
+1:23:15,980 --> 1:23:17,980
+ at tale om databehandlere,
+
+1514
+1:23:17,980 --> 1:23:19,980
+ hvor mange databehandlere, hvor mange businesspartner,
+
+1515
+1:23:19,980 --> 1:23:21,980
+ og sådan og sådan er der.
+
+1516
+1:23:21,980 --> 1:23:23,980
+ Og hvor er de placeret, og under hvilke forhold,
+
+1517
+1:23:23,980 --> 1:23:25,980
+ og ikke et ord om informationssikkerhed.
+
+1518
+1:23:27,980 --> 1:23:29,980
+ Og det kan jeg simpelthen ikke forstå.
+
+1519
+1:23:29,980 --> 1:23:31,980
+ Altså noget, hvis vi skal have en effekt
+
+1520
+1:23:31,980 --> 1:23:33,980
+ i forhold til awareness,
+
+1521
+1:23:33,980 --> 1:23:35,980
+ som skal batte noget,
+
+1522
+1:23:35,980 --> 1:23:37,980
+ så er der nogle tv-stationer,
+
+1523
+1:23:37,980 --> 1:23:39,980
+ og nogle journalister involveret.
+
+1524
+1:23:39,980 --> 1:23:41,980
+ Og så, fordi, det tror jeg,
+
+1525
+1:23:41,980 --> 1:23:43,980
+ hvis, altså, man gør det lidt i Sverige,
+
+1526
+1:23:43,980 --> 1:23:45,980
+ og Norge,
+
+1527
+1:23:45,980 --> 1:23:47,980
+ Norge er de utrolig dygtige,
+
+1528
+1:23:47,980 --> 1:23:49,980
+ og i Sverige er der også nogle aktive,
+
+1529
+1:23:49,980 --> 1:23:51,980
+ men det er lidt ligesom om,
+
+1530
+1:23:51,980 --> 1:23:53,980
+ at vi hænger på et par enkeltpersoner herhjemme,
+
+1531
+1:23:53,980 --> 1:23:55,980
+ og det er ligesom deres opgave.
+
+1532
+1:23:55,980 --> 1:23:57,980
+ Altså, medierne skal forstå,
+
+1533
+1:23:57,980 --> 1:23:59,980
+ at det her, det er en samfundsdebat,
+
+1534
+1:23:59,980 --> 1:24:01,980
+ som kun kan blive større,
+
+1535
+1:24:01,980 --> 1:24:03,980
+ og folk, på et eller andet tidspunkt,
+
+1536
+1:24:03,980 --> 1:24:05,980
+ de er så kørt lidt af sporet,
+
+1537
+1:24:05,980 --> 1:24:07,980
+ og det er jo slet ikke der, vi skal hen.
+
+1538
+1:24:07,980 --> 1:24:09,980
+ Vi kan sagtens gøre det her med data,
+
+1539
+1:24:09,980 --> 1:24:11,980
+ vi kan sagtens bruge data på en konstruktiv måde,
+
+1540
+1:24:11,980 --> 1:24:13,980
+ vi kan sagtens få gode data.
+
+1541
+1:24:13,980 --> 1:24:15,980
+ Det er bare et spørgsmål om, hvordan vi gør det.
+
+1542
+1:24:15,980 --> 1:24:19,980
+ Og at vi ikke accepterer Big Techs præmisser,
+
+1543
+1:24:19,980 --> 1:24:21,980
+ det synes jeg er vigtigt.
+
+1544
+1:24:21,980 --> 1:24:23,980
+ Så det vil sige, at vi skal have,
+
+1545
+1:24:23,980 --> 1:24:25,980
+ simpelthen, vi er nødt til at have nogle flere,
+
+1546
+1:24:25,980 --> 1:24:27,980
+ der beskæftiger sig med det her,
+
+1547
+1:24:27,980 --> 1:24:29,980
+ som bliver betalt ordentligt for det,
+
+1548
+1:24:29,980 --> 1:24:31,980
+ på lang sigt, at det ikke bare er sådan en opgave her,
+
+1549
+1:24:31,980 --> 1:24:33,980
+ og en opgave der.
+
+1550
+1:24:33,980 --> 1:24:35,980
+ Med samtænk, du får nok,
+
+1551
+1:24:35,980 --> 1:24:37,980
+ det bliver nok det sidste bud her i dag,
+
+1552
+1:24:37,980 --> 1:24:39,980
+ på hvad vi kan gøre for at få mere debat.
+
+1553
+1:24:39,980 --> 1:24:41,980
+ Jo, den er svær.
+
+1554
+1:24:41,980 --> 1:24:43,980
+ Altså vi har en demokratisk samtale herhjemme,
+
+1555
+1:24:43,980 --> 1:24:45,980
+ der er enormt splittet op.
+
+1556
+1:24:45,980 --> 1:24:47,980
+ Så det der med, at vi allesammen diskuterer det samme,
+
+1557
+1:24:47,980 --> 1:24:49,980
+ er jo forvejensværd,
+
+1558
+1:24:49,980 --> 1:24:51,980
+ også nogle gange på de store velfærdsområder.
+
+1559
+1:24:51,980 --> 1:24:53,980
+ Men,
+
+1560
+1:24:53,980 --> 1:24:55,980
+ men jeg ser bestemt også gerne,
+
+1561
+1:24:55,980 --> 1:24:57,980
+ at vi får
+
+1562
+1:24:57,980 --> 1:24:59,980
+ det her brækket frem,
+
+1563
+1:24:59,980 --> 1:25:01,980
+ og det kommer ind imellem,
+
+1564
+1:25:01,980 --> 1:25:03,980
+ når der er en helt særlig sag.
+
+1565
+1:25:03,980 --> 1:25:05,980
+ Men,
+
+1566
+1:25:05,980 --> 1:25:07,980
+ men jeg er også meget enig i det her med,
+
+1567
+1:25:07,980 --> 1:25:09,980
+ jamen,
+
+1568
+1:25:09,980 --> 1:25:11,980
+ komedierne begynder at dyrke det her mere.
+
+1569
+1:25:11,980 --> 1:25:13,980
+ Der sidder nogle få journalister rundt omkring,
+
+1570
+1:25:13,980 --> 1:25:15,980
+ som gerne vil noget,
+
+1571
+1:25:15,980 --> 1:25:17,980
+ og som også gerne skriver nogle historier,
+
+1572
+1:25:17,980 --> 1:25:19,980
+ som også laver nogle rigtig, rigtig gode historier,
+
+1573
+1:25:19,980 --> 1:25:21,980
+ men derfra til at få en stor fælles,
+
+1574
+1:25:21,980 --> 1:25:23,980
+ demokratisk samtale,
+
+1575
+1:25:23,980 --> 1:25:25,980
+ om lige præcis det her,
+
+1576
+1:25:25,980 --> 1:25:27,980
+ der er stadig et stykke vej.
+
+1577
+1:25:27,980 --> 1:25:29,980
+ Men det kræver jo selvfølgelig,
+
+1578
+1:25:29,980 --> 1:25:31,980
+ at vi allesammen også aktivt
+
+1579
+1:25:31,980 --> 1:25:33,980
+ forsøger at blande os i den her debat.
+
+1580
+1:25:33,980 --> 1:25:35,980
+ Men mens vi venter på,
+
+1581
+1:25:35,980 --> 1:25:37,980
+ at få den helt store fælles samtale
+
+1582
+1:25:37,980 --> 1:25:39,980
+ om det her tema, så synes jeg alligevel,
+
+1583
+1:25:39,980 --> 1:25:41,980
+ der er nogle skridt, der kunne være interessante
+
+1584
+1:25:41,980 --> 1:25:43,980
+ at tage.
+
+1585
+1:25:43,980 --> 1:25:45,980
+ Det ene
+
+1586
+1:25:45,980 --> 1:25:47,980
+ kunne jo være at se på,
+
+1587
+1:25:47,980 --> 1:25:49,980
+ sådan, hvordan er det, Folketinget sammensætter udvalg.
+
+1588
+1:25:49,980 --> 1:25:51,980
+ Altså, jeg er ikke fortaler for en
+
+1589
+1:25:51,980 --> 1:25:53,980
+ IT-minister og sådan noget, men jeg er
+
+1590
+1:25:53,980 --> 1:25:55,980
+ begyndt at blive fortaler for at have sådan et
+
+1591
+1:25:55,980 --> 1:25:57,980
+ digitaliseringsudvalg.
+
+1592
+1:25:57,980 --> 1:25:59,980
+ Og et digitaliseringsudvalg, der er
+
+1593
+1:25:59,980 --> 1:26:01,980
+ sidestillet med Folketingets EU-udvalg.
+
+1594
+1:26:01,980 --> 1:26:03,980
+ For det betyder jo,
+
+1595
+1:26:03,980 --> 1:26:05,980
+ altså digitalisering er jo ikke,
+
+1596
+1:26:05,980 --> 1:26:07,980
+ igen, det er jo ikke bare IT.
+
+1597
+1:26:07,980 --> 1:26:09,980
+ Altså nu kunne vi jo også høre, da vi
+
+1598
+1:26:09,980 --> 1:26:11,980
+ de der hørte
+
+1599
+1:26:11,980 --> 1:26:13,980
+ det med Stinus tidligere,
+
+1600
+1:26:13,980 --> 1:26:15,980
+ altså, jamen noget af det,
+
+1601
+1:26:15,980 --> 1:26:17,980
+ som vi så taler med en IT-ordfører,
+
+1602
+1:26:17,980 --> 1:26:19,980
+ det ligger hos en retsordfører.
+
+1603
+1:26:19,980 --> 1:26:21,980
+ Nogle gange, hvis man så taler med en retsordfører
+
+1604
+1:26:21,980 --> 1:26:23,980
+ omkring lige præcis det, så siger de,
+
+1605
+1:26:23,980 --> 1:26:25,980
+ jamen der henviser vi til IT-ordføreren.
+
+1606
+1:26:25,980 --> 1:26:27,980
+ Altså for et par år siden, der var det IT-ordføreren,
+
+1607
+1:26:27,980 --> 1:26:29,980
+ der sad og diskuterede
+
+1608
+1:26:29,980 --> 1:26:31,980
+ forvaltningslov, da det lige pludselig
+
+1609
+1:26:31,980 --> 1:26:33,980
+ var ved at fratage os nogle helt grundlæggende
+
+1610
+1:26:33,980 --> 1:26:35,980
+ rettigheder, og heldigvis så blev
+
+1611
+1:26:35,980 --> 1:26:37,980
+ det der trukket. Men et
+
+1612
+1:26:37,980 --> 1:26:39,980
+ digitaliseringsudvalg kunne være interessant,
+
+1613
+1:26:39,980 --> 1:26:41,980
+ hvis det sidestilles med EU-udvalget.
+
+1614
+1:26:41,980 --> 1:26:43,980
+ Fordi der skal en minister ned og hente
+
+1615
+1:26:43,980 --> 1:26:45,980
+ mandat
+
+1616
+1:26:45,980 --> 1:26:47,980
+ i forhold til det, de tager med til EU.
+
+1617
+1:26:47,980 --> 1:26:49,980
+ Kunne man gøre noget tilsvarende
+
+1618
+1:26:49,980 --> 1:26:51,980
+ i forhold til, at hvis de,
+
+1619
+1:26:51,980 --> 1:26:53,980
+ når de i gang, fortsætter den digitale omstilling
+
+1620
+1:26:53,980 --> 1:26:55,980
+ inden for et eller andet ministerielt
+
+1621
+1:26:55,980 --> 1:26:57,980
+ ressortområde, at så skal de faktisk ned
+
+1622
+1:26:57,980 --> 1:26:59,980
+ og have det diskuteret. Ikke bare blandt deres
+
+1623
+1:26:59,980 --> 1:27:01,980
+ egne, hvad kunne det være,
+
+1624
+1:27:01,980 --> 1:27:03,980
+ uddannelsesordførere, men faktisk
+
+1625
+1:27:03,980 --> 1:27:05,980
+ også i et digitaliseringsudvalg, hvor der sad
+
+1626
+1:27:05,980 --> 1:27:07,980
+ nogen, der interesserede sig for digital omstilling.
+
+1627
+1:27:07,980 --> 1:27:09,980
+ Det synes jeg kunne være interessant, og det synes jeg
+
+1628
+1:27:09,980 --> 1:27:11,980
+ kunne måske bidrage til
+
+1629
+1:27:11,980 --> 1:27:13,980
+ en mere nuanceret
+
+1630
+1:27:13,980 --> 1:27:15,980
+ debat
+
+1631
+1:27:15,980 --> 1:27:17,980
+ i Folketinget.
+
+1632
+1:27:17,980 --> 1:27:19,980
+ Og hvis vi har en nuanceret debat i Folketinget,
+
+1633
+1:27:19,980 --> 1:27:21,980
+ så kan det også være et skridt til
+
+1634
+1:27:21,980 --> 1:27:23,980
+ at få nogle af nuancerne med, og at vi
+
+1635
+1:27:23,980 --> 1:27:25,980
+ som borgere også ved, og
+
+1636
+1:27:25,980 --> 1:27:27,980
+ interesseorganisationer ved, hvem er det rent faktisk,
+
+1637
+1:27:27,980 --> 1:27:29,980
+ vi skal gå til, når vi skal diskutere
+
+1638
+1:27:29,980 --> 1:27:31,980
+ det her. Fordi da vi diskuterede
+
+1639
+1:27:31,980 --> 1:27:33,980
+ forvaltningsloven der for et par år siden med et
+
+1640
+1:27:33,980 --> 1:27:35,980
+ forslag, der takket lov blev trukket,
+
+1641
+1:27:35,980 --> 1:27:37,980
+ der gik vi både til
+
+1642
+1:27:37,980 --> 1:27:39,980
+ vi gik til
+
+1643
+1:27:39,980 --> 1:27:41,980
+ IT-ordførende, vi gik til retsordførende,
+
+1644
+1:27:41,980 --> 1:27:43,980
+ og vi gik til beskæftigelsesordførende.
+
+1645
+1:27:43,980 --> 1:27:45,980
+ Og alle sammen, de sad jo og
+
+1646
+1:27:45,980 --> 1:27:47,980
+ kastede bolden frem og tilbage mellem hinanden,
+
+1647
+1:27:47,980 --> 1:27:49,980
+ så det er jo uklart, hvem der har ansvaret, men
+
+1648
+1:27:49,980 --> 1:27:51,980
+ sådan et digitaliseringsudvalg, der kunne du i hvert fald
+
+1649
+1:27:51,980 --> 1:27:53,980
+ placere det et sted og have en samtale omkring det.
+
+1650
+1:27:53,980 --> 1:27:55,980
+ Det synes jeg kunne være et interessant
+
+1651
+1:27:55,980 --> 1:27:57,980
+ skridt, hvor vi også undgår,
+
+1652
+1:27:57,980 --> 1:27:59,980
+ at vi kommer ud i sådan noget med en eller anden
+
+1653
+1:27:59,980 --> 1:28:01,980
+ IT-minister, som så skulle være,
+
+1654
+1:28:01,980 --> 1:28:03,980
+ ligesom da Sofia Løde sad i spidsen for
+
+1655
+1:28:03,980 --> 1:28:05,980
+ moderniseringsstyrelsen,
+
+1656
+1:28:05,980 --> 1:28:07,980
+ så var det jo de facto hende.
+
+1657
+1:28:07,980 --> 1:28:09,980
+ Det var ikke sådan lykken,
+
+1658
+1:28:09,980 --> 1:28:11,980
+ kan man måske godt sige.
+
+1659
+1:28:11,980 --> 1:28:13,980
+ Det bliver sidste ord
+
+1660
+1:28:13,980 --> 1:28:15,980
+ i denne her debat i dag.
+
+1661
+1:28:15,980 --> 1:28:17,980
+ Mange tak til Pia Testorf,
+
+1662
+1:28:17,980 --> 1:28:19,980
+ som er Dages Beskyttelsesrådgiver,
+
+1663
+1:28:19,980 --> 1:28:21,980
+ til Henrik Kramslund, Jeremins en etisk hacker
+
+1664
+1:28:21,980 --> 1:28:23,980
+ og datalog, og til Mads Samsing,
+
+1665
+1:28:23,980 --> 1:28:25,980
+ som er næstformand i HK.
+
+1666
+1:28:25,980 --> 1:28:27,980
+ I bliver måske hængende lidt her omkring
+
+1667
+1:28:27,980 --> 1:28:29,980
+ Henrik, og i hvert fald
+
+1668
+1:28:29,980 --> 1:28:31,980
+ så man kan snakke med jer her rundt
+
+1669
+1:28:31,980 --> 1:28:33,980
+ omkring her på lejren og tage diskussionen videre udenfor.
+
+1670
+1:28:33,980 --> 1:28:35,980
+ Mange tak skal I have.

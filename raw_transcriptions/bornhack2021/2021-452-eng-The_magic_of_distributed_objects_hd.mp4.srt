@@ -1,0 +1,2047 @@
+# Transcribed 2023-11-14T21 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:09,200
+ So, this next talk is by Greg Asbauer-Petersen,
+
+2
+0:00:09,300 --> 0:00:13,180
+ who will talk about the magic of distributed objects.
+
+3
+0:00:14,760 --> 0:00:17,780
+ Or as the title says, distributed objects and magic,
+
+4
+0:00:18,380 --> 0:00:19,620
+ which is basically the same.
+
+5
+0:00:21,080 --> 0:00:21,680
+ Hello.
+
+6
+0:00:22,880 --> 0:00:27,600
+ I'm going to talk about this kind of probably slightly exotic topic,
+
+7
+0:00:27,600 --> 0:00:32,560
+ because it's something which I've spent about 10 years of my life on.
+
+8
+0:00:33,340 --> 0:00:36,020
+ My background is anthropology.
+
+9
+0:00:36,200 --> 0:00:37,020
+ I'm an anthropologist.
+
+10
+0:00:37,380 --> 0:00:41,480
+ I've done research in the world of open source software
+
+11
+0:00:41,480 --> 0:00:49,440
+ and property relations and ownership models and so forth for a long time.
+
+12
+0:00:50,820 --> 0:00:55,620
+ At some point, you always end up in that situation that you have a life,
+
+13
+0:00:55,620 --> 0:00:56,840
+ which has to work,
+
+14
+0:00:56,980 --> 0:00:57,580
+ which means you have...
+
+15
+0:00:57,600 --> 0:01:01,480
+ You have to be able to pay bills and support your kids and stuff like that.
+
+16
+0:01:01,700 --> 0:01:07,100
+ And that made me choose to leave academia and become a sysadmin instead of.
+
+17
+0:01:08,660 --> 0:01:11,620
+ You know, salary every month, super.
+
+18
+0:01:12,980 --> 0:01:19,100
+ But I still have this interest as an anthropologist
+
+19
+0:01:19,100 --> 0:01:26,600
+ on the existence of magic and distributed objects.
+
+20
+0:01:26,600 --> 0:01:30,060
+ And I will get into what I actually mean with this
+
+21
+0:01:30,060 --> 0:01:33,880
+ and how this is actually related to free software
+
+22
+0:01:33,880 --> 0:01:35,780
+ and the production of free software.
+
+23
+0:01:36,280 --> 0:01:42,560
+ And in particular, the production of free software within a project known as OpenWRT.
+
+24
+0:01:44,440 --> 0:01:50,160
+ I have for a number of years, I was a member of the OpenWRT core team.
+
+25
+0:01:52,280 --> 0:01:54,320
+ To be honest, I'm not much of a coder.
+
+26
+0:01:55,080 --> 0:01:56,560
+ I'm actually probably...
+
+27
+0:01:56,600 --> 0:02:00,800
+ The best in terms of technical things, is that I'm really good at breaking stuff.
+
+28
+0:02:01,800 --> 0:02:04,640
+ And it's a challenge for me to fix it again.
+
+29
+0:02:05,600 --> 0:02:06,720
+ But I try.
+
+30
+0:02:08,360 --> 0:02:09,920
+ So I did a lot of other things.
+
+31
+0:02:10,880 --> 0:02:17,880
+ And one of the things that interested me was actually how do I understand the model of ownership
+
+32
+0:02:17,880 --> 0:02:23,600
+ and the relationships around property in this context.
+
+33
+0:02:24,760 --> 0:02:26,360
+ But to start that,
+
+34
+0:02:26,960 --> 0:02:29,240
+ we got a couple of questions.
+
+35
+0:02:29,960 --> 0:02:31,320
+ The title is distributed objects and magic.
+
+36
+0:02:31,320 --> 0:02:31,920
+ And see if this changes?
+
+37
+0:02:31,920 --> 0:02:32,560
+ Yes.
+
+38
+0:02:35,160 --> 0:02:38,680
+ I have come up with a short definition of magic and of course of sorcery.
+
+39
+0:02:40,480 --> 0:02:41,960
+ And sorcery is also important.
+
+40
+0:02:42,480 --> 0:02:46,120
+ And magic is basically about enchanting people,
+
+41
+0:02:47,840 --> 0:02:51,360
+ convincing them without it being obvious to them that they should do something else,
+
+42
+0:02:51,360 --> 0:02:56,480
+ that they should experience certain things or they should act in specific ways.
+
+43
+0:02:56,600 --> 0:03:02,600
+ Whereas sorcery is the dark art. It's about manipulation and exploitation.
+
+44
+0:03:02,600 --> 0:03:14,600
+ And as an anthropologist, magic takes up a lot of space, or used to take up a lot of space, in the work, in the research.
+
+45
+0:03:14,600 --> 0:03:21,600
+ Because that was what the primitive people were all about. Magic and strange ways of organizing their lives.
+
+46
+0:03:21,600 --> 0:03:25,600
+ And cosmology in very strange ways.
+
+47
+0:03:25,600 --> 0:03:34,600
+ And this actually led me to think that, is there still magic in our world, or is there not?
+
+48
+0:03:34,600 --> 0:03:40,600
+ And how does magic find expressions today?
+
+49
+0:03:40,600 --> 0:03:46,600
+ And this brought me to the concept of distributing objects,
+
+50
+0:03:46,600 --> 0:03:51,600
+ which is a concept which is basically taken from an anthropological discussion
+
+51
+0:03:51,600 --> 0:03:53,600
+ of art objects.
+
+52
+0:03:53,600 --> 0:03:59,600
+ That you have certain objects, it could be a painting, it could be a figure,
+
+53
+0:03:59,600 --> 0:04:08,600
+ it could be, as I started out with, a canoe made by a tribe in Papua New Guinea.
+
+54
+0:04:08,600 --> 0:04:12,600
+ And it's not just a canoe, it's much more.
+
+55
+0:04:12,600 --> 0:04:18,600
+ And these objects, when you look at them, they contain qualities and intent of people.
+
+56
+0:04:18,600 --> 0:04:20,600
+ And
+
+57
+0:04:21,600 --> 0:04:31,600
+ with the intention that these objects should bring on, or bring with them,
+
+58
+0:04:31,600 --> 0:04:35,600
+ the power and intent of the producer or the owner.
+
+59
+0:04:35,600 --> 0:04:44,600
+ And so that it should give the people who, the person who meet or engage with a certain object,
+
+60
+0:04:44,600 --> 0:04:50,600
+ a certain experience, or make them act in specific ways.
+
+61
+0:04:50,600 --> 0:04:54,600
+ And typically distributed objects are placed in circulation.
+
+62
+0:04:54,600 --> 0:04:56,600
+ They have to be visible.
+
+63
+0:04:56,600 --> 0:05:01,600
+ And the intent is to enchant people.
+
+64
+0:05:01,600 --> 0:05:04,600
+ And now I'm kind of getting over to magic.
+
+65
+0:05:04,600 --> 0:05:12,600
+ And it's about that these objects are intended to enchant people
+
+66
+0:05:12,600 --> 0:05:16,600
+ and have them act and understand the world in a specific way.
+
+67
+0:05:16,600 --> 0:05:18,600
+ To give them experiences.
+
+68
+0:05:18,600 --> 0:05:21,600
+ And to inspire them.
+
+69
+0:05:21,600 --> 0:05:30,600
+ And this brings me to free software and ownership.
+
+70
+0:05:30,600 --> 0:05:34,600
+ Which was, as I said, the beginning of all of this.
+
+71
+0:05:34,600 --> 0:05:37,600
+ And there's a basic question.
+
+72
+0:05:37,600 --> 0:05:39,600
+ Why do people give away source code?
+
+73
+0:05:39,600 --> 0:05:44,600
+ That was when I started my project in the early 2000s.
+
+74
+0:05:44,600 --> 0:05:46,600
+ It was like the big thing.
+
+75
+0:05:46,600 --> 0:05:49,600
+ And it's really difficult to understand.
+
+76
+0:05:49,600 --> 0:05:54,600
+ Why are these people doing all this work and just giving it away for free?
+
+77
+0:05:54,600 --> 0:06:00,600
+ Is it about, in classical anthropological terms, gift giving, reciprocity?
+
+78
+0:06:00,600 --> 0:06:05,600
+ Is it about community, social relations?
+
+79
+0:06:05,600 --> 0:06:11,600
+ Or is it more about an economic sense that if I give something into the big cooking pot,
+
+80
+0:06:11,600 --> 0:06:15,600
+ there will be more for me because everybody else is also putting stuff in there?
+
+81
+0:06:16,600 --> 0:06:19,600
+ Is it just about license requirement?
+
+82
+0:06:19,600 --> 0:06:22,600
+ To be in compliance with licensing?
+
+83
+0:06:22,600 --> 0:06:24,600
+ Open source licensing?
+
+84
+0:06:24,600 --> 0:06:26,600
+ Or is it a mystery?
+
+85
+0:06:26,600 --> 0:06:28,600
+ And there wasn't any clear-cut understanding of this.
+
+86
+0:06:28,600 --> 0:06:30,600
+ Why are people doing it?
+
+87
+0:06:30,600 --> 0:06:33,600
+ And I was wondering about this.
+
+88
+0:06:33,600 --> 0:06:37,600
+ And then something really nice happened.
+
+89
+0:06:37,600 --> 0:06:39,600
+ This one came along.
+
+90
+0:06:39,600 --> 0:06:44,600
+ And somebody really fucked up at Linksys.
+
+91
+0:06:44,600 --> 0:06:49,600
+ So they ended up having to be forced to release the GPL source code.
+
+92
+0:06:49,600 --> 0:06:54,600
+ And that was in October 2003 that it really took off.
+
+93
+0:06:54,600 --> 0:06:59,600
+ And suddenly everyone was like into, hey, let's hack this thing.
+
+94
+0:06:59,600 --> 0:07:01,600
+ Let's do something about it.
+
+95
+0:07:01,600 --> 0:07:03,600
+ Let's find out what we can do with it.
+
+96
+0:07:03,600 --> 0:07:07,600
+ And that brought the OpenWrt project along.
+
+97
+0:07:07,600 --> 0:07:09,600
+ It came out of this.
+
+98
+0:07:09,600 --> 0:07:11,600
+ That suddenly there was source code available.
+
+99
+0:07:11,600 --> 0:07:13,600
+ You started people starting.
+
+100
+0:07:13,600 --> 0:07:17,600
+ You started taking apart and putting it back again in strange ways.
+
+101
+0:07:17,600 --> 0:07:25,600
+ And the Linksys WRT54G was like the thing to do that with at that point in time.
+
+102
+0:07:25,600 --> 0:07:34,600
+ And this brought me to OpenWrt as a project, as an organization, as an org.
+
+103
+0:07:34,600 --> 0:07:39,600
+ And I started looking at ownership and property relations there.
+
+104
+0:07:39,600 --> 0:07:42,600
+ Then, okay, they're producing something.
+
+105
+0:07:43,600 --> 0:07:47,600
+ They actually make themselves.
+
+106
+0:07:47,600 --> 0:07:50,600
+ Like there wasn't any OpenWrt before.
+
+107
+0:07:50,600 --> 0:07:56,600
+ So they started making it by cooperating and by themselves putting code together, writing code.
+
+108
+0:07:56,600 --> 0:07:59,600
+ And they do it through work and play.
+
+109
+0:07:59,600 --> 0:08:04,600
+ And I was kind of like, what do they actually make?
+
+110
+0:08:04,600 --> 0:08:05,600
+ Okay, they write code.
+
+111
+0:08:05,600 --> 0:08:07,600
+ But what does that actually mean?
+
+112
+0:08:07,600 --> 0:08:11,600
+ Because what is our world?
+
+113
+0:08:11,600 --> 0:08:14,600
+ What is all of this about?
+
+114
+0:08:14,600 --> 0:08:28,600
+ And what I was starting at some point, I started looking at, okay, maybe it's about that they are manifesting their ownership through the creation of a territory.
+
+115
+0:08:28,600 --> 0:08:32,600
+ The project itself, the source code repository.
+
+116
+0:08:32,600 --> 0:08:37,600
+ They are expressing authority, like the right to control.
+
+117
+0:08:37,600 --> 0:08:40,600
+ Specifically, who has the rights to control.
+
+118
+0:08:40,600 --> 0:08:43,600
+ Who has the rights to engage with this code.
+
+119
+0:08:43,600 --> 0:08:45,600
+ Who has the rights to commit.
+
+120
+0:08:45,600 --> 0:08:47,600
+ And so forth.
+
+121
+0:08:47,600 --> 0:08:56,600
+ So that could be in a way of understanding by these notions of territory, authority, and rights, what is actually going on here.
+
+122
+0:08:56,600 --> 0:09:05,600
+ And what kind of really was like the breaking point here was, I don't know if you ever saw this one.
+
+123
+0:09:05,600 --> 0:09:09,600
+ It's OpenWrt.
+
+124
+0:09:10,600 --> 0:09:16,600
+ The main developer, the MBM initiated the OpenWrt project.
+
+125
+0:09:16,600 --> 0:09:33,600
+ And he actually revokes the right to use the OpenWrt code from one specific company, which is actually one specific person, who broke the license requirements.
+
+126
+0:09:33,600 --> 0:09:38,600
+ And I was like, what the fuck?
+
+127
+0:09:38,600 --> 0:09:39,600
+ This is not something that happens very often.
+
+128
+0:09:39,600 --> 0:09:49,600
+ I don't know if you've ever seen anybody revoke somebody's right to use a specific piece of source code.
+
+129
+0:09:49,600 --> 0:09:55,600
+ I think this is my only example of it.
+
+130
+0:09:55,600 --> 0:09:57,600
+ And it was very, very public.
+
+131
+0:09:57,600 --> 0:10:07,600
+ And what happened there was that this code is circulating.
+
+132
+0:10:07,600 --> 0:10:15,600
+ And the developers from the OpenWrt project, they placed their code into circulation.
+
+133
+0:10:15,600 --> 0:10:17,600
+ They make it freely available.
+
+134
+0:10:17,600 --> 0:10:26,600
+ And they don't have any intent of creating relationships with everyone who is using this code.
+
+135
+0:10:26,600 --> 0:10:30,600
+ They don't expect that everyone will bring it back to them again.
+
+136
+0:10:30,600 --> 0:10:35,600
+ They kind of have an, okay, normally bits and pieces will kind of return somehow.
+
+137
+0:10:35,600 --> 0:10:49,600
+ There is a sense of that you have to kind of maintain the project, which again requires that you kind of attract developers.
+
+138
+0:10:49,600 --> 0:10:59,600
+ So this whole thing about circulation is both about placing your work publicly visible.
+
+139
+0:10:59,600 --> 0:11:02,600
+ And by that, maintaining your territory.
+
+140
+0:11:02,600 --> 0:11:04,600
+ Maintaining your authority over it.
+
+141
+0:11:05,600 --> 0:11:12,600
+ By having your copyright names and comments in the source code itself.
+
+142
+0:11:12,600 --> 0:11:16,600
+ And also maintaining the project.
+
+143
+0:11:16,600 --> 0:11:18,600
+ Maintaining the territory.
+
+144
+0:11:18,600 --> 0:11:21,600
+ By being visible.
+
+145
+0:11:21,600 --> 0:11:26,600
+ But also by attracting and helping new developers make themselves.
+
+146
+0:11:26,600 --> 0:11:33,600
+ And this is about property relations.
+
+147
+0:11:33,600 --> 0:11:35,600
+ And pre-software is all about that.
+
+148
+0:11:35,600 --> 0:11:39,600
+ Of course, very much about licensing.
+
+149
+0:11:39,600 --> 0:11:50,600
+ And in that sense, with these property relations, then as an anthropologist, there are lots of primitive people out there.
+
+150
+0:11:50,600 --> 0:11:53,600
+ And they are really primitive in Papua New Guinea.
+
+151
+0:11:53,600 --> 0:11:55,600
+ And they are really great.
+
+152
+0:11:55,600 --> 0:12:03,600
+ Because they have a different way of acting with and understanding what property and their relations are.
+
+153
+0:12:03,600 --> 0:12:04,600
+ They have a sense of multiple.
+
+154
+0:12:04,600 --> 0:12:07,600
+ They have a sense of multiple ownership.
+
+155
+0:12:07,600 --> 0:12:14,600
+ That it's not like an individual, like in a Western country, like in a capitalist understanding of ownership.
+
+156
+0:12:14,600 --> 0:12:24,600
+ It's about a group, a family, a tribe, a people who have the rights in certain ways to a given something.
+
+157
+0:12:24,600 --> 0:12:27,600
+ A given object, which could be a canoe.
+
+158
+0:12:27,600 --> 0:12:28,600
+ It could be a drum.
+
+159
+0:12:28,600 --> 0:12:31,600
+ It could be a shell necklace.
+
+160
+0:12:31,600 --> 0:12:35,600
+ But it's always something which is publicly visible.
+
+161
+0:12:35,600 --> 0:12:38,600
+ And it's in circulation.
+
+162
+0:12:38,600 --> 0:12:47,600
+ Like you have some very fantastic descriptions of one tribal group who built a canoe.
+
+163
+0:12:47,600 --> 0:12:53,600
+ And then they sail it to another village, like hundreds of miles away.
+
+164
+0:12:53,600 --> 0:12:58,600
+ And they lend the canoe to these people as a display.
+
+165
+0:12:58,600 --> 0:12:59,600
+ It's not about that they get something back.
+
+166
+0:12:59,600 --> 0:13:01,600
+ But they lend it.
+
+167
+0:13:01,600 --> 0:13:09,600
+ And then you will see in some certain situations that this canoe is then lent onward to another tribe.
+
+168
+0:13:09,600 --> 0:13:12,600
+ And then over time it might get back to the original.
+
+169
+0:13:12,600 --> 0:13:20,600
+ But again, this is about display of that they had kind of the territory to create this canoe.
+
+170
+0:13:20,600 --> 0:13:26,600
+ And they had their authority to do it.
+
+171
+0:13:26,600 --> 0:13:28,600
+ And they have the right to lend it.
+
+172
+0:13:28,600 --> 0:13:30,600
+ Lend it on.
+
+173
+0:13:30,600 --> 0:13:33,600
+ Like circulate this canoe in certain ways.
+
+174
+0:13:33,600 --> 0:13:42,600
+ As long as it is respected that everyone visibly knows that it belongs to a specific territory.
+
+175
+0:13:42,600 --> 0:13:45,600
+ A specific group of people.
+
+176
+0:13:45,600 --> 0:13:57,600
+ And in Papua New Guinea they have a very strong stories and actions around situations where people steal other people's names.
+
+177
+0:13:57,600 --> 0:14:08,600
+ And stealing somebody's name would be saying, is very basically saying, this is my property.
+
+178
+0:14:08,600 --> 0:14:11,600
+ This song, this canoe belongs to me.
+
+179
+0:14:11,600 --> 0:14:14,600
+ That's a no-go.
+
+180
+0:14:14,600 --> 0:14:16,600
+ That's a reason for going to war.
+
+181
+0:14:16,600 --> 0:14:23,600
+ And they also have an expression where they talk about the use of hard words.
+
+182
+0:14:23,600 --> 0:14:25,600
+ And these hard words are said.
+
+183
+0:14:25,600 --> 0:14:29,600
+ This is how it is.
+
+184
+0:14:29,600 --> 0:14:38,600
+ Which will typically be said, you are no longer a member of our community.
+
+185
+0:14:38,600 --> 0:14:40,600
+ Our world.
+
+186
+0:14:40,600 --> 0:14:42,600
+ And then you don't exist.
+
+187
+0:14:42,600 --> 0:14:44,600
+ As an individual.
+
+188
+0:14:44,600 --> 0:14:51,600
+ All your ties, all the entanglements that you were part of before.
+
+189
+0:14:51,600 --> 0:14:53,600
+ They have been cut.
+
+190
+0:14:53,600 --> 0:14:56,600
+ So that is effective.
+
+191
+0:14:56,600 --> 0:14:58,600
+ That's in result.
+
+192
+0:14:58,600 --> 0:15:02,600
+ It's about socially killing an individual.
+
+193
+0:15:02,600 --> 0:15:06,600
+ And that brings me back to this OpenWT comment.
+
+194
+0:15:06,600 --> 0:15:09,600
+ This is hard words.
+
+195
+0:15:09,600 --> 0:15:14,600
+ The result was for this owner of this company, Sveasoft.
+
+196
+0:15:14,600 --> 0:15:17,600
+ He went bankrupt.
+
+197
+0:15:17,600 --> 0:15:22,600
+ He was held out as being an idiot.
+
+198
+0:15:22,600 --> 0:15:24,600
+ An idiot.
+
+199
+0:15:24,600 --> 0:15:30,600
+ An individual you could not have social relationships with.
+
+200
+0:15:30,600 --> 0:15:37,600
+ Because he did not respect the ownership of others.
+
+201
+0:15:37,600 --> 0:15:46,600
+ So what the OpenWT project is doing is that they are expressing their ownership through free circulation.
+
+202
+0:15:46,600 --> 0:15:49,600
+ Because it is a way of showing that they have a territory.
+
+203
+0:15:49,600 --> 0:15:51,600
+ They have authority.
+
+204
+0:15:51,600 --> 0:15:53,600
+ And they have rights.
+
+205
+0:15:53,600 --> 0:16:01,600
+ And if you want to be part of this, you have to acknowledge that this is the case.
+
+206
+0:16:01,600 --> 0:16:03,600
+ You have to circulate.
+
+207
+0:16:03,600 --> 0:16:05,600
+ You can do whatever with the code.
+
+208
+0:16:05,600 --> 0:16:11,600
+ But you have to circulate it with the intent of the project developers.
+
+209
+0:16:11,600 --> 0:16:20,600
+ So in this sense, the source code itself is a distributed object or a set of distributed objects.
+
+210
+0:16:20,600 --> 0:16:22,600
+ Depending on how you look at it.
+
+211
+0:16:22,600 --> 0:16:32,600
+ And this object or these objects are embedded, entangled in the intentions of the OpenWT developers.
+
+212
+0:16:32,600 --> 0:16:44,600
+ And by circulating it, by keeping it visible, and by having this authority and the expression of territory,
+
+213
+0:16:44,600 --> 0:16:47,600
+ they are able to reproduce ownership.
+
+214
+0:16:47,600 --> 0:16:49,600
+ It's done automatically.
+
+215
+0:16:49,600 --> 0:16:59,600
+ And it's done without that they have to have community ties or social relationships with the people who use the software.
+
+216
+0:16:59,600 --> 0:17:11,600
+ And in that way, for me, it became an image where this is about enchanting the users and the people who meet the source code
+
+217
+0:17:11,600 --> 0:17:14,600
+ into doing and following the intent of it.
+
+218
+0:17:14,600 --> 0:17:17,600
+ Which is to manifest the ownership of the OpenWT project.
+
+219
+0:17:17,600 --> 0:17:20,600
+ And circulating it.
+
+220
+0:17:20,600 --> 0:17:26,600
+ And I think that was pretty much what I had to say.
+
+221
+0:17:26,600 --> 0:17:27,600
+ Very short.
+
+222
+0:17:27,600 --> 0:17:28,600
+ Maybe a little bit complex.
+
+223
+0:17:28,600 --> 0:17:30,600
+ Maybe confusing.
+
+224
+0:17:30,600 --> 0:17:31,600
+ Never know.
+
+225
+0:17:31,600 --> 0:17:33,600
+ But what else?
+
+226
+0:17:33,600 --> 0:17:35,600
+ Talk to me.
+
+227
+0:17:35,600 --> 0:17:37,600
+ Any questions?
+
+228
+0:17:47,600 --> 0:17:57,600
+ Okay.
+
+229
+0:17:57,600 --> 0:18:05,600
+ You also gave the example of tribes or small communities who would expel people who misbehave.
+
+230
+0:18:05,600 --> 0:18:09,600
+ What is different in the distributed world?
+
+231
+0:18:09,600 --> 0:18:11,600
+ In...
+
+232
+0:18:11,600 --> 0:18:13,600
+ Okay.
+
+233
+0:18:13,600 --> 0:18:15,600
+ For me, distributed objects is simply, in this case,
+
+234
+0:18:15,600 --> 0:18:22,600
+ the OpenWT has a source code repository.
+
+235
+0:18:22,600 --> 0:18:24,600
+ It's freely available.
+
+236
+0:18:24,600 --> 0:18:26,600
+ You can pull from it.
+
+237
+0:18:26,600 --> 0:18:32,600
+ You are not able to push unless one of the developers accepts your commit.
+
+238
+0:18:32,600 --> 0:18:36,600
+ And so there you have it.
+
+239
+0:18:36,600 --> 0:18:38,600
+ It's distributed.
+
+240
+0:18:38,600 --> 0:18:39,600
+ It's placed into circulation.
+
+241
+0:18:39,600 --> 0:18:41,600
+ You can pull copies.
+
+242
+0:18:41,600 --> 0:18:44,600
+ You can give these copies onwards to your friends.
+
+243
+0:18:44,600 --> 0:18:46,600
+ Or whoever.
+
+244
+0:18:46,600 --> 0:18:48,600
+ You can do with it what you want.
+
+245
+0:18:48,600 --> 0:18:56,600
+ So you know where the territory is where you can collect the code.
+
+246
+0:18:56,600 --> 0:19:04,600
+ And what you are actually then pulling from the repository is objects.
+
+247
+0:19:04,600 --> 0:19:07,600
+ Do you understand that?
+
+248
+0:19:07,600 --> 0:19:13,600
+ And you pull them by following, accepting the authority of the OpenWT.
+
+249
+0:19:13,600 --> 0:19:20,600
+ The OpenWT developers and all the other developers who are upstream or downstream from them,
+
+250
+0:19:20,600 --> 0:19:23,600
+ who have committed code into their repository,
+
+251
+0:19:23,600 --> 0:19:26,600
+ by respecting that there are certain rules.
+
+252
+0:19:26,600 --> 0:19:32,600
+ You cannot hide, you cannot steal the name of the OpenWT project.
+
+253
+0:19:32,600 --> 0:19:36,600
+ And that's an expression of authority.
+
+254
+0:19:36,600 --> 0:19:39,600
+ And then the...
+
+255
+0:19:39,600 --> 0:19:42,600
+ By having this authority and by having a territory,
+
+256
+0:19:42,600 --> 0:19:46,600
+ the OpenWT developers can actually give you the right to commit
+
+257
+0:19:46,600 --> 0:19:52,600
+ under certain conditions.
+
+258
+0:19:52,600 --> 0:19:56,600
+ And in that sense, what you then are committing,
+
+259
+0:19:56,600 --> 0:19:59,600
+ you are committing objects back.
+
+260
+0:19:59,600 --> 0:20:02,600
+ So you are bringing the circle back.
+
+261
+0:20:02,600 --> 0:20:05,600
+ The circulation.
+
+262
+0:20:05,600 --> 0:20:09,600
+ But in terms of distributed objects,
+
+263
+0:20:09,600 --> 0:20:11,600
+ source code is for me just an example.
+
+264
+0:20:12,600 --> 0:20:15,600
+ It can be art objects that circulate.
+
+265
+0:20:15,600 --> 0:20:19,600
+ It can be, again as I said, canoes.
+
+266
+0:20:19,600 --> 0:20:22,600
+ Shell necklaces.
+
+267
+0:20:22,600 --> 0:20:28,600
+ And basically what is circulating and what is distributed objects in a sense,
+
+268
+0:20:28,600 --> 0:20:34,600
+ is for me typically something which has to be visible.
+
+269
+0:20:34,600 --> 0:20:40,600
+ If it's hidden, if it's only like traded through back channels,
+
+270
+0:20:40,600 --> 0:20:45,600
+ you kind of enter into something which is more sorcery.
+
+271
+0:20:45,600 --> 0:20:50,600
+ It gets, you know, dark and like something where you exploit stuff.
+
+272
+0:20:50,600 --> 0:20:55,600
+ And that was actually for me one of the important aspects
+
+273
+0:20:55,600 --> 0:21:04,600
+ of this announcement that the OpenWT developers withdrew the right to access.
+
+274
+0:21:04,600 --> 0:21:08,600
+ Was because the owner of Sveasoft,
+
+275
+0:21:08,600 --> 0:21:12,600
+ the owner of Sveasoft stole their name.
+
+276
+0:21:12,600 --> 0:21:17,600
+ And that's unacceptable.
+
+277
+0:21:17,600 --> 0:21:24,600
+ And in that sense, I think what is for me in this context,
+
+278
+0:21:24,600 --> 0:21:34,600
+ in some ways it's difficult to directly compare art objects and source code.
+
+279
+0:21:34,600 --> 0:21:37,600
+ Because they are, it's, art objects is typically,
+
+280
+0:21:37,600 --> 0:21:41,600
+ in a Western context, something you buy and sell.
+
+281
+0:21:41,600 --> 0:21:47,600
+ So that you actually have something which moves from a singular ownership
+
+282
+0:21:47,600 --> 0:21:54,600
+ or a singular producer or manufacturer to a singular individual who owns that piece.
+
+283
+0:21:54,600 --> 0:21:59,600
+ That's again a problem within the world of art, the art world,
+
+284
+0:21:59,600 --> 0:22:03,600
+ because at the same time there's a lot of focus on displaying.
+
+285
+0:22:03,600 --> 0:22:06,600
+ But you have individuals who buy a certain painting
+
+286
+0:22:06,600 --> 0:22:10,600
+ at an auction and you never see it again.
+
+287
+0:22:10,600 --> 0:22:15,600
+ Which is then, in some ways, it's problematic
+
+288
+0:22:15,600 --> 0:22:22,600
+ because it's also about then stealing something of your culture.
+
+289
+0:22:22,600 --> 0:22:26,600
+ Or the general culture.
+
+290
+0:22:32,600 --> 0:22:34,600
+ So for me with the,
+
+291
+0:22:36,600 --> 0:22:39,600
+ open source software is that,
+
+292
+0:22:39,600 --> 0:22:43,600
+ if you look at it in terms of the distribution
+
+293
+0:22:43,600 --> 0:22:48,600
+ that these objects are circulating as a way of manifesting ownership
+
+294
+0:22:48,600 --> 0:22:51,600
+ by reproducing who made this,
+
+295
+0:22:51,600 --> 0:22:55,600
+ who created this, who placed this into circulation,
+
+296
+0:22:55,600 --> 0:22:59,600
+ then it, for me at least, it makes more sense
+
+297
+0:22:59,600 --> 0:23:04,600
+ than looking at it as something you buy and sell and stuff like that.
+
+298
+0:23:04,600 --> 0:23:05,600
+ Was that enough?
+
+299
+0:23:05,600 --> 0:23:08,600
+ Over explaining?
+
+300
+0:23:08,600 --> 0:23:09,600
+ Super.
+
+301
+0:23:35,600 --> 0:23:40,600
+ There is sound in it,
+
+302
+0:23:40,600 --> 0:23:43,600
+ but I don't know how it gets into it.
+
+303
+0:23:43,600 --> 0:23:45,600
+ What?
+
+304
+0:23:45,600 --> 0:23:48,600
+ Hello?
+
+305
+0:23:48,600 --> 0:23:50,600
+ Okay, great.
+
+306
+0:23:50,600 --> 0:23:51,600
+ So...
+
+307
+0:23:58,600 --> 0:24:02,600
+ I think if you speak up I will repeat the question as good as I can.
+
+308
+0:24:05,600 --> 0:24:08,600
+ I think people want to think over the music.
+
+309
+0:24:09,600 --> 0:24:14,600
+ And I think that there's a different answer that
+
+310
+0:24:14,600 --> 0:24:16,600
+ maybe there are two different concepts,
+
+311
+0:24:16,600 --> 0:24:19,600
+ maybe there are multiple of them.
+
+312
+0:24:19,600 --> 0:24:25,600
+ So, the way I thought of it is that
+
+313
+0:24:25,600 --> 0:24:30,600
+ if you get a five-year development,
+
+314
+0:24:30,600 --> 0:24:33,600
+ it seems to be better than what's possible.
+
+315
+0:24:33,600 --> 0:24:34,600
+ So, you know,
+
+316
+0:24:34,600 --> 0:24:37,600
+ So whatever the topic is,
+
+317
+0:24:37,600 --> 0:24:40,600
+ you think there's a benefit if they can do the source code
+
+318
+0:24:40,600 --> 0:24:43,600
+ and other developers can do the source code
+
+319
+0:24:43,600 --> 0:24:46,600
+ and they'll experience it, right?
+
+320
+0:24:46,600 --> 0:24:51,600
+ So if you want that to exist, you have to make it.
+
+321
+0:24:51,600 --> 0:24:55,600
+ And maybe testing?
+
+322
+0:24:55,600 --> 0:24:59,600
+ Okay, so there's kind of a material benefit
+
+323
+0:24:59,600 --> 0:25:03,600
+ to the software being free.
+
+324
+0:25:03,600 --> 0:25:08,600
+ And is that part of the magic that you're talking about
+
+325
+0:25:08,600 --> 0:25:11,600
+ or is it an entirely separate social phenomenon
+
+326
+0:25:11,600 --> 0:25:16,600
+ of the experience of having a territory
+
+327
+0:25:16,600 --> 0:25:19,600
+ and authority within the commons?
+
+328
+0:25:26,600 --> 0:25:31,600
+ I think it's...
+
+329
+0:25:31,600 --> 0:25:33,600
+ Your question is about the idea
+
+330
+0:25:33,600 --> 0:25:35,600
+ that free software is better than free software.
+
+331
+0:25:35,600 --> 0:25:36,600
+ I think it's more about...
+
+332
+0:25:36,600 --> 0:25:38,600
+ Is it more...
+
+333
+0:25:38,600 --> 0:25:41,600
+ Or is it also about material properties
+
+334
+0:25:41,600 --> 0:25:45,600
+ that it's maybe a better product?
+
+335
+0:25:45,600 --> 0:25:52,600
+ I don't know if it always is something which is better.
+
+336
+0:25:56,600 --> 0:25:58,600
+ Yeah.
+
+337
+0:25:58,600 --> 0:26:01,600
+ Yeah.
+
+338
+0:26:01,600 --> 0:26:03,600
+ It's not that free software is always better.
+
+339
+0:26:03,600 --> 0:26:05,600
+ It's that for any given software,
+
+340
+0:26:05,600 --> 0:26:07,600
+ it would be better if it were free.
+
+341
+0:26:07,600 --> 0:26:13,600
+ And so there are advantages to free software.
+
+342
+0:26:13,600 --> 0:26:18,600
+ And if we want it to exist, we have to make it.
+
+343
+0:26:18,600 --> 0:26:24,600
+ But yeah, I mean, do you think that the way in which it's better
+
+344
+0:26:24,600 --> 0:26:26,600
+ is part of the social magic that you're talking about
+
+345
+0:26:26,600 --> 0:26:29,600
+ or is it a separate kind of phenomenon?
+
+346
+0:26:29,600 --> 0:26:32,600
+ I think I would definitely question the thing
+
+347
+0:26:32,600 --> 0:26:35,600
+ that open source software always is better.
+
+348
+0:26:35,600 --> 0:26:40,600
+ There's a lot of open source software which is really good.
+
+349
+0:26:40,600 --> 0:26:42,600
+ And then there's a lot of open source software
+
+350
+0:26:42,600 --> 0:26:46,600
+ which from my personal point of view is really crap.
+
+351
+0:26:46,600 --> 0:26:52,600
+ I think for me, it's more about that you choose
+
+352
+0:26:52,600 --> 0:26:57,600
+ to make your work visible instead of hiding it.
+
+353
+0:26:57,600 --> 0:27:01,600
+ And you actually create the opportunity
+
+354
+0:27:01,600 --> 0:27:07,600
+ and the potential that it could engage and become a territory
+
+355
+0:27:07,600 --> 0:27:11,600
+ which would include rights and authority.
+
+356
+0:27:11,600 --> 0:27:16,600
+ Or you could say it would be able to come alive
+
+357
+0:27:16,600 --> 0:27:18,600
+ for others than you.
+
+358
+0:27:23,600 --> 0:27:27,600
+ And so I'm not saying that I'm in no way saying that you're wrong.
+
+359
+0:27:27,600 --> 0:27:30,600
+ It's just I think it's different perspectives.
+
+360
+0:27:31,600 --> 0:27:34,600
+ And I think if something I could be,
+
+361
+0:27:34,600 --> 0:27:37,600
+ I'm a bit critical towards that free software,
+
+362
+0:27:37,600 --> 0:27:39,600
+ open source software always should be better.
+
+363
+0:27:39,600 --> 0:27:47,600
+ There is, it's just about that you have a,
+
+364
+0:27:47,600 --> 0:27:52,600
+ specifically you have two different ownership models here.
+
+365
+0:27:52,600 --> 0:27:55,600
+ You have a singular ownership model where you say
+
+366
+0:27:55,600 --> 0:28:00,600
+ that this is a singular individual or a corporation which owns this.
+
+367
+0:28:00,600 --> 0:28:02,600
+ And they have the right to hide it
+
+368
+0:28:02,600 --> 0:28:06,600
+ and explicitly decide how you can use this code.
+
+369
+0:28:06,600 --> 0:28:08,600
+ And then you have free or open source software,
+
+370
+0:28:08,600 --> 0:28:12,600
+ free and open source software where anybody can use it
+
+371
+0:28:12,600 --> 0:28:14,600
+ because it's freely available.
+
+372
+0:28:14,600 --> 0:28:16,600
+ They can build it, they can rebuild it,
+
+373
+0:28:16,600 --> 0:28:19,600
+ they can take it apart and they can audit it.
+
+374
+0:28:19,600 --> 0:28:22,600
+ And they can have other people audit it.
+
+375
+0:28:22,600 --> 0:28:28,600
+ And that's more of, that's more specifically,
+
+376
+0:28:28,600 --> 0:28:32,600
+ a multiple ownership model.
+
+377
+0:28:32,600 --> 0:28:36,600
+ There is more than one individual typically
+
+378
+0:28:36,600 --> 0:28:39,600
+ who has part in a specific piece of software.
+
+379
+0:28:39,600 --> 0:28:47,600
+ And the only way that you actually become aware of the existence
+
+380
+0:28:47,600 --> 0:28:50,600
+ of this piece of software that somebody has written
+
+381
+0:28:50,600 --> 0:28:53,600
+ is that it's made publicly available.
+
+382
+0:28:53,600 --> 0:28:55,600
+ It's placed into circulation.
+
+383
+0:28:55,600 --> 0:28:57,600
+ If it's not placed into circulation,
+
+384
+0:28:58,600 --> 0:29:02,600
+ it actually doesn't exist.
+
+385
+0:29:02,600 --> 0:29:06,600
+ And it doesn't have a life.
+
+386
+0:29:06,600 --> 0:29:09,600
+ And I think that's maybe,
+
+387
+0:29:09,600 --> 0:29:11,600
+ for me that's the important part,
+
+388
+0:29:11,600 --> 0:29:13,600
+ that it potentially has a life.
+
+389
+0:29:13,600 --> 0:29:15,600
+ It's not, you know, they're GitHub.
+
+390
+0:29:15,600 --> 0:29:17,600
+ Tons of things of GitHub.
+
+391
+0:29:17,600 --> 0:29:20,600
+ Billions of codes of like lines of code.
+
+392
+0:29:20,600 --> 0:29:23,600
+ I don't know how much of that actually
+
+393
+0:29:23,600 --> 0:29:26,600
+ is used apart from maybe one or two individuals.
+
+394
+0:29:26,600 --> 0:29:28,600
+ Some of it is used a lot
+
+395
+0:29:28,600 --> 0:29:33,600
+ but there's also millions and millions of lines of codes
+
+396
+0:29:33,600 --> 0:29:35,600
+ who doesn't have any life.
+
+397
+0:29:35,600 --> 0:29:38,600
+ And if you try to install it on anything,
+
+398
+0:29:38,600 --> 0:29:42,600
+ it just breaks my experience.
+
+399
+0:29:42,600 --> 0:29:44,600
+ I'm old, you know.
+
+400
+0:29:44,600 --> 0:29:50,600
+ So, and there are some,
+
+401
+0:29:50,600 --> 0:29:53,600
+ some commercial stuff is actually not bad.
+
+402
+0:29:53,600 --> 0:29:57,600
+ Again, depending on your situation you're in.
+
+403
+0:29:58,600 --> 0:30:06,600
+ But again, I would at any point in time prefer
+
+404
+0:30:06,600 --> 0:30:09,600
+ something which is circulating
+
+405
+0:30:09,600 --> 0:30:12,600
+ as my personal opinion.
+
+406
+0:30:18,600 --> 0:30:21,600
+ I think I'm just,
+
+407
+0:30:21,600 --> 0:30:25,600
+ I don't quite see what the magic is.
+
+408
+0:30:25,600 --> 0:30:27,600
+ So it's like,
+
+409
+0:30:27,600 --> 0:30:29,600
+ is it the creation of being alive or?
+
+410
+0:30:29,600 --> 0:30:30,600
+ The magic is,
+
+411
+0:30:30,600 --> 0:30:32,600
+ the essential magic is about
+
+412
+0:30:32,600 --> 0:30:34,600
+ open source and free software
+
+413
+0:30:34,600 --> 0:30:37,600
+ has, is circulated with the intention
+
+414
+0:30:37,600 --> 0:30:40,600
+ of keeping it in circulation.
+
+415
+0:30:40,600 --> 0:30:44,600
+ And with the intention that people do something with it.
+
+416
+0:30:44,600 --> 0:30:46,600
+ That's magic.
+
+417
+0:30:46,600 --> 0:30:49,600
+ In my understanding.
+
+418
+0:30:49,600 --> 0:30:51,600
+ You are somehow,
+
+419
+0:30:51,600 --> 0:30:53,600
+ you know, you stumble across this
+
+420
+0:30:53,600 --> 0:30:55,600
+ whatever on GitHub and
+
+421
+0:30:55,600 --> 0:30:56,600
+ then you think, oh great.
+
+422
+0:30:56,600 --> 0:30:58,600
+ I'm going to check this out.
+
+423
+0:30:58,600 --> 0:31:02,600
+ And then it works for you.
+
+424
+0:31:02,600 --> 0:31:04,600
+ And then you tell your friends about it.
+
+425
+0:31:04,600 --> 0:31:07,600
+ You know, post it on Reddit or wherever.
+
+426
+0:31:07,600 --> 0:31:11,600
+ Or you write a comment for the developer
+
+427
+0:31:11,600 --> 0:31:13,600
+ or you push a fix, you know,
+
+428
+0:31:13,600 --> 0:31:15,600
+ of some kind of patch to it.
+
+429
+0:31:15,600 --> 0:31:18,600
+ And it gets included.
+
+430
+0:31:18,600 --> 0:31:20,600
+ And for me, that's actually magic
+
+431
+0:31:20,600 --> 0:31:22,600
+ that you do that.
+
+432
+0:31:22,600 --> 0:31:24,600
+ Because it's not, it's again,
+
+433
+0:31:24,600 --> 0:31:25,600
+ my personal opinion is that,
+
+434
+0:31:25,600 --> 0:31:27,600
+ or experience is,
+
+435
+0:31:27,600 --> 0:31:31,600
+ it's not something you like think about a lot.
+
+436
+0:31:31,600 --> 0:31:33,600
+ You know, you know what I mean?
+
+437
+0:31:33,600 --> 0:31:36,600
+ Just kind of do it.
+
+438
+0:31:36,600 --> 0:31:38,600
+ And when you do something,
+
+439
+0:31:38,600 --> 0:31:39,600
+ okay, where do you,
+
+440
+0:31:39,600 --> 0:31:40,600
+ who's telling you?
+
+441
+0:31:40,600 --> 0:31:41,600
+ Nobody's telling you.
+
+442
+0:31:41,600 --> 0:31:44,600
+ So maybe there's a magician there somewhere
+
+443
+0:31:44,600 --> 0:31:45,600
+ who's like, you know,
+
+444
+0:31:45,600 --> 0:31:51,600
+ put some special powder over this source code.
+
+445
+0:31:51,600 --> 0:31:53,600
+ And I think that's for me about
+
+446
+0:31:53,600 --> 0:31:54,600
+ like this kind of,
+
+447
+0:31:54,600 --> 0:31:56,600
+ that we are actually living in a world
+
+448
+0:31:56,600 --> 0:31:58,600
+ which contains magic.
+
+449
+0:31:58,600 --> 0:32:00,600
+ It's about words, of course.
+
+450
+0:32:00,600 --> 0:32:02,600
+ And, you know, enchantment.
+
+451
+0:32:02,600 --> 0:32:05,600
+ And that you can suddenly be in a situation
+
+452
+0:32:05,600 --> 0:32:07,600
+ where you thought, ooh, what happened there?
+
+453
+0:32:07,600 --> 0:32:10,600
+ I've never seen things in that way.
+
+454
+0:32:10,600 --> 0:32:11,600
+ You know?
+
+455
+0:32:11,600 --> 0:32:13,600
+ And that can be a magic moment.
+
+456
+0:32:17,600 --> 0:32:19,600
+ So you explained this in the beginning.
+
+457
+0:32:19,600 --> 0:32:20,600
+ I came a bit late.
+
+458
+0:32:20,600 --> 0:32:23,600
+ But magic, would you describe it as,
+
+459
+0:32:23,600 --> 0:32:26,600
+ a magic object is an object
+
+460
+0:32:26,600 --> 0:32:28,600
+ that induces behavior in people
+
+461
+0:32:28,600 --> 0:32:31,600
+ by its existence and about the story,
+
+462
+0:32:31,600 --> 0:32:34,600
+ the sort of human understanding of that?
+
+463
+0:32:34,600 --> 0:32:35,600
+ Right.
+
+464
+0:32:35,600 --> 0:32:37,600
+ And then,
+
+465
+0:32:37,600 --> 0:32:40,600
+ open source license piece of code
+
+466
+0:32:40,600 --> 0:32:42,600
+ is an object because it has a license
+
+467
+0:32:42,600 --> 0:32:46,600
+ and it uses a specific behavior.
+
+468
+0:32:46,600 --> 0:32:49,600
+ But does it also apply to any object
+
+469
+0:32:49,600 --> 0:32:52,600
+ in the world outside of these examples
+
+470
+0:32:52,600 --> 0:32:54,600
+ you've taken up today?
+
+471
+0:32:57,600 --> 0:33:00,600
+ It can apply to any object.
+
+472
+0:33:01,600 --> 0:33:03,600
+ I would say.
+
+473
+0:33:03,600 --> 0:33:07,600
+ But again, I think it's something you talk about,
+
+474
+0:33:07,600 --> 0:33:10,600
+ you know, in branding and marketing
+
+475
+0:33:10,600 --> 0:33:12,600
+ and with like, you know, stuff you buy.
+
+476
+0:33:12,600 --> 0:33:15,600
+ Why do you buy something specifically?
+
+477
+0:33:15,600 --> 0:33:17,600
+ You can say, okay, this is,
+
+478
+0:33:17,600 --> 0:33:21,600
+ I want to present myself in specific ways
+
+479
+0:33:21,600 --> 0:33:25,600
+ by wearing North Face.
+
+480
+0:33:25,600 --> 0:33:28,600
+ You know, I've climbed that North Face.
+
+481
+0:33:28,600 --> 0:33:30,600
+ No.
+
+482
+0:33:30,600 --> 0:33:36,600
+ But you might say, is that,
+
+483
+0:33:36,600 --> 0:33:41,600
+ is that because that piece has magic
+
+484
+0:33:41,600 --> 0:33:43,600
+ or is it because it's like a commercial product
+
+485
+0:33:43,600 --> 0:33:45,600
+ where you have learned somewhere
+
+486
+0:33:45,600 --> 0:33:47,600
+ that you have to wear that or buy that
+
+487
+0:33:47,600 --> 0:33:50,600
+ or you're buying into as a consumer?
+
+488
+0:33:51,600 --> 0:33:56,600
+ You're buying into a certain expression
+
+489
+0:33:56,600 --> 0:33:58,600
+ or performance.
+
+490
+0:33:58,600 --> 0:34:01,600
+ And so you would,
+
+491
+0:34:01,600 --> 0:34:04,600
+ it's easier in that sense to,
+
+492
+0:34:04,600 --> 0:34:07,600
+ to identify certain objects as being magic
+
+493
+0:34:07,600 --> 0:34:11,600
+ when they're made by individuals
+
+494
+0:34:11,600 --> 0:34:17,600
+ with the intent of having you to use it,
+
+495
+0:34:17,600 --> 0:34:20,600
+ having you to experience things.
+
+496
+0:34:21,600 --> 0:34:24,600
+ Again, as art objects
+
+497
+0:34:24,600 --> 0:34:28,600
+ or as specific traditional cultural objects,
+
+498
+0:34:28,600 --> 0:34:31,600
+ which are tied into specific ways
+
+499
+0:34:31,600 --> 0:34:33,600
+ of understanding the world,
+
+500
+0:34:33,600 --> 0:34:37,600
+ which is different from
+
+501
+0:34:37,600 --> 0:34:43,600
+ commercial consumer based approach to the world.
+
+502
+0:34:43,600 --> 0:34:45,600
+ Yeah.
+
+503
+0:34:45,600 --> 0:34:48,600
+ Again, they're different in terms of that.
+
+504
+0:34:48,600 --> 0:34:50,600
+ They express two different ownership models.
+
+505
+0:34:50,600 --> 0:34:53,600
+ Or models of ownership.
+
+506
+0:34:53,600 --> 0:34:55,600
+ A singular and a,
+
+507
+0:34:55,600 --> 0:34:57,600
+ in a sense, a multiple or,
+
+508
+0:34:57,600 --> 0:35:03,600
+ or a shared model.
+
+509
+0:35:03,600 --> 0:35:06,600
+ Any more questions?
+
+510
+0:35:06,600 --> 0:35:08,600
+ Well, thank you very much for the talk.
+
+511
+0:35:08,600 --> 0:35:09,600
+ Pleasure.

@@ -1,0 +1,3283 @@
+# Transcribed 2023-11-14T21 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:09,340
+ So welcome to almost the last talk of this year,
+
+2
+0:00:09,480 --> 0:00:11,920
+ and this is the time where Morten gets to brag
+
+3
+0:00:11,920 --> 0:00:14,420
+ about how well the network has run through the camp.
+
+4
+0:00:21,420 --> 0:00:25,600
+ So it's nice to see so many people.
+
+5
+0:00:25,600 --> 0:00:32,400
+ I have added something by request from the NOC team.
+
+6
+0:00:33,680 --> 0:00:39,600
+ So this is the usual end-of-camp network talk
+
+7
+0:00:40,440 --> 0:00:42,560
+ where we will go through what we've been doing,
+
+8
+0:00:42,800 --> 0:00:45,520
+ and we have done all kinds of interesting things,
+
+9
+0:00:45,700 --> 0:00:48,720
+ and you guys have also, and this is the talk about that.
+
+10
+0:00:49,260 --> 0:00:52,700
+ So you all know Hypnotoad, right?
+
+11
+0:00:54,380 --> 0:00:54,900
+ Okay.
+
+12
+0:00:54,900 --> 0:00:58,280
+ Okay, so first things first, this is the mandatory slide
+
+13
+0:00:58,280 --> 0:01:00,520
+ about how much bandwidth we've been using,
+
+14
+0:01:01,440 --> 0:01:05,980
+ and last year I had this recurring thing saying,
+
+15
+0:01:06,220 --> 0:01:08,900
+ use more bandwidth, and hmm.
+
+16
+0:01:11,860 --> 0:01:14,160
+ Well, I just skipped that hashtag
+
+17
+0:01:14,160 --> 0:01:16,360
+ because apparently it's not working to say it.
+
+18
+0:01:16,980 --> 0:01:19,900
+ So just a quick one on the slides.
+
+19
+0:01:24,900 --> 0:01:32,520
+ Yes?
+
+20
+0:01:33,520 --> 0:01:34,820
+ Oh, this is much better.
+
+21
+0:01:35,260 --> 0:01:38,300
+ Anyway, so what you see is the red line.
+
+22
+0:01:38,420 --> 0:01:40,020
+ That is 200 megabit.
+
+23
+0:01:45,020 --> 0:01:50,240
+ I'm, yeah, and I'm pretty sure that the big line here
+
+24
+0:01:50,240 --> 0:01:52,160
+ is probably someone doing an iPerf
+
+25
+0:01:52,160 --> 0:01:54,540
+ or maxing out the network or whatever.
+
+26
+0:01:54,900 --> 0:01:56,900
+ I'm not sure what kind of testing you could do,
+
+27
+0:01:56,900 --> 0:01:58,900
+ but when I look at this slide, I'm thinking,
+
+28
+0:01:58,900 --> 0:02:01,900
+ I'm going to have a hard time convincing Orca
+
+29
+0:02:01,900 --> 0:02:04,900
+ to give us three gigabit next year, or five, or 10.
+
+30
+0:02:04,900 --> 0:02:07,900
+ So we kind of need to do some design changes
+
+31
+0:02:07,900 --> 0:02:10,900
+ in order to use massive amounts of bandwidth
+
+32
+0:02:10,900 --> 0:02:12,900
+ because we, of course, all like bandwidth.
+
+33
+0:02:12,900 --> 0:02:15,900
+ It's just not something we use, but we like it.
+
+34
+0:02:20,400 --> 0:02:23,400
+ So I have divided this talk into two parts.
+
+35
+0:02:23,400 --> 0:02:24,360
+ All the core stuff.
+
+36
+0:02:24,360 --> 0:02:25,360
+ And all the non-core stuff.
+
+37
+0:02:25,360 --> 0:02:31,360
+ So just to give you a bit of agenda for this.
+
+38
+0:02:31,360 --> 0:02:35,360
+ So we, of course, started, as we always do, in the weekend.
+
+39
+0:02:35,360 --> 0:02:39,360
+ And we start looking at all the stuff we have.
+
+40
+0:02:39,360 --> 0:02:41,360
+ And there have been a lot of switches and stuff
+
+41
+0:02:41,360 --> 0:02:45,360
+ that we brought, we being my team, not me.
+
+42
+0:02:45,360 --> 0:02:48,360
+ And then Sunday, or was it Saturday?
+
+43
+0:02:48,360 --> 0:02:49,360
+ Oh, it was Saturday.
+
+44
+0:02:49,360 --> 0:02:54,360
+ Yay, now we have the fiber link, you know, the converter from,
+
+45
+0:02:54,360 --> 0:02:57,360
+ MX to LC, you know, if you were here last year,
+
+46
+0:02:57,360 --> 0:03:00,360
+ you probably remember me talking about MX connectors.
+
+47
+0:03:00,360 --> 0:03:02,360
+ Nobody uses that except broadcast people,
+
+48
+0:03:02,360 --> 0:03:05,360
+ so of course nobody has that in stock.
+
+49
+0:03:05,360 --> 0:03:10,360
+ But this year, we were well prepared.
+
+50
+0:03:10,360 --> 0:03:14,360
+ And the thing that happened was that,
+
+51
+0:03:14,360 --> 0:03:19,360
+ Asbjorn, he brought the MX to LC converter,
+
+52
+0:03:19,360 --> 0:03:21,360
+ and there was an MX thing in the well.
+
+53
+0:03:21,360 --> 0:03:23,360
+ So what's the problem?
+
+54
+0:03:23,360 --> 0:03:27,360
+ Well, of course, then some bright person said,
+
+55
+0:03:27,360 --> 0:03:31,360
+ Didn't we have two cables last year?
+
+56
+0:03:31,360 --> 0:03:35,360
+ The thing that happened was that, if you see here,
+
+57
+0:03:35,360 --> 0:03:38,360
+ this is a connector with a flange,
+
+58
+0:03:38,360 --> 0:03:42,360
+ which is, you know, for built-in to equipment.
+
+59
+0:03:42,360 --> 0:03:45,360
+ And this here is the thing for the connector cables.
+
+60
+0:03:45,360 --> 0:03:48,360
+ So we had two of those.
+
+61
+0:03:48,360 --> 0:03:51,360
+ Wonderful.
+
+62
+0:03:51,360 --> 0:03:52,360
+ So.
+
+63
+0:03:52,360 --> 0:03:57,360
+ So we, well, I went through my phone book
+
+64
+0:03:57,360 --> 0:04:01,360
+ to find broadcast people who actually had some of this stuff,
+
+65
+0:04:01,360 --> 0:04:04,360
+ but all of them had gone to Le Mans
+
+66
+0:04:04,360 --> 0:04:06,360
+ and some place in Jutland,
+
+67
+0:04:06,360 --> 0:04:08,360
+ so my connections were no good,
+
+68
+0:04:08,360 --> 0:04:13,360
+ but we acquired one in a proper connector cable during Saturday.
+
+69
+0:04:13,360 --> 0:04:17,360
+ But before that, we actually punched a hole through,
+
+70
+0:04:17,360 --> 0:04:20,360
+ which I think is immensely super nice.
+
+71
+0:04:20,360 --> 0:04:21,360
+ So.
+
+72
+0:04:21,360 --> 0:04:25,360
+ So this is apparently a picture we're going to do every year,
+
+73
+0:04:25,360 --> 0:04:26,360
+ because I like this.
+
+74
+0:04:26,360 --> 0:04:30,360
+ This is the uplink, and we have light.
+
+75
+0:04:30,360 --> 0:04:33,360
+ Awesome.
+
+76
+0:04:33,360 --> 0:04:36,360
+ As I said, we were short of cable.
+
+77
+0:04:36,360 --> 0:04:41,360
+ So how do you fix that when you work with light?
+
+78
+0:04:41,360 --> 0:04:42,360
+ Yes.
+
+79
+0:04:42,360 --> 0:04:47,360
+ We used scotch in order to have the two flange ends meet up
+
+80
+0:04:47,360 --> 0:04:50,360
+ so that we could actually test if we had a connection,
+
+81
+0:04:50,360 --> 0:04:55,360
+ which worked well.
+
+82
+0:04:55,360 --> 0:04:57,360
+ Actually, it worked well.
+
+83
+0:04:57,360 --> 0:04:59,360
+ It was just that, you know,
+
+84
+0:04:59,360 --> 0:05:02,360
+ shouldn't be too windy or anyone touching it,
+
+85
+0:05:02,360 --> 0:05:04,360
+ because, you know, light and, you know,
+
+86
+0:05:04,360 --> 0:05:06,360
+ different angles would not be a good thing.
+
+87
+0:05:06,360 --> 0:05:07,360
+ So.
+
+88
+0:05:07,360 --> 0:05:13,360
+ But we actually had light through the equipment on Saturday.
+
+89
+0:05:13,360 --> 0:05:18,360
+ This was quick.
+
+90
+0:05:18,360 --> 0:05:19,360
+ So.
+
+91
+0:05:19,360 --> 0:05:23,360
+ We, of course, ran into other issues,
+
+92
+0:05:23,360 --> 0:05:26,360
+ because, you know, this is BornHack,
+
+93
+0:05:26,360 --> 0:05:30,360
+ and what would networking be without extra issues?
+
+94
+0:05:30,360 --> 0:05:32,360
+ This one was a new one.
+
+95
+0:05:32,360 --> 0:05:34,360
+ You know, we planned for a lot of things.
+
+96
+0:05:34,360 --> 0:05:36,360
+ We bring a lot of equipment and, you know, spare fibers,
+
+97
+0:05:36,360 --> 0:05:37,360
+ all kinds of stuff.
+
+98
+0:05:37,360 --> 0:05:41,360
+ And what we hadn't planned for was a beautiful red digger
+
+99
+0:05:41,360 --> 0:05:43,360
+ next to the well.
+
+100
+0:05:43,360 --> 0:05:47,360
+ So, well, I don't know how to say this,
+
+101
+0:05:47,360 --> 0:05:48,360
+ but you see this.
+
+102
+0:05:48,360 --> 0:05:50,360
+ But you see the red digger.
+
+103
+0:05:50,360 --> 0:05:53,360
+ This is...
+
+104
+0:05:53,360 --> 0:05:57,360
+ This one here is our pole, you know,
+
+105
+0:05:57,360 --> 0:05:59,360
+ for the crossing road.
+
+106
+0:05:59,360 --> 0:06:02,360
+ And we have this nice, large digger next to it.
+
+107
+0:06:02,360 --> 0:06:07,360
+ And it's just the strings we attach in order to make the pole
+
+108
+0:06:07,360 --> 0:06:11,360
+ not fall over was actually going across the digger.
+
+109
+0:06:11,360 --> 0:06:17,360
+ So we kind of, you know, this might be an issue, you know.
+
+110
+0:06:17,360 --> 0:06:21,360
+ And so I wrote this nice thing and put it in the windscreen
+
+111
+0:06:21,360 --> 0:06:25,360
+ with some of the BornHack flabber tape.
+
+112
+0:06:25,360 --> 0:06:27,360
+ Flabber?
+
+113
+0:06:27,360 --> 0:06:28,360
+ Flatterband.
+
+114
+0:06:28,360 --> 0:06:29,360
+ Flatterband.
+
+115
+0:06:29,360 --> 0:06:30,360
+ I'm learning Dutch.
+
+116
+0:06:30,360 --> 0:06:33,360
+ With some Flatterband and wrote that,
+
+117
+0:06:33,360 --> 0:06:35,360
+ hey, please take care of our fiber.
+
+118
+0:06:35,360 --> 0:06:39,360
+ And the guy, he called Monday morning.
+
+119
+0:06:39,360 --> 0:06:40,360
+ I was not here.
+
+120
+0:06:40,360 --> 0:06:44,360
+ We were all, you know, planned for the worst,
+
+121
+0:06:44,360 --> 0:06:45,360
+ hoped for the best situation.
+
+122
+0:06:45,360 --> 0:06:46,360
+ It could have been worse.
+
+123
+0:06:46,360 --> 0:06:49,360
+ It could have been some idiot driving this thing
+
+124
+0:06:49,360 --> 0:06:53,360
+ and complete no-brainer start digging everywhere.
+
+125
+0:06:53,360 --> 0:07:00,360
+ But it turned out to be a nice guy who was super helpful.
+
+126
+0:07:00,360 --> 0:07:05,360
+ And we had some...
+
+127
+0:07:05,360 --> 0:07:07,360
+ We had some help building this.
+
+128
+0:07:07,360 --> 0:07:09,360
+ Actually, I've inverted these two slides.
+
+129
+0:07:09,360 --> 0:07:11,360
+ Let's do the next one.
+
+130
+0:07:11,360 --> 0:07:13,360
+ So we had this guy.
+
+131
+0:07:13,360 --> 0:07:14,360
+ We actually installed
+
+132
+0:07:14,360 --> 0:07:19,360
+ an extra little tube going from our well to the fence.
+
+133
+0:07:19,360 --> 0:07:20,360
+ So...
+
+134
+0:07:20,360 --> 0:07:21,360
+ And then move the pole.
+
+135
+0:07:21,360 --> 0:07:24,360
+ And he was helpful doing that with us.
+
+136
+0:07:24,360 --> 0:07:26,360
+ And then we have our two...
+
+137
+0:07:26,360 --> 0:07:28,360
+ These are not publicly employed.
+
+138
+0:07:28,360 --> 0:07:30,360
+ These are from the network team.
+
+139
+0:07:30,360 --> 0:07:32,360
+ You see, we have this...
+
+140
+0:07:32,360 --> 0:07:33,360
+ I'm the manager.
+
+141
+0:07:33,360 --> 0:07:34,360
+ I don't do much.
+
+142
+0:07:34,360 --> 0:07:35,360
+ And then we have our supervisor.
+
+143
+0:07:35,360 --> 0:07:38,360
+ And then we have the techie people doing the work, right?
+
+144
+0:07:38,360 --> 0:07:40,360
+ This is moral support.
+
+145
+0:07:40,360 --> 0:07:41,360
+ I've heard that is super important
+
+146
+0:07:41,360 --> 0:07:43,360
+ so you don't feel alone when you work hard.
+
+147
+0:07:44,360 --> 0:07:46,360
+ Yes.
+
+148
+0:07:46,360 --> 0:07:49,360
+ And, of course, we have tried to anonymize them
+
+149
+0:07:49,360 --> 0:07:50,360
+ so that...
+
+150
+0:07:50,360 --> 0:07:53,360
+ To protect the innocent and such.
+
+151
+0:07:53,360 --> 0:07:58,360
+ Anyway, I just wanted to show you this one where I...
+
+152
+0:07:58,360 --> 0:08:01,360
+ This is how it looks yesterday.
+
+153
+0:08:01,360 --> 0:08:05,360
+ I tried to bake a panoramic view of this.
+
+154
+0:08:05,360 --> 0:08:08,360
+ And you see there's a big hole here.
+
+155
+0:08:08,360 --> 0:08:11,360
+ We have our well here.
+
+156
+0:08:11,360 --> 0:08:12,360
+ And then there's a big hole on the other side.
+
+157
+0:08:12,360 --> 0:08:13,360
+ So there's a big hole.
+
+158
+0:08:13,360 --> 0:08:19,360
+ Two meters including our well and a big hole on the other side.
+
+159
+0:08:19,360 --> 0:08:24,360
+ And it was also there that they, you know, killed the water pipe earlier.
+
+160
+0:08:24,360 --> 0:08:25,360
+ But they were nice.
+
+161
+0:08:25,360 --> 0:08:28,360
+ They killed the water, not our fiber.
+
+162
+0:08:28,360 --> 0:08:30,360
+ We like that.
+
+163
+0:08:30,360 --> 0:08:33,360
+ So sensible people kill water, not our fiber,
+
+164
+0:08:33,360 --> 0:08:35,360
+ because that would have been problematic.
+
+165
+0:08:35,360 --> 0:08:37,360
+ Who wants a fiber cut?
+
+166
+0:08:37,360 --> 0:08:39,360
+ But he was really nice, that guy.
+
+167
+0:08:39,360 --> 0:08:41,360
+ And he got two packets of Stroopwafel.
+
+168
+0:08:41,360 --> 0:08:44,360
+ And so that worked.
+
+169
+0:08:44,360 --> 0:08:46,360
+ And this is...
+
+170
+0:08:46,360 --> 0:08:50,360
+ This just makes me happy when you meet people who are sensible,
+
+171
+0:08:50,360 --> 0:08:55,360
+ who just find solutions to crap problems that none of us have invented
+
+172
+0:08:55,360 --> 0:08:59,360
+ and you just ram into them.
+
+173
+0:08:59,360 --> 0:09:03,360
+ And this is the kind of problems that since we actually were well prepared,
+
+174
+0:09:03,360 --> 0:09:07,360
+ we had actually configured all the switches and stuff in advance,
+
+175
+0:09:07,360 --> 0:09:08,360
+ we can...
+
+176
+0:09:08,360 --> 0:09:10,360
+ I think that when you do good planning,
+
+177
+0:09:10,360 --> 0:09:12,360
+ and are well prepared,
+
+178
+0:09:12,360 --> 0:09:15,360
+ you have capacity to handle...
+
+179
+0:09:15,360 --> 0:09:17,360
+ Yeah, who foresaw this one?
+
+180
+0:09:17,360 --> 0:09:21,360
+ It might be in some book at the municipality that they're going to dig now,
+
+181
+0:09:21,360 --> 0:09:24,360
+ but I'm not going to look into that one.
+
+182
+0:09:24,360 --> 0:09:26,360
+ I don't even know where to find it.
+
+183
+0:09:26,360 --> 0:09:29,360
+ So a lot of crap will appear, and they will have a lot of problems.
+
+184
+0:09:29,360 --> 0:09:32,360
+ We also had this issue with all our knock equipment
+
+185
+0:09:32,360 --> 0:09:35,360
+ being at the furthest end of the container.
+
+186
+0:09:35,360 --> 0:09:38,360
+ So power cables for the switches and such,
+
+187
+0:09:38,360 --> 0:09:39,360
+ it's...
+
+188
+0:09:39,360 --> 0:09:42,360
+ It's not something that the Dutch people have
+
+189
+0:09:42,360 --> 0:09:44,360
+ that brings most of the equipment.
+
+190
+0:09:44,360 --> 0:09:46,360
+ They use, you know, Schuko,
+
+191
+0:09:46,360 --> 0:09:48,360
+ which is not what we use in Denmark,
+
+192
+0:09:48,360 --> 0:09:52,360
+ because safety, monopoly...
+
+193
+0:09:52,360 --> 0:09:55,360
+ I don't know why we use these three-legged things.
+
+194
+0:09:55,360 --> 0:09:57,360
+ So, but that was foreseen.
+
+195
+0:09:57,360 --> 0:10:01,360
+ We actually bought an extra box from my home I have spare,
+
+196
+0:10:01,360 --> 0:10:03,360
+ because then we could get started.
+
+197
+0:10:03,360 --> 0:10:05,360
+ This is planning to make stuff easier,
+
+198
+0:10:05,360 --> 0:10:08,360
+ and then we have capacity to handle weird shit,
+
+199
+0:10:08,360 --> 0:10:11,360
+ which always happens for some reason.
+
+200
+0:10:11,360 --> 0:10:14,360
+ Okay, so the end result of this
+
+201
+0:10:14,360 --> 0:10:20,360
+ was that we actually got this light through.
+
+202
+0:10:20,360 --> 0:10:23,360
+ So when you build something like this,
+
+203
+0:10:23,360 --> 0:10:26,360
+ we know that as soon as possible,
+
+204
+0:10:26,360 --> 0:10:29,360
+ we want to know if we have a light going through
+
+205
+0:10:29,360 --> 0:10:34,360
+ from our end to the data center in Gilstedt.
+
+206
+0:10:34,360 --> 0:10:36,360
+ Because that means that we have layer one up and running.
+
+207
+0:10:36,360 --> 0:10:37,360
+ We have, you know,
+
+208
+0:10:37,360 --> 0:10:40,360
+ stuff has been configured-ish, right?
+
+209
+0:10:40,360 --> 0:10:42,360
+ And when you have layer one up and running,
+
+210
+0:10:42,360 --> 0:10:44,360
+ you want to have layer three up and running also.
+
+211
+0:10:44,360 --> 0:10:47,360
+ And of course, there was some configuration issue
+
+212
+0:10:47,360 --> 0:10:50,360
+ so that we didn't have layer three at once.
+
+213
+0:10:50,360 --> 0:10:51,360
+ That's fine.
+
+214
+0:10:51,360 --> 0:10:52,360
+ That happens every year
+
+215
+0:10:52,360 --> 0:10:54,360
+ that we have some non-standard configuration,
+
+216
+0:10:54,360 --> 0:10:57,360
+ and our provider kind of forgets something.
+
+217
+0:10:57,360 --> 0:11:00,360
+ So we call them, and we know that this happens.
+
+218
+0:11:00,360 --> 0:11:03,360
+ But what happened, this born hack was
+
+219
+0:11:03,360 --> 0:11:06,360
+ that we actually had internet up and running
+
+220
+0:11:06,360 --> 0:11:08,360
+ since Monday afternoon.
+
+221
+0:11:08,360 --> 0:11:10,360
+ I think that is super cool,
+
+222
+0:11:10,360 --> 0:11:14,360
+ and I think the network team should get an applause for that.
+
+223
+0:11:24,360 --> 0:11:29,360
+ Okay, we continue as always.
+
+224
+0:11:29,360 --> 0:11:34,360
+ This is one of those marketing pictures
+
+225
+0:11:34,360 --> 0:11:38,360
+ where this is after we cleaned up.
+
+226
+0:11:38,360 --> 0:11:40,360
+ It didn't look like that all the time,
+
+227
+0:11:40,360 --> 0:11:42,360
+ but now it looks nice and clean, right?
+
+228
+0:11:42,360 --> 0:11:44,360
+ It also helps with other things,
+
+229
+0:11:44,360 --> 0:11:46,360
+ like finding the right cables and such.
+
+230
+0:11:46,360 --> 0:11:48,360
+ But this is our server room.
+
+231
+0:11:48,360 --> 0:11:50,360
+ We actually have room to move now.
+
+232
+0:11:50,360 --> 0:11:52,360
+ We kind of move all the firefighting equipment elsewhere.
+
+233
+0:11:52,360 --> 0:11:54,360
+ I think that's a super nice idea.
+
+234
+0:11:54,360 --> 0:11:56,360
+ We're going to do that next year also.
+
+235
+0:11:56,360 --> 0:11:58,360
+ And then you have all our equipment.
+
+236
+0:11:58,360 --> 0:12:01,360
+ We have our Nox server,
+
+237
+0:12:01,360 --> 0:12:04,360
+ which runs virtual machines,
+
+238
+0:12:04,360 --> 0:12:06,360
+ for DSCP and DNS,
+
+239
+0:12:06,360 --> 0:12:08,360
+ and what's the third one?
+
+240
+0:12:08,360 --> 0:12:11,360
+ And we have some equipment in the stack,
+
+241
+0:12:11,360 --> 0:12:13,360
+ which is the core switches,
+
+242
+0:12:13,360 --> 0:12:15,360
+ the wireless controller,
+
+243
+0:12:15,360 --> 0:12:20,360
+ and this year we also had an extra virtual machine host.
+
+244
+0:12:20,360 --> 0:12:22,360
+ We have another server.
+
+245
+0:12:22,360 --> 0:12:24,360
+ And then we have all the cables coming in and out.
+
+246
+0:12:24,360 --> 0:12:26,360
+ And that's a nice setup.
+
+247
+0:12:26,360 --> 0:12:30,360
+ One of the designs that we use here
+
+248
+0:12:30,360 --> 0:12:33,360
+ that is different from most places
+
+249
+0:12:33,360 --> 0:12:38,360
+ is that we really don't want your data.
+
+250
+0:12:38,360 --> 0:12:42,360
+ We want to make an effort in preserving your privacy,
+
+251
+0:12:42,360 --> 0:12:46,360
+ and that includes turning off a lot of logging on these devices,
+
+252
+0:12:46,360 --> 0:12:49,360
+ and when we leave, we are going to wipe the servers.
+
+253
+0:12:49,360 --> 0:12:51,360
+ That's just how it works,
+
+254
+0:12:51,360 --> 0:12:53,360
+ so that we will not have your MAC addresses.
+
+255
+0:12:53,360 --> 0:12:56,360
+ We will not know when you went from one tent to the other.
+
+256
+0:12:56,360 --> 0:12:58,360
+ You know, normal wireless systems,
+
+257
+0:12:58,360 --> 0:13:00,360
+ they can track you by MAC address
+
+258
+0:13:00,360 --> 0:13:02,360
+ when you move from AP to AP and such.
+
+259
+0:13:02,360 --> 0:13:06,360
+ And all this DNS stuff and so on.
+
+260
+0:13:06,360 --> 0:13:08,360
+ This is simply not something we log.
+
+261
+0:13:08,360 --> 0:13:10,360
+ And now, when we are done here,
+
+262
+0:13:10,360 --> 0:13:12,360
+ we are going to wipe the servers,
+
+263
+0:13:12,360 --> 0:13:14,360
+ as we always do.
+
+264
+0:13:20,360 --> 0:13:21,360
+ Yes.
+
+265
+0:13:21,360 --> 0:13:24,360
+ So this was a little view into our R31,
+
+266
+0:13:24,360 --> 0:13:26,360
+ our server room.
+
+267
+0:13:26,360 --> 0:13:27,360
+ It's not the toilet.
+
+268
+0:13:27,360 --> 0:13:29,360
+ It's the one between the toilets.
+
+269
+0:13:29,360 --> 0:13:31,360
+ Just saying.
+
+270
+0:13:31,360 --> 0:13:34,360
+ Yes.
+
+271
+0:13:34,360 --> 0:13:37,360
+ Okay.
+
+272
+0:13:37,360 --> 0:13:41,360
+ We use a bit of fiber on field.
+
+273
+0:13:41,360 --> 0:13:44,360
+ What you see here is me and my phone
+
+274
+0:13:44,360 --> 0:13:46,360
+ going for a walk.
+
+275
+0:13:46,360 --> 0:13:48,360
+ A long walk.
+
+276
+0:13:48,360 --> 0:13:50,360
+ And for some reason,
+
+277
+0:13:50,360 --> 0:13:53,360
+ somebody decided to put them through the nettles,
+
+278
+0:13:53,360 --> 0:13:55,360
+ so that I, you know,
+
+279
+0:13:55,360 --> 0:13:57,360
+ it's wonderful, you know.
+
+280
+0:13:57,360 --> 0:13:59,360
+ Might have an issue with that, just saying.
+
+281
+0:13:59,360 --> 0:14:00,360
+ Okay.
+
+282
+0:14:00,360 --> 0:14:02,360
+ But the interesting part here is that
+
+283
+0:14:02,360 --> 0:14:04,360
+ we have kilometers of fiber.
+
+284
+0:14:04,360 --> 0:14:06,360
+ And you can see this design we have
+
+285
+0:14:06,360 --> 0:14:08,360
+ where we, you know,
+
+286
+0:14:08,360 --> 0:14:10,360
+ this looks like a standard star topology.
+
+287
+0:14:10,360 --> 0:14:12,360
+ No, actually, it doesn't.
+
+288
+0:14:12,360 --> 0:14:13,360
+ But it is.
+
+289
+0:14:13,360 --> 0:14:16,360
+ So we have R31 here
+
+290
+0:14:16,360 --> 0:14:18,360
+ in the middle of everything.
+
+291
+0:14:18,360 --> 0:14:20,360
+ Oh, I forgot Noisy on this one.
+
+292
+0:14:20,360 --> 0:14:21,360
+ Noisy is over here.
+
+293
+0:14:21,360 --> 0:14:23,360
+ I have that one stuck also.
+
+294
+0:14:23,360 --> 0:14:25,360
+ So...
+
+295
+0:14:25,360 --> 0:14:27,360
+ Cute.
+
+296
+0:14:27,360 --> 0:14:28,360
+ So we have a fiber going,
+
+297
+0:14:28,360 --> 0:14:31,360
+ we have a distribution point next to R31,
+
+298
+0:14:31,360 --> 0:14:33,360
+ and we have fibers coming in and out.
+
+299
+0:14:33,360 --> 0:14:35,360
+ And what you can do with fiber,
+
+300
+0:14:35,360 --> 0:14:37,360
+ which is super cool,
+
+301
+0:14:37,360 --> 0:14:39,360
+ is that you can make passive connections.
+
+302
+0:14:39,360 --> 0:14:42,360
+ So what you have from all the way up to the well,
+
+303
+0:14:42,360 --> 0:14:44,360
+ through campsite,
+
+304
+0:14:44,360 --> 0:14:46,360
+ through down into R31,
+
+305
+0:14:46,360 --> 0:14:49,360
+ we have a passive connection for the fiber,
+
+306
+0:14:49,360 --> 0:14:52,360
+ which means that if power drops everywhere else
+
+307
+0:14:52,360 --> 0:14:54,360
+ than in data centers,
+
+308
+0:14:54,360 --> 0:14:56,360
+ we have a passive connection for the fiber,
+
+309
+0:14:56,360 --> 0:14:59,360
+ where else than in data center Gilsted
+
+310
+0:14:59,360 --> 0:15:03,360
+ or data center R31,
+
+311
+0:15:03,360 --> 0:15:07,360
+ then we actually still maintain internet connection.
+
+312
+0:15:07,360 --> 0:15:09,360
+ And it means that when you are on site,
+
+313
+0:15:09,360 --> 0:15:10,360
+ like imagine you have,
+
+314
+0:15:10,360 --> 0:15:12,360
+ you are in the general camping,
+
+315
+0:15:12,360 --> 0:15:16,360
+ and there for some reason is power outage
+
+316
+0:15:16,360 --> 0:15:18,360
+ in different places,
+
+317
+0:15:18,360 --> 0:15:21,360
+ you are actually not affecting the other areas.
+
+318
+0:15:21,360 --> 0:15:24,360
+ And that is a super nice feature of this,
+
+319
+0:15:24,360 --> 0:15:26,360
+ of these fibers.
+
+320
+0:15:26,360 --> 0:15:28,360
+ So we have fibers with two cores,
+
+321
+0:15:28,360 --> 0:15:29,360
+ we have fibers with eight cores,
+
+322
+0:15:29,360 --> 0:15:30,360
+ four, twelve,
+
+323
+0:15:30,360 --> 0:15:32,360
+ I don't remember the numbers,
+
+324
+0:15:32,360 --> 0:15:34,360
+ but one like the one that crosses the road
+
+325
+0:15:34,360 --> 0:15:37,360
+ from R31 to our distribution point,
+
+326
+0:15:37,360 --> 0:15:39,360
+ it's a twelve core thingy.
+
+327
+0:15:39,360 --> 0:15:43,360
+ And it just means that we have a different site
+
+328
+0:15:43,360 --> 0:15:47,360
+ or different area per fiber,
+
+329
+0:15:47,360 --> 0:15:50,360
+ and that's actually quite nice.
+
+330
+0:15:50,360 --> 0:15:53,360
+ This is something we have been discussing,
+
+331
+0:15:53,360 --> 0:15:55,360
+ because I'm always doing this,
+
+332
+0:15:55,360 --> 0:15:59,360
+ I'm always doing this stupid drunk guy scenario,
+
+333
+0:15:59,360 --> 0:16:03,360
+ and it turns out that the stupid drunk guy
+
+334
+0:16:03,360 --> 0:16:07,360
+ is not someone who touches our network at Bonehack.
+
+335
+0:16:07,360 --> 0:16:10,360
+ And it's really nice to be around people
+
+336
+0:16:10,360 --> 0:16:12,360
+ who treat our equipment nice,
+
+337
+0:16:12,360 --> 0:16:14,360
+ and you know, play along,
+
+338
+0:16:14,360 --> 0:16:16,360
+ because otherwise we really should have
+
+339
+0:16:16,360 --> 0:16:18,360
+ insane amounts of protection
+
+340
+0:16:18,360 --> 0:16:20,360
+ and ensure that everything is super armored
+
+341
+0:16:20,360 --> 0:16:22,360
+ and locked down and all kinds of stuff
+
+342
+0:16:22,360 --> 0:16:24,360
+ that we don't want to spend our time doing.
+
+343
+0:16:24,360 --> 0:16:27,360
+ So you treat our equipment well,
+
+344
+0:16:27,360 --> 0:16:29,360
+ and that's all we can ask for.
+
+345
+0:16:29,360 --> 0:16:31,360
+ So thank you for that.
+
+346
+0:16:34,360 --> 0:16:36,360
+ These fibers, yes,
+
+347
+0:16:36,360 --> 0:16:40,360
+ some people have them under their pillow or something,
+
+348
+0:16:40,360 --> 0:16:42,360
+ we borrow some left and right.
+
+349
+0:16:42,360 --> 0:16:45,360
+ Actually, the 2.4 kilometers,
+
+350
+0:16:45,360 --> 0:16:49,360
+ I don't think they include the 300 meters from Kamsa,
+
+351
+0:16:49,360 --> 0:16:51,360
+ so it's actually more we have.
+
+352
+0:16:51,360 --> 0:16:53,360
+ But we still have a bit in spare,
+
+353
+0:16:53,360 --> 0:16:55,360
+ so we, of course, have not abused,
+
+354
+0:16:55,360 --> 0:16:57,360
+ only used a bit more than 2 kilometers.
+
+355
+0:16:57,360 --> 0:16:59,360
+ Why not?
+
+356
+0:16:59,360 --> 0:17:03,360
+ And all this stuff, we get it from Event Infra.
+
+357
+0:17:03,360 --> 0:17:07,360
+ Event Infra is an organization in Holland
+
+358
+0:17:07,360 --> 0:17:11,360
+ that just has a lot of equipment.
+
+359
+0:17:11,360 --> 0:17:13,360
+ And now we're back to the good part
+
+360
+0:17:13,360 --> 0:17:15,360
+ about doing Bonehack during Corona.
+
+361
+0:17:15,360 --> 0:17:18,360
+ There are not other hacker camps.
+
+362
+0:17:18,360 --> 0:17:20,360
+ Which means, like last year, we can just say,
+
+363
+0:17:20,360 --> 0:17:21,360
+ two of those, three of those, one of those,
+
+364
+0:17:21,360 --> 0:17:22,360
+ oh, that was good.
+
+365
+0:17:22,360 --> 0:17:25,360
+ And then just pick and choose, right?
+
+366
+0:17:25,360 --> 0:17:27,360
+ And that's really cool.
+
+367
+0:17:27,360 --> 0:17:32,360
+ And we might need to do a bit more detailed planning
+
+368
+0:17:32,360 --> 0:17:35,360
+ and borrow a bit less in the coming years
+
+369
+0:17:35,360 --> 0:17:38,360
+ if there are other hacker camps.
+
+370
+0:17:38,360 --> 0:17:41,360
+ So that's actually one of the reasons
+
+371
+0:17:41,360 --> 0:17:45,360
+ why I do this fairly detailed map
+
+372
+0:17:45,360 --> 0:17:47,360
+ about where stuff is with GPS
+
+373
+0:17:47,360 --> 0:17:49,360
+ and, you know, which cable we use for where.
+
+374
+0:17:49,360 --> 0:17:50,360
+ Because when we get press,
+
+375
+0:17:50,360 --> 0:17:53,360
+ on the equipment,
+
+376
+0:17:53,360 --> 0:17:56,360
+ we want to know in fairly great detail
+
+377
+0:17:56,360 --> 0:17:59,360
+ where stuff was so that we can, you know,
+
+378
+0:17:59,360 --> 0:18:01,360
+ do a more minimal solution than this thing
+
+379
+0:18:01,360 --> 0:18:03,360
+ where we can just, you know,
+
+380
+0:18:03,360 --> 0:18:05,360
+ oh, 100 meters, that's fine.
+
+381
+0:18:05,360 --> 0:18:07,360
+ Here you have a 200 meter cable.
+
+382
+0:18:07,360 --> 0:18:09,360
+ That's not going to be as easy
+
+383
+0:18:09,360 --> 0:18:14,360
+ if we cannot borrow all we want.
+
+384
+0:18:14,360 --> 0:18:17,360
+ Bonehack actually has very little fiber,
+
+385
+0:18:17,360 --> 0:18:19,360
+ if any.
+
+386
+0:18:19,360 --> 0:18:21,360
+ Do we have any fiber?
+
+387
+0:18:21,360 --> 0:18:22,360
+ I don't think so.
+
+388
+0:18:22,360 --> 0:18:24,360
+ We have a couple of hundred meters.
+
+389
+0:18:24,360 --> 0:18:25,360
+ Bonehackers?
+
+390
+0:18:25,360 --> 0:18:27,360
+ Yeah, we have at least 350 meters.
+
+391
+0:18:27,360 --> 0:18:28,360
+ Awesome.
+
+392
+0:18:28,360 --> 0:18:31,360
+ And you broke yours last year, yourself.
+
+393
+0:18:35,360 --> 0:18:37,360
+ I'm glad that we don't have a microphone
+
+394
+0:18:37,360 --> 0:18:40,360
+ in the audience, with the audience.
+
+395
+0:18:42,360 --> 0:18:45,360
+ Some people might say slander.
+
+396
+0:18:45,360 --> 0:18:49,360
+ But the point is that this will simply not happen
+
+397
+0:18:49,360 --> 0:18:51,360
+ without being able to borrow
+
+398
+0:18:51,360 --> 0:18:54,360
+ ridiculous amounts of stuff from somewhere.
+
+399
+0:18:54,360 --> 0:18:57,360
+ This is not something that we ever want to buy.
+
+400
+0:18:57,360 --> 0:18:59,360
+ This is to use for a week.
+
+401
+0:18:59,360 --> 0:19:01,360
+ Well, I don't know, maybe you can rent it,
+
+402
+0:19:01,360 --> 0:19:04,360
+ but that would also be very expensive.
+
+403
+0:19:04,360 --> 0:19:06,360
+ So, sorry?
+
+404
+0:19:06,360 --> 0:19:07,360
+ No, sorry.
+
+405
+0:19:07,360 --> 0:19:09,360
+ One of the things that we have been discussing,
+
+406
+0:19:09,360 --> 0:19:12,360
+ which we have kind of shelved for now,
+
+407
+0:19:12,360 --> 0:19:14,360
+ is talking to Juniper
+
+408
+0:19:14,360 --> 0:19:17,360
+ and have them deliver everything we point at.
+
+409
+0:19:17,360 --> 0:19:19,360
+ But we don't want that.
+
+410
+0:19:19,360 --> 0:19:23,360
+ We don't want to draw that card before we actually know
+
+411
+0:19:23,360 --> 0:19:25,360
+ that everything is going to be peachy
+
+412
+0:19:25,360 --> 0:19:27,360
+ and corona is kind of settled.
+
+413
+0:19:27,360 --> 0:19:31,360
+ So, this would be one way of handling some of the equipment.
+
+414
+0:19:31,360 --> 0:19:34,360
+ It's much easier for us to have a lot of the same equipment,
+
+415
+0:19:34,360 --> 0:19:37,360
+ but, well, we are pros,
+
+416
+0:19:37,360 --> 0:19:39,360
+ so it might not be necessary.
+
+417
+0:19:39,360 --> 0:19:42,360
+ It's just way easier.
+
+418
+0:19:42,360 --> 0:19:43,360
+ Okay.
+
+419
+0:19:43,360 --> 0:19:46,360
+ So, I just want to send a lot of love to Event Infra
+
+420
+0:19:46,360 --> 0:19:48,360
+ and say thank you.
+
+421
+0:19:48,360 --> 0:19:50,360
+ Do give them an applause.
+
+422
+0:19:58,360 --> 0:19:59,360
+ Yes.
+
+423
+0:19:59,360 --> 0:20:01,360
+ So, when the Dutch people arrive,
+
+424
+0:20:01,360 --> 0:20:03,360
+ they have their cars packed.
+
+425
+0:20:03,360 --> 0:20:05,360
+ And it's just very cool to see,
+
+426
+0:20:05,360 --> 0:20:07,360
+ and perhaps you should, you know,
+
+427
+0:20:07,360 --> 0:20:09,360
+ rent something bigger next year.
+
+428
+0:20:09,360 --> 0:20:11,360
+ Let's see what happens.
+
+429
+0:20:11,360 --> 0:20:12,360
+ Okay.
+
+430
+0:20:12,360 --> 0:20:15,360
+ That was what I wanted to say about our core functionality.
+
+431
+0:20:15,360 --> 0:20:16,360
+ The non-core stuff,
+
+432
+0:20:16,360 --> 0:20:18,360
+ we have a lot of,
+
+433
+0:20:18,360 --> 0:20:20,360
+ a lot of stuff that if it breaks,
+
+434
+0:20:20,360 --> 0:20:25,360
+ it's, well, doesn't affect everybody,
+
+435
+0:20:25,360 --> 0:20:27,360
+ only a lot of people.
+
+436
+0:20:27,360 --> 0:20:32,360
+ So, what we have done is that we have set up 24 access points.
+
+437
+0:20:32,360 --> 0:20:36,360
+ And just take note,
+
+438
+0:20:36,360 --> 0:20:40,360
+ because this is going to be on Jevity next year.
+
+439
+0:20:40,360 --> 0:20:44,360
+ So, how many access points were connected to CAMP in 2021?
+
+440
+0:20:44,360 --> 0:20:46,360
+ 23.
+
+441
+0:20:46,360 --> 0:20:47,360
+ What is?
+
+442
+0:20:48,360 --> 0:20:53,360
+ I said to the camping.
+
+443
+0:20:53,360 --> 0:20:55,360
+ So, the idea is that,
+
+444
+0:20:55,360 --> 0:20:57,360
+ well, this is our internal documentation,
+
+445
+0:20:57,360 --> 0:21:00,360
+ which we are going to put somewhere sensible.
+
+446
+0:21:00,360 --> 0:21:04,360
+ But we have put a lot in different places.
+
+447
+0:21:04,360 --> 0:21:06,360
+ And actually,
+
+448
+0:21:06,360 --> 0:21:10,360
+ I didn't know we had a location called Hammock Hill.
+
+449
+0:21:10,360 --> 0:21:13,360
+ I find that to be a super cool name.
+
+450
+0:21:13,360 --> 0:21:16,360
+ So, I went on a field trip to find it.
+
+451
+0:21:16,360 --> 0:21:18,360
+ I didn't,
+
+452
+0:21:18,360 --> 0:21:21,360
+ I just knew that there were three access points in the bar.
+
+453
+0:21:21,360 --> 0:21:23,360
+ I forgot to read our documentation.
+
+454
+0:21:23,360 --> 0:21:25,360
+ So, it was very difficult to find.
+
+455
+0:21:25,360 --> 0:21:26,360
+ But Hammock Hill,
+
+456
+0:21:26,360 --> 0:21:29,360
+ the hill part was correct.
+
+457
+0:21:29,360 --> 0:21:32,360
+ And apparently,
+
+458
+0:21:32,360 --> 0:21:35,360
+ my guess is that this one,
+
+459
+0:21:35,360 --> 0:21:38,360
+ the end of CAMP is the last one to be taken down.
+
+460
+0:21:38,360 --> 0:21:39,360
+ I don't know.
+
+461
+0:21:39,360 --> 0:21:41,360
+ Maybe.
+
+462
+0:21:41,360 --> 0:21:43,360
+ No.
+
+463
+0:21:43,360 --> 0:21:45,360
+ So, and then another interesting detail
+
+464
+0:21:45,360 --> 0:21:47,360
+ is that the information disk,
+
+465
+0:21:47,360 --> 0:21:50,360
+ they have their own access point.
+
+466
+0:21:50,360 --> 0:21:52,360
+ It's because, you know,
+
+467
+0:21:52,360 --> 0:21:54,360
+ a big metal container
+
+468
+0:21:54,360 --> 0:21:58,360
+ is not really good for wireless traffic.
+
+469
+0:21:58,360 --> 0:22:03,360
+ So, we have an access point just outside the information disk,
+
+470
+0:22:03,360 --> 0:22:05,360
+ but it still doesn't penetrate.
+
+471
+0:22:05,360 --> 0:22:07,360
+ And that's very cool to just,
+
+472
+0:22:07,360 --> 0:22:10,360
+ so they have had their access point.
+
+473
+0:22:10,360 --> 0:22:14,360
+ Yes.
+
+474
+0:22:14,360 --> 0:22:19,360
+ The APs were of course used.
+
+475
+0:22:19,360 --> 0:22:22,360
+ And as you can see,
+
+476
+0:22:22,360 --> 0:22:24,360
+ apparently we have a day-night cycle.
+
+477
+0:22:24,360 --> 0:22:27,360
+ And I didn't check,
+
+478
+0:22:27,360 --> 0:22:31,360
+ but nighttime is,
+
+479
+0:22:31,360 --> 0:22:36,360
+ I don't think you guys go to bed at midnight.
+
+480
+0:22:36,360 --> 0:22:38,360
+ And we had some issues.
+
+481
+0:22:38,360 --> 0:22:40,360
+ We have one over there which is,
+
+482
+0:22:40,360 --> 0:22:41,360
+ who knows,
+
+483
+0:22:41,360 --> 0:22:43,360
+ and we have a dropout
+
+484
+0:22:43,360 --> 0:22:45,360
+ in the collection.
+
+485
+0:22:45,360 --> 0:22:46,360
+ But otherwise,
+
+486
+0:22:46,360 --> 0:22:48,360
+ this is a graph that looks as we expect.
+
+487
+0:22:48,360 --> 0:22:49,360
+ So.
+
+488
+0:22:49,360 --> 0:22:54,360
+ What's the max?
+
+489
+0:22:54,360 --> 0:22:55,360
+ Huh, good question.
+
+490
+0:22:55,360 --> 0:22:56,360
+ Two seconds.
+
+491
+0:22:56,360 --> 0:22:58,360
+ 305.
+
+492
+0:22:58,360 --> 0:23:02,360
+ 305.
+
+493
+0:23:02,360 --> 0:23:04,360
+ I remember last year's average
+
+494
+0:23:04,360 --> 0:23:07,360
+ was 1.5 per participant.
+
+495
+0:23:07,360 --> 0:23:12,360
+ So, we are actually doing less than that this year.
+
+496
+0:23:12,360 --> 0:23:14,360
+ But this is,
+
+497
+0:23:14,360 --> 0:23:15,360
+ I actually like this graph.
+
+498
+0:23:15,360 --> 0:23:16,360
+ It just,
+
+499
+0:23:16,360 --> 0:23:18,360
+ it actually says a lot about the activity, right?
+
+500
+0:23:18,360 --> 0:23:25,360
+ So, we apparently are at 40, 60-ish,
+
+501
+0:23:25,360 --> 0:23:30,360
+ and then people start arriving Thursday at 12, right?
+
+502
+0:23:30,360 --> 0:23:33,360
+ And then we had some extra activity over the weekend,
+
+503
+0:23:33,360 --> 0:23:35,360
+ which actually continued until Monday.
+
+504
+0:23:35,360 --> 0:23:39,360
+ So, that's cool.
+
+505
+0:23:39,360 --> 0:23:40,360
+ When I look at this graph,
+
+506
+0:23:40,360 --> 0:23:46,360
+ we had a discussion about IoT devices.
+
+507
+0:23:46,360 --> 0:23:49,360
+ So, if we are 300 people,
+
+508
+0:23:49,360 --> 0:23:50,360
+ and we give every,
+
+509
+0:23:50,360 --> 0:23:53,360
+ and everybody has Wi-Fi on their badge,
+
+510
+0:23:53,360 --> 0:23:55,360
+ like they do in other hacker camps,
+
+511
+0:23:55,360 --> 0:23:57,360
+ we kind of perhaps need to know this in advance
+
+512
+0:23:57,360 --> 0:23:59,360
+ in the network team,
+
+513
+0:23:59,360 --> 0:24:03,360
+ because that will basically double the amount of people connected.
+
+514
+0:24:03,360 --> 0:24:04,360
+ It might not be an issue
+
+515
+0:24:04,360 --> 0:24:07,360
+ if they are using really, really no power,
+
+516
+0:24:07,360 --> 0:24:08,360
+ no traffic,
+
+517
+0:24:08,360 --> 0:24:09,360
+ but,
+
+518
+0:24:09,360 --> 0:24:11,360
+ I think it's worth discussing
+
+519
+0:24:11,360 --> 0:24:13,360
+ if you want twice as many devices connected.
+
+520
+0:24:13,360 --> 0:24:17,360
+ So, we are going to have a wireless discussion.
+
+521
+0:24:35,360 --> 0:24:37,360
+ The comment is that last year,
+
+522
+0:24:37,360 --> 0:24:40,360
+ we actually had Pixel Flute running over Wi-Fi,
+
+523
+0:24:40,360 --> 0:24:43,360
+ which gave us extra connected.
+
+524
+0:24:43,360 --> 0:24:46,360
+ Yes.
+
+525
+0:24:46,360 --> 0:24:48,360
+ Yes, I remember two years ago
+
+526
+0:24:48,360 --> 0:24:51,360
+ when I held this speech, this talk,
+
+527
+0:24:51,360 --> 0:24:55,360
+ I said that having a Wi-Fi guy on terrain
+
+528
+0:24:55,360 --> 0:24:57,360
+ is really, really cool.
+
+529
+0:24:57,360 --> 0:25:00,360
+ It solves a lot of problems before they arise,
+
+530
+0:25:00,360 --> 0:25:02,360
+ and we have had this this year also,
+
+531
+0:25:02,360 --> 0:25:05,360
+ that, well, when we set all this up,
+
+532
+0:25:05,360 --> 0:25:06,360
+ we actually don't know
+
+533
+0:25:06,360 --> 0:25:08,360
+ where people is going to make their camps,
+
+534
+0:25:08,360 --> 0:25:09,360
+ we have some black spots,
+
+535
+0:25:09,360 --> 0:25:11,360
+ we have all these things that,
+
+536
+0:25:11,360 --> 0:25:15,360
+ so we kind of need to move the access points a bit during camp,
+
+537
+0:25:15,360 --> 0:25:19,360
+ and that requires to have on-site knowledge about this.
+
+538
+0:25:19,360 --> 0:25:21,360
+ So, that is what we have been doing this time,
+
+539
+0:25:21,360 --> 0:25:25,360
+ and I think it works-ish.
+
+540
+0:25:25,360 --> 0:25:28,360
+ My impression is that it have worked fairly well.
+
+541
+0:25:28,360 --> 0:25:31,360
+ I know that there have been some issues in different places,
+
+542
+0:25:31,360 --> 0:25:33,360
+ but we'll try to rectify them.
+
+543
+0:25:33,360 --> 0:25:35,360
+ If we have a guy coming in
+
+544
+0:25:35,360 --> 0:25:38,360
+ at the beginning and taking it down at the end,
+
+545
+0:25:38,360 --> 0:25:41,360
+ we would not have the option
+
+546
+0:25:41,360 --> 0:25:46,360
+ of changing the topology a bit.
+
+547
+0:25:46,360 --> 0:25:49,360
+ So, I think that's a plan that is here to stay,
+
+548
+0:25:49,360 --> 0:25:56,360
+ that we somehow run the APs ourselves.
+
+549
+0:25:56,360 --> 0:26:00,360
+ Okay.
+
+550
+0:26:00,360 --> 0:26:03,360
+ Yes.
+
+551
+0:26:03,360 --> 0:26:04,360
+ I've decided that I'm allowed
+
+552
+0:26:04,360 --> 0:26:11,360
+ to spell Pixel Flute however I want to.
+
+553
+0:26:11,360 --> 0:26:16,360
+ Anyway, this picture is from the bar a couple of days ago,
+
+554
+0:26:16,360 --> 0:26:20,360
+ and you, of course, see that this is a big mess,
+
+555
+0:26:20,360 --> 0:26:22,360
+ as Pixel Flute is supposed to be.
+
+556
+0:26:22,360 --> 0:26:24,360
+ We have...
+
+557
+0:26:24,360 --> 0:26:25,360
+ Hmm.
+
+558
+0:26:25,360 --> 0:26:26,360
+ But I actually like this one,
+
+559
+0:26:26,360 --> 0:26:28,360
+ where I don't recall his name,
+
+560
+0:26:28,360 --> 0:26:31,360
+ from The Lion...
+
+561
+0:26:31,360 --> 0:26:33,360
+ What's his name?
+
+562
+0:26:33,360 --> 0:26:35,360
+ Rafiki.
+
+563
+0:26:35,360 --> 0:26:37,360
+ Rafiki, that's true.
+
+564
+0:26:37,360 --> 0:26:39,360
+ And he's just sitting there, super zen,
+
+565
+0:26:39,360 --> 0:26:42,360
+ and it was a really powerful connection
+
+566
+0:26:42,360 --> 0:26:44,360
+ that just made sure he stayed there.
+
+567
+0:26:44,360 --> 0:26:45,360
+ That was very cool.
+
+568
+0:26:45,360 --> 0:26:49,360
+ And then we, of course, have our NOC weather map,
+
+569
+0:26:49,360 --> 0:26:51,360
+ just because...
+
+570
+0:26:51,360 --> 0:26:53,360
+ And then...
+
+571
+0:26:53,360 --> 0:26:55,360
+ I hope this is not a spoiler,
+
+572
+0:26:55,360 --> 0:26:58,360
+ but my guess is that this is a token.
+
+573
+0:26:58,360 --> 0:26:59,360
+ That's my guess.
+
+574
+0:26:59,360 --> 0:27:00,360
+ I didn't play.
+
+575
+0:27:00,360 --> 0:27:02,360
+ And then some weirdo decided
+
+576
+0:27:02,360 --> 0:27:05,360
+ that we should have our NEM ID login screen also.
+
+577
+0:27:11,360 --> 0:27:12,360
+ It's...
+
+578
+0:27:12,360 --> 0:27:14,360
+ When I saw it the first time, I thought,
+
+579
+0:27:14,360 --> 0:27:15,360
+ oh, it's a Windows machine,
+
+580
+0:27:15,360 --> 0:27:17,360
+ and some Windows popped up.
+
+581
+0:27:17,360 --> 0:27:19,360
+ But apparently...
+
+582
+0:27:19,360 --> 0:27:21,360
+ Apparently not.
+
+583
+0:27:21,360 --> 0:27:23,360
+ Anyway, as I wrote,
+
+584
+0:27:23,360 --> 0:27:25,360
+ we do Pixel Flute because...
+
+585
+0:27:25,360 --> 0:27:26,360
+ Because...
+
+586
+0:27:26,360 --> 0:27:27,360
+ Because...
+
+587
+0:27:27,360 --> 0:27:28,360
+ Because why not?
+
+588
+0:27:28,360 --> 0:27:30,360
+ And so we had some infrastructure set up
+
+589
+0:27:30,360 --> 0:27:31,360
+ in the...
+
+590
+0:27:31,360 --> 0:27:32,360
+ In the buy area.
+
+591
+0:27:32,360 --> 0:27:33,360
+ This was...
+
+592
+0:27:33,360 --> 0:27:34,360
+ This was Espeon's doing.
+
+593
+0:27:34,360 --> 0:27:36,360
+ We actually did not have much to do with it.
+
+594
+0:27:36,360 --> 0:27:39,360
+ Otherwise, I would probably have found some graphs on that.
+
+595
+0:27:39,360 --> 0:27:42,360
+ And there was something we discussed last year also,
+
+596
+0:27:42,360 --> 0:27:44,360
+ that what we did...
+
+597
+0:27:44,360 --> 0:27:46,360
+ We set up Pixel Flute last year also.
+
+598
+0:27:46,360 --> 0:27:47,360
+ They set up.
+
+599
+0:27:47,360 --> 0:27:50,360
+ And then you sat in the bar on wireless.
+
+600
+0:27:50,360 --> 0:27:53,360
+ So all your flooding of this device
+
+601
+0:27:53,360 --> 0:27:57,360
+ was sent over wireless to the access point.
+
+602
+0:27:57,360 --> 0:28:00,360
+ The access point sent the data back to the wireless controller,
+
+603
+0:28:00,360 --> 0:28:04,360
+ which sent the data back to the Pixel Flute machine.
+
+604
+0:28:04,360 --> 0:28:06,360
+ Yeah, about that.
+
+605
+0:28:06,360 --> 0:28:09,360
+ So we decided to have this stuff in the...
+
+606
+0:28:09,360 --> 0:28:10,360
+ In the bar.
+
+607
+0:28:10,360 --> 0:28:11,360
+ So there was a switch,
+
+608
+0:28:11,360 --> 0:28:12,360
+ and you could sit there.
+
+609
+0:28:12,360 --> 0:28:13,360
+ And...
+
+610
+0:28:13,360 --> 0:28:14,360
+ We...
+
+611
+0:28:14,360 --> 0:28:17,360
+ We kind of killed it from Wi-Fi,
+
+612
+0:28:17,360 --> 0:28:20,360
+ and then rate limited it on cable.
+
+613
+0:28:20,360 --> 0:28:21,360
+ So that was our solution,
+
+614
+0:28:21,360 --> 0:28:24,360
+ so you could play along if you were not in the bar.
+
+615
+0:28:24,360 --> 0:28:26,360
+ But it was a bar...
+
+616
+0:28:26,360 --> 0:28:27,360
+ It was a bar game.
+
+617
+0:28:27,360 --> 0:28:28,360
+ It was.
+
+618
+0:28:30,360 --> 0:28:33,360
+ Okay.
+
+619
+0:28:33,360 --> 0:28:34,360
+ And then...
+
+620
+0:28:34,360 --> 0:28:35,360
+ The other day,
+
+621
+0:28:35,360 --> 0:28:39,360
+ someone from Pyjamas, Pyjam A.S.,
+
+622
+0:28:39,360 --> 0:28:40,360
+ whatever they are actually called...
+
+623
+0:28:43,360 --> 0:28:45,360
+ He came and said,
+
+624
+0:28:45,360 --> 0:28:48,360
+ how many public IPs can we get?
+
+625
+0:28:50,360 --> 0:28:52,360
+ When I get a request like that,
+
+626
+0:28:52,360 --> 0:28:54,360
+ I'm always thinking,
+
+627
+0:28:54,360 --> 0:28:56,360
+ what are they up to?
+
+628
+0:28:56,360 --> 0:28:59,360
+ Because, of course, I want to say yes,
+
+629
+0:28:59,360 --> 0:29:05,320
+ when they want a lot of IP addresses
+
+630
+0:29:05,320 --> 0:29:07,880
+ it usually means that we should have a chat about what they're doing
+
+631
+0:29:07,880 --> 0:29:09,880
+ so we can see how it fits with our infrastructure
+
+632
+0:29:09,880 --> 0:29:12,520
+ so the solution was
+
+633
+0:29:12,520 --> 0:29:14,620
+ sure, do DHCP
+
+634
+0:29:14,620 --> 0:29:16,700
+ and when you run out of the DHCP pool
+
+635
+0:29:16,700 --> 0:29:19,540
+ subtract 20 so other people can connect also
+
+636
+0:29:19,540 --> 0:29:23,660
+ but it was
+
+637
+0:29:23,660 --> 0:29:26,600
+ in my opinion a pretty weird thing
+
+638
+0:29:26,600 --> 0:29:28,360
+ that is super cool
+
+639
+0:29:28,360 --> 0:29:31,260
+ so perhaps if you were here an hour ago
+
+640
+0:29:31,260 --> 0:29:32,720
+ you would have heard their talk about this
+
+641
+0:29:32,720 --> 0:29:34,680
+ but they have of course
+
+642
+0:29:34,680 --> 0:29:37,300
+ set up a Raspberry Pi cluster
+
+643
+0:29:37,300 --> 0:29:38,920
+ where when you connect to this
+
+644
+0:29:38,920 --> 0:29:42,100
+ you get your own Docker instance with root access
+
+645
+0:29:42,100 --> 0:29:43,440
+ where you can do whatever you want
+
+646
+0:29:43,440 --> 0:29:45,000
+ of course you do
+
+647
+0:29:45,000 --> 0:29:48,960
+ yeah, that's the link, right?
+
+648
+0:29:49,160 --> 0:29:50,540
+ so SSH, root, whatever
+
+649
+0:29:50,540 --> 0:29:52,080
+ and then you get your own
+
+650
+0:29:52,080 --> 0:29:56,780
+ you get your own Docker instance
+
+651
+0:29:56,780 --> 0:29:58,180
+ and as I also said
+
+652
+0:29:58,180 --> 0:30:00,140
+ yeah, yeah
+
+653
+0:30:00,140 --> 0:30:04,340
+ this can be abused to make problems for us
+
+654
+0:30:04,340 --> 0:30:05,760
+ but hey, if that happens
+
+655
+0:30:05,760 --> 0:30:07,820
+ we're probably going to do something and fix it
+
+656
+0:30:07,820 --> 0:30:09,100
+ and that was fun
+
+657
+0:30:09,100 --> 0:30:11,580
+ anyway, this is interesting
+
+658
+0:30:11,580 --> 0:30:13,680
+ this is basically give everybody root access
+
+659
+0:30:13,680 --> 0:30:16,800
+ to a hacking-capable machine on our network
+
+660
+0:30:16,800 --> 0:30:18,020
+ yeah, why not?
+
+661
+0:30:18,300 --> 0:30:20,020
+ this is BornHack, so of course we do that
+
+662
+0:30:20,020 --> 0:30:22,920
+ and the network team just says yes
+
+663
+0:30:22,920 --> 0:30:25,160
+ they are not
+
+664
+0:30:25,160 --> 0:30:26,460
+ they're not all there
+
+665
+0:30:26,460 --> 0:30:27,300
+ but hey, come on
+
+666
+0:30:28,180 --> 0:30:31,900
+ okay
+
+667
+0:30:31,900 --> 0:30:34,000
+ and then I got another one from
+
+668
+0:30:34,000 --> 0:30:35,520
+ the pyjamas
+
+669
+0:30:35,520 --> 0:30:38,040
+ pyjamas, whatever
+
+670
+0:30:38,040 --> 0:30:42,600
+ oh, VLAN for our ESPs
+
+671
+0:30:42,600 --> 0:30:45,260
+ we want it for our pixel flute
+
+672
+0:30:45,260 --> 0:30:46,520
+ it was just
+
+673
+0:30:46,520 --> 0:30:47,700
+ what?
+
+674
+0:30:49,400 --> 0:30:49,700
+ hmm
+
+675
+0:30:49,700 --> 0:30:50,960
+ okay
+
+676
+0:30:50,960 --> 0:30:52,580
+ sure
+
+677
+0:30:52,580 --> 0:30:54,340
+ we can set this up
+
+678
+0:30:54,340 --> 0:30:58,160
+ I wasn't even going to say this
+
+679
+0:30:58,180 --> 0:30:59,920
+ I was just going into the discussion about
+
+680
+0:30:59,920 --> 0:31:03,940
+ comparing some wireless VLAN thing with
+
+681
+0:31:03,940 --> 0:31:06,600
+ the 10 gig cable connections in the bar
+
+682
+0:31:06,600 --> 0:31:08,340
+ but hey
+
+683
+0:31:08,340 --> 0:31:09,180
+ so
+
+684
+0:31:09,180 --> 0:31:10,020
+ it wasn't the client
+
+685
+0:31:10,020 --> 0:31:12,540
+ it was the pixel flute server
+
+686
+0:31:12,540 --> 0:31:14,180
+ on the ESP
+
+687
+0:31:14,180 --> 0:31:18,860
+ we're not competing with the client
+
+688
+0:31:18,860 --> 0:31:21,900
+ so, how did it go for them?
+
+689
+0:31:21,900 --> 0:31:22,900
+ huh?
+
+690
+0:31:22,900 --> 0:31:25,900
+ so, so the question is
+
+691
+0:31:25,900 --> 0:31:26,900
+ so, so the question is
+
+692
+0:31:26,900 --> 0:31:27,900
+ so, so the question is
+
+693
+0:31:27,900 --> 0:31:32,900
+ which of the images you saw on the other pixel flute thing was them?
+
+694
+0:31:32,900 --> 0:31:35,900
+ well, well
+
+695
+0:31:35,900 --> 0:31:38,900
+ this was the pixel flute thing
+
+696
+0:31:38,900 --> 0:31:43,900
+ that made so much more sense
+
+697
+0:31:43,900 --> 0:31:45,900
+ I actually think it's really nice
+
+698
+0:31:45,900 --> 0:31:50,900
+ it's just a bunch of the IODs and then hammer it just like you do with the other pixel flute
+
+699
+0:31:50,900 --> 0:31:52,900
+ and then get a nice blanket out of it
+
+700
+0:31:52,900 --> 0:31:55,900
+ it was a nice idea but, you know, first things
+
+701
+0:31:55,900 --> 0:31:56,740
+ we want a VLAN for all of us, right?
+
+702
+0:31:56,740 --> 0:31:57,100
+ we want a VLAN for all of us, right?
+
+703
+0:31:57,100 --> 0:31:57,600
+ we want a VLAN for all of us, right?
+
+704
+0:31:57,600 --> 0:31:57,700
+ we want a VLAN for all of us, right?
+
+705
+0:31:57,700 --> 0:31:58,700
+ it was all good
+
+706
+0:31:58,700 --> 0:31:59,700
+ we wanted to have a VLAN for pixel flute
+
+707
+0:31:59,700 --> 0:32:00,700
+ mmmmmmmm
+
+708
+0:32:00,700 --> 0:32:01,700
+ mmmmmm
+
+709
+0:32:01,700 --> 0:32:02,700
+ mmmmmm
+
+710
+0:32:02,700 --> 0:32:03,700
+ mmmmmm
+
+711
+0:32:03,700 --> 0:32:04,700
+ mmmmmm
+
+712
+0:32:04,700 --> 0:32:05,700
+ good luck
+
+713
+0:32:05,700 --> 0:32:06,700
+ good luck
+
+714
+0:32:06,700 --> 0:32:07,700
+ I've seen the machinery people have brought
+
+715
+0:32:07,700 --> 0:32:08,700
+ I don't think you're gonna rule that machine
+
+716
+0:32:08,700 --> 0:32:09,700
+ I don't think so
+
+717
+0:32:09,700 --> 0:32:10,700
+ but anyway
+
+718
+0:32:10,700 --> 0:32:11,700
+ that looks nice
+
+719
+0:32:11,700 --> 0:32:12,700
+ that looks nice
+
+720
+0:32:12,700 --> 0:32:21,700
+ and then we had a workshop on DDoS
+
+721
+0:32:21,700 --> 0:32:25,200
+ Yay!
+
+722
+0:32:25,200 --> 0:32:26,200
+ yes
+
+723
+0:32:26,200 --> 0:32:26,700
+ yeah
+
+724
+0:32:26,700 --> 0:32:33,900
+ had a super successful workshop on DDoS and it was so successful it took down network
+
+725
+0:32:33,900 --> 0:32:45,640
+ on the entire camp. Yay! So as DDoS goes, I think that was one of the more successful
+
+726
+0:32:45,640 --> 0:32:55,480
+ workshops. But the thing that actually happened was that Kramse moved from noisy to camping.
+
+727
+0:32:55,480 --> 0:33:01,440
+ Who would have thought that? Maybe even perhaps people in the NOC team, like Kramse, might
+
+728
+0:33:01,440 --> 0:33:07,640
+ have known a bit about topology, but hey. But the thing we have done is that we have
+
+729
+0:33:07,640 --> 0:33:16,760
+ a south VLAN for the camp and a north, and noisy is in the south, and the building is
+
+730
+0:33:16,760 --> 0:33:22,600
+ in the south, and camping is in the north. So if you do weird stuff like having your
+
+731
+0:33:22,600 --> 0:33:25,460
+ own 10 gig connection in your tent, and do...
+
+732
+0:33:25,460 --> 0:33:34,360
+ If you do a workshop on DDoS, it's smart to be in the same group, in the same segment.
+
+733
+0:33:34,360 --> 0:33:42,840
+ And so moving to north means that everything had to go through our router. So it kind of
+
+734
+0:33:42,840 --> 0:33:51,100
+ just gave up. It was just maxed out and that's fine. We kind of changed the design just a
+
+735
+0:33:51,100 --> 0:33:54,460
+ tad for the second workshop, so nobody noticed it.
+
+736
+0:33:55,460 --> 0:34:11,600
+ Okay, I'm not to say that we used HPing 3 and T50. That's a secret. Anyway, I think
+
+737
+0:34:11,600 --> 0:34:17,080
+ it's funny to make a DDoS workshop and take down the entire network. I think that's so
+
+738
+0:34:17,080 --> 0:34:25,440
+ cool. No, anyway. That's what I've decided to include in my presentation for today. I
+
+739
+0:34:25,460 --> 0:34:33,220
+ noticed that last year I kind of forgot this slide, so I just... We cut the feed and then
+
+740
+0:34:33,220 --> 0:34:38,460
+ we started it again because there might have been questions. So let's remember this today.
+
+741
+0:34:38,460 --> 0:34:43,460
+ Are there any questions? Mike?
+
+742
+0:34:43,460 --> 0:34:47,460
+ .
+
+743
+0:34:47,460 --> 0:34:52,460
+ .
+
+744
+0:34:52,460 --> 0:34:53,460
+ .
+
+745
+0:34:53,460 --> 0:34:54,460
+ .
+
+746
+0:34:54,460 --> 0:34:55,460
+ .
+
+747
+0:34:55,460 --> 0:34:55,740
+ .
+
+748
+0:34:55,740 --> 0:35:02,700
+ Alright, good.
+
+749
+0:35:02,700 --> 0:35:06,560
+ .
+
+750
+0:35:06,560 --> 0:35:09,720
+ How many IP addresses do we have on cam?
+
+751
+0:35:09,720 --> 0:35:11,020
+ .
+
+752
+0:35:11,020 --> 0:35:13,460
+ .
+
+753
+0:35:13,460 --> 0:35:15,380
+ That's a really good question.
+
+754
+0:35:15,380 --> 0:35:17,560
+ .
+
+755
+0:35:17,560 --> 0:35:19,440
+ Public.
+
+756
+0:35:19,440 --> 0:35:22,500
+ Public?
+
+757
+0:35:22,500 --> 0:35:24,440
+ Well, we have slash 23 or something of IP version, IP version 4, and then We have our own segment for IP
+
+758
+0:35:24,440 --> 0:35:24,960
+ version 6 or permanent one. I actually don't recall these numbers.
+
+759
+0:35:24,960 --> 0:35:25,460
+ .
+
+760
+0:35:25,460 --> 0:35:28,580
+ So that would be public IP version 6.
+
+761
+0:35:29,120 --> 0:35:31,600
+ These would be, yeah, some of you may have noticed
+
+762
+0:35:31,600 --> 0:35:34,420
+ that when you go to different sites,
+
+763
+0:35:35,040 --> 0:35:37,760
+ they think you are in some other country.
+
+764
+0:35:38,860 --> 0:35:42,580
+ I remember one year in Bornheg, they thought we were in Poland.
+
+765
+0:35:43,300 --> 0:35:47,240
+ But it's about which geolocation database you use
+
+766
+0:35:47,240 --> 0:35:48,740
+ and how fast they update it and such,
+
+767
+0:35:49,140 --> 0:35:51,440
+ because the IP version 4 addresses we have
+
+768
+0:35:51,440 --> 0:35:54,600
+ are ones that we borrow from RIPE for this event.
+
+769
+0:35:54,600 --> 0:35:56,380
+ It's event IP addresses.
+
+770
+0:35:57,240 --> 0:36:01,300
+ And the IP version 6 is ours, and they will not change.
+
+771
+0:36:01,700 --> 0:36:04,700
+ So we, of course, are going to transition to IP version 6,
+
+772
+0:36:05,520 --> 0:36:06,140
+ says Kramse.
+
+773
+0:36:08,120 --> 0:36:09,800
+ IP version 6 only next year.
+
+774
+0:36:10,260 --> 0:36:11,000
+ Good luck with that.
+
+775
+0:36:11,620 --> 0:36:12,980
+ Why did the Wi-Fi crash?
+
+776
+0:36:19,860 --> 0:36:23,080
+ I have this comment.
+
+777
+0:36:23,080 --> 0:36:24,580
+ And this is the official...
+
+778
+0:36:24,600 --> 0:36:26,240
+ What's the unofficial comment to this?
+
+779
+0:36:26,780 --> 0:36:27,920
+ What's the unofficial comment?
+
+780
+0:36:29,300 --> 0:36:29,860
+ Aliens.
+
+781
+0:36:30,280 --> 0:36:30,720
+ Aliens.
+
+782
+0:36:31,300 --> 0:36:34,660
+ It was a solar flare, which, you know,
+
+783
+0:36:34,780 --> 0:36:37,340
+ and the UFO did, and a little small goblin,
+
+784
+0:36:37,560 --> 0:36:39,880
+ and a massive... I don't know.
+
+785
+0:36:40,580 --> 0:36:41,380
+ It's a secret.
+
+786
+0:36:42,220 --> 0:36:47,200
+ It wasn't a manual error in any way.
+
+787
+0:36:49,080 --> 0:36:52,680
+ I can neither confirm nor deny that it was a manual error.
+
+788
+0:36:54,600 --> 0:36:56,260
+ It's being verycovered.
+
+789
+0:36:56,280 --> 0:36:58,920
+ Well, yeah, Dudeau, really, good chat with you.
+
+790
+0:36:59,120 --> 0:37:00,260
+ What about the about Kiwi?
+
+791
+0:37:00,860 --> 0:37:02,040
+ Just que thank you a lot.
+
+792
+0:37:02,920 --> 0:37:05,120
+ So this is the very first message to Let's Set off.
+
+793
+0:37:05,160 --> 0:37:06,280
+ Let's Start.
+
+794
+0:37:06,640 --> 0:37:08,180
+ To Good even if you wanna come to me?
+
+795
+0:37:08,400 --> 0:37:09,660
+ That créer por favor.
+
+796
+0:37:09,660 --> 0:37:10,440
+ As always.
+
+797
+0:37:10,440 --> 0:37:11,060
+ Thanks, guys.
+
+798
+0:37:11,400 --> 0:37:11,920
+ Thank you.
+
+799
+0:37:12,380 --> 0:37:13,480
+ Yes, thanks very much.
+
+800
+0:37:13,480 --> 0:37:15,000
+ We had the opportunity to meet,
+
+801
+0:37:15,300 --> 0:37:16,660
+ and to kind of camera all along.
+
+802
+0:37:17,060 --> 0:37:18,240
+ That Đoan Huy and Philips were with me đó
+
+803
+0:37:18,240 --> 0:37:19,480
+ the night before.
+
+804
+0:37:19,480 --> 0:37:20,560
+ That night was really fantastic.
+
+805
+0:37:20,960 --> 0:37:22,980
+ I really enjoyed that day.
+
+806
+0:37:22,980 --> 0:37:38,880
+ 7.41 terabytes downloaded so we downloaded 7.41 terabytes and we uploaded 2.74 terabytes
+
+807
+0:37:38,880 --> 0:37:45,320
+ it's comparable to uh to last year i remember it as five last year
+
+808
+0:37:45,320 --> 0:37:53,320
+ yes we could for example use
+
+809
+0:37:53,320 --> 0:38:06,460
+ we could for example use five times as much bandwidth for example and even better um
+
+810
+0:38:06,460 --> 0:38:12,060
+ not to be mentioned to people but there might have been a slight difference in the bandwidth
+
+811
+0:38:12,060 --> 0:38:15,160
+ available on ip version 4 and 6 as in
+
+812
+0:38:15,160 --> 0:38:15,300
+ you know we could for example use five times as much bandwidth for example and even better
+
+813
+0:38:15,320 --> 0:38:18,520
+ factor three or five or something so
+
+814
+0:38:18,520 --> 0:38:30,220
+ hey there also was uh used more bandwidth than visible there because uh that those graphs
+
+815
+0:38:30,220 --> 0:38:35,920
+ are five minute averages yes we might have uh peaks that are much larger we had a lot
+
+816
+0:38:35,920 --> 0:38:45,160
+ of peaks around uh one gig um on 20 second averages yes but um yeah this is uh
+
+817
+0:38:45,160 --> 0:38:56,360
+ of peaks around uh one gig um on 20 second averages yes but um yeah this is uh five minute averages which of course means that uh there might be in instances probably a lot of instances where someone maxes it out for five seconds and such we will not be able to see that here
+
+818
+0:38:56,360 --> 0:38:59,160
+ five seconds and such we will not be able to see that here yes
+
+819
+0:38:59,160 --> 0:39:04,860
+ any more questions
+
+820
+0:39:04,860 --> 0:39:09,400
+ then i think the network team deserves a big round of applause

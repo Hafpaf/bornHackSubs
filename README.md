@@ -74,3 +74,9 @@ Following videos where transcribed
 Transcription of all recorded BornHack 2022 talks with the large Whipser model, took 4 hours and 2 minutes (2023-11-12).
 
 - GPU: Nvidia GTX A4000
+
+**BornHack 2021**
+
+Transcription of all recorded BornHack 2021 talks with the large Whipser model, took 3 hours and 49 minutes (2023-11-14).
+
+- GPU: Nvidia GTX A4000

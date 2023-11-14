@@ -1,0 +1,2403 @@
+# Transcribed 2023-11-14T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:10,940
+ Yes, and I would like to welcome you all to our next talk,
+
+2
+0:00:11,260 --> 0:00:14,500
+ which is Lasers in Space by Henrik Ehler.
+
+3
+0:00:15,100 --> 0:00:15,920
+ Here you go, Henrik.
+
+4
+0:00:26,720 --> 0:00:28,400
+ Yeah? Okay.
+
+5
+0:00:30,000 --> 0:00:31,220
+ Not that used to microphones.
+
+6
+0:00:32,280 --> 0:00:34,380
+ Yeah. Thanks for the invitation.
+
+7
+0:00:36,160 --> 0:00:38,820
+ I haven't been here before, and it's...
+
+8
+0:00:38,820 --> 0:00:40,320
+ Well, I've been here a few hours now.
+
+9
+0:00:40,400 --> 0:00:41,640
+ It is quite a big experience.
+
+10
+0:00:42,600 --> 0:00:44,580
+ It really seems like an amazing place.
+
+11
+0:00:45,580 --> 0:00:47,520
+ I even tried this...
+
+12
+0:00:47,520 --> 0:00:49,720
+ I can't describe it, but...
+
+13
+0:00:49,720 --> 0:00:52,300
+ Yeah. Maybe you'll get used to it. I don't know.
+
+14
+0:00:53,300 --> 0:00:57,720
+ So, yeah, I was invited to talk about
+
+15
+0:00:57,720 --> 0:00:59,980
+ one of my side projects,
+
+16
+0:01:00,000 --> 0:01:03,680
+ and I work a little bit here and there
+
+17
+0:01:03,680 --> 0:01:07,560
+ on all sorts of different things.
+
+18
+0:01:08,560 --> 0:01:13,040
+ But one of my projects is about sending stuff into space on purpose.
+
+19
+0:01:15,580 --> 0:01:20,060
+ And, yeah, I have a small creation to the title
+
+20
+0:01:20,060 --> 0:01:24,100
+ because it's more like it's not lasers in general,
+
+21
+0:01:24,200 --> 0:01:25,080
+ but my laser.
+
+22
+0:01:26,200 --> 0:01:27,360
+ Well, our laser.
+
+23
+0:01:27,360 --> 0:01:28,160
+ So...
+
+24
+0:01:28,160 --> 0:01:29,360
+ Um...
+
+25
+0:01:30,000 --> 0:01:33,260
+ I'm doing the project together with a company in Aalborg.
+
+26
+0:01:33,520 --> 0:01:35,960
+ It's not GOM Space, but something called Space Inventor.
+
+27
+0:01:38,220 --> 0:01:41,600
+ It was founded by one of the founders of GOM Space.
+
+28
+0:01:42,420 --> 0:01:45,000
+ And we're doing it together with ESA and...
+
+29
+0:01:47,740 --> 0:01:52,360
+ It's not called Højteknologi Fund.
+
+30
+0:01:52,440 --> 0:01:55,000
+ It's called the Innovation Fund.
+
+31
+0:01:57,440 --> 0:01:57,920
+ So...
+
+32
+0:01:57,920 --> 0:01:58,800
+ I will...
+
+33
+0:01:58,800 --> 0:01:59,980
+ And also, if you have any questions,
+
+34
+0:02:00,000 --> 0:02:02,940
+ during the presentation, just let me know.
+
+35
+0:02:03,160 --> 0:02:05,480
+ And we can also take them afterwards.
+
+36
+0:02:07,780 --> 0:02:09,160
+ Just a small disclaimer.
+
+37
+0:02:09,580 --> 0:02:14,200
+ We are involved in a proposal for a new project
+
+38
+0:02:14,200 --> 0:02:19,080
+ where parts of this system will be integrated into.
+
+39
+0:02:20,100 --> 0:02:22,420
+ And the proposal has been...
+
+40
+0:02:22,420 --> 0:02:24,380
+ The deadline for the proposal has been postponed,
+
+41
+0:02:25,000 --> 0:02:27,000
+ meaning that I have had last night
+
+42
+0:02:27,000 --> 0:02:28,860
+ to cut out quite a bit of my presentation
+
+43
+0:02:28,860 --> 0:02:29,580
+ because there's just some things that I have to do.
+
+44
+0:02:29,580 --> 0:02:31,180
+ Just some things I can't discuss yet.
+
+45
+0:02:31,820 --> 0:02:34,440
+ Not because it's, like, government secrets,
+
+46
+0:02:34,940 --> 0:02:38,340
+ but it's in terms of IP rights.
+
+47
+0:02:39,500 --> 0:02:41,340
+ We have competition...
+
+48
+0:02:41,340 --> 0:02:44,620
+ There's competition for dark...
+
+49
+0:02:44,620 --> 0:02:46,280
+ We have competitors and...
+
+50
+0:02:46,280 --> 0:02:49,220
+ Well, so we're keeping our cards a little bit closed
+
+51
+0:02:49,220 --> 0:02:50,100
+ on some of the things.
+
+52
+0:02:52,560 --> 0:02:54,520
+ But still, I mean, I have 40 slides.
+
+53
+0:02:54,960 --> 0:02:56,600
+ So it'll be fun.
+
+54
+0:02:57,240 --> 0:02:57,940
+ I hope.
+
+55
+0:02:59,580 --> 0:03:01,980
+ So, yeah, we need...
+
+56
+0:03:01,980 --> 0:03:05,680
+ I just want to go a little bit back in time
+
+57
+0:03:05,680 --> 0:03:10,460
+ just to let you know where I'm coming from
+
+58
+0:03:10,460 --> 0:03:11,800
+ and where the project is coming from.
+
+59
+0:03:12,440 --> 0:03:14,580
+ So we need to go back to the...
+
+60
+0:03:15,540 --> 0:03:17,220
+ Yeah, let's make some suspense.
+
+61
+0:03:17,560 --> 0:03:19,200
+ The year that brought us the DAP,
+
+62
+0:03:20,700 --> 0:03:22,100
+ BB-8,
+
+63
+0:03:23,760 --> 0:03:24,680
+ burning hoverboards,
+
+64
+0:03:25,000 --> 0:03:27,600
+ and, of course, Katy Perry's left shark.
+
+65
+0:03:28,700 --> 0:03:29,560
+ Of course, I'm talking about...
+
+66
+0:03:29,580 --> 0:03:30,800
+ I'm talking about 2015.
+
+67
+0:03:31,320 --> 0:03:32,320
+ It's not that long ago.
+
+68
+0:03:32,820 --> 0:03:35,680
+ But it was a time where I was a little bit
+
+69
+0:03:35,680 --> 0:03:37,760
+ in between projects and jobs.
+
+70
+0:03:38,840 --> 0:03:41,880
+ And a aforementioned friend of mine
+
+71
+0:03:41,880 --> 0:03:44,000
+ who founded Space Inventors,
+
+72
+0:03:44,160 --> 0:03:47,580
+ he approached me because he wanted to...
+
+73
+0:03:51,740 --> 0:03:54,960
+ Well, probably a word at that time was disruption,
+
+74
+0:03:55,180 --> 0:03:58,580
+ but he wanted to disrupt the small satellite industry.
+
+75
+0:03:59,580 --> 0:04:06,200
+ He also knew that I was involved in DTU-SAT-2.
+
+76
+0:04:06,600 --> 0:04:07,580
+ That was like...
+
+77
+0:04:07,580 --> 0:04:09,740
+ At that time, it was 10 years ago,
+
+78
+0:04:09,860 --> 0:04:12,460
+ so, yeah, I'm getting old, I guess.
+
+79
+0:04:13,900 --> 0:04:16,540
+ And I also apologize that I don't have
+
+80
+0:04:16,540 --> 0:04:20,420
+ higher-resolution pictures than this,
+
+81
+0:04:20,560 --> 0:04:23,340
+ but the incident was just, I don't know,
+
+82
+0:04:23,540 --> 0:04:24,860
+ 720p at that time,
+
+83
+0:04:24,960 --> 0:04:26,780
+ so it's the best I got.
+
+84
+0:04:27,980 --> 0:04:28,780
+ That project was...
+
+85
+0:04:29,580 --> 0:04:32,040
+ It was about tracking birds.
+
+86
+0:04:33,900 --> 0:04:36,940
+ At my time on DTU, it never launched.
+
+87
+0:04:37,140 --> 0:04:39,560
+ I think it only launched like five years ago.
+
+88
+0:04:40,120 --> 0:04:40,680
+ But nevertheless,
+
+89
+0:04:42,680 --> 0:04:43,580
+ there was...
+
+90
+0:04:43,580 --> 0:04:46,360
+ It was just a few courses I had at DTU,
+
+91
+0:04:46,460 --> 0:04:47,580
+ but it was my...
+
+92
+0:04:48,620 --> 0:04:51,060
+ It was the starting point for this project
+
+93
+0:04:51,060 --> 0:04:53,720
+ because I knew a little bit about space technology.
+
+94
+0:04:53,720 --> 0:04:56,440
+ Not much, but I've touched it.
+
+95
+0:04:59,580 --> 0:05:03,540
+ And as I said, we wanted to take a different approach
+
+96
+0:05:03,540 --> 0:05:06,480
+ to producing and designing microsatellites.
+
+97
+0:05:08,580 --> 0:05:09,480
+ It's been...
+
+98
+0:05:11,100 --> 0:05:16,020
+ There are like two ways into this industry.
+
+99
+0:05:16,260 --> 0:05:20,340
+ There are the big competitors that make huge satellites,
+
+100
+0:05:21,560 --> 0:05:23,720
+ like governments and private entities,
+
+101
+0:05:24,220 --> 0:05:26,280
+ and then there are the universities.
+
+102
+0:05:26,920 --> 0:05:28,900
+ And it's two very different approaches.
+
+103
+0:05:28,900 --> 0:05:38,540
+ So our philosophy was to take the way the big companies did it
+
+104
+0:05:38,540 --> 0:05:41,300
+ and try to miniaturize some of these things.
+
+105
+0:05:44,860 --> 0:05:45,900
+ And this was 2015.
+
+106
+0:05:46,880 --> 0:05:47,980
+ About seven months later,
+
+107
+0:05:48,100 --> 0:05:52,560
+ we attended a conference in Malta called the 4S Symposium.
+
+108
+0:05:52,560 --> 0:05:53,560
+ It's...
+
+109
+0:05:53,560 --> 0:05:54,560
+ It's...
+
+110
+0:05:54,560 --> 0:05:57,560
+ It's...
+
+111
+0:05:58,900 --> 0:06:04,780
+ It's a small conference for companies that produce
+
+112
+0:06:04,780 --> 0:06:09,900
+ both complete satellites but also subsystems for these microsatellites.
+
+113
+0:06:09,900 --> 0:06:15,600
+ So you won't see if the big companies,
+
+114
+0:06:15,780 --> 0:06:20,900
+ but all sorts of startups and independent young companies
+
+115
+0:06:20,900 --> 0:06:22,900
+ attend these symposiums.
+
+116
+0:06:23,720 --> 0:06:26,800
+ Of course, there's also a lot of talks like here,
+
+117
+0:06:27,060 --> 0:06:27,900
+ but also...
+
+118
+0:06:27,900 --> 0:06:28,780
+ But...
+
+119
+0:06:28,780 --> 0:06:32,900
+ But in this case, we had our booth where we presented our products.
+
+120
+0:06:35,700 --> 0:06:36,700
+ Just take a sip here.
+
+121
+0:06:42,020 --> 0:06:43,020
+ Yeah, I'm...
+
+122
+0:06:43,300 --> 0:06:44,300
+ Okay.
+
+123
+0:06:45,700 --> 0:06:46,700
+ So...
+
+124
+0:06:48,100 --> 0:06:51,620
+ One of the things we did was to pack all our subsystems
+
+125
+0:06:51,620 --> 0:06:57,900
+ into individual smaller pages or encasings, which is, again,
+
+126
+0:06:57,900 --> 0:06:58,660
+ is the way to...
+
+127
+0:06:58,660 --> 0:06:59,940
+ The big boys do it.
+
+128
+0:06:59,940 --> 0:07:04,420
+ And we got...
+
+129
+0:07:04,420 --> 0:07:07,140
+ Thanks.
+
+130
+0:07:07,580 --> 0:07:09,280
+ It's not that bad, actually.
+
+131
+0:07:09,520 --> 0:07:10,140
+ Just...
+
+132
+0:07:10,140 --> 0:07:11,980
+ Just new.
+
+133
+0:07:11,980 --> 0:07:12,140
+ Yeah.
+
+134
+0:07:12,140 --> 0:07:19,840
+ So, anyway.
+
+135
+0:07:22,160 --> 0:07:28,540
+ Yeah, we took this approach to design things to be very...
+
+136
+0:07:28,540 --> 0:07:33,940
+ very robust and small, independent modules that could be stacked together.
+
+137
+0:07:33,940 --> 0:07:35,880
+ This meant that we could...
+
+138
+0:07:35,880 --> 0:07:41,820
+ From our Lego bricks, we could build a whole satellites in a matter of days
+
+139
+0:07:41,820 --> 0:07:45,840
+ from off-the-shelf items we've made or not off-the-shelf,
+
+140
+0:07:45,840 --> 0:07:52,200
+ but independent systems we've made compared to a normal microsatellite
+
+141
+0:07:52,200 --> 0:07:55,740
+ that would take like months just to put together.
+
+142
+0:07:55,740 --> 0:07:56,660
+ So yeah.
+
+143
+0:07:56,660 --> 0:07:57,180
+ We got a lot of stuff in the end, but...
+
+144
+0:07:57,180 --> 0:07:57,420
+ Okay.
+
+145
+0:07:57,420 --> 0:07:57,580
+ Okay.
+
+146
+0:07:57,580 --> 0:07:57,700
+ So, yeah, we got a lot of stuff in the end, but...
+
+147
+0:07:57,700 --> 0:07:57,860
+ So, yeah, we got a lot of stuff in the end, but...
+
+148
+0:07:57,860 --> 0:07:57,940
+ So, yeah, we got a lot of stuff in the end, but...
+
+149
+0:07:57,940 --> 0:08:01,360
+ We got a lot of attention also from Acer.
+
+150
+0:08:03,860 --> 0:08:10,600
+ One of the products we presented was our LaserLink, or Laser Downlink Terminal, as we call it.
+
+151
+0:08:12,380 --> 0:08:22,160
+ This was another almost coincidence, because besides my involvement with the DTU set,
+
+152
+0:08:22,300 --> 0:08:26,800
+ I spent quite a lot of time at the photonics department at DTU.
+
+153
+0:08:26,800 --> 0:08:29,980
+ So I also knew a little bit about lasers.
+
+154
+0:08:31,560 --> 0:08:35,300
+ And just in a second, I will come to why we want lasers in space.
+
+155
+0:08:35,720 --> 0:08:44,700
+ But this little thing got a lot of attention, and it was just a prototype.
+
+156
+0:08:46,140 --> 0:08:49,440
+ We weren't really sure if it would work or how it would work.
+
+157
+0:08:50,460 --> 0:08:55,020
+ We also met people that have been trying to do this for plus 10 years,
+
+158
+0:08:55,020 --> 0:08:56,360
+ and they were like, how did you make this?
+
+159
+0:08:56,800 --> 0:08:57,620
+ It's so small.
+
+160
+0:08:57,680 --> 0:09:02,240
+ And I was like, I didn't know what to say, because it's just a prototype.
+
+161
+0:09:03,560 --> 0:09:09,420
+ So now let's get into the reason for the product.
+
+162
+0:09:11,060 --> 0:09:17,880
+ So why do we, yeah, that was our backstory, but why would we want to put lasers into space?
+
+163
+0:09:21,240 --> 0:09:24,420
+ Well, it can solve quite a big problem.
+
+164
+0:09:24,920 --> 0:09:25,880
+ A problem that is...
+
+165
+0:09:26,800 --> 0:09:33,180
+ It's relevant both for big and small satellites, but especially for small satellites.
+
+166
+0:09:33,180 --> 0:09:36,860
+ And it's a matter of communication.
+
+167
+0:09:37,940 --> 0:09:40,360
+ I guess you probably guessed that by now.
+
+168
+0:09:42,320 --> 0:09:49,420
+ But if we take a look at the traditional approach to data downlink from satellites,
+
+169
+0:09:50,120 --> 0:09:52,100
+ again, this is not to scale.
+
+170
+0:09:54,060 --> 0:09:56,740
+ The satellite is, in fact, quite a bit smaller.
+
+171
+0:09:56,800 --> 0:09:57,100
+ I don't know if you can see it on this.
+
+172
+0:09:58,740 --> 0:09:59,260
+ Yeah, sorry.
+
+173
+0:09:59,380 --> 0:10:00,920
+ And there's no banana, but, you know.
+
+174
+0:10:03,080 --> 0:10:06,040
+ But again, this is just a representation.
+
+175
+0:10:06,040 --> 0:10:10,020
+ So this satellite is in what's called low Earth orbit,
+
+176
+0:10:10,400 --> 0:10:15,660
+ which is about anywhere from 400 to 800 kilometers above sea level.
+
+177
+0:10:17,760 --> 0:10:26,100
+ The speed is between 7.5 to 9 kilometers per second, depending on the orbit.
+
+178
+0:10:26,800 --> 0:10:34,240
+ And that means the round time is roughly 100 minutes for rotation of the Earth.
+
+179
+0:10:36,740 --> 0:10:42,260
+ So this means that when you want to communicate with your satellite,
+
+180
+0:10:43,220 --> 0:10:46,060
+ this is completely different to geostationary satellites.
+
+181
+0:10:46,180 --> 0:10:47,840
+ Of course, they have a fixed position.
+
+182
+0:10:47,960 --> 0:10:49,020
+ That's a whole different story.
+
+183
+0:10:49,020 --> 0:10:55,000
+ But these low Earth orbit satellites, you only have a few minutes, maybe two, three times a day,
+
+184
+0:10:55,060 --> 0:10:56,020
+ where you can talk with...
+
+185
+0:10:56,800 --> 0:10:59,740
+ talk with your product or your project.
+
+186
+0:11:02,540 --> 0:11:08,600
+ And due to budget and frequency allocations,
+
+187
+0:11:09,460 --> 0:11:15,820
+ most small satellites, they need to use the ISM bands.
+
+188
+0:11:16,620 --> 0:11:20,840
+ So, yeah, anywhere from 400 megahertz to a few gigahertz.
+
+189
+0:11:21,740 --> 0:11:23,840
+ And the reason for this is that they...
+
+190
+0:11:25,340 --> 0:11:25,840
+ even though...
+
+191
+0:11:25,840 --> 0:11:25,860
+ even though...
+
+192
+0:11:25,860 --> 0:11:26,140
+ even though...
+
+193
+0:11:26,140 --> 0:11:26,200
+ even though...
+
+194
+0:11:26,200 --> 0:11:26,740
+ even though...
+
+195
+0:11:26,740 --> 0:11:26,780
+ even though...
+
+196
+0:11:26,780 --> 0:11:28,700
+ you try to make a very directional antenna,
+
+197
+0:11:29,020 --> 0:11:33,920
+ you'll usually cover a circle about 3,000 kilometers,
+
+198
+0:11:34,580 --> 0:11:36,360
+ even from this low altitude.
+
+199
+0:11:37,280 --> 0:11:39,340
+ It means that when you try to send data,
+
+200
+0:11:39,340 --> 0:11:45,100
+ I mean, you take up the frequency space for whole continents.
+
+201
+0:11:47,320 --> 0:11:51,560
+ And this means that you can send with a very high power,
+
+202
+0:11:52,040 --> 0:11:55,960
+ which again means that you can't really send very much data.
+
+203
+0:11:56,780 --> 0:12:01,640
+ you can get a frequency allocation saying that you can use a specific frequency
+
+204
+0:12:01,640 --> 0:12:05,600
+ and say you have a lot higher power, but it's very, very expensive
+
+205
+0:12:05,600 --> 0:12:09,840
+ because it covers so many countries or whole continents.
+
+206
+0:12:10,720 --> 0:12:16,460
+ So it means that the effective data rate of these small satellites
+
+207
+0:12:16,460 --> 0:12:20,120
+ are in the kilobits range,
+
+208
+0:12:21,300 --> 0:12:24,680
+ which is fine for housekeeping data
+
+209
+0:12:24,680 --> 0:12:30,560
+ and just to get a beacon from your satellite.
+
+210
+0:12:31,620 --> 0:12:35,160
+ But one of the things that people really want to do is to take pictures.
+
+211
+0:12:36,920 --> 0:12:42,060
+ And it's not that difficult to put a nice camera on a satellite,
+
+212
+0:12:42,200 --> 0:12:44,160
+ even the small ones, the small satellites.
+
+213
+0:12:44,820 --> 0:12:48,840
+ But with this data rate, it takes days just to get a single image.
+
+214
+0:12:51,380 --> 0:12:54,500
+ And if you have hyperspectral cameras
+
+215
+0:12:54,500 --> 0:12:54,660
+ or if you have hyperspectral cameras,
+
+216
+0:12:54,680 --> 0:12:58,680
+ or other scientific equipment that produce even more data,
+
+217
+0:12:59,060 --> 0:13:00,780
+ you have a bottleneck there.
+
+218
+0:13:01,460 --> 0:13:05,900
+ So that's where our laser comes into play.
+
+219
+0:13:07,300 --> 0:13:13,400
+ First of all, the affected circle is, depending on the altitude,
+
+220
+0:13:13,920 --> 0:13:18,040
+ it's about 100 meters compared to 3,000 kilometers.
+
+221
+0:13:18,040 --> 0:13:24,620
+ So we only hit a very small area of the Earth,
+
+222
+0:13:24,680 --> 0:13:29,640
+ and just due to the nature of optical transmission,
+
+223
+0:13:29,640 --> 0:13:36,140
+ I mean, it's not picked up by all sorts of things
+
+224
+0:13:36,140 --> 0:13:37,960
+ and garage door openers.
+
+225
+0:13:41,540 --> 0:13:47,040
+ And it means that we can achieve speeds,
+
+226
+0:13:47,300 --> 0:13:48,640
+ even with these small systems,
+
+227
+0:13:50,460 --> 0:13:52,320
+ easily one gigabit per second.
+
+228
+0:13:53,380 --> 0:13:54,660
+ But in theory, with our current system,
+
+229
+0:13:54,660 --> 0:13:56,140
+ 10 gigabits per second.
+
+230
+0:13:57,600 --> 0:14:03,200
+ That's including overhead for error creations and so on.
+
+231
+0:14:10,620 --> 0:14:15,600
+ So that's sort of the back story
+
+232
+0:14:15,600 --> 0:14:17,740
+ and why the product is relevant.
+
+233
+0:14:17,740 --> 0:14:24,640
+ I need to also say that this is not a,
+
+234
+0:14:24,640 --> 0:14:26,180
+ an original idea.
+
+235
+0:14:28,220 --> 0:14:31,500
+ NASA has been working on this for quite some time.
+
+236
+0:14:31,620 --> 0:14:33,100
+ This is just a render,
+
+237
+0:14:33,260 --> 0:14:36,160
+ but it's from a project called OPLES,
+
+238
+0:14:36,500 --> 0:14:39,220
+ which was tested on the ISS.
+
+239
+0:14:42,180 --> 0:14:46,300
+ So, yeah, putting lasers into space is not new,
+
+240
+0:14:47,000 --> 0:14:50,780
+ but doing it at that small scale,
+
+241
+0:14:51,380 --> 0:14:52,380
+ that's the,
+
+242
+0:14:52,380 --> 0:14:54,620
+ that's also the hard part,
+
+243
+0:14:54,760 --> 0:14:56,680
+ but that's our core business.
+
+244
+0:14:58,460 --> 0:15:00,800
+ You could never fit this to a CubeSat.
+
+245
+0:15:01,500 --> 0:15:01,800
+ It's,
+
+246
+0:15:04,100 --> 0:15:05,360
+ I can't remember the exact size,
+
+247
+0:15:05,440 --> 0:15:07,520
+ but a few meters on each direction,
+
+248
+0:15:07,740 --> 0:15:08,380
+ as far as I remember.
+
+249
+0:15:09,700 --> 0:15:09,800
+ So,
+
+250
+0:15:10,720 --> 0:15:14,280
+ for those of you who are not,
+
+251
+0:15:14,960 --> 0:15:15,780
+ don't know this,
+
+252
+0:15:15,780 --> 0:15:18,560
+ this is a 1U CubeSat.
+
+253
+0:15:20,060 --> 0:15:24,420
+ It's also called a U-class,
+
+254
+0:15:24,420 --> 0:15:26,720
+ a U-class spacecraft.
+
+255
+0:15:26,720 --> 0:15:31,280
+ It's, it was developed for use with,
+
+256
+0:15:31,280 --> 0:15:34,000
+ especially universities to get,
+
+257
+0:15:34,000 --> 0:15:36,400
+ just get a chance to send something into space
+
+258
+0:15:36,400 --> 0:15:39,180
+ without being part of a huge million,
+
+259
+0:15:39,180 --> 0:15:41,800
+ multi-billion project.
+
+260
+0:15:44,140 --> 0:15:47,200
+ So this one liter cube is the,
+
+261
+0:15:48,800 --> 0:15:51,260
+ it's like the minimal dimensions.
+
+262
+0:15:52,300 --> 0:15:53,120
+ I, so,
+
+263
+0:15:53,120 --> 0:15:54,700
+ I brought one.
+
+264
+0:15:54,700 --> 0:15:56,900
+ This is a 2U satellite.
+
+265
+0:15:57,260 --> 0:15:58,780
+ There's nothing in it.
+
+266
+0:15:58,780 --> 0:16:01,020
+ It's just the mechanics.
+
+267
+0:16:01,940 --> 0:16:03,880
+ But in principle,
+
+268
+0:16:03,880 --> 0:16:06,800
+ you can build these up to 24 units,
+
+269
+0:16:06,800 --> 0:16:07,420
+ not in length,
+
+270
+0:16:07,420 --> 0:16:10,200
+ but you can go in all three dimensions.
+
+271
+0:16:10,200 --> 0:16:12,960
+ So two by two by two or whatever you want.
+
+272
+0:16:14,100 --> 0:16:15,580
+ But it's a nice form factor.
+
+273
+0:16:15,580 --> 0:16:19,900
+ And it also means that many of the launch providers,
+
+274
+0:16:19,900 --> 0:16:23,000
+ they, these are not sent up.
+
+275
+0:16:23,000 --> 0:16:25,440
+ Usually just as the,
+
+276
+0:16:25,440 --> 0:16:26,760
+ as the primary payload,
+
+277
+0:16:26,760 --> 0:16:29,320
+ but they piggyback on different,
+
+278
+0:16:29,320 --> 0:16:30,160
+ on bigger missions.
+
+279
+0:16:30,160 --> 0:16:31,780
+ So when,
+
+280
+0:16:31,780 --> 0:16:35,240
+ when a company paid for launch of a communication satellite,
+
+281
+0:16:35,240 --> 0:16:36,500
+ there's also,
+
+282
+0:16:36,500 --> 0:16:39,100
+ this gets stowed away in that glove box,
+
+283
+0:16:39,100 --> 0:16:39,940
+ so to speak.
+
+284
+0:16:41,000 --> 0:16:41,840
+ More precisely,
+
+285
+0:16:41,840 --> 0:16:43,340
+ it's in a small,
+
+286
+0:16:44,580 --> 0:16:45,960
+ in a small tube,
+
+287
+0:16:45,960 --> 0:16:49,240
+ and it'll get ejected into,
+
+288
+0:16:50,920 --> 0:16:52,700
+ into space after the satellite,
+
+289
+0:16:52,700 --> 0:16:54,680
+ after the satellite has been released from the,
+
+290
+0:16:54,680 --> 0:16:55,880
+ from the launch vehicle.
+
+291
+0:16:57,140 --> 0:17:00,320
+ Another great thing about this philosophy
+
+292
+0:17:00,320 --> 0:17:03,220
+ is to use a lot of what's called off-the-shelf,
+
+293
+0:17:04,060 --> 0:17:06,880
+ no, commercial off-the-shelf equipment,
+
+294
+0:17:06,880 --> 0:17:08,140
+ means that we,
+
+295
+0:17:08,140 --> 0:17:10,000
+ you don't have to develop everything yourself.
+
+296
+0:17:10,000 --> 0:17:10,920
+ You can use,
+
+297
+0:17:13,220 --> 0:17:15,020
+ is my computer making a noise?
+
+298
+0:17:17,020 --> 0:17:18,140
+ Oh, never mind.
+
+299
+0:17:18,140 --> 0:17:21,100
+ I just didn't know what was going on.
+
+300
+0:17:21,100 --> 0:17:22,180
+ But you can use,
+
+301
+0:17:22,700 --> 0:17:26,100
+ like off-the-shelf camera modules and so on,
+
+302
+0:17:26,100 --> 0:17:26,940
+ because it's not,
+
+303
+0:17:26,940 --> 0:17:31,940
+ it's not a critical thing if it doesn't work,
+
+304
+0:17:32,600 --> 0:17:35,160
+ but at least you learn something.
+
+305
+0:17:35,160 --> 0:17:37,740
+ So the,
+
+306
+0:17:37,740 --> 0:17:40,200
+ also the technology level,
+
+307
+0:17:40,200 --> 0:17:43,500
+ witness level requirements for sending a CubeSat
+
+308
+0:17:43,500 --> 0:17:47,100
+ into space is a lot less than for,
+
+309
+0:17:47,100 --> 0:17:48,320
+ for real spacecraft.
+
+310
+0:17:49,540 --> 0:17:51,460
+ Anyway, what did I,
+
+311
+0:17:51,460 --> 0:17:52,300
+ so as,
+
+312
+0:17:52,700 --> 0:17:56,460
+ as you can see in the picture of January of this year,
+
+313
+0:17:56,460 --> 0:18:00,140
+ about 1,300 CubeSats are in orbit,
+
+314
+0:18:00,140 --> 0:18:01,400
+ or they have been launched.
+
+315
+0:18:02,240 --> 0:18:06,340
+ 1,200 successfully,
+
+316
+0:18:06,340 --> 0:18:10,620
+ and 90 has been destroyed in launch failures,
+
+317
+0:18:10,620 --> 0:18:14,840
+ or are just not operational,
+
+318
+0:18:14,840 --> 0:18:16,400
+ or was never operational.
+
+319
+0:18:18,500 --> 0:18:21,440
+ Since these are built by primarily students,
+
+320
+0:18:22,700 --> 0:18:25,200
+ so, yeah, mistakes happen.
+
+321
+0:18:27,200 --> 0:18:28,960
+ Both the first,
+
+322
+0:18:28,960 --> 0:18:32,460
+ the first few CubeSats from Denmark wasn't functional,
+
+323
+0:18:32,460 --> 0:18:34,860
+ not for long as I remember.
+
+324
+0:18:34,860 --> 0:18:37,700
+ And, yeah.
+
+325
+0:18:37,700 --> 0:18:39,400
+ This is just a,
+
+326
+0:18:39,400 --> 0:18:43,280
+ this is a render of one new CubeSat made
+
+327
+0:18:43,280 --> 0:18:44,480
+ with a space inventor.
+
+328
+0:18:45,780 --> 0:18:50,360
+ The, yeah, the kind of price,
+
+329
+0:18:50,360 --> 0:18:52,460
+ these are quite inexpensive.
+
+330
+0:18:52,700 --> 0:18:58,200
+ A guy like this with solar panels and some payload
+
+331
+0:18:58,200 --> 0:19:01,240
+ will run you just about 200, 300,000 euros.
+
+332
+0:19:01,240 --> 0:19:03,400
+ So it's, it's affordable.
+
+333
+0:19:04,400 --> 0:19:05,240
+ So,
+
+334
+0:19:07,300 --> 0:19:11,800
+ I'll go into a little bit details about the laser project.
+
+335
+0:19:13,260 --> 0:19:16,120
+ And some of the drawings I'll show you
+
+336
+0:19:16,120 --> 0:19:18,500
+ are of a little bit older date,
+
+337
+0:19:18,500 --> 0:19:20,540
+ because as I said, we,
+
+338
+0:19:20,540 --> 0:19:21,940
+ we ran into some issues.
+
+339
+0:19:21,940 --> 0:19:22,700
+ So, yeah.
+
+340
+0:19:22,700 --> 0:19:24,760
+ Last night, we got in what we can show them,
+
+341
+0:19:24,760 --> 0:19:25,600
+ but we can't.
+
+342
+0:19:26,820 --> 0:19:27,660
+ So,
+
+343
+0:19:29,800 --> 0:19:31,500
+ this is way too small to see, right?
+
+344
+0:19:32,500 --> 0:19:33,340
+ Okay.
+
+345
+0:19:33,340 --> 0:19:36,120
+ So I have, let's see.
+
+346
+0:19:36,120 --> 0:19:37,300
+ Yeah.
+
+347
+0:19:37,300 --> 0:19:40,300
+ This just simplified diagram of the system.
+
+348
+0:19:41,740 --> 0:19:45,840
+ I just, now it's upside or on the side,
+
+349
+0:19:45,840 --> 0:19:48,060
+ but at least a little bit bigger.
+
+350
+0:19:48,060 --> 0:19:51,060
+ Just to show you the main components of the laser terminal.
+
+351
+0:19:52,700 --> 0:19:56,160
+ We have the OBC, which is onboard computer.
+
+352
+0:19:56,160 --> 0:20:05,160
+ It communicates with something called a space wire,
+
+353
+0:20:05,160 --> 0:20:07,740
+ which is a derivative of a fire wire.
+
+354
+0:20:07,740 --> 0:20:10,260
+ No, it's not a joke.
+
+355
+0:20:10,260 --> 0:20:11,560
+ It's, it's real.
+
+356
+0:20:11,560 --> 0:20:13,640
+ It sounds way cooler.
+
+357
+0:20:13,640 --> 0:20:16,600
+ I mean, fire wire was already a cool name, but you know.
+
+358
+0:20:16,600 --> 0:20:20,020
+ And then we have the optical subsystem.
+
+359
+0:20:20,020 --> 0:20:21,860
+ It consists of two parts.
+
+360
+0:20:21,860 --> 0:20:25,060
+ It consists of a seed laser.
+
+361
+0:20:25,060 --> 0:20:30,060
+ We're running at 1260, 1064 nanometers.
+
+362
+0:20:30,380 --> 0:20:35,300
+ And the seed laser is what we modulate with our data signal.
+
+363
+0:20:35,300 --> 0:20:38,660
+ It goes into a fiber amplifier,
+
+364
+0:20:41,140 --> 0:20:44,680
+ which amplifies the signal from a few milliwatts
+
+365
+0:20:44,680 --> 0:20:47,560
+ to about one watt optical output power.
+
+366
+0:20:48,880 --> 0:20:51,100
+ It's not, I mean, it's not that much.
+
+367
+0:20:51,100 --> 0:20:53,880
+ You can get laser pointers.
+
+368
+0:20:53,880 --> 0:20:55,900
+ You shouldn't, but you can.
+
+369
+0:20:55,900 --> 0:20:58,820
+ They're way more powerful than this.
+
+370
+0:20:59,820 --> 0:21:01,600
+ But our beam is much nicer.
+
+371
+0:21:01,600 --> 0:21:02,640
+ I assure you that.
+
+372
+0:21:04,380 --> 0:21:08,800
+ And then we have some mechanics for fine steering.
+
+373
+0:21:08,800 --> 0:21:10,700
+ And I'll come back to why we need that.
+
+374
+0:21:11,980 --> 0:21:16,820
+ One of the big issues with a system like this is,
+
+375
+0:21:16,820 --> 0:21:19,820
+ remember we only hit 100 meters per second.
+
+376
+0:21:21,100 --> 0:21:23,000
+ That's the size of the target.
+
+377
+0:21:23,000 --> 0:21:24,240
+ It's not 100 meters.
+
+378
+0:21:24,240 --> 0:21:29,280
+ Well, not target, but our beam is just 100 meters
+
+379
+0:21:29,280 --> 0:21:32,740
+ from four to six hundred kilometers away.
+
+380
+0:21:32,740 --> 0:21:39,740
+ So it's quite difficult to hit the right, hit the target.
+
+381
+0:21:40,640 --> 0:21:45,520
+ Small satellites like this one, they, when they're in orbit,
+
+382
+0:21:45,520 --> 0:21:49,740
+ they are not, they, I mean, they rotate like crazy.
+
+383
+0:21:49,740 --> 0:21:49,860
+ They are not, this is very hard to see.
+
+384
+0:21:49,860 --> 0:21:50,320
+ It's not that easy to see.
+
+385
+0:21:50,320 --> 0:21:50,460
+ It's not that easy to see.
+
+386
+0:21:50,460 --> 0:21:50,540
+ It's not that easy to see.
+
+387
+0:21:50,540 --> 0:21:50,620
+ It's not that easy to see.
+
+388
+0:21:50,620 --> 0:21:58,660
+ they're not stationary and that's why we have something called attitude control system but
+
+389
+0:21:58,660 --> 0:22:06,520
+ even with with a system like this they are very very unstable I mean we are talking things like
+
+390
+0:22:06,520 --> 0:22:15,560
+ plus minus a whole degree of movement which is which is fine for everything else but almost
+
+391
+0:22:15,560 --> 0:22:23,900
+ trying to hit the earth with a laser so it's quite fine and to control system is consist of
+
+392
+0:22:23,900 --> 0:22:32,520
+ two major components reaction wheels which just imagine a skateboard wheel with a motor and you
+
+393
+0:22:32,520 --> 0:22:39,380
+ can spin it up and we have this whole thing about a reaction and action and reaction mean then we
+
+394
+0:22:39,380 --> 0:22:43,220
+ spin something in one direction the whole spacecraft spins in the other direction we
+
+395
+0:22:43,220 --> 0:22:44,440
+ have four of those so we can
+
+396
+0:22:45,560 --> 0:22:53,120
+ orient or we can turn in all directions and then we have something called magnet augers and that's
+
+397
+0:22:53,120 --> 0:23:00,080
+ because when these wheels they hit a certain speed they can't go any faster so at certain intervals
+
+398
+0:23:00,080 --> 0:23:09,860
+ we need to dump our the energy in the wheels so we lock with these magnetic or with these calls
+
+399
+0:23:09,860 --> 0:23:15,240
+ we can sort of lock on to the earth make earth's magnetic field
+
+400
+0:23:15,560 --> 0:23:22,820
+ mean that we by sending um power to the course we can keep the spacecraft stationary right we
+
+401
+0:23:22,820 --> 0:23:26,780
+ spin down the wheels and when we're done with that we can start spinning up the wheels and
+
+402
+0:23:26,780 --> 0:23:32,480
+ getting into position again that's also a whole science that's that's also a product for space
+
+403
+0:23:32,480 --> 0:23:39,980
+ inventor so just let me know if you want to buy one um anyway with this system we can get the
+
+404
+0:23:39,980 --> 0:23:45,200
+ pointing accuracy of about plus minus one degree which is nowhere near
+
+405
+0:23:45,560 --> 0:23:54,320
+ good enough for for our laser but we are getting there um but that's just that's not the only
+
+406
+0:23:54,320 --> 0:24:04,040
+ problem because we the spacecraft sort of knows where it is but not precisely when you launch a
+
+407
+0:24:04,040 --> 0:24:13,400
+ spacecraft you you'll get your um the orbit parameters back from the launch providers and
+
+408
+0:24:13,400 --> 0:24:15,380
+ you can kind of predict where where the
+
+409
+0:24:15,560 --> 0:24:20,060
+ spacecraft will be at a given time and you can relay this data to a spacecraft
+
+410
+0:24:20,540 --> 0:24:23,900
+ and it will kind of know where to point the laser
+
+411
+0:24:25,640 --> 0:24:34,220
+ um but again it's not precise enough so we need a beacon from Earth uh which we send into space
+
+412
+0:24:34,820 --> 0:24:43,040
+ it could look like this but it doesn't um it's just it's just a small five watt laser and it
+
+413
+0:24:43,040 --> 0:24:45,540
+ goes out of a telescope so it's a quite big beam
+
+414
+0:24:45,560 --> 0:24:56,660
+ so it's I mean we it's it's kind of boring actually uh but we we we point the the lasers
+
+415
+0:24:56,660 --> 0:25:02,240
+ to the area in the sky where we expect the satellite to be when we want to communicate with
+
+416
+0:25:03,560 --> 0:25:09,680
+ um we don't know exactly where it is so on the first orbits will go in some special patterns
+
+417
+0:25:09,680 --> 0:25:15,440
+ uh actually just circle going upwards just in hopes to to get a log on
+
+418
+0:25:15,560 --> 0:25:23,240
+ uh other people that have tried this if you need to use multiple uh orbits just to to get the first
+
+419
+0:25:23,240 --> 0:25:31,940
+ light uh hitting the satellite so we're very not concerned but yeah let's see how it goes
+
+420
+0:25:33,140 --> 0:25:40,820
+ um and actually we we just to correct myself we don't point at the salary we have some pointer
+
+421
+0:25:40,820 --> 0:25:45,520
+ hit so because uh a little bit of uh travel time so we point to the other and then we do the same thing
+
+422
+0:25:45,560 --> 0:25:50,400
+ to where we expect the spacecraft to be when the beam hits it.
+
+423
+0:25:52,720 --> 0:25:55,180
+ Let's go back to this slide again.
+
+424
+0:25:57,040 --> 0:26:02,440
+ On the far top right, you can see that's where the beacon laser hits the spacecraft,
+
+425
+0:26:03,400 --> 0:26:06,160
+ and it goes through some optics,
+
+426
+0:26:06,160 --> 0:26:17,260
+ and then the beacon laser is focused down just to a commercial machine vision camera.
+
+427
+0:26:18,520 --> 0:26:24,700
+ We use that to track the dot around on the chip.
+
+428
+0:26:31,180 --> 0:26:34,160
+ One thing I can tell you, on this image,
+
+429
+0:26:35,440 --> 0:26:36,140
+ you probably can't see it,
+
+430
+0:26:36,380 --> 0:26:40,880
+ but the whole right box, at that time we designed this,
+
+431
+0:26:40,880 --> 0:26:47,680
+ we wanted to move both the receiver and all the optics.
+
+432
+0:26:49,040 --> 0:26:54,820
+ We changed that a little bit, so now we have some mirrors that will take care of all the pointing.
+
+433
+0:26:55,420 --> 0:27:00,320
+ But nevertheless, we received the beacon laser in this camera,
+
+434
+0:27:01,040 --> 0:27:06,160
+ and we didn't know how the satellite is aligned to the ground station.
+
+435
+0:27:06,160 --> 0:27:08,160
+ So we decided to use a telescope to see how it works on Earth.
+
+436
+0:27:08,980 --> 0:27:14,940
+ And just to stay in the whole realm of commercial products,
+
+437
+0:27:15,620 --> 0:27:17,020
+ this is our ground station.
+
+438
+0:27:17,800 --> 0:27:20,640
+ It's a big telescope.
+
+439
+0:27:21,000 --> 0:27:30,500
+ Well, it's 10 or 12 inches, so it's for the serious amateur, I guess.
+
+440
+0:27:31,040 --> 0:27:34,680
+ But it is off the shelf.
+
+441
+0:27:36,160 --> 0:27:38,160
+ So it's a telescope.
+
+442
+0:27:38,160 --> 0:27:43,160
+ We, of course, we modified it a bit, but that's the basis of our ground station.
+
+443
+0:27:43,160 --> 0:27:46,160
+ Now you'll get another drawing that you probably can't see,
+
+444
+0:27:46,160 --> 0:27:52,160
+ but I did the same trick again, so I don't know if it's better,
+
+445
+0:27:52,160 --> 0:27:55,160
+ but this is the whole ground segment.
+
+446
+0:27:55,160 --> 0:28:02,160
+ We have the telescope that will both send out the beacon laser towards the spacecraft,
+
+447
+0:28:02,160 --> 0:28:05,160
+ but also receive that downlink laser.
+
+448
+0:28:05,160 --> 0:28:05,440
+ So, this is the telescope that will both send out the beacon laser towards the spacecraft, but also receive that downlink laser.
+
+449
+0:28:05,440 --> 0:28:06,440
+ So, this is the telescope that will both send out the beacon laser towards the spacecraft, but also receive that downlink laser.
+
+450
+0:28:06,440 --> 0:28:07,440
+ So, this is the telescope that will both send out the beacon laser towards the spacecraft, but also receive that downlink laser.
+
+451
+0:28:07,440 --> 0:28:22,440
+ And the laser goes into something called, well, it's just a very sensitive photodiode,
+
+452
+0:28:22,440 --> 0:28:25,440
+ which we use to demodulate the signal.
+
+453
+0:28:30,440 --> 0:28:34,440
+ And then a whole lot of stuff going on,
+
+454
+0:28:34,440 --> 0:28:41,440
+ but again, it's built up around this commercial telescope and then just a small box.
+
+455
+0:28:41,440 --> 0:28:50,440
+ And this, now I'll just shortly cover the fine steering.
+
+456
+0:28:50,440 --> 0:28:54,440
+ That means the way we steer the beam from the spacecraft,
+
+457
+0:28:54,440 --> 0:28:59,440
+ and that's one of the areas where we run into quite some issues.
+
+458
+0:28:59,440 --> 0:29:03,440
+ This is a MEMS mirror.
+
+459
+0:29:03,440 --> 0:29:05,440
+ I don't know if you are familiar with MEMS devices,
+
+460
+0:29:05,440 --> 0:29:08,440
+ but they are in gyroscopes and all other things.
+
+461
+0:29:08,440 --> 0:29:15,440
+ And they, I mean, this is a perfect mirror for some applications at least.
+
+462
+0:29:15,440 --> 0:29:17,440
+ Just to go back to this image again,
+
+463
+0:29:17,440 --> 0:29:21,440
+ the mirror replaces the whole right box.
+
+464
+0:29:21,440 --> 0:29:23,440
+ So, we don't, it doesn't move the optics,
+
+465
+0:29:23,440 --> 0:29:28,440
+ it just moves the beam, just to.
+
+466
+0:29:28,440 --> 0:29:32,440
+ But, so, this is one of the areas where you,
+
+467
+0:29:32,440 --> 0:29:35,440
+ need to remember that we are in space.
+
+468
+0:29:35,440 --> 0:29:39,440
+ The beam is just about one watt, the downlink beam.
+
+469
+0:29:39,440 --> 0:29:41,440
+ It's not that much.
+
+470
+0:29:41,440 --> 0:29:44,440
+ But due to the way that MEMS devices work,
+
+471
+0:29:44,440 --> 0:29:51,440
+ this small mirror, it's about eight millimeters in diameter.
+
+472
+0:29:51,440 --> 0:29:54,440
+ It needs to have a very, very low mass,
+
+473
+0:29:54,440 --> 0:29:57,440
+ because these MEMS motors, at least not,
+
+474
+0:29:57,440 --> 0:30:00,440
+ these types are not very powerful.
+
+475
+0:30:00,440 --> 0:30:01,440
+ So.
+
+476
+0:30:01,440 --> 0:30:04,440
+ And we need to move it quite rapidly.
+
+477
+0:30:04,440 --> 0:30:06,440
+ Not like we are scanning,
+
+478
+0:30:06,440 --> 0:30:09,440
+ but we need to keep up with different things.
+
+479
+0:30:09,440 --> 0:30:10,440
+ So.
+
+480
+0:30:10,440 --> 0:30:14,440
+ We have one watt laser hitting a very, very light mirror.
+
+481
+0:30:14,440 --> 0:30:17,440
+ And we don't have any air.
+
+482
+0:30:17,440 --> 0:30:20,440
+ So, this mirror is extremely shiny,
+
+483
+0:30:20,440 --> 0:30:23,440
+ or reflective, as you probably see.
+
+484
+0:30:23,440 --> 0:30:27,440
+ But there is a small loss.
+
+485
+0:30:27,440 --> 0:30:30,440
+ And this small loss is converted into heat,
+
+486
+0:30:30,440 --> 0:30:34,440
+ and the mass is almost nothing.
+
+487
+0:30:34,440 --> 0:30:38,440
+ So, if we try to do this,
+
+488
+0:30:38,440 --> 0:30:42,440
+ we will end up with a burning mirror very quickly.
+
+489
+0:30:42,440 --> 0:30:47,440
+ And now we go into the part of the presentation
+
+490
+0:30:47,440 --> 0:30:49,440
+ I can't go into.
+
+491
+0:30:49,440 --> 0:30:52,440
+ But we did solve this.
+
+492
+0:30:52,440 --> 0:30:57,440
+ I can tell you a bit about some of the things we tried
+
+493
+0:30:57,440 --> 0:30:59,440
+ and failed miserably.
+
+494
+0:31:00,440 --> 0:31:05,440
+ We tried to encase the mirror in a small box
+
+495
+0:31:05,440 --> 0:31:06,440
+ with a window in it,
+
+496
+0:31:06,440 --> 0:31:10,440
+ and fill it with an atmosphere of helium, I think.
+
+497
+0:31:10,440 --> 0:31:11,440
+ Can you remember?
+
+498
+0:31:11,440 --> 0:31:13,440
+ No, nitrogen, of course.
+
+499
+0:31:13,440 --> 0:31:19,440
+ Trying to make use of convection.
+
+500
+0:31:19,440 --> 0:31:21,440
+ And, yeah.
+
+501
+0:31:21,440 --> 0:31:24,440
+ That wasn't a success.
+
+502
+0:31:24,440 --> 0:31:29,440
+ We also tried to get piezo actuators.
+
+503
+0:31:29,440 --> 0:31:31,440
+ They are very powerful,
+
+504
+0:31:31,440 --> 0:31:34,440
+ and they can easily move a big mirror,
+
+505
+0:31:34,440 --> 0:31:36,440
+ and a heat sink,
+
+506
+0:31:36,440 --> 0:31:38,440
+ and the whole desk.
+
+507
+0:31:38,440 --> 0:31:40,440
+ But the way they work,
+
+508
+0:31:40,440 --> 0:31:43,440
+ they only move, like,
+
+509
+0:31:43,440 --> 0:31:46,440
+ almost at the nanometer scale.
+
+510
+0:31:46,440 --> 0:31:48,440
+ Meaning that,
+
+511
+0:31:48,440 --> 0:31:51,440
+ and they have an expected lifetime of,
+
+512
+0:31:51,440 --> 0:31:56,440
+ a certain amount of millions of movements they can do.
+
+513
+0:31:56,440 --> 0:31:59,440
+ So, if you try to use a project like this,
+
+514
+0:31:59,440 --> 0:32:01,440
+ in our case,
+
+515
+0:32:01,440 --> 0:32:02,440
+ it will stop,
+
+516
+0:32:02,440 --> 0:32:04,440
+ it will be at the end of life
+
+517
+0:32:04,440 --> 0:32:06,440
+ in about 15 minutes.
+
+518
+0:32:06,440 --> 0:32:09,440
+ Because it's sort of a technology
+
+519
+0:32:09,440 --> 0:32:12,440
+ that's used for more stationary objects.
+
+520
+0:32:12,440 --> 0:32:16,440
+ So, yeah.
+
+521
+0:32:16,440 --> 0:32:19,440
+ A little bit about the future.
+
+522
+0:32:19,440 --> 0:32:24,440
+ We hope to fly this prototype next year.
+
+523
+0:32:24,440 --> 0:32:26,440
+ We have passed something called
+
+524
+0:32:26,440 --> 0:32:28,440
+ a critical design review,
+
+525
+0:32:28,440 --> 0:32:30,440
+ actually last year.
+
+526
+0:32:30,440 --> 0:32:32,440
+ Then due to COVID and other stuff,
+
+527
+0:32:32,440 --> 0:32:36,440
+ we have not been working that much
+
+528
+0:32:36,440 --> 0:32:37,440
+ as of lately,
+
+529
+0:32:37,440 --> 0:32:39,440
+ but now it's picking up again.
+
+530
+0:32:39,440 --> 0:32:41,440
+ We have some,
+
+531
+0:32:41,440 --> 0:32:44,440
+ we're working right now on the flight model.
+
+532
+0:32:44,440 --> 0:32:46,440
+ So, now we have everything lined up
+
+533
+0:32:46,440 --> 0:32:49,440
+ at a breadboard level.
+
+534
+0:32:49,440 --> 0:32:52,440
+ Both the electronics and the optical systems.
+
+535
+0:32:52,440 --> 0:32:55,440
+ And now we're integrating the whole,
+
+536
+0:32:55,440 --> 0:32:57,440
+ yeah, this square meter of stuff
+
+537
+0:32:57,440 --> 0:33:01,440
+ into a small box.
+
+538
+0:33:01,440 --> 0:33:02,440
+ With some luck,
+
+539
+0:33:02,440 --> 0:33:06,440
+ this work will be done around Christmas.
+
+540
+0:33:06,440 --> 0:33:10,440
+ And then if we pass all the reviews and tests,
+
+541
+0:33:10,440 --> 0:33:12,440
+ then we just have to wait
+
+542
+0:33:12,440 --> 0:33:16,440
+ for a launch opportunity.
+
+543
+0:33:16,440 --> 0:33:18,440
+ It could be with a rocket,
+
+544
+0:33:18,440 --> 0:33:23,440
+ it could also be tossed out of the window of the ISS.
+
+545
+0:33:23,440 --> 0:33:27,440
+ It's up to ESA to give us this opportunity.
+
+546
+0:33:27,440 --> 0:33:29,440
+ So, yeah.
+
+547
+0:33:29,440 --> 0:33:34,440
+ And this was about 10 minutes less than expected.
+
+548
+0:33:34,440 --> 0:33:37,440
+ But again, I'm sorry I couldn't tell you much
+
+549
+0:33:37,440 --> 0:33:39,440
+ about everything.
+
+550
+0:33:39,440 --> 0:33:41,440
+ But if there's any questions,
+
+551
+0:33:41,440 --> 0:33:43,440
+ let me know.
+
+552
+0:33:43,440 --> 0:33:44,440
+ Any questions?
+
+553
+0:33:44,440 --> 0:33:46,440
+ Yeah, we can start up here.
+
+554
+0:33:46,440 --> 0:33:50,440
+ How do you deal with atmospheric refractions?
+
+555
+0:33:50,440 --> 0:33:53,440
+ Because you don't have a kind of reference laser
+
+556
+0:33:53,440 --> 0:33:55,440
+ that tells you about the state of the atmosphere
+
+557
+0:33:55,440 --> 0:33:56,440
+ to compensate for that.
+
+558
+0:33:56,440 --> 0:33:59,440
+ Disturbances?
+
+559
+0:33:59,440 --> 0:34:00,440
+ Yeah.
+
+560
+0:34:00,440 --> 0:34:05,440
+ So, we,
+
+561
+0:34:05,440 --> 0:34:09,440
+ for the first tests and so on,
+
+562
+0:34:09,440 --> 0:34:13,440
+ we are going to see how it goes.
+
+563
+0:34:13,440 --> 0:34:18,440
+ But you can do like doing the big telescopes
+
+564
+0:34:18,440 --> 0:34:20,440
+ with adaptive optics
+
+565
+0:34:20,440 --> 0:34:23,440
+ and having a laser pointing towards the sky
+
+566
+0:34:23,440 --> 0:34:25,440
+ and measuring the surface.
+
+567
+0:34:25,440 --> 0:34:28,440
+ So, it's not going to be a big disturbance.
+
+568
+0:34:28,440 --> 0:34:33,440
+ So, it will probably be needed in a commercial setting.
+
+569
+0:34:33,440 --> 0:34:36,440
+ We chose 1064 nanometers.
+
+570
+0:34:36,440 --> 0:34:39,440
+ We could also use a 1550 like you use in telecom.
+
+571
+0:34:39,440 --> 0:34:44,440
+ Both of those frequencies are almost not dampened
+
+572
+0:34:44,440 --> 0:34:46,440
+ by the atmosphere.
+
+573
+0:34:46,440 --> 0:34:48,440
+ It will still be disturbed,
+
+574
+0:34:48,440 --> 0:34:50,440
+ but there's not much absorption.
+
+575
+0:34:55,440 --> 0:35:01,440
+ You told us there's like a 100 meter spot.
+
+576
+0:35:01,440 --> 0:35:03,440
+ You have following and tracking.
+
+577
+0:35:03,440 --> 0:35:06,440
+ But what's the window of time you can communicate
+
+578
+0:35:06,440 --> 0:35:08,440
+ before you get out of reach
+
+579
+0:35:08,440 --> 0:35:12,440
+ because there's a 7.5 kilometer per second going by?
+
+580
+0:35:12,440 --> 0:35:15,440
+ It depends on the orbit.
+
+581
+0:35:15,440 --> 0:35:19,440
+ Also, if we're standing here
+
+582
+0:35:19,440 --> 0:35:21,440
+ and the satellite goes above us,
+
+583
+0:35:21,440 --> 0:35:23,440
+ it can be way out on the horizon
+
+584
+0:35:23,440 --> 0:35:24,440
+ and we only have a horizon.
+
+585
+0:35:24,440 --> 0:35:26,440
+ And we only have a very limited time
+
+586
+0:35:26,440 --> 0:35:29,440
+ or it can go right above us.
+
+587
+0:35:29,440 --> 0:35:35,440
+ And it also depends on the height of the orbit.
+
+588
+0:35:35,440 --> 0:35:40,440
+ But we designed the system
+
+589
+0:35:40,440 --> 0:35:44,440
+ to get about four or five minutes window.
+
+590
+0:35:44,440 --> 0:35:47,440
+ If we get very low into the horizon,
+
+591
+0:35:47,440 --> 0:35:50,440
+ even though I said it's 1064 nanometers,
+
+592
+0:35:50,440 --> 0:35:53,440
+ it doesn't get absorbed that much by the atmosphere.
+
+593
+0:35:54,440 --> 0:35:56,440
+ Just like when you have the sunset,
+
+594
+0:35:56,440 --> 0:35:59,440
+ when the light has to go through a lot more air,
+
+595
+0:35:59,440 --> 0:36:03,440
+ it gets dampened a lot more.
+
+596
+0:36:03,440 --> 0:36:05,440
+ Just a few minutes.
+
+597
+0:36:05,440 --> 0:36:09,440
+ Any more questions?
+
+598
+0:36:09,440 --> 0:36:11,440
+ No?
+
+599
+0:36:11,440 --> 0:36:12,440
+ Thank you very much.
+
+600
+0:36:12,440 --> 0:36:13,440
+ Thanks for having me.

@@ -1,0 +1,347 @@
+# Transcribed 2023-11-14T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:13,720
+ Okay, this is ClausMail, I found a little vulnerability in it which I wanted to present
+
+2
+0:00:13,720 --> 0:00:14,720
+ to you.
+
+3
+0:00:14,720 --> 0:00:21,840
+ So this is one of the settings in ClausMail where you can configure basically what happens
+
+4
+0:00:21,840 --> 0:00:24,720
+ when you click on a link in an HTML mail.
+
+5
+0:00:24,720 --> 0:00:30,660
+ So it doesn't really support HTML mails, but it has some very limited HTML email rendering.
+
+6
+0:00:30,660 --> 0:00:36,460
+ So and I saw this and I thought, okay, this looks suspicious.
+
+7
+0:00:36,460 --> 0:00:40,480
+ Like if you're kind of security minded, then if you see something like this, this looks
+
+8
+0:00:40,480 --> 0:00:45,600
+ like there could be some form of injection.
+
+9
+0:00:45,600 --> 0:00:48,060
+ So yeah, so how does this work?
+
+10
+0:00:48,060 --> 0:00:53,700
+ Like okay, it's calling Firefox and it's passing some variable which is probably what's in
+
+11
+0:00:53,700 --> 0:00:54,700
+ the link.
+
+12
+0:00:54,700 --> 0:01:04,720
+ So maybe we can do something like, okay, we do a link and then we close this quote, like
+
+13
+0:01:04,720 --> 0:01:09,880
+ the single quote and then we add something that we inject and hope that this will be
+
+14
+0:01:09,880 --> 0:01:12,220
+ executed.
+
+15
+0:01:12,220 --> 0:01:18,160
+ The first thing I tried was something like doing a subshell or just adding another command
+
+16
+0:01:18,160 --> 0:01:22,220
+ with this, yeah.
+
+17
+0:01:22,220 --> 0:01:24,640
+ But this doesn't work because it's not executed as a file.
+
+18
+0:01:24,640 --> 0:01:28,820
+ This is a shell and these are kind of shell features.
+
+19
+0:01:28,820 --> 0:01:35,260
+ But what did work is like adding some command line option which then would be appended, then
+
+20
+0:01:35,260 --> 0:01:39,120
+ would be passed to Firefox as a command line option.
+
+21
+0:01:39,120 --> 0:01:42,160
+ Now you're wondering, okay, I can pass a command line option to Firefox.
+
+22
+0:01:42,160 --> 0:01:46,760
+ Can I use that for some form of attack?
+
+23
+0:01:46,760 --> 0:01:50,580
+ And so I looked into the command line options of Firefox.
+
+24
+0:01:50,580 --> 0:01:52,160
+ I tried quite a few things.
+
+25
+0:01:52,160 --> 0:01:54,040
+ I thought, okay, maybe there's some logging.
+
+26
+0:01:54,040 --> 0:01:58,220
+ I could have a command line option somewhere and then we could write a log file somewhere,
+
+27
+0:01:58,220 --> 0:02:04,180
+ but that, there is something like that, but you cannot really control the full file name
+
+28
+0:02:04,180 --> 0:02:06,480
+ so that doesn't really help you.
+
+29
+0:02:06,480 --> 0:02:15,020
+ But then I found, okay, Firefox has this option display which you can use to run Firefox on
+
+30
+0:02:15,020 --> 0:02:17,480
+ a remote X11 server.
+
+31
+0:02:17,480 --> 0:02:22,260
+ So basically you have, I'm not sure many people are not really aware of that, but like the
+
+32
+0:02:22,260 --> 0:02:23,260
+ Linux.
+
+33
+0:02:23,260 --> 0:02:26,760
+ is has some kind of client server mode
+
+34
+0:02:26,760 --> 0:02:29,840
+ where you can have a application running on one system
+
+35
+0:02:29,840 --> 0:02:31,740
+ and have the X server on another.
+
+36
+0:02:32,760 --> 0:02:36,320
+ And yeah, there's the command line parameter for Firefox
+
+37
+0:02:36,320 --> 0:02:38,160
+ where you can say, okay, run this thing,
+
+38
+0:02:38,160 --> 0:02:43,040
+ but I want to have the basically the window shown
+
+39
+0:02:43,040 --> 0:02:44,340
+ on a remote server.
+
+40
+0:02:46,200 --> 0:02:49,020
+ So, okay, so putting that all together as an attacker,
+
+41
+0:02:49,020 --> 0:02:52,760
+ you can send a link to someone that would open Firefox
+
+42
+0:02:52,760 --> 0:02:56,400
+ and then, but then it would run Firefox actually
+
+43
+0:02:57,920 --> 0:03:01,040
+ on the server that the attacker controls.
+
+44
+0:03:01,040 --> 0:03:02,580
+ And then on the attacker server,
+
+45
+0:03:02,580 --> 0:03:06,560
+ the attacker can then basically save a file
+
+46
+0:03:07,640 --> 0:03:09,380
+ anywhere in the home there of the user.
+
+47
+0:03:09,380 --> 0:03:11,020
+ And then he could, for example,
+
+48
+0:03:11,020 --> 0:03:13,620
+ save it into the autostart directory,
+
+49
+0:03:13,620 --> 0:03:16,280
+ and then it would be executed on the next login
+
+50
+0:03:16,280 --> 0:03:17,640
+ or put it in the bash RC,
+
+51
+0:03:17,640 --> 0:03:19,500
+ then it would be executed next time
+
+52
+0:03:19,500 --> 0:03:21,440
+ the user opens a command line.
+
+53
+0:03:21,440 --> 0:03:25,160
+ Yeah, so that gives you a remote code
+
+54
+0:03:25,160 --> 0:03:26,680
+ execution vulnerability.
+
+55
+0:03:28,160 --> 0:03:30,600
+ Yeah, this, it got a CVE,
+
+56
+0:03:30,600 --> 0:03:33,480
+ it's fixed in the latest ClausMail version.
+
+57
+0:03:35,060 --> 0:03:38,820
+ ClausMail is a fork of another application called Zilfeed,
+
+58
+0:03:38,820 --> 0:03:41,640
+ but that's no longer developed, so it's not fixed there.
+
+59
+0:03:41,640 --> 0:03:44,500
+ I tried to report it to them, but I didn't get an answer.
+
+60
+0:03:45,360 --> 0:03:49,800
+ Yeah, and I have a demo video that's showing this.
+
+61
+0:03:51,440 --> 0:03:52,280
+ Can you see this?
+
+62
+0:03:52,280 --> 0:03:53,100
+ Yeah.
+
+63
+0:03:53,100 --> 0:03:57,600
+ So, okay, so, I mean, this shows the option again.
+
+64
+0:03:59,500 --> 0:04:00,320
+ Yeah.
+
+65
+0:04:01,340 --> 0:04:06,340
+ Then, at first I'm showing, like,
+
+66
+0:04:06,440 --> 0:04:08,480
+ just opening the DevTools console,
+
+67
+0:04:08,480 --> 0:04:11,660
+ which basically just shows that this injection works.
+
+68
+0:04:14,440 --> 0:04:18,800
+ And now I'm doing this with running the Firefox
+
+69
+0:04:18,800 --> 0:04:21,160
+ on the remote server, then on the,
+
+70
+0:04:21,440 --> 0:04:23,620
+ on the victim, nothing happens,
+
+71
+0:04:23,620 --> 0:04:26,300
+ but then on the server from the attacker,
+
+72
+0:04:26,300 --> 0:04:29,080
+ at some point the browser opens,
+
+73
+0:04:29,080 --> 0:04:30,900
+ and I did this, like, right away,
+
+74
+0:04:30,900 --> 0:04:33,240
+ I opened a URL, which contains a,
+
+75
+0:04:34,160 --> 0:04:38,060
+ which contains this file for the attacker
+
+76
+0:04:38,060 --> 0:04:41,380
+ that he can then put into the autostart directory.
+
+77
+0:04:48,300 --> 0:04:49,140
+ Yeah.
+
+78
+0:04:51,440 --> 0:04:59,320
+ So, this is just a standard for Linux desktops
+
+79
+0:04:59,320 --> 0:05:00,900
+ in this autostart directory.
+
+80
+0:05:00,900 --> 0:05:03,660
+ What you have in there gets executed on the next login.
+
+81
+0:05:06,800 --> 0:05:08,760
+ Yeah, back to the victim server.
+
+82
+0:05:10,420 --> 0:05:15,340
+ Victim logs out and logs in again,
+
+83
+0:05:17,020 --> 0:05:19,420
+ and the, it got executed.
+
+84
+0:05:19,420 --> 0:05:20,260
+ Yeah.
+
+85
+0:05:20,260 --> 0:05:21,100
+ Yeah.
+
+86
+0:05:21,440 --> 0:05:23,640
+ So, that was.

@@ -1,0 +1,287 @@
+# Transcribed 2023-11-14T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:14,960
+ So, we are ready for the next talk, it's Nils Christensen telling us about Netbox.
+
+2
+0:00:14,960 --> 0:00:16,880
+ Go ahead, Nils.
+
+3
+0:00:16,880 --> 0:00:17,880
+ Thank you.
+
+4
+0:00:17,880 --> 0:00:27,720
+ More specifically, it's the integration for Netbox and I'm working at a company called
+
+5
+0:00:27,720 --> 0:00:29,940
+ QuickPay.
+
+6
+0:00:29,940 --> 0:00:37,980
+ We are a payment service provider but we used to be a hosting provider as well until recently.
+
+7
+0:00:37,980 --> 0:00:47,080
+ And we are a pretty small team of system administrators, we used to be three but now we are two people.
+
+8
+0:00:47,080 --> 0:00:57,760
+ So we kind of didn't want to have a lot of different systems for managing QuickPay and
+
+9
+0:00:57,760 --> 0:00:59,880
+ the hosting business.
+
+10
+0:00:59,880 --> 0:01:07,620
+ Obviously the hardware is in the same location so it makes sense to use the same system.
+
+11
+0:01:07,620 --> 0:01:15,900
+ And we used to have this homemade configuration management called Pepsi and it looks something
+
+12
+0:01:15,900 --> 0:01:18,120
+ like this.
+
+13
+0:01:18,120 --> 0:01:24,120
+ You have config files in the config directory and that's not really something that's handled
+
+14
+0:01:24,120 --> 0:01:27,920
+ by Netbox but we use Ansible for that part now.
+
+15
+0:01:27,920 --> 0:01:28,920
+ Okay.
+
+16
+0:01:28,920 --> 0:01:38,480
+ And then we have ETC that specifies which devices we have, like switches, hosts, VLANs
+
+17
+0:01:38,480 --> 0:01:43,440
+ and that's how that is.
+
+18
+0:01:43,440 --> 0:01:53,160
+ This is an example of one of the hosts, so you can see some different data that we have,
+
+19
+0:01:53,160 --> 0:01:55,160
+ the IP address, data centre, packages.
+
+20
+0:01:55,160 --> 0:01:57,160
+ We can see the IP address.
+
+21
+0:01:57,160 --> 0:02:10,460
+ That was just to say that that is something that we have in NetBox now.
+
+22
+0:02:10,460 --> 0:02:16,100
+ If I go to devices, you can see it's both data centre infrastructure management, so
+
+23
+0:02:16,100 --> 0:02:21,620
+ you have the physical hardware, but you also have IP addresses, so it's also IP address
+
+24
+0:02:21,620 --> 0:02:22,880
+ management.
+
+25
+0:02:22,880 --> 0:02:36,000
+ But we have these hosts and different devices, chassis C137, with some devices in, and if
+
+26
+0:02:36,000 --> 0:02:49,120
+ I go on to one of those, you can see here that we have a production platform and a cluster,
+
+27
+0:02:49,120 --> 0:02:52,820
+ so that is to...
+
+28
+0:02:52,820 --> 0:02:59,520
+ In Ansible, you can specify variables for a cluster, for example.
+
+29
+0:02:59,520 --> 0:03:09,280
+ Usually we don't specify variables for a single host, because it's usually something that
+
+30
+0:03:09,280 --> 0:03:15,620
+ you would either have a setting for a cluster or for a data centre or a region or something
+
+31
+0:03:15,620 --> 0:03:18,940
+ like that.
+
+32
+0:03:18,940 --> 0:03:21,700
+ And...
+
+33
+0:03:21,700 --> 0:03:22,700
+ Yes.
+
+34
+0:03:22,700 --> 0:03:33,300
+ You can specify those in a config context, so this is the hard drives and memory in this
+
+35
+0:03:33,300 --> 0:03:43,100
+ machine, and we can use all of these things in Ansible with the integration.
+
+36
+0:03:43,100 --> 0:03:47,820
+ There is this integration, but we had some problems with that.
+
+37
+0:03:47,820 --> 0:03:49,400
+ And I'm going to show you.
+
+38
+0:03:49,400 --> 0:03:51,400
+ Now we are in the Ansible inventory.
+
+39
+0:03:51,400 --> 0:03:52,400
+ We have a few things.
+
+40
+0:03:52,400 --> 0:03:54,020
+ Sorry.
+
+41
+0:03:54,020 --> 0:04:02,420
+ And if you have some secret in all that is passed first, so you might want to overwrite
+
+42
+0:04:02,420 --> 0:04:11,640
+ that secret for a specific cluster or platform or region, but in the way that this is structured,
+
+43
+0:04:11,640 --> 0:04:19,100
+ you would have the secret in all, and then it would be overwritten by the cluster, so
+
+44
+0:04:19,100 --> 0:04:26,240
+ it would be overwritten alphabetically, and that's not something that you want, because
+
+45
+0:04:26,240 --> 0:04:35,900
+ a cluster is a small subset of a host in a region or site, so you would want another
+
+46
+0:04:35,900 --> 0:04:39,520
+ structure, more like this.
+
+47
+0:04:39,520 --> 0:04:45,720
+ So what we did here was just put some numbers in front.
+
+48
+0:04:45,720 --> 0:04:46,720
+ And we did that by monkey patching the...
+
+49
+0:04:46,720 --> 0:04:47,720
+ I'm sorry.
+
+50
+0:04:47,720 --> 0:04:54,720
+ We did that by monkey patching the inventory with this mapping, so, yeah, we just have
+
+51
+0:04:54,720 --> 0:05:00,720
+ these hard coded numbers to get the right order, load order.
+
+52
+0:05:00,720 --> 0:05:08,880
+ And another problem that we had was that by default, I don't know why, but the guys that
+
+53
+0:05:08,880 --> 0:05:13,720
+ made this integration threw away the subnetting information.
+
+54
+0:05:13,720 --> 0:05:15,180
+ Do I still have...
+
+55
+0:05:15,180 --> 0:05:16,180
+ Sorry.
+
+56
+0:05:16,180 --> 0:05:17,180
+ Sorry.
+
+57
+0:05:17,180 --> 0:05:18,180
+ I have that somewhere.
+
+58
+0:05:18,180 --> 0:05:19,180
+ Yeah.
+
+59
+0:05:19,180 --> 0:05:27,460
+ You can see here that there is actually subnetting information, but they just threw that away
+
+60
+0:05:27,460 --> 0:05:29,860
+ for some reason, so we had to patch that back in.
+
+61
+0:05:29,860 --> 0:05:34,860
+ Yeah.
+
+62
+0:05:34,860 --> 0:05:41,180
+ This was just to show some variables that you can put into the config context, like
+
+63
+0:05:41,180 --> 0:05:44,460
+ such secret.
+
+64
+0:05:44,460 --> 0:05:45,180
+ And you can use that in Ansible.
+
+65
+0:05:45,180 --> 0:05:46,180
+ But, yeah.
+
+66
+0:05:46,180 --> 0:05:57,000
+ If you want to learn more about the integration or get the patch that we applied to it, it's...
+
+67
+0:05:57,000 --> 0:06:01,860
+ I don't think it's good enough to upstream, so I just have it locally.
+
+68
+0:06:01,860 --> 0:06:04,940
+ You can just talk to me after this.
+
+69
+0:06:04,940 --> 0:06:05,940
+ And that's it.
+
+70
+0:06:05,940 --> 0:06:06,940
+ Yeah.
+
+71
+0:06:06,940 --> 0:06:07,940
+ Thank you.

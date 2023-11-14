@@ -1,0 +1,4811 @@
+# Transcribed 2023-11-14T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:02,000
+ You
+
+2
+0:00:30,000 --> 0:00:37,840
+ So, I would like to welcome you to this little earlier event for Bornhack Standards at 11 p.m. on a Sunday,
+
+3
+0:00:38,140 --> 0:00:41,780
+ where there are a lot of people who may have been children, but we are all very quick.
+
+4
+0:00:42,160 --> 0:00:45,300
+ We also expect that there will be some more runners here at some point.
+
+5
+0:00:45,960 --> 0:00:50,540
+ I would like to welcome Stinus Lindgren, who is a member of the Radical Left.
+
+6
+0:00:50,940 --> 0:00:55,240
+ He is not a political politician, he is a candidate in bioinformatics from København University,
+
+7
+0:00:55,240 --> 0:00:56,740
+ and he is a bachelor in datalogy.
+
+8
+0:00:56,740 --> 0:01:01,300
+ He has previously worked as a researcher for Stenu Diabetes Center and Carlsbad Laboratories,
+
+9
+0:01:01,420 --> 0:01:06,760
+ and today he is a chairperson for ethics, research chairperson, IT chairperson,
+
+10
+0:01:07,460 --> 0:01:11,720
+ chairperson for the Nordic Cooperation, psychiatry chairperson, health chairperson, technology chairperson,
+
+11
+0:01:11,820 --> 0:01:17,500
+ all chairpersons, but certainly not our audience here is most interested in his relationship to IT and technology.
+
+12
+0:01:18,180 --> 0:01:19,800
+ Welcome to Stinus Lindgren.
+
+13
+0:01:20,880 --> 0:01:21,660
+ Thank you very much for that.
+
+14
+0:01:25,660 --> 0:01:26,720
+ I don't know if you can hear that.
+
+15
+0:01:26,860 --> 0:01:30,640
+ There are some who are clapping, that's always something, because we can't hear photopolitics,
+
+16
+0:01:30,700 --> 0:01:34,340
+ so you can't see the audience, you have to look at me in this context.
+
+17
+0:01:34,720 --> 0:01:39,380
+ And we have to say, the reason you are not here is that your wife is waiting, and there has not been a child yet,
+
+18
+0:01:39,600 --> 0:01:42,120
+ and therefore you have to sit at home with this computer.
+
+19
+0:01:42,760 --> 0:01:47,340
+ What I would like to hear about first is a little about what is your relationship to IT?
+
+20
+0:01:47,580 --> 0:01:50,600
+ How do you have it with computers and the internet?
+
+21
+0:01:54,860 --> 0:01:56,420
+ I have unfortunately not been with IT before.
+
+22
+0:01:56,740 --> 0:02:01,560
+ I took it just before the summer holiday, which has been, as we know, and we will not go into details about it,
+
+23
+0:02:01,620 --> 0:02:04,780
+ it is some kind of exchange in our public service group here in the last year's time.
+
+24
+0:02:05,520 --> 0:02:09,780
+ So I ended up getting it, and it fits quite well in relation to my background, as you yourself were talking about here.
+
+25
+0:02:10,580 --> 0:02:13,600
+ And we have primarily discussed things like broadband packs and some things like that right now.
+
+26
+0:02:15,180 --> 0:02:21,940
+ But what I think is exciting about IT is that it fills an incredible amount of good and evil in our society.
+
+27
+0:02:21,940 --> 0:02:25,360
+ And that's why I'm sitting here talking to you via my iPad, if I'm not mistaken,
+
+28
+0:02:26,740 --> 0:02:28,740
+ and you take that out of law in the Public Parliament,
+
+29
+0:02:28,740 --> 0:02:33,260
+ it's something you can use for one's personal life.
+
+30
+0:02:33,260 --> 0:02:35,260
+ That is what it's all about.
+
+31
+0:02:35,260 --> 0:02:39,160
+ And whether we should use IT to everything we choose to do on the public side.
+
+32
+0:02:39,160 --> 0:02:44,120
+ It's indeed vital that it comes into the into the discussion process.
+
+33
+0:02:46,540 --> 0:02:50,580
+ There are many things about IT we shouldn't say to the audience sitting here,
+
+34
+0:02:50,580 --> 0:02:52,320
+ but there are also some things you should be aware of.
+
+35
+0:02:52,320 --> 0:02:54,320
+ Whether this is the right way to use it.
+
+36
+0:02:54,440 --> 0:02:56,100
+ And while you're thinking of this,
+
+37
+0:02:56,100 --> 0:02:56,140
+ I'd like to ask you for a quick question.
+
+38
+0:02:56,140 --> 0:02:56,440
+ A quick question?
+
+39
+0:02:56,440 --> 0:02:56,620
+ Yes.
+
+40
+0:02:56,620 --> 0:02:58,360
+ As I said, you have a background in this.
+
+41
+0:02:58,840 --> 0:03:02,660
+ It's not because you're going to sit and tease the other parliamentarians in here,
+
+42
+0:03:02,700 --> 0:03:08,260
+ but how do you experience the climate around this with computers and IT in the city when you walk around day to day?
+
+43
+0:03:10,360 --> 0:03:12,220
+ It's not something that fills me up that much.
+
+44
+0:03:12,580 --> 0:03:16,500
+ You also mentioned some of my other leadership, and it's no secret that in the last year and a half,
+
+45
+0:03:16,500 --> 0:03:20,300
+ it has primarily been my health leadership that has filled my time.
+
+46
+0:03:21,100 --> 0:03:22,040
+ Maybe not so surprisingly.
+
+47
+0:03:22,680 --> 0:03:24,060
+ There has also been some IT there.
+
+48
+0:03:24,240 --> 0:03:25,540
+ We'll get to that a little later.
+
+49
+0:03:25,540 --> 0:03:28,400
+ But it's not my impression that it's something that...
+
+50
+0:03:28,400 --> 0:03:33,080
+ I think it can be done on one hand, and many can sit down and code in Perl, for example,
+
+51
+0:03:33,280 --> 0:03:34,240
+ if you ask the people there.
+
+52
+0:03:35,440 --> 0:03:37,800
+ And I would be on that one hand, I can tell you.
+
+53
+0:03:39,000 --> 0:03:40,520
+ You feel lonely once in a while.
+
+54
+0:03:42,000 --> 0:03:43,760
+ Yes, it's a lonely place.
+
+55
+0:03:44,500 --> 0:03:49,700
+ But Denmark, as such, we are one of the world's most digitized countries in these meetings.
+
+56
+0:03:49,800 --> 0:03:51,140
+ At least that's what it's called all the time.
+
+57
+0:03:51,260 --> 0:03:54,700
+ How do you experience Denmark as an incredibly well-digitalized country?
+
+58
+0:03:55,540 --> 0:04:00,140
+ Yes, I do, depending on where you are in the word, I think.
+
+59
+0:04:00,400 --> 0:04:01,540
+ But yes, I do, in any case.
+
+60
+0:04:01,660 --> 0:04:09,100
+ When we look at, for example, during Corona, we have discussed a lot about vaccines, tests, strategy, all this.
+
+61
+0:04:09,260 --> 0:04:10,720
+ How do we register all the right places?
+
+62
+0:04:11,540 --> 0:04:18,560
+ And it has been quite easy in Denmark, whereas a country like Germany, for example, has been incredibly complicated to do,
+
+63
+0:04:18,560 --> 0:04:24,940
+ because they don't have the same, what can you say, natural access to home.
+
+64
+0:04:25,540 --> 0:04:31,200
+ And that has been, we are, that's one thing we can see, just in the time I have been in the parliament,
+
+65
+0:04:31,280 --> 0:04:35,600
+ we have had a digital health card, which there are so many good things to say about.
+
+66
+0:04:36,100 --> 0:04:39,980
+ It's us who have children, we don't know how it is to stand as a doctor, and then there's actually another who has a health card and all this.
+
+67
+0:04:40,300 --> 0:04:41,120
+ So there are some good things about it.
+
+68
+0:04:41,920 --> 0:04:44,380
+ It's not long since we got our NemID app and all this.
+
+69
+0:04:44,500 --> 0:04:50,020
+ We're starting to get more and more things moved over to IT, and it's been taken down.
+
+70
+0:04:50,020 --> 0:04:54,460
+ We can see how quickly it is taken well into the public.
+
+71
+0:04:55,540 --> 0:05:01,180
+ In that way, we are an extremely digitized society, we are, as I said, in a good way, but it is.
+
+72
+0:05:03,460 --> 0:05:11,160
+ I would just like to say here that we are a bunch of people sitting here listening to you in this tent, and apart from that, there are also some people on a chat behind us who can sit and follow along,
+
+73
+0:05:11,160 --> 0:05:16,140
+ and some who are sitting and looking directly at our live stream on the internet, and I have a little question for the audience.
+
+74
+0:05:16,140 --> 0:05:25,300
+ If you have anything you would like to ask, you can just start waving your arms insanely, and then you can go up to a microphone here in the middle and ask a question directly to Stenus Lindgren.
+
+75
+0:05:25,540 --> 0:05:32,700
+ So if no one comes, I'll just have to stand here and talk to him along the way, and it would be exciting if some of you also come with something at some point.
+
+76
+0:05:32,960 --> 0:05:42,940
+ But the first thing, now you were just on the internet, this coronavirus and the pandemic has put its mark on the country, and especially two things have been discussed in a violent way, at least politically.
+
+77
+0:05:42,940 --> 0:05:46,780
+ One is the infection stop app, and the other is the corona pass.
+
+78
+0:05:47,300 --> 0:05:51,900
+ I just want to start by asking you, have you still installed your infection stop app on your phone?
+
+79
+0:05:53,460 --> 0:05:55,300
+ I actually still have.
+
+80
+0:05:55,540 --> 0:06:01,420
+ Probably mostly because I haven't removed it, but I still have it, and I also have a corona pass app.
+
+81
+0:06:02,960 --> 0:06:06,540
+ Yes, that was the answer to your question. I don't know if I should say more, but I'm curious if you have any more questions.
+
+82
+0:06:06,540 --> 0:06:13,200
+ There are some follow-up questions coming in at this point. I just wanted to hear first, have you ever received a notification on this infection stop app?
+
+83
+0:06:13,200 --> 0:06:20,880
+ I actually have that too. It's been a long time, but I have it, and it's been in the after years.
+
+84
+0:06:20,880 --> 0:06:25,440
+ So if it's proof that it works, it might be a bit abstract.
+
+85
+0:06:25,440 --> 0:06:28,000
+ But I have actually received a notification. I'm one of the lucky ones.
+
+86
+0:06:29,280 --> 0:06:34,140
+ This infection stop app, there has been a terrible lot done about the introduction of it.
+
+87
+0:06:34,140 --> 0:06:38,240
+ How do you think the process has been about getting this infection stop app done in its time?
+
+88
+0:06:39,000 --> 0:06:41,820
+ But actually, it was a pretty good process.
+
+89
+0:06:41,820 --> 0:06:52,320
+ There were a number of critics, myself included, of the original ideas, because there were some completely obvious problems in the way that they had considered it.
+
+90
+0:06:52,320 --> 0:06:53,340
+ In relation to collecting data.
+
+91
+0:06:53,340 --> 0:06:53,860
+ In relation to collecting data.
+
+92
+0:06:53,860 --> 0:06:54,360
+ In relation to collecting data.
+
+93
+0:06:54,360 --> 0:06:54,880
+ In relation to collecting data.
+
+94
+0:06:54,880 --> 0:06:55,400
+ In relation to collecting data.
+
+95
+0:06:55,440 --> 0:07:10,540
+ This was
+
+96
+0:07:10,540 --> 0:07:16,740
+ important.
+
+97
+0:07:16,740 --> 0:07:17,480
+ It was important to make data minimization.
+
+98
+0:07:17,480 --> 0:07:23,080
+ Only collect, only collect data that is necessary for the goal you have with this app.
+
+99
+0:07:23,080 --> 0:07:24,880
+ It should not be personal transfer, because it is not relevant.
+
+100
+0:07:24,880 --> 0:07:31,880
+ The person received a message that the person's mobile phone had been connected to another that had been tested positive.
+
+101
+0:07:31,880 --> 0:07:35,880
+ The problem is that you don't need to collect all kinds of other information.
+
+102
+0:07:35,880 --> 0:07:40,880
+ You don't need to collect GPS data, you don't need to collect information about who the person is.
+
+103
+0:07:40,880 --> 0:07:43,880
+ It is only important to know if a device has been connected to another device.
+
+104
+0:07:43,880 --> 0:07:46,880
+ And we spent a lot of time discussing this.
+
+105
+0:07:46,880 --> 0:07:51,880
+ And it was also backed up by Data Ethics Council, which you know very well,
+
+106
+0:07:51,880 --> 0:07:59,880
+ that Data Ethics Council was a solution that kept a number of all the requirements that were raised to ensure that the person received the data.
+
+107
+0:07:59,880 --> 0:08:05,880
+ So in this way, it was actually a positive example of being able to start somewhere that was completely wrong,
+
+108
+0:08:05,880 --> 0:08:08,880
+ and end somewhere that was actually really, really good.
+
+109
+0:08:08,880 --> 0:08:11,880
+ If you then of course accept that it should be done.
+
+110
+0:08:11,880 --> 0:08:13,880
+ But I actually think it was a very nice process.
+
+111
+0:08:13,880 --> 0:08:16,880
+ There is a question from the audience here.
+
+112
+0:08:16,880 --> 0:08:20,880
+ Yes, I'll try to see if I can explain it in a sensible way.
+
+113
+0:08:21,880 --> 0:08:26,880
+ Hello? Can you hear me?
+
+114
+0:08:26,880 --> 0:08:27,880
+ Yes, I can.
+
+115
+0:08:27,880 --> 0:08:31,880
+ Great. I'll try to see if I can explain it in a sensible way.
+
+116
+0:08:31,880 --> 0:08:37,880
+ Because I definitely don't think that the latest projects and apps that have been introduced are good.
+
+117
+0:08:37,880 --> 0:08:42,880
+ And I'm probably looking for some tips from you, because you are in the position that you are in right now.
+
+118
+0:08:42,880 --> 0:08:46,880
+ Where you can tell us how we can convince the politicians.
+
+119
+0:08:46,880 --> 0:08:51,880
+ You can say that first of all, we and you know that computers are not precise.
+
+120
+0:08:51,880 --> 0:08:55,880
+ And especially not when we are based on a lot of models and ideas.
+
+121
+0:08:55,880 --> 0:09:00,880
+ And when we then have projects like an app that you suddenly want,
+
+122
+0:09:00,880 --> 0:09:06,880
+ then you have a tendency in Denmark to look at some kind of sunscreen scenario.
+
+123
+0:09:06,880 --> 0:09:09,880
+ And then it is good enough that you have looked at the sunscreen scenario,
+
+124
+0:09:09,880 --> 0:09:12,880
+ and then you get out of it and then you buy an app.
+
+125
+0:09:12,880 --> 0:09:17,880
+ And it shows in many of the situations and use situations we have,
+
+126
+0:09:17,880 --> 0:09:19,880
+ that there is either misuse,
+
+127
+0:09:19,880 --> 0:09:22,880
+ or it turns out that you cannot implement the rest,
+
+128
+0:09:22,880 --> 0:09:25,880
+ or you lose a large part of the population.
+
+129
+0:09:25,880 --> 0:09:29,880
+ So how do we convince the politicians that computers are not precise,
+
+130
+0:09:29,880 --> 0:09:32,880
+ and we should think things through a little more,
+
+131
+0:09:32,880 --> 0:09:35,880
+ among other things with privacy, before we start?
+
+132
+0:09:35,880 --> 0:09:42,880
+ Good question. And it goes from a general view of apps from the public.
+
+133
+0:09:42,880 --> 0:09:44,880
+ Because now I said before that it was...
+
+134
+0:09:44,880 --> 0:09:45,880
+ Yes, also solutions from the public.
+
+135
+0:09:45,880 --> 0:09:47,880
+ So also solutions out at municipal offices,
+
+136
+0:09:47,880 --> 0:09:50,880
+ and people who get the message that they have to pay 15,000 back,
+
+137
+0:09:50,880 --> 0:09:53,880
+ even though they have not been paid the money, or whatever it could be.
+
+138
+0:09:53,880 --> 0:09:58,880
+ Yes, that's a pretty big question.
+
+139
+0:09:58,880 --> 0:10:02,880
+ One thing I forgot to say about the corona pass,
+
+140
+0:10:02,880 --> 0:10:04,880
+ sorry, the vaccine.
+
+141
+0:10:04,880 --> 0:10:08,880
+ When I said it was a good process, it was in relation to the outcome of it.
+
+142
+0:10:08,880 --> 0:10:11,880
+ But there was a lot to be criticized in relation to how much it cost,
+
+143
+0:10:11,880 --> 0:10:13,880
+ how the export actually worked,
+
+144
+0:10:13,880 --> 0:10:16,880
+ how we could define whether the task was complete,
+
+145
+0:10:16,880 --> 0:10:19,880
+ whether the task could be solved,
+
+146
+0:10:19,880 --> 0:10:21,880
+ which is something you are talking about here.
+
+147
+0:10:21,880 --> 0:10:23,880
+ Because it was never, in my opinion at least,
+
+148
+0:10:23,880 --> 0:10:25,880
+ and that's how some others sold it,
+
+149
+0:10:25,880 --> 0:10:28,880
+ but in my opinion it was never meant to solve the epidemic.
+
+150
+0:10:28,880 --> 0:10:30,880
+ It couldn't do that.
+
+151
+0:10:30,880 --> 0:10:33,880
+ It should only be seen as a supplement to catch some of the infection chains
+
+152
+0:10:33,880 --> 0:10:35,880
+ that you couldn't catch otherwise.
+
+153
+0:10:35,880 --> 0:10:38,880
+ And this was a time when we didn't test it as intensively as we do today.
+
+154
+0:10:38,880 --> 0:10:44,880
+ But how do you convince people about privacy by design?
+
+155
+0:10:44,880 --> 0:10:46,880
+ I haven't been sitting there for that long.
+
+156
+0:10:46,880 --> 0:10:48,880
+ I've been living here for two years,
+
+157
+0:10:48,880 --> 0:10:50,880
+ and I've only been here for 42 years since the summer holidays.
+
+158
+0:10:50,880 --> 0:10:52,880
+ But I've realized that the times we've discussed it,
+
+159
+0:10:52,880 --> 0:10:54,880
+ and it's been with the infection stop,
+
+160
+0:10:54,880 --> 0:10:56,880
+ and it's been with the corona pass,
+
+161
+0:10:56,880 --> 0:10:58,880
+ I've realized that there should be built-in privacy by design,
+
+162
+0:10:58,880 --> 0:11:00,880
+ there should be data minimization,
+
+163
+0:11:00,880 --> 0:11:03,880
+ and it should be, I think, open source,
+
+164
+0:11:03,880 --> 0:11:05,880
+ because it's publicly paid data,
+
+165
+0:11:05,880 --> 0:11:08,880
+ and it's safer, in my opinion, to do it that way.
+
+166
+0:11:08,880 --> 0:11:10,880
+ But until I've done that,
+
+167
+0:11:10,880 --> 0:11:13,880
+ it doesn't make any impression that there have been any special people in the trade union board
+
+168
+0:11:13,880 --> 0:11:14,880
+ who have mentioned these things,
+
+169
+0:11:14,880 --> 0:11:16,880
+ because there hasn't been any attention to it.
+
+170
+0:11:16,880 --> 0:11:18,880
+ So my advice to you,
+
+171
+0:11:18,880 --> 0:11:20,880
+ I don't know how many of you are sitting there,
+
+172
+0:11:20,880 --> 0:11:22,880
+ but those of you who are interested in working with this,
+
+173
+0:11:22,880 --> 0:11:25,880
+ is to get in touch with the respective IT leaders,
+
+174
+0:11:25,880 --> 0:11:27,880
+ and talk to them.
+
+175
+0:11:27,880 --> 0:11:29,880
+ Ask them if they have time to take a meeting,
+
+176
+0:11:29,880 --> 0:11:31,880
+ so you can present some of these things to them,
+
+177
+0:11:31,880 --> 0:11:33,880
+ and explain why it's important,
+
+178
+0:11:33,880 --> 0:11:34,880
+ why they make sense,
+
+179
+0:11:34,880 --> 0:11:36,880
+ and why you shouldn't be afraid of it as a politician.
+
+180
+0:11:36,880 --> 0:11:38,880
+ That's the way to do it.
+
+181
+0:11:38,880 --> 0:11:41,880
+ And then, of course, it's important to try to be aware
+
+182
+0:11:41,880 --> 0:11:43,880
+ if there are any projects underway.
+
+183
+0:11:43,880 --> 0:11:44,880
+ Because as soon as it's included in the case,
+
+184
+0:11:44,880 --> 0:11:46,880
+ it's relatively difficult to change it.
+
+185
+0:11:46,880 --> 0:11:48,880
+ So it's important to see if there is something
+
+186
+0:11:48,880 --> 0:11:51,880
+ in the law catalogue or elsewhere,
+
+187
+0:11:51,880 --> 0:11:54,880
+ where there is a new app or a new service,
+
+188
+0:11:54,880 --> 0:11:56,880
+ whatever it may be.
+
+189
+0:11:56,880 --> 0:11:58,880
+ I'm sorry, I don't want to get banned on this stream,
+
+190
+0:11:58,880 --> 0:12:00,880
+ but it has now been done.
+
+191
+0:12:00,880 --> 0:12:04,880
+ So make sure to contact the respective leaders
+
+192
+0:12:04,880 --> 0:12:07,880
+ before the negotiations start.
+
+193
+0:12:07,880 --> 0:12:09,880
+ And that's probably something completely new for many of you
+
+194
+0:12:09,880 --> 0:12:10,880
+ who are sitting in this,
+
+195
+0:12:10,880 --> 0:12:12,880
+ some of you are probably used to it,
+
+196
+0:12:12,880 --> 0:12:13,880
+ but it's probably new for most of you,
+
+197
+0:12:13,880 --> 0:12:15,880
+ how it works.
+
+198
+0:12:15,880 --> 0:12:16,880
+ It was new for me.
+
+199
+0:12:16,880 --> 0:12:18,880
+ I can see when I come from the research world
+
+200
+0:12:18,880 --> 0:12:20,880
+ that it's not a place where you ever consider
+
+201
+0:12:20,880 --> 0:12:21,880
+ how things work in the city.
+
+202
+0:12:21,880 --> 0:12:24,880
+ And I've been contacted very often by researchers
+
+203
+0:12:24,880 --> 0:12:26,880
+ after we've taken something in and said,
+
+204
+0:12:26,880 --> 0:12:28,880
+ hey, you should have done it this way,
+
+205
+0:12:28,880 --> 0:12:29,880
+ but it's too late.
+
+206
+0:12:29,880 --> 0:12:31,880
+ You should contact people before we go down
+
+207
+0:12:31,880 --> 0:12:32,880
+ to negotiations about it.
+
+208
+0:12:32,880 --> 0:12:34,880
+ Otherwise, we can't change it.
+
+209
+0:12:34,880 --> 0:12:35,880
+ So it's important to be proactive,
+
+210
+0:12:35,880 --> 0:12:37,880
+ it's important to be aware of what's coming,
+
+211
+0:12:37,880 --> 0:12:40,880
+ so you can get people before it's taken in.
+
+212
+0:12:40,880 --> 0:12:42,880
+ Because that's the only way we can change these things.
+
+213
+0:12:42,880 --> 0:12:44,880
+ At least that's the easiest way.
+
+214
+0:12:45,880 --> 0:12:47,880
+ I think that's a very good answer.
+
+215
+0:12:47,880 --> 0:12:48,880
+ We'll have to try to figure out
+
+216
+0:12:48,880 --> 0:12:49,880
+ how we can do more with it.
+
+217
+0:12:49,880 --> 0:12:51,880
+ I'm also speculating on something
+
+218
+0:12:51,880 --> 0:12:53,880
+ that's a bit out of this earlier question.
+
+219
+0:12:53,880 --> 0:12:54,880
+ I'm thinking,
+
+220
+0:12:54,880 --> 0:12:57,880
+ in a way, it's like all public solutions
+
+221
+0:12:57,880 --> 0:13:00,880
+ are really working in a kind of a duopoly
+
+222
+0:13:00,880 --> 0:13:02,880
+ of either Apple in the US
+
+223
+0:13:02,880 --> 0:13:05,880
+ or Android in these contexts.
+
+224
+0:13:05,880 --> 0:13:07,880
+ Do you think there's some kind of chance
+
+225
+0:13:07,880 --> 0:13:09,880
+ for people to be able to convince people
+
+226
+0:13:09,880 --> 0:13:11,880
+ in the parliament, as you mentioned,
+
+227
+0:13:11,880 --> 0:13:13,880
+ to start making some more open source-like solutions,
+
+228
+0:13:13,880 --> 0:13:15,880
+ where there's a possibility
+
+229
+0:13:15,880 --> 0:13:18,880
+ that you can participate in the ordinary life
+
+230
+0:13:18,880 --> 0:13:19,880
+ in a different way
+
+231
+0:13:19,880 --> 0:13:21,880
+ than having an iPhone or an Android?
+
+232
+0:13:25,880 --> 0:13:27,880
+ We just want to answer yes.
+
+233
+0:13:27,880 --> 0:13:29,880
+ I can't do that right now.
+
+234
+0:13:29,880 --> 0:13:30,880
+ What I can say is,
+
+235
+0:13:30,880 --> 0:13:32,880
+ about open source, for example,
+
+236
+0:13:32,880 --> 0:13:34,880
+ I've been involved in that.
+
+237
+0:13:34,880 --> 0:13:36,880
+ I can't take the honor of doing it alone,
+
+238
+0:13:36,880 --> 0:13:38,880
+ but some of the things we've developed during the pandemic
+
+239
+0:13:38,880 --> 0:13:40,880
+ have become open source afterwards.
+
+240
+0:13:40,880 --> 0:13:42,880
+ We made an offer where we said the requirement was
+
+241
+0:13:42,880 --> 0:13:44,880
+ that the code became open source.
+
+242
+0:13:44,880 --> 0:13:45,880
+ So it can be done.
+
+243
+0:13:45,880 --> 0:13:47,880
+ It just requires that someone says it
+
+244
+0:13:47,880 --> 0:13:49,880
+ and that enough is shown
+
+245
+0:13:49,880 --> 0:13:51,880
+ that it's a good idea to do.
+
+246
+0:13:51,880 --> 0:13:53,880
+ You just have to remember
+
+247
+0:13:53,880 --> 0:13:55,880
+ that if you go in and talk to the 179 members
+
+248
+0:13:55,880 --> 0:13:56,880
+ of the parliament,
+
+249
+0:13:56,880 --> 0:13:58,880
+ it's probably a handful of people
+
+250
+0:13:58,880 --> 0:13:59,880
+ who understand what open source is.
+
+251
+0:13:59,880 --> 0:14:00,880
+ And it's not to take them down.
+
+252
+0:14:00,880 --> 0:14:02,880
+ It's just clear that if you've never worked with it,
+
+253
+0:14:02,880 --> 0:14:04,880
+ it's just a word you don't know what it's in.
+
+254
+0:14:04,880 --> 0:14:06,880
+ So it's important to be able to explain this,
+
+255
+0:14:06,880 --> 0:14:08,880
+ what it means and why it's important.
+
+256
+0:14:08,880 --> 0:14:09,880
+ There are a lot of impediments.
+
+257
+0:14:09,880 --> 0:14:10,880
+ We just have to remember that.
+
+258
+0:14:10,880 --> 0:14:11,880
+ There are a lot of people
+
+259
+0:14:11,880 --> 0:14:12,880
+ who know very well
+
+260
+0:14:12,880 --> 0:14:13,880
+ what these things are all about.
+
+261
+0:14:13,880 --> 0:14:15,880
+ But you have to make sure
+
+262
+0:14:15,880 --> 0:14:17,880
+ that the relevant politicians
+
+263
+0:14:17,880 --> 0:14:19,880
+ also know what these concepts
+
+264
+0:14:19,880 --> 0:14:21,880
+ actually cover.
+
+265
+0:14:21,880 --> 0:14:23,880
+ So that's the first step.
+
+266
+0:14:23,880 --> 0:14:26,880
+ The reason why when you ask
+
+267
+0:14:26,880 --> 0:14:28,880
+ if a single app can be developed
+
+268
+0:14:28,880 --> 0:14:29,880
+ as open source
+
+269
+0:14:29,880 --> 0:14:30,880
+ or whether we should make
+
+270
+0:14:30,880 --> 0:14:31,880
+ some larger things open source,
+
+271
+0:14:31,880 --> 0:14:35,880
+ I think we can do some things,
+
+272
+0:14:35,880 --> 0:14:36,880
+ but the problem is that
+
+273
+0:14:36,880 --> 0:14:38,880
+ some of it is built so much together
+
+274
+0:14:38,880 --> 0:14:40,880
+ with existing infrastructure
+
+275
+0:14:40,880 --> 0:14:41,880
+ that it's not possible
+
+276
+0:14:41,880 --> 0:14:43,880
+ to make it a larger project
+
+277
+0:14:43,880 --> 0:14:44,880
+ to get it pushed over
+
+278
+0:14:44,880 --> 0:14:46,880
+ to another platform.
+
+279
+0:14:46,880 --> 0:14:47,880
+ That's my impression,
+
+280
+0:14:47,880 --> 0:14:48,880
+ without knowing all the details
+
+281
+0:14:48,880 --> 0:14:49,880
+ in the public IT,
+
+282
+0:14:49,880 --> 0:14:50,880
+ and it might be very nice
+
+283
+0:14:50,880 --> 0:14:51,880
+ if I don't do it.
+
+284
+0:14:51,880 --> 0:14:53,880
+ I think it's a very terrible system
+
+285
+0:14:53,880 --> 0:14:54,880
+ that's first started digging into it.
+
+286
+0:14:54,880 --> 0:14:57,880
+ But I think we can take it step by step
+
+287
+0:14:57,880 --> 0:14:58,880
+ and make it better.
+
+288
+0:14:58,880 --> 0:15:00,880
+ And we can see, as I said,
+
+289
+0:15:00,880 --> 0:15:01,880
+ that it can be done.
+
+290
+0:15:01,880 --> 0:15:03,880
+ In the time we've been discussing
+
+291
+0:15:03,880 --> 0:15:05,880
+ various corona IT projects,
+
+292
+0:15:05,880 --> 0:15:06,880
+ it has been possible
+
+293
+0:15:06,880 --> 0:15:08,880
+ to get something out of this.
+
+294
+0:15:08,880 --> 0:15:10,880
+ So it's quite a bit of pressure.
+
+295
+0:15:10,880 --> 0:15:11,880
+ But I think we can see
+
+296
+0:15:11,880 --> 0:15:12,880
+ that there are people
+
+297
+0:15:12,880 --> 0:15:13,880
+ who are aware of it,
+
+298
+0:15:13,880 --> 0:15:14,880
+ and there are people
+
+299
+0:15:14,880 --> 0:15:15,880
+ who have lifted it
+
+300
+0:15:15,880 --> 0:15:16,880
+ in the parliament.
+
+301
+0:15:16,880 --> 0:15:17,880
+ And just to stay for a moment
+
+302
+0:15:17,880 --> 0:15:18,880
+ with this,
+
+303
+0:15:18,880 --> 0:15:19,880
+ with corona
+
+304
+0:15:19,880 --> 0:15:20,880
+ and the things
+
+305
+0:15:20,880 --> 0:15:21,880
+ that it has done
+
+306
+0:15:21,880 --> 0:15:22,880
+ with Danish politics,
+
+307
+0:15:22,880 --> 0:15:23,880
+ a relatively new way
+
+308
+0:15:23,880 --> 0:15:24,880
+ has also been introduced
+
+309
+0:15:24,880 --> 0:15:25,880
+ and implemented
+
+310
+0:15:25,880 --> 0:15:26,880
+ during the pandemic,
+
+311
+0:15:26,880 --> 0:15:27,880
+ which is the concept
+
+312
+0:15:27,880 --> 0:15:28,880
+ of the solar reduction clause.
+
+313
+0:15:28,880 --> 0:15:29,880
+ That is, the fact
+
+314
+0:15:29,880 --> 0:15:30,880
+ that the law must run out
+
+315
+0:15:30,880 --> 0:15:31,880
+ at a certain time.
+
+316
+0:15:31,880 --> 0:15:32,880
+ How have you experienced
+
+317
+0:15:32,880 --> 0:15:33,880
+ it as a tool
+
+318
+0:15:33,880 --> 0:15:34,880
+ used in the parliament?
+
+319
+0:15:34,880 --> 0:15:35,880
+ Is it something
+
+320
+0:15:35,880 --> 0:15:36,880
+ that people are good at
+
+321
+0:15:36,880 --> 0:15:37,880
+ among politicians?
+
+322
+0:15:37,880 --> 0:15:38,880
+ Well,
+
+323
+0:15:38,880 --> 0:15:39,880
+ I think it's important
+
+324
+0:15:39,880 --> 0:15:40,880
+ to have a plan
+
+325
+0:15:40,880 --> 0:15:41,880
+ for what to do
+
+326
+0:15:41,880 --> 0:15:42,880
+ and what not to do
+
+327
+0:15:42,880 --> 0:15:43,880
+ among politicians.
+
+328
+0:15:43,880 --> 0:15:44,880
+ Yes,
+
+329
+0:15:44,880 --> 0:15:45,880
+ you can say
+
+330
+0:15:45,880 --> 0:15:46,880
+ that not all laws
+
+331
+0:15:46,880 --> 0:15:47,880
+ make sense
+
+332
+0:15:47,880 --> 0:15:48,880
+ to have a solar reduction clause
+
+333
+0:15:48,880 --> 0:15:49,880
+ on.
+
+334
+0:15:49,880 --> 0:15:50,880
+ Some of them
+
+335
+0:15:50,880 --> 0:15:51,880
+ must be there.
+
+336
+0:15:51,880 --> 0:15:52,880
+ But it is clear
+
+337
+0:15:52,880 --> 0:15:53,880
+ that when we make
+
+338
+0:15:53,880 --> 0:15:54,880
+ measures
+
+339
+0:15:54,880 --> 0:15:55,880
+ that are very aggressive,
+
+340
+0:15:55,880 --> 0:15:56,880
+ then I think
+
+341
+0:15:56,880 --> 0:15:57,880
+ it is completely reasonable
+
+342
+0:15:57,880 --> 0:15:58,880
+ that we have
+
+343
+0:15:58,880 --> 0:15:59,880
+ a solar reduction clause
+
+344
+0:15:59,880 --> 0:16:00,880
+ on.
+
+345
+0:16:00,880 --> 0:16:01,880
+ And then, of course,
+
+346
+0:16:01,880 --> 0:16:02,880
+ we have to re-investigate
+
+347
+0:16:02,880 --> 0:16:03,880
+ and see if it should be extended
+
+348
+0:16:03,880 --> 0:16:04,880
+ if now,
+
+349
+0:16:04,880 --> 0:16:05,880
+ I mean,
+
+350
+0:16:05,880 --> 0:16:06,880
+ we are in a good place,
+
+351
+0:16:06,880 --> 0:16:07,880
+ but if now the epidemic
+
+352
+0:16:07,880 --> 0:16:08,880
+ is still completely gone
+
+353
+0:16:08,880 --> 0:16:09,880
+ and then we have to look
+
+354
+0:16:09,880 --> 0:16:10,880
+ at it again.
+
+355
+0:16:10,880 --> 0:16:11,880
+ But I think
+
+356
+0:16:11,880 --> 0:16:12,880
+ it is a good security
+
+357
+0:16:12,880 --> 0:16:13,880
+ principle.
+
+358
+0:16:13,880 --> 0:16:14,880
+ And the reason
+
+359
+0:16:14,880 --> 0:16:15,880
+ I think it is important
+
+360
+0:16:15,880 --> 0:16:16,880
+ and I generally
+
+361
+0:16:16,880 --> 0:16:17,880
+ look at it is that
+
+362
+0:16:17,880 --> 0:16:18,880
+ you can just see
+
+363
+0:16:18,880 --> 0:16:19,880
+ some of the actions
+
+364
+0:16:19,880 --> 0:16:20,880
+ that have been made
+
+365
+0:16:20,880 --> 0:16:21,880
+ in Denmark,
+
+366
+0:16:21,880 --> 0:16:22,880
+ but to a large extent
+
+367
+0:16:22,880 --> 0:16:23,880
+ in other countries,
+
+368
+0:16:23,880 --> 0:16:24,880
+ are extremely aggressive.
+
+369
+0:16:24,880 --> 0:16:25,880
+ And you just have
+
+370
+0:16:25,880 --> 0:16:26,880
+ to be careful
+
+371
+0:16:26,880 --> 0:16:27,880
+ not to be able
+
+372
+0:16:27,880 --> 0:16:28,880
+ to normalize
+
+373
+0:16:28,880 --> 0:16:29,880
+ something that is
+
+374
+0:16:29,880 --> 0:16:30,880
+ in direct conflict
+
+375
+0:16:30,880 --> 0:16:31,880
+ with how we normally
+
+376
+0:16:31,880 --> 0:16:32,880
+ have a free
+
+377
+0:16:32,880 --> 0:16:33,880
+ democratic society.
+
+378
+0:16:33,880 --> 0:16:34,880
+ And it is,
+
+379
+0:16:34,880 --> 0:16:35,880
+ I mean,
+
+380
+0:16:35,880 --> 0:16:36,880
+ it has been
+
+381
+0:16:36,880 --> 0:16:37,880
+ an extraordinary situation
+
+382
+0:16:37,880 --> 0:16:38,880
+ and I agree
+
+383
+0:16:38,880 --> 0:16:39,880
+ with the things
+
+384
+0:16:39,880 --> 0:16:40,880
+ that have been said
+
+385
+0:16:40,880 --> 0:16:41,880
+ that there are
+
+386
+0:16:41,880 --> 0:16:42,880
+ clear limits
+
+387
+0:16:42,880 --> 0:16:43,880
+ for how long
+
+388
+0:16:43,880 --> 0:16:44,880
+ something should last,
+
+389
+0:16:44,880 --> 0:16:45,880
+ when it should last,
+
+390
+0:16:45,880 --> 0:16:46,880
+ how extensive it should be
+
+391
+0:16:46,880 --> 0:16:47,880
+ and that is why
+
+392
+0:16:47,880 --> 0:16:48,880
+ the Social Security
+
+393
+0:16:48,880 --> 0:16:49,880
+ Commission
+
+394
+0:16:49,880 --> 0:16:50,880
+ is just doing it
+
+395
+0:16:50,880 --> 0:16:51,880
+ in a completely
+
+396
+0:16:51,880 --> 0:16:52,880
+ obvious way.
+
+397
+0:16:52,880 --> 0:16:53,880
+ Because then it does not
+
+398
+0:16:53,880 --> 0:16:54,880
+ require anything,
+
+399
+0:16:54,880 --> 0:16:55,880
+ then it completely
+
+400
+0:16:55,880 --> 0:16:56,880
+ cuts itself off.
+
+401
+0:16:56,880 --> 0:16:57,880
+ And that is
+
+402
+0:16:57,880 --> 0:16:58,880
+ a great security
+
+403
+0:16:58,880 --> 0:16:59,880
+ for,
+
+404
+0:16:59,880 --> 0:17:00,880
+ because I think
+
+405
+0:17:00,880 --> 0:17:01,880
+ there is a tendency
+
+406
+0:17:01,880 --> 0:17:02,880
+ to,
+
+407
+0:17:02,880 --> 0:17:03,880
+ and I am talking
+
+408
+0:17:03,880 --> 0:17:04,880
+ in general
+
+409
+0:17:04,880 --> 0:17:05,880
+ about power,
+
+410
+0:17:05,880 --> 0:17:06,880
+ not just in Denmark,
+
+411
+0:17:06,880 --> 0:17:07,880
+ but in the world
+
+412
+0:17:07,880 --> 0:17:08,880
+ as such,
+
+413
+0:17:08,880 --> 0:17:09,880
+ because it is
+
+414
+0:17:09,880 --> 0:17:10,880
+ very nice
+
+415
+0:17:10,880 --> 0:17:11,880
+ to have.
+
+416
+0:17:11,880 --> 0:17:12,880
+ And it gives
+
+417
+0:17:12,880 --> 0:17:13,880
+ some maneuvers
+
+418
+0:17:13,880 --> 0:17:14,880
+ that we may not
+
+419
+0:17:14,880 --> 0:17:15,880
+ have had before.
+
+420
+0:17:15,880 --> 0:17:16,880
+ And that is why
+
+421
+0:17:16,880 --> 0:17:17,880
+ it is important
+
+422
+0:17:17,880 --> 0:17:18,880
+ that we make sure
+
+423
+0:17:18,880 --> 0:17:19,880
+ that it is not
+
+424
+0:17:19,880 --> 0:17:20,880
+ only for free.
+
+425
+0:17:20,880 --> 0:17:21,880
+ And that is one way
+
+426
+0:17:21,880 --> 0:17:22,880
+ we can do it.
+
+427
+0:17:22,880 --> 0:17:23,880
+ And I think
+
+428
+0:17:23,880 --> 0:17:24,880
+ it is extremely important
+
+429
+0:17:24,880 --> 0:17:25,880
+ that we have been
+
+430
+0:17:25,880 --> 0:17:26,880
+ able to do this
+
+431
+0:17:26,880 --> 0:17:27,880
+ along the way.
+
+432
+0:17:27,880 --> 0:17:28,880
+ And as I said,
+
+433
+0:17:28,880 --> 0:17:29,880
+ it is not a critique
+
+434
+0:17:29,880 --> 0:17:30,880
+ of specific ministers,
+
+435
+0:17:30,880 --> 0:17:31,880
+ I think it is more
+
+436
+0:17:31,880 --> 0:17:32,880
+ how the system is,
+
+437
+0:17:32,880 --> 0:17:33,880
+ both in Denmark
+
+438
+0:17:33,880 --> 0:17:34,880
+ and in other countries,
+
+439
+0:17:34,880 --> 0:17:35,880
+ that when you have
+
+440
+0:17:35,880 --> 0:17:36,880
+ first got
+
+441
+0:17:36,880 --> 0:17:37,880
+ the department,
+
+442
+0:17:37,880 --> 0:17:38,880
+ there is a lot
+
+443
+0:17:38,880 --> 0:17:39,880
+ to do.
+
+444
+0:17:39,880 --> 0:17:40,880
+ There is one more
+
+445
+0:17:40,880 --> 0:17:41,880
+ question
+
+446
+0:17:41,880 --> 0:17:42,880
+ from the audience.
+
+447
+0:17:42,880 --> 0:17:43,880
+ Yes,
+
+448
+0:17:43,880 --> 0:17:44,880
+ it is me again.
+
+449
+0:17:44,880 --> 0:17:45,880
+ I think
+
+450
+0:17:45,880 --> 0:17:46,880
+ it is fine
+
+451
+0:17:46,880 --> 0:17:47,880
+ to have
+
+452
+0:17:47,880 --> 0:17:48,880
+ solar power
+
+453
+0:17:48,880 --> 0:17:49,880
+ clauses,
+
+454
+0:17:49,880 --> 0:17:50,880
+ and it is also
+
+455
+0:17:50,880 --> 0:17:51,880
+ very nice
+
+456
+0:17:51,880 --> 0:17:52,880
+ to introduce
+
+457
+0:17:52,880 --> 0:17:53,880
+ a law that
+
+458
+0:17:53,880 --> 0:17:54,880
+ there should be
+
+459
+0:17:54,880 --> 0:17:55,880
+ a revision,
+
+460
+0:17:55,880 --> 0:17:56,880
+ for example.
+
+461
+0:17:56,880 --> 0:17:57,880
+ But we have
+
+462
+0:17:57,880 --> 0:17:58,880
+ a tendency
+
+463
+0:17:58,880 --> 0:17:59,880
+ that it is used
+
+464
+0:17:59,880 --> 0:18:00,880
+ as a critique
+
+465
+0:18:00,880 --> 0:18:01,880
+ of what is
+
+466
+0:18:01,880 --> 0:18:02,880
+ introduced.
+
+467
+0:18:02,880 --> 0:18:03,880
+ And since
+
+468
+0:18:03,880 --> 0:18:04,880
+ with,
+
+469
+0:18:04,880 --> 0:18:05,880
+ for example,
+
+470
+0:18:05,880 --> 0:18:06,880
+ the revision
+
+471
+0:18:06,880 --> 0:18:08,880
+ of a solar power
+
+472
+0:18:08,880 --> 0:18:09,880
+ clause,
+
+473
+0:18:09,880 --> 0:18:10,880
+ we have
+
+474
+0:18:10,880 --> 0:18:11,880
+ a lot of
+
+475
+0:18:11,880 --> 0:18:12,880
+ issues
+
+476
+0:18:12,880 --> 0:18:13,880
+ with the
+
+477
+0:18:13,880 --> 0:18:14,880
+ solution of
+
+478
+0:18:14,880 --> 0:18:15,880
+ the
+
+479
+0:18:15,880 --> 0:18:16,880
+ solar power
+
+480
+0:18:16,880 --> 0:18:17,880
+ clause.
+
+481
+0:18:17,880 --> 0:18:18,880
+ And this
+
+482
+0:18:18,880 --> 0:18:19,880
+ is not
+
+483
+0:18:19,880 --> 0:18:20,880
+ a problem
+
+484
+0:18:20,880 --> 0:18:21,880
+ with
+
+485
+0:18:21,880 --> 0:18:22,880
+ the
+
+486
+0:18:22,880 --> 0:18:23,880
+ solution
+
+487
+0:18:23,880 --> 0:18:24,880
+ of
+
+488
+0:18:24,880 --> 0:18:25,880
+ the
+
+489
+0:18:25,880 --> 0:18:26,880
+ solar power
+
+490
+0:18:26,880 --> 0:18:27,880
+ clause,
+
+491
+0:18:27,880 --> 0:18:28,880
+ but it
+
+492
+0:18:28,880 --> 0:18:29,880
+ is a problem
+
+493
+0:18:29,880 --> 0:18:30,880
+ with
+
+494
+0:18:30,880 --> 0:18:31,880
+ the
+
+495
+0:18:31,880 --> 0:18:32,880
+ solution
+
+496
+0:18:32,880 --> 0:18:33,880
+ of
+
+497
+0:18:33,880 --> 0:18:34,880
+ the
+
+498
+0:18:34,880 --> 0:18:35,880
+ solution
+
+499
+0:18:35,880 --> 0:18:39,880
+ look at what is being implemented, because that is what is happening now.
+
+500
+0:18:39,880 --> 0:18:42,880
+ That's some really good points, and I think it's embarrassing,
+
+501
+0:18:42,880 --> 0:18:45,880
+ and I'm talking specifically about the lockdown, that it's still going on,
+
+502
+0:18:45,880 --> 0:18:49,880
+ because it's completely absurd, and I just don't get it.
+
+503
+0:18:49,880 --> 0:18:53,880
+ And it shows that you're right, it's not a safe system,
+
+504
+0:18:53,880 --> 0:18:58,880
+ because if there isn't a majority that actually supports what they've agreed on,
+
+505
+0:18:58,880 --> 0:19:01,880
+ then it doesn't matter. So you're right about that.
+
+506
+0:19:01,880 --> 0:19:04,880
+ Now I'm talking specifically about the promises I've been a part of,
+
+507
+0:19:04,880 --> 0:19:12,880
+ and I want to say, if you look at the first law we made in March last year,
+
+508
+0:19:12,880 --> 0:19:17,880
+ when we made a gas bill on it, it was because no one could overlook
+
+509
+0:19:17,880 --> 0:19:19,880
+ the full consequences of what we had done.
+
+510
+0:19:19,880 --> 0:19:22,880
+ And the important thing we have to say about this, is that it's completely out of control,
+
+511
+0:19:22,880 --> 0:19:27,880
+ because otherwise, we'd never get rid of it again.
+
+512
+0:19:27,880 --> 0:19:31,880
+ But that's not ideal at all. That's not how a law should be adopted.
+
+513
+0:19:31,880 --> 0:19:34,880
+ A law should have a proper process where you have a debate,
+
+514
+0:19:34,880 --> 0:19:37,880
+ where you hear the debate, get input from all the relevant parties,
+
+515
+0:19:37,880 --> 0:19:40,880
+ and then a law is adopted, and you can actually step back.
+
+516
+0:19:40,880 --> 0:19:43,880
+ And that was the process we had afterwards,
+
+517
+0:19:43,880 --> 0:19:46,880
+ and was adopted here at the beginning of the year,
+
+518
+0:19:46,880 --> 0:19:49,880
+ the new epidemic law, which is still the old one.
+
+519
+0:19:49,880 --> 0:19:52,880
+ And we've had a hearing process, and we've taken the debate in.
+
+520
+0:19:52,880 --> 0:19:55,880
+ Again, this time, we haven't chosen a gas bill,
+
+521
+0:19:55,880 --> 0:19:58,880
+ because we have to have an epidemic law, and we've always had one.
+
+522
+0:19:58,880 --> 0:20:02,880
+ But what I was told was that we have to make sure that we follow up,
+
+523
+0:20:02,880 --> 0:20:05,880
+ that we follow up on the criticism that has been raised here,
+
+524
+0:20:05,880 --> 0:20:08,880
+ when we've had this law in effect for a few months,
+
+525
+0:20:08,880 --> 0:20:11,880
+ and see if something needs to be adapted.
+
+526
+0:20:11,880 --> 0:20:15,880
+ So it's not a gas bill, it's an agreement that we review the law,
+
+527
+0:20:15,880 --> 0:20:18,880
+ and revise the areas where there is a reason to revise,
+
+528
+0:20:18,880 --> 0:20:21,880
+ based on the input we get from different parties.
+
+529
+0:20:21,880 --> 0:20:26,880
+ And there are several who have already referred to me in my role as a representative for the epidemic election,
+
+530
+0:20:26,880 --> 0:20:29,880
+ and have said that we have some things here that we should look at.
+
+531
+0:20:29,880 --> 0:20:32,880
+ And I think that's an important way to do it.
+
+532
+0:20:32,880 --> 0:20:37,880
+ And I think that's a better way than just making a gas bill.
+
+533
+0:20:37,880 --> 0:20:43,880
+ So I agree that it's easy to just use it as an excuse to listen to criticism,
+
+534
+0:20:43,880 --> 0:20:46,880
+ because you've taken a lot from everything, and it's up to you.
+
+535
+0:20:46,880 --> 0:20:47,880
+ And that's not the idea.
+
+536
+0:20:47,880 --> 0:20:50,880
+ We have to have the input process, we have to have the hearing process,
+
+537
+0:20:50,880 --> 0:20:52,880
+ we have to have input from relevant parties,
+
+538
+0:20:52,880 --> 0:20:56,880
+ and then we have to apply the law according to the input that comes.
+
+539
+0:20:56,880 --> 0:20:59,880
+ There's a follow-up.
+
+540
+0:20:59,880 --> 0:21:01,880
+ Yes.
+
+541
+0:21:01,880 --> 0:21:08,880
+ Yes, as a citizen, I'd much rather have you not introduce anything you're in doubt about.
+
+542
+0:21:08,880 --> 0:21:13,880
+ And we all know that if you have a chaotic, panic situation,
+
+543
+0:21:13,880 --> 0:21:16,880
+ then you have different types of crime, and I'm not a lawyer,
+
+544
+0:21:16,880 --> 0:21:18,880
+ but in Denmark you can do a lot of things.
+
+545
+0:21:18,880 --> 0:21:22,880
+ So even without the epidemic law, with the gross things written into them,
+
+546
+0:21:22,880 --> 0:21:27,880
+ and the hearing process may not have been as fantastic and thought-through as it should have been,
+
+547
+0:21:27,880 --> 0:21:29,880
+ then it's better to just let it out.
+
+548
+0:21:29,880 --> 0:21:30,880
+ Just let it out.
+
+549
+0:21:30,880 --> 0:21:33,880
+ And if there's a need for it, then there are different types of crimes.
+
+550
+0:21:33,880 --> 0:21:37,880
+ If there's someone running around spreading infection on the street,
+
+551
+0:21:37,880 --> 0:21:41,880
+ then there's no one who wants to prevent the police from arresting the victims,
+
+552
+0:21:41,880 --> 0:21:43,880
+ using other laws, taking them in.
+
+553
+0:21:43,880 --> 0:21:45,880
+ And as I understand it, as the lawyers have said,
+
+554
+0:21:45,880 --> 0:21:48,880
+ then there's already the possibility of doing things.
+
+555
+0:21:48,880 --> 0:21:50,880
+ Among other things, with double penalties and things like that,
+
+556
+0:21:50,880 --> 0:21:52,880
+ then there can already be sharp circumstances.
+
+557
+0:21:52,880 --> 0:21:58,880
+ So instead of trying to tackle some special situations that the pandemic is in,
+
+558
+0:21:58,880 --> 0:21:59,880
+ because it actually isn't.
+
+559
+0:21:59,880 --> 0:22:02,880
+ Now it's a bit rough, but the pandemic isn't a special situation.
+
+560
+0:22:02,880 --> 0:22:06,880
+ It's part of our current society, which has a wave of problems,
+
+561
+0:22:06,880 --> 0:22:09,880
+ and which we can't simply stop.
+
+562
+0:22:09,880 --> 0:22:13,880
+ So to be honest, we probably shouldn't have the epidemic law.
+
+563
+0:22:13,880 --> 0:22:16,880
+ I don't agree with you on that.
+
+564
+0:22:16,880 --> 0:22:21,880
+ There are two epidemic laws here, or actually there are three.
+
+565
+0:22:21,880 --> 0:22:27,880
+ The one you're rightfully criticizing was the process we had at the start,
+
+566
+0:22:27,880 --> 0:22:28,880
+ just before the lockdown.
+
+567
+0:22:28,880 --> 0:22:31,880
+ Where we discussed all this.
+
+568
+0:22:31,880 --> 0:22:36,880
+ The process was too hasty, and wasn't optimal in any way.
+
+569
+0:22:36,880 --> 0:22:40,880
+ And I've said that myself, and it's been revealed and described.
+
+570
+0:22:40,880 --> 0:22:44,880
+ We've had an investigation of this whole process, because it was extremely chaotic.
+
+571
+0:22:44,880 --> 0:22:46,880
+ And it's not a way of taking such a comprehensive law into account.
+
+572
+0:22:46,880 --> 0:22:48,880
+ I totally agree with you on that.
+
+573
+0:22:48,880 --> 0:22:51,880
+ But not having an epidemic law is not a solution either.
+
+574
+0:22:51,880 --> 0:22:54,880
+ Because some of what you're mentioning here, well, you can't just do it.
+
+575
+0:22:54,880 --> 0:22:56,880
+ It requires a law firm to do it.
+
+576
+0:22:56,880 --> 0:22:59,880
+ And the government has also learned, in the harshest way,
+
+577
+0:22:59,880 --> 0:23:02,880
+ that you can't just do things without ensuring that there's actually an improvement in the law.
+
+578
+0:23:02,880 --> 0:23:05,880
+ And the epidemic law has been used for a lot of things, even earlier.
+
+579
+0:23:05,880 --> 0:23:08,880
+ For example, it's not just epidemics, despite the name.
+
+580
+0:23:08,880 --> 0:23:12,880
+ It's also if there's a terrorist attack, someone who spreads a poison,
+
+581
+0:23:12,880 --> 0:23:14,880
+ we have to close down a station or something,
+
+582
+0:23:14,880 --> 0:23:17,880
+ then it's also the law that needs to be used.
+
+583
+0:23:17,880 --> 0:23:20,880
+ And there are other provisions in it that have also been used earlier.
+
+584
+0:23:20,880 --> 0:23:24,880
+ So when there's a person who has meningitis at a school, for example,
+
+585
+0:23:24,880 --> 0:23:25,880
+ then it's also based on the epidemic law.
+
+586
+0:23:25,880 --> 0:23:28,880
+ Not because it's a society-based disease, but because it's based on the law.
+
+587
+0:23:28,880 --> 0:23:29,880
+ Other paragraphs.
+
+588
+0:23:29,880 --> 0:23:34,880
+ You can go in and make sure to close a school, get vaccinated children, etc.
+
+589
+0:23:34,880 --> 0:23:37,880
+ So it has been used, and has been used numerous times, also in our lifetime,
+
+590
+0:23:37,880 --> 0:23:40,880
+ just not on the scale we've seen here.
+
+591
+0:23:40,880 --> 0:23:43,880
+ So we need an epidemic law, but we need an epidemic law that makes sense.
+
+592
+0:23:43,880 --> 0:23:46,880
+ The problem with the old one, that is, the one that was in the past,
+
+593
+0:23:46,880 --> 0:23:49,880
+ from the whole corona period, was that it hadn't been revised for a long time.
+
+594
+0:23:49,880 --> 0:23:54,880
+ And that means that some of the mechanisms, some of the ways it was built up,
+
+595
+0:23:55,880 --> 0:23:57,880
+ were from a different time.
+
+596
+0:23:57,880 --> 0:24:03,880
+ It was much more based on a ship with pests that lies in Aarhus harbour.
+
+597
+0:24:03,880 --> 0:24:04,880
+ How do we handle that?
+
+598
+0:24:04,880 --> 0:24:08,880
+ It wasn't built with a society in mind, where people fly around on crosses and across,
+
+599
+0:24:08,880 --> 0:24:11,880
+ and we can't control the spread of infection in the same way.
+
+600
+0:24:11,880 --> 0:24:14,880
+ So we simply need to have a modern, revised epidemic law.
+
+601
+0:24:14,880 --> 0:24:17,880
+ But it was also important, and I've spent a lot of time on this,
+
+602
+0:24:17,880 --> 0:24:21,880
+ to introduce justice, the Institute for Human Rights,
+
+603
+0:24:21,880 --> 0:24:24,880
+ all these relevant people, to hear, okay, how do we find a balance?
+
+604
+0:24:25,880 --> 0:24:29,880
+ How do we find a balance between the Institute's rights and the society's demands on protection?
+
+605
+0:24:29,880 --> 0:24:32,880
+ And I think we've actually reached a really good point.
+
+606
+0:24:32,880 --> 0:24:37,880
+ The process that has been here with the new, that is, the law we adopted last year,
+
+607
+0:24:37,880 --> 0:24:42,880
+ that I'm fully committed to, and that law is much, much better than the one we had before.
+
+608
+0:24:42,880 --> 0:24:45,880
+ When we still made it clear that we wanted to revise some things,
+
+609
+0:24:45,880 --> 0:24:47,880
+ there were some other places I've looked at.
+
+610
+0:24:47,880 --> 0:24:50,880
+ It was more of these new control mechanisms that I've been able to introduce,
+
+611
+0:24:50,880 --> 0:24:54,880
+ with an epidemic commission, with external experts, with openness about the study framework, and all this.
+
+612
+0:24:55,880 --> 0:25:00,880
+ That's what I really want to make sure of when we get to the year after.
+
+613
+0:25:00,880 --> 0:25:03,880
+ That we have something that we need to adapt,
+
+614
+0:25:03,880 --> 0:25:06,880
+ because I'm not sure it was exactly the way we wanted it to be.
+
+615
+0:25:06,880 --> 0:25:08,880
+ And that's the part I'm thinking about.
+
+616
+0:25:08,880 --> 0:25:11,880
+ I'd like to try to switch a little bit of the subject to,
+
+617
+0:25:11,880 --> 0:25:13,880
+ you were already talking about it a while ago,
+
+618
+0:25:13,880 --> 0:25:16,880
+ it was perhaps a question about the declaration of lockdown,
+
+619
+0:25:16,880 --> 0:25:19,880
+ which we've had a lot of trouble with here in the country,
+
+620
+0:25:19,880 --> 0:25:22,880
+ which has now become unlawful for quite a number of occasions,
+
+621
+0:25:22,880 --> 0:25:24,880
+ and which is still going on, so to speak.
+
+622
+0:25:25,880 --> 0:25:27,880
+ It's a bit of a strange thing.
+
+623
+0:25:27,880 --> 0:25:31,880
+ How do you deal with the fact that the police and the Ministry of Justice,
+
+624
+0:25:31,880 --> 0:25:33,880
+ for a long time,
+
+625
+0:25:33,880 --> 0:25:36,880
+ openly believe that we need to have control over the citizens' phones,
+
+626
+0:25:36,880 --> 0:25:39,880
+ that is, who calls whom and where they are,
+
+627
+0:25:39,880 --> 0:25:42,880
+ and insist, and are very hard-headed about,
+
+628
+0:25:42,880 --> 0:25:44,880
+ holding on to this warning?
+
+629
+0:25:44,880 --> 0:25:46,880
+ Do you think we can't avoid that?
+
+630
+0:25:46,880 --> 0:25:50,880
+ Is it necessary for the state to know where the citizens are and who they're talking to?
+
+631
+0:25:50,880 --> 0:25:52,880
+ No, it's not necessary.
+
+632
+0:25:52,880 --> 0:25:54,880
+ And no, I don't mean, of course not,
+
+633
+0:25:55,880 --> 0:25:57,880
+ to overlook the citizens of the country,
+
+634
+0:25:57,880 --> 0:26:00,880
+ just because you might theoretically use it.
+
+635
+0:26:00,880 --> 0:26:03,880
+ You can also discuss whether it is something you can use in practice.
+
+636
+0:26:03,880 --> 0:26:08,880
+ But even if it was, then it doesn't help that we're doing something illegal,
+
+637
+0:26:08,880 --> 0:26:12,880
+ i.e. preserving data, because we might want to use it at a later date.
+
+638
+0:26:12,880 --> 0:26:14,880
+ It's simply not in order.
+
+639
+0:26:14,880 --> 0:26:15,880
+ So I can answer that quite clearly.
+
+640
+0:26:15,880 --> 0:26:17,880
+ No, I don't think we should.
+
+641
+0:26:19,880 --> 0:26:23,880
+ At an unusual time, there is a new declaration of lockdown on the way,
+
+642
+0:26:23,880 --> 0:26:25,880
+ which, as I understand it,
+
+643
+0:26:25,880 --> 0:26:27,880
+ in the past years,
+
+644
+0:26:27,880 --> 0:26:29,880
+ has been put in place by the Ministry of Justice.
+
+645
+0:26:29,880 --> 0:26:31,880
+ You will no longer only lock when you call each other,
+
+646
+0:26:31,880 --> 0:26:33,880
+ because that's obviously the problem,
+
+647
+0:26:33,880 --> 0:26:34,880
+ or when you text each other,
+
+648
+0:26:34,880 --> 0:26:35,880
+ so you will keep that in mind.
+
+649
+0:26:35,880 --> 0:26:38,880
+ On the other hand, you will lock when the phone is just lying passively on a table,
+
+650
+0:26:38,880 --> 0:26:40,880
+ and is registering itself,
+
+651
+0:26:40,880 --> 0:26:43,880
+ which de facto leads to more locking.
+
+652
+0:26:43,880 --> 0:26:46,880
+ Is that something you are already paying attention to,
+
+653
+0:26:46,880 --> 0:26:47,880
+ as IT officer?
+
+654
+0:26:47,880 --> 0:26:50,880
+ Is that something you might want to keep an eye on?
+
+655
+0:26:50,880 --> 0:26:52,880
+ The problem with this, I must say,
+
+656
+0:26:52,880 --> 0:26:54,880
+ has been that it has not been in the hands of me,
+
+657
+0:26:54,880 --> 0:26:57,880
+ nor of our legal advisor,
+
+658
+0:26:57,880 --> 0:27:00,880
+ who has just changed hands again,
+
+659
+0:27:00,880 --> 0:27:01,880
+ as is known.
+
+660
+0:27:01,880 --> 0:27:03,880
+ But it is something I am aware of,
+
+661
+0:27:03,880 --> 0:27:05,880
+ and it is something we are of course doing,
+
+662
+0:27:05,880 --> 0:27:07,880
+ because it is extremely problematic.
+
+663
+0:27:07,880 --> 0:27:10,880
+ I am of the clear conviction
+
+664
+0:27:10,880 --> 0:27:13,880
+ that I would rather have confidence in the future than concern.
+
+665
+0:27:13,880 --> 0:27:17,880
+ I do not subscribe to the idea that more concern creates more freedom.
+
+666
+0:27:17,880 --> 0:27:18,880
+ On the contrary.
+
+667
+0:27:18,880 --> 0:27:21,880
+ And this is, as you yourself say,
+
+668
+0:27:21,880 --> 0:27:23,880
+ it has been known to be illegal,
+
+669
+0:27:23,880 --> 0:27:24,880
+ I do not know how many times,
+
+670
+0:27:24,880 --> 0:27:26,880
+ and the process has been very remarkable,
+
+671
+0:27:26,880 --> 0:27:27,880
+ because it has been thrown into the corner,
+
+672
+0:27:27,880 --> 0:27:28,880
+ saying that something new is coming,
+
+673
+0:27:28,880 --> 0:27:29,880
+ and that is what we expect.
+
+674
+0:27:29,880 --> 0:27:31,880
+ But without being a lawyer,
+
+675
+0:27:31,880 --> 0:27:32,880
+ it is my clear opinion
+
+676
+0:27:32,880 --> 0:27:34,880
+ that there is really nothing to discuss here.
+
+677
+0:27:34,880 --> 0:27:36,880
+ It is not legal.
+
+678
+0:27:36,880 --> 0:27:38,880
+ So we are very aware of that.
+
+679
+0:27:38,880 --> 0:27:42,880
+ And when we will be invited to discuss it further,
+
+680
+0:27:42,880 --> 0:27:43,880
+ I do not know,
+
+681
+0:27:43,880 --> 0:27:44,880
+ but I will have to think about it,
+
+682
+0:27:44,880 --> 0:27:47,880
+ to hear what the process will actually become.
+
+683
+0:27:47,880 --> 0:27:50,880
+ There is a question from some chat here.
+
+684
+0:27:51,880 --> 0:27:53,880
+ So we have received a question from the internet,
+
+685
+0:27:53,880 --> 0:27:54,880
+ where it says,
+
+686
+0:27:54,880 --> 0:27:56,880
+ what is your opinion on the various DNS blockades
+
+687
+0:27:56,880 --> 0:27:57,880
+ that we introduce in Denmark,
+
+688
+0:27:57,880 --> 0:28:00,880
+ for example blockades on websites like gambling?
+
+689
+0:28:00,880 --> 0:28:04,880
+ Is it really necessary to introduce censorship?
+
+690
+0:28:04,880 --> 0:28:10,880
+ Thanks for the question to the internet.
+
+691
+0:28:10,880 --> 0:28:11,880
+ On that day,
+
+692
+0:28:11,880 --> 0:28:12,880
+ no, censorship,
+
+693
+0:28:12,880 --> 0:28:14,880
+ that is something you have to avoid,
+
+694
+0:28:14,880 --> 0:28:16,880
+ but as I understand the problem here,
+
+695
+0:28:16,880 --> 0:28:18,880
+ we also close sides,
+
+696
+0:28:18,880 --> 0:28:20,880
+ such as holding child porn, for example,
+
+697
+0:28:20,880 --> 0:28:21,880
+ and others.
+
+698
+0:28:21,880 --> 0:28:22,880
+ There is no discussion about it,
+
+699
+0:28:22,880 --> 0:28:23,880
+ we do not want it.
+
+700
+0:28:23,880 --> 0:28:25,880
+ If there are other ways to do it,
+
+701
+0:28:25,880 --> 0:28:27,880
+ it is simply not enough in the security of IT
+
+702
+0:28:27,880 --> 0:28:28,880
+ to be the right thing to answer.
+
+703
+0:28:28,880 --> 0:28:30,880
+ So if any of you have any good input there,
+
+704
+0:28:30,880 --> 0:28:31,880
+ then you can get a hold of me,
+
+705
+0:28:31,880 --> 0:28:34,880
+ because I am not smart enough to come up with another solution.
+
+706
+0:28:34,880 --> 0:28:35,880
+ But it is completely up to you,
+
+707
+0:28:35,880 --> 0:28:38,880
+ and it depends on what the question really points to.
+
+708
+0:28:38,880 --> 0:28:40,880
+ How do we make sure that it is not abused?
+
+709
+0:28:40,880 --> 0:28:42,880
+ Because we know that if you say yes to one thing,
+
+710
+0:28:42,880 --> 0:28:44,880
+ then it can be very easy to be used for something
+
+711
+0:28:44,880 --> 0:28:45,880
+ that was not meant,
+
+712
+0:28:45,880 --> 0:28:47,880
+ suddenly closed down on some sides,
+
+713
+0:28:47,880 --> 0:28:49,880
+ where it does not make sense.
+
+714
+0:28:49,880 --> 0:28:50,880
+ And that is of course,
+
+715
+0:28:50,880 --> 0:28:54,880
+ a very important thing to focus on,
+
+716
+0:28:54,880 --> 0:28:57,880
+ that you do not actually impose censorship
+
+717
+0:28:57,880 --> 0:28:59,880
+ of completely legitimate sides.
+
+718
+0:28:59,880 --> 0:29:00,880
+ And as I said,
+
+719
+0:29:00,880 --> 0:29:02,880
+ I do not have a easy answer to it,
+
+720
+0:29:02,880 --> 0:29:03,880
+ but if any of you have any input,
+
+721
+0:29:03,880 --> 0:29:05,880
+ then you are welcome to contact me,
+
+722
+0:29:05,880 --> 0:29:07,880
+ either here now or afterwards.
+
+723
+0:29:07,880 --> 0:29:09,880
+ My email is available,
+
+724
+0:29:09,880 --> 0:29:10,880
+ and you know where I work,
+
+725
+0:29:10,880 --> 0:29:12,880
+ so it should be relatively easy.
+
+726
+0:29:13,880 --> 0:29:15,880
+ I would like to come up with something,
+
+727
+0:29:15,880 --> 0:29:16,880
+ I will also repeat to the audience,
+
+728
+0:29:16,880 --> 0:29:18,880
+ if there are any who have any questions,
+
+729
+0:29:18,880 --> 0:29:19,880
+ then you just wave a little with your arm,
+
+730
+0:29:19,880 --> 0:29:21,880
+ and then you can stand up in front of the microphone,
+
+731
+0:29:21,880 --> 0:29:23,880
+ and then you can ask the question.
+
+732
+0:29:23,880 --> 0:29:24,880
+ But one of the things I was thinking about,
+
+733
+0:29:24,880 --> 0:29:25,880
+ that we might also talk about,
+
+734
+0:29:25,880 --> 0:29:28,880
+ is our relationship to artificial intelligence,
+
+735
+0:29:28,880 --> 0:29:30,880
+ which is something that at the moment
+
+736
+0:29:30,880 --> 0:29:31,880
+ is very popular,
+
+737
+0:29:31,880 --> 0:29:32,880
+ is my impression of it,
+
+738
+0:29:32,880 --> 0:29:33,880
+ within Christiansborg,
+
+739
+0:29:33,880 --> 0:29:34,880
+ and also in the private business world,
+
+740
+0:29:34,880 --> 0:29:36,880
+ as it is what should save us all economically,
+
+741
+0:29:36,880 --> 0:29:38,880
+ and becomes incredibly smart,
+
+742
+0:29:38,880 --> 0:29:39,880
+ and one thing or another,
+
+743
+0:29:39,880 --> 0:29:42,880
+ and there have already been different solutions
+
+744
+0:29:42,880 --> 0:29:44,880
+ out among job centers,
+
+745
+0:29:44,880 --> 0:29:46,880
+ which should evaluate whether you are ready to work,
+
+746
+0:29:46,880 --> 0:29:47,880
+ with the help of machine learning,
+
+747
+0:29:47,880 --> 0:29:48,880
+ and some things like that.
+
+748
+0:29:48,880 --> 0:29:50,880
+ And there have been some systems,
+
+749
+0:29:50,880 --> 0:29:51,880
+ that have been made,
+
+750
+0:29:51,880 --> 0:29:53,880
+ where you should evaluate whether children are exposed,
+
+751
+0:29:53,880 --> 0:29:55,880
+ with the help of artificial intelligence.
+
+752
+0:29:55,880 --> 0:29:56,880
+ How do you think,
+
+753
+0:29:56,880 --> 0:30:00,880
+ that Denmark is grasping this new technology?
+
+754
+0:30:00,880 --> 0:30:01,880
+ Are we doing it right,
+
+755
+0:30:01,880 --> 0:30:03,880
+ or are we just going to test new technology,
+
+756
+0:30:03,880 --> 0:30:06,880
+ on exposed groups?
+
+757
+0:30:07,880 --> 0:30:08,880
+ First of all,
+
+758
+0:30:08,880 --> 0:30:10,880
+ I think there has to be a step
+
+759
+0:30:10,880 --> 0:30:12,880
+ in the use of the terms.
+
+760
+0:30:12,880 --> 0:30:14,880
+ When we talk about artificial intelligence,
+
+761
+0:30:14,880 --> 0:30:15,880
+ it's just that you make a linear regression,
+
+762
+0:30:15,880 --> 0:30:16,880
+ then it is artificial intelligence,
+
+763
+0:30:16,880 --> 0:30:17,880
+ suddenly,
+
+764
+0:30:17,880 --> 0:30:21,880
+ and I think that's a bit of an exaggeration of the concept,
+
+765
+0:30:21,880 --> 0:30:23,880
+ but let it be.
+
+766
+0:30:23,880 --> 0:30:25,880
+ What we are talking about is,
+
+767
+0:30:25,880 --> 0:30:27,880
+ how can we analyze large data sets,
+
+768
+0:30:27,880 --> 0:30:29,880
+ and find answers to specific questions.
+
+769
+0:30:29,880 --> 0:30:30,880
+ There is no doubt about it,
+
+770
+0:30:30,880 --> 0:30:31,880
+ that's also what I've been doing,
+
+771
+0:30:31,880 --> 0:30:32,880
+ you mentioned some of the places,
+
+772
+0:30:32,880 --> 0:30:33,880
+ where I have worked before,
+
+773
+0:30:33,880 --> 0:30:34,880
+ that's what I've been doing,
+
+774
+0:30:34,880 --> 0:30:35,880
+ mostly throughout my career,
+
+775
+0:30:35,880 --> 0:30:38,880
+ there has been some form of artificial intelligence,
+
+776
+0:30:38,880 --> 0:30:39,880
+ machine learning,
+
+777
+0:30:39,880 --> 0:30:40,880
+ analysis of large data sets,
+
+778
+0:30:40,880 --> 0:30:43,880
+ answering questions about patients,
+
+779
+0:30:43,880 --> 0:30:44,880
+ or the effects of medicine,
+
+780
+0:30:44,880 --> 0:30:45,880
+ or whatever it may be.
+
+781
+0:30:45,880 --> 0:30:46,880
+ And it works,
+
+782
+0:30:46,880 --> 0:30:48,880
+ there is a reason why we use it
+
+783
+0:30:48,880 --> 0:30:49,880
+ so much in the research world.
+
+784
+0:30:49,880 --> 0:30:51,880
+ It is clear that it can be used
+
+785
+0:30:51,880 --> 0:30:52,880
+ really, really well.
+
+786
+0:30:52,880 --> 0:30:54,880
+ You just have to know what you are doing,
+
+787
+0:30:54,880 --> 0:30:56,880
+ and you have to know that
+
+788
+0:30:56,880 --> 0:30:58,880
+ when you use such a black box,
+
+789
+0:30:58,880 --> 0:31:00,880
+ there is often built-in,
+
+790
+0:31:00,880 --> 0:31:01,880
+ not consciously,
+
+791
+0:31:01,880 --> 0:31:02,880
+ but there can be,
+
+792
+0:31:02,880 --> 0:31:03,880
+ what is it called in Danish,
+
+793
+0:31:03,880 --> 0:31:05,880
+ biases in it.
+
+794
+0:31:05,880 --> 0:31:07,880
+ You get the answers,
+
+795
+0:31:07,880 --> 0:31:10,880
+ that the model is made to give.
+
+796
+0:31:10,880 --> 0:31:13,880
+ And that recognition is quite important,
+
+797
+0:31:13,880 --> 0:31:15,880
+ to get out there and say,
+
+798
+0:31:15,880 --> 0:31:18,880
+ it is not a silver bullet,
+
+799
+0:31:18,880 --> 0:31:20,880
+ that solves all our problems.
+
+800
+0:31:20,880 --> 0:31:21,880
+ I have said earlier,
+
+801
+0:31:21,880 --> 0:31:23,880
+ when I discussed this in the health area,
+
+802
+0:31:23,880 --> 0:31:25,880
+ that I do not want my doctor
+
+803
+0:31:25,880 --> 0:31:27,880
+ to be replaced by a computer.
+
+804
+0:31:27,880 --> 0:31:29,880
+ I would like my doctor to use a computer
+
+805
+0:31:29,880 --> 0:31:34,880
+ to assist and to qualify her offer to me,
+
+806
+0:31:34,880 --> 0:31:36,880
+ but I would like to have the human factor in it,
+
+807
+0:31:36,880 --> 0:31:38,880
+ I would like to have the expertise in it.
+
+808
+0:31:38,880 --> 0:31:40,880
+ But of course you can use this as a tool.
+
+809
+0:31:40,880 --> 0:31:43,880
+ So it is a good thing to use the data you have,
+
+810
+0:31:43,880 --> 0:31:45,880
+ to become smarter and do things better.
+
+811
+0:31:45,880 --> 0:31:47,880
+ There is no doubt about that.
+
+812
+0:31:47,880 --> 0:31:49,880
+ You just have to do it right,
+
+813
+0:31:49,880 --> 0:31:51,880
+ and be aware of the fall groups there are.
+
+814
+0:31:51,880 --> 0:31:53,880
+ Then you ask if you use it to,
+
+815
+0:31:53,880 --> 0:31:55,880
+ if you test it on the outside.
+
+816
+0:31:55,880 --> 0:31:57,880
+ In Gladsaxe municipality,
+
+817
+0:31:57,880 --> 0:31:58,880
+ I think it was,
+
+818
+0:31:58,880 --> 0:31:59,880
+ where you had,
+
+819
+0:31:59,880 --> 0:32:00,880
+ which actually shows some of the problems,
+
+820
+0:32:00,880 --> 0:32:01,880
+ I have just mentioned,
+
+821
+0:32:01,880 --> 0:32:02,880
+ where you used it to see,
+
+822
+0:32:02,880 --> 0:32:04,880
+ what was it,
+
+823
+0:32:04,880 --> 0:32:05,880
+ vulnerable citizens,
+
+824
+0:32:05,880 --> 0:32:06,880
+ so you could catch them beforehand,
+
+825
+0:32:06,880 --> 0:32:07,880
+ and you can say,
+
+826
+0:32:07,880 --> 0:32:08,880
+ the thought behind,
+
+827
+0:32:08,880 --> 0:32:10,880
+ if you saw it was sympathetic in some way,
+
+828
+0:32:10,880 --> 0:32:12,880
+ we can quickly find those who need help,
+
+829
+0:32:12,880 --> 0:32:13,880
+ and help them.
+
+830
+0:32:13,880 --> 0:32:14,880
+ But it just shows,
+
+831
+0:32:14,880 --> 0:32:16,880
+ that the parameters you chose to use,
+
+832
+0:32:16,880 --> 0:32:17,880
+ just,
+
+833
+0:32:17,880 --> 0:32:18,880
+ yes,
+
+834
+0:32:18,880 --> 0:32:20,880
+ just brought some very specific groups forward,
+
+835
+0:32:20,880 --> 0:32:22,880
+ because that was what you asked for.
+
+836
+0:32:22,880 --> 0:32:23,880
+ So you had not thought through,
+
+837
+0:32:23,880 --> 0:32:24,880
+ what it really was for a model,
+
+838
+0:32:24,880 --> 0:32:25,880
+ you made down over it.
+
+839
+0:32:25,880 --> 0:32:27,880
+ And you are not aware of that.
+
+840
+0:32:27,880 --> 0:32:28,880
+ So,
+
+841
+0:32:28,880 --> 0:32:29,880
+ to answer the question,
+
+842
+0:32:29,880 --> 0:32:31,880
+ if we do it right in Denmark,
+
+843
+0:32:31,880 --> 0:32:32,880
+ it would be much,
+
+844
+0:32:32,880 --> 0:32:33,880
+ much better,
+
+845
+0:32:33,880 --> 0:32:34,880
+ if we gathered people,
+
+846
+0:32:34,880 --> 0:32:35,880
+ who actually know something about it.
+
+847
+0:32:35,880 --> 0:32:36,880
+ Both,
+
+848
+0:32:36,880 --> 0:32:37,880
+ those who sit with the algorithms,
+
+849
+0:32:37,880 --> 0:32:39,880
+ but also for some data-technical reasons,
+
+850
+0:32:39,880 --> 0:32:40,880
+ to discuss,
+
+851
+0:32:40,880 --> 0:32:41,880
+ what are the implications,
+
+852
+0:32:41,880 --> 0:32:42,880
+ of what it could be,
+
+853
+0:32:42,880 --> 0:32:44,880
+ in these different areas.
+
+854
+0:32:44,880 --> 0:32:45,880
+ So,
+
+855
+0:32:45,880 --> 0:32:46,880
+ if we do it right,
+
+856
+0:32:46,880 --> 0:32:47,880
+ then I think,
+
+857
+0:32:47,880 --> 0:32:48,880
+ there is a huge potential in this.
+
+858
+0:32:48,880 --> 0:32:49,880
+ It depends on,
+
+859
+0:32:49,880 --> 0:32:50,880
+ what you put in the words here.
+
+860
+0:32:50,880 --> 0:32:51,880
+ Because,
+
+861
+0:32:51,880 --> 0:32:52,880
+ as I say,
+
+862
+0:32:52,880 --> 0:32:53,880
+ I think,
+
+863
+0:32:53,880 --> 0:32:54,880
+ first of all,
+
+864
+0:32:54,880 --> 0:32:55,880
+ we call everything,
+
+865
+0:32:55,880 --> 0:32:56,880
+ for artificial intelligence today,
+
+866
+0:32:56,880 --> 0:32:57,880
+ but let's just accept,
+
+867
+0:32:57,880 --> 0:32:58,880
+ what we openly call it.
+
+868
+0:32:58,880 --> 0:32:59,880
+ So,
+
+869
+0:32:59,880 --> 0:33:00,880
+ it can be used,
+
+870
+0:33:00,880 --> 0:33:01,880
+ really,
+
+871
+0:33:01,880 --> 0:33:02,880
+ really well.
+
+872
+0:33:02,880 --> 0:33:03,880
+ So,
+
+873
+0:33:03,880 --> 0:33:04,880
+ when we talk about,
+
+874
+0:33:04,880 --> 0:33:05,880
+ the green setting,
+
+875
+0:33:05,880 --> 0:33:06,880
+ for example.
+
+876
+0:33:06,880 --> 0:33:07,880
+ There is a lot of focus on,
+
+877
+0:33:07,880 --> 0:33:08,880
+ how can we use data,
+
+878
+0:33:08,880 --> 0:33:09,880
+ with how many running,
+
+879
+0:33:09,880 --> 0:33:10,880
+ at that time.
+
+880
+0:33:10,880 --> 0:33:11,880
+ Can we optimize something here,
+
+881
+0:33:11,880 --> 0:33:12,880
+ so that we,
+
+882
+0:33:12,880 --> 0:33:13,880
+ use energy in construction,
+
+883
+0:33:13,880 --> 0:33:14,880
+ and better.
+
+884
+0:33:14,880 --> 0:33:15,880
+ All kinds of,
+
+885
+0:33:15,880 --> 0:33:16,880
+ there are all kinds of good things,
+
+886
+0:33:16,880 --> 0:33:17,880
+ you can do with this.
+
+887
+0:33:17,880 --> 0:33:18,880
+ You can also just easily,
+
+888
+0:33:18,880 --> 0:33:19,880
+ come to,
+
+889
+0:33:19,880 --> 0:33:20,880
+ also unconsciously,
+
+890
+0:33:20,880 --> 0:33:21,880
+ to abuse it.
+
+891
+0:33:21,880 --> 0:33:22,880
+ And you have to be,
+
+892
+0:33:22,880 --> 0:33:23,880
+ very careful about that.
+
+893
+0:33:23,880 --> 0:33:24,880
+ And that again,
+
+894
+0:33:24,880 --> 0:33:25,880
+ if we talk about,
+
+895
+0:33:25,880 --> 0:33:26,880
+ open source earlier.
+
+896
+0:33:26,880 --> 0:33:27,880
+ Especially here,
+
+897
+0:33:27,880 --> 0:33:28,880
+ it is extremely important,
+
+898
+0:33:28,880 --> 0:33:29,880
+ to be open about,
+
+899
+0:33:29,880 --> 0:33:30,880
+ what it is for a model,
+
+900
+0:33:30,880 --> 0:33:31,880
+ you use.
+
+901
+0:33:31,880 --> 0:33:32,880
+ What are the parameters,
+
+902
+0:33:32,880 --> 0:33:33,880
+ you use.
+
+903
+0:33:33,880 --> 0:33:34,880
+ Because this idea,
+
+904
+0:33:34,880 --> 0:33:35,880
+ if you just try something,
+
+905
+0:33:35,880 --> 0:33:36,880
+ down a black box,
+
+906
+0:33:36,880 --> 0:33:37,880
+ and get the answer out again,
+
+907
+0:33:37,880 --> 0:33:38,880
+ it is extremely dangerous.
+
+908
+0:33:38,880 --> 0:33:39,880
+ It is very important,
+
+909
+0:33:39,880 --> 0:33:40,880
+ to be open about,
+
+910
+0:33:40,880 --> 0:33:41,880
+ how to catch these,
+
+911
+0:33:41,880 --> 0:33:42,880
+ potential errors,
+
+912
+0:33:42,880 --> 0:33:43,880
+ or biases,
+
+913
+0:33:43,880 --> 0:33:44,880
+ that might be.
+
+914
+0:33:44,880 --> 0:33:45,880
+ Question here.
+
+915
+0:33:45,880 --> 0:33:46,880
+ Yes,
+
+916
+0:33:46,880 --> 0:33:47,880
+ I have no questions,
+
+917
+0:33:47,880 --> 0:33:48,880
+ but only a comment.
+
+918
+0:33:48,880 --> 0:33:49,880
+ So,
+
+919
+0:33:49,880 --> 0:33:50,880
+ I come from Germany,
+
+920
+0:33:50,880 --> 0:33:51,880
+ and we have had,
+
+921
+0:33:51,880 --> 0:33:52,880
+ also discussion,
+
+922
+0:33:52,880 --> 0:33:53,880
+ about,
+
+923
+0:33:53,880 --> 0:33:54,880
+ internet blocking,
+
+924
+0:33:54,880 --> 0:33:55,880
+ against,
+
+925
+0:33:55,880 --> 0:33:56,880
+ child pornography.
+
+926
+0:33:56,880 --> 0:33:57,880
+ And,
+
+927
+0:33:57,880 --> 0:33:58,880
+ the development,
+
+928
+0:33:58,880 --> 0:33:59,880
+ was,
+
+929
+0:33:59,880 --> 0:34:00,880
+ that,
+
+930
+0:34:00,880 --> 0:34:01,880
+ in the end,
+
+931
+0:34:01,880 --> 0:34:02,880
+ we stopped,
+
+932
+0:34:02,880 --> 0:34:03,880
+ the loan.
+
+933
+0:34:03,880 --> 0:34:04,880
+ We have decided,
+
+934
+0:34:04,880 --> 0:34:05,880
+ that we will not have,
+
+935
+0:34:05,880 --> 0:34:06,880
+ censorship,
+
+936
+0:34:06,880 --> 0:34:07,880
+ we will not have,
+
+937
+0:34:07,880 --> 0:34:08,880
+ DNS blockades.
+
+938
+0:34:08,880 --> 0:34:09,880
+ We have,
+
+939
+0:34:09,880 --> 0:34:10,880
+ a lot of,
+
+940
+0:34:10,880 --> 0:34:11,880
+ decisions,
+
+941
+0:34:11,880 --> 0:34:12,880
+ that are,
+
+942
+0:34:12,880 --> 0:34:13,880
+ more effective,
+
+943
+0:34:13,880 --> 0:34:14,880
+ than,
+
+944
+0:34:14,880 --> 0:34:15,880
+ illegal,
+
+945
+0:34:15,880 --> 0:34:16,880
+ content.
+
+946
+0:34:16,880 --> 0:34:17,880
+ I see,
+
+947
+0:34:17,880 --> 0:34:18,880
+ that,
+
+948
+0:34:18,880 --> 0:34:19,880
+ it is,
+
+949
+0:34:19,880 --> 0:34:20,880
+ in,
+
+950
+0:34:20,880 --> 0:34:21,880
+ all cases,
+
+951
+0:34:21,880 --> 0:34:22,880
+ possible,
+
+952
+0:34:22,880 --> 0:34:23,880
+ to,
+
+953
+0:34:23,880 --> 0:34:24,880
+ write,
+
+954
+0:34:24,880 --> 0:34:25,880
+ to,
+
+955
+0:34:25,880 --> 0:34:26,880
+ hosting companies,
+
+956
+0:34:26,880 --> 0:34:27,880
+ so that,
+
+957
+0:34:27,880 --> 0:34:28,880
+ content,
+
+958
+0:34:28,880 --> 0:34:29,880
+ will be,
+
+959
+0:34:29,880 --> 0:34:30,880
+ stolen.
+
+960
+0:34:30,880 --> 0:34:31,880
+ We have,
+
+961
+0:34:31,880 --> 0:34:32,880
+ not had,
+
+962
+0:34:32,880 --> 0:34:33,880
+ discussions,
+
+963
+0:34:33,880 --> 0:34:34,880
+ about gambling,
+
+964
+0:34:34,880 --> 0:34:35,880
+ in,
+
+965
+0:34:35,880 --> 0:34:36,880
+ Germany.
+
+966
+0:34:36,880 --> 0:34:37,880
+ So,
+
+967
+0:34:37,880 --> 0:34:38,880
+ I don't want,
+
+968
+0:34:38,880 --> 0:34:39,880
+ to be,
+
+969
+0:34:39,880 --> 0:34:40,880
+ involved,
+
+970
+0:34:40,880 --> 0:34:41,880
+ in,
+
+971
+0:34:41,880 --> 0:34:42,880
+ child pornography,
+
+972
+0:34:42,880 --> 0:34:43,880
+ because,
+
+973
+0:34:43,880 --> 0:34:44,880
+ it is,
+
+974
+0:34:44,880 --> 0:34:45,880
+ very,
+
+975
+0:34:45,880 --> 0:34:46,880
+ effective,
+
+976
+0:34:46,880 --> 0:34:47,880
+ to,
+
+977
+0:34:47,880 --> 0:34:48,880
+ delete,
+
+978
+0:34:48,880 --> 0:34:49,880
+ content,
+
+979
+0:34:49,880 --> 0:34:50,880
+ instead,
+
+980
+0:34:50,880 --> 0:34:51,880
+ of,
+
+981
+0:34:51,880 --> 0:34:52,880
+ blocking,
+
+982
+0:34:52,880 --> 0:34:53,880
+ them.
+
+983
+0:34:53,880 --> 0:34:54,880
+ Thank you.
+
+984
+0:34:54,880 --> 0:34:55,880
+ Thank you.
+
+985
+0:34:55,880 --> 0:34:56,880
+ It is,
+
+986
+0:34:56,880 --> 0:34:57,880
+ noted.
+
+987
+0:34:57,880 --> 0:34:58,880
+ So,
+
+988
+0:34:58,880 --> 0:34:59,880
+ another,
+
+989
+0:34:59,880 --> 0:35:00,880
+ area,
+
+990
+0:35:00,880 --> 0:35:01,880
+ that,
+
+991
+0:35:01,880 --> 0:35:02,880
+ we,
+
+992
+0:35:02,880 --> 0:35:03,880
+ just,
+
+993
+0:35:03,880 --> 0:35:04,880
+ should,
+
+994
+0:35:04,880 --> 0:35:05,880
+ round,
+
+995
+0:35:05,880 --> 0:35:06,880
+ here,
+
+996
+0:35:06,880 --> 0:35:07,880
+ towards,
+
+997
+0:35:07,880 --> 0:35:08,880
+ we have,
+
+998
+0:35:08,880 --> 0:35:09,880
+ the so-called,
+
+999
+0:35:09,880 --> 0:35:10,880
+ face recognition,
+
+1000
+0:35:10,880 --> 0:35:11,880
+ which,
+
+1001
+0:35:11,880 --> 0:35:12,880
+ among other things,
+
+1002
+0:35:12,880 --> 0:35:13,880
+ you try to control,
+
+1003
+0:35:13,880 --> 0:35:14,880
+ in the EU.
+
+1004
+0:35:14,880 --> 0:35:15,880
+ A few years ago,
+
+1005
+0:35:15,880 --> 0:35:16,880
+ there,
+
+1006
+0:35:16,880 --> 0:35:17,880
+ tried,
+
+1007
+0:35:17,880 --> 0:35:18,880
+ alternatives,
+
+1008
+0:35:18,880 --> 0:35:19,880
+ I think it was,
+
+1009
+0:35:19,880 --> 0:35:20,880
+ they tried,
+
+1010
+0:35:20,880 --> 0:35:21,880
+ to get the parliament,
+
+1011
+0:35:21,880 --> 0:35:22,880
+ to go,
+
+1012
+0:35:22,880 --> 0:35:23,880
+ completely,
+
+1013
+0:35:23,880 --> 0:35:24,880
+ against,
+
+1014
+0:35:24,880 --> 0:35:25,880
+ face recognition,
+
+1015
+0:35:25,880 --> 0:35:26,880
+ in the public,
+
+1016
+0:35:26,880 --> 0:35:27,880
+ room.
+
+1017
+0:35:27,880 --> 0:35:28,880
+ So,
+
+1018
+0:35:28,880 --> 0:35:29,880
+ in general,
+
+1019
+0:35:29,880 --> 0:35:30,880
+ they tried,
+
+1020
+0:35:30,880 --> 0:35:31,880
+ to get a ban,
+
+1021
+0:35:31,880 --> 0:35:32,880
+ against,
+
+1022
+0:35:32,880 --> 0:35:33,880
+ that,
+
+1023
+0:35:33,880 --> 0:35:34,880
+ it could,
+
+1024
+0:35:34,880 --> 0:35:35,880
+ be used,
+
+1025
+0:35:35,880 --> 0:35:36,880
+ out there.
+
+1026
+0:35:36,880 --> 0:35:37,880
+ How,
+
+1027
+0:35:37,880 --> 0:35:38,880
+ do,
+
+1028
+0:35:38,880 --> 0:35:39,880
+ you,
+
+1029
+0:35:39,880 --> 0:35:40,880
+ deal,
+
+1030
+0:35:40,880 --> 0:35:41,880
+ with,
+
+1031
+0:35:41,880 --> 0:35:42,880
+ this,
+
+1032
+0:35:42,880 --> 0:35:43,880
+ with,
+
+1033
+0:35:43,880 --> 0:35:44,880
+ that,
+
+1034
+0:35:44,880 --> 0:35:45,880
+ one,
+
+1035
+0:35:45,880 --> 0:35:46,880
+ can,
+
+1036
+0:35:46,880 --> 0:35:47,880
+ be,
+
+1037
+0:35:47,880 --> 0:35:48,880
+ recognized,
+
+1038
+0:35:48,880 --> 0:35:49,880
+ and,
+
+1039
+0:35:49,880 --> 0:35:50,880
+ maybe,
+
+1040
+0:35:50,880 --> 0:35:51,880
+ profiled,
+
+1041
+0:35:51,880 --> 0:35:52,880
+ in the,
+
+1042
+0:35:52,880 --> 0:35:53,880
+ public,
+
+1043
+0:35:53,880 --> 0:35:54,880
+ room?
+
+1044
+0:35:54,880 --> 0:35:55,880
+ I,
+
+1045
+0:35:55,880 --> 0:35:56,880
+ can,
+
+1046
+0:35:56,880 --> 0:35:57,880
+ remember,
+
+1047
+0:35:57,880 --> 0:35:58,880
+ that,
+
+1048
+0:35:58,880 --> 0:35:59,880
+ discussion.
+
+1049
+0:35:59,880 --> 0:36:00,880
+ We,
+
+1050
+0:36:00,880 --> 0:36:01,880
+ have,
+
+1051
+0:36:01,880 --> 0:36:02,880
+ there,
+
+1052
+0:36:02,880 --> 0:36:03,880
+ is,
+
+1053
+0:36:03,880 --> 0:36:04,880
+ a professor,
+
+1054
+0:36:04,880 --> 0:36:05,880
+ in,
+
+1055
+0:36:05,880 --> 0:36:06,880
+ the,
+
+1056
+0:36:06,880 --> 0:36:08,880
+ council,
+
+1057
+0:36:08,880 --> 0:36:09,880
+ of,
+
+1058
+0:36:09,880 --> 0:36:11,880
+ the,
+
+1059
+0:36:11,880 --> 0:36:13,880
+ public,
+
+1060
+0:36:13,880 --> 0:36:14,880
+ the,
+
+1061
+0:36:14,880 --> 0:36:15,880
+ public,
+
+1062
+0:36:15,880 --> 0:36:16,880
+ the,
+
+1063
+0:36:16,880 --> 0:36:17,880
+ of,
+
+1064
+0:36:17,880 --> 0:36:18,880
+ the,
+
+1065
+0:36:18,880 --> 0:36:19,880
+ public,
+
+1066
+0:36:19,880 --> 0:36:20,880
+ the,
+
+1067
+0:36:20,880 --> 0:36:21,880
+ of,
+
+1068
+0:36:21,880 --> 0:36:22,880
+ research,
+
+1069
+0:36:22,880 --> 0:36:23,880
+ of,
+
+1070
+0:36:23,880 --> 0:36:24,880
+ the,
+
+1071
+0:36:24,880 --> 0:36:25,880
+ of,
+
+1072
+0:36:25,880 --> 0:36:26,880
+ of,
+
+1073
+0:36:26,880 --> 0:36:27,880
+ the,
+
+1074
+0:36:27,880 --> 0:36:28,880
+ of,
+
+1075
+0:36:28,880 --> 0:36:29,880
+ the,
+
+1076
+0:36:29,880 --> 0:36:30,880
+ of,
+
+1077
+0:36:30,880 --> 0:36:31,880
+ of,
+
+1078
+0:36:31,880 --> 0:36:32,880
+ the,
+
+1079
+0:36:32,880 --> 0:36:33,880
+ the,
+
+1080
+0:36:33,880 --> 0:36:34,880
+ the,
+
+1081
+0:36:34,880 --> 0:36:39,880
+ It was something with the wording around it.
+
+1082
+0:36:39,880 --> 0:36:43,880
+ Because the thing with the overwintering, if you think of the public space as something down the street,
+
+1083
+0:36:43,880 --> 0:36:46,880
+ I would have a very, very bad feeling about it.
+
+1084
+0:36:46,880 --> 0:36:48,880
+ That we just have facial recognition in some places.
+
+1085
+0:36:48,880 --> 0:36:51,880
+ I can't see why we should have that.
+
+1086
+0:36:51,880 --> 0:36:59,880
+ But as I understood it, the problem was that you cut off places where there could be good reasons for it.
+
+1087
+0:36:59,880 --> 0:37:05,880
+ And I also heard people who worked with this say that it was simply too clumsy.
+
+1088
+0:37:05,880 --> 0:37:08,880
+ So as I understood it, that was the discussion that went on at the time.
+
+1089
+0:37:08,880 --> 0:37:11,880
+ Without remembering all the details.
+
+1090
+0:37:11,880 --> 0:37:13,880
+ You are opposed to it, I can understand that.
+
+1091
+0:37:13,880 --> 0:37:15,880
+ Excuse me, what did you say?
+
+1092
+0:37:15,880 --> 0:37:17,880
+ You are opposed to it.
+
+1093
+0:37:17,880 --> 0:37:18,880
+ To what?
+
+1094
+0:37:18,880 --> 0:37:20,880
+ Overwintering in the public space with facial recognition.
+
+1095
+0:37:20,880 --> 0:37:21,880
+ Yes.
+
+1096
+0:37:21,880 --> 0:37:27,880
+ As you were saying earlier, in relation to the Nikkei Group's famous claim that overwintering is freedom,
+
+1097
+0:37:27,880 --> 0:37:29,880
+ you think that it is not.
+
+1098
+0:37:29,880 --> 0:37:32,880
+ But how else should we relate to this?
+
+1099
+0:37:32,880 --> 0:37:33,880
+ There is a great need.
+
+1100
+0:37:33,880 --> 0:37:35,880
+ People have a need for security.
+
+1101
+0:37:35,880 --> 0:37:41,880
+ Should there be a little bit of overwintering or are we already far over where we should be?
+
+1102
+0:37:41,880 --> 0:37:44,880
+ Well, of course there is a certain degree of overwintering.
+
+1103
+0:37:44,880 --> 0:37:50,880
+ When you live in a democracy, we give some of our freedom, so to speak, in order to get some security in return.
+
+1104
+0:37:50,880 --> 0:37:52,880
+ That's what the agreement is.
+
+1105
+0:37:52,880 --> 0:37:54,880
+ That's what our social contract is.
+
+1106
+0:37:54,880 --> 0:37:58,880
+ You can't just choose which side you want to drive on the street or where you want to drive.
+
+1107
+0:37:58,880 --> 0:37:59,880
+ There are rules for that.
+
+1108
+0:37:59,880 --> 0:38:03,880
+ On the other hand, you can also make sure that the others do the same.
+
+1109
+0:38:03,880 --> 0:38:05,880
+ And that's the way it works.
+
+1110
+0:38:05,880 --> 0:38:07,880
+ You are not completely free.
+
+1111
+0:38:07,880 --> 0:38:09,880
+ We have a penalty law in Denmark, for example.
+
+1112
+0:38:09,880 --> 0:38:11,880
+ You can't just do whatever you want.
+
+1113
+0:38:11,880 --> 0:38:13,880
+ So some permits have to be taken into account.
+
+1114
+0:38:13,880 --> 0:38:15,880
+ And therefore, of course, we use overwintering.
+
+1115
+0:38:15,880 --> 0:38:17,880
+ Now I mentioned banks before.
+
+1116
+0:38:17,880 --> 0:38:20,880
+ That's a place where we do it and where people can understand why we do it.
+
+1117
+0:38:20,880 --> 0:38:22,880
+ Or train stations or other places.
+
+1118
+0:38:22,880 --> 0:38:28,880
+ But where I think the problem arises with Nick, for example, is that you just think we should just have more cameras on.
+
+1119
+0:38:28,880 --> 0:38:29,880
+ Everywhere.
+
+1120
+0:38:29,880 --> 0:38:31,880
+ And then it gets even better.
+
+1121
+0:38:31,880 --> 0:38:34,880
+ When we now hear people who actually know about this say, well, it just doesn't fit.
+
+1122
+0:38:34,880 --> 0:38:36,880
+ That's not how we solve the problems.
+
+1123
+0:38:36,880 --> 0:38:38,880
+ There are other underlying problems we need to take care of.
+
+1124
+0:38:38,880 --> 0:38:42,880
+ The idea of just overwintering all citizens more.
+
+1125
+0:38:42,880 --> 0:38:44,880
+ Because then we can catch someone who does something.
+
+1126
+0:38:44,880 --> 0:38:46,880
+ That's simply not the way to do it.
+
+1127
+0:38:46,880 --> 0:38:50,880
+ And I think I listen a lot to those who actually know something about what they're talking about.
+
+1128
+0:38:50,880 --> 0:38:53,880
+ And when we can hear from them, it's not a tool they think makes sense.
+
+1129
+0:38:53,880 --> 0:38:56,880
+ Well, then I don't think we should do that.
+
+1130
+0:38:56,880 --> 0:39:02,880
+ Even if they say, well, if we just overwinter all our citizens completely with cameras and we overwinter their phones,
+
+1131
+0:39:02,880 --> 0:39:05,880
+ then we can stop all criminal activities.
+
+1132
+0:39:05,880 --> 0:39:07,880
+ Even then I would be against it.
+
+1133
+0:39:07,880 --> 0:39:10,880
+ Because it's simply too far to go.
+
+1134
+0:39:10,880 --> 0:39:14,880
+ We have to, as I said before, you give some of your freedom when you live in a democratic society,
+
+1135
+0:39:14,880 --> 0:39:16,880
+ in order to get some rights.
+
+1136
+0:39:16,880 --> 0:39:18,880
+ But you shouldn't give it all.
+
+1137
+0:39:18,880 --> 0:39:19,880
+ Then it's not a democracy anymore.
+
+1138
+0:39:19,880 --> 0:39:20,880
+ Then it's a different type of society.
+
+1139
+0:39:20,880 --> 0:39:22,880
+ And I wouldn't want to live in that.
+
+1140
+0:39:22,880 --> 0:39:25,880
+ I want to hear if there's more from the audience.
+
+1141
+0:39:26,880 --> 0:39:28,880
+ Is there anything from the internet?
+
+1142
+0:39:28,880 --> 0:39:30,880
+ There's a question coming in here.
+
+1143
+0:39:34,880 --> 0:39:37,880
+ Hi, I'm from the USA.
+
+1144
+0:39:37,880 --> 0:39:42,880
+ And I would like to ask about what we mean by security.
+
+1145
+0:39:42,880 --> 0:39:48,880
+ Because it looks to me as if Denmark already has a lot of security.
+
+1146
+0:39:48,880 --> 0:39:54,880
+ And if what we already have isn't enough, what is enough?
+
+1147
+0:39:56,880 --> 0:39:57,880
+ That's exactly it.
+
+1148
+0:39:57,880 --> 0:40:00,880
+ And I actually think that the premise of a lot of this that has been discussed earlier,
+
+1149
+0:40:00,880 --> 0:40:03,880
+ not here, but in the debate,
+
+1150
+0:40:03,880 --> 0:40:07,880
+ because you get the impression that it's insanely dangerous to walk down the street in Denmark,
+
+1151
+0:40:07,880 --> 0:40:11,880
+ and you get shot down and overrun and shot and raped wherever you go.
+
+1152
+0:40:11,880 --> 0:40:12,880
+ That's not true.
+
+1153
+0:40:12,880 --> 0:40:15,880
+ We have an extremely secure society, an extremely safe society.
+
+1154
+0:40:15,880 --> 0:40:18,880
+ And all statistics indicate that it's going the right way.
+
+1155
+0:40:18,880 --> 0:40:24,880
+ And when it's going the right way, it's really hard for people to introduce even more overwintering.
+
+1156
+0:40:24,880 --> 0:40:25,880
+ Because then we don't have a problem.
+
+1157
+0:40:25,880 --> 0:40:30,880
+ And that applies in general to an incredibly large number of political areas,
+
+1158
+0:40:30,880 --> 0:40:33,880
+ not just when we're talking about rape and violence and that sort of thing.
+
+1159
+0:40:33,880 --> 0:40:39,880
+ We have to say, okay, is there ever a problem before we start making new laws or something else to solve it?
+
+1160
+0:40:39,880 --> 0:40:42,880
+ Because if there's not a problem, then maybe we should use the time for something else.
+
+1161
+0:40:42,880 --> 0:40:44,880
+ I completely agree with you.
+
+1162
+0:40:44,880 --> 0:40:49,880
+ My impression is not that we live in an unfit society where there is a need for even more tools,
+
+1163
+0:40:49,880 --> 0:40:53,880
+ even more surveillance, even more to the police and police services.
+
+1164
+0:40:53,880 --> 0:40:54,880
+ Not at all.
+
+1165
+0:40:54,880 --> 0:40:58,880
+ On the contrary, we have a secure society, and we have to take care of that.
+
+1166
+0:40:58,880 --> 0:41:03,880
+ And I was a little worried when we were talking about corona laws and epidemic laws and all this earlier,
+
+1167
+0:41:03,880 --> 0:41:11,880
+ that you're going to create a problem for yourself as a society by breathing into a fire and digging some holes
+
+1168
+0:41:11,880 --> 0:41:17,880
+ and creating a real resistance against some of the approaches that are coming.
+
+1169
+0:41:17,880 --> 0:41:22,880
+ Then you start to get an unfit society, and I think you have to be very careful about that.
+
+1170
+0:41:22,880 --> 0:41:27,880
+ And I think there's a reason to introduce rules just to do it.
+
+1171
+0:41:27,880 --> 0:41:29,880
+ It has to have a purpose.
+
+1172
+0:41:29,880 --> 0:41:32,880
+ And here I think it's starting to become counterproductive, actually.
+
+1173
+0:41:32,880 --> 0:41:37,880
+ I was speculating that you, Esther, have been here for a little over a year.
+
+1174
+0:41:37,880 --> 0:41:42,880
+ We've had a big scandal here in Denmark, which is that the Defense Intelligence Service
+
+1175
+0:41:42,880 --> 0:41:46,880
+ allegedly has some collaborations with the American Intelligence Service, NSA.
+
+1176
+0:41:46,880 --> 0:41:51,880
+ There's always some commission work and something that needs to investigate these things.
+
+1177
+0:41:51,880 --> 0:41:59,880
+ But I was just thinking, in general, how do you think we should cooperate with a country like the USA?
+
+1178
+0:41:59,880 --> 0:42:03,880
+ Well, in general, yes. We cooperate with our allies.
+
+1179
+0:42:03,880 --> 0:42:07,880
+ But of course it has to be done in a legal way and in a responsible way.
+
+1180
+0:42:07,880 --> 0:42:10,880
+ But I don't sit in those areas anymore.
+
+1181
+0:42:10,880 --> 0:42:15,880
+ I can't imagine a world where we don't cooperate with the Defense Intelligence Service of other countries.
+
+1182
+0:42:15,880 --> 0:42:17,880
+ It happens all the time.
+
+1183
+0:42:17,880 --> 0:42:21,880
+ But it's clear, when there's a case where you can see that it's being abused,
+
+1184
+0:42:21,880 --> 0:42:26,880
+ then it creates a serious concern and criticism of the collaboration.
+
+1185
+0:42:26,880 --> 0:42:29,880
+ So, when you give...
+
+1186
+0:42:29,880 --> 0:42:33,880
+ I was going to quote Spider-Man...
+
+1187
+0:42:33,880 --> 0:42:36,880
+ I feel it's also a big responsibility, but it does happen.
+
+1188
+0:42:36,880 --> 0:42:42,880
+ And when you allow this to open up for some things, then it has to be used for what's relevant to everything else.
+
+1189
+0:42:42,880 --> 0:42:46,880
+ I have the last question here, which is important to be answered.
+
+1190
+0:42:46,880 --> 0:42:50,880
+ You're known as the heavy metal politician. What are your favorite orchestras?
+
+1191
+0:42:51,880 --> 0:42:53,880
+ So, that's the big question.
+
+1192
+0:42:53,880 --> 0:42:56,880
+ Right now I'm wearing a King Diamond T-shirt.
+
+1193
+0:42:56,880 --> 0:42:59,880
+ But it's a difficult question, because it depends on the context.
+
+1194
+0:42:59,880 --> 0:43:01,880
+ Who am I sitting with?
+
+1195
+0:43:01,880 --> 0:43:04,880
+ But I've always been incredibly happy with the good old King Diamond.
+
+1196
+0:43:04,880 --> 0:43:07,880
+ And I'm also happy to mention bands like Devin Townshend and Strap Young Mad,
+
+1197
+0:43:07,880 --> 0:43:09,880
+ which I'm still incredibly happy with.
+
+1198
+0:43:09,880 --> 0:43:13,880
+ I can see Nicky's recognition among the audience.
+
+1199
+0:43:13,880 --> 0:43:16,880
+ I would like to say a very big thank you to Stinus Lindgren,
+
+1200
+0:43:16,880 --> 0:43:19,880
+ member of the Radical Left, and IT manager from SAMA.
+
+1201
+0:43:19,880 --> 0:43:20,880
+ Many thanks.
+
+1202
+0:43:21,880 --> 0:43:23,880
+ Thank you.

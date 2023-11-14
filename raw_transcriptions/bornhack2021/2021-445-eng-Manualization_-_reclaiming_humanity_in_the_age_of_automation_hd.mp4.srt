@@ -1,0 +1,2415 @@
+# Transcribed 2023-11-14T20 with OpenAI Whisper large model 
+# Proofreading by: <name> 
+# Quality check by: <name>
+
+1
+0:00:00,000 --> 0:00:08,600
+ Welcome to this talk.
+
+2
+0:00:08,920 --> 0:00:11,080
+ Anders Kjell will talk about manualization.
+
+3
+0:00:12,580 --> 0:00:13,760
+ Thank you very much.
+
+4
+0:00:15,680 --> 0:00:18,880
+ First of all, thank you very much for coming here and listening to me.
+
+5
+0:00:19,200 --> 0:00:25,180
+ I will just do a short wrap-up of what you're going to hear and what I'm going to talk about.
+
+6
+0:00:25,180 --> 0:00:32,360
+ As you can probably guess, the word manualization is a reverse automization,
+
+7
+0:00:33,160 --> 0:00:36,360
+ which is part of what I'm going to talk about today.
+
+8
+0:00:36,840 --> 0:00:39,340
+ A bit about me, for those who don't know me, I'm a journalist.
+
+9
+0:00:39,500 --> 0:00:43,880
+ I used to have a radio show about surveillance for seven years.
+
+10
+0:00:44,700 --> 0:00:51,860
+ Currently, I'm a techno-critic and a writer and one of the founders of the Analogization Agency,
+
+11
+0:00:51,860 --> 0:00:55,060
+ which I have been talking about earlier on another podcast.
+
+12
+0:00:55,180 --> 0:01:03,960
+ What I'm going to show you is some examples of automation gone wrong.
+
+13
+0:01:05,060 --> 0:01:10,160
+ You are clever people, so you will be able to say for yourself,
+
+14
+0:01:10,720 --> 0:01:14,520
+ there should be something else done here than automating.
+
+15
+0:01:15,540 --> 0:01:18,180
+ Maybe not, but I'll give you some examples of it.
+
+16
+0:01:18,180 --> 0:01:23,600
+ After I've been showing you these examples, then I will read a very long poem.
+
+17
+0:01:25,180 --> 0:01:32,580
+ This paper is on two pages, so it's going to take a while and I'm going to try to do it on my not-very-fine English.
+
+18
+0:01:32,580 --> 0:01:36,260
+ But I'll do it anyway, so you have to bear over with me.
+
+19
+0:01:36,760 --> 0:01:39,040
+ We'll start with toilets.
+
+20
+0:01:40,420 --> 0:01:41,940
+ If I can get this thing to work.
+
+21
+0:01:45,420 --> 0:01:49,940
+ This is an automated toilet in a Danish city.
+
+22
+0:01:51,380 --> 0:01:54,340
+ Inside this toilet was the...
+
+23
+0:01:55,180 --> 0:02:00,480
+ The son of an employee from the Danish Data Protection Agency, actually.
+
+24
+0:02:00,480 --> 0:02:04,980
+ He went in there to pee, the son, and he couldn't get out of there.
+
+25
+0:02:04,980 --> 0:02:11,220
+ Because the door locked itself from the inside because of some fault.
+
+26
+0:02:11,220 --> 0:02:19,560
+ The municipality said afterwards it was because the son had made some strange move around the door.
+
+27
+0:02:19,560 --> 0:02:22,060
+ And then the system just locked down.
+
+28
+0:02:22,060 --> 0:02:24,060
+ He was actually lucky.
+
+29
+0:02:24,060 --> 0:02:25,060
+ Because the toilet was locked down.
+
+30
+0:02:25,060 --> 0:02:28,820
+ And the toilet didn't start to clean itself, which it usually does.
+
+31
+0:02:28,820 --> 0:02:32,660
+ There's some spray system inside and some sanitizer.
+
+32
+0:02:32,660 --> 0:02:37,260
+ And it can kind of feel that there's a human inside.
+
+33
+0:02:37,260 --> 0:02:42,220
+ So it didn't actually clean the kid that was seven years old inside.
+
+34
+0:02:42,220 --> 0:02:48,620
+ But he had to stay there for 45 minutes, waiting for the municipality to arrive to get him out of there.
+
+35
+0:02:48,620 --> 0:02:50,620
+ Because he was stuck in there.
+
+36
+0:02:50,620 --> 0:02:53,860
+ And then you might say this is just one stupid example.
+
+37
+0:02:53,860 --> 0:02:54,860
+ But it actually keeps him there.
+
+38
+0:02:54,860 --> 0:03:01,300
+ And it keeps happening all over Denmark, that people are getting stuck in automated toilets.
+
+39
+0:03:01,300 --> 0:03:11,580
+ One of the situations here is a very old woman here who was over 70 and was stuck inside this toilet for a long while.
+
+40
+0:03:11,580 --> 0:03:14,200
+ She actually didn't have a mobile phone.
+
+41
+0:03:14,200 --> 0:03:15,280
+ But she was lucky.
+
+42
+0:03:15,280 --> 0:03:16,760
+ It was in the night.
+
+43
+0:03:16,760 --> 0:03:18,980
+ It was freezing outside.
+
+44
+0:03:18,980 --> 0:03:23,540
+ And she was lucky that she was with someone who noticed that she wasn't getting back and
+
+45
+0:03:23,540 --> 0:03:24,660
+ who went to look for her.
+
+46
+0:03:24,860 --> 0:03:30,580
+ And he had a mobile phone and was able to call the municipality, but she also had to stay
+
+47
+0:03:30,580 --> 0:03:35,740
+ inside the toilet for about an hour before they let her out of there.
+
+48
+0:03:35,740 --> 0:03:39,480
+ And she found it a very scary experience.
+
+49
+0:03:39,480 --> 0:03:43,020
+ We also have another problem with toilets in Denmark.
+
+50
+0:03:43,020 --> 0:03:47,700
+ People are not only automating toilets, but they're also making them pay toilets, which
+
+51
+0:03:47,700 --> 0:03:54,660
+ is mostly happening at the Danish railroad stations, which is a place where a lot of people need to go to pee.
+
+52
+0:03:54,860 --> 0:03:58,480
+ After they have been taking a train.
+
+53
+0:03:58,480 --> 0:04:01,540
+ But the problem is that they are actually just shutting toilets down.
+
+54
+0:04:01,540 --> 0:04:03,680
+ They're missing toilets now.
+
+55
+0:04:03,680 --> 0:04:06,660
+ There are not enough toilets at Danish stations.
+
+56
+0:04:06,660 --> 0:04:11,540
+ And if there are, you need to pay for them.
+
+57
+0:04:11,540 --> 0:04:17,160
+ This is how a modern toilet could look, the one to the right over there.
+
+58
+0:04:17,160 --> 0:04:19,200
+ It's getting very complicated.
+
+59
+0:04:19,200 --> 0:04:24,820
+ The other one is the old model, the manualization model, where you actually leave some money
+
+60
+0:04:24,860 --> 0:04:29,280
+ for a person who takes care of the toilet.
+
+61
+0:04:29,280 --> 0:04:33,920
+ She might also be able to get you out if the door locks or something, but that's a possibility.
+
+62
+0:04:33,920 --> 0:04:39,640
+ But we get more and more of these automated stuff like that over there.
+
+63
+0:04:39,640 --> 0:04:45,580
+ This is from the Danish main railway station, where we got these pay toilets now.
+
+64
+0:04:45,580 --> 0:04:50,540
+ And you need to cross through this kind of airport-looking security to be able to go
+
+65
+0:04:50,540 --> 0:04:54,480
+ to the toilet, which I don't find very optimal in any way.
+
+66
+0:04:54,480 --> 0:05:03,400
+ In Denmark, we generally are very, very happy about digitalization.
+
+67
+0:05:03,400 --> 0:05:08,480
+ And if you need to talk to someone within the municipality or the state or something
+
+68
+0:05:08,480 --> 0:05:13,400
+ like that, then you should go via computer, is the general opinion in many ways.
+
+69
+0:05:13,400 --> 0:05:15,180
+ You need to go via name ID.
+
+70
+0:05:15,180 --> 0:05:17,260
+ You can log on.
+
+71
+0:05:17,260 --> 0:05:20,600
+ You can use a chat bot, or you can use a lot of other stuff.
+
+72
+0:05:20,600 --> 0:05:23,900
+ And that's the way we kind of made our societies these days.
+
+73
+0:05:23,900 --> 0:05:33,020
+ This might be good for some, but as I will get back to later, it's not good for everybody.
+
+74
+0:05:33,020 --> 0:05:41,020
+ One of the problems is that computers are not always doing what we think they're going to do.
+
+75
+0:05:41,020 --> 0:05:46,940
+ This is a quote by a guy called Philip E. Agra, which I can recommend everybody to read.
+
+76
+0:05:46,940 --> 0:05:53,700
+ And he says that, in this sense, computing has constituted a kind of imperialism,
+
+77
+0:05:53,700 --> 0:06:04,020
+ it claims to be, it aims to be, to reinvent virtually every other side of practically
+
+78
+0:06:04,020 --> 0:06:07,580
+ in its own image, which is what it's doing.
+
+79
+0:06:07,580 --> 0:06:12,820
+ One of the places we can see these images kind of seeping through currently is the new
+
+80
+0:06:12,820 --> 0:06:20,620
+ citizen app from the Danish state that all Danes are supposed to use currently.
+
+81
+0:06:20,620 --> 0:06:21,700
+ It's now called MyID.
+
+82
+0:06:21,700 --> 0:06:22,700
+ It used to be called MyID.
+
+83
+0:06:22,700 --> 0:06:23,700
+ It's now called MyID.
+
+84
+0:06:23,700 --> 0:06:31,940
+ It's now called NimID, which translates like something like EasyID, and now MyID.
+
+85
+0:06:31,940 --> 0:06:38,100
+ Before that, it used to have an analog component, this ID thing, which is used to log into every
+
+86
+0:06:38,100 --> 0:06:47,440
+ kind of system that the state and the municipality uses, and to address a lot of functionality
+
+87
+0:06:47,440 --> 0:06:50,820
+ you need in daily life.
+
+88
+0:06:50,820 --> 0:06:52,700
+ But it used to have an analog component.
+
+89
+0:06:52,700 --> 0:06:56,480
+ It used to have an analog component, which was a card, a paper card, I actually have
+
+90
+0:06:56,480 --> 0:07:00,520
+ one with me too, which was called a key card.
+
+91
+0:07:00,520 --> 0:07:06,980
+ You need to tap into one of these, I had one of these.
+
+92
+0:07:06,980 --> 0:07:09,200
+ How many out there has them still?
+
+93
+0:07:09,200 --> 0:07:10,820
+ Oh, nice.
+
+94
+0:07:10,820 --> 0:07:18,120
+ I actually have a friend who kind of, he actually got 200 of them, just to be sure, which is
+
+95
+0:07:18,120 --> 0:07:19,120
+ possible.
+
+96
+0:07:19,120 --> 0:07:20,700
+ You can still go down to the municipality and say to them, I need 200.
+
+97
+0:07:20,700 --> 0:07:21,700
+ You can still go down to the municipality and say to them, I need 200.
+
+98
+0:07:21,700 --> 0:07:22,700
+ You can still go down to the municipality and say to them, I need 200.
+
+99
+0:07:22,700 --> 0:07:25,700
+ One of my friends actually did a website app tower with this card showing how many
+
+100
+0:07:25,700 --> 0:07:29,120
+ exactly, how manyoga you got.
+
+101
+0:07:29,120 --> 0:07:31,160
+ This is really a pretty cool application.
+
+102
+0:07:31,160 --> 0:07:36,200
+ You can see
+
+103
+0:07:36,200 --> 0:07:41,940
+ how many of the objects, all about thousands, all about 4000 tree parties, all about 3000
+
+104
+0:07:41,940 --> 0:07:43,520
+ trees in Windows.
+
+105
+0:07:43,520 --> 0:07:47,600
+ Do you, like John and Tanya, you have a lot of advancements.
+
+106
+0:07:47,600 --> 0:07:48,640
+ зах緊
+
+107
+0:07:48,640 --> 0:07:51,260
+ Do you have any tips?
+
+108
+0:07:51,260 --> 0:07:52,260
+ Let me know.
+
+109
+0:07:52,260 --> 0:07:57,180
+ validate it your own ID via your passport which is kind of new so you
+
+110
+0:07:57,180 --> 0:08:01,500
+ need to be absolutely sure who everybody is in this sense it's always been like
+
+111
+0:08:01,500 --> 0:08:06,180
+ this but this count is coming automated you need the NFC reader to actually
+
+112
+0:08:06,180 --> 0:08:11,580
+ activate this thing so you NFC read your passport to kind of say that you are who
+
+113
+0:08:11,580 --> 0:08:19,140
+ you are so then you pull digital circle on this stuff there is an alternative
+
+114
+0:08:19,140 --> 0:08:24,600
+ which is coming now there's only one this is this pretty ugly little thing
+
+115
+0:08:24,600 --> 0:08:29,380
+ which I'm gonna order I think which is supposed to give some sort of numbers
+
+116
+0:08:29,380 --> 0:08:35,320
+ out when you push it it's supposed to last for 10 years and it's probably just
+
+117
+0:08:35,320 --> 0:08:38,940
+ as easy as having an app on your phone but that's the only thing you can use
+
+118
+0:08:38,940 --> 0:08:44,640
+ instead of that and that is what is now the current key to all your services at
+
+119
+0:08:44,640 --> 0:08:49,140
+ the day States or the municipality this little thing
+
+120
+0:08:49,140 --> 0:08:55,240
+ then we have the problem because there are citizens in Denmark and there's
+
+121
+0:08:55,240 --> 0:08:59,900
+ actually a lot of them who are non-digital there was a new report
+
+122
+0:08:59,900 --> 0:09:06,820
+ currently from the digitalization agency which estimates that between 17 and 22
+
+123
+0:09:06,820 --> 0:09:14,480
+ percent of the grown-up population are not what I call digitally threatened
+
+124
+0:09:14,480 --> 0:09:18,900
+ because they don't master the digital lives
+
+125
+0:09:18,900 --> 0:09:19,120
+ you
+
+126
+0:09:19,120 --> 0:09:24,700
+ The really shocking thing about this report is that it is not only up to 22%.
+
+127
+0:09:24,700 --> 0:09:30,560
+ They say that there might be even more because a lot of people are just getting by
+
+128
+0:09:30,560 --> 0:09:37,200
+ because they're getting help from relatives or at the libraries or somewhere else.
+
+129
+0:09:37,920 --> 0:09:44,600
+ So we can't actually be sure that it's only 22% who has got problems with living the digital life
+
+130
+0:09:44,600 --> 0:09:49,660
+ and actually getting the services out of the country that they live in.
+
+131
+0:09:53,460 --> 0:09:55,980
+ This is from this report.
+
+132
+0:09:56,880 --> 0:10:02,760
+ The digitalization agency called it digital inclusion in the digital society,
+
+133
+0:10:02,940 --> 0:10:04,940
+ so it can't get any more digital than that.
+
+134
+0:10:05,640 --> 0:10:11,600
+ And they've hidden these examples of very bad things happening
+
+135
+0:10:11,600 --> 0:10:14,580
+ if you are not able to cope with the digital.
+
+136
+0:10:14,600 --> 0:10:18,280
+ There's a woman here who's old.
+
+137
+0:10:18,500 --> 0:10:24,720
+ She's got a handicap, and she can't get her money out of the bank.
+
+138
+0:10:25,020 --> 0:10:26,780
+ And I'll get back to that later.
+
+139
+0:10:27,000 --> 0:10:31,140
+ That's partly because of money laundering laws and stuff like that
+
+140
+0:10:31,140 --> 0:10:33,960
+ that kind of collide with the digital stuff.
+
+141
+0:10:34,600 --> 0:10:38,260
+ But she can't get her own money out.
+
+142
+0:10:38,260 --> 0:10:44,340
+ She needs to go to the bank, but she only has to use the...
+
+143
+0:10:44,340 --> 0:10:44,960
+ The automates.
+
+144
+0:10:45,000 --> 0:10:49,520
+ She can't go inside the bank because the bank has closed the cash registers.
+
+145
+0:10:49,680 --> 0:10:53,440
+ You can't now go to the bank with your bank card and say,
+
+146
+0:10:53,580 --> 0:10:55,720
+ I want all my money in cash.
+
+147
+0:10:56,000 --> 0:10:57,060
+ It's not possible.
+
+148
+0:10:57,380 --> 0:10:58,160
+ They've closed it.
+
+149
+0:10:58,680 --> 0:11:05,540
+ And if you are a weak person who usually take out all their money on the first of the months,
+
+150
+0:11:06,040 --> 0:11:07,460
+ then that's not possible anymore.
+
+151
+0:11:07,460 --> 0:11:10,540
+ You can only get 2,000 kroners at a time.
+
+152
+0:11:11,560 --> 0:11:14,000
+ And that will give some other problems that I will get back to.
+
+153
+0:11:14,340 --> 0:11:19,780
+ And this situation is absolutely crazy because she needs help to go to the bank.
+
+154
+0:11:20,120 --> 0:11:25,180
+ And she needs to take a taxi every time because she can't use the public transportation.
+
+155
+0:11:25,980 --> 0:11:30,760
+ And that costs her 500 and 600 kroners per time she needs to get money.
+
+156
+0:11:31,500 --> 0:11:33,780
+ So that's not a very ideal situation.
+
+157
+0:11:34,820 --> 0:11:37,740
+ Then we've got people who say that, well, they do have smartphones.
+
+158
+0:11:37,740 --> 0:11:41,220
+ They actually work around this stuff in general.
+
+159
+0:11:41,460 --> 0:11:43,740
+ But there's a lot of people who...
+
+160
+0:11:44,340 --> 0:11:50,980
+ I don't know, we just heard a talk before about people who are getting tracked on their mobile phones
+
+161
+0:11:50,980 --> 0:11:55,740
+ because they, you know, go or have newsletters or things like that.
+
+162
+0:11:56,120 --> 0:12:00,560
+ But it's also a lot of people just push buttons on their phones
+
+163
+0:12:00,560 --> 0:12:02,980
+ and they don't understand what is happening out there.
+
+164
+0:12:03,360 --> 0:12:08,040
+ And then all of a sudden, especially they also typically have cheap phones
+
+165
+0:12:08,040 --> 0:12:13,360
+ and they get cloaked with viruses and ads and stuff like that.
+
+166
+0:12:13,420 --> 0:12:14,320
+ And they simply stop.
+
+167
+0:12:14,340 --> 0:12:19,820
+ And if you combine this stuff with having to handle your own money
+
+168
+0:12:19,820 --> 0:12:27,200
+ and generally going around your daily life in modern society on a digital basis
+
+169
+0:12:27,200 --> 0:12:32,600
+ with a phone that is totally cloaked up with viruses and ads and not really working,
+
+170
+0:12:32,720 --> 0:12:35,240
+ we have a pretty difficult situation.
+
+171
+0:12:37,380 --> 0:12:43,320
+ As this thing says, people have 400 unread mails in their mail folder.
+
+172
+0:12:43,320 --> 0:12:44,220
+ So they can't really...
+
+173
+0:12:44,340 --> 0:12:46,920
+ If there's something new pops up, they don't really notice.
+
+174
+0:12:47,820 --> 0:12:51,900
+ Which can get very disastrous if it's something important.
+
+175
+0:12:52,840 --> 0:12:56,320
+ Then we got a very problem because we got people who are living on the streets
+
+176
+0:12:56,320 --> 0:12:57,640
+ who don't have a home.
+
+177
+0:12:58,060 --> 0:13:04,160
+ Homeless people, because the banks won't give them the possibility of going to the bank,
+
+178
+0:13:04,360 --> 0:13:07,580
+ showing some sort of identification and taking their money out,
+
+179
+0:13:08,040 --> 0:13:10,140
+ but they need to have a credit card.
+
+180
+0:13:10,140 --> 0:13:13,900
+ Then they can't get their money, some of them.
+
+181
+0:13:14,340 --> 0:13:19,160
+ The possibility of going inside the bank was closed down in November last year.
+
+182
+0:13:19,660 --> 0:13:23,160
+ The politician had been warned a long time by the homeless organization
+
+183
+0:13:23,160 --> 0:13:26,220
+ that this is going to be a problem, but nobody reacted.
+
+184
+0:13:27,060 --> 0:13:27,880
+ Nothing happened.
+
+185
+0:13:28,440 --> 0:13:33,820
+ It ended up being the homeless organizations who needed to take some sort of steps to do it themselves.
+
+186
+0:13:34,320 --> 0:13:40,720
+ So they kind of made a call-in service where you could meet up at a homeless station
+
+187
+0:13:40,720 --> 0:13:44,000
+ and then you could say, I need so and so much money.
+
+188
+0:13:44,340 --> 0:13:49,520
+ Then they made a special deal with one bank who on this special occasion said,
+
+189
+0:13:49,760 --> 0:13:54,140
+ then we can take out a lot of money to these people, then you have to distribute them.
+
+190
+0:13:54,200 --> 0:13:57,340
+ And we don't want them inside the banks, these people.
+
+191
+0:13:58,380 --> 0:13:59,600
+ So they don't come there.
+
+192
+0:13:59,840 --> 0:14:02,420
+ And there are a lot of people currently who don't get their money
+
+193
+0:14:02,420 --> 0:14:06,100
+ that they're actually entitled to because they can't get them out.
+
+194
+0:14:06,660 --> 0:14:10,240
+ There are also people, then you could say, why don't they have a credit card?
+
+195
+0:14:10,660 --> 0:14:12,200
+ Mainly because they don't have an address.
+
+196
+0:14:13,060 --> 0:14:14,260
+ You can't get a credit card.
+
+197
+0:14:14,340 --> 0:14:16,700
+ Without an address in some ways.
+
+198
+0:14:16,800 --> 0:14:20,800
+ Then if they have a credit card, if you're homeless and you drink
+
+199
+0:14:20,800 --> 0:14:27,300
+ and you generally have a loose life, then it's a lot of problems trying to hang on to a credit card.
+
+200
+0:14:27,300 --> 0:14:31,640
+ Even more to remember a four-digit code or even worse,
+
+201
+0:14:31,760 --> 0:14:37,640
+ trying to log in and out with MID-ID or NEM-ID, which also requires different kinds of codes.
+
+202
+0:14:37,780 --> 0:14:41,100
+ It actually, it's almost impossible for these people to do anything.
+
+203
+0:14:41,660 --> 0:14:43,660
+ So the homeless organizations are actually,
+
+204
+0:14:43,660 --> 0:14:49,760
+ we're talking about now that a lot of these people are turning to criminality or prostitution to get money
+
+205
+0:14:49,760 --> 0:14:54,060
+ because they've simply given up of getting them out of the system
+
+206
+0:14:54,060 --> 0:14:56,580
+ who's actually promised to give them money every month.
+
+207
+0:14:56,880 --> 0:14:57,780
+ They can't get them.
+
+208
+0:14:58,080 --> 0:15:03,200
+ But it's a good deal for the state because they don't have to pay out so much money that they used to do.
+
+209
+0:15:05,600 --> 0:15:08,860
+ They actually made, the homeless organization actually made a suggestion.
+
+210
+0:15:09,700 --> 0:15:11,680
+ In Denmark, it's called BOA, foreslay.
+
+211
+0:15:12,340 --> 0:15:13,280
+ There's a possibility.
+
+212
+0:15:13,660 --> 0:15:19,300
+ It's where you can kind of come with a suggestion to the parliament
+
+213
+0:15:19,300 --> 0:15:21,480
+ and say you should make this to law.
+
+214
+0:15:22,200 --> 0:15:27,400
+ But it has been running for some while and they said everybody has the right to their own money
+
+215
+0:15:27,400 --> 0:15:31,380
+ and they want a kind of guarantee for that.
+
+216
+0:15:32,300 --> 0:15:36,660
+ But they don't have many signatures and I don't think it will get through.
+
+217
+0:15:36,860 --> 0:15:40,480
+ And should it even have the amount of signatures to make the parliament take it seriously,
+
+218
+0:15:40,980 --> 0:15:42,580
+ then I don't think anything will happen.
+
+219
+0:15:42,580 --> 0:15:43,580
+ They're not going to do anything.
+
+220
+0:15:43,660 --> 0:15:44,280
+ They're not going to do anything about it.
+
+221
+0:15:45,900 --> 0:15:47,200
+ We have our prime minister.
+
+222
+0:15:47,360 --> 0:15:52,480
+ She said recently there was 25 years of, what do you call it,
+
+223
+0:15:52,540 --> 0:15:57,160
+ 25 years of anniversary for some of the homeless organizations
+
+224
+0:15:57,160 --> 0:16:01,960
+ and then all the politicians kind of gave interviews and also the prime minister
+
+225
+0:16:01,960 --> 0:16:04,700
+ about what they are going to do about the homeless problem.
+
+226
+0:16:05,600 --> 0:16:11,860
+ And our prime minister said her main attack mode for the homeless problem was saying
+
+227
+0:16:11,860 --> 0:16:13,640
+ we can't help them.
+
+228
+0:16:13,660 --> 0:16:17,080
+ We can't help them because we have all these homeless people from other countries
+
+229
+0:16:17,080 --> 0:16:21,720
+ who are coming into Denmark and we don't want to lift that burden for the other countries
+
+230
+0:16:21,720 --> 0:16:22,580
+ within the EU.
+
+231
+0:16:23,180 --> 0:16:24,340
+ So we're not going to do much.
+
+232
+0:16:24,580 --> 0:16:30,820
+ But one thing she wanted to do something about was the problem with violence against homeless people
+
+233
+0:16:30,820 --> 0:16:33,800
+ that they are getting mocked on the streets.
+
+234
+0:16:34,580 --> 0:16:38,980
+ And she said that really harms me that people could mock a homeless person.
+
+235
+0:16:39,120 --> 0:16:41,100
+ So that makes me very furious.
+
+236
+0:16:41,700 --> 0:16:43,060
+ And what was her solution?
+
+237
+0:16:43,060 --> 0:16:43,560
+ So this problem.
+
+238
+0:16:43,560 --> 0:16:49,360
+ She says we need more surveillance on the streets so we can see these people,
+
+239
+0:16:49,520 --> 0:16:56,260
+ what is going on, so maybe these violent people will think again before they kind of attack
+
+240
+0:16:56,260 --> 0:17:00,440
+ a homeless person and then it will be easier for the police to catch them afterwards.
+
+241
+0:17:01,280 --> 0:17:05,780
+ That was the only thing she offered for these people, more surveillance.
+
+242
+0:17:05,980 --> 0:17:10,120
+ And that's the general tone of the Danish system currently.
+
+243
+0:17:10,120 --> 0:17:19,620
+ This is a quote from a guy called Philip Alston who is a special rapporteur for UN who talked
+
+244
+0:17:19,620 --> 0:17:26,840
+ about the digital welfare state and he mentions that the main thing about the digital welfare
+
+245
+0:17:26,840 --> 0:17:32,580
+ state, could you be quiet down there, sorry, I'm getting a bit, sorry, it's distracting.
+
+246
+0:17:33,080 --> 0:17:39,920
+ But Philip Alston talked about that the digital welfare state has needs
+
+247
+0:17:39,920 --> 0:17:46,080
+ to have goals to make lives better for people.
+
+248
+0:17:46,720 --> 0:17:48,400
+ That should be the main thing.
+
+249
+0:17:49,120 --> 0:17:54,420
+ But he sees in general all over the place that it's being used to control people
+
+250
+0:17:54,820 --> 0:17:58,040
+ and to make a registration and to surveil people.
+
+251
+0:17:59,000 --> 0:18:05,280
+ And we can actually, we can risk making what he calls a digital welfare dystopia.
+
+252
+0:18:06,140 --> 0:18:09,280
+ And I think we are pretty close to that in Denmark currently.
+
+253
+0:18:09,280 --> 0:18:09,920
+ That's something that we need to do.
+
+254
+0:18:09,920 --> 0:18:14,120
+ And that's partly because of automation, which I will get back to again in a little while.
+
+255
+0:18:17,840 --> 0:18:23,480
+ This is, for example, the possibility, we all have this smartphone, which is getting more and more.
+
+256
+0:18:23,740 --> 0:18:24,800
+ We need it more and more.
+
+257
+0:18:24,800 --> 0:18:27,360
+ We need to log in all the time.
+
+258
+0:18:27,360 --> 0:18:29,600
+ We need to have corona passports.
+
+259
+0:18:30,060 --> 0:18:36,820
+ We need to use it to go on the bank and we need it for our train tickets and stuff like that.
+
+260
+0:18:37,480 --> 0:18:39,280
+ It needs to be all over the place.
+
+261
+0:18:39,280 --> 0:18:45,260
+ And the main problem with that is that the states in Denmark loves data retention.
+
+262
+0:18:45,780 --> 0:18:53,200
+ We have currently had a data retention law, meaning that everything, everybody you are calling
+
+263
+0:18:53,200 --> 0:18:58,960
+ and who is calling you and who you are SMSing and who is SMSing you, that is being stored
+
+264
+0:18:58,960 --> 0:19:02,920
+ for a year and also your location.
+
+265
+0:19:04,000 --> 0:19:07,160
+ That is against the rules of the EU.
+
+266
+0:19:07,160 --> 0:19:09,160
+ And there has been several laws.
+
+267
+0:19:09,280 --> 0:19:15,500
+ There are large cases there saying that Denmark should stop this immediately, which we have ignored.
+
+268
+0:19:15,500 --> 0:19:18,040
+ Our politician has ignored that for seven years.
+
+269
+0:19:18,460 --> 0:19:28,700
+ Recently, there was an organization tried to sue the Danish state, but didn't really win.
+
+270
+0:19:28,700 --> 0:19:30,220
+ It has now been appealed.
+
+271
+0:19:30,840 --> 0:19:37,060
+ But what is clear is that the current method of data retention is illegal, and we can't continue that.
+
+272
+0:19:37,460 --> 0:19:38,900
+ But our prime minister.
+
+273
+0:19:39,280 --> 0:19:47,160
+ Who is a very ingenious man, has already a new law on the way, which then afterwards the EU can say that it's illegal.
+
+274
+0:19:47,160 --> 0:19:51,200
+ That will take some years and while they're waiting for that, this will continue.
+
+275
+0:19:51,200 --> 0:19:58,040
+ He now wants our phones to be registered every five minutes.
+
+276
+0:19:58,780 --> 0:20:01,040
+ Also phones that are not being used.
+
+277
+0:20:01,040 --> 0:20:07,200
+ Just the time they ping the network, it will be registered and that should be stored for a year.
+
+278
+0:20:07,200 --> 0:20:09,120
+ That's what in the new proposal for the EU.
+
+279
+0:20:09,120 --> 0:20:18,420
+ The new data retention law here in Denmark, and we say something about how they are generally how the state sees the citizens as data subjects.
+
+280
+0:20:19,800 --> 0:20:22,260
+ You also you can also get just get used to it.
+
+281
+0:20:22,260 --> 0:20:27,880
+ If you want to get through the train, you will be you're already being filmed by CCTV at the train.
+
+282
+0:20:28,740 --> 0:20:38,960
+ But if you are getting it, if a controller or a conductor comes to check your your tickets, then he will have a body cam on.
+
+283
+0:20:38,960 --> 0:20:47,200
+ So you will also be if you will be double films, it's only an experiment currently, but if you don't really, but it will probably become permanent.
+
+284
+0:20:48,460 --> 0:20:53,420
+ And then we got our minister of justice, which is this guy.
+
+285
+0:20:55,920 --> 0:20:59,920
+ He will be saying something, but I think we'll just skip the video because you're not on really on.
+
+286
+0:20:59,920 --> 0:21:06,880
+ And some of you out there know, but all of us, I will just kind of sum up what he says on this video clip, which will be in Danish.
+
+287
+0:21:07,380 --> 0:21:08,280
+ He says that surveillance.
+
+288
+0:21:08,960 --> 0:21:19,040
+ Is freedom because the citizens needs to be safe to be free, and we can only be free if we have surveillance.
+
+289
+0:21:19,840 --> 0:21:21,440
+ So surveillance is freedom.
+
+290
+0:21:22,580 --> 0:21:24,980
+ Does that sound a bit like 1984 to you?
+
+291
+0:21:24,980 --> 0:21:27,740
+ It does to me, but he doesn't seem bothered.
+
+292
+0:21:28,460 --> 0:21:35,240
+ It's he he's he's actually been repeating it all over the place of he's been mocked by privacy people, but he keeps repeating it.
+
+293
+0:21:38,960 --> 0:21:42,180
+ So we are free.
+
+294
+0:21:42,180 --> 0:21:46,260
+ Indeed, in Denmark, we are free to be more read even in more registers.
+
+295
+0:21:46,260 --> 0:21:51,660
+ We have a national genome center, which is also working kind of automatic.
+
+296
+0:21:52,160 --> 0:22:02,880
+ If you've been tested positive for COVID-19, your DNA data is now in the Danish database, the National Genome Center, and you can't delete it.
+
+297
+0:22:02,880 --> 0:22:05,540
+ It will be there until ten years after your death.
+
+298
+0:22:07,080 --> 0:22:07,580
+ Yes.
+
+299
+0:22:08,960 --> 0:22:15,140
+ Not only did you get tested positive, and so I think you've undergone the test to see if you have been tested positive or not.
+
+300
+0:22:15,140 --> 0:22:15,640
+ Okay.
+
+301
+0:22:15,640 --> 0:22:24,140
+ And you can write to see if you've been tested positive or not.
+
+302
+0:22:24,140 --> 0:22:27,380
+ Yes, I'll just repeat so everybody can hear.
+
+303
+0:22:27,380 --> 0:22:29,640
+ He says it's not just when you've been tested positive.
+
+304
+0:22:29,640 --> 0:22:38,940
+ You actually need to go into the Danish, I think it's called biobank, and to write them and say explicitly that you want some of your data is deleted.
+
+305
+0:22:38,960 --> 0:22:41,200
+ And they're not allowed to keep them.
+
+306
+0:22:41,200 --> 0:22:43,520
+ Then it should be possible to get rid of them.
+
+307
+0:22:43,520 --> 0:22:44,740
+ Otherwise, they'll just store them.
+
+308
+0:22:44,740 --> 0:22:51,980
+ It is pretty, it's not easy to find the right formula, but it is somewhere inside the system.
+
+309
+0:22:51,980 --> 0:22:55,060
+ But if you get tested positive, it doesn't matter what you've written.
+
+310
+0:22:55,060 --> 0:22:55,780
+ Then it is there.
+
+311
+0:22:55,780 --> 0:22:57,980
+ You can't get rid of that stuff.
+
+312
+0:22:57,980 --> 0:23:03,040
+ And now we also, we have this National Genome Center, which is supposed to be used to science.
+
+313
+0:23:03,040 --> 0:23:08,140
+ The idea here is to store as many Danish DNA data as possible.
+
+314
+0:23:08,140 --> 0:23:08,440
+ Yes.
+
+315
+0:23:08,440 --> 0:23:11,940
+ And DNA sequences as possible.
+
+316
+0:23:11,940 --> 0:23:23,920
+ And now they're also using what they call the Danish church books, which is an old analog system for registering births and people who are being born and married and stuff like that.
+
+317
+0:23:23,920 --> 0:23:36,120
+ They want to digitize these three generations back so you can actually combine the DNA information on that time, which is unprecedented in many ways.
+
+318
+0:23:36,120 --> 0:23:37,740
+ And it kind of borders on.
+
+319
+0:23:37,740 --> 0:23:38,220
+ Yes.
+
+320
+0:23:38,220 --> 0:23:56,580
+ And it kind of borders on menial acts as science, in my opinion, because you will actually be able to look back in families and say, and the meaning of this system is that you can go back into these two families and say, where does this disease start or how does this social derude start?
+
+321
+0:23:57,420 --> 0:24:00,880
+ And then you can kind of look, oh, this family is really bad.
+
+322
+0:24:01,640 --> 0:24:03,640
+ And what they're going to use these days, I don't know.
+
+323
+0:24:03,640 --> 0:24:07,980
+ It's currently science, but there's a lot of possibilities and not all of them.
+
+324
+0:24:08,220 --> 0:24:12,000
+ So it's kind of nice to take it, to put it very shortly.
+
+325
+0:24:13,380 --> 0:24:14,920
+ Then we got another problem.
+
+326
+0:24:15,500 --> 0:24:24,940
+ One of the things they're going to use for this genome sequences and for to digitize these old church book is artificial intelligence.
+
+327
+0:24:25,100 --> 0:24:32,580
+ They want to train artificial intelligence to actually look into these data and to read what was written on this stuff.
+
+328
+0:24:32,580 --> 0:24:37,320
+ But the main problem with artificial intelligence is it needs a hell of a lot of energy.
+
+329
+0:24:37,320 --> 0:24:42,760
+ Every time you have to do this, and we are in a climate crisis, and we should actually think about what we're using it for.
+
+330
+0:24:43,420 --> 0:24:46,800
+ And we also have a general problem with the chip industry.
+
+331
+0:24:48,300 --> 0:24:59,540
+ One thing is that all of you may know there's a chip shortage currently, but we also have very, very rising energy cost of both producing them and running them.
+
+332
+0:24:59,540 --> 0:25:06,540
+ In 2030, they expect that computing technology will be using 20%.
+
+333
+0:25:07,320 --> 0:25:15,960
+ And that's going to be a very, very high cost of the global energy demand, which is more than the car industry, and the main the main consumption partner is producing chips.
+
+334
+0:25:16,740 --> 0:25:27,360
+ And then we don't even talk about the enormous amounts of clear, clean water you need to produce this stuff, which is not going into this accountants here.
+
+335
+0:25:28,200 --> 0:25:29,280
+ So we've got a problem there.
+
+336
+0:25:30,240 --> 0:25:34,020
+ And as you see, we all know we have a chip problem currently.
+
+337
+0:25:35,280 --> 0:25:37,100
+ Toyota can't.
+
+338
+0:25:37,320 --> 0:25:39,300
+ Put up all the cars that may be a good thing.
+
+339
+0:25:39,300 --> 0:25:43,020
+ Then we have fewer cars on the road, but they might also be electric.
+
+340
+0:25:43,020 --> 0:25:45,180
+ So that's not a problem.
+
+341
+0:25:45,480 --> 0:25:50,600
+ They caught output for 40% because they can't get chips currently.
+
+342
+0:25:52,380 --> 0:26:06,720
+ I've got one more example here, which is a guy called Sadina, or as it's called, Maury Morandit, who has been staying at an island called Buduli for 32 years.
+
+343
+0:26:07,320 --> 0:26:12,420
+ And he's been guarding it as he was known as the Robinson Crusoe of Europe.
+
+344
+0:26:12,420 --> 0:26:24,560
+ He lived alone on a very lonely island, guarding it for the tourists that came around and been looking after it for a long time and had it as a fine job.
+
+345
+0:26:24,680 --> 0:26:32,940
+ Then the state initially cut away his job and said he couldn't do it anymore and sent him back to the mainland.
+
+346
+0:26:33,680 --> 0:26:37,300
+ And now they substituted him with CCTV cameras.
+
+347
+0:26:37,800 --> 0:26:40,280
+ Which is supposed to look after the island.
+
+348
+0:26:40,560 --> 0:26:42,440
+ And he says it's a disaster.
+
+349
+0:26:42,880 --> 0:26:44,660
+ The beast is getting trampled on.
+
+350
+0:26:44,880 --> 0:26:46,100
+ I knew this would happen.
+
+351
+0:26:46,100 --> 0:26:51,360
+ There's nobody anymore to educate the tourists, which is part of this.
+
+352
+0:26:54,460 --> 0:27:00,260
+ This is something we can actually run without having any sound on it because it's nice.
+
+353
+0:27:00,380 --> 0:27:06,640
+ And then I can actually maybe run it before I read this very long poem that will end this.
+
+354
+0:27:07,320 --> 0:27:08,620
+ Strange session.
+
+355
+0:27:10,340 --> 0:27:16,700
+ This is people who have actually manualized stuff in a very simple way.
+
+356
+0:27:17,940 --> 0:27:29,640
+ This is a guy who, or not a guy, several guys who are going to reconstruct a car radiator in India.
+
+357
+0:27:30,120 --> 0:27:30,820
+ It's broken.
+
+358
+0:27:31,000 --> 0:27:31,920
+ It's leaking water.
+
+359
+0:27:32,440 --> 0:27:36,220
+ And you can watch it maybe while I'm reading this very long poem.
+
+360
+0:27:37,320 --> 0:27:44,200
+ It's about being an analogist, which I have been practicing to say because it's hard in English.
+
+361
+0:27:46,040 --> 0:27:53,580
+ I'm an analogist because the world is analog and the world is analog because everyday life is not digital.
+
+362
+0:27:53,900 --> 0:28:05,040
+ Even though they say so at the digitalization agency and in the prime minister's office and at IBM and Google and Facebook and in the parliament and television all the time.
+
+363
+0:28:05,040 --> 0:28:07,040
+ Or maybe just because they say it.
+
+364
+0:28:07,320 --> 0:28:22,200
+ Without knowing what it really means and every time they say the world gets a little bit more boring leaves fall off the trees, children crash on bikes and therefore I am an analogist for course, it is not boring.
+
+365
+0:28:23,500 --> 0:28:33,000
+ I'm an analogist because I once fell off a motorcycle and broke my collarbone and experienced the pain of breaking a little and never really growing back together again.
+
+366
+0:28:33,000 --> 0:28:36,940
+ And that was a very little digital and very analog experience.
+
+367
+0:28:36,940 --> 0:28:38,940
+ Because my body is analog.
+
+368
+0:28:38,940 --> 0:28:44,940
+ Analog with yours and at the same time my own and therefore I am an analogist.
+
+369
+0:28:44,940 --> 0:28:50,940
+ I'm an analogist because I have disassembled more machines than I have reassembled.
+
+370
+0:28:50,940 --> 0:28:58,940
+ With screwdrivers I've reduced a meaningful working Remington typewriter to hundreds of meaningless parts.
+
+371
+0:28:58,940 --> 0:29:00,940
+ Parts that could not be reassembled.
+
+372
+0:29:00,940 --> 0:29:04,940
+ I turned something working into a dataistic amount of springs and screws and metal.
+
+373
+0:29:04,940 --> 0:29:06,940
+ I turned something working into a dataistic amount of springs and screws and metal.
+
+374
+0:29:06,940 --> 0:29:08,940
+ I turned something working into a dataistic amount of springs and screws and metal.
+
+375
+0:29:08,940 --> 0:29:12,880
+ I turned something working into a dataistic amount of springs and more metal rods and keys whose inner meaning I had succeeded in extinguishing.
+
+376
+0:29:13,880 --> 0:29:21,740
+ As one blows out a candle all movement frozen in the theater of the detest springs quivering.
+
+377
+0:29:22,660 --> 0:29:22,740
+ As one blows out a candle all movement frozen in the theater of the detest springs quivering.
+
+378
+0:29:22,740 --> 0:29:28,620
+ I'm an analogist because I have changed my own RAM blocks and harddrives in computers
+
+379
+0:29:28,620 --> 0:29:36,620
+ and because I know that even the computer is concrete and understandable and actually analog in its very own way.
+
+380
+0:29:36,620 --> 0:29:36,740
+ And because I know that even the computer is concrete and understandable and actually analog in its very own way.
+
+381
+0:29:36,940 --> 0:29:39,820
+ and at least not digital in itself,
+
+382
+0:29:39,820 --> 0:29:44,000
+ and not at all digital in weekdays that are digital,
+
+383
+0:29:44,000 --> 0:29:49,000
+ not at all as a bearer of a special magical digital force,
+
+384
+0:29:49,240 --> 0:29:52,120
+ not at all as anything but a tool,
+
+385
+0:29:52,120 --> 0:29:56,100
+ a screwdriver that can disassemble everything digital
+
+386
+0:29:56,100 --> 0:29:59,880
+ into completely meaningless ones and zeros,
+
+387
+0:29:59,880 --> 0:30:02,840
+ and therefore I am analogist.
+
+388
+0:30:02,840 --> 0:30:07,320
+ I'm an analogist because I'm afraid of the internet,
+
+389
+0:30:07,320 --> 0:30:10,920
+ now that it's clearly ruled by money and politics
+
+390
+0:30:10,920 --> 0:30:14,520
+ and manipulators and military and mastodons,
+
+391
+0:30:14,520 --> 0:30:17,780
+ and because the internet has gone from exciting
+
+392
+0:30:17,780 --> 0:30:21,320
+ to a straitjacket, a place we need to be
+
+393
+0:30:21,320 --> 0:30:23,980
+ in order to could be at all,
+
+394
+0:30:23,980 --> 0:30:26,120
+ and that is not how it should be,
+
+395
+0:30:26,120 --> 0:30:29,180
+ and that is why I am an analogist.
+
+396
+0:30:29,180 --> 0:30:32,820
+ I'm an analogist because digital is binary,
+
+397
+0:30:32,820 --> 0:30:35,680
+ and I'm not, and neither are you,
+
+398
+0:30:35,680 --> 0:30:39,660
+ and that's why you are also analogists.
+
+399
+0:30:39,660 --> 0:30:43,900
+ I'm an analogist because analogy is sustainable,
+
+400
+0:30:43,900 --> 0:30:47,900
+ because the analog is, because it already exists,
+
+401
+0:30:47,900 --> 0:30:51,300
+ and because it does not need power or silicon chips
+
+402
+0:30:51,300 --> 0:30:54,680
+ or burning server parks, feeding off rotating,
+
+403
+0:30:54,680 --> 0:30:57,920
+ well-meaning wind turbines that can no longer
+
+404
+0:30:57,920 --> 0:31:01,580
+ even be fought against, and that has now lost all meaning,
+
+405
+0:31:01,580 --> 0:31:02,300
+ and therefore I am an analogist.
+
+406
+0:31:02,300 --> 0:31:07,300
+ I am an analogist because digital is a trap
+
+407
+0:31:08,120 --> 0:31:12,060
+ we made for ourselves, a nice lake with a bottom
+
+408
+0:31:12,060 --> 0:31:15,980
+ of quicksand, and I see most of us already standing
+
+409
+0:31:15,980 --> 0:31:20,140
+ in water to our throats, and we keep our phone screens
+
+410
+0:31:20,140 --> 0:31:24,540
+ above us as if it was a life jacket, but it is not,
+
+411
+0:31:24,540 --> 0:31:27,320
+ and therefore I am an analogist.
+
+412
+0:31:27,320 --> 0:31:30,000
+ I'm an analogist because there's a spider
+
+413
+0:31:30,000 --> 0:31:32,220
+ in the corner of this greenhouse,
+
+414
+0:31:32,220 --> 0:31:35,220
+ that has made a web shape like a pyramid,
+
+415
+0:31:35,220 --> 0:31:38,740
+ and it makes it more and more solid with each passing day,
+
+416
+0:31:38,740 --> 0:31:43,000
+ and flies fall into it and sit stuck and get eaten,
+
+417
+0:31:43,000 --> 0:31:46,860
+ mostly because the spider gets upset that the flies
+
+418
+0:31:46,860 --> 0:31:49,980
+ are destroying the web and wants them to stop it.
+
+419
+0:31:49,980 --> 0:31:54,460
+ Stop it now, and that is where nothing digital about this,
+
+420
+0:31:54,460 --> 0:31:57,640
+ and that is why I am an analogist.
+
+421
+0:31:57,640 --> 0:32:00,340
+ I'm an analogist because I like to stretch my eyes,
+
+422
+0:32:00,340 --> 0:32:02,060
+ to look far beyond, and that is the reason I am an analogist,
+
+423
+0:32:02,060 --> 0:32:06,020
+ or in the landscape or over the sea and the boat that is out there,
+
+424
+0:32:06,360 --> 0:32:07,860
+ the boat that we all sit in.
+
+425
+0:32:08,140 --> 0:32:10,540
+ And because we all sit there and are together,
+
+426
+0:32:10,820 --> 0:32:15,620
+ and because I can still, with a bursting gaze, see it and see you,
+
+427
+0:32:15,940 --> 0:32:17,080
+ I'm an analogist.
+
+428
+0:32:18,020 --> 0:32:22,240
+ I'm an analogist because I once thought everything would be better
+
+429
+0:32:22,240 --> 0:32:24,840
+ if we got computers and internet everywhere,
+
+430
+0:32:25,300 --> 0:32:27,340
+ but we did, and it did not.
+
+431
+0:32:28,480 --> 0:32:30,480
+ And that's why I'm an analogist.
+
+432
+0:32:30,480 --> 0:32:35,260
+ I'm an analogist because I love good technology and good machines
+
+433
+0:32:35,260 --> 0:32:37,680
+ that help us become better people,
+
+434
+0:32:38,020 --> 0:32:42,700
+ but digitalization makes us better machines that have to operate other machines,
+
+435
+0:32:43,200 --> 0:32:45,720
+ and thus we lose meaning as humans
+
+436
+0:32:45,720 --> 0:32:50,000
+ and are left behind as sifting, indifferent ectoplasm
+
+437
+0:32:50,000 --> 0:32:55,320
+ that swings around on sofas and has to go to gyms with our Apple Watches
+
+438
+0:32:55,320 --> 0:32:59,720
+ and apps to get a solid physical shape for just one moment,
+
+439
+0:32:59,720 --> 0:33:00,460
+ just one moment.
+
+440
+0:33:00,460 --> 0:33:00,480
+ Just one moment.
+
+441
+0:33:00,480 --> 0:33:03,940
+ Just once in a while, and that's probably not the point of it all,
+
+442
+0:33:04,100 --> 0:33:06,000
+ and that's why I'm an analogist.
+
+443
+0:33:06,920 --> 0:33:10,560
+ I'm an analogist because I think blueberries and blackberries
+
+444
+0:33:10,560 --> 0:33:14,040
+ and raspberries and strawberries and butterflies and insects
+
+445
+0:33:14,040 --> 0:33:19,460
+ and fish and cows and cats are more important than Aula and Nemity
+
+446
+0:33:19,460 --> 0:33:21,440
+ and U.I.s and Google.
+
+447
+0:33:22,460 --> 0:33:26,640
+ Because we already have a universe around us that calls for reflection
+
+448
+0:33:26,640 --> 0:33:30,460
+ and humility that there's no room for on either internet
+
+449
+0:33:30,460 --> 0:33:33,780
+ or Instagram, Twitter, Facebook, or Clubhouse.
+
+450
+0:33:33,780 --> 0:33:37,620
+ We do not need an artificial universe in the screens,
+
+451
+0:33:37,620 --> 0:33:39,780
+ and not at all as the favorite universe,
+
+452
+0:33:39,780 --> 0:33:42,860
+ because when it does become our favorite universe,
+
+453
+0:33:42,860 --> 0:33:47,860
+ reality collapses around our ears in a long, squeaky bang,
+
+454
+0:33:48,540 --> 0:33:51,460
+ and therefore I'm an analogist.
+
+455
+0:33:51,460 --> 0:33:54,920
+ I'm an analogist because there's a concrete reality
+
+456
+0:33:54,920 --> 0:33:59,220
+ that we can all participate in and have a responsibility for,
+
+457
+0:33:59,220 --> 0:34:00,440
+ and because the screens are not the same,
+
+458
+0:34:00,440 --> 0:34:03,440
+ the screens are mosquito lights that lure us into flames
+
+459
+0:34:03,440 --> 0:34:07,420
+ that take our wings away from us, and we have to fly.
+
+460
+0:34:07,820 --> 0:34:10,880
+ We have to, and therefore I'm an analogist.
+
+461
+0:34:11,560 --> 0:34:15,060
+ I'm an analogist because the computer is a prison
+
+462
+0:34:15,060 --> 0:34:19,940
+ where the bars are retina screens and our eyelids are the prison itself,
+
+463
+0:34:20,320 --> 0:34:23,840
+ and because the computer saves everything about us,
+
+464
+0:34:24,060 --> 0:34:27,000
+ and because there are people and governments and companies
+
+465
+0:34:27,000 --> 0:34:30,000
+ that will use us, and all our now written-down mistakes
+
+466
+0:34:30,440 --> 0:34:33,440
+ against us, and that had not been written down
+
+467
+0:34:33,440 --> 0:34:37,160
+ and stored on servers forever, they were not faulty at all.
+
+468
+0:34:37,160 --> 0:34:39,560
+ They were forgotten now, but...
+
+469
+0:34:39,560 --> 0:34:42,020
+ Now, but everything is remembered,
+
+470
+0:34:42,020 --> 0:34:44,520
+ and therefore I'm an analogist.
+
+471
+0:34:44,520 --> 0:34:46,700
+ I'm an analogist because artificial intelligence
+
+472
+0:34:46,700 --> 0:34:49,760
+ is artificial and never gets wise,
+
+473
+0:34:50,760 --> 0:34:52,200
+ and because artificial intelligence
+
+474
+0:34:52,200 --> 0:34:55,460
+ makes us all average citizens who are made from
+
+475
+0:34:55,460 --> 0:35:00,440
+ and made to fit into algorithms, and because artificial
+
+476
+0:35:00,440 --> 0:35:05,440
+ intelligence is stupid enough to want to end up wanting to rule over us,
+
+477
+0:35:05,440 --> 0:35:10,780
+ to decide because it pays homage to the mediocre, the predictable,
+
+478
+0:35:11,340 --> 0:35:15,100
+ and because we humans will have to adapt accordingly,
+
+479
+0:35:15,620 --> 0:35:19,120
+ and we are not average, and we are not predictable by nature,
+
+480
+0:35:19,400 --> 0:35:21,440
+ and that's why I'm an analogist.
+
+481
+0:35:22,080 --> 0:35:26,240
+ I am an analogist because I believe in the analog rights,
+
+482
+0:35:26,240 --> 0:35:31,380
+ that we must be able to be here on this planet as human beings
+
+483
+0:35:31,380 --> 0:35:36,700
+ without being wrapped up in a cloud of data, without internet, without telephones,
+
+484
+0:35:37,120 --> 0:35:42,660
+ and that is important that we can do that because otherwise we are no longer real people,
+
+485
+0:35:43,260 --> 0:35:48,920
+ but just a pendant to a very large machine that we have no control over,
+
+486
+0:35:49,140 --> 0:35:54,900
+ and therefore I'm an analogist also on your behalf because you are also analog,
+
+487
+0:35:54,900 --> 0:35:56,160
+ and I want you.
+
+488
+0:35:56,240 --> 0:36:00,020
+ I want you the very best because I also love you as I love myself,
+
+489
+0:36:00,420 --> 0:36:03,320
+ and that's a lot, and therefore I'm an analogist.
+
+490
+0:36:04,040 --> 0:36:10,560
+ I'm an analogist because you exist, because every line and every scar on your body is real,
+
+491
+0:36:10,920 --> 0:36:15,800
+ and because your face is reflected in everything but the screen in my eyes,
+
+492
+0:36:15,840 --> 0:36:18,900
+ you are here, and you are human, and you are beautiful,
+
+493
+0:36:19,280 --> 0:36:21,440
+ and therefore I'm an analogist.
+
+494
+0:36:21,440 --> 0:36:24,160
+ Because humans are beautiful.
+
+495
+0:36:24,820 --> 0:36:26,220
+ Because you are.
+
+496
+0:36:26,240 --> 0:36:37,400
+ Thank you.
+
+497
+0:36:37,400 --> 0:36:54,100
+ Yes, it's with regard of this church register you were talking about.
+
+498
+0:36:54,840 --> 0:36:56,200
+ So, it's not...
+
+499
+0:36:56,320 --> 0:37:00,000
+ It's not only people who are religious in Denmark who are in this register,
+
+500
+0:37:00,000 --> 0:37:03,800
+ it's everybody who lives in Denmark because I wanted to change my name,
+
+501
+0:37:03,800 --> 0:37:07,000
+ and even though I'm not part of the Danish church whatsoever,
+
+502
+0:37:07,000 --> 0:37:11,680
+ I had to ask those people to change my name, which is something that's a bit what?
+
+503
+0:37:11,680 --> 0:37:15,000
+ Why should the church have to do anything with my name to do right?
+
+504
+0:37:15,000 --> 0:37:19,280
+ So, it's important to mention that it's every single Danish citizen that lives in Denmark
+
+505
+0:37:19,280 --> 0:37:25,460
+ that is part of that register, and if they combine those two registers, we are in a big problem, right?
+
+506
+0:37:25,460 --> 0:37:25,560
+ Yeah.
+
+507
+0:37:25,560 --> 0:37:25,600
+ Yeah.
+
+508
+0:37:25,600 --> 0:37:25,640
+ Yeah.
+
+509
+0:37:25,640 --> 0:37:25,680
+ Yeah.
+
+510
+0:37:25,680 --> 0:37:25,700
+ Yeah.
+
+511
+0:37:25,700 --> 0:37:25,740
+ Yeah.
+
+512
+0:37:25,740 --> 0:37:25,800
+ Yeah.
+
+513
+0:37:25,800 --> 0:37:25,820
+ Yeah.
+
+514
+0:37:25,820 --> 0:37:25,840
+ Yeah.
+
+515
+0:37:25,840 --> 0:37:25,860
+ Yeah.
+
+516
+0:37:25,860 --> 0:37:25,880
+ Yeah.
+
+517
+0:37:25,880 --> 0:37:25,940
+ Yeah.
+
+518
+0:37:25,940 --> 0:37:25,960
+ Yeah.
+
+519
+0:37:25,960 --> 0:37:25,980
+ Yeah.
+
+520
+0:37:25,980 --> 0:37:26,020
+ Yeah.
+
+521
+0:37:26,240 --> 0:37:26,540
+ Yeah.
+
+522
+0:37:26,540 --> 0:37:26,560
+ Yeah.
+
+523
+0:37:26,560 --> 0:37:26,580
+ Yeah.
+
+524
+0:37:26,580 --> 0:37:26,740
+ Yeah.
+
+525
+0:37:26,740 --> 0:37:26,780
+ Yeah.
+
+526
+0:37:26,780 --> 0:37:26,800
+ Yeah.
+
+527
+0:37:26,800 --> 0:37:26,840
+ Yeah.
+
+528
+0:37:26,840 --> 0:37:27,640
+ That's absolutely correct.
+
+529
+0:37:27,880 --> 0:37:33,380
+ The church in Denmark used to be part of the administration, and they used to be center
+
+530
+0:37:33,380 --> 0:37:34,220
+ in the administration.
+
+531
+0:37:34,420 --> 0:37:40,480
+ The priests were administrators in Danish, and these church books also contain a lot
+
+532
+0:37:40,480 --> 0:37:46,440
+ of very interesting information, which comes about people who got divorced, or if the priest
+
+533
+0:37:46,440 --> 0:37:49,200
+ didn't like a person, he actually wrote stuff down.
+
+534
+0:37:49,300 --> 0:37:55,060
+ I've been sifting through the church book at Eerø, a small Danish island, a while ago,
+
+535
+0:37:55,060 --> 0:37:55,100
+ and he wrote a lot of stuff down.
+
+536
+0:37:55,100 --> 0:37:55,120
+ I've been sifting through the church book at Eerø, a small Danish island, a while ago,
+
+537
+0:37:55,120 --> 0:37:59,960
+ And he actually made, one of the priests some hundred years ago,
+
+538
+0:38:00,020 --> 0:38:02,360
+ he made notes about people's character.
+
+539
+0:38:03,060 --> 0:38:05,320
+ This guy is not good, or things like that.
+
+540
+0:38:05,340 --> 0:38:06,300
+ It was inside there.
+
+541
+0:38:06,960 --> 0:38:08,440
+ What they're going to use for that, I don't know.
+
+542
+0:38:08,540 --> 0:38:13,740
+ But what they're going to do is they're going to build a tree of how people are connected
+
+543
+0:38:13,740 --> 0:38:21,680
+ and who was with, and there will probably be some disclosures of who's actually the father of this child.
+
+544
+0:38:22,040 --> 0:38:24,820
+ And that might cause some tragedies around.
+
+545
+0:38:25,120 --> 0:38:28,140
+ Thanks for your talk.
+
+546
+0:38:28,720 --> 0:38:32,720
+ I've got a note there because I think many of the problems you described
+
+547
+0:38:32,720 --> 0:38:36,220
+ are not primarily problems of optimization or technology,
+
+548
+0:38:36,460 --> 0:38:43,380
+ but mostly about companies or government not giving a shit about certain types of people.
+
+549
+0:38:43,380 --> 0:38:47,580
+ And technology kind of amplifies that.
+
+550
+0:38:48,000 --> 0:38:52,700
+ But it's not technology itself that is evil here.
+
+551
+0:38:54,140 --> 0:38:54,640
+ Yeah, so.
+
+552
+0:38:55,120 --> 0:38:59,640
+ Yeah, it just amplifies existing power structures and economic structures,
+
+553
+0:38:59,840 --> 0:39:04,200
+ and that's why we've got so much technology that's designed in a terrible way today.
+
+554
+0:39:05,200 --> 0:39:06,360
+ I totally agree.
+
+555
+0:39:07,580 --> 0:39:15,200
+ But the main problem is that our politicians and the guys who built the systems don't know technology.
+
+556
+0:39:15,920 --> 0:39:22,540
+ I wish we could take this camp with all these extremely bright and fantastic people here
+
+557
+0:39:22,540 --> 0:39:24,660
+ and give them the chance to do that.
+
+558
+0:39:24,660 --> 0:39:24,720
+ And give them the chance to do that.
+
+559
+0:39:24,720 --> 0:39:24,780
+ And give them the chance to do that.
+
+560
+0:39:24,780 --> 0:39:25,100
+ And give them the chance to do that.
+
+561
+0:39:25,100 --> 0:39:26,380
+ And give them the chance to rebuild everything.
+
+562
+0:39:26,600 --> 0:39:29,620
+ Because all the guys here know what we should do.
+
+563
+0:39:30,280 --> 0:39:32,380
+ We should not make too much data.
+
+564
+0:39:32,520 --> 0:39:34,880
+ We should give people the possibility to opt out.
+
+565
+0:39:35,320 --> 0:39:39,880
+ We should also maybe even keep up an analog system behind
+
+566
+0:39:39,880 --> 0:39:43,140
+ so people who can't figure out how to use a smartphone would have a chance.
+
+567
+0:39:43,920 --> 0:39:49,280
+ It's very simple, but currently we have this, what I call digitalism.
+
+568
+0:39:49,500 --> 0:39:53,540
+ There's an idea that we need to fit everything inside a mobile phone.
+
+569
+0:39:54,120 --> 0:39:54,980
+ It's also true.
+
+570
+0:39:54,980 --> 0:39:55,020
+ It's true.
+
+571
+0:39:55,020 --> 0:39:55,080
+ It's true.
+
+572
+0:39:55,080 --> 0:39:55,100
+ It's true.
+
+573
+0:39:55,100 --> 0:39:55,160
+ It's true.
+
+574
+0:39:55,160 --> 0:39:55,320
+ It's true.
+
+575
+0:39:55,320 --> 0:40:02,640
+ When we look at the current solutions like the new MyID, for example, which is being built,
+
+576
+0:40:03,600 --> 0:40:08,060
+ I think they're just looking at what kind of gear do I have myself.
+
+577
+0:40:08,400 --> 0:40:11,940
+ I'm sitting here with this very nice iPhone 12.
+
+578
+0:40:12,580 --> 0:40:14,680
+ And then we should build something for that.
+
+579
+0:40:15,400 --> 0:40:20,060
+ And for me, for the guys inside the digitalization agency, it might be very smart for them
+
+580
+0:40:20,060 --> 0:40:24,160
+ to have another app that can solve some problems for them.
+
+581
+0:40:24,160 --> 0:40:24,760
+ But it's not.
+
+582
+0:40:25,100 --> 0:40:28,480
+ a one-way solution for people in general.
+
+583
+0:40:28,480 --> 0:40:31,980
+ And Denmark, we are crazy about digitizing.
+
+584
+0:40:31,980 --> 0:40:34,760
+ If you look all science about what they're doing
+
+585
+0:40:34,760 --> 0:40:39,560
+ in other countries, they keep up the analog systems behind.
+
+586
+0:40:39,560 --> 0:40:41,460
+ In all the other countries in Europe,
+
+587
+0:40:41,460 --> 0:40:43,840
+ it's an option to go digital.
+
+588
+0:40:44,860 --> 0:40:46,600
+ It's not something we get forced into.
+
+589
+0:40:46,600 --> 0:40:50,020
+ In Denmark, we get forced into using digital posts
+
+590
+0:40:50,020 --> 0:40:52,780
+ and we need to do stuff and we're getting more
+
+591
+0:40:52,780 --> 0:40:54,260
+ and if we're not getting forced,
+
+592
+0:40:54,260 --> 0:40:56,260
+ we're getting notched into doing it
+
+593
+0:40:56,260 --> 0:40:58,880
+ by kind of degrading all the stuff
+
+594
+0:40:58,880 --> 0:41:01,580
+ that's currently going on on the analog side
+
+595
+0:41:01,580 --> 0:41:03,980
+ and saying this is bad and you shouldn't use it.
+
+596
+0:41:05,840 --> 0:41:07,980
+ But it would be very nice if one day
+
+597
+0:41:07,980 --> 0:41:12,880
+ we could just lift this whole camp into a ball
+
+598
+0:41:12,880 --> 0:41:15,640
+ at the Danish and say, now we'll tell you what to do,
+
+599
+0:41:15,640 --> 0:41:17,600
+ but probably not gonna happen.
+
+600
+0:41:20,380 --> 0:41:21,420
+ Any more questions?
+
+601
+0:41:23,580 --> 0:41:24,260
+ Give a rig.
+
+602
+0:41:24,260 --> 0:41:26,500
+ And a big hand of applause for Anas Keoul.
+
+603
+0:41:26,500 --> 0:41:27,840
+ Thank you very much.
